@@ -1,0 +1,179 @@
+Somehow, back in November, I got stopped midway through working on these wine
+labels, and I left NO notes on what I was doing.
+
+I seem to have been doing two things.  First, I went through and identified
+every image that is simply a card label, and not a wine label. I cleverly called
+the metadata for these label.json, which is pretty dumb.  I will renanme these
+as index-card-label.json which is a bit more understandable.
+
+The way that I would do this was be going back to the directory with the jpegs,
+and I'd rename the metadata.json file to label.json.  Then, I'd remove the
+metadata.ttl data.  Then, I would often copy the metadata from the next label
+and rewrite the label info.  That's probably to get the metdata for the upcoming labels.
+
+#+BEGIN_SRC
+l=3629; cd ../a$l; mv metadata.json label.json; rm metadata.ttl; cat label.json
+ cp ../a3630/metadata.json label.json; cat label.json
+#+END_SRC
+
+Also, for a few index cards, we only have the thumbnail, not the full index.
+These are cards a1044, a1070, and a1091. a1044 looks like it says, K,L,M. a1070
+says N,O,P. a1091 says Q,R,S,T. These all have a index-card-label card assigned
+to them.
+
+The last index-card-label in the data is item a3659.  After
+that, either there are no more labels, or else the labels are no longer
+catalogged.
+
+There are no full images without a thumbnail. Note, there are no sequences
+missing from the list of items.
+
+** Other designations
+
+However, the labels alone do not seem to indicate where all the breaks exist.
+We can go through the data, and see where all the changes in metadata occur.
+
+#+BEGIN_SRC bash
+	last_metadata='';
+	cur_folder='folder/'
+	for a in data/a*; do
+		b=`basename $a`;
+		f=${b#a*}
+		# Maybe a new Folder
+		if [[ -f $a/metadata.json ]]; then
+			this_metadata=`tr -d "\n" < $a/metadata.json | sed -e 's/\s//g'`;
+			if [[ "$this_metadata" != "$last_metadata" ]] ; then
+				cur_folder=folder/$f
+				cur_dir=$cur_folder
+				[[ -d $cur_folder ]] || mkdir $cur_folder;
+				j=`basename $this_json`;
+				jq . < $a/metadata.json > $cur_folder/metadata.json
+				last_metadata=$this_metadata;
+			fi
+		if [[ -f $a/full.jpg ]] ; then
+			cp $a/full.jpg $cur_dir/label_$f.jpg
+		fi
+		elif [[ -f $a/index-card-label.json ]]; then
+			cur_dir=$cur_folder/index_card_$f
+			[[ -d $cur_dir ]] || mkdir $cur_dir;
+			echo $cur_dir/metadata.json
+			jq . < $a/index-card-label.json > $cur_dir/metadata.json
+			if [[ -f $a/full.jpg ]] ; then
+				cp $a/full.jpg $cur_dir/index_card_$f.jpg
+			fi
+		fi
+	done
+#+END_SRC
+
+#+RESULTS:
+| folder//index_card_0001/metadata.json           |
+| folder/0002/index_card_0014/metadata.json       |
+| folder/0002/index_card_0065/metadata.json       |
+| folder/0160/index_card_0161/metadata.json       |
+| folder/0160/index_card_0181/metadata.json       |
+| folder/0160/index_card_0198/metadata.json       |
+| folder/0160/index_card_0221/metadata.json       |
+| folder/0160/index_card_0240/metadata.json       |
+| folder/0160/index_card_0255/metadata.json       |
+| folder/0160/index_card_0269/metadata.json       |
+| folder/0160/index_card_0276/metadata.json       |
+| folder/0160/index_card_0285/metadata.json       |
+| folder/0160/index_card_0315/metadata.json       |
+| folder/0160/index_card_0353/metadata.json       |
+| folder/0354/index_card_0390/metadata.json       |
+| folder/0354/index_card_0426/metadata.json       |
+| folder/0629/index_card_0767/metadata.json       |
+| folder/0768/index_card_0779/metadata.json       |
+| folder/0768/index_card_0789/metadata.json       |
+| folder/0768/index_card_0841/metadata.json       |
+| folder/0768/index_card_0926/metadata.json       |
+| folder/0927/index_card_0980/metadata.json       |
+| folder/0927/index_card_1025/metadata.json       |
+| folder/0927/index_card_1044/metadata.json       |
+| folder/0927/index_card_1070/metadata.json       |
+| folder/0927/index_card_1091/metadata.json       |
+| folder/0927/index_card_1114/metadata.json       |
+| folder/0927/index_card_1137/metadata.json       |
+| folder/1138/index_card_1174/metadata.json       |
+| folder/1138/index_card_1242/metadata.json       |
+| folder/1138/index_card_1251/metadata.json       |
+| folder/1138/index_card_1267/metadata.json       |
+| folder/1268/index_card_1270/metadata.json       |
+| folder/1268/index_card_1292/metadata.json       |
+| folder/1268/index_card_1317/metadata.json       |
+| folder/1268/index_card_1366/metadata.json       |
+| folder/1268/index_card_1367/metadata.json       |
+| folder/1268/index_card_1391/metadata.json       |
+| folder/1268/index_card_1425/metadata.json       |
+| folder/1268/index_card_1443/metadata.json       |
+| folder/1268/index_card_1496/metadata.json       |
+| folder/1497/index_card_1579/metadata.json       |
+| folder/1497/index_card_1603/metadata.json       |
+| folder/1497/index_card_1616/metadata.json       |
+| folder/1497/index_card_1617/metadata.json       |
+| folder/1497/index_card_1625/metadata.json       |
+| folder/1654/index_card_1702/metadata.json       |
+| folder/1654/index_card_1723/metadata.json       |
+| folder/1724/index_card_1741/metadata.json       |
+| folder/1724/index_card_1829/metadata.json       |
+| folder/1854/index_card_1902/metadata.json       |
+| folder/1854/index_card_1921/metadata.json       |
+| folder/1854/index_card_1929/metadata.json       |
+| folder/1854/index_card_1949/metadata.json       |
+| folder/1854/index_card_1965/metadata.json       |
+| folder/1854/index_card_2020/metadata.json       |
+| folder/2021/index_card_2092/metadata.json       |
+| folder/2021/index_card_2111/metadata.json       |
+| folder/2112/index_card_2136/metadata.json       |
+| folder/2112/index_card_2157/metadata.json       |
+| folder/2112/index_card_2161/metadata.json       |
+| folder/2112/index_card_2184/metadata.json       |
+| folder/2112/index_card_2215/metadata.json       |
+| folder/2112/index_card_2242/metadata.json       |
+| folder/2243/index_card_2278/metadata.json       |
+| folder/2243/index_card_2334/metadata.json       |
+| folder/2243/index_card_2348/metadata.json       |
+| folder/2243/index_card_2361/metadata.json       |
+| folder/2243/index_card_2379/metadata.json       |
+| folder/2243/index_card_2441/metadata.json       |
+| folder/2442/index_card_2467/metadata.json       |
+| folder/2442/index_card_2522/metadata.json       |
+| folder/2442/index_card_2569/metadata.json       |
+| folder/2442/index_card_2603/metadata.json       |
+| folder/2442/index_card_2617/metadata.json       |
+| folder/2618/index_card_2696/metadata.json       |
+| folder/2618/index_card_2756/metadata.json       |
+| folder/2618/index_card_2786/metadata.json       |
+| folder/2787/index_card_2826/metadata.json       |
+| folder/2787/index_card_2883/metadata.json       |
+| folder/2787/index_card_2893/metadata.json       |
+| folder/2894/index_card_2992/metadata.json       |
+| folder/2993/index_card_3037/metadata.json       |
+| folder/2993/index_card_3100/metadata.json       |
+| folder/2993/index_card_3115/metadata.json       |
+| folder/2993/index_card_3142/metadata.json       |
+| folder/3143/index_card_3183/metadata.json       |
+| folder/3143/index_card_3191/metadata.json       |
+| folder/3143/index_card_3219/metadata.json       |
+| folder/3143/index_card_3243/metadata.json       |
+| folder/3143/index_card_3256/metadata.json       |
+| folder/3143/index_card_3303/metadata.json       |
+| folder/3143/index_card_3317/metadata.json       |
+| folder/3143/index_card_3320/metadata.json       |
+| folder/3143/index_card_3321/metadata.json       |
+| folder/3143/index_card_3351/metadata.json       |
+| folder/3143/index_card_3357/metadata.json       |
+| folder/3143/index_card_3394/metadata.json       |
+| folder/3143/index_card_3402/metadata.json       |
+| folder/3143/index_card_3404/metadata.json       |
+| folder/3143/index_card_3407/metadata.json       |
+| folder/3143/index_card_3429/metadata.json       |
+| folder/3143/index_card_3461/metadata.json       |
+| folder/3462/index_card_3484/metadata.json       |
+| folder/3462/index_card_3525/metadata.json       |
+| folder/3462/index_card_3542/metadata.json       |
+| folder/3462/index_card_3574/metadata.json       |
+| folder/3462/index_card_3605/metadata.json       |
+| folder/3462/index_card_3629/metadata.json       |
+| folder/3462/index_card_3659/metadata.json       |
+| folder/3660/index_card_3660-a3661/metadata.json |

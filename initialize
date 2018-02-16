@@ -1,0 +1,233 @@
+#! /bin/bash
+
+: <<=cut
+=pod
+
+=head1  NAME
+
+  inititalize - Initialize this example repository
+
+=head1 USAGE
+
+  initialize <--print=Hhb> <--delete> --do=sys,users,collections
+
+=head1 OPTIONS
+
+You probably just need to run ./initialize --all
+
+=over 4
+
+=item B<--delete>
+Delete an item before building it.
+
+=item B<--do=> I<sys,users,collections>
+Specify what to inititialize; options include sys,users,collections. Default is sys,users,collections.
+
+=back
+=cut
+
+
+# This example assumes that you already have your fin-cli setup with a user with administrative permissions.
+fin_delete() {
+     OPTS=`getopt -o f  --long force,tombstone -n 'inf4 delete' -- "$@"`
+    if [ $? != 0 ] ; then echo "Bad delete options." >&2 ; exit 1 ; fi
+    eval set -- "$OPTS"
+    tombstone=
+    while true; do
+    	case $1 in
+	    -f | --force | --tombstone) tombstone=1; shift;;
+	    --) shift; break;;
+    	*) break;;
+    	esac
+    done
+    if [[ -n $1 ]]; then
+        $fin http delete $1;
+        if [[ -n $tombstone ]]; then
+            $fin http delete $1/fcr:tombstone
+        fi
+    fi
+}
+
+fin_mkdir() {
+    OPTS=`getopt -o @: --long file:,hasMember:,isMemberOf:,resource: -n 'mkdir [options]' -- mkdir "$@"`
+    if [ $? != 0 ] ; then echo "Bad mkdir options." >&2 ; exit 1 ; fi
+    eval set -- "$OPTS"
+    local a="<> a ldp:BasicContainer"
+    local file=
+    local hasMember=
+    local isMemberOf=
+    local resource='..'
+    while true; do
+    	case $1 in
+        -@ | --file ) file=$2; shift 2;;
+		--hasMember) hasMember=$2; shift 2;;
+		--isMemberOf) isMemberOf=$2; shift 2;;
+	    --resource) resource=$2; shift 2;;
+	    --) shift; break;;
+    	*) break;;
+    	esac
+    done
+    shift;
+
+    if [[ -n $1 ]]; then
+        if [[ -n $file ]]; then
+            $fin http put $opts -@ $file $1
+        elif [[ -n $hasMember ]] ; then
+	    if [[ -n $isMemberOf ]]; then
+                a="<> a ldp:DirectContainer; ldp:hasMemberRelation $hasMember; ldp:membershipResource $resource; ldp:isMemberOfRelation $isMemberOf ."
+	    else
+                a="<> a ldp:DirectContainer; ldp:hasMemberRelation $hasMember; ldp:membershipResource $resource ."
+            fi
+	elif [[ -n $isMemberOf ]]; then
+            a="<> a ldp:DirectContainer; ldp:isMemberOfRelation $isMemberOf; ldp:membershipResource $resource ."
+	fi
+        $fin http put $opts -t "$a" $1
+    fi
+}
+
+auth_add() {
+     OPTS=`getopt --long acl:,mode:,to:,agent:,group: -n 'auth [options]' -- auth "$@"`
+    if [ $? != 0 ] ; then echo "Bad auth_add options." >&2 ; exit 1 ; fi
+    eval set -- "$OPTS"
+    local mode="acl:Read"
+    local to=
+    local agent="foaf:Agent"
+    local group=
+    local authname=
+    local auth=
+    local slug=
+    local acl=.acl
+    while true; do
+    	case $1 in
+        --acl) acl=$2; shift 2;;
+	    --mode) mode=$2; shift 2;;
+        --to) to=$2; shift 2;;
+	    --agent) agent=$2; shift 2;;
+	    --group) mode=$2; shift 2;;
+        *) break;;
+    	esac
+    done
+    shift;
+    if [[ -n $agent ]] ; then
+        auth+="acl:agent $agent ; "
+    fi
+    if [[ -n $group ]]; then
+        auth+="acl:agentClass $group ;"
+    fi;
+    if [[ -n $1 ]]; then
+        slug="-H Slug:$1"
+    fi
+    $fin http post $opts $acl -t "<> a acl:Authorization; $auth acl:accessTo $to; acl:mode $mode ." $slug
+}
+
+acl_create() {
+    OPTS=`getopt --long dir:,label:,default -n 'acl [options]' -- acl "$@"`
+    if [ $? != 0 ] ; then echo "Bad acl options." >&2 ; exit 1 ; fi
+    eval set -- "$OPTS"
+    local dir=
+    local rdir=
+    local adir=
+    local label='Local Access Control'
+    local default=
+    while true; do
+    	case $1 in
+        --default) default=1; shift;;
+        --label) label=$2; shift 2;;
+	    --dir) dir=$2; shift 2;;
+        *) break;;
+    	esac
+    done
+    if [[ -n $dir ]]; then
+        adir=`readlink -m $dir/.acl`
+        rdir=`readlink -m $R/$dir`
+        $fin http put $opts -t "<> a ldp:BasicContainer,webac:Acl; rdfs:label \"$label\" . " $adir;
+        if [[ -n $default ]]; then
+            auth_add --acl=$adir --agent=foaf:Agent --mode=acl:Read --to="<$rdir>"
+        fi
+        # Reset adir for full path
+        adir=`readlink -m $R/$dir/.acl`
+        $fin http patch $opts $dir -t "insert {<> acl:accessControl <${adir}> .} where {}"
+    fi
+ }
+
+: <<=cut
+=pod
+=head 2 add_group
+Passed the user_id (as in user/quinn).  Creates a new user in the appropriate location
+=cut
+add_group () {
+    local u=$1
+    local file
+    if [[ -n $2 ]]; then
+        file="--file=$2"
+    fi
+    fin_mkdir $file /collection/$u
+    # Create a user definable .acl for this user.
+    acl_create --dir=/collection/$u --default
+    fin_mkdir /collection/$u/group
+    $fin http put /collection/$u/group/admin -t '<> a foaf:Group ; foaf:member "quinn","jrmerz" "enebeker" .'
+    # Add to Read/Write for user, Read for users
+    auth_add --acl=/collection/$u/.acl --group="<$R/collection/$u/group/admin>" --mode=acl:Read,acl:Write --to="<$R/collection/$u>"
+    auth_add --acl=/collection/$u/.acl --agent=foaf:Agent --mode=acl:Read --to="<$R/collection/$u>"
+    # members is where the data goes.
+    fin_mkdir --hasMember=pcdm:hasMember --isMemberOf=pcdm:memberOf --resource="<$R/collection/$u>" /collection/$u/members
+}
+
+add_amerine() {
+    local d i mime s
+    for f in `find collection/amerine-example -type f -name full.jpg`; do
+        d=`dirname $f`;
+        i=$(basename $d);
+        mime=`file --mime-type -b $f`;
+        s=$d/metadata.ttl
+        $fin http put -@ $f -H "Content-Type:$mime" /collection/amerine-example/members/$i;
+        if [[ -f $s ]] ; then
+            ttl=$(sed -e "s|<>|<$R/collection/amerine-example/members/$i>|g" < $s | tr -d '\n')
+            $fin http put $opts --prefix wdt=http://www.wikidata.org/prop/direct/ --prefix w=http://library.ucdavis.edu/wine/ -H prefer:return=minimal -t "$ttl" /collection/amerine-example/members/$i/fcr:metadata
+            #ins=$(cat $s - <<< "} where {}" | sed -e 's|@prefix\(.*\)\.$|PREFIX \1|' -e 's|<>|insert { <>|g' | tr -d '\n')
+            #$fin http patch -t "$ins" $n/fcr:metadata
+        fi
+
+done
+
+}
+
+#main() {
+    OPTS=`getopt -o P: --long do:,delete,fin:,print: -n 'initialize [options]' -- initialize "$@"`
+    if [ $? != 0 ] ; then echo "Bad initialize options." >&2 ; exit 1 ; fi
+    eval set -- "$OPTS"
+    do='sys,users,collections,eastman,amerine'
+    delete=
+    print='-P Hhb'
+    fin=fin
+    # This is the default location for the acl parameters
+    R=`jq -r .basePath < ~/.fccli`
+    opts="--prefix fin=http://fin.library.ucdavis.edu/ --prefix user=http://fin.library.ucdavis.edu/user/ --prefix root=$R/"
+
+    while true; do
+        case $1 in
+        --fin) fin=$2; shift 2;;
+        --do) do=$2; shift;;
+        --delete) delete=1; shift;;
+        -P | --print) print="-P $2"; shift 2;;
+        *) break;;
+        esac
+    done
+    # Add print
+    opts="$opts $print"
+
+    # Now  we can make the groups
+    if [[ `grep group <<< $do` ]]; then
+        if [[ -n $delete ]]; then
+            fin_delete --tombstone /collection/amerine
+        fi
+        add_group /callection/amerine index.ttl
+    fi
+
+if [[ `grep amerine <<< $do` ]]; then
+    if [[ -n $delete ]]; then
+        fin_delete --tombstone /collection/amerine-example/members
+        fin_mkdir --hasMember=pcdm:hasMember --isMemberOf=pcdm:memberOf --resource="<$R/collection/amerine-example>" /collection/amerine-example/members
+    fi
+    add_amerine;
+fi
