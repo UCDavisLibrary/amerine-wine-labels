@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0345";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "VINTAGES\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@eng;
+    gv:color [
+  gv:hex "d6c2ab";
+  gv:red "214";
+  gv:blue "171";
+  gv:green "194";
+  gv:score "31.837541";
+  gv:coverage "22.146666"
+], [
+  gv:hex "ad977e";
+  gv:red "173";
+  gv:blue "126";
+  gv:green "151";
+  gv:score "16.629400999999998";
+  gv:coverage "4.9"
+], [
+  gv:hex "8a745b";
+  gv:red "138";
+  gv:blue "91";
+  gv:green "116";
+  gv:score "14.61709";
+  gv:coverage "3.5533335"
+], [
+  gv:hex "66523c";
+  gv:red "102";
+  gv:blue "60";
+  gv:green "82";
+  gv:score "10.393422";
+  gv:coverage "2.44"
+], [
+  gv:hex "695023";
+  gv:red "105";
+  gv:blue "35";
+  gv:green "80";
+  gv:score "5.259515";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "ebd8c2";
+  gv:red "235";
+  gv:blue "194";
+  gv:green "216";
+  gv:score "3.1126471";
+  gv:coverage "4.8"
+], [
+  gv:hex "8c6f46";
+  gv:red "140";
+  gv:blue "70";
+  gv:green "111";
+  gv:score "2.7512592999999996";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "7e7469";
+  gv:red "126";
+  gv:blue "105";
+  gv:green "116";
+  gv:score "2.6945145999999998";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "8d6940";
+  gv:red "141";
+  gv:blue "64";
+  gv:green "105";
+  gv:score "2.3761988";
+  gv:coverage "0.38"
+], [
+  gv:hex "5d544a";
+  gv:red "93";
+  gv:blue "74";
+  gv:green "84";
+  gv:score "1.7490720000000002";
+  gv:coverage "0.44"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.538116"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.547335"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.895821"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.436085"
+];
+    w:bagOfWords "VINTAGES\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

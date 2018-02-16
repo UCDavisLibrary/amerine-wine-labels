@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2744";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "EN 1787\nFON DEE\nCotes du Rhone\nuperieur\nContenance 70 cl.\nR. C. BRUXELLES 6110\n"@fra;
+    gv:color [
+  gv:hex "e8cca4";
+  gv:red "232";
+  gv:blue "164";
+  gv:green "204";
+  gv:score "21.865018";
+  gv:coverage "10.9"
+], [
+  gv:hex "d69647";
+  gv:red "214";
+  gv:blue "71";
+  gv:green "150";
+  gv:score "7.5870596";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "744915";
+  gv:red "116";
+  gv:blue "21";
+  gv:green "73";
+  gv:score "1.4320502000000002";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "371400";
+  gv:red "55";
+  gv:blue "undefined";
+  gv:green "20";
+  gv:score "0.73509715";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "ecca9a";
+  gv:red "236";
+  gv:blue "154";
+  gv:green "202";
+  gv:score "18.164158999999998";
+  gv:coverage "6.260000000000001"
+], [
+  gv:hex "f6d5a3";
+  gv:red "246";
+  gv:blue "163";
+  gv:green "213";
+  gv:score "9.400470599999998";
+  gv:coverage "3.4333333"
+], [
+  gv:hex "f3d7af";
+  gv:red "243";
+  gv:blue "175";
+  gv:green "215";
+  gv:score "7.725516000000001";
+  gv:coverage "45.106667"
+], [
+  gv:hex "c8955b";
+  gv:red "200";
+  gv:blue "91";
+  gv:green "149";
+  gv:score "5.666377799999999";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "ecbb84";
+  gv:red "236";
+  gv:blue "132";
+  gv:green "187";
+  gv:score "5.5618644";
+  gv:coverage "1.94"
+], [
+  gv:hex "b19877";
+  gv:red "177";
+  gv:blue "119";
+  gv:green "152";
+  gv:score "3.3984382";
+  gv:coverage "0.7000000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.938868"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.7164"
+];
+    w:bagOfWords "EN 1787\nFON DEE\nCotes du Rhone\nuperieur\nContenance 70 cl.\nR. C. BRUXELLES 6110\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4616";
+    dct:type "image";
+    w:bagOfWords "MANZANILLA\nEMBOTELLADORES No 20\nMIGUEL SA DO JEREZ\nP A S A D A\n(ESPANA)\n"@spa;
+    gv:color [
+  gv:hex "ccc2b9";
+  gv:red "204";
+  gv:blue "185";
+  gv:green "194";
+  gv:score "38.60226";
+  gv:coverage "27.900000000000002"
+], [
+  gv:hex "a49b92";
+  gv:red "164";
+  gv:blue "146";
+  gv:green "155";
+  gv:score "33.311909";
+  gv:coverage "3.5933333999999997"
+], [
+  gv:hex "e4dbd2";
+  gv:red "228";
+  gv:blue "210";
+  gv:green "219";
+  gv:score "13.859281000000001";
+  gv:coverage "59.74"
+], [
+  gv:hex "857c73";
+  gv:red "133";
+  gv:blue "115";
+  gv:green "124";
+  gv:score "13.493928";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "393024";
+  gv:red "57";
+  gv:blue "36";
+  gv:green "48";
+  gv:score "0.015893615";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "d6ccbb";
+  gv:red "214";
+  gv:blue "187";
+  gv:green "204";
+  gv:score "0.57847905";
+  gv:coverage "5.1666666"
+], [
+  gv:hex "6b6157";
+  gv:red "107";
+  gv:blue "87";
+  gv:green "97";
+  gv:score "0.10979312";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "e0d7c6";
+  gv:red "224";
+  gv:blue "198";
+  gv:green "215";
+  gv:score "0.02358069";
+  gv:coverage "2.3266668"
+], [
+  gv:hex "41392e";
+  gv:red "65";
+  gv:blue "46";
+  gv:green "57";
+  gv:score "0.004877106";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "170d01";
+  gv:red "23";
+  gv:blue "1";
+  gv:green "13";
+  gv:score "1.1734782e-9";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.78738799999999"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "53.432261999999994"
+];
+    w:bagOfWords "MANZANILLA\nEMBOTELLADORES No 20\nMIGUEL SA DO JEREZ\nP A S A D A\n(ESPANA)\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

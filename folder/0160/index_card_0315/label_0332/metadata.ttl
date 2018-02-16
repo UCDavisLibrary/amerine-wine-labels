@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0332";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "HOUSE OF HOWE AG\nRuby Dewdrops\nVINTAGE 1939\nBOTTLED AUGUST 194\n1\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH wINE CELLARS\nWALNUT CREEK, CALIFORNIA\nLouis ROESCH Co., SAN TRANCItco\n"@eng;
+    gv:color [
+  gv:hex "9e1b18";
+  gv:red "158";
+  gv:blue "24";
+  gv:green "27";
+  gv:score "29.175287";
+  gv:coverage "1.8933333"
+], [
+  gv:hex "4c2b20";
+  gv:red "76";
+  gv:blue "32";
+  gv:green "43";
+  gv:score "4.0442488999999995";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "420101";
+  gv:red "66";
+  gv:blue "1";
+  gv:green "1";
+  gv:score "3.969698";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "ad9a80";
+  gv:red "173";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "2.7978521";
+  gv:coverage "2.7066667"
+], [
+  gv:hex "a10806";
+  gv:red "161";
+  gv:blue "6";
+  gv:green "8";
+  gv:score "8.8350937";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "7b0406";
+  gv:red "123";
+  gv:blue "6";
+  gv:green "4";
+  gv:score "6.2357388";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "670503";
+  gv:red "103";
+  gv:blue "3";
+  gv:green "5";
+  gv:score "4.9768216999999995";
+  gv:coverage "0.42"
+], [
+  gv:hex "5e1313";
+  gv:red "94";
+  gv:blue "19";
+  gv:green "19";
+  gv:score "3.1998488999999997";
+  gv:coverage "0.4"
+], [
+  gv:hex "6e4a3e";
+  gv:red "110";
+  gv:blue "62";
+  gv:green "74";
+  gv:score "2.6869256";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "d2bda5";
+  gv:red "210";
+  gv:blue "165";
+  gv:green "189";
+  gv:score "2.5593568";
+  gv:coverage "8.4466666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.881574"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "60.304069999999996"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "50.401449"
+];
+    w:bagOfWords "HOUSE OF HOWE AG\nRuby Dewdrops\nVINTAGE 1939\nBOTTLED AUGUST 194\n1\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH wINE CELLARS\nWALNUT CREEK, CALIFORNIA\nLouis ROESCH Co., SAN TRANCItco\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

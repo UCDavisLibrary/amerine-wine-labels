@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1216";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "TRITON\nBRAND\nSUCESORES JUAN PEDRO LUQUE\nSAN LUC\nDE BARRA MEDA\nLIT. S.\n"@spa;
+    gv:color [
+  gv:hex "e3c788";
+  gv:red "227";
+  gv:blue "136";
+  gv:green "199";
+  gv:score "33.479038";
+  gv:coverage "19.986667"
+], [
+  gv:hex "9ba361";
+  gv:red "155";
+  gv:blue "97";
+  gv:green "163";
+  gv:score "7.7747516";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "de243c";
+  gv:red "222";
+  gv:blue "60";
+  gv:green "36";
+  gv:score "4.1729253";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "405672";
+  gv:red "64";
+  gv:blue "114";
+  gv:green "86";
+  gv:score "0.65056249";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "f36b77";
+  gv:red "243";
+  gv:blue "119";
+  gv:green "107";
+  gv:score "0.64957547";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "cc964b";
+  gv:red "204";
+  gv:blue "75";
+  gv:green "150";
+  gv:score "0.59187342";
+  gv:coverage "1.24"
+], [
+  gv:hex "b99099";
+  gv:red "185";
+  gv:blue "153";
+  gv:green "144";
+  gv:score "0.42353114000000003";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "6f72b0";
+  gv:red "111";
+  gv:blue "176";
+  gv:green "114";
+  gv:score "0.27968222";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "0f0f6e";
+  gv:red "15";
+  gv:blue "110";
+  gv:green "15";
+  gv:score "0.20582231";
+  gv:coverage "0.02"
+], [
+  gv:hex "737f42";
+  gv:red "115";
+  gv:blue "66";
+  gv:green "127";
+  gv:score "5.3493336000000005";
+  gv:coverage "1.28"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.424628"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "TRITON\nBRAND\nSUCESORES JUAN PEDRO LUQUE\nSAN LUC\nDE BARRA MEDA\nLIT. S.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

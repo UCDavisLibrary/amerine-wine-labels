@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2289";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "No. 509 P\nS CU U LIEN MEDOC\n1924\n"@fra;
+    gv:color [
+  gv:hex "9c6b39";
+  gv:red "156";
+  gv:blue "57";
+  gv:green "107";
+  gv:score "25.949486999999998";
+  gv:coverage "7.2866663"
+], [
+  gv:hex "d1994a";
+  gv:red "209";
+  gv:blue "74";
+  gv:green "153";
+  gv:score "15.200663";
+  gv:coverage "6.0533334000000005"
+], [
+  gv:hex "e5ab5c";
+  gv:red "229";
+  gv:blue "92";
+  gv:green "171";
+  gv:score "13.504778";
+  gv:coverage "5.5333334999999995"
+], [
+  gv:hex "804d1e";
+  gv:red "128";
+  gv:blue "30";
+  gv:green "77";
+  gv:score "12.572126";
+  gv:coverage "3.06"
+], [
+  gv:hex "c19160";
+  gv:red "193";
+  gv:blue "96";
+  gv:green "145";
+  gv:score "11.9799";
+  gv:coverage "4.279999999999999"
+], [
+  gv:hex "a2722a";
+  gv:red "162";
+  gv:blue "42";
+  gv:green "114";
+  gv:score "7.456813800000001";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "e3b27b";
+  gv:red "227";
+  gv:blue "123";
+  gv:green "178";
+  gv:score "5.4927117999999995";
+  gv:coverage "2.54"
+], [
+  gv:hex "511200";
+  gv:red "81";
+  gv:blue "undefined";
+  gv:green "18";
+  gv:score "0.021225308999999998";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "dfb87f";
+  gv:red "223";
+  gv:blue "127";
+  gv:green "184";
+  gv:score "1.7299820000000001";
+  gv:coverage "1.8666665999999998"
+], [
+  gv:hex "c29a5d";
+  gv:red "194";
+  gv:blue "93";
+  gv:green "154";
+  gv:score "1.2665155000000001";
+  gv:coverage "0.88666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01dl3j>;
+  gv:desc "banknote";
+  gv:score "85.703737"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "66.80340799999999"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.13649699999999"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.203858000000004"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.93203200000001"
+];
+    w:bagOfWords "No. 509 P\nS CU U LIEN MEDOC\n1924\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

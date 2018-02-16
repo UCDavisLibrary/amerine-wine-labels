@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0052";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "Ne EMB. SOLICITADO\nPINORD\nETIQ Y MCA. REGISTRADA\n"@spa;
+    gv:color [
+  gv:hex "8d7a6a";
+  gv:red "141";
+  gv:blue "106";
+  gv:green "122";
+  gv:score "35.803041";
+  gv:coverage "19.806667"
+], [
+  gv:hex "ccbcad";
+  gv:red "204";
+  gv:blue "173";
+  gv:green "188";
+  gv:score "16.510446";
+  gv:coverage "3.3933334000000004"
+], [
+  gv:hex "250b05";
+  gv:red "37";
+  gv:blue "5";
+  gv:green "11";
+  gv:score "5.3982890999999995";
+  gv:coverage "0.5"
+], [
+  gv:hex "aa998b";
+  gv:red "170";
+  gv:blue "139";
+  gv:green "153";
+  gv:score "12.082937000000001";
+  gv:coverage "3.4466665"
+], [
+  gv:hex "d1beb4";
+  gv:red "209";
+  gv:blue "180";
+  gv:green "190";
+  gv:score "6.3885078";
+  gv:coverage "6.0133334"
+], [
+  gv:hex "2f140d";
+  gv:red "47";
+  gv:blue "13";
+  gv:green "20";
+  gv:score "2.72196";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "150801";
+  gv:red "21";
+  gv:blue "1";
+  gv:green "8";
+  gv:score "2.3738043";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "86786d";
+  gv:red "134";
+  gv:blue "109";
+  gv:green "120";
+  gv:score "2.320029";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "b19e95";
+  gv:red "177";
+  gv:blue "149";
+  gv:green "158";
+  gv:score "2.1544505";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "675444";
+  gv:red "103";
+  gv:blue "68";
+  gv:green "84";
+  gv:score "1.9654965";
+  gv:coverage "0.36"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.785541"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0dwx7>;
+  gv:desc "logo";
+  gv:score "50.30207"
+];
+    w:bagOfWords "Ne EMB. SOLICITADO\nPINORD\nETIQ Y MCA. REGISTRADA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

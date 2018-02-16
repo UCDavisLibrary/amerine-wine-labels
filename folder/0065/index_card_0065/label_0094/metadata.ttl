@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0094";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "aler mere\nCONEGLIANO\ne ai onologia\nVeneto\n"@ita;
+    gv:color [
+  gv:hex "d7c09f";
+  gv:red "215";
+  gv:blue "159";
+  gv:green "192";
+  gv:score "24.205483";
+  gv:coverage "7.12"
+], [
+  gv:hex "c58c42";
+  gv:red "197";
+  gv:blue "66";
+  gv:green "140";
+  gv:score "7.0552982";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "754b1f";
+  gv:red "117";
+  gv:blue "31";
+  gv:green "75";
+  gv:score "6.0466286";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "dcba86";
+  gv:red "220";
+  gv:blue "134";
+  gv:green "186";
+  gv:score "13.231297999999999";
+  gv:coverage "1.8399999999999999"
+], [
+  gv:hex "bf9c65";
+  gv:red "191";
+  gv:blue "101";
+  gv:green "156";
+  gv:score "7.253986599999999";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "9a6c3c";
+  gv:red "154";
+  gv:blue "60";
+  gv:green "108";
+  gv:score "6.0028125";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "c39357";
+  gv:red "195";
+  gv:blue "87";
+  gv:green "147";
+  gv:score "5.326046799999999";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "b59d7e";
+  gv:red "181";
+  gv:blue "126";
+  gv:green "157";
+  gv:score "5.010866399999999";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "d0c6bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "198";
+  gv:score "4.6929397";
+  gv:coverage "15.053332999999999"
+], [
+  gv:hex "edd9bd";
+  gv:red "237";
+  gv:blue "189";
+  gv:green "217";
+  gv:score "3.3788408999999997";
+  gv:coverage "5.7533335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.97515"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.446881999999995"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.2834"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.304192"
+];
+    w:bagOfWords "aler mere\nCONEGLIANO\ne ai onologia\nVeneto\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

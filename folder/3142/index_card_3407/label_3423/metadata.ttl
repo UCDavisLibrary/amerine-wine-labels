@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3407/label_3423";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "13\n1934\nvery &\nEstb\n1793\nAvery\nBeaune\nBristol\nAvery & Co.,\nCardiff\n"@fra;
+    gv:color [
+  gv:hex "dab996";
+  gv:red "218";
+  gv:blue "150";
+  gv:green "185";
+  gv:score "53.700888";
+  gv:coverage "24.786666"
+], [
+  gv:hex "b99976";
+  gv:red "185";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "15.088455";
+  gv:coverage "6.419999999999999"
+], [
+  gv:hex "957656";
+  gv:red "149";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "6.3397631";
+  gv:coverage "2.18"
+], [
+  gv:hex "e0b593";
+  gv:red "224";
+  gv:blue "147";
+  gv:green "181";
+  gv:score "5.579713";
+  gv:coverage "1.4733333"
+], [
+  gv:hex "926f51";
+  gv:red "146";
+  gv:blue "81";
+  gv:green "111";
+  gv:score "2.4194386";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "d8b98d";
+  gv:red "216";
+  gv:blue "141";
+  gv:green "185";
+  gv:score "2.4189921";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "e9af88";
+  gv:red "233";
+  gv:blue "136";
+  gv:green "175";
+  gv:score "2.387248";
+  gv:coverage "0.42"
+], [
+  gv:hex "bf9977";
+  gv:red "191";
+  gv:blue "119";
+  gv:green "153";
+  gv:score "2.2829644";
+  gv:coverage "1"
+], [
+  gv:hex "ce8e68";
+  gv:red "206";
+  gv:blue "104";
+  gv:green "142";
+  gv:score "2.1312134";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "996a44";
+  gv:red "153";
+  gv:blue "68";
+  gv:green "106";
+  gv:score "1.7404921";
+  gv:coverage "0.45333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.459746"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.34948299999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.2418"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.373592"
+];
+    w:bagOfWords "13\n1934\nvery &\nEstb\n1793\nAvery\nBeaune\nBristol\nAvery & Co.,\nCardiff\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

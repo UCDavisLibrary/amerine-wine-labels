@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1364";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "COMPAN\nVELHA\nFUNDADA EAA 1756\nVINHO TINTO DE MESA ESPECIAL\nC. IA GERAL DA AGRICULTURA\nDAS VINHAS DO ALTO DOURO\nPORTO PORTUGAL\n"@por;
+    gv:color [
+  gv:hex "d4c0aa";
+  gv:red "212";
+  gv:blue "170";
+  gv:green "192";
+  gv:score "42.215657";
+  gv:coverage "24.693333"
+], [
+  gv:hex "140f09";
+  gv:red "20";
+  gv:blue "9";
+  gv:green "15";
+  gv:score "8.819030999999999";
+  gv:coverage "3.6999999999999997"
+], [
+  gv:hex "99754b";
+  gv:red "153";
+  gv:blue "75";
+  gv:green "117";
+  gv:score "0.9004346099999999";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "af9c84";
+  gv:red "175";
+  gv:blue "132";
+  gv:green "156";
+  gv:score "19.438316999999998";
+  gv:coverage "2.68"
+], [
+  gv:hex "877661";
+  gv:red "135";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "6.6926256";
+  gv:coverage "0.8"
+], [
+  gv:hex "ebd9c3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "217";
+  gv:score "3.7213113";
+  gv:coverage "4.02"
+], [
+  gv:hex "63533e";
+  gv:red "99";
+  gv:blue "62";
+  gv:green "83";
+  gv:score "2.7566567";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "c29f74";
+  gv:red "194";
+  gv:blue "116";
+  gv:green "159";
+  gv:score "2.4921343";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "c5bcb1";
+  gv:red "197";
+  gv:blue "177";
+  gv:green "188";
+  gv:score "2.4441102999999997";
+  gv:coverage "14.02"
+], [
+  gv:hex "5b554d";
+  gv:red "91";
+  gv:blue "77";
+  gv:green "85";
+  gv:score "2.2852678";
+  gv:coverage "0.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.489807"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.731069"
+];
+    w:bagOfWords "COMPAN\nVELHA\nFUNDADA EAA 1756\nVINHO TINTO DE MESA ESPECIAL\nC. IA GERAL DA AGRICULTURA\nDAS VINHAS DO ALTO DOURO\nPORTO PORTUGAL\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

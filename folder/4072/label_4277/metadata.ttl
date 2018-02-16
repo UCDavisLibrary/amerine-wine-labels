@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4277";
+    dct:type "image";
+    w:bagOfWords "PARIS 1889\nDIJON\nHOSPICES DE BEAUNE\nIMP n ARNAUD .LYON\nPARIS\n"@fra;
+    gv:color [
+  gv:hex "d8c3a6";
+  gv:red "216";
+  gv:blue "166";
+  gv:green "195";
+  gv:score "32.902727";
+  gv:coverage "22.306667"
+], [
+  gv:hex "685434";
+  gv:red "104";
+  gv:blue "52";
+  gv:green "84";
+  gv:score "14.921205";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "ad9777";
+  gv:red "173";
+  gv:blue "119";
+  gv:green "151";
+  gv:score "19.184373";
+  gv:coverage "3.4533332999999997"
+], [
+  gv:hex "2a1400";
+  gv:red "42";
+  gv:blue "undefined";
+  gv:green "20";
+  gv:score "0.15645509999999999";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "8a7554";
+  gv:red "138";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "13.95769";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "efdabd";
+  gv:red "239";
+  gv:blue "189";
+  gv:green "218";
+  gv:score "7.2814554000000005";
+  gv:coverage "10.620000000000001"
+], [
+  gv:hex "b8a36b";
+  gv:red "184";
+  gv:blue "107";
+  gv:green "163";
+  gv:score "4.2594845999999995";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "453217";
+  gv:red "69";
+  gv:blue "23";
+  gv:green "50";
+  gv:score "4.1010592";
+  gv:coverage "0.36"
+], [
+  gv:hex "cab679";
+  gv:red "202";
+  gv:blue "121";
+  gv:green "182";
+  gv:score "1.8642929999999998";
+  gv:coverage "0.36"
+], [
+  gv:hex "927a4b";
+  gv:red "146";
+  gv:blue "75";
+  gv:green "122";
+  gv:score "1.0236976";
+  gv:coverage "0.21333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.71468800000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.95066"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "51.126587"
+];
+    w:bagOfWords "PARIS 1889\nDIJON\nHOSPICES DE BEAUNE\nIMP n ARNAUD .LYON\nPARIS\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2883/label_2888";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "ON BLANC\n1926\nCHATEAU\nMARGA\nMis en Bouteille au Chateau\n"@fra;
+    gv:color [
+  gv:hex "d4c0a5";
+  gv:red "212";
+  gv:blue "165";
+  gv:green "192";
+  gv:score "35.92726";
+  gv:coverage "26.113334"
+], [
+  gv:hex "b09e84";
+  gv:red "176";
+  gv:blue "132";
+  gv:green "158";
+  gv:score "18.237709";
+  gv:coverage "3.1933334"
+], [
+  gv:hex "a19c92";
+  gv:red "161";
+  gv:blue "146";
+  gv:green "156";
+  gv:score "8.4128022";
+  gv:coverage "1.8533334"
+], [
+  gv:hex "bd9f6b";
+  gv:red "189";
+  gv:blue "107";
+  gv:green "159";
+  gv:score "8.0332205";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "d6b783";
+  gv:red "214";
+  gv:blue "131";
+  gv:green "183";
+  gv:score "6.435960000000001";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "c5c0b5";
+  gv:red "197";
+  gv:blue "181";
+  gv:green "192";
+  gv:score "6.3747518";
+  gv:coverage "44.226667"
+], [
+  gv:hex "7c7971";
+  gv:red "124";
+  gv:blue "113";
+  gv:green "121";
+  gv:score "5.6293633000000005";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "ead8bf";
+  gv:red "234";
+  gv:blue "191";
+  gv:green "216";
+  gv:score "3.4189909999999997";
+  gv:coverage "2.5"
+], [
+  gv:hex "82775f";
+  gv:red "130";
+  gv:blue "95";
+  gv:green "119";
+  gv:score "3.3229678999999996";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "57574f";
+  gv:red "87";
+  gv:blue "79";
+  gv:green "87";
+  gv:score "2.0512668";
+  gv:coverage "0.3"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.269505"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.841378000000006"
+];
+    w:bagOfWords "ON BLANC\n1926\nCHATEAU\nMARGA\nMis en Bouteille au Chateau\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

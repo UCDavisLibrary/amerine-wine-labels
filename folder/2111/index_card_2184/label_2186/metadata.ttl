@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2186";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "ALCOHOL 20%\nNET CONTENTS\n4/5 QUART\nBY VOLUME\nURITA\nTRADE MARK\nSPECIAL\nCALIFORNIA\nPO RT\nBOTTLED BY\nFOUNTAINGROVE VINEYARD\nB. W. No. 1051\n14TH\nDISTRICT, CALIF.\nCALIFORNIA\nSANTA ROSA\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "d0c59f";
+  gv:red "208";
+  gv:blue "159";
+  gv:green "197";
+  gv:score "40.816179000000005";
+  gv:coverage "18.6"
+], [
+  gv:hex "9c9643";
+  gv:red "156";
+  gv:blue "67";
+  gv:green "150";
+  gv:score "0.16237416999999998";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "cdc38b";
+  gv:red "205";
+  gv:blue "139";
+  gv:green "195";
+  gv:score "15.643193";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "eadcb9";
+  gv:red "234";
+  gv:blue "185";
+  gv:green "220";
+  gv:score "12.127983";
+  gv:coverage "18.133333"
+], [
+  gv:hex "a99962";
+  gv:red "169";
+  gv:blue "98";
+  gv:green "153";
+  gv:score "12.016577";
+  gv:coverage "1.5066667"
+], [
+  gv:hex "8e7945";
+  gv:red "142";
+  gv:blue "69";
+  gv:green "121";
+  gv:score "10.049643";
+  gv:coverage "2.3933332000000003"
+], [
+  gv:hex "afa37d";
+  gv:red "175";
+  gv:blue "125";
+  gv:green "163";
+  gv:score "4.4386722";
+  gv:coverage "0.96"
+], [
+  gv:hex "e7dca7";
+  gv:red "231";
+  gv:blue "167";
+  gv:green "220";
+  gv:score "1.3560640000000002";
+  gv:coverage "0.12"
+], [
+  gv:hex "8c7650";
+  gv:red "140";
+  gv:blue "80";
+  gv:green "118";
+  gv:score "0.74240454";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "d9c8bf";
+  gv:red "217";
+  gv:blue "191";
+  gv:green "200";
+  gv:score "0.72762119";
+  gv:coverage "3.38"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.764665"
+];
+    w:bagOfWords "ALCOHOL 20%\nNET CONTENTS\n4/5 QUART\nBY VOLUME\nURITA\nTRADE MARK\nSPECIAL\nCALIFORNIA\nPO RT\nBOTTLED BY\nFOUNTAINGROVE VINEYARD\nB. W. No. 1051\n14TH\nDISTRICT, CALIF.\nCALIFORNIA\nSANTA ROSA\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

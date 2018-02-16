@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1549";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA\nPASADA\nB ROAN.\nMARCA REGI STRADA\nBraulio Martinez y Hermanos, S.R.C.\nSANLU CAR DE BARRAMEDA\nSOLER AS FUNDA DAS EN 172 9 PRO CE DE N TES DE LA\nCASA SEGUNDO RID RUEJO\n"@spa;
+    gv:color [
+  gv:hex "655035";
+  gv:red "101";
+  gv:blue "53";
+  gv:green "80";
+  gv:score "14.547645000000001";
+  gv:coverage "1.3333334000000001"
+], [
+  gv:hex "d0bfa7";
+  gv:red "208";
+  gv:blue "167";
+  gv:green "191";
+  gv:score "10.295419";
+  gv:coverage "17.346667"
+], [
+  gv:hex "867357";
+  gv:red "134";
+  gv:blue "87";
+  gv:green "115";
+  gv:score "9.5406242";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "ac9c7e";
+  gv:red "172";
+  gv:blue "126";
+  gv:green "156";
+  gv:score "7.437636";
+  gv:coverage "1.68"
+], [
+  gv:hex "8d7343";
+  gv:red "141";
+  gv:blue "67";
+  gv:green "115";
+  gv:score "6.6263296";
+  gv:coverage "0.5"
+], [
+  gv:hex "ac9762";
+  gv:red "172";
+  gv:blue "98";
+  gv:green "151";
+  gv:score "5.7005577";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "6a4f23";
+  gv:red "106";
+  gv:blue "35";
+  gv:green "79";
+  gv:score "5.4257100000000005";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "45341d";
+  gv:red "69";
+  gv:blue "29";
+  gv:green "52";
+  gv:score "5.1410679";
+  gv:coverage "0.52"
+], [
+  gv:hex "cbc3b8";
+  gv:red "203";
+  gv:blue "184";
+  gv:green "195";
+  gv:score "4.6130709";
+  gv:coverage "12.086666"
+], [
+  gv:hex "90673b";
+  gv:red "144";
+  gv:blue "59";
+  gv:green "103";
+  gv:score "3.6419552";
+  gv:coverage "0.22"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.89171900000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MANZANILLA\nPASADA\nB ROAN.\nMARCA REGI STRADA\nBraulio Martinez y Hermanos, S.R.C.\nSANLU CAR DE BARRAMEDA\nSOLER AS FUNDA DAS EN 172 9 PRO CE DE N TES DE LA\nCASA SEGUNDO RID RUEJO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

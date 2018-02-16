@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0574";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Anno\n1952er\nBlidesheimer Berg Burgweg\nRiesling Splillese\nOriginal-Abfullung Weingut Seb. Felzen\nG. J, 45629\nNWEINHAUS DROSSECHOF\nAYER\n"@deu;
+    gv:color [
+  gv:hex "d0c0a0";
+  gv:red "208";
+  gv:blue "160";
+  gv:green "192";
+  gv:score "13.689655";
+  gv:coverage "7.359999999999999"
+], [
+  gv:hex "8c7542";
+  gv:red "140";
+  gv:blue "66";
+  gv:green "117";
+  gv:score "12.905248";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "665338";
+  gv:red "102";
+  gv:blue "56";
+  gv:green "83";
+  gv:score "10.732919";
+  gv:coverage "2.2466667"
+], [
+  gv:hex "ae9c7a";
+  gv:red "174";
+  gv:blue "122";
+  gv:green "156";
+  gv:score "13.407643";
+  gv:coverage "2.4333334"
+], [
+  gv:hex "af9966";
+  gv:red "175";
+  gv:blue "102";
+  gv:green "153";
+  gv:score "12.638819000000002";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "877458";
+  gv:red "135";
+  gv:blue "88";
+  gv:green "116";
+  gv:score "10.396634";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "6a5526";
+  gv:red "106";
+  gv:blue "38";
+  gv:green "85";
+  gv:score "6.7866355";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "d1bb88";
+  gv:red "209";
+  gv:blue "136";
+  gv:green "187";
+  gv:score "6.5696523000000004";
+  gv:coverage "0.5"
+], [
+  gv:hex "45341b";
+  gv:red "69";
+  gv:blue "27";
+  gv:green "52";
+  gv:score "4.6442922";
+  gv:coverage "1.54"
+], [
+  gv:hex "50380e";
+  gv:red "80";
+  gv:blue "14";
+  gv:green "56";
+  gv:score "1.79523";
+  gv:coverage "0.10666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.885434"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "54.991871"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.869252"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.61833"
+];
+    w:bagOfWords "Anno\n1952er\nBlidesheimer Berg Burgweg\nRiesling Splillese\nOriginal-Abfullung Weingut Seb. Felzen\nG. J, 45629\nNWEINHAUS DROSSECHOF\nAYER\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

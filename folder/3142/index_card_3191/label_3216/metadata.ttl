@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3216";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "PRODUCE OF FRANCE\nABB\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDE POSE.\n"@fra;
+    gv:color [
+  gv:hex "dbc4ad";
+  gv:red "219";
+  gv:blue "173";
+  gv:green "196";
+  gv:score "34.453717";
+  gv:coverage "15.846667"
+], [
+  gv:hex "91715f";
+  gv:red "145";
+  gv:blue "95";
+  gv:green "113";
+  gv:score "11.401518";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "89391e";
+  gv:red "137";
+  gv:blue "30";
+  gv:green "57";
+  gv:score "0.97983247";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "b29983";
+  gv:red "178";
+  gv:blue "131";
+  gv:green "153";
+  gv:score "15.005846";
+  gv:coverage "2.62"
+], [
+  gv:hex "8b745b";
+  gv:red "139";
+  gv:blue "91";
+  gv:green "116";
+  gv:score "8.6620547";
+  gv:coverage "1.4533333000000002"
+], [
+  gv:hex "725241";
+  gv:red "114";
+  gv:blue "65";
+  gv:green "82";
+  gv:score "6.6595748";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "942303";
+  gv:red "148";
+  gv:blue "3";
+  gv:green "35";
+  gv:score "0.065910211";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "b39280";
+  gv:red "179";
+  gv:blue "128";
+  gv:green "146";
+  gv:score "6.5162338";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "edd8bf";
+  gv:red "237";
+  gv:blue "191";
+  gv:green "216";
+  gv:score "6.0543597";
+  gv:coverage "8.58"
+], [
+  gv:hex "6b553c";
+  gv:red "107";
+  gv:blue "60";
+  gv:green "85";
+  gv:score "4.4713996";
+  gv:coverage "0.7266666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.26666900000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.282912"
+];
+    w:bagOfWords "PRODUCE OF FRANCE\nABB\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDE POSE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

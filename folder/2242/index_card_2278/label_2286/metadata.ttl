@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2286";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "MIS EN B OUTEILLE AU CHATEAU\nCos D'ESTOURNEL 1947\nSAINT-ESTEPHE\nAPPELLATION CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "af9883";
+  gv:red "175";
+  gv:blue "131";
+  gv:green "152";
+  gv:score "38.019704999999995";
+  gv:coverage "4.68"
+], [
+  gv:hex "8d7661";
+  gv:red "141";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "26.93606";
+  gv:coverage "2.08"
+], [
+  gv:hex "d0baa7";
+  gv:red "208";
+  gv:blue "167";
+  gv:green "186";
+  gv:score "21.953265";
+  gv:coverage "10.273334"
+], [
+  gv:hex "92715b";
+  gv:red "146";
+  gv:blue "91";
+  gv:green "113";
+  gv:score "4.1377882999999995";
+  gv:coverage "0.3"
+], [
+  gv:hex "b69379";
+  gv:red "182";
+  gv:blue "121";
+  gv:green "147";
+  gv:score "2.6710588";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "715b46";
+  gv:red "113";
+  gv:blue "70";
+  gv:green "91";
+  gv:score "2.4544048999999997";
+  gv:coverage "0.18"
+], [
+  gv:hex "ddbaaa";
+  gv:red "221";
+  gv:blue "170";
+  gv:green "186";
+  gv:score "1.7481355";
+  gv:coverage "0.3"
+], [
+  gv:hex "edd7c4";
+  gv:red "237";
+  gv:blue "196";
+  gv:green "215";
+  gv:score "1.0096917";
+  gv:coverage "2.9866667"
+], [
+  gv:hex "2f2920";
+  gv:red "47";
+  gv:blue "32";
+  gv:green "41";
+  gv:score "0.0063976206999999995";
+  gv:coverage "0.06"
+], [
+  gv:hex "d0c0b4";
+  gv:red "208";
+  gv:blue "180";
+  gv:green "192";
+  gv:score "0.37874405";
+  gv:coverage "12.133333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.477936"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.232635"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.81005"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.040834999999994"
+];
+    w:bagOfWords "MIS EN B OUTEILLE AU CHATEAU\nCos D'ESTOURNEL 1947\nSAINT-ESTEPHE\nAPPELLATION CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

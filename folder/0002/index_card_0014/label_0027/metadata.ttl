@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0027";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "ARCA REGISTRADA\n43\nodegas Franco Esparolas\nogroito\nPain\nRio, a\n"@spa;
+    gv:color [
+  gv:hex "e7ba5d";
+  gv:red "231";
+  gv:blue "93";
+  gv:green "186";
+  gv:score "56.482648999999995";
+  gv:coverage "21.826667"
+], [
+  gv:hex "cb983c";
+  gv:red "203";
+  gv:blue "60";
+  gv:green "152";
+  gv:score "9.2766821";
+  gv:coverage "2.22"
+], [
+  gv:hex "7c4d19";
+  gv:red "124";
+  gv:blue "25";
+  gv:green "77";
+  gv:score "0.77439649";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "7a7553";
+  gv:red "122";
+  gv:blue "83";
+  gv:green "117";
+  gv:score "0.35853712";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "eed8b4";
+  gv:red "238";
+  gv:blue "180";
+  gv:green "216";
+  gv:score "0.23260430999999998";
+  gv:coverage "16.846667"
+], [
+  gv:hex "ebb457";
+  gv:red "235";
+  gv:blue "87";
+  gv:green "180";
+  gv:score "9.1472179";
+  gv:coverage "2.9666666"
+], [
+  gv:hex "c29b44";
+  gv:red "194";
+  gv:blue "68";
+  gv:green "155";
+  gv:score "8.5389115";
+  gv:coverage "2.5133334"
+], [
+  gv:hex "dcbd7a";
+  gv:red "220";
+  gv:blue "122";
+  gv:green "189";
+  gv:score "2.9838218999999997";
+  gv:coverage "3.2533332999999995"
+], [
+  gv:hex "9b6e1c";
+  gv:red "155";
+  gv:blue "28";
+  gv:green "110";
+  gv:score "1.9041872000000002";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "9a7926";
+  gv:red "154";
+  gv:blue "38";
+  gv:green "121";
+  gv:score "1.7113736000000002";
+  gv:coverage "0.42666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.971964"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "62.193626"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "61.318558"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.509481"
+];
+    w:bagOfWords "ARCA REGISTRADA\n43\nodegas Franco Esparolas\nogroito\nPain\nRio, a\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

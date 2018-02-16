@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3443";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF FRANCE\nTRADE\nMARK\nBOURGOGNE\nJ. FAIVELEY\nPROPRIETAIRE & COTE DORi\nCONTENTS\n12 FLUID OZ\nA NUIT 3\nBurg\n"@fra;
+    gv:color [
+  gv:hex "ddba88";
+  gv:red "221";
+  gv:blue "136";
+  gv:green "186";
+  gv:score "15.875912";
+  gv:coverage "5.086666699999999"
+], [
+  gv:hex "c39262";
+  gv:red "195";
+  gv:blue "98";
+  gv:green "146";
+  gv:score "14.951141000000002";
+  gv:coverage "4.0866666"
+], [
+  gv:hex "ddc09b";
+  gv:red "221";
+  gv:blue "155";
+  gv:green "192";
+  gv:score "12.62472";
+  gv:coverage "15.6"
+], [
+  gv:hex "ba9865";
+  gv:red "186";
+  gv:blue "101";
+  gv:green "152";
+  gv:score "12.127783";
+  gv:coverage "4.0466666"
+], [
+  gv:hex "9f7040";
+  gv:red "159";
+  gv:blue "64";
+  gv:green "112";
+  gv:score "11.061577";
+  gv:coverage "3.1733334"
+], [
+  gv:hex "e4b385";
+  gv:red "228";
+  gv:blue "133";
+  gv:green "179";
+  gv:score "10.202923";
+  gv:coverage "2.8533334"
+], [
+  gv:hex "977647";
+  gv:red "151";
+  gv:blue "71";
+  gv:green "118";
+  gv:score "5.3798586";
+  gv:coverage "1.66"
+], [
+  gv:hex "7e4f20";
+  gv:red "126";
+  gv:blue "32";
+  gv:green "79";
+  gv:score "3.783432";
+  gv:coverage "1.16"
+], [
+  gv:hex "b39773";
+  gv:red "179";
+  gv:blue "115";
+  gv:green "151";
+  gv:score "3.1167884999999997";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "947755";
+  gv:red "148";
+  gv:blue "85";
+  gv:green "119";
+  gv:score "2.2640062";
+  gv:coverage "0.9666666399999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.739678"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.544687999999994"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.009375"
+];
+    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF FRANCE\nTRADE\nMARK\nBOURGOGNE\nJ. FAIVELEY\nPROPRIETAIRE & COTE DORi\nCONTENTS\n12 FLUID OZ\nA NUIT 3\nBurg\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

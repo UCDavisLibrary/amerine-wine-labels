@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3742/label_3769";
+    dct:type "image";
+    w:bagOfWords "E PROF\nANTENORI\nVINE SANTO ROSSO\nMARCHESI L.E P. ANTINORI\nFIRENZE\n"@ita;
+    gv:color [
+  gv:hex "181311";
+  gv:red "24";
+  gv:blue "17";
+  gv:green "19";
+  gv:score "61.544091";
+  gv:coverage "21.846667"
+], [
+  gv:hex "352f2c";
+  gv:red "53";
+  gv:blue "44";
+  gv:green "47";
+  gv:score "14.262844999999999";
+  gv:coverage "3.9533332"
+], [
+  gv:hex "5a5451";
+  gv:red "90";
+  gv:blue "81";
+  gv:green "84";
+  gv:score "7.642756400000001";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "7b7571";
+  gv:red "123";
+  gv:blue "113";
+  gv:green "117";
+  gv:score "6.5022327";
+  gv:coverage "1.52"
+], [
+  gv:hex "a09994";
+  gv:red "160";
+  gv:blue "148";
+  gv:green "153";
+  gv:score "5.0959975";
+  gv:coverage "1.7333332"
+], [
+  gv:hex "cac4bf";
+  gv:red "202";
+  gv:blue "191";
+  gv:green "196";
+  gv:score "2.7396813";
+  gv:coverage "4.9666665"
+], [
+  gv:hex "e9e3de";
+  gv:red "233";
+  gv:blue "222";
+  gv:green "227";
+  gv:score "2.0219489999999998";
+  gv:coverage "47.153332999999996"
+], [
+  gv:hex "271e12";
+  gv:red "39";
+  gv:blue "18";
+  gv:green "30";
+  gv:score "0.09875725999999999";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "352d20";
+  gv:red "53";
+  gv:blue "32";
+  gv:green "45";
+  gv:score "0.032032811";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "605749";
+  gv:red "96";
+  gv:blue "73";
+  gv:green "87";
+  gv:score "0.022210439999999998";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.7035"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "E PROF\nANTENORI\nVINE SANTO ROSSO\nMARCHESI L.E P. ANTINORI\nFIRENZE\n"@ita;
+    wdt:P219 "ita";
+    wdt:P298 "ITA".

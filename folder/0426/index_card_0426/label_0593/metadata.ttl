@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0593";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Tacob Hour\nIM\nUND SCHIOSSGUT\nRECHARTSHAUSEN\n1945er\nRiidesheimer Kiesel\n"@deu;
+    gv:color [
+  gv:hex "cdbba9";
+  gv:red "205";
+  gv:blue "169";
+  gv:green "187";
+  gv:score "31.65217";
+  gv:coverage "17.94"
+], [
+  gv:hex "522b33";
+  gv:red "82";
+  gv:blue "51";
+  gv:green "43";
+  gv:score "2.2559019";
+  gv:coverage "0.44"
+], [
+  gv:hex "6b170a";
+  gv:red "107";
+  gv:blue "10";
+  gv:green "23";
+  gv:score "1.7175283";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "364f6a";
+  gv:red "54";
+  gv:blue "106";
+  gv:green "79";
+  gv:score "1.6152745";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "323971";
+  gv:red "50";
+  gv:blue "113";
+  gv:green "57";
+  gv:score "0.25861209999999996";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "b09c88";
+  gv:red "176";
+  gv:blue "136";
+  gv:green "156";
+  gv:score "15.266903000000001";
+  gv:coverage "9.9133335"
+], [
+  gv:hex "d0c2b6";
+  gv:red "208";
+  gv:blue "182";
+  gv:green "194";
+  gv:score "10.77106";
+  gv:coverage "5.4"
+], [
+  gv:hex "8b7966";
+  gv:red "139";
+  gv:blue "102";
+  gv:green "121";
+  gv:score "3.8839276999999996";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "62513f";
+  gv:red "98";
+  gv:blue "63";
+  gv:green "81";
+  gv:score "2.1610534";
+  gv:coverage "0.72"
+], [
+  gv:hex "4e2818";
+  gv:red "78";
+  gv:blue "24";
+  gv:green "40";
+  gv:score "2.1231269";
+  gv:coverage "0.26666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.290858"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.405539999999995"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.213682000000006"
+];
+    w:bagOfWords "Tacob Hour\nIM\nUND SCHIOSSGUT\nRECHARTSHAUSEN\n1945er\nRiidesheimer Kiesel\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

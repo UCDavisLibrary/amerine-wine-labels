@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3393";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "POM MARD\nAppellation d'origine Controlee\nCHARLES VIENOT\nNegociant Premeaux par Nuits-Saint-Georges\n"@fra;
+    gv:color [
+  gv:hex "debe99";
+  gv:red "222";
+  gv:blue "153";
+  gv:green "190";
+  gv:score "37.268549";
+  gv:coverage "22.493333"
+], [
+  gv:hex "c59a70";
+  gv:red "197";
+  gv:blue "112";
+  gv:green "154";
+  gv:score "6.8517923";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "d9b58a";
+  gv:red "217";
+  gv:blue "138";
+  gv:green "181";
+  gv:score "12.490302";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "e2b793";
+  gv:red "226";
+  gv:blue "147";
+  gv:green "183";
+  gv:score "12.002514";
+  gv:coverage "2.82"
+], [
+  gv:hex "dcb087";
+  gv:red "220";
+  gv:blue "135";
+  gv:green "176";
+  gv:score "5.7653494";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "986d48";
+  gv:red "152";
+  gv:blue "72";
+  gv:green "109";
+  gv:score "5.2401653999999995";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "764925";
+  gv:red "118";
+  gv:blue "37";
+  gv:green "73";
+  gv:score "4.39579";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "b99a75";
+  gv:red "185";
+  gv:blue "117";
+  gv:green "154";
+  gv:score "3.3684641";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "3b0400";
+  gv:red "59";
+  gv:blue "undefined";
+  gv:green "4";
+  gv:score "0.0275206";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "bd9a71";
+  gv:red "189";
+  gv:blue "113";
+  gv:green "154";
+  gv:score "2.6074337";
+  gv:coverage "0.45999999999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.64198999999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.601485000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.46611"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "52.579527999999996"
+];
+    w:bagOfWords "POM MARD\nAppellation d'origine Controlee\nCHARLES VIENOT\nNegociant Premeaux par Nuits-Saint-Georges\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

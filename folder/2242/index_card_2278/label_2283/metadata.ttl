@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2283";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "Cos D'ESTOURNEL 1929\nMIS EN BOUTEILLE AU CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "9d735a";
+  gv:red "157";
+  gv:blue "90";
+  gv:green "115";
+  gv:score "33.63533";
+  gv:coverage "3.3933334000000004"
+], [
+  gv:hex "d8c0ab";
+  gv:red "216";
+  gv:blue "171";
+  gv:green "192";
+  gv:score "10.583782999999999";
+  gv:coverage "44.646665"
+], [
+  gv:hex "b9907a";
+  gv:red "185";
+  gv:blue "122";
+  gv:green "144";
+  gv:score "31.478794999999998";
+  gv:coverage "3.56"
+], [
+  gv:hex "dbb49f";
+  gv:red "219";
+  gv:blue "159";
+  gv:green "180";
+  gv:score "9.4409131";
+  gv:coverage "1.7666666000000002"
+], [
+  gv:hex "b49a85";
+  gv:red "180";
+  gv:blue "133";
+  gv:green "154";
+  gv:score "7.827735700000001";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "947a63";
+  gv:red "148";
+  gv:blue "99";
+  gv:green "122";
+  gv:score "2.2297805";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "eed6c4";
+  gv:red "238";
+  gv:blue "196";
+  gv:green "214";
+  gv:score "1.4920921999999999";
+  gv:coverage "30.646667"
+], [
+  gv:hex "a67452";
+  gv:red "166";
+  gv:blue "82";
+  gv:green "116";
+  gv:score "0.94157867";
+  gv:coverage "0.08"
+], [
+  gv:hex "81573f";
+  gv:red "129";
+  gv:blue "63";
+  gv:green "87";
+  gv:score "0.8836290800000001";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "b6825f";
+  gv:red "182";
+  gv:blue "95";
+  gv:green "130";
+  gv:score "0.78697344";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "62.725812000000005"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.878139999999995"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "52.757054999999994"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.818979"
+];
+    w:bagOfWords "Cos D'ESTOURNEL 1929\nMIS EN BOUTEILLE AU CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

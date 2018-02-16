@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1579/label_1581";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "Registro oficial de EmbotelladoresN:32.\ne\nMOSCAT BL FRUTA\nSanlucarde Barrameda\n"@spa;
+    gv:color [
+  gv:hex "c6937c";
+  gv:red "198";
+  gv:blue "124";
+  gv:green "147";
+  gv:score "10.337133";
+  gv:coverage "2.5266666"
+], [
+  gv:hex "b89443";
+  gv:red "184";
+  gv:blue "67";
+  gv:green "148";
+  gv:score "4.2808335";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "4a2911";
+  gv:red "74";
+  gv:blue "17";
+  gv:green "41";
+  gv:score "3.6782593";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "e1b09a";
+  gv:red "225";
+  gv:blue "154";
+  gv:green "176";
+  gv:score "7.5636521";
+  gv:coverage "3"
+], [
+  gv:hex "d5bea7";
+  gv:red "213";
+  gv:blue "167";
+  gv:green "190";
+  gv:score "6.3911475";
+  gv:coverage "27.26"
+], [
+  gv:hex "c39467";
+  gv:red "195";
+  gv:blue "103";
+  gv:green "148";
+  gv:score "4.8055593";
+  gv:coverage "0.38"
+], [
+  gv:hex "9f6f59";
+  gv:red "159";
+  gv:blue "89";
+  gv:green "111";
+  gv:score "4.2687714";
+  gv:coverage "1.22"
+], [
+  gv:hex "b59559";
+  gv:red "181";
+  gv:blue "89";
+  gv:green "149";
+  gv:score "4.2105306";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "90733c";
+  gv:red "144";
+  gv:blue "60";
+  gv:green "115";
+  gv:score "4.0385917000000005";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "9c6d42";
+  gv:red "156";
+  gv:blue "66";
+  gv:green "109";
+  gv:score "3.8166974";
+  gv:coverage "0.32"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.002065"
+];
+    w:bagOfWords "Registro oficial de EmbotelladoresN:32.\ne\nMOSCAT BL FRUTA\nSanlucarde Barrameda\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

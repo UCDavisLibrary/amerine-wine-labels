@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1305";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "CAVES COOPERATIVES DESVIGNERONS\nSTADTBREDIMUS S/MoSELLE\nGR. D DE LUXBG.)\n1948 Riesling Diefert\n"@deu;
+    gv:color [
+  gv:hex "e0bf8a";
+  gv:red "224";
+  gv:blue "138";
+  gv:green "191";
+  gv:score "26.785287000000004";
+  gv:coverage "12.766667000000002"
+], [
+  gv:hex "ba9966";
+  gv:red "186";
+  gv:blue "102";
+  gv:green "153";
+  gv:score "16.287814";
+  gv:coverage "6.819999999999999"
+], [
+  gv:hex "94754a";
+  gv:red "148";
+  gv:blue "74";
+  gv:green "117";
+  gv:score "8.8287242";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "957655";
+  gv:red "149";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "8.1676096";
+  gv:coverage "1.9866666000000002"
+], [
+  gv:hex "b39370";
+  gv:red "179";
+  gv:blue "112";
+  gv:green "147";
+  gv:score "6.4585729999999995";
+  gv:coverage "1.9666666"
+], [
+  gv:hex "dcbe98";
+  gv:red "220";
+  gv:blue "152";
+  gv:green "190";
+  gv:score "4.8780397";
+  gv:coverage "5.54"
+], [
+  gv:hex "c4935f";
+  gv:red "196";
+  gv:blue "95";
+  gv:green "147";
+  gv:score "4.4543862";
+  gv:coverage "2.44"
+], [
+  gv:hex "9c6c3e";
+  gv:red "156";
+  gv:blue "62";
+  gv:green "108";
+  gv:score "4.2867482";
+  gv:coverage "1.6400000000000001"
+], [
+  gv:hex "906e50";
+  gv:red "144";
+  gv:blue "80";
+  gv:green "110";
+  gv:score "4.2531210999999995";
+  gv:coverage "1.1066667000000001"
+], [
+  gv:hex "e7b67f";
+  gv:red "231";
+  gv:blue "127";
+  gv:green "182";
+  gv:score "4.1618205999999995";
+  gv:coverage "2.4466667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.631495"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "61.291503999999996"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.902206"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.48936"
+];
+    w:bagOfWords "CAVES COOPERATIVES DESVIGNERONS\nSTADTBREDIMUS S/MoSELLE\nGR. D DE LUXBG.)\n1948 Riesling Diefert\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

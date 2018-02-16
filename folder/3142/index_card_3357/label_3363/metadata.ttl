@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3363";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "YTN DE BOURGOGNE\nPOM MARIO\nLES GRAND EPENOTS\n1929\nMise en Bouteilles au Domaine\nLouis Poirier, Propriétaire, POMMARD (Cote-d'Or)\nAPPELLATION D'ORIGINE CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "dbbf9c";
+  gv:red "219";
+  gv:blue "156";
+  gv:green "191";
+  gv:score "42.793787";
+  gv:coverage "12.153333"
+], [
+  gv:hex "c7966b";
+  gv:red "199";
+  gv:blue "107";
+  gv:green "150";
+  gv:score "7.5846523";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "4d330d";
+  gv:red "77";
+  gv:blue "13";
+  gv:green "51";
+  gv:score "1.4909755";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "ba9e7a";
+  gv:red "186";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "11.678176";
+  gv:coverage "1.8733334000000001"
+], [
+  gv:hex "e2be92";
+  gv:red "226";
+  gv:blue "146";
+  gv:green "190";
+  gv:score "10.156091";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "8a704f";
+  gv:red "138";
+  gv:blue "79";
+  gv:green "112";
+  gv:score "7.2590865";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "e4b388";
+  gv:red "228";
+  gv:blue "136";
+  gv:green "179";
+  gv:score "7.25007";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "e7bd99";
+  gv:red "231";
+  gv:blue "153";
+  gv:green "189";
+  gv:score "2.8737120000000003";
+  gv:coverage "0.4"
+], [
+  gv:hex "eed8bb";
+  gv:red "238";
+  gv:blue "187";
+  gv:green "216";
+  gv:score "1.532737";
+  gv:coverage "10.133334"
+], [
+  gv:hex "6d5333";
+  gv:red "109";
+  gv:blue "51";
+  gv:green "83";
+  gv:score "1.2803131";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.091415"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "YTN DE BOURGOGNE\nPOM MARIO\nLES GRAND EPENOTS\n1929\nMise en Bouteilles au Domaine\nLouis Poirier, Propriétaire, POMMARD (Cote-d'Or)\nAPPELLATION D'ORIGINE CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

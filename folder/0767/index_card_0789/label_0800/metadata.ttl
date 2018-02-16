@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0800";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "tus cadet\nne Seure maine (APPELLATION CONTROLEE)\nEVRE 8 M.\nDET\nDOMAINE\nAS MOUT\nDE Pose\n"@fra;
+    gv:color [
+  gv:hex "dac2a0";
+  gv:red "218";
+  gv:blue "160";
+  gv:green "194";
+  gv:score "15.804753";
+  gv:coverage "9.68"
+], [
+  gv:hex "8d753f";
+  gv:red "141";
+  gv:blue "63";
+  gv:green "117";
+  gv:score "9.4085358";
+  gv:coverage "2.4733333"
+], [
+  gv:hex "392f13";
+  gv:red "57";
+  gv:blue "19";
+  gv:green "47";
+  gv:score "2.2503821";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "d9be88";
+  gv:red "217";
+  gv:blue "136";
+  gv:green "190";
+  gv:score "15.529664000000002";
+  gv:coverage "3.2266665"
+], [
+  gv:hex "e9b88c";
+  gv:red "233";
+  gv:blue "140";
+  gv:green "184";
+  gv:score "9.511973";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "b59c5e";
+  gv:red "181";
+  gv:blue "94";
+  gv:green "156";
+  gv:score "7.1087472";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "b39c7c";
+  gv:red "179";
+  gv:blue "124";
+  gv:green "156";
+  gv:score "5.6701030999999995";
+  gv:coverage "2.7266665999999997"
+], [
+  gv:hex "6b5121";
+  gv:red "107";
+  gv:blue "33";
+  gv:green "81";
+  gv:score "5.228977700000001";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "e6b99b";
+  gv:red "230";
+  gv:blue "155";
+  gv:green "185";
+  gv:score "5.2083239";
+  gv:coverage "1.46"
+], [
+  gv:hex "c19278";
+  gv:red "193";
+  gv:blue "120";
+  gv:green "146";
+  gv:score "2.7783971000000003";
+  gv:coverage "0.9266667100000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "72.259134"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "71.467561"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.722506"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.328233000000004"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.76903000000001"
+];
+    w:bagOfWords "tus cadet\nne Seure maine (APPELLATION CONTROLEE)\nEVRE 8 M.\nDET\nDOMAINE\nAS MOUT\nDE Pose\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

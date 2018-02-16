@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1929/label_1945";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "VINA\nTORRE. BRE VA\nAT\nD D\nO L\nO R\nSAN LUCA R\nBODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nS O\nANDALUCIA ES PANA)\nLit Jerez Industrial\n"@spa;
+    gv:color [
+  gv:hex "ae2404";
+  gv:red "174";
+  gv:blue "4";
+  gv:green "36";
+  gv:score "8.5755348";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "a76b11";
+  gv:red "167";
+  gv:blue "17";
+  gv:green "107";
+  gv:score "4.04349";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "ba9b0f";
+  gv:red "186";
+  gv:blue "15";
+  gv:green "155";
+  gv:score "3.5987238999999995";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "d3c4ab";
+  gv:red "211";
+  gv:blue "171";
+  gv:green "196";
+  gv:score "2.0013031";
+  gv:coverage "21.12"
+], [
+  gv:hex "685316";
+  gv:red "104";
+  gv:blue "22";
+  gv:green "83";
+  gv:score "1.7317140000000002";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "0c49a1";
+  gv:red "12";
+  gv:blue "161";
+  gv:green "73";
+  gv:score "1.5816472000000001";
+  gv:coverage "0.16"
+], [
+  gv:hex "11316f";
+  gv:red "17";
+  gv:blue "111";
+  gv:green "49";
+  gv:score "1.0110176";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "c99263";
+  gv:red "201";
+  gv:blue "99";
+  gv:green "146";
+  gv:score "1.0053553";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "123eb2";
+  gv:red "18";
+  gv:blue "178";
+  gv:green "62";
+  gv:score "0.9485199099999999";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "1f1130";
+  gv:red "31";
+  gv:blue "48";
+  gv:green "17";
+  gv:score "0.25811393000000005";
+  gv:coverage "0.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.639677"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.96844900000001"
+];
+    w:bagOfWords "VINA\nTORRE. BRE VA\nAT\nD D\nO L\nO R\nSAN LUCA R\nBODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nS O\nANDALUCIA ES PANA)\nLit Jerez Industrial\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

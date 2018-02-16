@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2003";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "GRAFICA ANDALVIAS PTO STA MARIA\nTRAB\nNo 33\nSAN LUCAR\nESPECIAL\n"@spa;
+    gv:color [
+  gv:hex "a57180";
+  gv:red "165";
+  gv:blue "128";
+  gv:green "113";
+  gv:score "46.263939";
+  gv:coverage "24.446666"
+], [
+  gv:hex "5f1716";
+  gv:red "95";
+  gv:blue "22";
+  gv:green "23";
+  gv:score "7.785937199999999";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "b4808f";
+  gv:red "180";
+  gv:blue "143";
+  gv:green "128";
+  gv:score "13.9777";
+  gv:coverage "7.920000000000001"
+], [
+  gv:hex "ab6f82";
+  gv:red "171";
+  gv:blue "130";
+  gv:green "111";
+  gv:score "8.3654881";
+  gv:coverage "3.5733335"
+], [
+  gv:hex "630b06";
+  gv:red "99";
+  gv:blue "6";
+  gv:green "11";
+  gv:score "4.681297";
+  gv:coverage "0.32"
+], [
+  gv:hex "794f54";
+  gv:red "121";
+  gv:blue "84";
+  gv:green "79";
+  gv:score "4.3432318";
+  gv:coverage "1.3933334"
+], [
+  gv:hex "b87c92";
+  gv:red "184";
+  gv:blue "146";
+  gv:green "124";
+  gv:score "2.91582";
+  gv:coverage "1"
+], [
+  gv:hex "9a6761";
+  gv:red "154";
+  gv:blue "97";
+  gv:green "103";
+  gv:score "2.5058480000000003";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "774c42";
+  gv:red "119";
+  gv:blue "66";
+  gv:green "76";
+  gv:score "1.9787526";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "803f3f";
+  gv:red "128";
+  gv:blue "63";
+  gv:green "63";
+  gv:score "1.8027853";
+  gv:coverage "0.4"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01fklc>;
+  gv:desc "pink";
+  gv:score "86.93137800000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.12061299999999"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.119353999999994"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.088881"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.66342900000001"
+];
+    w:bagOfWords "GRAFICA ANDALVIAS PTO STA MARIA\nTRAB\nNo 33\nSAN LUCAR\nESPECIAL\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2668";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "Beaujolais\nAppellation Controlée\nfaye & Ce\nnégociants acon (Saone-se foire)\n"@fra;
+    gv:color [
+  gv:hex "e3bd89";
+  gv:red "227";
+  gv:blue "137";
+  gv:green "189";
+  gv:score "22.880603";
+  gv:coverage "8.4466666"
+], [
+  gv:hex "996e3f";
+  gv:red "153";
+  gv:blue "63";
+  gv:green "110";
+  gv:score "7.4562564";
+  gv:coverage "2.8533334"
+], [
+  gv:hex "e8b981";
+  gv:red "232";
+  gv:blue "129";
+  gv:green "185";
+  gv:score "17.685223999999998";
+  gv:coverage "5.8866667999999995"
+], [
+  gv:hex "ba9868";
+  gv:red "186";
+  gv:blue "104";
+  gv:green "152";
+  gv:score "10.609736";
+  gv:coverage "3.9333332"
+], [
+  gv:hex "947345";
+  gv:red "148";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "6.5343305";
+  gv:coverage "2.2399999999999998"
+], [
+  gv:hex "764e23";
+  gv:red "118";
+  gv:blue "35";
+  gv:green "78";
+  gv:score "6.2819652";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "c09360";
+  gv:red "192";
+  gv:blue "96";
+  gv:green "147";
+  gv:score "6.2028416";
+  gv:coverage "2.5533333"
+], [
+  gv:hex "e1c49e";
+  gv:red "225";
+  gv:blue "158";
+  gv:green "196";
+  gv:score "4.9312439";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "411300";
+  gv:red "65";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "0.047854229000000005";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "f6d9b5";
+  gv:red "246";
+  gv:blue "181";
+  gv:green "217";
+  gv:score "3.7319142";
+  gv:coverage "17.386666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.30635"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "58.028769000000004"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.056115999999996"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.51770799999999"
+];
+    w:bagOfWords "Beaujolais\nAppellation Controlée\nfaye & Ce\nnégociants acon (Saone-se foire)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1091/label_1093";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "Riesling-Sylpanew\n1946\nVerband ostschweiz. and Wirtschaft\nUOLG\nGenossenschaften (VO.LG.) Winterthur\n"@deu;
+    gv:color [
+  gv:hex "dbc68b";
+  gv:red "219";
+  gv:blue "139";
+  gv:green "198";
+  gv:score "50.908995000000004";
+  gv:coverage "13.386667"
+], [
+  gv:hex "9ca562";
+  gv:red "156";
+  gv:blue "98";
+  gv:green "165";
+  gv:score "11.507654";
+  gv:coverage "1.8266667"
+], [
+  gv:hex "bfc583";
+  gv:red "191";
+  gv:blue "131";
+  gv:green "197";
+  gv:score "11.033363999999999";
+  gv:coverage "1.9"
+], [
+  gv:hex "b1a460";
+  gv:red "177";
+  gv:blue "96";
+  gv:green "164";
+  gv:score "6.785620000000001";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "dfcca5";
+  gv:red "223";
+  gv:blue "165";
+  gv:green "204";
+  gv:score "5.7848725";
+  gv:coverage "10.673333999999999"
+], [
+  gv:hex "6d803f";
+  gv:red "109";
+  gv:blue "63";
+  gv:green "128";
+  gv:score "3.9728544999999995";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "e7daa2";
+  gv:red "231";
+  gv:blue "162";
+  gv:green "218";
+  gv:score "2.6333943";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "55843e";
+  gv:red "85";
+  gv:blue "62";
+  gv:green "132";
+  gv:score "1.6510801";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "77a862";
+  gv:red "119";
+  gv:blue "98";
+  gv:green "168";
+  gv:score "1.4719194999999998";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "d6e3a5";
+  gv:red "214";
+  gv:blue "165";
+  gv:green "227";
+  gv:score "1.1063849000000001";
+  gv:coverage "0.21333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.795761999999996"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.9116"
+];
+    w:bagOfWords "Riesling-Sylpanew\n1946\nVerband ostschweiz. and Wirtschaft\nUOLG\nGenossenschaften (VO.LG.) Winterthur\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

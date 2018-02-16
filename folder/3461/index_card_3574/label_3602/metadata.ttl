@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3602";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "BOTTLED AT THE WINERY\nESTABLISHED\nBB3\nVALLE de ORO\nLIVERMORE VALLEY\nll uni Blatt r\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nWENTE BROS.\n14TH DIST.\nNo. 893\nCALIF\nLIVERMORE, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d9c1a1";
+  gv:red "217";
+  gv:blue "161";
+  gv:green "193";
+  gv:score "31.512406";
+  gv:coverage "24.58"
+], [
+  gv:hex "b99a68";
+  gv:red "185";
+  gv:blue "104";
+  gv:green "154";
+  gv:score "16.00236";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "a57935";
+  gv:red "165";
+  gv:blue "53";
+  gv:green "121";
+  gv:score "0.27997035";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "d9b987";
+  gv:red "217";
+  gv:blue "135";
+  gv:green "185";
+  gv:score "13.807283";
+  gv:coverage "2.5"
+], [
+  gv:hex "b59d7d";
+  gv:red "181";
+  gv:blue "125";
+  gv:green "157";
+  gv:score "7.294345600000001";
+  gv:coverage "3.16"
+], [
+  gv:hex "947849";
+  gv:red "148";
+  gv:blue "73";
+  gv:green "120";
+  gv:score "5.3501781";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "897555";
+  gv:red "137";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "4.9230862";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "675233";
+  gv:red "103";
+  gv:blue "51";
+  gv:green "82";
+  gv:score "3.9686013";
+  gv:coverage "0.74"
+], [
+  gv:hex "675026";
+  gv:red "103";
+  gv:blue "38";
+  gv:green "80";
+  gv:score "3.7963297";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "eed8ba";
+  gv:red "238";
+  gv:blue "186";
+  gv:green "216";
+  gv:score "3.3022191";
+  gv:coverage "16.966666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.383216"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "52.470028"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.978511000000005"
+];
+    w:bagOfWords "BOTTLED AT THE WINERY\nESTABLISHED\nBB3\nVALLE de ORO\nLIVERMORE VALLEY\nll uni Blatt r\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nWENTE BROS.\n14TH DIST.\nNo. 893\nCALIF\nLIVERMORE, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

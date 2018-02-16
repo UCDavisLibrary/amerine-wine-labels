@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1654/index_card_1702/label_1712";
+    dct:type "image";
+    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
+    w:bagOfWords "PRODUCED AND BOTTLED By\nCLAUSS\nGREECE\nTHE FAMOUS\nN WINE OF GREECE\nO E\nn E P\nTHE\no N O n o H T K H E E T A\nl PI A\nAXATA CLAUSS EA a\nPRODUCE OF GREECE\nra NTED IN GREECE.\n"@grc;
+    gv:color [
+  gv:hex "887454";
+  gv:red "136";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "13.037646";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "c59369";
+  gv:red "197";
+  gv:blue "105";
+  gv:green "147";
+  gv:score "10.618901";
+  gv:coverage "3.4666665"
+], [
+  gv:hex "a9230f";
+  gv:red "169";
+  gv:blue "15";
+  gv:green "35";
+  gv:score "2.1398334";
+  gv:coverage "0.12"
+], [
+  gv:hex "b09777";
+  gv:red "176";
+  gv:blue "119";
+  gv:green "151";
+  gv:score "9.4958074";
+  gv:coverage "1.9733334000000002"
+], [
+  gv:hex "c09375";
+  gv:red "192";
+  gv:blue "117";
+  gv:green "147";
+  gv:score "9.473101";
+  gv:coverage "2.7266665999999997"
+], [
+  gv:hex "9e6d45";
+  gv:red "158";
+  gv:blue "69";
+  gv:green "109";
+  gv:score "8.26871";
+  gv:coverage "1.6933333"
+], [
+  gv:hex "685639";
+  gv:red "104";
+  gv:blue "57";
+  gv:green "86";
+  gv:score "8.0757871";
+  gv:coverage "1.28"
+], [
+  gv:hex "9c7155";
+  gv:red "156";
+  gv:blue "85";
+  gv:green "113";
+  gv:score "6.594453";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "daaf90";
+  gv:red "218";
+  gv:blue "144";
+  gv:green "175";
+  gv:score "5.6392428";
+  gv:coverage "2.22"
+], [
+  gv:hex "8f7147";
+  gv:red "143";
+  gv:blue "71";
+  gv:green "113";
+  gv:score "4.5346400000000004";
+  gv:coverage "0.63333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "59.802443000000004"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "57.307792"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "54.967575999999994"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.574569000000004"
+];
+    w:bagOfWords "PRODUCED AND BOTTLED By\nCLAUSS\nGREECE\nTHE FAMOUS\nN WINE OF GREECE\nO E\nn E P\nTHE\no N O n o H T K H E E T A\nl PI A\nAXATA CLAUSS EA a\nPRODUCE OF GREECE\nra NTED IN GREECE.\n"@grc;
+    wdt:P219 "grc";
+    w:WineType w:Still;
+    wdt:P298 "GRC".

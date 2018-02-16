@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1538";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "JUAN PEDROLUQUE\nDORADA\nMANZANILLA PAS ADA\n"@spa;
+    gv:color [
+  gv:hex "32170d";
+  gv:red "50";
+  gv:blue "13";
+  gv:green "23";
+  gv:score "50.309943999999994";
+  gv:coverage "16.939999999999998"
+], [
+  gv:hex "d9c5b6";
+  gv:red "217";
+  gv:blue "182";
+  gv:green "197";
+  gv:score "1.4683017";
+  gv:coverage "13.919999999999998"
+], [
+  gv:hex "40241a";
+  gv:red "64";
+  gv:blue "26";
+  gv:green "36";
+  gv:score "36.74449";
+  gv:coverage "17.806667"
+], [
+  gv:hex "674b40";
+  gv:red "103";
+  gv:blue "64";
+  gv:green "75";
+  gv:score "4.5982707";
+  gv:coverage "2.3800000000000003"
+], [
+  gv:hex "8d7166";
+  gv:red "141";
+  gv:blue "102";
+  gv:green "113";
+  gv:score "1.9645965";
+  gv:coverage "1.1533333"
+], [
+  gv:hex "250a03";
+  gv:red "37";
+  gv:blue "3";
+  gv:green "10";
+  gv:score "1.6908769000000001";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "b1978b";
+  gv:red "177";
+  gv:blue "139";
+  gv:green "151";
+  gv:score "0.80311727";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "f1dbce";
+  gv:red "241";
+  gv:blue "206";
+  gv:green "219";
+  gv:score "0.79928041";
+  gv:coverage "26.240000000000002"
+], [
+  gv:hex "ae9187";
+  gv:red "174";
+  gv:blue "135";
+  gv:green "145";
+  gv:score "0.54293987";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "402c1f";
+  gv:red "64";
+  gv:blue "31";
+  gv:green "44";
+  gv:score "0.34042937";
+  gv:coverage "0.52"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "68.37689999999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.00863"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "50.60252"
+];
+    w:bagOfWords "JUAN PEDROLUQUE\nDORADA\nMANZANILLA PAS ADA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

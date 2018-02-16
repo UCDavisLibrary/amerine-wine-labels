@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3603";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "BOTTLED AT THE WINE\nVINTAGE\n1939\nESTABLISHED 1883\nNALLE deORO\nLIVERMORE VALLEY\nuni Blanr\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nB. W\nWENTE BROS.\n14TH DIST.\nNo. 893\nCALIF.\nLIVERMORE, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d2c0a7";
+  gv:red "210";
+  gv:blue "167";
+  gv:green "192";
+  gv:score "24.600936";
+  gv:coverage "13.100000000000001"
+], [
+  gv:hex "2f1501";
+  gv:red "47";
+  gv:blue "1";
+  gv:green "21";
+  gv:score "1.8140048";
+  gv:coverage "0.12"
+], [
+  gv:hex "b06262";
+  gv:red "176";
+  gv:blue "98";
+  gv:green "98";
+  gv:score "1.5966741";
+  gv:coverage "0.2"
+], [
+  gv:hex "af9b7f";
+  gv:red "175";
+  gv:blue "127";
+  gv:green "155";
+  gv:score "17.954348";
+  gv:coverage "3.5866667"
+], [
+  gv:hex "887459";
+  gv:red "136";
+  gv:blue "89";
+  gv:green "116";
+  gv:score "11.9836";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "ecdcc6";
+  gv:red "236";
+  gv:blue "198";
+  gv:green "220";
+  gv:score "7.6161883999999995";
+  gv:coverage "20.866667"
+], [
+  gv:hex "907849";
+  gv:red "144";
+  gv:blue "73";
+  gv:green "120";
+  gv:score "6.757347299999999";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "65523a";
+  gv:red "101";
+  gv:blue "58";
+  gv:green "82";
+  gv:score "6.6656023";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "ad9563";
+  gv:red "173";
+  gv:blue "99";
+  gv:green "149";
+  gv:score "6.3143194";
+  gv:coverage "0.38"
+], [
+  gv:hex "45331c";
+  gv:red "69";
+  gv:blue "28";
+  gv:green "51";
+  gv:score "4.06557";
+  gv:coverage "0.44666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.4039"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "69.146615"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "50.461888"
+];
+    w:bagOfWords "BOTTLED AT THE WINE\nVINTAGE\n1939\nESTABLISHED 1883\nNALLE deORO\nLIVERMORE VALLEY\nuni Blanr\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nB. W\nWENTE BROS.\n14TH DIST.\nNo. 893\nCALIF.\nLIVERMORE, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1475";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "FINE WINES\nTRADEMARK\nWIDMER'S\nELVIRA WINE\nMADE FROM ELVIRA GRAPES\nPRODUCED AND BOTTLED BY\nALCOHOL 12.5% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d4c2b0";
+  gv:red "212";
+  gv:blue "176";
+  gv:green "194";
+  gv:score "23.790449";
+  gv:coverage "5.9733335"
+], [
+  gv:hex "624f37";
+  gv:red "98";
+  gv:blue "55";
+  gv:green "79";
+  gv:score "12.552471";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "1a0f06";
+  gv:red "26";
+  gv:blue "6";
+  gv:green "15";
+  gv:score "1.2510288";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "ac9987";
+  gv:red "172";
+  gv:blue "135";
+  gv:green "153";
+  gv:score "14.937949";
+  gv:coverage "2.2066665999999997"
+], [
+  gv:hex "8a765f";
+  gv:red "138";
+  gv:blue "95";
+  gv:green "118";
+  gv:score "12.005872";
+  gv:coverage "1.06"
+], [
+  gv:hex "cfc3b8";
+  gv:red "207";
+  gv:blue "184";
+  gv:green "195";
+  gv:score "9.6453942";
+  gv:coverage "14.773333"
+], [
+  gv:hex "eaddd2";
+  gv:red "234";
+  gv:blue "210";
+  gv:green "221";
+  gv:score "4.9650874";
+  gv:coverage "71.153331"
+], [
+  gv:hex "493620";
+  gv:red "73";
+  gv:blue "32";
+  gv:green "54";
+  gv:score "4.6497237";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "ecdbc9";
+  gv:red "236";
+  gv:blue "201";
+  gv:green "219";
+  gv:score "4.3275625";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "ab9e94";
+  gv:red "171";
+  gv:blue "148";
+  gv:green "158";
+  gv:score "3.3816416";
+  gv:coverage "0.9333332999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.623946"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.222343"
+];
+    w:bagOfWords "FINE WINES\nTRADEMARK\nWIDMER'S\nELVIRA WINE\nMADE FROM ELVIRA GRAPES\nPRODUCED AND BOTTLED BY\nALCOHOL 12.5% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

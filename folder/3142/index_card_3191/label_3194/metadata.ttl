@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3194";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "3 x\nBONNES MARES\nComte Georges de VOGUE\nA CHAMBOLLE-MUSIGNY, FRANCE\n1954\nis en bouteilles a la propriete\n"@fra;
+    gv:color [
+  gv:hex "e0c19c";
+  gv:red "224";
+  gv:blue "156";
+  gv:green "193";
+  gv:score "52.31570599999999";
+  gv:coverage "32.486664999999995"
+], [
+  gv:hex "381900";
+  gv:red "56";
+  gv:blue "undefined";
+  gv:green "25";
+  gv:score "0.31836848";
+  gv:coverage "0.1"
+], [
+  gv:hex "e0bc8f";
+  gv:red "224";
+  gv:blue "143";
+  gv:green "188";
+  gv:score "23.119144";
+  gv:coverage "6.8266667000000005"
+], [
+  gv:hex "b99b77";
+  gv:red "185";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "7.0009261";
+  gv:coverage "2.42"
+], [
+  gv:hex "bf9d71";
+  gv:red "191";
+  gv:blue "113";
+  gv:green "157";
+  gv:score "3.6850251";
+  gv:coverage "1.0466667"
+], [
+  gv:hex "e0b586";
+  gv:red "224";
+  gv:blue "134";
+  gv:green "181";
+  gv:score "3.4356218000000003";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "f2d8b8";
+  gv:red "242";
+  gv:blue "184";
+  gv:green "216";
+  gv:score "2.4020342";
+  gv:coverage "18.733333"
+], [
+  gv:hex "917348";
+  gv:red "145";
+  gv:blue "72";
+  gv:green "115";
+  gv:score "1.8050725";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "ca9d6c";
+  gv:red "202";
+  gv:blue "108";
+  gv:green "157";
+  gv:score "1.4925845";
+  gv:coverage "0.42"
+], [
+  gv:hex "947754";
+  gv:red "148";
+  gv:blue "84";
+  gv:green "119";
+  gv:score "1.2223164";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.342269"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "75.687629"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.570616"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.06075200000001"
+];
+    w:bagOfWords "3 x\nBONNES MARES\nComte Georges de VOGUE\nA CHAMBOLLE-MUSIGNY, FRANCE\n1954\nis en bouteilles a la propriete\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

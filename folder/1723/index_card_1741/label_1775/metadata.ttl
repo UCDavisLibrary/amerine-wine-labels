@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1775";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Beinbaugebiet\n1935er\n2branneberger uffern\naadsfum reiberr Don dormemer, ierer an oer Toler\nork Brand dbgefillt in oer\nrter\nMiddle Moselle\n"@deu;
+    gv:color [
+  gv:hex "d9c2a7";
+  gv:red "217";
+  gv:blue "167";
+  gv:green "194";
+  gv:score "22.584964";
+  gv:coverage "36.393332"
+], [
+  gv:hex "973e20";
+  gv:red "151";
+  gv:blue "32";
+  gv:green "62";
+  gv:score "13.602032";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "273009";
+  gv:red "39";
+  gv:blue "9";
+  gv:green "48";
+  gv:score "0.35625687";
+  gv:coverage "0.02"
+], [
+  gv:hex "b6593b";
+  gv:red "182";
+  gv:blue "59";
+  gv:green "89";
+  gv:score "12.689422";
+  gv:coverage "0.2"
+], [
+  gv:hex "ad9983";
+  gv:red "173";
+  gv:blue "131";
+  gv:green "153";
+  gv:score "7.936583499999999";
+  gv:coverage "2.56"
+], [
+  gv:hex "8a7760";
+  gv:red "138";
+  gv:blue "96";
+  gv:green "119";
+  gv:score "6.2991925";
+  gv:coverage "1.16"
+], [
+  gv:hex "c2927a";
+  gv:red "194";
+  gv:blue "122";
+  gv:green "146";
+  gv:score "4.3171827";
+  gv:coverage "0.6"
+], [
+  gv:hex "e8bca1";
+  gv:red "232";
+  gv:blue "161";
+  gv:green "188";
+  gv:score "4.183733800000001";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "996853";
+  gv:red "153";
+  gv:blue "83";
+  gv:green "104";
+  gv:score "3.0481463";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "a26742";
+  gv:red "162";
+  gv:blue "66";
+  gv:green "103";
+  gv:score "3.0419422000000003";
+  gv:coverage "0.08"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.271462"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.563678"
+];
+    w:bagOfWords "Beinbaugebiet\n1935er\n2branneberger uffern\naadsfum reiberr Don dormemer, ierer an oer Toler\nork Brand dbgefillt in oer\nrter\nMiddle Moselle\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

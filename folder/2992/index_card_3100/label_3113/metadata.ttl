@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3100/label_3113";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "CH A TEA U\nNEFEUIL\nran a\nPREMIER DES GRANDS CRUS DE NEAC\nTh 1 POMEROL\n(GIRONDE)\nOUT E.DECOUT\nC, "@fra;
+    gv:color [
+  gv:hex "ddc3a8";
+  gv:red "221";
+  gv:blue "168";
+  gv:green "195";
+  gv:score "69.022369";
+  gv:coverage "25.979999999999997"
+], [
+  gv:hex "c3986b";
+  gv:red "195";
+  gv:blue "107";
+  gv:green "152";
+  gv:score "2.0051556";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "b39a7f";
+  gv:red "179";
+  gv:blue "127";
+  gv:green "154";
+  gv:score "12.812667999999999";
+  gv:coverage "3.6999999999999997"
+], [
+  gv:hex "91785e";
+  gv:red "145";
+  gv:blue "94";
+  gv:green "120";
+  gv:score "5.359026399999999";
+  gv:coverage "1.3333334000000001"
+], [
+  gv:hex "eed7be";
+  gv:red "238";
+  gv:blue "190";
+  gv:green "215";
+  gv:score "5.26052";
+  gv:coverage "2.7"
+], [
+  gv:hex "dbb68a";
+  gv:red "219";
+  gv:blue "138";
+  gv:green "182";
+  gv:score "1.0005799";
+  gv:coverage "0.42"
+], [
+  gv:hex "70583f";
+  gv:red "112";
+  gv:blue "63";
+  gv:green "88";
+  gv:score "0.77191005";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "dcb185";
+  gv:red "220";
+  gv:blue "133";
+  gv:green "177";
+  gv:score "0.75368909";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "d9b28d";
+  gv:red "217";
+  gv:blue "141";
+  gv:green "178";
+  gv:score "0.6782261700000001";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "be9877";
+  gv:red "190";
+  gv:blue "119";
+  gv:green "152";
+  gv:score "0.6497304899999999";
+  gv:coverage "0.58"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.361257"
+];
+    w:bagOfWords "CH A TEA U\nNEFEUIL\nran a\nPREMIER DES GRANDS CRUS DE NEAC\nTh 1 POMEROL\n(GIRONDE)\nOUT E.DECOUT\nC, "@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

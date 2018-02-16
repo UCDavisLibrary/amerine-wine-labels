@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0921";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "LES Vieux Vins OEL\ne Garantie\nJ M\nNAA\npre\nRU CLASS E DES\nOTES DE PROVEn CE\nLA VALETTE\nDue\nn DELimiTE DE QuALiTE suPERiEURE\nPRICHARD TOULON\n"@fra;
+    gv:color [
+  gv:hex "dac09d";
+  gv:red "218";
+  gv:blue "157";
+  gv:green "192";
+  gv:score "50.149268";
+  gv:coverage "18.42"
+], [
+  gv:hex "b69b78";
+  gv:red "182";
+  gv:blue "120";
+  gv:green "155";
+  gv:score "23.161097";
+  gv:coverage "7.2533332"
+], [
+  gv:hex "917857";
+  gv:red "145";
+  gv:blue "87";
+  gv:green "120";
+  gv:score "7.3798686";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "f0d9b8";
+  gv:red "240";
+  gv:blue "184";
+  gv:green "217";
+  gv:score "7.2024092";
+  gv:coverage "6.4533331"
+], [
+  gv:hex "675034";
+  gv:red "103";
+  gv:blue "52";
+  gv:green "80";
+  gv:score "3.1873327";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "bb9b71";
+  gv:red "187";
+  gv:blue "113";
+  gv:green "155";
+  gv:score "3.0230113999999997";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "473217";
+  gv:red "71";
+  gv:blue "23";
+  gv:green "50";
+  gv:score "1.8739615";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "dcbb8f";
+  gv:red "220";
+  gv:blue "143";
+  gv:green "187";
+  gv:score "1.6102143";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "92734c";
+  gv:red "146";
+  gv:blue "76";
+  gv:green "115";
+  gv:score "0.75043589";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "987453";
+  gv:red "152";
+  gv:blue "83";
+  gv:green "116";
+  gv:score "0.28550570999999997";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "68.646753"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.710261"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.684012"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.014965000000004"
+];
+    w:bagOfWords "LES Vieux Vins OEL\ne Garantie\nJ M\nNAA\npre\nRU CLASS E DES\nOTES DE PROVEn CE\nLA VALETTE\nDue\nn DELimiTE DE QuALiTE suPERiEURE\nPRICHARD TOULON\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

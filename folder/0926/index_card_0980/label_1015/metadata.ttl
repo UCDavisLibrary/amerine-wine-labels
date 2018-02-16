@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0980/label_1015";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "FENDANT\nCHAMOSON\nCRITTIN & Co.\nNo 27\n"@deu;
+    gv:color [
+  gv:hex "d4c0a4";
+  gv:red "212";
+  gv:blue "164";
+  gv:green "192";
+  gv:score "9.2067629";
+  gv:coverage "11.513333000000001"
+], [
+  gv:hex "bca01a";
+  gv:red "188";
+  gv:blue "26";
+  gv:green "160";
+  gv:score "4.7379";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "f7b707";
+  gv:red "247";
+  gv:blue "7";
+  gv:green "183";
+  gv:score "4.348374499999999";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "87763a";
+  gv:red "135";
+  gv:blue "58";
+  gv:green "118";
+  gv:score "3.7783094000000004";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "545454";
+  gv:red "84";
+  gv:blue "84";
+  gv:green "84";
+  gv:score "3.0090829";
+  gv:coverage "2.0333333"
+], [
+  gv:hex "b09b82";
+  gv:red "176";
+  gv:blue "130";
+  gv:green "155";
+  gv:score "6.581673";
+  gv:coverage "2.7333334000000002"
+], [
+  gv:hex "dbc286";
+  gv:red "219";
+  gv:blue "134";
+  gv:green "194";
+  gv:score "4.6496198";
+  gv:coverage "2.42"
+], [
+  gv:hex "daba27";
+  gv:red "218";
+  gv:blue "39";
+  gv:green "186";
+  gv:score "4.3194216";
+  gv:coverage "1.32"
+], [
+  gv:hex "b29738";
+  gv:red "178";
+  gv:blue "56";
+  gv:green "151";
+  gv:score "3.7977233999999997";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "ad995d";
+  gv:red "173";
+  gv:blue "93";
+  gv:green "153";
+  gv:score "3.5645355";
+  gv:coverage "0.8200000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "77.069694"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "52.912956"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "50.52265500000001"
+];
+    w:bagOfWords "FENDANT\nCHAMOSON\nCRITTIN & Co.\nNo 27\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

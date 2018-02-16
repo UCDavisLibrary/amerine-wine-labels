@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1603/label_1607";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "Embotelladores\nParis\nBurdeos\nE MAR\nCadiz\nMatanzas\nFLORIDO 2. C\nSANLUCAR DE BARRAMEDA\nPEDRO XIMENEZ\nVIEJISIMO\nS.\n"@spa;
+    gv:color [
+  gv:hex "b80305";
+  gv:red "184";
+  gv:blue "5";
+  gv:green "3";
+  gv:score "30.074403";
+  gv:coverage "7.62"
+], [
+  gv:hex "130b05";
+  gv:red "19";
+  gv:blue "5";
+  gv:green "11";
+  gv:score "6.4646728";
+  gv:coverage "10.246667"
+], [
+  gv:hex "937640";
+  gv:red "147";
+  gv:blue "64";
+  gv:green "118";
+  gv:score "3.3327486000000004";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "3e2f16";
+  gv:red "62";
+  gv:blue "22";
+  gv:green "47";
+  gv:score "1.2422644999999999";
+  gv:coverage "1.02"
+], [
+  gv:hex "fabaa8";
+  gv:red "250";
+  gv:blue "168";
+  gv:green "186";
+  gv:score "0.24901258";
+  gv:coverage "0.72"
+], [
+  gv:hex "a50705";
+  gv:red "165";
+  gv:blue "5";
+  gv:green "7";
+  gv:score "19.771950999999998";
+  gv:coverage "5.800000000000001"
+], [
+  gv:hex "9c1712";
+  gv:red "156";
+  gv:blue "18";
+  gv:green "23";
+  gv:score "8.6285338";
+  gv:coverage "2.34"
+], [
+  gv:hex "830804";
+  gv:red "131";
+  gv:blue "4";
+  gv:green "8";
+  gv:score "3.7695192000000004";
+  gv:coverage "0.9533333600000001"
+], [
+  gv:hex "b1925a";
+  gv:red "177";
+  gv:blue "90";
+  gv:green "146";
+  gv:score "3.0536918";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "71180a";
+  gv:red "113";
+  gv:blue "10";
+  gv:green "24";
+  gv:score "1.6752858";
+  gv:coverage "0.49333335000000006"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.530562"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Embotelladores\nParis\nBurdeos\nE MAR\nCadiz\nMatanzas\nFLORIDO 2. C\nSANLUCAR DE BARRAMEDA\nPEDRO XIMENEZ\nVIEJISIMO\nS.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0231";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "TIN\nESTAB.\n1852\nSARATO\nWOODSIDE\nCABERNET\nSELECTED AND BOTTLED BY\nMARTIN RAY\nSARATOGA, CALIFORNIA\nAlcohol 13% By Volume\n"@eng;
+    gv:color [
+  gv:hex "a31c1e";
+  gv:red "163";
+  gv:blue "30";
+  gv:green "28";
+  gv:score "27.147555";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "ba5e57";
+  gv:red "186";
+  gv:blue "87";
+  gv:green "94";
+  gv:score "10.583986";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "d1beab";
+  gv:red "209";
+  gv:blue "171";
+  gv:green "190";
+  gv:score "7.305632500000001";
+  gv:coverage "31.106666"
+], [
+  gv:hex "d97f79";
+  gv:red "217";
+  gv:blue "121";
+  gv:green "127";
+  gv:score "10.29983";
+  gv:coverage "0.44"
+], [
+  gv:hex "edb7a9";
+  gv:red "237";
+  gv:blue "169";
+  gv:green "183";
+  gv:score "5.8473393";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "c55053";
+  gv:red "197";
+  gv:blue "83";
+  gv:green "80";
+  gv:score "5.038011399999999";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "563a37";
+  gv:red "86";
+  gv:blue "55";
+  gv:green "58";
+  gv:score "0.048912241";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "ae9d8a";
+  gv:red "174";
+  gv:blue "138";
+  gv:green "157";
+  gv:score "4.5430336";
+  gv:coverage "3.5866667"
+], [
+  gv:hex "e76f72";
+  gv:red "231";
+  gv:blue "114";
+  gv:green "111";
+  gv:score "3.6312509";
+  gv:coverage "0.1"
+], [
+  gv:hex "993f3a";
+  gv:red "153";
+  gv:blue "58";
+  gv:green "63";
+  gv:score "3.2856677000000003";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "72.949189"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.7908"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "54.359514"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "51.364887"
+];
+    w:bagOfWords "TIN\nESTAB.\n1852\nSARATO\nWOODSIDE\nCABERNET\nSELECTED AND BOTTLED BY\nMARTIN RAY\nSARATOGA, CALIFORNIA\nAlcohol 13% By Volume\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

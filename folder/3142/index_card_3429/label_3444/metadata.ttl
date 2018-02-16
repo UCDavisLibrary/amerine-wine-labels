@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3444";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "SEURLBERG\nPRODUCE of FRA\nMARK\nTRADE\nROUGE\nRESERVE SPECIALE\nALCOHOL BY VOLUME\n8 MEDAILLES OR & ARGENT PICARD\nFRANCE\nCONTENTS 12 FL. OZ.\n"@fra;
+    gv:color [
+  gv:hex "d7bb9a";
+  gv:red "215";
+  gv:blue "154";
+  gv:green "187";
+  gv:score "27.75245";
+  gv:coverage "24.333334"
+], [
+  gv:hex "8d703e";
+  gv:red "141";
+  gv:blue "62";
+  gv:green "112";
+  gv:score "8.5045911";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "b59b7a";
+  gv:red "181";
+  gv:blue "122";
+  gv:green "155";
+  gv:score "16.945831";
+  gv:coverage "5.4399999999999995"
+], [
+  gv:hex "492e14";
+  gv:red "73";
+  gv:blue "20";
+  gv:green "46";
+  gv:score "0.12208394";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "8c7658";
+  gv:red "140";
+  gv:blue "88";
+  gv:green "118";
+  gv:score "7.157176699999999";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "755624";
+  gv:red "117";
+  gv:blue "36";
+  gv:green "86";
+  gv:score "6.6515543";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "b49565";
+  gv:red "180";
+  gv:blue "101";
+  gv:green "149";
+  gv:score "5.974905199999999";
+  gv:coverage "1.8666665999999998"
+], [
+  gv:hex "c79778";
+  gv:red "199";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "5.833574";
+  gv:coverage "1.28"
+], [
+  gv:hex "e2b596";
+  gv:red "226";
+  gv:blue "150";
+  gv:green "181";
+  gv:score "5.6170505";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "755121";
+  gv:red "117";
+  gv:blue "33";
+  gv:green "81";
+  gv:score "3.5390846";
+  gv:coverage "0.37333333999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.749871"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "60.599636999999994"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.811853"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.967543000000006"
+];
+    w:bagOfWords "SEURLBERG\nPRODUCE of FRA\nMARK\nTRADE\nROUGE\nRESERVE SPECIALE\nALCOHOL BY VOLUME\n8 MEDAILLES OR & ARGENT PICARD\nFRANCE\nCONTENTS 12 FL. OZ.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

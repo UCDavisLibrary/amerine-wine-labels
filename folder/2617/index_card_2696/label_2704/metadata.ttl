@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2704";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "APPELLATION oONTROLEE\nc Ets BROTTE ET ARMENIER\nNEGOCIANTs A CHATEA UNEUF-DU-PAPE (VAuc LUSE)\n"@fra;
+    gv:color [
+  gv:hex "d6b283";
+  gv:red "214";
+  gv:blue "131";
+  gv:green "178";
+  gv:score "23.572475";
+  gv:coverage "9.7066663"
+], [
+  gv:hex "9c6a3a";
+  gv:red "156";
+  gv:blue "58";
+  gv:green "106";
+  gv:score "10.382916";
+  gv:coverage "2.7733333"
+], [
+  gv:hex "472813";
+  gv:red "71";
+  gv:blue "19";
+  gv:green "40";
+  gv:score "4.8916303";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "c19d6d";
+  gv:red "193";
+  gv:blue "109";
+  gv:green "157";
+  gv:score "12.552311";
+  gv:coverage "5.2666668"
+], [
+  gv:hex "c39363";
+  gv:red "195";
+  gv:blue "99";
+  gv:green "147";
+  gv:score "8.619824099999999";
+  gv:coverage "2.9000000000000004"
+], [
+  gv:hex "7e4c1e";
+  gv:red "126";
+  gv:blue "30";
+  gv:green "76";
+  gv:score "7.540411499999999";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "dcaf80";
+  gv:red "220";
+  gv:blue "128";
+  gv:green "175";
+  gv:score "7.334853700000001";
+  gv:coverage "2.9666666"
+], [
+  gv:hex "d5b591";
+  gv:red "213";
+  gv:blue "145";
+  gv:green "181";
+  gv:score "3.5236258";
+  gv:coverage "6.84"
+], [
+  gv:hex "321402";
+  gv:red "50";
+  gv:blue "2";
+  gv:green "20";
+  gv:score "3.1062517";
+  gv:coverage "0.71333335"
+], [
+  gv:hex "b79975";
+  gv:red "183";
+  gv:blue "117";
+  gv:green "153";
+  gv:score "2.8535355";
+  gv:coverage "1.7000000000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.912789"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.771048"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.881396"
+];
+    w:bagOfWords "APPELLATION oONTROLEE\nc Ets BROTTE ET ARMENIER\nNEGOCIANTs A CHATEA UNEUF-DU-PAPE (VAuc LUSE)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

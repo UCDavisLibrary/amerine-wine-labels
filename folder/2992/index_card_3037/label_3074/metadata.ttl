@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3037/label_3074";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "GRAND PRIX\nMEDAILLE D'OR LIEGE 9 O 5\nFRANCO BRITANNIQUE 1908, BRUXELLES ISIO, TURIN 1911\nGRAND 'VIN\n1er CRU ST EMILIO N\n1999\ned aee.\n"@fra;
+    gv:color [
+  gv:hex "dec39f";
+  gv:red "222";
+  gv:blue "159";
+  gv:green "195";
+  gv:score "42.353815";
+  gv:coverage "25.653332000000002"
+], [
+  gv:hex "63533e";
+  gv:red "99";
+  gv:blue "62";
+  gv:green "83";
+  gv:score "14.121541";
+  gv:coverage "2.2133334000000002"
+], [
+  gv:hex "84735b";
+  gv:red "132";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "9.9430881";
+  gv:coverage "1.7533334"
+], [
+  gv:hex "debe8f";
+  gv:red "222";
+  gv:blue "143";
+  gv:green "190";
+  gv:score "9.2493258";
+  gv:coverage "4.42"
+], [
+  gv:hex "b09b7d";
+  gv:red "176";
+  gv:blue "125";
+  gv:green "155";
+  gv:score "7.7328622";
+  gv:coverage "2.18"
+], [
+  gv:hex "44341e";
+  gv:red "68";
+  gv:blue "30";
+  gv:green "52";
+  gv:score "5.4175797999999995";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "c09d6c";
+  gv:red "192";
+  gv:blue "108";
+  gv:green "157";
+  gv:score "2.6687715";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "f1d6b3";
+  gv:red "241";
+  gv:blue "179";
+  gv:green "214";
+  gv:score "2.0430742000000004";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "e6bc98";
+  gv:red "230";
+  gv:blue "152";
+  gv:green "188";
+  gv:score "1.5340042";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "c09469";
+  gv:red "192";
+  gv:blue "105";
+  gv:green "148";
+  gv:score "1.4607649";
+  gv:coverage "0.45333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "75.910646"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.216708"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.72938499999999"
+];
+    w:bagOfWords "GRAND PRIX\nMEDAILLE D'OR LIEGE 9 O 5\nFRANCO BRITANNIQUE 1908, BRUXELLES ISIO, TURIN 1911\nGRAND 'VIN\n1er CRU ST EMILIO N\n1999\ned aee.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

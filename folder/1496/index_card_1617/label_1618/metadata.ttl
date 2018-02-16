@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1617/label_1618";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "B\n1821\nODE ROS\nONCHE DE LAS\nTRES GALER AS\nANTONIO BAR BAD ILLO S. L\n32\nSAN LUCAR DE BARRAMEDA\nANDALUCIA ES PAN NA\nLIT. TIP, JEREZ INDUSTRIAL\n"@spa;
+    gv:color [
+  gv:hex "0e1342";
+  gv:red "14";
+  gv:blue "66";
+  gv:green "19";
+  gv:score "9.9604264";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "8a785b";
+  gv:red "138";
+  gv:blue "91";
+  gv:green "120";
+  gv:score "6.39475";
+  gv:coverage "2.5"
+], [
+  gv:hex "764a37";
+  gv:red "118";
+  gv:blue "55";
+  gv:green "74";
+  gv:score "4.7399793";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "b89a3f";
+  gv:red "184";
+  gv:blue "63";
+  gv:green "154";
+  gv:score "2.8832003";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "a9987a";
+  gv:red "169";
+  gv:blue "122";
+  gv:green "152";
+  gv:score "5.7894796";
+  gv:coverage "3.1"
+], [
+  gv:hex "161030";
+  gv:red "22";
+  gv:blue "48";
+  gv:green "16";
+  gv:score "5.1242016";
+  gv:coverage "2.22"
+], [
+  gv:hex "d0c0a3";
+  gv:red "208";
+  gv:blue "163";
+  gv:green "192";
+  gv:score "4.0705789";
+  gv:coverage "15.246667"
+], [
+  gv:hex "0a132a";
+  gv:red "10";
+  gv:blue "42";
+  gv:green "19";
+  gv:score "4.038145800000001";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "8a3e38";
+  gv:red "138";
+  gv:blue "56";
+  gv:green "62";
+  gv:score "3.8500622";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "d4c083";
+  gv:red "212";
+  gv:blue "131";
+  gv:green "192";
+  gv:score "3.8359381";
+  gv:coverage "0.62"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.520404"
+];
+    w:bagOfWords "B\n1821\nODE ROS\nONCHE DE LAS\nTRES GALER AS\nANTONIO BAR BAD ILLO S. L\n32\nSAN LUCAR DE BARRAMEDA\nANDALUCIA ES PAN NA\nLIT. TIP, JEREZ INDUSTRIAL\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

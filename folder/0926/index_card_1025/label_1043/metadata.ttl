@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1025/label_1043";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "Ne 102 DEPost\nmliemas\n"@deu;
+    gv:color [
+  gv:hex "e1c9a5";
+  gv:red "225";
+  gv:blue "165";
+  gv:green "201";
+  gv:score "25.337663";
+  gv:coverage "10.973334"
+], [
+  gv:hex "8f3723";
+  gv:red "143";
+  gv:blue "35";
+  gv:green "55";
+  gv:score "4.5870535";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "e4c291";
+  gv:red "228";
+  gv:blue "145";
+  gv:green "194";
+  gv:score "18.984585000000003";
+  gv:coverage "7.9533331"
+], [
+  gv:hex "f0d9b7";
+  gv:red "240";
+  gv:blue "183";
+  gv:green "217";
+  gv:score "13.506013";
+  gv:coverage "11.453333"
+], [
+  gv:hex "9d1e16";
+  gv:red "157";
+  gv:blue "22";
+  gv:green "30";
+  gv:score "4.2940453000000005";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "b09c7c";
+  gv:red "176";
+  gv:blue "124";
+  gv:green "156";
+  gv:score "3.9477076";
+  gv:coverage "1.04"
+], [
+  gv:hex "e7b788";
+  gv:red "231";
+  gv:blue "136";
+  gv:green "183";
+  gv:score "3.4041353000000005";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "edbb9e";
+  gv:red "237";
+  gv:blue "158";
+  gv:green "187";
+  gv:score "2.8437696";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "f6d6a6";
+  gv:red "246";
+  gv:blue "166";
+  gv:green "214";
+  gv:score "2.1841899000000002";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "887659";
+  gv:red "136";
+  gv:blue "89";
+  gv:green "118";
+  gv:score "2.0168057";
+  gv:coverage "0.45333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.792705999999995"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "58.189541"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.121680000000005"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "52.557635000000005"
+];
+    w:bagOfWords "Ne 102 DEPost\nmliemas\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

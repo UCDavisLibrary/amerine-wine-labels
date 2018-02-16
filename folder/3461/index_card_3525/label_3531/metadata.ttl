@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3525/label_3531";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "BOTTLED AT THE WINERY\nVINTAGE\n1937\nBROS\nESTA\nIBB3\nVALLE de ORO\nLIVERMORE VALLEY\nHinnt Blair\nA LIGHT WINE OF PINOT BLANC GRAPES\nPRODUCED AND BOTTLED BY\nB. W\nWENTE BROS.\n14TH DIST\nNo. 893\nCALIF.\nLIVERMORE, C\nFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d2bfa7";
+  gv:red "210";
+  gv:blue "167";
+  gv:green "191";
+  gv:score "29.775488";
+  gv:coverage "16.400000000000002"
+], [
+  gv:hex "655238";
+  gv:red "101";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "15.236617999999998";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "af9c83";
+  gv:red "175";
+  gv:blue "131";
+  gv:green "156";
+  gv:score "18.55319";
+  gv:coverage "4.4866665999999995"
+], [
+  gv:hex "867359";
+  gv:red "134";
+  gv:blue "89";
+  gv:green "115";
+  gv:score "14.599316000000002";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "43321b";
+  gv:red "67";
+  gv:blue "27";
+  gv:green "50";
+  gv:score "7.4934036";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "ecdbc4";
+  gv:red "236";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "6.045567999999999";
+  gv:coverage "12.540000000000001"
+], [
+  gv:hex "2a1904";
+  gv:red "42";
+  gv:blue "4";
+  gv:green "25";
+  gv:score "3.2443594";
+  gv:coverage "0.32"
+], [
+  gv:hex "dfb7a4";
+  gv:red "223";
+  gv:blue "164";
+  gv:green "183";
+  gv:score "1.329589";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "bc9381";
+  gv:red "188";
+  gv:blue "129";
+  gv:green "147";
+  gv:score "0.9362472199999999";
+  gv:coverage "0.2"
+], [
+  gv:hex "180700";
+  gv:red "24";
+  gv:blue "undefined";
+  gv:green "7";
+  gv:score "0.75804545";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.825373"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "65.657061"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "BOTTLED AT THE WINERY\nVINTAGE\n1937\nBROS\nESTA\nIBB3\nVALLE de ORO\nLIVERMORE VALLEY\nHinnt Blair\nA LIGHT WINE OF PINOT BLANC GRAPES\nPRODUCED AND BOTTLED BY\nB. W\nWENTE BROS.\n14TH DIST\nNo. 893\nCALIF.\nLIVERMORE, C\nFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

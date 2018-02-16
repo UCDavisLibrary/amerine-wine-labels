@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1884";
+    dct:type "image";
+    w:bagOfWords "MERITO\nAMONTILLADO.\ni\nSHER RY\nDRY, FULL BODIE D\nPRODUCED AND SHIPPED BY\nMARQUES DEL MERITO\nFROM JEREZ DE LA FRONTERA, SPAIN\nProbure of Spain\nALCOHOLIC STRENGTH 20% BY VOLUME\n"@spa;
+    gv:color [
+  gv:hex "e8b27a";
+  gv:red "232";
+  gv:blue "122";
+  gv:green "178";
+  gv:score "31.347692";
+  gv:coverage "11.76"
+], [
+  gv:hex "db7d12";
+  gv:red "219";
+  gv:blue "18";
+  gv:green "125";
+  gv:score "6.1524227";
+  gv:coverage "2.06"
+], [
+  gv:hex "8c4013";
+  gv:red "140";
+  gv:blue "19";
+  gv:green "64";
+  gv:score "3.100778";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "e0b87c";
+  gv:red "224";
+  gv:blue "124";
+  gv:green "184";
+  gv:score "18.184420000000003";
+  gv:coverage "7.9266667"
+], [
+  gv:hex "cc945f";
+  gv:red "204";
+  gv:blue "95";
+  gv:green "148";
+  gv:score "10.470265";
+  gv:coverage "3.7800000000000002"
+], [
+  gv:hex "a56d3c";
+  gv:red "165";
+  gv:blue "60";
+  gv:green "109";
+  gv:score "4.3486547";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "cf8836";
+  gv:red "207";
+  gv:blue "54";
+  gv:green "136";
+  gv:score "3.6530655000000003";
+  gv:coverage "1.4066666"
+], [
+  gv:hex "c39e64";
+  gv:red "195";
+  gv:blue "100";
+  gv:green "158";
+  gv:score "3.3948652000000004";
+  gv:coverage "2.4333334"
+], [
+  gv:hex "d18418";
+  gv:red "209";
+  gv:blue "24";
+  gv:green "132";
+  gv:score "2.8340187";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "aa691a";
+  gv:red "170";
+  gv:blue "26";
+  gv:green "105";
+  gv:score "2.7499514";
+  gv:coverage "0.8666666199999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.466964"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MERITO\nAMONTILLADO.\ni\nSHER RY\nDRY, FULL BODIE D\nPRODUCED AND SHIPPED BY\nMARQUES DEL MERITO\nFROM JEREZ DE LA FRONTERA, SPAIN\nProbure of Spain\nALCOHOLIC STRENGTH 20% BY VOLUME\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

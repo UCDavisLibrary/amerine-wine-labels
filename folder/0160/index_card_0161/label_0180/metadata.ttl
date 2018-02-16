@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0180";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "V E R DIE R.\nCONTENTS\nALCOHOL 12%\nQUART\nBY VOLUME\nFLUCTUAT NECMERGITUR\nSelected\nCALIFORNIA\nBURGUNDY\nBottled by\nF. SAL MINA & Co., ST. HELENA, NAPA CO., CALIFORNIA\nSelected by\nVERDIER CELLA R S\nSAN FRANCISCa, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "b79c7d";
+  gv:red "183";
+  gv:blue "125";
+  gv:green "156";
+  gv:score "34.426047999999994";
+  gv:coverage "3.7333331999999997"
+], [
+  gv:hex "714b3c";
+  gv:red "113";
+  gv:blue "60";
+  gv:green "75";
+  gv:score "2.5780225";
+  gv:coverage "0.38"
+], [
+  gv:hex "d6bca3";
+  gv:red "214";
+  gv:blue "163";
+  gv:green "188";
+  gv:score "30.380526000000003";
+  gv:coverage "23.919999999999998"
+], [
+  gv:hex "8b745f";
+  gv:red "139";
+  gv:blue "95";
+  gv:green "116";
+  gv:score "8.3481744";
+  gv:coverage "1.94"
+], [
+  gv:hex "e5b9ab";
+  gv:red "229";
+  gv:blue "171";
+  gv:green "185";
+  gv:score "6.752996899999999";
+  gv:coverage "1.68"
+], [
+  gv:hex "bb9284";
+  gv:red "187";
+  gv:blue "132";
+  gv:green "146";
+  gv:score "5.252936500000001";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "efd8c4";
+  gv:red "239";
+  gv:blue "196";
+  gv:green "216";
+  gv:score "3.1670488";
+  gv:coverage "7.8666665"
+], [
+  gv:hex "ba986e";
+  gv:red "186";
+  gv:blue "110";
+  gv:green "152";
+  gv:score "2.4850085";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "987061";
+  gv:red "152";
+  gv:blue "97";
+  gv:green "112";
+  gv:score "2.2634041000000003";
+  gv:coverage "0.86"
+], [
+  gv:hex "6d5746";
+  gv:red "109";
+  gv:blue "70";
+  gv:green "87";
+  gv:score "1.3393637999999999";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.90816"
+];
+    w:bagOfWords "V E R DIE R.\nCONTENTS\nALCOHOL 12%\nQUART\nBY VOLUME\nFLUCTUAT NECMERGITUR\nSelected\nCALIFORNIA\nBURGUNDY\nBottled by\nF. SAL MINA & Co., ST. HELENA, NAPA CO., CALIFORNIA\nSelected by\nVERDIER CELLA R S\nSAN FRANCISCa, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

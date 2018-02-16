@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3256/label_3283";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nRICHIE BOURG\nRICHEBOURG Appellation Controlée\nde dillaune\nANNEE 1949\npropriétaires\n"@fra;
+    gv:color [
+  gv:hex "d0c3b9";
+  gv:red "208";
+  gv:blue "185";
+  gv:green "195";
+  gv:score "29.9604";
+  gv:coverage "23.993333"
+], [
+  gv:hex "e8dbd1";
+  gv:red "232";
+  gv:blue "209";
+  gv:green "219";
+  gv:score "25.607186999999996";
+  gv:coverage "61.313331000000005"
+], [
+  gv:hex "a99c93";
+  gv:red "169";
+  gv:blue "147";
+  gv:green "156";
+  gv:score "17.333144";
+  gv:coverage "3.5533335"
+], [
+  gv:hex "83766d";
+  gv:red "131";
+  gv:blue "109";
+  gv:green "118";
+  gv:score "9.604";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "847668";
+  gv:red "132";
+  gv:blue "104";
+  gv:green "118";
+  gv:score "5.531805";
+  gv:coverage "0.74"
+], [
+  gv:hex "5d5147";
+  gv:red "93";
+  gv:blue "71";
+  gv:green "81";
+  gv:score "3.7734464";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "a6988a";
+  gv:red "166";
+  gv:blue "138";
+  gv:green "152";
+  gv:score "2.034989";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "d8c7b5";
+  gv:red "216";
+  gv:blue "181";
+  gv:green "199";
+  gv:score "2.0178743";
+  gv:coverage "5.8666665"
+], [
+  gv:hex "42362c";
+  gv:red "66";
+  gv:blue "44";
+  gv:green "54";
+  gv:score "1.583901";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "ecdbcb";
+  gv:red "236";
+  gv:blue "203";
+  gv:green "219";
+  gv:score "1.4447879000000001";
+  gv:coverage "1.5733332999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.940351"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.024015"
+];
+    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nRICHIE BOURG\nRICHEBOURG Appellation Controlée\nde dillaune\nANNEE 1949\npropriétaires\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

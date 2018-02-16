@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1892";
+    dct:type "image";
+    w:bagOfWords "deB Rodriguez a-Cave\nuo Oadis?\nAMONTILLADO MUY VIEJO\nSANLUCAR DE BARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "9a6b3d";
+  gv:red "154";
+  gv:blue "61";
+  gv:green "107";
+  gv:score "48.274015999999996";
+  gv:coverage "13.753334"
+], [
+  gv:hex "dcbfa2";
+  gv:red "220";
+  gv:blue "162";
+  gv:green "191";
+  gv:score "8.597476799999999";
+  gv:coverage "33.14"
+], [
+  gv:hex "bd8d5d";
+  gv:red "189";
+  gv:blue "93";
+  gv:green "141";
+  gv:score "13.233028";
+  gv:coverage "4.8866667"
+], [
+  gv:hex "84562b";
+  gv:red "132";
+  gv:blue "43";
+  gv:green "86";
+  gv:score "8.173953000000001";
+  gv:coverage "2.04"
+], [
+  gv:hex "e5baa0";
+  gv:red "229";
+  gv:blue "160";
+  gv:green "186";
+  gv:score "5.0836146";
+  gv:coverage "1.8733334000000001"
+], [
+  gv:hex "bf9379";
+  gv:red "191";
+  gv:blue "121";
+  gv:green "147";
+  gv:score "4.5230277";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "bb9a77";
+  gv:red "187";
+  gv:blue "119";
+  gv:green "154";
+  gv:score "3.6056615";
+  gv:coverage "1.58"
+], [
+  gv:hex "9b6f53";
+  gv:red "155";
+  gv:blue "83";
+  gv:green "111";
+  gv:score "3.2868743";
+  gv:coverage "0.96"
+], [
+  gv:hex "e4b48a";
+  gv:red "228";
+  gv:blue "138";
+  gv:green "180";
+  gv:score "1.303782";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "b39061";
+  gv:red "179";
+  gv:blue "97";
+  gv:green "144";
+  gv:score "0.8384227799999999";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.0153"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "50.865215"
+];
+    w:bagOfWords "deB Rodriguez a-Cave\nuo Oadis?\nAMONTILLADO MUY VIEJO\nSANLUCAR DE BARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

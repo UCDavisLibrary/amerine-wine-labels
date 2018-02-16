@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2748";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "CONTENTS 3/4 OF A QUART 1 PINT 8 FL. OZ\nVIN\nDES\nCOTES-DU-RHONE\nCHATEAU\nCHATEAU Grand Cru\nTAVEL\nBOTTLED BY\nJEAN OLIVIER\nPRODUCE OF FRANCE\nPropriétaire\nALCOHOL BY VOL. 12\nsoc AZEMAARD cousINs NIME 3. res7\none\nRose\n"@fra;
+    gv:color [
+  gv:hex "e1caae";
+  gv:red "225";
+  gv:blue "174";
+  gv:green "202";
+  gv:score "47.866482";
+  gv:coverage "39.42"
+], [
+  gv:hex "873c29";
+  gv:red "135";
+  gv:blue "41";
+  gv:green "60";
+  gv:score "0.9249405";
+  gv:coverage "0.08"
+], [
+  gv:hex "e9b79f";
+  gv:red "233";
+  gv:blue "159";
+  gv:green "183";
+  gv:score "12.655786999999998";
+  gv:coverage "2.04"
+], [
+  gv:hex "eed8bd";
+  gv:red "238";
+  gv:blue "189";
+  gv:green "216";
+  gv:score "11.323238";
+  gv:coverage "15.206665999999998"
+], [
+  gv:hex "b09b80";
+  gv:red "176";
+  gv:blue "128";
+  gv:green "155";
+  gv:score "8.3069056";
+  gv:coverage "2.5466667"
+], [
+  gv:hex "c9957d";
+  gv:red "201";
+  gv:blue "125";
+  gv:green "149";
+  gv:score "5.7609595";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "a26c54";
+  gv:red "162";
+  gv:blue "84";
+  gv:green "108";
+  gv:score "2.9237134";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "89765d";
+  gv:red "137";
+  gv:blue "93";
+  gv:green "118";
+  gv:score "2.7432272";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "fdd2b9";
+  gv:red "253";
+  gv:blue "185";
+  gv:green "210";
+  gv:score "2.5144096";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "844e37";
+  gv:red "132";
+  gv:blue "55";
+  gv:green "78";
+  gv:score "1.3296219999999999";
+  gv:coverage "0.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.021931"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "60.17561"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.583892000000006"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.561019"
+];
+    w:bagOfWords "CONTENTS 3/4 OF A QUART 1 PINT 8 FL. OZ\nVIN\nDES\nCOTES-DU-RHONE\nCHATEAU\nCHATEAU Grand Cru\nTAVEL\nBOTTLED BY\nJEAN OLIVIER\nPRODUCE OF FRANCE\nPropriétaire\nALCOHOL BY VOL. 12\nsoc AZEMAARD cousINs NIME 3. res7\none\nRose\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

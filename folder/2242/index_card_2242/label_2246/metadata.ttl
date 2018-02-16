@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2246";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "DE POSE\nNo. 509\nMIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTHSCHILD\n"@fra;
+    gv:color [
+  gv:hex "d7ba9a";
+  gv:red "215";
+  gv:blue "154";
+  gv:green "186";
+  gv:score "38.787532";
+  gv:coverage "13.98"
+], [
+  gv:hex "b49875";
+  gv:red "180";
+  gv:blue "117";
+  gv:green "152";
+  gv:score "29.511091";
+  gv:coverage "4.02"
+], [
+  gv:hex "917552";
+  gv:red "145";
+  gv:blue "82";
+  gv:green "117";
+  gv:score "25.982133";
+  gv:coverage "3.2533332999999995"
+], [
+  gv:hex "745a37";
+  gv:red "116";
+  gv:blue "55";
+  gv:green "90";
+  gv:score "2.0891581";
+  gv:coverage "0.3"
+], [
+  gv:hex "896f47";
+  gv:red "137";
+  gv:blue "71";
+  gv:green "111";
+  gv:score "1.1766351";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "c59f7d";
+  gv:red "197";
+  gv:blue "125";
+  gv:green "159";
+  gv:score "0.69220611";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "373328";
+  gv:red "55";
+  gv:blue "40";
+  gv:green "51";
+  gv:score "0.006883216700000001";
+  gv:coverage "0.06"
+], [
+  gv:hex "d9b393";
+  gv:red "217";
+  gv:blue "147";
+  gv:green "179";
+  gv:score "0.68681841";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "edd6bb";
+  gv:red "237";
+  gv:blue "187";
+  gv:green "214";
+  gv:score "0.48315627999999994";
+  gv:coverage "12.206667"
+], [
+  gv:hex "735a32";
+  gv:red "115";
+  gv:blue "50";
+  gv:green "90";
+  gv:score "0.23704821";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "65.072227"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "61.020410000000005"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.716255"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.68137"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.012839"
+];
+    w:bagOfWords "DE POSE\nNo. 509\nMIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTHSCHILD\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

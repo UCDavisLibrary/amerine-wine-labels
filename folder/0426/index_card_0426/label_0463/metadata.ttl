@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0463";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R HEIN GA U\n104 fer\nGeisenheimer Klausermeg\nSCHA MARI MaHLE\nWeinbau Weinhandel, Johannisberg i, Rhg.\n"@deu;
+    gv:color [
+  gv:hex "b39779";
+  gv:red "179";
+  gv:blue "121";
+  gv:green "151";
+  gv:score "27.284568999999998";
+  gv:coverage "5.58"
+], [
+  gv:hex "8b7259";
+  gv:red "139";
+  gv:blue "89";
+  gv:green "114";
+  gv:score "20.508267999999997";
+  gv:coverage "3.1066667"
+], [
+  gv:hex "68513a";
+  gv:red "104";
+  gv:blue "58";
+  gv:green "81";
+  gv:score "18.872643";
+  gv:coverage "2.7066667"
+], [
+  gv:hex "d2ba9f";
+  gv:red "210";
+  gv:blue "159";
+  gv:green "186";
+  gv:score "17.361832";
+  gv:coverage "11.200000000000001"
+], [
+  gv:hex "4b341e";
+  gv:red "75";
+  gv:blue "30";
+  gv:green "52";
+  gv:score "7.412057399999999";
+  gv:coverage "1.0466667"
+], [
+  gv:hex "d3c4ba";
+  gv:red "211";
+  gv:blue "186";
+  gv:green "196";
+  gv:score "2.0506369";
+  gv:coverage "9.5133334"
+], [
+  gv:hex "422914";
+  gv:red "66";
+  gv:blue "20";
+  gv:green "41";
+  gv:score "1.8645322";
+  gv:coverage "0.24"
+], [
+  gv:hex "bb996d";
+  gv:red "187";
+  gv:blue "109";
+  gv:green "153";
+  gv:score "0.81268689";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "2f1806";
+  gv:red "47";
+  gv:blue "6";
+  gv:green "24";
+  gv:score "0.71173962";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "ebd6c0";
+  gv:red "235";
+  gv:blue "192";
+  gv:green "214";
+  gv:score "0.60523343";
+  gv:coverage "1.9466667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "80.556571"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.838878"
+];
+    w:bagOfWords "R HEIN GA U\n104 fer\nGeisenheimer Klausermeg\nSCHA MARI MaHLE\nWeinbau Weinhandel, Johannisberg i, Rhg.\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

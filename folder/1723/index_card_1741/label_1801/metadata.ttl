@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1801";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "STIFTSKELLEREI\nStephan BES\nA.D. MosEL\n1933\n93iesporter Solbtropfden Spatlese\nriginal 20bfiillung\nSirdy\n"@deu;
+    gv:color [
+  gv:hex "d2ba94";
+  gv:red "210";
+  gv:blue "148";
+  gv:green "186";
+  gv:score "24.599214";
+  gv:coverage "17.513333"
+], [
+  gv:hex "b59c66";
+  gv:red "181";
+  gv:blue "102";
+  gv:green "156";
+  gv:score "18.844918999999997";
+  gv:coverage "5.64"
+], [
+  gv:hex "363731";
+  gv:red "54";
+  gv:blue "49";
+  gv:green "55";
+  gv:score "0.87280991";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "cfb684";
+  gv:red "207";
+  gv:blue "132";
+  gv:green "182";
+  gv:score "16.787627";
+  gv:coverage "5.7466667"
+], [
+  gv:hex "311a16";
+  gv:red "49";
+  gv:blue "22";
+  gv:green "26";
+  gv:score "0.096560083";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "b19c79";
+  gv:red "177";
+  gv:blue "121";
+  gv:green "156";
+  gv:score "9.3912773";
+  gv:coverage "6.800000000000001"
+], [
+  gv:hex "8f7741";
+  gv:red "143";
+  gv:blue "65";
+  gv:green "119";
+  gv:score "9.288457";
+  gv:coverage "3.16"
+], [
+  gv:hex "8a7655";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "5.8664605000000005";
+  gv:coverage "4.0066667"
+], [
+  gv:hex "6b5525";
+  gv:red "107";
+  gv:blue "37";
+  gv:green "85";
+  gv:score "4.4858269";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "685437";
+  gv:red "104";
+  gv:blue "55";
+  gv:green "84";
+  gv:score "3.9499156";
+  gv:coverage "2.9333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.823416"
+];
+    w:bagOfWords "STIFTSKELLEREI\nStephan BES\nA.D. MosEL\n1933\n93iesporter Solbtropfden Spatlese\nriginal 20bfiillung\nSirdy\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

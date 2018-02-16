@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1841";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Contents 1 Pt. and 7 Fl. OZ.\nUNDET\nAZIEFE\n1933\nKreuznacher Riesling\n3 BANSAE SOHN BINGEN AMRHEIN\nGEGRUNDET 1765\nGrown and bottled in Germany\nghe\n"@deu;
+    gv:color [
+  gv:hex "837554";
+  gv:red "131";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "16.142505";
+  gv:coverage "7.9399999999999995"
+], [
+  gv:hex "ba9e64";
+  gv:red "186";
+  gv:blue "100";
+  gv:green "158";
+  gv:score "15.250155000000001";
+  gv:coverage "3.4000000000000004"
+], [
+  gv:hex "b16548";
+  gv:red "177";
+  gv:blue "72";
+  gv:green "101";
+  gv:score "0.52073882";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "a99977";
+  gv:red "169";
+  gv:blue "119";
+  gv:green "153";
+  gv:score "11.940011";
+  gv:coverage "6.1333332"
+], [
+  gv:hex "d2b67c";
+  gv:red "210";
+  gv:blue "124";
+  gv:green "182";
+  gv:score "11.216593";
+  gv:coverage "2.9733334"
+], [
+  gv:hex "d1bf9b";
+  gv:red "209";
+  gv:blue "155";
+  gv:green "191";
+  gv:score "10.557373";
+  gv:coverage "7.5266667"
+], [
+  gv:hex "8f7745";
+  gv:red "143";
+  gv:blue "69";
+  gv:green "119";
+  gv:score "8.0400765";
+  gv:coverage "1.9800000000000002"
+], [
+  gv:hex "655534";
+  gv:red "101";
+  gv:blue "52";
+  gv:green "85";
+  gv:score "7.6386123999999995";
+  gv:coverage "2.62"
+], [
+  gv:hex "685123";
+  gv:red "104";
+  gv:blue "35";
+  gv:green "81";
+  gv:score "5.4473486";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "443215";
+  gv:red "68";
+  gv:blue "21";
+  gv:green "50";
+  gv:score "3.0669803";
+  gv:coverage "0.78666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.816103000000005"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "52.052057"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.999938"
+];
+    w:bagOfWords "Contents 1 Pt. and 7 Fl. OZ.\nUNDET\nAZIEFE\n1933\nKreuznacher Riesling\n3 BANSAE SOHN BINGEN AMRHEIN\nGEGRUNDET 1765\nGrown and bottled in Germany\nghe\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

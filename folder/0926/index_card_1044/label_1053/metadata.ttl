@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1053";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "LVOISIE\njeux\nplants\nORSAT\nFIEDLER SA LA CHAUX DE FONDs\n"@deu;
+    gv:color [
+  gv:hex "d9bb9b";
+  gv:red "217";
+  gv:blue "155";
+  gv:green "187";
+  gv:score "21.269681";
+  gv:coverage "12.793334000000002"
+], [
+  gv:hex "c79762";
+  gv:red "199";
+  gv:blue "98";
+  gv:green "151";
+  gv:score "16.109899";
+  gv:coverage "5.76"
+], [
+  gv:hex "774e15";
+  gv:red "119";
+  gv:blue "21";
+  gv:green "78";
+  gv:score "6.0884498";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "2f1402";
+  gv:red "47";
+  gv:blue "2";
+  gv:green "20";
+  gv:score "1.5494484";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "dab687";
+  gv:red "218";
+  gv:blue "135";
+  gv:green "182";
+  gv:score "10.165924";
+  gv:coverage "3.1399999999999997"
+], [
+  gv:hex "dcaf7e";
+  gv:red "220";
+  gv:blue "126";
+  gv:green "175";
+  gv:score "8.6241484";
+  gv:coverage "2.64"
+], [
+  gv:hex "b89b7e";
+  gv:red "184";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "5.4243438";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "9b6d35";
+  gv:red "155";
+  gv:blue "53";
+  gv:green "109";
+  gv:score "4.9484596";
+  gv:coverage "1.0333333"
+], [
+  gv:hex "8c7358";
+  gv:red "140";
+  gv:blue "88";
+  gv:green "115";
+  gv:score "3.7402228";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "deb799";
+  gv:red "222";
+  gv:blue "153";
+  gv:green "183";
+  gv:score "3.7061526999999996";
+  gv:coverage "1.3866667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.955016"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/083vt>;
+  gv:desc "wood";
+  gv:score "59.158038999999995"
+];
+    w:bagOfWords "LVOISIE\njeux\nplants\nORSAT\nFIEDLER SA LA CHAUX DE FONDs\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

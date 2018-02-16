@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2384";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "mat Din\nCHATEAU\nCHASSE-SPLEEN\n1943\nMIS\nBOUTEILLES\nPROPRIETAIR EA\nCHATEAU\nM O U L 1. S M E D O C\nAPPELLATION CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "5b5047";
+  gv:red "91";
+  gv:blue "71";
+  gv:green "80";
+  gv:score "16.068721";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "d2c0b0";
+  gv:red "210";
+  gv:blue "176";
+  gv:green "192";
+  gv:score "11.758046";
+  gv:coverage "18.360000000000003"
+], [
+  gv:hex "9a1b1b";
+  gv:red "154";
+  gv:blue "27";
+  gv:green "27";
+  gv:score "2.0084681";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "6f150f";
+  gv:red "111";
+  gv:blue "15";
+  gv:green "21";
+  gv:score "1.1707129";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "88362e";
+  gv:red "136";
+  gv:blue "46";
+  gv:green "54";
+  gv:score "0.8443660000000001";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "41362d";
+  gv:red "65";
+  gv:blue "45";
+  gv:green "54";
+  gv:score "13.030047999999999";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "5e5143";
+  gv:red "94";
+  gv:blue "67";
+  gv:green "81";
+  gv:score "9.6635349";
+  gv:coverage "1.1466667"
+], [
+  gv:hex "ab9a8a";
+  gv:red "171";
+  gv:blue "138";
+  gv:green "154";
+  gv:score "8.5703887";
+  gv:coverage "2.7933333"
+], [
+  gv:hex "7e7269";
+  gv:red "126";
+  gv:blue "105";
+  gv:green "114";
+  gv:score "6.3797548";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "837465";
+  gv:red "131";
+  gv:blue "101";
+  gv:green "116";
+  gv:score "5.3716991";
+  gv:coverage "0.88"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.72918"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.6538"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.087723"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "51.682746"
+];
+    w:bagOfWords "mat Din\nCHATEAU\nCHASSE-SPLEEN\n1943\nMIS\nBOUTEILLES\nPROPRIETAIR EA\nCHATEAU\nM O U L 1. S M E D O C\nAPPELLATION CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

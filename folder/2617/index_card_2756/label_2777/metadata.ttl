@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2777";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "1929\nProduct of France\nCONTENTS\n1 Pint 8 Fl. Oz.\nNA\nROSIE\nE. BLANCHARD\nSaint-Lambert-du-Lattay (M.-&-L.)\nAlcohol by volume 10o per Centum\nNo 393\nRUEL\nPCITIERS\nMOD\nDEPOSE\nat\n"@fra;
+    gv:color [
+  gv:hex "dcbe9a";
+  gv:red "220";
+  gv:blue "154";
+  gv:green "190";
+  gv:score "53.941399999999994";
+  gv:coverage "43.6"
+], [
+  gv:hex "6d1a0b";
+  gv:red "109";
+  gv:blue "11";
+  gv:green "26";
+  gv:score "1.1074376000000001";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "99231a";
+  gv:red "153";
+  gv:blue "26";
+  gv:green "35";
+  gv:score "0.98539907";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "b79a78";
+  gv:red "183";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "12.956204";
+  gv:coverage "3.84"
+], [
+  gv:hex "ddbb8c";
+  gv:red "221";
+  gv:blue "140";
+  gv:green "187";
+  gv:score "9.9150829";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "907555";
+  gv:red "144";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "4.6336759";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "e5b07d";
+  gv:red "229";
+  gv:blue "125";
+  gv:green "176";
+  gv:score "2.8113496000000002";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "cc9868";
+  gv:red "204";
+  gv:blue "104";
+  gv:green "152";
+  gv:score "2.4349196";
+  gv:coverage "0.70666666"
+], [
+  gv:hex "e2b596";
+  gv:red "226";
+  gv:blue "150";
+  gv:green "181";
+  gv:score "1.3763513";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "c49477";
+  gv:red "196";
+  gv:blue "119";
+  gv:green "148";
+  gv:score "1.3559494";
+  gv:coverage "0.63333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.02877600000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "53.976756"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "51.741099999999996"
+];
+    w:bagOfWords "1929\nProduct of France\nCONTENTS\n1 Pint 8 Fl. Oz.\nNA\nROSIE\nE. BLANCHARD\nSaint-Lambert-du-Lattay (M.-&-L.)\nAlcohol by volume 10o per Centum\nNo 393\nRUEL\nPCITIERS\nMOD\nDEPOSE\nat\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

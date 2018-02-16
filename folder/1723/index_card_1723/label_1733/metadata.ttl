@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1733";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "MOS EL-SAAR RUWER\n1943 er\nKaseler Nies chen Spatles e\nFuder Nr. 3225\nWACHSTUM REICHSGRAF VON KESSELSTATT TRIEP\nDAC HAAR DATHE,\n"@deu;
+    gv:color [
+  gv:hex "d2c1ac";
+  gv:red "210";
+  gv:blue "172";
+  gv:green "193";
+  gv:score "20.148812";
+  gv:coverage "12.086666"
+], [
+  gv:hex "857457";
+  gv:red "133";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "12.705328";
+  gv:coverage "0.72"
+], [
+  gv:hex "c7c3ba";
+  gv:red "199";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "10.633036";
+  gv:coverage "11.813334000000001"
+], [
+  gv:hex "a99980";
+  gv:red "169";
+  gv:blue "128";
+  gv:green "153";
+  gv:score "10.560717";
+  gv:coverage "1.6466666"
+], [
+  gv:hex "645439";
+  gv:red "100";
+  gv:blue "57";
+  gv:green "84";
+  gv:score "7.7434316";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "a0a39d";
+  gv:red "160";
+  gv:blue "157";
+  gv:green "163";
+  gv:score "6.3789837";
+  gv:coverage "1.46"
+], [
+  gv:hex "c29487";
+  gv:red "194";
+  gv:blue "135";
+  gv:green "148";
+  gv:score "4.2418398";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "734735";
+  gv:red "115";
+  gv:blue "53";
+  gv:green "71";
+  gv:score "3.9673667000000004";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "8c7247";
+  gv:red "140";
+  gv:blue "71";
+  gv:green "114";
+  gv:score "2.972652";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "91aa9f";
+  gv:red "145";
+  gv:blue "159";
+  gv:green "170";
+  gv:score "2.3123441000000002";
+  gv:coverage "0.22666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.188126"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.879212"
+];
+    w:bagOfWords "MOS EL-SAAR RUWER\n1943 er\nKaseler Nies chen Spatles e\nFuder Nr. 3225\nWACHSTUM REICHSGRAF VON KESSELSTATT TRIEP\nDAC HAAR DATHE,\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

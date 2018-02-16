@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1225";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "FINEST\nPEACH BRANDY\nO B\nBODEGAS DE\nLOS IN FANTES\nORLEANS-BOR BON (s.A.E.\nSAN LUCAR DE BARRAMEDA\n30\n"@spa;
+    gv:color [
+  gv:hex "d1c3ae";
+  gv:red "209";
+  gv:blue "174";
+  gv:green "195";
+  gv:score "42.725649";
+  gv:coverage "10.34"
+], [
+  gv:hex "ac9d86";
+  gv:red "172";
+  gv:blue "134";
+  gv:green "157";
+  gv:score "25.976437";
+  gv:coverage "3.88"
+], [
+  gv:hex "eadac5";
+  gv:red "234";
+  gv:blue "197";
+  gv:green "218";
+  gv:score "12.459245";
+  gv:coverage "4.5733333"
+], [
+  gv:hex "d6c8bd";
+  gv:red "214";
+  gv:blue "189";
+  gv:green "200";
+  gv:score "7.9866543";
+  gv:coverage "16.72"
+], [
+  gv:hex "897962";
+  gv:red "137";
+  gv:blue "98";
+  gv:green "121";
+  gv:score "7.973688800000001";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "e8d9cf";
+  gv:red "232";
+  gv:blue "207";
+  gv:green "217";
+  gv:score "2.2725364000000003";
+  gv:coverage "63.093334"
+], [
+  gv:hex "aea296";
+  gv:red "174";
+  gv:blue "150";
+  gv:green "162";
+  gv:score "0.37992715";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "6f6148";
+  gv:red "111";
+  gv:blue "72";
+  gv:green "97";
+  gv:score "0.14682481";
+  gv:coverage "0.02"
+], [
+  gv:hex "88796f";
+  gv:red "136";
+  gv:blue "111";
+  gv:green "121";
+  gv:score "0.053770561";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "585348";
+  gv:red "88";
+  gv:blue "72";
+  gv:green "83";
+  gv:score "0.017670376";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.72163"
+];
+    w:bagOfWords "FINEST\nPEACH BRANDY\nO B\nBODEGAS DE\nLOS IN FANTES\nORLEANS-BOR BON (s.A.E.\nSAN LUCAR DE BARRAMEDA\n30\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

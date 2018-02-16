@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0089";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "MAA\nARCA\nDE Pose\nIN CHIANTI\nCASTELLO\nSIENA (ITALIA)\nDI BROLIO\nBROlio ROSSO)\nCASA VINICOLA\nBARONE RICASOLI\nFIRENZE\n"@ita;
+    gv:color [
+  gv:hex "d5c1a8";
+  gv:red "213";
+  gv:blue "168";
+  gv:green "193";
+  gv:score "8.3743006";
+  gv:coverage "19.653334"
+], [
+  gv:hex "9f6b3c";
+  gv:red "159";
+  gv:blue "60";
+  gv:green "107";
+  gv:score "6.1089188000000005";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "b59a62";
+  gv:red "181";
+  gv:blue "98";
+  gv:green "154";
+  gv:score "5.2802796999999995";
+  gv:coverage "0.38"
+], [
+  gv:hex "931e17";
+  gv:red "147";
+  gv:blue "23";
+  gv:green "30";
+  gv:score "4.3474406";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "8a3d33";
+  gv:red "138";
+  gv:blue "51";
+  gv:green "61";
+  gv:score "3.4661468";
+  gv:coverage "0.22"
+], [
+  gv:hex "cd9344";
+  gv:red "205";
+  gv:blue "68";
+  gv:green "147";
+  gv:score "2.9135581";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "efbaa9";
+  gv:red "239";
+  gv:blue "169";
+  gv:green "186";
+  gv:score "6.295009";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "b29b81";
+  gv:red "178";
+  gv:blue "129";
+  gv:green "155";
+  gv:score "4.1756392";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "8c723a";
+  gv:red "140";
+  gv:blue "58";
+  gv:green "114";
+  gv:score "3.5390474";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "9e6856";
+  gv:red "158";
+  gv:blue "86";
+  gv:green "104";
+  gv:score "3.2940127";
+  gv:coverage "0.33999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.194221"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "69.179952"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "61.976022"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "59.132379"
+];
+    w:bagOfWords "MAA\nARCA\nDE Pose\nIN CHIANTI\nCASTELLO\nSIENA (ITALIA)\nDI BROLIO\nBROlio ROSSO)\nCASA VINICOLA\nBARONE RICASOLI\nFIRENZE\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

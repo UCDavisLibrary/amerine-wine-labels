@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3924/label_3927";
+    dct:type "image";
+    w:bagOfWords "DEUTSCHE R SEKT\nHOCHHEIMERCABINET\nSEKT\n"@deu;
+    gv:color [
+  gv:hex "cdbc9f";
+  gv:red "205";
+  gv:blue "159";
+  gv:green "188";
+  gv:score "41.193751";
+  gv:coverage "14.92"
+], [
+  gv:hex "887556";
+  gv:red "136";
+  gv:blue "86";
+  gv:green "117";
+  gv:score "14.785464000000001";
+  gv:coverage "1.8066667"
+], [
+  gv:hex "966a46";
+  gv:red "150";
+  gv:blue "70";
+  gv:green "106";
+  gv:score "4.2219251";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "ad9a7d";
+  gv:red "173";
+  gv:blue "125";
+  gv:green "154";
+  gv:score "12.779983999999999";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "efdec8";
+  gv:red "239";
+  gv:blue "200";
+  gv:green "222";
+  gv:score "4.2515293000000005";
+  gv:coverage "12.926666"
+], [
+  gv:hex "6c593a";
+  gv:red "108";
+  gv:blue "58";
+  gv:green "89";
+  gv:score "3.9794854999999996";
+  gv:coverage "0.42"
+], [
+  gv:hex "886f46";
+  gv:red "136";
+  gv:blue "70";
+  gv:green "111";
+  gv:score "3.0938223000000002";
+  gv:coverage "0.16"
+], [
+  gv:hex "7e4e2b";
+  gv:red "126";
+  gv:blue "43";
+  gv:green "78";
+  gv:score "2.791046";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "d1c3b9";
+  gv:red "209";
+  gv:blue "185";
+  gv:green "195";
+  gv:score "2.3704772999999997";
+  gv:coverage "9.56"
+], [
+  gv:hex "ecddd4";
+  gv:red "236";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "2.2698076";
+  gv:coverage "55.706668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.486246"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "DEUTSCHE R SEKT\nHOCHHEIMERCABINET\nSEKT\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4545";
+    dct:type "image";
+    w:bagOfWords "Solera Osborne\n(IMPERIAL)\nXERES\nJEREZ\nSHERRY\nPUERTO DE SANTA MARIA\n197\n"@spa;
+    gv:color [
+  gv:hex "d7c3a5";
+  gv:red "215";
+  gv:blue "165";
+  gv:green "195";
+  gv:score "40.875396";
+  gv:coverage "22.373334"
+], [
+  gv:hex "af9a7a";
+  gv:red "175";
+  gv:blue "122";
+  gv:green "154";
+  gv:score "26.673803000000003";
+  gv:coverage "4.273333399999999"
+], [
+  gv:hex "8c7653";
+  gv:red "140";
+  gv:blue "83";
+  gv:green "118";
+  gv:score "14.210838";
+  gv:coverage "1.2066667"
+], [
+  gv:hex "edd9bd";
+  gv:red "237";
+  gv:blue "189";
+  gv:green "217";
+  gv:score "5.0307523";
+  gv:coverage "9.5933333"
+], [
+  gv:hex "c19083";
+  gv:red "193";
+  gv:blue "131";
+  gv:green "144";
+  gv:score "3.4699402999999998";
+  gv:coverage "0.5"
+], [
+  gv:hex "e7bcad";
+  gv:red "231";
+  gv:blue "173";
+  gv:green "188";
+  gv:score "2.6815424";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "867046";
+  gv:red "134";
+  gv:blue "70";
+  gv:green "112";
+  gv:score "2.2820795";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "745d3a";
+  gv:red "116";
+  gv:blue "58";
+  gv:green "93";
+  gv:score "1.6941383";
+  gv:coverage "0.12"
+], [
+  gv:hex "a17164";
+  gv:red "161";
+  gv:blue "100";
+  gv:green "113";
+  gv:score "1.6049035";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "fdd3c6";
+  gv:red "253";
+  gv:blue "198";
+  gv:green "211";
+  gv:score "0.41294592";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "75.215644"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "58.792245"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "53.672934000000005"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.245799999999996"
+];
+    w:bagOfWords "Solera Osborne\n(IMPERIAL)\nXERES\nJEREZ\nSHERRY\nPUERTO DE SANTA MARIA\n197\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

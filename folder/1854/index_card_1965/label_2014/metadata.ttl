@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2014";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "Ne 232\nAbolengo\ntejLGtmo LiomateA2\ngisimo Romate\nSanchez Rotate沥ws\nache, Romatel\n"@spa;
+    gv:color [
+  gv:hex "e0bc7d";
+  gv:red "224";
+  gv:blue "125";
+  gv:green "188";
+  gv:score "19.534547999999997";
+  gv:coverage "9.526667"
+], [
+  gv:hex "6a4f20";
+  gv:red "106";
+  gv:blue "32";
+  gv:green "79";
+  gv:score "8.1740193";
+  gv:coverage "2.36"
+], [
+  gv:hex "e5bb69";
+  gv:red "229";
+  gv:blue "105";
+  gv:green "187";
+  gv:score "13.170694";
+  gv:coverage "5.7266667"
+], [
+  gv:hex "714b1a";
+  gv:red "113";
+  gv:blue "26";
+  gv:green "75";
+  gv:score "7.31784";
+  gv:coverage "2.5866667"
+], [
+  gv:hex "bc9960";
+  gv:red "188";
+  gv:blue "96";
+  gv:green "153";
+  gv:score "6.501926500000001";
+  gv:coverage "2.8666666"
+], [
+  gv:hex "92723d";
+  gv:red "146";
+  gv:blue "61";
+  gv:green "114";
+  gv:score "6.0295142";
+  gv:coverage "1.9866666000000002"
+], [
+  gv:hex "543106";
+  gv:red "84";
+  gv:blue "6";
+  gv:green "49";
+  gv:score "4.4050049";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "ebb367";
+  gv:red "235";
+  gv:blue "103";
+  gv:green "179";
+  gv:score "4.3591794";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "ecb578";
+  gv:red "236";
+  gv:blue "120";
+  gv:green "181";
+  gv:score "3.9511178";
+  gv:coverage "2.2066665999999997"
+], [
+  gv:hex "976b34";
+  gv:red "151";
+  gv:blue "52";
+  gv:green "107";
+  gv:score "3.0578889";
+  gv:coverage "1.2733334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.898111"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Ne 232\nAbolengo\ntejLGtmo LiomateA2\ngisimo Romate\nSanchez Rotate沥ws\nache, Romatel\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

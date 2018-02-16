@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3243/label_3252";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "TRADE\nMARK\ndbrands Erhezeaux\nGrand Vin de Bourgogne\nBOTTLED BY THE\nPRODUCED BY\nCote D'OR,\nFrance\nPRODUCE OF FRANCE\nNTENTS\nPt 8 FLUID OZS\nFlagey Eche zedur\n7 te de Cuvee\n"@fra;
+    gv:color [
+  gv:hex "bc9e7a";
+  gv:red "188";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "39.853215";
+  gv:coverage "13.239999999999998"
+], [
+  gv:hex "4d2715";
+  gv:red "77";
+  gv:blue "21";
+  gv:green "39";
+  gv:score "4.579727";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "d4b590";
+  gv:red "212";
+  gv:blue "144";
+  gv:green "181";
+  gv:score "28.283036";
+  gv:coverage "21.313334"
+], [
+  gv:hex "907453";
+  gv:red "144";
+  gv:blue "83";
+  gv:green "116";
+  gv:score "7.0685968";
+  gv:coverage "2.2133334000000002"
+], [
+  gv:hex "b8996f";
+  gv:red "184";
+  gv:blue "111";
+  gv:green "153";
+  gv:score "2.889581";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "6f4b33";
+  gv:red "111";
+  gv:blue "51";
+  gv:green "75";
+  gv:score "2.7154438";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "6c5234";
+  gv:red "108";
+  gv:blue "52";
+  gv:green "82";
+  gv:score "2.7098754";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "90734b";
+  gv:red "144";
+  gv:blue "75";
+  gv:green "115";
+  gv:score "2.5414003000000003";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "bf9878";
+  gv:red "191";
+  gv:blue "120";
+  gv:green "152";
+  gv:score "1.7325093999999999";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "8d674c";
+  gv:red "141";
+  gv:blue "76";
+  gv:green "103";
+  gv:score "1.4149237000000001";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.248126"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "61.225861"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.271221000000004"
+];
+    w:bagOfWords "TRADE\nMARK\ndbrands Erhezeaux\nGrand Vin de Bourgogne\nBOTTLED BY THE\nPRODUCED BY\nCote D'OR,\nFrance\nPRODUCE OF FRANCE\nNTENTS\nPt 8 FLUID OZS\nFlagey Eche zedur\n7 te de Cuvee\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0163";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "AWARDS\nALCOHOL 12%\n4%\nSAN FRANCISCO 1887-1915\nBY VOLUME\nDUBLIN 1892\nCHICAGO 1893\nNET CONTENTS\nPARIS 1889-1900\nCALIFORNIA STATE FAIR 1934-1935\nPT. 8 FL. OZ.\nESTABLIS\n876\nRODUCED AND BOTTLED BY\nRINGER BROS., INC\nBONDED WINERY NO 46\n4TH SUP. ADM. DIST. CALIF.\nLOS HER MANOS VINEYARDS ST. HELENA, CALIFORNIA\nTAX PAID BY STAMPS AFFIXED TO CASE\nROESCH Co., SAN FPANCISCO,\n"@eng;
+    gv:color [
+  gv:hex "d5bfa5";
+  gv:red "213";
+  gv:blue "165";
+  gv:green "191";
+  gv:score "40.535495";
+  gv:coverage "29.78"
+], [
+  gv:hex "b39d84";
+  gv:red "179";
+  gv:blue "132";
+  gv:green "157";
+  gv:score "18.199328";
+  gv:coverage "3.3466666999999997"
+], [
+  gv:hex "d7b885";
+  gv:red "215";
+  gv:blue "133";
+  gv:green "184";
+  gv:score "7.386267200000001";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "efdac1";
+  gv:red "239";
+  gv:blue "193";
+  gv:green "218";
+  gv:score "7.1002856";
+  gv:coverage "13.033332999999999"
+], [
+  gv:hex "89775d";
+  gv:red "137";
+  gv:blue "93";
+  gv:green "119";
+  gv:score "7.0259877";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "b8975f";
+  gv:red "184";
+  gv:blue "95";
+  gv:green "151";
+  gv:score "6.902422800000001";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "b79583";
+  gv:red "183";
+  gv:blue "131";
+  gv:green "149";
+  gv:score "3.0566706999999997";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "675540";
+  gv:red "103";
+  gv:blue "64";
+  gv:green "85";
+  gv:score "2.6350697999999997";
+  gv:coverage "0.24"
+], [
+  gv:hex "dbb7a4";
+  gv:red "219";
+  gv:blue "164";
+  gv:green "183";
+  gv:score "2.5163027000000002";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "a07f43";
+  gv:red "160";
+  gv:blue "67";
+  gv:green "127";
+  gv:score "1.1855206999999999";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.849818"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.51872399999999"
+];
+    w:bagOfWords "AWARDS\nALCOHOL 12%\n4%\nSAN FRANCISCO 1887-1915\nBY VOLUME\nDUBLIN 1892\nCHICAGO 1893\nNET CONTENTS\nPARIS 1889-1900\nCALIFORNIA STATE FAIR 1934-1935\nPT. 8 FL. OZ.\nESTABLIS\n876\nRODUCED AND BOTTLED BY\nRINGER BROS., INC\nBONDED WINERY NO 46\n4TH SUP. ADM. DIST. CALIF.\nLOS HER MANOS VINEYARDS ST. HELENA, CALIFORNIA\nTAX PAID BY STAMPS AFFIXED TO CASE\nROESCH Co., SAN FPANCISCO,\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

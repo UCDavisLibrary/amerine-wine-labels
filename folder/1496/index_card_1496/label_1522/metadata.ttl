@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1522";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "FLORIDO HERMANOS\nMANZANILLA\nBUENOS AIRES\nCHICAGO\nN. 31\nSANLUCAR DE BARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "9d6b43";
+  gv:red "157";
+  gv:blue "67";
+  gv:green "107";
+  gv:score "14.263353";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "080d26";
+  gv:red "8";
+  gv:blue "38";
+  gv:green "13";
+  gv:score "4.9469627";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "08123c";
+  gv:red "8";
+  gv:blue "60";
+  gv:green "18";
+  gv:score "2.4446231999999997";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "9b6a54";
+  gv:red "155";
+  gv:blue "84";
+  gv:green "106";
+  gv:score "12.393377999999998";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "7e4e38";
+  gv:red "126";
+  gv:blue "56";
+  gv:green "78";
+  gv:score "7.569419600000001";
+  gv:coverage "1.02"
+], [
+  gv:hex "824e2c";
+  gv:red "130";
+  gv:blue "44";
+  gv:green "78";
+  gv:score "6.44941";
+  gv:coverage "0.64"
+], [
+  gv:hex "c09077";
+  gv:red "192";
+  gv:blue "119";
+  gv:green "144";
+  gv:score "5.5648874";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "ebbca9";
+  gv:red "235";
+  gv:blue "169";
+  gv:green "188";
+  gv:score "4.487171";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "927240";
+  gv:red "146";
+  gv:blue "64";
+  gv:green "114";
+  gv:score "4.0548328";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "bb8a5e";
+  gv:red "187";
+  gv:blue "94";
+  gv:green "138";
+  gv:score "3.8942276999999996";
+  gv:coverage "0.45333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.291285"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "54.226339"
+], [
+  gv:mid <https://g.co/kg/m/02wbm>;
+  gv:desc "food";
+  gv:score "51.012623000000005"
+];
+    w:bagOfWords "FLORIDO HERMANOS\nMANZANILLA\nBUENOS AIRES\nCHICAGO\nN. 31\nSANLUCAR DE BARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

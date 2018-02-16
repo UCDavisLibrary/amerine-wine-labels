@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0056";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "OSCATEL\nITGES\nMuscatel\nSpanish\nWine\nAMS\nTANZAS PERFE\nPRODUCT OF SPAIN\nBARCE\ncontenté 1 Pint 5 FI. oz.\nmBroduced Bottied by: DE LA PROPIEDAD DE\nAlcohol by vol. 18\nUEELRIRAYMATAS\nSIT G\nS\nMARCA REGISTRADA\n"@spa;
+    gv:color [
+  gv:hex "e1b727";
+  gv:red "225";
+  gv:blue "39";
+  gv:green "183";
+  gv:score "13.493340000000002";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "8c7237";
+  gv:red "140";
+  gv:blue "55";
+  gv:green "114";
+  gv:score "11.006523";
+  gv:coverage "3.2066666"
+], [
+  gv:hex "b14448";
+  gv:red "177";
+  gv:blue "72";
+  gv:green "68";
+  gv:score "0.11979541";
+  gv:coverage "0.02"
+], [
+  gv:hex "6a5619";
+  gv:red "106";
+  gv:blue "25";
+  gv:green "86";
+  gv:score "6.7363277";
+  gv:coverage "1.7066667"
+], [
+  gv:hex "78521e";
+  gv:red "120";
+  gv:blue "30";
+  gv:green "82";
+  gv:score "6.4394808999999995";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "b0975c";
+  gv:red "176";
+  gv:blue "92";
+  gv:green "151";
+  gv:score "5.9750821";
+  gv:coverage "2.02"
+], [
+  gv:hex "d8be7f";
+  gv:red "216";
+  gv:blue "127";
+  gv:green "190";
+  gv:score "5.4343056";
+  gv:coverage "1.7733334"
+], [
+  gv:hex "926935";
+  gv:red "146";
+  gv:blue "53";
+  gv:green "105";
+  gv:score "5.1172465";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "e6bd0e";
+  gv:red "230";
+  gv:blue "14";
+  gv:green "189";
+  gv:score "4.5091525";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "c49c13";
+  gv:red "196";
+  gv:blue "19";
+  gv:green "156";
+  gv:score "4.1498762000000005";
+  gv:coverage "0.38666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.561751"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "OSCATEL\nITGES\nMuscatel\nSpanish\nWine\nAMS\nTANZAS PERFE\nPRODUCT OF SPAIN\nBARCE\ncontenté 1 Pint 5 FI. oz.\nmBroduced Bottied by: DE LA PROPIEDAD DE\nAlcohol by vol. 18\nUEELRIRAYMATAS\nSIT G\nS\nMARCA REGISTRADA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

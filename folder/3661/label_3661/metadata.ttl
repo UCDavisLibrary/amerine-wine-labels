@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3661/label_3661";
+    dct:type "image";
+    w:bagOfWords "Miano Jinete\nvino de Rwas Geleccionaoos\nBarcelona\nReg. embot.ne 80\nRrge export. ng 440\n"@spa;
+    gv:color [
+  gv:hex "dfc492";
+  gv:red "223";
+  gv:blue "146";
+  gv:green "196";
+  gv:score "28.564646999999997";
+  gv:coverage "10.113332999999999"
+], [
+  gv:hex "8c3819";
+  gv:red "140";
+  gv:blue "25";
+  gv:green "56";
+  gv:score "6.53789";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "ab310e";
+  gv:red "171";
+  gv:blue "14";
+  gv:green "49";
+  gv:score "0.45292405";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "dcc69e";
+  gv:red "220";
+  gv:blue "158";
+  gv:green "198";
+  gv:score "10.720112";
+  gv:coverage "8.4133334"
+], [
+  gv:hex "b59863";
+  gv:red "181";
+  gv:blue "99";
+  gv:green "152";
+  gv:score "5.786512";
+  gv:coverage "2.3666666999999997"
+], [
+  gv:hex "c69069";
+  gv:red "198";
+  gv:blue "105";
+  gv:green "144";
+  gv:score "5.3766862";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "907644";
+  gv:red "144";
+  gv:blue "68";
+  gv:green "118";
+  gv:score "4.8172154";
+  gv:coverage "2.1266667"
+], [
+  gv:hex "ecb990";
+  gv:red "236";
+  gv:blue "144";
+  gv:green "185";
+  gv:score "4.6941347";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "7c4820";
+  gv:red "124";
+  gv:blue "32";
+  gv:green "72";
+  gv:score "4.2411935";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "9f6a43";
+  gv:red "159";
+  gv:blue "67";
+  gv:green "106";
+  gv:score "3.4919418";
+  gv:coverage "1.0866666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03bt1gh>;
+  gv:desc "games";
+  gv:score "51.838368"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.774663"
+];
+    w:bagOfWords "Miano Jinete\nvino de Rwas Geleccionaoos\nBarcelona\nReg. embot.ne 80\nRrge export. ng 440\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

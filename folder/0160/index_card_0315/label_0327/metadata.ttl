@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0327";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ALCOHOL 12%\nNET CONTENTS.\nBY VOLUME\n34 QUART\nTRADE MARK\nSINCE 1873\nCALIFORNIA\nC L A R E T\nBOTTLED BY\nFOUNTAINGROVE VINEYARD\nB. W. No. 1051\nTH\nDISTRICT, CALIF.\nSANTA ROSA\nCALIFORNIA\nTAX PAID BY STA M PS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "ccc6a5";
+  gv:red "204";
+  gv:blue "165";
+  gv:green "198";
+  gv:score "44.024950000000004";
+  gv:coverage "19.146666"
+], [
+  gv:hex "8b7945";
+  gv:red "139";
+  gv:blue "69";
+  gv:green "121";
+  gv:score "7.8764565";
+  gv:coverage "1.8466666"
+], [
+  gv:hex "c2c387";
+  gv:red "194";
+  gv:blue "135";
+  gv:green "195";
+  gv:score "5.0029922";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "a8a07b";
+  gv:red "168";
+  gv:blue "123";
+  gv:green "160";
+  gv:score "11.849601999999999";
+  gv:coverage "2.2266667"
+], [
+  gv:hex "e3ddbd";
+  gv:red "227";
+  gv:blue "189";
+  gv:green "221";
+  gv:score "8.4042117";
+  gv:coverage "6.1866667"
+], [
+  gv:hex "a49d68";
+  gv:red "164";
+  gv:blue "104";
+  gv:green "157";
+  gv:score "4.9536042";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "c8c48e";
+  gv:red "200";
+  gv:blue "142";
+  gv:green "196";
+  gv:score "4.6423003";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "9d9e5e";
+  gv:red "157";
+  gv:blue "94";
+  gv:green "158";
+  gv:score "3.9149578999999997";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "8b7c57";
+  gv:red "139";
+  gv:blue "87";
+  gv:green "124";
+  gv:score "3.2895925999999998";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "82813e";
+  gv:red "130";
+  gv:blue "62";
+  gv:green "129";
+  gv:score "1.3942025";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.915477"
+];
+    w:bagOfWords "ALCOHOL 12%\nNET CONTENTS.\nBY VOLUME\n34 QUART\nTRADE MARK\nSINCE 1873\nCALIFORNIA\nC L A R E T\nBOTTLED BY\nFOUNTAINGROVE VINEYARD\nB. W. No. 1051\nTH\nDISTRICT, CALIF.\nSANTA ROSA\nCALIFORNIA\nTAX PAID BY STA M PS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

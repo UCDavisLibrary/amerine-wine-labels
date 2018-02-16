@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0478";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R H E I N G A U\nDer\nRelierei\nHATTENHEIMA RH.\n1945er hottenheimer haNel Ausdefe\n"@deu;
+    gv:color [
+  gv:hex "cdc0ac";
+  gv:red "205";
+  gv:blue "172";
+  gv:green "192";
+  gv:score "9.155874";
+  gv:coverage "24.246667"
+], [
+  gv:hex "615337";
+  gv:red "97";
+  gv:blue "55";
+  gv:green "83";
+  gv:score "7.1245447";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "d68f08";
+  gv:red "214";
+  gv:blue "8";
+  gv:green "143";
+  gv:score "3.3629395";
+  gv:coverage "0.8"
+], [
+  gv:hex "c04a3d";
+  gv:red "192";
+  gv:blue "61";
+  gv:green "74";
+  gv:score "1.7571175";
+  gv:coverage "0.4"
+], [
+  gv:hex "dcb620";
+  gv:red "220";
+  gv:blue "32";
+  gv:green "182";
+  gv:score "1.3178158";
+  gv:coverage "0.5"
+], [
+  gv:hex "b42d14";
+  gv:red "180";
+  gv:blue "20";
+  gv:green "45";
+  gv:score "0.59824069";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "1c5f6c";
+  gv:red "28";
+  gv:blue "108";
+  gv:green "95";
+  gv:score "0.49403938";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "3e2d51";
+  gv:red "62";
+  gv:blue "81";
+  gv:green "45";
+  gv:score "0.18672436";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "291749";
+  gv:red "41";
+  gv:blue "73";
+  gv:green "23";
+  gv:score "0.0834284";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "2d4d88";
+  gv:red "45";
+  gv:blue "136";
+  gv:green "77";
+  gv:score "0.078709307";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.402261"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.245219"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "62.471323999999996"
+];
+    w:bagOfWords "R H E I N G A U\nDer\nRelierei\nHATTENHEIMA RH.\n1945er hottenheimer haNel Ausdefe\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

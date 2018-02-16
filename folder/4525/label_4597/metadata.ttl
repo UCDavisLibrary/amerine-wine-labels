@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4597";
+    dct:type "image";
+    w:bagOfWords "RAN\nDINO NATURAL\nde la DASA\nunion de\nBodegas Hndaluzas\nS. A\nR.E. 411\n"@spa;
+    gv:color [
+  gv:hex "e2c8a2";
+  gv:red "226";
+  gv:blue "162";
+  gv:green "200";
+  gv:score "8.467477599999999";
+  gv:coverage "11.24"
+], [
+  gv:hex "4a2c1c";
+  gv:red "74";
+  gv:blue "28";
+  gv:green "44";
+  gv:score "8.2464084";
+  gv:coverage "2.94"
+], [
+  gv:hex "ca9264";
+  gv:red "202";
+  gv:blue "100";
+  gv:green "146";
+  gv:score "4.5474671";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "cd4217";
+  gv:red "205";
+  gv:blue "23";
+  gv:green "66";
+  gv:score "4.2207267";
+  gv:coverage "0.5"
+], [
+  gv:hex "0c3483";
+  gv:red "12";
+  gv:blue "131";
+  gv:green "52";
+  gv:score "2.701241";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "b5b932";
+  gv:red "181";
+  gv:blue "50";
+  gv:green "185";
+  gv:score "0.096525165";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "353b00";
+  gv:red "53";
+  gv:blue "undefined";
+  gv:green "59";
+  gv:score "0.053449377";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "ddc18d";
+  gv:red "221";
+  gv:blue "141";
+  gv:green "193";
+  gv:score "4.9765497";
+  gv:coverage "5.2"
+], [
+  gv:hex "6d4a35";
+  gv:red "109";
+  gv:blue "53";
+  gv:green "74";
+  gv:score "4.4083442999999995";
+  gv:coverage "1.8666665999999998"
+], [
+  gv:hex "b69a5e";
+  gv:red "182";
+  gv:blue "94";
+  gv:green "154";
+  gv:score "3.9976504000000004";
+  gv:coverage "2.7533334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02wbm>;
+  gv:desc "food";
+  gv:score "87.734771"
+], [
+  gv:mid <https://g.co/kg/m/0270h>;
+  gv:desc "dessert";
+  gv:score "71.15576300000001"
+], [
+  gv:mid <https://g.co/kg/m/01ww8y>;
+  gv:desc "snack food";
+  gv:score "61.3971"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "56.26956800000001"
+], [
+  gv:mid <https://g.co/kg/m/036qh8>;
+  gv:desc "produce";
+  gv:score "56.148343999999994"
+];
+    w:bagOfWords "RAN\nDINO NATURAL\nde la DASA\nunion de\nBodegas Hndaluzas\nS. A\nR.E. 411\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

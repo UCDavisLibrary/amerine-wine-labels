@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1811";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Mosel-Saar-Ruwer\nAlcoholic content\nContents\n9 by volume\n1947et\n1 pt, 8 fl. oz.\npiesporter tau\nmadst. fiarl Thielen\nGEGR 1810\nRichter drud, burg\n"@deu;
+    gv:color [
+  gv:hex "d5bca0";
+  gv:red "213";
+  gv:blue "160";
+  gv:green "188";
+  gv:score "26.644304";
+  gv:coverage "37.8"
+], [
+  gv:hex "c09177";
+  gv:red "192";
+  gv:blue "119";
+  gv:green "145";
+  gv:score "10.580941000000001";
+  gv:coverage "1.2"
+], [
+  gv:hex "62513b";
+  gv:red "98";
+  gv:blue "59";
+  gv:green "81";
+  gv:score "9.3307555";
+  gv:coverage "2.8266666"
+], [
+  gv:hex "b19a80";
+  gv:red "177";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "10.03787";
+  gv:coverage "2.5"
+], [
+  gv:hex "86745e";
+  gv:red "134";
+  gv:blue "94";
+  gv:green "116";
+  gv:score "8.1035264";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "44331d";
+  gv:red "68";
+  gv:blue "29";
+  gv:green "51";
+  gv:score "5.9787083";
+  gv:coverage "1.9800000000000002"
+], [
+  gv:hex "d7b682";
+  gv:red "215";
+  gv:blue "130";
+  gv:green "182";
+  gv:score "5.5078097";
+  gv:coverage "0.52"
+], [
+  gv:hex "e0b49d";
+  gv:red "224";
+  gv:blue "157";
+  gv:green "180";
+  gv:score "5.107991";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "c0a16e";
+  gv:red "192";
+  gv:blue "110";
+  gv:green "161";
+  gv:score "4.2161793";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "a9755d";
+  gv:red "169";
+  gv:blue "93";
+  gv:green "117";
+  gv:score "2.6176635";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "85.621941"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.656059"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "55.110687000000006"
+];
+    w:bagOfWords "Mosel-Saar-Ruwer\nAlcoholic content\nContents\n9 by volume\n1947et\n1 pt, 8 fl. oz.\npiesporter tau\nmadst. fiarl Thielen\nGEGR 1810\nRichter drud, burg\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

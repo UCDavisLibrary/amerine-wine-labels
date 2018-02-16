@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2556";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "Product\nAppellation\nof France\nControlée\nSON FONDEE\nCHABLIS-LAFOURCHAUME\nWHITE BURGUNDY WINE\nRESERVE DES CAVES DE J.MOREAU FILs A CHABLIS\n"@fra;
+    gv:color [
+  gv:hex "af967d";
+  gv:red "175";
+  gv:blue "125";
+  gv:green "150";
+  gv:score "32.224587";
+  gv:coverage "6.3933335"
+], [
+  gv:hex "d9c0a5";
+  gv:red "217";
+  gv:blue "165";
+  gv:green "192";
+  gv:score "31.295159";
+  gv:coverage "58.373332"
+], [
+  gv:hex "8a745d";
+  gv:red "138";
+  gv:blue "93";
+  gv:green "116";
+  gv:score "21.45506";
+  gv:coverage "3.34"
+], [
+  gv:hex "6b543d";
+  gv:red "107";
+  gv:blue "61";
+  gv:green "84";
+  gv:score "11.663028";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "f1d8be";
+  gv:red "241";
+  gv:blue "190";
+  gv:green "216";
+  gv:score "2.5781242";
+  gv:coverage "21.68"
+], [
+  gv:hex "503a22";
+  gv:red "80";
+  gv:blue "34";
+  gv:green "58";
+  gv:score "0.6408058999999999";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "1e0c00";
+  gv:red "30";
+  gv:blue "undefined";
+  gv:green "12";
+  gv:score "0.004743873399999999";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "4a3016";
+  gv:red "74";
+  gv:blue "22";
+  gv:green "48";
+  gv:score "0.13459807999999998";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "311f0b";
+  gv:red "49";
+  gv:blue "11";
+  gv:green "31";
+  gv:score "0.0038930153";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "e3ddd9";
+  gv:red "227";
+  gv:blue "217";
+  gv:green "221";
+  gv:score "1.7838553e-7";
+  gv:coverage "6.7533337"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.573059"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.957154"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "50.397128"
+];
+    w:bagOfWords "Product\nAppellation\nof France\nControlée\nSON FONDEE\nCHABLIS-LAFOURCHAUME\nWHITE BURGUNDY WINE\nRESERVE DES CAVES DE J.MOREAU FILs A CHABLIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

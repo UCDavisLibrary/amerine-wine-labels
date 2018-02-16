@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0949";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "COLLEGE DE\nVIN LIVRE EN FUTS\n"@deu;
+    gv:color [
+  gv:hex "867654";
+  gv:red "134";
+  gv:blue "84";
+  gv:green "118";
+  gv:score "15.484875";
+  gv:coverage "3.1066667"
+], [
+  gv:hex "8d7747";
+  gv:red "141";
+  gv:blue "71";
+  gv:green "119";
+  gv:score "12.722971";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "635332";
+  gv:red "99";
+  gv:blue "50";
+  gv:green "83";
+  gv:score "11.415192000000001";
+  gv:coverage "1.7466666"
+], [
+  gv:hex "aa9976";
+  gv:red "170";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "11.280397";
+  gv:coverage "3.2866668000000003"
+], [
+  gv:hex "ab9564";
+  gv:red "171";
+  gv:blue "100";
+  gv:green "149";
+  gv:score "10.384046";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "d3c0a0";
+  gv:red "211";
+  gv:blue "160";
+  gv:green "192";
+  gv:score "10.217106";
+  gv:coverage "21.366666000000002"
+], [
+  gv:hex "413214";
+  gv:red "65";
+  gv:blue "20";
+  gv:green "50";
+  gv:score "6.8514213";
+  gv:coverage "0.96"
+], [
+  gv:hex "685327";
+  gv:red "104";
+  gv:blue "39";
+  gv:green "83";
+  gv:score "6.3254654";
+  gv:coverage "0.76"
+], [
+  gv:hex "d2ba88";
+  gv:red "210";
+  gv:blue "136";
+  gv:green "186";
+  gv:score "3.4999438";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "4a370d";
+  gv:red "74";
+  gv:blue "13";
+  gv:green "55";
+  gv:score "1.9254305999999999";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.779535"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.21119"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.027128"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.257683"
+];
+    w:bagOfWords "COLLEGE DE\nVIN LIVRE EN FUTS\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

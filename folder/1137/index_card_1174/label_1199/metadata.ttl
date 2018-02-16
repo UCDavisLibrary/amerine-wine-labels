@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1199";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "Embotelladores\nParis\nBurdeos\nMatanzas\nCadiz\nDISTILLED BY\nFLOR I & Co\nSanlucar de Farrameda\nBRANDY EXTRA VIEJISIMO S.\n2O YEARS OLD\nContents\nProduce\nAlcoholic content\n4/5 quarts\nof Spain\n900 proo\nLIT d, M. ARNAU BARNA\n"@spa;
+    gv:color [
+  gv:hex "d8c3a2";
+  gv:red "216";
+  gv:blue "162";
+  gv:green "195";
+  gv:score "53.335327";
+  gv:coverage "45.406666"
+], [
+  gv:hex "af9a7b";
+  gv:red "175";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "17.395184999999998";
+  gv:coverage "5.453333300000001"
+], [
+  gv:hex "897658";
+  gv:red "137";
+  gv:blue "88";
+  gv:green "118";
+  gv:score "11.768269";
+  gv:coverage "2.7933333"
+], [
+  gv:hex "645237";
+  gv:red "100";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "7.6796189";
+  gv:coverage "1.7333332"
+], [
+  gv:hex "453319";
+  gv:red "69";
+  gv:blue "25";
+  gv:green "51";
+  gv:score "4.0375762";
+  gv:coverage "0.90666665"
+], [
+  gv:hex "ecd8b9";
+  gv:red "236";
+  gv:blue "185";
+  gv:green "216";
+  gv:score "3.9482567000000004";
+  gv:coverage "27"
+], [
+  gv:hex "2b1a04";
+  gv:red "43";
+  gv:blue "4";
+  gv:green "26";
+  gv:score "0.5710715";
+  gv:coverage "0.16"
+], [
+  gv:hex "bf9c6f";
+  gv:red "191";
+  gv:blue "111";
+  gv:green "156";
+  gv:score "0.30917544";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "d8be91";
+  gv:red "216";
+  gv:blue "145";
+  gv:green "190";
+  gv:score "0.26928743";
+  gv:coverage "0.16"
+], [
+  gv:hex "1b0c03";
+  gv:red "27";
+  gv:blue "3";
+  gv:green "12";
+  gv:score "0.24929903";
+  gv:coverage "0.11333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.926327"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "58.417696"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "50.61067299999999"
+];
+    w:bagOfWords "Embotelladores\nParis\nBurdeos\nMatanzas\nCadiz\nDISTILLED BY\nFLOR I & Co\nSanlucar de Farrameda\nBRANDY EXTRA VIEJISIMO S.\n2O YEARS OLD\nContents\nProduce\nAlcoholic content\n4/5 quarts\nof Spain\n900 proo\nLIT d, M. ARNAU BARNA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

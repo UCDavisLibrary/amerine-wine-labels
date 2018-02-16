@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3256/label_3272";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "1947\nLE\nON\nSt Bivant\nDOMANE GENERAL MAREYMONGE\nGS\nIMP. JouFFFor BEAUNE\n"@fra;
+    gv:color [
+  gv:hex "dfc5a5";
+  gv:red "223";
+  gv:blue "165";
+  gv:green "197";
+  gv:score "17.366028";
+  gv:coverage "19.72"
+], [
+  gv:hex "f0b588";
+  gv:red "240";
+  gv:blue "136";
+  gv:green "181";
+  gv:score "11.422925000000001";
+  gv:coverage "1.68"
+], [
+  gv:hex "b65e3c";
+  gv:red "182";
+  gv:blue "60";
+  gv:green "94";
+  gv:score "4.8888437";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "542916";
+  gv:red "84";
+  gv:blue "22";
+  gv:green "41";
+  gv:score "4.1692987";
+  gv:coverage "0.4"
+], [
+  gv:hex "f0bda0";
+  gv:red "240";
+  gv:blue "160";
+  gv:green "189";
+  gv:score "7.402753099999999";
+  gv:coverage "1.66"
+], [
+  gv:hex "f2dab9";
+  gv:red "242";
+  gv:blue "185";
+  gv:green "218";
+  gv:score "7.329338000000001";
+  gv:coverage "11.026666"
+], [
+  gv:hex "cd9166";
+  gv:red "205";
+  gv:blue "102";
+  gv:green "145";
+  gv:score "6.3034423";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "e0be8d";
+  gv:red "224";
+  gv:blue "141";
+  gv:green "190";
+  gv:score "5.0379287";
+  gv:coverage "1.9866666000000002"
+], [
+  gv:hex "96411e";
+  gv:red "150";
+  gv:blue "30";
+  gv:green "65";
+  gv:score "4.0290762";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "b19a7c";
+  gv:red "177";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "3.6604691000000003";
+  gv:coverage "1.2"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.951362"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "1947\nLE\nON\nSt Bivant\nDOMANE GENERAL MAREYMONGE\nGS\nIMP. JouFFFor BEAUNE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

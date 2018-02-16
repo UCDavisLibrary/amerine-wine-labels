@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3133";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "RED BORDEAUX WINE\nLAROSE MARCEAU\nREGISTERED TRADE MARK\nPRODUCE\nOF FRANCE\nIMO INTO P O LY\nBORDEAUX France\nBOTTLED IN BORDEAUX FRANCE\nCONTENTS I PT. 8 FL.0ZS.\n"@fra;
+    gv:color [
+  gv:hex "dbc4a1";
+  gv:red "219";
+  gv:blue "161";
+  gv:green "196";
+  gv:score "50.083458";
+  gv:coverage "39.519999999999996"
+], [
+  gv:hex "4b2e11";
+  gv:red "75";
+  gv:blue "17";
+  gv:green "46";
+  gv:score "1.5077968000000002";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "b09876";
+  gv:red "176";
+  gv:blue "118";
+  gv:green "152";
+  gv:score "17.570345";
+  gv:coverage "3.5133332000000004"
+], [
+  gv:hex "8f7756";
+  gv:red "143";
+  gv:blue "86";
+  gv:green "119";
+  gv:score "8.2629465";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "efd9b7";
+  gv:red "239";
+  gv:blue "183";
+  gv:green "217";
+  gv:score "6.4974219";
+  gv:coverage "27.62"
+], [
+  gv:hex "dcc194";
+  gv:red "220";
+  gv:blue "148";
+  gv:green "193";
+  gv:score "4.2928148";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "896f46";
+  gv:red "137";
+  gv:blue "70";
+  gv:green "111";
+  gv:score "2.8751189";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "ad9468";
+  gv:red "173";
+  gv:blue "104";
+  gv:green "148";
+  gv:score "2.052621";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "6b5334";
+  gv:red "107";
+  gv:blue "52";
+  gv:green "83";
+  gv:score "1.8145936000000003";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "6f552d";
+  gv:red "111";
+  gv:blue "45";
+  gv:green "85";
+  gv:score "1.4884483";
+  gv:coverage "0.11333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.308107"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.58186"
+];
+    w:bagOfWords "RED BORDEAUX WINE\nLAROSE MARCEAU\nREGISTERED TRADE MARK\nPRODUCE\nOF FRANCE\nIMO INTO P O LY\nBORDEAUX France\nBOTTLED IN BORDEAUX FRANCE\nCONTENTS I PT. 8 FL.0ZS.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

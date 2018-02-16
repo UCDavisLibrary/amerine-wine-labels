@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4259";
+    dct:type "image";
+    w:bagOfWords "ARISETTE\nLIQUEUR\nABB\nPRODUCT OF FRANCE\nShipped by\nVIEILLE CURE S. A\nCENON FRANCE\n50 Proof\n4/5 quart\n"@fra;
+    gv:color [
+  gv:hex "cdbfa7";
+  gv:red "205";
+  gv:blue "167";
+  gv:green "191";
+  gv:score "32.759354";
+  gv:coverage "12.753333"
+], [
+  gv:hex "77482f";
+  gv:red "119";
+  gv:blue "47";
+  gv:green "72";
+  gv:score "5.918229";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "2b2f42";
+  gv:red "43";
+  gv:blue "66";
+  gv:green "47";
+  gv:score "0.9044894";
+  gv:coverage "0.48"
+], [
+  gv:hex "b1a289";
+  gv:red "177";
+  gv:blue "137";
+  gv:green "162";
+  gv:score "12.192564";
+  gv:coverage "2.7266665999999997"
+], [
+  gv:hex "c19278";
+  gv:red "193";
+  gv:blue "120";
+  gv:green "146";
+  gv:score "7.0965737";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "e0b398";
+  gv:red "224";
+  gv:blue "152";
+  gv:green "179";
+  gv:score "6.899856";
+  gv:coverage "0.47333334000000005"
+], [
+  gv:hex "e8ddc8";
+  gv:red "232";
+  gv:blue "200";
+  gv:green "221";
+  gv:score "5.5973783";
+  gv:coverage "8.713333299999999"
+], [
+  gv:hex "9d6d53";
+  gv:red "157";
+  gv:blue "83";
+  gv:green "109";
+  gv:score "5.2851245";
+  gv:coverage "0.3"
+], [
+  gv:hex "857964";
+  gv:red "133";
+  gv:blue "100";
+  gv:green "121";
+  gv:score "3.3641241";
+  gv:coverage "1.2133333"
+], [
+  gv:hex "e9ded2";
+  gv:red "233";
+  gv:blue "210";
+  gv:green "222";
+  gv:score "2.6511494";
+  gv:coverage "60.446668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.051885"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "59.939176"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.7219"
+];
+    w:bagOfWords "ARISETTE\nLIQUEUR\nABB\nPRODUCT OF FRANCE\nShipped by\nVIEILLE CURE S. A\nCENON FRANCE\n50 Proof\n4/5 quart\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

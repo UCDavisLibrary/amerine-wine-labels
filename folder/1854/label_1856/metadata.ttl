@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1856";
+    dct:type "image";
+    w:bagOfWords "AMONTILLADO FINO DE SANLUCAR\nSANLUCAR DE BARRAMEDA.\nN927\n"@spa;
+    gv:color [
+  gv:hex "d7c2a8";
+  gv:red "215";
+  gv:blue "168";
+  gv:green "194";
+  gv:score "39.65795";
+  gv:coverage "54.1"
+], [
+  gv:hex "8a7357";
+  gv:red "138";
+  gv:blue "87";
+  gv:green "115";
+  gv:score "15.990736";
+  gv:coverage "1.32"
+], [
+  gv:hex "695236";
+  gv:red "105";
+  gv:blue "54";
+  gv:green "82";
+  gv:score "15.886958000000002";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "af997d";
+  gv:red "175";
+  gv:blue "125";
+  gv:green "153";
+  gv:score "15.635562";
+  gv:coverage "1.46"
+], [
+  gv:hex "eddac3";
+  gv:red "237";
+  gv:blue "195";
+  gv:green "218";
+  gv:score "9.63176";
+  gv:coverage "24.746667"
+], [
+  gv:hex "4c371e";
+  gv:red "76";
+  gv:blue "30";
+  gv:green "55";
+  gv:score "1.8603977";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "694d28";
+  gv:red "105";
+  gv:blue "40";
+  gv:green "77";
+  gv:score "0.7109344";
+  gv:coverage "0.04"
+], [
+  gv:hex "baa175";
+  gv:red "186";
+  gv:blue "117";
+  gv:green "161";
+  gv:score "0.18618209";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "31200a";
+  gv:red "49";
+  gv:blue "10";
+  gv:green "32";
+  gv:score "0.14717376000000001";
+  gv:coverage "0.04"
+], [
+  gv:hex "3d2406";
+  gv:red "61";
+  gv:blue "6";
+  gv:green "36";
+  gv:score "0.10732996";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.203777"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "AMONTILLADO FINO DE SANLUCAR\nSANLUCAR DE BARRAMEDA.\nN927\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

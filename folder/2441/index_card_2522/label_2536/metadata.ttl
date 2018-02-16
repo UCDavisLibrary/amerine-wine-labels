@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2536";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "1999\nPRODUCE OF FRANCE\nPRODUCE CE\nE\nMARK\nCHA BLIS\nJ. FAIVELEY\nPROPRIETAIRE 8 NEGOCIANT A NUITs (COTE D'OR\n"@fra;
+    gv:color [
+  gv:hex "dabf9e";
+  gv:red "218";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "25.205344";
+  gv:coverage "19.873333000000002"
+], [
+  gv:hex "aa6a41";
+  gv:red "170";
+  gv:blue "65";
+  gv:green "106";
+  gv:score "9.7367913";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "b49a78";
+  gv:red "180";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "21.962811";
+  gv:coverage "5.9066668"
+], [
+  gv:hex "edba9d";
+  gv:red "237";
+  gv:blue "157";
+  gv:green "186";
+  gv:score "6.828840799999999";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "927958";
+  gv:red "146";
+  gv:blue "88";
+  gv:green "121";
+  gv:score "5.7306882";
+  gv:coverage "1.5599999999999998"
+], [
+  gv:hex "c2855f";
+  gv:red "194";
+  gv:blue "95";
+  gv:green "133";
+  gv:score "4.69276";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "c49174";
+  gv:red "196";
+  gv:blue "116";
+  gv:green "145";
+  gv:score "3.0616714";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "a85e39";
+  gv:red "168";
+  gv:blue "57";
+  gv:green "94";
+  gv:score "2.9542608";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "8e451d";
+  gv:red "142";
+  gv:blue "29";
+  gv:green "69";
+  gv:score "2.8917121";
+  gv:coverage "0.08"
+], [
+  gv:hex "b6966a";
+  gv:red "182";
+  gv:blue "106";
+  gv:green "150";
+  gv:score "2.8531043";
+  gv:coverage "1.0533334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.56797"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "1999\nPRODUCE OF FRANCE\nPRODUCE CE\nE\nMARK\nCHA BLIS\nJ. FAIVELEY\nPROPRIETAIRE 8 NEGOCIANT A NUITs (COTE D'OR\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

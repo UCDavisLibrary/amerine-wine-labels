@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1215";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "BRAN DY\nTRES\nSUCESORES DE JUAN PEDRO LUQUE\nSAN LUCAR DE BARRA MEDA\nVALENCIA\nLIT, S DURA "@spa;
+    gv:color [
+  gv:hex "ebdcca";
+  gv:red "235";
+  gv:blue "202";
+  gv:green "220";
+  gv:score "24.17431";
+  gv:coverage "21.46"
+], [
+  gv:hex "6b8053";
+  gv:red "107";
+  gv:blue "83";
+  gv:green "128";
+  gv:score "2.7376695";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "a7680e";
+  gv:red "167";
+  gv:blue "14";
+  gv:green "104";
+  gv:score "0.59937048";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "dacab2";
+  gv:red "218";
+  gv:blue "178";
+  gv:green "202";
+  gv:score "20.39436";
+  gv:coverage "16.84"
+], [
+  gv:hex "e7dfd8";
+  gv:red "231";
+  gv:blue "216";
+  gv:green "223";
+  gv:score "19.205773";
+  gv:coverage "13.833334"
+], [
+  gv:hex "d9d1c8";
+  gv:red "217";
+  gv:blue "200";
+  gv:green "209";
+  gv:score "3.9712049";
+  gv:coverage "3"
+], [
+  gv:hex "d3bc83";
+  gv:red "211";
+  gv:blue "131";
+  gv:green "188";
+  gv:score "3.0815406";
+  gv:coverage "5.3333335"
+], [
+  gv:hex "ad9a64";
+  gv:red "173";
+  gv:blue "100";
+  gv:green "154";
+  gv:score "2.8467905";
+  gv:coverage "2.7"
+], [
+  gv:hex "707e43";
+  gv:red "112";
+  gv:blue "67";
+  gv:green "126";
+  gv:score "2.6344521";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "837541";
+  gv:red "131";
+  gv:blue "65";
+  gv:green "117";
+  gv:score "2.4030486";
+  gv:coverage "0.74"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.378843"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.29191"
+];
+    w:bagOfWords "BRAN DY\nTRES\nSUCESORES DE JUAN PEDRO LUQUE\nSAN LUCAR DE BARRA MEDA\nVALENCIA\nLIT, S DURA "@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

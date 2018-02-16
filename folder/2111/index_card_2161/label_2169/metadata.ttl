@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2161/label_2169";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "BRAND\nD B\nLOS ANGELES, CAL\nALCOHOL 20% BY MEE\nVOLUM\n"@eng;
+    gv:color [
+  gv:hex "d6c3a8";
+  gv:red "214";
+  gv:blue "168";
+  gv:green "195";
+  gv:score "29.505455";
+  gv:coverage "14.866666"
+], [
+  gv:hex "962723";
+  gv:red "150";
+  gv:blue "35";
+  gv:green "39";
+  gv:score "4.0387515";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "180c03";
+  gv:red "24";
+  gv:blue "3";
+  gv:green "12";
+  gv:score "0.36315303";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "ac987c";
+  gv:red "172";
+  gv:blue "124";
+  gv:green "152";
+  gv:score "12.394777999999999";
+  gv:coverage "4.3466665"
+], [
+  gv:hex "e8bba6";
+  gv:red "232";
+  gv:blue "166";
+  gv:green "187";
+  gv:score "7.2031341";
+  gv:coverage "2.18"
+], [
+  gv:hex "edd9be";
+  gv:red "237";
+  gv:blue "190";
+  gv:green "217";
+  gv:score "6.105699400000001";
+  gv:coverage "15.42"
+], [
+  gv:hex "c3907b";
+  gv:red "195";
+  gv:blue "123";
+  gv:green "144";
+  gv:score "5.8277786";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "8b7a5f";
+  gv:red "139";
+  gv:blue "95";
+  gv:green "122";
+  gv:score "5.7589948";
+  gv:coverage "2.1399999999999997"
+], [
+  gv:hex "fdd3bf";
+  gv:red "253";
+  gv:blue "191";
+  gv:green "211";
+  gv:score "3.1899348";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "b39266";
+  gv:red "179";
+  gv:blue "102";
+  gv:green "146";
+  gv:score "3.0320263";
+  gv:coverage "0.5133333200000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.62670899999999"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "50.871533"
+];
+    w:bagOfWords "BRAND\nD B\nLOS ANGELES, CAL\nALCOHOL 20% BY MEE\nVOLUM\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

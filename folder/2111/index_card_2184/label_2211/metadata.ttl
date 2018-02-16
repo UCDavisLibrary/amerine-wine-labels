@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2211";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "NA\nOLIVI VINTAGES\nDEAL\nTRADE\nMARK\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@eng;
+    gv:color [
+  gv:hex "d7c3a8";
+  gv:red "215";
+  gv:blue "168";
+  gv:green "195";
+  gv:score "22.49869";
+  gv:coverage "19.213334"
+], [
+  gv:hex "bb9960";
+  gv:red "187";
+  gv:blue "96";
+  gv:green "153";
+  gv:score "18.935932";
+  gv:coverage "3.3533334999999997"
+], [
+  gv:hex "d6b580";
+  gv:red "214";
+  gv:blue "128";
+  gv:green "181";
+  gv:score "8.5167594";
+  gv:coverage "1.7133333"
+], [
+  gv:hex "ab9b86";
+  gv:red "171";
+  gv:blue "134";
+  gv:green "155";
+  gv:score "6.9766089000000004";
+  gv:coverage "2.4466667"
+], [
+  gv:hex "93753e";
+  gv:red "147";
+  gv:blue "62";
+  gv:green "117";
+  gv:score "6.694721400000001";
+  gv:coverage "2.1266667"
+], [
+  gv:hex "a19a90";
+  gv:red "161";
+  gv:blue "144";
+  gv:green "154";
+  gv:score "5.6807023";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "bd9059";
+  gv:red "189";
+  gv:blue "89";
+  gv:green "144";
+  gv:score "4.4988129";
+  gv:coverage "0.71333335"
+], [
+  gv:hex "81796f";
+  gv:red "129";
+  gv:blue "111";
+  gv:green "121";
+  gv:score "3.6219895";
+  gv:coverage "0.84"
+], [
+  gv:hex "c9bfb4";
+  gv:red "201";
+  gv:blue "180";
+  gv:green "191";
+  gv:score "3.1816725";
+  gv:coverage "7.2266668"
+], [
+  gv:hex "857764";
+  gv:red "133";
+  gv:blue "100";
+  gv:green "119";
+  gv:score "2.9241908";
+  gv:coverage "0.74666669"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.489509"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.466959"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.718193"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.579969999999996"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.19142599999999"
+];
+    w:bagOfWords "NA\nOLIVI VINTAGES\nDEAL\nTRADE\nMARK\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

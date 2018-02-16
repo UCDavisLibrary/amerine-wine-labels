@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1212";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "No 2\nO\nMIGUEL SALIDO JENEZ\nCONACHIDALGO\n"@spa;
+    gv:color [
+  gv:hex "e0bb6b";
+  gv:red "224";
+  gv:blue "107";
+  gv:green "187";
+  gv:score "34.415877";
+  gv:coverage "12.206667"
+], [
+  gv:hex "dfbc78";
+  gv:red "223";
+  gv:blue "120";
+  gv:green "188";
+  gv:score "34.257367";
+  gv:coverage "17.666666"
+], [
+  gv:hex "bb9a5b";
+  gv:red "187";
+  gv:blue "91";
+  gv:green "154";
+  gv:score "10.249398999999999";
+  gv:coverage "3.8933333"
+], [
+  gv:hex "917238";
+  gv:red "145";
+  gv:blue "56";
+  gv:green "114";
+  gv:score "8.493192500000001";
+  gv:coverage "2.6466666"
+], [
+  gv:hex "6f521a";
+  gv:red "111";
+  gv:blue "26";
+  gv:green "82";
+  gv:score "4.4901919";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "bf9a4e";
+  gv:red "191";
+  gv:blue "78";
+  gv:green "154";
+  gv:score "3.2228";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "a07a31";
+  gv:red "160";
+  gv:blue "49";
+  gv:green "122";
+  gv:score "1.5082893";
+  gv:coverage "0.74"
+], [
+  gv:hex "6d4a14";
+  gv:red "109";
+  gv:blue "20";
+  gv:green "74";
+  gv:score "1.0086187";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "9c7233";
+  gv:red "156";
+  gv:blue "51";
+  gv:green "114";
+  gv:score "0.51061334";
+  gv:coverage "0.18"
+], [
+  gv:hex "523100";
+  gv:red "82";
+  gv:blue "undefined";
+  gv:green "49";
+  gv:score "0.49249460000000006";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.049474"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "50.109512"
+];
+    w:bagOfWords "No 2\nO\nMIGUEL SALIDO JENEZ\nCONACHIDALGO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0043";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "MAROUES DE MURRIETA\n(LO G R O N O)\nMARCAREGISTRADA\nEMBOTELLADOR N953\nCARTA BLANCA\nCOSECHA 1939\nCERAS\nSpain\nR i o d\n"@spa;
+    gv:color [
+  gv:hex "dac6ab";
+  gv:red "218";
+  gv:blue "171";
+  gv:green "198";
+  gv:score "57.203965999999994";
+  gv:coverage "33.733332"
+], [
+  gv:hex "b19b7b";
+  gv:red "177";
+  gv:blue "123";
+  gv:green "155";
+  gv:score "12.544082000000001";
+  gv:coverage "6.0866665"
+], [
+  gv:hex "8b7555";
+  gv:red "139";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "6.6637233";
+  gv:coverage "1.96"
+], [
+  gv:hex "ebd7bd";
+  gv:red "235";
+  gv:blue "189";
+  gv:green "215";
+  gv:score "5.9334639000000005";
+  gv:coverage "8.2266666"
+], [
+  gv:hex "685334";
+  gv:red "104";
+  gv:blue "52";
+  gv:green "83";
+  gv:score "5.1267926";
+  gv:coverage "1.34"
+], [
+  gv:hex "6a5027";
+  gv:red "106";
+  gv:blue "39";
+  gv:green "80";
+  gv:score "3.3653852";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "8e7246";
+  gv:red "142";
+  gv:blue "70";
+  gv:green "114";
+  gv:score "2.9895848";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "483618";
+  gv:red "72";
+  gv:blue "24";
+  gv:green "54";
+  gv:score "1.9443793";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "b09366";
+  gv:red "176";
+  gv:blue "102";
+  gv:green "147";
+  gv:score "1.7701295999999997";
+  gv:coverage "0.38"
+], [
+  gv:hex "d5b98a";
+  gv:red "213";
+  gv:blue "138";
+  gv:green "185";
+  gv:score "1.1470722";
+  gv:coverage "0.21333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.093771"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "52.062744"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.294242999999994"
+];
+    w:bagOfWords "MAROUES DE MURRIETA\n(LO G R O N O)\nMARCAREGISTRADA\nEMBOTELLADOR N953\nCARTA BLANCA\nCOSECHA 1939\nCERAS\nSpain\nR i o d\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

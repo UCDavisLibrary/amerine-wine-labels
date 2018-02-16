@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3742/label_3760";
+    dct:type "image";
+    w:bagOfWords "Bertani\nBARDOLINO EXTRA\nVINO SUPERIORE\nE. VERONA\n"@ita;
+    gv:color [
+  gv:hex "e1cba5";
+  gv:red "225";
+  gv:blue "165";
+  gv:green "203";
+  gv:score "40.175605";
+  gv:coverage "14.606667000000002"
+], [
+  gv:hex "352841";
+  gv:red "53";
+  gv:blue "65";
+  gv:green "40";
+  gv:score "1.8986607";
+  gv:coverage "0.36"
+], [
+  gv:hex "924340";
+  gv:red "146";
+  gv:blue "64";
+  gv:green "67";
+  gv:score "1.1256222999999999";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "322e32";
+  gv:red "50";
+  gv:blue "50";
+  gv:green "46";
+  gv:score "1.0918788000000001";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "e0c596";
+  gv:red "224";
+  gv:blue "150";
+  gv:green "197";
+  gv:score "7.6884";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "ecb28d";
+  gv:red "236";
+  gv:blue "141";
+  gv:green "178";
+  gv:score "5.7851471000000005";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "ecd8b4";
+  gv:red "236";
+  gv:blue "180";
+  gv:green "216";
+  gv:score "5.6585338";
+  gv:coverage "22.64"
+], [
+  gv:hex "b19c7a";
+  gv:red "177";
+  gv:blue "122";
+  gv:green "156";
+  gv:score "5.1768143";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "f3b99d";
+  gv:red "243";
+  gv:blue "157";
+  gv:green "185";
+  gv:score "4.76872";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "ca8967";
+  gv:red "202";
+  gv:blue "103";
+  gv:green "137";
+  gv:score "3.685984";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.372175"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.95406200000001"
+];
+    w:bagOfWords "Bertani\nBARDOLINO EXTRA\nVINO SUPERIORE\nE. VERONA\n"@ita;
+    wdt:P219 "ita";
+    wdt:P298 "ITA".

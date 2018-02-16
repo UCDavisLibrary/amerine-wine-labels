@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0276/label_0280";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "TAGE 1988\nCALIFORNIA\nGAMAY BEAUJOLAIS\nA full-bodied red wine made from the Gamay Beaujolais grape\nPAUL MASSON CHAMPAGNE BY\nCOMPANY\nPRODUCED AND BOTTLED CONTENTS\nSARATOGA, CALIFORNIA ALCOHOL 13%\n4/5 BY VOLUME\nREG US PAT OFF\n"@eng;
+    gv:color [
+  gv:hex "8b6e40";
+  gv:red "139";
+  gv:blue "64";
+  gv:green "110";
+  gv:score "24.503072";
+  gv:coverage "2.5933333"
+], [
+  gv:hex "b29b7c";
+  gv:red "178";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "20.598027";
+  gv:coverage "6.6066667"
+], [
+  gv:hex "8b3b20";
+  gv:red "139";
+  gv:blue "32";
+  gv:green "59";
+  gv:score "1.9914161";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "d0b999";
+  gv:red "208";
+  gv:blue "153";
+  gv:green "185";
+  gv:score "19.855577";
+  gv:coverage "62.353331"
+], [
+  gv:hex "745a2d";
+  gv:red "116";
+  gv:blue "45";
+  gv:green "90";
+  gv:score "11.652317";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "8d775a";
+  gv:red "141";
+  gv:blue "90";
+  gv:green "119";
+  gv:score "8.434908100000001";
+  gv:coverage "2.0333333"
+], [
+  gv:hex "6b553b";
+  gv:red "107";
+  gv:blue "59";
+  gv:green "85";
+  gv:score "3.1988852";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "af9264";
+  gv:red "175";
+  gv:blue "100";
+  gv:green "146";
+  gv:score "1.7139563";
+  gv:coverage "0.26"
+], [
+  gv:hex "b46449";
+  gv:red "180";
+  gv:blue "73";
+  gv:green "100";
+  gv:score "1.2563513";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "deb193";
+  gv:red "222";
+  gv:blue "147";
+  gv:green "177";
+  gv:score "1.1089997";
+  gv:coverage "0.45999999999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.724944"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "50.170636"
+];
+    w:bagOfWords "TAGE 1988\nCALIFORNIA\nGAMAY BEAUJOLAIS\nA full-bodied red wine made from the Gamay Beaujolais grape\nPAUL MASSON CHAMPAGNE BY\nCOMPANY\nPRODUCED AND BOTTLED CONTENTS\nSARATOGA, CALIFORNIA ALCOHOL 13%\n4/5 BY VOLUME\nREG US PAT OFF\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

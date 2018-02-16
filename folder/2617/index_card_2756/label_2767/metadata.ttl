@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2767";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "TRADE\nMARK\nDEMI\nMOM MESS IN\nEXPORT\nVIN VIEUX DE FRANCE sELECTIONNE\nJ. MoMMESSIN NEGOCIANT EN VINS\nLA GRANGE ST PIERRE MACON (Set.L)\nMAISON FON DE E EN 1865\n"@fra;
+    gv:color [
+  gv:hex "e5b086";
+  gv:red "229";
+  gv:blue "134";
+  gv:green "176";
+  gv:score "18.715896";
+  gv:coverage "3.5133332000000004"
+], [
+  gv:hex "8e3c1e";
+  gv:red "142";
+  gv:blue "30";
+  gv:green "60";
+  gv:score "7.5119652";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "c5946a";
+  gv:red "197";
+  gv:blue "106";
+  gv:green "148";
+  gv:score "13.44133";
+  gv:coverage "2.82"
+], [
+  gv:hex "d9b588";
+  gv:red "217";
+  gv:blue "136";
+  gv:green "181";
+  gv:score "12.952687";
+  gv:coverage "3.5266668"
+], [
+  gv:hex "bb986c";
+  gv:red "187";
+  gv:blue "108";
+  gv:green "152";
+  gv:score "8.5683405";
+  gv:coverage "2.2133334000000002"
+], [
+  gv:hex "d9b996";
+  gv:red "217";
+  gv:blue "150";
+  gv:green "185";
+  gv:score "7.8882277";
+  gv:coverage "63.080000000000005"
+], [
+  gv:hex "9e6e46";
+  gv:red "158";
+  gv:blue "70";
+  gv:green "110";
+  gv:score "6.076223";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "b05c3d";
+  gv:red "176";
+  gv:blue "61";
+  gv:green "92";
+  gv:score "4.1190982";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "b69671";
+  gv:red "182";
+  gv:blue "113";
+  gv:green "150";
+  gv:score "4.022354999999999";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "98764e";
+  gv:red "152";
+  gv:blue "78";
+  gv:green "118";
+  gv:score "3.4380480999999996";
+  gv:coverage "1.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.67175"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "50.963396"
+];
+    w:bagOfWords "TRADE\nMARK\nDEMI\nMOM MESS IN\nEXPORT\nVIN VIEUX DE FRANCE sELECTIONNE\nJ. MoMMESSIN NEGOCIANT EN VINS\nLA GRANGE ST PIERRE MACON (Set.L)\nMAISON FON DE E EN 1865\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

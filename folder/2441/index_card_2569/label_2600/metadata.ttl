@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2569/label_2600";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "PRODUCE OF FRANCE\nSHIPPED AND BOTTLED BV\nGRIERSON, OLD HAM & CO LTD\nHAYMARKET, LONDON, SW\n"@fra;
+    gv:color [
+  gv:hex "e0c9a9";
+  gv:red "224";
+  gv:blue "169";
+  gv:green "201";
+  gv:score "66.3421";
+  gv:coverage "15.76"
+], [
+  gv:hex "48572c";
+  gv:red "72";
+  gv:blue "44";
+  gv:green "87";
+  gv:score "1.8170232000000002";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "e8bb9b";
+  gv:red "232";
+  gv:blue "155";
+  gv:green "187";
+  gv:score "7.3276207";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "ecd8b9";
+  gv:red "236";
+  gv:blue "185";
+  gv:green "216";
+  gv:score "7.0938818";
+  gv:coverage "12.166667"
+], [
+  gv:hex "ab9e7a";
+  gv:red "171";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "3.6443681";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "c59677";
+  gv:red "197";
+  gv:blue "119";
+  gv:green "150";
+  gv:score "2.8339995";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "827a56";
+  gv:red "130";
+  gv:blue "86";
+  gv:green "122";
+  gv:score "2.6460076";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "949f75";
+  gv:red "148";
+  gv:blue "117";
+  gv:green "159";
+  gv:score "1.8698117";
+  gv:coverage "0.24"
+], [
+  gv:hex "707d53";
+  gv:red "112";
+  gv:blue "83";
+  gv:green "125";
+  gv:score "1.5534204";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "313d13";
+  gv:red "49";
+  gv:blue "19";
+  gv:green "61";
+  gv:score "1.1052658";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.646029"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.08383"
+];
+    w:bagOfWords "PRODUCE OF FRANCE\nSHIPPED AND BOTTLED BV\nGRIERSON, OLD HAM & CO LTD\nHAYMARKET, LONDON, SW\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

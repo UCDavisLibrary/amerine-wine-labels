@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3135";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "TRADE\nM A R K\nBLATYAIS\nAPPELLATION CONTROLEE\nMARQUE DU CASQUE\nAUDINET BUHAN\nM A S O N FO N DE E E N\n8 l 8\nNEGOCIANTS A BORDEAUX\nGIRO NDE\n"@fra;
+    gv:color [
+  gv:hex "dcc8b2";
+  gv:red "220";
+  gv:blue "178";
+  gv:green "200";
+  gv:score "50.28829";
+  gv:coverage "21.6"
+], [
+  gv:hex "6a120a";
+  gv:red "106";
+  gv:blue "10";
+  gv:green "18";
+  gv:score "4.4126637";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "ad5c53";
+  gv:red "173";
+  gv:blue "83";
+  gv:green "92";
+  gv:score "1.395674";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "e8d8c6";
+  gv:red "232";
+  gv:blue "198";
+  gv:green "216";
+  gv:score "11.270437";
+  gv:coverage "15.633332999999999"
+], [
+  gv:hex "b39d87";
+  gv:red "179";
+  gv:blue "135";
+  gv:green "157";
+  gv:score "6.3739404";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "e6dbce";
+  gv:red "230";
+  gv:blue "206";
+  gv:green "219";
+  gv:score "4.0039603";
+  gv:coverage "56.42"
+], [
+  gv:hex "7c0a09";
+  gv:red "124";
+  gv:blue "9";
+  gv:green "10";
+  gv:score "3.6659293";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "ebc0af";
+  gv:red "235";
+  gv:blue "175";
+  gv:green "192";
+  gv:score "3.3768248";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "867360";
+  gv:red "134";
+  gv:blue "96";
+  gv:green "115";
+  gv:score "2.9135477";
+  gv:coverage "0.74"
+], [
+  gv:hex "695540";
+  gv:red "105";
+  gv:blue "64";
+  gv:green "85";
+  gv:score "2.2157708";
+  gv:coverage "0.63333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.741023"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.127072"
+];
+    w:bagOfWords "TRADE\nM A R K\nBLATYAIS\nAPPELLATION CONTROLEE\nMARQUE DU CASQUE\nAUDINET BUHAN\nM A S O N FO N DE E E N\n8 l 8\nNEGOCIANTS A BORDEAUX\nGIRO NDE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

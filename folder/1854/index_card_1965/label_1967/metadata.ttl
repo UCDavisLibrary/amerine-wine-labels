@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1967";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "JEREZ oscuRO SECO\nSANI UCAR\nN932\n"@spa;
+    gv:color [
+  gv:hex "eac786";
+  gv:red "234";
+  gv:blue "134";
+  gv:green "199";
+  gv:score "60.004192999999994";
+  gv:coverage "28.153333000000003"
+], [
+  gv:hex "f3bc84";
+  gv:red "243";
+  gv:blue "132";
+  gv:green "188";
+  gv:score "16.593887";
+  gv:coverage "4.413333199999999"
+], [
+  gv:hex "e9c475";
+  gv:red "233";
+  gv:blue "117";
+  gv:green "196";
+  gv:score "5.6065109";
+  gv:coverage "4.306666600000001"
+], [
+  gv:hex "cc945b";
+  gv:red "204";
+  gv:blue "91";
+  gv:green "148";
+  gv:score "4.6812352";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "fbd598";
+  gv:red "251";
+  gv:blue "152";
+  gv:green "213";
+  gv:score "4.4033784";
+  gv:coverage "1.44"
+], [
+  gv:hex "a56a32";
+  gv:red "165";
+  gv:blue "50";
+  gv:green "106";
+  gv:score "2.4647776";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "824710";
+  gv:red "130";
+  gv:blue "16";
+  gv:green "71";
+  gv:score "1.6861768";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "873b0b";
+  gv:red "135";
+  gv:blue "11";
+  gv:green "59";
+  gv:score "1.2346786";
+  gv:coverage "0.22"
+], [
+  gv:hex "ffd098";
+  gv:red "255";
+  gv:blue "152";
+  gv:green "208";
+  gv:score "1.1280923";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "565146";
+  gv:red "86";
+  gv:blue "70";
+  gv:green "81";
+  gv:score "0.0043473072";
+  gv:coverage "0.08"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "79.465169"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.368734"
+], [
+  gv:mid <https://g.co/kg/m/016nqd>;
+  gv:desc "shape";
+  gv:score "58.165455"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.26989999999999"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "56.027943"
+];
+    w:bagOfWords "JEREZ oscuRO SECO\nSANI UCAR\nN932\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0827";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "APPELLATION CONTROLE\nCLOS PARADIS\nVAVASSEUR & BERNARD ET\nNEGOCIANTS A VouvRAY NDRE-ET-LOIRE) FRANCE.\n"@fra;
+    gv:color [
+  gv:hex "dac4a4";
+  gv:red "218";
+  gv:blue "164";
+  gv:green "196";
+  gv:score "27.832240000000002";
+  gv:coverage "7.88"
+], [
+  gv:hex "505c34";
+  gv:red "80";
+  gv:blue "52";
+  gv:green "92";
+  gv:score "5.0414674";
+  gv:coverage "1.3266666999999999"
+], [
+  gv:hex "d5b686";
+  gv:red "213";
+  gv:blue "134";
+  gv:green "182";
+  gv:score "9.2564158";
+  gv:coverage "1.24"
+], [
+  gv:hex "bc9e6b";
+  gv:red "188";
+  gv:blue "107";
+  gv:green "158";
+  gv:score "7.2248355";
+  gv:coverage "0.84666666"
+], [
+  gv:hex "c8975e";
+  gv:red "200";
+  gv:blue "94";
+  gv:green "151";
+  gv:score "6.556490800000001";
+  gv:coverage "0.66"
+], [
+  gv:hex "e8d9bf";
+  gv:red "232";
+  gv:blue "191";
+  gv:green "217";
+  gv:score "5.2299485";
+  gv:coverage "5.54"
+], [
+  gv:hex "aca07f";
+  gv:red "172";
+  gv:blue "127";
+  gv:green "160";
+  gv:score "4.7689334";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "c2883f";
+  gv:red "194";
+  gv:blue "63";
+  gv:green "136";
+  gv:score "4.340178900000001";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "381a00";
+  gv:red "56";
+  gv:blue "undefined";
+  gv:green "26";
+  gv:score "0.03724446";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "d2c7bd";
+  gv:red "210";
+  gv:blue "189";
+  gv:green "199";
+  gv:score "3.6536011999999998";
+  gv:coverage "9.379999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.75992"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "61.798143"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "50.118262"
+];
+    w:bagOfWords "APPELLATION CONTROLE\nCLOS PARADIS\nVAVASSEUR & BERNARD ET\nNEGOCIANTS A VouvRAY NDRE-ET-LOIRE) FRANCE.\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

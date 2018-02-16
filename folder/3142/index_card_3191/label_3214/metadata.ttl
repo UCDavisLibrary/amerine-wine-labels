@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3214";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "NET CONTENTS\nI Pt 8 FLUID OZS\nPRODUCT OF FRANCE\nTRADE\nMARK\nGrand Vin de Bourgogne\nBOTTLED BY THE\nPRODUCED BY\ncote\nD'OR,\n"@fra;
+    gv:color [
+  gv:hex "e2c49f";
+  gv:red "226";
+  gv:blue "159";
+  gv:green "196";
+  gv:score "31.60786";
+  gv:coverage "16.353333"
+], [
+  gv:hex "744724";
+  gv:red "116";
+  gv:blue "36";
+  gv:green "71";
+  gv:score "3.099574";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "e3bf8f";
+  gv:red "227";
+  gv:blue "143";
+  gv:green "191";
+  gv:score "26.039438999999998";
+  gv:coverage "12.04"
+], [
+  gv:hex "e06659";
+  gv:red "224";
+  gv:blue "89";
+  gv:green "102";
+  gv:score "0.13384278";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "b79975";
+  gv:red "183";
+  gv:blue "117";
+  gv:green "153";
+  gv:score "6.1698683";
+  gv:coverage "2.0266667"
+], [
+  gv:hex "bf9b6b";
+  gv:red "191";
+  gv:blue "107";
+  gv:green "155";
+  gv:score "5.0075404";
+  gv:coverage "2.1533333000000003"
+], [
+  gv:hex "e1b583";
+  gv:red "225";
+  gv:blue "131";
+  gv:green "181";
+  gv:score "4.5668818";
+  gv:coverage "1.7133333"
+], [
+  gv:hex "f2d7b3";
+  gv:red "242";
+  gv:blue "179";
+  gv:green "215";
+  gv:score "2.8253090000000003";
+  gv:coverage "9.06"
+], [
+  gv:hex "c69865";
+  gv:red "198";
+  gv:blue "101";
+  gv:green "152";
+  gv:score "2.7391179";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "85351c";
+  gv:red "133";
+  gv:blue "28";
+  gv:green "53";
+  gv:score "2.6436100000000002";
+  gv:coverage "0.18666666999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.554627"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.374359"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "52.761328"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.156307"
+];
+    w:bagOfWords "NET CONTENTS\nI Pt 8 FLUID OZS\nPRODUCT OF FRANCE\nTRADE\nMARK\nGrand Vin de Bourgogne\nBOTTLED BY THE\nPRODUCED BY\ncote\nD'OR,\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

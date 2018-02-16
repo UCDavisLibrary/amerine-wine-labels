@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2019";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "SHERRY\nPAN DO\nCRIADO Y EMBOTELLADO POR\nWILLIAMS & HUMBERT LTD\nJEREZ DE LA FRONTERA\nRGTO. EMB. No 2 O 6\n"@spa;
+    gv:color [
+  gv:hex "d9c1a5";
+  gv:red "217";
+  gv:blue "165";
+  gv:green "193";
+  gv:score "64.272028";
+  gv:coverage "30.393332"
+], [
+  gv:hex "934430";
+  gv:red "147";
+  gv:blue "48";
+  gv:green "68";
+  gv:score "1.1623301000000001";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "ebb9a1";
+  gv:red "235";
+  gv:blue "161";
+  gv:green "185";
+  gv:score "12.882394999999999";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "b39a7d";
+  gv:red "179";
+  gv:blue "125";
+  gv:green "154";
+  gv:score "5.8728449000000005";
+  gv:coverage "1.9"
+], [
+  gv:hex "c7937a";
+  gv:red "199";
+  gv:blue "122";
+  gv:green "147";
+  gv:score "3.51403";
+  gv:coverage "0.52"
+], [
+  gv:hex "937c61";
+  gv:red "147";
+  gv:blue "97";
+  gv:green "124";
+  gv:score "1.6808134";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "a06951";
+  gv:red "160";
+  gv:blue "81";
+  gv:green "105";
+  gv:score "1.4289423";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "d78472";
+  gv:red "215";
+  gv:blue "114";
+  gv:green "132";
+  gv:score "1.3319089";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "d3ae83";
+  gv:red "211";
+  gv:blue "131";
+  gv:green "174";
+  gv:score "1.1945122000000001";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "ad5f4d";
+  gv:red "173";
+  gv:blue "77";
+  gv:green "95";
+  gv:score "1.0166054";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.905364"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.453436"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.61708899999999"
+];
+    w:bagOfWords "SHERRY\nPAN DO\nCRIADO Y EMBOTELLADO POR\nWILLIAMS & HUMBERT LTD\nJEREZ DE LA FRONTERA\nRGTO. EMB. No 2 O 6\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

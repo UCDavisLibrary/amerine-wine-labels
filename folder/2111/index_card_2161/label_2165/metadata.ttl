@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2161/label_2165";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "CON CANNON\nualifurnia Sherry\nPRODUCED AND BOTTLED BY\nCON CANNON VINEYARDS\nLIVE R MORE, CALIFORNIA\nALCOHOL 20% BY VOLUME\nBOTTLED, AT THE WINERY\nLOUIS ROESCH Co.\n"@eng;
+    gv:color [
+  gv:hex "d9c5a9";
+  gv:red "217";
+  gv:blue "169";
+  gv:green "197";
+  gv:score "29.966259";
+  gv:coverage "18.153333999999997"
+], [
+  gv:hex "847253";
+  gv:red "132";
+  gv:blue "83";
+  gv:green "114";
+  gv:score "17.233665000000002";
+  gv:coverage "2.0266667"
+], [
+  gv:hex "685536";
+  gv:red "104";
+  gv:blue "54";
+  gv:green "85";
+  gv:score "14.75292";
+  gv:coverage "1.5599999999999998"
+], [
+  gv:hex "ad9b7e";
+  gv:red "173";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "11.844066999999999";
+  gv:coverage "4.0333334"
+], [
+  gv:hex "685529";
+  gv:red "104";
+  gv:blue "41";
+  gv:green "85";
+  gv:score "6.9625773";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "ebd9be";
+  gv:red "235";
+  gv:blue "190";
+  gv:green "217";
+  gv:score "4.485492";
+  gv:coverage "7.9399999999999995"
+], [
+  gv:hex "443316";
+  gv:red "68";
+  gv:blue "22";
+  gv:green "51";
+  gv:score "4.181348900000001";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "806e41";
+  gv:red "128";
+  gv:blue "65";
+  gv:green "110";
+  gv:score "4.1015085";
+  gv:coverage "0.3"
+], [
+  gv:hex "d8b989";
+  gv:red "216";
+  gv:blue "137";
+  gv:green "185";
+  gv:score "1.5654197";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "bd9d6e";
+  gv:red "189";
+  gv:blue "110";
+  gv:green "157";
+  gv:score "1.1240132";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.842219"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "50.971520000000005"
+];
+    w:bagOfWords "CON CANNON\nualifurnia Sherry\nPRODUCED AND BOTTLED BY\nCON CANNON VINEYARDS\nLIVE R MORE, CALIFORNIA\nALCOHOL 20% BY VOLUME\nBOTTLED, AT THE WINERY\nLOUIS ROESCH Co.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

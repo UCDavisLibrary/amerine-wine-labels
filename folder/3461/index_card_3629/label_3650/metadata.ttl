@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3629/label_3650";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "CALIFORNIA\nSTILL CHAMPAGNE\nPaul Lassen\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nBONDED WINERY NO. 144.\n4TH DIST\nCONTENTS SARATOGA, CALIFORNIA TAX PAID BY STAMPS AFFIXED TO CASE\nBY VOLUME\nEG\nU S HAT OFF\n"@eng;
+    gv:color [
+  gv:hex "d5bfa1";
+  gv:red "213";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "35.913154000000006";
+  gv:coverage "16.473334"
+], [
+  gv:hex "8f6f38";
+  gv:red "143";
+  gv:blue "56";
+  gv:green "111";
+  gv:score "17.19064";
+  gv:coverage "2.18"
+], [
+  gv:hex "b29c7c";
+  gv:red "178";
+  gv:blue "124";
+  gv:green "156";
+  gv:score "14.609578";
+  gv:coverage "4.9799999999999995"
+], [
+  gv:hex "986b37";
+  gv:red "152";
+  gv:blue "55";
+  gv:green "107";
+  gv:score "7.218041299999999";
+  gv:coverage "0.9400000000000001"
+], [
+  gv:hex "b29360";
+  gv:red "178";
+  gv:blue "96";
+  gv:green "147";
+  gv:score "4.3850828";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "8b775b";
+  gv:red "139";
+  gv:blue "91";
+  gv:green "119";
+  gv:score "4.2432658";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "805423";
+  gv:red "128";
+  gv:blue "35";
+  gv:green "84";
+  gv:score "3.69407";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "795b28";
+  gv:red "121";
+  gv:blue "40";
+  gv:green "91";
+  gv:score "3.297079";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "c48c61";
+  gv:red "196";
+  gv:blue "97";
+  gv:green "140";
+  gv:score "2.2150736";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "d8ba8c";
+  gv:red "216";
+  gv:blue "140";
+  gv:green "186";
+  gv:score "1.8912057999999998";
+  gv:coverage "0.36666666000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.994359"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "68.10202"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "57.761818"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.976115"
+];
+    w:bagOfWords "CALIFORNIA\nSTILL CHAMPAGNE\nPaul Lassen\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nBONDED WINERY NO. 144.\n4TH DIST\nCONTENTS SARATOGA, CALIFORNIA TAX PAID BY STAMPS AFFIXED TO CASE\nBY VOLUME\nEG\nU S HAT OFF\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

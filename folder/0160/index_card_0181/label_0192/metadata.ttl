@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0181/label_0192";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "LUME\nL C\nBurgundy Wine\nPRODUCED AND BOTTLED BY ELLENA BROS, ET WANDA CALIF, BONDED WINERY No. 759\nCORP. 1945. BY E. B.\nB O T T L E D A T\nT H E\nW I N E R Y\n"@eng;
+    gv:color [
+  gv:hex "9d1e1d";
+  gv:red "157";
+  gv:blue "29";
+  gv:green "30";
+  gv:score "17.671263";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "221813";
+  gv:red "34";
+  gv:blue "19";
+  gv:green "24";
+  gv:score "10.527246";
+  gv:coverage "3.0666666"
+], [
+  gv:hex "631515";
+  gv:red "99";
+  gv:blue "21";
+  gv:green "21";
+  gv:score "6.2364228";
+  gv:coverage "0.66"
+], [
+  gv:hex "da7e61";
+  gv:red "218";
+  gv:blue "97";
+  gv:green "126";
+  gv:score "5.2680507";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "e0c590";
+  gv:red "224";
+  gv:blue "144";
+  gv:green "197";
+  gv:score "4.8881713";
+  gv:coverage "7.48"
+], [
+  gv:hex "37130a";
+  gv:red "55";
+  gv:blue "10";
+  gv:green "19";
+  gv:score "3.0683365";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "7f736e";
+  gv:red "127";
+  gv:blue "110";
+  gv:green "115";
+  gv:score "1.4979129";
+  gv:coverage "0.58"
+], [
+  gv:hex "382b25";
+  gv:red "56";
+  gv:blue "37";
+  gv:green "43";
+  gv:score "6.3735925";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "f0b68b";
+  gv:red "240";
+  gv:blue "139";
+  gv:green "182";
+  gv:score "4.296473";
+  gv:coverage "1.7266667"
+], [
+  gv:hex "801009";
+  gv:red "128";
+  gv:blue "9";
+  gv:green "16";
+  gv:score "3.8171696999999996";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.655306"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "73.24119999999999"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "67.85624"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "56.065726000000005"
+];
+    w:bagOfWords "LUME\nL C\nBurgundy Wine\nPRODUCED AND BOTTLED BY ELLENA BROS, ET WANDA CALIF, BONDED WINERY No. 759\nCORP. 1945. BY E. B.\nB O T T L E D A T\nT H E\nW I N E R Y\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

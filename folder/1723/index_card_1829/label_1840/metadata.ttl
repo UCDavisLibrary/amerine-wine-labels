@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1840";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Contenta 1 PL and 7 Fl. Co\nFaB Nr. 190\nFRANKEN\nWEIN\nBAYERN\nSt. K\nGrown and bottled in Germany\nri Cina.\naus Oem.\natr\nein ein\n"@deu;
+    gv:color [
+  gv:hex "d2c0a9";
+  gv:red "210";
+  gv:blue "169";
+  gv:green "192";
+  gv:score "34.044433000000005";
+  gv:coverage "6.6333331"
+], [
+  gv:hex "aa9982";
+  gv:red "170";
+  gv:blue "130";
+  gv:green "153";
+  gv:score "29.560664";
+  gv:coverage "3.3333334999999997"
+], [
+  gv:hex "c89382";
+  gv:red "200";
+  gv:blue "130";
+  gv:green "147";
+  gv:score "10.38032";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "8b7a62";
+  gv:red "139";
+  gv:blue "98";
+  gv:green "122";
+  gv:score "9.0589";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "e3b7a3";
+  gv:red "227";
+  gv:blue "163";
+  gv:green "183";
+  gv:score "6.144128";
+  gv:coverage "0.74"
+], [
+  gv:hex "ebd9c1";
+  gv:red "235";
+  gv:blue "193";
+  gv:green "217";
+  gv:score "4.2258888";
+  gv:coverage "2.0466667000000003"
+], [
+  gv:hex "aa7260";
+  gv:red "170";
+  gv:blue "96";
+  gv:green "114";
+  gv:score "1.4043009";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "695945";
+  gv:red "105";
+  gv:blue "69";
+  gv:green "89";
+  gv:score "1.3436662";
+  gv:coverage "0.12"
+], [
+  gv:hex "d0c6bb";
+  gv:red "208";
+  gv:blue "187";
+  gv:green "198";
+  gv:score "1.1361016";
+  gv:coverage "3.6333334"
+], [
+  gv:hex "eae2d9";
+  gv:red "234";
+  gv:blue "217";
+  gv:green "226";
+  gv:score "0.6942437";
+  gv:coverage "81.213331"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "75.194454"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.419007"
+];
+    w:bagOfWords "Contenta 1 PL and 7 Fl. Co\nFaB Nr. 190\nFRANKEN\nWEIN\nBAYERN\nSt. K\nGrown and bottled in Germany\nri Cina.\naus Oem.\natr\nein ein\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

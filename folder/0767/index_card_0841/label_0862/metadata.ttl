@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0862";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "PROOUCE OF FRANCE\nCHA, M P AGN\nAUTHIER\nTENTS\ni PINT IO FLUID OZS ALCOHOL 12 BY VOLUME\nCANT N. M. 3.333.362\nNCE\n"@fra;
+    gv:color [
+  gv:hex "1e1813";
+  gv:red "30";
+  gv:blue "19";
+  gv:green "24";
+  gv:score "53.248197";
+  gv:coverage "12.133333"
+], [
+  gv:hex "e8e0d3";
+  gv:red "232";
+  gv:blue "211";
+  gv:green "224";
+  gv:score "1.1333068";
+  gv:coverage "66.973335"
+], [
+  gv:hex "362f28";
+  gv:red "54";
+  gv:blue "40";
+  gv:green "47";
+  gv:score "28.605279";
+  gv:coverage "6.54"
+], [
+  gv:hex "554e46";
+  gv:red "85";
+  gv:blue "70";
+  gv:green "78";
+  gv:score "8.2351089";
+  gv:coverage "1.8800000000000001"
+], [
+  gv:hex "7b746b";
+  gv:red "123";
+  gv:blue "107";
+  gv:green "116";
+  gv:score "2.5398334";
+  gv:coverage "0.64"
+], [
+  gv:hex "362c20";
+  gv:red "54";
+  gv:blue "32";
+  gv:green "44";
+  gv:score "2.0469768";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "9f968d";
+  gv:red "159";
+  gv:blue "141";
+  gv:green "150";
+  gv:score "1.080779";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "271e12";
+  gv:red "39";
+  gv:blue "18";
+  gv:green "30";
+  gv:score "0.94670691";
+  gv:coverage "0.22"
+], [
+  gv:hex "5a4f41";
+  gv:red "90";
+  gv:blue "65";
+  gv:green "79";
+  gv:score "0.8004169";
+  gv:coverage "0.24"
+], [
+  gv:hex "c9c0b5";
+  gv:red "201";
+  gv:blue "181";
+  gv:green "192";
+  gv:score "0.7621200300000001";
+  gv:coverage "2.3"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.81070700000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.754107"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.650710999999994"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "54.679555"
+];
+    w:bagOfWords "PROOUCE OF FRANCE\nCHA, M P AGN\nAUTHIER\nTENTS\ni PINT IO FLUID OZS ALCOHOL 12 BY VOLUME\nCANT N. M. 3.333.362\nNCE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3460";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "DRY\nDEPOSE\nGRAND WIN MoussEux\nF. CHAU VENET, NEGOCIANT A NUITS (COTE D'OR) FRANCE\n"@fra;
+    gv:color [
+  gv:hex "ca948a";
+  gv:red "202";
+  gv:blue "138";
+  gv:green "148";
+  gv:score "30.472728999999998";
+  gv:coverage "5.6266665"
+], [
+  gv:hex "e1a79f";
+  gv:red "225";
+  gv:blue "159";
+  gv:green "167";
+  gv:score "21.897991";
+  gv:coverage "4.08"
+], [
+  gv:hex "df908d";
+  gv:red "223";
+  gv:blue "141";
+  gv:green "144";
+  gv:score "12.906467999999998";
+  gv:coverage "1.7066667"
+], [
+  gv:hex "9e7164";
+  gv:red "158";
+  gv:blue "100";
+  gv:green "113";
+  gv:score "9.508096400000001";
+  gv:coverage "1.9533332"
+], [
+  gv:hex "b09c89";
+  gv:red "176";
+  gv:blue "137";
+  gv:green "156";
+  gv:score "5.4886665";
+  gv:coverage "3.46"
+], [
+  gv:hex "c9b8a1";
+  gv:red "201";
+  gv:blue "161";
+  gv:green "184";
+  gv:score "4.1033484";
+  gv:coverage "19.426666"
+], [
+  gv:hex "eaa09d";
+  gv:red "234";
+  gv:blue "157";
+  gv:green "160";
+  gv:score "3.6021378";
+  gv:coverage "0.5"
+], [
+  gv:hex "724c40";
+  gv:red "114";
+  gv:blue "64";
+  gv:green "76";
+  gv:score "2.982167";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "8e7766";
+  gv:red "142";
+  gv:blue "102";
+  gv:green "119";
+  gv:score "1.4550034";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "dda8a9";
+  gv:red "221";
+  gv:blue "169";
+  gv:green "168";
+  gv:score "1.4466431";
+  gv:coverage "0.36"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01fklc>;
+  gv:desc "pink";
+  gv:score "82.644147"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "79.675663"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.08130799999999"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.157143"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.090714"
+];
+    w:bagOfWords "DRY\nDEPOSE\nGRAND WIN MoussEux\nF. CHAU VENET, NEGOCIANT A NUITS (COTE D'OR) FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2432";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "O\n7,'o\nMEDOC SUPERIEUR\nPJ.DE TENET&ED.DE GEORGES\nProprietal res\nPRODUCE\nà BORDEAUX\nOF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "d0bca1";
+  gv:red "208";
+  gv:blue "161";
+  gv:green "188";
+  gv:score "37.067321";
+  gv:coverage "35.42"
+], [
+  gv:hex "b29c7e";
+  gv:red "178";
+  gv:blue "126";
+  gv:green "156";
+  gv:score "36.516505";
+  gv:coverage "4.4066668"
+], [
+  gv:hex "907554";
+  gv:red "144";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "6.7954108";
+  gv:coverage "1.04"
+], [
+  gv:hex "b29365";
+  gv:red "178";
+  gv:blue "101";
+  gv:green "147";
+  gv:score "6.576871099999999";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "d2bfb6";
+  gv:red "210";
+  gv:blue "182";
+  gv:green "191";
+  gv:score "2.9473947000000003";
+  gv:coverage "12.026667"
+], [
+  gv:hex "97784f";
+  gv:red "151";
+  gv:blue "79";
+  gv:green "120";
+  gv:score "2.5826572";
+  gv:coverage "0.36"
+], [
+  gv:hex "ead8c0";
+  gv:red "234";
+  gv:blue "192";
+  gv:green "216";
+  gv:score "2.1102417";
+  gv:coverage "28.173333"
+], [
+  gv:hex "debb8f";
+  gv:red "222";
+  gv:blue "143";
+  gv:green "187";
+  gv:score "0.99081481";
+  gv:coverage "0.06"
+], [
+  gv:hex "b8967e";
+  gv:red "184";
+  gv:blue "126";
+  gv:green "150";
+  gv:score "0.78228759";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "b6a29b";
+  gv:red "182";
+  gv:blue "155";
+  gv:green "162";
+  gv:score "0.7362118";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.990796"
+];
+    w:bagOfWords "O\n7,'o\nMEDOC SUPERIEUR\nPJ.DE TENET&ED.DE GEORGES\nProprietal res\nPRODUCE\nà BORDEAUX\nOF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

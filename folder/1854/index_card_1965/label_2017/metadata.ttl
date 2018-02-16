@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2017";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "Ayo B.\nANLVCAR B\nD A\nDULCE SELECTO\nLIT J. M. BARROSO.- JERE2.\n"@spa;
+    gv:color [
+  gv:hex "cfbca9";
+  gv:red "207";
+  gv:blue "169";
+  gv:green "188";
+  gv:score "56.512510999999996";
+  gv:coverage "39.033332"
+], [
+  gv:hex "b39d8b";
+  gv:red "179";
+  gv:blue "139";
+  gv:green "157";
+  gv:score "20.272417";
+  gv:coverage "2.2399999999999998"
+], [
+  gv:hex "d0c2b7";
+  gv:red "208";
+  gv:blue "183";
+  gv:green "194";
+  gv:score "13.018073";
+  gv:coverage "10.533334"
+], [
+  gv:hex "e9dbd1";
+  gv:red "233";
+  gv:blue "209";
+  gv:green "219";
+  gv:score "3.3471707000000004";
+  gv:coverage "25.019999999999996"
+], [
+  gv:hex "aa9c92";
+  gv:red "170";
+  gv:blue "146";
+  gv:green "156";
+  gv:score "3.1467542";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "e9d8c7";
+  gv:red "233";
+  gv:blue "199";
+  gv:green "216";
+  gv:score "2.0629003999999997";
+  gv:coverage "21.88"
+], [
+  gv:hex "927d6a";
+  gv:red "146";
+  gv:blue "106";
+  gv:green "125";
+  gv:score "1.4466012";
+  gv:coverage "0.18"
+], [
+  gv:hex "897d75";
+  gv:red "137";
+  gv:blue "117";
+  gv:green "125";
+  gv:score "0.19357085999999998";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "5d503f";
+  gv:red "93";
+  gv:blue "63";
+  gv:green "80";
+  gv:score "3.1478931e-9";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "443525";
+  gv:red "68";
+  gv:blue "37";
+  gv:green "53";
+  gv:score "2.8331037e-9";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "72.371393"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.686462"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "56.5167"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.572779999999995"
+];
+    w:bagOfWords "Ayo B.\nANLVCAR B\nD A\nDULCE SELECTO\nLIT J. M. BARROSO.- JERE2.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

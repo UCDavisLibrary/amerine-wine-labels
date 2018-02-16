@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0436";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "J.J.S\nRHEINGAU\n1943 et\nABmannshuulee nollenberg weibmein\n"@deu;
+    gv:color [
+  gv:hex "a49a91";
+  gv:red "164";
+  gv:blue "145";
+  gv:green "154";
+  gv:score "22.73187";
+  gv:coverage "5.96"
+], [
+  gv:hex "cac1b7";
+  gv:red "202";
+  gv:blue "183";
+  gv:green "193";
+  gv:score "22.037596";
+  gv:coverage "13.773334"
+], [
+  gv:hex "81776e";
+  gv:red "129";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "16.327152";
+  gv:coverage "3.8266666"
+], [
+  gv:hex "cfc5b6";
+  gv:red "207";
+  gv:blue "182";
+  gv:green "197";
+  gv:score "9.803412100000001";
+  gv:coverage "15.68"
+], [
+  gv:hex "60564d";
+  gv:red "96";
+  gv:blue "77";
+  gv:green "86";
+  gv:score "7.2632112";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "e4dacf";
+  gv:red "228";
+  gv:blue "207";
+  gv:green "218";
+  gv:score "6.1268345";
+  gv:coverage "36.16"
+], [
+  gv:hex "a89e8f";
+  gv:red "168";
+  gv:blue "143";
+  gv:green "158";
+  gv:score "5.2183788";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "5b4f42";
+  gv:red "91";
+  gv:blue "66";
+  gv:green "79";
+  gv:score "4.2582519";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "847a6b";
+  gv:red "132";
+  gv:blue "107";
+  gv:green "122";
+  gv:score "2.6960962";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "e6d9c9";
+  gv:red "230";
+  gv:blue "201";
+  gv:green "217";
+  gv:score "2.2310197";
+  gv:coverage "18.146667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "69.04552000000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.848006"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.12064000000001"
+];
+    w:bagOfWords "J.J.S\nRHEINGAU\n1943 et\nABmannshuulee nollenberg weibmein\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2348/label_2349";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "CHATEAU BEYCHEVELLE\nGrand Vin 1924.\nAchille FOULD\n"@fra;
+    gv:color [
+  gv:hex "d4bc9d";
+  gv:red "212";
+  gv:blue "157";
+  gv:green "188";
+  gv:score "21.888384";
+  gv:coverage "31.093332"
+], [
+  gv:hex "af997c";
+  gv:red "175";
+  gv:blue "124";
+  gv:green "153";
+  gv:score "15.667099";
+  gv:coverage "4.0666666"
+], [
+  gv:hex "8b7459";
+  gv:red "139";
+  gv:blue "89";
+  gv:green "116";
+  gv:score "11.51885";
+  gv:coverage "2.2399999999999998"
+], [
+  gv:hex "d4b382";
+  gv:red "212";
+  gv:blue "130";
+  gv:green "179";
+  gv:score "7.2155304000000005";
+  gv:coverage "1.08"
+], [
+  gv:hex "be9d6c";
+  gv:red "190";
+  gv:blue "108";
+  gv:green "157";
+  gv:score "5.9163895";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "6d563c";
+  gv:red "109";
+  gv:blue "60";
+  gv:green "86";
+  gv:score "5.0894916";
+  gv:coverage "0.74"
+], [
+  gv:hex "966b56";
+  gv:red "150";
+  gv:blue "86";
+  gv:green "107";
+  gv:score "4.5749951";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "9e6e43";
+  gv:red "158";
+  gv:blue "67";
+  gv:green "110";
+  gv:score "4.250994";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "754c37";
+  gv:red "117";
+  gv:blue "55";
+  gv:green "76";
+  gv:score "3.6599945000000003";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "e3b69e";
+  gv:red "227";
+  gv:blue "158";
+  gv:green "182";
+  gv:score "3.2718408999999995";
+  gv:coverage "0.78666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.523805"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.42831699999999"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "50.887941999999995"
+];
+    w:bagOfWords "CHATEAU BEYCHEVELLE\nGrand Vin 1924.\nAchille FOULD\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

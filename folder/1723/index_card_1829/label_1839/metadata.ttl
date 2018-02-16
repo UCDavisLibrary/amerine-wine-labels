@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1839";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "INALABFlu\nFRAN KEN w E I\n1948er\nRiesling\nHOFKELLE\n"@deu;
+    gv:color [
+  gv:hex "dfc39e";
+  gv:red "223";
+  gv:blue "158";
+  gv:green "195";
+  gv:score "11.966735";
+  gv:coverage "4.54"
+], [
+  gv:hex "8f7144";
+  gv:red "143";
+  gv:blue "68";
+  gv:green "113";
+  gv:score "10.633693";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "982315";
+  gv:red "152";
+  gv:blue "21";
+  gv:green "35";
+  gv:score "1.4233403";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "6d5128";
+  gv:red "109";
+  gv:blue "40";
+  gv:green "81";
+  gv:score "9.4837129";
+  gv:coverage "0.84"
+], [
+  gv:hex "685232";
+  gv:red "104";
+  gv:blue "50";
+  gv:green "82";
+  gv:score "7.5673223";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "b59566";
+  gv:red "181";
+  gv:blue "102";
+  gv:green "149";
+  gv:score "6.587040399999999";
+  gv:coverage "0.9133333299999999"
+], [
+  gv:hex "8b7352";
+  gv:red "139";
+  gv:blue "82";
+  gv:green "115";
+  gv:score "5.9945717";
+  gv:coverage "0.64"
+], [
+  gv:hex "704a20";
+  gv:red "112";
+  gv:blue "32";
+  gv:green "74";
+  gv:score "5.9841745";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "b59a75";
+  gv:red "181";
+  gv:blue "117";
+  gv:green "154";
+  gv:score "5.6066997";
+  gv:coverage "0.8"
+], [
+  gv:hex "966d41";
+  gv:red "150";
+  gv:blue "65";
+  gv:green "109";
+  gv:score "4.7797062";
+  gv:coverage "0.44666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "70.661277"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.333088"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "50.856048"
+];
+    w:bagOfWords "INALABFlu\nFRAN KEN w E I\n1948er\nRiesling\nHOFKELLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

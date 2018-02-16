@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0906";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "Veuve Cli\nousardin\n"@fra;
+    gv:color [
+  gv:hex "c39141";
+  gv:red "195";
+  gv:blue "65";
+  gv:green "145";
+  gv:score "33.196893";
+  gv:coverage "10.213332999999999"
+], [
+  gv:hex "a1722a";
+  gv:red "161";
+  gv:blue "42";
+  gv:green "114";
+  gv:score "11.572552";
+  gv:coverage "2.6333334"
+], [
+  gv:hex "c39746";
+  gv:red "195";
+  gv:blue "70";
+  gv:green "151";
+  gv:score "11.466396";
+  gv:coverage "4.4666667"
+], [
+  gv:hex "e4dad1";
+  gv:red "228";
+  gv:blue "209";
+  gv:green "218";
+  gv:score "0.11404133";
+  gv:coverage "48.266667000000005"
+], [
+  gv:hex "bd8e50";
+  gv:red "189";
+  gv:blue "80";
+  gv:green "142";
+  gv:score "9.0187147";
+  gv:coverage "3.3733333999999995"
+], [
+  gv:hex "9e7034";
+  gv:red "158";
+  gv:blue "52";
+  gv:green "112";
+  gv:score "7.5309694";
+  gv:coverage "1.94"
+], [
+  gv:hex "e2b65e";
+  gv:red "226";
+  gv:blue "94";
+  gv:green "182";
+  gv:score "5.1410712";
+  gv:coverage "4.2933334"
+], [
+  gv:hex "bb9454";
+  gv:red "187";
+  gv:blue "84";
+  gv:green "148";
+  gv:score "4.2265043";
+  gv:coverage "2.0933334"
+], [
+  gv:hex "784a11";
+  gv:red "120";
+  gv:blue "17";
+  gv:green "74";
+  gv:score "3.8731050000000002";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "e1ad59";
+  gv:red "225";
+  gv:blue "89";
+  gv:green "173";
+  gv:score "2.472225";
+  gv:coverage "1.4133333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.805068"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Veuve Cli\nousardin\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

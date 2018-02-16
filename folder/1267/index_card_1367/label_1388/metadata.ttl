@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1367/label_1388";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "VINO TINTO\nSEGUNDO SOTANO\nB. F. NAZAR ANCHORENA e HIJOS S. R. L.\nFRACCIONADORES CAP. 800,000\nB. F. NAZAR ANCHORENA MENDOZA S. R. L\nPRODUCTOR CAP. 600.000\n"@spa;
+    gv:color [
+  gv:hex "d7bc9c";
+  gv:red "215";
+  gv:blue "156";
+  gv:green "188";
+  gv:score "24.391151999999998";
+  gv:coverage "21.186666000000002"
+], [
+  gv:hex "86745d";
+  gv:red "134";
+  gv:blue "93";
+  gv:green "116";
+  gv:score "18.244791";
+  gv:coverage "3.6066665999999996"
+], [
+  gv:hex "c09367";
+  gv:red "192";
+  gv:blue "103";
+  gv:green "147";
+  gv:score "9.0584323";
+  gv:coverage "4.4333335"
+], [
+  gv:hex "ae987e";
+  gv:red "174";
+  gv:blue "126";
+  gv:green "152";
+  gv:score "16.405569";
+  gv:coverage "5.5066667"
+], [
+  gv:hex "67553f";
+  gv:red "103";
+  gv:blue "63";
+  gv:green "85";
+  gv:score "7.3931925";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "c19578";
+  gv:red "193";
+  gv:blue "120";
+  gv:green "149";
+  gv:score "4.7220103";
+  gv:coverage "2.8333334000000003"
+], [
+  gv:hex "e6b69c";
+  gv:red "230";
+  gv:blue "156";
+  gv:green "182";
+  gv:score "4.011822899999999";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "a4754b";
+  gv:red "164";
+  gv:blue "75";
+  gv:green "117";
+  gv:score "2.4853768";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "a06c54";
+  gv:red "160";
+  gv:blue "84";
+  gv:green "108";
+  gv:score "2.4714122";
+  gv:coverage "0.8"
+], [
+  gv:hex "d9b88c";
+  gv:red "217";
+  gv:blue "140";
+  gv:green "184";
+  gv:score "1.8458003";
+  gv:coverage "0.52666669"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.957"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.493859"
+];
+    w:bagOfWords "VINO TINTO\nSEGUNDO SOTANO\nB. F. NAZAR ANCHORENA e HIJOS S. R. L.\nFRACCIONADORES CAP. 800,000\nB. F. NAZAR ANCHORENA MENDOZA S. R. L\nPRODUCTOR CAP. 600.000\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ARG".

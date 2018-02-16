@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3578";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "CALIFORNIA\nFOLLE BLANCHE\nA light-bodied and delicate white wine made from the Folle Blanche grape\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nCONTENTS\nSARATOGA, CALIFORNIA ALCOHOL 13%\n4/5 QUART\nBY VOLUME\nREG US PAT OFF\n"@eng;
+    gv:color [
+  gv:hex "b5945b";
+  gv:red "181";
+  gv:blue "91";
+  gv:green "148";
+  gv:score "28.711178999999998";
+  gv:coverage "2.1866666"
+], [
+  gv:hex "d1c0a4";
+  gv:red "209";
+  gv:blue "164";
+  gv:green "192";
+  gv:score "24.677453999999997";
+  gv:coverage "11.74"
+], [
+  gv:hex "9b7a44";
+  gv:red "155";
+  gv:blue "68";
+  gv:green "122";
+  gv:score "12.235057000000001";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "ac9d81";
+  gv:red "172";
+  gv:blue "129";
+  gv:green "157";
+  gv:score "11.500763";
+  gv:coverage "2.1399999999999997"
+], [
+  gv:hex "ecdcc0";
+  gv:red "236";
+  gv:blue "192";
+  gv:green "220";
+  gv:score "8.2913";
+  gv:coverage "20.36"
+], [
+  gv:hex "d5b780";
+  gv:red "213";
+  gv:blue "128";
+  gv:green "183";
+  gv:score "4.6584643";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "887a5d";
+  gv:red "136";
+  gv:blue "93";
+  gv:green "122";
+  gv:score "3.6285967";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "bc9b4c";
+  gv:red "188";
+  gv:blue "76";
+  gv:green "155";
+  gv:score "2.6637299";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "9e763f";
+  gv:red "158";
+  gv:blue "63";
+  gv:green "118";
+  gv:score "1.1915242";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "bd9259";
+  gv:red "189";
+  gv:blue "89";
+  gv:green "146";
+  gv:score "0.7266878600000001";
+  gv:coverage "0.046666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.39684"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "53.005362"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.13463900000001"
+];
+    w:bagOfWords "CALIFORNIA\nFOLLE BLANCHE\nA light-bodied and delicate white wine made from the Folle Blanche grape\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nCONTENTS\nSARATOGA, CALIFORNIA ALCOHOL 13%\n4/5 QUART\nBY VOLUME\nREG US PAT OFF\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

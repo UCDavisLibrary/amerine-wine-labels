@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0909";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "VIN NOBLE\nRPELLATIO\nCONTENANCE:\nSZO\nN T R\nLEE\nMOND EGOCIANN\nQUINCY CHER\n"@fra;
+    gv:color [
+  gv:hex "dbc19f";
+  gv:red "219";
+  gv:blue "159";
+  gv:green "193";
+  gv:score "15.624234000000001";
+  gv:coverage "10.299999999999999"
+], [
+  gv:hex "c49362";
+  gv:red "196";
+  gv:blue "98";
+  gv:green "147";
+  gv:score "13.198547";
+  gv:coverage "4.0533334"
+], [
+  gv:hex "6d1e02";
+  gv:red "109";
+  gv:blue "2";
+  gv:green "30";
+  gv:score "1.0809621999999999";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "321600";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "22";
+  gv:score "0.8377691700000001";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "b59b78";
+  gv:red "181";
+  gv:blue "120";
+  gv:green "155";
+  gv:score "12.184568";
+  gv:coverage "3.6666665000000003"
+], [
+  gv:hex "e2b382";
+  gv:red "226";
+  gv:blue "130";
+  gv:green "179";
+  gv:score "6.425895500000001";
+  gv:coverage "2.0666666"
+], [
+  gv:hex "ba996b";
+  gv:red "186";
+  gv:blue "107";
+  gv:green "153";
+  gv:score "5.7116926";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "dfba8c";
+  gv:red "223";
+  gv:blue "140";
+  gv:green "186";
+  gv:score "5.5179529";
+  gv:coverage "1.7266667"
+], [
+  gv:hex "a27141";
+  gv:red "162";
+  gv:blue "65";
+  gv:green "113";
+  gv:score "5.328146";
+  gv:coverage "1.24"
+], [
+  gv:hex "f1dabb";
+  gv:red "241";
+  gv:blue "187";
+  gv:green "218";
+  gv:score "5.2116778";
+  gv:coverage "17.44"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.169584"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "VIN NOBLE\nRPELLATIO\nCONTENANCE:\nSZO\nN T R\nLEE\nMOND EGOCIANN\nQUINCY CHER\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2000";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "VINO DULCE\nJUAN PEDRO LUQUE\nLIT J. H. BARROSO. JEREZ.\n"@spa;
+    gv:color [
+  gv:hex "eb3703";
+  gv:red "235";
+  gv:blue "3";
+  gv:green "55";
+  gv:score "77.20067499999999";
+  gv:coverage "31.96"
+], [
+  gv:hex "cb3909";
+  gv:red "203";
+  gv:blue "9";
+  gv:green "57";
+  gv:score "6.2442116";
+  gv:coverage "2.62"
+], [
+  gv:hex "6f1d04";
+  gv:red "111";
+  gv:blue "4";
+  gv:green "29";
+  gv:score "0.71238461";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "3a1303";
+  gv:red "58";
+  gv:blue "3";
+  gv:green "19";
+  gv:score "0.15584526";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "dc3110";
+  gv:red "220";
+  gv:blue "16";
+  gv:green "49";
+  gv:score "5.9191924";
+  gv:coverage "2.0533333000000002"
+], [
+  gv:hex "ae2a03";
+  gv:red "174";
+  gv:blue "3";
+  gv:green "42";
+  gv:score "4.381336999999999";
+  gv:coverage "1.9133333"
+], [
+  gv:hex "ead9c9";
+  gv:red "234";
+  gv:blue "201";
+  gv:green "217";
+  gv:score "0.036375262000000005";
+  gv:coverage "28.633332"
+], [
+  gv:hex "314004";
+  gv:red "49";
+  gv:blue "4";
+  gv:green "64";
+  gv:score "0.026563208999999997";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "dc4303";
+  gv:red "220";
+  gv:blue "3";
+  gv:green "67";
+  gv:score "2.0297099";
+  gv:coverage "0.98"
+], [
+  gv:hex "943302";
+  gv:red "148";
+  gv:blue "2";
+  gv:green "51";
+  gv:score "0.74889208";
+  gv:coverage "0.36"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.182457"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "79.52246099999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.808384999999994"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "52.047336"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.08031"
+];
+    w:bagOfWords "VINO DULCE\nJUAN PEDRO LUQUE\nLIT J. H. BARROSO. JEREZ.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

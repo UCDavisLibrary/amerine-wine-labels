@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1525";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA\nOLOROSA\nMARCA\nREGISTRAD\nLA MONTERIA\nMANUEL GARCIA\n33\nSANLUGAR DE BARRAMEDA\nCADIZ\n"@spa;
+    gv:color [
+  gv:hex "d7c1a7";
+  gv:red "215";
+  gv:blue "167";
+  gv:green "193";
+  gv:score "25.125842999999996";
+  gv:coverage "42.446667"
+], [
+  gv:hex "897457";
+  gv:red "137";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "13.282257";
+  gv:coverage "2.1466667"
+], [
+  gv:hex "ad977c";
+  gv:red "173";
+  gv:blue "124";
+  gv:green "151";
+  gv:score "11.484293";
+  gv:coverage "2.3666666999999997"
+], [
+  gv:hex "655235";
+  gv:red "101";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "11.329156";
+  gv:coverage "1.4666666"
+], [
+  gv:hex "c4917f";
+  gv:red "196";
+  gv:blue "127";
+  gv:green "145";
+  gv:score "8.204739499999999";
+  gv:coverage "1.44"
+], [
+  gv:hex "e5b8a7";
+  gv:red "229";
+  gv:blue "167";
+  gv:green "184";
+  gv:score "7.195414599999999";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "473519";
+  gv:red "71";
+  gv:blue "25";
+  gv:green "53";
+  gv:score "4.5623913";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "8c7348";
+  gv:red "140";
+  gv:blue "72";
+  gv:green "115";
+  gv:score "3.6604408";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "6a5027";
+  gv:red "106";
+  gv:blue "39";
+  gv:green "80";
+  gv:score "3.4822091";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "efdabe";
+  gv:red "239";
+  gv:blue "190";
+  gv:green "218";
+  gv:score "3.4035884000000003";
+  gv:coverage "28.76"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.81336900000001"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "67.74266399999999"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "54.953283"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "54.313123"
+];
+    w:bagOfWords "MANZANILLA\nOLOROSA\nMARCA\nREGISTRAD\nLA MONTERIA\nMANUEL GARCIA\n33\nSANLUGAR DE BARRAMEDA\nCADIZ\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

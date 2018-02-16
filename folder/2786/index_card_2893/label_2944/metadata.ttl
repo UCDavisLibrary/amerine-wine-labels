@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2944";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "ALAORotac STRENGTH 12 ole By\nvor\nBOTTLED IN 1938\nRAND ALs\n1935\nFRENCH WHITE WINE\nSI CHELENC9\nRIES LINC\nMade from Riesling Grapes\nSHIPPED BY\nTRADEMARK\nBORDEAUX, FRANCE\nCONTENTS RENT OR\nPRODUCE OF FRANCE.\n"@fra;
+    gv:color [
+  gv:hex "aaa18a";
+  gv:red "170";
+  gv:blue "138";
+  gv:green "161";
+  gv:score "33.869934";
+  gv:coverage "8.793333200000001"
+], [
+  gv:hex "8c7043";
+  gv:red "140";
+  gv:blue "67";
+  gv:green "112";
+  gv:score "12.795234";
+  gv:coverage "3.8866665"
+], [
+  gv:hex "c2b8a0";
+  gv:red "194";
+  gv:blue "160";
+  gv:green "184";
+  gv:score "30.567449000000003";
+  gv:coverage "21.473333"
+], [
+  gv:hex "827860";
+  gv:red "130";
+  gv:blue "96";
+  gv:green "120";
+  gv:score "10.929058";
+  gv:coverage "2.6333334"
+], [
+  gv:hex "605844";
+  gv:red "96";
+  gv:blue "68";
+  gv:green "88";
+  gv:score "4.4058874";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "a98d5b";
+  gv:red "169";
+  gv:blue "91";
+  gv:green "141";
+  gv:score "2.8011328";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "755c31";
+  gv:red "117";
+  gv:blue "49";
+  gv:green "92";
+  gv:score "1.2232093";
+  gv:coverage "0.36"
+], [
+  gv:hex "a69e91";
+  gv:red "166";
+  gv:blue "145";
+  gv:green "158";
+  gv:score "1.0077733";
+  gv:coverage "0.54"
+], [
+  gv:hex "423a28";
+  gv:red "66";
+  gv:blue "40";
+  gv:green "58";
+  gv:score "0.74085728";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "bfb9ad";
+  gv:red "191";
+  gv:blue "173";
+  gv:green "185";
+  gv:score "0.69243838";
+  gv:coverage "24.766667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.683204"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "66.638488"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.084253000000004"
+];
+    w:bagOfWords "ALAORotac STRENGTH 12 ole By\nvor\nBOTTLED IN 1938\nRAND ALs\n1935\nFRENCH WHITE WINE\nSI CHELENC9\nRIES LINC\nMade from Riesling Grapes\nSHIPPED BY\nTRADEMARK\nBORDEAUX, FRANCE\nCONTENTS RENT OR\nPRODUCE OF FRANCE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

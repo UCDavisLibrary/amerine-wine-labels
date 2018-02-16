@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1786";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "ein\nr D e n e r S r e p p ch e n\n"@deu;
+    gv:color [
+  gv:hex "ecb58c";
+  gv:red "236";
+  gv:blue "140";
+  gv:green "181";
+  gv:score "20.737538999999998";
+  gv:coverage "6.0466666"
+], [
+  gv:hex "9b6e42";
+  gv:red "155";
+  gv:blue "66";
+  gv:green "110";
+  gv:score "14.507999";
+  gv:coverage "4.9333333999999995"
+], [
+  gv:hex "dec1a2";
+  gv:red "222";
+  gv:blue "162";
+  gv:green "193";
+  gv:score "4.3391395";
+  gv:coverage "22.793333"
+], [
+  gv:hex "c88f66";
+  gv:red "200";
+  gv:blue "102";
+  gv:green "143";
+  gv:score "13.436884";
+  gv:coverage "3.84"
+], [
+  gv:hex "795127";
+  gv:red "121";
+  gv:blue "39";
+  gv:green "81";
+  gv:score "7.207934600000001";
+  gv:coverage "2.12"
+], [
+  gv:hex "906f3e";
+  gv:red "144";
+  gv:blue "62";
+  gv:green "111";
+  gv:score "5.7307597";
+  gv:coverage "2.64"
+], [
+  gv:hex "bc9372";
+  gv:red "188";
+  gv:blue "114";
+  gv:green "147";
+  gv:score "4.4941321";
+  gv:coverage "1.46"
+], [
+  gv:hex "e2b694";
+  gv:red "226";
+  gv:blue "148";
+  gv:green "182";
+  gv:score "4.0573988";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "b89566";
+  gv:red "184";
+  gv:blue "102";
+  gv:green "149";
+  gv:score "3.4858394";
+  gv:coverage "1.66"
+], [
+  gv:hex "765729";
+  gv:red "118";
+  gv:blue "41";
+  gv:green "87";
+  gv:score "2.6814388";
+  gv:coverage "1.0733333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.744721"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.59541399999999"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "55.514836"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.719066999999995"
+];
+    w:bagOfWords "ein\nr D e n e r S r e p p ch e n\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

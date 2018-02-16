@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2977";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "and Vin da,\nSa\nMarquee\néposée\nMINER HUGEL'\nRE S E R V E\nF E.HUGELET FILS Viticulteurs gourmets\nRIQUE WIHR RHINi\nAtta. A Jer Co inner\n"@fra;
+    gv:color [
+  gv:hex "cc9749";
+  gv:red "204";
+  gv:blue "73";
+  gv:green "151";
+  gv:score "25.975475";
+  gv:coverage "8.219999999999999"
+], [
+  gv:hex "ddaf5e";
+  gv:red "221";
+  gv:blue "94";
+  gv:green "175";
+  gv:score "19.801846";
+  gv:coverage "5.3666666"
+], [
+  gv:hex "e1ac5d";
+  gv:red "225";
+  gv:blue "93";
+  gv:green "172";
+  gv:score "18.175082";
+  gv:coverage "4.88"
+], [
+  gv:hex "a37128";
+  gv:red "163";
+  gv:blue "40";
+  gv:green "113";
+  gv:score "6.5720841000000005";
+  gv:coverage "1.66"
+], [
+  gv:hex "c99e4f";
+  gv:red "201";
+  gv:blue "79";
+  gv:green "158";
+  gv:score "6.5546952";
+  gv:coverage "2.1733332"
+], [
+  gv:hex "bb9557";
+  gv:red "187";
+  gv:blue "87";
+  gv:green "149";
+  gv:score "6.4838268";
+  gv:coverage "3.5000000000000004"
+], [
+  gv:hex "c19151";
+  gv:red "193";
+  gv:blue "81";
+  gv:green "145";
+  gv:score "3.199283";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "9c7035";
+  gv:red "156";
+  gv:blue "53";
+  gv:green "112";
+  gv:score "2.9595016";
+  gv:coverage "0.6"
+], [
+  gv:hex "9a783f";
+  gv:red "154";
+  gv:blue "63";
+  gv:green "120";
+  gv:score "2.5665388";
+  gv:coverage "0.74"
+], [
+  gv:hex "dab26f";
+  gv:red "218";
+  gv:blue "111";
+  gv:green "178";
+  gv:score "2.1366181";
+  gv:coverage "0.9466666699999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.8436"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.123070999999996"
+];
+    w:bagOfWords "and Vin da,\nSa\nMarquee\néposée\nMINER HUGEL'\nRE S E R V E\nF E.HUGELET FILS Viticulteurs gourmets\nRIQUE WIHR RHINi\nAtta. A Jer Co inner\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

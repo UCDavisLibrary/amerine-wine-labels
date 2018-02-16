@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3303/label_3311";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "NUITS SAINT-GEORGES\nP. A. LA TERENA UDIE\nROPER E\nChateau d'Au venay.\nMEURSAULT\nPRODUCED & BOTTLED IN FRANCE\nNET CONTENT 4/5 0F A QUART ALCOHOLIC STRENGTH 26e PR00F\nETIO. D\nEN 226\nIMP. WETTERWALD FRERES "@fra;
+    gv:color [
+  gv:hex "d8b57f";
+  gv:red "216";
+  gv:blue "127";
+  gv:green "181";
+  gv:score "34.875926";
+  gv:coverage "6.7333333"
+], [
+  gv:hex "151113";
+  gv:red "21";
+  gv:blue "19";
+  gv:green "17";
+  gv:score "0.359387";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "c09e65";
+  gv:red "192";
+  gv:blue "101";
+  gv:green "158";
+  gv:score "26.533264000000003";
+  gv:coverage "4.74"
+], [
+  gv:hex "d8be9b";
+  gv:red "216";
+  gv:blue "155";
+  gv:green "190";
+  gv:score "16.039783";
+  gv:coverage "33.386666"
+], [
+  gv:hex "311809";
+  gv:red "49";
+  gv:blue "9";
+  gv:green "24";
+  gv:score "0.09802412199999999";
+  gv:coverage "0.02"
+], [
+  gv:hex "687388";
+  gv:red "104";
+  gv:blue "136";
+  gv:green "115";
+  gv:score "0.07191025100000001";
+  gv:coverage "0.04"
+], [
+  gv:hex "b89c7a";
+  gv:red "184";
+  gv:blue "122";
+  gv:green "156";
+  gv:score "4.688931999999999";
+  gv:coverage "2.0533333000000002"
+], [
+  gv:hex "c4985c";
+  gv:red "196";
+  gv:blue "92";
+  gv:green "152";
+  gv:score "4.3921005";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "9b7944";
+  gv:red "155";
+  gv:blue "68";
+  gv:green "121";
+  gv:score "3.1070052";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "99713a";
+  gv:red "153";
+  gv:blue "58";
+  gv:green "113";
+  gv:score "2.5047872";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.5882"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.594025"
+];
+    w:bagOfWords "NUITS SAINT-GEORGES\nP. A. LA TERENA UDIE\nROPER E\nChateau d'Au venay.\nMEURSAULT\nPRODUCED & BOTTLED IN FRANCE\nNET CONTENT 4/5 0F A QUART ALCOHOLIC STRENGTH 26e PR00F\nETIO. D\nEN 226\nIMP. WETTERWALD FRERES "@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

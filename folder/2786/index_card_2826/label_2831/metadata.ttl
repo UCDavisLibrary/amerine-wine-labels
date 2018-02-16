@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2831";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "Kia I\nVINdeSAUTERNES de MleMarquisde URSALUCES\nCHATEAU FILHOT\n1931\nMIS EN BOUTEILLE AU CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "b29c7c";
+  gv:red "178";
+  gv:blue "124";
+  gv:green "156";
+  gv:score "51.73434";
+  gv:coverage "5.913333199999999"
+], [
+  gv:hex "cfbba0";
+  gv:red "207";
+  gv:blue "160";
+  gv:green "187";
+  gv:score "38.249061";
+  gv:coverage "17.466667"
+], [
+  gv:hex "947c5c";
+  gv:red "148";
+  gv:blue "92";
+  gv:green "124";
+  gv:score "5.1885851";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "b8a174";
+  gv:red "184";
+  gv:blue "116";
+  gv:green "161";
+  gv:score "1.5373439";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "e9d7c0";
+  gv:red "233";
+  gv:blue "192";
+  gv:green "215";
+  gv:score "1.3953735";
+  gv:coverage "3.6799999999999997"
+], [
+  gv:hex "9a8158";
+  gv:red "154";
+  gv:blue "88";
+  gv:green "129";
+  gv:score "0.8529585799999999";
+  gv:coverage "0.06"
+], [
+  gv:hex "d6b6a4";
+  gv:red "214";
+  gv:blue "164";
+  gv:green "182";
+  gv:score "0.43541137";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "c5af80";
+  gv:red "197";
+  gv:blue "128";
+  gv:green "175";
+  gv:score "0.25530364";
+  gv:coverage "0.02"
+], [
+  gv:hex "735e3f";
+  gv:red "115";
+  gv:blue "63";
+  gv:green "94";
+  gv:score "0.13205102000000002";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "c5a492";
+  gv:red "197";
+  gv:blue "146";
+  gv:green "164";
+  gv:score "0.10940382";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.454394"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.199955"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.350063"
+];
+    w:bagOfWords "Kia I\nVINdeSAUTERNES de MleMarquisde URSALUCES\nCHATEAU FILHOT\n1931\nMIS EN BOUTEILLE AU CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

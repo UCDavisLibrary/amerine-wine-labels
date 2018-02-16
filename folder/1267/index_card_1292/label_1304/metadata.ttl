@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1304";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "1946\nRIESLING\ncru Math. Zeimet-Kohn, Machtum\n"@deu;
+    gv:color [
+  gv:hex "8f783d";
+  gv:red "143";
+  gv:blue "61";
+  gv:green "120";
+  gv:score "15.061796";
+  gv:coverage "3.0733334"
+], [
+  gv:hex "d4c2a4";
+  gv:red "212";
+  gv:blue "164";
+  gv:green "194";
+  gv:score "7.501426299999999";
+  gv:coverage "15.026665999999999"
+], [
+  gv:hex "961e1d";
+  gv:red "150";
+  gv:blue "29";
+  gv:green "30";
+  gv:score "3.3411700000000004";
+  gv:coverage "0.1"
+], [
+  gv:hex "7b9e40";
+  gv:red "123";
+  gv:blue "64";
+  gv:green "158";
+  gv:score "0.7341352800000001";
+  gv:coverage "0.06"
+], [
+  gv:hex "29324b";
+  gv:red "41";
+  gv:blue "75";
+  gv:green "50";
+  gv:score "0.3712012";
+  gv:coverage "0.06"
+], [
+  gv:hex "315345";
+  gv:red "49";
+  gv:blue "69";
+  gv:green "83";
+  gv:score "0.23292142000000002";
+  gv:coverage "0.04"
+], [
+  gv:hex "ac9258";
+  gv:red "172";
+  gv:blue "88";
+  gv:green "146";
+  gv:score "10.648222";
+  gv:coverage "3.8466666"
+], [
+  gv:hex "8e9f54";
+  gv:red "142";
+  gv:blue "84";
+  gv:green "159";
+  gv:score "8.2974769";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "717f36";
+  gv:red "113";
+  gv:blue "54";
+  gv:green "127";
+  gv:score "6.0081668";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "ac9b79";
+  gv:red "172";
+  gv:blue "121";
+  gv:green "155";
+  gv:score "4.03468";
+  gv:coverage "2.2533333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.459178"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.004132"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "62.852067"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "58.534121999999996"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.664156999999996"
+];
+    w:bagOfWords "1946\nRIESLING\ncru Math. Zeimet-Kohn, Machtum\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

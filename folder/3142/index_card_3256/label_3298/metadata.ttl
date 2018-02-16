@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3256/label_3298";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "VOSNE ROMANEE\nCLOS FRANTIN\nDomaines\nGRIVELET\n1942\nCHATEAU\nDE\nCHAMBOLLE MUSIGNY (COTE DOR)\nAPPELLATION CONTROLEE\nise en bouteilles aux domaines\n"@fra;
+    gv:color [
+  gv:hex "e2c492";
+  gv:red "226";
+  gv:blue "146";
+  gv:green "196";
+  gv:score "63.534611";
+  gv:coverage "21.286666"
+], [
+  gv:hex "e0c79e";
+  gv:red "224";
+  gv:blue "158";
+  gv:green "199";
+  gv:score "12.686236000000001";
+  gv:coverage "10.2"
+], [
+  gv:hex "ba9b6a";
+  gv:red "186";
+  gv:blue "106";
+  gv:green "155";
+  gv:score "9.2243485";
+  gv:coverage "2.88"
+], [
+  gv:hex "937649";
+  gv:red "147";
+  gv:blue "73";
+  gv:green "118";
+  gv:score "3.0229295";
+  gv:coverage "0.8"
+], [
+  gv:hex "b39972";
+  gv:red "179";
+  gv:blue "114";
+  gv:green "153";
+  gv:score "2.128257";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "f0d9b6";
+  gv:red "240";
+  gv:blue "182";
+  gv:green "217";
+  gv:score "1.7900719999999999";
+  gv:coverage "14.733334000000001"
+], [
+  gv:hex "f2d7a7";
+  gv:red "242";
+  gv:blue "167";
+  gv:green "215";
+  gv:score "1.5593622999999999";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "6d5327";
+  gv:red "109";
+  gv:blue "39";
+  gv:green "83";
+  gv:score "1.4538792";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "8e7551";
+  gv:red "142";
+  gv:blue "81";
+  gv:green "117";
+  gv:score "1.0083598";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "dcb07a";
+  gv:red "220";
+  gv:blue "122";
+  gv:green "176";
+  gv:score "0.8226933000000001";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.264607"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.05958999999999"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.26659"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "53.031015000000004"
+];
+    w:bagOfWords "VOSNE ROMANEE\nCLOS FRANTIN\nDomaines\nGRIVELET\n1942\nCHATEAU\nDE\nCHAMBOLLE MUSIGNY (COTE DOR)\nAPPELLATION CONTROLEE\nise en bouteilles aux domaines\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

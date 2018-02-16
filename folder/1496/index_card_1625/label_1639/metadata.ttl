@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1639";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MALAGA\nOLD\nO PORTO LONDON\n"@spa;
+    gv:color [
+  gv:hex "1c1713";
+  gv:red "28";
+  gv:blue "19";
+  gv:green "23";
+  gv:score "23.754118";
+  gv:coverage "18.099999999999998"
+], [
+  gv:hex "502615";
+  gv:red "80";
+  gv:blue "21";
+  gv:green "38";
+  gv:score "9.1809981";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "893a1e";
+  gv:red "137";
+  gv:blue "30";
+  gv:green "58";
+  gv:score "6.8819545";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "f0410c";
+  gv:red "240";
+  gv:blue "12";
+  gv:green "65";
+  gv:score "4.8413411";
+  gv:coverage "0.12"
+], [
+  gv:hex "d04720";
+  gv:red "208";
+  gv:blue "32";
+  gv:green "71";
+  gv:score "4.7083959";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "ece2d8";
+  gv:red "236";
+  gv:blue "216";
+  gv:green "226";
+  gv:score "0.8548498200000001";
+  gv:coverage "67.633331"
+], [
+  gv:hex "350f04";
+  gv:red "53";
+  gv:blue "4";
+  gv:green "15";
+  gv:score "5.7399686";
+  gv:coverage "0.62"
+], [
+  gv:hex "681b09";
+  gv:red "104";
+  gv:blue "9";
+  gv:green "27";
+  gv:score "5.6707826";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "704532";
+  gv:red "112";
+  gv:blue "50";
+  gv:green "69";
+  gv:score "3.9451435";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "270e11";
+  gv:red "39";
+  gv:blue "17";
+  gv:green "14";
+  gv:score "3.1785227";
+  gv:coverage "0.64666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.703575"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MALAGA\nOLD\nO PORTO LONDON\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

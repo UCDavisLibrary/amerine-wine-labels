@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1411";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "3\nCHAMPAGNE\nCON CHILEs\nMEDIO SECO\n"@spa;
+    gv:color [
+  gv:hex "dab584";
+  gv:red "218";
+  gv:blue "132";
+  gv:green "181";
+  gv:score "27.806678";
+  gv:coverage "8.3466664"
+], [
+  gv:hex "c99b63";
+  gv:red "201";
+  gv:blue "99";
+  gv:green "155";
+  gv:score "18.687502000000002";
+  gv:coverage "3.7866667"
+], [
+  gv:hex "d8bb95";
+  gv:red "216";
+  gv:blue "149";
+  gv:green "187";
+  gv:score "13.196432999999999";
+  gv:coverage "7.960000000000001"
+], [
+  gv:hex "c49f6e";
+  gv:red "196";
+  gv:blue "110";
+  gv:green "159";
+  gv:score "12.666799000000001";
+  gv:coverage "2.7733333"
+], [
+  gv:hex "ddae77";
+  gv:red "221";
+  gv:blue "119";
+  gv:green "174";
+  gv:score "11.833702";
+  gv:coverage "2.6933333"
+], [
+  gv:hex "bb9e79";
+  gv:red "187";
+  gv:blue "121";
+  gv:green "158";
+  gv:score "4.5740094000000004";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "be8e75";
+  gv:red "190";
+  gv:blue "117";
+  gv:green "142";
+  gv:score "2.5671963";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "a26d5c";
+  gv:red "162";
+  gv:blue "92";
+  gv:green "109";
+  gv:score "2.3543216";
+  gv:coverage "0.44"
+], [
+  gv:hex "dcb190";
+  gv:red "220";
+  gv:blue "144";
+  gv:green "177";
+  gv:score "1.4706310999999999";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "d19a53";
+  gv:red "209";
+  gv:blue "83";
+  gv:green "154";
+  gv:score "1.3875843";
+  gv:coverage "0.27999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "69.84849600000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.220454"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "59.878129"
+], [
+  gv:mid <https://g.co/kg/m/0frqm>;
+  gv:desc "envelope";
+  gv:score "58.507735000000004"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.931509"
+];
+    w:bagOfWords "3\nCHAMPAGNE\nCON CHILEs\nMEDIO SECO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

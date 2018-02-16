@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0799";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "APPELLATION CONTROLEE\nooperative Vinicole\nhaye /ouassiere\n"@fra;
+    gv:color [
+  gv:hex "d6c5a2";
+  gv:red "214";
+  gv:blue "162";
+  gv:green "197";
+  gv:score "28.857747";
+  gv:coverage "19.220000000000002"
+], [
+  gv:hex "9ba367";
+  gv:red "155";
+  gv:blue "103";
+  gv:green "163";
+  gv:score "15.150329000000001";
+  gv:coverage "1.8399999999999999"
+], [
+  gv:hex "182100";
+  gv:red "24";
+  gv:blue "undefined";
+  gv:green "33";
+  gv:score "1.028055";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "a99b78";
+  gv:red "169";
+  gv:blue "120";
+  gv:green "155";
+  gv:score "10.569499";
+  gv:coverage "3.8133334"
+], [
+  gv:hex "767e46";
+  gv:red "118";
+  gv:blue "70";
+  gv:green "126";
+  gv:score "7.788527800000001";
+  gv:coverage "0.74"
+], [
+  gv:hex "b7bf84";
+  gv:red "183";
+  gv:blue "132";
+  gv:green "191";
+  gv:score "6.494462500000001";
+  gv:coverage "0.84666666"
+], [
+  gv:hex "e9dcb9";
+  gv:red "233";
+  gv:blue "185";
+  gv:green "220";
+  gv:score "6.1475396";
+  gv:coverage "9.2866667"
+], [
+  gv:hex "867956";
+  gv:red "134";
+  gv:blue "86";
+  gv:green "121";
+  gv:score "5.8982033000000005";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "525a24";
+  gv:red "82";
+  gv:blue "36";
+  gv:green "90";
+  gv:score "4.3205544";
+  gv:coverage "0.38"
+], [
+  gv:hex "bcc28f";
+  gv:red "188";
+  gv:blue "143";
+  gv:green "194";
+  gv:score "2.2346261999999997";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.67445500000001"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "63.758039"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "52.280658"
+];
+    w:bagOfWords "APPELLATION CONTROLEE\nooperative Vinicole\nhaye /ouassiere\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

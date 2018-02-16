@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1300";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "C.\nR.C. BRUX 96.338\nRiesling\n"@deu;
+    gv:color [
+  gv:hex "d4c4a3";
+  gv:red "212";
+  gv:blue "163";
+  gv:green "196";
+  gv:score "21.011879999999998";
+  gv:coverage "8.6"
+], [
+  gv:hex "91753c";
+  gv:red "145";
+  gv:blue "60";
+  gv:green "117";
+  gv:score "9.3709879";
+  gv:coverage "3.2333333"
+], [
+  gv:hex "8f3a26";
+  gv:red "143";
+  gv:blue "38";
+  gv:green "58";
+  gv:score "3.3001080000000003";
+  gv:coverage "0.24"
+], [
+  gv:hex "ebddbf";
+  gv:red "235";
+  gv:blue "191";
+  gv:green "221";
+  gv:score "10.645195000000001";
+  gv:coverage "14.406666000000001"
+], [
+  gv:hex "b09f7f";
+  gv:red "176";
+  gv:blue "127";
+  gv:green "159";
+  gv:score "7.3472604";
+  gv:coverage "2.4"
+], [
+  gv:hex "af9660";
+  gv:red "175";
+  gv:blue "96";
+  gv:green "150";
+  gv:score "5.9088416";
+  gv:coverage "2.0333333"
+], [
+  gv:hex "725822";
+  gv:red "114";
+  gv:blue "34";
+  gv:green "88";
+  gv:score "4.6060842";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "dac28d";
+  gv:red "218";
+  gv:blue "141";
+  gv:green "194";
+  gv:score "4.523061200000001";
+  gv:coverage "1.34"
+], [
+  gv:hex "86765a";
+  gv:red "134";
+  gv:blue "90";
+  gv:green "118";
+  gv:score "4.2463370000000005";
+  gv:coverage "1.18"
+], [
+  gv:hex "f1dba5";
+  gv:red "241";
+  gv:blue "165";
+  gv:green "219";
+  gv:score "2.924064";
+  gv:coverage "0.9466666699999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "70.717192"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.280511"
+];
+    w:bagOfWords "C.\nR.C. BRUX 96.338\nRiesling\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0499";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R H E I N G A U\nRabinettwein\n1945 g\nfiochheimer\nDombe chaney\nBeeren-Auslele\nDerwaltung der Staatsueinguter\nEltoille\nEigener Rellerab3ug uno Rochbranb\n"@deu;
+    gv:color [
+  gv:hex "dbc1a3";
+  gv:red "219";
+  gv:blue "163";
+  gv:green "193";
+  gv:score "41.699919";
+  gv:coverage "23.080000000000002"
+], [
+  gv:hex "645136";
+  gv:red "100";
+  gv:blue "54";
+  gv:green "81";
+  gv:score "3.053654";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "d8ba87";
+  gv:red "216";
+  gv:blue "135";
+  gv:green "186";
+  gv:score "15.074021000000002";
+  gv:coverage "4.7133334"
+], [
+  gv:hex "bc9a64";
+  gv:red "188";
+  gv:blue "100";
+  gv:green "154";
+  gv:score "6.1664511";
+  gv:coverage "2.42"
+], [
+  gv:hex "b39979";
+  gv:red "179";
+  gv:blue "121";
+  gv:green "153";
+  gv:score "4.2903639";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "ddb79c";
+  gv:red "221";
+  gv:blue "156";
+  gv:green "183";
+  gv:score "2.8149517";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "877257";
+  gv:red "135";
+  gv:blue "87";
+  gv:green "114";
+  gv:score "2.7746424";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "3f3014";
+  gv:red "63";
+  gv:blue "20";
+  gv:green "48";
+  gv:score "2.7567711000000004";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "c8a556";
+  gv:red "200";
+  gv:blue "86";
+  gv:green "165";
+  gv:score "2.6044913999999997";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "d5b363";
+  gv:red "213";
+  gv:blue "99";
+  gv:green "179";
+  gv:score "2.393855";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.850795"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "R H E I N G A U\nRabinettwein\n1945 g\nfiochheimer\nDombe chaney\nBeeren-Auslele\nDerwaltung der Staatsueinguter\nEltoille\nEigener Rellerab3ug uno Rochbranb\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

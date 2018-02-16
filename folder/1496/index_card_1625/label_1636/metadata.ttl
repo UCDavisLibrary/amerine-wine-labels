@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1636";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "Embotelladores\nNo 37\nParis\nBurdeos\nCadiz\nMot anz as\nFLORIDO & Co\nSanlaan de Bananeda\nLACRIMA CHRISTI\nContents\nProduce of\nAlcoholic Strength\n18 oto\n1 Pint & 9 1\nFluid 02s\nSpain\nNUEVA LIT. JEREZANA JKR r\n"@spa;
+    gv:color [
+  gv:hex "e19606";
+  gv:red "225";
+  gv:blue "6";
+  gv:green "150";
+  gv:score "44.565706999999996";
+  gv:coverage "18.92"
+], [
+  gv:hex "a46a0c";
+  gv:red "164";
+  gv:blue "12";
+  gv:green "106";
+  gv:score "4.738903";
+  gv:coverage "1.9"
+], [
+  gv:hex "6b5019";
+  gv:red "107";
+  gv:blue "25";
+  gv:green "80";
+  gv:score "1.4615135";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "c6470d";
+  gv:red "198";
+  gv:blue "13";
+  gv:green "71";
+  gv:score "1.3262576";
+  gv:coverage "0.26"
+], [
+  gv:hex "efa40d";
+  gv:red "239";
+  gv:blue "13";
+  gv:green "164";
+  gv:score "16.467959";
+  gv:coverage "4.9799999999999995"
+], [
+  gv:hex "e2cbb3";
+  gv:red "226";
+  gv:blue "179";
+  gv:green "203";
+  gv:score "0.09599583";
+  gv:coverage "13.926667"
+], [
+  gv:hex "f5a904";
+  gv:red "245";
+  gv:blue "4";
+  gv:green "169";
+  gv:score "8.1648149";
+  gv:coverage "2.4266666"
+], [
+  gv:hex "ec8c0a";
+  gv:red "236";
+  gv:blue "10";
+  gv:green "140";
+  gv:score "6.0370371";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "f0bc8c";
+  gv:red "240";
+  gv:blue "140";
+  gv:green "188";
+  gv:score "0.058347313";
+  gv:coverage "0.16"
+], [
+  gv:hex "844e02";
+  gv:red "132";
+  gv:blue "2";
+  gv:green "78";
+  gv:score "1.6021246";
+  gv:coverage "0.63333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/088fh>;
+  gv:desc "yellow";
+  gv:score "84.037465"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.526151"
+];
+    w:bagOfWords "Embotelladores\nNo 37\nParis\nBurdeos\nCadiz\nMot anz as\nFLORIDO & Co\nSanlaan de Bananeda\nLACRIMA CHRISTI\nContents\nProduce of\nAlcoholic Strength\n18 oto\n1 Pint & 9 1\nFluid 02s\nSpain\nNUEVA LIT. JEREZANA JKR r\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

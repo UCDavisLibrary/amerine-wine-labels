@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4076";
+    dct:type "image";
+    w:bagOfWords "ARIS 1889\nDIJON\nNUITS ST GEORGES\nIMP. D ARNAUD. LYON PARTS\n"@fra;
+    gv:color [
+  gv:hex "d8c3a6";
+  gv:red "216";
+  gv:blue "166";
+  gv:green "195";
+  gv:score "30.201641000000002";
+  gv:coverage "20.68"
+], [
+  gv:hex "897455";
+  gv:red "137";
+  gv:blue "85";
+  gv:green "116";
+  gv:score "19.664144999999998";
+  gv:coverage "1.6400000000000001"
+], [
+  gv:hex "af9a7c";
+  gv:red "175";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "16.496979";
+  gv:coverage "2.9733334"
+], [
+  gv:hex "6a5637";
+  gv:red "106";
+  gv:blue "55";
+  gv:green "86";
+  gv:score "12.607284";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "efdbc2";
+  gv:red "239";
+  gv:blue "194";
+  gv:green "219";
+  gv:score "6.775119999999999";
+  gv:coverage "10.453334"
+], [
+  gv:hex "ae9964";
+  gv:red "174";
+  gv:blue "100";
+  gv:green "153";
+  gv:score "3.7234616";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "8c7a4c";
+  gv:red "140";
+  gv:blue "76";
+  gv:green "122";
+  gv:score "2.5384938";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "432f17";
+  gv:red "67";
+  gv:blue "23";
+  gv:green "47";
+  gv:score "2.3850208";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "d7c18f";
+  gv:red "215";
+  gv:blue "143";
+  gv:green "193";
+  gv:score "1.8366383";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "ecd8a3";
+  gv:red "236";
+  gv:blue "163";
+  gv:green "216";
+  gv:score "0.81988275";
+  gv:coverage "0.24666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.43696"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.673013"
+];
+    w:bagOfWords "ARIS 1889\nDIJON\nNUITS ST GEORGES\nIMP. D ARNAUD. LYON PARTS\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

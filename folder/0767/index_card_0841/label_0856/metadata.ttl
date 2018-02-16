@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0856";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "GOLDEN LABEL\nCHAMPAGNE\nDO YEN & CO\nMAISON FON DE E EN 89 5\n926\nFRANCE\nCONTENTS 13 FLUID OUNCES, ALCOHOL. 13 BY VOLUME\n"@fra;
+    gv:color [
+  gv:hex "a1701d";
+  gv:red "161";
+  gv:blue "29";
+  gv:green "112";
+  gv:score "16.603246";
+  gv:coverage "1"
+], [
+  gv:hex "bf973c";
+  gv:red "191";
+  gv:blue "60";
+  gv:green "151";
+  gv:score "11.386773";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "d1c4ae";
+  gv:red "209";
+  gv:blue "174";
+  gv:green "196";
+  gv:score "6.817834100000001";
+  gv:coverage "4.52"
+], [
+  gv:hex "c38f35";
+  gv:red "195";
+  gv:blue "53";
+  gv:green "143";
+  gv:score "9.164863800000001";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "9b7624";
+  gv:red "155";
+  gv:blue "36";
+  gv:green "118";
+  gv:score "6.4098477";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "91733a";
+  gv:red "145";
+  gv:blue "58";
+  gv:green "115";
+  gv:score "5.8958769";
+  gv:coverage "0.62"
+], [
+  gv:hex "b59559";
+  gv:red "181";
+  gv:blue "89";
+  gv:green "149";
+  gv:score "5.296028";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "eedbbb";
+  gv:red "238";
+  gv:blue "187";
+  gv:green "219";
+  gv:score "3.6573521999999996";
+  gv:coverage "6.279999999999999"
+], [
+  gv:hex "ccc4b9";
+  gv:red "204";
+  gv:blue "185";
+  gv:green "196";
+  gv:score "3.4898248";
+  gv:coverage "6.239999999999999"
+], [
+  gv:hex "c49722";
+  gv:red "196";
+  gv:blue "34";
+  gv:green "151";
+  gv:score "3.1027823999999997";
+  gv:coverage "0.21333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.834691"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GOLDEN LABEL\nCHAMPAGNE\nDO YEN & CO\nMAISON FON DE E EN 89 5\n926\nFRANCE\nCONTENTS 13 FLUID OUNCES, ALCOHOL. 13 BY VOLUME\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

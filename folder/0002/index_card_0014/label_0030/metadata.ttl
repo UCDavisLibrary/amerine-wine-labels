@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0030";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "CAREGISTRADA\nBodegas Franco Espanolas\nLOGRoNo\nR. E. N 9 43\n"@spa;
+    gv:color [
+  gv:hex "d3c0aa";
+  gv:red "211";
+  gv:blue "170";
+  gv:green "192";
+  gv:score "37.441145999999996";
+  gv:coverage "38.726667"
+], [
+  gv:hex "55847d";
+  gv:red "85";
+  gv:blue "125";
+  gv:green "132";
+  gv:score "5.8400492999999996";
+  gv:coverage "2.6733333000000004"
+], [
+  gv:hex "784622";
+  gv:red "120";
+  gv:blue "34";
+  gv:green "70";
+  gv:score "0.45940471";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "a65338";
+  gv:red "166";
+  gv:blue "56";
+  gv:green "83";
+  gv:score "0.36491782";
+  gv:coverage "0.04"
+], [
+  gv:hex "c1924a";
+  gv:red "193";
+  gv:blue "74";
+  gv:green "146";
+  gv:score "0.32251072000000003";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "ae9c88";
+  gv:red "174";
+  gv:blue "136";
+  gv:green "156";
+  gv:score "11.772656";
+  gv:coverage "2.4"
+], [
+  gv:hex "857564";
+  gv:red "133";
+  gv:blue "100";
+  gv:green "117";
+  gv:score "6.8267576";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "d1c4b9";
+  gv:red "209";
+  gv:blue "185";
+  gv:green "196";
+  gv:score "5.9466284";
+  gv:coverage "7.6733336"
+], [
+  gv:hex "bc9861";
+  gv:red "188";
+  gv:blue "97";
+  gv:green "152";
+  gv:score "5.0537471";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "6fa29b";
+  gv:red "111";
+  gv:blue "155";
+  gv:green "162";
+  gv:score "4.2694985999999995";
+  gv:coverage "3.2466665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.56975100000001"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.68123"
+];
+    w:bagOfWords "CAREGISTRADA\nBodegas Franco Espanolas\nLOGRoNo\nR. E. N 9 43\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

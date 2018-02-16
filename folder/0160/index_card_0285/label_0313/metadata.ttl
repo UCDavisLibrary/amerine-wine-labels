@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0313";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "VERCELLI\nFinland\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nVERCELLI BROS, WINE CO.\nin Healdsburg, S\nnoma County, California\n"@eng;
+    gv:color [
+  gv:hex "a2231d";
+  gv:red "162";
+  gv:blue "29";
+  gv:green "35";
+  gv:score "19.44539";
+  gv:coverage "0.38"
+], [
+  gv:hex "d3c1ab";
+  gv:red "211";
+  gv:blue "171";
+  gv:green "193";
+  gv:score "13.927199000000002";
+  gv:coverage "43.253332"
+], [
+  gv:hex "61523c";
+  gv:red "97";
+  gv:blue "60";
+  gv:green "82";
+  gv:score "6.1688884999999996";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "ad9b86";
+  gv:red "173";
+  gv:blue "134";
+  gv:green "155";
+  gv:score "7.0401073";
+  gv:coverage "2.2266667"
+], [
+  gv:hex "744739";
+  gv:red "116";
+  gv:blue "57";
+  gv:green "71";
+  gv:score "5.6024954000000005";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "883931";
+  gv:red "136";
+  gv:blue "49";
+  gv:green "57";
+  gv:score "5.1909532";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "857661";
+  gv:red "133";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "4.632625399999999";
+  gv:coverage "1.06"
+], [
+  gv:hex "902f24";
+  gv:red "144";
+  gv:blue "36";
+  gv:green "47";
+  gv:score "4.104837";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "72190b";
+  gv:red "114";
+  gv:blue "11";
+  gv:green "25";
+  gv:score "3.6457255";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "42331e";
+  gv:red "66";
+  gv:blue "30";
+  gv:green "51";
+  gv:score "3.5941515";
+  gv:coverage "0.58"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.238899999999994"
+];
+    w:bagOfWords "VERCELLI\nFinland\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nVERCELLI BROS, WINE CO.\nin Healdsburg, S\nnoma County, California\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

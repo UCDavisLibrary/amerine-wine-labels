@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0224";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "SANTA CLARA\nCABERNET\nA California Claret made from Cabernet Grapes\nWILLIAMS BURG INN\nWILLIAMSBURG, VIRGINIA\nBOTTLED BY ALMADEN VINEYARDS, Los GATOs, CALIFORNIA\n12% ALCOHOL BY VOLUME\nDistributed by F. S. Importing Co., Ltd., New York, N. Y.\n"@eng;
+    gv:color [
+  gv:hex "482816";
+  gv:red "72";
+  gv:blue "22";
+  gv:green "40";
+  gv:score "72.568625";
+  gv:coverage "28.826666"
+], [
+  gv:hex "e6d8cc";
+  gv:red "230";
+  gv:blue "204";
+  gv:green "216";
+  gv:score "0.30437461";
+  gv:coverage "41.726667"
+], [
+  gv:hex "6c4c3a";
+  gv:red "108";
+  gv:blue "58";
+  gv:green "76";
+  gv:score "9.122601900000001";
+  gv:coverage "3.2"
+], [
+  gv:hex "371706";
+  gv:red "55";
+  gv:blue "6";
+  gv:green "23";
+  gv:score "6.5531112";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "8e6e5d";
+  gv:red "142";
+  gv:blue "93";
+  gv:green "110";
+  gv:score "6.1007783";
+  gv:coverage "1.9800000000000002"
+], [
+  gv:hex "b49382";
+  gv:red "180";
+  gv:blue "130";
+  gv:green "147";
+  gv:score "1.6802112";
+  gv:coverage "0.48"
+], [
+  gv:hex "ac9483";
+  gv:red "172";
+  gv:blue "131";
+  gv:green "148";
+  gv:score "1.0596615";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "8f7461";
+  gv:red "143";
+  gv:blue "97";
+  gv:green "116";
+  gv:score "0.7554987";
+  gv:coverage "0.54"
+], [
+  gv:hex "442f1e";
+  gv:red "68";
+  gv:blue "30";
+  gv:green "47";
+  gv:score "0.69694784";
+  gv:coverage "0.74"
+], [
+  gv:hex "634c39";
+  gv:red "99";
+  gv:blue "57";
+  gv:green "76";
+  gv:score "0.36032829";
+  gv:coverage "0.48666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.121624"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "SANTA CLARA\nCABERNET\nA California Claret made from Cabernet Grapes\nWILLIAMS BURG INN\nWILLIAMSBURG, VIRGINIA\nBOTTLED BY ALMADEN VINEYARDS, Los GATOs, CALIFORNIA\n12% ALCOHOL BY VOLUME\nDistributed by F. S. Importing Co., Ltd., New York, N. Y.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

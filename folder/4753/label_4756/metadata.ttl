@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4753/label_4756";
+    dct:type "image";
+    w:bagOfWords "ANTA CR u Z M o u N T A I N\nCABERNET SMU VEGNON\n1943 E\nproduced by HallcRest Vineyards, Felton, California\n"@eng;
+    gv:color [
+  gv:hex "d2c0ae";
+  gv:red "210";
+  gv:blue "174";
+  gv:green "192";
+  gv:score "29.673361999999997";
+  gv:coverage "7.9399999999999995"
+], [
+  gv:hex "b05c45";
+  gv:red "176";
+  gv:blue "69";
+  gv:green "92";
+  gv:score "4.021392";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "9a6c58";
+  gv:red "154";
+  gv:blue "88";
+  gv:green "108";
+  gv:score "3.9249069999999997";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "efdcca";
+  gv:red "239";
+  gv:blue "202";
+  gv:green "220";
+  gv:score "20.261763";
+  gv:coverage "27.88"
+], [
+  gv:hex "ae9d8c";
+  gv:red "174";
+  gv:blue "140";
+  gv:green "157";
+  gv:score "17.638813";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "e8baa4";
+  gv:red "232";
+  gv:blue "164";
+  gv:green "186";
+  gv:score "8.930552";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "c1937f";
+  gv:red "193";
+  gv:blue "127";
+  gv:green "147";
+  gv:score "3.9209317";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "8c7a67";
+  gv:red "140";
+  gv:blue "103";
+  gv:green "122";
+  gv:score "3.713458";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "fdd9c5";
+  gv:red "253";
+  gv:blue "197";
+  gv:green "217";
+  gv:score "1.2469689000000002";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "eedcd2";
+  gv:red "238";
+  gv:blue "210";
+  gv:green "220";
+  gv:score "0.89505743";
+  gv:coverage "55.2"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.762451"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "59.236592"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.884669"
+];
+    w:bagOfWords "ANTA CR u Z M o u N T A I N\nCABERNET SMU VEGNON\n1943 E\nproduced by HallcRest Vineyards, Felton, California\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

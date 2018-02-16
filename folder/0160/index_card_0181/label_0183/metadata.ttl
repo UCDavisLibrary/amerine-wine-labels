@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0181/label_0183";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "CON CANNON\nVINE\nUalifornia Turgunng\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 12% BY VOLUME\nLOUIS ROESCH CO\n"@eng;
+    gv:color [
+  gv:hex "635236";
+  gv:red "99";
+  gv:blue "54";
+  gv:green "82";
+  gv:score "21.020448";
+  gv:coverage "2.88"
+], [
+  gv:hex "d5bea0";
+  gv:red "213";
+  gv:blue "160";
+  gv:green "190";
+  gv:score "19.495477";
+  gv:coverage "18.92"
+], [
+  gv:hex "877358";
+  gv:red "135";
+  gv:blue "88";
+  gv:green "115";
+  gv:score "18.148623";
+  gv:coverage "3.0666666"
+], [
+  gv:hex "b0997c";
+  gv:red "176";
+  gv:blue "124";
+  gv:green "153";
+  gv:score "13.540229";
+  gv:coverage "4.6133332"
+], [
+  gv:hex "443419";
+  gv:red "68";
+  gv:blue "25";
+  gv:green "52";
+  gv:score "7.0511064999999995";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "b69669";
+  gv:red "182";
+  gv:blue "105";
+  gv:green "150";
+  gv:score "4.7263537";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "937549";
+  gv:red "147";
+  gv:blue "73";
+  gv:green "117";
+  gv:score "3.7199527000000003";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "69542a";
+  gv:red "105";
+  gv:blue "42";
+  gv:green "84";
+  gv:score "2.6091609";
+  gv:coverage "0.3"
+], [
+  gv:hex "eedabf";
+  gv:red "238";
+  gv:blue "191";
+  gv:green "218";
+  gv:score "2.5069943";
+  gv:coverage "21.526666"
+], [
+  gv:hex "dbb988";
+  gv:red "219";
+  gv:blue "136";
+  gv:green "185";
+  gv:score "2.410882";
+  gv:coverage "0.8"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.456984"
+];
+    w:bagOfWords "CON CANNON\nVINE\nUalifornia Turgunng\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 12% BY VOLUME\nLOUIS ROESCH CO\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0504";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "eimer\nG.MIPABS\nAl MAIN\nLONDINK\nERG.\nMEDAILLE\n"@deu;
+    gv:color [
+  gv:hex "8d7345";
+  gv:red "141";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "11.093485";
+  gv:coverage "2.7533334"
+], [
+  gv:hex "8aa396";
+  gv:red "138";
+  gv:blue "150";
+  gv:green "163";
+  gv:score "1.9283323";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "837557";
+  gv:red "131";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "10.743058";
+  gv:coverage "3.8533334000000004"
+], [
+  gv:hex "5f5435";
+  gv:red "95";
+  gv:blue "53";
+  gv:green "84";
+  gv:score "9.3933895";
+  gv:coverage "3.2133333"
+], [
+  gv:hex "655321";
+  gv:red "101";
+  gv:blue "33";
+  gv:green "83";
+  gv:score "8.1946433";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "a59676";
+  gv:red "165";
+  gv:blue "118";
+  gv:green "150";
+  gv:score "6.4842417999999995";
+  gv:coverage "2.6599999999999997"
+], [
+  gv:hex "3d3416";
+  gv:red "61";
+  gv:blue "22";
+  gv:green "52";
+  gv:score "6.2488291";
+  gv:coverage "2.1266667"
+], [
+  gv:hex "724921";
+  gv:red "114";
+  gv:blue "33";
+  gv:green "73";
+  gv:score "4.3418738999999995";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "44360a";
+  gv:red "68";
+  gv:blue "10";
+  gv:green "54";
+  gv:score "4.2271502000000005";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "ae9161";
+  gv:red "174";
+  gv:blue "97";
+  gv:green "145";
+  gv:score "3.9396249";
+  gv:coverage "1.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "72.592294"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "69.379556"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "64.565337"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.470667"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "55.662560000000006"
+];
+    w:bagOfWords "eimer\nG.MIPABS\nAl MAIN\nLONDINK\nERG.\nMEDAILLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

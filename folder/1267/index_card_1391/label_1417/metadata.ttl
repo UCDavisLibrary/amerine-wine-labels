@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1417";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GRAN VINO\nCHILE\nEstacion\nPO\nAt Al "@spa;
+    gv:color [
+  gv:hex "ba996d";
+  gv:red "186";
+  gv:blue "109";
+  gv:green "153";
+  gv:score "49.744996";
+  gv:coverage "3.9"
+], [
+  gv:hex "d0b593";
+  gv:red "208";
+  gv:blue "147";
+  gv:green "181";
+  gv:score "13.369565999999999";
+  gv:coverage "4.1333333"
+], [
+  gv:hex "bea07b";
+  gv:red "190";
+  gv:blue "123";
+  gv:green "160";
+  gv:score "11.014971";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "9b7b4f";
+  gv:red "155";
+  gv:blue "79";
+  gv:green "123";
+  gv:score "10.140468";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "d1b084";
+  gv:red "209";
+  gv:blue "132";
+  gv:green "176";
+  gv:score "9.5132142";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "c1986d";
+  gv:red "193";
+  gv:blue "109";
+  gv:green "152";
+  gv:score "1.5771696000000002";
+  gv:coverage "0.12"
+], [
+  gv:hex "9a754b";
+  gv:red "154";
+  gv:blue "75";
+  gv:green "117";
+  gv:score "1.5168947";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "c09b7c";
+  gv:red "192";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "0.71253213";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "615b50";
+  gv:red "97";
+  gv:blue "80";
+  gv:green "91";
+  gv:score "0.005551345399999999";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "9b7b58";
+  gv:red "155";
+  gv:blue "88";
+  gv:green "123";
+  gv:score "0.45957760999999997";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "76.602143"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.387596"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "60.135478"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GRAN VINO\nCHILE\nEstacion\nPO\nAt Al "@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

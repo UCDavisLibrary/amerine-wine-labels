@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2301";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "APPELLATION SAINT-JULIEN CONTROLE\nGRAND VIN DE LE0VILLE\ndu Marquis de LAS CASES\nST- JULIEN MEDOC\nMIS EN BOUTEILLES\nRECOLTE 1943\nAU CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "a89781";
+  gv:red "168";
+  gv:blue "129";
+  gv:green "151";
+  gv:score "30.914378";
+  gv:coverage "4.9666665"
+], [
+  gv:hex "887764";
+  gv:red "136";
+  gv:blue "100";
+  gv:green "119";
+  gv:score "27.358258000000003";
+  gv:coverage "3.3533334999999997"
+], [
+  gv:hex "d6c1aa";
+  gv:red "214";
+  gv:blue "170";
+  gv:green "193";
+  gv:score "14.707199000000001";
+  gv:coverage "24.533333"
+], [
+  gv:hex "625341";
+  gv:red "98";
+  gv:blue "65";
+  gv:green "83";
+  gv:score "14.138060999999999";
+  gv:coverage "1.8800000000000001"
+], [
+  gv:hex "483928";
+  gv:red "72";
+  gv:blue "40";
+  gv:green "57";
+  gv:score "3.7621882";
+  gv:coverage "0.5"
+], [
+  gv:hex "b9967f";
+  gv:red "185";
+  gv:blue "127";
+  gv:green "150";
+  gv:score "2.6739782";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "e0bca7";
+  gv:red "224";
+  gv:blue "167";
+  gv:green "188";
+  gv:score "2.6016293";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "edd8c2";
+  gv:red "237";
+  gv:blue "194";
+  gv:green "216";
+  gv:score "1.8443663";
+  gv:coverage "5.5266667"
+], [
+  gv:hex "9c7962";
+  gv:red "156";
+  gv:blue "98";
+  gv:green "121";
+  gv:score "0.79358369";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "5e4e46";
+  gv:red "94";
+  gv:blue "70";
+  gv:green "78";
+  gv:score "0.53713415";
+  gv:coverage "0.17333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.597918"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "56.509447"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.416615"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.406572"
+];
+    w:bagOfWords "APPELLATION SAINT-JULIEN CONTROLE\nGRAND VIN DE LE0VILLE\ndu Marquis de LAS CASES\nST- JULIEN MEDOC\nMIS EN BOUTEILLES\nRECOLTE 1943\nAU CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

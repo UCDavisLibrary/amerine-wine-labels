@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3394/label_3395";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "1943\nTETE DE CU VEE\nRouaiet, Bedure\n"@fra;
+    gv:color [
+  gv:hex "d5b99f";
+  gv:red "213";
+  gv:blue "159";
+  gv:green "185";
+  gv:score "81.192827";
+  gv:coverage "26.840000000000003"
+], [
+  gv:hex "b89d84";
+  gv:red "184";
+  gv:blue "132";
+  gv:green "157";
+  gv:score "10.391729";
+  gv:coverage "2.8000000000000003"
+], [
+  gv:hex "8e755e";
+  gv:red "142";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "2.9673263";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "d7af94";
+  gv:red "215";
+  gv:blue "148";
+  gv:green "175";
+  gv:score "2.887222";
+  gv:coverage "1.32"
+], [
+  gv:hex "c69d82";
+  gv:red "198";
+  gv:blue "130";
+  gv:green "157";
+  gv:score "1.6424982000000001";
+  gv:coverage "0.74"
+], [
+  gv:hex "6e5640";
+  gv:red "110";
+  gv:blue "64";
+  gv:green "86";
+  gv:score "0.65074223";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "eed6be";
+  gv:red "238";
+  gv:blue "190";
+  gv:green "214";
+  gv:score "0.14275678";
+  gv:coverage "1"
+], [
+  gv:hex "c8c4bc";
+  gv:red "200";
+  gv:blue "188";
+  gv:green "196";
+  gv:score "0.041880776";
+  gv:coverage "25.180000000000003"
+], [
+  gv:hex "573e28";
+  gv:red "87";
+  gv:blue "40";
+  gv:green "62";
+  gv:score "0.033819352000000004";
+  gv:coverage "0.02"
+], [
+  gv:hex "a2836e";
+  gv:red "162";
+  gv:blue "110";
+  gv:green "131";
+  gv:score "0.020598613";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.031862"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "58.720052"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "56.150800000000004"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "52.414191"
+];
+    w:bagOfWords "1943\nTETE DE CU VEE\nRouaiet, Bedure\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

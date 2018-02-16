@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3129";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "120 perosn\n2\nO\n"@fra;
+    gv:color [
+  gv:hex "cdbaa2";
+  gv:red "205";
+  gv:blue "162";
+  gv:green "186";
+  gv:score "37.386075000000005";
+  gv:coverage "29.073334"
+], [
+  gv:hex "b09d87";
+  gv:red "176";
+  gv:blue "135";
+  gv:green "157";
+  gv:score "28.427666000000002";
+  gv:coverage "2.48"
+], [
+  gv:hex "867563";
+  gv:red "134";
+  gv:blue "99";
+  gv:green "117";
+  gv:score "11.040869";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "645445";
+  gv:red "100";
+  gv:blue "69";
+  gv:green "84";
+  gv:score "7.4902251";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "cebfb3";
+  gv:red "206";
+  gv:blue "179";
+  gv:green "191";
+  gv:score "4.7441181";
+  gv:coverage "9.92"
+], [
+  gv:hex "63534b";
+  gv:red "99";
+  gv:blue "75";
+  gv:green "83";
+  gv:score "2.5228335";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "ac9d92";
+  gv:red "172";
+  gv:blue "146";
+  gv:green "157";
+  gv:score "1.9869287999999998";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "c0a271";
+  gv:red "192";
+  gv:blue "113";
+  gv:green "162";
+  gv:score "1.4295165";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "4b3a2a";
+  gv:red "75";
+  gv:blue "42";
+  gv:green "58";
+  gv:score "1.2744079";
+  gv:coverage "0.08"
+], [
+  gv:hex "8b7b71";
+  gv:red "139";
+  gv:blue "113";
+  gv:green "123";
+  gv:score "1.1832564";
+  gv:coverage "0.16666667000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "61.085100000000004"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "55.236936"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.021989000000005"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "54.879689"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.96623099999999"
+];
+    w:bagOfWords "120 perosn\n2\nO\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

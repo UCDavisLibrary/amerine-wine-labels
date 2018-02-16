@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1445";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "PRODUCED AND BOTTLED\noordy Vineyard\nWhite Wine\n(Dry)\nAlcoholic Contenta\nJ & P. Wagner,\nProps.\n11% By Volume\nRiderwood, Maryland\n"@eng;
+    gv:color [
+  gv:hex "d8c4ad";
+  gv:red "216";
+  gv:blue "173";
+  gv:green "196";
+  gv:score "35.590398";
+  gv:coverage "14.099999999999998"
+], [
+  gv:hex "ac9881";
+  gv:red "172";
+  gv:blue "129";
+  gv:green "152";
+  gv:score "19.800905999999998";
+  gv:coverage "2.6599999999999997"
+], [
+  gv:hex "897860";
+  gv:red "137";
+  gv:blue "96";
+  gv:green "120";
+  gv:score "15.257823";
+  gv:coverage "1.6333334000000002"
+], [
+  gv:hex "eedac3";
+  gv:red "238";
+  gv:blue "195";
+  gv:green "218";
+  gv:score "13.890426";
+  gv:coverage "6.273333"
+], [
+  gv:hex "66523c";
+  gv:red "102";
+  gv:blue "60";
+  gv:green "82";
+  gv:score "7.646936899999999";
+  gv:coverage "0.72"
+], [
+  gv:hex "45311c";
+  gv:red "69";
+  gv:blue "28";
+  gv:green "49";
+  gv:score "4.9101852";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "2b1904";
+  gv:red "43";
+  gv:blue "4";
+  gv:green "25";
+  gv:score "1.0754419";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "2c1603";
+  gv:red "44";
+  gv:blue "3";
+  gv:green "22";
+  gv:score "0.68489145";
+  gv:coverage "0.06"
+], [
+  gv:hex "737e5f";
+  gv:red "115";
+  gv:blue "95";
+  gv:green "126";
+  gv:score "0.30924556999999997";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "3f2816";
+  gv:red "63";
+  gv:blue "22";
+  gv:green "40";
+  gv:score "0.26035432";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "73.16367"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.195521"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "50.194782000000004"
+];
+    w:bagOfWords "PRODUCED AND BOTTLED\noordy Vineyard\nWhite Wine\n(Dry)\nAlcoholic Contenta\nJ & P. Wagner,\nProps.\n11% By Volume\nRiderwood, Maryland\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0599";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "characB a R\n?Pachstum os. Deep\nRheingau\n"@deu;
+    gv:color [
+  gv:hex "ecb488";
+  gv:red "236";
+  gv:blue "136";
+  gv:green "180";
+  gv:score "17.61288";
+  gv:coverage "5.319999999999999"
+], [
+  gv:hex "9c6f41";
+  gv:red "156";
+  gv:blue "65";
+  gv:green "111";
+  gv:score "14.3633";
+  gv:coverage "4.2866666"
+], [
+  gv:hex "c89163";
+  gv:red "200";
+  gv:blue "99";
+  gv:green "145";
+  gv:score "14.289556000000001";
+  gv:coverage "4.3466665"
+], [
+  gv:hex "b89462";
+  gv:red "184";
+  gv:blue "98";
+  gv:green "148";
+  gv:score "8.2600944";
+  gv:coverage "3.0533334"
+], [
+  gv:hex "947341";
+  gv:red "148";
+  gv:blue "65";
+  gv:green "115";
+  gv:score "7.4510306";
+  gv:coverage "2.3466667"
+], [
+  gv:hex "754e24";
+  gv:red "117";
+  gv:blue "36";
+  gv:green "78";
+  gv:score "5.5439207999999995";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "ddb785";
+  gv:red "221";
+  gv:blue "133";
+  gv:green "183";
+  gv:score "4.4877712";
+  gv:coverage "2.1"
+], [
+  gv:hex "a2722b";
+  gv:red "162";
+  gv:blue "43";
+  gv:green "114";
+  gv:score "3.4285099999999997";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "dbbc99";
+  gv:red "219";
+  gv:blue "153";
+  gv:green "188";
+  gv:score "3.4040242";
+  gv:coverage "25.293332000000003"
+], [
+  gv:hex "b3623b";
+  gv:red "179";
+  gv:blue "59";
+  gv:green "98";
+  gv:score "2.2149125";
+  gv:coverage "0.45333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.00993899999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.842153"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.3431"
+];
+    w:bagOfWords "characB a R\n?Pachstum os. Deep\nRheingau\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

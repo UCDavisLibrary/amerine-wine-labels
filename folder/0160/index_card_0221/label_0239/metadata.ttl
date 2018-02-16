@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0239";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ALCOHOL 13\nBY VOLUME\nCROCKER UNION. s F\nCABERNET\nCALIFORNIA WINE\nPRODUCED & BOTTLED BY\nSan Benito Winery\nBW 4143 TH\nSUP ADM DIST, CAL\nHOLLISTER, CALIF.\nTAX PAID BY STAMPS AFFIXED TO ORIGINAL CASE\n"@eng;
+    gv:color [
+  gv:hex "cdc0ae";
+  gv:red "205";
+  gv:blue "174";
+  gv:green "192";
+  gv:score "59.5538";
+  gv:coverage "51.986665"
+], [
+  gv:hex "aca090";
+  gv:red "172";
+  gv:blue "144";
+  gv:green "160";
+  gv:score "17.263544";
+  gv:coverage "2.1666666"
+], [
+  gv:hex "ccbfb2";
+  gv:red "204";
+  gv:blue "178";
+  gv:green "191";
+  gv:score "9.434136";
+  gv:coverage "11.700000000000001"
+], [
+  gv:hex "84796a";
+  gv:red "132";
+  gv:blue "106";
+  gv:green "121";
+  gv:score "5.1567346";
+  gv:coverage "0.47333334000000005"
+], [
+  gv:hex "eaddcd";
+  gv:red "234";
+  gv:blue "205";
+  gv:green "221";
+  gv:score "1.7609954";
+  gv:coverage "9.5533334"
+], [
+  gv:hex "a99e93";
+  gv:red "169";
+  gv:blue "147";
+  gv:green "158";
+  gv:score "1.7508589";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "665c4d";
+  gv:red "102";
+  gv:blue "77";
+  gv:green "92";
+  gv:score "1.33454";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "e4dacb";
+  gv:red "228";
+  gv:blue "203";
+  gv:green "218";
+  gv:score "1.3286881";
+  gv:coverage "23.080000000000002"
+], [
+  gv:hex "7f756b";
+  gv:red "127";
+  gv:blue "107";
+  gv:green "117";
+  gv:score "1.1254439999999999";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "5f554b";
+  gv:red "95";
+  gv:blue "75";
+  gv:green "85";
+  gv:score "0.44146003";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.071428"
+];
+    w:bagOfWords "ALCOHOL 13\nBY VOLUME\nCROCKER UNION. s F\nCABERNET\nCALIFORNIA WINE\nPRODUCED & BOTTLED BY\nSan Benito Winery\nBW 4143 TH\nSUP ADM DIST, CAL\nHOLLISTER, CALIF.\nTAX PAID BY STAMPS AFFIXED TO ORIGINAL CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

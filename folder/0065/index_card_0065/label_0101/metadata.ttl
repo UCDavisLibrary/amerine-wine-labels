@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0101";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "1931\nCANTINEDEIMARCHESI MAR\nLODOVICO E PIERO\nARTINORI\nTALY\nFLORENCE\nROD\nOF IT\n"@ita;
+    gv:color [
+  gv:hex "d7bfa1";
+  gv:red "215";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "18.514556";
+  gv:coverage "13.239999999999998"
+], [
+  gv:hex "9f7245";
+  gv:red "159";
+  gv:blue "69";
+  gv:green "114";
+  gv:score "6.0396824";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "6b2220";
+  gv:red "107";
+  gv:blue "32";
+  gv:green "34";
+  gv:score "1.9431604000000002";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "b0987a";
+  gv:red "176";
+  gv:blue "122";
+  gv:green "152";
+  gv:score "17.663451";
+  gv:coverage "2.4533333"
+], [
+  gv:hex "8d7557";
+  gv:red "141";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "11.819155";
+  gv:coverage "1.6466666"
+], [
+  gv:hex "c3947e";
+  gv:red "195";
+  gv:blue "126";
+  gv:green "148";
+  gv:score "7.305091599999999";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "c08e60";
+  gv:red "192";
+  gv:blue "96";
+  gv:green "142";
+  gv:score "5.6008983";
+  gv:coverage "0.36"
+], [
+  gv:hex "e0b29a";
+  gv:red "224";
+  gv:blue "154";
+  gv:green "178";
+  gv:score "5.2170366";
+  gv:coverage "0.48"
+], [
+  gv:hex "996f56";
+  gv:red "153";
+  gv:blue "86";
+  gv:green "111";
+  gv:score "4.659247";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "69563c";
+  gv:red "105";
+  gv:blue "60";
+  gv:green "86";
+  gv:score "3.1854413";
+  gv:coverage "0.58"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.286049"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "60.47646399999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "1931\nCANTINEDEIMARCHESI MAR\nLODOVICO E PIERO\nARTINORI\nTALY\nFLORENCE\nROD\nOF IT\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3219/label_3237";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "CLOS VOUGEOT\nDomaines\nGRIVEL\nCHATEAU\nDE\nCHAMBOLLE MUSIGNY COTE D'OR\nAPPELLATION CONTROLEE Mise en bouteilles aux domaines\n"@fra;
+    gv:color [
+  gv:hex "debd8c";
+  gv:red "222";
+  gv:blue "140";
+  gv:green "189";
+  gv:score "79.5839";
+  gv:coverage "27.400000000000002"
+], [
+  gv:hex "b99969";
+  gv:red "185";
+  gv:blue "105";
+  gv:green "153";
+  gv:score "9.4227038";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "dbc19b";
+  gv:red "219";
+  gv:blue "155";
+  gv:green "193";
+  gv:score "4.0392481";
+  gv:coverage "6.886667"
+], [
+  gv:hex "947547";
+  gv:red "148";
+  gv:blue "71";
+  gv:green "117";
+  gv:score "3.3521082";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "917753";
+  gv:red "145";
+  gv:blue "83";
+  gv:green "119";
+  gv:score "1.0423722";
+  gv:coverage "0.26"
+], [
+  gv:hex "705225";
+  gv:red "112";
+  gv:blue "37";
+  gv:green "82";
+  gv:score "0.99992026";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "b0956f";
+  gv:red "176";
+  gv:blue "111";
+  gv:green "149";
+  gv:score "0.51508574";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "ecdabf";
+  gv:red "236";
+  gv:blue "191";
+  gv:green "218";
+  gv:score "0.24973578";
+  gv:coverage "7.5333335"
+], [
+  gv:hex "f5d7a9";
+  gv:red "245";
+  gv:blue "169";
+  gv:green "215";
+  gv:score "0.22825533999999997";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "6b5130";
+  gv:red "107";
+  gv:blue "48";
+  gv:green "81";
+  gv:score "0.2140596";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.519571"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.467904000000004"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.09904"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.308552"
+];
+    w:bagOfWords "CLOS VOUGEOT\nDomaines\nGRIVEL\nCHATEAU\nDE\nCHAMBOLLE MUSIGNY COTE D'OR\nAPPELLATION CONTROLEE Mise en bouteilles aux domaines\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3371";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "B t.\nROY, BEAUNE\nNo. 509P\nGrants llins\nOm m ARD\nCupée Dames de la Charité\nACQUEREUR\nROPITEAU FRERES\nA MEURSAULT (COTE-D OR)\n"@fra;
+    gv:color [
+  gv:hex "ddc2a1";
+  gv:red "221";
+  gv:blue "161";
+  gv:green "194";
+  gv:score "43.336907000000004";
+  gv:coverage "23.253334"
+], [
+  gv:hex "9f6a40";
+  gv:red "159";
+  gv:blue "64";
+  gv:green "106";
+  gv:score "8.157976";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "b0977b";
+  gv:red "176";
+  gv:blue "123";
+  gv:green "151";
+  gv:score "10.827027000000001";
+  gv:coverage "4.8333332"
+], [
+  gv:hex "e6b99a";
+  gv:red "230";
+  gv:blue "154";
+  gv:green "185";
+  gv:score "8.9227691";
+  gv:coverage "2.4"
+], [
+  gv:hex "8b755c";
+  gv:red "139";
+  gv:blue "92";
+  gv:green "117";
+  gv:score "8.693483500000001";
+  gv:coverage "3.6999999999999997"
+], [
+  gv:hex "c49677";
+  gv:red "196";
+  gv:blue "119";
+  gv:green "150";
+  gv:score "3.6899284";
+  gv:coverage "0.90666665"
+], [
+  gv:hex "69543c";
+  gv:red "105";
+  gv:blue "60";
+  gv:green "84";
+  gv:score "3.4310486";
+  gv:coverage "1.5733332999999998"
+], [
+  gv:hex "c38d66";
+  gv:red "195";
+  gv:blue "102";
+  gv:green "141";
+  gv:score "3.3051014";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "855029";
+  gv:red "133";
+  gv:blue "41";
+  gv:green "80";
+  gv:score "2.0682367999999998";
+  gv:coverage "0.2"
+], [
+  gv:hex "efd7b9";
+  gv:red "239";
+  gv:blue "185";
+  gv:green "215";
+  gv:score "1.9525522";
+  gv:coverage "16.346666000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.9893"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.720206"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.045531000000004"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.837317999999996"
+];
+    w:bagOfWords "B t.\nROY, BEAUNE\nNo. 509P\nGrants llins\nOm m ARD\nCupée Dames de la Charité\nACQUEREUR\nROPITEAU FRERES\nA MEURSAULT (COTE-D OR)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

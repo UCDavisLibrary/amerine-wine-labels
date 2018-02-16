@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2603/label_2614";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "Réserve de la Marquise\nMONOPOLE BLANC 110\nSOCIETE GENERALE DES\nVINS\nANT A PARIS ET A MEURSAULT\nNEGOC\nROUALET BEAUNE DEPOSE\n"@fra;
+    gv:color [
+  gv:hex "dcc3a1";
+  gv:red "220";
+  gv:blue "161";
+  gv:green "195";
+  gv:score "21.182369";
+  gv:coverage "29.866666"
+], [
+  gv:hex "90713f";
+  gv:red "144";
+  gv:blue "63";
+  gv:green "113";
+  gv:score "13.852358";
+  gv:coverage "3.08"
+], [
+  gv:hex "734936";
+  gv:red "115";
+  gv:blue "54";
+  gv:green "73";
+  gv:score "6.564747499999999";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "b39a78";
+  gv:red "179";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "9.8344967";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "f3d9b9";
+  gv:red "243";
+  gv:blue "185";
+  gv:green "217";
+  gv:score "7.2090358";
+  gv:coverage "43.013334"
+], [
+  gv:hex "8c7554";
+  gv:red "140";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "4.923559";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "764926";
+  gv:red "118";
+  gv:blue "38";
+  gv:green "73";
+  gv:score "3.9084624";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "593020";
+  gv:red "89";
+  gv:blue "32";
+  gv:green "48";
+  gv:score "3.7417259";
+  gv:coverage "0.2"
+], [
+  gv:hex "93653e";
+  gv:red "147";
+  gv:blue "62";
+  gv:green "101";
+  gv:score "3.6599852000000004";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "785c2f";
+  gv:red "120";
+  gv:blue "47";
+  gv:green "92";
+  gv:score "2.9943245";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.811376"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.42945400000001"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.484812"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.080358000000004"
+];
+    w:bagOfWords "Réserve de la Marquise\nMONOPOLE BLANC 110\nSOCIETE GENERALE DES\nVINS\nANT A PARIS ET A MEURSAULT\nNEGOC\nROUALET BEAUNE DEPOSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

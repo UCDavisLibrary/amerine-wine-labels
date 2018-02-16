@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3217";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "140\nFondee\nen 1852\nMaison Chambolle Mnsimm\nE&D. MoIN GEON Freres\nNEGOCIANTS A BEAUNE COTE D'OR\nIMPRINT E EN FRANCE\n"@fra;
+    gv:color [
+  gv:hex "dac2a5";
+  gv:red "218";
+  gv:blue "165";
+  gv:green "194";
+  gv:score "37.940276";
+  gv:coverage "22.48"
+], [
+  gv:hex "542a1c";
+  gv:red "84";
+  gv:blue "28";
+  gv:green "42";
+  gv:score "3.4056962000000004";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "6a1b0e";
+  gv:red "106";
+  gv:blue "14";
+  gv:green "27";
+  gv:score "1.8267807";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "b19a7c";
+  gv:red "177";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "15.869042";
+  gv:coverage "3.32"
+], [
+  gv:hex "8b7558";
+  gv:red "139";
+  gv:blue "88";
+  gv:green "117";
+  gv:score "6.8723284";
+  gv:coverage "1.26"
+], [
+  gv:hex "e7b9a2";
+  gv:red "231";
+  gv:blue "162";
+  gv:green "185";
+  gv:score "4.9678054";
+  gv:coverage "1.02"
+], [
+  gv:hex "eed9bd";
+  gv:red "238";
+  gv:blue "189";
+  gv:green "217";
+  gv:score "4.6835687";
+  gv:coverage "8.253333"
+], [
+  gv:hex "bf927b";
+  gv:red "191";
+  gv:blue "123";
+  gv:green "146";
+  gv:score "3.4480456";
+  gv:coverage "0.48"
+], [
+  gv:hex "453117";
+  gv:red "69";
+  gv:blue "23";
+  gv:green "49";
+  gv:score "3.0980384";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "635035";
+  gv:red "99";
+  gv:blue "53";
+  gv:green "80";
+  gv:score "2.9747345000000003";
+  gv:coverage "0.49333335000000006"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.63886899999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.8265"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.95487299999999"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "56.49794299999999"
+];
+    w:bagOfWords "140\nFondee\nen 1852\nMaison Chambolle Mnsimm\nE&D. MoIN GEON Freres\nNEGOCIANTS A BEAUNE COTE D'OR\nIMPRINT E EN FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

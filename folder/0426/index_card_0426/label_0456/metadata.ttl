@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0456";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Rhein g m u\nSchloss Reinhartshausener\nCABINET\n1943er Erbacher Steinmorgen\n"@deu;
+    gv:color [
+  gv:hex "487dad";
+  gv:red "72";
+  gv:blue "173";
+  gv:green "125";
+  gv:score "61.677617";
+  gv:coverage "17.62"
+], [
+  gv:hex "2c5b86";
+  gv:red "44";
+  gv:blue "134";
+  gv:green "91";
+  gv:score "22.368354";
+  gv:coverage "5.4666668000000005"
+], [
+  gv:hex "365b7d";
+  gv:red "54";
+  gv:blue "125";
+  gv:green "91";
+  gv:score "4.8781089";
+  gv:coverage "2.1"
+], [
+  gv:hex "557795";
+  gv:red "85";
+  gv:blue "149";
+  gv:green "119";
+  gv:score "4.5952618";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "5d90c2";
+  gv:red "93";
+  gv:blue "194";
+  gv:green "144";
+  gv:score "3.2007463";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "113e68";
+  gv:red "17";
+  gv:blue "104";
+  gv:green "62";
+  gv:score "2.0962433999999996";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "1b3c5e";
+  gv:red "27";
+  gv:blue "94";
+  gv:green "60";
+  gv:score "0.78725787";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "7191b0";
+  gv:red "113";
+  gv:blue "176";
+  gv:green "145";
+  gv:score "0.20010678999999998";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "002247";
+  gv:red "undefined";
+  gv:blue "71";
+  gv:green "34";
+  gv:score "0.09954624100000001";
+  gv:coverage "0.02"
+], [
+  gv:hex "778791";
+  gv:red "119";
+  gv:blue "145";
+  gv:green "135";
+  gv:score "0.028546873";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01g5v>;
+  gv:desc "blue";
+  gv:score "89.994413"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.264883"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "55.265868"
+];
+    w:bagOfWords "Rhein g m u\nSchloss Reinhartshausener\nCABINET\n1943er Erbacher Steinmorgen\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

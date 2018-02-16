@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2772";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "R. DELORT STmaaRICe\nTRES\nFR All S\ns ERV LR\n"@fra;
+    gv:color [
+  gv:hex "cb965f";
+  gv:red "203";
+  gv:blue "95";
+  gv:green "150";
+  gv:score "20.987694";
+  gv:coverage "5.4266665"
+], [
+  gv:hex "774c1d";
+  gv:red "119";
+  gv:blue "29";
+  gv:green "76";
+  gv:score "11.378808";
+  gv:coverage "4.0933333"
+], [
+  gv:hex "dfae77";
+  gv:red "223";
+  gv:blue "119";
+  gv:green "174";
+  gv:score "16.635087000000002";
+  gv:coverage "3.6266666"
+], [
+  gv:hex "bc9a65";
+  gv:red "188";
+  gv:blue "101";
+  gv:green "154";
+  gv:score "10.629904";
+  gv:coverage "4.1000000000000005"
+], [
+  gv:hex "8e7241";
+  gv:red "142";
+  gv:blue "65";
+  gv:green "114";
+  gv:score "8.2040466";
+  gv:coverage "3.5466667"
+], [
+  gv:hex "d8b27c";
+  gv:red "216";
+  gv:blue "124";
+  gv:green "178";
+  gv:score "7.680653799999999";
+  gv:coverage "2.4133334"
+], [
+  gv:hex "9a6c3b";
+  gv:red "154";
+  gv:blue "59";
+  gv:green "108";
+  gv:score "7.2573609999999995";
+  gv:coverage "2.7866667"
+], [
+  gv:hex "6b5122";
+  gv:red "107";
+  gv:blue "34";
+  gv:green "81";
+  gv:score "5.864444";
+  gv:coverage "2.34"
+], [
+  gv:hex "563105";
+  gv:red "86";
+  gv:blue "5";
+  gv:green "49";
+  gv:score "4.4696167";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "4c3608";
+  gv:red "76";
+  gv:blue "8";
+  gv:green "54";
+  gv:score "2.0923449";
+  gv:coverage "0.86"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "82.903123"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "72.818357"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "67.147404"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "59.045875"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.470364000000004"
+];
+    w:bagOfWords "R. DELORT STmaaRICe\nTRES\nFR All S\ns ERV LR\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

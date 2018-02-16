@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1949/label_1958";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "ALCOHOLIC STRENGTH\nCONTENTS\nBY VOLUME NOT Exce EDING\nPINT 9 FLUID OUNCES\n21 DEG RES\nBY APPOHPNTMEN\nHARVEY'S\nCHOICEST OL\nPOL CREAM\nSHIPPED BY JOHN HARVEY & SONS, LTD., BR\nFOUNDED 1796.\nPRODUCE of SPAIN\n"@spa;
+    gv:color [
+  gv:hex "dabfa6";
+  gv:red "218";
+  gv:blue "166";
+  gv:green "191";
+  gv:score "27.013785000000002";
+  gv:coverage "18.706666"
+], [
+  gv:hex "967158";
+  gv:red "150";
+  gv:blue "88";
+  gv:green "113";
+  gv:score "15.916981";
+  gv:coverage "2.7666667"
+], [
+  gv:hex "b6997f";
+  gv:red "182";
+  gv:blue "127";
+  gv:green "153";
+  gv:score "14.520064999999999";
+  gv:coverage "4.4533335"
+], [
+  gv:hex "b69176";
+  gv:red "182";
+  gv:blue "118";
+  gv:green "145";
+  gv:score "13.302864";
+  gv:coverage "2.8866666999999997"
+], [
+  gv:hex "765138";
+  gv:red "118";
+  gv:blue "56";
+  gv:green "81";
+  gv:score "5.8937885";
+  gv:coverage "1.1066667000000001"
+], [
+  gv:hex "93765b";
+  gv:red "147";
+  gv:blue "91";
+  gv:green "118";
+  gv:score "5.6230385";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "f1d7bf";
+  gv:red "241";
+  gv:blue "191";
+  gv:green "215";
+  gv:score "4.0546816";
+  gv:coverage "12.853333"
+], [
+  gv:hex "9e6c46";
+  gv:red "158";
+  gv:blue "70";
+  gv:green "108";
+  gv:score "3.5058502";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "deb79a";
+  gv:red "222";
+  gv:blue "154";
+  gv:green "183";
+  gv:score "3.3464557999999998";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "c18e65";
+  gv:red "193";
+  gv:blue "101";
+  gv:green "142";
+  gv:score "2.8869828";
+  gv:coverage "0.5"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.452595"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "61.019552"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "54.404472999999996"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.382976000000006"
+];
+    w:bagOfWords "ALCOHOLIC STRENGTH\nCONTENTS\nBY VOLUME NOT Exce EDING\nPINT 9 FLUID OUNCES\n21 DEG RES\nBY APPOHPNTMEN\nHARVEY'S\nCHOICEST OL\nPOL CREAM\nSHIPPED BY JOHN HARVEY & SONS, LTD., BR\nFOUNDED 1796.\nPRODUCE of SPAIN\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

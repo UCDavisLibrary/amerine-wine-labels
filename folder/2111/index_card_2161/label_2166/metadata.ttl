@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2161/label_2166";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "restview\n3 A RESERVE\nSHEi\nALCOHOL 20\nPRODUCED AND BOTTLED BY\nCREST VIEw WINERY, INC.\nBONDED WINERY No. 4258\nFRESNO, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "1f1814";
+  gv:red "31";
+  gv:blue "20";
+  gv:green "24";
+  gv:score "20.530476";
+  gv:coverage "10.48"
+], [
+  gv:hex "b85b3e";
+  gv:red "184";
+  gv:blue "62";
+  gv:green "91";
+  gv:score "8.5428275";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "4d261c";
+  gv:red "77";
+  gv:blue "28";
+  gv:green "38";
+  gv:score "7.1822286";
+  gv:coverage "1.28"
+], [
+  gv:hex "362e28";
+  gv:red "54";
+  gv:blue "40";
+  gv:green "46";
+  gv:score "16.329828";
+  gv:coverage "6.693333399999999"
+], [
+  gv:hex "584f48";
+  gv:red "88";
+  gv:blue "72";
+  gv:green "79";
+  gv:score "4.4310831";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "34130b";
+  gv:red "52";
+  gv:blue "11";
+  gv:green "19";
+  gv:score "4.264386";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "4a2a2a";
+  gv:red "74";
+  gv:blue "42";
+  gv:green "42";
+  gv:score "3.2419324";
+  gv:coverage "0.47333334000000005"
+], [
+  gv:hex "2b1110";
+  gv:red "43";
+  gv:blue "16";
+  gv:green "17";
+  gv:score "2.96563";
+  gv:coverage "0.76"
+], [
+  gv:hex "382c1c";
+  gv:red "56";
+  gv:blue "28";
+  gv:green "44";
+  gv:score "2.8171238";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "963d24";
+  gv:red "150";
+  gv:blue "36";
+  gv:green "61";
+  gv:score "2.4730314";
+  gv:coverage "0.7266666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.39046"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "62.807709"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "60.32921100000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "52.233332"
+];
+    w:bagOfWords "restview\n3 A RESERVE\nSHEi\nALCOHOL 20\nPRODUCED AND BOTTLED BY\nCREST VIEw WINERY, INC.\nBONDED WINERY No. 4258\nFRESNO, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

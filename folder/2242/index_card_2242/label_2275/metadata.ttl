@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2275";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "CHATEAU\nVIN\n11937\nOR CLASS\nFRANCE\nER APPELLATION HAU MEDOC CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "d8bf9d";
+  gv:red "216";
+  gv:blue "157";
+  gv:green "191";
+  gv:score "21.605387";
+  gv:coverage "41.366667"
+], [
+  gv:hex "dbba87";
+  gv:red "219";
+  gv:blue "135";
+  gv:green "186";
+  gv:score "20.398389";
+  gv:coverage "4.4733334"
+], [
+  gv:hex "ba9965";
+  gv:red "186";
+  gv:blue "101";
+  gv:green "153";
+  gv:score "19.121394";
+  gv:coverage "3.4733332999999997"
+], [
+  gv:hex "b49976";
+  gv:red "180";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "12.711444";
+  gv:coverage "3.92"
+], [
+  gv:hex "977747";
+  gv:red "151";
+  gv:blue "71";
+  gv:green "119";
+  gv:score "7.0205241";
+  gv:coverage "1.06"
+], [
+  gv:hex "c3965f";
+  gv:red "195";
+  gv:blue "95";
+  gv:green "150";
+  gv:score "5.4446883";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "937955";
+  gv:red "147";
+  gv:blue "85";
+  gv:green "121";
+  gv:score "4.4157673";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "9b713e";
+  gv:red "155";
+  gv:blue "62";
+  gv:green "113";
+  gv:score "3.047988";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "e0b27d";
+  gv:red "224";
+  gv:blue "125";
+  gv:green "178";
+  gv:score "1.7824844";
+  gv:coverage "0.32"
+], [
+  gv:hex "f1d7b4";
+  gv:red "241";
+  gv:blue "180";
+  gv:green "215";
+  gv:score "0.9420092200000001";
+  gv:coverage "29.533333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.910405"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.917139000000006"
+];
+    w:bagOfWords "CHATEAU\nVIN\n11937\nOR CLASS\nFRANCE\nER APPELLATION HAU MEDOC CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

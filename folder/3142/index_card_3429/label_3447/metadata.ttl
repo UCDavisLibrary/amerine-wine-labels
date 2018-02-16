@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3447";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "ALBERT MOROT\nyehateau da La Creusotte\nAPPELLATION CONTROLEE\nBEAU NE Cote d'Or)\nFRANCE\n"@fra;
+    gv:color [
+  gv:hex "e1c49e";
+  gv:red "225";
+  gv:blue "158";
+  gv:green "196";
+  gv:score "36.004078";
+  gv:coverage "14.486666000000001"
+], [
+  gv:hex "c9965f";
+  gv:red "201";
+  gv:blue "95";
+  gv:green "150";
+  gv:score "7.506588799999999";
+  gv:coverage "1.7666666000000002"
+], [
+  gv:hex "724f33";
+  gv:red "114";
+  gv:blue "51";
+  gv:green "79";
+  gv:score "2.3747023";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "b95c44";
+  gv:red "185";
+  gv:blue "68";
+  gv:green "92";
+  gv:score "0.93735941";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "ddbb8c";
+  gv:red "221";
+  gv:blue "140";
+  gv:green "187";
+  gv:score "27.823114";
+  gv:coverage "8.526666500000001"
+], [
+  gv:hex "e3b283";
+  gv:red "227";
+  gv:blue "131";
+  gv:green "178";
+  gv:score "4.3407198000000005";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "b59774";
+  gv:red "181";
+  gv:blue "116";
+  gv:green "151";
+  gv:score "2.9634245";
+  gv:coverage "0.74"
+], [
+  gv:hex "f2d8b5";
+  gv:red "242";
+  gv:blue "181";
+  gv:green "216";
+  gv:score "2.4522189";
+  gv:coverage "17.566666"
+], [
+  gv:hex "bb9b6d";
+  gv:red "187";
+  gv:blue "109";
+  gv:green "155";
+  gv:score "2.3004409";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "efbd9c";
+  gv:red "239";
+  gv:blue "156";
+  gv:green "189";
+  gv:score "2.0450907000000003";
+  gv:coverage "0.66"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.208805"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "58.935075999999995"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "57.869339"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.137274999999995"
+];
+    w:bagOfWords "ALBERT MOROT\nyehateau da La Creusotte\nAPPELLATION CONTROLEE\nBEAU NE Cote d'Or)\nFRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

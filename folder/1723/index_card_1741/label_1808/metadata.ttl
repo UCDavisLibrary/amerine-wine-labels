@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1808";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1937\nPiesporter Goldtropfchen\nAuslese\nOriginal-Abfullung Leyendecker\nJ. L\n"@deu;
+    gv:color [
+  gv:hex "d3bf89";
+  gv:red "211";
+  gv:blue "137";
+  gv:green "191";
+  gv:score "19.964136";
+  gv:coverage "8.7066665"
+], [
+  gv:hex "896e5a";
+  gv:red "137";
+  gv:blue "90";
+  gv:green "110";
+  gv:score "16.391879";
+  gv:coverage "3.1133333"
+], [
+  gv:hex "674b39";
+  gv:red "103";
+  gv:blue "57";
+  gv:green "75";
+  gv:score "9.60264";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "d6bf9e";
+  gv:red "214";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "15.156679";
+  gv:coverage "13.226667"
+], [
+  gv:hex "b49b7c";
+  gv:red "180";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "8.648426800000001";
+  gv:coverage "2.7"
+], [
+  gv:hex "725741";
+  gv:red "114";
+  gv:blue "65";
+  gv:green "87";
+  gv:score "6.7352653";
+  gv:coverage "1.2333333"
+], [
+  gv:hex "8d6f5f";
+  gv:red "141";
+  gv:blue "95";
+  gv:green "111";
+  gv:score "6.477711299999999";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "b09b6a";
+  gv:red "176";
+  gv:blue "106";
+  gv:green "155";
+  gv:score "5.1790077";
+  gv:coverage "1.5133333"
+], [
+  gv:hex "503423";
+  gv:red "80";
+  gv:blue "35";
+  gv:green "52";
+  gv:score "5.0766777";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "8e7949";
+  gv:red "142";
+  gv:blue "73";
+  gv:green "121";
+  gv:score "3.8599234000000004";
+  gv:coverage "0.9533333600000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.020275"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "56.158972"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.151639"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.002735"
+];
+    w:bagOfWords "1937\nPiesporter Goldtropfchen\nAuslese\nOriginal-Abfullung Leyendecker\nJ. L\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

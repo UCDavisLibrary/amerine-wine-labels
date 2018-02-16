@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3037/label_3055";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "PA\nla ARI s 1878\nLONDRES 1\nMEDAILLE DE a RoNZE\nFOU CAUTO LAUSSAC\nR o PRVE TAIR E\nFRANCE\nMis en\nbouteille au Chateau\n"@fra;
+    gv:color [
+  gv:hex "bf9b68";
+  gv:red "191";
+  gv:blue "104";
+  gv:green "155";
+  gv:score "22.453159";
+  gv:coverage "3.9866667000000002"
+], [
+  gv:hex "dabe9c";
+  gv:red "218";
+  gv:blue "156";
+  gv:green "190";
+  gv:score "22.41542";
+  gv:coverage "29.566666"
+], [
+  gv:hex "d8b584";
+  gv:red "216";
+  gv:blue "132";
+  gv:green "181";
+  gv:score "18.362872";
+  gv:coverage "4.0133335"
+], [
+  gv:hex "c1945e";
+  gv:red "193";
+  gv:blue "94";
+  gv:green "148";
+  gv:score "11.561952";
+  gv:coverage "2.2933334"
+], [
+  gv:hex "b99c78";
+  gv:red "185";
+  gv:blue "120";
+  gv:green "156";
+  gv:score "5.9505995";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "9d7444";
+  gv:red "157";
+  gv:blue "68";
+  gv:green "116";
+  gv:score "5.7415199999999995";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "997748";
+  gv:red "153";
+  gv:blue "72";
+  gv:green "119";
+  gv:score "3.9894778";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "dbaf7e";
+  gv:red "219";
+  gv:blue "126";
+  gv:green "175";
+  gv:score "2.7927708";
+  gv:coverage "0.6"
+], [
+  gv:hex "c69048";
+  gv:red "198";
+  gv:blue "72";
+  gv:green "144";
+  gv:score "2.1301400000000004";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "ddb593";
+  gv:red "221";
+  gv:blue "147";
+  gv:green "181";
+  gv:score "0.8963497399999999";
+  gv:coverage "0.32"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "61.309808"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.05475800000001"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "54.380947"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.060254"
+];
+    w:bagOfWords "PA\nla ARI s 1878\nLONDRES 1\nMEDAILLE DE a RoNZE\nFOU CAUTO LAUSSAC\nR o PRVE TAIR E\nFRANCE\nMis en\nbouteille au Chateau\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

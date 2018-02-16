@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3321/label_3343";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "Grand premier cru de Bourgogne\nChateau\nCorton Grancey\n1928\nTi rage du Chateau\nRegistered\nDépos\nFRANCE\nLate de 13 e 4ure\nR/o x e Cor\n"@fra;
+    gv:color [
+  gv:hex "d9bda0";
+  gv:red "217";
+  gv:blue "160";
+  gv:green "189";
+  gv:score "71.829414";
+  gv:coverage "35.826668"
+], [
+  gv:hex "b4977a";
+  gv:red "180";
+  gv:blue "122";
+  gv:green "151";
+  gv:score "14.88321";
+  gv:coverage "4.7733333"
+], [
+  gv:hex "94775b";
+  gv:red "148";
+  gv:blue "91";
+  gv:green "119";
+  gv:score "7.1485937";
+  gv:coverage "2.0466667000000003"
+], [
+  gv:hex "95755e";
+  gv:red "149";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "1.8787638999999998";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "694f31";
+  gv:red "105";
+  gv:blue "49";
+  gv:green "79";
+  gv:score "1.29857";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "705135";
+  gv:red "112";
+  gv:blue "53";
+  gv:green "81";
+  gv:score "1.0071729999999999";
+  gv:coverage "0.24"
+], [
+  gv:hex "eed7be";
+  gv:red "238";
+  gv:blue "190";
+  gv:green "215";
+  gv:score "0.74298214";
+  gv:coverage "10.306667"
+], [
+  gv:hex "ab8b74";
+  gv:red "171";
+  gv:blue "116";
+  gv:green "139";
+  gv:score "0.71925591";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "4e2f13";
+  gv:red "78";
+  gv:blue "19";
+  gv:green "47";
+  gv:score "0.23620205";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "503719";
+  gv:red "80";
+  gv:blue "25";
+  gv:green "55";
+  gv:score "0.10062993999999999";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.17055599999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.017734"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.322112"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.577483"
+];
+    w:bagOfWords "Grand premier cru de Bourgogne\nChateau\nCorton Grancey\n1928\nTi rage du Chateau\nRegistered\nDépos\nFRANCE\nLate de 13 e 4ure\nR/o x e Cor\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1754";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "M O SEL S A A R R U WER\n1933er feinste Beerettauslege\nGESETzuCH GESCHuTzT\nHAGEN, SCHAAR a DATHE,TRIER\nMiddle Mose\n"@deu;
+    gv:color [
+  gv:hex "887354";
+  gv:red "136";
+  gv:blue "84";
+  gv:green "115";
+  gv:score "23.539886";
+  gv:coverage "6.913333400000001"
+], [
+  gv:hex "655233";
+  gv:red "101";
+  gv:blue "51";
+  gv:green "82";
+  gv:score "21.670207";
+  gv:coverage "5.56"
+], [
+  gv:hex "ac9879";
+  gv:red "172";
+  gv:blue "121";
+  gv:green "152";
+  gv:score "16.121286";
+  gv:coverage "5.86"
+], [
+  gv:hex "d2bea3";
+  gv:red "210";
+  gv:blue "163";
+  gv:green "190";
+  gv:score "13.765569";
+  gv:coverage "14.84"
+], [
+  gv:hex "463317";
+  gv:red "70";
+  gv:blue "23";
+  gv:green "51";
+  gv:score "9.309280000000001";
+  gv:coverage "2.12"
+], [
+  gv:hex "8c7346";
+  gv:red "140";
+  gv:blue "70";
+  gv:green "115";
+  gv:score "5.5474378";
+  gv:coverage "1.54"
+], [
+  gv:hex "685529";
+  gv:red "104";
+  gv:blue "41";
+  gv:green "85";
+  gv:score "3.7133019000000003";
+  gv:coverage "1.06"
+], [
+  gv:hex "ad9263";
+  gv:red "173";
+  gv:blue "99";
+  gv:green "146";
+  gv:score "2.0605710999999998";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "ebdbc0";
+  gv:red "235";
+  gv:blue "192";
+  gv:green "219";
+  gv:score "1.6535826";
+  gv:coverage "14.246666"
+], [
+  gv:hex "47370e";
+  gv:red "71";
+  gv:blue "14";
+  gv:green "55";
+  gv:score "1.0255547999999999";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.764852"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "54.31187200000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.243114"
+];
+    w:bagOfWords "M O SEL S A A R R U WER\n1933er feinste Beerettauslege\nGESETzuCH GESCHuTzT\nHAGEN, SCHAAR a DATHE,TRIER\nMiddle Mose\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

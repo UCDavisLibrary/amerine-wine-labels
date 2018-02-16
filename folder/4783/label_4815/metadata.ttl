@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4815";
+    dct:type "image";
+    w:bagOfWords "OHIO\nIVES SEEDLING\nAlcohol below 14%\nContents\nTHE\nENGELS & KRUDWIG CO, OHIO\n"@eng;
+    gv:color [
+  gv:hex "7f7355";
+  gv:red "127";
+  gv:blue "85";
+  gv:green "115";
+  gv:score "19.226894";
+  gv:coverage "8.1066668"
+], [
+  gv:hex "d7bf66";
+  gv:red "215";
+  gv:blue "102";
+  gv:green "191";
+  gv:score "8.572045000000001";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "63573a";
+  gv:red "99";
+  gv:blue "58";
+  gv:green "87";
+  gv:score "18.318155";
+  gv:coverage "7.046666699999999"
+], [
+  gv:hex "8a753f";
+  gv:red "138";
+  gv:blue "63";
+  gv:green "117";
+  gv:score "9.1925174";
+  gv:coverage "2.3866666000000003"
+], [
+  gv:hex "b1995e";
+  gv:red "177";
+  gv:blue "94";
+  gv:green "153";
+  gv:score "6.9808677";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "d4be79";
+  gv:red "212";
+  gv:blue "121";
+  gv:green "190";
+  gv:score "6.534786500000001";
+  gv:coverage "0.72"
+], [
+  gv:hex "a59a7c";
+  gv:red "165";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "6.2395724999999995";
+  gv:coverage "2.7933333"
+], [
+  gv:hex "6a5520";
+  gv:red "106";
+  gv:blue "32";
+  gv:green "85";
+  gv:score "6.0463034";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "c8c1a9";
+  gv:red "200";
+  gv:blue "169";
+  gv:green "193";
+  gv:score "4.1939903";
+  gv:coverage "6.2133335"
+], [
+  gv:hex "b59d49";
+  gv:red "181";
+  gv:blue "73";
+  gv:green "157";
+  gv:score "4.0854026";
+  gv:coverage "0.42"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0fd6q>;
+  gv:desc "cash";
+  gv:score "80.856764"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "78.310496"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "75.052935"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.386961"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "55.350809999999996"
+];
+    w:bagOfWords "OHIO\nIVES SEEDLING\nAlcohol below 14%\nContents\nTHE\nENGELS & KRUDWIG CO, OHIO\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

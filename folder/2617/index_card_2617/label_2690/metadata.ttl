@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2690";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "NET CONTENTS\nALCOHOLIC CONTENT\n1 PINT 8 FL. OZ.\n12 BY VOLUME\nRED BURGUNDY WINE\nBottled and Shipped By\nALDERT PONNELLE\nNEGOCIANT A BEAU NE\nCOTE D'OR\nPRODUCE OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "d4c6b6";
+  gv:red "212";
+  gv:blue "182";
+  gv:green "198";
+  gv:score "44.001856000000004";
+  gv:coverage "11.573333"
+], [
+  gv:hex "3f3023";
+  gv:red "63";
+  gv:blue "35";
+  gv:green "48";
+  gv:score "3.3876613";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "eadbcb";
+  gv:red "234";
+  gv:blue "203";
+  gv:green "219";
+  gv:score "25.524200000000004";
+  gv:coverage "23.526667"
+], [
+  gv:hex "ab9d8d";
+  gv:red "171";
+  gv:blue "141";
+  gv:green "157";
+  gv:score "13.680524";
+  gv:coverage "2.8000000000000003"
+], [
+  gv:hex "87796a";
+  gv:red "135";
+  gv:blue "106";
+  gv:green "121";
+  gv:score "4.3353319";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "cfc2b6";
+  gv:red "207";
+  gv:blue "182";
+  gv:green "194";
+  gv:score "3.1850897000000002";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "ede0d3";
+  gv:red "237";
+  gv:blue "211";
+  gv:green "224";
+  gv:score "2.1538174";
+  gv:coverage "58.193332"
+], [
+  gv:hex "635546";
+  gv:red "99";
+  gv:blue "70";
+  gv:green "85";
+  gv:score "1.5995977000000001";
+  gv:coverage "0.22"
+], [
+  gv:hex "291b0f";
+  gv:red "41";
+  gv:blue "15";
+  gv:green "27";
+  gv:score "0.6497304899999999";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "a79b8f";
+  gv:red "167";
+  gv:blue "143";
+  gv:green "155";
+  gv:score "0.62617054";
+  gv:coverage "0.24666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.65932600000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "NET CONTENTS\nALCOHOLIC CONTENT\n1 PINT 8 FL. OZ.\n12 BY VOLUME\nRED BURGUNDY WINE\nBottled and Shipped By\nALDERT PONNELLE\nNEGOCIANT A BEAU NE\nCOTE D'OR\nPRODUCE OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

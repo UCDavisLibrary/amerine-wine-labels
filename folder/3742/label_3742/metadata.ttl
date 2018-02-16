@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3742/label_3742";
+    dct:type "image";
+    w:bagOfWords "CHIANTI\nDELL ANTICAFATTORIADNICcoLOMACHIAVELLI\nSANDREAINPERCvSSINA\nS.CASCIANOVAL DI PESA (FIRENZE\nPROPRIETA\nTE\n"@ita;
+    gv:color [
+  gv:hex "dfc08e";
+  gv:red "223";
+  gv:blue "142";
+  gv:green "192";
+  gv:score "44.660382999999996";
+  gv:coverage "16.613333"
+], [
+  gv:hex "b5986a";
+  gv:red "181";
+  gv:blue "106";
+  gv:green "152";
+  gv:score "13.157456";
+  gv:coverage "3.4733332999999997"
+], [
+  gv:hex "907447";
+  gv:red "144";
+  gv:blue "71";
+  gv:green "116";
+  gv:score "9.6128866";
+  gv:coverage "2.04"
+], [
+  gv:hex "dbc199";
+  gv:red "219";
+  gv:blue "153";
+  gv:green "193";
+  gv:score "7.711228";
+  gv:coverage "7.8866668"
+], [
+  gv:hex "b19771";
+  gv:red "177";
+  gv:blue "113";
+  gv:green "151";
+  gv:score "5.7090863999999995";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "8d7452";
+  gv:red "141";
+  gv:blue "82";
+  gv:green "116";
+  gv:score "3.6589446999999997";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "6e5529";
+  gv:red "110";
+  gv:blue "41";
+  gv:green "85";
+  gv:score "3.6153439";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "6b5436";
+  gv:red "107";
+  gv:blue "54";
+  gv:green "84";
+  gv:score "2.3917835";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "eab98b";
+  gv:red "234";
+  gv:blue "139";
+  gv:green "185";
+  gv:score "1.7695546";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "c69264";
+  gv:red "198";
+  gv:blue "100";
+  gv:green "146";
+  gv:score "1.5563595";
+  gv:coverage "0.9933332899999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "53.867613999999996"
+];
+    w:bagOfWords "CHIANTI\nDELL ANTICAFATTORIADNICcoLOMACHIAVELLI\nSANDREAINPERCvSSINA\nS.CASCIANOVAL DI PESA (FIRENZE\nPROPRIETA\nTE\n"@ita;
+    wdt:P219 "ita";
+    wdt:P298 "ITA".

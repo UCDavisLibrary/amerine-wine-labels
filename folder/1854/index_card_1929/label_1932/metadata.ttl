@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1929/label_1932";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "MUY ANEJO DO\n1821) M\nFRAGANTE\nSAN RAFAEL\n33\nVINA DEL CARRASCAL JERE\nOloroso\nNo 32.\nANTONIO BARBADILLO S.L\nSanlu car de Bda ANDALUCIA-ESPANA\nLIT J. N. BARROso. JERE2.\n"@spa;
+    gv:color [
+  gv:hex "efc272";
+  gv:red "239";
+  gv:blue "114";
+  gv:green "194";
+  gv:score "46.553078";
+  gv:coverage "12.426667"
+], [
+  gv:hex "e8c17f";
+  gv:red "232";
+  gv:blue "127";
+  gv:green "193";
+  gv:score "18.231542";
+  gv:coverage "7.4066669"
+], [
+  gv:hex "bf9a5c";
+  gv:red "191";
+  gv:blue "92";
+  gv:green "154";
+  gv:score "4.455106000000001";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "efbc6e";
+  gv:red "239";
+  gv:blue "110";
+  gv:green "188";
+  gv:score "4.2823732";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "bf9252";
+  gv:red "191";
+  gv:blue "82";
+  gv:green "146";
+  gv:score "3.3082884";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "bd8f44";
+  gv:red "189";
+  gv:blue "68";
+  gv:green "143";
+  gv:score "2.8398933";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "c69b4f";
+  gv:red "198";
+  gv:blue "79";
+  gv:green "155";
+  gv:score "2.6182394";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "e8b979";
+  gv:red "232";
+  gv:blue "121";
+  gv:green "185";
+  gv:score "2.4121644";
+  gv:coverage "0.72"
+], [
+  gv:hex "9a6f34";
+  gv:red "154";
+  gv:blue "52";
+  gv:green "111";
+  gv:score "2.2056470000000004";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "a1742b";
+  gv:red "161";
+  gv:blue "43";
+  gv:green "116";
+  gv:score "2.0907724";
+  gv:coverage "0.6"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.23279"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MUY ANEJO DO\n1821) M\nFRAGANTE\nSAN RAFAEL\n33\nVINA DEL CARRASCAL JERE\nOloroso\nNo 32.\nANTONIO BARBADILLO S.L\nSanlu car de Bda ANDALUCIA-ESPANA\nLIT J. N. BARROso. JERE2.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

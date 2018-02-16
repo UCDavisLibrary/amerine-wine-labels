@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1745";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "CAESAR\nShipped by:\nTRAB En-TRAR BACH\nL I G H T WHITE M O SEL L E W I N E\nAlcohol 10,5\nby volume, contents\n1 pint 7,5 fl. ozs.\nVINTAGE 1950\nBerncasteler Braunes\n30\nProduce of Germany\n"@deu;
+    gv:color [
+  gv:hex "dfbf83";
+  gv:red "223";
+  gv:blue "131";
+  gv:green "191";
+  gv:score "38.623339";
+  gv:coverage "13.366665999999999"
+], [
+  gv:hex "475a31";
+  gv:red "71";
+  gv:blue "49";
+  gv:green "90";
+  gv:score "0.9450904099999999";
+  gv:coverage "0.26"
+], [
+  gv:hex "b6985d";
+  gv:red "182";
+  gv:blue "93";
+  gv:green "152";
+  gv:score "19.332477";
+  gv:coverage "6.12"
+], [
+  gv:hex "91763e";
+  gv:red "145";
+  gv:blue "62";
+  gv:green "118";
+  gv:score "10.628739";
+  gv:coverage "3.6866665"
+], [
+  gv:hex "68531e";
+  gv:red "104";
+  gv:blue "30";
+  gv:green "83";
+  gv:score "4.7573";
+  gv:coverage "1.5733332999999998"
+], [
+  gv:hex "e0c6a0";
+  gv:red "224";
+  gv:blue "160";
+  gv:green "198";
+  gv:score "2.9709461999999998";
+  gv:coverage "7.3333330000000005"
+], [
+  gv:hex "f5d6a0";
+  gv:red "245";
+  gv:blue "160";
+  gv:green "214";
+  gv:score "2.9017703999999997";
+  gv:coverage "1.38"
+], [
+  gv:hex "d9b668";
+  gv:red "217";
+  gv:blue "104";
+  gv:green "182";
+  gv:score "2.6093990000000002";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "bd9a4d";
+  gv:red "189";
+  gv:blue "77";
+  gv:green "154";
+  gv:score "1.9716543999999998";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "483607";
+  gv:red "72";
+  gv:blue "7";
+  gv:green "54";
+  gv:score "1.3555705";
+  gv:coverage "0.40666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "76.775694"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.03957299999999"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.085818"
+];
+    w:bagOfWords "CAESAR\nShipped by:\nTRAB En-TRAR BACH\nL I G H T WHITE M O SEL L E W I N E\nAlcohol 10,5\nby volume, contents\n1 pint 7,5 fl. ozs.\nVINTAGE 1950\nBerncasteler Braunes\n30\nProduce of Germany\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

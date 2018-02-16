@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0925";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "SEULE MARQUE AUTHENTIQUE\n12 o\nGRA\nVIN TREs VIEUX\n12°\nPIERRE BERTOUY\nMARSEILLAAN\nORs CONCOURS\n"@fra;
+    gv:color [
+  gv:hex "d6c1a6";
+  gv:red "214";
+  gv:blue "166";
+  gv:green "193";
+  gv:score "16.358694";
+  gv:coverage "31.240000000000002"
+], [
+  gv:hex "ad712b";
+  gv:red "173";
+  gv:blue "43";
+  gv:green "113";
+  gv:score "12.228434";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "665239";
+  gv:red "102";
+  gv:blue "57";
+  gv:green "82";
+  gv:score "1.6521363";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "ca8940";
+  gv:red "202";
+  gv:blue "64";
+  gv:green "137";
+  gv:score "10.691451";
+  gv:coverage "0.66"
+], [
+  gv:hex "a07238";
+  gv:red "160";
+  gv:blue "56";
+  gv:green "114";
+  gv:score "8.1156194";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "94743b";
+  gv:red "148";
+  gv:blue "59";
+  gv:green "116";
+  gv:score "8.0792762";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "b39f82";
+  gv:red "179";
+  gv:blue "130";
+  gv:green "159";
+  gv:score "5.5126339";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "c59158";
+  gv:red "197";
+  gv:blue "88";
+  gv:green "145";
+  gv:score "5.2746393000000005";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "b2925a";
+  gv:red "178";
+  gv:blue "90";
+  gv:green "146";
+  gv:score "4.7126777";
+  gv:coverage "0.48"
+], [
+  gv:hex "ecdac1";
+  gv:red "236";
+  gv:blue "193";
+  gv:green "218";
+  gv:score "4.0755369";
+  gv:coverage "39.86"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.666531"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.529134"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "53.974873"
+];
+    w:bagOfWords "SEULE MARQUE AUTHENTIQUE\n12 o\nGRA\nVIN TREs VIEUX\n12°\nPIERRE BERTOUY\nMARSEILLAAN\nORs CONCOURS\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

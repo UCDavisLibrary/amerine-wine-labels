@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1902/label_1910";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "A TRA\nJEREZ FINO\nNao aa VINOS DE JEREZ\na\n"@spa;
+    gv:color [
+  gv:hex "a49a91";
+  gv:red "164";
+  gv:blue "145";
+  gv:green "154";
+  gv:score "23.320864";
+  gv:coverage "2.8666666"
+], [
+  gv:hex "bd9188";
+  gv:red "189";
+  gv:blue "136";
+  gv:green "145";
+  gv:score "5.5421185";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "6a0b09";
+  gv:red "106";
+  gv:blue "9";
+  gv:green "11";
+  gv:score "4.8315167";
+  gv:coverage "0.06"
+], [
+  gv:hex "883b34";
+  gv:red "136";
+  gv:blue "52";
+  gv:green "59";
+  gv:score "3.7191439";
+  gv:coverage "0.06"
+], [
+  gv:hex "922426";
+  gv:red "146";
+  gv:blue "38";
+  gv:green "36";
+  gv:score "2.4721132999999997";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "6b583e";
+  gv:red "107";
+  gv:blue "62";
+  gv:green "88";
+  gv:score "0.86259032";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "c9bfb6";
+  gv:red "201";
+  gv:blue "182";
+  gv:green "191";
+  gv:score "15.83533";
+  gv:coverage "10.906667"
+], [
+  gv:hex "e9ddd4";
+  gv:red "233";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "9.3880653";
+  gv:coverage "47.193334"
+], [
+  gv:hex "887f76";
+  gv:red "136";
+  gv:blue "118";
+  gv:green "127";
+  gv:score "6.652253900000001";
+  gv:coverage "0.54"
+], [
+  gv:hex "e2b4aa";
+  gv:red "226";
+  gv:blue "170";
+  gv:green "180";
+  gv:score "5.2770264";
+  gv:coverage "0.26"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.72097699999999"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "64.373016"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "54.484182999999994"
+];
+    w:bagOfWords "A TRA\nJEREZ FINO\nNao aa VINOS DE JEREZ\na\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

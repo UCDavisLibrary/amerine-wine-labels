@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2018";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "ISABELITA\nPERFECTION SHERRY\nAR RUIZ YHERMANOS\nel ERE z DE LA FRONTERA\nALCOHOL BY VOLUME: 20 PER CENT.\nContents: 1 Pint and 8 Fluid Ounces\n(24 FL. oz.)\n"@spa;
+    gv:color [
+  gv:hex "d3c1ad";
+  gv:red "211";
+  gv:blue "173";
+  gv:green "193";
+  gv:score "15.945692000000001";
+  gv:coverage "21.38"
+], [
+  gv:hex "a59886";
+  gv:red "165";
+  gv:blue "134";
+  gv:green "152";
+  gv:score "14.948814999999998";
+  gv:coverage "1.7133333"
+], [
+  gv:hex "847664";
+  gv:red "132";
+  gv:blue "100";
+  gv:green "118";
+  gv:score "14.819802000000001";
+  gv:coverage "1.48"
+], [
+  gv:hex "c9957e";
+  gv:red "201";
+  gv:blue "126";
+  gv:green "149";
+  gv:score "12.4953";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "e9b6a0";
+  gv:red "233";
+  gv:blue "160";
+  gv:green "182";
+  gv:score "11.327524";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "eedac5";
+  gv:red "238";
+  gv:blue "197";
+  gv:green "218";
+  gv:score "9.3966149";
+  gv:coverage "29.226667"
+], [
+  gv:hex "655845";
+  gv:red "101";
+  gv:blue "69";
+  gv:green "88";
+  gv:score "4.8457742";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "cb8d6a";
+  gv:red "203";
+  gv:blue "106";
+  gv:green "141";
+  gv:score "2.0884134";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "c8c5b8";
+  gv:red "200";
+  gv:blue "184";
+  gv:green "197";
+  gv:score "1.9079603";
+  gv:coverage "10.473333"
+], [
+  gv:hex "fcd4be";
+  gv:red "252";
+  gv:blue "190";
+  gv:green "212";
+  gv:score "1.8622720999999998";
+  gv:coverage "0.5"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.146181"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "ISABELITA\nPERFECTION SHERRY\nAR RUIZ YHERMANOS\nel ERE z DE LA FRONTERA\nALCOHOL BY VOLUME: 20 PER CENT.\nContents: 1 Pint and 8 Fluid Ounces\n(24 FL. oz.)\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1654/label_1660";
+    dct:type "image";
+    w:bagOfWords "MPE\nKAI\nCYPRUS\nTABLE WINE\nOthello\nPRODUCED AND BOTTLED BY\nCYPRUS WINE & SPIRITS CO. LTD. LIMASSOL- CYPRUS.\nTHo. \"K PROS\" LIMAssou\n"@eng;
+    gv:color [
+  gv:hex "e1ae77";
+  gv:red "225";
+  gv:blue "119";
+  gv:green "174";
+  gv:score "17.776529";
+  gv:coverage "4.5"
+], [
+  gv:hex "bd0406";
+  gv:red "189";
+  gv:blue "6";
+  gv:green "4";
+  gv:score "11.488549";
+  gv:coverage "3.9533332"
+], [
+  gv:hex "e98216";
+  gv:red "233";
+  gv:blue "22";
+  gv:green "130";
+  gv:score "2.2013173";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "7e0304";
+  gv:red "126";
+  gv:blue "4";
+  gv:green "3";
+  gv:score "1.867272";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "0d0b0b";
+  gv:red "13";
+  gv:blue "11";
+  gv:green "11";
+  gv:score "0.73940391";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "361003";
+  gv:red "54";
+  gv:blue "3";
+  gv:green "16";
+  gv:score "0.68023447";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "03174a";
+  gv:red "3";
+  gv:blue "74";
+  gv:green "23";
+  gv:score "0.39519854";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "06226d";
+  gv:red "6";
+  gv:blue "109";
+  gv:green "34";
+  gv:score "0.32560772";
+  gv:coverage "0.04"
+], [
+  gv:hex "ddb881";
+  gv:red "221";
+  gv:blue "129";
+  gv:green "184";
+  gv:score "9.6771732";
+  gv:coverage "3.4466665"
+], [
+  gv:hex "aa1206";
+  gv:red "170";
+  gv:blue "6";
+  gv:green "18";
+  gv:score "6.888929000000001";
+  gv:coverage "1.9533332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.360079999999996"
+];
+    w:bagOfWords "MPE\nKAI\nCYPRUS\nTABLE WINE\nOthello\nPRODUCED AND BOTTLED BY\nCYPRUS WINE & SPIRITS CO. LTD. LIMASSOL- CYPRUS.\nTHo. \"K PROS\" LIMAssou\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "CYP".

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2441/label_2464";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "Il a été tiré de ce vin 365 O bouteilles et 50 magnums\n25S0\n-N?\n1937\nMEURSAULT PERRIERES\nPremier Grand Cru Classé\nAPPELLATION CONTROLEE\nMaurice\nROPITEAU\nPropriétaire\nMis en bouteilles a la propriété\nMEURS AULT COTE D'OR\n"@fra;
+    gv:color [
+  gv:hex "ddc29f";
+  gv:red "221";
+  gv:blue "159";
+  gv:green "194";
+  gv:score "69.081342";
+  gv:coverage "31.706667"
+], [
+  gv:hex "b39978";
+  gv:red "179";
+  gv:blue "120";
+  gv:green "153";
+  gv:score "15.66776";
+  gv:coverage "2.94"
+], [
+  gv:hex "8f7656";
+  gv:red "143";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "7.8543595999999996";
+  gv:coverage "1.2333333"
+], [
+  gv:hex "6d5435";
+  gv:red "109";
+  gv:blue "53";
+  gv:green "84";
+  gv:score "3.727397";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "efd6b5";
+  gv:red "239";
+  gv:blue "181";
+  gv:green "214";
+  gv:score "2.2922331000000002";
+  gv:coverage "12.546666"
+], [
+  gv:hex "4d3618";
+  gv:red "77";
+  gv:blue "24";
+  gv:green "54";
+  gv:score "0.92033185";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "492e12";
+  gv:red "73";
+  gv:blue "18";
+  gv:green "46";
+  gv:score "0.22446723000000002";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "2e1300";
+  gv:red "46";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "0.056635321";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "240900";
+  gv:red "36";
+  gv:blue "undefined";
+  gv:green "9";
+  gv:score "0.050040456999999997";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "e9e1d5";
+  gv:red "233";
+  gv:blue "213";
+  gv:green "225";
+  gv:score "0.049707282";
+  gv:coverage "46.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.70044899999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.513999999999996"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.512271000000005"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.420873"
+];
+    w:bagOfWords "Il a été tiré de ce vin 365 O bouteilles et 50 magnums\n25S0\n-N?\n1937\nMEURSAULT PERRIERES\nPremier Grand Cru Classé\nAPPELLATION CONTROLEE\nMaurice\nROPITEAU\nPropriétaire\nMis en bouteilles a la propriété\nMEURS AULT COTE D'OR\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

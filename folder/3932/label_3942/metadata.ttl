@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3932/label_3942";
+    dct:type "image";
+    w:bagOfWords "Cabine-Wein.\nFass\nNr.\nR HEIN G Au\n43\n4367\n"@deu;
+    gv:color [
+  gv:hex "ac997e";
+  gv:red "172";
+  gv:blue "126";
+  gv:green "153";
+  gv:score "15.53957";
+  gv:coverage "8.473333"
+], [
+  gv:hex "65543d";
+  gv:red "101";
+  gv:blue "61";
+  gv:green "84";
+  gv:score "15.312278";
+  gv:coverage "5.9666667"
+], [
+  gv:hex "86735a";
+  gv:red "134";
+  gv:blue "90";
+  gv:green "115";
+  gv:score "15.193034999999998";
+  gv:coverage "6.493333"
+], [
+  gv:hex "d0bda5";
+  gv:red "208";
+  gv:blue "165";
+  gv:green "189";
+  gv:score "11.124661";
+  gv:coverage "12.006667"
+], [
+  gv:hex "c48e7b";
+  gv:red "196";
+  gv:blue "123";
+  gv:green "142";
+  gv:score "9.5426448";
+  gv:coverage "2.3"
+], [
+  gv:hex "9f6d5b";
+  gv:red "159";
+  gv:blue "91";
+  gv:green "109";
+  gv:score "5.6414988";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "ad6455";
+  gv:red "173";
+  gv:blue "85";
+  gv:green "100";
+  gv:score "3.6874730000000002";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "754b38";
+  gv:red "117";
+  gv:blue "56";
+  gv:green "75";
+  gv:score "3.5133737999999997";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "af9a66";
+  gv:red "175";
+  gv:blue "102";
+  gv:green "154";
+  gv:score "3.5063345000000004";
+  gv:coverage "1.28"
+], [
+  gv:hex "473620";
+  gv:red "71";
+  gv:blue "32";
+  gv:green "54";
+  gv:score "3.469944";
+  gv:coverage "1.4666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "71.857035"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.295771"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "55.168991999999996"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.557458"
+];
+    w:bagOfWords "Cabine-Wein.\nFass\nNr.\nR HEIN G Au\n43\n4367\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

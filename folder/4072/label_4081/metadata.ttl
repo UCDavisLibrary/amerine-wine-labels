@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4081";
+    dct:type "image";
+    w:bagOfWords "80 PROOF\n1 QUART\nFRANCE\nOF MADE BY\nCURACAO G.A.JOURDE\nBORDEAUX FRANCE\n"@fra;
+    gv:color [
+  gv:hex "f5b949";
+  gv:red "245";
+  gv:blue "73";
+  gv:green "185";
+  gv:score "22.24222";
+  gv:coverage "9.1133334"
+], [
+  gv:hex "711c00";
+  gv:red "113";
+  gv:blue "undefined";
+  gv:green "28";
+  gv:score "5.4906368";
+  gv:coverage "1.2"
+], [
+  gv:hex "903902";
+  gv:red "144";
+  gv:blue "2";
+  gv:green "57";
+  gv:score "5.1026750000000005";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "f5b659";
+  gv:red "245";
+  gv:blue "89";
+  gv:green "182";
+  gv:score "22.184587999999998";
+  gv:coverage "7.6733336"
+], [
+  gv:hex "ecd7b8";
+  gv:red "236";
+  gv:blue "184";
+  gv:green "215";
+  gv:score "0.17998478999999998";
+  gv:coverage "2.78"
+], [
+  gv:hex "f0bd47";
+  gv:red "240";
+  gv:blue "71";
+  gv:green "189";
+  gv:score "8.6472347";
+  gv:coverage "3.3066668"
+], [
+  gv:hex "ecbd5c";
+  gv:red "236";
+  gv:blue "92";
+  gv:green "189";
+  gv:score "6.524159999999999";
+  gv:coverage "3.8866665"
+], [
+  gv:hex "d1913b";
+  gv:red "209";
+  gv:blue "59";
+  gv:green "145";
+  gv:score "6.36199";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "a66d17";
+  gv:red "166";
+  gv:blue "23";
+  gv:green "109";
+  gv:score "3.9802164";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "b65d1d";
+  gv:red "182";
+  gv:blue "29";
+  gv:green "93";
+  gv:score "2.7109565";
+  gv:coverage "0.5599999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.898548"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "80.955791"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.203836"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "80 PROOF\n1 QUART\nFRANCE\nOF MADE BY\nCURACAO G.A.JOURDE\nBORDEAUX FRANCE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

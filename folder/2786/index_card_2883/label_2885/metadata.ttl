@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2883/label_2885";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "CHATEAu\nLA DAME BLANCHE\n1945\nWhite\nAppellation\nRBORDEA\nBordeaux\nBordeaux\nWine\ncontrolée\nMARQUE\nSSM\nDEPOSEE\n& FILS\nMIS EN BOUTEILLES PAR LES\nPR\nIRES\nBORDEAUX\nCONTENTS 1 PIN T 8 FLUID OUNCES\nALCOHOL 1 1 BY VOLUME\n"@fra;
+    gv:color [
+  gv:hex "aa9a8c";
+  gv:red "170";
+  gv:blue "140";
+  gv:green "154";
+  gv:score "17.097595";
+  gv:coverage "3.04"
+], [
+  gv:hex "d1c3b6";
+  gv:red "209";
+  gv:blue "182";
+  gv:green "195";
+  gv:score "15.940019";
+  gv:coverage "7.3066667"
+], [
+  gv:hex "d2c2b2";
+  gv:red "210";
+  gv:blue "178";
+  gv:green "194";
+  gv:score "14.832759000000001";
+  gv:coverage "9.9266663"
+], [
+  gv:hex "847567";
+  gv:red "132";
+  gv:blue "103";
+  gv:green "117";
+  gv:score "10.126825";
+  gv:coverage "1.32"
+], [
+  gv:hex "eadccf";
+  gv:red "234";
+  gv:blue "207";
+  gv:green "220";
+  gv:score "6.576823399999999";
+  gv:coverage "63.066666999999995"
+], [
+  gv:hex "c19486";
+  gv:red "193";
+  gv:blue "134";
+  gv:green "148";
+  gv:score "5.9305634000000005";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "625447";
+  gv:red "98";
+  gv:blue "71";
+  gv:green "84";
+  gv:score "5.622904";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "e9daca";
+  gv:red "233";
+  gv:blue "202";
+  gv:green "218";
+  gv:score "5.0128794999999995";
+  gv:coverage "12.473334"
+], [
+  gv:hex "e1b5a9";
+  gv:red "225";
+  gv:blue "169";
+  gv:green "181";
+  gv:score "3.9032031000000003";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "413325";
+  gv:red "65";
+  gv:blue "37";
+  gv:green "51";
+  gv:score "2.9996615";
+  gv:coverage "0.32"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "75.3776"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.60902"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.109055"
+];
+    w:bagOfWords "CHATEAu\nLA DAME BLANCHE\n1945\nWhite\nAppellation\nRBORDEA\nBordeaux\nBordeaux\nWine\ncontrolée\nMARQUE\nSSM\nDEPOSEE\n& FILS\nMIS EN BOUTEILLES PAR LES\nPR\nIRES\nBORDEAUX\nCONTENTS 1 PIN T 8 FLUID OUNCES\nALCOHOL 1 1 BY VOLUME\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

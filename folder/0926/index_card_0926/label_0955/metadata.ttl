@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0955";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "HALE LAI S\nOCIETEVINICOLE BEN\n"@deu;
+    gv:color [
+  gv:hex "e1c49f";
+  gv:red "225";
+  gv:blue "159";
+  gv:green "196";
+  gv:score "26.965605999999998";
+  gv:coverage "18.32"
+], [
+  gv:hex "dcbd89";
+  gv:red "220";
+  gv:blue "137";
+  gv:green "189";
+  gv:score "17.644648";
+  gv:coverage "6.0333334"
+], [
+  gv:hex "b69862";
+  gv:red "182";
+  gv:blue "98";
+  gv:green "152";
+  gv:score "16.812837";
+  gv:coverage "3.88"
+], [
+  gv:hex "907543";
+  gv:red "144";
+  gv:blue "67";
+  gv:green "117";
+  gv:score "7.8438938";
+  gv:coverage "1.5599999999999998"
+], [
+  gv:hex "b39974";
+  gv:red "179";
+  gv:blue "116";
+  gv:green "153";
+  gv:score "4.4194102";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "887453";
+  gv:red "136";
+  gv:blue "83";
+  gv:green "116";
+  gv:score "3.7510995";
+  gv:coverage "0.96"
+], [
+  gv:hex "635335";
+  gv:red "99";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "3.7349466";
+  gv:coverage "0.96"
+], [
+  gv:hex "6d5526";
+  gv:red "109";
+  gv:blue "38";
+  gv:green "85";
+  gv:score "3.0561918";
+  gv:coverage "0.62"
+], [
+  gv:hex "f0d5b3";
+  gv:red "240";
+  gv:blue "179";
+  gv:green "213";
+  gv:score "2.0056985";
+  gv:coverage "19.12"
+], [
+  gv:hex "936c42";
+  gv:red "147";
+  gv:blue "66";
+  gv:green "108";
+  gv:score "1.59609";
+  gv:coverage "0.25333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.110507999999996"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.982636"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "52.579623"
+];
+    w:bagOfWords "HALE LAI S\nOCIETEVINICOLE BEN\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

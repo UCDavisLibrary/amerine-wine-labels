@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3542/label_3563";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "MORRIS-BURG\nVINTAGE\nRARE OLD\n25\n"@eng;
+    gv:color [
+  gv:hex "956b31";
+  gv:red "149";
+  gv:blue "49";
+  gv:green "107";
+  gv:score "22.843273";
+  gv:coverage "1.5066667"
+], [
+  gv:hex "d5c2a9";
+  gv:red "213";
+  gv:blue "169";
+  gv:green "194";
+  gv:score "5.2438866";
+  gv:coverage "29.220000000000002"
+], [
+  gv:hex "8f6e39";
+  gv:red "143";
+  gv:blue "57";
+  gv:green "110";
+  gv:score "17.528963";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "956823";
+  gv:red "149";
+  gv:blue "35";
+  gv:green "104";
+  gv:score "12.914312";
+  gv:coverage "0.4"
+], [
+  gv:hex "b8935e";
+  gv:red "184";
+  gv:blue "94";
+  gv:green "147";
+  gv:score "7.3311158";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "7f581b";
+  gv:red "127";
+  gv:blue "27";
+  gv:green "88";
+  gv:score "7.0835672";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "b58a53";
+  gv:red "181";
+  gv:blue "83";
+  gv:green "138";
+  gv:score "5.2147790999999994";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "90711e";
+  gv:red "144";
+  gv:blue "30";
+  gv:green "113";
+  gv:score "4.0050457999999995";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "aa9a82";
+  gv:red "170";
+  gv:blue "130";
+  gv:green "154";
+  gv:score "3.6644670999999995";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "845712";
+  gv:red "132";
+  gv:blue "18";
+  gv:green "87";
+  gv:score "2.8968245";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.283237"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "50.99414599999999"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "50.879478"
+];
+    w:bagOfWords "MORRIS-BURG\nVINTAGE\nRARE OLD\n25\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

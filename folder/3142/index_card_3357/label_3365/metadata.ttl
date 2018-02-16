@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3365";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "Estb\nvery\no m m a r\nSuperior\nAvery & Co.,\n.3rishol\n& Cardiff\n"@fra;
+    gv:color [
+  gv:hex "d7bc9e";
+  gv:red "215";
+  gv:blue "158";
+  gv:green "188";
+  gv:score "47.204927000000005";
+  gv:coverage "21.266666"
+], [
+  gv:hex "b3634a";
+  gv:red "179";
+  gv:blue "74";
+  gv:green "99";
+  gv:score "3.6047339";
+  gv:coverage "0.26"
+], [
+  gv:hex "b69b7e";
+  gv:red "182";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "12.586021";
+  gv:coverage "4.7933333000000005"
+], [
+  gv:hex "e8b799";
+  gv:red "232";
+  gv:blue "153";
+  gv:green "183";
+  gv:score "10.468341";
+  gv:coverage "1.76"
+], [
+  gv:hex "8c7255";
+  gv:red "140";
+  gv:blue "85";
+  gv:green "114";
+  gv:score "8.6192563";
+  gv:coverage "3.0933334"
+], [
+  gv:hex "6e553b";
+  gv:red "110";
+  gv:blue "59";
+  gv:green "85";
+  gv:score "3.3118647";
+  gv:coverage "1.0466667"
+], [
+  gv:hex "cb9177";
+  gv:red "203";
+  gv:blue "119";
+  gv:green "145";
+  gv:score "2.7974268";
+  gv:coverage "0.38"
+], [
+  gv:hex "a76849";
+  gv:red "167";
+  gv:blue "73";
+  gv:green "104";
+  gv:score "2.0560378";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "d48268";
+  gv:red "212";
+  gv:blue "104";
+  gv:green "130";
+  gv:score "1.8049028000000003";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "92442b";
+  gv:red "146";
+  gv:blue "43";
+  gv:green "68";
+  gv:score "1.7259736";
+  gv:coverage "0.12"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.944346"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Estb\nvery\no m m a r\nSuperior\nAvery & Co.,\n.3rishol\n& Cardiff\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1770";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Gesetzligeschitzt\nSCHULZ & WAGNER\nMoselle Wine\n1934 Berncasteler ,Selecte\nMidd Mo se\n"@deu;
+    gv:color [
+  gv:hex "c39664";
+  gv:red "195";
+  gv:blue "100";
+  gv:green "150";
+  gv:score "33.679052999999996";
+  gv:coverage "9.526667"
+], [
+  gv:hex "734a1d";
+  gv:red "115";
+  gv:blue "29";
+  gv:green "74";
+  gv:score "12.949014";
+  gv:coverage "5.26"
+], [
+  gv:hex "c19b67";
+  gv:red "193";
+  gv:blue "103";
+  gv:green "155";
+  gv:score "18.882832999999998";
+  gv:coverage "5.6333333"
+], [
+  gv:hex "9b6f3d";
+  gv:red "155";
+  gv:blue "61";
+  gv:green "111";
+  gv:score "9.8699965";
+  gv:coverage "3.42"
+], [
+  gv:hex "e0b080";
+  gv:red "224";
+  gv:blue "128";
+  gv:green "176";
+  gv:score "6.4101957";
+  gv:coverage "2.8666666"
+], [
+  gv:hex "d9b27e";
+  gv:red "217";
+  gv:blue "126";
+  gv:green "178";
+  gv:score "4.5351662";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "6d5122";
+  gv:red "109";
+  gv:blue "34";
+  gv:green "81";
+  gv:score "3.5946321";
+  gv:coverage "1.8800000000000001"
+], [
+  gv:hex "947340";
+  gv:red "148";
+  gv:blue "64";
+  gv:green "115";
+  gv:score "2.8581634";
+  gv:coverage "1.78"
+], [
+  gv:hex "5c3308";
+  gv:red "92";
+  gv:blue "8";
+  gv:green "51";
+  gv:score "2.7309";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "6c482c";
+  gv:red "108";
+  gv:blue "44";
+  gv:green "72";
+  gv:score "0.98997531";
+  gv:coverage "0.62666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.032153"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "58.361936"
+];
+    w:bagOfWords "Gesetzligeschitzt\nSCHULZ & WAGNER\nMoselle Wine\n1934 Berncasteler ,Selecte\nMidd Mo se\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

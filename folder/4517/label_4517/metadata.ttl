@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4517/label_4517";
+    dct:type "image";
+    w:bagOfWords "Federico Paternina\nRIOUA)\nR. E. 329\nCEDA RHIN\n"@spa;
+    gv:color [
+  gv:hex "d9c4ae";
+  gv:red "217";
+  gv:blue "174";
+  gv:green "196";
+  gv:score "16.646479";
+  gv:coverage "17.173333"
+], [
+  gv:hex "7b4e37";
+  gv:red "123";
+  gv:blue "55";
+  gv:green "78";
+  gv:score "12.747385";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "936d50";
+  gv:red "147";
+  gv:blue "80";
+  gv:green "109";
+  gv:score "8.4281228";
+  gv:coverage "0.8"
+], [
+  gv:hex "b19c84";
+  gv:red "177";
+  gv:blue "132";
+  gv:green "156";
+  gv:score "8.4121421";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "794f2b";
+  gv:red "121";
+  gv:blue "43";
+  gv:green "79";
+  gv:score "7.768324799999999";
+  gv:coverage "0.58"
+], [
+  gv:hex "d2c6ba";
+  gv:red "210";
+  gv:blue "186";
+  gv:green "198";
+  gv:score "6.934042999999999";
+  gv:coverage "10.873333"
+], [
+  gv:hex "160a00";
+  gv:red "22";
+  gv:blue "undefined";
+  gv:green "10";
+  gv:score "0.059015863";
+  gv:coverage "0.02"
+], [
+  gv:hex "8f6a42";
+  gv:red "143";
+  gv:blue "66";
+  gv:green "106";
+  gv:score "4.9681774999999995";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "675540";
+  gv:red "103";
+  gv:blue "64";
+  gv:green "85";
+  gv:score "4.9345944";
+  gv:coverage "0.4"
+], [
+  gv:hex "ecdac5";
+  gv:red "236";
+  gv:blue "197";
+  gv:green "218";
+  gv:score "4.7133639";
+  gv:coverage "11.24"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.63481"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Federico Paternina\nRIOUA)\nR. E. 329\nCEDA RHIN\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

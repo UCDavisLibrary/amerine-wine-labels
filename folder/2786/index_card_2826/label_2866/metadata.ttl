@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2866";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "van de tese urye\nAppellation SAUTERNES Controlée\nMIS EN BOUTEILLES\nCHEZ. E D. KRESS MANN & CIE BORDEAUX\nPrinted in France\n"@fra;
+    gv:color [
+  gv:hex "dbc6a0";
+  gv:red "219";
+  gv:blue "160";
+  gv:green "198";
+  gv:score "70.195681";
+  gv:coverage "30.786666"
+], [
+  gv:hex "b29f77";
+  gv:red "178";
+  gv:blue "119";
+  gv:green "159";
+  gv:score "19.302025";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "ecd9b3";
+  gv:red "236";
+  gv:blue "179";
+  gv:green "217";
+  gv:score "6.5517046";
+  gv:coverage "3.1666666"
+], [
+  gv:hex "b49e71";
+  gv:red "180";
+  gv:blue "113";
+  gv:green "158";
+  gv:score "2.1925911";
+  gv:coverage "0.26"
+], [
+  gv:hex "cdb889";
+  gv:red "205";
+  gv:blue "137";
+  gv:green "184";
+  gv:score "0.7737166200000001";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "907a4f";
+  gv:red "144";
+  gv:blue "79";
+  gv:green "122";
+  gv:score "0.50670397";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "9a855f";
+  gv:red "154";
+  gv:blue "95";
+  gv:green "133";
+  gv:score "0.42926846";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "cfc8be";
+  gv:red "207";
+  gv:blue "190";
+  gv:green "200";
+  gv:score "0.026076613000000002";
+  gv:coverage "14.940000000000001"
+], [
+  gv:hex "e0d9d0";
+  gv:red "224";
+  gv:blue "208";
+  gv:green "217";
+  gv:score "0.010311636";
+  gv:coverage "47.533333"
+], [
+  gv:hex "a39d94";
+  gv:red "163";
+  gv:blue "148";
+  gv:green "157";
+  gv:score "0.0092430826";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.555896000000004"
+];
+    w:bagOfWords "van de tese urye\nAppellation SAUTERNES Controlée\nMIS EN BOUTEILLES\nCHEZ. E D. KRESS MANN & CIE BORDEAUX\nPrinted in France\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1354";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GRAND\nVIN MOUSSEUX\nCAVES\nomkomte Cras to\nPORTUGAL.\nADIA\n"@por;
+    gv:color [
+  gv:hex "0f0907";
+  gv:red "15";
+  gv:blue "7";
+  gv:green "9";
+  gv:score "34.419575";
+  gv:coverage "19.973333"
+], [
+  gv:hex "7d745e";
+  gv:red "125";
+  gv:blue "94";
+  gv:green "116";
+  gv:score "6.2604763";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "3a301e";
+  gv:red "58";
+  gv:blue "30";
+  gv:green "48";
+  gv:score "4.7000043";
+  gv:coverage "1"
+], [
+  gv:hex "dac7b0";
+  gv:red "218";
+  gv:blue "176";
+  gv:green "199";
+  gv:score "3.9515018";
+  gv:coverage "7.293333100000001"
+], [
+  gv:hex "9a131a";
+  gv:red "154";
+  gv:blue "26";
+  gv:green "19";
+  gv:score "1.21025";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "2c3165";
+  gv:red "44";
+  gv:blue "101";
+  gv:green "49";
+  gv:score "0.33234828";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "f3afdd";
+  gv:red "243";
+  gv:blue "221";
+  gv:green "175";
+  gv:score "0.17111601";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "5a4a79";
+  gv:red "90";
+  gv:blue "121";
+  gv:green "74";
+  gv:score "0.14513226";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "7d5996";
+  gv:red "125";
+  gv:blue "150";
+  gv:green "89";
+  gv:score "0.095558318";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "270909";
+  gv:red "39";
+  gv:blue "9";
+  gv:green "9";
+  gv:score "9.3057118";
+  gv:coverage "2.62"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "77.41032799999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.43146300000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GRAND\nVIN MOUSSEUX\nCAVES\nomkomte Cras to\nPORTUGAL.\nADIA\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

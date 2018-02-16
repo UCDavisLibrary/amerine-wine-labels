@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2295";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "AND VIN\nDES WINS\nLEVIN\nahora\nD. CORDIER\nPropriétaire\nBORDEAUX\nDEPOSE\nMIS EN. BOUTEILLES AUCH AT EAU\nE. TAPEARD. Br\n"@fra;
+    gv:color [
+  gv:hex "d4c0a2";
+  gv:red "212";
+  gv:blue "162";
+  gv:green "192";
+  gv:score "53.38347";
+  gv:coverage "29.666665"
+], [
+  gv:hex "b29d7b";
+  gv:red "178";
+  gv:blue "123";
+  gv:green "157";
+  gv:score "36.638582";
+  gv:coverage "7.086666699999999"
+], [
+  gv:hex "927d5b";
+  gv:red "146";
+  gv:blue "91";
+  gv:green "125";
+  gv:score "5.0821945";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "ecd8bb";
+  gv:red "236";
+  gv:blue "187";
+  gv:green "216";
+  gv:score "3.4992833";
+  gv:coverage "6.813333200000001"
+], [
+  gv:hex "e9dfd5";
+  gv:red "233";
+  gv:blue "213";
+  gv:green "223";
+  gv:score "0.50808531";
+  gv:coverage "50.333333"
+], [
+  gv:hex "d0c5bb";
+  gv:red "208";
+  gv:blue "187";
+  gv:green "197";
+  gv:score "0.38666732";
+  gv:coverage "4.0466666"
+], [
+  gv:hex "8d784d";
+  gv:red "141";
+  gv:blue "77";
+  gv:green "120";
+  gv:score "0.27895317999999997";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "a99f96";
+  gv:red "169";
+  gv:blue "150";
+  gv:green "159";
+  gv:score "0.0906523";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "a99469";
+  gv:red "169";
+  gv:blue "105";
+  gv:green "148";
+  gv:score "0.077591621";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "6a5b3c";
+  gv:red "106";
+  gv:blue "60";
+  gv:green "91";
+  gv:score "0.024903981999999998";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.174949"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.647000000000006"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.719945"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.875342"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.459588"
+];
+    w:bagOfWords "AND VIN\nDES WINS\nLEVIN\nahora\nD. CORDIER\nPropriétaire\nBORDEAUX\nDEPOSE\nMIS EN. BOUTEILLES AUCH AT EAU\nE. TAPEARD. Br\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

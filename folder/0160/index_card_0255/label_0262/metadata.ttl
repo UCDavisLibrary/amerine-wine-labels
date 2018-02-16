@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0255/label_0262";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "THE HALLMARK\nOF LOS AMIGOS\nFOUNDED\n1 8 8 8\nCALIFORNIA\nGRENACHE ROSE\nA PINK TABLE WINE MADE FROM GRENACHE GRAPES\nPRODUCED AND BOTTLED BY\nLOS AMIGOS VINEYARDS\nBONDED WINERY No. 5\nMISSION SAN JOSE, CALIFORNIA\nALCOHOL 1 2\n8 Y VOLUME\nCONTENTS 4/5 QUART\n"@eng;
+    gv:color [
+  gv:hex "d3bdac";
+  gv:red "211";
+  gv:blue "172";
+  gv:green "189";
+  gv:score "41.037726";
+  gv:coverage "24.486667"
+], [
+  gv:hex "9d6d6f";
+  gv:red "157";
+  gv:blue "111";
+  gv:green "109";
+  gv:score "2.4513096";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "691729";
+  gv:red "105";
+  gv:blue "41";
+  gv:green "23";
+  gv:score "0.9825775400000001";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "b09b8a";
+  gv:red "176";
+  gv:blue "138";
+  gv:green "155";
+  gv:score "16.330467000000002";
+  gv:coverage "4.3666668"
+], [
+  gv:hex "ba938a";
+  gv:red "186";
+  gv:blue "138";
+  gv:green "147";
+  gv:score "14.360911000000002";
+  gv:coverage "4.0733334"
+], [
+  gv:hex "dcb6ab";
+  gv:red "220";
+  gv:blue "171";
+  gv:green "182";
+  gv:score "9.803573";
+  gv:coverage "5.4066665"
+], [
+  gv:hex "8e7b6a";
+  gv:red "142";
+  gv:blue "106";
+  gv:green "123";
+  gv:score "2.7117467";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "a15d69";
+  gv:red "161";
+  gv:blue "105";
+  gv:green "93";
+  gv:score "2.0603308";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "914353";
+  gv:red "145";
+  gv:blue "83";
+  gv:green "67";
+  gv:score "2.0347595";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "a17971";
+  gv:red "161";
+  gv:blue "113";
+  gv:green "121";
+  gv:score "1.6746830000000001";
+  gv:coverage "0.43333330999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.53005399999999"
+];
+    w:bagOfWords "THE HALLMARK\nOF LOS AMIGOS\nFOUNDED\n1 8 8 8\nCALIFORNIA\nGRENACHE ROSE\nA PINK TABLE WINE MADE FROM GRENACHE GRAPES\nPRODUCED AND BOTTLED BY\nLOS AMIGOS VINEYARDS\nBONDED WINERY No. 5\nMISSION SAN JOSE, CALIFORNIA\nALCOHOL 1 2\n8 Y VOLUME\nCONTENTS 4/5 QUART\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

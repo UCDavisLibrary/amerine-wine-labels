@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1725";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "by Volume\nKESSELSTATT\nVON\n1948 or\nNAOS EL- SAAR RUWER\nContents\n1 Pint. 8 Fl. Oz.\nHDACKWEILER eca, TRIED\n"@deu;
+    gv:color [
+  gv:hex "d4c0a3";
+  gv:red "212";
+  gv:blue "163";
+  gv:green "192";
+  gv:score "34.221228999999994";
+  gv:coverage "22.446667"
+], [
+  gv:hex "b2614a";
+  gv:red "178";
+  gv:blue "74";
+  gv:green "97";
+  gv:score "1.9849637999999998";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "ab9a7b";
+  gv:red "171";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "18.030694";
+  gv:coverage "7.5333335"
+], [
+  gv:hex "887758";
+  gv:red "136";
+  gv:blue "88";
+  gv:green "119";
+  gv:score "12.418482000000001";
+  gv:coverage "3.34"
+], [
+  gv:hex "e6b298";
+  gv:red "230";
+  gv:blue "152";
+  gv:green "178";
+  gv:score "5.0817717";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "625438";
+  gv:red "98";
+  gv:blue "56";
+  gv:green "84";
+  gv:score "4.1312955";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "c79075";
+  gv:red "199";
+  gv:blue "117";
+  gv:green "144";
+  gv:score "3.4776705999999997";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "9c6d54";
+  gv:red "156";
+  gv:blue "84";
+  gv:green "109";
+  gv:score "2.5734888000000002";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "46341d";
+  gv:red "70";
+  gv:blue "29";
+  gv:green "52";
+  gv:score "2.0020941";
+  gv:coverage "0.3"
+], [
+  gv:hex "4d2b1c";
+  gv:red "77";
+  gv:blue "28";
+  gv:green "43";
+  gv:score "1.5133779";
+  gv:coverage "0.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "67.219973"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "62.066633"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "58.317268"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "56.751394"
+];
+    w:bagOfWords "by Volume\nKESSELSTATT\nVON\n1948 or\nNAOS EL- SAAR RUWER\nContents\n1 Pint. 8 Fl. Oz.\nHDACKWEILER eca, TRIED\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

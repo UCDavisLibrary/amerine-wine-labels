@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3256/label_3274";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "1926\nANTONIN RODET\nProduce\nO\nFran Coe\nARCHAT\nCONTENTS: 1 Pint 8 Fluid Ounce\nAlcohol by volume 13\nANTONIN RODET\nMAITRE DE CKAIS\nMERCU\nBOURGOGNE\no o o\nRICHEROURG DU DOMAINE DE LA ROMANEE CONTI\n"@fra;
+    gv:color [
+  gv:hex "74452f";
+  gv:red "116";
+  gv:blue "47";
+  gv:green "69";
+  gv:score "16.705534";
+  gv:coverage "3.2733331999999997"
+], [
+  gv:hex "e2be8e";
+  gv:red "226";
+  gv:blue "142";
+  gv:green "190";
+  gv:score "11.453607";
+  gv:coverage "9.02"
+], [
+  gv:hex "7e4525";
+  gv:red "126";
+  gv:blue "37";
+  gv:green "69";
+  gv:score "16.22825";
+  gv:coverage "3.04"
+], [
+  gv:hex "a36641";
+  gv:red "163";
+  gv:blue "65";
+  gv:green "102";
+  gv:score "9.3380511";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "5c2e1a";
+  gv:red "92";
+  gv:blue "26";
+  gv:green "46";
+  gv:score "5.69303";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "c98d60";
+  gv:red "201";
+  gv:blue "96";
+  gv:green "141";
+  gv:score "5.6742486";
+  gv:coverage "1.4333333"
+], [
+  gv:hex "dfc09b";
+  gv:red "223";
+  gv:blue "155";
+  gv:green "192";
+  gv:score "5.5963613";
+  gv:coverage "10.02"
+], [
+  gv:hex "e7b88a";
+  gv:red "231";
+  gv:blue "138";
+  gv:green "184";
+  gv:score "5.2445561000000005";
+  gv:coverage "3.3133332"
+], [
+  gv:hex "843e1f";
+  gv:red "132";
+  gv:blue "31";
+  gv:green "62";
+  gv:score "4.3903891";
+  gv:coverage "0.74"
+], [
+  gv:hex "612d10";
+  gv:red "97";
+  gv:blue "16";
+  gv:green "45";
+  gv:score "4.0003128";
+  gv:coverage "0.71333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.25664400000001"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "62.548327"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "55.969757"
+];
+    w:bagOfWords "1926\nANTONIN RODET\nProduce\nO\nFran Coe\nARCHAT\nCONTENTS: 1 Pint 8 Fluid Ounce\nAlcohol by volume 13\nANTONIN RODET\nMAITRE DE CKAIS\nMERCU\nBOURGOGNE\no o o\nRICHEROURG DU DOMAINE DE LA ROMANEE CONTI\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

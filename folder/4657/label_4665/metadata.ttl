@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4657/label_4665";
+    dct:type "image";
+    w:bagOfWords "BLANCO SECO\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nHARO-BILBAO\n"@spa;
+    gv:color [
+  gv:hex "c7c4ac";
+  gv:red "199";
+  gv:blue "172";
+  gv:green "196";
+  gv:score "24.279638000000002";
+  gv:coverage "9.2866667"
+], [
+  gv:hex "9e9d84";
+  gv:red "158";
+  gv:blue "132";
+  gv:green "157";
+  gv:score "21.81851";
+  gv:coverage "1.8800000000000001"
+], [
+  gv:hex "7a7a60";
+  gv:red "122";
+  gv:blue "96";
+  gv:green "122";
+  gv:score "18.363352";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "e7e0cc";
+  gv:red "231";
+  gv:blue "204";
+  gv:green "224";
+  gv:score "11.947272";
+  gv:coverage "20.926666"
+], [
+  gv:hex "57573c";
+  gv:red "87";
+  gv:blue "60";
+  gv:green "87";
+  gv:score "11.589611";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "757c57";
+  gv:red "117";
+  gv:blue "87";
+  gv:green "124";
+  gv:score "3.6004055";
+  gv:coverage "0.16"
+], [
+  gv:hex "38381f";
+  gv:red "56";
+  gv:blue "31";
+  gv:green "56";
+  gv:score "3.2370511";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "949d79";
+  gv:red "148";
+  gv:blue "121";
+  gv:green "157";
+  gv:score "1.8863402000000002";
+  gv:coverage "0.08"
+], [
+  gv:hex "545b39";
+  gv:red "84";
+  gv:blue "57";
+  gv:green "91";
+  gv:score "1.870786";
+  gv:coverage "0.08"
+], [
+  gv:hex "373f20";
+  gv:red "55";
+  gv:blue "32";
+  gv:green "63";
+  gv:score "0.97136963";
+  gv:coverage "0.046666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.372456"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.123034"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.920199999999994"
+];
+    w:bagOfWords "BLANCO SECO\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nHARO-BILBAO\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

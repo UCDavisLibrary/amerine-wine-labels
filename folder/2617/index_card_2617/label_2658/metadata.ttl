@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2658";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "3H i-Vent\n"@fra;
+    gv:color [
+  gv:hex "dfba89";
+  gv:red "223";
+  gv:blue "137";
+  gv:green "186";
+  gv:score "23.474523";
+  gv:coverage "5.88"
+], [
+  gv:hex "dfc29f";
+  gv:red "223";
+  gv:blue "159";
+  gv:green "194";
+  gv:score "20.156175";
+  gv:coverage "25.186667"
+], [
+  gv:hex "be9a68";
+  gv:red "190";
+  gv:blue "104";
+  gv:green "154";
+  gv:score "7.1890220000000005";
+  gv:coverage "1.6866666999999997"
+], [
+  gv:hex "c19667";
+  gv:red "193";
+  gv:blue "103";
+  gv:green "150";
+  gv:score "5.4067139";
+  gv:coverage "1.1533333"
+], [
+  gv:hex "e1b586";
+  gv:red "225";
+  gv:blue "134";
+  gv:green "181";
+  gv:score "5.304869999999999";
+  gv:coverage "1.02"
+], [
+  gv:hex "976e42";
+  gv:red "151";
+  gv:blue "66";
+  gv:green "110";
+  gv:score "5.1526774";
+  gv:coverage "1.1733334"
+], [
+  gv:hex "774d26";
+  gv:red "119";
+  gv:blue "38";
+  gv:green "77";
+  gv:score "5.0479386";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "927246";
+  gv:red "146";
+  gv:blue "70";
+  gv:green "114";
+  gv:score "4.0412437";
+  gv:coverage "1.06"
+], [
+  gv:hex "b59976";
+  gv:red "181";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "3.4610704";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "e7b494";
+  gv:red "231";
+  gv:blue "148";
+  gv:green "180";
+  gv:score "2.7264597000000004";
+  gv:coverage "0.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.587549"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "61.48814"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "60.852432"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "58.489835"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.729456"
+];
+    w:bagOfWords "3H i-Vent\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

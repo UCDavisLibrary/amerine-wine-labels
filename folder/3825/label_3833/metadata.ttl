@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3825/label_3833";
+    dct:type "image";
+    w:bagOfWords "AL ABFULL\nNATURREINER FRANKEN WEIN\n1951 er\niirzburger Innere Leifte\nRiesling\nBeerenauslefe\nOEK ELLER\n"@deu;
+    gv:color [
+  gv:hex "8f743a";
+  gv:red "143";
+  gv:blue "58";
+  gv:green "116";
+  gv:score "14.527625";
+  gv:coverage "1.48"
+], [
+  gv:hex "b42e11";
+  gv:red "180";
+  gv:blue "17";
+  gv:green "46";
+  gv:score "1.1477023";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "321100";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "17";
+  gv:score "0.1837206";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "ea706b";
+  gv:red "234";
+  gv:blue "107";
+  gv:green "112";
+  gv:score "0.14104645999999998";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "b4965a";
+  gv:red "180";
+  gv:blue "90";
+  gv:green "150";
+  gv:score "12.275805";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "dfc188";
+  gv:red "223";
+  gv:blue "136";
+  gv:green "193";
+  gv:score "9.43137";
+  gv:coverage "1.44"
+], [
+  gv:hex "dcc5a3";
+  gv:red "220";
+  gv:blue "163";
+  gv:green "197";
+  gv:score "6.8859585";
+  gv:coverage "7.0066668"
+], [
+  gv:hex "70551c";
+  gv:red "112";
+  gv:blue "28";
+  gv:green "85";
+  gv:score "6.4692341";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "927326";
+  gv:red "146";
+  gv:blue "38";
+  gv:green "115";
+  gv:score "5.2773707000000005";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "754c18";
+  gv:red "117";
+  gv:blue "24";
+  gv:green "76";
+  gv:score "4.7938127";
+  gv:coverage "0.46666664999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "70.815718"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.32444"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "55.875409"
+];
+    w:bagOfWords "AL ABFULL\nNATURREINER FRANKEN WEIN\n1951 er\niirzburger Innere Leifte\nRiesling\nBeerenauslefe\nOEK ELLER\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

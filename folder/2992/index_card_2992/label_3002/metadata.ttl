@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_3002";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "DE SE NS 74\nCERONS\nM. FAU VARQUE & Co.\nNAM\n"@fra;
+    gv:color [
+  gv:hex "ecbf6d";
+  gv:red "236";
+  gv:blue "109";
+  gv:green "191";
+  gv:score "15.954697000000001";
+  gv:coverage "3.7933334999999997"
+], [
+  gv:hex "39331b";
+  gv:red "57";
+  gv:blue "27";
+  gv:green "51";
+  gv:score "2.9022498";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "53544e";
+  gv:red "83";
+  gv:blue "78";
+  gv:green "84";
+  gv:score "2.5300061";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "e8c282";
+  gv:red "232";
+  gv:blue "130";
+  gv:green "194";
+  gv:score "15.077268";
+  gv:coverage "4.5733333"
+], [
+  gv:hex "eeb966";
+  gv:red "238";
+  gv:blue "102";
+  gv:green "185";
+  gv:score "12.536246";
+  gv:coverage "3.7666667"
+], [
+  gv:hex "c58e38";
+  gv:red "197";
+  gv:blue "56";
+  gv:green "142";
+  gv:score "9.8866694";
+  gv:coverage "2.0066667"
+], [
+  gv:hex "a97121";
+  gv:red "169";
+  gv:blue "33";
+  gv:green "113";
+  gv:score "6.954503099999999";
+  gv:coverage "1.82"
+], [
+  gv:hex "bb975b";
+  gv:red "187";
+  gv:blue "91";
+  gv:green "151";
+  gv:score "4.8859376";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "9b7940";
+  gv:red "155";
+  gv:blue "64";
+  gv:green "121";
+  gv:score "3.1452987";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "c2955a";
+  gv:red "194";
+  gv:blue "90";
+  gv:green "149";
+  gv:score "2.4545578";
+  gv:coverage "0.62666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "63.361835"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.564915000000006"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "55.634344"
+];
+    w:bagOfWords "DE SE NS 74\nCERONS\nM. FAU VARQUE & Co.\nNAM\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

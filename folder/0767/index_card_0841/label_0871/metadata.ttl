@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0871";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "CHAMPAGNE\nTRADE\n& C\nMARK\nPRE A\nomammerce.\n"@fra;
+    gv:color [
+  gv:hex "d5c4ab";
+  gv:red "213";
+  gv:blue "171";
+  gv:green "196";
+  gv:score "38.923794";
+  gv:coverage "18.006666"
+], [
+  gv:hex "ac9a7d";
+  gv:red "172";
+  gv:blue "125";
+  gv:green "154";
+  gv:score "30.455965000000003";
+  gv:coverage "2.2466667"
+], [
+  gv:hex "8a785b";
+  gv:red "138";
+  gv:blue "91";
+  gv:green "120";
+  gv:score "13.990717";
+  gv:coverage "0.90666665"
+], [
+  gv:hex "ebdbc3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "219";
+  gv:score "10.719337";
+  gv:coverage "13.120000000000001"
+], [
+  gv:hex "66573e";
+  gv:red "102";
+  gv:blue "62";
+  gv:green "87";
+  gv:score "2.4595758";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "907c51";
+  gv:red "144";
+  gv:blue "81";
+  gv:green "124";
+  gv:score "1.9043208999999999";
+  gv:coverage "0.1"
+], [
+  gv:hex "a59164";
+  gv:red "165";
+  gv:blue "100";
+  gv:green "145";
+  gv:score "1.1364075";
+  gv:coverage "0.06"
+], [
+  gv:hex "cdb88b";
+  gv:red "205";
+  gv:blue "139";
+  gv:green "184";
+  gv:score "0.12642513";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "725f37";
+  gv:red "114";
+  gv:blue "55";
+  gv:green "95";
+  gv:score "0.09884290000000001";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "eae3d9";
+  gv:red "234";
+  gv:blue "217";
+  gv:green "227";
+  gv:score "0.0436875";
+  gv:coverage "62.53999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.504491"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.784940999999996"
+];
+    w:bagOfWords "CHAMPAGNE\nTRADE\n& C\nMARK\nPRE A\nomammerce.\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1457";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "NATURAL FERMENTATION IN THE BOTTLE\nCOORS\nAMERICAN CHAMPAGNE\nALCOHOL 12% BY VOLUME\nNET CONTENTS: 4/5 QUART\nAMERICAN PRODUCED & BOTTLED BY\nU.S.A.\nWINE CO\nESTABL. 1859 x ST. LOUIS B.W. N0.8\nMARK REG u. S. PAT. OFF\nTRADE 1942 A W. co. PRINTEo IN u. S. A\n"@eng;
+    gv:color [
+  gv:hex "e9e1da";
+  gv:red "233";
+  gv:blue "218";
+  gv:green "225";
+  gv:score "81.36834499999999";
+  gv:coverage "57.206666"
+], [
+  gv:hex "160e0b";
+  gv:red "22";
+  gv:blue "11";
+  gv:green "14";
+  gv:score "5.5166934";
+  gv:coverage "4.1666668"
+], [
+  gv:hex "2b1509";
+  gv:red "43";
+  gv:blue "9";
+  gv:green "21";
+  gv:score "0.17498727";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "6c4933";
+  gv:red "108";
+  gv:blue "51";
+  gv:green "73";
+  gv:score "0.13040564";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "9a3826";
+  gv:red "154";
+  gv:blue "38";
+  gv:green "56";
+  gv:score "0.08301148800000001";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "dbd0c7";
+  gv:red "219";
+  gv:blue "199";
+  gv:green "208";
+  gv:score "5.5328038";
+  gv:coverage "4.1866668"
+], [
+  gv:hex "38302d";
+  gv:red "56";
+  gv:blue "45";
+  gv:green "48";
+  gv:score "1.7836895";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "efdbcb";
+  gv:red "239";
+  gv:blue "203";
+  gv:green "219";
+  gv:score "1.4104501";
+  gv:coverage "1.4533333000000002"
+], [
+  gv:hex "59524e";
+  gv:red "89";
+  gv:blue "78";
+  gv:green "82";
+  gv:score "1.1426713";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "e0c6b2";
+  gv:red "224";
+  gv:blue "178";
+  gv:green "198";
+  gv:score "0.74259643";
+  gv:coverage "0.88666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.171451"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.2119"
+];
+    w:bagOfWords "NATURAL FERMENTATION IN THE BOTTLE\nCOORS\nAMERICAN CHAMPAGNE\nALCOHOL 12% BY VOLUME\nNET CONTENTS: 4/5 QUART\nAMERICAN PRODUCED & BOTTLED BY\nU.S.A.\nWINE CO\nESTABL. 1859 x ST. LOUIS B.W. N0.8\nMARK REG u. S. PAT. OFF\nTRADE 1942 A W. co. PRINTEo IN u. S. A\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

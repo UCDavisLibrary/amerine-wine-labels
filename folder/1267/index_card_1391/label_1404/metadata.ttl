@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1404";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "LEBLANC\nNDE2E\nM.\nGRAN VINO\nReg. U. S. Pat. Off.\n"@spa;
+    gv:color [
+  gv:hex "d2c3af";
+  gv:red "210";
+  gv:blue "175";
+  gv:green "195";
+  gv:score "47.094";
+  gv:coverage "18.986666"
+], [
+  gv:hex "ae9f8b";
+  gv:red "174";
+  gv:blue "139";
+  gv:green "159";
+  gv:score "22.515091";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "e9dbc8";
+  gv:red "233";
+  gv:blue "200";
+  gv:green "219";
+  gv:score "18.440284000000002";
+  gv:coverage "16.84"
+], [
+  gv:hex "877860";
+  gv:red "135";
+  gv:blue "96";
+  gv:green "120";
+  gv:score "6.2568814";
+  gv:coverage "0.3"
+], [
+  gv:hex "d2c5b8";
+  gv:red "210";
+  gv:blue "184";
+  gv:green "197";
+  gv:score "4.0767677";
+  gv:coverage "6.8533331"
+], [
+  gv:hex "e7dace";
+  gv:red "231";
+  gv:blue "206";
+  gv:green "218";
+  gv:score "1.0284182";
+  gv:coverage "55.526668"
+], [
+  gv:hex "6b5b41";
+  gv:red "107";
+  gv:blue "65";
+  gv:green "91";
+  gv:score "0.31386912";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "b8ab9e";
+  gv:red "184";
+  gv:blue "158";
+  gv:green "171";
+  gv:score "0.20661388999999997";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "5d554b";
+  gv:red "93";
+  gv:blue "75";
+  gv:green "85";
+  gv:score "0.026231477";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "7c776c";
+  gv:red "124";
+  gv:blue "108";
+  gv:green "119";
+  gv:score "0.024232955";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.664046"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.276235"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.006691000000004"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.495494"
+];
+    w:bagOfWords "LEBLANC\nNDE2E\nM.\nGRAN VINO\nReg. U. S. Pat. Off.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

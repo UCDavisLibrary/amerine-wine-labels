@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2441/label_2463";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "1929\nPRODUCE\nOF FRANCE\nCOGNE\nGRAND\nUNS OR BO\nComte d the\nBECAUNE\nALCOHOL BY VOLUME\nCONTENTS 1 PINT 8 FLUID 02.\n"@fra;
+    gv:color [
+  gv:hex "e2c4a1";
+  gv:red "226";
+  gv:blue "161";
+  gv:green "196";
+  gv:score "47.235292";
+  gv:coverage "19.040000000000003"
+], [
+  gv:hex "e2be91";
+  gv:red "226";
+  gv:blue "145";
+  gv:green "190";
+  gv:score "13.565748999999999";
+  gv:coverage "4.64"
+], [
+  gv:hex "e3b585";
+  gv:red "227";
+  gv:blue "133";
+  gv:green "181";
+  gv:score "7.404660000000001";
+  gv:coverage "3.6733333"
+], [
+  gv:hex "b59774";
+  gv:red "181";
+  gv:blue "116";
+  gv:green "151";
+  gv:score "6.5479449999999995";
+  gv:coverage "2.02"
+], [
+  gv:hex "f3d7b6";
+  gv:red "243";
+  gv:blue "182";
+  gv:green "215";
+  gv:score "6.124622";
+  gv:coverage "7.5933329999999994"
+], [
+  gv:hex "c39364";
+  gv:red "195";
+  gv:blue "100";
+  gv:green "147";
+  gv:score "3.0613797000000003";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "9c7044";
+  gv:red "156";
+  gv:blue "68";
+  gv:green "112";
+  gv:score "3.0009441000000003";
+  gv:coverage "0.4"
+], [
+  gv:hex "937655";
+  gv:red "147";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "2.5711933";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "b8966c";
+  gv:red "184";
+  gv:blue "108";
+  gv:green "150";
+  gv:score "2.5175943999999997";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "b79170";
+  gv:red "183";
+  gv:blue "112";
+  gv:green "145";
+  gv:score "1.7590947";
+  gv:coverage "0.40666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.640972"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "56.40280800000001"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.701756"
+];
+    w:bagOfWords "1929\nPRODUCE\nOF FRANCE\nCOGNE\nGRAND\nUNS OR BO\nComte d the\nBECAUNE\nALCOHOL BY VOLUME\nCONTENTS 1 PINT 8 FLUID 02.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

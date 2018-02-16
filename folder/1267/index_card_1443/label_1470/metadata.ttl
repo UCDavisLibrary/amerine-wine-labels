@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1470";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "CONTENTS 4/5 QUART\n2 ALCOHOL BY VOLUME\nA S CH DO N MAKER SELECT ON\nCAN AND A CUA\nA LIGHT WHITE WINE MADE FROM DE LAWARE GRAPES\nBOTTLED AT THE WINERY BY\nWIDMER'S WINE CELLARS. INC\nNAPLES, CA NANDA I GU A DISTRICT, NEW YOR K\nSELECTED BY\nFRANK & Co., INC.\nW O N E M E R C H A N T S\nNEW YORK, N. Y.\n"@eng;
+    gv:color [
+  gv:hex "c9c2a2";
+  gv:red "201";
+  gv:blue "162";
+  gv:green "194";
+  gv:score "31.722869999999997";
+  gv:coverage "15.453332999999999"
+], [
+  gv:hex "a49c7f";
+  gv:red "164";
+  gv:blue "127";
+  gv:green "156";
+  gv:score "30.221327999999996";
+  gv:coverage "6.6133335"
+], [
+  gv:hex "807a5e";
+  gv:red "128";
+  gv:blue "94";
+  gv:green "122";
+  gv:score "22.557095";
+  gv:coverage "3.1266667"
+], [
+  gv:hex "5d573e";
+  gv:red "93";
+  gv:blue "62";
+  gv:green "87";
+  gv:score "8.678649400000001";
+  gv:coverage "1.06"
+], [
+  gv:hex "d2c5b9";
+  gv:red "210";
+  gv:blue "185";
+  gv:green "197";
+  gv:score "1.952517";
+  gv:coverage "12.920000000000002"
+], [
+  gv:hex "e6dac1";
+  gv:red "230";
+  gv:blue "193";
+  gv:green "218";
+  gv:score "1.7414903";
+  gv:coverage "3.2066666"
+], [
+  gv:hex "3e3820";
+  gv:red "62";
+  gv:blue "32";
+  gv:green "56";
+  gv:score "1.7261434";
+  gv:coverage "0.24"
+], [
+  gv:hex "e8dacf";
+  gv:red "232";
+  gv:blue "207";
+  gv:green "218";
+  gv:score "0.5847621199999999";
+  gv:coverage "56.379999999999995"
+], [
+  gv:hex "a99d92";
+  gv:red "169";
+  gv:blue "146";
+  gv:green "157";
+  gv:score "0.37925539";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "c1c79b";
+  gv:red "193";
+  gv:blue "155";
+  gv:green "199";
+  gv:score "0.23569362000000002";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "58.657008"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.614052"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "55.750614"
+];
+    w:bagOfWords "CONTENTS 4/5 QUART\n2 ALCOHOL BY VOLUME\nA S CH DO N MAKER SELECT ON\nCAN AND A CUA\nA LIGHT WHITE WINE MADE FROM DE LAWARE GRAPES\nBOTTLED AT THE WINERY BY\nWIDMER'S WINE CELLARS. INC\nNAPLES, CA NANDA I GU A DISTRICT, NEW YOR K\nSELECTED BY\nFRANK & Co., INC.\nW O N E M E R C H A N T S\nNEW YORK, N. Y.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

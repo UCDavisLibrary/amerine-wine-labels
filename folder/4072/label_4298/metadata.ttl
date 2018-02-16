@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4298";
+    dct:type "image";
+    w:bagOfWords "CHAMPAGNE\nBEERNAY\nGrande Cuvée\n25\n"@fra;
+    gv:color [
+  gv:hex "d3c8c2";
+  gv:red "211";
+  gv:blue "194";
+  gv:green "200";
+  gv:score "20.809574";
+  gv:coverage "15.926667"
+], [
+  gv:hex "655542";
+  gv:red "101";
+  gv:blue "66";
+  gv:green "85";
+  gv:score "9.816828399999999";
+  gv:coverage "0.32"
+], [
+  gv:hex "a89988";
+  gv:red "168";
+  gv:blue "136";
+  gv:green "153";
+  gv:score "8.129973";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "4a2e21";
+  gv:red "74";
+  gv:blue "33";
+  gv:green "46";
+  gv:score "4.7267441";
+  gv:coverage "0.1"
+], [
+  gv:hex "e7dcd5";
+  gv:red "231";
+  gv:blue "213";
+  gv:green "220";
+  gv:score "12.790729";
+  gv:coverage "72.986668"
+], [
+  gv:hex "a49a93";
+  gv:red "164";
+  gv:blue "147";
+  gv:green "154";
+  gv:score "7.496137899999999";
+  gv:coverage "0.74"
+], [
+  gv:hex "82735f";
+  gv:red "130";
+  gv:blue "95";
+  gv:green "115";
+  gv:score "6.6496804";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "d8b6b5";
+  gv:red "216";
+  gv:blue "181";
+  gv:green "182";
+  gv:score "5.9036214";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "cdc0ad";
+  gv:red "205";
+  gv:blue "173";
+  gv:green "192";
+  gv:score "5.6603424";
+  gv:coverage "5.6133334"
+], [
+  gv:hex "bf9b9a";
+  gv:red "191";
+  gv:blue "154";
+  gv:green "155";
+  gv:score "3.0664016";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.496355"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "53.70129300000001"
+];
+    w:bagOfWords "CHAMPAGNE\nBEERNAY\nGrande Cuvée\n25\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

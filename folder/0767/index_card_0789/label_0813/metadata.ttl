@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0813";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "ANJOU\nCOTEAUX DE\nSAU MUR\nAPPELLATION ANJOU SAUMUR CONTROLEE\nPARO.NEGOCIANTS ELEVEURS.MEZE (H\nT) PARIS (12\n"@fra;
+    gv:color [
+  gv:hex "e8c487";
+  gv:red "232";
+  gv:blue "135";
+  gv:green "196";
+  gv:score "50.13203000000001";
+  gv:coverage "16.753334"
+], [
+  gv:hex "8e410a";
+  gv:red "142";
+  gv:blue "10";
+  gv:green "65";
+  gv:score "1.5992027";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "503103";
+  gv:red "80";
+  gv:blue "3";
+  gv:green "49";
+  gv:score "0.8372026499999999";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "f8d89d";
+  gv:red "248";
+  gv:blue "157";
+  gv:green "216";
+  gv:score "11.955607";
+  gv:coverage "4.0666666"
+], [
+  gv:hex "321500";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "21";
+  gv:score "0.11173056";
+  gv:coverage "0.04"
+], [
+  gv:hex "be9a5b";
+  gv:red "190";
+  gv:blue "91";
+  gv:green "154";
+  gv:score "10.980874";
+  gv:coverage "3.4000000000000004"
+], [
+  gv:hex "bd9748";
+  gv:red "189";
+  gv:blue "72";
+  gv:green "151";
+  gv:score "6.693259599999999";
+  gv:coverage "2.3066666"
+], [
+  gv:hex "deb764";
+  gv:red "222";
+  gv:blue "100";
+  gv:green "183";
+  gv:score "2.9827699";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "95743c";
+  gv:red "149";
+  gv:blue "60";
+  gv:green "116";
+  gv:score "2.9256245";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "f5be80";
+  gv:red "245";
+  gv:blue "128";
+  gv:green "190";
+  gv:score "1.8542139";
+  gv:coverage "0.33999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.965075"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.376725"
+];
+    w:bagOfWords "ANJOU\nCOTEAUX DE\nSAU MUR\nAPPELLATION ANJOU SAUMUR CONTROLEE\nPARO.NEGOCIANTS ELEVEURS.MEZE (H\nT) PARIS (12\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

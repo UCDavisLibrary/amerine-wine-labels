@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0025";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "a\nSTRA\nREGI GRAN PREMIO ExposicioN INTERNACIONAL\nDE BARCELONA 1929\n2 CONGREso INTERNACIONAL\nMEDALLADEOR\nDE LA VINA Y DEL Registro Embotelladores 382\n"@spa;
+    gv:color [
+  gv:hex "d6c2a9";
+  gv:red "214";
+  gv:blue "169";
+  gv:green "194";
+  gv:score "33.977827";
+  gv:coverage "23.533334"
+], [
+  gv:hex "d58a3a";
+  gv:red "213";
+  gv:blue "58";
+  gv:green "138";
+  gv:score "4.9150258000000004";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "e1811e";
+  gv:red "225";
+  gv:blue "30";
+  gv:green "129";
+  gv:score "1.5911771000000001";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "682300";
+  gv:red "104";
+  gv:blue "undefined";
+  gv:green "35";
+  gv:score "0.33198458";
+  gv:coverage "0.12"
+], [
+  gv:hex "ad9a84";
+  gv:red "173";
+  gv:blue "132";
+  gv:green "154";
+  gv:score "16.194373000000002";
+  gv:coverage "3.6133334"
+], [
+  gv:hex "86745f";
+  gv:red "134";
+  gv:blue "95";
+  gv:green "116";
+  gv:score "12.6352";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "655440";
+  gv:red "101";
+  gv:blue "64";
+  gv:green "84";
+  gv:score "7.6806583";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "ecd9c2";
+  gv:red "236";
+  gv:blue "194";
+  gv:green "217";
+  gv:score "5.2925344999999995";
+  gv:coverage "9.0066664"
+], [
+  gv:hex "3b0300";
+  gv:red "59";
+  gv:blue "undefined";
+  gv:green "3";
+  gv:score "0.040423046";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "b26d26";
+  gv:red "178";
+  gv:blue "38";
+  gv:green "109";
+  gv:score "2.7279967";
+  gv:coverage "0.75333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.048547"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.77067"
+];
+    w:bagOfWords "a\nSTRA\nREGI GRAN PREMIO ExposicioN INTERNACIONAL\nDE BARCELONA 1929\n2 CONGREso INTERNACIONAL\nMEDALLADEOR\nDE LA VINA Y DEL Registro Embotelladores 382\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

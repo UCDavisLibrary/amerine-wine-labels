@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3130";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "GRAN D VIN\nENTRE-DEUX-MERS\nAPPELLATION CONTROLEE\nDEPOSE N. 60\nNOLASQUE BORDEAUX\n"@fra;
+    gv:color [
+  gv:hex "d2bea5";
+  gv:red "210";
+  gv:blue "165";
+  gv:green "190";
+  gv:score "41.928148";
+  gv:coverage "23.433334"
+], [
+  gv:hex "af9d86";
+  gv:red "175";
+  gv:blue "134";
+  gv:green "157";
+  gv:score "35.948884";
+  gv:coverage "8.253333"
+], [
+  gv:hex "827863";
+  gv:red "130";
+  gv:blue "99";
+  gv:green "120";
+  gv:score "12.386619";
+  gv:coverage "2.6666667"
+], [
+  gv:hex "5f5946";
+  gv:red "95";
+  gv:blue "70";
+  gv:green "89";
+  gv:score "3.7272204";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "555549";
+  gv:red "85";
+  gv:blue "73";
+  gv:green "85";
+  gv:score "1.6692106000000002";
+  gv:coverage "0.4"
+], [
+  gv:hex "7a796b";
+  gv:red "122";
+  gv:blue "107";
+  gv:green "121";
+  gv:score "1.5952658000000002";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "e7d8c3";
+  gv:red "231";
+  gv:blue "195";
+  gv:green "216";
+  gv:score "0.67633637";
+  gv:coverage "5.7133332"
+], [
+  gv:hex "393b2e";
+  gv:red "57";
+  gv:blue "46";
+  gv:green "59";
+  gv:score "0.61377361";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "9a9689";
+  gv:red "154";
+  gv:blue "137";
+  gv:green "150";
+  gv:score "0.59591406";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "403e2e";
+  gv:red "64";
+  gv:blue "46";
+  gv:green "62";
+  gv:score "0.35976451";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "63.917553000000005"
+], [
+  gv:mid <https://g.co/kg/m/01dl3j>;
+  gv:desc "banknote";
+  gv:score "62.522763000000005"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "58.977807000000006"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "55.361819000000004"
+];
+    w:bagOfWords "GRAN D VIN\nENTRE-DEUX-MERS\nAPPELLATION CONTROLEE\nDEPOSE N. 60\nNOLASQUE BORDEAUX\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

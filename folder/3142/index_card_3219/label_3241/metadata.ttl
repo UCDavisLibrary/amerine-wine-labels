@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3219/label_3241";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "RED BURGUNDY WINE\nCLOS DE VOUGEOT\nPRODUCE OF\nFRANCE\nPrERRE PONNELLE\nPROPRIETAIRE & N EGO CIANT\nA BEA UNE COTE. D'OR)\nDE POSE\n"@fra;
+    gv:color [
+  gv:hex "bd9962";
+  gv:red "189";
+  gv:blue "98";
+  gv:green "153";
+  gv:score "11.489953";
+  gv:coverage "3"
+], [
+  gv:hex "dcb984";
+  gv:red "220";
+  gv:blue "132";
+  gv:green "185";
+  gv:score "11.243134000000001";
+  gv:coverage "4.3533333"
+], [
+  gv:hex "c6945d";
+  gv:red "198";
+  gv:blue "93";
+  gv:green "148";
+  gv:score "10.153135";
+  gv:coverage "2.9000000000000004"
+], [
+  gv:hex "996e3b";
+  gv:red "153";
+  gv:blue "59";
+  gv:green "110";
+  gv:score "8.2763441";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "937341";
+  gv:red "147";
+  gv:blue "65";
+  gv:green "115";
+  gv:score "7.7379435";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "724b1e";
+  gv:red "114";
+  gv:blue "30";
+  gv:green "75";
+  gv:score "6.9725886";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "ce994d";
+  gv:red "206";
+  gv:blue "77";
+  gv:green "153";
+  gv:score "5.9366763";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "dcc19f";
+  gv:red "220";
+  gv:blue "159";
+  gv:green "193";
+  gv:score "5.5541545";
+  gv:coverage "10.193333"
+], [
+  gv:hex "e2b17b";
+  gv:red "226";
+  gv:blue "123";
+  gv:green "177";
+  gv:score "4.5122195";
+  gv:coverage "1.58"
+], [
+  gv:hex "704e34";
+  gv:red "112";
+  gv:blue "52";
+  gv:green "78";
+  gv:score "3.1791579";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.016868"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "RED BURGUNDY WINE\nCLOS DE VOUGEOT\nPRODUCE OF\nFRANCE\nPrERRE PONNELLE\nPROPRIETAIRE & N EGO CIANT\nA BEA UNE COTE. D'OR)\nDE POSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

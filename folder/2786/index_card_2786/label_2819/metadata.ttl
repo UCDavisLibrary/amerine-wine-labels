@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2786/label_2819";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "GRAVES\nAppellation Controlée\nLROSENHEIM B.Fus\nBORDEAUX\n"@fra;
+    gv:color [
+  gv:hex "dac6ac";
+  gv:red "218";
+  gv:blue "172";
+  gv:green "198";
+  gv:score "19.592014";
+  gv:coverage "11.093333"
+], [
+  gv:hex "8b3514";
+  gv:red "139";
+  gv:blue "20";
+  gv:green "53";
+  gv:score "15.887742";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "907646";
+  gv:red "144";
+  gv:blue "70";
+  gv:green "118";
+  gv:score "10.522798";
+  gv:coverage "3.46"
+], [
+  gv:hex "962412";
+  gv:red "150";
+  gv:blue "18";
+  gv:green "36";
+  gv:score "6.1249807";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "e9d9c4";
+  gv:red "233";
+  gv:blue "196";
+  gv:green "217";
+  gv:score "5.6284453999999995";
+  gv:coverage "9.8333336"
+], [
+  gv:hex "752107";
+  gv:red "117";
+  gv:blue "7";
+  gv:green "33";
+  gv:score "5.24937";
+  gv:coverage "0.18"
+], [
+  gv:hex "ddbb88";
+  gv:red "221";
+  gv:blue "136";
+  gv:green "187";
+  gv:score "4.3437852999999995";
+  gv:coverage "1.1733334"
+], [
+  gv:hex "ac9b84";
+  gv:red "172";
+  gv:blue "132";
+  gv:green "155";
+  gv:score "4.3123294";
+  gv:coverage "2.0066667"
+], [
+  gv:hex "824b1e";
+  gv:red "130";
+  gv:blue "30";
+  gv:green "75";
+  gv:score "3.7656471";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "8c7a5f";
+  gv:red "140";
+  gv:blue "95";
+  gv:green "122";
+  gv:score "3.4692033999999996";
+  gv:coverage "1.0666666999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.840132"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GRAVES\nAppellation Controlée\nLROSENHEIM B.Fus\nBORDEAUX\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0103";
+    dct:type "image";
+    dc:subject "Italy@en";
+    gv:color [
+  gv:hex "8a7551";
+  gv:red "138";
+  gv:blue "81";
+  gv:green "117";
+  gv:score "37.665609";
+  gv:coverage "3.0933334"
+], [
+  gv:hex "aa9470";
+  gv:red "170";
+  gv:blue "112";
+  gv:green "148";
+  gv:score "24.093905";
+  gv:coverage "2.1933333999999998"
+], [
+  gv:hex "695433";
+  gv:red "105";
+  gv:blue "51";
+  gv:green "84";
+  gv:score "20.324261";
+  gv:coverage "1.92"
+], [
+  gv:hex "d0bd9f";
+  gv:red "208";
+  gv:blue "159";
+  gv:green "189";
+  gv:score "5.04555";
+  gv:coverage "12.493333"
+], [
+  gv:hex "4b381a";
+  gv:red "75";
+  gv:blue "26";
+  gv:green "56";
+  gv:score "4.7065407";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "6a532b";
+  gv:red "106";
+  gv:blue "43";
+  gv:green "83";
+  gv:score "2.9343589999999997";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "8d754c";
+  gv:red "141";
+  gv:blue "76";
+  gv:green "117";
+  gv:score "2.7660124";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "eadbc3";
+  gv:red "234";
+  gv:blue "195";
+  gv:green "219";
+  gv:score "1.6838678999999999";
+  gv:coverage "26.206666000000002"
+], [
+  gv:hex "a18a60";
+  gv:red "161";
+  gv:blue "96";
+  gv:green "138";
+  gv:score "0.48950082";
+  gv:coverage "0.04"
+], [
+  gv:hex "4e3912";
+  gv:red "78";
+  gv:blue "18";
+  gv:green "57";
+  gv:score "0.21184012";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0463sg>;
+  gv:desc "fashion accessory";
+  gv:score "70.322853"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.923871000000005"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "56.51353"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "55.627877000000005"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.267242"
+];
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

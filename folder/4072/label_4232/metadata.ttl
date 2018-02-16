@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4232";
+    dct:type "image";
+    w:bagOfWords "ARISETTE\nDE\nF R A N C E\n"@fra;
+    gv:color [
+  gv:hex "d0bfa7";
+  gv:red "208";
+  gv:blue "167";
+  gv:green "191";
+  gv:score "30.260589999999997";
+  gv:coverage "15.506666999999998"
+], [
+  gv:hex "893920";
+  gv:red "137";
+  gv:blue "32";
+  gv:green "57";
+  gv:score "9.3555413";
+  gv:coverage "0.36"
+], [
+  gv:hex "2a2e44";
+  gv:red "42";
+  gv:blue "68";
+  gv:green "46";
+  gv:score "1.9678162";
+  gv:coverage "0.8"
+], [
+  gv:hex "b6a386";
+  gv:red "182";
+  gv:blue "134";
+  gv:green "163";
+  gv:score "10.727907";
+  gv:coverage "2.1933333999999998"
+], [
+  gv:hex "c49579";
+  gv:red "196";
+  gv:blue "121";
+  gv:green "149";
+  gv:score "5.641992";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "e4b499";
+  gv:red "228";
+  gv:blue "153";
+  gv:green "180";
+  gv:score "4.783322999999999";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "7d4828";
+  gv:red "125";
+  gv:blue "40";
+  gv:green "72";
+  gv:score "4.2106889";
+  gv:coverage "0.2"
+], [
+  gv:hex "eadac4";
+  gv:red "234";
+  gv:blue "196";
+  gv:green "218";
+  gv:score "3.1045013999999997";
+  gv:coverage "8.713333299999999"
+], [
+  gv:hex "9b6642";
+  gv:red "155";
+  gv:blue "66";
+  gv:green "102";
+  gv:score "2.6896656";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "9c6b51";
+  gv:red "156";
+  gv:blue "81";
+  gv:green "107";
+  gv:score "2.5905022";
+  gv:coverage "0.18666666999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.734461"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "62.684238"
+];
+    w:bagOfWords "ARISETTE\nDE\nF R A N C E\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

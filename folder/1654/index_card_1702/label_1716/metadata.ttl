@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1654/index_card_1702/label_1716";
+    dct:type "image";
+    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
+    w:bagOfWords "GV\nVIN BLANC FIN\nDOMAINE ZICRON\nPRODUCE OF ISRAEL\nCont. 750 Mililitre ?mp 150 Ty\nCARMEL ORIENTAL\n"@grc;
+    gv:color [
+  gv:hex "dbb05e";
+  gv:red "219";
+  gv:blue "94";
+  gv:green "176";
+  gv:score "28.912026";
+  gv:coverage "3.9933335"
+], [
+  gv:hex "ecd6ae";
+  gv:red "236";
+  gv:blue "174";
+  gv:green "214";
+  gv:score "0.8314231400000001";
+  gv:coverage "35.08"
+], [
+  gv:hex "c39c4d";
+  gv:red "195";
+  gv:blue "77";
+  gv:green "156";
+  gv:score "17.986161";
+  gv:coverage "2.5933333"
+], [
+  gv:hex "d3b273";
+  gv:red "211";
+  gv:blue "115";
+  gv:green "178";
+  gv:score "10.680534";
+  gv:coverage "2.8333334000000003"
+], [
+  gv:hex "be9b59";
+  gv:red "190";
+  gv:blue "89";
+  gv:green "155";
+  gv:score "10.250943999999999";
+  gv:coverage "1.82"
+], [
+  gv:hex "9e792d";
+  gv:red "158";
+  gv:blue "45";
+  gv:green "121";
+  gv:score "6.138806";
+  gv:coverage "1.08"
+], [
+  gv:hex "dfad58";
+  gv:red "223";
+  gv:blue "88";
+  gv:green "173";
+  gv:score "4.277161899999999";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "8e7234";
+  gv:red "142";
+  gv:blue "52";
+  gv:green "114";
+  gv:score "3.051752";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "c99947";
+  gv:red "201";
+  gv:blue "71";
+  gv:green "153";
+  gv:score "3.0104948";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "9f7227";
+  gv:red "159";
+  gv:blue "39";
+  gv:green "114";
+  gv:score "2.8321661000000002";
+  gv:coverage "0.46666664999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.3716"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GV\nVIN BLANC FIN\nDOMAINE ZICRON\nPRODUCE OF ISRAEL\nCont. 750 Mililitre ?mp 150 Ty\nCARMEL ORIENTAL\n"@grc;
+    wdt:P219 "grc";
+    w:WineType w:Still;
+    wdt:P298 "GRC".

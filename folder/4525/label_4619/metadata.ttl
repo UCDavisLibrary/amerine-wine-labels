@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4619";
+    dct:type "image";
+    w:bagOfWords "DULCE PRIMERA\n(ESPANA)\nN 2 O\n"@spa;
+    gv:color [
+  gv:hex "a39a91";
+  gv:red "163";
+  gv:blue "145";
+  gv:green "154";
+  gv:score "37.33066";
+  gv:coverage "3.5066668"
+], [
+  gv:hex "c9c0b7";
+  gv:red "201";
+  gv:blue "183";
+  gv:green "192";
+  gv:score "28.668669";
+  gv:coverage "16.093333"
+], [
+  gv:hex "81786f";
+  gv:red "129";
+  gv:blue "111";
+  gv:green "120";
+  gv:score "20.370176";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "e6ddd4";
+  gv:red "230";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "12.127277";
+  gv:coverage "73.646665"
+], [
+  gv:hex "3b3225";
+  gv:red "59";
+  gv:blue "37";
+  gv:green "50";
+  gv:score "0.020928742";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "685f56";
+  gv:red "104";
+  gv:blue "86";
+  gv:green "95";
+  gv:score "1.1817535000000001";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "c8bfb0";
+  gv:red "200";
+  gv:blue "176";
+  gv:green "191";
+  gv:score "0.15045709000000002";
+  gv:coverage "2.94"
+], [
+  gv:hex "ada495";
+  gv:red "173";
+  gv:blue "149";
+  gv:green "164";
+  gv:score "0.15007932";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "e1d8c8";
+  gv:red "225";
+  gv:blue "200";
+  gv:green "216";
+  gv:score "3.239703e-7";
+  gv:coverage "2.2399999999999998"
+], [
+  gv:hex "281f13";
+  gv:red "40";
+  gv:blue "19";
+  gv:green "31";
+  gv:score "2.8901806000000002e-9";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.51528300000001"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "53.659451000000004"
+];
+    w:bagOfWords "DULCE PRIMERA\n(ESPANA)\nN 2 O\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0305";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "FIDELIS\nCALIFORNIA\nDUCED AND BOTTLED BY\nSAN FRANCISCO, CALIF.\nB. S. No. 3814\n14TH DIST. CALIF.\nALCOHOL 13 BY VOLUME NET CONTENTS 1 PT. B FL. Dz.\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "d4c0a6";
+  gv:red "212";
+  gv:blue "166";
+  gv:green "192";
+  gv:score "18.655488000000002";
+  gv:coverage "49.94"
+], [
+  gv:hex "8e4023";
+  gv:red "142";
+  gv:blue "35";
+  gv:green "64";
+  gv:score "6.1641119";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "110902";
+  gv:red "17";
+  gv:blue "2";
+  gv:green "9";
+  gv:score "3.1232955";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "b09b82";
+  gv:red "176";
+  gv:blue "130";
+  gv:green "155";
+  gv:score "11.965805";
+  gv:coverage "3.8533334000000004"
+], [
+  gv:hex "877459";
+  gv:red "135";
+  gv:blue "89";
+  gv:green "116";
+  gv:score "8.6342581";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "665339";
+  gv:red "102";
+  gv:blue "57";
+  gv:green "83";
+  gv:score "8.4490329";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "744d33";
+  gv:red "116";
+  gv:blue "51";
+  gv:green "77";
+  gv:score "7.846331600000001";
+  gv:coverage "0.42"
+], [
+  gv:hex "e0b79d";
+  gv:red "224";
+  gv:blue "157";
+  gv:green "183";
+  gv:score "6.553000000000001";
+  gv:coverage "1.9666666"
+], [
+  gv:hex "bf967d";
+  gv:red "191";
+  gv:blue "125";
+  gv:green "150";
+  gv:score "5.7859361";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "986e56";
+  gv:red "152";
+  gv:blue "86";
+  gv:green "110";
+  gv:score "4.841665600000001";
+  gv:coverage "0.5"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "74.137926"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.774035"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "52.302682"
+];
+    w:bagOfWords "FIDELIS\nCALIFORNIA\nDUCED AND BOTTLED BY\nSAN FRANCISCO, CALIF.\nB. S. No. 3814\n14TH DIST. CALIF.\nALCOHOL 13 BY VOLUME NET CONTENTS 1 PT. B FL. Dz.\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

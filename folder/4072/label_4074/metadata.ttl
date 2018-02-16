@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4074";
+    dct:type "image";
+    w:bagOfWords "1886\nDIJON\ns 1889\nMERCURE\nIMP B ARNAUD LYON PARIS\n"@fra;
+    gv:color [
+  gv:hex "dec8a7";
+  gv:red "222";
+  gv:blue "167";
+  gv:green "200";
+  gv:score "56.384391";
+  gv:coverage "25.406668"
+], [
+  gv:hex "6a5432";
+  gv:red "106";
+  gv:blue "50";
+  gv:green "84";
+  gv:score "7.4117742";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "2d1601";
+  gv:red "45";
+  gv:blue "1";
+  gv:green "22";
+  gv:score "0.33555060999999997";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "b19b79";
+  gv:red "177";
+  gv:blue "121";
+  gv:green "155";
+  gv:score "10.378796999999999";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "eed9ba";
+  gv:red "238";
+  gv:blue "186";
+  gv:green "217";
+  gv:score "7.1064606";
+  gv:coverage "5.54"
+], [
+  gv:hex "88724f";
+  gv:red "136";
+  gv:blue "79";
+  gv:green "114";
+  gv:score "6.2827408";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "d6bf8d";
+  gv:red "214";
+  gv:blue "141";
+  gv:green "191";
+  gv:score "4.3550908999999995";
+  gv:coverage "1.9133333"
+], [
+  gv:hex "b09965";
+  gv:red "176";
+  gv:blue "101";
+  gv:green "153";
+  gv:score "4.329598300000001";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "4c3516";
+  gv:red "76";
+  gv:blue "22";
+  gv:green "53";
+  gv:score "1.6096777999999998";
+  gv:coverage "0.24"
+], [
+  gv:hex "67522b";
+  gv:red "103";
+  gv:blue "43";
+  gv:green "82";
+  gv:score "0.8033758";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.931063"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.527866"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "51.359027999999995"
+];
+    w:bagOfWords "1886\nDIJON\ns 1889\nMERCURE\nIMP B ARNAUD LYON PARIS\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

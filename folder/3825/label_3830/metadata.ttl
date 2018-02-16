@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3825/label_3830";
+    dct:type "image";
+    w:bagOfWords "NATURRE IN ER FRANKEN WEIN\nS53 er\nRanders ackerer A\nSpielberg\nRiesling Auslefe\nOFK ELLE\n"@deu;
+    gv:color [
+  gv:hex "947439";
+  gv:red "148";
+  gv:blue "57";
+  gv:green "116";
+  gv:score "12.769697999999998";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "e2c18a";
+  gv:red "226";
+  gv:blue "138";
+  gv:green "193";
+  gv:score "12.185213000000001";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "a42e1e";
+  gv:red "164";
+  gv:blue "30";
+  gv:green "46";
+  gv:score "1.2718727";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "313f40";
+  gv:red "49";
+  gv:blue "64";
+  gv:green "63";
+  gv:score "0.28871628";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "415a56";
+  gv:red "65";
+  gv:blue "86";
+  gv:green "90";
+  gv:score "0.18540957";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "320f00";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "15";
+  gv:score "0.18254244";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "b5955a";
+  gv:red "181";
+  gv:blue "90";
+  gv:green "149";
+  gv:score "11.988743";
+  gv:coverage "1.44"
+], [
+  gv:hex "c68f5e";
+  gv:red "198";
+  gv:blue "94";
+  gv:green "143";
+  gv:score "6.6484317";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "986c36";
+  gv:red "152";
+  gv:blue "54";
+  gv:green "108";
+  gv:score "6.5224728999999995";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "dfc5a1";
+  gv:red "223";
+  gv:blue "161";
+  gv:green "197";
+  gv:score "5.7779316";
+  gv:coverage "4.6666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.19099"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "67.225718"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "52.140271999999996"
+];
+    w:bagOfWords "NATURRE IN ER FRANKEN WEIN\nS53 er\nRanders ackerer A\nSpielberg\nRiesling Auslefe\nOFK ELLE\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

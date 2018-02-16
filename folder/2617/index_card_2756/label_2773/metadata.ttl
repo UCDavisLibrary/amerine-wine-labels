@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2773";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "UX\nGrano doin\nmonopole\nR.C. BRUXELLES G110\n"@fra;
+    gv:color [
+  gv:hex "d9c1a0";
+  gv:red "217";
+  gv:blue "160";
+  gv:green "193";
+  gv:score "13.736809999999998";
+  gv:coverage "31.446666"
+], [
+  gv:hex "c89360";
+  gv:red "200";
+  gv:blue "96";
+  gv:green "147";
+  gv:score "10.115504";
+  gv:coverage "1.6866666999999997"
+], [
+  gv:hex "c83d16";
+  gv:red "200";
+  gv:blue "22";
+  gv:green "61";
+  gv:score "5.835907199999999";
+  gv:coverage "0.5"
+], [
+  gv:hex "964026";
+  gv:red "150";
+  gv:blue "38";
+  gv:green "64";
+  gv:score "3.849851";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "310f00";
+  gv:red "49";
+  gv:blue "undefined";
+  gv:green "15";
+  gv:score "0.17391475";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "eab382";
+  gv:red "234";
+  gv:blue "130";
+  gv:green "179";
+  gv:score "9.2364229";
+  gv:coverage "1.7066667"
+], [
+  gv:hex "ae9a7e";
+  gv:red "174";
+  gv:blue "126";
+  gv:green "154";
+  gv:score "7.2437659000000005";
+  gv:coverage "1.7000000000000002"
+], [
+  gv:hex "e2be8d";
+  gv:red "226";
+  gv:blue "141";
+  gv:green "190";
+  gv:score "7.12114";
+  gv:coverage "2.5866667"
+], [
+  gv:hex "8c765d";
+  gv:red "140";
+  gv:blue "93";
+  gv:green "118";
+  gv:score "4.5422867";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "cd9046";
+  gv:red "205";
+  gv:blue "70";
+  gv:green "144";
+  gv:score "3.1857878";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.30537600000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "UX\nGrano doin\nmonopole\nR.C. BRUXELLES G110\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

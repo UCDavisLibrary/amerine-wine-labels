@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0615";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R HEIN GAU\n9439r\nSchloss Vollrads\nOriginalabf'il lung\nGRAF MATUSCHKA GREIFFENCLAU'SCHE KELLEREI\nAlcohol 9,71% by Volume\n"@deu;
+    gv:color [
+  gv:hex "d6c3b0";
+  gv:red "214";
+  gv:blue "176";
+  gv:green "195";
+  gv:score "32.419318000000004";
+  gv:coverage "19.2"
+], [
+  gv:hex "ad9987";
+  gv:red "173";
+  gv:blue "135";
+  gv:green "153";
+  gv:score "14.351901";
+  gv:coverage "3.2399999999999998"
+], [
+  gv:hex "887462";
+  gv:red "136";
+  gv:blue "98";
+  gv:green "116";
+  gv:score "13.599515";
+  gv:coverage "2.2933334"
+], [
+  gv:hex "ba927b";
+  gv:red "186";
+  gv:blue "123";
+  gv:green "146";
+  gv:score "9.5409915";
+  gv:coverage "2.4333334"
+], [
+  gv:hex "665240";
+  gv:red "102";
+  gv:blue "64";
+  gv:green "82";
+  gv:score "7.679095900000001";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "e7c0aa";
+  gv:red "231";
+  gv:blue "170";
+  gv:green "192";
+  gv:score "6.2865592999999995";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "9e7661";
+  gv:red "158";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "4.2052396";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "cfc1b7";
+  gv:red "207";
+  gv:blue "183";
+  gv:green "193";
+  gv:score "3.6242422000000003";
+  gv:coverage "5.64"
+], [
+  gv:hex "ebd8c5";
+  gv:red "235";
+  gv:blue "197";
+  gv:green "216";
+  gv:score "2.7025377";
+  gv:coverage "8.02"
+], [
+  gv:hex "ab9e95";
+  gv:red "171";
+  gv:blue "149";
+  gv:green "158";
+  gv:score "2.1777927999999998";
+  gv:coverage "0.9666666399999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.89311"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.063973000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.391068"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.494240000000005"
+];
+    w:bagOfWords "R HEIN GAU\n9439r\nSchloss Vollrads\nOriginalabf'il lung\nGRAF MATUSCHKA GREIFFENCLAU'SCHE KELLEREI\nAlcohol 9,71% by Volume\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

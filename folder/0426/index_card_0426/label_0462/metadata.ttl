@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0462";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "RHEINGAU\n16 27\nANNO\n1959 et\nNATURGEWACHS UND ORIGINAL ABFULLUNG\nTyco sobert\nKRUGMANN\n"@deu;
+    gv:color [
+  gv:hex "d3bf86";
+  gv:red "211";
+  gv:blue "134";
+  gv:green "191";
+  gv:score "41.069102";
+  gv:coverage "11.613333"
+], [
+  gv:hex "837656";
+  gv:red "131";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "6.102192";
+  gv:coverage "3.36"
+], [
+  gv:hex "685625";
+  gv:red "104";
+  gv:blue "37";
+  gv:green "86";
+  gv:score "4.1403089";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "d6c59f";
+  gv:red "214";
+  gv:blue "159";
+  gv:green "197";
+  gv:score "21.873416000000002";
+  gv:coverage "12.686666999999998"
+], [
+  gv:hex "ac9d7b";
+  gv:red "172";
+  gv:blue "123";
+  gv:green "157";
+  gv:score "5.9649833";
+  gv:coverage "4.5733333"
+], [
+  gv:hex "b4a168";
+  gv:red "180";
+  gv:blue "104";
+  gv:green "161";
+  gv:score "5.2890446";
+  gv:coverage "1.6333334000000002"
+], [
+  gv:hex "867442";
+  gv:red "134";
+  gv:blue "66";
+  gv:green "116";
+  gv:score "3.68928";
+  gv:coverage "1.3933334"
+], [
+  gv:hex "615638";
+  gv:red "97";
+  gv:blue "56";
+  gv:green "86";
+  gv:score "3.3825665999999996";
+  gv:coverage "0.96"
+], [
+  gv:hex "ebdbb9";
+  gv:red "235";
+  gv:blue "185";
+  gv:green "219";
+  gv:score "1.2194281";
+  gv:coverage "5.26"
+], [
+  gv:hex "3f381e";
+  gv:red "63";
+  gv:blue "30";
+  gv:green "56";
+  gv:score "0.937499";
+  gv:coverage "0.22666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.91545599999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.107744000000004"
+];
+    w:bagOfWords "RHEINGAU\n16 27\nANNO\n1959 et\nNATURGEWACHS UND ORIGINAL ABFULLUNG\nTyco sobert\nKRUGMANN\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

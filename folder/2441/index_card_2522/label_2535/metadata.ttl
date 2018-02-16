@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2535";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "o M N\nv IC\nM v\nCTO REM\nCHABLIS\ner\nCRU\nAPPELLATION CONTRO LEE\nLONG DEPA QUIT\nseul proprietaire du Chablis-Moutonne\nC HH A B L I S F R A N C E\n"@fra;
+    gv:color [
+  gv:hex "dac1a1";
+  gv:red "218";
+  gv:blue "161";
+  gv:green "193";
+  gv:score "72.359425";
+  gv:coverage "27.900000000000002"
+], [
+  gv:hex "2b1400";
+  gv:red "43";
+  gv:blue "undefined";
+  gv:green "20";
+  gv:score "0.44133617";
+  gv:coverage "0.08"
+], [
+  gv:hex "b29a7b";
+  gv:red "178";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "12.999547999999999";
+  gv:coverage "2.9066667"
+], [
+  gv:hex "8e775a";
+  gv:red "142";
+  gv:blue "90";
+  gv:green "119";
+  gv:score "6.2028237";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "6a5238";
+  gv:red "106";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "3.2874006999999996";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "eed9bf";
+  gv:red "238";
+  gv:blue "191";
+  gv:green "217";
+  gv:score "2.1942208";
+  gv:coverage "14.12"
+], [
+  gv:hex "46301a";
+  gv:red "70";
+  gv:blue "26";
+  gv:green "48";
+  gv:score "1.4201432999999999";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "d7bd90";
+  gv:red "215";
+  gv:blue "144";
+  gv:green "189";
+  gv:score "0.41929646";
+  gv:coverage "0.08"
+], [
+  gv:hex "715335";
+  gv:red "113";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "0.18160141";
+  gv:coverage "0.06"
+], [
+  gv:hex "301b05";
+  gv:red "48";
+  gv:blue "5";
+  gv:green "27";
+  gv:score "0.15315377";
+  gv:coverage "0.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.16959299999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "o M N\nv IC\nM v\nCTO REM\nCHABLIS\ner\nCRU\nAPPELLATION CONTRO LEE\nLONG DEPA QUIT\nseul proprietaire du Chablis-Moutonne\nC HH A B L I S F R A N C E\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

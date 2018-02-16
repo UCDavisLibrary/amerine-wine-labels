@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1367/label_1373";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "INDUSTRIA ARGENTINA\nB. F. Nazar Anchorena e Hijos\nCAP. 800.000\nFRACCIONADOR BUENOS AIRES\nCONT NETO\nCM.\nB. F. Nazar Anchorend Mendoza S. R. L\nCAP. 200.000\nPRODUCT OR\n"@spa;
+    gv:color [
+  gv:hex "e7ddd4";
+  gv:red "231";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "48.304033000000004";
+  gv:coverage "41.253334"
+], [
+  gv:hex "dac9b4";
+  gv:red "218";
+  gv:blue "180";
+  gv:green "201";
+  gv:score "25.566267999999997";
+  gv:coverage "25.813332"
+], [
+  gv:hex "d9d0c7";
+  gv:red "217";
+  gv:blue "199";
+  gv:green "208";
+  gv:score "11.273669";
+  gv:coverage "11.113334"
+], [
+  gv:hex "ad9b86";
+  gv:red "173";
+  gv:blue "134";
+  gv:green "155";
+  gv:score "5.2572731";
+  gv:coverage "3.4533332999999997"
+], [
+  gv:hex "e8d9c7";
+  gv:red "232";
+  gv:blue "199";
+  gv:green "217";
+  gv:score "3.7363137999999996";
+  gv:coverage "4.4066668"
+], [
+  gv:hex "887661";
+  gv:red "136";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "2.6836718";
+  gv:coverage "1.66"
+], [
+  gv:hex "64533e";
+  gv:red "100";
+  gv:blue "62";
+  gv:green "83";
+  gv:score "1.5855230000000002";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "997348";
+  gv:red "153";
+  gv:blue "72";
+  gv:green "115";
+  gv:score "0.013522325";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "463523";
+  gv:red "70";
+  gv:blue "35";
+  gv:green "53";
+  gv:score "0.53687971";
+  gv:coverage "0.26"
+], [
+  gv:hex "84796e";
+  gv:red "132";
+  gv:blue "110";
+  gv:green "121";
+  gv:score "0.22112296";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.45544"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "58.832317999999994"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.614003"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.312172000000004"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.039714000000004"
+];
+    w:bagOfWords "INDUSTRIA ARGENTINA\nB. F. Nazar Anchorena e Hijos\nCAP. 800.000\nFRACCIONADOR BUENOS AIRES\nCONT NETO\nCM.\nB. F. Nazar Anchorend Mendoza S. R. L\nCAP. 200.000\nPRODUCT OR\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ARG".

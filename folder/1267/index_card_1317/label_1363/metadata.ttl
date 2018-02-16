@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1363";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "AHTAGE 189 0G\nal Companhia\nrte\naePortuga\n"@por;
+    gv:color [
+  gv:hex "991515";
+  gv:red "153";
+  gv:blue "21";
+  gv:green "21";
+  gv:score "10.765139";
+  gv:coverage "2.2066665999999997"
+], [
+  gv:hex "b89a69";
+  gv:red "184";
+  gv:blue "105";
+  gv:green "154";
+  gv:score "8.352594100000001";
+  gv:coverage "3.3066668"
+], [
+  gv:hex "754a36";
+  gv:red "117";
+  gv:blue "54";
+  gv:green "74";
+  gv:score "5.2394427";
+  gv:coverage "2.16"
+], [
+  gv:hex "6e1d0b";
+  gv:red "110";
+  gv:blue "11";
+  gv:green "29";
+  gv:score "3.4114335000000002";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "180b03";
+  gv:red "24";
+  gv:blue "3";
+  gv:green "11";
+  gv:score "0.67961924";
+  gv:coverage "0.62"
+], [
+  gv:hex "c09063";
+  gv:red "192";
+  gv:blue "99";
+  gv:green "144";
+  gv:score "7.8224368";
+  gv:coverage "2.2933334"
+], [
+  gv:hex "af9975";
+  gv:red "175";
+  gv:blue "117";
+  gv:green "153";
+  gv:score "7.668656899999999";
+  gv:coverage "3.8666666000000003"
+], [
+  gv:hex "9e6d43";
+  gv:red "158";
+  gv:blue "67";
+  gv:green "109";
+  gv:score "7.345455100000001";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "8a7655";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "4.9889155";
+  gv:coverage "2.0733334"
+], [
+  gv:hex "996d56";
+  gv:red "153";
+  gv:blue "86";
+  gv:green "109";
+  gv:score "4.5026109000000005";
+  gv:coverage "1.82"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "71.457267"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.338073"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "58.569115000000004"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.283868999999996"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.184772"
+];
+    w:bagOfWords "AHTAGE 189 0G\nal Companhia\nrte\naePortuga\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

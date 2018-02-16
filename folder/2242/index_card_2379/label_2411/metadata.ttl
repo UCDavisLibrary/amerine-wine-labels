@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2411";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "1934\nAU\nNEXON H LEMOYNE\nLudon -Médoc\nMODELE RESERVE NO 77\n"@fra;
+    gv:color [
+  gv:hex "070505";
+  gv:red "7";
+  gv:blue "5";
+  gv:green "5";
+  gv:score "49.349716";
+  gv:coverage "21.966666"
+], [
+  gv:hex "615237";
+  gv:red "97";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "21.985288999999998";
+  gv:coverage "1.24"
+], [
+  gv:hex "eae0d9";
+  gv:red "234";
+  gv:blue "217";
+  gv:green "224";
+  gv:score "1.006796";
+  gv:coverage "55.873334"
+], [
+  gv:hex "41341a";
+  gv:red "65";
+  gv:blue "26";
+  gv:green "52";
+  gv:score "11.926559000000001";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "7e7055";
+  gv:red "126";
+  gv:blue "85";
+  gv:green "112";
+  gv:score "6.328463600000001";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "37332c";
+  gv:red "55";
+  gv:blue "44";
+  gv:green "51";
+  gv:score "4.1981835";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "271b07";
+  gv:red "39";
+  gv:blue "7";
+  gv:green "27";
+  gv:score "2.0026011";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "544f48";
+  gv:red "84";
+  gv:blue "72";
+  gv:green "79";
+  gv:score "1.3997513";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "cbc1b9";
+  gv:red "203";
+  gv:blue "185";
+  gv:green "193";
+  gv:score "0.96202418";
+  gv:coverage "1.8533334"
+], [
+  gv:hex "7e766a";
+  gv:red "126";
+  gv:blue "106";
+  gv:green "118";
+  gv:score "0.26276431";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.687344"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "59.709208999999994"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.234713"
+];
+    w:bagOfWords "1934\nAU\nNEXON H LEMOYNE\nLudon -Médoc\nMODELE RESERVE NO 77\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

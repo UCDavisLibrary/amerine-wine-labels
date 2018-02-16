@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1574";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZ ANILLA OLOROSA MAD URA\n( MARCA REG/STRADA )\nTR\nAD\nMAR\nANGEL DEL RIO\nSANLUCARDE BARRAMEDA.\nNo 27\n"@spa;
+    gv:color [
+  gv:hex "d5c5bb";
+  gv:red "213";
+  gv:blue "187";
+  gv:green "197";
+  gv:score "18.589972";
+  gv:coverage "12.626667"
+], [
+  gv:hex "a79684";
+  gv:red "167";
+  gv:blue "132";
+  gv:green "150";
+  gv:score "16.146530000000002";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "2c1e15";
+  gv:red "44";
+  gv:blue "21";
+  gv:green "30";
+  gv:score "1.2125205000000001";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "d0bfac";
+  gv:red "208";
+  gv:blue "172";
+  gv:green "191";
+  gv:score "15.791148999999999";
+  gv:coverage "23.773333"
+], [
+  gv:hex "897867";
+  gv:red "137";
+  gv:blue "103";
+  gv:green "120";
+  gv:score "13.529973";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "edded4";
+  gv:red "237";
+  gv:blue "212";
+  gv:green "222";
+  gv:score "11.09057";
+  gv:coverage "25.119999999999997"
+], [
+  gv:hex "ab9d93";
+  gv:red "171";
+  gv:blue "147";
+  gv:green "157";
+  gv:score "6.4544014999999995";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "86776e";
+  gv:red "134";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "4.210407699999999";
+  gv:coverage "0.44"
+], [
+  gv:hex "5e5047";
+  gv:red "94";
+  gv:blue "71";
+  gv:green "80";
+  gv:score "3.4999546";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "685848";
+  gv:red "104";
+  gv:blue "72";
+  gv:green "88";
+  gv:score "3.3113315999999995";
+  gv:coverage "0.26666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.193326"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.095848000000004"
+];
+    w:bagOfWords "MANZ ANILLA OLOROSA MAD URA\n( MARCA REG/STRADA )\nTR\nAD\nMAR\nANGEL DEL RIO\nSANLUCARDE BARRAMEDA.\nNo 27\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

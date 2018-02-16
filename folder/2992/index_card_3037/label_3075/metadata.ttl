@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3037/label_3075";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "C L O S\nLAGRANGE\nLUSSAC-SAINT-EMILION\n1 9 2 5\nH. RO DEL B.\nO A.\n"@fra;
+    gv:color [
+  gv:hex "d0beaa";
+  gv:red "208";
+  gv:blue "170";
+  gv:green "190";
+  gv:score "16.727364";
+  gv:coverage "24"
+], [
+  gv:hex "8f7555";
+  gv:red "143";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "12.411486";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "8e6f43";
+  gv:red "142";
+  gv:blue "67";
+  gv:green "111";
+  gv:score "10.573954";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "af9778";
+  gv:red "175";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "9.4928659";
+  gv:coverage "0.66"
+], [
+  gv:hex "a3998f";
+  gv:red "163";
+  gv:blue "143";
+  gv:green "153";
+  gv:score "7.596831";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "d0c5bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "197";
+  gv:score "7.314610000000001";
+  gv:coverage "21.84"
+], [
+  gv:hex "6c5226";
+  gv:red "108";
+  gv:blue "38";
+  gv:green "82";
+  gv:score "5.0574504";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "7a5627";
+  gv:red "122";
+  gv:blue "39";
+  gv:green "86";
+  gv:score "5.0076704";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "ad8d60";
+  gv:red "173";
+  gv:blue "96";
+  gv:green "141";
+  gv:score "4.2390075";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "eadfd5";
+  gv:red "234";
+  gv:blue "213";
+  gv:green "223";
+  gv:score "4.101146399999999";
+  gv:coverage "18.66"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.831528999999996"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "57.123727"
+];
+    w:bagOfWords "C L O S\nLAGRANGE\nLUSSAC-SAINT-EMILION\n1 9 2 5\nH. RO DEL B.\nO A.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3605/label_3624";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "Pioneer Vineyards in Livermort Valley\nB O. T T L E D\nA T T H E W I N E R Y\nPRODUCED AND BOTTLED BY\nWWW ENTE BR OS\nLIVERMORE, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "a99b80";
+  gv:red "169";
+  gv:blue "128";
+  gv:green "155";
+  gv:score "32.887155";
+  gv:coverage "11.153334"
+], [
+  gv:hex "83775f";
+  gv:red "131";
+  gv:blue "95";
+  gv:green "119";
+  gv:score "25.828528000000002";
+  gv:coverage "6.04"
+], [
+  gv:hex "cebba1";
+  gv:red "206";
+  gv:blue "161";
+  gv:green "187";
+  gv:score "19.910584";
+  gv:coverage "14.713334"
+], [
+  gv:hex "61563e";
+  gv:red "97";
+  gv:blue "62";
+  gv:green "86";
+  gv:score "11.829238";
+  gv:coverage "2.3"
+], [
+  gv:hex "423820";
+  gv:red "66";
+  gv:blue "32";
+  gv:green "56";
+  gv:score "2.2318343";
+  gv:coverage "0.4"
+], [
+  gv:hex "c09978";
+  gv:red "192";
+  gv:blue "120";
+  gv:green "153";
+  gv:score "1.977166";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "dab292";
+  gv:red "218";
+  gv:blue "146";
+  gv:green "178";
+  gv:score "1.5366819";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "eadbc6";
+  gv:red "234";
+  gv:blue "198";
+  gv:green "219";
+  gv:score "1.2781353";
+  gv:coverage "17.22"
+], [
+  gv:hex "c39871";
+  gv:red "195";
+  gv:blue "113";
+  gv:green "152";
+  gv:score "0.7328870200000001";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "997453";
+  gv:red "153";
+  gv:blue "83";
+  gv:green "116";
+  gv:score "0.36274109";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "65.478247"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.285776999999996"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "59.260029"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.378023"
+];
+    w:bagOfWords "Pioneer Vineyards in Livermort Valley\nB O. T T L E D\nA T T H E W I N E R Y\nPRODUCED AND BOTTLED BY\nWWW ENTE BR OS\nLIVERMORE, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

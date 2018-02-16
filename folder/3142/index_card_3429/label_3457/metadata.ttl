@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3457";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "de Bourgogne\nVi\nGrands FONDEE EN E. STADELHOFFER\nNEGOCIANT A BEAUNE COTE D'OR)\nRED SPARKLING BURGUNDY\nAPPELLATION CONTROLEE\nPRODUCE OF FRANCE\nAlcoholic Contents 12% Net Contents 415 ths quart\nROUALET BEAUAL\n"@fra;
+    gv:color [
+  gv:hex "d3c1a7";
+  gv:red "211";
+  gv:blue "167";
+  gv:green "193";
+  gv:score "28.212911000000002";
+  gv:coverage "16.06"
+], [
+  gv:hex "4e632e";
+  gv:red "78";
+  gv:blue "46";
+  gv:green "99";
+  gv:score "6.1760187";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "ae9d83";
+  gv:red "174";
+  gv:blue "131";
+  gv:green "157";
+  gv:score "19.121155";
+  gv:coverage "2.5866667"
+], [
+  gv:hex "837659";
+  gv:red "131";
+  gv:blue "89";
+  gv:green "118";
+  gv:score "10.023347000000001";
+  gv:coverage "0.90666665"
+], [
+  gv:hex "5e5033";
+  gv:red "94";
+  gv:blue "51";
+  gv:green "80";
+  gv:score "8.498434000000001";
+  gv:coverage "0.62"
+], [
+  gv:hex "ecdcc3";
+  gv:red "236";
+  gv:blue "195";
+  gv:green "220";
+  gv:score "8.4949382";
+  gv:coverage "17.693333"
+], [
+  gv:hex "443419";
+  gv:red "68";
+  gv:blue "25";
+  gv:green "52";
+  gv:score "6.450278299999999";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "657345";
+  gv:red "101";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "3.6086127";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "617942";
+  gv:red "97";
+  gv:blue "66";
+  gv:green "121";
+  gv:score "2.556791";
+  gv:coverage "0.06"
+], [
+  gv:hex "546133";
+  gv:red "84";
+  gv:blue "51";
+  gv:green "97";
+  gv:score "2.2620834";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.224445"
+];
+    w:bagOfWords "de Bourgogne\nVi\nGrands FONDEE EN E. STADELHOFFER\nNEGOCIANT A BEAUNE COTE D'OR)\nRED SPARKLING BURGUNDY\nAPPELLATION CONTROLEE\nPRODUCE OF FRANCE\nAlcoholic Contents 12% Net Contents 415 ths quart\nROUALET BEAUAL\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

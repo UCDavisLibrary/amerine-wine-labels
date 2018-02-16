@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0609";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "RHEINGAU\nPElinkeler iteinacher\nRiesling\nfigene flbfullung\nWEIN GUT RICHARD NAGLE R WIN KEL VRHG.\n"@deu;
+    gv:color [
+  gv:hex "80785a";
+  gv:red "128";
+  gv:blue "90";
+  gv:green "120";
+  gv:score "23.338181";
+  gv:coverage "6.493333"
+], [
+  gv:hex "a39a7c";
+  gv:red "163";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "21.483755";
+  gv:coverage "9.58"
+], [
+  gv:hex "c9c0a3";
+  gv:red "201";
+  gv:blue "163";
+  gv:green "192";
+  gv:score "9.4870366";
+  gv:coverage "13.366665999999999"
+], [
+  gv:hex "60593d";
+  gv:red "96";
+  gv:blue "61";
+  gv:green "89";
+  gv:score "9.382277";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "887746";
+  gv:red "136";
+  gv:blue "70";
+  gv:green "119";
+  gv:score "7.8300275";
+  gv:coverage "2.34"
+], [
+  gv:hex "6d7b57";
+  gv:red "109";
+  gv:blue "87";
+  gv:green "123";
+  gv:score "6.7229383";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "aa9861";
+  gv:red "170";
+  gv:blue "97";
+  gv:green "152";
+  gv:score "5.6173034";
+  gv:coverage "2.1466667"
+], [
+  gv:hex "909e7a";
+  gv:red "144";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "3.7227007999999997";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "4f5d3a";
+  gv:red "79";
+  gv:blue "58";
+  gv:green "93";
+  gv:score "3.6393464";
+  gv:coverage "0.36"
+], [
+  gv:hex "e9e0c5";
+  gv:red "233";
+  gv:blue "197";
+  gv:green "224";
+  gv:score "2.440341";
+  gv:coverage "13.74"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.54280000000001"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.538140999999996"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.12538500000001"
+];
+    w:bagOfWords "RHEINGAU\nPElinkeler iteinacher\nRiesling\nfigene flbfullung\nWEIN GUT RICHARD NAGLE R WIN KEL VRHG.\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

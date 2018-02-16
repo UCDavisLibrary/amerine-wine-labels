@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2879";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "FRANCE\nKING OF\nHAUT-BARSAC\nBOTTLED & SHIPPED BY\nLOUIS BERT & C9\nANTS A BARSAC GIRON DE FRANCE\nNEG\nJUILLARD-COCKCROFT CORPORATION\nPacific States Agent\nPRODUCT OF FRANCE\nNET\nCONTENTS 1 PINT 9 FL. OZ\nI 929\n"@fra;
+    gv:color [
+  gv:hex "ad9774";
+  gv:red "173";
+  gv:blue "116";
+  gv:green "151";
+  gv:score "11.416166";
+  gv:coverage "3.2466665"
+], [
+  gv:hex "681307";
+  gv:red "104";
+  gv:blue "7";
+  gv:green "19";
+  gv:score "1.2076134";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "141818";
+  gv:red "20";
+  gv:blue "24";
+  gv:green "24";
+  gv:score "0.48017814";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "0b1848";
+  gv:red "11";
+  gv:blue "72";
+  gv:green "24";
+  gv:score "0.22476979000000002";
+  gv:coverage "0.1"
+], [
+  gv:hex "8a7755";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "119";
+  gv:score "10.412227999999999";
+  gv:coverage "2.4933332999999998"
+], [
+  gv:hex "d7c1a0";
+  gv:red "215";
+  gv:blue "160";
+  gv:green "193";
+  gv:score "9.984451499999999";
+  gv:coverage "10.433333000000001"
+], [
+  gv:hex "b79967";
+  gv:red "183";
+  gv:blue "103";
+  gv:green "153";
+  gv:score "8.1695095";
+  gv:coverage "1.4066666"
+], [
+  gv:hex "ca9361";
+  gv:red "202";
+  gv:blue "97";
+  gv:green "147";
+  gv:score "7.6036587";
+  gv:coverage "1.1933333000000002"
+], [
+  gv:hex "927446";
+  gv:red "146";
+  gv:blue "70";
+  gv:green "116";
+  gv:score "7.4930355";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "d8b884";
+  gv:red "216";
+  gv:blue "132";
+  gv:green "184";
+  gv:score "7.2787307";
+  gv:coverage "1.7866666999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.85799599999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "FRANCE\nKING OF\nHAUT-BARSAC\nBOTTLED & SHIPPED BY\nLOUIS BERT & C9\nANTS A BARSAC GIRON DE FRANCE\nNEG\nJUILLARD-COCKCROFT CORPORATION\nPacific States Agent\nPRODUCT OF FRANCE\nNET\nCONTENTS 1 PINT 9 FL. OZ\nI 929\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

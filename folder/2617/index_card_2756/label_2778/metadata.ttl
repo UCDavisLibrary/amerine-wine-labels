@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2778";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "APPELLATION CONTROLEE\nCompagnie des Vignerons de l'Anjou\nSUCCESSEUR\nH. RAIMBAULT, ropriet une Négociant\nTHOUARCE.\nONNFZEAUX (Moine -Loire\n"@fra;
+    gv:color [
+  gv:hex "d6bfa3";
+  gv:red "214";
+  gv:blue "163";
+  gv:green "191";
+  gv:score "49.686402";
+  gv:coverage "31.493333"
+], [
+  gv:hex "af997d";
+  gv:red "175";
+  gv:blue "125";
+  gv:green "153";
+  gv:score "18.475911";
+  gv:coverage "5.34"
+], [
+  gv:hex "8b7659";
+  gv:red "139";
+  gv:blue "89";
+  gv:green "118";
+  gv:score "11.60328";
+  gv:coverage "3.4066666000000003"
+], [
+  gv:hex "665237";
+  gv:red "102";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "5.853841500000001";
+  gv:coverage "1.4666666"
+], [
+  gv:hex "bc9275";
+  gv:red "188";
+  gv:blue "117";
+  gv:green "146";
+  gv:score "5.5437792";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "4a351b";
+  gv:red "74";
+  gv:blue "27";
+  gv:green "53";
+  gv:score "2.3914548";
+  gv:coverage "0.44"
+], [
+  gv:hex "deb498";
+  gv:red "222";
+  gv:blue "152";
+  gv:green "180";
+  gv:score "1.9089634000000002";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "ebd8c0";
+  gv:red "235";
+  gv:blue "192";
+  gv:green "216";
+  gv:score "1.863016";
+  gv:coverage "10.12"
+], [
+  gv:hex "9e775b";
+  gv:red "158";
+  gv:blue "91";
+  gv:green "119";
+  gv:score "1.4213196000000001";
+  gv:coverage "0.2"
+], [
+  gv:hex "8c7745";
+  gv:red "140";
+  gv:blue "69";
+  gv:green "119";
+  gv:score "0.7349664300000001";
+  gv:coverage "0.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.791545"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.140485999999996"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "52.10118299999999"
+];
+    w:bagOfWords "APPELLATION CONTROLEE\nCompagnie des Vignerons de l'Anjou\nSUCCESSEUR\nH. RAIMBAULT, ropriet une Négociant\nTHOUARCE.\nONNFZEAUX (Moine -Loire\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

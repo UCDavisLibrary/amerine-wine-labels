@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1228";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "OTAOLA\n23\nConac obtenido de la destilacion de los vinos mas se/ectos de\nesta localidad por la casa Hijos de Carlos de Otaolaurruchi.\n"@spa;
+    gv:color [
+  gv:hex "d2c1a9";
+  gv:red "210";
+  gv:blue "169";
+  gv:green "193";
+  gv:score "29.456046";
+  gv:coverage "38.800000000000004"
+], [
+  gv:hex "857461";
+  gv:red "133";
+  gv:blue "97";
+  gv:green "116";
+  gv:score "25.805354";
+  gv:coverage "4.413333199999999"
+], [
+  gv:hex "674722";
+  gv:red "103";
+  gv:blue "34";
+  gv:green "71";
+  gv:score "0.23565062";
+  gv:coverage "0.06"
+], [
+  gv:hex "aa9984";
+  gv:red "170";
+  gv:blue "132";
+  gv:green "153";
+  gv:score "21.304217";
+  gv:coverage "4.8533332"
+], [
+  gv:hex "655540";
+  gv:red "101";
+  gv:blue "64";
+  gv:green "85";
+  gv:score "12.975451";
+  gv:coverage "2.1933333999999998"
+], [
+  gv:hex "eadac5";
+  gv:red "234";
+  gv:blue "197";
+  gv:green "218";
+  gv:score "5.285468";
+  gv:coverage "34.606665"
+], [
+  gv:hex "48351d";
+  gv:red "72";
+  gv:blue "29";
+  gv:green "53";
+  gv:score "2.3551903999999997";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "807167";
+  gv:red "128";
+  gv:blue "103";
+  gv:green "113";
+  gv:score "0.60008145";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "d3c4b8";
+  gv:red "211";
+  gv:blue "184";
+  gv:green "196";
+  gv:score "0.48744543";
+  gv:coverage "3.4799999999999995"
+], [
+  gv:hex "2a1902";
+  gv:red "42";
+  gv:blue "2";
+  gv:green "25";
+  gv:score "0.48672393999999997";
+  gv:coverage "0.093333336"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.689205"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "54.49871400000001"
+], [
+  gv:mid <https://g.co/kg/m/03hzcs>;
+  gv:desc "beige";
+  gv:score "50.036532"
+];
+    w:bagOfWords "OTAOLA\n23\nConac obtenido de la destilacion de los vinos mas se/ectos de\nesta localidad por la casa Hijos de Carlos de Otaolaurruchi.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

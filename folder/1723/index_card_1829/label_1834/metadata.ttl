@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1834";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Produce of\na\nGermany.\n19\n29\nSTEIN WEIN\nGD Seiden,fid otocine\nh, ermany.\nContents 1 Pint 6 es\nAlcoholic strength 12\nby Vol\n"@deu;
+    gv:color [
+  gv:hex "d3c2ac";
+  gv:red "211";
+  gv:blue "172";
+  gv:green "194";
+  gv:score "29.79795";
+  gv:coverage "42.426667"
+], [
+  gv:hex "645237";
+  gv:red "100";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "19.708636";
+  gv:coverage "2.2266667"
+], [
+  gv:hex "ab9b83";
+  gv:red "171";
+  gv:blue "131";
+  gv:green "155";
+  gv:score "18.408227";
+  gv:coverage "2.26"
+], [
+  gv:hex "86765c";
+  gv:red "134";
+  gv:blue "92";
+  gv:green "118";
+  gv:score "12.314755";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "654e24";
+  gv:red "101";
+  gv:blue "36";
+  gv:green "78";
+  gv:score "6.714236";
+  gv:coverage "0.26"
+], [
+  gv:hex "e9d9c4";
+  gv:red "233";
+  gv:blue "196";
+  gv:green "217";
+  gv:score "5.4911949";
+  gv:coverage "31.540000000000003"
+], [
+  gv:hex "493616";
+  gv:red "73";
+  gv:blue "22";
+  gv:green "54";
+  gv:score "2.9138342";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "523b13";
+  gv:red "82";
+  gv:blue "19";
+  gv:green "59";
+  gv:score "2.5829403";
+  gv:coverage "0.1"
+], [
+  gv:hex "836b3d";
+  gv:red "131";
+  gv:blue "61";
+  gv:green "107";
+  gv:score "1.0858495";
+  gv:coverage "0.04"
+], [
+  gv:hex "81766a";
+  gv:red "129";
+  gv:blue "106";
+  gv:green "118";
+  gv:score "0.29850034000000003";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.6013"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "51.197988"
+];
+    w:bagOfWords "Produce of\na\nGermany.\n19\n29\nSTEIN WEIN\nGD Seiden,fid otocine\nh, ermany.\nContents 1 Pint 6 es\nAlcoholic strength 12\nby Vol\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

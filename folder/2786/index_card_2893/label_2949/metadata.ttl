@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2949";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "chilled\nServe well\nD'ALSACE\nVIN FIN\nALSACE WILL M\nMAR RUE DE PosEE\nRIESLING\nALCOHOL 14 BY VOLUME\n12 FL. OZ.\nPRODUCED AND BOTTLED BY\nAWILLM, sar. VITICULTEURS\nAU CLOS NEGOCIANTS\n(BAS-RHiN)\n(ALSACE FRANCE)\n"@fra;
+    gv:color [
+  gv:hex "ddc3a0";
+  gv:red "221";
+  gv:blue "160";
+  gv:green "195";
+  gv:score "60.333669";
+  gv:coverage "36.026666"
+], [
+  gv:hex "562a08";
+  gv:red "86";
+  gv:blue "8";
+  gv:green "42";
+  gv:score "0.7683574200000001";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "5d180e";
+  gv:red "93";
+  gv:blue "14";
+  gv:green "24";
+  gv:score "0.44568474";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "b39b77";
+  gv:red "179";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "9.9319734";
+  gv:coverage "3.26"
+], [
+  gv:hex "e4bb9d";
+  gv:red "228";
+  gv:blue "157";
+  gv:green "187";
+  gv:score "4.851602";
+  gv:coverage "1.9800000000000002"
+], [
+  gv:hex "8b7550";
+  gv:red "139";
+  gv:blue "80";
+  gv:green "117";
+  gv:score "4.769387099999999";
+  gv:coverage "1.4733333"
+], [
+  gv:hex "c09778";
+  gv:red "192";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "3.2658909";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "837444";
+  gv:red "131";
+  gv:blue "68";
+  gv:green "116";
+  gv:score "2.0108913999999998";
+  gv:coverage "0.84"
+], [
+  gv:hex "ecd7b5";
+  gv:red "236";
+  gv:blue "181";
+  gv:green "215";
+  gv:score "1.7408153";
+  gv:coverage "8.206667"
+], [
+  gv:hex "d7c292";
+  gv:red "215";
+  gv:blue "146";
+  gv:green "194";
+  gv:score "1.4914284";
+  gv:coverage "0.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.684606"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "chilled\nServe well\nD'ALSACE\nVIN FIN\nALSACE WILL M\nMAR RUE DE PosEE\nRIESLING\nALCOHOL 14 BY VOLUME\n12 FL. OZ.\nPRODUCED AND BOTTLED BY\nAWILLM, sar. VITICULTEURS\nAU CLOS NEGOCIANTS\n(BAS-RHiN)\n(ALSACE FRANCE)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

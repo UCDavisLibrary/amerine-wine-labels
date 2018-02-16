@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0938";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "PROVINS\nODUCTEURS\nmi gre\nR A I S I N D O R\n"@deu;
+    gv:color [
+  gv:hex "dfc8a6";
+  gv:red "223";
+  gv:blue "166";
+  gv:green "200";
+  gv:score "31.574175";
+  gv:coverage "16.78"
+], [
+  gv:hex "8f3921";
+  gv:red "143";
+  gv:blue "33";
+  gv:green "57";
+  gv:score "6.6049486";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "90773f";
+  gv:red "144";
+  gv:blue "63";
+  gv:green "119";
+  gv:score "6.075381500000001";
+  gv:coverage "1.38"
+], [
+  gv:hex "b09a78";
+  gv:red "176";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "5.9744105";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "af9458";
+  gv:red "175";
+  gv:blue "88";
+  gv:green "148";
+  gv:score "5.7603411";
+  gv:coverage "1.6466666"
+], [
+  gv:hex "f1daba";
+  gv:red "241";
+  gv:blue "186";
+  gv:green "218";
+  gv:score "4.4493827999999995";
+  gv:coverage "16.013333"
+], [
+  gv:hex "8a7656";
+  gv:red "138";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "4.2791326";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "a12e1c";
+  gv:red "161";
+  gv:blue "28";
+  gv:green "46";
+  gv:score "4.277859299999999";
+  gv:coverage "0.12"
+], [
+  gv:hex "f1bfa4";
+  gv:red "241";
+  gv:blue "164";
+  gv:green "191";
+  gv:score "3.4303915";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "9b6b51";
+  gv:red "155";
+  gv:blue "81";
+  gv:green "107";
+  gv:score "2.7136959";
+  gv:coverage "0.27999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.754529000000005"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.114715999999994"
+];
+    w:bagOfWords "PROVINS\nODUCTEURS\nmi gre\nR A I S I N D O R\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

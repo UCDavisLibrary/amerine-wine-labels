@@ -1,0 +1,94 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2930";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "DOMAINE E. BOECKEL\nMITTELBERGHEIM\nFRANCE\nGRAND CRU D'ALSACE\n1934\nBOECKEL\n3\nMITTELBERGHEIM STEIN RIESLING\nPRODUCE OF FRANCE\nIMP-CAMIS PARIS\nCONTENTS 1 PT. 7 FL. oz.\n"@fra;
+    gv:color [
+  gv:hex "764920";
+  gv:red "118";
+  gv:blue "32";
+  gv:green "73";
+  gv:score "15.230714";
+  gv:coverage "3.62"
+], [
+  gv:hex "c99359";
+  gv:red "201";
+  gv:blue "89";
+  gv:green "147";
+  gv:score "11.520707";
+  gv:coverage "1.6866666999999997"
+], [
+  gv:hex "ddb87e";
+  gv:red "221";
+  gv:blue "126";
+  gv:green "184";
+  gv:score "6.2529563999999995";
+  gv:coverage "3.2399999999999998"
+], [
+  gv:hex "1d1110";
+  gv:red "29";
+  gv:blue "16";
+  gv:green "17";
+  gv:score "0.31870208";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "c9924a";
+  gv:red "201";
+  gv:blue "74";
+  gv:green "146";
+  gv:score "10.369524";
+  gv:coverage "0.84"
+], [
+  gv:hex "9e6c3c";
+  gv:red "158";
+  gv:blue "60";
+  gv:green "108";
+  gv:score "9.3800783";
+  gv:coverage "2.98"
+], [
+  gv:hex "6e492c";
+  gv:red "110";
+  gv:blue "44";
+  gv:green "73";
+  gv:score "6.0309149";
+  gv:coverage "2.1866666"
+], [
+  gv:hex "bd9960";
+  gv:red "189";
+  gv:blue "96";
+  gv:green "153";
+  gv:score "5.4570109";
+  gv:coverage "2.5666667"
+], [
+  gv:hex "8e7140";
+  gv:red "142";
+  gv:blue "64";
+  gv:green "113";
+  gv:score "4.6078604";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "6e5327";
+  gv:red "110";
+  gv:blue "39";
+  gv:green "83";
+  gv:score "4.247788";
+  gv:coverage "1.7466666"
+];
+    w:bagOfWords "DOMAINE E. BOECKEL\nMITTELBERGHEIM\nFRANCE\nGRAND CRU D'ALSACE\n1934\nBOECKEL\n3\nMITTELBERGHEIM STEIN RIESLING\nPRODUCE OF FRANCE\nIMP-CAMIS PARIS\nCONTENTS 1 PT. 7 FL. oz.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

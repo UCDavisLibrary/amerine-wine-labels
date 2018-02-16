@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3772/label_3783";
+    dct:type "image";
+    w:bagOfWords "1949er\n"@deu;
+    gv:color [
+  gv:hex "897455";
+  gv:red "137";
+  gv:blue "85";
+  gv:green "116";
+  gv:score "30.760243999999997";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "d6c2a8";
+  gv:red "214";
+  gv:blue "168";
+  gv:green "194";
+  gv:score "22.503287999999998";
+  gv:coverage "8.806666700000001"
+], [
+  gv:hex "ac987b";
+  gv:red "172";
+  gv:blue "123";
+  gv:green "152";
+  gv:score "19.46115";
+  gv:coverage "1.18"
+], [
+  gv:hex "6d5a3c";
+  gv:red "109";
+  gv:blue "60";
+  gv:green "90";
+  gv:score "9.8385811";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "eedac6";
+  gv:red "238";
+  gv:blue "198";
+  gv:green "218";
+  gv:score "5.3178187";
+  gv:coverage "15.98"
+], [
+  gv:hex "8c7549";
+  gv:red "140";
+  gv:blue "73";
+  gv:green "117";
+  gv:score "5.1166214000000005";
+  gv:coverage "0.18"
+], [
+  gv:hex "ad9669";
+  gv:red "173";
+  gv:blue "105";
+  gv:green "150";
+  gv:score "1.1882856000000002";
+  gv:coverage "0.04"
+], [
+  gv:hex "ccb9af";
+  gv:red "204";
+  gv:blue "175";
+  gv:green "185";
+  gv:score "1.1406061";
+  gv:coverage "6.7333333"
+], [
+  gv:hex "4d371a";
+  gv:red "77";
+  gv:blue "26";
+  gv:green "55";
+  gv:score "0.954549";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "624b23";
+  gv:red "98";
+  gv:blue "35";
+  gv:green "75";
+  gv:score "0.6950184699999999";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0463sg>;
+  gv:desc "fashion accessory";
+  gv:score "67.864382"
+], [
+  gv:mid <https://g.co/kg/m/0bby24z>;
+  gv:desc "moustache";
+  gv:score "65.447062"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.918681"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "59.02223599999999"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "51.931316"
+];
+    w:bagOfWords "1949er\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

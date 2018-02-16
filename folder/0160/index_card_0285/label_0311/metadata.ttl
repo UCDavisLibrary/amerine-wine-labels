@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0311";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ERAN\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOUVERAIN CELLARS\nST. HELENA, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "dbc19e";
+  gv:red "219";
+  gv:blue "158";
+  gv:green "193";
+  gv:score "43.620366";
+  gv:coverage "21.493334"
+], [
+  gv:hex "ac9979";
+  gv:red "172";
+  gv:blue "121";
+  gv:green "153";
+  gv:score "22.496055000000002";
+  gv:coverage "5.4733332"
+], [
+  gv:hex "88785b";
+  gv:red "136";
+  gv:blue "91";
+  gv:green "120";
+  gv:score "14.245039";
+  gv:coverage "3.1"
+], [
+  gv:hex "675338";
+  gv:red "103";
+  gv:blue "56";
+  gv:green "83";
+  gv:score "3.870507";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "453116";
+  gv:red "69";
+  gv:blue "22";
+  gv:green "49";
+  gv:score "2.3071744";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "43280f";
+  gv:red "67";
+  gv:blue "15";
+  gv:green "40";
+  gv:score "1.6143434";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "907049";
+  gv:red "144";
+  gv:blue "73";
+  gv:green "112";
+  gv:score "1.5794389";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "311701";
+  gv:red "49";
+  gv:blue "1";
+  gv:green "23";
+  gv:score "1.3321172";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "eed7b9";
+  gv:red "238";
+  gv:blue "185";
+  gv:green "215";
+  gv:score "1.2954607";
+  gv:coverage "4.273333399999999"
+], [
+  gv:hex "dfc295";
+  gv:red "223";
+  gv:blue "149";
+  gv:green "194";
+  gv:score "1.1174899999999999";
+  gv:coverage "0.80666663"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.532072"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.3597"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.384843000000004"
+];
+    w:bagOfWords "ERAN\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOUVERAIN CELLARS\nST. HELENA, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

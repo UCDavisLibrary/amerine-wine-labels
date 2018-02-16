@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2915";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "vins fins Alsace\nMA\nROUE\nDE Pos EE\nMISE EN BOUTEILLES\nEZ LE PRO, ETAIRE\nGEWURZ TRAMINER\nE.MICHELBERGER\nAGENT GENERAL POUR LA FRANCE\n5, AVEN UE DE SU\nFREN\nPAR\nt s 7 e\n"@fra;
+    gv:color [
+  gv:hex "ddc2a1";
+  gv:red "221";
+  gv:blue "161";
+  gv:green "194";
+  gv:score "43.045449000000005";
+  gv:coverage "27.886667999999997"
+], [
+  gv:hex "794725";
+  gv:red "121";
+  gv:blue "37";
+  gv:green "71";
+  gv:score "4.5432404";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "b09b7c";
+  gv:red "176";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "7.7836722";
+  gv:coverage "3.74"
+], [
+  gv:hex "e7bc9c";
+  gv:red "231";
+  gv:blue "156";
+  gv:green "188";
+  gv:score "6.553379400000001";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "857758";
+  gv:red "133";
+  gv:blue "88";
+  gv:green "119";
+  gv:score "6.3606888";
+  gv:coverage "2.96"
+], [
+  gv:hex "625537";
+  gv:red "98";
+  gv:blue "55";
+  gv:green "85";
+  gv:score "5.1711317";
+  gv:coverage "2.7533334"
+], [
+  gv:hex "c19374";
+  gv:red "193";
+  gv:blue "116";
+  gv:green "147";
+  gv:score "3.07622";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "e3b58b";
+  gv:red "227";
+  gv:blue "139";
+  gv:green "181";
+  gv:score "2.5057381";
+  gv:coverage "0.71333335"
+], [
+  gv:hex "9b6e52";
+  gv:red "155";
+  gv:blue "82";
+  gv:green "110";
+  gv:score "2.3801316999999997";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "9b6844";
+  gv:red "155";
+  gv:blue "68";
+  gv:green "104";
+  gv:score "2.3667259";
+  gv:coverage "0.4"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.863611"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.082516"
+];
+    w:bagOfWords "vins fins Alsace\nMA\nROUE\nDE Pos EE\nMISE EN BOUTEILLES\nEZ LE PRO, ETAIRE\nGEWURZ TRAMINER\nE.MICHELBERGER\nAGENT GENERAL POUR LA FRANCE\n5, AVEN UE DE SU\nFREN\nPAR\nt s 7 e\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

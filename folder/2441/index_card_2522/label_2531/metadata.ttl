@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2531";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "RECO L\n19e9\nGRAND PREMIERORO\nopretat re d\nCHABLIS to\n"@fra;
+    gv:color [
+  gv:hex "ab9a80";
+  gv:red "171";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "24.555473";
+  gv:coverage "15.393333"
+], [
+  gv:hex "7f785f";
+  gv:red "127";
+  gv:blue "95";
+  gv:green "120";
+  gv:score "19.693635";
+  gv:coverage "6.84"
+], [
+  gv:hex "be9078";
+  gv:red "190";
+  gv:blue "120";
+  gv:green "144";
+  gv:score "10.084216";
+  gv:coverage "2.96"
+], [
+  gv:hex "ccb79d";
+  gv:red "204";
+  gv:blue "157";
+  gv:green "183";
+  gv:score "9.3100034";
+  gv:coverage "12.533333999999998"
+], [
+  gv:hex "9f6f58";
+  gv:red "159";
+  gv:blue "88";
+  gv:green "111";
+  gv:score "7.957349";
+  gv:coverage "2.02"
+], [
+  gv:hex "615b42";
+  gv:red "97";
+  gv:blue "66";
+  gv:green "91";
+  gv:score "6.1163858";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "7c4c36";
+  gv:red "124";
+  gv:blue "54";
+  gv:green "76";
+  gv:score "3.3420197999999997";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "ddad96";
+  gv:red "221";
+  gv:blue "150";
+  gv:green "173";
+  gv:score "2.3561010000000002";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "7d4b2a";
+  gv:red "125";
+  gv:blue "42";
+  gv:green "75";
+  gv:score "2.0839976";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "6d7a60";
+  gv:red "109";
+  gv:blue "96";
+  gv:green "122";
+  gv:score "2.0158827";
+  gv:coverage "0.38666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.264769"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/011s0>;
+  gv:desc "advertising";
+  gv:score "54.239285"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.840907"
+];
+    w:bagOfWords "RECO L\n19e9\nGRAND PREMIERORO\nopretat re d\nCHABLIS to\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

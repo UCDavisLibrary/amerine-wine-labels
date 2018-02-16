@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1060";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "1945\nbouchon\nDE POSE\niquette officielle Des vind\noe-la Diffe oe Lausanne\nMIS EN BOUTEILLES A LA PROPRIETE\n"@deu;
+    gv:color [
+  gv:hex "d9c1a2";
+  gv:red "217";
+  gv:blue "162";
+  gv:green "193";
+  gv:score "10.276698";
+  gv:coverage "22.54"
+], [
+  gv:hex "8d7542";
+  gv:red "141";
+  gv:blue "66";
+  gv:green "117";
+  gv:score "9.5179252";
+  gv:coverage "1.46"
+], [
+  gv:hex "6a5424";
+  gv:red "106";
+  gv:blue "36";
+  gv:green "84";
+  gv:score "7.271583399999999";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "784a21";
+  gv:red "120";
+  gv:blue "33";
+  gv:green "74";
+  gv:score "6.221671799999999";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "8a7352";
+  gv:red "138";
+  gv:blue "82";
+  gv:green "115";
+  gv:score "6.1383683";
+  gv:coverage "2.3800000000000003"
+], [
+  gv:hex "b09876";
+  gv:red "176";
+  gv:blue "118";
+  gv:green "152";
+  gv:score "6.040921099999999";
+  gv:coverage "3.04"
+], [
+  gv:hex "a06a3d";
+  gv:red "160";
+  gv:blue "61";
+  gv:green "106";
+  gv:score "6.0193572";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "665232";
+  gv:red "102";
+  gv:blue "50";
+  gv:green "82";
+  gv:score "5.6690227";
+  gv:coverage "1.8800000000000001"
+], [
+  gv:hex "b19763";
+  gv:red "177";
+  gv:blue "99";
+  gv:green "151";
+  gv:score "5.5021111";
+  gv:coverage "0.9533333600000001"
+], [
+  gv:hex "562d06";
+  gv:red "86";
+  gv:blue "6";
+  gv:green "45";
+  gv:score "4.2242568";
+  gv:coverage "0.45999999999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.306641"
+];
+    w:bagOfWords "1945\nbouchon\nDE POSE\niquette officielle Des vind\noe-la Diffe oe Lausanne\nMIS EN BOUTEILLES A LA PROPRIETE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

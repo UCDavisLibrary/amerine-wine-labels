@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2435";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "BOTTLED IN 1936\nPRODUCE OF FRANCE\nADE MA\nRED BORDEAUX WINE\nMEDOC\n19 3 3 V. I N T A G E\nBottled by\nBOTTLED IN FRANCE\nCONTAINS\nI PINT AND 8 FLUID OUNCES\nALCOHOLIC STRENGTH\nII BY VOLUME\n"@fra;
+    gv:color [
+  gv:hex "cfc4bb";
+  gv:red "207";
+  gv:blue "187";
+  gv:green "196";
+  gv:score "12.40399";
+  gv:coverage "17.48"
+], [
+  gv:hex "997840";
+  gv:red "153";
+  gv:blue "64";
+  gv:green "120";
+  gv:score "5.9411548000000005";
+  gv:coverage "1.54"
+], [
+  gv:hex "645538";
+  gv:red "100";
+  gv:blue "56";
+  gv:green "85";
+  gv:score "5.2303348";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "c28a51";
+  gv:red "194";
+  gv:blue "81";
+  gv:green "138";
+  gv:score "5.1172189";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "9a2a2b";
+  gv:red "154";
+  gv:blue "43";
+  gv:green "42";
+  gv:score "0.20301118";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "d5ba9d";
+  gv:red "213";
+  gv:blue "157";
+  gv:green "186";
+  gv:score "8.249593500000001";
+  gv:coverage "18.293333"
+], [
+  gv:hex "a59b92";
+  gv:red "165";
+  gv:blue "146";
+  gv:green "155";
+  gv:score "7.894779000000001";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "e7dbd3";
+  gv:red "231";
+  gv:blue "211";
+  gv:green "219";
+  gv:score "5.2030645";
+  gv:coverage "32.173333"
+], [
+  gv:hex "966c3f";
+  gv:red "150";
+  gv:blue "63";
+  gv:green "108";
+  gv:score "4.9631994";
+  gv:coverage "0.90666665"
+], [
+  gv:hex "b7a186";
+  gv:red "183";
+  gv:blue "134";
+  gv:green "161";
+  gv:score "4.9555264";
+  gv:coverage "1.1333332999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.9432"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.229851000000004"
+];
+    w:bagOfWords "BOTTLED IN 1936\nPRODUCE OF FRANCE\nADE MA\nRED BORDEAUX WINE\nMEDOC\n19 3 3 V. I N T A G E\nBottled by\nBOTTLED IN FRANCE\nCONTAINS\nI PINT AND 8 FLUID OUNCES\nALCOHOLIC STRENGTH\nII BY VOLUME\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3303/label_3314";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "MISE DU CONTROLEE\n1934\nDOMAINE\nITS ST GEORGES\nCLOS DES POR RETS ST GEORGES\nHENRI GOUGES\nseul Proprietoire\n"@fra;
+    gv:color [
+  gv:hex "435d38";
+  gv:red "67";
+  gv:blue "56";
+  gv:green "93";
+  gv:score "22.670358";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "d1c6ae";
+  gv:red "209";
+  gv:blue "174";
+  gv:green "198";
+  gv:score "21.457274";
+  gv:coverage "21.766667"
+], [
+  gv:hex "617b56";
+  gv:red "97";
+  gv:blue "86";
+  gv:green "123";
+  gv:score "18.65928";
+  gv:coverage "0.84"
+], [
+  gv:hex "e7dec6";
+  gv:red "231";
+  gv:blue "198";
+  gv:green "222";
+  gv:score "8.9102134";
+  gv:coverage "24.02"
+], [
+  gv:hex "a79f86";
+  gv:red "167";
+  gv:blue "134";
+  gv:green "159";
+  gv:score "8.554618099999999";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "847b63";
+  gv:red "132";
+  gv:blue "99";
+  gv:green "123";
+  gv:score "4.0337481";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "859e7a";
+  gv:red "133";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "3.9992756999999997";
+  gv:coverage "0.22"
+], [
+  gv:hex "28451f";
+  gv:red "40";
+  gv:blue "31";
+  gv:green "69";
+  gv:score "2.2294711";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "604f3b";
+  gv:red "96";
+  gv:blue "59";
+  gv:green "79";
+  gv:score "2.1983115";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "3d2f1b";
+  gv:red "61";
+  gv:blue "27";
+  gv:green "47";
+  gv:score "1.166244";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "75.429696"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "62.389863"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.156422"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "60.518514999999994"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MISE DU CONTROLEE\n1934\nDOMAINE\nITS ST GEORGES\nCLOS DES POR RETS ST GEORGES\nHENRI GOUGES\nseul Proprietoire\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0162";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "NET CONTENTS\nALCOHOL 12%\nBY VOLUME\n5 QUART\nCALIFORNIA\nBURGUNDY\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD, RUTHERFORD,\nNAPA COUNTY, CALIFORNIA\nBOTTLED A THE WINERY\n"@eng;
+    gv:color [
+  gv:hex "bc9960";
+  gv:red "188";
+  gv:blue "96";
+  gv:green "153";
+  gv:score "18.796806";
+  gv:coverage "3.74"
+], [
+  gv:hex "d6bf9d";
+  gv:red "214";
+  gv:blue "157";
+  gv:green "191";
+  gv:score "15.208268";
+  gv:coverage "33.92"
+], [
+  gv:hex "d9b781";
+  gv:red "217";
+  gv:blue "129";
+  gv:green "183";
+  gv:score "14.414463999999999";
+  gv:coverage "3.1733334"
+], [
+  gv:hex "c79261";
+  gv:red "199";
+  gv:blue "97";
+  gv:green "146";
+  gv:score "11.473917";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "a66f41";
+  gv:red "166";
+  gv:blue "65";
+  gv:green "111";
+  gv:score "8.036992";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "e3b07e";
+  gv:red "227";
+  gv:blue "126";
+  gv:green "176";
+  gv:score "5.9782624";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "b49d7c";
+  gv:red "180";
+  gv:blue "124";
+  gv:green "157";
+  gv:score "5.6575283";
+  gv:coverage "3.2266665"
+], [
+  gv:hex "9a7841";
+  gv:red "154";
+  gv:blue "65";
+  gv:green "120";
+  gv:score "4.1925091";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "ae613f";
+  gv:red "174";
+  gv:blue "63";
+  gv:green "97";
+  gv:score "2.7203951";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "eab79a";
+  gv:red "234";
+  gv:blue "154";
+  gv:green "183";
+  gv:score "1.8312591999999999";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.405322"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.174485999999995"
+];
+    w:bagOfWords "NET CONTENTS\nALCOHOL 12%\nBY VOLUME\n5 QUART\nCALIFORNIA\nBURGUNDY\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD, RUTHERFORD,\nNAPA COUNTY, CALIFORNIA\nBOTTLED A THE WINERY\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

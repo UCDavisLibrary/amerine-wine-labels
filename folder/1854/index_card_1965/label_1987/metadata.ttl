@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1987";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "FLORIDO\nPRODUCE OF SPAIN\nSHERRY\nSUPERIOR\nSHERRY GROWERS\nSANLUCAR DE BARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "a4161f";
+  gv:red "164";
+  gv:blue "31";
+  gv:green "22";
+  gv:score "24.053273";
+  gv:coverage "1.68"
+], [
+  gv:hex "6c5132";
+  gv:red "108";
+  gv:blue "50";
+  gv:green "81";
+  gv:score "6.6765241";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "dac2a5";
+  gv:red "218";
+  gv:blue "165";
+  gv:green "194";
+  gv:score "5.0008249";
+  gv:coverage "29.42"
+], [
+  gv:hex "cc4c54";
+  gv:red "204";
+  gv:blue "84";
+  gv:green "76";
+  gv:score "2.7915042000000003";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "bb0d22";
+  gv:red "187";
+  gv:blue "34";
+  gv:green "13";
+  gv:score "13.974336000000001";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "d41832";
+  gv:red "212";
+  gv:blue "50";
+  gv:green "24";
+  gv:score "5.8406759";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "897052";
+  gv:red "137";
+  gv:blue "82";
+  gv:green "112";
+  gv:score "4.6172403";
+  gv:coverage "1.1466667"
+], [
+  gv:hex "f3b9a9";
+  gv:red "243";
+  gv:blue "169";
+  gv:green "185";
+  gv:score "4.280034499999999";
+  gv:coverage "1.7466666"
+], [
+  gv:hex "b2987c";
+  gv:red "178";
+  gv:blue "124";
+  gv:green "152";
+  gv:score "3.1459152999999995";
+  gv:coverage "1.6266665999999999"
+], [
+  gv:hex "d50422";
+  gv:red "213";
+  gv:blue "34";
+  gv:green "4";
+  gv:score "3.085034";
+  gv:coverage "0.18666666999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.57619"
+];
+    w:bagOfWords "FLORIDO\nPRODUCE OF SPAIN\nSHERRY\nSUPERIOR\nSHERRY GROWERS\nSANLUCAR DE BARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

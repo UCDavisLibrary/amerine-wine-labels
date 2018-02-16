@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0934";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "LA MMA.\nCNENA z s. A. IGLE\n"@deu;
+    gv:color [
+  gv:hex "d59317";
+  gv:red "213";
+  gv:blue "23";
+  gv:green "147";
+  gv:score "14.260693";
+  gv:coverage "2.58"
+], [
+  gv:hex "a86c17";
+  gv:red "168";
+  gv:blue "23";
+  gv:green "108";
+  gv:score "12.712966";
+  gv:coverage "3.5266668"
+], [
+  gv:hex "eabc62";
+  gv:red "234";
+  gv:blue "98";
+  gv:green "188";
+  gv:score "8.0055162";
+  gv:coverage "3.04"
+], [
+  gv:hex "c98d3c";
+  gv:red "201";
+  gv:blue "60";
+  gv:green "141";
+  gv:score "11.774275";
+  gv:coverage "3.0133333"
+], [
+  gv:hex "eaad29";
+  gv:red "234";
+  gv:blue "41";
+  gv:green "173";
+  gv:score "9.4315037";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "b05e0a";
+  gv:red "176";
+  gv:blue "10";
+  gv:green "94";
+  gv:score "9.3858838";
+  gv:coverage "1.22"
+], [
+  gv:hex "eab83c";
+  gv:red "234";
+  gv:blue "60";
+  gv:green "184";
+  gv:score "6.2113345";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "eab35f";
+  gv:red "234";
+  gv:blue "95";
+  gv:green "179";
+  gv:score "3.4278981";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "e8c386";
+  gv:red "232";
+  gv:blue "134";
+  gv:green "195";
+  gv:score "3.2235924";
+  gv:coverage "3.6133334"
+], [
+  gv:hex "4f0100";
+  gv:red "79";
+  gv:blue "undefined";
+  gv:green "1";
+  gv:score "0.029190336";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.612842"
+];
+    w:bagOfWords "LA MMA.\nCNENA z s. A. IGLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2688";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "Bourgogne\nce\nPRODUC M A C O N\nRED BURGUNDY WINE\nAPPELLATION CONTROLEE\nRESERVE\nComte d'Orthez\nR6GOCIARTABETIZIRE (COTE D'OR\nContents 1 Pint 8 Fl. Oz.\nAlcohol 12.5% by volume\n"@fra;
+    gv:color [
+  gv:hex "e2c39e";
+  gv:red "226";
+  gv:blue "158";
+  gv:green "195";
+  gv:score "39.596272";
+  gv:coverage "25.353333"
+], [
+  gv:hex "90371a";
+  gv:red "144";
+  gv:blue "26";
+  gv:green "55";
+  gv:score "0.83531";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "a0260b";
+  gv:red "160";
+  gv:blue "11";
+  gv:green "38";
+  gv:score "0.8080243100000001";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "e2c194";
+  gv:red "226";
+  gv:blue "148";
+  gv:green "193";
+  gv:score "12.577853999999999";
+  gv:coverage "4.18"
+], [
+  gv:hex "eab98f";
+  gv:red "234";
+  gv:blue "143";
+  gv:green "185";
+  gv:score "8.531379";
+  gv:coverage "1.9933334"
+], [
+  gv:hex "b49875";
+  gv:red "180";
+  gv:blue "117";
+  gv:green "152";
+  gv:score "6.9376826000000005";
+  gv:coverage "2.3"
+], [
+  gv:hex "8e7453";
+  gv:red "142";
+  gv:blue "83";
+  gv:green "116";
+  gv:score "5.9517846";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "c48e67";
+  gv:red "196";
+  gv:blue "103";
+  gv:green "142";
+  gv:score "3.8457468";
+  gv:coverage "0.8"
+], [
+  gv:hex "eabc99";
+  gv:red "234";
+  gv:blue "153";
+  gv:green "188";
+  gv:score "3.3619337";
+  gv:coverage "0.84"
+], [
+  gv:hex "6a5335";
+  gv:red "106";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "2.6042616";
+  gv:coverage "0.9133333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.030888"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.808178999999996"
+];
+    w:bagOfWords "Bourgogne\nce\nPRODUC M A C O N\nRED BURGUNDY WINE\nAPPELLATION CONTROLEE\nRESERVE\nComte d'Orthez\nR6GOCIARTABETIZIRE (COTE D'OR\nContents 1 Pint 8 Fl. Oz.\nAlcohol 12.5% by volume\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

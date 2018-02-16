@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3256/label_3275";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "ALCOHOL BY VOLUME\nCONTENTS\n3,5\nPINT AND 8 FLUID OUNCES\nMiche n\nGrand Vin de Bourgogne\nFERNAND GRIVELET\nPropriétaire\nCHAM BOLLE-MUSIGNY (Cote-d'Or)\nFrance\nPRODUCE OF FRANCE\nate de Nuits\nros m e Romare\n"@fra;
+    gv:color [
+  gv:hex "ddc3a2";
+  gv:red "221";
+  gv:blue "162";
+  gv:green "195";
+  gv:score "61.160970000000006";
+  gv:coverage "24.553333"
+], [
+  gv:hex "6f532a";
+  gv:red "111";
+  gv:blue "42";
+  gv:green "83";
+  gv:score "3.8453292";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "243348";
+  gv:red "36";
+  gv:blue "72";
+  gv:green "51";
+  gv:score "0.13549383999999998";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "b49977";
+  gv:red "180";
+  gv:blue "119";
+  gv:green "153";
+  gv:score "12.652276";
+  gv:coverage "2.7466666"
+], [
+  gv:hex "8f7554";
+  gv:red "143";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "5.9912167";
+  gv:coverage "1.08"
+], [
+  gv:hex "eed5b7";
+  gv:red "238";
+  gv:blue "183";
+  gv:green "213";
+  gv:score "3.8040325";
+  gv:coverage "9.74"
+], [
+  gv:hex "896d43";
+  gv:red "137";
+  gv:blue "67";
+  gv:green "109";
+  gv:score "2.77804";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "7e4d2c";
+  gv:red "126";
+  gv:blue "44";
+  gv:green "77";
+  gv:score "1.3942128999999999";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "715637";
+  gv:red "113";
+  gv:blue "55";
+  gv:green "86";
+  gv:score "1.372541";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "7a5036";
+  gv:red "122";
+  gv:blue "54";
+  gv:green "80";
+  gv:score "1.3073029999999999";
+  gv:coverage "0.14666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.274775"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.228244000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.791152"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.4081"
+];
+    w:bagOfWords "ALCOHOL BY VOLUME\nCONTENTS\n3,5\nPINT AND 8 FLUID OUNCES\nMiche n\nGrand Vin de Bourgogne\nFERNAND GRIVELET\nPropriétaire\nCHAM BOLLE-MUSIGNY (Cote-d'Or)\nFrance\nPRODUCE OF FRANCE\nate de Nuits\nros m e Romare\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

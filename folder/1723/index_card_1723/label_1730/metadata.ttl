@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1730";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Ellerab3ut der C. von chubert'schen vormals\nFreiherrlich von Stumm-Halberg'schen\nSCHLOSSKELLEREI\nMO SEL SA AR RUWER\n"@deu;
+    gv:color [
+  gv:hex "85755a";
+  gv:red "133";
+  gv:blue "90";
+  gv:green "117";
+  gv:score "19.425976";
+  gv:coverage "5.7333332"
+], [
+  gv:hex "88402c";
+  gv:red "136";
+  gv:blue "44";
+  gv:green "64";
+  gv:score "0.55925655";
+  gv:coverage "0.06"
+], [
+  gv:hex "a9987e";
+  gv:red "169";
+  gv:blue "126";
+  gv:green "152";
+  gv:score "15.488562";
+  gv:coverage "5.8666665"
+], [
+  gv:hex "635538";
+  gv:red "99";
+  gv:blue "56";
+  gv:green "85";
+  gv:score "13.383356";
+  gv:coverage "3.5733335"
+], [
+  gv:hex "d0bea6";
+  gv:red "208";
+  gv:blue "166";
+  gv:green "190";
+  gv:score "8.56731";
+  gv:coverage "6.3333333000000005"
+], [
+  gv:hex "403316";
+  gv:red "64";
+  gv:blue "22";
+  gv:green "51";
+  gv:score "5.5756278";
+  gv:coverage "1.66"
+], [
+  gv:hex "857546";
+  gv:red "133";
+  gv:blue "70";
+  gv:green "117";
+  gv:score "4.0530555";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "976c58";
+  gv:red "151";
+  gv:blue "88";
+  gv:green "108";
+  gv:score "3.5705611";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "ab9966";
+  gv:red "171";
+  gv:blue "102";
+  gv:green "153";
+  gv:score "3.274947";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "c7c1b7";
+  gv:red "199";
+  gv:blue "183";
+  gv:green "193";
+  gv:score "3.2497823";
+  gv:coverage "12.6"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.7482"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "58.982074"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.389716"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "52.126068000000004"
+];
+    w:bagOfWords "Ellerab3ut der C. von chubert'schen vormals\nFreiherrlich von Stumm-Halberg'schen\nSCHLOSSKELLEREI\nMO SEL SA AR RUWER\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

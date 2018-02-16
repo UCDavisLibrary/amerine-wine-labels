@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1772";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "CARL VVIEWELS TRIErz\n1929er\nB e r n c a s t e l e r\nMOSEL SAAR VRVWERWEINE\n"@deu;
+    gv:color [
+  gv:hex "d9bfa1";
+  gv:red "217";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "29.138222000000003";
+  gv:coverage "49.753332"
+], [
+  gv:hex "6d4b30";
+  gv:red "109";
+  gv:blue "48";
+  gv:green "75";
+  gv:score "16.206302";
+  gv:coverage "2.26"
+], [
+  gv:hex "8f7254";
+  gv:red "143";
+  gv:blue "84";
+  gv:green "114";
+  gv:score "14.190003";
+  gv:coverage "2.08"
+], [
+  gv:hex "b29678";
+  gv:red "178";
+  gv:blue "120";
+  gv:green "150";
+  gv:score "10.152425";
+  gv:coverage "1.9533332"
+], [
+  gv:hex "4d2c12";
+  gv:red "77";
+  gv:blue "18";
+  gv:green "44";
+  gv:score "9.706258";
+  gv:coverage "1.32"
+], [
+  gv:hex "6c5132";
+  gv:red "108";
+  gv:blue "50";
+  gv:green "81";
+  gv:score "8.206617099999999";
+  gv:coverage "1.46"
+], [
+  gv:hex "926b51";
+  gv:red "146";
+  gv:blue "81";
+  gv:green "107";
+  gv:score "4.2188905";
+  gv:coverage "0.66"
+], [
+  gv:hex "b78f77";
+  gv:red "183";
+  gv:blue "119";
+  gv:green "143";
+  gv:score "1.6578203";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "371600";
+  gv:red "55";
+  gv:blue "undefined";
+  gv:green "22";
+  gv:score "1.4695516";
+  gv:coverage "0.18"
+], [
+  gv:hex "f0d6b8";
+  gv:red "240";
+  gv:blue "184";
+  gv:green "214";
+  gv:score "1.1423993000000001";
+  gv:coverage "22.686666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.038029"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "58.949417000000004"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "52.870684999999995"
+], [
+  gv:mid <https://g.co/kg/m/0bs7_0t>;
+  gv:desc "electronic device";
+  gv:score "51.125747"
+];
+    w:bagOfWords "CARL VVIEWELS TRIErz\n1929er\nB e r n c a s t e l e r\nMOSEL SAAR VRVWERWEINE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

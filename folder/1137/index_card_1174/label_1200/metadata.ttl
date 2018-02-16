@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1200";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "Embotelladores\nN 9 37\nParis\nBurdeos\nADE\nCadiz\nMatanzas\nFLOR I Do&Co\nBRANDY\nEXTRA VIEJl SIMO\n"@spa;
+    gv:color [
+  gv:hex "dac19c";
+  gv:red "218";
+  gv:blue "156";
+  gv:green "193";
+  gv:score "45.830438";
+  gv:coverage "41.053334"
+], [
+  gv:hex "dabb8d";
+  gv:red "218";
+  gv:blue "141";
+  gv:green "187";
+  gv:score "13.476805";
+  gv:coverage "5.3066667"
+], [
+  gv:hex "b19a78";
+  gv:red "177";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "10.943566";
+  gv:coverage "3.52"
+], [
+  gv:hex "8a7555";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "9.6231341";
+  gv:coverage "2.82"
+], [
+  gv:hex "685437";
+  gv:red "104";
+  gv:blue "55";
+  gv:green "84";
+  gv:score "5.9052620000000005";
+  gv:coverage "1.92"
+], [
+  gv:hex "be9e6f";
+  gv:red "190";
+  gv:blue "111";
+  gv:green "158";
+  gv:score "3.6753650999999996";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "443115";
+  gv:red "68";
+  gv:blue "21";
+  gv:green "49";
+  gv:score "2.4015248";
+  gv:coverage "0.71333335"
+], [
+  gv:hex "eed8b6";
+  gv:red "238";
+  gv:blue "182";
+  gv:green "216";
+  gv:score "1.9510508999999998";
+  gv:coverage "25.986665"
+], [
+  gv:hex "8f7348";
+  gv:red "143";
+  gv:blue "72";
+  gv:green "115";
+  gv:score "1.7793808000000002";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "695029";
+  gv:red "105";
+  gv:blue "41";
+  gv:green "80";
+  gv:score "1.3021806";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.401363"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.682926"
+];
+    w:bagOfWords "Embotelladores\nN 9 37\nParis\nBurdeos\nADE\nCadiz\nMatanzas\nFLOR I Do&Co\nBRANDY\nEXTRA VIEJl SIMO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

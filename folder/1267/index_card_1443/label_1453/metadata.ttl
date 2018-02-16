@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1453";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "of FINE WINES\nADL MARK\nWIDMER'S\nCATAWBA WINE\nMADE FROM CA TA WBA GRA PES\nPRODUCED AND BOTTLED BY\nALCOHOL\n2.5% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d4c2b0";
+  gv:red "212";
+  gv:blue "176";
+  gv:green "194";
+  gv:score "15.315609";
+  gv:coverage "4.6266668"
+], [
+  gv:hex "aa9986";
+  gv:red "170";
+  gv:blue "134";
+  gv:green "153";
+  gv:score "14.017131999999998";
+  gv:coverage "1.94"
+], [
+  gv:hex "88745d";
+  gv:red "136";
+  gv:blue "93";
+  gv:green "116";
+  gv:score "10.328021";
+  gv:coverage "1.0333333"
+], [
+  gv:hex "634e34";
+  gv:red "99";
+  gv:blue "52";
+  gv:green "78";
+  gv:score "9.0570033";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "d2c5bb";
+  gv:red "210";
+  gv:blue "187";
+  gv:green "197";
+  gv:score "8.9798316";
+  gv:coverage "7.140000000000001"
+], [
+  gv:hex "e9ddd3";
+  gv:red "233";
+  gv:blue "211";
+  gv:green "221";
+  gv:score "7.8892305";
+  gv:coverage "79.24"
+], [
+  gv:hex "eddccc";
+  gv:red "237";
+  gv:blue "204";
+  gv:green "220";
+  gv:score "5.8491364";
+  gv:coverage "2.8333334000000003"
+], [
+  gv:hex "45321d";
+  gv:red "69";
+  gv:blue "29";
+  gv:green "50";
+  gv:score "5.3007822";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "a89c92";
+  gv:red "168";
+  gv:blue "146";
+  gv:green "156";
+  gv:score "3.9043336999999996";
+  gv:coverage "0.98"
+], [
+  gv:hex "4e3019";
+  gv:red "78";
+  gv:blue "25";
+  gv:green "48";
+  gv:score "3.8495730999999997";
+  gv:coverage "0.093333336"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.6148"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.336563"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.602036"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.171386"
+];
+    w:bagOfWords "of FINE WINES\nADL MARK\nWIDMER'S\nCATAWBA WINE\nMADE FROM CA TA WBA GRA PES\nPRODUCED AND BOTTLED BY\nALCOHOL\n2.5% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

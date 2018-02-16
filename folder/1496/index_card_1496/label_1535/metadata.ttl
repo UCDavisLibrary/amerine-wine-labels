@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1535";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "LEONA R.\nMANZANILLA PA SADA\nTIM BR\n23\nJOAQUIN LE ONAR.\nETALI\nSANLUCAR, DE\nBARRAMEDA.\n"@spa;
+    gv:color [
+  gv:hex "e4dcd2";
+  gv:red "228";
+  gv:blue "210";
+  gv:green "220";
+  gv:score "29.409054";
+  gv:coverage "41.413334"
+], [
+  gv:hex "7d776d";
+  gv:red "125";
+  gv:blue "109";
+  gv:green "119";
+  gv:score "14.140326";
+  gv:coverage "1.4066666"
+], [
+  gv:hex "13140a";
+  gv:red "19";
+  gv:blue "10";
+  gv:green "20";
+  gv:score "7.8654028";
+  gv:coverage "0.62"
+], [
+  gv:hex "cdc7bd";
+  gv:red "205";
+  gv:blue "189";
+  gv:green "199";
+  gv:score "21.274857";
+  gv:coverage "9.66"
+], [
+  gv:hex "a19b91";
+  gv:red "161";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "12.345809000000001";
+  gv:coverage "1.68"
+], [
+  gv:hex "59564c";
+  gv:red "89";
+  gv:blue "76";
+  gv:green "86";
+  gv:score "7.245162099999999";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "35342a";
+  gv:red "53";
+  gv:blue "42";
+  gv:green "52";
+  gv:score "4.7653973";
+  gv:coverage "0.38"
+], [
+  gv:hex "e9dccc";
+  gv:red "233";
+  gv:blue "204";
+  gv:green "220";
+  gv:score "0.74869478";
+  gv:coverage "29.426667000000002"
+], [
+  gv:hex "d9ccbc";
+  gv:red "217";
+  gv:blue "188";
+  gv:green "204";
+  gv:score "0.60826293";
+  gv:coverage "14.273333999999998"
+], [
+  gv:hex "625b4d";
+  gv:red "98";
+  gv:blue "77";
+  gv:green "91";
+  gv:score "0.5668106";
+  gv:coverage "0.17333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.63540800000001"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.983524"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "LEONA R.\nMANZANILLA PA SADA\nTIM BR\n23\nJOAQUIN LE ONAR.\nETALI\nSANLUCAR, DE\nBARRAMEDA.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0131";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "Scuola di iticottura\ne ai onofogia\nCONEGLIANO\nVeneto\n"@ita;
+    gv:color [
+  gv:hex "dbc5a4";
+  gv:red "219";
+  gv:blue "164";
+  gv:green "197";
+  gv:score "37.335068";
+  gv:coverage "4.6533335000000005"
+], [
+  gv:hex "eae0d7";
+  gv:red "234";
+  gv:blue "215";
+  gv:green "224";
+  gv:score "6.8844765";
+  gv:coverage "70.42"
+], [
+  gv:hex "956f59";
+  gv:red "149";
+  gv:blue "89";
+  gv:green "111";
+  gv:score "4.3998379";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "dcbc8a";
+  gv:red "220";
+  gv:blue "138";
+  gv:green "188";
+  gv:score "17.924659000000002";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "421600";
+  gv:red "66";
+  gv:blue "undefined";
+  gv:green "22";
+  gv:score "0.11888527";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "d0c6bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "198";
+  gv:score "6.2291782";
+  gv:coverage "16.96"
+], [
+  gv:hex "ecd8bb";
+  gv:red "236";
+  gv:blue "187";
+  gv:green "216";
+  gv:score "5.9190169";
+  gv:coverage "4.32"
+], [
+  gv:hex "c19e63";
+  gv:red "193";
+  gv:blue "99";
+  gv:green "158";
+  gv:score "4.748759000000001";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "b79d82";
+  gv:red "183";
+  gv:blue "130";
+  gv:green "157";
+  gv:score "2.4913047";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "b58e78";
+  gv:red "181";
+  gv:blue "120";
+  gv:green "142";
+  gv:score "2.3320640999999998";
+  gv:coverage "0.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.057553"
+];
+    w:bagOfWords "Scuola di iticottura\ne ai onofogia\nCONEGLIANO\nVeneto\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

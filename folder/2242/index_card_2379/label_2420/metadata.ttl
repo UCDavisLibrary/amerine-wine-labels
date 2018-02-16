@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2420";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID Oz.\nMARQUE\nDEPO SEE\nM A R G A\nUX\n1928\nBottled and shipped by\norted by\nBODRID EAUX\nWILD\n& Co Inc.\n20 Lei desdorff Street\nMaison fondée en 18Q3\nPermit I-314 SAN FRANCISCO Cal.\nPRODUCE OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "dfc5a5";
+  gv:red "223";
+  gv:blue "165";
+  gv:green "197";
+  gv:score "46.152559";
+  gv:coverage "45.800000000000004"
+], [
+  gv:hex "cb9479";
+  gv:red "203";
+  gv:blue "121";
+  gv:green "148";
+  gv:score "21.292127999999998";
+  gv:coverage "4.54"
+], [
+  gv:hex "e6b99b";
+  gv:red "230";
+  gv:blue "155";
+  gv:green "185";
+  gv:score "12.075358999999999";
+  gv:coverage "3.7733335"
+], [
+  gv:hex "b49a7a";
+  gv:red "180";
+  gv:blue "122";
+  gv:green "154";
+  gv:score "8.001225400000001";
+  gv:coverage "2.7933333"
+], [
+  gv:hex "f0d8b8";
+  gv:red "240";
+  gv:blue "184";
+  gv:green "216";
+  gv:score "3.7695512";
+  gv:coverage "17.52"
+], [
+  gv:hex "8e7656";
+  gv:red "142";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "2.7987919999999997";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "9f6e52";
+  gv:red "159";
+  gv:blue "82";
+  gv:green "110";
+  gv:score "2.0839896";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "685233";
+  gv:red "104";
+  gv:blue "51";
+  gv:green "82";
+  gv:score "0.9984687900000001";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "cc9573";
+  gv:red "204";
+  gv:blue "115";
+  gv:green "149";
+  gv:score "0.53795348";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "fcd2b5";
+  gv:red "252";
+  gv:blue "181";
+  gv:green "210";
+  gv:score "0.53273481";
+  gv:coverage "0.16666667000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.9019"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "58.424634"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.764134"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.428835"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.62180600000001"
+];
+    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID Oz.\nMARQUE\nDEPO SEE\nM A R G A\nUX\n1928\nBottled and shipped by\norted by\nBODRID EAUX\nWILD\n& Co Inc.\n20 Lei desdorff Street\nMaison fondée en 18Q3\nPermit I-314 SAN FRANCISCO Cal.\nPRODUCE OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

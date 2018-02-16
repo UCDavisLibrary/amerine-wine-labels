@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0980/label_0982";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "La\n1bbayes\n1941\nMarque déposée\nEtiquette officielle\ndes vins de la\nVILLE DE LA\nRécolte 1941\ngen\nbouchon\nGrau\n"@deu;
+    gv:color [
+  gv:hex "d4c3a0";
+  gv:red "212";
+  gv:blue "160";
+  gv:green "195";
+  gv:score "15.796286";
+  gv:coverage "7.6466665"
+], [
+  gv:hex "aa2b06";
+  gv:red "170";
+  gv:blue "6";
+  gv:green "43";
+  gv:score "1.0169413999999999";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "ad9d7a";
+  gv:red "173";
+  gv:blue "122";
+  gv:green "157";
+  gv:score "11.450601";
+  gv:coverage "2.6533333999999997"
+], [
+  gv:hex "ddc790";
+  gv:red "221";
+  gv:blue "144";
+  gv:green "199";
+  gv:score "11.080001000000001";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "f1dba7";
+  gv:red "241";
+  gv:blue "167";
+  gv:green "219";
+  gv:score "10.742005";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "eedcb8";
+  gv:red "238";
+  gv:blue "184";
+  gv:green "220";
+  gv:score "9.2243128";
+  gv:coverage "9.48"
+], [
+  gv:hex "87775c";
+  gv:red "135";
+  gv:blue "92";
+  gv:green "119";
+  gv:score "5.7953551";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "ae9a66";
+  gv:red "174";
+  gv:blue "102";
+  gv:green "154";
+  gv:score "5.1963609";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "8c7642";
+  gv:red "140";
+  gv:blue "66";
+  gv:green "118";
+  gv:score "4.67275";
+  gv:coverage "0.8"
+], [
+  gv:hex "64543c";
+  gv:red "100";
+  gv:blue "60";
+  gv:green "84";
+  gv:score "3.4220349";
+  gv:coverage "1.0133334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "65.169382"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "La\n1bbayes\n1941\nMarque déposée\nEtiquette officielle\ndes vins de la\nVILLE DE LA\nRécolte 1941\ngen\nbouchon\nGrau\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

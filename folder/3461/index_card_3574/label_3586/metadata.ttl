@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3586";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "6/4\nBOTTLED AT THE WINERY\nWENTE BROS\nESTABLISHED 1883\nVALLE de ORO\nLIVERMORE VALLEY\nA LIGHT WINE OF SAUVIGNON BLANG GRAPES\nPRODUCED AND BOTTLED BY\nWENTE BROS\nB. W. No. 893\n14th DIST., CALIFE\nLIVERMORE, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d7c1a1";
+  gv:red "215";
+  gv:blue "161";
+  gv:green "193";
+  gv:score "18.191805";
+  gv:coverage "19.28"
+], [
+  gv:hex "dbb783";
+  gv:red "219";
+  gv:blue "131";
+  gv:green "183";
+  gv:score "16.614464";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "bc9b68";
+  gv:red "188";
+  gv:blue "104";
+  gv:green "155";
+  gv:score "14.144829";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "b09a79";
+  gv:red "176";
+  gv:blue "121";
+  gv:green "154";
+  gv:score "8.9448154";
+  gv:coverage "3.04"
+], [
+  gv:hex "cd9e62";
+  gv:red "205";
+  gv:blue "98";
+  gv:green "158";
+  gv:score "6.2025934";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "897557";
+  gv:red "137";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "6.010047";
+  gv:coverage "1.4533333000000002"
+], [
+  gv:hex "937748";
+  gv:red "147";
+  gv:blue "72";
+  gv:green "119";
+  gv:score "5.4983395999999995";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "deac6e";
+  gv:red "222";
+  gv:blue "110";
+  gv:green "172";
+  gv:score "5.2315634";
+  gv:coverage "0.48"
+], [
+  gv:hex "655238";
+  gv:red "101";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "4.1785661";
+  gv:coverage "0.74"
+], [
+  gv:hex "473317";
+  gv:red "71";
+  gv:blue "23";
+  gv:green "51";
+  gv:score "2.3519218";
+  gv:coverage "0.36666666000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "75.05344699999999"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "55.873775"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "51.673269"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "50.612479"
+];
+    w:bagOfWords "6/4\nBOTTLED AT THE WINERY\nWENTE BROS\nESTABLISHED 1883\nVALLE de ORO\nLIVERMORE VALLEY\nA LIGHT WINE OF SAUVIGNON BLANG GRAPES\nPRODUCED AND BOTTLED BY\nWENTE BROS\nB. W. No. 893\n14th DIST., CALIFE\nLIVERMORE, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

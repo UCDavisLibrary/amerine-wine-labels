@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4027";
+    dct:type "image";
+    w:bagOfWords "IAVINICOLA\nDO\nREAL NO DE\nORTUGAL\nCOLARES\nREAL VINICOLA\"\n"@por;
+    gv:color [
+  gv:hex "847757";
+  gv:red "132";
+  gv:blue "87";
+  gv:green "119";
+  gv:score "17.766866";
+  gv:coverage "2.02"
+], [
+  gv:hex "d3c4ab";
+  gv:red "211";
+  gv:blue "171";
+  gv:green "196";
+  gv:score "12.163246";
+  gv:coverage "6.2933333"
+], [
+  gv:hex "2a3249";
+  gv:red "42";
+  gv:blue "73";
+  gv:green "50";
+  gv:score "1.7999593";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "ad5a46";
+  gv:red "173";
+  gv:blue "70";
+  gv:green "90";
+  gv:score "1.0498265999999998";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "933e3e";
+  gv:red "147";
+  gv:blue "62";
+  gv:green "62";
+  gv:score "1.0448328";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "605639";
+  gv:red "96";
+  gv:blue "57";
+  gv:green "86";
+  gv:score "12.461323";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "a8977b";
+  gv:red "168";
+  gv:blue "123";
+  gv:green "151";
+  gv:score "11.07081";
+  gv:coverage "1.96"
+], [
+  gv:hex "8c7849";
+  gv:red "140";
+  gv:blue "73";
+  gv:green "120";
+  gv:score "6.5948069";
+  gv:coverage "0.38"
+], [
+  gv:hex "cec4bc";
+  gv:red "206";
+  gv:blue "188";
+  gv:green "196";
+  gv:score "6.5665811000000005";
+  gv:coverage "17.033334"
+], [
+  gv:hex "eadac4";
+  gv:red "234";
+  gv:blue "196";
+  gv:green "218";
+  gv:score "3.1347632";
+  gv:coverage "2.4533333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.360168"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "IAVINICOLA\nDO\nREAL NO DE\nORTUGAL\nCOLARES\nREAL VINICOLA\"\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

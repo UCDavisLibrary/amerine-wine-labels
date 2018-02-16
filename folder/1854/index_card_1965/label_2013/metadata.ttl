@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2013";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "SANDEMAN, BUCK & Co,\nJEREZ\n(SPAIN)\nPEMARTIN SHERRY\n"@spa;
+    gv:color [
+  gv:hex "dabc9a";
+  gv:red "218";
+  gv:blue "154";
+  gv:green "188";
+  gv:score "50.838243999999996";
+  gv:coverage "35.386667"
+], [
+  gv:hex "6e4d25";
+  gv:red "110";
+  gv:blue "37";
+  gv:green "77";
+  gv:score "1.2931089999999998";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "d3b083";
+  gv:red "211";
+  gv:blue "131";
+  gv:green "176";
+  gv:score "14.038708999999999";
+  gv:coverage "3.7533332"
+], [
+  gv:hex "c3a074";
+  gv:red "195";
+  gv:blue "116";
+  gv:green "160";
+  gv:score "9.5716909";
+  gv:coverage "2.76"
+], [
+  gv:hex "bc9e7a";
+  gv:red "188";
+  gv:blue "122";
+  gv:green "158";
+  gv:score "8.4357433";
+  gv:coverage "3.02"
+], [
+  gv:hex "8f7454";
+  gv:red "143";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "3.7542554999999997";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "6e5435";
+  gv:red "110";
+  gv:blue "53";
+  gv:green "84";
+  gv:score "2.0672798";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "93734a";
+  gv:red "147";
+  gv:blue "74";
+  gv:green "115";
+  gv:score "1.6364556";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "967147";
+  gv:red "150";
+  gv:blue "71";
+  gv:green "113";
+  gv:score "1.1312213999999998";
+  gv:coverage "0.18"
+], [
+  gv:hex "d5ab81";
+  gv:red "213";
+  gv:blue "129";
+  gv:green "171";
+  gv:score "1.0353515";
+  gv:coverage "0.34666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "93.340671"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "79.883826"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.48042699999999"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "60.043442"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "SANDEMAN, BUCK & Co,\nJEREZ\n(SPAIN)\nPEMARTIN SHERRY\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

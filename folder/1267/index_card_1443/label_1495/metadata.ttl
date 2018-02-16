@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1495";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GARRETT'S\nFIRST\nLADY\nof the\nLAND\nGARRETTS\nAmerican\nRED WINE\nREGISTERED\nTRADE MAR\nALCOHOL 13% BY VOLUME\nPRODUCED & BOTTLED BY GARRETT & COMPANY, INC. BRO 0KLYN: NEw YORK\nESTABLISHED 1835\nNONE GENUINE WITHOUT THIS SIGNATURE\nThe original American Wine. Moderately sweet, delightfully tart. Made from choice American grapes\nThis superb wine (White or Red) is very appropriate with or after meals or any occasion. Serve cold.\n"@eng;
+    gv:color [
+  gv:hex "dcc9b3";
+  gv:red "220";
+  gv:blue "179";
+  gv:green "201";
+  gv:score "40.011844";
+  gv:coverage "38.026666999999996"
+], [
+  gv:hex "645239";
+  gv:red "100";
+  gv:blue "57";
+  gv:green "82";
+  gv:score "2.232286";
+  gv:coverage "1.3266666999999999"
+], [
+  gv:hex "a26715";
+  gv:red "162";
+  gv:blue "21";
+  gv:green "103";
+  gv:score "0.70838355";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "eadac9";
+  gv:red "234";
+  gv:blue "201";
+  gv:green "218";
+  gv:score "29.649436";
+  gv:coverage "31.473332999999997"
+], [
+  gv:hex "e7ded5";
+  gv:red "231";
+  gv:blue "213";
+  gv:green "222";
+  gv:score "11.590211";
+  gv:coverage "13.74"
+], [
+  gv:hex "331401";
+  gv:red "51";
+  gv:blue "1";
+  gv:green "20";
+  gv:score "0.052020681";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "dbcdc3";
+  gv:red "219";
+  gv:blue "195";
+  gv:green "205";
+  gv:score "4.494551599999999";
+  gv:coverage "4.8933335"
+], [
+  gv:hex "b29e86";
+  gv:red "178";
+  gv:blue "134";
+  gv:green "158";
+  gv:score "3.2262485";
+  gv:coverage "2.3"
+], [
+  gv:hex "86735b";
+  gv:red "134";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "1.543454";
+  gv:coverage "1.0333333"
+], [
+  gv:hex "e0b9aa";
+  gv:red "224";
+  gv:blue "170";
+  gv:green "185";
+  gv:score "1.4623284";
+  gv:coverage "1.5333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.526629"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "50.406396"
+];
+    w:bagOfWords "GARRETT'S\nFIRST\nLADY\nof the\nLAND\nGARRETTS\nAmerican\nRED WINE\nREGISTERED\nTRADE MAR\nALCOHOL 13% BY VOLUME\nPRODUCED & BOTTLED BY GARRETT & COMPANY, INC. BRO 0KLYN: NEw YORK\nESTABLISHED 1835\nNONE GENUINE WITHOUT THIS SIGNATURE\nThe original American Wine. Moderately sweet, delightfully tart. Made from choice American grapes\nThis superb wine (White or Red) is very appropriate with or after meals or any occasion. Serve cold.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

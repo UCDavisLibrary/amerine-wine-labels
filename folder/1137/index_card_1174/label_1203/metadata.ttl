@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1203";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "FLORIDO HERMANOS\nSPANISH\nESCOGIDO\n31\nSANLUCAR DE BARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "d3bda1";
+  gv:red "211";
+  gv:blue "161";
+  gv:green "189";
+  gv:score "17.864071";
+  gv:coverage "25.64"
+], [
+  gv:hex "903e36";
+  gv:red "144";
+  gv:blue "54";
+  gv:green "62";
+  gv:score "8.217393600000001";
+  gv:coverage "0.26"
+], [
+  gv:hex "0b1427";
+  gv:red "11";
+  gv:blue "39";
+  gv:green "20";
+  gv:score "3.6751591";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "b19a7b";
+  gv:red "177";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "12.579820999999999";
+  gv:coverage "2.7333334000000002"
+], [
+  gv:hex "eeb6a6";
+  gv:red "238";
+  gv:blue "166";
+  gv:green "182";
+  gv:score "9.2691444";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "8b7657";
+  gv:red "139";
+  gv:blue "87";
+  gv:green "118";
+  gv:score "7.1729749";
+  gv:coverage "1.2"
+], [
+  gv:hex "a06959";
+  gv:red "160";
+  gv:blue "89";
+  gv:green "105";
+  gv:score "4.492071999999999";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "aa5851";
+  gv:red "170";
+  gv:blue "81";
+  gv:green "88";
+  gv:score "4.398322100000001";
+  gv:coverage "0.18"
+], [
+  gv:hex "fba8a1";
+  gv:red "251";
+  gv:blue "161";
+  gv:green "168";
+  gv:score "4.124939400000001";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "c4907d";
+  gv:red "196";
+  gv:blue "125";
+  gv:green "144";
+  gv:score "3.8383827000000004";
+  gv:coverage "0.9333332999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.561722"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "FLORIDO HERMANOS\nSPANISH\nESCOGIDO\n31\nSANLUCAR DE BARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1406";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "PINOT\nSAN VICENTE\nESTACION SANTA ANA.\nLLANO DE MALPO\nCHILE\nSANTIAGO\nRESERVADO\nUNIVER\n"@spa;
+    gv:color [
+  gv:hex "100c08";
+  gv:red "16";
+  gv:blue "8";
+  gv:green "12";
+  gv:score "37.617928";
+  gv:coverage "24.486667"
+], [
+  gv:hex "5d5135";
+  gv:red "93";
+  gv:blue "53";
+  gv:green "81";
+  gv:score "21.139131";
+  gv:coverage "1.94"
+], [
+  gv:hex "ebdbc5";
+  gv:red "235";
+  gv:blue "197";
+  gv:green "219";
+  gv:score "1.8357245000000002";
+  gv:coverage "35.093334"
+], [
+  gv:hex "3f331b";
+  gv:red "63";
+  gv:blue "27";
+  gv:green "51";
+  gv:score "18.667965";
+  gv:coverage "2"
+], [
+  gv:hex "363129";
+  gv:red "54";
+  gv:blue "41";
+  gv:green "49";
+  gv:score "6.2841274";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "7b6d53";
+  gv:red "123";
+  gv:blue "83";
+  gv:green "109";
+  gv:score "4.7479171000000004";
+  gv:coverage "0.76"
+], [
+  gv:hex "251c0a";
+  gv:red "37";
+  gv:blue "10";
+  gv:green "28";
+  gv:score "4.5263592";
+  gv:coverage "0.70666666"
+], [
+  gv:hex "575148";
+  gv:red "87";
+  gv:blue "72";
+  gv:green "81";
+  gv:score "2.2424489";
+  gv:coverage "0.6"
+], [
+  gv:hex "deceb9";
+  gv:red "222";
+  gv:blue "185";
+  gv:green "206";
+  gv:score "1.4538242";
+  gv:coverage "20.5"
+], [
+  gv:hex "9d907f";
+  gv:red "157";
+  gv:blue "127";
+  gv:green "144";
+  gv:score "0.3953076";
+  gv:coverage "0.57333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.908048"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.063073"
+];
+    w:bagOfWords "PINOT\nSAN VICENTE\nESTACION SANTA ANA.\nLLANO DE MALPO\nCHILE\nSANTIAGO\nRESERVADO\nUNIVER\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

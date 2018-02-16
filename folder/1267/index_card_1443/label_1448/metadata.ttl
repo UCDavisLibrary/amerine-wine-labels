@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1448";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "ALCOHOL 12%\nN. Y. LICENSE\nBY NOLUM\nD. W\n25\nUS PAT\nTAYLOR'S\nFINEST QUALITY\nNEW YORK STATE\nBURGUNDY\nWINE\nMADE AND BOTTLED BY\nTHE TAYLOR WINE COMPANY\nHAMMONDS PORT N. Y\nU, S. A\nESTABLISHED 1880\nBONDED WINERY No. 17\n"@eng;
+    gv:color [
+  gv:hex "370d05";
+  gv:red "55";
+  gv:blue "5";
+  gv:green "13";
+  gv:score "38.600025";
+  gv:coverage "13.700000000000001"
+], [
+  gv:hex "b65a44";
+  gv:red "182";
+  gv:blue "68";
+  gv:green "90";
+  gv:score "2.7350605999999997";
+  gv:coverage "0.24"
+], [
+  gv:hex "907142";
+  gv:red "144";
+  gv:blue "66";
+  gv:green "113";
+  gv:score "1.5762366";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "f1dcd3";
+  gv:red "241";
+  gv:blue "211";
+  gv:green "220";
+  gv:score "0.62724683";
+  gv:coverage "62.333333"
+], [
+  gv:hex "4e2519";
+  gv:red "78";
+  gv:blue "25";
+  gv:green "37";
+  gv:score "13.478917000000001";
+  gv:coverage "4.4466667"
+], [
+  gv:hex "724a3a";
+  gv:red "114";
+  gv:blue "58";
+  gv:green "74";
+  gv:score "8.359202";
+  gv:coverage "2.5933333"
+], [
+  gv:hex "270200";
+  gv:red "39";
+  gv:blue "undefined";
+  gv:green "2";
+  gv:score "7.7995934";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "936a5a";
+  gv:red "147";
+  gv:blue "90";
+  gv:green "106";
+  gv:score "3.811175";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "8a3920";
+  gv:red "138";
+  gv:blue "32";
+  gv:green "57";
+  gv:score "2.5565231";
+  gv:coverage "0.26"
+], [
+  gv:hex "100501";
+  gv:red "16";
+  gv:blue "1";
+  gv:green "5";
+  gv:score "2.2604395";
+  gv:coverage "1.8533334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.86323"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "ALCOHOL 12%\nN. Y. LICENSE\nBY NOLUM\nD. W\n25\nUS PAT\nTAYLOR'S\nFINEST QUALITY\nNEW YORK STATE\nBURGUNDY\nWINE\nMADE AND BOTTLED BY\nTHE TAYLOR WINE COMPANY\nHAMMONDS PORT N. Y\nU, S. A\nESTABLISHED 1880\nBONDED WINERY No. 17\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

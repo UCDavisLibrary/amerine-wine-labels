@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4653/label_4654";
+    dct:type "image";
+    w:bagOfWords "BODEGA\n(AA No 1930)\nCANO 1852)\nEMBREEAN 98 O\nRESERVA ESPECIAL\n"@spa;
+    gv:color [
+  gv:hex "d0c3b8";
+  gv:red "208";
+  gv:blue "184";
+  gv:green "195";
+  gv:score "21.090730999999998";
+  gv:coverage "14.64"
+], [
+  gv:hex "4171a0";
+  gv:red "65";
+  gv:blue "160";
+  gv:green "113";
+  gv:score "7.0657365";
+  gv:coverage "2.0866666"
+], [
+  gv:hex "d2c4b4";
+  gv:red "210";
+  gv:blue "180";
+  gv:green "196";
+  gv:score "19.370443";
+  gv:coverage "9.886666400000001"
+], [
+  gv:hex "a99a8c";
+  gv:red "169";
+  gv:blue "140";
+  gv:green "154";
+  gv:score "9.6349292";
+  gv:coverage "1.18"
+], [
+  gv:hex "dfb7aa";
+  gv:red "223";
+  gv:blue "170";
+  gv:green "183";
+  gv:score "6.308";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "e8dbcf";
+  gv:red "232";
+  gv:blue "207";
+  gv:green "219";
+  gv:score "5.4773308";
+  gv:coverage "58.986664"
+], [
+  gv:hex "c09486";
+  gv:red "192";
+  gv:blue "134";
+  gv:green "148";
+  gv:score "5.2094109";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "547494";
+  gv:red "84";
+  gv:blue "148";
+  gv:green "116";
+  gv:score "3.9450005000000004";
+  gv:coverage "2.3466667"
+], [
+  gv:hex "85786a";
+  gv:red "133";
+  gv:blue "106";
+  gv:green "120";
+  gv:score "3.8575011999999997";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "346594";
+  gv:red "52";
+  gv:blue "148";
+  gv:green "101";
+  gv:score "3.7804923999999995";
+  gv:coverage "1.1400000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.310168"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "53.326321"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.892358"
+];
+    w:bagOfWords "BODEGA\n(AA No 1930)\nCANO 1852)\nEMBREEAN 98 O\nRESERVA ESPECIAL\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

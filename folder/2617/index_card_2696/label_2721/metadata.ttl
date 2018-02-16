@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2721";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "GIGONDA\nRECOLTE\n1945\nPIERRE AMADIEU\nPROPRIETAIRE & NEGOCIANT\nMISEEN BOUTEILLE A LA PROPRIETE\nGIGON DAS Vaucluse,\n"@fra;
+    gv:color [
+  gv:hex "dec4a0";
+  gv:red "222";
+  gv:blue "160";
+  gv:green "196";
+  gv:score "63.877225";
+  gv:coverage "32.78"
+], [
+  gv:hex "873d23";
+  gv:red "135";
+  gv:blue "35";
+  gv:green "61";
+  gv:score "3.6338538";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "b49d79";
+  gv:red "180";
+  gv:blue "121";
+  gv:green "157";
+  gv:score "6.6816344999999995";
+  gv:coverage "2.0666666"
+], [
+  gv:hex "d9bb8d";
+  gv:red "217";
+  gv:blue "141";
+  gv:green "187";
+  gv:score "5.3168774";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "efd9b5";
+  gv:red "239";
+  gv:blue "181";
+  gv:green "217";
+  gv:score "4.1993633";
+  gv:coverage "2.92"
+], [
+  gv:hex "8f7755";
+  gv:red "143";
+  gv:blue "85";
+  gv:green "119";
+  gv:score "2.4645759";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "662108";
+  gv:red "102";
+  gv:blue "8";
+  gv:green "33";
+  gv:score "2.1626776";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "7e4224";
+  gv:red "126";
+  gv:blue "36";
+  gv:green "66";
+  gv:score "1.5037079";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "685431";
+  gv:red "104";
+  gv:blue "49";
+  gv:green "84";
+  gv:score "1.4070072";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "bca273";
+  gv:red "188";
+  gv:blue "115";
+  gv:green "162";
+  gv:score "1.2914630999999999";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.138818"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GIGONDA\nRECOLTE\n1945\nPIERRE AMADIEU\nPROPRIETAIRE & NEGOCIANT\nMISEEN BOUTEILLE A LA PROPRIETE\nGIGON DAS Vaucluse,\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

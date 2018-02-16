@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1315";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "METHOD E CHAM PE NOISE\nFermentation naturelle en bouteilles\nM PER I A L\nLUXEMBOURG GD\n"@deu;
+    gv:color [
+  gv:hex "f28e04";
+  gv:red "242";
+  gv:blue "4";
+  gv:green "142";
+  gv:score "69.04391600000001";
+  gv:coverage "21.66"
+], [
+  gv:hex "363219";
+  gv:red "54";
+  gv:blue "25";
+  gv:green "50";
+  gv:score "0.66902721";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "f6d8ba";
+  gv:red "246";
+  gv:blue "186";
+  gv:green "216";
+  gv:score "0.082387344";
+  gv:coverage "10.093334"
+], [
+  gv:hex "e29118";
+  gv:red "226";
+  gv:blue "24";
+  gv:green "145";
+  gv:score "8.139009";
+  gv:coverage "3.18"
+], [
+  gv:hex "fd9b11";
+  gv:red "253";
+  gv:blue "17";
+  gv:green "155";
+  gv:score "4.4200242";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "c66b00";
+  gv:red "198";
+  gv:blue "undefined";
+  gv:green "107";
+  gv:score "2.7994193000000003";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "567a6b";
+  gv:red "86";
+  gv:blue "107";
+  gv:green "122";
+  gv:score "0.026162338";
+  gv:coverage "0.02"
+], [
+  gv:hex "b05904";
+  gv:red "176";
+  gv:blue "4";
+  gv:green "89";
+  gv:score "2.5683103";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "934002";
+  gv:red "147";
+  gv:blue "2";
+  gv:green "64";
+  gv:score "1.9768458";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "a76813";
+  gv:red "167";
+  gv:blue "19";
+  gv:green "104";
+  gv:score "1.7579269000000002";
+  gv:coverage "0.31333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "93.21390000000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.712847"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.753909"
+];
+    w:bagOfWords "METHOD E CHAM PE NOISE\nFermentation naturelle en bouteilles\nM PER I A L\nLUXEMBOURG GD\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

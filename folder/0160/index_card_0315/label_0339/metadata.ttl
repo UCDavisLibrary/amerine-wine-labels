@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0339";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "roduced\nUnder The Personal Supervision Of\nSCRAP O'LAND\n"@eng;
+    gv:color [
+  gv:hex "d0c3b3";
+  gv:red "208";
+  gv:blue "179";
+  gv:green "195";
+  gv:score "14.465300000000001";
+  gv:coverage "7.2533332"
+], [
+  gv:hex "5f534a";
+  gv:red "95";
+  gv:blue "74";
+  gv:green "83";
+  gv:score "8.8846214";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "a89a8b";
+  gv:red "168";
+  gv:blue "139";
+  gv:green "154";
+  gv:score "14.380614";
+  gv:coverage "0.98"
+], [
+  gv:hex "ccbfb4";
+  gv:red "204";
+  gv:blue "180";
+  gv:green "191";
+  gv:score "11.465892";
+  gv:coverage "6.18"
+], [
+  gv:hex "a79b91";
+  gv:red "167";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "11.11242";
+  gv:coverage "0.86"
+], [
+  gv:hex "857869";
+  gv:red "133";
+  gv:blue "105";
+  gv:green "120";
+  gv:score "8.5791141";
+  gv:coverage "0.5"
+], [
+  gv:hex "605345";
+  gv:red "96";
+  gv:blue "69";
+  gv:green "83";
+  gv:score "8.2175545";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "80746a";
+  gv:red "128";
+  gv:blue "106";
+  gv:green "116";
+  gv:score "6.8170175";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "41342b";
+  gv:red "65";
+  gv:blue "43";
+  gv:green "52";
+  gv:score "5.604297300000001";
+  gv:coverage "0.4"
+], [
+  gv:hex "403225";
+  gv:red "64";
+  gv:blue "37";
+  gv:green "50";
+  gv:score "5.0678171";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.622755999999995"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "53.820555999999996"
+];
+    w:bagOfWords "roduced\nUnder The Personal Supervision Of\nSCRAP O'LAND\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

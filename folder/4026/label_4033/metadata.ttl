@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4033";
+    dct:type "image";
+    w:bagOfWords "COCKBURN'S\nREGISTERED TRADE MARK\nVERY FINEST\nTAWNY PORT\nSHIPPED BY\nCOCKBURN SMITH ES & C LA\nO PORTO\n"@por;
+    gv:color [
+  gv:hex "dbc4ac";
+  gv:red "219";
+  gv:blue "172";
+  gv:green "196";
+  gv:score "40.645024";
+  gv:coverage "24.933334"
+], [
+  gv:hex "e5bba7";
+  gv:red "229";
+  gv:blue "167";
+  gv:green "187";
+  gv:score "14.256041";
+  gv:coverage "1.8599999999999999"
+], [
+  gv:hex "b09b84";
+  gv:red "176";
+  gv:blue "132";
+  gv:green "155";
+  gv:score "11.132757";
+  gv:coverage "2.6"
+], [
+  gv:hex "c09481";
+  gv:red "192";
+  gv:blue "129";
+  gv:green "148";
+  gv:score "9.7355";
+  gv:coverage "1"
+], [
+  gv:hex "8b7861";
+  gv:red "139";
+  gv:blue "97";
+  gv:green "120";
+  gv:score "6.4200722";
+  gv:coverage "1.6400000000000001"
+], [
+  gv:hex "eed9c2";
+  gv:red "238";
+  gv:blue "194";
+  gv:green "217";
+  gv:score "5.820627099999999";
+  gv:coverage "7.933333500000001"
+], [
+  gv:hex "9c6e5c";
+  gv:red "156";
+  gv:blue "92";
+  gv:green "110";
+  gv:score "5.2210566";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "fbd2bf";
+  gv:red "251";
+  gv:blue "191";
+  gv:green "210";
+  gv:score "1.8269338";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "68543d";
+  gv:red "104";
+  gv:blue "61";
+  gv:green "84";
+  gv:score "1.7337525";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "7d513f";
+  gv:red "125";
+  gv:blue "63";
+  gv:green "81";
+  gv:score "1.6589276";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.74735199999999"
+], [
+  gv:mid <https://g.co/kg/m/013y0j>;
+  gv:desc "organ";
+  gv:score "64.55605"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "51.623368"
+];
+    w:bagOfWords "COCKBURN'S\nREGISTERED TRADE MARK\nVERY FINEST\nTAWNY PORT\nSHIPPED BY\nCOCKBURN SMITH ES & C LA\nO PORTO\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

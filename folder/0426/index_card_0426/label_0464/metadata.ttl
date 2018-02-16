@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0464";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "RHEIN\n1947er\nGeisenheimer Klauserweg\nRiesling\nORIGINAL AB FULL UNG\nWeingut Jacob Horz. Winkel i Rheingau\n"@deu;
+    gv:color [
+  gv:hex "dac6aa";
+  gv:red "218";
+  gv:blue "170";
+  gv:green "198";
+  gv:score "61.076843999999994";
+  gv:coverage "22.413332999999998"
+], [
+  gv:hex "8e7547";
+  gv:red "142";
+  gv:blue "71";
+  gv:green "117";
+  gv:score "4.6771642";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "286174";
+  gv:red "40";
+  gv:blue "116";
+  gv:green "97";
+  gv:score "1.9248625";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "8e3c24";
+  gv:red "142";
+  gv:blue "36";
+  gv:green "60";
+  gv:score "0.60000555";
+  gv:coverage "0.04"
+], [
+  gv:hex "ae9a7f";
+  gv:red "174";
+  gv:blue "127";
+  gv:green "154";
+  gv:score "4.565892";
+  gv:coverage "2.18"
+], [
+  gv:hex "84755d";
+  gv:red "132";
+  gv:blue "93";
+  gv:green "117";
+  gv:score "2.8600631";
+  gv:coverage "1.1933333000000002"
+], [
+  gv:hex "ac9261";
+  gv:red "172";
+  gv:blue "97";
+  gv:green "146";
+  gv:score "2.6278939";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "e9d8bf";
+  gv:red "233";
+  gv:blue "191";
+  gv:green "216";
+  gv:score "2.1343291";
+  gv:coverage "5.800000000000001"
+], [
+  gv:hex "c39a81";
+  gv:red "195";
+  gv:blue "129";
+  gv:green "154";
+  gv:score "1.9606587000000002";
+  gv:coverage "0.72"
+], [
+  gv:hex "ddbf90";
+  gv:red "221";
+  gv:blue "144";
+  gv:green "191";
+  gv:score "1.8977635";
+  gv:coverage "1.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.598061"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.796503"
+];
+    w:bagOfWords "RHEIN\n1947er\nGeisenheimer Klauserweg\nRiesling\nORIGINAL AB FULL UNG\nWeingut Jacob Horz. Winkel i Rheingau\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

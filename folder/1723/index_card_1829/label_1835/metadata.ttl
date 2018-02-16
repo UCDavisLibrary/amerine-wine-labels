@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1835";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1931 gr\nStein\nburger\nRiesling\n"@deu;
+    gv:color [
+  gv:hex "65541d";
+  gv:red "101";
+  gv:blue "29";
+  gv:green "84";
+  gv:score "13.183171";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "8d3821";
+  gv:red "141";
+  gv:blue "33";
+  gv:green "56";
+  gv:score "4.1235520999999995";
+  gv:coverage "0.2"
+], [
+  gv:hex "d3897e";
+  gv:red "211";
+  gv:blue "126";
+  gv:green "137";
+  gv:score "0.28711471";
+  gv:coverage "0.02"
+], [
+  gv:hex "cc2725";
+  gv:red "204";
+  gv:blue "37";
+  gv:green "39";
+  gv:score "0.23595262";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "86733b";
+  gv:red "134";
+  gv:blue "59";
+  gv:green "115";
+  gv:score "11.351681";
+  gv:coverage "1.1933333000000002"
+], [
+  gv:hex "847656";
+  gv:red "132";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "6.3032418";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "443805";
+  gv:red "68";
+  gv:blue "5";
+  gv:green "56";
+  gv:score "6.0560308";
+  gv:coverage "0.6"
+], [
+  gv:hex "2d2437";
+  gv:red "45";
+  gv:blue "55";
+  gv:green "36";
+  gv:score "0.054487586000000005";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "a99a7d";
+  gv:red "169";
+  gv:blue "125";
+  gv:green "154";
+  gv:score "4.7626831";
+  gv:coverage "1.26"
+], [
+  gv:hex "cabea2";
+  gv:red "202";
+  gv:blue "162";
+  gv:green "190";
+  gv:score "4.5643948";
+  gv:coverage "2.2133334000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.724838999999996"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.459157"
+];
+    w:bagOfWords "1931 gr\nStein\nburger\nRiesling\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

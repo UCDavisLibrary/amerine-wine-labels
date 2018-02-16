@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0901";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "CHAMPAGNE\nUNION CHAMPENOISE\nE PER NAY\nCARTE ROUGE\nN. M. 6.339.212\n"@fra;
+    gv:color [
+  gv:hex "d6bf9e";
+  gv:red "214";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "60.40231";
+  gv:coverage "15.593334"
+], [
+  gv:hex "db7f74";
+  gv:red "219";
+  gv:blue "116";
+  gv:green "127";
+  gv:score "2.1643128000000003";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "8d3e31";
+  gv:red "141";
+  gv:blue "49";
+  gv:green "62";
+  gv:score "1.691648";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "9c6d46";
+  gv:red "156";
+  gv:blue "70";
+  gv:green "109";
+  gv:score "1.2766691000000001";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "ecb9a0";
+  gv:red "236";
+  gv:blue "160";
+  gv:green "185";
+  gv:score "7.277151900000001";
+  gv:coverage "2.6466666"
+], [
+  gv:hex "b49d7f";
+  gv:red "180";
+  gv:blue "127";
+  gv:green "157";
+  gv:score "5.0422084";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "d2b688";
+  gv:red "210";
+  gv:blue "136";
+  gv:green "182";
+  gv:score "3.4961898";
+  gv:coverage "0.6"
+], [
+  gv:hex "edd9be";
+  gv:red "237";
+  gv:blue "190";
+  gv:green "217";
+  gv:score "2.590826";
+  gv:coverage "14.56"
+], [
+  gv:hex "8c7758";
+  gv:red "140";
+  gv:blue "88";
+  gv:green "119";
+  gv:score "2.2155061";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "774a23";
+  gv:red "119";
+  gv:blue "35";
+  gv:green "74";
+  gv:score "1.2434662";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.314211"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.225457"
+];
+    w:bagOfWords "CHAMPAGNE\nUNION CHAMPENOISE\nE PER NAY\nCARTE ROUGE\nN. M. 6.339.212\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

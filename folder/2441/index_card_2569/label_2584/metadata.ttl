@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2569/label_2584";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "PASOUIER DESVIGNES\nAUMARQUISAT POUILLY FUISSE\nAPPELLATION POUILLY-FUISSE CONTROLEE\nPASQUIER-DESVIGNES\nNEGOCIANTS A\nAU MARQUISAT DEPUIS 142O\nST-LAGER CRH. FRANCE\nC. M. 2508\n"@fra;
+    gv:color [
+  gv:hex "ddc7a6";
+  gv:red "221";
+  gv:blue "166";
+  gv:green "199";
+  gv:score "35.016918000000004";
+  gv:coverage "15.146666999999999"
+], [
+  gv:hex "ac9a7f";
+  gv:red "172";
+  gv:blue "127";
+  gv:green "154";
+  gv:score "13.415413000000001";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "efdbbe";
+  gv:red "239";
+  gv:blue "190";
+  gv:green "219";
+  gv:score "11.333501";
+  gv:coverage "31.293333"
+], [
+  gv:hex "86765c";
+  gv:red "134";
+  gv:blue "92";
+  gv:green "118";
+  gv:score "10.581755";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "ecbc9e";
+  gv:red "236";
+  gv:blue "158";
+  gv:green "188";
+  gv:score "8.6119764";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "65543b";
+  gv:red "101";
+  gv:blue "59";
+  gv:green "84";
+  gv:score "7.767199";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "c9997a";
+  gv:red "201";
+  gv:blue "122";
+  gv:green "153";
+  gv:score "4.8044533000000005";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "44341b";
+  gv:red "68";
+  gv:blue "27";
+  gv:green "52";
+  gv:score "3.7833232000000003";
+  gv:coverage "0.48"
+], [
+  gv:hex "e2c294";
+  gv:red "226";
+  gv:blue "148";
+  gv:green "194";
+  gv:score "1.4948882000000001";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "fed2b3";
+  gv:red "254";
+  gv:blue "179";
+  gv:green "210";
+  gv:score "1.4758398000000001";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "64.324564"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.352872999999995"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "PASOUIER DESVIGNES\nAUMARQUISAT POUILLY FUISSE\nAPPELLATION POUILLY-FUISSE CONTROLEE\nPASQUIER-DESVIGNES\nNEGOCIANTS A\nAU MARQUISAT DEPUIS 142O\nST-LAGER CRH. FRANCE\nC. M. 2508\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

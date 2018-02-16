@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0347";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "M E D O C\n(TYPE)\nNAPA\nCALIFORNIA\nkRADE MARIr\nREGISTERED\nINTERNAL\nNOT OVER\n14% ALCOHOL\nREVENUE\nMONTE CITO\nTAX PAID\nBY VOLUME\nTABLE D' HOTE\nCALIFORNIA\nEXPOSITIONS\nBORDEAUX, FRANCE,\nCALINTERN\n189\n1895. NET CONTENTS\n1 PINT8FL 02.\nCAL STATE EXPOSITION 18\nPARIS FRANCE. 1900\nBUFFALO, 190\nST. LOUIS 1904\nA Repsold Co\nSAN FRANCISCO, CAL1915\nProducers\nWASH, 1909\nORE,1905.\nSEATTLE, PORTLAND, SAN FRANCISCO\nWINERY AT NAPA.\nCALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d2bfa9";
+  gv:red "210";
+  gv:blue "169";
+  gv:green "191";
+  gv:score "24.814095";
+  gv:coverage "19.946666"
+], [
+  gv:hex "675336";
+  gv:red "103";
+  gv:blue "54";
+  gv:green "83";
+  gv:score "22.662213";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "ae9b83";
+  gv:red "174";
+  gv:blue "131";
+  gv:green "155";
+  gv:score "14.849134999999999";
+  gv:coverage "2.7199999999999998"
+], [
+  gv:hex "847156";
+  gv:red "132";
+  gv:blue "86";
+  gv:green "113";
+  gv:score "13.985777999999998";
+  gv:coverage "1.8266667"
+], [
+  gv:hex "6d532a";
+  gv:red "109";
+  gv:blue "42";
+  gv:green "83";
+  gv:score "6.5377830999999995";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "d2c3ba";
+  gv:red "210";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "3.3531096000000002";
+  gv:coverage "13.459999999999999"
+], [
+  gv:hex "4c391e";
+  gv:red "76";
+  gv:blue "30";
+  gv:green "57";
+  gv:score "2.4591701";
+  gv:coverage "0.24"
+], [
+  gv:hex "e9d9c6";
+  gv:red "233";
+  gv:blue "198";
+  gv:green "217";
+  gv:score "2.4213782";
+  gv:coverage "3.9933335"
+], [
+  gv:hex "d4b585";
+  gv:red "212";
+  gv:blue "133";
+  gv:green "181";
+  gv:score "1.9450227";
+  gv:coverage "0.2"
+], [
+  gv:hex "d8b2a5";
+  gv:red "216";
+  gv:blue "165";
+  gv:green "178";
+  gv:score "1.9181416999999998";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.877038"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "M E D O C\n(TYPE)\nNAPA\nCALIFORNIA\nkRADE MARIr\nREGISTERED\nINTERNAL\nNOT OVER\n14% ALCOHOL\nREVENUE\nMONTE CITO\nTAX PAID\nBY VOLUME\nTABLE D' HOTE\nCALIFORNIA\nEXPOSITIONS\nBORDEAUX, FRANCE,\nCALINTERN\n189\n1895. NET CONTENTS\n1 PINT8FL 02.\nCAL STATE EXPOSITION 18\nPARIS FRANCE. 1900\nBUFFALO, 190\nST. LOUIS 1904\nA Repsold Co\nSAN FRANCISCO, CAL1915\nProducers\nWASH, 1909\nORE,1905.\nSEATTLE, PORTLAND, SAN FRANCISCO\nWINERY AT NAPA.\nCALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

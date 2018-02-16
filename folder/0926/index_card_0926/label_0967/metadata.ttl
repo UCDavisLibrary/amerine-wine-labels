@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0967";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "LA COTE\nVSK.\n"@deu;
+    gv:color [
+  gv:hex "e2c7a3";
+  gv:red "226";
+  gv:blue "163";
+  gv:green "199";
+  gv:score "26.889917";
+  gv:coverage "16.38"
+], [
+  gv:hex "8b734f";
+  gv:red "139";
+  gv:blue "79";
+  gv:green "115";
+  gv:score "9.5126107";
+  gv:coverage "1.58"
+], [
+  gv:hex "8a7546";
+  gv:red "138";
+  gv:blue "70";
+  gv:green "117";
+  gv:score "9.448881400000001";
+  gv:coverage "2.1399999999999997"
+], [
+  gv:hex "d6be8c";
+  gv:red "214";
+  gv:blue "140";
+  gv:green "190";
+  gv:score "8.6956285";
+  gv:coverage "5.0533332"
+], [
+  gv:hex "b19773";
+  gv:red "177";
+  gv:blue "115";
+  gv:green "151";
+  gv:score "7.517557599999999";
+  gv:coverage "1.6733333"
+], [
+  gv:hex "b19a68";
+  gv:red "177";
+  gv:blue "104";
+  gv:green "154";
+  gv:score "7.46226";
+  gv:coverage "4.14"
+], [
+  gv:hex "665527";
+  gv:red "102";
+  gv:blue "39";
+  gv:green "85";
+  gv:score "5.9784774";
+  gv:coverage "1.02"
+], [
+  gv:hex "695330";
+  gv:red "105";
+  gv:blue "48";
+  gv:green "83";
+  gv:score "5.6795064";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "f2d7b3";
+  gv:red "242";
+  gv:blue "179";
+  gv:green "215";
+  gv:score "5.4164369";
+  gv:coverage "21.126666999999998"
+], [
+  gv:hex "906b4c";
+  gv:red "144";
+  gv:blue "76";
+  gv:green "107";
+  gv:score "2.5796061";
+  gv:coverage "0.31333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.930747000000004"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "54.870622999999995"
+];
+    w:bagOfWords "LA COTE\nVSK.\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

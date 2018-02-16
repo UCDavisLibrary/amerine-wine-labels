@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0017";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "REG. EMB. N: 10\nBAENA\nBODEGAS\nRIO u A BLAN co FI No\nRIOJA.\nS PA NISH IN E\nNARO-RIOJA\ncosEcHA 1941\nEMBOTELLADO EN LA BODEGA\nPRODUCT OF SPAIN\nWHITE TABLE WINE\nIMPORTERS: BRIONES & C. Inc. BHR-SiORO SiRea NEW-YORK N. Y\nAlcohol: 12 by volume\nContents: 1 pint, 8 fluid ounces\n"@spa;
+    gv:color [
+  gv:hex "ecdece";
+  gv:red "236";
+  gv:blue "206";
+  gv:green "222";
+  gv:score "20.239259";
+  gv:coverage "35.160000000000004"
+], [
+  gv:hex "5f5345";
+  gv:red "95";
+  gv:blue "69";
+  gv:green "83";
+  gv:score "13.111814999999998";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "d0c2b2";
+  gv:red "208";
+  gv:blue "178";
+  gv:green "194";
+  gv:score "19.267324";
+  gv:coverage "9.26"
+], [
+  gv:hex "a7998a";
+  gv:red "167";
+  gv:blue "138";
+  gv:green "153";
+  gv:score "14.185834";
+  gv:coverage "2.7266665999999997"
+], [
+  gv:hex "827465";
+  gv:red "130";
+  gv:blue "101";
+  gv:green "116";
+  gv:score "12.650728";
+  gv:coverage "1.7333332"
+], [
+  gv:hex "403427";
+  gv:red "64";
+  gv:blue "39";
+  gv:green "52";
+  gv:score "5.4916675999999995";
+  gv:coverage "0.54"
+], [
+  gv:hex "645a4e";
+  gv:red "100";
+  gv:blue "78";
+  gv:green "90";
+  gv:score "3.2569487";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "cdc0b3";
+  gv:red "205";
+  gv:blue "179";
+  gv:green "192";
+  gv:score "3.0433660000000002";
+  gv:coverage "3.1866666"
+], [
+  gv:hex "7d7267";
+  gv:red "125";
+  gv:blue "103";
+  gv:green "114";
+  gv:score "2.9096982000000002";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "eee3d6";
+  gv:red "238";
+  gv:blue "214";
+  gv:green "227";
+  gv:score "2.727277";
+  gv:coverage "44.48"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "72.189808"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.823582"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.369965"
+];
+    w:bagOfWords "REG. EMB. N: 10\nBAENA\nBODEGAS\nRIO u A BLAN co FI No\nRIOJA.\nS PA NISH IN E\nNARO-RIOJA\ncosEcHA 1941\nEMBOTELLADO EN LA BODEGA\nPRODUCT OF SPAIN\nWHITE TABLE WINE\nIMPORTERS: BRIONES & C. Inc. BHR-SiORO SiRea NEW-YORK N. Y\nAlcohol: 12 by volume\nContents: 1 pint, 8 fluid ounces\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

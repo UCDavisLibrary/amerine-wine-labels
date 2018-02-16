@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1515";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "PCTLNTI AM\n24\n\"LA GorA\nMANZANILLA PASADA\nLIT. SALIDO 71. JEREZ\n"@spa;
+    gv:color [
+  gv:hex "d6c1a9";
+  gv:red "214";
+  gv:blue "169";
+  gv:green "193";
+  gv:score "24.794109";
+  gv:coverage "36.42"
+], [
+  gv:hex "887560";
+  gv:red "136";
+  gv:blue "96";
+  gv:green "117";
+  gv:score "21.011476000000002";
+  gv:coverage "3.5466667"
+], [
+  gv:hex "ac9882";
+  gv:red "172";
+  gv:blue "130";
+  gv:green "152";
+  gv:score "20.108399";
+  gv:coverage "4.8333332"
+], [
+  gv:hex "6c5740";
+  gv:red "108";
+  gv:blue "64";
+  gv:green "87";
+  gv:score "7.9107373999999995";
+  gv:coverage "0.9133333299999999"
+], [
+  gv:hex "eed9c4";
+  gv:red "238";
+  gv:blue "196";
+  gv:green "217";
+  gv:score "4.5964751";
+  gv:coverage "28.386667"
+], [
+  gv:hex "d0c1b5";
+  gv:red "208";
+  gv:blue "181";
+  gv:green "193";
+  gv:score "3.0303132";
+  gv:coverage "6.419999999999999"
+], [
+  gv:hex "8d6c55";
+  gv:red "141";
+  gv:blue "85";
+  gv:green "108";
+  gv:score "2.1025443";
+  gv:coverage "0.16"
+], [
+  gv:hex "725238";
+  gv:red "114";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "1.9687727";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "73572f";
+  gv:red "115";
+  gv:blue "47";
+  gv:green "87";
+  gv:score "1.8317394";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "82766c";
+  gv:red "130";
+  gv:blue "108";
+  gv:green "118";
+  gv:score "1.5710076";
+  gv:coverage "0.38666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.835688"
+];
+    w:bagOfWords "PCTLNTI AM\n24\n\"LA GorA\nMANZANILLA PASADA\nLIT. SALIDO 71. JEREZ\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

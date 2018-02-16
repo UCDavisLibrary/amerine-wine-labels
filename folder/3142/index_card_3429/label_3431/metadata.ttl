@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3431";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "VINS FINS\nDE LA COTE DE NUITS\nAPPELLATION CONTROLEF\nGRIVELET PERE & FILS\npROPRIETAIRES &NECOCIANTS\neter\nAU CHATEAU DE\nCHAMBOLLE MUSIGNTY (COTE DOR)\nMis en bouteilles dans nos ce\ner3\n"@fra;
+    gv:color [
+  gv:hex "dec19c";
+  gv:red "222";
+  gv:blue "156";
+  gv:green "193";
+  gv:score "61.554283";
+  gv:coverage "31"
+], [
+  gv:hex "b99b77";
+  gv:red "185";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "13.335085";
+  gv:coverage "3.4933332"
+], [
+  gv:hex "dbb88c";
+  gv:red "219";
+  gv:blue "140";
+  gv:green "184";
+  gv:score "11.638361999999999";
+  gv:coverage "3.8266666"
+], [
+  gv:hex "937653";
+  gv:red "147";
+  gv:blue "83";
+  gv:green "118";
+  gv:score "5.0003435";
+  gv:coverage "1.0333333"
+], [
+  gv:hex "412706";
+  gv:red "65";
+  gv:blue "6";
+  gv:green "39";
+  gv:score "0.044210168";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "c19d72";
+  gv:red "193";
+  gv:blue "114";
+  gv:green "157";
+  gv:score "2.7707666";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "91724a";
+  gv:red "145";
+  gv:blue "74";
+  gv:green "114";
+  gv:score "1.6405260000000002";
+  gv:coverage "0.36"
+], [
+  gv:hex "f2d7b4";
+  gv:red "242";
+  gv:blue "180";
+  gv:green "215";
+  gv:score "1.4567923999999999";
+  gv:coverage "2.4333334"
+], [
+  gv:hex "6f5433";
+  gv:red "111";
+  gv:blue "51";
+  gv:green "84";
+  gv:score "0.5645172700000001";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "c39b71";
+  gv:red "195";
+  gv:blue "113";
+  gv:green "155";
+  gv:score "0.52690376";
+  gv:coverage "0.15333333000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.592871"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "58.06719700000001"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.821716"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.06610499999999"
+];
+    w:bagOfWords "VINS FINS\nDE LA COTE DE NUITS\nAPPELLATION CONTROLEF\nGRIVELET PERE & FILS\npROPRIETAIRES &NECOCIANTS\neter\nAU CHATEAU DE\nCHAMBOLLE MUSIGNTY (COTE DOR)\nMis en bouteilles dans nos ce\ner3\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

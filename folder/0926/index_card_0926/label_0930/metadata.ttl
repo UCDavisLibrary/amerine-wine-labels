@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0930";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "AIGIE\nHRI CONT ESS ESA.\nCULL\n"@deu;
+    gv:color [
+  gv:hex "dcbb87";
+  gv:red "220";
+  gv:blue "135";
+  gv:green "187";
+  gv:score "23.134914000000002";
+  gv:coverage "8.34"
+], [
+  gv:hex "b99b63";
+  gv:red "185";
+  gv:blue "99";
+  gv:green "155";
+  gv:score "22.072372";
+  gv:coverage "5.94"
+], [
+  gv:hex "8f7340";
+  gv:red "143";
+  gv:blue "64";
+  gv:green "115";
+  gv:score "12.723073";
+  gv:coverage "2.8400000000000003"
+], [
+  gv:hex "c5965e";
+  gv:red "197";
+  gv:blue "94";
+  gv:green "150";
+  gv:score "10.341185";
+  gv:coverage "4.8533332"
+], [
+  gv:hex "6d5323";
+  gv:red "109";
+  gv:blue "35";
+  gv:green "83";
+  gv:score "8.2553715";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "e0c39d";
+  gv:red "224";
+  gv:blue "157";
+  gv:green "195";
+  gv:score "6.8592200000000005";
+  gv:coverage "5.6000000000000005"
+], [
+  gv:hex "c19c4e";
+  gv:red "193";
+  gv:blue "78";
+  gv:green "156";
+  gv:score "2.0229319";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "b19871";
+  gv:red "177";
+  gv:blue "113";
+  gv:green "152";
+  gv:score "1.7439658";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "987040";
+  gv:red "152";
+  gv:blue "64";
+  gv:green "112";
+  gv:score "1.368682";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "4e360a";
+  gv:red "78";
+  gv:blue "10";
+  gv:green "54";
+  gv:score "1.1868735";
+  gv:coverage "0.4"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "53.446048000000005"
+];
+    w:bagOfWords "AIGIE\nHRI CONT ESS ESA.\nCULL\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

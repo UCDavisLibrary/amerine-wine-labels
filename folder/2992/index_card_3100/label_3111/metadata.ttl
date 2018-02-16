@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3100/label_3111";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "ante\nPremier\nSomerot\nAPPELLATION CONTRO LEE\nPAUL DELAHOUTRE\n1947\nPROD RIETAIRE\n"@fra;
+    gv:color [
+  gv:hex "dcbf9e";
+  gv:red "220";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "40.980056";
+  gv:coverage "18.226667"
+], [
+  gv:hex "c5986b";
+  gv:red "197";
+  gv:blue "107";
+  gv:green "152";
+  gv:score "3.1446899999999998";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "6e4c28";
+  gv:red "110";
+  gv:blue "40";
+  gv:green "76";
+  gv:score "0.42157406000000003";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "b29779";
+  gv:red "178";
+  gv:blue "121";
+  gv:green "151";
+  gv:score "18.700659";
+  gv:coverage "4.54"
+], [
+  gv:hex "8c7357";
+  gv:red "140";
+  gv:blue "87";
+  gv:green "115";
+  gv:score "16.665195999999998";
+  gv:coverage "3.1066667"
+], [
+  gv:hex "6a5239";
+  gv:red "106";
+  gv:blue "57";
+  gv:green "82";
+  gv:score "8.9193977";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "dcb88c";
+  gv:red "220";
+  gv:blue "140";
+  gv:green "184";
+  gv:score "3.2216366000000005";
+  gv:coverage "1.9533332"
+], [
+  gv:hex "dcb084";
+  gv:red "220";
+  gv:blue "132";
+  gv:green "176";
+  gv:score "2.2271032";
+  gv:coverage "1.8066667"
+], [
+  gv:hex "4d361f";
+  gv:red "77";
+  gv:blue "31";
+  gv:green "54";
+  gv:score "1.4448482";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "efd5b8";
+  gv:red "239";
+  gv:blue "184";
+  gv:green "213";
+  gv:score "1.2167562";
+  gv:coverage "2.2066665999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.2778"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.002556"
+];
+    w:bagOfWords "ante\nPremier\nSomerot\nAPPELLATION CONTRO LEE\nPAUL DELAHOUTRE\n1947\nPROD RIETAIRE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

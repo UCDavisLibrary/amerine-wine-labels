@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1222";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "ODEGAS\nDE LOS\nBORBON\nVIN A\nTORRE BREVA\nBRAND ANENO DELLAR\nSAN LUCA RE\nAND A LUCIA\ns PANA)\n30\nJerez Industrial\n"@spa;
+    gv:color [
+  gv:hex "e2bd8a";
+  gv:red "226";
+  gv:blue "138";
+  gv:green "189";
+  gv:score "9.4150245";
+  gv:coverage "7.9466663"
+], [
+  gv:hex "a86a18";
+  gv:red "168";
+  gv:blue "24";
+  gv:green "106";
+  gv:score "6.6656187000000005";
+  gv:coverage "0.98"
+], [
+  gv:hex "e08012";
+  gv:red "224";
+  gv:blue "18";
+  gv:green "128";
+  gv:score "5.8382141999999995";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "c5bc25";
+  gv:red "197";
+  gv:blue "37";
+  gv:green "188";
+  gv:score "1.4818992";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "1b2a63";
+  gv:red "27";
+  gv:blue "99";
+  gv:green "42";
+  gv:score "1.2085789";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "365a56";
+  gv:red "54";
+  gv:blue "86";
+  gv:green "90";
+  gv:score "0.08482690899999999";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "e6b788";
+  gv:red "230";
+  gv:blue "136";
+  gv:green "183";
+  gv:score "7.0709214000000005";
+  gv:coverage "4.9533334"
+], [
+  gv:hex "d68e1a";
+  gv:red "214";
+  gv:blue "26";
+  gv:green "142";
+  gv:score "5.7465";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "c19363";
+  gv:red "193";
+  gv:blue "99";
+  gv:green "147";
+  gv:score "5.4125484";
+  gv:coverage "2.68"
+], [
+  gv:hex "9c6d3d";
+  gv:red "156";
+  gv:blue "61";
+  gv:green "109";
+  gv:score "4.9878925";
+  gv:coverage "1.78"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.96471000000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.4937"
+];
+    w:bagOfWords "ODEGAS\nDE LOS\nBORBON\nVIN A\nTORRE BREVA\nBRAND ANENO DELLAR\nSAN LUCA RE\nAND A LUCIA\ns PANA)\n30\nJerez Industrial\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

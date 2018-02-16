@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1895";
+    dct:type "image";
+    w:bagOfWords "MEDALLA DE ORO MADRID 19O7\nCASA FUN DADA EN 186O\nHijo de Pedro Romero Villarreal\nASANLUCAR DE BARRAMEDA\nNo 25\n"@spa;
+    gv:color [
+  gv:hex "a39990";
+  gv:red "163";
+  gv:blue "144";
+  gv:green "153";
+  gv:score "28.916332";
+  gv:coverage "3.2266665"
+], [
+  gv:hex "cbc1b8";
+  gv:red "203";
+  gv:blue "184";
+  gv:green "193";
+  gv:score "24.214087";
+  gv:coverage "8.72"
+], [
+  gv:hex "847a71";
+  gv:red "132";
+  gv:blue "113";
+  gv:green "122";
+  gv:score "22.102570999999998";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "e9dfd7";
+  gv:red "233";
+  gv:blue "215";
+  gv:green "223";
+  gv:score "11.819880000000001";
+  gv:coverage "34.58"
+], [
+  gv:hex "dac7a8";
+  gv:red "218";
+  gv:blue "168";
+  gv:green "199";
+  gv:score "11.019336000000001";
+  gv:coverage "24.94"
+], [
+  gv:hex "655b52";
+  gv:red "101";
+  gv:blue "82";
+  gv:green "91";
+  gv:score "1.5208012";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "e6d7c7";
+  gv:red "230";
+  gv:blue "199";
+  gv:green "215";
+  gv:score "0.11613397";
+  gv:coverage "26.533331999999998"
+], [
+  gv:hex "a79a8a";
+  gv:red "167";
+  gv:blue "138";
+  gv:green "154";
+  gv:score "0.088101";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "5e4f3d";
+  gv:red "94";
+  gv:blue "61";
+  gv:green "79";
+  gv:score "0.066671084";
+  gv:coverage "0.06"
+], [
+  gv:hex "827463";
+  gv:red "130";
+  gv:blue "99";
+  gv:green "116";
+  gv:score "0.057141209";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.903524"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.984552"
+];
+    w:bagOfWords "MEDALLA DE ORO MADRID 19O7\nCASA FUN DADA EN 186O\nHijo de Pedro Romero Villarreal\nASANLUCAR DE BARRAMEDA\nNo 25\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

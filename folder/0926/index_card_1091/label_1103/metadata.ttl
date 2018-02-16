@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1091/label_1103";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "los\noches\nran Villette\n"@deu;
+    gv:color [
+  gv:hex "e3c5a1";
+  gv:red "227";
+  gv:blue "161";
+  gv:green "197";
+  gv:score "15.241822999999998";
+  gv:coverage "16.806667"
+], [
+  gv:hex "c79246";
+  gv:red "199";
+  gv:blue "70";
+  gv:green "146";
+  gv:score "12.863714000000002";
+  gv:coverage "2.5933333"
+], [
+  gv:hex "351300";
+  gv:red "53";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "0.58788271";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "e3bd89";
+  gv:red "227";
+  gv:blue "137";
+  gv:green "189";
+  gv:score "12.267037";
+  gv:coverage "4.5600000000000005"
+], [
+  gv:hex "c3945b";
+  gv:red "195";
+  gv:blue "91";
+  gv:green "148";
+  gv:score "9.82023";
+  gv:coverage "2.94"
+], [
+  gv:hex "a37127";
+  gv:red "163";
+  gv:blue "39";
+  gv:green "113";
+  gv:score "8.0951482";
+  gv:coverage "1.9866666000000002"
+], [
+  gv:hex "9d7039";
+  gv:red "157";
+  gv:blue "57";
+  gv:green "112";
+  gv:score "7.5521089";
+  gv:coverage "1.6933333"
+], [
+  gv:hex "e4b47c";
+  gv:red "228";
+  gv:blue "124";
+  gv:green "180";
+  gv:score "6.2180705000000005";
+  gv:coverage "2.88"
+], [
+  gv:hex "794d1a";
+  gv:red "121";
+  gv:blue "26";
+  gv:green "77";
+  gv:score "5.8961991";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "bf9963";
+  gv:red "191";
+  gv:blue "99";
+  gv:green "153";
+  gv:score "5.7380982";
+  gv:coverage "1.54"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/083vt>;
+  gv:desc "wood";
+  gv:score "64.870864"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.771190000000004"
+];
+    w:bagOfWords "los\noches\nran Villette\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1929/label_1947";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "LOS MANUEL A 99\nFINO OLOROso\nSUCESORES J. COBOS, S.A\nMOONTILLLA.\nNUM. 154 DEL REGISTRO ESPECIAL DE EMBOTELLADORES\nMARCA REGISTRADA\n"@spa;
+    gv:color [
+  gv:hex "d0c4a9";
+  gv:red "208";
+  gv:blue "169";
+  gv:green "196";
+  gv:score "57.249433";
+  gv:coverage "25.586668000000003"
+], [
+  gv:hex "aba387";
+  gv:red "171";
+  gv:blue "135";
+  gv:green "163";
+  gv:score "20.328884";
+  gv:coverage "4.1866668"
+], [
+  gv:hex "e5dbc2";
+  gv:red "229";
+  gv:blue "194";
+  gv:green "219";
+  gv:score "7.4176937";
+  gv:coverage "4.6933334"
+], [
+  gv:hex "c0937a";
+  gv:red "192";
+  gv:blue "122";
+  gv:green "147";
+  gv:score "4.613840000000001";
+  gv:coverage "0.42"
+], [
+  gv:hex "e5bca3";
+  gv:red "229";
+  gv:blue "163";
+  gv:green "188";
+  gv:score "3.8522694000000004";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "877f64";
+  gv:red "135";
+  gv:blue "100";
+  gv:green "127";
+  gv:score "1.8741766";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "c89a6f";
+  gv:red "200";
+  gv:blue "111";
+  gv:green "154";
+  gv:score "1.2879706";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "deaf84";
+  gv:red "222";
+  gv:blue "132";
+  gv:green "175";
+  gv:score "0.70536775";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "95a27c";
+  gv:red "149";
+  gv:blue "124";
+  gv:green "162";
+  gv:score "0.66910964";
+  gv:coverage "0.06"
+], [
+  gv:hex "a8755e";
+  gv:red "168";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "0.61862315";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.546487"
+];
+    w:bagOfWords "LOS MANUEL A 99\nFINO OLOROso\nSUCESORES J. COBOS, S.A\nMOONTILLLA.\nNUM. 154 DEL REGISTRO ESPECIAL DE EMBOTELLADORES\nMARCA REGISTRADA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

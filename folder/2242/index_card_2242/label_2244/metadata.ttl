@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2244";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "DEPOSE\nMIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTHSCHILD\n1994\nROUSSEAU FRERES\nFRANCE\n"@fra;
+    gv:color [
+  gv:hex "66543e";
+  gv:red "102";
+  gv:blue "62";
+  gv:green "84";
+  gv:score "27.579197";
+  gv:coverage "2.9000000000000004"
+], [
+  gv:hex "84725d";
+  gv:red "132";
+  gv:blue "93";
+  gv:green "114";
+  gv:score "25.963175";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "af9c85";
+  gv:red "175";
+  gv:blue "133";
+  gv:green "156";
+  gv:score "21.429706";
+  gv:coverage "3.1733334"
+], [
+  gv:hex "d2bea8";
+  gv:red "210";
+  gv:blue "168";
+  gv:green "190";
+  gv:score "21.034227";
+  gv:coverage "11.406666999999999"
+], [
+  gv:hex "493823";
+  gv:red "73";
+  gv:blue "35";
+  gv:green "56";
+  gv:score "2.7428271";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "e8d7c2";
+  gv:red "232";
+  gv:blue "194";
+  gv:green "215";
+  gv:score "1.1827766";
+  gv:coverage "11.766667"
+], [
+  gv:hex "c9c2b7";
+  gv:red "201";
+  gv:blue "183";
+  gv:green "194";
+  gv:score "0.023988086";
+  gv:coverage "4"
+], [
+  gv:hex "7c7569";
+  gv:red "124";
+  gv:blue "105";
+  gv:green "117";
+  gv:score "0.015667109000000002";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "a19c8f";
+  gv:red "161";
+  gv:blue "143";
+  gv:green "156";
+  gv:score "0.010300238";
+  gv:coverage "0.06"
+], [
+  gv:hex "575045";
+  gv:red "87";
+  gv:blue "69";
+  gv:green "80";
+  gv:score "0.007787807400000001";
+  gv:coverage "0.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "63.203084"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.843153"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.534043999999994"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.577006999999995"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "51.550399999999996"
+];
+    w:bagOfWords "DEPOSE\nMIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTHSCHILD\n1994\nROUSSEAU FRERES\nFRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

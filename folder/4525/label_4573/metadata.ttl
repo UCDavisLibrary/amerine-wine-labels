@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4573";
+    dct:type "image";
+    w:bagOfWords "MOSCATEL AB OCA DO VIEJO\nMarques de Muller\nTARRAGONA\n"@spa;
+    gv:color [
+  gv:hex "e5dbd2";
+  gv:red "229";
+  gv:blue "210";
+  gv:green "219";
+  gv:score "59.850204";
+  gv:coverage "71.7"
+], [
+  gv:hex "d3cbc3";
+  gv:red "211";
+  gv:blue "195";
+  gv:green "203";
+  gv:score "22.878632";
+  gv:coverage "17.893334"
+], [
+  gv:hex "e6d8c8";
+  gv:red "230";
+  gv:blue "200";
+  gv:green "216";
+  gv:score "8.9162588";
+  gv:coverage "4.4266667"
+], [
+  gv:hex "0a163e";
+  gv:red "10";
+  gv:blue "62";
+  gv:green "22";
+  gv:score "0.069544045";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "d7cbb8";
+  gv:red "215";
+  gv:blue "184";
+  gv:green "203";
+  gv:score "4.0378906";
+  gv:coverage "2.9066667"
+], [
+  gv:hex "a09f9e";
+  gv:red "160";
+  gv:blue "158";
+  gv:green "159";
+  gv:score "1.4823187999999998";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "787979";
+  gv:red "120";
+  gv:blue "121";
+  gv:green "121";
+  gv:score "0.8284337799999999";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "4f5358";
+  gv:red "79";
+  gv:blue "88";
+  gv:green "83";
+  gv:score "0.57000257";
+  gv:coverage "0.48"
+], [
+  gv:hex "2d3239";
+  gv:red "45";
+  gv:blue "57";
+  gv:green "50";
+  gv:score "0.4061169";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "1e2b3f";
+  gv:red "30";
+  gv:blue "63";
+  gv:green "43";
+  gv:score "0.16979638";
+  gv:coverage "0.093333336"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.076745"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "60.963374"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "54.020816"
+];
+    w:bagOfWords "MOSCATEL AB OCA DO VIEJO\nMarques de Muller\nTARRAGONA\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

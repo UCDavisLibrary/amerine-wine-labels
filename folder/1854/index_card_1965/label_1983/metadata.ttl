@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1983";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "FLORIDO HERMANOS\nCA REGIS\nMAR\nN. 31\n"@spa;
+    gv:color [
+  gv:hex "061142";
+  gv:red "6";
+  gv:blue "66";
+  gv:green "17";
+  gv:score "20.373888";
+  gv:coverage "3.6999999999999997"
+], [
+  gv:hex "ac937b";
+  gv:red "172";
+  gv:blue "123";
+  gv:green "147";
+  gv:score "9.354999999999999";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "727893";
+  gv:red "114";
+  gv:blue "147";
+  gv:green "120";
+  gv:score "1.7133653";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "8c735b";
+  gv:red "140";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "9.059479099999999";
+  gv:coverage "0.62"
+], [
+  gv:hex "6b523c";
+  gv:red "107";
+  gv:blue "60";
+  gv:green "82";
+  gv:score "6.9345213";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "d5bda8";
+  gv:red "213";
+  gv:blue "168";
+  gv:green "189";
+  gv:score "6.4665921";
+  gv:coverage "11.74"
+], [
+  gv:hex "6a4b36";
+  gv:red "106";
+  gv:blue "54";
+  gv:green "75";
+  gv:score "6.345582800000001";
+  gv:coverage "0.32"
+], [
+  gv:hex "cbc1b9";
+  gv:red "203";
+  gv:blue "185";
+  gv:green "193";
+  gv:score "5.712856";
+  gv:coverage "7.6333337"
+], [
+  gv:hex "916f5e";
+  gv:red "145";
+  gv:blue "94";
+  gv:green "111";
+  gv:score "3.2397289000000002";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "080a2f";
+  gv:red "8";
+  gv:blue "47";
+  gv:green "10";
+  gv:score "2.9515982";
+  gv:coverage "0.5599999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.550191"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "FLORIDO HERMANOS\nCA REGIS\nMAR\nN. 31\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

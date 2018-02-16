@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2294";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "GRAND\nVIN\nROIS\nLEVIN\nDES\nROI DES VINS\nCORDIER\nProprietaire\nBORDEAUX\nPOS\nMIS E NaB OUTEILLES AU CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "d1bd9c";
+  gv:red "209";
+  gv:blue "156";
+  gv:green "189";
+  gv:score "52.68299";
+  gv:coverage "48.433334"
+], [
+  gv:hex "b39e7b";
+  gv:red "179";
+  gv:blue "123";
+  gv:green "158";
+  gv:score "40.865207";
+  gv:coverage "4.8533332"
+], [
+  gv:hex "413424";
+  gv:red "65";
+  gv:blue "36";
+  gv:green "52";
+  gv:score "0.033159548";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "947e5b";
+  gv:red "148";
+  gv:blue "91";
+  gv:green "126";
+  gv:score "2.9833796";
+  gv:coverage "0.58"
+], [
+  gv:hex "ead8bb";
+  gv:red "234";
+  gv:blue "187";
+  gv:green "216";
+  gv:score "2.0038141";
+  gv:coverage "25.206667"
+], [
+  gv:hex "b6a274";
+  gv:red "182";
+  gv:blue "116";
+  gv:green "162";
+  gv:score "0.9773675399999999";
+  gv:coverage "0.02"
+], [
+  gv:hex "998457";
+  gv:red "153";
+  gv:blue "87";
+  gv:green "132";
+  gv:score "0.33494218";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "d7cabd";
+  gv:red "215";
+  gv:blue "189";
+  gv:green "202";
+  gv:score "0.054378551";
+  gv:coverage "6.833333499999999"
+], [
+  gv:hex "281b0e";
+  gv:red "40";
+  gv:blue "14";
+  gv:green "27";
+  gv:score "0.028928089999999997";
+  gv:coverage "0.04"
+], [
+  gv:hex "55493a";
+  gv:red "85";
+  gv:blue "58";
+  gv:green "73";
+  gv:score "0.016574579";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "54.219818"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "53.324634"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.427519"
+];
+    w:bagOfWords "GRAND\nVIN\nROIS\nLEVIN\nDES\nROI DES VINS\nCORDIER\nProprietaire\nBORDEAUX\nPOS\nMIS E NaB OUTEILLES AU CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

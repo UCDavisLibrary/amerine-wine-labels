@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1858";
+    dct:type "image";
+    w:bagOfWords "HEREDER OS\na STRA\nN. 132\n"@spa;
+    gv:color [
+  gv:hex "d2b493";
+  gv:red "210";
+  gv:blue "147";
+  gv:green "180";
+  gv:score "31.931239";
+  gv:coverage "50.46000000000001"
+], [
+  gv:hex "77512a";
+  gv:red "119";
+  gv:blue "42";
+  gv:green "81";
+  gv:score "9.4712213";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "bb9d7d";
+  gv:red "187";
+  gv:blue "125";
+  gv:green "157";
+  gv:score "12.801839000000001";
+  gv:coverage "3.5066668"
+], [
+  gv:hex "956c45";
+  gv:red "149";
+  gv:blue "69";
+  gv:green "108";
+  gv:score "7.8455918";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "c3996c";
+  gv:red "195";
+  gv:blue "108";
+  gv:green "153";
+  gv:score "7.037289400000001";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "bf9b6e";
+  gv:red "191";
+  gv:blue "110";
+  gv:green "155";
+  gv:score "7.0149772";
+  gv:coverage "1.1533333"
+], [
+  gv:hex "d5b284";
+  gv:red "213";
+  gv:blue "132";
+  gv:green "178";
+  gv:score "4.9536016";
+  gv:coverage "1.3933334"
+], [
+  gv:hex "bb9474";
+  gv:red "187";
+  gv:blue "116";
+  gv:green "148";
+  gv:score "4.5543872";
+  gv:coverage "0.6"
+], [
+  gv:hex "94785a";
+  gv:red "148";
+  gv:blue "90";
+  gv:green "120";
+  gv:score "3.4765515";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "967253";
+  gv:red "150";
+  gv:blue "83";
+  gv:green "114";
+  gv:score "2.9783133";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.755626"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.327321"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "52.547878000000004"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.340955"
+];
+    w:bagOfWords "HEREDER OS\na STRA\nN. 132\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

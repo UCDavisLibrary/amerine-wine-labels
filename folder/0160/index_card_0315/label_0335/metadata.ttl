@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0335";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "Legend\nCALIF NI AA\nCLARET\nPRODUCED AND BOTTLED AT\nTHE WORLDS LARGEST VINEMARD BY\nI. V. C. WIN ERIES. GUASTI. CALIFORNIA\nFine California ines, edince 1885\nALCOHOL 12% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d9c2a7";
+  gv:red "217";
+  gv:blue "167";
+  gv:green "194";
+  gv:score "46.778082999999995";
+  gv:coverage "15.853333"
+], [
+  gv:hex "634d35";
+  gv:red "99";
+  gv:blue "53";
+  gv:green "77";
+  gv:score "3.4975603";
+  gv:coverage "2.2800000000000002"
+], [
+  gv:hex "b2514b";
+  gv:red "178";
+  gv:blue "75";
+  gv:green "81";
+  gv:score "1.140304";
+  gv:coverage "0.08"
+], [
+  gv:hex "8c1f19";
+  gv:red "140";
+  gv:blue "25";
+  gv:green "31";
+  gv:score "0.79236915";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "54350e";
+  gv:red "84";
+  gv:blue "14";
+  gv:green "53";
+  gv:score "0.6750904999999999";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "b49f85";
+  gv:red "180";
+  gv:blue "133";
+  gv:green "159";
+  gv:score "10.990222";
+  gv:coverage "3.7066668"
+], [
+  gv:hex "dcba8a";
+  gv:red "220";
+  gv:blue "138";
+  gv:green "186";
+  gv:score "8.2812205";
+  gv:coverage "2.86"
+], [
+  gv:hex "edd9c1";
+  gv:red "237";
+  gv:blue "193";
+  gv:green "217";
+  gv:score "4.721292500000001";
+  gv:coverage "4.8"
+], [
+  gv:hex "e4bca8";
+  gv:red "228";
+  gv:blue "168";
+  gv:green "188";
+  gv:score "4.2316806";
+  gv:coverage "2.0133332999999998"
+], [
+  gv:hex "89735b";
+  gv:red "137";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "3.1637155";
+  gv:coverage "1.6533334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.612286999999995"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "53.774405"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.183485"
+];
+    w:bagOfWords "Legend\nCALIF NI AA\nCLARET\nPRODUCED AND BOTTLED AT\nTHE WORLDS LARGEST VINEMARD BY\nI. V. C. WIN ERIES. GUASTI. CALIFORNIA\nFine California ines, edince 1885\nALCOHOL 12% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

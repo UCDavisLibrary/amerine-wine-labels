@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3912/label_3922";
+    dct:type "image";
+    w:bagOfWords "1951\ner\nJohannisbeerwein\nLandes Weinbaulehranstalt, Trier\n"@deu;
+    gv:color [
+  gv:hex "e7c999";
+  gv:red "231";
+  gv:blue "153";
+  gv:green "201";
+  gv:score "24.016961000000002";
+  gv:coverage "6.9"
+], [
+  gv:hex "6e1507";
+  gv:red "110";
+  gv:blue "7";
+  gv:green "21";
+  gv:score "7.6483548";
+  gv:coverage "3.3733333999999995"
+], [
+  gv:hex "a36f44";
+  gv:red "163";
+  gv:blue "68";
+  gv:green "111";
+  gv:score "6.905535599999999";
+  gv:coverage "2.8133333"
+], [
+  gv:hex "f4d7a5";
+  gv:red "244";
+  gv:blue "165";
+  gv:green "215";
+  gv:score "7.425773099999999";
+  gv:coverage "2.0466667000000003"
+], [
+  gv:hex "e3c8a0";
+  gv:red "227";
+  gv:blue "160";
+  gv:green "200";
+  gv:score "5.7113122";
+  gv:coverage "7.506666300000001"
+], [
+  gv:hex "b3965f";
+  gv:red "179";
+  gv:blue "95";
+  gv:green "150";
+  gv:score "5.5986039000000005";
+  gv:coverage "2.08"
+], [
+  gv:hex "957840";
+  gv:red "149";
+  gv:blue "64";
+  gv:green "120";
+  gv:score "5.4790344";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "8e3623";
+  gv:red "142";
+  gv:blue "35";
+  gv:green "54";
+  gv:score "5.0858464";
+  gv:coverage "2.64"
+], [
+  gv:hex "f4d9b0";
+  gv:red "244";
+  gv:blue "176";
+  gv:green "217";
+  gv:score "5.0268102";
+  gv:coverage "8.6"
+], [
+  gv:hex "c58c5d";
+  gv:red "197";
+  gv:blue "93";
+  gv:green "140";
+  gv:score "4.1656453";
+  gv:coverage "2.34"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.13597299999999"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.774567000000005"
+];
+    w:bagOfWords "1951\ner\nJohannisbeerwein\nLandes Weinbaulehranstalt, Trier\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

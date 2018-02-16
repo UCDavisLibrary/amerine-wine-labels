@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1971";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "SALINERA\nSANI UCAR\nN932\nCraficas Andaluzas-Pro ra Maria\n"@spa;
+    gv:color [
+  gv:hex "d4c6ba";
+  gv:red "212";
+  gv:blue "186";
+  gv:green "198";
+  gv:score "32.619104";
+  gv:coverage "8.433333"
+], [
+  gv:hex "1b0d03";
+  gv:red "27";
+  gv:blue "3";
+  gv:green "13";
+  gv:score "2.5970913";
+  gv:coverage "0.22"
+], [
+  gv:hex "eddfd3";
+  gv:red "237";
+  gv:blue "211";
+  gv:green "223";
+  gv:score "24.530312000000002";
+  gv:coverage "23.753332999999998"
+], [
+  gv:hex "d2c2b2";
+  gv:red "210";
+  gv:blue "178";
+  gv:green "194";
+  gv:score "8.574263";
+  gv:coverage "28.606668000000003"
+], [
+  gv:hex "a7988a";
+  gv:red "167";
+  gv:blue "138";
+  gv:green "152";
+  gv:score "6.887845700000001";
+  gv:coverage "0.88"
+], [
+  gv:hex "837467";
+  gv:red "131";
+  gv:blue "103";
+  gv:green "116";
+  gv:score "5.2667219";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "5c4e40";
+  gv:red "92";
+  gv:blue "64";
+  gv:green "78";
+  gv:score "4.4070523";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "3f3125";
+  gv:red "63";
+  gv:blue "37";
+  gv:green "49";
+  gv:score "3.2085877";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "a99b91";
+  gv:red "169";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "3.1295523";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "ecddcd";
+  gv:red "236";
+  gv:blue "205";
+  gv:green "221";
+  gv:score "3.0899502";
+  gv:coverage "36.086667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.307167"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.442104"
+];
+    w:bagOfWords "SALINERA\nSANI UCAR\nN932\nCraficas Andaluzas-Pro ra Maria\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

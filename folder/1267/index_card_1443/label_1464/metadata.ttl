@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1464";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "FINE WINES\nWIDMER'S\nNEAPOLITAN\nBRAND\nALCOHOL 12.5% BY VOLUME\nPRODUCED AND BOTTLE D BY\n"@eng;
+    gv:color [
+  gv:hex "e1bab2";
+  gv:red "225";
+  gv:blue "178";
+  gv:green "186";
+  gv:score "13.8961";
+  gv:coverage "1.78"
+], [
+  gv:hex "efdcd2";
+  gv:red "239";
+  gv:blue "210";
+  gv:green "220";
+  gv:score "8.9213684";
+  gv:coverage "65.10000000000001"
+], [
+  gv:hex "85373c";
+  gv:red "133";
+  gv:blue "60";
+  gv:green "55";
+  gv:score "4.5054242";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "3d322a";
+  gv:red "61";
+  gv:blue "42";
+  gv:green "50";
+  gv:score "1.1800018";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "e3bdb8";
+  gv:red "227";
+  gv:blue "184";
+  gv:green "189";
+  gv:score "9.8175369";
+  gv:coverage "2.1933333999999998"
+], [
+  gv:hex "bf9891";
+  gv:red "191";
+  gv:blue "145";
+  gv:green "152";
+  gv:score "7.7057175";
+  gv:coverage "1.2"
+], [
+  gv:hex "d6c4ba";
+  gv:red "214";
+  gv:blue "186";
+  gv:green "196";
+  gv:score "7.5796380999999995";
+  gv:coverage "12.86"
+], [
+  gv:hex "d8c5b6";
+  gv:red "216";
+  gv:blue "182";
+  gv:green "197";
+  gv:score "7.401150500000001";
+  gv:coverage "5.34"
+], [
+  gv:hex "fad6d0";
+  gv:red "250";
+  gv:blue "208";
+  gv:green "214";
+  gv:score "4.6715204";
+  gv:coverage "1.1933333000000002"
+], [
+  gv:hex "eedacb";
+  gv:red "238";
+  gv:blue "203";
+  gv:green "218";
+  gv:score "4.3426979";
+  gv:coverage "4.306666600000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.063951"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "53.634048"
+];
+    w:bagOfWords "FINE WINES\nWIDMER'S\nNEAPOLITAN\nBRAND\nALCOHOL 12.5% BY VOLUME\nPRODUCED AND BOTTLE D BY\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0525";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Cabine Wein\nriginalabu lung\n1934\n"@deu;
+    gv:color [
+  gv:hex "9e6c43";
+  gv:red "158";
+  gv:blue "67";
+  gv:green "108";
+  gv:score "15.339689";
+  gv:coverage "4.1333333"
+], [
+  gv:hex "8e7345";
+  gv:red "142";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "11.925524";
+  gv:coverage "5.84"
+], [
+  gv:hex "8a7150";
+  gv:red "138";
+  gv:blue "80";
+  gv:green "113";
+  gv:score "8.2141757";
+  gv:coverage "4.14"
+], [
+  gv:hex "b59666";
+  gv:red "181";
+  gv:blue "102";
+  gv:green "150";
+  gv:score "7.9156183";
+  gv:coverage "3.3000000000000003"
+], [
+  gv:hex "7b4d25";
+  gv:red "123";
+  gv:blue "37";
+  gv:green "77";
+  gv:score "7.8827918";
+  gv:coverage "2.26"
+], [
+  gv:hex "6a5335";
+  gv:red "106";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "6.6605113";
+  gv:coverage "2.86"
+], [
+  gv:hex "6a5426";
+  gv:red "106";
+  gv:blue "38";
+  gv:green "84";
+  gv:score "5.8935653";
+  gv:coverage "2.9466666"
+], [
+  gv:hex "b09571";
+  gv:red "176";
+  gv:blue "113";
+  gv:green "149";
+  gv:score "5.375907600000001";
+  gv:coverage "3.5066668"
+], [
+  gv:hex "ae5f3d";
+  gv:red "174";
+  gv:blue "61";
+  gv:green "95";
+  gv:score "4.654062199999999";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "ba8a5f";
+  gv:red "186";
+  gv:blue "95";
+  gv:green "138";
+  gv:score "4.0757547999999995";
+  gv:coverage "1.08"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "69.793677"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "60.598606"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "55.65511600000001"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "53.827924"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "52.081138"
+];
+    w:bagOfWords "Cabine Wein\nriginalabu lung\n1934\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

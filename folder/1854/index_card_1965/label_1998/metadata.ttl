@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1998";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "RCA REGISTR\nM. HIDALGO Y C\nSANLUCAR DE BARRAMEDA\nHIJOS DE MIGUEL SALIDO JEREZ\n"@spa;
+    gv:color [
+  gv:hex "ccc39f";
+  gv:red "204";
+  gv:blue "159";
+  gv:green "195";
+  gv:score "48.489892";
+  gv:coverage "43.4"
+], [
+  gv:hex "8a7346";
+  gv:red "138";
+  gv:blue "70";
+  gv:green "115";
+  gv:score "7.3118776";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "ab9c75";
+  gv:red "171";
+  gv:blue "117";
+  gv:green "156";
+  gv:score "10.025866";
+  gv:coverage "2.96"
+], [
+  gv:hex "6c562a";
+  gv:red "108";
+  gv:blue "42";
+  gv:green "86";
+  gv:score "6.6407568999999995";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "887853";
+  gv:red "136";
+  gv:blue "83";
+  gv:green "120";
+  gv:score "6.1068296";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "ae9667";
+  gv:red "174";
+  gv:blue "103";
+  gv:green "150";
+  gv:score "4.8158292";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "675633";
+  gv:red "103";
+  gv:blue "51";
+  gv:green "86";
+  gv:score "3.2724168";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "e9daba";
+  gv:red "233";
+  gv:blue "186";
+  gv:green "218";
+  gv:score "1.9887531";
+  gv:coverage "27.073332999999998"
+], [
+  gv:hex "9d7144";
+  gv:red "157";
+  gv:blue "68";
+  gv:green "113";
+  gv:score "1.8965418";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "c09267";
+  gv:red "192";
+  gv:blue "103";
+  gv:green "146";
+  gv:score "1.7232073";
+  gv:coverage "0.48"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.027955"
+];
+    w:bagOfWords "RCA REGISTR\nM. HIDALGO Y C\nSANLUCAR DE BARRAMEDA\nHIJOS DE MIGUEL SALIDO JEREZ\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

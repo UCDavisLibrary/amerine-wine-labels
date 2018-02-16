@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1729";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1935 er\nuder Nr.\n32\nEitelsbacher KarthauserHofberger\nStirn\nWachstum Hans Wilhelm Rautenstrauch, Eitelsbachn\nOriginal Keller abzug\n"@deu;
+    gv:color [
+  gv:hex "d9bb87";
+  gv:red "217";
+  gv:blue "135";
+  gv:green "187";
+  gv:score "41.970238";
+  gv:coverage "14.046666"
+], [
+  gv:hex "95a046";
+  gv:red "149";
+  gv:blue "70";
+  gv:green "160";
+  gv:score "7.03962";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "dcc39d";
+  gv:red "220";
+  gv:blue "157";
+  gv:green "195";
+  gv:score "21.396676";
+  gv:coverage "16.993333"
+], [
+  gv:hex "b99e64";
+  gv:red "185";
+  gv:blue "100";
+  gv:green "158";
+  gv:score "14.399652";
+  gv:coverage "5.1466666000000005"
+], [
+  gv:hex "9ba054";
+  gv:red "155";
+  gv:blue "84";
+  gv:green "160";
+  gv:score "4.6224806";
+  gv:coverage "0.58"
+], [
+  gv:hex "81872f";
+  gv:red "129";
+  gv:blue "47";
+  gv:green "135";
+  gv:score "2.3313055";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "947c3e";
+  gv:red "148";
+  gv:blue "62";
+  gv:green "124";
+  gv:score "1.5627224";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "deb281";
+  gv:red "222";
+  gv:blue "129";
+  gv:green "178";
+  gv:score "1.4732807";
+  gv:coverage "0.4"
+], [
+  gv:hex "82863c";
+  gv:red "130";
+  gv:blue "60";
+  gv:green "134";
+  gv:score "1.0454446";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "bdbe75";
+  gv:red "189";
+  gv:blue "117";
+  gv:green "190";
+  gv:score "0.82002971";
+  gv:coverage "0.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "66.782385"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.72253"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.583146"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.026785000000004"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "56.779093"
+];
+    w:bagOfWords "1935 er\nuder Nr.\n32\nEitelsbacher KarthauserHofberger\nStirn\nWachstum Hans Wilhelm Rautenstrauch, Eitelsbachn\nOriginal Keller abzug\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

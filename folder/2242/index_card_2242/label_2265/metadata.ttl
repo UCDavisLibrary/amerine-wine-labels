@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2265";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "4/27/47\nGRAND VIN\nDE\nCHATEAU LA TOUR\n1937\nMARQUE DE P O S\nEE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "ad9887";
+  gv:red "173";
+  gv:blue "135";
+  gv:green "152";
+  gv:score "33.535877";
+  gv:coverage "2"
+], [
+  gv:hex "eadbce";
+  gv:red "234";
+  gv:blue "206";
+  gv:green "219";
+  gv:score "11.12612";
+  gv:coverage "22.666667"
+], [
+  gv:hex "d2beaf";
+  gv:red "210";
+  gv:blue "175";
+  gv:green "190";
+  gv:score "20.894007000000002";
+  gv:coverage "40.933332"
+], [
+  gv:hex "8f7662";
+  gv:red "143";
+  gv:blue "98";
+  gv:green "118";
+  gv:score "8.7213315";
+  gv:coverage "0.24"
+], [
+  gv:hex "d5c5b9";
+  gv:red "213";
+  gv:blue "185";
+  gv:green "197";
+  gv:score "8.5920691";
+  gv:coverage "9.9333331"
+], [
+  gv:hex "b7907f";
+  gv:red "183";
+  gv:blue "127";
+  gv:green "144";
+  gv:score "4.1784849";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "eedccc";
+  gv:red "238";
+  gv:blue "204";
+  gv:green "220";
+  gv:score "3.5122029";
+  gv:coverage "22.613333"
+], [
+  gv:hex "dfb8ab";
+  gv:red "223";
+  gv:blue "171";
+  gv:green "184";
+  gv:score "3.3394445000000004";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "a7998e";
+  gv:red "167";
+  gv:blue "142";
+  gv:green "153";
+  gv:score "2.6062891";
+  gv:coverage "0.2"
+], [
+  gv:hex "987460";
+  gv:red "152";
+  gv:blue "96";
+  gv:green "116";
+  gv:score "2.1916887";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.148616"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.308422"
+];
+    w:bagOfWords "4/27/47\nGRAND VIN\nDE\nCHATEAU LA TOUR\n1937\nMARQUE DE P O S\nEE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

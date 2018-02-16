@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2883/label_2884";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "MARQUE\nDEPOSEE\nMONOPOLE\nBLANC\nE8 FILS FR\nBORDEAUX\nMIS EN BOUTEILLES A BORDEAUX\nFRAN CE\nLTTERWALD\nAPPELLATION BORDEAUX CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "d3bda8";
+  gv:red "211";
+  gv:blue "168";
+  gv:green "189";
+  gv:score "37.298784000000005";
+  gv:coverage "21.04"
+], [
+  gv:hex "be9365";
+  gv:red "190";
+  gv:blue "101";
+  gv:green "147";
+  gv:score "0.89185853";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "af9a86";
+  gv:red "175";
+  gv:blue "134";
+  gv:green "154";
+  gv:score "26.829058";
+  gv:coverage "8.3"
+], [
+  gv:hex "8a7663";
+  gv:red "138";
+  gv:blue "99";
+  gv:green "118";
+  gv:score "17.586295";
+  gv:coverage "4.1000000000000005"
+], [
+  gv:hex "685545";
+  gv:red "104";
+  gv:blue "69";
+  gv:green "85";
+  gv:score "5.29762";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "d2c1b6";
+  gv:red "210";
+  gv:blue "182";
+  gv:green "193";
+  gv:score "2.6755804000000003";
+  gv:coverage "14.033334"
+], [
+  gv:hex "a9998f";
+  gv:red "169";
+  gv:blue "143";
+  gv:green "153";
+  gv:score "2.0007465";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "edd7c3";
+  gv:red "237";
+  gv:blue "195";
+  gv:green "215";
+  gv:score "1.7611524";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "85746a";
+  gv:red "133";
+  gv:blue "106";
+  gv:green "116";
+  gv:score "1.6524980000000002";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "463527";
+  gv:red "70";
+  gv:blue "39";
+  gv:green "53";
+  gv:score "1.4239884";
+  gv:coverage "0.25333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.3178"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "56.514329"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "52.441061"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "52.192539000000004"
+];
+    w:bagOfWords "MARQUE\nDEPOSEE\nMONOPOLE\nBLANC\nE8 FILS FR\nBORDEAUX\nMIS EN BOUTEILLES A BORDEAUX\nFRAN CE\nLTTERWALD\nAPPELLATION BORDEAUX CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

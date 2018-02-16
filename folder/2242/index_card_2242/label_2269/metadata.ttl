@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2269";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "BERRY BROS & CO\n3 STJAM SSST LONDON\n1899\nCHATEAU MARGAUX\nGRAND IN\nBORDEAUX\nFrance\n"@fra;
+    gv:color [
+  gv:hex "ab9b8a";
+  gv:red "171";
+  gv:blue "138";
+  gv:green "155";
+  gv:score "31.715187";
+  gv:coverage "5.3866666"
+], [
+  gv:hex "cebeac";
+  gv:red "206";
+  gv:blue "172";
+  gv:green "190";
+  gv:score "23.999219999999998";
+  gv:coverage "7.993333"
+], [
+  gv:hex "877766";
+  gv:red "135";
+  gv:blue "102";
+  gv:green "119";
+  gv:score "14.946106";
+  gv:coverage "2.46"
+], [
+  gv:hex "625244";
+  gv:red "98";
+  gv:blue "68";
+  gv:green "82";
+  gv:score "9.2532165";
+  gv:coverage "1.3"
+], [
+  gv:hex "827469";
+  gv:red "130";
+  gv:blue "105";
+  gv:green "116";
+  gv:score "4.1739531";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "cfc0b5";
+  gv:red "207";
+  gv:blue "181";
+  gv:green "192";
+  gv:score "4.0303707";
+  gv:coverage "3.8266666"
+], [
+  gv:hex "433426";
+  gv:red "67";
+  gv:blue "38";
+  gv:green "52";
+  gv:score "3.918571";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "a7988e";
+  gv:red "167";
+  gv:blue "142";
+  gv:green "152";
+  gv:score "2.45306";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "63554c";
+  gv:red "99";
+  gv:blue "76";
+  gv:green "85";
+  gv:score "2.2535319";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "e8d8c6";
+  gv:red "232";
+  gv:blue "198";
+  gv:green "216";
+  gv:score "1.206499";
+  gv:coverage "8.28"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "81.582934"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.097267"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "59.662986"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.608667999999994"
+];
+    w:bagOfWords "BERRY BROS & CO\n3 STJAM SSST LONDON\n1899\nCHATEAU MARGAUX\nGRAND IN\nBORDEAUX\nFrance\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

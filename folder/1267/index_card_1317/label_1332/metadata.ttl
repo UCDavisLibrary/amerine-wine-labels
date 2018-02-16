@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1332";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "MARCA REGIS TADA\nVINHOS\nDE\nMESA\nSOCIEDADE\nVINICOLA DO DAO, L DA\nEXPORTADORAe\nVISEU PORTUGAL\n"@por;
+    gv:color [
+  gv:hex "110804";
+  gv:red "17";
+  gv:blue "4";
+  gv:green "8";
+  gv:score "17.932329";
+  gv:coverage "5.9799999999999995"
+], [
+  gv:hex "83755d";
+  gv:red "131";
+  gv:blue "93";
+  gv:green "117";
+  gv:score "15.794307";
+  gv:coverage "3.0666666"
+], [
+  gv:hex "3f321e";
+  gv:red "63";
+  gv:blue "30";
+  gv:green "50";
+  gv:score "12.116572";
+  gv:coverage "2.3"
+], [
+  gv:hex "a89980";
+  gv:red "168";
+  gv:blue "128";
+  gv:green "153";
+  gv:score "12.1682";
+  gv:coverage "2.42"
+], [
+  gv:hex "60523b";
+  gv:red "96";
+  gv:blue "59";
+  gv:green "82";
+  gv:score "11.503857";
+  gv:coverage "2.1266667"
+], [
+  gv:hex "d2c2a5";
+  gv:red "210";
+  gv:blue "165";
+  gv:green "194";
+  gv:score "10.205658";
+  gv:coverage "4.72"
+], [
+  gv:hex "eddec2";
+  gv:red "237";
+  gv:blue "194";
+  gv:green "222";
+  gv:score "4.7616727999999995";
+  gv:coverage "5.8333334"
+], [
+  gv:hex "271b08";
+  gv:red "39";
+  gv:blue "8";
+  gv:green "27";
+  gv:score "4.6922017";
+  gv:coverage "0.8"
+], [
+  gv:hex "5a534a";
+  gv:red "90";
+  gv:blue "74";
+  gv:green "83";
+  gv:score "3.5833236";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "3a332b";
+  gv:red "58";
+  gv:blue "43";
+  gv:green "51";
+  gv:score "3.3181921";
+  gv:coverage "1.2333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "72.738409"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.237279"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "54.657716"
+];
+    w:bagOfWords "MARCA REGIS TADA\nVINHOS\nDE\nMESA\nSOCIEDADE\nVINICOLA DO DAO, L DA\nEXPORTADORAe\nVISEU PORTUGAL\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

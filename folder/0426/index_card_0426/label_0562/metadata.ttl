@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0562";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R HEIN G A U\nGabinettwein\n1937er\nAauenthaler\nBaiken\nSpitlere\nNATUR REIN\nDerwaltung der Staatsueinguter\nEltoille\nEigener Rellerab3ug uno Aork branb\n"@deu;
+    gv:color [
+  gv:hex "dac1a5";
+  gv:red "218";
+  gv:blue "165";
+  gv:green "193";
+  gv:score "66.765922";
+  gv:coverage "16.933334"
+], [
+  gv:hex "685337";
+  gv:red "104";
+  gv:blue "55";
+  gv:green "83";
+  gv:score "6.7561656";
+  gv:coverage "2.1733332"
+], [
+  gv:hex "b59c7e";
+  gv:red "181";
+  gv:blue "126";
+  gv:green "156";
+  gv:score "11.962636999999999";
+  gv:coverage "4.08"
+], [
+  gv:hex "8b7558";
+  gv:red "139";
+  gv:blue "88";
+  gv:green "117";
+  gv:score "6.6760369";
+  gv:coverage "3.4333333"
+], [
+  gv:hex "45331c";
+  gv:red "69";
+  gv:blue "28";
+  gv:green "51";
+  gv:score "3.3191971000000002";
+  gv:coverage "0.76"
+], [
+  gv:hex "ecd9c0";
+  gv:red "236";
+  gv:blue "192";
+  gv:green "217";
+  gv:score "1.5826439";
+  gv:coverage "2.92"
+], [
+  gv:hex "765534";
+  gv:red "118";
+  gv:blue "52";
+  gv:green "85";
+  gv:score "0.59114089";
+  gv:coverage "0.18"
+], [
+  gv:hex "604921";
+  gv:red "96";
+  gv:blue "33";
+  gv:green "73";
+  gv:score "0.57138558";
+  gv:coverage "0.44"
+], [
+  gv:hex "2b1904";
+  gv:red "43";
+  gv:blue "4";
+  gv:green "25";
+  gv:score "0.5589343600000001";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "2b1503";
+  gv:red "43";
+  gv:blue "3";
+  gv:green "21";
+  gv:score "0.26033884";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.656752"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.884205"
+];
+    w:bagOfWords "R HEIN G A U\nGabinettwein\n1937er\nAauenthaler\nBaiken\nSpitlere\nNATUR REIN\nDerwaltung der Staatsueinguter\nEltoille\nEigener Rellerab3ug uno Aork branb\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

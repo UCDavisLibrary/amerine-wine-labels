@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3210";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "r MUSIGNY\nRESERVE VIEILLES VIGNES\nAPPELLATION CONTROLEE\nRéserve numérotée\nComte Georges de VOGUE\n1943\nbouteille\nN 0,099\nc A. Vi i\nmis en bouteilles a/a propriété\n"@fra;
+    gv:color [
+  gv:hex "ddc8a9";
+  gv:red "221";
+  gv:blue "169";
+  gv:green "200";
+  gv:score "61.75046";
+  gv:coverage "31.480000000000004"
+], [
+  gv:hex "eddabc";
+  gv:red "237";
+  gv:blue "188";
+  gv:green "218";
+  gv:score "16.280071";
+  gv:coverage "14.853333"
+], [
+  gv:hex "b09c7e";
+  gv:red "176";
+  gv:blue "126";
+  gv:green "156";
+  gv:score "14.622975999999998";
+  gv:coverage "4.1466668"
+], [
+  gv:hex "8b785a";
+  gv:red "139";
+  gv:blue "90";
+  gv:green "120";
+  gv:score "4.8562683";
+  gv:coverage "1.08"
+], [
+  gv:hex "665235";
+  gv:red "102";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "1.378658";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "463317";
+  gv:red "70";
+  gv:blue "23";
+  gv:green "51";
+  gv:score "0.47392077000000005";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "e4d9cd";
+  gv:red "228";
+  gv:blue "205";
+  gv:green "217";
+  gv:score "0.41222936";
+  gv:coverage "43.613333"
+], [
+  gv:hex "d4cabf";
+  gv:red "212";
+  gv:blue "191";
+  gv:green "202";
+  gv:score "0.098135485";
+  gv:coverage "4"
+], [
+  gv:hex "301d01";
+  gv:red "48";
+  gv:blue "1";
+  gv:green "29";
+  gv:score "0.073199766";
+  gv:coverage "0.02"
+], [
+  gv:hex "a99f95";
+  gv:red "169";
+  gv:blue "149";
+  gv:green "159";
+  gv:score "0.024098811";
+  gv:coverage "0.25333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "70.53709"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "56.916213000000006"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.786742"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.016304000000005"
+];
+    w:bagOfWords "r MUSIGNY\nRESERVE VIEILLES VIGNES\nAPPELLATION CONTROLEE\nRéserve numérotée\nComte Georges de VOGUE\n1943\nbouteille\nN 0,099\nc A. Vi i\nmis en bouteilles a/a propriété\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

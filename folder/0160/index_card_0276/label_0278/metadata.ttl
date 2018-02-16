@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0276/label_0278";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "PET R\nI S G N A TURE B 0 T T L E\nCALIFORNIA\nALEATICO\nA LIGHT WINE MADE FROM ALEATICO GRAPES\nBOTTLED IN CALIFORNIA\n3roduced and bolled by Hine Gomhany, Fan Franciscos California\nNEW YORK DISTRIBUTORS\nPETRI WINE CO. O F N. Y., IN C., NEW YORK N. Y\nALCOHOL 13% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d4c0a4";
+  gv:red "212";
+  gv:blue "164";
+  gv:green "192";
+  gv:score "46.178436";
+  gv:coverage "56.06"
+], [
+  gv:hex "c89860";
+  gv:red "200";
+  gv:blue "96";
+  gv:green "152";
+  gv:score "0.39785332";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "af9a7e";
+  gv:red "175";
+  gv:blue "126";
+  gv:green "154";
+  gv:score "24.496554";
+  gv:coverage "3.42"
+], [
+  gv:hex "8b785e";
+  gv:red "139";
+  gv:blue "94";
+  gv:green "120";
+  gv:score "9.2522778";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "60503a";
+  gv:red "96";
+  gv:blue "58";
+  gv:green "80";
+  gv:score "5.2441765";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "41311c";
+  gv:red "65";
+  gv:blue "28";
+  gv:green "49";
+  gv:score "4.433994";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "ebdac4";
+  gv:red "235";
+  gv:blue "196";
+  gv:green "218";
+  gv:score "3.2690093000000005";
+  gv:coverage "20.626667"
+], [
+  gv:hex "271905";
+  gv:red "39";
+  gv:blue "5";
+  gv:green "25";
+  gv:score "2.9033349999999998";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "d3b588";
+  gv:red "211";
+  gv:blue "136";
+  gv:green "181";
+  gv:score "1.7450817";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "150500";
+  gv:red "21";
+  gv:blue "undefined";
+  gv:green "5";
+  gv:score "0.98347049";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.626883"
+];
+    w:bagOfWords "PET R\nI S G N A TURE B 0 T T L E\nCALIFORNIA\nALEATICO\nA LIGHT WINE MADE FROM ALEATICO GRAPES\nBOTTLED IN CALIFORNIA\n3roduced and bolled by Hine Gomhany, Fan Franciscos California\nNEW YORK DISTRIBUTORS\nPETRI WINE CO. O F N. Y., IN C., NEW YORK N. Y\nALCOHOL 13% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

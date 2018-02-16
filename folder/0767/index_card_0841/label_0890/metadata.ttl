@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0890";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "CHAM PAGNE\nMaison fondée en 1825\nEXPOSITION UN\n1878\nLLE\nN. M. 3.624.492\nCONTENTS 1 PT. 10 1/2 FL. 02. PRODUCT OF FRANCE\nALCOHOL 12 BY VOLUME\n"@fra;
+    gv:color [
+  gv:hex "dbc8ad";
+  gv:red "219";
+  gv:blue "173";
+  gv:green "200";
+  gv:score "58.94239999999999";
+  gv:coverage "28.506666000000003"
+], [
+  gv:hex "8f6e33";
+  gv:red "143";
+  gv:blue "51";
+  gv:green "110";
+  gv:score "3.579909";
+  gv:coverage "0.48"
+], [
+  gv:hex "986b26";
+  gv:red "152";
+  gv:blue "38";
+  gv:green "107";
+  gv:score "2.6501563999999997";
+  gv:coverage "0.26"
+], [
+  gv:hex "e9d8c1";
+  gv:red "233";
+  gv:blue "193";
+  gv:green "216";
+  gv:score "11.302185";
+  gv:coverage "11.933333"
+], [
+  gv:hex "dbba86";
+  gv:red "219";
+  gv:blue "134";
+  gv:green "186";
+  gv:score "7.0175543000000005";
+  gv:coverage "1.2333333"
+], [
+  gv:hex "b19e82";
+  gv:red "177";
+  gv:blue "130";
+  gv:green "158";
+  gv:score "5.8981854";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "996e2f";
+  gv:red "153";
+  gv:blue "47";
+  gv:green "110";
+  gv:score "2.2376303";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "be9c67";
+  gv:red "190";
+  gv:blue "103";
+  gv:green "156";
+  gv:score "2.2001732";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "e4dace";
+  gv:red "228";
+  gv:blue "206";
+  gv:green "218";
+  gv:score "2.1624953999999996";
+  gv:coverage "51.28"
+], [
+  gv:hex "7c561d";
+  gv:red "124";
+  gv:blue "29";
+  gv:green "86";
+  gv:score "0.93992576";
+  gv:coverage "0.12"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.7149"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "58.054227000000004"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.280044999999994"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.16"
+];
+    w:bagOfWords "CHAM PAGNE\nMaison fondée en 1825\nEXPOSITION UN\n1878\nLLE\nN. M. 3.624.492\nCONTENTS 1 PT. 10 1/2 FL. 02. PRODUCT OF FRANCE\nALCOHOL 12 BY VOLUME\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

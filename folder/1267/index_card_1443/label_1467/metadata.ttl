@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1467";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "of FINE WINES\nDE MA\nWIDMER'S\nDELAWARE WINE\nMADE FROM DEL AWARE GRAPES\nPRODUCED AND BOTTLED BY\nmens pune\nALCOHOL 2.5 BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d5c2af";
+  gv:red "213";
+  gv:blue "175";
+  gv:green "194";
+  gv:score "18.801205";
+  gv:coverage "4.14"
+], [
+  gv:hex "1b1108";
+  gv:red "27";
+  gv:blue "8";
+  gv:green "17";
+  gv:score "1.3369096";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "d1c4b8";
+  gv:red "209";
+  gv:blue "184";
+  gv:green "196";
+  gv:score "15.624215999999999";
+  gv:coverage "14.2"
+], [
+  gv:hex "ad9986";
+  gv:red "173";
+  gv:blue "134";
+  gv:green "153";
+  gv:score "14.155954000000001";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "887460";
+  gv:red "136";
+  gv:blue "96";
+  gv:green "116";
+  gv:score "10.521640999999999";
+  gv:coverage "1.2333333"
+], [
+  gv:hex "ebdfd3";
+  gv:red "235";
+  gv:blue "211";
+  gv:green "223";
+  gv:score "8.5161619";
+  gv:coverage "73.213333"
+], [
+  gv:hex "63503c";
+  gv:red "99";
+  gv:blue "60";
+  gv:green "80";
+  gv:score "6.9311857";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "efdbc8";
+  gv:red "239";
+  gv:blue "200";
+  gv:green "219";
+  gv:score "6.7633733000000005";
+  gv:coverage "2.0533333000000002"
+], [
+  gv:hex "453524";
+  gv:red "69";
+  gv:blue "36";
+  gv:green "53";
+  gv:score "4.3282285";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "a79c91";
+  gv:red "167";
+  gv:blue "145";
+  gv:green "156";
+  gv:score "2.8062003";
+  gv:coverage "0.71333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.93791200000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.055311"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.35718"
+];
+    w:bagOfWords "of FINE WINES\nDE MA\nWIDMER'S\nDELAWARE WINE\nMADE FROM DEL AWARE GRAPES\nPRODUCED AND BOTTLED BY\nmens pune\nALCOHOL 2.5 BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

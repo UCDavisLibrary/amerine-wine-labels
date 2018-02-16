@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0859";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "CHAMPAGNE e\n1928\nBRUT\nSPECIAL CUVEE\nP R O DU CE OF F R A N CE\nALCOHOL 12 1/2 o/o BY VOLUME\nCONTENTS 13 FLUID oz.\nPRINTED IN FRANCE\n"@fra;
+    gv:color [
+  gv:hex "ec7c0b";
+  gv:red "236";
+  gv:blue "11";
+  gv:green "124";
+  gv:score "27.490193";
+  gv:coverage "6.9"
+], [
+  gv:hex "a16b18";
+  gv:red "161";
+  gv:blue "24";
+  gv:green "107";
+  gv:score "9.008151999999999";
+  gv:coverage "1.8399999999999999"
+], [
+  gv:hex "f37004";
+  gv:red "243";
+  gv:blue "4";
+  gv:green "112";
+  gv:score "16.221766000000002";
+  gv:coverage "3.9133333"
+], [
+  gv:hex "dfbf9e";
+  gv:red "223";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "0.14973536999999998";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "bb580a";
+  gv:red "187";
+  gv:blue "10";
+  gv:green "88";
+  gv:score "8.77164";
+  gv:coverage "2.0866666"
+], [
+  gv:hex "d95b02";
+  gv:red "217";
+  gv:blue "2";
+  gv:green "91";
+  gv:score "8.6388692";
+  gv:coverage "1.6133332999999999"
+], [
+  gv:hex "cf6405";
+  gv:red "207";
+  gv:blue "5";
+  gv:green "100";
+  gv:score "6.1494831";
+  gv:coverage "1.32"
+], [
+  gv:hex "994002";
+  gv:red "153";
+  gv:blue "2";
+  gv:green "64";
+  gv:score "4.249033";
+  gv:coverage "1.06"
+], [
+  gv:hex "93711c";
+  gv:red "147";
+  gv:blue "28";
+  gv:green "113";
+  gv:score "4.1546926";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "c3892d";
+  gv:red "195";
+  gv:blue "45";
+  gv:green "137";
+  gv:score "2.0230975";
+  gv:coverage "1.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.104168"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "52.368182"
+];
+    w:bagOfWords "CHAMPAGNE e\n1928\nBRUT\nSPECIAL CUVEE\nP R O DU CE OF F R A N CE\nALCOHOL 12 1/2 o/o BY VOLUME\nCONTENTS 13 FLUID oz.\nPRINTED IN FRANCE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

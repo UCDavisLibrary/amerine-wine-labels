@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3218";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "ARIS 1889\nDIJON!\nCHAMBOLLE MUSIGNY\nIMP BARNAuD.LION PAAIS\n"@fra;
+    gv:color [
+  gv:hex "e1c8a7";
+  gv:red "225";
+  gv:blue "167";
+  gv:green "200";
+  gv:score "44.859543";
+  gv:coverage "20.346667"
+], [
+  gv:hex "6b5332";
+  gv:red "107";
+  gv:blue "50";
+  gv:green "83";
+  gv:score "8.1573039";
+  gv:coverage "0.9533333600000001"
+], [
+  gv:hex "311901";
+  gv:red "49";
+  gv:blue "1";
+  gv:green "25";
+  gv:score "0.62188781";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "b09878";
+  gv:red "176";
+  gv:blue "120";
+  gv:green "152";
+  gv:score "11.282563";
+  gv:coverage "2.6733333000000004"
+], [
+  gv:hex "f0d9b9";
+  gv:red "240";
+  gv:blue "185";
+  gv:green "217";
+  gv:score "8.8415809";
+  gv:coverage "15.440000000000001"
+], [
+  gv:hex "8d7552";
+  gv:red "141";
+  gv:blue "82";
+  gv:green "117";
+  gv:score "7.1607158";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "dec28f";
+  gv:red "222";
+  gv:blue "143";
+  gv:green "194";
+  gv:score "6.6941187";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "483114";
+  gv:red "72";
+  gv:blue "20";
+  gv:green "49";
+  gv:score "3.7743526999999997";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "664e27";
+  gv:red "102";
+  gv:blue "39";
+  gv:green "78";
+  gv:score "2.8855702";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "b59a61";
+  gv:red "181";
+  gv:blue "97";
+  gv:green "154";
+  gv:score "2.5697442";
+  gv:coverage "1.3533333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.826146"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "57.344085"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.124019999999994"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.112533000000006"
+];
+    w:bagOfWords "ARIS 1889\nDIJON!\nCHAMBOLLE MUSIGNY\nIMP BARNAuD.LION PAAIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

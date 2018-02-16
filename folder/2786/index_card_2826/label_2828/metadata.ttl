@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2828";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "B\nVINde SAUTERNES de M!leMarquisdeLUR SALUCES\nCHATEAU FILHOT\n1925\nMIS EN BOUTEILLES AU. CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "ae967a";
+  gv:red "174";
+  gv:blue "122";
+  gv:green "150";
+  gv:score "44.616213";
+  gv:coverage "6.906666599999999"
+], [
+  gv:hex "c29465";
+  gv:red "194";
+  gv:blue "101";
+  gv:green "148";
+  gv:score "1.2902032";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "92795b";
+  gv:red "146";
+  gv:blue "91";
+  gv:green "121";
+  gv:score "24.430816";
+  gv:coverage "2.6133334"
+], [
+  gv:hex "d4bea6";
+  gv:red "212";
+  gv:blue "166";
+  gv:green "190";
+  gv:score "18.568181";
+  gv:coverage "14.946666"
+], [
+  gv:hex "705839";
+  gv:red "112";
+  gv:blue "57";
+  gv:green "88";
+  gv:score "3.0212654";
+  gv:coverage "0.38"
+], [
+  gv:hex "ecd8c3";
+  gv:red "236";
+  gv:blue "195";
+  gv:green "216";
+  gv:score "2.4606586999999998";
+  gv:coverage "19.326666"
+], [
+  gv:hex "d5c6bb";
+  gv:red "213";
+  gv:blue "187";
+  gv:green "198";
+  gv:score "0.97158691";
+  gv:coverage "4.7"
+], [
+  gv:hex "a97743";
+  gv:red "169";
+  gv:blue "67";
+  gv:green "119";
+  gv:score "0.9184268299999999";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "b29363";
+  gv:red "178";
+  gv:blue "99";
+  gv:green "147";
+  gv:score "0.802339";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "987c52";
+  gv:red "152";
+  gv:blue "82";
+  gv:green "124";
+  gv:score "0.72880168";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.03986"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "62.144946999999995"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.472212"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "55.142295"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.457623"
+];
+    w:bagOfWords "B\nVINde SAUTERNES de M!leMarquisdeLUR SALUCES\nCHATEAU FILHOT\n1925\nMIS EN BOUTEILLES AU. CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

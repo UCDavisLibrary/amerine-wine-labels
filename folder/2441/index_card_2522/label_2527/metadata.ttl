@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2527";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "S E A L\nGREEN\nCRAF 323\nCHABLIS SUPERIEUR\nWINE GRO WERS & SHIPPERS\nVINTAGE 1926 BEAUNE, FRANCE\nProduced and Bottled in France\nALCOHOL 12% BY VOLUME\nMET CONTENTS I PINT 8 FL Oz\n"@fra;
+    gv:color [
+  gv:hex "cfc278";
+  gv:red "207";
+  gv:blue "120";
+  gv:green "194";
+  gv:score "41.102305";
+  gv:coverage "9.98"
+], [
+  gv:hex "4e581b";
+  gv:red "78";
+  gv:blue "27";
+  gv:green "88";
+  gv:score "5.0676897";
+  gv:coverage "3.9333332"
+], [
+  gv:hex "cdbf69";
+  gv:red "205";
+  gv:blue "105";
+  gv:green "191";
+  gv:score "17.822226999999998";
+  gv:coverage "4.2866666"
+], [
+  gv:hex "ac9f59";
+  gv:red "172";
+  gv:blue "89";
+  gv:green "159";
+  gv:score "13.666174";
+  gv:coverage "3.2133333"
+], [
+  gv:hex "877b38";
+  gv:red "135";
+  gv:blue "56";
+  gv:green "123";
+  gv:score "5.6887973";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "c7c267";
+  gv:red "199";
+  gv:blue "103";
+  gv:green "194";
+  gv:score "4.2635474";
+  gv:coverage "1.1533333"
+], [
+  gv:hex "61561b";
+  gv:red "97";
+  gv:blue "27";
+  gv:green "86";
+  gv:score "2.8251256999999996";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "c9c679";
+  gv:red "201";
+  gv:blue "121";
+  gv:green "198";
+  gv:score "2.2781219";
+  gv:coverage "0.96"
+], [
+  gv:hex "b3a450";
+  gv:red "179";
+  gv:blue "80";
+  gv:green "164";
+  gv:score "1.847996";
+  gv:coverage "0.4"
+], [
+  gv:hex "877827";
+  gv:red "135";
+  gv:blue "39";
+  gv:green "120";
+  gv:score "1.1778409";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.179532"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "58.046465999999995"
+];
+    w:bagOfWords "S E A L\nGREEN\nCRAF 323\nCHABLIS SUPERIEUR\nWINE GRO WERS & SHIPPERS\nVINTAGE 1926 BEAUNE, FRANCE\nProduced and Bottled in France\nALCOHOL 12% BY VOLUME\nMET CONTENTS I PINT 8 FL Oz\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

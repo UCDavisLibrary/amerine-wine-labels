@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1793";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Net contents 1 pint 7 fluid ounces\nG R A A C H R\nWine Alcoholic content 9 to 11 per cent by weight\nProduced and bottled in Germany\nTheodor Dorn Sohne, Wiesbaden olRhine\n"@deu;
+    gv:color [
+  gv:hex "d8c6ae";
+  gv:red "216";
+  gv:blue "174";
+  gv:green "198";
+  gv:score "20.247185";
+  gv:coverage "36.433333000000005"
+], [
+  gv:hex "4f594d";
+  gv:red "79";
+  gv:blue "77";
+  gv:green "89";
+  gv:score "16.898732";
+  gv:coverage "2.5666667"
+], [
+  gv:hex "6f776b";
+  gv:red "111";
+  gv:blue "107";
+  gv:green "119";
+  gv:score "14.458585";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "46594c";
+  gv:red "70";
+  gv:blue "76";
+  gv:green "89";
+  gv:score "6.8707108";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "30392d";
+  gv:red "48";
+  gv:blue "45";
+  gv:green "57";
+  gv:score "6.5189391";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "7b7862";
+  gv:red "123";
+  gv:blue "98";
+  gv:green "120";
+  gv:score "5.4982364";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "a89981";
+  gv:red "168";
+  gv:blue "129";
+  gv:green "153";
+  gv:score "5.3761937";
+  gv:coverage "2.62"
+], [
+  gv:hex "e9d9c0";
+  gv:red "233";
+  gv:blue "192";
+  gv:green "217";
+  gv:score "4.2121559";
+  gv:coverage "32.946667000000005"
+], [
+  gv:hex "90988b";
+  gv:red "144";
+  gv:blue "139";
+  gv:green "152";
+  gv:score "3.4270775";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "575642";
+  gv:red "87";
+  gv:blue "66";
+  gv:green "86";
+  gv:score "3.0209724000000002";
+  gv:coverage "0.62"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.5215"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "60.268122000000005"
+];
+    w:bagOfWords "Net contents 1 pint 7 fluid ounces\nG R A A C H R\nWine Alcoholic content 9 to 11 per cent by weight\nProduced and bottled in Germany\nTheodor Dorn Sohne, Wiesbaden olRhine\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

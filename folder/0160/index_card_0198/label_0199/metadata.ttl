@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0199";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "4 SUP. ADM DIST\nTAX PAID BY STAMPS\nCALIFORNIA\nAFFIXED TO CASE\nCALIFORNIA\nCABERNET\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD RUTHERFORD, CAL.\nBONDED WINERY No. 71\nNET CONTENTS 1 PT. 8 FLUID OZS.\nALCOHOL 12% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "d5c0a8";
+  gv:red "213";
+  gv:blue "168";
+  gv:green "192";
+  gv:score "32.518584";
+  gv:coverage "44.28"
+], [
+  gv:hex "af9a80";
+  gv:red "175";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "20.988385";
+  gv:coverage "4.0466666"
+], [
+  gv:hex "c08979";
+  gv:red "192";
+  gv:blue "121";
+  gv:green "137";
+  gv:score "9.10031";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "a36e5a";
+  gv:red "163";
+  gv:blue "90";
+  gv:green "110";
+  gv:score "7.815003399999999";
+  gv:coverage "0.4"
+], [
+  gv:hex "90795e";
+  gv:red "144";
+  gv:blue "94";
+  gv:green "121";
+  gv:score "7.5592667";
+  gv:coverage "0.86"
+], [
+  gv:hex "7f4936";
+  gv:red "127";
+  gv:blue "54";
+  gv:green "73";
+  gv:score "5.984173";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "e6bba8";
+  gv:red "230";
+  gv:blue "168";
+  gv:green "187";
+  gv:score "4.280189999999999";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "edd9c1";
+  gv:red "237";
+  gv:blue "193";
+  gv:green "217";
+  gv:score "3.6735546";
+  gv:coverage "16.706666000000002"
+], [
+  gv:hex "7d4428";
+  gv:red "125";
+  gv:blue "40";
+  gv:green "68";
+  gv:score "1.5652247000000001";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "a65f57";
+  gv:red "166";
+  gv:blue "87";
+  gv:green "95";
+  gv:score "1.2719281";
+  gv:coverage "0.046666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "73.47436"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.629431"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "53.810840999999996"
+];
+    w:bagOfWords "4 SUP. ADM DIST\nTAX PAID BY STAMPS\nCALIFORNIA\nAFFIXED TO CASE\nCALIFORNIA\nCABERNET\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD RUTHERFORD, CAL.\nBONDED WINERY No. 71\nNET CONTENTS 1 PT. 8 FLUID OZS.\nALCOHOL 12% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

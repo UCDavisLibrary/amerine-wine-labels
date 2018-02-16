@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2742";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "BOTTLED IN FRANCE\nPRODUCT OF FRANCE\nCotes-du-Rhone\nPARIS 1889\nPINK RHONE WINE\nAPPELLATION CONTROLEE\nNEGOCIANTS A STPERAY ARDECHEI\nYContents 12 112 Fluid ounces\nALCOHOL\n1 1 o 9 olo BY VOLUME\n1942\n"@fra;
+    gv:color [
+  gv:hex "d7bb9b";
+  gv:red "215";
+  gv:blue "155";
+  gv:green "187";
+  gv:score "44.205111";
+  gv:coverage "37.26"
+], [
+  gv:hex "b59b7c";
+  gv:red "181";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "24.757311";
+  gv:coverage "6.886667"
+], [
+  gv:hex "897357";
+  gv:red "137";
+  gv:blue "87";
+  gv:green "115";
+  gv:score "15.459733";
+  gv:coverage "5.06"
+], [
+  gv:hex "69543a";
+  gv:red "105";
+  gv:blue "58";
+  gv:green "84";
+  gv:score "9.493786799999999";
+  gv:coverage "3.2"
+], [
+  gv:hex "331901";
+  gv:red "51";
+  gv:blue "1";
+  gv:green "25";
+  gv:score "0.065644743";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "4a381f";
+  gv:red "74";
+  gv:blue "31";
+  gv:green "56";
+  gv:score "1.0575988";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "ba9475";
+  gv:red "186";
+  gv:blue "117";
+  gv:green "148";
+  gv:score "1.0022924";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "9a7657";
+  gv:red "154";
+  gv:blue "87";
+  gv:green "118";
+  gv:score "0.8255282399999999";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "e1bd93";
+  gv:red "225";
+  gv:blue "147";
+  gv:green "189";
+  gv:score "0.61218147";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "d5ae8f";
+  gv:red "213";
+  gv:blue "143";
+  gv:green "174";
+  gv:score "0.51141959";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.21943"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "62.272555"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.088927000000005"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.064248000000006"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "55.587351"
+];
+    w:bagOfWords "BOTTLED IN FRANCE\nPRODUCT OF FRANCE\nCotes-du-Rhone\nPARIS 1889\nPINK RHONE WINE\nAPPELLATION CONTROLEE\nNEGOCIANTS A STPERAY ARDECHEI\nYContents 12 112 Fluid ounces\nALCOHOL\n1 1 o 9 olo BY VOLUME\n1942\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

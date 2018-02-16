@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0858";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "HAMPAGNE\nTRADE\nA K\nEpernay\n29\nFRANCE\nEXTRA DRY\nGRAND VIN DE\nRESEsex E,\nE Pr\n33\n"@fra;
+    gv:color [
+  gv:hex "deba7e";
+  gv:red "222";
+  gv:blue "126";
+  gv:green "186";
+  gv:score "26.144415";
+  gv:coverage "8.6133331"
+], [
+  gv:hex "cd994b";
+  gv:red "205";
+  gv:blue "75";
+  gv:green "153";
+  gv:score "12.066424000000001";
+  gv:coverage "1.8466666"
+], [
+  gv:hex "754e13";
+  gv:red "117";
+  gv:blue "19";
+  gv:green "78";
+  gv:score "2.6646424";
+  gv:coverage "0.32"
+], [
+  gv:hex "bf9b5f";
+  gv:red "191";
+  gv:blue "95";
+  gv:green "155";
+  gv:score "10.092728";
+  gv:coverage "2.12"
+], [
+  gv:hex "381500";
+  gv:red "56";
+  gv:blue "undefined";
+  gv:green "21";
+  gv:score "0.08620077300000001";
+  gv:coverage "0.02"
+], [
+  gv:hex "927137";
+  gv:red "146";
+  gv:blue "55";
+  gv:green "113";
+  gv:score "6.9751278";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "e2b277";
+  gv:red "226";
+  gv:blue "119";
+  gv:green "178";
+  gv:score "5.999542";
+  gv:coverage "1.9933334"
+], [
+  gv:hex "e2ae61";
+  gv:red "226";
+  gv:blue "97";
+  gv:green "174";
+  gv:score "5.9719451";
+  gv:coverage "1.06"
+], [
+  gv:hex "dbc29d";
+  gv:red "219";
+  gv:blue "157";
+  gv:green "194";
+  gv:score "5.7313517";
+  gv:coverage "5.806666600000001"
+], [
+  gv:hex "c8985c";
+  gv:red "200";
+  gv:blue "92";
+  gv:green "152";
+  gv:score "5.6821693";
+  gv:coverage "1.3266666999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "63.289624"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.009252999999994"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.77396"
+];
+    w:bagOfWords "HAMPAGNE\nTRADE\nA K\nEpernay\n29\nFRANCE\nEXTRA DRY\nGRAND VIN DE\nRESEsex E,\nE Pr\n33\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

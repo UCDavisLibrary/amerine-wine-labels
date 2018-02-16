@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2308";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "MEDAILLES DOR\nPARIS\n867\nEXPOSITION\nARIS 1878\nUNIVERSELLES\nMONTRO\n1871\nGRANDE ME\nTERIELLE\nAPPELLATION SAINT-ESTEPHE CONTROLEE\nMIS EN BOUTEILLE A U CHATEAU\nDE POSE\n"@fra;
+    gv:color [
+  gv:hex "d3c1ae";
+  gv:red "211";
+  gv:blue "174";
+  gv:green "193";
+  gv:score "38.800272";
+  gv:coverage "26.76"
+], [
+  gv:hex "ad9d8b";
+  gv:red "173";
+  gv:blue "139";
+  gv:green "157";
+  gv:score "30.975813000000002";
+  gv:coverage "2.7199999999999998"
+], [
+  gv:hex "877664";
+  gv:red "135";
+  gv:blue "100";
+  gv:green "118";
+  gv:score "12.308665000000001";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "665645";
+  gv:red "102";
+  gv:blue "69";
+  gv:green "86";
+  gv:score "6.040068";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "ead9c7";
+  gv:red "234";
+  gv:blue "199";
+  gv:green "217";
+  gv:score "5.5940907";
+  gv:coverage "2.3"
+], [
+  gv:hex "d5b19c";
+  gv:red "213";
+  gv:blue "156";
+  gv:green "177";
+  gv:score "2.0475227";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "c39f8a";
+  gv:red "195";
+  gv:blue "138";
+  gv:green "159";
+  gv:score "1.8936839";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "423222";
+  gv:red "66";
+  gv:blue "34";
+  gv:green "50";
+  gv:score "1.5368509000000001";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "241505";
+  gv:red "36";
+  gv:blue "5";
+  gv:green "21";
+  gv:score "0.50053";
+  gv:coverage "0.02"
+], [
+  gv:hex "c2b2a7";
+  gv:red "194";
+  gv:blue "167";
+  gv:green "178";
+  gv:score "0.17368317";
+  gv:coverage "10.506666000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.140976"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.986117"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "50.604749000000005"
+];
+    w:bagOfWords "MEDAILLES DOR\nPARIS\n867\nEXPOSITION\nARIS 1878\nUNIVERSELLES\nMONTRO\n1871\nGRANDE ME\nTERIELLE\nAPPELLATION SAINT-ESTEPHE CONTROLEE\nMIS EN BOUTEILLE A U CHATEAU\nDE POSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

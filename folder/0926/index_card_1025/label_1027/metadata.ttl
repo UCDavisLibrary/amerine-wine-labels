@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1025/label_1027";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "Glacier\nPaien\nYlloming\nProprietaire skonisaisse\nMILAN Dipl Honneur\n1896 GENEVE Medaille de Bronze\n1903. 1909 SION\nd'A,\nd O\n"@deu;
+    gv:color [
+  gv:hex "d5c1aa";
+  gv:red "213";
+  gv:blue "170";
+  gv:green "193";
+  gv:score "21.464133";
+  gv:coverage "14.2"
+], [
+  gv:hex "6f473b";
+  gv:red "111";
+  gv:blue "59";
+  gv:green "71";
+  gv:score "11.994983";
+  gv:coverage "3.4666665"
+], [
+  gv:hex "af9b84";
+  gv:red "175";
+  gv:blue "132";
+  gv:green "155";
+  gv:score "11.602785";
+  gv:coverage "2.58"
+], [
+  gv:hex "512d23";
+  gv:red "81";
+  gv:blue "35";
+  gv:green "45";
+  gv:score "11.488492";
+  gv:coverage "3.8333334"
+], [
+  gv:hex "966d5e";
+  gv:red "150";
+  gv:blue "94";
+  gv:green "109";
+  gv:score "8.8817149";
+  gv:coverage "2.0266667"
+], [
+  gv:hex "eeddc6";
+  gv:red "238";
+  gv:blue "198";
+  gv:green "221";
+  gv:score "8.5145257";
+  gv:coverage "9.120000000000001"
+], [
+  gv:hex "b8917f";
+  gv:red "184";
+  gv:blue "127";
+  gv:green "145";
+  gv:score "6.8545020999999995";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "897863";
+  gv:red "137";
+  gv:blue "99";
+  gv:green "120";
+  gv:score "4.3041906999999995";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "ddb7a5";
+  gv:red "221";
+  gv:blue "165";
+  gv:green "183";
+  gv:score "2.771097";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "3d2e1c";
+  gv:red "61";
+  gv:blue "28";
+  gv:green "46";
+  gv:score "2.5741344";
+  gv:coverage "0.5133333200000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.078705"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.768600000000006"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.630869000000004"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "53.6255"
+];
+    w:bagOfWords "Glacier\nPaien\nYlloming\nProprietaire skonisaisse\nMILAN Dipl Honneur\n1896 GENEVE Medaille de Bronze\n1903. 1909 SION\nd'A,\nd O\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

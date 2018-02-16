@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3243/label_3247";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\ne laine\nproprietaices\nANNEE 1929\nCo te de Nuit\nT e de Cure\n"@fra;
+    gv:color [
+  gv:hex "cfb89f";
+  gv:red "207";
+  gv:blue "159";
+  gv:green "184";
+  gv:score "42.746487";
+  gv:coverage "18.666667"
+], [
+  gv:hex "b39c84";
+  gv:red "179";
+  gv:blue "132";
+  gv:green "156";
+  gv:score "31.890722999999998";
+  gv:coverage "8.9066669"
+], [
+  gv:hex "8d765e";
+  gv:red "141";
+  gv:blue "94";
+  gv:green "118";
+  gv:score "14.758839000000002";
+  gv:coverage "3.5866667"
+], [
+  gv:hex "69533c";
+  gv:red "105";
+  gv:blue "60";
+  gv:green "83";
+  gv:score "6.1347249999999995";
+  gv:coverage "1.76"
+], [
+  gv:hex "47321c";
+  gv:red "71";
+  gv:blue "28";
+  gv:green "50";
+  gv:score "3.3046879000000002";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "ebd8c3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "216";
+  gv:score "0.5428602";
+  gv:coverage "15.76"
+], [
+  gv:hex "2e1a05";
+  gv:red "46";
+  gv:blue "5";
+  gv:green "26";
+  gv:score "0.29775456";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "e9e0d6";
+  gv:red "233";
+  gv:blue "214";
+  gv:green "224";
+  gv:score "0.088502443";
+  gv:coverage "47.233334"
+], [
+  gv:hex "422911";
+  gv:red "66";
+  gv:blue "17";
+  gv:green "41";
+  gv:score "0.068903132";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "1f0b00";
+  gv:red "31";
+  gv:blue "undefined";
+  gv:green "11";
+  gv:score "0.066335726";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.768514"
+], [
+  gv:mid <https://g.co/kg/m/013y0j>;
+  gv:desc "organ";
+  gv:score "64.364159"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "54.17704"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "53.306884"
+];
+    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\ne laine\nproprietaices\nANNEE 1929\nCo te de Nuit\nT e de Cure\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

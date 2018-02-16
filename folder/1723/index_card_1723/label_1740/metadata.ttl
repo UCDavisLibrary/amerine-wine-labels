@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1740";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1929er\nWawerner Goldberg\nMOSEL SAAR VRVWERWEINE\n"@deu;
+    gv:color [
+  gv:hex "8b7252";
+  gv:red "139";
+  gv:blue "82";
+  gv:green "114";
+  gv:score "26.836574000000002";
+  gv:coverage "3.3333334999999997"
+], [
+  gv:hex "dac2a2";
+  gv:red "218";
+  gv:blue "162";
+  gv:green "194";
+  gv:score "16.720733";
+  gv:coverage "48.273334"
+], [
+  gv:hex "4a2c13";
+  gv:red "74";
+  gv:blue "19";
+  gv:green "44";
+  gv:score "4.5807533";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "6b5233";
+  gv:red "107";
+  gv:blue "51";
+  gv:green "82";
+  gv:score "19.542612000000002";
+  gv:coverage "2.7666667"
+], [
+  gv:hex "ad9575";
+  gv:red "173";
+  gv:blue "117";
+  gv:green "149";
+  gv:score "15.845685000000001";
+  gv:coverage "2.5466667"
+], [
+  gv:hex "734c33";
+  gv:red "115";
+  gv:blue "51";
+  gv:green "76";
+  gv:score "4.1253779";
+  gv:coverage "0.6"
+], [
+  gv:hex "4c361a";
+  gv:red "76";
+  gv:blue "26";
+  gv:green "54";
+  gv:score "3.3722125";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "694d28";
+  gv:red "105";
+  gv:blue "40";
+  gv:green "77";
+  gv:score "1.5399167999999999";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "503611";
+  gv:red "80";
+  gv:blue "17";
+  gv:green "54";
+  gv:score "1.2612612";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "eed8b9";
+  gv:red "238";
+  gv:blue "185";
+  gv:green "216";
+  gv:score "1.1743264999999998";
+  gv:coverage "22.393334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.198261"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "54.587597"
+];
+    w:bagOfWords "1929er\nWawerner Goldberg\nMOSEL SAAR VRVWERWEINE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

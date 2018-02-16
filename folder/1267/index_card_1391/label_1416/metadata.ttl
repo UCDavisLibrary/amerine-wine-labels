@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1416";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "lala\nMOSCATO ESSPUMANTE\nFABRICACION CHILENA\nSANTA ELENA\nMEDIO DULCE\n"@spa;
+    gv:color [
+  gv:hex "d6bea3";
+  gv:red "214";
+  gv:blue "163";
+  gv:green "190";
+  gv:score "32.639635";
+  gv:coverage "54.326665"
+], [
+  gv:hex "6d5324";
+  gv:red "109";
+  gv:blue "36";
+  gv:green "83";
+  gv:score "7.846489500000001";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "4b290d";
+  gv:red "75";
+  gv:blue "13";
+  gv:green "41";
+  gv:score "3.3335324";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "b29c81";
+  gv:red "178";
+  gv:blue "129";
+  gv:green "156";
+  gv:score "12.685360000000001";
+  gv:coverage "1.9"
+], [
+  gv:hex "e0b69e";
+  gv:red "224";
+  gv:blue "158";
+  gv:green "182";
+  gv:score "6.6886082";
+  gv:coverage "1.24"
+], [
+  gv:hex "897357";
+  gv:red "137";
+  gv:blue "87";
+  gv:green "115";
+  gv:score "5.5226661";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "bf937b";
+  gv:red "191";
+  gv:blue "123";
+  gv:green "147";
+  gv:score "5.2004714";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "654f32";
+  gv:red "101";
+  gv:blue "50";
+  gv:green "79";
+  gv:score "4.2852141";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "6e4d24";
+  gv:red "110";
+  gv:blue "36";
+  gv:green "77";
+  gv:score "3.9890848";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "846838";
+  gv:red "132";
+  gv:blue "56";
+  gv:green "104";
+  gv:score "3.7032589";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.929355"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.138381"
+];
+    w:bagOfWords "lala\nMOSCATO ESSPUMANTE\nFABRICACION CHILENA\nSANTA ELENA\nMEDIO DULCE\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

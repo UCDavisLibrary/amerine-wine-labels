@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4370/label_4375";
+    dct:type "image";
+    w:bagOfWords "STERNE\nClevner\nAuslese\nEIDGENVERSUCHSANSTALT FUR OBST-WEIN- UND GARTENBAU WADENSWIL\n"@deu;
+    gv:color [
+  gv:hex "dcc19d";
+  gv:red "220";
+  gv:blue "157";
+  gv:green "193";
+  gv:score "41.273114";
+  gv:coverage "22.1"
+], [
+  gv:hex "debf91";
+  gv:red "222";
+  gv:blue "145";
+  gv:green "191";
+  gv:score "8.747360899999999";
+  gv:coverage "2.56"
+], [
+  gv:hex "eabb9a";
+  gv:red "234";
+  gv:blue "154";
+  gv:green "187";
+  gv:score "6.929893";
+  gv:coverage "3.2066666"
+], [
+  gv:hex "eab78f";
+  gv:red "234";
+  gv:blue "143";
+  gv:green "183";
+  gv:score "6.5411016";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "b19877";
+  gv:red "177";
+  gv:blue "119";
+  gv:green "152";
+  gv:score "6.158689";
+  gv:coverage "1.8399999999999999"
+], [
+  gv:hex "b69769";
+  gv:red "182";
+  gv:blue "105";
+  gv:green "151";
+  gv:score "5.056446";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "c8926b";
+  gv:red "200";
+  gv:blue "107";
+  gv:green "146";
+  gv:score "4.2899462999999995";
+  gv:coverage "1.3266666999999999"
+], [
+  gv:hex "9a7b4e";
+  gv:red "154";
+  gv:blue "78";
+  gv:green "123";
+  gv:score "4.2321678";
+  gv:coverage "0.66"
+], [
+  gv:hex "a43716";
+  gv:red "164";
+  gv:blue "22";
+  gv:green "55";
+  gv:score "0.041915814";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "a06d46";
+  gv:red "160";
+  gv:blue "70";
+  gv:green "109";
+  gv:score "3.4292787";
+  gv:coverage "1.0999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.086326"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.069174999999994"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "53.8284"
+];
+    w:bagOfWords "STERNE\nClevner\nAuslese\nEIDGENVERSUCHSANSTALT FUR OBST-WEIN- UND GARTENBAU WADENSWIL\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "AUT".

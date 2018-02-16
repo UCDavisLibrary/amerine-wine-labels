@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0972";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "Chateau de\nfans\nReserv\nLOUIS SV\n"@deu;
+    gv:color [
+  gv:hex "d6c1ae";
+  gv:red "214";
+  gv:blue "174";
+  gv:green "193";
+  gv:score "17.444338000000002";
+  gv:coverage "12.166667"
+], [
+  gv:hex "bd6041";
+  gv:red "189";
+  gv:blue "65";
+  gv:green "96";
+  gv:score "13.92381";
+  gv:coverage "4.3666668"
+], [
+  gv:hex "aa9887";
+  gv:red "170";
+  gv:blue "135";
+  gv:green "152";
+  gv:score "15.213311";
+  gv:coverage "3.4933332"
+], [
+  gv:hex "877665";
+  gv:red "135";
+  gv:blue "101";
+  gv:green "118";
+  gv:score "15.160982";
+  gv:coverage "2.6733333000000004"
+], [
+  gv:hex "635242";
+  gv:red "99";
+  gv:blue "66";
+  gv:green "82";
+  gv:score "7.786533199999999";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "e9b79e";
+  gv:red "233";
+  gv:blue "158";
+  gv:green "183";
+  gv:score "6.7171611";
+  gv:coverage "3.3266667"
+], [
+  gv:hex "eedac7";
+  gv:red "238";
+  gv:blue "199";
+  gv:green "218";
+  gv:score "5.1853161000000005";
+  gv:coverage "26.14"
+], [
+  gv:hex "c6967d";
+  gv:red "198";
+  gv:blue "125";
+  gv:green "150";
+  gv:score "3.465946";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "453425";
+  gv:red "69";
+  gv:blue "37";
+  gv:green "52";
+  gv:score "3.2909889";
+  gv:coverage "0.6"
+], [
+  gv:hex "d78668";
+  gv:red "215";
+  gv:blue "104";
+  gv:green "134";
+  gv:score "3.0139098";
+  gv:coverage "0.4"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "69.451916"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.20526"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.990804999999995"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.993922999999995"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "51.513022"
+];
+    w:bagOfWords "Chateau de\nfans\nReserv\nLOUIS SV\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

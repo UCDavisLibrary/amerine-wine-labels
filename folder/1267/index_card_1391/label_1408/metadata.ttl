@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1408";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "VINO\nGRAN CHILE\nstacion Chilena\nAn\nLAN o DE MAI PO\n"@spa;
+    gv:color [
+  gv:hex "dbccba";
+  gv:red "219";
+  gv:blue "186";
+  gv:green "204";
+  gv:score "39.459717";
+  gv:coverage "34.813333"
+], [
+  gv:hex "e6d9c8";
+  gv:red "230";
+  gv:blue "200";
+  gv:green "217";
+  gv:score "26.108256";
+  gv:coverage "25.973332"
+], [
+  gv:hex "e6dcd3";
+  gv:red "230";
+  gv:blue "211";
+  gv:green "220";
+  gv:score "25.426105";
+  gv:coverage "20.013334"
+], [
+  gv:hex "584d3e";
+  gv:red "88";
+  gv:blue "62";
+  gv:green "77";
+  gv:score "0.18790193000000002";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "dad1c7";
+  gv:red "218";
+  gv:blue "199";
+  gv:green "209";
+  gv:score "8.082984399999999";
+  gv:coverage "7.3133335"
+], [
+  gv:hex "b8a289";
+  gv:red "184";
+  gv:blue "137";
+  gv:green "162";
+  gv:score "0.320585";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "7d7363";
+  gv:red "125";
+  gv:blue "99";
+  gv:green "115";
+  gv:score "0.12542452";
+  gv:coverage "0.06"
+], [
+  gv:hex "342d1b";
+  gv:red "52";
+  gv:blue "27";
+  gv:green "45";
+  gv:score "0.085335405";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "c49d7c";
+  gv:red "196";
+  gv:blue "124";
+  gv:green "157";
+  gv:score "0.074134179";
+  gv:coverage "1.7266667"
+], [
+  gv:hex "dcb69b";
+  gv:red "220";
+  gv:blue "155";
+  gv:green "182";
+  gv:score "0.073155924";
+  gv:coverage "2.1466667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.57386000000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "51.232158999999996"
+];
+    w:bagOfWords "VINO\nGRAN CHILE\nstacion Chilena\nAn\nLAN o DE MAI PO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1314";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "DE LETAT\nTHILL\nFRERES\nS. A\n1937 Wormeldange Elterberg\nRiesling-Traminer nature\nCru Caves coopératives, Foudre No 143\nProduce of Luxembourg\nAux en bourg\n"@deu;
+    gv:color [
+  gv:hex "c7bf9e";
+  gv:red "199";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "29.668778";
+  gv:coverage "20.9"
+], [
+  gv:hex "bdbb57";
+  gv:red "189";
+  gv:blue "87";
+  gv:green "187";
+  gv:score "3.0723496999999997";
+  gv:coverage "0.26"
+], [
+  gv:hex "1d3c55";
+  gv:red "29";
+  gv:blue "85";
+  gv:green "60";
+  gv:score "0.46747917999999994";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "a49d7e";
+  gv:red "164";
+  gv:blue "126";
+  gv:green "157";
+  gv:score "26.09593";
+  gv:coverage "10.826666999999999"
+], [
+  gv:hex "817b5d";
+  gv:red "129";
+  gv:blue "93";
+  gv:green "123";
+  gv:score "12.085585";
+  gv:coverage "5.2866668"
+], [
+  gv:hex "164143";
+  gv:red "22";
+  gv:blue "67";
+  gv:green "65";
+  gv:score "0.11366615";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "303667";
+  gv:red "48";
+  gv:blue "103";
+  gv:green "54";
+  gv:score "0.062083686";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "cfc185";
+  gv:red "207";
+  gv:blue "133";
+  gv:green "193";
+  gv:score "4.1549169";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "907540";
+  gv:red "144";
+  gv:blue "64";
+  gv:green "117";
+  gv:score "3.6928527000000004";
+  gv:coverage "2.8133333"
+], [
+  gv:hex "e9ddbf";
+  gv:red "233";
+  gv:blue "191";
+  gv:green "221";
+  gv:score "3.2729454";
+  gv:coverage "25.259999999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.228656"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.7351"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "52.903378000000004"
+];
+    w:bagOfWords "DE LETAT\nTHILL\nFRERES\nS. A\n1937 Wormeldange Elterberg\nRiesling-Traminer nature\nCru Caves coopératives, Foudre No 143\nProduce of Luxembourg\nAux en bourg\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

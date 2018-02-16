@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1061";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "e7lonho\nLOUIS BLONDEL\nroprietaire/9) iticulteup/\nroprieta ives) it icueteur'\nMONT/ROLLE\n"@deu;
+    gv:color [
+  gv:hex "dfc4a2";
+  gv:red "223";
+  gv:blue "162";
+  gv:green "196";
+  gv:score "39.784318";
+  gv:coverage "32.666665"
+], [
+  gv:hex "907345";
+  gv:red "144";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "7.9921938";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "375655";
+  gv:red "55";
+  gv:blue "85";
+  gv:green "86";
+  gv:score "3.2787647000000004";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "071a2b";
+  gv:red "7";
+  gv:blue "43";
+  gv:green "26";
+  gv:score "3.049536";
+  gv:coverage "0.24"
+], [
+  gv:hex "b39977";
+  gv:red "179";
+  gv:blue "119";
+  gv:green "153";
+  gv:score "8.485958";
+  gv:coverage "2.58"
+], [
+  gv:hex "d8bb8b";
+  gv:red "216";
+  gv:blue "139";
+  gv:green "187";
+  gv:score "5.273182299999999";
+  gv:coverage "2.5866667"
+], [
+  gv:hex "b79a6b";
+  gv:red "183";
+  gv:blue "107";
+  gv:green "154";
+  gv:score "4.7117528";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "8e7656";
+  gv:red "142";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "3.2632757";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "f3d8b8";
+  gv:red "243";
+  gv:blue "184";
+  gv:green "216";
+  gv:score "2.9587246";
+  gv:coverage "36.32"
+], [
+  gv:hex "2e5a66";
+  gv:red "46";
+  gv:blue "102";
+  gv:green "90";
+  gv:score "2.9039085";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.851808000000005"
+], [
+  gv:mid <https://g.co/kg/m/014trl>;
+  gv:desc "cosmetics";
+  gv:score "53.210831000000006"
+];
+    w:bagOfWords "e7lonho\nLOUIS BLONDEL\nroprietaire/9) iticulteup/\nroprieta ives) it icueteur'\nMONT/ROLLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

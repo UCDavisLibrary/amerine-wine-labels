@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1270/label_1281";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "Langenloiser\nWeinkellarei August Rieyer, Wien, xix., Heiligenstadterstrase 67\n"@deu;
+    gv:color [
+  gv:hex "b8caa5";
+  gv:red "184";
+  gv:blue "165";
+  gv:green "202";
+  gv:score "16.017682999999998";
+  gv:coverage "8.62"
+], [
+  gv:hex "647f54";
+  gv:red "100";
+  gv:blue "84";
+  gv:green "127";
+  gv:score "12.830818999999998";
+  gv:coverage "1.16"
+], [
+  gv:hex "343622";
+  gv:red "52";
+  gv:blue "34";
+  gv:green "54";
+  gv:score "2.026229";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "8da378";
+  gv:red "141";
+  gv:blue "120";
+  gv:green "163";
+  gv:score "10.187061";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "657f44";
+  gv:red "101";
+  gv:blue "68";
+  gv:green "127";
+  gv:score "10.128893999999999";
+  gv:coverage "0.8"
+], [
+  gv:hex "456036";
+  gv:red "69";
+  gv:blue "54";
+  gv:green "96";
+  gv:score "7.8165792";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "8aa368";
+  gv:red "138";
+  gv:blue "104";
+  gv:green "163";
+  gv:score "5.1254787";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "c2c8af";
+  gv:red "194";
+  gv:blue "175";
+  gv:green "200";
+  gv:score "4.7767665";
+  gv:coverage "16.54"
+], [
+  gv:hex "476429";
+  gv:red "71";
+  gv:blue "41";
+  gv:green "100";
+  gv:score "3.4687012000000004";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "767964";
+  gv:red "118";
+  gv:blue "100";
+  gv:green "121";
+  gv:score "3.070417";
+  gv:coverage "0.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/038hg>;
+  gv:desc "green";
+  gv:score "87.50439300000001"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "68.18911399999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.466017"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.399286000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.26443"
+];
+    w:bagOfWords "Langenloiser\nWeinkellarei August Rieyer, Wien, xix., Heiligenstadterstrase 67\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "AUT".

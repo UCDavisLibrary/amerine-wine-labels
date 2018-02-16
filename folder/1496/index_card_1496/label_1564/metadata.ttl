@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1564";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "DE\nMANZANILLA\nNeo 23\nGAS CAN.. AS\nMBRE\nETALICO\n"@spa;
+    gv:color [
+  gv:hex "cfc0a8";
+  gv:red "207";
+  gv:blue "168";
+  gv:green "192";
+  gv:score "14.855267";
+  gv:coverage "34.06"
+], [
+  gv:hex "c4925f";
+  gv:red "196";
+  gv:blue "95";
+  gv:green "146";
+  gv:score "3.7048891";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "784415";
+  gv:red "120";
+  gv:blue "21";
+  gv:green "68";
+  gv:score "3.5502270000000005";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "904041";
+  gv:red "144";
+  gv:blue "65";
+  gv:green "64";
+  gv:score "3.1825539";
+  gv:coverage "0.1"
+], [
+  gv:hex "c1c15c";
+  gv:red "193";
+  gv:blue "92";
+  gv:green "193";
+  gv:score "2.7558723";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "bba44a";
+  gv:red "187";
+  gv:blue "74";
+  gv:green "164";
+  gv:score "2.4783237";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "421100";
+  gv:red "66";
+  gv:blue "undefined";
+  gv:green "17";
+  gv:score "0.56408448";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "ad9c86";
+  gv:red "173";
+  gv:blue "134";
+  gv:green "156";
+  gv:score "5.7050634";
+  gv:coverage "0.96"
+], [
+  gv:hex "cfba7c";
+  gv:red "207";
+  gv:blue "124";
+  gv:green "186";
+  gv:score "4.2628765";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "eddbc5";
+  gv:red "237";
+  gv:blue "197";
+  gv:green "219";
+  gv:score "3.9595194";
+  gv:coverage "34.146667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.516147"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.378996"
+];
+    w:bagOfWords "DE\nMANZANILLA\nNeo 23\nGAS CAN.. AS\nMBRE\nETALICO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

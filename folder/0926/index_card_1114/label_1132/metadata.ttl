@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1114/label_1132";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "NORNE\npremier Brana Cru\nUhateanMaison-Blanche\nRESERVE\nMis en\nDU CASINO\nPropriété\nR. Cache maille\n1945\n"@deu;
+    gv:color [
+  gv:hex "dcbd99";
+  gv:red "220";
+  gv:blue "153";
+  gv:green "189";
+  gv:score "22.46321";
+  gv:coverage "12.033334"
+], [
+  gv:hex "7d4a27";
+  gv:red "125";
+  gv:blue "39";
+  gv:green "74";
+  gv:score "1.8795429";
+  gv:coverage "0.5"
+], [
+  gv:hex "6d1b0b";
+  gv:red "109";
+  gv:blue "11";
+  gv:green "27";
+  gv:score "1.7693354000000001";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "b59879";
+  gv:red "181";
+  gv:blue "121";
+  gv:green "152";
+  gv:score "15.695439";
+  gv:coverage "3.32"
+], [
+  gv:hex "e2be91";
+  gv:red "226";
+  gv:blue "145";
+  gv:green "190";
+  gv:score "15.502408";
+  gv:coverage "7.106667"
+], [
+  gv:hex "8d7457";
+  gv:red "141";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "9.1593713";
+  gv:coverage "1.7466666"
+], [
+  gv:hex "675035";
+  gv:red "103";
+  gv:blue "53";
+  gv:green "80";
+  gv:score "5.643945899999999";
+  gv:coverage "1.02"
+], [
+  gv:hex "e9b898";
+  gv:red "233";
+  gv:blue "152";
+  gv:green "184";
+  gv:score "4.2370867";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "e6b58a";
+  gv:red "230";
+  gv:blue "138";
+  gv:green "181";
+  gv:score "4.0239844";
+  gv:coverage "2.3466667"
+], [
+  gv:hex "be9b70";
+  gv:red "190";
+  gv:blue "112";
+  gv:green "155";
+  gv:score "2.5991881";
+  gv:coverage "0.84"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "NORNE\npremier Brana Cru\nUhateanMaison-Blanche\nRESERVE\nMis en\nDU CASINO\nPropriété\nR. Cache maille\n1945\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

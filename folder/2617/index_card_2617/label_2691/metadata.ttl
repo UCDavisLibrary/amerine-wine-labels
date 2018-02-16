@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2691";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "1999\nMACON\nPROb\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE COTE D'OR)\nDEPOSE\nMda o\n"@fra;
+    gv:color [
+  gv:hex "d4b593";
+  gv:red "212";
+  gv:blue "147";
+  gv:green "181";
+  gv:score "12.109805";
+  gv:coverage "17.733334"
+], [
+  gv:hex "c09465";
+  gv:red "192";
+  gv:blue "101";
+  gv:green "148";
+  gv:score "11.24309";
+  gv:coverage "2"
+], [
+  gv:hex "976f54";
+  gv:red "151";
+  gv:blue "84";
+  gv:green "111";
+  gv:score "11.071119";
+  gv:coverage "2.0333333"
+], [
+  gv:hex "bb9b79";
+  gv:red "187";
+  gv:blue "121";
+  gv:green "155";
+  gv:score "10.375085";
+  gv:coverage "4.8733335"
+], [
+  gv:hex "734d35";
+  gv:red "115";
+  gv:blue "53";
+  gv:green "77";
+  gv:score "9.2253946";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "c09c6f";
+  gv:red "192";
+  gv:blue "111";
+  gv:green "156";
+  gv:score "8.361353000000001";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "ba9274";
+  gv:red "186";
+  gv:blue "116";
+  gv:green "146";
+  gv:score "6.7209117";
+  gv:coverage "1.44"
+], [
+  gv:hex "9a6f45";
+  gv:red "154";
+  gv:blue "69";
+  gv:green "111";
+  gv:score "5.0397325";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "774721";
+  gv:red "119";
+  gv:blue "33";
+  gv:green "71";
+  gv:score "4.6661478";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "d3b083";
+  gv:red "211";
+  gv:blue "131";
+  gv:green "176";
+  gv:score "3.9319128";
+  gv:coverage "1.0933333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.34956"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.757735"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.251259"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.146912"
+];
+    w:bagOfWords "1999\nMACON\nPROb\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE COTE D'OR)\nDEPOSE\nMda o\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

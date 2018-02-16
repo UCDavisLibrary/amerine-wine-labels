@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0082";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "VINO BIANCO\ndi Venezia Giulia\n12\n"@ita;
+    gv:color [
+  gv:hex "90a367";
+  gv:red "144";
+  gv:blue "103";
+  gv:green "163";
+  gv:score "23.795931";
+  gv:coverage "4.6533335000000005"
+], [
+  gv:hex "bdc798";
+  gv:red "189";
+  gv:blue "152";
+  gv:green "199";
+  gv:score "12.584558000000001";
+  gv:coverage "3.1666666"
+], [
+  gv:hex "728649";
+  gv:red "114";
+  gv:blue "73";
+  gv:green "134";
+  gv:score "11.796284";
+  gv:coverage "2.48"
+], [
+  gv:hex "98a274";
+  gv:red "152";
+  gv:blue "116";
+  gv:green "162";
+  gv:score "10.409061999999999";
+  gv:coverage "2.8000000000000003"
+], [
+  gv:hex "cdc5a4";
+  gv:red "205";
+  gv:blue "164";
+  gv:green "197";
+  gv:score "10.372275";
+  gv:coverage "12.013333"
+], [
+  gv:hex "b2c488";
+  gv:red "178";
+  gv:blue "136";
+  gv:green "196";
+  gv:score "7.9500005";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "e5dfc3";
+  gv:red "229";
+  gv:blue "195";
+  gv:green "223";
+  gv:score "4.0042222";
+  gv:coverage "5.4666668000000005"
+], [
+  gv:hex "a7a07b";
+  gv:red "167";
+  gv:blue "123";
+  gv:green "160";
+  gv:score "3.3523649000000004";
+  gv:coverage "1.72"
+], [
+  gv:hex "a79c67";
+  gv:red "167";
+  gv:blue "103";
+  gv:green "156";
+  gv:score "3.1743128";
+  gv:coverage "1.5733332999999998"
+], [
+  gv:hex "847b44";
+  gv:red "132";
+  gv:blue "68";
+  gv:green "123";
+  gv:score "2.7445165";
+  gv:coverage "1.5333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/038hg>;
+  gv:desc "green";
+  gv:score "88.055634"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.160538"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.001441"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.544149000000004"
+];
+    w:bagOfWords "VINO BIANCO\ndi Venezia Giulia\n12\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

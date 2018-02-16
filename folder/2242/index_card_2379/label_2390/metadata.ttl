@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2390";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "CONTENTS: 1 PINT AND 8 FLUID OUNCES\n수\nil 3W冂70A AS 70H037\nPRODUCE OF FRANCE\nGRAND\"\no\nGAL Lauren -\nPropriétaires\nMOU LIS (MEDOC)\nCONTENTS: PINT 8 FL. OZS\n"@fra;
+    gv:color [
+  gv:hex "d5bea1";
+  gv:red "213";
+  gv:blue "161";
+  gv:green "190";
+  gv:score "48.376557";
+  gv:coverage "29.186666"
+], [
+  gv:hex "b59c7d";
+  gv:red "181";
+  gv:blue "125";
+  gv:green "156";
+  gv:score "31.02842";
+  gv:coverage "6.273333"
+], [
+  gv:hex "937b5a";
+  gv:red "147";
+  gv:blue "90";
+  gv:green "123";
+  gv:score "5.9403021";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "bc9677";
+  gv:red "188";
+  gv:blue "119";
+  gv:green "150";
+  gv:score "5.9327345";
+  gv:coverage "0.52"
+], [
+  gv:hex "edd8bd";
+  gv:red "237";
+  gv:blue "189";
+  gv:green "216";
+  gv:score "2.6053528999999997";
+  gv:coverage "1.2133333"
+], [
+  gv:hex "957151";
+  gv:red "149";
+  gv:blue "81";
+  gv:green "113";
+  gv:score "2.5205148";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "d8b295";
+  gv:red "216";
+  gv:blue "149";
+  gv:green "178";
+  gv:score "2.0438455";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "91774c";
+  gv:red "145";
+  gv:blue "76";
+  gv:green "119";
+  gv:score "0.69012591";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "d0c5be";
+  gv:red "208";
+  gv:blue "190";
+  gv:green "197";
+  gv:score "0.22306961";
+  gv:coverage "43.206668"
+], [
+  gv:hex "765f40";
+  gv:red "118";
+  gv:blue "64";
+  gv:green "95";
+  gv:score "0.13688593999999998";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.87011299999999"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.981071"
+];
+    w:bagOfWords "CONTENTS: 1 PINT AND 8 FLUID OUNCES\n수\nil 3W冂70A AS 70H037\nPRODUCE OF FRANCE\nGRAND\"\no\nGAL Lauren -\nPropriétaires\nMOU LIS (MEDOC)\nCONTENTS: PINT 8 FL. OZS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

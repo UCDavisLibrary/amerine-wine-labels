@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0943";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "BARBERA\nLAUSANNE\n"@deu;
+    gv:color [
+  gv:hex "dcc7ab";
+  gv:red "220";
+  gv:blue "171";
+  gv:green "199";
+  gv:score "39.778665000000004";
+  gv:coverage "13.866666"
+], [
+  gv:hex "c79246";
+  gv:red "199";
+  gv:blue "70";
+  gv:green "146";
+  gv:score "1.6810064999999998";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "572d04";
+  gv:red "87";
+  gv:blue "4";
+  gv:green "45";
+  gv:score "0.50923582";
+  gv:coverage "0.06"
+], [
+  gv:hex "dfbd8b";
+  gv:red "223";
+  gv:blue "139";
+  gv:green "189";
+  gv:score "13.751225";
+  gv:coverage "4.7133334"
+], [
+  gv:hex "ebdac3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "218";
+  gv:score "7.417757099999999";
+  gv:coverage "4.3466665"
+], [
+  gv:hex "aa9a81";
+  gv:red "170";
+  gv:blue "129";
+  gv:green "154";
+  gv:score "5.3456217";
+  gv:coverage "1.5599999999999998"
+], [
+  gv:hex "351700";
+  gv:red "53";
+  gv:blue "undefined";
+  gv:green "23";
+  gv:score "0.04949682";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "837761";
+  gv:red "131";
+  gv:blue "97";
+  gv:green "119";
+  gv:score "3.9368450999999998";
+  gv:coverage "1.1066667000000001"
+], [
+  gv:hex "767773";
+  gv:red "118";
+  gv:blue "115";
+  gv:green "119";
+  gv:score "3.8589183";
+  gv:coverage "1.6733333"
+], [
+  gv:hex "cac2ba";
+  gv:red "202";
+  gv:blue "186";
+  gv:green "194";
+  gv:score "3.8431816";
+  gv:coverage "5.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.292609"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.481072"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "50.183707"
+];
+    w:bagOfWords "BARBERA\nLAUSANNE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

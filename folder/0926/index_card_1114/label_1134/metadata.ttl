@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1114/label_1134";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "WORNE\nD R E K T E R\nB E Z U G\nV O N\nTEI. SCHULER & CIK\nSCHWYZ\n"@deu;
+    gv:color [
+  gv:hex "e9e0d5";
+  gv:red "233";
+  gv:blue "213";
+  gv:green "224";
+  gv:score "40.676576";
+  gv:coverage "28.066668"
+], [
+  gv:hex "dacbaf";
+  gv:red "218";
+  gv:blue "175";
+  gv:green "203";
+  gv:score "21.635486";
+  gv:coverage "19.686666"
+], [
+  gv:hex "2c3e13";
+  gv:red "44";
+  gv:blue "19";
+  gv:green "62";
+  gv:score "0.8742560599999999";
+  gv:coverage "0.18"
+], [
+  gv:hex "3e390c";
+  gv:red "62";
+  gv:blue "12";
+  gv:green "57";
+  gv:score "0.6556062500000001";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "e5d9c8";
+  gv:red "229";
+  gv:blue "200";
+  gv:green "217";
+  gv:score "18.181539";
+  gv:coverage "19.706666000000002"
+], [
+  gv:hex "d9d1c8";
+  gv:red "217";
+  gv:blue "200";
+  gv:green "209";
+  gv:score "5.3928319";
+  gv:coverage "4.7066666"
+], [
+  gv:hex "813209";
+  gv:red "129";
+  gv:blue "9";
+  gv:green "50";
+  gv:score "0.034741356";
+  gv:coverage "0.16"
+], [
+  gv:hex "d8bf90";
+  gv:red "216";
+  gv:blue "144";
+  gv:green "191";
+  gv:score "3.3559791999999997";
+  gv:coverage "7.7066667"
+], [
+  gv:hex "a99f78";
+  gv:red "169";
+  gv:blue "120";
+  gv:green "159";
+  gv:score "1.3254029";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "ad9969";
+  gv:red "173";
+  gv:blue "105";
+  gv:green "153";
+  gv:score "1.3216967";
+  gv:coverage "1.1866666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.591271000000006"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.69916799999999"
+];
+    w:bagOfWords "WORNE\nD R E K T E R\nB E Z U G\nV O N\nTEI. SCHULER & CIK\nSCHWYZ\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

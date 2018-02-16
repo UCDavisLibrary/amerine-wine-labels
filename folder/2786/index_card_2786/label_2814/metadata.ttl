@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2786/label_2814";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "JOHNSTON\nESTABLISH\nBORDEAUX\nON & TILD WHITE WINE\nGRAVES\nD R Y\n1933\nCONTENTS\nALCOHOL 11% BY VOLUME\nPINT 8 FLUIDOUNCES\nPRODUCE OF FRANCE\nLes vins blancs doivent atre servis tres frais\n(a environ 500 Fahrenheit). Nous recommandons\nde ne monter\nles bouteilles qu'au moment de les\nservir.\nPRINTED IN FRANCE\n"@fra;
+    gv:color [
+  gv:hex "d4c2a3";
+  gv:red "212";
+  gv:blue "163";
+  gv:green "194";
+  gv:score "35.713699999999996";
+  gv:coverage "22.400000000000002"
+], [
+  gv:hex "af9b78";
+  gv:red "175";
+  gv:blue "120";
+  gv:green "155";
+  gv:score "27.685633";
+  gv:coverage "6.800000000000001"
+], [
+  gv:hex "907b58";
+  gv:red "144";
+  gv:blue "88";
+  gv:green "123";
+  gv:score "8.3513118";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "d8bc87";
+  gv:red "216";
+  gv:blue "135";
+  gv:green "188";
+  gv:score "7.9560995";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "8e774a";
+  gv:red "142";
+  gv:blue "74";
+  gv:green "119";
+  gv:score "7.381576300000001";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "ebdabe";
+  gv:red "235";
+  gv:blue "190";
+  gv:green "218";
+  gv:score "5.1365528000000005";
+  gv:coverage "19.2"
+], [
+  gv:hex "ae9768";
+  gv:red "174";
+  gv:blue "104";
+  gv:green "151";
+  gv:score "4.272902";
+  gv:coverage "0.52"
+], [
+  gv:hex "6b5837";
+  gv:red "107";
+  gv:blue "55";
+  gv:green "88";
+  gv:score "2.4995536";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "6b562c";
+  gv:red "107";
+  gv:blue "44";
+  gv:green "86";
+  gv:score "0.94794491";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "e9e1d6";
+  gv:red "233";
+  gv:blue "214";
+  gv:green "225";
+  gv:score "0.016568937";
+  gv:coverage "46.353334000000004"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.800588"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.491672"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "50.347108"
+];
+    w:bagOfWords "JOHNSTON\nESTABLISH\nBORDEAUX\nON & TILD WHITE WINE\nGRAVES\nD R Y\n1933\nCONTENTS\nALCOHOL 11% BY VOLUME\nPINT 8 FLUIDOUNCES\nPRODUCE OF FRANCE\nLes vins blancs doivent atre servis tres frais\n(a environ 500 Fahrenheit). Nous recommandons\nde ne monter\nles bouteilles qu'au moment de les\nservir.\nPRINTED IN FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

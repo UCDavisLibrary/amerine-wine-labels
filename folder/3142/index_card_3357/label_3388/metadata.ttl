@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3388";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "POM MARD\nAPPELLATION CONTROL EE\nETABLISSEMENTS PIRETTI\n28, rue Bannelier\nD I J O N\n"@fra;
+    gv:color [
+  gv:hex "dfc8a7";
+  gv:red "223";
+  gv:blue "167";
+  gv:green "200";
+  gv:score "56.591111000000005";
+  gv:coverage "26.52"
+], [
+  gv:hex "7b7f44";
+  gv:red "123";
+  gv:blue "68";
+  gv:green "127";
+  gv:score "3.7985992000000004";
+  gv:coverage "0.52"
+], [
+  gv:hex "eed9bb";
+  gv:red "238";
+  gv:blue "187";
+  gv:green "217";
+  gv:score "13.600233000000001";
+  gv:coverage "6.713333"
+], [
+  gv:hex "b19b7e";
+  gv:red "177";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "6.7382649";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "6c4c25";
+  gv:red "108";
+  gv:blue "37";
+  gv:green "76";
+  gv:score "0.061615545";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "8a755a";
+  gv:red "138";
+  gv:blue "90";
+  gv:green "117";
+  gv:score "4.1629367";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "9ea265";
+  gv:red "158";
+  gv:blue "101";
+  gv:green "162";
+  gv:score "3.6897406";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "655237";
+  gv:red "101";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "1.9960584";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "d8c594";
+  gv:red "216";
+  gv:blue "148";
+  gv:green "197";
+  gv:score "1.6154104999999999";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "7d7844";
+  gv:red "125";
+  gv:blue "68";
+  gv:green "120";
+  gv:score "1.5995655000000002";
+  gv:coverage "0.25333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.196677"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.897681"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.493173999999996"
+];
+    w:bagOfWords "POM MARD\nAPPELLATION CONTROL EE\nETABLISSEMENTS PIRETTI\n28, rue Bannelier\nD I J O N\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

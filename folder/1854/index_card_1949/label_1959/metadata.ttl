@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1949/label_1959";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "PALE DRY\nSHERRY\nUCTUAT NEC MER GITUR\nPRO DO U CE O F S PAIN\nShipped by\nABREU HERMAN OS\nJ E R E Z\nS P A I N\nIMPORTED AND BOTTLED BY\nVERDIER CELLARS\nSAN FRANCISCO, CALIF.\nALCOHOL 19.5%\nNET CONTENTS\n1 PT. 8 FLUID OUNCES\nBY VOLUME\n"@spa;
+    gv:color [
+  gv:hex "d4c5ab";
+  gv:red "212";
+  gv:blue "171";
+  gv:green "197";
+  gv:score "33.275869";
+  gv:coverage "20.406666"
+], [
+  gv:hex "291f14";
+  gv:red "41";
+  gv:blue "20";
+  gv:green "31";
+  gv:score "0.19447635";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "ac9e88";
+  gv:red "172";
+  gv:blue "136";
+  gv:green "158";
+  gv:score "14.713413000000001";
+  gv:coverage "2.5133334"
+], [
+  gv:hex "a59b91";
+  gv:red "165";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "12.286621";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "c9bfb5";
+  gv:red "201";
+  gv:blue "181";
+  gv:green "191";
+  gv:score "8.6726964";
+  gv:coverage "3.5466667"
+], [
+  gv:hex "e9dbc4";
+  gv:red "233";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "8.273673800000001";
+  gv:coverage "12.246667"
+], [
+  gv:hex "887961";
+  gv:red "136";
+  gv:blue "97";
+  gv:green "121";
+  gv:score "6.6557981";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "81776c";
+  gv:red "129";
+  gv:blue "108";
+  gv:green "119";
+  gv:score "5.377879399999999";
+  gv:coverage "0.6"
+], [
+  gv:hex "e6dcd1";
+  gv:red "230";
+  gv:blue "209";
+  gv:green "220";
+  gv:score "4.720140600000001";
+  gv:coverage "57.906669"
+], [
+  gv:hex "645641";
+  gv:red "100";
+  gv:blue "65";
+  gv:green "86";
+  gv:score "2.668461";
+  gv:coverage "0.3"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "77.290243"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "64.22215100000001"
+];
+    w:bagOfWords "PALE DRY\nSHERRY\nUCTUAT NEC MER GITUR\nPRO DO U CE O F S PAIN\nShipped by\nABREU HERMAN OS\nJ E R E Z\nS P A I N\nIMPORTED AND BOTTLED BY\nVERDIER CELLARS\nSAN FRANCISCO, CALIF.\nALCOHOL 19.5%\nNET CONTENTS\n1 PT. 8 FLUID OUNCES\nBY VOLUME\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

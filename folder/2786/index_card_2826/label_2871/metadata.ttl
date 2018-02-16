@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2871";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "CRU\ner\n(1924)\neritiers\nH.Gounouilhou, propriétaires\n"@fra;
+    gv:color [
+  gv:hex "daba97";
+  gv:red "218";
+  gv:blue "151";
+  gv:green "186";
+  gv:score "37.440729";
+  gv:coverage "28.953335000000003"
+], [
+  gv:hex "c99a68";
+  gv:red "201";
+  gv:blue "104";
+  gv:green "154";
+  gv:score "8.9485608";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "d9b587";
+  gv:red "217";
+  gv:blue "135";
+  gv:green "181";
+  gv:score "23.087066";
+  gv:coverage "5.06"
+], [
+  gv:hex "dcb081";
+  gv:red "220";
+  gv:blue "129";
+  gv:green "176";
+  gv:score "8.5219339";
+  gv:coverage "1.72"
+], [
+  gv:hex "c5a170";
+  gv:red "197";
+  gv:blue "112";
+  gv:green "161";
+  gv:score "6.982010600000001";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "bc9d7a";
+  gv:red "188";
+  gv:blue "122";
+  gv:green "157";
+  gv:score "5.158687";
+  gv:coverage "1.9266667000000002"
+], [
+  gv:hex "dcb492";
+  gv:red "220";
+  gv:blue "146";
+  gv:green "180";
+  gv:score "4.369663399999999";
+  gv:coverage "1.3266666999999999"
+], [
+  gv:hex "be9674";
+  gv:red "190";
+  gv:blue "116";
+  gv:green "150";
+  gv:score "2.3503106";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "947655";
+  gv:red "148";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "0.67016752";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "9c7248";
+  gv:red "156";
+  gv:blue "72";
+  gv:green "114";
+  gv:score "0.65862937";
+  gv:coverage "0.11333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "75.478673"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.452087"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "59.10204100000001"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "58.433205"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.67632"
+];
+    w:bagOfWords "CRU\ner\n(1924)\neritiers\nH.Gounouilhou, propriétaires\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

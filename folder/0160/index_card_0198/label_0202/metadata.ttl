@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0202";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "BONDED WINERY 7\nPERMIT\nCALIF. A. 1\nTH PERMISSIVE DIST.\nPURE CALIFORNIA WINE\nvintage 1936\nBottled June 2,1940\nCABERNET\nNET CONTENTS 24 FLUID OUNCES ALCOHOLIC CONTENT 12%\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "b09878";
+  gv:red "176";
+  gv:blue "120";
+  gv:green "152";
+  gv:score "43.238327";
+  gv:coverage "6.0733333"
+], [
+  gv:hex "d5bea0";
+  gv:red "213";
+  gv:blue "160";
+  gv:green "190";
+  gv:score "39.962965";
+  gv:coverage "42.393333"
+], [
+  gv:hex "937b59";
+  gv:red "147";
+  gv:blue "89";
+  gv:green "123";
+  gv:score "10.582457000000002";
+  gv:coverage "1.06"
+], [
+  gv:hex "6f5a3a";
+  gv:red "111";
+  gv:blue "58";
+  gv:green "90";
+  gv:score "2.2935506";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "eed8b9";
+  gv:red "238";
+  gv:blue "185";
+  gv:green "216";
+  gv:score "1.3513107";
+  gv:coverage "11.12"
+], [
+  gv:hex "70572f";
+  gv:red "112";
+  gv:blue "47";
+  gv:green "87";
+  gv:score "1.2204628";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "867046";
+  gv:red "134";
+  gv:blue "70";
+  gv:green "112";
+  gv:score "0.6947848000000001";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "a59065";
+  gv:red "165";
+  gv:blue "101";
+  gv:green "144";
+  gv:score "0.33422871";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "cac2b7";
+  gv:red "202";
+  gv:blue "183";
+  gv:green "194";
+  gv:score "0.085301453";
+  gv:coverage "10.02"
+], [
+  gv:hex "352d21";
+  gv:red "53";
+  gv:blue "33";
+  gv:green "45";
+  gv:score "0.065485475";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.10165"
+];
+    w:bagOfWords "BONDED WINERY 7\nPERMIT\nCALIF. A. 1\nTH PERMISSIVE DIST.\nPURE CALIFORNIA WINE\nvintage 1936\nBottled June 2,1940\nCABERNET\nNET CONTENTS 24 FLUID OUNCES ALCOHOLIC CONTENT 12%\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

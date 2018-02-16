@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1803";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Product of German y\n1934er Piesporter 6oldtropfchen Auslese\nWachstum Pfarrgut\n"@deu;
+    gv:color [
+  gv:hex "5e5638";
+  gv:red "94";
+  gv:blue "56";
+  gv:green "86";
+  gv:score "21.688236";
+  gv:coverage "5.680000000000001"
+], [
+  gv:hex "d3c4a9";
+  gv:red "211";
+  gv:blue "169";
+  gv:green "196";
+  gv:score "8.196530000000001";
+  gv:coverage "7.380000000000001"
+], [
+  gv:hex "8a3717";
+  gv:red "138";
+  gv:blue "23";
+  gv:green "55";
+  gv:score "4.5284584";
+  gv:coverage "0.2"
+], [
+  gv:hex "7b7353";
+  gv:red "123";
+  gv:blue "83";
+  gv:green "115";
+  gv:score "18.828547";
+  gv:coverage "5.4666668000000005"
+], [
+  gv:hex "3b361c";
+  gv:red "59";
+  gv:blue "28";
+  gv:green "54";
+  gv:score "9.8947354";
+  gv:coverage "2.36"
+], [
+  gv:hex "a4997a";
+  gv:red "164";
+  gv:blue "122";
+  gv:green "153";
+  gv:score "6.3368618";
+  gv:coverage "2.6133334"
+], [
+  gv:hex "8a7543";
+  gv:red "138";
+  gv:blue "67";
+  gv:green "117";
+  gv:score "4.3563772";
+  gv:coverage "2.3533333"
+], [
+  gv:hex "d4c6bd";
+  gv:red "212";
+  gv:blue "189";
+  gv:green "198";
+  gv:score "3.3835966";
+  gv:coverage "6.126666800000001"
+], [
+  gv:hex "6b5527";
+  gv:red "107";
+  gv:blue "39";
+  gv:green "85";
+  gv:score "3.2233685";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "7a4622";
+  gv:red "122";
+  gv:blue "34";
+  gv:green "70";
+  gv:score "3.1174228";
+  gv:coverage "0.27999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.19780399999999"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "62.848222"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "59.042513"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "52.353300000000004"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "50.173140000000004"
+];
+    w:bagOfWords "Product of German y\n1934er Piesporter 6oldtropfchen Auslese\nWachstum Pfarrgut\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

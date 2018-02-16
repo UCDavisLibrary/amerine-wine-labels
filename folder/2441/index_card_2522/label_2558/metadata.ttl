@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2558";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "1929\nICI\nTOREM\nOMNI UM CHABLIS GRENOUILLE\nLONG DEPA oUIT\nseul proprielaire du Chablis-Moulonne\nC H A B I S F R A N C E\n"@fra;
+    gv:color [
+  gv:hex "dcbc97";
+  gv:red "220";
+  gv:blue "151";
+  gv:green "188";
+  gv:score "33.509186";
+  gv:coverage "21.406667"
+], [
+  gv:hex "ddb98c";
+  gv:red "221";
+  gv:blue "140";
+  gv:green "185";
+  gv:score "31.970945";
+  gv:coverage "8.473333"
+], [
+  gv:hex "b49876";
+  gv:red "180";
+  gv:blue "118";
+  gv:green "152";
+  gv:score "9.341743600000001";
+  gv:coverage "3.6133334"
+], [
+  gv:hex "8d7454";
+  gv:red "141";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "6.440318400000001";
+  gv:coverage "1.7333332"
+], [
+  gv:hex "deb386";
+  gv:red "222";
+  gv:blue "134";
+  gv:green "179";
+  gv:score "4.6054322";
+  gv:coverage "2.2333333"
+], [
+  gv:hex "bf9d71";
+  gv:red "191";
+  gv:blue "113";
+  gv:green "157";
+  gv:score "3.4636851";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "675235";
+  gv:red "103";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "2.6199299999999996";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "96764e";
+  gv:red "150";
+  gv:blue "78";
+  gv:green "118";
+  gv:score "1.1286117";
+  gv:coverage "0.38"
+], [
+  gv:hex "dcb490";
+  gv:red "220";
+  gv:blue "144";
+  gv:green "180";
+  gv:score "1.0951247000000002";
+  gv:coverage "0.4"
+], [
+  gv:hex "c99e70";
+  gv:red "201";
+  gv:blue "112";
+  gv:green "158";
+  gv:score "0.89609679";
+  gv:coverage "0.55333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.159472"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.06375800000001"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.655061"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.31940900000001"
+];
+    w:bagOfWords "1929\nICI\nTOREM\nOMNI UM CHABLIS GRENOUILLE\nLONG DEPA oUIT\nseul proprielaire du Chablis-Moulonne\nC H A B I S F R A N C E\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

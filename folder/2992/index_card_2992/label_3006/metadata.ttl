@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_3006";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "1928\nDOMAINE LE PAPE\nL E O G N A N\nRENARD Fils & Louis TEISSEDRE\nBORDEAUX\nNo i OO B\nH. R O DEL B\n"@fra;
+    gv:color [
+  gv:hex "d4bda6";
+  gv:red "212";
+  gv:blue "166";
+  gv:green "189";
+  gv:score "23.088759";
+  gv:coverage "16.439999999999998"
+], [
+  gv:hex "c0947e";
+  gv:red "192";
+  gv:blue "126";
+  gv:green "148";
+  gv:score "19.632202000000003";
+  gv:coverage "2.2133334000000002"
+], [
+  gv:hex "f1ddc5";
+  gv:red "241";
+  gv:blue "197";
+  gv:green "221";
+  gv:score "11.793084";
+  gv:coverage "45.466667"
+], [
+  gv:hex "b59d85";
+  gv:red "181";
+  gv:blue "133";
+  gv:green "157";
+  gv:score "10.595591";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "deb69f";
+  gv:red "222";
+  gv:blue "159";
+  gv:green "182";
+  gv:score "9.6507236";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "a46e59";
+  gv:red "164";
+  gv:blue "89";
+  gv:green "110";
+  gv:score "5.3026821";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "86755f";
+  gv:red "134";
+  gv:blue "95";
+  gv:green "117";
+  gv:score "5.0304558";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "65553f";
+  gv:red "101";
+  gv:blue "63";
+  gv:green "85";
+  gv:score "4.0401522000000005";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "a96151";
+  gv:red "169";
+  gv:blue "81";
+  gv:green "97";
+  gv:score "2.3439137";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "7a462f";
+  gv:red "122";
+  gv:blue "47";
+  gv:green "70";
+  gv:score "2.1598368999999997";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.153226"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.730471"
+];
+    w:bagOfWords "1928\nDOMAINE LE PAPE\nL E O G N A N\nRENARD Fils & Louis TEISSEDRE\nBORDEAUX\nNo i OO B\nH. R O DEL B\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0484";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Rhein g mn\nSchloss Reinhartshausener\nORIGINAL\n1949er Hattenheimer Hassel\n"@deu;
+    gv:color [
+  gv:hex "c9c1ba";
+  gv:red "201";
+  gv:blue "186";
+  gv:green "193";
+  gv:score "16.3506";
+  gv:coverage "12.44"
+], [
+  gv:hex "d92407";
+  gv:red "217";
+  gv:blue "7";
+  gv:green "36";
+  gv:score "14.084459999999998";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "cb8d67";
+  gv:red "203";
+  gv:blue "103";
+  gv:green "141";
+  gv:score "0.10963197999999999";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "d4c2ae";
+  gv:red "212";
+  gv:blue "174";
+  gv:green "194";
+  gv:score "10.19669";
+  gv:coverage "9.0733334"
+], [
+  gv:hex "a39b96";
+  gv:red "163";
+  gv:blue "150";
+  gv:green "155";
+  gv:score "9.4999664";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "879cb2";
+  gv:red "135";
+  gv:blue "178";
+  gv:green "156";
+  gv:score "8.4628463";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "6b7f96";
+  gv:red "107";
+  gv:blue "150";
+  gv:green "127";
+  gv:score "6.0495649";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "e43106";
+  gv:red "228";
+  gv:blue "6";
+  gv:green "49";
+  gv:score "5.7798814";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "a99986";
+  gv:red "169";
+  gv:blue "134";
+  gv:green "153";
+  gv:score "4.754065";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "837b76";
+  gv:red "131";
+  gv:blue "118";
+  gv:green "123";
+  gv:score "4.6092909";
+  gv:coverage "0.72"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.654461"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "53.668344000000005"
+];
+    w:bagOfWords "Rhein g mn\nSchloss Reinhartshausener\nORIGINAL\n1949er Hattenheimer Hassel\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

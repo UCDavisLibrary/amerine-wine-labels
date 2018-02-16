@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2440";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "ST JULIEN\nMAISON FRERES & CIE\nBO FR DE AUX\n"@fra;
+    gv:color [
+  gv:hex "120a08";
+  gv:red "18";
+  gv:blue "8";
+  gv:green "10";
+  gv:score "39.810777";
+  gv:coverage "14.08"
+], [
+  gv:hex "40321e";
+  gv:red "64";
+  gv:blue "30";
+  gv:green "50";
+  gv:score "17.633055";
+  gv:coverage "2.9866667"
+], [
+  gv:hex "6f4e22";
+  gv:red "111";
+  gv:blue "34";
+  gv:green "78";
+  gv:score "1.4252114";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "d9c4ac";
+  gv:red "217";
+  gv:blue "172";
+  gv:green "196";
+  gv:score "0.6962724499999999";
+  gv:coverage "26.646668000000002"
+], [
+  gv:hex "f2dfd5";
+  gv:red "242";
+  gv:blue "213";
+  gv:green "223";
+  gv:score "0.5655707799999999";
+  gv:coverage "12.273333000000001"
+], [
+  gv:hex "64523b";
+  gv:red "100";
+  gv:blue "59";
+  gv:green "82";
+  gv:score "16.746277000000003";
+  gv:coverage "2.34"
+], [
+  gv:hex "816f55";
+  gv:red "129";
+  gv:blue "85";
+  gv:green "111";
+  gv:score "6.0368102";
+  gv:coverage "1.16"
+], [
+  gv:hex "271a09";
+  gv:red "39";
+  gv:blue "9";
+  gv:green "26";
+  gv:score "5.1912334";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "392e28";
+  gv:red "57";
+  gv:blue "40";
+  gv:green "46";
+  gv:score "3.4450415999999997";
+  gv:coverage "0.88"
+], [
+  gv:hex "462a0d";
+  gv:red "70";
+  gv:blue "13";
+  gv:green "42";
+  gv:score "1.6118212";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.351493"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04lbp>;
+  gv:desc "leather";
+  gv:score "53.395945"
+];
+    w:bagOfWords "ST JULIEN\nMAISON FRERES & CIE\nBO FR DE AUX\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

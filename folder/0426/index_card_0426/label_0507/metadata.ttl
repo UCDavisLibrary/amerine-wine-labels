@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0507";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "1934er\nHochheimer Stein\nOriginal Abfullung\nRHEINGAU\n"@deu;
+    gv:color [
+  gv:hex "d1bfa8";
+  gv:red "209";
+  gv:blue "168";
+  gv:green "191";
+  gv:score "12.840919000000001";
+  gv:coverage "7.6"
+], [
+  gv:hex "532815";
+  gv:red "83";
+  gv:blue "21";
+  gv:green "40";
+  gv:score "9.7754978";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "89765c";
+  gv:red "137";
+  gv:blue "92";
+  gv:green "118";
+  gv:score "8.833794300000001";
+  gv:coverage "1.6"
+], [
+  gv:hex "6b2314";
+  gv:red "107";
+  gv:blue "20";
+  gv:green "35";
+  gv:score "1.5448686999999999";
+  gv:coverage "0.04"
+], [
+  gv:hex "440a00";
+  gv:red "68";
+  gv:blue "undefined";
+  gv:green "10";
+  gv:score "0.59215249";
+  gv:coverage "0.02"
+], [
+  gv:hex "ae9b85";
+  gv:red "174";
+  gv:blue "133";
+  gv:green "155";
+  gv:score "8.749460000000001";
+  gv:coverage "1.72"
+], [
+  gv:hex "cec3b9";
+  gv:red "206";
+  gv:blue "185";
+  gv:green "195";
+  gv:score "8.123604199999999";
+  gv:coverage "10.786667"
+], [
+  gv:hex "8b7840";
+  gv:red "139";
+  gv:blue "64";
+  gv:green "120";
+  gv:score "6.940850599999999";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "704630";
+  gv:red "112";
+  gv:blue "48";
+  gv:green "70";
+  gv:score "6.191963";
+  gv:coverage "0.32"
+], [
+  gv:hex "695924";
+  gv:red "105";
+  gv:blue "36";
+  gv:green "89";
+  gv:score "6.0862925";
+  gv:coverage "1.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.858344"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "67.44344799999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.456378"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "60.572689999999994"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.816891"
+];
+    w:bagOfWords "1934er\nHochheimer Stein\nOriginal Abfullung\nRHEINGAU\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

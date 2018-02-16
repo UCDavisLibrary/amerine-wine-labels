@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1579/label_1595";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MOSCATEL\nPAS AS\nJUAN PEDRO LUQUE\n"@spa;
+    gv:color [
+  gv:hex "bf561d";
+  gv:red "191";
+  gv:blue "29";
+  gv:green "86";
+  gv:score "71.5894";
+  gv:coverage "28.54"
+], [
+  gv:hex "fab484";
+  gv:red "250";
+  gv:blue "132";
+  gv:green "180";
+  gv:score "1.1629825";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "bf4c13";
+  gv:red "191";
+  gv:blue "19";
+  gv:green "76";
+  gv:score "12.107415000000001";
+  gv:coverage "4.5133334"
+], [
+  gv:hex "a5410b";
+  gv:red "165";
+  gv:blue "11";
+  gv:green "65";
+  gv:score "4.4939213";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "f4d4b6";
+  gv:red "244";
+  gv:blue "182";
+  gv:green "212";
+  gv:score "0.043197838";
+  gv:coverage "24"
+], [
+  gv:hex "df7b45";
+  gv:red "223";
+  gv:blue "69";
+  gv:green "123";
+  gv:score "3.4289293";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "b65f33";
+  gv:red "182";
+  gv:blue "51";
+  gv:green "95";
+  gv:score "3.2195766";
+  gv:coverage "2.9266667"
+], [
+  gv:hex "e08354";
+  gv:red "224";
+  gv:blue "84";
+  gv:green "131";
+  gv:score "1.9896075";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "ae3e03";
+  gv:red "174";
+  gv:blue "3";
+  gv:green "62";
+  gv:score "0.5263213999999999";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "fba271";
+  gv:red "251";
+  gv:blue "113";
+  gv:green "162";
+  gv:score "0.42416151";
+  gv:coverage "0.2"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.948173"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MOSCATEL\nPAS AS\nJUAN PEDRO LUQUE\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0534";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "oppen der Furste\ninne\n1949er\nOriginal Abfullung der\nFiirst von Metternichschen\nDomane\nRheingau\n"@deu;
+    gv:color [
+  gv:hex "f0ba89";
+  gv:red "240";
+  gv:blue "137";
+  gv:green "186";
+  gv:score "31.257939";
+  gv:coverage "11.466666"
+], [
+  gv:hex "ab230b";
+  gv:red "171";
+  gv:blue "11";
+  gv:green "35";
+  gv:score "4.9666576";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "daca0f";
+  gv:red "218";
+  gv:blue "15";
+  gv:green "202";
+  gv:score "1.2324315000000001";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "26101e";
+  gv:red "38";
+  gv:blue "30";
+  gv:green "16";
+  gv:score "0.18443291";
+  gv:coverage "0.38"
+], [
+  gv:hex "c79266";
+  gv:red "199";
+  gv:blue "102";
+  gv:green "146";
+  gv:score "7.817129";
+  gv:coverage "2.68"
+], [
+  gv:hex "0a5e89";
+  gv:red "10";
+  gv:blue "137";
+  gv:green "94";
+  gv:score "0.065709662";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "285a13";
+  gv:red "40";
+  gv:blue "19";
+  gv:green "90";
+  gv:score "0.051227065999999995";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "a06e46";
+  gv:red "160";
+  gv:blue "70";
+  gv:green "110";
+  gv:score "3.5974663";
+  gv:coverage "1.0333333"
+], [
+  gv:hex "a42b1a";
+  gv:red "164";
+  gv:blue "26";
+  gv:green "43";
+  gv:score "3.5812671999999997";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "90381b";
+  gv:red "144";
+  gv:blue "27";
+  gv:green "56";
+  gv:score "3.1169466999999997";
+  gv:coverage "0.39333333000000004"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.856381999999996"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "58.537984"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.495789"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.258075999999996"
+];
+    w:bagOfWords "oppen der Furste\ninne\n1949er\nOriginal Abfullung der\nFiirst von Metternichschen\nDomane\nRheingau\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

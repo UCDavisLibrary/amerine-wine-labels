@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4231";
+    dct:type "image";
+    w:bagOfWords "JOUR DE\nOREMEDEPRUNELLE\nJOURDE\nMADE BY\nBORDEAUX FRANCE\nPRODUCT OF FRANCE\n4/5 QUART\n56 PROOF\n"@fra;
+    gv:color [
+  gv:hex "961815";
+  gv:red "150";
+  gv:blue "21";
+  gv:green "24";
+  gv:score "8.566877999999999";
+  gv:coverage "0.66"
+], [
+  gv:hex "e6ae7d";
+  gv:red "230";
+  gv:blue "125";
+  gv:green "174";
+  gv:score "8.129832100000002";
+  gv:coverage "4.12"
+], [
+  gv:hex "6e1608";
+  gv:red "110";
+  gv:blue "8";
+  gv:green "22";
+  gv:score "8.085983200000001";
+  gv:coverage "0.98"
+], [
+  gv:hex "5f5319";
+  gv:red "95";
+  gv:blue "25";
+  gv:green "83";
+  gv:score "3.827095";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "363215";
+  gv:red "54";
+  gv:blue "21";
+  gv:green "50";
+  gv:score "3.1618759000000005";
+  gv:coverage "0.74"
+], [
+  gv:hex "100f05";
+  gv:red "16";
+  gv:blue "5";
+  gv:green "15";
+  gv:score "1.7071459";
+  gv:coverage "0.9533333600000001"
+], [
+  gv:hex "b56358";
+  gv:red "181";
+  gv:blue "88";
+  gv:green "99";
+  gv:score "1.2593975";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "a20308";
+  gv:red "162";
+  gv:blue "8";
+  gv:green "3";
+  gv:score "7.8613617";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "7f0c09";
+  gv:red "127";
+  gv:blue "9";
+  gv:green "12";
+  gv:score "4.4093762000000005";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "ca9565";
+  gv:red "202";
+  gv:blue "101";
+  gv:green "149";
+  gv:score "3.7968751000000003";
+  gv:coverage "2.0466667000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.20617"
+], [
+  gv:mid <https://g.co/kg/m/02wbm>;
+  gv:desc "food";
+  gv:score "61.326069000000004"
+], [
+  gv:mid <https://g.co/kg/m/036qh8>;
+  gv:desc "produce";
+  gv:score "57.431954"
+];
+    w:bagOfWords "JOUR DE\nOREMEDEPRUNELLE\nJOURDE\nMADE BY\nBORDEAUX FRANCE\nPRODUCT OF FRANCE\n4/5 QUART\n56 PROOF\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

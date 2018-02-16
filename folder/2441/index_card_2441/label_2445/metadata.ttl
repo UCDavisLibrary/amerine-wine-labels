@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2441/label_2445";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "CONTENTS PINT 8 FLUIO OUNCES\nALCOHOLIC STRENGTH BY VOLUME lo4 0,\nand\nASON FONDEE\nde Bourgogne\nAleut Sault\nAppellation Controlée 1943\nPRODUCED BY\nTRADEMARK\nEN 88O\nJose DH DROuHIn\nPROPRIETAIRE ET NEGOCIANT\nA BEAUNE COTE D'OR\nPRODUCE OF FRANCE\nBOTTLED IN FRANCE\n"@fra;
+    gv:color [
+  gv:hex "d9b993";
+  gv:red "217";
+  gv:blue "147";
+  gv:green "185";
+  gv:score "24.520399";
+  gv:coverage "31.413334999999996"
+], [
+  gv:hex "e2b18a";
+  gv:red "226";
+  gv:blue "138";
+  gv:green "177";
+  gv:score "9.949501600000001";
+  gv:coverage "3.2"
+], [
+  gv:hex "dab88c";
+  gv:red "218";
+  gv:blue "140";
+  gv:green "184";
+  gv:score "9.505404500000001";
+  gv:coverage "3.42"
+], [
+  gv:hex "e1b391";
+  gv:red "225";
+  gv:blue "145";
+  gv:green "179";
+  gv:score "8.7234333";
+  gv:coverage "3.3266667"
+], [
+  gv:hex "b79973";
+  gv:red "183";
+  gv:blue "115";
+  gv:green "153";
+  gv:score "8.1022143";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "c9946e";
+  gv:red "201";
+  gv:blue "110";
+  gv:green "148";
+  gv:score "6.4789905999999995";
+  gv:coverage "2.0866666"
+], [
+  gv:hex "c49474";
+  gv:red "196";
+  gv:blue "116";
+  gv:green "148";
+  gv:score "4.2019255";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "b8996e";
+  gv:red "184";
+  gv:blue "110";
+  gv:green "153";
+  gv:score "3.4536123";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "a06e4b";
+  gv:red "160";
+  gv:blue "75";
+  gv:green "110";
+  gv:score "3.2986272";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "b15c42";
+  gv:red "177";
+  gv:blue "66";
+  gv:green "92";
+  gv:score "3.0263061";
+  gv:coverage "0.41333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "78.565407"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.03520999999999"
+];
+    w:bagOfWords "CONTENTS PINT 8 FLUIO OUNCES\nALCOHOLIC STRENGTH BY VOLUME lo4 0,\nand\nASON FONDEE\nde Bourgogne\nAleut Sault\nAppellation Controlée 1943\nPRODUCED BY\nTRADEMARK\nEN 88O\nJose DH DROuHIn\nPROPRIETAIRE ET NEGOCIANT\nA BEAUNE COTE D'OR\nPRODUCE OF FRANCE\nBOTTLED IN FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

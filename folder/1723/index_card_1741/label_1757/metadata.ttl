@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1757";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "MOS EL SAAR\nRUVVER\nBraben\nAlcoholic content\nContents\noz, 1947 er ese 12 o by volume\n1 pt. 8 fl. Original Kellerabzug\nGESETZLICH GESCHOTzT\nDACKWEILER. SCHAAR &DATHE, TRIER\n"@deu;
+    gv:color [
+  gv:hex "8a7355";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "115";
+  gv:score "15.041637";
+  gv:coverage "4.9466666"
+], [
+  gv:hex "af9777";
+  gv:red "175";
+  gv:blue "119";
+  gv:green "151";
+  gv:score "13.63627";
+  gv:coverage "4.993333300000001"
+], [
+  gv:hex "d7c0a0";
+  gv:red "215";
+  gv:blue "160";
+  gv:green "192";
+  gv:score "13.393453";
+  gv:coverage "28.826666"
+], [
+  gv:hex "685234";
+  gv:red "104";
+  gv:blue "52";
+  gv:green "82";
+  gv:score "12.461598";
+  gv:coverage "3.9600000000000004"
+], [
+  gv:hex "8c7342";
+  gv:red "140";
+  gv:blue "66";
+  gv:green "115";
+  gv:score "7.940329999999999";
+  gv:coverage "3.3733333999999995"
+], [
+  gv:hex "b89a66";
+  gv:red "184";
+  gv:blue "102";
+  gv:green "154";
+  gv:score "7.9081409";
+  gv:coverage "3.5133332000000004"
+], [
+  gv:hex "493518";
+  gv:red "73";
+  gv:blue "24";
+  gv:green "53";
+  gv:score "5.369911699999999";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "d5b684";
+  gv:red "213";
+  gv:blue "132";
+  gv:green "182";
+  gv:score "4.7838709999999995";
+  gv:coverage "2.92"
+], [
+  gv:hex "6b5326";
+  gv:red "107";
+  gv:blue "38";
+  gv:green "83";
+  gv:score "4.289636";
+  gv:coverage "1.66"
+], [
+  gv:hex "c49765";
+  gv:red "196";
+  gv:blue "101";
+  gv:green "151";
+  gv:score "3.0424953";
+  gv:coverage "1.26"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "68.89596"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.430910000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.547664000000005"
+];
+    w:bagOfWords "MOS EL SAAR\nRUVVER\nBraben\nAlcoholic content\nContents\noz, 1947 er ese 12 o by volume\n1 pt. 8 fl. Original Kellerabzug\nGESETZLICH GESCHOTzT\nDACKWEILER. SCHAAR &DATHE, TRIER\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

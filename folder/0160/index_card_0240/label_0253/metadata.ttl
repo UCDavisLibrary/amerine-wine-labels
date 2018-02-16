@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0240/label_0253";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "Valey\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOUVERAIN CELLARS\nST. HELENA, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d9be9c";
+  gv:red "217";
+  gv:blue "156";
+  gv:green "190";
+  gv:score "51.791096";
+  gv:coverage "31.693333000000003"
+], [
+  gv:hex "513210";
+  gv:red "81";
+  gv:blue "16";
+  gv:green "50";
+  gv:score "1.7638775";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "b39c7a";
+  gv:red "179";
+  gv:blue "122";
+  gv:green "156";
+  gv:score "24.835433000000002";
+  gv:coverage "6.12"
+], [
+  gv:hex "917655";
+  gv:red "145";
+  gv:blue "85";
+  gv:green "118";
+  gv:score "7.204397";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "b5966c";
+  gv:red "181";
+  gv:blue "108";
+  gv:green "150";
+  gv:score "2.8590871";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "dcba8f";
+  gv:red "220";
+  gv:blue "143";
+  gv:green "186";
+  gv:score "2.414096";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "6e5331";
+  gv:red "110";
+  gv:blue "49";
+  gv:green "83";
+  gv:score "1.9016277000000001";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "9a7a52";
+  gv:red "154";
+  gv:blue "82";
+  gv:green "122";
+  gv:score "1.6989523999999998";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "694a2b";
+  gv:red "105";
+  gv:blue "43";
+  gv:green "74";
+  gv:score "1.2193501";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "664623";
+  gv:red "102";
+  gv:blue "35";
+  gv:green "70";
+  gv:score "0.78217722";
+  gv:coverage "0.15333333000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.629014"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.888576"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.364378"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.115917"
+];
+    w:bagOfWords "Valey\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOUVERAIN CELLARS\nST. HELENA, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

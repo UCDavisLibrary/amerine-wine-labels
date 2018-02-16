@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1070/label_1085";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "HEIDE HUS\nGROO\nberbomet\nREBBAU-GENOSSENSCHAFT OBERHOFEN AM THUNE RSEE\n"@deu;
+    gv:color [
+  gv:hex "b69660";
+  gv:red "182";
+  gv:blue "96";
+  gv:green "150";
+  gv:score "9.8420791";
+  gv:coverage "4.413333199999999"
+], [
+  gv:hex "665235";
+  gv:red "102";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "8.5757248";
+  gv:coverage "2.22"
+], [
+  gv:hex "d6951a";
+  gv:red "214";
+  gv:blue "26";
+  gv:green "149";
+  gv:score "4.0594969";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "341300";
+  gv:red "52";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "1.9386918999999998";
+  gv:coverage "0.86"
+], [
+  gv:hex "927441";
+  gv:red "146";
+  gv:blue "65";
+  gv:green "116";
+  gv:score "7.5455956";
+  gv:coverage "2.9466666"
+], [
+  gv:hex "8c7454";
+  gv:red "140";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "6.8427637";
+  gv:coverage "2.0066667"
+], [
+  gv:hex "b09673";
+  gv:red "176";
+  gv:blue "115";
+  gv:green "150";
+  gv:score "6.38416";
+  gv:coverage "2.2866666"
+], [
+  gv:hex "dac09d";
+  gv:red "218";
+  gv:blue "157";
+  gv:green "192";
+  gv:score "5.4812305";
+  gv:coverage "4.9466666"
+], [
+  gv:hex "dcb881";
+  gv:red "220";
+  gv:blue "129";
+  gv:green "184";
+  gv:score "5.4206293";
+  gv:coverage "4.0866666"
+], [
+  gv:hex "443116";
+  gv:red "68";
+  gv:blue "22";
+  gv:green "49";
+  gv:score "4.731456199999999";
+  gv:coverage "1.2733334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.129661"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "58.931834"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.078920999999994"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.872233"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.690015"
+];
+    w:bagOfWords "HEIDE HUS\nGROO\nberbomet\nREBBAU-GENOSSENSCHAFT OBERHOFEN AM THUNE RSEE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

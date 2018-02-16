@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0050";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "B. SOLICITADO\nPINOORD\nETIQ Y\nMCA. REGI\nDA\n"@spa;
+    gv:color [
+  gv:hex "a2beb5";
+  gv:red "162";
+  gv:blue "181";
+  gv:green "190";
+  gv:score "31.0759";
+  gv:coverage "16.3"
+], [
+  gv:hex "877557";
+  gv:red "135";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "13.869791000000001";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "bcc6bd";
+  gv:red "188";
+  gv:blue "189";
+  gv:green "198";
+  gv:score "14.979925999999999";
+  gv:coverage "20.053333000000002"
+], [
+  gv:hex "a99778";
+  gv:red "169";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "7.495383899999999";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "d3c6ac";
+  gv:red "211";
+  gv:blue "172";
+  gv:green "198";
+  gv:score "6.5761313";
+  gv:coverage "1.9133333"
+], [
+  gv:hex "675639";
+  gv:red "103";
+  gv:blue "57";
+  gv:green "86";
+  gv:score "5.8181729";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "877745";
+  gv:red "135";
+  gv:blue "69";
+  gv:green "119";
+  gv:score "5.0940186";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "453216";
+  gv:red "69";
+  gv:blue "22";
+  gv:green "50";
+  gv:score "4.2268474000000005";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "90aba2";
+  gv:red "144";
+  gv:blue "162";
+  gv:green "171";
+  gv:score "3.2816537";
+  gv:coverage "1.6133332999999999"
+], [
+  gv:hex "e7dbc1";
+  gv:red "231";
+  gv:blue "193";
+  gv:green "219";
+  gv:score "2.0325081";
+  gv:coverage "0.64666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.286634"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "76.400661"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.924766999999996"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "53.5879"
+];
+    w:bagOfWords "B. SOLICITADO\nPINOORD\nETIQ Y\nMCA. REGI\nDA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

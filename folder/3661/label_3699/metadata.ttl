@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3661/label_3699";
+    dct:type "image";
+    w:bagOfWords "MANZANILLA\ne \"LA PETENERA\n588\n"@spa;
+    gv:color [
+  gv:hex "d9c8b9";
+  gv:red "217";
+  gv:blue "185";
+  gv:green "200";
+  gv:score "66.21088400000001";
+  gv:coverage "36.106666999999995"
+], [
+  gv:hex "e8d7c8";
+  gv:red "232";
+  gv:blue "200";
+  gv:green "215";
+  gv:score "8.1215315";
+  gv:coverage "11.313333"
+], [
+  gv:hex "ad9c8d";
+  gv:red "173";
+  gv:blue "141";
+  gv:green "156";
+  gv:score "7.2433159";
+  gv:coverage "2.2333333"
+], [
+  gv:hex "e1b9af";
+  gv:red "225";
+  gv:blue "175";
+  gv:green "185";
+  gv:score "6.1861038";
+  gv:coverage "1.2"
+], [
+  gv:hex "bf948b";
+  gv:red "191";
+  gv:blue "139";
+  gv:green "148";
+  gv:score "4.4227641";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "9d7168";
+  gv:red "157";
+  gv:blue "104";
+  gv:green "113";
+  gv:score "2.0753003999999997";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "89796a";
+  gv:red "137";
+  gv:blue "106";
+  gv:green "121";
+  gv:score "2.0709451";
+  gv:coverage "0.6"
+], [
+  gv:hex "ddcfc2";
+  gv:red "221";
+  gv:blue "194";
+  gv:green "207";
+  gv:score "1.9715544";
+  gv:coverage "6.2533334"
+], [
+  gv:hex "e4d7ca";
+  gv:red "228";
+  gv:blue "202";
+  gv:green "215";
+  gv:score "0.62739137";
+  gv:coverage "40.853333"
+], [
+  gv:hex "f8d3c8";
+  gv:red "248";
+  gv:blue "200";
+  gv:green "211";
+  gv:score "0.53365231";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "77.903873"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.05979500000001"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "60.800064"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "51.797295"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.358323999999996"
+];
+    w:bagOfWords "MANZANILLA\ne \"LA PETENERA\n588\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

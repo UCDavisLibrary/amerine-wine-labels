@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0240/label_0247";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "BOTTLE D IN C ALI F 0 R NIA\nSELECTED VINTAGE\nFOUNTAIN GROVE\nVERY FINE, VELVETY FULL BODIED RED WINE\nPRODUCED AND BOTTLED AT THE WINERY BY\nFOUNTAIN GROVE VINE YAR D\nSANTA ROSA. SONOMA COUNTY. CALIFORNIA\nALCO H 0 L 12 %2 B Y v OLUM E\n"@eng;
+    gv:color [
+  gv:hex "d3c0b1";
+  gv:red "211";
+  gv:blue "177";
+  gv:green "192";
+  gv:score "18.89722";
+  gv:coverage "27.706668"
+], [
+  gv:hex "691c1d";
+  gv:red "105";
+  gv:blue "29";
+  gv:green "28";
+  gv:score "13.141774";
+  gv:coverage "1.7000000000000002"
+], [
+  gv:hex "ba8e85";
+  gv:red "186";
+  gv:blue "133";
+  gv:green "142";
+  gv:score "11.552866";
+  gv:coverage "2"
+], [
+  gv:hex "140e05";
+  gv:red "20";
+  gv:blue "5";
+  gv:green "14";
+  gv:score "2.0541228";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "873839";
+  gv:red "135";
+  gv:blue "57";
+  gv:green "56";
+  gv:score "9.028174";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "af9b8d";
+  gv:red "175";
+  gv:blue "141";
+  gv:green "155";
+  gv:score "8.3565757";
+  gv:coverage "1.8599999999999999"
+], [
+  gv:hex "9e726a";
+  gv:red "158";
+  gv:blue "106";
+  gv:green "114";
+  gv:score "6.6691607";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "d1c3b8";
+  gv:red "209";
+  gv:blue "184";
+  gv:green "195";
+  gv:score "6.0939178";
+  gv:coverage "13.086666"
+], [
+  gv:hex "e7bfb5";
+  gv:red "231";
+  gv:blue "181";
+  gv:green "191";
+  gv:score "2.9359397";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "8a7568";
+  gv:red "138";
+  gv:blue "104";
+  gv:green "117";
+  gv:score "2.8583165";
+  gv:coverage "0.49333335000000006"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.22359999999999"
+];
+    w:bagOfWords "BOTTLE D IN C ALI F 0 R NIA\nSELECTED VINTAGE\nFOUNTAIN GROVE\nVERY FINE, VELVETY FULL BODIED RED WINE\nPRODUCED AND BOTTLED AT THE WINERY BY\nFOUNTAIN GROVE VINE YAR D\nSANTA ROSA. SONOMA COUNTY. CALIFORNIA\nALCO H 0 L 12 %2 B Y v OLUM E\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

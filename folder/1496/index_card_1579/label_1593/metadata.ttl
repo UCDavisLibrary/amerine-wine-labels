@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1579/label_1593";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "FLORIDO HER MANOS\nProduct of Spain.\nN. 31\nSANLU CAR DE BARRAMEDA\nPRINTED IN SPAIN\nLIT. MIGUEL s A.IDo .JEREz\n"@spa;
+    gv:color [
+  gv:hex "d5c1aa";
+  gv:red "213";
+  gv:blue "170";
+  gv:green "193";
+  gv:score "10.634557000000001";
+  gv:coverage "20.473333"
+], [
+  gv:hex "882d1e";
+  gv:red "136";
+  gv:blue "30";
+  gv:green "45";
+  gv:score "6.9537424";
+  gv:coverage "0.22"
+], [
+  gv:hex "5a2b1d";
+  gv:red "90";
+  gv:blue "29";
+  gv:green "43";
+  gv:score "5.5834163";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "111023";
+  gv:red "17";
+  gv:blue "35";
+  gv:green "16";
+  gv:score "2.3567";
+  gv:coverage "1.4266667"
+], [
+  gv:hex "e8b9aa";
+  gv:red "232";
+  gv:blue "170";
+  gv:green "185";
+  gv:score "7.961907999999999";
+  gv:coverage "1.54"
+], [
+  gv:hex "aa9985";
+  gv:red "170";
+  gv:blue "133";
+  gv:green "153";
+  gv:score "6.2278964";
+  gv:coverage "3.2533332999999995"
+], [
+  gv:hex "c49384";
+  gv:red "196";
+  gv:blue "132";
+  gv:green "147";
+  gv:score "5.9644286";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "734537";
+  gv:red "115";
+  gv:blue "55";
+  gv:green "69";
+  gv:score "5.5314615";
+  gv:coverage "0.66"
+], [
+  gv:hex "95211c";
+  gv:red "149";
+  gv:blue "28";
+  gv:green "33";
+  gv:score "5.3014434999999995";
+  gv:coverage "0.12"
+], [
+  gv:hex "80362d";
+  gv:red "128";
+  gv:blue "45";
+  gv:green "54";
+  gv:score "5.2597549";
+  gv:coverage "0.26"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.965827"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.486345"
+];
+    w:bagOfWords "FLORIDO HER MANOS\nProduct of Spain.\nN. 31\nSANLU CAR DE BARRAMEDA\nPRINTED IN SPAIN\nLIT. MIGUEL s A.IDo .JEREz\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1818";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "OFLICHES STERSEMINAR,\n1773\nWACHSTUM u. ORIGINAL- KELLE RABZ UG\nMOSEL-SAAR-RUWER\n"@deu;
+    gv:color [
+  gv:hex "d3c0a8";
+  gv:red "211";
+  gv:blue "168";
+  gv:green "192";
+  gv:score "20.975459";
+  gv:coverage "9.120000000000001"
+], [
+  gv:hex "927e48";
+  gv:red "146";
+  gv:blue "72";
+  gv:green "126";
+  gv:score "9.9681772";
+  gv:coverage "1"
+], [
+  gv:hex "33622a";
+  gv:red "51";
+  gv:blue "42";
+  gv:green "98";
+  gv:score "0.5956444";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "ac9b83";
+  gv:red "172";
+  gv:blue "131";
+  gv:green "155";
+  gv:score "12.92192";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "84765b";
+  gv:red "132";
+  gv:blue "91";
+  gv:green "118";
+  gv:score "9.5924154";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "a7945c";
+  gv:red "167";
+  gv:blue "92";
+  gv:green "148";
+  gv:score "7.7805392";
+  gv:coverage "1.6733333"
+], [
+  gv:hex "ecdcca";
+  gv:red "236";
+  gv:blue "202";
+  gv:green "220";
+  gv:score "6.7443416";
+  gv:coverage "13"
+], [
+  gv:hex "685841";
+  gv:red "104";
+  gv:blue "65";
+  gv:green "88";
+  gv:score "5.3279422";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "d1c4b8";
+  gv:red "209";
+  gv:blue "184";
+  gv:green "196";
+  gv:score "3.997685";
+  gv:coverage "14.06"
+], [
+  gv:hex "c29789";
+  gv:red "194";
+  gv:blue "137";
+  gv:green "151";
+  gv:score "2.7981009";
+  gv:coverage "0.57333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.89806"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.660476"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.973642"
+];
+    w:bagOfWords "OFLICHES STERSEMINAR,\n1773\nWACHSTUM u. ORIGINAL- KELLE RABZ UG\nMOSEL-SAAR-RUWER\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0323";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "CON CANNON\nVINEYARDS\nCalifornia St. Juliett\nPRODUCED AND BOTTLED BY\nCONCANNON VINEYARDS\nLIVERMORE, CAL FOR N l A\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
+    gv:color [
+  gv:hex "d7bfa1";
+  gv:red "215";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "27.675273999999998";
+  gv:coverage "21.6"
+], [
+  gv:hex "625036";
+  gv:red "98";
+  gv:blue "54";
+  gv:green "80";
+  gv:score "16.328739";
+  gv:coverage "2.6133334"
+], [
+  gv:hex "b29a7b";
+  gv:red "178";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "13.603149";
+  gv:coverage "5.3666666"
+], [
+  gv:hex "45351c";
+  gv:red "69";
+  gv:blue "28";
+  gv:green "53";
+  gv:score "8.6821146";
+  gv:coverage "1.28"
+], [
+  gv:hex "897458";
+  gv:red "137";
+  gv:blue "88";
+  gv:green "116";
+  gv:score "7.3956989";
+  gv:coverage "1.8733334000000001"
+], [
+  gv:hex "d9b888";
+  gv:red "217";
+  gv:blue "136";
+  gv:green "184";
+  gv:score "5.3639669";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "bb9a6a";
+  gv:red "187";
+  gv:blue "106";
+  gv:green "154";
+  gv:score "4.9734846";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "e7d8c3";
+  gv:red "231";
+  gv:blue "195";
+  gv:green "216";
+  gv:score "3.248724";
+  gv:coverage "10.066666"
+], [
+  gv:hex "937649";
+  gv:red "147";
+  gv:blue "73";
+  gv:green "118";
+  gv:score "2.1921469";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "e5dbcd";
+  gv:red "229";
+  gv:blue "205";
+  gv:green "219";
+  gv:score "1.8412041000000001";
+  gv:coverage "47.986665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.995909"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.017457"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "50.3871"
+];
+    w:bagOfWords "CON CANNON\nVINEYARDS\nCalifornia St. Juliett\nPRODUCED AND BOTTLED BY\nCONCANNON VINEYARDS\nLIVERMORE, CAL FOR N l A\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

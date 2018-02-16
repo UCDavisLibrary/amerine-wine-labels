@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3661/label_3677";
+    dct:type "image";
+    w:bagOfWords "CARRI ON\nAino del rais\nCOSECHA\n195 o\nMERIDA\n"@spa;
+    gv:color [
+  gv:hex "e4c58f";
+  gv:red "228";
+  gv:blue "143";
+  gv:green "197";
+  gv:score "19.188872";
+  gv:coverage "5.1666666"
+], [
+  gv:hex "ede3da";
+  gv:red "237";
+  gv:blue "218";
+  gv:green "227";
+  gv:score "6.484706";
+  gv:coverage "64.56"
+], [
+  gv:hex "8d3a3b";
+  gv:red "141";
+  gv:blue "59";
+  gv:green "58";
+  gv:score "5.7804149";
+  gv:coverage "0.18"
+], [
+  gv:hex "7d736b";
+  gv:red "125";
+  gv:blue "107";
+  gv:green "115";
+  gv:score "5.3067538999999995";
+  gv:coverage "0.84"
+], [
+  gv:hex "3c322a";
+  gv:red "60";
+  gv:blue "42";
+  gv:green "50";
+  gv:score "3.6780469000000005";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "6d5528";
+  gv:red "109";
+  gv:blue "40";
+  gv:green "85";
+  gv:score "0.98640919";
+  gv:coverage "0.04"
+], [
+  gv:hex "d9c3a1";
+  gv:red "217";
+  gv:blue "161";
+  gv:green "195";
+  gv:score "10.333186";
+  gv:coverage "5.8866667999999995"
+], [
+  gv:hex "d0c4bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "196";
+  gv:score "6.1491411000000005";
+  gv:coverage "5.46"
+], [
+  gv:hex "a59a92";
+  gv:red "165";
+  gv:blue "146";
+  gv:green "154";
+  gv:score "4.1419286";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "5a5149";
+  gv:red "90";
+  gv:blue "73";
+  gv:green "81";
+  gv:score "3.4424294";
+  gv:coverage "0.52"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.438725"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0bby24z>;
+  gv:desc "moustache";
+  gv:score "54.652649"
+];
+    w:bagOfWords "CARRI ON\nAino del rais\nCOSECHA\n195 o\nMERIDA\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

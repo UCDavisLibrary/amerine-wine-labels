@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0181/label_0188";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "MORRIS-BURG\nVINTAGE\nOLD\nBURGUNDY\n"@eng;
+    gv:color [
+  gv:hex "babf83";
+  gv:red "186";
+  gv:blue "131";
+  gv:green "191";
+  gv:score "31.588680000000004";
+  gv:coverage "10.613332999999999"
+], [
+  gv:hex "8c7535";
+  gv:red "140";
+  gv:blue "53";
+  gv:green "117";
+  gv:score "18.815531";
+  gv:coverage "4.2266667"
+], [
+  gv:hex "ad9a5b";
+  gv:red "173";
+  gv:blue "91";
+  gv:green "154";
+  gv:score "14.176188";
+  gv:coverage "3.7933334999999997"
+], [
+  gv:hex "c7bd80";
+  gv:red "199";
+  gv:blue "128";
+  gv:green "189";
+  gv:score "13.813047000000001";
+  gv:coverage "4.533333300000001"
+], [
+  gv:hex "9da56b";
+  gv:red "157";
+  gv:blue "107";
+  gv:green "165";
+  gv:score "9.2849657";
+  gv:coverage "2.8866666999999997"
+], [
+  gv:hex "777f47";
+  gv:red "119";
+  gv:blue "71";
+  gv:green "127";
+  gv:score "4.3039262";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "d9c7ae";
+  gv:red "217";
+  gv:blue "174";
+  gv:green "199";
+  gv:score "2.3597548";
+  gv:coverage "30.926666000000004"
+], [
+  gv:hex "92742c";
+  gv:red "146";
+  gv:blue "44";
+  gv:green "116";
+  gv:score "1.7887845999999998";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "745e24";
+  gv:red "116";
+  gv:blue "36";
+  gv:green "94";
+  gv:score "1.3570731";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "565f28";
+  gv:red "86";
+  gv:blue "40";
+  gv:green "95";
+  gv:score "0.5792365899999999";
+  gv:coverage "0.15333333000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "75.23043200000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04t7l>;
+  gv:desc "metal";
+  gv:score "51.903117"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.276255000000006"
+];
+    w:bagOfWords "MORRIS-BURG\nVINTAGE\nOLD\nBURGUNDY\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

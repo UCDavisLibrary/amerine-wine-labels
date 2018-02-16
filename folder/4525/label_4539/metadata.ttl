@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4539";
+    dct:type "image";
+    w:bagOfWords "SOLERA 1847\nG. SEIX Y BARRAL HNOS,S, A, BARCELONA\n"@spa;
+    gv:color [
+  gv:hex "cfc5bb";
+  gv:red "207";
+  gv:blue "187";
+  gv:green "197";
+  gv:score "35.513079";
+  gv:coverage "31.480000000000004"
+], [
+  gv:hex "81776e";
+  gv:red "129";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "29.408708";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "a49990";
+  gv:red "164";
+  gv:blue "144";
+  gv:green "153";
+  gv:score "26.350151999999998";
+  gv:coverage "3.44"
+], [
+  gv:hex "e3d9cf";
+  gv:red "227";
+  gv:blue "207";
+  gv:green "217";
+  gv:score "5.004444";
+  gv:coverage "58.893335"
+], [
+  gv:hex "675d54";
+  gv:red "103";
+  gv:blue "84";
+  gv:green "93";
+  gv:score "3.2725293000000004";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "3f3529";
+  gv:red "63";
+  gv:blue "41";
+  gv:green "53";
+  gv:score "0.00733057";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "9d9083";
+  gv:red "157";
+  gv:blue "131";
+  gv:green "144";
+  gv:score "0.28158857";
+  gv:coverage "0.06"
+], [
+  gv:hex "cbc1b2";
+  gv:red "203";
+  gv:blue "178";
+  gv:green "193";
+  gv:score "0.15190894000000002";
+  gv:coverage "2.9066667"
+], [
+  gv:hex "2b2316";
+  gv:red "43";
+  gv:blue "22";
+  gv:green "35";
+  gv:score "0.007003273599999999";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "342c21";
+  gv:red "52";
+  gv:blue "33";
+  gv:green "44";
+  gv:score "0.0032536278";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.812983"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "59.19094700000001"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "55.302942"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "55.187309"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.048722999999995"
+];
+    w:bagOfWords "SOLERA 1847\nG. SEIX Y BARRAL HNOS,S, A, BARCELONA\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

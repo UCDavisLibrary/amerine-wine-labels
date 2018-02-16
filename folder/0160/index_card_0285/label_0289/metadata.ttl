@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0289";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "CALIFORNIA\nZinfandel\nALCOHOL 12% BY VOLuME\nBOTTLED BY\nDARROW. WINE CO\nB. W. No. 3898\n14th DIST., CALIF.\nMISSION SAN JOSE, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\nSCHMIDT O. CO. S.Fi\n"@eng;
+    gv:color [
+  gv:hex "625339";
+  gv:red "98";
+  gv:blue "57";
+  gv:green "83";
+  gv:score "25.539276";
+  gv:coverage "3.4266666"
+], [
+  gv:hex "80735b";
+  gv:red "128";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "16.478381";
+  gv:coverage "2.42"
+], [
+  gv:hex "a79c88";
+  gv:red "167";
+  gv:blue "136";
+  gv:green "156";
+  gv:score "13.049491";
+  gv:coverage "2.9266667"
+], [
+  gv:hex "ccbeaa";
+  gv:red "204";
+  gv:blue "170";
+  gv:green "190";
+  gv:score "7.892876899999999";
+  gv:coverage "19.433333"
+], [
+  gv:hex "a49b91";
+  gv:red "164";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "5.7105005";
+  gv:coverage "2.3800000000000003"
+], [
+  gv:hex "453821";
+  gv:red "69";
+  gv:blue "33";
+  gv:green "56";
+  gv:score "5.3331155";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "c7bdb3";
+  gv:red "199";
+  gv:blue "179";
+  gv:green "189";
+  gv:score "4.2414874";
+  gv:coverage "11.186667"
+], [
+  gv:hex "c59184";
+  gv:red "197";
+  gv:blue "132";
+  gv:green "145";
+  gv:score "4.1574776";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "81776e";
+  gv:red "129";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "3.4259199999999996";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "efbbae";
+  gv:red "239";
+  gv:blue "174";
+  gv:green "187";
+  gv:score "2.5724394";
+  gv:coverage "0.69333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.617519"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.672333"
+];
+    w:bagOfWords "CALIFORNIA\nZinfandel\nALCOHOL 12% BY VOLuME\nBOTTLED BY\nDARROW. WINE CO\nB. W. No. 3898\n14th DIST., CALIF.\nMISSION SAN JOSE, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\nSCHMIDT O. CO. S.Fi\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

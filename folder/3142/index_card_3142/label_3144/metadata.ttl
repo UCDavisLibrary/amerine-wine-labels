@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3142/label_3144";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "15 ro\nSO\n72 Net Contents 1 Pint 9 Fl. Oz.\nAlcohol 14\nby volume\nON FONDEE EN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "d5bf9f";
+  gv:red "213";
+  gv:blue "159";
+  gv:green "191";
+  gv:score "33.004811000000004";
+  gv:coverage "37.68"
+], [
+  gv:hex "af9a7a";
+  gv:red "175";
+  gv:blue "122";
+  gv:green "154";
+  gv:score "13.322607999999999";
+  gv:coverage "2.5666667"
+], [
+  gv:hex "d4b786";
+  gv:red "212";
+  gv:blue "134";
+  gv:green "183";
+  gv:score "10.262651";
+  gv:coverage "1.58"
+], [
+  gv:hex "897556";
+  gv:red "137";
+  gv:blue "86";
+  gv:green "117";
+  gv:score "9.4284348";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "675339";
+  gv:red "103";
+  gv:blue "57";
+  gv:green "83";
+  gv:score "7.9764053";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "bd9e6c";
+  gv:red "189";
+  gv:blue "108";
+  gv:green "158";
+  gv:score "7.8056425";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "453319";
+  gv:red "69";
+  gv:blue "25";
+  gv:green "51";
+  gv:score "3.3372432";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "eddabd";
+  gv:red "237";
+  gv:blue "189";
+  gv:green "218";
+  gv:score "3.3126037999999998";
+  gv:coverage "31.019999999999996"
+], [
+  gv:hex "664c22";
+  gv:red "102";
+  gv:blue "34";
+  gv:green "76";
+  gv:score "2.3031708";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "896d44";
+  gv:red "137";
+  gv:blue "68";
+  gv:green "109";
+  gv:score "1.5389597";
+  gv:coverage "0.17333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.808306"
+];
+    w:bagOfWords "15 ro\nSO\n72 Net Contents 1 Pint 9 Fl. Oz.\nAlcohol 14\nby volume\nON FONDEE EN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

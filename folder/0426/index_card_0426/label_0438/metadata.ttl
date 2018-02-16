@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0438";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Nung Sohne GrbH\nJ.J.S\nRHEINGAU\n1943\nABmannshaulet Steil spatbuegundet\nLLE AT\n"@deu;
+    gv:color [
+  gv:hex "a39b95";
+  gv:red "163";
+  gv:blue "149";
+  gv:green "155";
+  gv:score "14.875972";
+  gv:coverage "4.7666664999999995"
+], [
+  gv:hex "e27d39";
+  gv:red "226";
+  gv:blue "57";
+  gv:green "125";
+  gv:score "7.819777";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "cd915f";
+  gv:red "205";
+  gv:blue "95";
+  gv:green "145";
+  gv:score "7.450164099999999";
+  gv:coverage "1.58"
+], [
+  gv:hex "c9c1ba";
+  gv:red "201";
+  gv:blue "186";
+  gv:green "193";
+  gv:score "13.627759000000001";
+  gv:coverage "11.033332999999999"
+], [
+  gv:hex "807872";
+  gv:red "128";
+  gv:blue "114";
+  gv:green "120";
+  gv:score "8.9912444";
+  gv:coverage "2.8933332999999997"
+], [
+  gv:hex "dabfa8";
+  gv:red "218";
+  gv:blue "168";
+  gv:green "191";
+  gv:score "8.9880988";
+  gv:coverage "15.186665999999999"
+], [
+  gv:hex "f1b483";
+  gv:red "241";
+  gv:blue "131";
+  gv:green "180";
+  gv:score "5.4490305";
+  gv:coverage "0.9400000000000001"
+], [
+  gv:hex "5e5550";
+  gv:red "94";
+  gv:blue "80";
+  gv:green "85";
+  gv:score "4.3051332";
+  gv:coverage "1.3866667"
+], [
+  gv:hex "e7ddd6";
+  gv:red "231";
+  gv:blue "214";
+  gv:green "221";
+  gv:score "3.9418719999999996";
+  gv:coverage "36.919999999999995"
+], [
+  gv:hex "b39d8b";
+  gv:red "179";
+  gv:blue "139";
+  gv:green "157";
+  gv:score "3.1886645";
+  gv:coverage "0.74"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.135194"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "53.136522"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.317168"
+];
+    w:bagOfWords "Nung Sohne GrbH\nJ.J.S\nRHEINGAU\n1943\nABmannshaulet Steil spatbuegundet\nLLE AT\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

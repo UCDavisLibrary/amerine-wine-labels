@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0804";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "Blanc-Time\ni\nPouilly sur 1oire\nAPPELLATION CONTROLEE\nMISE EN BOUTEILLES AUX LOGES SOCIETE DES SAUVIGNONS DE LA LOIRE\nR. PENARD\nPOUILLY\nOIRE\n"@fra;
+    gv:color [
+  gv:hex "7d746c";
+  gv:red "125";
+  gv:blue "108";
+  gv:green "116";
+  gv:score "22.724226";
+  gv:coverage "2.1466667"
+], [
+  gv:hex "ccc3ba";
+  gv:red "204";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "20.789116999999997";
+  gv:coverage "17.626666999999998"
+], [
+  gv:hex "a39a92";
+  gv:red "163";
+  gv:blue "146";
+  gv:green "154";
+  gv:score "18.40338";
+  gv:coverage "2.0733334"
+], [
+  gv:hex "5d544c";
+  gv:red "93";
+  gv:blue "76";
+  gv:green "84";
+  gv:score "16.166836";
+  gv:coverage "1.6133332999999999"
+], [
+  gv:hex "eae1d8";
+  gv:red "234";
+  gv:blue "216";
+  gv:green "225";
+  gv:score "11.299789";
+  gv:coverage "74.273336"
+], [
+  gv:hex "3d342b";
+  gv:red "61";
+  gv:blue "43";
+  gv:green "52";
+  gv:score "6.610468";
+  gv:coverage "0.71333335"
+], [
+  gv:hex "1d150e";
+  gv:red "29";
+  gv:blue "14";
+  gv:green "21";
+  gv:score "3.4225088";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "cbbfaf";
+  gv:red "203";
+  gv:blue "175";
+  gv:green "191";
+  gv:score "0.18377075";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "281f14";
+  gv:red "40";
+  gv:blue "20";
+  gv:green "31";
+  gv:score "0.15671535";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "a29487";
+  gv:red "162";
+  gv:blue "135";
+  gv:green "148";
+  gv:score "0.11333681000000001";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.908659"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.287348"
+];
+    w:bagOfWords "Blanc-Time\ni\nPouilly sur 1oire\nAPPELLATION CONTROLEE\nMISE EN BOUTEILLES AUX LOGES SOCIETE DES SAUVIGNONS DE LA LOIRE\nR. PENARD\nPOUILLY\nOIRE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

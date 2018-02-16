@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1476";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nELVIRA\nWINE\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY INC.\nURBANA, HAMMONDSPORT, NY.\nESTABLISHED 1865\nALCOHOL 12% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "3f331c";
+  gv:red "63";
+  gv:blue "28";
+  gv:green "51";
+  gv:score "30.083007000000002";
+  gv:coverage "1.46"
+], [
+  gv:hex "d4c7be";
+  gv:red "212";
+  gv:blue "190";
+  gv:green "199";
+  gv:score "8.4714979";
+  gv:coverage "10.513333"
+], [
+  gv:hex "5a4e34";
+  gv:red "90";
+  gv:blue "52";
+  gv:green "78";
+  gv:score "15.829070000000002";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "7f7156";
+  gv:red "127";
+  gv:blue "86";
+  gv:green "113";
+  gv:score "6.9867231";
+  gv:coverage "1.18"
+], [
+  gv:hex "291c08";
+  gv:red "41";
+  gv:blue "8";
+  gv:green "28";
+  gv:score "5.719431500000001";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "d4c7b3";
+  gv:red "212";
+  gv:blue "179";
+  gv:green "199";
+  gv:score "5.3116653";
+  gv:coverage "2.4"
+], [
+  gv:hex "19120a";
+  gv:red "25";
+  gv:blue "10";
+  gv:green "18";
+  gv:score "5.0236586";
+  gv:coverage "3.7733335"
+], [
+  gv:hex "e8dcd3";
+  gv:red "232";
+  gv:blue "211";
+  gv:green "220";
+  gv:score "5.0095424";
+  gv:coverage "73.786664"
+], [
+  gv:hex "a5987f";
+  gv:red "165";
+  gv:blue "127";
+  gv:green "152";
+  gv:score "4.4924802999999995";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "a89b93";
+  gv:red "168";
+  gv:blue "147";
+  gv:green "155";
+  gv:score "3.9417673";
+  gv:coverage "0.9400000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.580123"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nELVIRA\nWINE\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY INC.\nURBANA, HAMMONDSPORT, NY.\nESTABLISHED 1865\nALCOHOL 12% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

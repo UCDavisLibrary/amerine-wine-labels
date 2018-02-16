@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0084";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "ARTI GRAR FELI BONETTI NILANO\n"@ita;
+    gv:color [
+  gv:hex "d3c1a6";
+  gv:red "211";
+  gv:blue "166";
+  gv:green "193";
+  gv:score "20.442289";
+  gv:coverage "23.94"
+], [
+  gv:hex "60543f";
+  gv:red "96";
+  gv:blue "63";
+  gv:green "84";
+  gv:score "8.8130221";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "b3685c";
+  gv:red "179";
+  gv:blue "92";
+  gv:green "104";
+  gv:score "4.1511938";
+  gv:coverage "0.16"
+], [
+  gv:hex "f0b6a6";
+  gv:red "240";
+  gv:blue "166";
+  gv:green "182";
+  gv:score "8.9743912";
+  gv:coverage "0.96"
+], [
+  gv:hex "83755d";
+  gv:red "131";
+  gv:blue "93";
+  gv:green "117";
+  gv:score "7.928703";
+  gv:coverage "2.3133334"
+], [
+  gv:hex "a89879";
+  gv:red "168";
+  gv:blue "121";
+  gv:green "152";
+  gv:score "6.737151";
+  gv:coverage "3.4933332"
+], [
+  gv:hex "714738";
+  gv:red "113";
+  gv:blue "56";
+  gv:green "71";
+  gv:score "6.4569794";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "ab9d69";
+  gv:red "171";
+  gv:blue "105";
+  gv:green "157";
+  gv:score "4.5073282";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "3c341d";
+  gv:red "60";
+  gv:blue "29";
+  gv:green "52";
+  gv:score "4.369802";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "9b6657";
+  gv:red "155";
+  gv:blue "87";
+  gv:green "102";
+  gv:score "4.0648296";
+  gv:coverage "0.24666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.645045"
+];
+    w:bagOfWords "ARTI GRAR FELI BONETTI NILANO\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

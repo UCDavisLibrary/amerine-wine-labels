@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0238";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "family BRAND\nrest\nALCOHOL 13%\nNET CONTENTS\nPRODUCED & BOTTLED BY\nBY VOLUME\n1 AT. B FL 02.\nSAN BENITO WINERY\nHOLLISTER, CALIFORNIA\nCROCKER UNION, S. F\n"@eng;
+    gv:color [
+  gv:hex "cbbda9";
+  gv:red "203";
+  gv:blue "169";
+  gv:green "189";
+  gv:score "20.309554";
+  gv:coverage "36.766666"
+], [
+  gv:hex "6d4631";
+  gv:red "109";
+  gv:blue "49";
+  gv:green "70";
+  gv:score "6.6927693999999995";
+  gv:coverage "0.24"
+], [
+  gv:hex "691b0d";
+  gv:red "105";
+  gv:blue "13";
+  gv:green "27";
+  gv:score "4.5790732";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "cbc1b6";
+  gv:red "203";
+  gv:blue "182";
+  gv:green "193";
+  gv:score "13.246709000000001";
+  gv:coverage "24.733333"
+], [
+  gv:hex "ab9d8b";
+  gv:red "171";
+  gv:blue "139";
+  gv:green "157";
+  gv:score "8.8814765";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "a99f95";
+  gv:red "169";
+  gv:blue "149";
+  gv:green "159";
+  gv:score "6.659814";
+  gv:coverage "1.7066667"
+], [
+  gv:hex "5f523e";
+  gv:red "95";
+  gv:blue "62";
+  gv:green "82";
+  gv:score "6.1860159";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "914335";
+  gv:red "145";
+  gv:blue "53";
+  gv:green "67";
+  gv:score "4.7293924";
+  gv:coverage "0.08"
+], [
+  gv:hex "837766";
+  gv:red "131";
+  gv:blue "102";
+  gv:green "119";
+  gv:score "4.51799";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "3f3522";
+  gv:red "63";
+  gv:blue "34";
+  gv:green "53";
+  gv:score "4.286392800000001";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.214105"
+];
+    w:bagOfWords "family BRAND\nrest\nALCOHOL 13%\nNET CONTENTS\nPRODUCED & BOTTLED BY\nBY VOLUME\n1 AT. B FL 02.\nSAN BENITO WINERY\nHOLLISTER, CALIFORNIA\nCROCKER UNION, S. F\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

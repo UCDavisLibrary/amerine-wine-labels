@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3120";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "MARQUE\nDEPOSEE\nCALVETO\nREGISTERED TRADE MARK\n1949\nCHATEAU LES HEAULMES\nCOTES DE BOURG\nAPPELLATION COTES DE BOURG CONTROLEE\nExpédié en barriques par\nJ. CALVET & Cie, BORDEAUX\nPRODUCE OF FRANCE\nMODEL\nDEPOSE N' 2\n"@fra;
+    gv:color [
+  gv:hex "d6be9c";
+  gv:red "214";
+  gv:blue "156";
+  gv:green "190";
+  gv:score "18.845281";
+  gv:coverage "19.32"
+], [
+  gv:hex "6b5527";
+  gv:red "107";
+  gv:blue "39";
+  gv:green "85";
+  gv:score "17.68214";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "1e0e07";
+  gv:red "30";
+  gv:blue "7";
+  gv:green "14";
+  gv:score "0.55973521";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "8a7345";
+  gv:red "138";
+  gv:blue "69";
+  gv:green "115";
+  gv:score "16.7708";
+  gv:coverage "1.6866666999999997"
+], [
+  gv:hex "b09a78";
+  gv:red "176";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "14.583386";
+  gv:coverage "3.82"
+], [
+  gv:hex "b09769";
+  gv:red "176";
+  gv:blue "105";
+  gv:green "151";
+  gv:score "11.419176";
+  gv:coverage "1.38"
+], [
+  gv:hex "8c7856";
+  gv:red "140";
+  gv:blue "86";
+  gv:green "120";
+  gv:score "6.4250864000000005";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "655331";
+  gv:red "101";
+  gv:blue "49";
+  gv:green "83";
+  gv:score "3.4210268000000004";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "d7b98c";
+  gv:red "215";
+  gv:blue "140";
+  gv:green "185";
+  gv:score "2.9529782";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "efd9ba";
+  gv:red "239";
+  gv:blue "186";
+  gv:green "217";
+  gv:score "1.5227317";
+  gv:coverage "4.4066668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.384508000000004"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.631099999999996"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "50.782019"
+];
+    w:bagOfWords "MARQUE\nDEPOSEE\nCALVETO\nREGISTERED TRADE MARK\n1949\nCHATEAU LES HEAULMES\nCOTES DE BOURG\nAPPELLATION COTES DE BOURG CONTROLEE\nExpédié en barriques par\nJ. CALVET & Cie, BORDEAUX\nPRODUCE OF FRANCE\nMODEL\nDEPOSE N' 2\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

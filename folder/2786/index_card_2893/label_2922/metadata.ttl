@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2922";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "GRAND VIN D'ALSACE\nMI US. CAT\nJ. BECh ER\nPROPRIETAIREA ZELLENBERG\nR HIN\n"@fra;
+    gv:color [
+  gv:hex "deb980";
+  gv:red "222";
+  gv:blue "128";
+  gv:green "185";
+  gv:score "7.5206123";
+  gv:coverage "3.2266665"
+], [
+  gv:hex "d29945";
+  gv:red "210";
+  gv:blue "69";
+  gv:green "153";
+  gv:score "7.1626975999999996";
+  gv:coverage "1.68"
+], [
+  gv:hex "6c7b5e";
+  gv:red "108";
+  gv:blue "94";
+  gv:green "123";
+  gv:score "4.482881";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "d5bc98";
+  gv:red "213";
+  gv:blue "152";
+  gv:green "188";
+  gv:score "7.482762599999999";
+  gv:coverage "6.64"
+], [
+  gv:hex "dfb45a";
+  gv:red "223";
+  gv:blue "90";
+  gv:green "180";
+  gv:score "6.3778743";
+  gv:coverage "0.96"
+], [
+  gv:hex "e3b07a";
+  gv:red "227";
+  gv:blue "122";
+  gv:green "176";
+  gv:score "6.3315183";
+  gv:coverage "3.36"
+], [
+  gv:hex "c99663";
+  gv:red "201";
+  gv:blue "99";
+  gv:green "150";
+  gv:score "5.9644636";
+  gv:coverage "2.8866666999999997"
+], [
+  gv:hex "e6ac55";
+  gv:red "230";
+  gv:blue "85";
+  gv:green "172";
+  gv:score "5.907148100000001";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "ac9b77";
+  gv:red "172";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "5.4650944";
+  gv:coverage "2.6599999999999997"
+], [
+  gv:hex "b79865";
+  gv:red "183";
+  gv:blue "101";
+  gv:green "152";
+  gv:score "4.1648629999999995";
+  gv:coverage "2.1533333000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.0868"
+];
+    w:bagOfWords "GRAND VIN D'ALSACE\nMI US. CAT\nJ. BECh ER\nPROPRIETAIREA ZELLENBERG\nR HIN\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

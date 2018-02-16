@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1226";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "A BRANDY\nBRANDY\nBE LA\nANTA MARIA\nOSBORNEYCA\nPUERTO D TA\nMARIA\nGRAFICAS ANDA UZAS PTO STA MARIA\n"@spa;
+    gv:color [
+  gv:hex "debf8c";
+  gv:red "222";
+  gv:blue "140";
+  gv:green "191";
+  gv:score "44.239017000000004";
+  gv:coverage "25.746667000000002"
+], [
+  gv:hex "455067";
+  gv:red "69";
+  gv:blue "103";
+  gv:green "80";
+  gv:score "2.2742542";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "83381a";
+  gv:red "131";
+  gv:blue "26";
+  gv:green "56";
+  gv:score "0.81222542";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "311500";
+  gv:red "49";
+  gv:blue "undefined";
+  gv:green "21";
+  gv:score "0.30978099";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "b89c6c";
+  gv:red "184";
+  gv:blue "108";
+  gv:green "156";
+  gv:score "9.831864399999999";
+  gv:coverage "3.7733335"
+], [
+  gv:hex "d5be98";
+  gv:red "213";
+  gv:blue "152";
+  gv:green "190";
+  gv:score "8.9129217";
+  gv:coverage "6.7533337"
+], [
+  gv:hex "907344";
+  gv:red "144";
+  gv:blue "68";
+  gv:green "115";
+  gv:score "7.3510423000000005";
+  gv:coverage "2.1666666"
+], [
+  gv:hex "ae9a79";
+  gv:red "174";
+  gv:blue "121";
+  gv:green "154";
+  gv:score "6.906569";
+  gv:coverage "2.4733333"
+], [
+  gv:hex "ebb88d";
+  gv:red "235";
+  gv:blue "141";
+  gv:green "184";
+  gv:score "2.7277495999999997";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "8c795d";
+  gv:red "140";
+  gv:blue "93";
+  gv:green "121";
+  gv:score "2.6094813";
+  gv:coverage "1.0866666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.9509"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.970286"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.656493"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.57294"
+];
+    w:bagOfWords "A BRANDY\nBRANDY\nBE LA\nANTA MARIA\nOSBORNEYCA\nPUERTO D TA\nMARIA\nGRAFICAS ANDA UZAS PTO STA MARIA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

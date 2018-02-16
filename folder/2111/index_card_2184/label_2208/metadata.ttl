@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2208";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "DELAND DISTRICT\nT. M. REG. U. S. PAT. OFF.\nALCOHOL 20% BY VOLUME\nWIT\nINDUSTRIES LT D. B. W. No. 52, 14 TH DI\n"@eng;
+    gv:color [
+  gv:hex "d1c3ad";
+  gv:red "209";
+  gv:blue "173";
+  gv:green "195";
+  gv:score "33.091447";
+  gv:coverage "28.126666"
+], [
+  gv:hex "a89b86";
+  gv:red "168";
+  gv:blue "134";
+  gv:green "155";
+  gv:score "21.013042000000002";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "9d9f97";
+  gv:red "157";
+  gv:blue "151";
+  gv:green "159";
+  gv:score "16.313195";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "eadbc4";
+  gv:red "234";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "6.6995181";
+  gv:coverage "10.466667000000001"
+], [
+  gv:hex "c5c1b8";
+  gv:red "197";
+  gv:blue "184";
+  gv:green "193";
+  gv:score "6.6993065000000005";
+  gv:coverage "5.7333332"
+], [
+  gv:hex "7a7b74";
+  gv:red "122";
+  gv:blue "116";
+  gv:green "123";
+  gv:score "6.5593883";
+  gv:coverage "0.72"
+], [
+  gv:hex "847966";
+  gv:red "132";
+  gv:blue "102";
+  gv:green "121";
+  gv:score "5.2367322000000005";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "5e5543";
+  gv:red "94";
+  gv:blue "67";
+  gv:green "85";
+  gv:score "1.5374494";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "585a51";
+  gv:red "88";
+  gv:blue "81";
+  gv:green "90";
+  gv:score "1.4882944";
+  gv:coverage "0.16"
+], [
+  gv:hex "e2dcd1";
+  gv:red "226";
+  gv:blue "209";
+  gv:green "220";
+  gv:score "0.67669852";
+  gv:coverage "49.76"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.001596"
+];
+    w:bagOfWords "DELAND DISTRICT\nT. M. REG. U. S. PAT. OFF.\nALCOHOL 20% BY VOLUME\nWIT\nINDUSTRIES LT D. B. W. No. 52, 14 TH DI\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

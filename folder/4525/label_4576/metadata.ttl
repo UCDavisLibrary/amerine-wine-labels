@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4576";
+    dct:type "image";
+    w:bagOfWords "FINO VINA ABS\n1569981 N\nt.IT. BARR oro. JERE2.\n"@spa;
+    gv:color [
+  gv:hex "a1988e";
+  gv:red "161";
+  gv:blue "142";
+  gv:green "152";
+  gv:score "35.631159000000004";
+  gv:coverage "3.2066666"
+], [
+  gv:hex "cdc4ba";
+  gv:red "205";
+  gv:blue "186";
+  gv:green "196";
+  gv:score "29.202645999999998";
+  gv:coverage "17.553334"
+], [
+  gv:hex "e6dcd2";
+  gv:red "230";
+  gv:blue "210";
+  gv:green "220";
+  gv:score "17.586658999999997";
+  gv:coverage "70.84"
+], [
+  gv:hex "847b72";
+  gv:red "132";
+  gv:blue "114";
+  gv:green "123";
+  gv:score "16.268368";
+  gv:coverage "1.8933333"
+], [
+  gv:hex "3a3125";
+  gv:red "58";
+  gv:blue "37";
+  gv:green "49";
+  gv:score "0.019835179999999997";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "cbc2b3";
+  gv:red "203";
+  gv:blue "179";
+  gv:green "194";
+  gv:score "0.46572872";
+  gv:coverage "4.1466668"
+], [
+  gv:hex "625a50";
+  gv:red "98";
+  gv:blue "80";
+  gv:green "90";
+  gv:score "0.38293854";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "9c9284";
+  gv:red "156";
+  gv:blue "132";
+  gv:green "146";
+  gv:score "0.26541471";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "867d6e";
+  gv:red "134";
+  gv:blue "110";
+  gv:green "125";
+  gv:score "0.16978837000000002";
+  gv:coverage "0.06"
+], [
+  gv:hex "473f34";
+  gv:red "71";
+  gv:blue "52";
+  gv:green "63";
+  gv:score "0.00746244";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "84.67438200000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.241141"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "63.62989999999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.277345"
+];
+    w:bagOfWords "FINO VINA ABS\n1569981 N\nt.IT. BARR oro. JERE2.\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

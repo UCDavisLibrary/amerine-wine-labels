@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2746";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "ALCOHOL 1 20 2 olo BY VOLUME\nContents 12 112 Fluid ounces\nRhone Gold\nPRODUCT OF FRANCE RED WINE\nBOTTLED IN FRANCE\nREYNARD C VALENCE\n"@fra;
+    gv:color [
+  gv:hex "e0c49d";
+  gv:red "224";
+  gv:blue "157";
+  gv:green "196";
+  gv:score "46.964863";
+  gv:coverage "20.753332999999998"
+], [
+  gv:hex "4d2f08";
+  gv:red "77";
+  gv:blue "8";
+  gv:green "47";
+  gv:score "0.57692211";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "dfbe91";
+  gv:red "223";
+  gv:blue "145";
+  gv:green "190";
+  gv:score "20.289284";
+  gv:coverage "6.4066662999999995"
+], [
+  gv:hex "b39873";
+  gv:red "179";
+  gv:blue "115";
+  gv:green "152";
+  gv:score "7.6155543";
+  gv:coverage "2.5466667"
+], [
+  gv:hex "bb9b6e";
+  gv:red "187";
+  gv:blue "110";
+  gv:green "155";
+  gv:score "5.5017885";
+  gv:coverage "1.54"
+], [
+  gv:hex "8d7556";
+  gv:red "141";
+  gv:blue "86";
+  gv:green "117";
+  gv:score "3.8970456";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "8f7248";
+  gv:red "143";
+  gv:blue "72";
+  gv:green "114";
+  gv:score "3.7051175";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "f1d6b2";
+  gv:red "241";
+  gv:blue "178";
+  gv:green "214";
+  gv:score "2.8176007999999997";
+  gv:coverage "15.886667"
+], [
+  gv:hex "685339";
+  gv:red "104";
+  gv:blue "57";
+  gv:green "83";
+  gv:score "2.0906102";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "453118";
+  gv:red "69";
+  gv:blue "24";
+  gv:green "49";
+  gv:score "1.1920699";
+  gv:coverage "0.42"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "62.066871"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.841579"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "58.701800000000006"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.349943999999994"
+];
+    w:bagOfWords "ALCOHOL 1 20 2 olo BY VOLUME\nContents 12 112 Fluid ounces\nRhone Gold\nPRODUCT OF FRANCE RED WINE\nBOTTLED IN FRANCE\nREYNARD C VALENCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

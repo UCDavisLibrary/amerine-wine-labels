@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3932/label_3939";
+    dct:type "image";
+    w:bagOfWords "Original-\nR HEIN GAU Abfallmng\nRiesling\nGESETZLICH GESCROTZT\n"@deu;
+    gv:color [
+  gv:hex "807555";
+  gv:red "128";
+  gv:blue "85";
+  gv:green "117";
+  gv:score "7.87703";
+  gv:coverage "2.5733333000000003"
+], [
+  gv:hex "8b3a1b";
+  gv:red "139";
+  gv:blue "27";
+  gv:green "58";
+  gv:score "7.2483964";
+  gv:coverage "4.6866667"
+], [
+  gv:hex "d4bc99";
+  gv:red "212";
+  gv:blue "153";
+  gv:green "188";
+  gv:score "5.1774322999999995";
+  gv:coverage "7.806666900000001"
+], [
+  gv:hex "111207";
+  gv:red "17";
+  gv:blue "7";
+  gv:green "18";
+  gv:score "2.712521";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "5f5436";
+  gv:red "95";
+  gv:blue "54";
+  gv:green "84";
+  gv:score "7.3857933000000004";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "764622";
+  gv:red "118";
+  gv:blue "34";
+  gv:green "70";
+  gv:score "6.9105193";
+  gv:coverage "3.2466665"
+], [
+  gv:hex "687b57";
+  gv:red "104";
+  gv:blue "87";
+  gv:green "123";
+  gv:score "5.523075899999999";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "ae9a76";
+  gv:red "174";
+  gv:blue "118";
+  gv:green "154";
+  gv:score "4.8227958";
+  gv:coverage "2.06"
+], [
+  gv:hex "5a2f0c";
+  gv:red "90";
+  gv:blue "12";
+  gv:green "47";
+  gv:score "4.10013";
+  gv:coverage "1.7666666000000002"
+], [
+  gv:hex "39341a";
+  gv:red "57";
+  gv:blue "26";
+  gv:green "52";
+  gv:score "3.7532609000000003";
+  gv:coverage "0.9866667000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.530119"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "61.294872"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.963826999999995"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.329872"
+];
+    w:bagOfWords "Original-\nR HEIN GAU Abfallmng\nRiesling\nGESETZLICH GESCROTZT\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

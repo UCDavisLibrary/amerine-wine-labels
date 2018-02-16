@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1065";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "aminme\n"@deu;
+    gv:color [
+  gv:hex "ecdbcb";
+  gv:red "236";
+  gv:blue "203";
+  gv:green "219";
+  gv:score "36.12754";
+  gv:coverage "31.413334999999996"
+], [
+  gv:hex "8c3410";
+  gv:red "140";
+  gv:blue "16";
+  gv:green "52";
+  gv:score "2.2370994";
+  gv:coverage "0.4"
+], [
+  gv:hex "a82609";
+  gv:red "168";
+  gv:blue "9";
+  gv:green "38";
+  gv:score "1.8638812";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "9c6f3a";
+  gv:red "156";
+  gv:blue "58";
+  gv:green "111";
+  gv:score "1.0574423";
+  gv:coverage "3.0266667000000003"
+], [
+  gv:hex "e9ddd4";
+  gv:red "233";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "22.416850999999998";
+  gv:coverage "11.366667"
+], [
+  gv:hex "decab2";
+  gv:red "222";
+  gv:blue "178";
+  gv:green "202";
+  gv:score "20.167629";
+  gv:coverage "22.266667"
+], [
+  gv:hex "dad1c9";
+  gv:red "218";
+  gv:blue "201";
+  gv:green "209";
+  gv:score "7.920338200000001";
+  gv:coverage "4.64"
+], [
+  gv:hex "b69c7f";
+  gv:red "182";
+  gv:blue "127";
+  gv:green "156";
+  gv:score "1.6870383";
+  gv:coverage "1.06"
+], [
+  gv:hex "9c2d12";
+  gv:red "156";
+  gv:blue "18";
+  gv:green "45";
+  gv:score "0.95290625";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "8d745b";
+  gv:red "141";
+  gv:blue "91";
+  gv:green "116";
+  gv:score "0.80114668";
+  gv:coverage "0.42"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "56.747203999999996"
+];
+    w:bagOfWords "aminme\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

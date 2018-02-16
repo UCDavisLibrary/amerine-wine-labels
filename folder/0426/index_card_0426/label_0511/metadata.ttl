@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0511";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Johannisberger Gold\n1952 RHEIN GAU\nNo. 52187\nFASS\nORIGINAL ABFULLUNG\n"@deu;
+    gv:color [
+  gv:hex "e5c98e";
+  gv:red "229";
+  gv:blue "142";
+  gv:green "201";
+  gv:score "34.150669";
+  gv:coverage "9.193333200000001"
+], [
+  gv:hex "8c7542";
+  gv:red "140";
+  gv:blue "66";
+  gv:green "117";
+  gv:score "12.94505";
+  gv:coverage "4.26"
+], [
+  gv:hex "c44437";
+  gv:red "196";
+  gv:blue "55";
+  gv:green "68";
+  gv:score "1.7853378999999998";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "f5d89e";
+  gv:red "245";
+  gv:blue "158";
+  gv:green "216";
+  gv:score "11.540625";
+  gv:coverage "3.06"
+], [
+  gv:hex "b09862";
+  gv:red "176";
+  gv:blue "98";
+  gv:green "152";
+  gv:score "9.1853008";
+  gv:coverage "3.02"
+], [
+  gv:hex "5c415e";
+  gv:red "92";
+  gv:blue "94";
+  gv:green "65";
+  gv:score "0.068744872";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "6d5725";
+  gv:red "109";
+  gv:blue "37";
+  gv:green "87";
+  gv:score "4.5651712";
+  gv:coverage "1.7000000000000002"
+], [
+  gv:hex "bda9c5";
+  gv:red "189";
+  gv:blue "197";
+  gv:green "169";
+  gv:score "0.038683371";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "877854";
+  gv:red "135";
+  gv:blue "84";
+  gv:green "120";
+  gv:score "2.155678";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "f4bd82";
+  gv:red "244";
+  gv:blue "130";
+  gv:green "189";
+  gv:score "2.0672016";
+  gv:coverage "0.52666669"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "60.25641"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.3802"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "53.531938999999994"
+];
+    w:bagOfWords "Johannisberger Gold\n1952 RHEIN GAU\nNo. 52187\nFASS\nORIGINAL ABFULLUNG\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

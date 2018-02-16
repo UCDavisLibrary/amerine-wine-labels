@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2242/label_2254";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1918\nMARQUE\nDE Pos EE\nMIS EN BOUTEILLES\nA U CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "d4c0a8";
+  gv:red "212";
+  gv:blue "168";
+  gv:green "192";
+  gv:score "33.608076";
+  gv:coverage "17.88"
+], [
+  gv:hex "bd8b41";
+  gv:red "189";
+  gv:blue "65";
+  gv:green "139";
+  gv:score "6.805966";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "6c4d37";
+  gv:red "108";
+  gv:blue "55";
+  gv:green "77";
+  gv:score "1.4469668999999998";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "af9b82";
+  gv:red "175";
+  gv:blue "130";
+  gv:green "155";
+  gv:score "14.903884000000001";
+  gv:coverage "2.68"
+], [
+  gv:hex "c39f68";
+  gv:red "195";
+  gv:blue "104";
+  gv:green "159";
+  gv:score "14.575845000000001";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "d4b584";
+  gv:red "212";
+  gv:blue "132";
+  gv:green "181";
+  gv:score "7.809190000000001";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "ecdac4";
+  gv:red "236";
+  gv:blue "196";
+  gv:green "218";
+  gv:score "5.7850312";
+  gv:coverage "8.12"
+], [
+  gv:hex "8c7760";
+  gv:red "140";
+  gv:blue "96";
+  gv:green "119";
+  gv:score "4.3043103";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "c39654";
+  gv:red "195";
+  gv:blue "84";
+  gv:green "150";
+  gv:score "2.772554";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "c39b7e";
+  gv:red "195";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "1.5001577";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.191449"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.232994999999995"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.540323"
+];
+    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1918\nMARQUE\nDE Pos EE\nMIS EN BOUTEILLES\nA U CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

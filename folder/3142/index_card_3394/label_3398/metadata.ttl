@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3394/label_3398";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "VOLNAY\nPRODUCE OF TF\nCE\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDE POSE\n"@fra;
+    gv:color [
+  gv:hex "87745e";
+  gv:red "135";
+  gv:blue "94";
+  gv:green "116";
+  gv:score "23.5984";
+  gv:coverage "2.08"
+], [
+  gv:hex "984124";
+  gv:red "152";
+  gv:blue "36";
+  gv:green "65";
+  gv:score "1.2150031000000001";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "ac9a85";
+  gv:red "172";
+  gv:blue "133";
+  gv:green "154";
+  gv:score "20.762177";
+  gv:coverage "2.1399999999999997"
+], [
+  gv:hex "d0bea9";
+  gv:red "208";
+  gv:blue "169";
+  gv:green "190";
+  gv:score "15.635362";
+  gv:coverage "5.72"
+], [
+  gv:hex "6a5643";
+  gv:red "106";
+  gv:blue "67";
+  gv:green "86";
+  gv:score "7.6835303999999995";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "704d3c";
+  gv:red "112";
+  gv:blue "60";
+  gv:green "77";
+  gv:score "4.2056043";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "926e5f";
+  gv:red "146";
+  gv:blue "95";
+  gv:green "110";
+  gv:score "3.4860913";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "d2c3b9";
+  gv:red "210";
+  gv:blue "185";
+  gv:green "195";
+  gv:score "3.3735737";
+  gv:coverage "7.4333332"
+], [
+  gv:hex "ba9383";
+  gv:red "186";
+  gv:blue "131";
+  gv:green "147";
+  gv:score "3.3558663";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "eddcc7";
+  gv:red "237";
+  gv:blue "199";
+  gv:green "220";
+  gv:score "2.6681382";
+  gv:coverage "16.006666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.16990700000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "VOLNAY\nPRODUCE OF TF\nCE\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDE POSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

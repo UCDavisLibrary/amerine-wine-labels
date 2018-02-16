@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0980/label_1004";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "PROAVINS\ncVCTEURSDc\"\nDomherrenuein\n0111 herrenuem\nFENDAHT\nen\nSSIV7VA/70c\nVEDERAnoNi\n"@deu;
+    gv:color [
+  gv:hex "ddc4a1";
+  gv:red "221";
+  gv:blue "161";
+  gv:green "196";
+  gv:score "46.02682";
+  gv:coverage "20.54"
+], [
+  gv:hex "b0955d";
+  gv:red "176";
+  gv:blue "93";
+  gv:green "149";
+  gv:score "6.4451285";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "8d3825";
+  gv:red "141";
+  gv:blue "37";
+  gv:green "56";
+  gv:score "4.349396";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "eabb9f";
+  gv:red "234";
+  gv:blue "159";
+  gv:green "187";
+  gv:score "5.1909342";
+  gv:coverage "1.5133333"
+], [
+  gv:hex "9a2219";
+  gv:red "154";
+  gv:blue "25";
+  gv:green "34";
+  gv:score "4.0684368";
+  gv:coverage "0.22"
+], [
+  gv:hex "af9a78";
+  gv:red "175";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "3.8875937";
+  gv:coverage "1.9800000000000002"
+], [
+  gv:hex "917b45";
+  gv:red "145";
+  gv:blue "69";
+  gv:green "123";
+  gv:score "3.007976";
+  gv:coverage "0.6"
+], [
+  gv:hex "d8b88b";
+  gv:red "216";
+  gv:blue "139";
+  gv:green "184";
+  gv:score "2.9239127";
+  gv:coverage "2.58"
+], [
+  gv:hex "877656";
+  gv:red "135";
+  gv:blue "86";
+  gv:green "118";
+  gv:score "2.6869228";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "c09177";
+  gv:red "192";
+  gv:blue "119";
+  gv:green "145";
+  gv:score "2.2243302";
+  gv:coverage "0.52"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.665077000000004"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "PROAVINS\ncVCTEURSDc\"\nDomherrenuein\n0111 herrenuem\nFENDAHT\nen\nSSIV7VA/70c\nVEDERAnoNi\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

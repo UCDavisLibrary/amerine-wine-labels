@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4059/label_4060";
+    dct:type "image";
+    w:bagOfWords "ME DOC\nMIS EN BOUTEILLE AU CHATEAU\nCHRISTIAN de GUIGNE\nPROPRIETAIRE\n"@fra;
+    gv:color [
+  gv:hex "d6c0a2";
+  gv:red "214";
+  gv:blue "162";
+  gv:green "192";
+  gv:score "46.471533";
+  gv:coverage "33.466667"
+], [
+  gv:hex "d9b786";
+  gv:red "217";
+  gv:blue "134";
+  gv:green "183";
+  gv:score "12.202755999999999";
+  gv:coverage "1.8733334000000001"
+], [
+  gv:hex "b39d7d";
+  gv:red "179";
+  gv:blue "125";
+  gv:green "157";
+  gv:score "9.339766200000001";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "c3a16d";
+  gv:red "195";
+  gv:blue "109";
+  gv:green "161";
+  gv:score "8.102103300000001";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "cc9b65";
+  gv:red "204";
+  gv:blue "101";
+  gv:green "155";
+  gv:score "5.6777786";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "88755a";
+  gv:red "136";
+  gv:blue "90";
+  gv:green "117";
+  gv:score "4.1218183999999995";
+  gv:coverage "0.70666666"
+], [
+  gv:hex "dfb182";
+  gv:red "223";
+  gv:blue "130";
+  gv:green "177";
+  gv:score "2.4930141999999997";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "eedabf";
+  gv:red "238";
+  gv:blue "191";
+  gv:green "218";
+  gv:score "2.2063262999999997";
+  gv:coverage "9.54"
+], [
+  gv:hex "66523a";
+  gv:red "102";
+  gv:blue "58";
+  gv:green "82";
+  gv:score "2.1753875999999996";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "917347";
+  gv:red "145";
+  gv:blue "71";
+  gv:green "115";
+  gv:score "1.5907220999999998";
+  gv:coverage "0.12"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.935153"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.383219999999994"
+];
+    w:bagOfWords "ME DOC\nMIS EN BOUTEILLE AU CHATEAU\nCHRISTIAN de GUIGNE\nPROPRIETAIRE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

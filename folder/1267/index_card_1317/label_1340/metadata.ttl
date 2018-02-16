@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1340";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "UTO DE PORTUG\nFAIS CA\nVINHO ROSADO\nVIN ROSE\nFUNDADA EM1834\nAZEITAo SETUBAL PORTUGAL\nCL.\nc. R, SERVIR-SE\nFRIO\nB 92\n646-\nCONTENANCE\n"@por;
+    gv:color [
+  gv:hex "dfc09f";
+  gv:red "223";
+  gv:blue "159";
+  gv:green "192";
+  gv:score "42.557937";
+  gv:coverage "20.080000000000002"
+], [
+  gv:hex "bd9e7b";
+  gv:red "189";
+  gv:blue "123";
+  gv:green "158";
+  gv:score "11.39082";
+  gv:coverage "3.9066665"
+], [
+  gv:hex "e3b998";
+  gv:red "227";
+  gv:blue "152";
+  gv:green "185";
+  gv:score "9.900387400000001";
+  gv:coverage "2.12"
+], [
+  gv:hex "bf9777";
+  gv:red "191";
+  gv:blue "119";
+  gv:green "151";
+  gv:score "8.3779871";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "c39067";
+  gv:red "195";
+  gv:blue "103";
+  gv:green "144";
+  gv:score "4.9331382";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "f4d6b5";
+  gv:red "244";
+  gv:blue "181";
+  gv:green "214";
+  gv:score "4.5924932";
+  gv:coverage "16.36"
+], [
+  gv:hex "9e6b46";
+  gv:red "158";
+  gv:blue "70";
+  gv:green "107";
+  gv:score "4.2121116";
+  gv:coverage "0.5"
+], [
+  gv:hex "784622";
+  gv:red "120";
+  gv:blue "34";
+  gv:green "70";
+  gv:score "2.6801333";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "e8b58a";
+  gv:red "232";
+  gv:blue "138";
+  gv:green "181";
+  gv:score "2.1092534";
+  gv:coverage "0.26"
+], [
+  gv:hex "9a7454";
+  gv:red "154";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "1.6612656";
+  gv:coverage "0.37333333999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.368922"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.142619"
+];
+    w:bagOfWords "UTO DE PORTUG\nFAIS CA\nVINHO ROSADO\nVIN ROSE\nFUNDADA EM1834\nAZEITAo SETUBAL PORTUGAL\nCL.\nc. R, SERVIR-SE\nFRIO\nB 92\n646-\nCONTENANCE\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

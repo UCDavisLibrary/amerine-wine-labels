@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0500";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "1934er Hochheimer\nOriginal\nRHEINGAU\nGES.GESCHUTZT\nRheingot\nKirchen\nTrockenbeerauslese\nAbfullun\nH.J.MERTEN HOCH HEIM AM\n"@deu;
+    gv:color [
+  gv:hex "8f723e";
+  gv:red "143";
+  gv:blue "62";
+  gv:green "114";
+  gv:score "34.117755";
+  gv:coverage "12.993333000000002"
+], [
+  gv:hex "413016";
+  gv:red "65";
+  gv:blue "22";
+  gv:green "48";
+  gv:score "3.6947340000000004";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "b4945b";
+  gv:red "180";
+  gv:blue "91";
+  gv:green "148";
+  gv:score "17.142557";
+  gv:coverage "7.2266668"
+], [
+  gv:hex "6d5424";
+  gv:red "109";
+  gv:blue "36";
+  gv:green "84";
+  gv:score "16.442989";
+  gv:coverage "5.6133334"
+], [
+  gv:hex "d8bb7e";
+  gv:red "216";
+  gv:blue "126";
+  gv:green "187";
+  gv:score "8.0882788";
+  gv:coverage "4.6933334"
+], [
+  gv:hex "655133";
+  gv:red "101";
+  gv:blue "51";
+  gv:green "81";
+  gv:score "3.4375705";
+  gv:coverage "1.1466667"
+], [
+  gv:hex "887250";
+  gv:red "136";
+  gv:blue "80";
+  gv:green "114";
+  gv:score "2.827087";
+  gv:coverage "1.08"
+], [
+  gv:hex "4c350b";
+  gv:red "76";
+  gv:blue "11";
+  gv:green "53";
+  gv:score "2.3653625000000003";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "986f36";
+  gv:red "152";
+  gv:blue "54";
+  gv:green "111";
+  gv:score "1.7347873999999999";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "724c16";
+  gv:red "114";
+  gv:blue "22";
+  gv:green "76";
+  gv:score "1.5567954";
+  gv:coverage "0.58666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "80.922985"
+], [
+  gv:mid <https://g.co/kg/m/0fd6q>;
+  gv:desc "cash";
+  gv:score "78.652865"
+], [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "76.71248299999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.856991"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.915306"
+];
+    w:bagOfWords "1934er Hochheimer\nOriginal\nRHEINGAU\nGES.GESCHUTZT\nRheingot\nKirchen\nTrockenbeerauslese\nAbfullun\nH.J.MERTEN HOCH HEIM AM\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0255/label_0259";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "BOTTLE D IN CALI FOR NIA\nFOUNTAIN GROVE\nPINK FRAGRANT LIGHT WINE\nPRODUCED AND BOTTLED AT THE WINERY BY\nFOUNTAIN GROVE VINE YAR D\nSANTA ROSA. SONOMA COUNTY CALIFORNIA\nALCO H 0 L 12 1/2 BY V 0 LUME\n"@eng;
+    gv:color [
+  gv:hex "611d20";
+  gv:red "97";
+  gv:blue "32";
+  gv:green "29";
+  gv:score "20.151719";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "d2c3bb";
+  gv:red "210";
+  gv:blue "187";
+  gv:green "195";
+  gv:score "9.741960500000001";
+  gv:coverage "20.466666"
+], [
+  gv:hex "966965";
+  gv:red "150";
+  gv:blue "101";
+  gv:green "105";
+  gv:score "6.7340724000000005";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "130e09";
+  gv:red "19";
+  gv:blue "9";
+  gv:green "14";
+  gv:score "4.4971734";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "a89c95";
+  gv:red "168";
+  gv:blue "149";
+  gv:green "156";
+  gv:score "7.07894";
+  gv:coverage "2.2933334"
+], [
+  gv:hex "b89591";
+  gv:red "184";
+  gv:blue "145";
+  gv:green "149";
+  gv:score "6.4008355";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "9a7170";
+  gv:red "154";
+  gv:blue "112";
+  gv:green "113";
+  gv:score "6.206667400000001";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "582825";
+  gv:red "88";
+  gv:blue "37";
+  gv:green "40";
+  gv:score "5.8444243";
+  gv:coverage "0.86"
+], [
+  gv:hex "72413e";
+  gv:red "114";
+  gv:blue "62";
+  gv:green "65";
+  gv:score "5.0202359";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "e9dbd3";
+  gv:red "233";
+  gv:blue "211";
+  gv:green "219";
+  gv:score "3.7591219000000002";
+  gv:coverage "55.7"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.703166"
+];
+    w:bagOfWords "BOTTLE D IN CALI FOR NIA\nFOUNTAIN GROVE\nPINK FRAGRANT LIGHT WINE\nPRODUCED AND BOTTLED AT THE WINERY BY\nFOUNTAIN GROVE VINE YAR D\nSANTA ROSA. SONOMA COUNTY CALIFORNIA\nALCO H 0 L 12 1/2 BY V 0 LUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2198";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "NET CONTENTS\nESTABLISHED\n1883\nCALIFORNIA\nALCOHOL 20% BY VOLUME\nPRODUCED & BOTTLED BY\nALTA WINERY & DISTILLERY\nDINUBA, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
+    gv:color [
+  gv:hex "dcc6ac";
+  gv:red "220";
+  gv:blue "172";
+  gv:green "198";
+  gv:score "14.007897999999999";
+  gv:coverage "17.026667"
+], [
+  gv:hex "8c6f35";
+  gv:red "140";
+  gv:blue "53";
+  gv:green "111";
+  gv:score "9.5592722";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "b3645a";
+  gv:red "179";
+  gv:blue "90";
+  gv:green "100";
+  gv:score "8.808548";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "752316";
+  gv:red "117";
+  gv:blue "22";
+  gv:green "35";
+  gv:score "0.466482";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "f2b9ab";
+  gv:red "242";
+  gv:blue "171";
+  gv:green "185";
+  gv:score "10.393244";
+  gv:coverage "1.2066667"
+], [
+  gv:hex "d5857c";
+  gv:red "213";
+  gv:blue "124";
+  gv:green "133";
+  gv:score "6.241643799999999";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "c89082";
+  gv:red "200";
+  gv:blue "130";
+  gv:green "144";
+  gv:score "5.7646087999999995";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "efdac3";
+  gv:red "239";
+  gv:blue "195";
+  gv:green "218";
+  gv:score "5.1935557";
+  gv:coverage "15.346667"
+], [
+  gv:hex "a36a5c";
+  gv:red "163";
+  gv:blue "92";
+  gv:green "106";
+  gv:score "4.8512566999999995";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "775a20";
+  gv:red "119";
+  gv:blue "32";
+  gv:green "90";
+  gv:score "4.7719724";
+  gv:coverage "0.31333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.229317"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "NET CONTENTS\nESTABLISHED\n1883\nCALIFORNIA\nALCOHOL 20% BY VOLUME\nPRODUCED & BOTTLED BY\nALTA WINERY & DISTILLERY\nDINUBA, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

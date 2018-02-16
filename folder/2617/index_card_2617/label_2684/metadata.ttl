@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2684";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "MADE IN FRANCE\nAlcohol by voitimer:\nCHANUT FRERES\nRA DE\n(FRA\nON\nMACON\n"@fra;
+    gv:color [
+  gv:hex "512613";
+  gv:red "81";
+  gv:blue "19";
+  gv:green "38";
+  gv:score "25.909391";
+  gv:coverage "4.3933332"
+], [
+  gv:hex "764b22";
+  gv:red "118";
+  gv:blue "34";
+  gv:green "75";
+  gv:score "12.252097000000001";
+  gv:coverage "2.9333333"
+], [
+  gv:hex "dcbd9c";
+  gv:red "220";
+  gv:blue "156";
+  gv:green "189";
+  gv:score "8.213353900000001";
+  gv:coverage "24.813333"
+], [
+  gv:hex "be9377";
+  gv:red "190";
+  gv:blue "119";
+  gv:green "147";
+  gv:score "6.6220351";
+  gv:coverage "2.3733333"
+], [
+  gv:hex "744a34";
+  gv:red "116";
+  gv:blue "52";
+  gv:green "74";
+  gv:score "8.4095292";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "966d54";
+  gv:red "150";
+  gv:blue "84";
+  gv:green "109";
+  gv:score "6.0755603";
+  gv:coverage "2.0133332999999998"
+], [
+  gv:hex "562d0b";
+  gv:red "86";
+  gv:blue "11";
+  gv:green "45";
+  gv:score "5.5560450999999995";
+  gv:coverage "1.4866667"
+], [
+  gv:hex "92663e";
+  gv:red "146";
+  gv:blue "62";
+  gv:green "102";
+  gv:score "4.7419447";
+  gv:coverage "1.38"
+], [
+  gv:hex "deb496";
+  gv:red "222";
+  gv:blue "150";
+  gv:green "180";
+  gv:score "3.9293289000000002";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "682009";
+  gv:red "104";
+  gv:blue "9";
+  gv:green "32";
+  gv:score "3.4009255";
+  gv:coverage "0.44666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "75.263345"
+], [
+  gv:mid <https://g.co/kg/m/0dnr7>;
+  gv:desc "textile";
+  gv:score "54.165989"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.011185000000005"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.076071999999996"
+];
+    w:bagOfWords "MADE IN FRANCE\nAlcohol by voitimer:\nCHANUT FRERES\nRA DE\n(FRA\nON\nMACON\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

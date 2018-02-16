@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0907";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "DE\nLT\ndes Grands Crus de la Marne\nSiege Social a Champagne\nGRAND VIN DAY\nCHAMPAGNE\nContents 1 pint 10 fluid ounces\nAlcohol 11% by volume\n"@fra;
+    gv:color [
+  gv:hex "d3c5b5";
+  gv:red "211";
+  gv:blue "181";
+  gv:green "197";
+  gv:score "24.888101000000002";
+  gv:coverage "48"
+], [
+  gv:hex "eddfd3";
+  gv:red "237";
+  gv:blue "211";
+  gv:green "223";
+  gv:score "10.029317";
+  gv:coverage "10.48"
+], [
+  gv:hex "a99b8b";
+  gv:red "169";
+  gv:blue "139";
+  gv:green "155";
+  gv:score "23.812403";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "837667";
+  gv:red "131";
+  gv:blue "103";
+  gv:green "118";
+  gv:score "9.8261163";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "d5c7bb";
+  gv:red "213";
+  gv:blue "187";
+  gv:green "199";
+  gv:score "8.4510274";
+  gv:coverage "3.9266667999999996"
+], [
+  gv:hex "615446";
+  gv:red "97";
+  gv:blue "70";
+  gv:green "84";
+  gv:score "8.14202";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "e8dccb";
+  gv:red "232";
+  gv:blue "203";
+  gv:green "220";
+  gv:score "6.258598";
+  gv:coverage "34.239999999999995"
+], [
+  gv:hex "47392b";
+  gv:red "71";
+  gv:blue "43";
+  gv:green "57";
+  gv:score "2.9098457";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "ab9d92";
+  gv:red "171";
+  gv:blue "146";
+  gv:green "157";
+  gv:score "1.9967208";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "7f7167";
+  gv:red "127";
+  gv:blue "103";
+  gv:green "113";
+  gv:score "1.2825016999999999";
+  gv:coverage "0.08"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "73.124278"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.46763"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "DE\nLT\ndes Grands Crus de la Marne\nSiege Social a Champagne\nGRAND VIN DAY\nCHAMPAGNE\nContents 1 pint 10 fluid ounces\nAlcohol 11% by volume\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

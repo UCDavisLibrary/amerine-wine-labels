@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1567";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA\nVICTORIA\nMUCAR DE BARRA\n23\n"@spa;
+    gv:color [
+  gv:hex "d0c0a9";
+  gv:red "208";
+  gv:blue "169";
+  gv:green "192";
+  gv:score "21.033049000000002";
+  gv:coverage "32.78"
+], [
+  gv:hex "bd9493";
+  gv:red "189";
+  gv:blue "147";
+  gv:green "148";
+  gv:score "4.570475999999999";
+  gv:coverage "0.52"
+], [
+  gv:hex "78441d";
+  gv:red "120";
+  gv:blue "29";
+  gv:green "68";
+  gv:score "1.7013338999999998";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "9a181e";
+  gv:red "154";
+  gv:blue "30";
+  gv:green "24";
+  gv:score "1.3795325";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "64181b";
+  gv:red "100";
+  gv:blue "27";
+  gv:green "24";
+  gv:score "1.2353707";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "af9d85";
+  gv:red "175";
+  gv:blue "133";
+  gv:green "157";
+  gv:score "10.776079";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "d5be83";
+  gv:red "213";
+  gv:blue "131";
+  gv:green "190";
+  gv:score "5.1198062";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "cec5bc";
+  gv:red "206";
+  gv:blue "188";
+  gv:green "197";
+  gv:score "4.462397500000001";
+  gv:coverage "8.24"
+], [
+  gv:hex "8d775d";
+  gv:red "141";
+  gv:blue "93";
+  gv:green "119";
+  gv:score "3.8131561";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "e3bbba";
+  gv:red "227";
+  gv:blue "186";
+  gv:green "187";
+  gv:score "3.6787647999999997";
+  gv:coverage "0.55333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.122855"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MANZANILLA\nVICTORIA\nMUCAR DE BARRA\n23\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

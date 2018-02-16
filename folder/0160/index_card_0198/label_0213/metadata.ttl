@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0213";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "NET CONTENTS\n3/4 QUART\nBy VOLUME\nALCOHOL 12.5%\nP. P. I. Expos TION\nMEDALS OF HONOR\nAND GOLD MEDALS\nSAN FRANCES o\n1915\na ukmead\nCalifornia Cabernet\nBonded Winery\nPRODUCED AND BOTTLED By\n4th\nNo. 605\nIN A & co. Dist. Calif.\nF. SAL ST. HELENA. NAPA COUNTY. CA LIF.\nTAX PAID BY STA, MPs AFFIxED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "d5c0a4";
+  gv:red "213";
+  gv:blue "164";
+  gv:green "192";
+  gv:score "38.387093";
+  gv:coverage "33.379999999999995"
+], [
+  gv:hex "924337";
+  gv:red "146";
+  gv:blue "55";
+  gv:green "67";
+  gv:score "4.686863";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "522713";
+  gv:red "82";
+  gv:blue "19";
+  gv:green "39";
+  gv:score "3.574625";
+  gv:coverage "0.16"
+], [
+  gv:hex "b19b7e";
+  gv:red "177";
+  gv:blue "126";
+  gv:green "155";
+  gv:score "17.415752";
+  gv:coverage "3.18"
+], [
+  gv:hex "8a7457";
+  gv:red "138";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "9.443052100000001";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "685335";
+  gv:red "104";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "7.2124012";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "eedabe";
+  gv:red "238";
+  gv:blue "190";
+  gv:green "218";
+  gv:score "4.2392571";
+  gv:coverage "16.42"
+], [
+  gv:hex "764c37";
+  gv:red "118";
+  gv:blue "55";
+  gv:green "76";
+  gv:score "3.3247065";
+  gv:coverage "0.22"
+], [
+  gv:hex "ac584d";
+  gv:red "172";
+  gv:blue "77";
+  gv:green "88";
+  gv:score "2.1857569";
+  gv:coverage "0.06"
+], [
+  gv:hex "8c6950";
+  gv:red "140";
+  gv:blue "80";
+  gv:green "105";
+  gv:score "2.11331";
+  gv:coverage "0.12"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.314342"
+];
+    w:bagOfWords "NET CONTENTS\n3/4 QUART\nBy VOLUME\nALCOHOL 12.5%\nP. P. I. Expos TION\nMEDALS OF HONOR\nAND GOLD MEDALS\nSAN FRANCES o\n1915\na ukmead\nCalifornia Cabernet\nBonded Winery\nPRODUCED AND BOTTLED By\n4th\nNo. 605\nIN A & co. Dist. Calif.\nF. SAL ST. HELENA. NAPA COUNTY. CA LIF.\nTAX PAID BY STA, MPs AFFIxED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

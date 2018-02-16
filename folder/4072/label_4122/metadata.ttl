@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4122";
+    dct:type "image";
+    w:bagOfWords "PRIx\nGRAND PARIS\nEXPOSITION\nUNIVERS\nGRAVES\nher Cru\nBORDEAUX\nFRANCE\n"@fra;
+    gv:color [
+  gv:hex "120f09";
+  gv:red "18";
+  gv:blue "9";
+  gv:green "15";
+  gv:score "76.16537199999999";
+  gv:coverage "19.766666"
+], [
+  gv:hex "a8a19b";
+  gv:red "168";
+  gv:blue "155";
+  gv:green "161";
+  gv:score "0.6303573";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "36332b";
+  gv:red "54";
+  gv:blue "43";
+  gv:green "51";
+  gv:score "11.453619";
+  gv:coverage "2.4733333"
+], [
+  gv:hex "504c42";
+  gv:red "80";
+  gv:blue "66";
+  gv:green "76";
+  gv:score "3.8137011";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "3b3626";
+  gv:red "59";
+  gv:blue "38";
+  gv:green "54";
+  gv:score "3.1005206";
+  gv:coverage "0.54"
+], [
+  gv:hex "221d0e";
+  gv:red "34";
+  gv:blue "14";
+  gv:green "29";
+  gv:score "2.7607178";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "4f4b3a";
+  gv:red "79";
+  gv:blue "58";
+  gv:green "75";
+  gv:score "1.4089507";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "c6bfb6";
+  gv:red "198";
+  gv:blue "182";
+  gv:green "191";
+  gv:score "0.32623842999999997";
+  gv:coverage "3.5466667"
+], [
+  gv:hex "787369";
+  gv:red "120";
+  gv:blue "105";
+  gv:green "115";
+  gv:score "0.18992961";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "e5ded4";
+  gv:red "229";
+  gv:blue "212";
+  gv:green "222";
+  gv:score "0.15059235999999998";
+  gv:coverage "67.56"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.169393"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.604943999999996"
+];
+    w:bagOfWords "PRIx\nGRAND PARIS\nEXPOSITION\nUNIVERS\nGRAVES\nher Cru\nBORDEAUX\nFRANCE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

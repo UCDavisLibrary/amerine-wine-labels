@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1649";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "TRAB\nGARCIA\nOporto\nSuperior\nM GARCIA MONGE\nN. 33\nM BR\nSANLUCAR\n"@spa;
+    gv:color [
+  gv:hex "ecddcb";
+  gv:red "236";
+  gv:blue "203";
+  gv:green "221";
+  gv:score "40.531492";
+  gv:coverage "31.879999999999995"
+], [
+  gv:hex "7e090a";
+  gv:red "126";
+  gv:blue "10";
+  gv:green "9";
+  gv:score "2.4910055";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "715323";
+  gv:red "113";
+  gv:blue "35";
+  gv:green "83";
+  gv:score "1.7580781";
+  gv:coverage "0.54"
+], [
+  gv:hex "e9e1d9";
+  gv:red "233";
+  gv:blue "217";
+  gv:green "225";
+  gv:score "24.565326000000002";
+  gv:coverage "15.32"
+], [
+  gv:hex "dfcfbd";
+  gv:red "223";
+  gv:blue "189";
+  gv:green "207";
+  gv:score "15.506682999999999";
+  gv:coverage "17.48"
+], [
+  gv:hex "ddd1c5";
+  gv:red "221";
+  gv:blue "197";
+  gv:green "209";
+  gv:score "2.8003298";
+  gv:coverage "1.8333333"
+], [
+  gv:hex "921819";
+  gv:red "146";
+  gv:blue "25";
+  gv:green "24";
+  gv:score "1.8510852000000002";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "701806";
+  gv:red "112";
+  gv:blue "6";
+  gv:green "24";
+  gv:score "1.7619815";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "87341b";
+  gv:red "135";
+  gv:blue "27";
+  gv:green "52";
+  gv:score "1.5969124000000001";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "8e703f";
+  gv:red "142";
+  gv:blue "63";
+  gv:green "112";
+  gv:score "1.5285985";
+  gv:coverage "0.88"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.974742"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "TRAB\nGARCIA\nOporto\nSuperior\nM GARCIA MONGE\nN. 33\nM BR\nSANLUCAR\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

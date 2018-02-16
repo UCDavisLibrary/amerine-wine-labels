@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0016";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "REN BARRIER\nTINTO ANEJO ESPECIAL\nTARRAGONA\nR. E. 243\nTINTOS ELABORADOS\nBLANCOS ELA EORADOS\nRENE BAR BIER\nESPECIAL\nRENE BAR BIER\nESPECIAL\nPRIORATO ANEJO TINTO\nVINA AUGUSTA\nMIDULCE\n"@spa;
+    gv:color [
+  gv:hex "883736";
+  gv:red "136";
+  gv:blue "54";
+  gv:green "55";
+  gv:score "14.860009";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "af9e8e";
+  gv:red "175";
+  gv:blue "142";
+  gv:green "158";
+  gv:score "14.115243999999999";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "92713f";
+  gv:red "146";
+  gv:blue "63";
+  gv:green "113";
+  gv:score "12.850754";
+  gv:coverage "3.7199999999999998"
+], [
+  gv:hex "d3c1af";
+  gv:red "211";
+  gv:blue "175";
+  gv:green "193";
+  gv:score "13.372986000000001";
+  gv:coverage "18.553333"
+], [
+  gv:hex "651715";
+  gv:red "101";
+  gv:blue "21";
+  gv:green "23";
+  gv:score "10.322674";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "eddbc9";
+  gv:red "237";
+  gv:blue "201";
+  gv:green "219";
+  gv:score "7.386438500000001";
+  gv:coverage "55.58"
+], [
+  gv:hex "966d36";
+  gv:red "150";
+  gv:blue "54";
+  gv:green "109";
+  gv:score "6.2076844";
+  gv:coverage "1.9733334000000002"
+], [
+  gv:hex "e3b9ae";
+  gv:red "227";
+  gv:blue "174";
+  gv:green "185";
+  gv:score "4.83731";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "b3905c";
+  gv:red "179";
+  gv:blue "92";
+  gv:green "144";
+  gv:score "4.2761095";
+  gv:coverage "1.6"
+], [
+  gv:hex "a55453";
+  gv:red "165";
+  gv:blue "83";
+  gv:green "84";
+  gv:score "2.2119537";
+  gv:coverage "0.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "55.923122000000006"
+];
+    w:bagOfWords "REN BARRIER\nTINTO ANEJO ESPECIAL\nTARRAGONA\nR. E. 243\nTINTOS ELABORADOS\nBLANCOS ELA EORADOS\nRENE BAR BIER\nESPECIAL\nRENE BAR BIER\nESPECIAL\nPRIORATO ANEJO TINTO\nVINA AUGUSTA\nMIDULCE\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_2007";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "N. 23\nC. DE OTAOLAURRUCHI\nS a n l u c a r d e B a r r a m e d a\n"@spa;
+    gv:color [
+  gv:hex "d2bda8";
+  gv:red "210";
+  gv:blue "168";
+  gv:green "189";
+  gv:score "70.168442";
+  gv:coverage "61.933333000000005"
+], [
+  gv:hex "b19d88";
+  gv:red "177";
+  gv:blue "136";
+  gv:green "157";
+  gv:score "20.413812";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "8c7864";
+  gv:red "140";
+  gv:blue "100";
+  gv:green "120";
+  gv:score "4.8834424";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "6b5742";
+  gv:red "107";
+  gv:blue "66";
+  gv:green "87";
+  gv:score "2.4437757";
+  gv:coverage "0.16"
+], [
+  gv:hex "ead8c7";
+  gv:red "234";
+  gv:blue "199";
+  gv:green "216";
+  gv:score "0.9356130799999999";
+  gv:coverage "19.84"
+], [
+  gv:hex "412c18";
+  gv:red "65";
+  gv:blue "24";
+  gv:green "44";
+  gv:score "0.647983";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "ccbaae";
+  gv:red "204";
+  gv:blue "174";
+  gv:green "186";
+  gv:score "0.5069304299999999";
+  gv:coverage "4.8666667"
+], [
+  gv:hex "e6dad1";
+  gv:red "230";
+  gv:blue "209";
+  gv:green "218";
+  gv:score "0.0000020081542";
+  gv:coverage "11.533332999999999"
+], [
+  gv:hex "291c0c";
+  gv:red "41";
+  gv:blue "12";
+  gv:green "28";
+  gv:score "1.2622667e-9";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.75213"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.18874099999999"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "51.9626"
+];
+    w:bagOfWords "N. 23\nC. DE OTAOLAURRUCHI\nS a n l u c a r d e B a r r a m e d a\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

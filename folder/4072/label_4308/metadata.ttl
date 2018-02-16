@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4308";
+    dct:type "image";
+    w:bagOfWords "POUILLY FUISSE\nJoui faroche\nNEGOCIANT A NUITs ST GEORGES\nSHIPPED AND BOTTLED BY W. H. BAULY LTD., LONDON, EC.3\nPRODUCE OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "dfcbb1";
+  gv:red "223";
+  gv:blue "177";
+  gv:green "203";
+  gv:score "38.423863000000004";
+  gv:coverage "18.653333"
+], [
+  gv:hex "a96b4b";
+  gv:red "169";
+  gv:blue "75";
+  gv:green "107";
+  gv:score "3.1492468000000002";
+  gv:coverage "0.3"
+], [
+  gv:hex "ead7be";
+  gv:red "234";
+  gv:blue "190";
+  gv:green "215";
+  gv:score "25.008276000000002";
+  gv:coverage "15.453332999999999"
+], [
+  gv:hex "1b0903";
+  gv:red "27";
+  gv:blue "3";
+  gv:green "9";
+  gv:score "0.15992988";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "f2bea1";
+  gv:red "242";
+  gv:blue "161";
+  gv:green "190";
+  gv:score "7.5891584";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "ab9880";
+  gv:red "171";
+  gv:blue "128";
+  gv:green "152";
+  gv:score "5.6269996";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "87755e";
+  gv:red "135";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "3.2011553999999998";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "fed1b5";
+  gv:red "254";
+  gv:blue "181";
+  gv:green "209";
+  gv:score "2.476177";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "67563f";
+  gv:red "103";
+  gv:blue "63";
+  gv:green "86";
+  gv:score "2.1255855";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "e2d7cc";
+  gv:red "226";
+  gv:blue "204";
+  gv:green "215";
+  gv:score "1.9978328";
+  gv:coverage "52.39333499999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.634192"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "50.47674800000001"
+];
+    w:bagOfWords "POUILLY FUISSE\nJoui faroche\nNEGOCIANT A NUITs ST GEORGES\nSHIPPED AND BOTTLED BY W. H. BAULY LTD., LONDON, EC.3\nPRODUCE OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

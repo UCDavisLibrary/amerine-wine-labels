@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/label_1896";
+    dct:type "image";
+    w:bagOfWords "38\nAMONTILLADA FINA\nSANLUCARDE BARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "d0c5bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "197";
+  gv:score "30.004641";
+  gv:coverage "11.88"
+], [
+  gv:hex "3a3027";
+  gv:red "58";
+  gv:blue "39";
+  gv:green "48";
+  gv:score "4.5560688";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "e9dfd5";
+  gv:red "233";
+  gv:blue "213";
+  gv:green "223";
+  gv:score "29.580167000000003";
+  gv:coverage "32.48"
+], [
+  gv:hex "a69b92";
+  gv:red "166";
+  gv:blue "146";
+  gv:green "155";
+  gv:score "16.755016";
+  gv:coverage "2.4866667"
+], [
+  gv:hex "82776e";
+  gv:red "130";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "10.060693";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "5a5047";
+  gv:red "90";
+  gv:blue "71";
+  gv:green "80";
+  gv:score "4.4398278";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "1c130a";
+  gv:red "28";
+  gv:blue "10";
+  gv:green "19";
+  gv:score "3.7946325000000005";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "281e13";
+  gv:red "40";
+  gv:blue "19";
+  gv:green "30";
+  gv:score "0.37948512";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "cbbfaf";
+  gv:red "203";
+  gv:blue "175";
+  gv:green "191";
+  gv:score "0.12751302";
+  gv:coverage "17.553334"
+], [
+  gv:hex "5d5141";
+  gv:red "93";
+  gv:blue "65";
+  gv:green "81";
+  gv:score "0.095125556";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "69.330561"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.563385"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.385481"
+];
+    w:bagOfWords "38\nAMONTILLADA FINA\nSANLUCARDE BARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

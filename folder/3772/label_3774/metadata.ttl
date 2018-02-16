@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3772/label_3774";
+    dct:type "image";
+    w:bagOfWords "Kauzenberger Oranienberg\nSLI\n"@deu;
+    gv:color [
+  gv:hex "d8bd9d";
+  gv:red "216";
+  gv:blue "157";
+  gv:green "189";
+  gv:score "33.286491";
+  gv:coverage "22.873333000000002"
+], [
+  gv:hex "bb9376";
+  gv:red "187";
+  gv:blue "118";
+  gv:green "147";
+  gv:score "13.905597";
+  gv:coverage "2.8666666"
+], [
+  gv:hex "8a7544";
+  gv:red "138";
+  gv:blue "68";
+  gv:green "117";
+  gv:score "5.041546";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "b79c7d";
+  gv:red "183";
+  gv:blue "125";
+  gv:green "156";
+  gv:score "12.042219";
+  gv:coverage "2.6733333000000004"
+], [
+  gv:hex "9c7457";
+  gv:red "156";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "6.1804391";
+  gv:coverage "1.1066667000000001"
+], [
+  gv:hex "dbb397";
+  gv:red "219";
+  gv:blue "151";
+  gv:green "179";
+  gv:score "4.8453268000000005";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "f0d9ba";
+  gv:red "240";
+  gv:blue "186";
+  gv:green "217";
+  gv:score "4.6843395";
+  gv:coverage "16.473334"
+], [
+  gv:hex "8b7554";
+  gv:red "139";
+  gv:blue "84";
+  gv:green "117";
+  gv:score "4.3008085000000005";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "665539";
+  gv:red "102";
+  gv:blue "57";
+  gv:green "85";
+  gv:score "2.4464235";
+  gv:coverage "0.62"
+], [
+  gv:hex "d9be8c";
+  gv:red "217";
+  gv:blue "140";
+  gv:green "190";
+  gv:score "1.7355158999999998";
+  gv:coverage "0.79333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.441145"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.37808"
+];
+    w:bagOfWords "Kauzenberger Oranienberg\nSLI\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

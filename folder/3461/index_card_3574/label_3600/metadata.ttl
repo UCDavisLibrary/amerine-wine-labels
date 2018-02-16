@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3600";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "SELECT\nCharles\nNAPA VALLEY\nTRAMINER\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "aa9c83";
+  gv:red "170";
+  gv:blue "131";
+  gv:green "156";
+  gv:score "35.408172";
+  gv:coverage "3.8466666"
+], [
+  gv:hex "90a391";
+  gv:red "144";
+  gv:blue "145";
+  gv:green "163";
+  gv:score "3.3245563999999996";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "cdc1ad";
+  gv:red "205";
+  gv:blue "173";
+  gv:green "193";
+  gv:score "29.199904";
+  gv:coverage "24.026667"
+], [
+  gv:hex "857662";
+  gv:red "133";
+  gv:blue "98";
+  gv:green "118";
+  gv:score "10.701877999999999";
+  gv:coverage "1.3266666999999999"
+], [
+  gv:hex "e8dbc9";
+  gv:red "232";
+  gv:blue "201";
+  gv:green "219";
+  gv:score "5.7936691";
+  gv:coverage "7.2333336"
+], [
+  gv:hex "685a4a";
+  gv:red "104";
+  gv:blue "74";
+  gv:green "90";
+  gv:score "3.92898";
+  gv:coverage "0.5"
+], [
+  gv:hex "bbc2b1";
+  gv:red "187";
+  gv:blue "177";
+  gv:green "194";
+  gv:score "3.2741673";
+  gv:coverage "3.9266667999999996"
+], [
+  gv:hex "9ea595";
+  gv:red "158";
+  gv:blue "149";
+  gv:green "165";
+  gv:score "3.2651899999999996";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "8b9f89";
+  gv:red "139";
+  gv:blue "137";
+  gv:green "159";
+  gv:score "1.1802956";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "adc0ad";
+  gv:red "173";
+  gv:blue "173";
+  gv:green "192";
+  gv:score "1.0202019999999998";
+  gv:coverage "0.093333336"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.043157"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "SELECT\nCharles\nNAPA VALLEY\nTRAMINER\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

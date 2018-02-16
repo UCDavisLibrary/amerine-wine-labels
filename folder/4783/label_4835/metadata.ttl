@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4835";
+    dct:type "image";
+    w:bagOfWords "lefth am\n"@eng;
+    gv:color [
+  gv:hex "ad9c79";
+  gv:red "173";
+  gv:blue "121";
+  gv:green "156";
+  gv:score "29.095396";
+  gv:coverage "6.5666668"
+], [
+  gv:hex "6e4c24";
+  gv:red "110";
+  gv:blue "36";
+  gv:green "76";
+  gv:score "2.4452979";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "ceb690";
+  gv:red "206";
+  gv:blue "144";
+  gv:green "182";
+  gv:score "25.738612";
+  gv:coverage "6.306666900000001"
+], [
+  gv:hex "887957";
+  gv:red "136";
+  gv:blue "87";
+  gv:green "121";
+  gv:score "15.342544";
+  gv:coverage "3.9666668"
+], [
+  gv:hex "cdb184";
+  gv:red "205";
+  gv:blue "132";
+  gv:green "177";
+  gv:score "6.9412321";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "655737";
+  gv:red "101";
+  gv:blue "55";
+  gv:green "87";
+  gv:score "4.9019015999999995";
+  gv:coverage "1.28"
+], [
+  gv:hex "877448";
+  gv:red "135";
+  gv:blue "72";
+  gv:green "116";
+  gv:score "3.6202951999999997";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "52300d";
+  gv:red "82";
+  gv:blue "13";
+  gv:green "48";
+  gv:score "1.9678057999999998";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "bb9d70";
+  gv:red "187";
+  gv:blue "112";
+  gv:green "157";
+  gv:score "1.2555863";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "65552a";
+  gv:red "101";
+  gv:blue "42";
+  gv:green "85";
+  gv:score "1.1748946999999998";
+  gv:coverage "0.16666667000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "60.595137"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.457224"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "59.47367"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.079299999999996"
+];
+    w:bagOfWords "lefth am\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

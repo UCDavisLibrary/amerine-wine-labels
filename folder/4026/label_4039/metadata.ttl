@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4039";
+    dct:type "image";
+    w:bagOfWords "GAEIRAS\n"@por;
+    gv:color [
+  gv:hex "0a0807";
+  gv:red "10";
+  gv:blue "7";
+  gv:green "8";
+  gv:score "62.042140999999994";
+  gv:coverage "5.0266668"
+], [
+  gv:hex "555250";
+  gv:red "85";
+  gv:blue "80";
+  gv:green "82";
+  gv:score "9.34637";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "787573";
+  gv:red "120";
+  gv:blue "115";
+  gv:green "117";
+  gv:score "8.8802576";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "373433";
+  gv:red "55";
+  gv:blue "51";
+  gv:green "52";
+  gv:score "8.4405228";
+  gv:coverage "0.66"
+], [
+  gv:hex "9c9893";
+  gv:red "156";
+  gv:blue "147";
+  gv:green "152";
+  gv:score "5.1500283";
+  gv:coverage "0.5"
+], [
+  gv:hex "c9c3ba";
+  gv:red "201";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "3.9915159";
+  gv:coverage "4.6533335000000005"
+], [
+  gv:hex "e1dbd1";
+  gv:red "225";
+  gv:blue "209";
+  gv:green "219";
+  gv:score "2.1321828000000003";
+  gv:coverage "85.653335"
+], [
+  gv:hex "393327";
+  gv:red "57";
+  gv:blue "39";
+  gv:green "51";
+  gv:score "0.016828769";
+  gv:coverage "0.02"
+], [
+  gv:hex "ded8c8";
+  gv:red "222";
+  gv:blue "200";
+  gv:green "216";
+  gv:score "0.00015292037";
+  gv:coverage "1.4533333000000002"
+], [
+  gv:hex "dbd4c3";
+  gv:red "219";
+  gv:blue "195";
+  gv:green "212";
+  gv:score "7.09552e-8";
+  gv:coverage "0.5"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.835243000000006"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "50.21522"
+];
+    w:bagOfWords "GAEIRAS\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

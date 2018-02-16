@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1499";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA\nOLORO SA\na ARGUESO\nSENORITA\nMANUEL DE ARGUESo\nSANLUCAR DE BARRAMEDA\nEmbotellador num. 34.\n"@spa;
+    gv:color [
+  gv:hex "d5c0ab";
+  gv:red "213";
+  gv:blue "171";
+  gv:green "192";
+  gv:score "10.603816";
+  gv:coverage "26.613334"
+], [
+  gv:hex "671e1a";
+  gv:red "103";
+  gv:blue "26";
+  gv:green "30";
+  gv:score "10.001919";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "ae987f";
+  gv:red "174";
+  gv:blue "127";
+  gv:green "152";
+  gv:score "7.7528886";
+  gv:coverage "1.5133333"
+], [
+  gv:hex "8c775d";
+  gv:red "140";
+  gv:blue "93";
+  gv:green "119";
+  gv:score "7.0495464";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "e9baaa";
+  gv:red "233";
+  gv:blue "170";
+  gv:green "186";
+  gv:score "6.5372124000000005";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "9a6c5b";
+  gv:red "154";
+  gv:blue "91";
+  gv:green "108";
+  gv:score "6.260138799999999";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "764637";
+  gv:red "118";
+  gv:blue "55";
+  gv:green "70";
+  gv:score "5.5221338";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "853733";
+  gv:red "133";
+  gv:blue "51";
+  gv:green "55";
+  gv:score "5.3995725000000006";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "bf9080";
+  gv:red "191";
+  gv:blue "128";
+  gv:green "144";
+  gv:score "5.3207185";
+  gv:coverage "0.66"
+], [
+  gv:hex "55261a";
+  gv:red "85";
+  gv:blue "26";
+  gv:green "38";
+  gv:score "3.6750268000000004";
+  gv:coverage "0.31333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.92856"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MANZANILLA\nOLORO SA\na ARGUESO\nSENORITA\nMANUEL DE ARGUESo\nSANLUCAR DE BARRAMEDA\nEmbotellador num. 34.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

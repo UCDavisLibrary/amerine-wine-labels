@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4030";
+    dct:type "image";
+    w:bagOfWords "INSTITUTO DO VIN Ho DO PORTO\nVINHO DO PORTO\nOLD TAVVINY PORT\n"@por;
+    gv:color [
+  gv:hex "dec9b1";
+  gv:red "222";
+  gv:blue "177";
+  gv:green "201";
+  gv:score "73.337334";
+  gv:coverage "33.706668"
+], [
+  gv:hex "ebd6bf";
+  gv:red "235";
+  gv:blue "191";
+  gv:green "214";
+  gv:score "8.0573738";
+  gv:coverage "4.8466667999999995"
+], [
+  gv:hex "b29b85";
+  gv:red "178";
+  gv:blue "133";
+  gv:green "155";
+  gv:score "5.4724481";
+  gv:coverage "0.8"
+], [
+  gv:hex "88715b";
+  gv:red "136";
+  gv:blue "91";
+  gv:green "113";
+  gv:score "3.1462434999999997";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "e1baa4";
+  gv:red "225";
+  gv:blue "164";
+  gv:green "186";
+  gv:score "2.7958797";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "dcd1c6";
+  gv:red "220";
+  gv:blue "198";
+  gv:green "209";
+  gv:score "2.2495506";
+  gv:coverage "15.22"
+], [
+  gv:hex "c19681";
+  gv:red "193";
+  gv:blue "129";
+  gv:green "150";
+  gv:score "2.1136836999999997";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "e1d7cc";
+  gv:red "225";
+  gv:blue "204";
+  gv:green "215";
+  gv:score "1.1743463";
+  gv:coverage "44.113332"
+], [
+  gv:hex "6b553e";
+  gv:red "107";
+  gv:blue "62";
+  gv:green "85";
+  gv:score "0.86232228";
+  gv:coverage "0.08"
+], [
+  gv:hex "9f7865";
+  gv:red "159";
+  gv:blue "101";
+  gv:green "120";
+  gv:score "0.65077082";
+  gv:coverage "0.046666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.47190499999999"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.977206"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.814240999999996"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "53.910559"
+];
+    w:bagOfWords "INSTITUTO DO VIN Ho DO PORTO\nVINHO DO PORTO\nOLD TAVVINY PORT\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

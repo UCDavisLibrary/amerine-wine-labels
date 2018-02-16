@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2402";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "TRADE\nMARK\nCHATEAU LIVERSAN\nMédoe 1989\nAppellation MEDOC controlée\nED. BLANCHY8 IE\nBORDEAUX\nDéposE\n"@fra;
+    gv:color [
+  gv:hex "d5bfa8";
+  gv:red "213";
+  gv:blue "168";
+  gv:green "191";
+  gv:score "28.486245999999998";
+  gv:coverage "44.513333"
+], [
+  gv:hex "675235";
+  gv:red "103";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "14.238176";
+  gv:coverage "4.4533335"
+], [
+  gv:hex "e1b69f";
+  gv:red "225";
+  gv:blue "159";
+  gv:green "182";
+  gv:score "12.856503";
+  gv:coverage "1.44"
+], [
+  gv:hex "c2937d";
+  gv:red "194";
+  gv:blue "125";
+  gv:green "147";
+  gv:score "10.515988";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "b29c84";
+  gv:red "178";
+  gv:blue "132";
+  gv:green "156";
+  gv:score "9.3275912";
+  gv:coverage "2.4666666999999998"
+], [
+  gv:hex "836f53";
+  gv:red "131";
+  gv:blue "83";
+  gv:green "111";
+  gv:score "6.7195751";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "897142";
+  gv:red "137";
+  gv:blue "66";
+  gv:green "113";
+  gv:score "5.3872779";
+  gv:coverage "1.6733333"
+], [
+  gv:hex "46341f";
+  gv:red "70";
+  gv:blue "31";
+  gv:green "52";
+  gv:score "2.9027332";
+  gv:coverage "0.58"
+], [
+  gv:hex "70582f";
+  gv:red "112";
+  gv:blue "47";
+  gv:green "88";
+  gv:score "2.535315";
+  gv:coverage "0.66"
+], [
+  gv:hex "a67661";
+  gv:red "166";
+  gv:blue "97";
+  gv:green "118";
+  gv:score "2.518383";
+  gv:coverage "0.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.520165"
+];
+    w:bagOfWords "TRADE\nMARK\nCHATEAU LIVERSAN\nMédoe 1989\nAppellation MEDOC controlée\nED. BLANCHY8 IE\nBORDEAUX\nDéposE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

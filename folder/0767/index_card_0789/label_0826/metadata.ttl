@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0826";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "Vo UVRAY\nAPPELLATION CONTRO LEE\nR. BESNARD, Propriétaire-viticulteur-Neg\nCoteau de la Biche VOUVRAY(l..& L.)\n"@fra;
+    gv:color [
+  gv:hex "d7c2a3";
+  gv:red "215";
+  gv:blue "163";
+  gv:green "194";
+  gv:score "33.363667";
+  gv:coverage "8.4133334"
+], [
+  gv:hex "3e342b";
+  gv:red "62";
+  gv:blue "43";
+  gv:green "52";
+  gv:score "1.1997497";
+  gv:coverage "0.24"
+], [
+  gv:hex "b09b7c";
+  gv:red "176";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "9.2421308";
+  gv:coverage "2.2866666"
+], [
+  gv:hex "877356";
+  gv:red "135";
+  gv:blue "86";
+  gv:green "115";
+  gv:score "9.2152238";
+  gv:coverage "1.9133333"
+], [
+  gv:hex "dcbb8b";
+  gv:red "220";
+  gv:blue "139";
+  gv:green "187";
+  gv:score "9.070979999999999";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "695436";
+  gv:red "105";
+  gv:blue "54";
+  gv:green "84";
+  gv:score "6.4940999999999995";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "8c7445";
+  gv:red "140";
+  gv:blue "69";
+  gv:green "116";
+  gv:score "5.7388909";
+  gv:coverage "1.04"
+], [
+  gv:hex "ebd9c1";
+  gv:red "235";
+  gv:blue "193";
+  gv:green "217";
+  gv:score "4.3522485";
+  gv:coverage "6.313333699999999"
+], [
+  gv:hex "eaded4";
+  gv:red "234";
+  gv:blue "212";
+  gv:green "222";
+  gv:score "4.1268878";
+  gv:coverage "64.053333"
+], [
+  gv:hex "b7996a";
+  gv:red "183";
+  gv:blue "106";
+  gv:green "153";
+  gv:score "3.5108056";
+  gv:coverage "0.6"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.427806"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "50.901288"
+];
+    w:bagOfWords "Vo UVRAY\nAPPELLATION CONTRO LEE\nR. BESNARD, Propriétaire-viticulteur-Neg\nCoteau de la Biche VOUVRAY(l..& L.)\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

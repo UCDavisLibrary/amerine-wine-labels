@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1063";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "MONT OLLE\nECHALLENS\n"@deu;
+    gv:color [
+  gv:hex "d0ba82";
+  gv:red "208";
+  gv:blue "130";
+  gv:green "186";
+  gv:score "23.729748";
+  gv:coverage "6.8466663"
+], [
+  gv:hex "af9e63";
+  gv:red "175";
+  gv:blue "99";
+  gv:green "158";
+  gv:score "17.893224999999997";
+  gv:coverage "2.6666667"
+], [
+  gv:hex "d8bd97";
+  gv:red "216";
+  gv:blue "151";
+  gv:green "189";
+  gv:score "10.764862";
+  gv:coverage "35.633335"
+], [
+  gv:hex "897945";
+  gv:red "137";
+  gv:blue "69";
+  gv:green "121";
+  gv:score "9.11419";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "ad9872";
+  gv:red "173";
+  gv:blue "114";
+  gv:green "152";
+  gv:score "8.1262156";
+  gv:coverage "1.92"
+], [
+  gv:hex "877652";
+  gv:red "135";
+  gv:blue "82";
+  gv:green "118";
+  gv:score "6.552852700000001";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "645328";
+  gv:red "100";
+  gv:blue "40";
+  gv:green "83";
+  gv:score "5.1092736";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "615330";
+  gv:red "97";
+  gv:blue "48";
+  gv:green "83";
+  gv:score "5.0782513";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "403414";
+  gv:red "64";
+  gv:blue "20";
+  gv:green "52";
+  gv:score "3.0240218999999997";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "46370c";
+  gv:red "70";
+  gv:blue "12";
+  gv:green "55";
+  gv:score "2.4800308";
+  gv:coverage "0.33999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.520915"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.232888"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.697865"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.591"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.989810999999996"
+];
+    w:bagOfWords "MONT OLLE\nECHALLENS\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

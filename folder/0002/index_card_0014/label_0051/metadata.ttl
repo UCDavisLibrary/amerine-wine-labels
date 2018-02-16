@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0051";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "HEROIC A la\nVALDEPENAS\nCO SEC HERO Y\nEXPORTADOR DE VINO S\nTINTO\nE POSITO\nPi y ME, a r gall 11. TELEFONO NS 16\n"@spa;
+    gv:color [
+  gv:hex "cec4ba";
+  gv:red "206";
+  gv:blue "186";
+  gv:green "196";
+  gv:score "26.6758";
+  gv:coverage "12.733333"
+], [
+  gv:hex "b69289";
+  gv:red "182";
+  gv:blue "137";
+  gv:green "146";
+  gv:score "2.5814034";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "744f47";
+  gv:red "116";
+  gv:blue "71";
+  gv:green "79";
+  gv:score "1.7069025000000002";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "eaded5";
+  gv:red "234";
+  gv:blue "213";
+  gv:green "222";
+  gv:score "21.357782";
+  gv:coverage "72.88"
+], [
+  gv:hex "a69c92";
+  gv:red "166";
+  gv:blue "146";
+  gv:green "156";
+  gv:score "15.743607";
+  gv:coverage "2.3133334"
+], [
+  gv:hex "82776d";
+  gv:red "130";
+  gv:blue "109";
+  gv:green "119";
+  gv:score "8.0354072";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "5c5148";
+  gv:red "92";
+  gv:blue "72";
+  gv:green "81";
+  gv:score "7.6368295";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "3e342c";
+  gv:red "62";
+  gv:blue "44";
+  gv:green "52";
+  gv:score "4.5421924";
+  gv:coverage "1.16"
+], [
+  gv:hex "16100b";
+  gv:red "22";
+  gv:blue "11";
+  gv:green "16";
+  gv:score "4.4981927";
+  gv:coverage "3"
+], [
+  gv:hex "a49a8b";
+  gv:red "164";
+  gv:blue "139";
+  gv:green "154";
+  gv:score "1.2330825";
+  gv:coverage "0.17333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "79.792261"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "75.8947"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.543442"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "61.490846"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "HEROIC A la\nVALDEPENAS\nCO SEC HERO Y\nEXPORTADOR DE VINO S\nTINTO\nE POSITO\nPi y ME, a r gall 11. TELEFONO NS 16\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

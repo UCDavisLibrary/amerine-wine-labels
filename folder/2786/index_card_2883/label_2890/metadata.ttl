@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2883/label_2890";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "I M PORTED FROM FRANCE\nCONTENTS 3/4 PT\nALCOHOL\n5% BY VOLUME\nPAUL ROSSIGNEUX\nMARQUE DE PO SEE\nDRY SEMI LLON\nAPPELLATION BORDEAUX CONTROLEEw\n(WHITE BORDEAUX WINE MADE FROM SEMILLO\nGRARES)\nSHIPPED BY\nPAUL ROSSIGNEUX & Co\nNEGOCIANTS A BORDEAUX CGIRON DE\nFRANCE\n"@fra;
+    gv:color [
+  gv:hex "d9c3ae";
+  gv:red "217";
+  gv:blue "174";
+  gv:green "195";
+  gv:score "24.223755";
+  gv:coverage "16.8"
+], [
+  gv:hex "71230f";
+  gv:red "113";
+  gv:blue "15";
+  gv:green "35";
+  gv:score "2.3905763";
+  gv:coverage "0.08"
+], [
+  gv:hex "e3b7a5";
+  gv:red "227";
+  gv:blue "165";
+  gv:green "183";
+  gv:score "14.360099000000002";
+  gv:coverage "2.6"
+], [
+  gv:hex "c49584";
+  gv:red "196";
+  gv:blue "132";
+  gv:green "149";
+  gv:score "9.509927";
+  gv:coverage "1.4733333"
+], [
+  gv:hex "d5c4bb";
+  gv:red "213";
+  gv:blue "187";
+  gv:green "196";
+  gv:score "6.901540000000001";
+  gv:coverage "13.613332999999999"
+], [
+  gv:hex "b09c89";
+  gv:red "176";
+  gv:blue "137";
+  gv:green "156";
+  gv:score "6.2001172";
+  gv:coverage "1.82"
+], [
+  gv:hex "9b6c5e";
+  gv:red "155";
+  gv:blue "94";
+  gv:green "108";
+  gv:score "4.8319317";
+  gv:coverage "0.48"
+], [
+  gv:hex "784739";
+  gv:red "120";
+  gv:blue "57";
+  gv:green "71";
+  gv:score "4.717020000000001";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "eedac9";
+  gv:red "238";
+  gv:blue "201";
+  gv:green "218";
+  gv:score "3.2357908999999996";
+  gv:coverage "16.746667000000002"
+], [
+  gv:hex "734524";
+  gv:red "115";
+  gv:blue "36";
+  gv:green "69";
+  gv:score "2.275493";
+  gv:coverage "0.10666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "73.975539"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.429423"
+];
+    w:bagOfWords "I M PORTED FROM FRANCE\nCONTENTS 3/4 PT\nALCOHOL\n5% BY VOLUME\nPAUL ROSSIGNEUX\nMARQUE DE PO SEE\nDRY SEMI LLON\nAPPELLATION BORDEAUX CONTROLEEw\n(WHITE BORDEAUX WINE MADE FROM SEMILLO\nGRARES)\nSHIPPED BY\nPAUL ROSSIGNEUX & Co\nNEGOCIANTS A BORDEAUX CGIRON DE\nFRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

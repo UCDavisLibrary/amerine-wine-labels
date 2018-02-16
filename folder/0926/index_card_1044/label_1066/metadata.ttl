@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1044/label_1066";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "MONT\nOn\nBlanche\ntans Hostettler fohn\nBerne\n"@deu;
+    gv:color [
+  gv:hex "887451";
+  gv:red "136";
+  gv:blue "81";
+  gv:green "116";
+  gv:score "14.860712000000001";
+  gv:coverage "2.98"
+], [
+  gv:hex "64502f";
+  gv:red "100";
+  gv:blue "47";
+  gv:green "80";
+  gv:score "13.637723";
+  gv:coverage "2.5266666"
+], [
+  gv:hex "af9874";
+  gv:red "175";
+  gv:blue "116";
+  gv:green "152";
+  gv:score "13.562804";
+  gv:coverage "3.9533332"
+], [
+  gv:hex "423011";
+  gv:red "66";
+  gv:blue "17";
+  gv:green "48";
+  gv:score "11.81259";
+  gv:coverage "1.96"
+], [
+  gv:hex "d5be9c";
+  gv:red "213";
+  gv:blue "156";
+  gv:green "190";
+  gv:score "7.807043900000001";
+  gv:coverage "39.286666999999994"
+], [
+  gv:hex "b3996b";
+  gv:red "179";
+  gv:blue "107";
+  gv:green "153";
+  gv:score "6.164064300000001";
+  gv:coverage "0.84"
+], [
+  gv:hex "897347";
+  gv:red "137";
+  gv:blue "71";
+  gv:green "115";
+  gv:score "5.9371065000000005";
+  gv:coverage "0.67333332"
+], [
+  gv:hex "655228";
+  gv:red "101";
+  gv:blue "40";
+  gv:green "82";
+  gv:score "4.6589054";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "4a360f";
+  gv:red "74";
+  gv:blue "15";
+  gv:green "54";
+  gv:score "4.5667302";
+  gv:coverage "0.44"
+], [
+  gv:hex "2d1c01";
+  gv:red "45";
+  gv:blue "1";
+  gv:green "28";
+  gv:score "2.3025161";
+  gv:coverage "0.50666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.566443"
+];
+    w:bagOfWords "MONT\nOn\nBlanche\ntans Hostettler fohn\nBerne\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

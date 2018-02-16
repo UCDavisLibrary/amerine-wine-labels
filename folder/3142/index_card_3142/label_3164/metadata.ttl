@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3142/label_3164";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "CALVET\nBEAUNE (COTE D OR)\nChambe\nT te de Sure\n"@fra;
+    gv:color [
+  gv:hex "d4c3aa";
+  gv:red "212";
+  gv:blue "170";
+  gv:green "195";
+  gv:score "20.25584";
+  gv:coverage "18.84"
+], [
+  gv:hex "ad200a";
+  gv:red "173";
+  gv:blue "10";
+  gv:green "32";
+  gv:score "12.319136";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "f6775a";
+  gv:red "246";
+  gv:blue "90";
+  gv:green "119";
+  gv:score "5.0991703";
+  gv:coverage "0.1"
+], [
+  gv:hex "af9e85";
+  gv:red "175";
+  gv:blue "133";
+  gv:green "158";
+  gv:score "10.868665";
+  gv:coverage "3.3666666999999997"
+], [
+  gv:hex "ce4026";
+  gv:red "206";
+  gv:blue "38";
+  gv:green "64";
+  gv:score "8.444123000000001";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "d42b1b";
+  gv:red "212";
+  gv:blue "27";
+  gv:green "43";
+  gv:score "7.3429383";
+  gv:coverage "0.1"
+], [
+  gv:hex "bf1a0b";
+  gv:red "191";
+  gv:blue "11";
+  gv:green "26";
+  gv:score "4.1251719";
+  gv:coverage "0.06"
+], [
+  gv:hex "ca4e35";
+  gv:red "202";
+  gv:blue "53";
+  gv:green "78";
+  gv:score "4.0038537";
+  gv:coverage "0.08"
+], [
+  gv:hex "ebdac3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "218";
+  gv:score "3.9465897";
+  gv:coverage "14.899999999999999"
+], [
+  gv:hex "e48466";
+  gv:red "228";
+  gv:blue "102";
+  gv:green "132";
+  gv:score "3.6794599999999997";
+  gv:coverage "0.12"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.911066"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "CALVET\nBEAUNE (COTE D OR)\nChambe\nT te de Sure\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1654/label_1662";
+    dct:type "image";
+    w:bagOfWords "Saint Panteleimo12\nMEDIUM\nDRY WINE\nLIMASSOL, CYPRus\n"@eng;
+    gv:color [
+  gv:hex "dac3a9";
+  gv:red "218";
+  gv:blue "169";
+  gv:green "195";
+  gv:score "17.326695";
+  gv:coverage "8.04"
+], [
+  gv:hex "cf5561";
+  gv:red "207";
+  gv:blue "97";
+  gv:green "85";
+  gv:score "5.470917";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "e5ae58";
+  gv:red "229";
+  gv:blue "88";
+  gv:green "174";
+  gv:score "1.9575103999999999";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "774b21";
+  gv:red "119";
+  gv:blue "33";
+  gv:green "75";
+  gv:score "1.71365";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "121517";
+  gv:red "18";
+  gv:blue "23";
+  gv:green "21";
+  gv:score "0.68970146";
+  gv:coverage "0.54"
+], [
+  gv:hex "b29c80";
+  gv:red "178";
+  gv:blue "128";
+  gv:green "156";
+  gv:score "8.2148135";
+  gv:coverage "2.7533334"
+], [
+  gv:hex "c2987f";
+  gv:red "194";
+  gv:blue "127";
+  gv:green "152";
+  gv:score "4.9189918";
+  gv:coverage "1.8599999999999999"
+], [
+  gv:hex "dbc287";
+  gv:red "219";
+  gv:blue "135";
+  gv:green "194";
+  gv:score "4.5102455";
+  gv:coverage "1.38"
+], [
+  gv:hex "b29c65";
+  gv:red "178";
+  gv:blue "101";
+  gv:green "156";
+  gv:score "4.0933006";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "deb69f";
+  gv:red "222";
+  gv:blue "159";
+  gv:green "182";
+  gv:score "4.0607806";
+  gv:coverage "1.7933333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.827594999999995"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.296975999999994"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.244935999999996"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.445812000000004"
+];
+    w:bagOfWords "Saint Panteleimo12\nMEDIUM\nDRY WINE\nLIMASSOL, CYPRus\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "CYP".

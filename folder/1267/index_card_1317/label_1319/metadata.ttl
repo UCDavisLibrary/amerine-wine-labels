@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1319";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "DA7\nNHO\nVELHo\nVINISUL\nLISBOA\nMARCA\nREGISTAD\nTINT)\nLISBOA\n"@por;
+    gv:color [
+  gv:hex "d4c3aa";
+  gv:red "212";
+  gv:blue "170";
+  gv:green "195";
+  gv:score "19.549564";
+  gv:coverage "16.986667"
+], [
+  gv:hex "89713f";
+  gv:red "137";
+  gv:blue "63";
+  gv:green "113";
+  gv:score "6.9783129";
+  gv:coverage "1.4666666"
+], [
+  gv:hex "722010";
+  gv:red "114";
+  gv:blue "16";
+  gv:green "32";
+  gv:score "5.2196696000000005";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "ad9c81";
+  gv:red "173";
+  gv:blue "129";
+  gv:green "156";
+  gv:score "17.286205";
+  gv:coverage "3.9866667000000002"
+], [
+  gv:hex "8b785e";
+  gv:red "139";
+  gv:blue "94";
+  gv:green "120";
+  gv:score "6.302505699999999";
+  gv:coverage "1.6"
+], [
+  gv:hex "b59764";
+  gv:red "181";
+  gv:blue "100";
+  gv:green "151";
+  gv:score "4.7803722";
+  gv:coverage "1.04"
+], [
+  gv:hex "e8dbc4";
+  gv:red "232";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "4.6600454";
+  gv:coverage "5.0200000000000005"
+], [
+  gv:hex "883421";
+  gv:red "136";
+  gv:blue "33";
+  gv:green "52";
+  gv:score "4.5876682";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "c3947e";
+  gv:red "195";
+  gv:blue "126";
+  gv:green "148";
+  gv:score "3.9866403000000004";
+  gv:coverage "0.5"
+], [
+  gv:hex "a36e5c";
+  gv:red "163";
+  gv:blue "92";
+  gv:green "110";
+  gv:score "2.9285708";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.021709"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "DA7\nNHO\nVELHo\nVINISUL\nLISBOA\nMARCA\nREGISTAD\nTINT)\nLISBOA\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

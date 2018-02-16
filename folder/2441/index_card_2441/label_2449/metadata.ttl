@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2441/label_2449";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "Joannes Loron\nPROPRIETAIRE\nNEGOCIANT\nNE\nFLEURIE\nTIDeursault\nGOUTTE D'OR\nMIS EN BOUTEILLE\nDANS MES CAVES\nG. JEANB\nBIN\n"@fra;
+    gv:color [
+  gv:hex "ddc1a4";
+  gv:red "221";
+  gv:blue "164";
+  gv:green "193";
+  gv:score "49.176154";
+  gv:coverage "19.506666"
+], [
+  gv:hex "4a2a13";
+  gv:red "74";
+  gv:blue "19";
+  gv:green "42";
+  gv:score "9.9753566";
+  gv:coverage "2.8866666999999997"
+], [
+  gv:hex "813417";
+  gv:red "129";
+  gv:blue "23";
+  gv:green "52";
+  gv:score "6.872837199999999";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "331302";
+  gv:red "51";
+  gv:blue "2";
+  gv:green "19";
+  gv:score "5.6078095";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "b49779";
+  gv:red "180";
+  gv:blue "121";
+  gv:green "151";
+  gv:score "5.0069365999999995";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "6b4930";
+  gv:red "107";
+  gv:blue "48";
+  gv:green "73";
+  gv:score "4.415489";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "edd5bc";
+  gv:red "237";
+  gv:blue "188";
+  gv:green "213";
+  gv:score "3.531016";
+  gv:coverage "6.0333334"
+], [
+  gv:hex "e0b699";
+  gv:red "224";
+  gv:blue "153";
+  gv:green "182";
+  gv:score "3.2524161000000005";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "937759";
+  gv:red "147";
+  gv:blue "89";
+  gv:green "119";
+  gv:score "2.3833178";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "c09578";
+  gv:red "192";
+  gv:blue "120";
+  gv:green "149";
+  gv:score "2.0778408";
+  gv:coverage "0.52"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.723609"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Joannes Loron\nPROPRIETAIRE\nNEGOCIANT\nNE\nFLEURIE\nTIDeursault\nGOUTTE D'OR\nMIS EN BOUTEILLE\nDANS MES CAVES\nG. JEANB\nBIN\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

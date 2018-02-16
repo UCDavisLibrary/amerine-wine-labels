@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0115";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "NEL 1850\nCASA FON DATA\nCANELLI\nORNITORI DI\nM.IL RE ITALIA\nGPA NECC afl \"MILANO\n"@ita;
+    gv:color [
+  gv:hex "af987c";
+  gv:red "175";
+  gv:blue "124";
+  gv:green "152";
+  gv:score "24.040259";
+  gv:coverage "3.7933334999999997"
+], [
+  gv:hex "d6c0a7";
+  gv:red "214";
+  gv:blue "167";
+  gv:green "192";
+  gv:score "22.86547";
+  gv:coverage "12.7"
+], [
+  gv:hex "8e775a";
+  gv:red "142";
+  gv:blue "90";
+  gv:green "119";
+  gv:score "18.016624";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "efdbc5";
+  gv:red "239";
+  gv:blue "197";
+  gv:green "219";
+  gv:score "10.270458";
+  gv:coverage "11.573333"
+], [
+  gv:hex "ba947d";
+  gv:red "186";
+  gv:blue "125";
+  gv:green "148";
+  gv:score "3.7811041";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "957055";
+  gv:red "149";
+  gv:blue "85";
+  gv:green "112";
+  gv:score "3.5436798";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "f0e3d8";
+  gv:red "240";
+  gv:blue "216";
+  gv:green "227";
+  gv:score "2.5220281";
+  gv:coverage "63.013333"
+], [
+  gv:hex "d6c8bd";
+  gv:red "214";
+  gv:blue "189";
+  gv:green "200";
+  gv:score "2.4148528";
+  gv:coverage "3.6133334"
+], [
+  gv:hex "ddb6a4";
+  gv:red "221";
+  gv:blue "164";
+  gv:green "182";
+  gv:score "2.335239";
+  gv:coverage "0.76"
+], [
+  gv:hex "6f573b";
+  gv:red "111";
+  gv:blue "59";
+  gv:green "87";
+  gv:score "1.5408894";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.79206"
+];
+    w:bagOfWords "NEL 1850\nCASA FON DATA\nCANELLI\nORNITORI DI\nM.IL RE ITALIA\nGPA NECC afl \"MILANO\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0164";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID OUNCES\nPURE CALIFORNIA\nBURGUNDY\nWINE\nALCOHOLIC STRENGTH 12% BY VOLUME\nBOTTLED AT B\nW. No. 5 2\n1 TH PERMISSIVE\nDISTRICT, CALIF\nPERM\nCALIF A-91 1\n"@eng;
+    gv:color [
+  gv:hex "d1c39d";
+  gv:red "209";
+  gv:blue "157";
+  gv:green "195";
+  gv:score "24.747273";
+  gv:coverage "50.893330999999996"
+], [
+  gv:hex "ae975e";
+  gv:red "174";
+  gv:blue "94";
+  gv:green "151";
+  gv:score "16.861218";
+  gv:coverage "2.1733332"
+], [
+  gv:hex "899839";
+  gv:red "137";
+  gv:blue "57";
+  gv:green "152";
+  gv:score "4.983722";
+  gv:coverage "0.18"
+], [
+  gv:hex "957b42";
+  gv:red "149";
+  gv:blue "66";
+  gv:green "123";
+  gv:score "14.461405999999998";
+  gv:coverage "2.42"
+], [
+  gv:hex "cdbc86";
+  gv:red "205";
+  gv:blue "134";
+  gv:green "188";
+  gv:score "11.188747000000001";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "aa9971";
+  gv:red "170";
+  gv:blue "113";
+  gv:green "153";
+  gv:score "8.9769922";
+  gv:coverage "2.46"
+], [
+  gv:hex "9ba157";
+  gv:red "155";
+  gv:blue "87";
+  gv:green "161";
+  gv:score "4.9705282";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "c4c783";
+  gv:red "196";
+  gv:blue "131";
+  gv:green "199";
+  gv:score "4.3394554";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "e7dab5";
+  gv:red "231";
+  gv:blue "181";
+  gv:green "218";
+  gv:score "2.8681336";
+  gv:coverage "16.466666999999998"
+], [
+  gv:hex "7e8830";
+  gv:red "126";
+  gv:blue "48";
+  gv:green "136";
+  gv:score "1.5851471999999998";
+  gv:coverage "0.066666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.25215399999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID OUNCES\nPURE CALIFORNIA\nBURGUNDY\nWINE\nALCOHOLIC STRENGTH 12% BY VOLUME\nBOTTLED AT B\nW. No. 5 2\n1 TH PERMISSIVE\nDISTRICT, CALIF\nPERM\nCALIF A-91 1\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

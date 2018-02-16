@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1617/label_1622";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "BODEGAS\nDE LOS\nNFANTES\nORLEANS\nBORBON\nVIN A\nTORRE BRE VA.\nPON CHE\nANDA LUCIA\n(ES PANA)\nS AN LU CAR\nuti. Jere3 Industrial\n"@spa;
+    gv:color [
+  gv:hex "d81a22";
+  gv:red "216";
+  gv:blue "34";
+  gv:green "26";
+  gv:score "21.967585";
+  gv:coverage "8.673333399999999"
+], [
+  gv:hex "a46a13";
+  gv:red "164";
+  gv:blue "19";
+  gv:green "106";
+  gv:score "2.130756";
+  gv:coverage "0.3"
+], [
+  gv:hex "b7970e";
+  gv:red "183";
+  gv:blue "14";
+  gv:green "151";
+  gv:score "1.7788446999999998";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "d7c904";
+  gv:red "215";
+  gv:blue "4";
+  gv:green "201";
+  gv:score "1.4993228";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "e4857a";
+  gv:red "228";
+  gv:blue "122";
+  gv:green "133";
+  gv:score "1.4620194";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "142965";
+  gv:red "20";
+  gv:blue "101";
+  gv:green "41";
+  gv:score "1.1341162999999999";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "cfc2a7";
+  gv:red "207";
+  gv:blue "167";
+  gv:green "194";
+  gv:score "1.0597922";
+  gv:coverage "5.6533333"
+], [
+  gv:hex "7f765e";
+  gv:red "127";
+  gv:blue "94";
+  gv:green "118";
+  gv:score "0.90714786";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "11237d";
+  gv:red "17";
+  gv:blue "125";
+  gv:green "35";
+  gv:score "0.85336287";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "d92834";
+  gv:red "217";
+  gv:blue "52";
+  gv:green "40";
+  gv:score "15.947439999999999";
+  gv:coverage "5.3933333999999995"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.087997"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "BODEGAS\nDE LOS\nNFANTES\nORLEANS\nBORBON\nVIN A\nTORRE BRE VA.\nPON CHE\nANDA LUCIA\n(ES PANA)\nS AN LU CAR\nuti. Jere3 Industrial\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

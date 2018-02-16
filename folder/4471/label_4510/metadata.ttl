@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4471/label_4510";
+    dct:type "image";
+    w:bagOfWords "MARIANO\nCORT\nREGISTRADA\nmARGA\nC S E C H A, 19 42\num. 820 del Registro de Embotelladores.\n"@spa;
+    gv:color [
+  gv:hex "d7bd9b";
+  gv:red "215";
+  gv:blue "155";
+  gv:green "189";
+  gv:score "48.83928";
+  gv:coverage "28.126666"
+], [
+  gv:hex "b8976a";
+  gv:red "184";
+  gv:blue "106";
+  gv:green "151";
+  gv:score "14.318582";
+  gv:coverage "4.8533332"
+], [
+  gv:hex "ba9c77";
+  gv:red "186";
+  gv:blue "119";
+  gv:green "156";
+  gv:score "11.416822";
+  gv:coverage "4.7266666"
+], [
+  gv:hex "97764b";
+  gv:red "151";
+  gv:blue "75";
+  gv:green "118";
+  gv:score "5.9996918";
+  gv:coverage "2.18"
+], [
+  gv:hex "c19669";
+  gv:red "193";
+  gv:blue "105";
+  gv:green "150";
+  gv:score "4.6927635";
+  gv:coverage "2.1466667"
+], [
+  gv:hex "d5b386";
+  gv:red "213";
+  gv:blue "134";
+  gv:green "179";
+  gv:score "4.0231686";
+  gv:coverage "1.68"
+], [
+  gv:hex "987045";
+  gv:red "152";
+  gv:blue "69";
+  gv:green "112";
+  gv:score "3.4454111000000003";
+  gv:coverage "2.3266668"
+], [
+  gv:hex "715326";
+  gv:red "113";
+  gv:blue "38";
+  gv:green "83";
+  gv:score "1.7803771";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "d8ae82";
+  gv:red "216";
+  gv:blue "130";
+  gv:green "174";
+  gv:score "1.6896722999999998";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "735025";
+  gv:red "115";
+  gv:blue "37";
+  gv:green "80";
+  gv:score "1.4783800999999999";
+  gv:coverage "0.63333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.425875"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.580152999999996"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "51.221651"
+];
+    w:bagOfWords "MARIANO\nCORT\nREGISTRADA\nmARGA\nC S E C H A, 19 42\num. 820 del Registro de Embotelladores.\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

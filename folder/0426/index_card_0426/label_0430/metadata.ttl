@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0430";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "dung Sohne GmbH\nJ.J.S\nFR HE I N G A U\n1945 et\nRDmannsbauer Berg Riesling\n"@deu;
+    gv:color [
+  gv:hex "a49b92";
+  gv:red "164";
+  gv:blue "146";
+  gv:green "155";
+  gv:score "31.484339";
+  gv:coverage "7.3933333"
+], [
+  gv:hex "c9c0b7";
+  gv:red "201";
+  gv:blue "183";
+  gv:green "192";
+  gv:score "26.033723";
+  gv:coverage "14.366667"
+], [
+  gv:hex "81786f";
+  gv:red "129";
+  gv:blue "111";
+  gv:green "120";
+  gv:score "17.477696";
+  gv:coverage "4.2066667"
+], [
+  gv:hex "5e544b";
+  gv:red "94";
+  gv:blue "75";
+  gv:green "84";
+  gv:score "7.723552";
+  gv:coverage "1.9333333000000001"
+], [
+  gv:hex "e5dbd2";
+  gv:red "229";
+  gv:blue "210";
+  gv:green "219";
+  gv:score "4.9937103";
+  gv:coverage "21.3"
+], [
+  gv:hex "d9c7b1";
+  gv:red "217";
+  gv:blue "177";
+  gv:green "199";
+  gv:score "4.0844232";
+  gv:coverage "27.913332"
+], [
+  gv:hex "5b4d3e";
+  gv:red "91";
+  gv:blue "62";
+  gv:green "77";
+  gv:score "2.2744931";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "3f362c";
+  gv:red "63";
+  gv:blue "44";
+  gv:green "54";
+  gv:score "1.9243865999999998";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "a6998b";
+  gv:red "166";
+  gv:blue "139";
+  gv:green "153";
+  gv:score "1.2779661";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "44382b";
+  gv:red "68";
+  gv:blue "43";
+  gv:green "56";
+  gv:score "1.1466732";
+  gv:coverage "0.37333333999999996"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.342815"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.67538199999999"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.235693000000005"
+];
+    w:bagOfWords "dung Sohne GmbH\nJ.J.S\nFR HE I N G A U\n1945 et\nRDmannsbauer Berg Riesling\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

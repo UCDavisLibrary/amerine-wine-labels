@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1509";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "US\nATA LAYA\nVINA\nMAN ZA NIL LA\nVIUDA DE\nATA LAYA\nSANI UCAR DEBARRAMEDA\n"@spa;
+    gv:color [
+  gv:hex "d5c5b3";
+  gv:red "213";
+  gv:blue "179";
+  gv:green "197";
+  gv:score "18.940698";
+  gv:coverage "32.186666"
+], [
+  gv:hex "70493a";
+  gv:red "112";
+  gv:blue "58";
+  gv:green "73";
+  gv:score "2.7953101";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "642311";
+  gv:red "100";
+  gv:blue "17";
+  gv:green "35";
+  gv:score "0.28517598";
+  gv:coverage "0.02"
+], [
+  gv:hex "a89988";
+  gv:red "168";
+  gv:blue "136";
+  gv:green "153";
+  gv:score "16.486414";
+  gv:coverage "3.62"
+], [
+  gv:hex "d1c5ba";
+  gv:red "209";
+  gv:blue "186";
+  gv:green "197";
+  gv:score "16.039424";
+  gv:coverage "15.706667"
+], [
+  gv:hex "897867";
+  gv:red "137";
+  gv:blue "103";
+  gv:green "120";
+  gv:score "12.069549";
+  gv:coverage "1.9533332"
+], [
+  gv:hex "a69a90";
+  gv:red "166";
+  gv:blue "144";
+  gv:green "154";
+  gv:score "9.3273789";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "867b70";
+  gv:red "134";
+  gv:blue "112";
+  gv:green "123";
+  gv:score "3.9998554";
+  gv:coverage "0.86"
+], [
+  gv:hex "e3bfb4";
+  gv:red "227";
+  gv:blue "180";
+  gv:green "191";
+  gv:score "3.1541862";
+  gv:coverage "0.6"
+], [
+  gv:hex "e9d9c8";
+  gv:red "233";
+  gv:blue "200";
+  gv:green "217";
+  gv:score "3.0012893999999997";
+  gv:coverage "25.740000000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.38"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.26128800000001"
+];
+    w:bagOfWords "US\nATA LAYA\nVINA\nMAN ZA NIL LA\nVIUDA DE\nATA LAYA\nSANI UCAR DEBARRAMEDA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

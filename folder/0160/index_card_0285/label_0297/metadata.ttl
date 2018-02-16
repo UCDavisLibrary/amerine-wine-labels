@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0297";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ALCOHOL 13%\nBOTTLED AT\nBY VOLUME\nTHE WINERY\nCALIFORNIA\nZINFANDEL\nPRODUCED AND BOTTLED BY\nE. M. Martimi Grape products\nST HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d1c1aa";
+  gv:red "209";
+  gv:blue "170";
+  gv:green "193";
+  gv:score "23.999327";
+  gv:coverage "30.8"
+], [
+  gv:hex "7f4c28";
+  gv:red "127";
+  gv:blue "40";
+  gv:green "76";
+  gv:score "7.563852499999999";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "ad9d85";
+  gv:red "173";
+  gv:blue "133";
+  gv:green "157";
+  gv:score "12.871556";
+  gv:coverage "3.1399999999999997"
+], [
+  gv:hex "84745c";
+  gv:red "132";
+  gv:blue "92";
+  gv:green "116";
+  gv:score "10.150083";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "655237";
+  gv:red "101";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "9.999188";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "eedec6";
+  gv:red "238";
+  gv:blue "198";
+  gv:green "222";
+  gv:score "5.6222882";
+  gv:coverage "5.6466665"
+], [
+  gv:hex "89341b";
+  gv:red "137";
+  gv:blue "27";
+  gv:green "52";
+  gv:score "5.516634499999999";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "47361c";
+  gv:red "71";
+  gv:blue "28";
+  gv:green "54";
+  gv:score "5.4586452";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "6f220a";
+  gv:red "111";
+  gv:blue "10";
+  gv:green "34";
+  gv:score "4.817488";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "96623e";
+  gv:red "150";
+  gv:blue "62";
+  gv:green "98";
+  gv:score "3.8609907";
+  gv:coverage "0.14666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.555044"
+];
+    w:bagOfWords "ALCOHOL 13%\nBOTTLED AT\nBY VOLUME\nTHE WINERY\nCALIFORNIA\nZINFANDEL\nPRODUCED AND BOTTLED BY\nE. M. Martimi Grape products\nST HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

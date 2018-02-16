@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3219/label_3225";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "CLOS VOUGEOT\nAPPELLATION CONTROLEE\nALCOHOL BY VOLUME 1208\nFOUNDED IN 172\nCHAMPY PERE & CIE\nPROPRIETAIRES & NEGOCIANTS A BEAUNE (COTE-D'OR)\nNET CONTENTS 1 PINT 8 FLUID OUNCES PRODUCE OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "dcbf8a";
+  gv:red "220";
+  gv:blue "138";
+  gv:green "191";
+  gv:score "19.681911";
+  gv:coverage "16.766666999999998"
+], [
+  gv:hex "734824";
+  gv:red "115";
+  gv:blue "36";
+  gv:green "72";
+  gv:score "6.1833512";
+  gv:coverage "0.4"
+], [
+  gv:hex "ddc5a0";
+  gv:red "221";
+  gv:blue "160";
+  gv:green "197";
+  gv:score "11.630647";
+  gv:coverage "41.24"
+], [
+  gv:hex "b99d6b";
+  gv:red "185";
+  gv:blue "107";
+  gv:green "157";
+  gv:score "10.03041";
+  gv:coverage "3.4933332"
+], [
+  gv:hex "6b5125";
+  gv:red "107";
+  gv:blue "37";
+  gv:green "81";
+  gv:score "6.0899351";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "59310e";
+  gv:red "89";
+  gv:blue "14";
+  gv:green "49";
+  gv:score "5.0917737";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "654e2f";
+  gv:red "101";
+  gv:blue "47";
+  gv:green "78";
+  gv:score "4.7980409";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "8c7244";
+  gv:red "140";
+  gv:blue "68";
+  gv:green "114";
+  gv:score "4.6657364999999995";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "4b2b10";
+  gv:red "75";
+  gv:blue "16";
+  gv:green "43";
+  gv:score "3.9557621000000003";
+  gv:coverage "0.2"
+], [
+  gv:hex "e9b47f";
+  gv:red "233";
+  gv:blue "127";
+  gv:green "180";
+  gv:score "3.3436641000000002";
+  gv:coverage "0.86"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.86814"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "50.013923999999996"
+];
+    w:bagOfWords "CLOS VOUGEOT\nAPPELLATION CONTROLEE\nALCOHOL BY VOLUME 1208\nFOUNDED IN 172\nCHAMPY PERE & CIE\nPROPRIETAIRES & NEGOCIANTS A BEAUNE (COTE-D'OR)\nNET CONTENTS 1 PINT 8 FLUID OUNCES PRODUCE OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

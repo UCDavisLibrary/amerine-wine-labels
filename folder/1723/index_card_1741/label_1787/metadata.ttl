@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1787";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Gesetzl geschutzt\nSCHULZ & WAG NE\n1937 Erdener Moselle Wine\n"@deu;
+    gv:color [
+  gv:hex "c0935e";
+  gv:red "192";
+  gv:blue "94";
+  gv:green "147";
+  gv:score "42.286407999999994";
+  gv:coverage "11.666667"
+], [
+  gv:hex "9d713d";
+  gv:red "157";
+  gv:blue "61";
+  gv:green "113";
+  gv:score "12.975031000000001";
+  gv:coverage "4.26"
+], [
+  gv:hex "c29b61";
+  gv:red "194";
+  gv:blue "97";
+  gv:green "155";
+  gv:score "12.204379999999999";
+  gv:coverage "3.34"
+], [
+  gv:hex "754c1c";
+  gv:red "117";
+  gv:blue "28";
+  gv:green "76";
+  gv:score "10.768577";
+  gv:coverage "4.533333300000001"
+], [
+  gv:hex "6b5120";
+  gv:red "107";
+  gv:blue "32";
+  gv:green "81";
+  gv:score "4.5566544";
+  gv:coverage "2.4333334"
+], [
+  gv:hex "dfaf81";
+  gv:red "223";
+  gv:blue "129";
+  gv:green "175";
+  gv:score "4.240898";
+  gv:coverage "2.7666667"
+], [
+  gv:hex "8e6f3d";
+  gv:red "142";
+  gv:blue "61";
+  gv:green "111";
+  gv:score "2.9246578";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "593308";
+  gv:red "89";
+  gv:blue "8";
+  gv:green "51";
+  gv:score "2.27877";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "6d492e";
+  gv:red "109";
+  gv:blue "46";
+  gv:green "73";
+  gv:score "1.9193064";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "d7ae78";
+  gv:red "215";
+  gv:blue "120";
+  gv:green "174";
+  gv:score "1.0909039";
+  gv:coverage "0.68666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.797884"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "50.385165"
+];
+    w:bagOfWords "Gesetzl geschutzt\nSCHULZ & WAG NE\n1937 Erdener Moselle Wine\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1347";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "O F P o R T u\nLANCERS\nC R A C K L I N G\nW I N E\nA ROSE, CRACKLING GRAPE WINE\nVINTAGE 1933\nESTO.\n83\nPRODUCED AND BOTTLED BY\nJ. M DA FONSECA, SUCCS\nLISBON P ORTUG A L\nNet contents\n1 Quart\nAlcohol 12 olo by vol.\nIMPORTED AND SOLE AGENTS FOR U. S. A.\nVINTAGE WINES, INC.\nNEW YORK. N. Y.\nPERMIT N. u15\n"@por;
+    gv:color [
+  gv:hex "d6bb9d";
+  gv:red "214";
+  gv:blue "157";
+  gv:green "187";
+  gv:score "14.593843000000001";
+  gv:coverage "58.32000000000001"
+], [
+  gv:hex "65543e";
+  gv:red "101";
+  gv:blue "62";
+  gv:green "84";
+  gv:score "11.259032";
+  gv:coverage "1.1866666"
+], [
+  gv:hex "592a16";
+  gv:red "89";
+  gv:blue "22";
+  gv:green "42";
+  gv:score "9.939082";
+  gv:coverage "0.36"
+], [
+  gv:hex "d9b154";
+  gv:red "217";
+  gv:blue "84";
+  gv:green "177";
+  gv:score "4.8971035";
+  gv:coverage "0.26"
+], [
+  gv:hex "b19a80";
+  gv:red "177";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "11.513743999999999";
+  gv:coverage "3.44"
+], [
+  gv:hex "bd937d";
+  gv:red "189";
+  gv:blue "125";
+  gv:green "147";
+  gv:score "8.8326409";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "86735b";
+  gv:red "134";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "7.7343091";
+  gv:coverage "1.46"
+], [
+  gv:hex "e2b5a1";
+  gv:red "226";
+  gv:blue "161";
+  gv:green "181";
+  gv:score "7.431484800000001";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "43331f";
+  gv:red "67";
+  gv:blue "31";
+  gv:green "51";
+  gv:score "4.9977079";
+  gv:coverage "0.38"
+], [
+  gv:hex "7a4735";
+  gv:red "122";
+  gv:blue "53";
+  gv:green "71";
+  gv:score "4.9229078";
+  gv:coverage "0.35333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "66.09167500000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.47879"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "59.951305"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "O F P o R T u\nLANCERS\nC R A C K L I N G\nW I N E\nA ROSE, CRACKLING GRAPE WINE\nVINTAGE 1933\nESTO.\n83\nPRODUCED AND BOTTLED BY\nJ. M DA FONSECA, SUCCS\nLISBON P ORTUG A L\nNet contents\n1 Quart\nAlcohol 12 olo by vol.\nIMPORTED AND SOLE AGENTS FOR U. S. A.\nVINTAGE WINES, INC.\nNEW YORK. N. Y.\nPERMIT N. u15\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

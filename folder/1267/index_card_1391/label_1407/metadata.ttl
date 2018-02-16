@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1407";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "(CABERNET)\nESTACION SANTA ANA\n1936\nLLANO DE MAI PO\nCHILE\nLITO STANLEY\nCHILEAN RED TABLE WINE\nContents 1 Pint 7 fl. oz. cohol 13% by volume\nPRODUCT OF CHILE\nIMPORTED BY AMERICAN DISTILLING CO. INC.\n515\n247 PARK AVENUE, NEW YORK\n"@spa;
+    gv:color [
+  gv:hex "d6c0a2";
+  gv:red "214";
+  gv:blue "162";
+  gv:green "192";
+  gv:score "48.96594";
+  gv:coverage "27.62"
+], [
+  gv:hex "b09865";
+  gv:red "176";
+  gv:blue "101";
+  gv:green "152";
+  gv:score "25.100991";
+  gv:coverage "5.3866666"
+], [
+  gv:hex "b8a17f";
+  gv:red "184";
+  gv:blue "127";
+  gv:green "161";
+  gv:score "14.435497999999999";
+  gv:coverage "3.3933334000000004"
+], [
+  gv:hex "d2b887";
+  gv:red "210";
+  gv:blue "135";
+  gv:green "184";
+  gv:score "5.1699016";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "988147";
+  gv:red "152";
+  gv:blue "71";
+  gv:green "129";
+  gv:score "4.928162299999999";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "ead7b8";
+  gv:red "234";
+  gv:blue "184";
+  gv:green "215";
+  gv:score "0.83988924";
+  gv:coverage "10.24"
+], [
+  gv:hex "433b2e";
+  gv:red "67";
+  gv:blue "46";
+  gv:green "59";
+  gv:score "0.004682639000000001";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "d7bfb7";
+  gv:red "215";
+  gv:blue "183";
+  gv:green "191";
+  gv:score "0.34630455";
+  gv:coverage "9.8466665"
+], [
+  gv:hex "9b825c";
+  gv:red "155";
+  gv:blue "92";
+  gv:green "130";
+  gv:score "0.056928629";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "baa49d";
+  gv:red "186";
+  gv:blue "157";
+  gv:green "164";
+  gv:score "0.040929412";
+  gv:coverage "0.073333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.928045"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "51.906121000000006"
+];
+    w:bagOfWords "(CABERNET)\nESTACION SANTA ANA\n1936\nLLANO DE MAI PO\nCHILE\nLITO STANLEY\nCHILEAN RED TABLE WINE\nContents 1 Pint 7 fl. oz. cohol 13% by volume\nPRODUCT OF CHILE\nIMPORTED BY AMERICAN DISTILLING CO. INC.\n515\n247 PARK AVENUE, NEW YORK\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

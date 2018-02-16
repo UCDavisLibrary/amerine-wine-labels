@@ -1,0 +1,105 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0575";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "eingut lahob dolf ties Rudesheim nm Rhein\n1953et\nOriginal Abiullung Jakob Adoli Dries\n"@deu;
+    gv:color [
+  gv:hex "dbb98a";
+  gv:red "219";
+  gv:blue "138";
+  gv:green "185";
+  gv:score "18.560836";
+  gv:coverage "5.12"
+], [
+  gv:hex "976f48";
+  gv:red "151";
+  gv:blue "72";
+  gv:green "111";
+  gv:score "9.940197300000001";
+  gv:coverage "3.1533334"
+], [
+  gv:hex "ddbd96";
+  gv:red "221";
+  gv:blue "150";
+  gv:green "189";
+  gv:score "16.421975";
+  gv:coverage "8.1066668"
+], [
+  gv:hex "ba9a6a";
+  gv:red "186";
+  gv:blue "106";
+  gv:green "154";
+  gv:score "12.54954";
+  gv:coverage "4.4733334"
+], [
+  gv:hex "bd9468";
+  gv:red "189";
+  gv:blue "104";
+  gv:green "148";
+  gv:score "8.0448315";
+  gv:coverage "2.3800000000000003"
+], [
+  gv:hex "b9926f";
+  gv:red "185";
+  gv:blue "111";
+  gv:green "146";
+  gv:score "7.0897453";
+  gv:coverage "2.46"
+], [
+  gv:hex "bb9a74";
+  gv:red "187";
+  gv:blue "116";
+  gv:green "154";
+  gv:score "6.7140065";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "784f28";
+  gv:red "120";
+  gv:blue "40";
+  gv:green "79";
+  gv:score "5.9349094";
+  gv:coverage "1.8333333"
+], [
+  gv:hex "95794a";
+  gv:red "149";
+  gv:blue "74";
+  gv:green "121";
+  gv:score "5.415405";
+  gv:coverage "2.5266666"
+], [
+  gv:hex "9b7452";
+  gv:red "155";
+  gv:blue "82";
+  gv:green "116";
+  gv:score "2.9623738";
+  gv:coverage "1.2466666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.839755"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "57.535970000000006"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.546514"
+];
+    w:bagOfWords "eingut lahob dolf ties Rudesheim nm Rhein\n1953et\nOriginal Abiullung Jakob Adoli Dries\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

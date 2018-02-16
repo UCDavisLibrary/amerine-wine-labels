@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0018";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "13\nH &\nREG. EMB, NRIO\nBAIN\nVINA POM AL\nRIOJA SPANISH .WINE\nSPANISH BURGUNDY\nHARO RIOJA\nCOSECHA 1937\nPRODUCT OF SPAIN\nRED TABLE WINE\nIMPORTERS: BRIONES & Co nc. 52 Stone Street NEW-YORK N. Y\nN. Y. STATE LICENCE W. W. 68\nI. 247\nCONTENTS: 1 PINT, 8 FLuID ouNCEs\nALCOHOL:\n12 By VOL\n"@spa;
+    gv:color [
+  gv:hex "dbc4ac";
+  gv:red "219";
+  gv:blue "172";
+  gv:green "196";
+  gv:score "15.551069";
+  gv:coverage "13.793332999999999"
+], [
+  gv:hex "a42821";
+  gv:red "164";
+  gv:blue "33";
+  gv:green "40";
+  gv:score "12.89703";
+  gv:coverage "1.9466667"
+], [
+  gv:hex "605342";
+  gv:red "96";
+  gv:blue "66";
+  gv:green "83";
+  gv:score "5.8566861";
+  gv:coverage "1.3533333"
+], [
+  gv:hex "dc7f75";
+  gv:red "220";
+  gv:blue "117";
+  gv:green "127";
+  gv:score "4.3922894";
+  gv:coverage "1.06"
+], [
+  gv:hex "f3beab";
+  gv:red "243";
+  gv:blue "171";
+  gv:green "190";
+  gv:score "9.327884000000001";
+  gv:coverage "6.1333332"
+], [
+  gv:hex "af9a83";
+  gv:red "175";
+  gv:blue "131";
+  gv:green "154";
+  gv:score "5.7198487";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "aa180d";
+  gv:red "170";
+  gv:blue "13";
+  gv:green "24";
+  gv:score "5.4983269";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "c8453e";
+  gv:red "200";
+  gv:blue "62";
+  gv:green "69";
+  gv:score "5.1670164";
+  gv:coverage "0.88666668"
+], [
+  gv:hex "84735f";
+  gv:red "132";
+  gv:blue "95";
+  gv:green "115";
+  gv:score "5.0477222";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "f97065";
+  gv:red "249";
+  gv:blue "101";
+  gv:green "112";
+  gv:score "3.2590397";
+  gv:coverage "0.43333330999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.3167"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "13\nH &\nREG. EMB, NRIO\nBAIN\nVINA POM AL\nRIOJA SPANISH .WINE\nSPANISH BURGUNDY\nHARO RIOJA\nCOSECHA 1937\nPRODUCT OF SPAIN\nRED TABLE WINE\nIMPORTERS: BRIONES & Co nc. 52 Stone Street NEW-YORK N. Y\nN. Y. STATE LICENCE W. W. 68\nI. 247\nCONTENTS: 1 PINT, 8 FLuID ouNCEs\nALCOHOL:\n12 By VOL\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

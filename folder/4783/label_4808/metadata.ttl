@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4808";
+    dct:type "image";
+    w:bagOfWords "PRODUCED AND BOTTLED BY\nBoordy Vineyard\nOTmo a\nWhite Wine\n(Dry)\n& P. Wagner, Props.\nAlcoholic Contents\nRiderwood, Maryland\n11% By Volume\n"@eng;
+    gv:color [
+  gv:hex "ecdcc9";
+  gv:red "236";
+  gv:blue "201";
+  gv:green "220";
+  gv:score "28.438088";
+  gv:coverage "15.160000000000002"
+], [
+  gv:hex "d5c4b1";
+  gv:red "213";
+  gv:blue "177";
+  gv:green "196";
+  gv:score "27.812302";
+  gv:coverage "9.2266664"
+], [
+  gv:hex "ab9b89";
+  gv:red "171";
+  gv:blue "137";
+  gv:green "155";
+  gv:score "19.435482";
+  gv:coverage "2.96"
+], [
+  gv:hex "877865";
+  gv:red "135";
+  gv:blue "101";
+  gv:green "120";
+  gv:score "8.491966099999999";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "e4d9ce";
+  gv:red "228";
+  gv:blue "206";
+  gv:green "217";
+  gv:score "5.1114857";
+  gv:coverage "63.980000000000004"
+], [
+  gv:hex "60503e";
+  gv:red "96";
+  gv:blue "62";
+  gv:green "80";
+  gv:score "4.4708211";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "433220";
+  gv:red "67";
+  gv:blue "32";
+  gv:green "50";
+  gv:score "2.9945197";
+  gv:coverage "0.36"
+], [
+  gv:hex "ddd2c6";
+  gv:red "221";
+  gv:blue "198";
+  gv:green "210";
+  gv:score "0.94018187";
+  gv:coverage "6.08"
+], [
+  gv:hex "291a09";
+  gv:red "41";
+  gv:blue "9";
+  gv:green "26";
+  gv:score "0.9025161199999999";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "76886c";
+  gv:red "118";
+  gv:blue "108";
+  gv:green "136";
+  gv:score "0.80756256";
+  gv:coverage "0.073333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "67.614633"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.943753"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "61.64161"
+];
+    w:bagOfWords "PRODUCED AND BOTTLED BY\nBoordy Vineyard\nOTmo a\nWhite Wine\n(Dry)\n& P. Wagner, Props.\nAlcoholic Contents\nRiderwood, Maryland\n11% By Volume\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

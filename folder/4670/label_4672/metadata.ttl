@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4670/label_4672";
+    dct:type "image";
+    w:bagOfWords "DEPOsE\npotillant\nNe 1037\n"@deu;
+    gv:color [
+  gv:hex "d9c288";
+  gv:red "217";
+  gv:blue "136";
+  gv:green "194";
+  gv:score "27.228552";
+  gv:coverage "10.826666999999999"
+], [
+  gv:hex "e1c7a4";
+  gv:red "225";
+  gv:blue "164";
+  gv:green "199";
+  gv:score "23.57002";
+  gv:coverage "15.446667"
+], [
+  gv:hex "b49a63";
+  gv:red "180";
+  gv:blue "99";
+  gv:green "154";
+  gv:score "15.151359000000001";
+  gv:coverage "2.58"
+], [
+  gv:hex "917640";
+  gv:red "145";
+  gv:blue "64";
+  gv:green "118";
+  gv:score "12.452719";
+  gv:coverage "1.7333332"
+], [
+  gv:hex "6c511c";
+  gv:red "108";
+  gv:blue "28";
+  gv:green "81";
+  gv:score "6.924195599999999";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "b79a75";
+  gv:red "183";
+  gv:blue "117";
+  gv:green "154";
+  gv:score "4.1590832";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "f0d7b5";
+  gv:red "240";
+  gv:blue "181";
+  gv:green "215";
+  gv:score "3.1970024";
+  gv:coverage "8.76"
+], [
+  gv:hex "d8c66e";
+  gv:red "216";
+  gv:blue "110";
+  gv:green "198";
+  gv:score "1.8403962";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "f0d9a3";
+  gv:red "240";
+  gv:blue "163";
+  gv:green "217";
+  gv:score "1.3844965";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "977956";
+  gv:red "151";
+  gv:blue "86";
+  gv:green "121";
+  gv:score "1.2430657";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.307862"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.400464"
+];
+    w:bagOfWords "DEPOsE\npotillant\nNe 1037\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "CHE".

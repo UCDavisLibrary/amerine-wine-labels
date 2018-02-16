@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2762";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "JOUNEAU RIS.F\nGAILLAC\nAPPELLATION CONTROLEE\n3990 DEPOSE\n"@fra;
+    gv:color [
+  gv:hex "d3b99c";
+  gv:red "211";
+  gv:blue "156";
+  gv:green "185";
+  gv:score "28.762358";
+  gv:coverage "18.686667"
+], [
+  gv:hex "65513c";
+  gv:red "101";
+  gv:blue "60";
+  gv:green "81";
+  gv:score "9.8895341";
+  gv:coverage "3.04"
+], [
+  gv:hex "b29778";
+  gv:red "178";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "13.434951";
+  gv:coverage "5"
+], [
+  gv:hex "88735b";
+  gv:red "136";
+  gv:blue "91";
+  gv:green "115";
+  gv:score "9.8437354";
+  gv:coverage "3.1733334"
+], [
+  gv:hex "e2b298";
+  gv:red "226";
+  gv:blue "152";
+  gv:green "178";
+  gv:score "7.9973243";
+  gv:coverage "1.9733334000000002"
+], [
+  gv:hex "bf9276";
+  gv:red "191";
+  gv:blue "118";
+  gv:green "146";
+  gv:score "6.0935482";
+  gv:coverage "1.78"
+], [
+  gv:hex "473420";
+  gv:red "71";
+  gv:blue "32";
+  gv:green "52";
+  gv:score "5.8510341";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "9b6b56";
+  gv:red "155";
+  gv:blue "86";
+  gv:green "107";
+  gv:score "4.3092638";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "764a38";
+  gv:red "118";
+  gv:blue "56";
+  gv:green "74";
+  gv:score "3.9421278999999996";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "af9065";
+  gv:red "175";
+  gv:blue "101";
+  gv:green "144";
+  gv:score "3.9194088000000002";
+  gv:coverage "1.0999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.829526"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "65.37406999999999"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "61.222016999999994"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.196035"
+];
+    w:bagOfWords "JOUNEAU RIS.F\nGAILLAC\nAPPELLATION CONTROLEE\n3990 DEPOSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

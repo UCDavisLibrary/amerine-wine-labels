@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1190";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "BRANDY BOBADILLA\nGRAN RESERVA\nESPECIAL\nBODEGAS\ny Cia\nDE MANUEL FERNANDEZ Y CIA. s. L.\nJEREZ\n(ESPANA)\n"@spa;
+    gv:color [
+  gv:hex "dcba79";
+  gv:red "220";
+  gv:blue "121";
+  gv:green "186";
+  gv:score "18.297979";
+  gv:coverage "6.460000000000001"
+], [
+  gv:hex "8c7340";
+  gv:red "140";
+  gv:blue "64";
+  gv:green "115";
+  gv:score "9.2352279";
+  gv:coverage "1.72"
+], [
+  gv:hex "635333";
+  gv:red "99";
+  gv:blue "51";
+  gv:green "83";
+  gv:score "8.9207038";
+  gv:coverage "1.6400000000000001"
+], [
+  gv:hex "cb8e4b";
+  gv:red "203";
+  gv:blue "75";
+  gv:green "142";
+  gv:score "2.4599124";
+  gv:coverage "0.42"
+], [
+  gv:hex "dfb969";
+  gv:red "223";
+  gv:blue "105";
+  gv:green "185";
+  gv:score "12.994067000000001";
+  gv:coverage "3.5266668"
+], [
+  gv:hex "413217";
+  gv:red "65";
+  gv:blue "23";
+  gv:green "50";
+  gv:score "8.61866";
+  gv:coverage "1.6333334000000002"
+], [
+  gv:hex "ba9b62";
+  gv:red "186";
+  gv:blue "98";
+  gv:green "155";
+  gv:score "8.3911806";
+  gv:coverage "2.4533333"
+], [
+  gv:hex "6a5425";
+  gv:red "106";
+  gv:blue "37";
+  gv:green "84";
+  gv:score "7.205375999999999";
+  gv:coverage "1.18"
+], [
+  gv:hex "eab675";
+  gv:red "234";
+  gv:blue "117";
+  gv:green "182";
+  gv:score "4.9727891";
+  gv:coverage "1.1733334"
+], [
+  gv:hex "81704e";
+  gv:red "129";
+  gv:blue "78";
+  gv:green "112";
+  gv:score "4.4279508000000005";
+  gv:coverage "0.86"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.81337599999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.028645"
+];
+    w:bagOfWords "BRANDY BOBADILLA\nGRAN RESERVA\nESPECIAL\nBODEGAS\ny Cia\nDE MANUEL FERNANDEZ Y CIA. s. L.\nJEREZ\n(ESPANA)\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

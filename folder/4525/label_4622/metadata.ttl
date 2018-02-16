@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4622";
+    dct:type "image";
+    w:bagOfWords "JEREZ PALIDO\n(ESPANA)\nNo 2\nO\n"@spa;
+    gv:color [
+  gv:hex "cdc4bb";
+  gv:red "205";
+  gv:blue "187";
+  gv:green "196";
+  gv:score "32.68373";
+  gv:coverage "26.053333000000002"
+], [
+  gv:hex "a29990";
+  gv:red "162";
+  gv:blue "144";
+  gv:green "153";
+  gv:score "31.003907";
+  gv:coverage "3.8466666"
+], [
+  gv:hex "847b72";
+  gv:red "132";
+  gv:blue "114";
+  gv:green "123";
+  gv:score "21.995997";
+  gv:coverage "1.6"
+], [
+  gv:hex "e4dbd2";
+  gv:red "228";
+  gv:blue "210";
+  gv:green "219";
+  gv:score "12.540182";
+  gv:coverage "63.193332999999996"
+], [
+  gv:hex "3d3327";
+  gv:red "61";
+  gv:blue "39";
+  gv:green "51";
+  gv:score "0.01982183";
+  gv:coverage "0.02"
+], [
+  gv:hex "655c53";
+  gv:red "101";
+  gv:blue "83";
+  gv:green "92";
+  gv:score "1.3875307";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "cdc4b5";
+  gv:red "205";
+  gv:blue "181";
+  gv:green "196";
+  gv:score "0.25157935";
+  gv:coverage "4.36"
+], [
+  gv:hex "aea596";
+  gv:red "174";
+  gv:blue "150";
+  gv:green "165";
+  gv:score "0.11725272999999999";
+  gv:coverage "0.06"
+], [
+  gv:hex "dfd8c7";
+  gv:red "223";
+  gv:blue "199";
+  gv:green "216";
+  gv:score "7.6786788e-8";
+  gv:coverage "0.66"
+], [
+  gv:hex "241c11";
+  gv:red "36";
+  gv:blue "17";
+  gv:green "28";
+  gv:score "1.5512482e-9";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.343943"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "58.791381"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "52.597004000000005"
+];
+    w:bagOfWords "JEREZ PALIDO\n(ESPANA)\nNo 2\nO\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

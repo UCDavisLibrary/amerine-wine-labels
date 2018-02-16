@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1644";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "N A R A N U A\nMARCAREGISTRADA\nNARCA REGISTRADA\nelan lunar der Darrameda\nNo 132\n"@spa;
+    gv:color [
+  gv:hex "d6c1a5";
+  gv:red "214";
+  gv:blue "165";
+  gv:green "193";
+  gv:score "16.48093";
+  gv:coverage "23.826666"
+], [
+  gv:hex "927445";
+  gv:red "146";
+  gv:blue "69";
+  gv:green "116";
+  gv:score "12.709209";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "af9a7d";
+  gv:red "175";
+  gv:blue "125";
+  gv:green "154";
+  gv:score "10.510978";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "70572a";
+  gv:red "112";
+  gv:blue "42";
+  gv:green "87";
+  gv:score "9.691242899999999";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "8d7558";
+  gv:red "141";
+  gv:blue "88";
+  gv:green "117";
+  gv:score "7.6970792999999995";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "755225";
+  gv:red "117";
+  gv:blue "37";
+  gv:green "82";
+  gv:score "6.934195";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "ae9261";
+  gv:red "174";
+  gv:blue "97";
+  gv:green "146";
+  gv:score "6.684098400000001";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "efdcc3";
+  gv:red "239";
+  gv:blue "195";
+  gv:green "220";
+  gv:score "5.9959";
+  gv:coverage "34.246665"
+], [
+  gv:hex "d1c5ba";
+  gv:red "209";
+  gv:blue "186";
+  gv:green "197";
+  gv:score "5.2288368";
+  gv:coverage "7.42"
+], [
+  gv:hex "e9dfd3";
+  gv:red "233";
+  gv:blue "211";
+  gv:green "223";
+  gv:score "3.5984755";
+  gv:coverage "30.246666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.254169"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "N A R A N U A\nMARCAREGISTRADA\nNARCA REGISTRADA\nelan lunar der Darrameda\nNo 132\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

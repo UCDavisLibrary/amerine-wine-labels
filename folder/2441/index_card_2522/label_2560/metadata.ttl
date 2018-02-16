@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2560";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "1943\nPRODUCE OF FRANCE\nCONTENTS 12 FL. OZS\nOMNIUM VICTOR EM VICI\nMOUTON NE\nMouro\nLONG DEPAQUIT\nPropriétaire et cMégociant\nDEPA\nCHABLIS (FRANCE)\nETTE ET MARQUE D\nCHABLIS APPELLATION CONTROLEE\n"@fra;
+    gv:color [
+  gv:hex "dac3a3";
+  gv:red "218";
+  gv:blue "163";
+  gv:green "195";
+  gv:score "47.442594";
+  gv:coverage "15.246667"
+], [
+  gv:hex "b09a7c";
+  gv:red "176";
+  gv:blue "124";
+  gv:green "154";
+  gv:score "24.57604";
+  gv:coverage "2.7199999999999998"
+], [
+  gv:hex "8b755a";
+  gv:red "139";
+  gv:blue "90";
+  gv:green "117";
+  gv:score "11.421375000000001";
+  gv:coverage "0.9133333299999999"
+], [
+  gv:hex "efd8ba";
+  gv:red "239";
+  gv:blue "186";
+  gv:green "216";
+  gv:score "8.7144345";
+  gv:coverage "15.386665999999998"
+], [
+  gv:hex "65523c";
+  gv:red "101";
+  gv:blue "60";
+  gv:green "82";
+  gv:score "5.3613681";
+  gv:coverage "0.4"
+], [
+  gv:hex "463421";
+  gv:red "70";
+  gv:blue "33";
+  gv:green "52";
+  gv:score "1.471655";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "2b180c";
+  gv:red "43";
+  gv:blue "12";
+  gv:green "24";
+  gv:score "0.41130115000000006";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "b59270";
+  gv:red "181";
+  gv:blue "112";
+  gv:green "146";
+  gv:score "0.18416491";
+  gv:coverage "0.02"
+], [
+  gv:hex "d1c7bd";
+  gv:red "209";
+  gv:blue "189";
+  gv:green "199";
+  gv:score "0.16649640999999998";
+  gv:coverage "1.9933334"
+], [
+  gv:hex "614f46";
+  gv:red "97";
+  gv:blue "70";
+  gv:green "79";
+  gv:score "0.10456175";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.923034"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "65.978777"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "60.141867000000005"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0frqm>;
+  gv:desc "envelope";
+  gv:score "54.301894"
+];
+    w:bagOfWords "1943\nPRODUCE OF FRANCE\nCONTENTS 12 FL. OZS\nOMNIUM VICTOR EM VICI\nMOUTON NE\nMouro\nLONG DEPAQUIT\nPropriétaire et cMégociant\nDEPA\nCHABLIS (FRANCE)\nETTE ET MARQUE D\nCHABLIS APPELLATION CONTROLEE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

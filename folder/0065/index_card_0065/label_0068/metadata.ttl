@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0068";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "CO\nScuola Di G iticoituva\ne ai onofogia\nCONEGLIANO\nVeneto\n"@ita;
+    gv:color [
+  gv:hex "d2c7be";
+  gv:red "210";
+  gv:blue "190";
+  gv:green "199";
+  gv:score "16.76017";
+  gv:coverage "24.286667"
+], [
+  gv:hex "96715d";
+  gv:red "150";
+  gv:blue "93";
+  gv:green "113";
+  gv:score "15.67549";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "b8937e";
+  gv:red "184";
+  gv:blue "126";
+  gv:green "147";
+  gv:score "15.396366";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "eae0d6";
+  gv:red "234";
+  gv:blue "214";
+  gv:green "224";
+  gv:score "14.236476000000001";
+  gv:coverage "64.40666900000001"
+], [
+  gv:hex "d3bea7";
+  gv:red "211";
+  gv:blue "167";
+  gv:green "190";
+  gv:score "13.549931";
+  gv:coverage "6.6066667"
+], [
+  gv:hex "b09b89";
+  gv:red "176";
+  gv:blue "137";
+  gv:green "155";
+  gv:score "7.716231799999999";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "aaa097";
+  gv:red "170";
+  gv:blue "151";
+  gv:green "160";
+  gv:score "4.3682449";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "8e7563";
+  gv:red "142";
+  gv:blue "99";
+  gv:green "117";
+  gv:score "3.4726991999999997";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "7c726a";
+  gv:red "124";
+  gv:blue "106";
+  gv:green "114";
+  gv:score "3.1962179";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "735340";
+  gv:red "115";
+  gv:blue "64";
+  gv:green "83";
+  gv:score "2.6116377";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.050172"
+];
+    w:bagOfWords "CO\nScuola Di G iticoituva\ne ai onofogia\nCONEGLIANO\nVeneto\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

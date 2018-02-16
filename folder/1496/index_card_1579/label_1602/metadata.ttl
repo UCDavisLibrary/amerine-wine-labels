@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1579/label_1602";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "IJO Ba\nPEDRO MEROWI,ApppAL\nMOSCATEL SOLER A AN LVCAR\nB\nSENORA\nD Ao\ntir. J. M. BARROSO. JEREZ.\n"@spa;
+    gv:color [
+  gv:hex "d2bba8";
+  gv:red "210";
+  gv:blue "168";
+  gv:green "187";
+  gv:score "35.869208";
+  gv:coverage "31.206667"
+], [
+  gv:hex "b39b88";
+  gv:red "179";
+  gv:blue "136";
+  gv:green "155";
+  gv:score "29.488062999999997";
+  gv:coverage "5.3533334"
+], [
+  gv:hex "8e7662";
+  gv:red "142";
+  gv:blue "98";
+  gv:green "118";
+  gv:score "8.1356011";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "cfc1b8";
+  gv:red "207";
+  gv:blue "184";
+  gv:green "193";
+  gv:score "6.7665234000000005";
+  gv:coverage "8.913333"
+], [
+  gv:hex "ebddd3";
+  gv:red "235";
+  gv:blue "211";
+  gv:green "221";
+  gv:score "4.2300943";
+  gv:coverage "23.373333"
+], [
+  gv:hex "a79990";
+  gv:red "167";
+  gv:blue "144";
+  gv:green "153";
+  gv:score "3.933569";
+  gv:coverage "1.2533333"
+], [
+  gv:hex "6f5540";
+  gv:red "111";
+  gv:blue "64";
+  gv:green "85";
+  gv:score "3.5254531";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "eddac9";
+  gv:red "237";
+  gv:blue "201";
+  gv:green "218";
+  gv:score "2.5498418";
+  gv:coverage "27.893335000000004"
+], [
+  gv:hex "84776e";
+  gv:red "132";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "2.4132865";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "281c0d";
+  gv:red "40";
+  gv:blue "13";
+  gv:green "28";
+  gv:score "0.01703358";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "73.163939"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "64.208674"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.3515"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "56.2121"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.388232"
+];
+    w:bagOfWords "IJO Ba\nPEDRO MEROWI,ApppAL\nMOSCATEL SOLER A AN LVCAR\nB\nSENORA\nD Ao\ntir. J. M. BARROSO. JEREZ.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

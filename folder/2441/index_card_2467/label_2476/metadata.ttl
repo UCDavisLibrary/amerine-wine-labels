@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2467/label_2476";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "192\nBLAGNY MONTRACHET\nP. A. LARENAUDITE, PIRO DRE\nChateau d'Auvenay. MEURSAULT\nPRODUCED & BOTTLED IN FRANCE\nNET CONTENT 4/5 0F A QUART ALcoHOL l 4% BY VOLUME\nIMP. WETTERWALD FRERES BORDEAUX\nETIO. DE\nEE No 226\n"@fra;
+    gv:color [
+  gv:hex "d7c2a7";
+  gv:red "215";
+  gv:blue "167";
+  gv:green "194";
+  gv:score "75.56940300000001";
+  gv:coverage "21.78"
+], [
+  gv:hex "191a1d";
+  gv:red "25";
+  gv:blue "29";
+  gv:green "26";
+  gv:score "0.48759622";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "552e03";
+  gv:red "85";
+  gv:blue "3";
+  gv:green "46";
+  gv:score "0.16892187";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "b19d80";
+  gv:red "177";
+  gv:blue "128";
+  gv:green "157";
+  gv:score "13.342631999999998";
+  gv:coverage "2.76"
+], [
+  gv:hex "8e7a5e";
+  gv:red "142";
+  gv:blue "94";
+  gv:green "122";
+  gv:score "3.019548";
+  gv:coverage "0.5133333200000001"
+], [
+  gv:hex "ead8c0";
+  gv:red "234";
+  gv:blue "192";
+  gv:green "216";
+  gv:score "2.5483452";
+  gv:coverage "4.72"
+], [
+  gv:hex "411800";
+  gv:red "65";
+  gv:blue "undefined";
+  gv:green "24";
+  gv:score "0.021677445";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "d0c6bc";
+  gv:red "208";
+  gv:blue "188";
+  gv:green "198";
+  gv:score "0.78271981";
+  gv:coverage "2.8400000000000003"
+], [
+  gv:hex "635336";
+  gv:red "99";
+  gv:blue "54";
+  gv:green "83";
+  gv:score "0.71115894";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "e9e0d7";
+  gv:red "233";
+  gv:blue "215";
+  gv:green "224";
+  gv:score "0.58057406";
+  gv:coverage "65.84"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.528666"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.227819"
+];
+    w:bagOfWords "192\nBLAGNY MONTRACHET\nP. A. LARENAUDITE, PIRO DRE\nChateau d'Auvenay. MEURSAULT\nPRODUCED & BOTTLED IN FRANCE\nNET CONTENT 4/5 0F A QUART ALcoHOL l 4% BY VOLUME\nIMP. WETTERWALD FRERES BORDEAUX\nETIO. DE\nEE No 226\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

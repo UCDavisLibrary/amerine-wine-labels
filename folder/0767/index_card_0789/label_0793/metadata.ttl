@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0793";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "1958\nG RAP\nSEHELAERE SEELORENEEFRANCER\nCONTENTs 1 PINT AND G FLUID OUNCES\n"@fra;
+    gv:color [
+  gv:hex "c4c1b4";
+  gv:red "196";
+  gv:blue "180";
+  gv:green "193";
+  gv:score "22.053456";
+  gv:coverage "18.893333000000002"
+], [
+  gv:hex "80775b";
+  gv:red "128";
+  gv:blue "91";
+  gv:green "119";
+  gv:score "7.0933208";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "21372a";
+  gv:red "33";
+  gv:blue "42";
+  gv:green "55";
+  gv:score "4.1453879";
+  gv:coverage "2.1866666"
+], [
+  gv:hex "d0c4ad";
+  gv:red "208";
+  gv:blue "173";
+  gv:green "196";
+  gv:score "21.166246";
+  gv:coverage "7.04"
+], [
+  gv:hex "a79f86";
+  gv:red "167";
+  gv:blue "134";
+  gv:green "159";
+  gv:score "6.5378964";
+  gv:coverage "1.02"
+], [
+  gv:hex "57533b";
+  gv:red "87";
+  gv:blue "59";
+  gv:green "83";
+  gv:score "5.228037";
+  gv:coverage "0.72"
+], [
+  gv:hex "9ea092";
+  gv:red "158";
+  gv:blue "146";
+  gv:green "160";
+  gv:score "5.0789762000000005";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "363721";
+  gv:red "54";
+  gv:blue "33";
+  gv:green "55";
+  gv:score "4.7491178000000005";
+  gv:coverage "0.62"
+], [
+  gv:hex "777b6d";
+  gv:red "119";
+  gv:blue "109";
+  gv:green "123";
+  gv:score "3.4309267999999995";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "e8dbc3";
+  gv:red "232";
+  gv:blue "195";
+  gv:green "219";
+  gv:score "3.1353075";
+  gv:coverage "3.7533332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.7016"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.855754"
+];
+    w:bagOfWords "1958\nG RAP\nSEHELAERE SEELORENEEFRANCER\nCONTENTs 1 PINT AND G FLUID OUNCES\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

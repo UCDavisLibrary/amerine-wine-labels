@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2209";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "California\nIlusaatel\nALCOHOL 20% BY VOLUME\nBOTTLED FOR\nSIERRA WINE AND LIQUOR Co.\nRE N O NEVA D A\n"@eng;
+    gv:color [
+  gv:hex "cfbda5";
+  gv:red "207";
+  gv:blue "165";
+  gv:green "189";
+  gv:score "34.688833";
+  gv:coverage "35.153332"
+], [
+  gv:hex "ad9c87";
+  gv:red "173";
+  gv:blue "135";
+  gv:green "156";
+  gv:score "24.64688";
+  gv:coverage "6.64"
+], [
+  gv:hex "88755b";
+  gv:red "136";
+  gv:blue "91";
+  gv:green "117";
+  gv:score "14.169262";
+  gv:coverage "3.1133333"
+], [
+  gv:hex "635238";
+  gv:red "99";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "11.930541999999999";
+  gv:coverage "2.5933333"
+], [
+  gv:hex "ecdac4";
+  gv:red "236";
+  gv:blue "196";
+  gv:green "218";
+  gv:score "5.0229397";
+  gv:coverage "37.246665"
+], [
+  gv:hex "473621";
+  gv:red "71";
+  gv:blue "33";
+  gv:green "54";
+  gv:score "3.9180692";
+  gv:coverage "0.6"
+], [
+  gv:hex "d1c4b8";
+  gv:red "209";
+  gv:blue "184";
+  gv:green "196";
+  gv:score "0.97229574";
+  gv:coverage "2.6733333000000004"
+], [
+  gv:hex "dcb98b";
+  gv:red "220";
+  gv:blue "139";
+  gv:green "185";
+  gv:score "0.9085534100000001";
+  gv:coverage "0.52"
+], [
+  gv:hex "c7a474";
+  gv:red "199";
+  gv:blue "116";
+  gv:green "164";
+  gv:score "0.5693289500000001";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "8c6e44";
+  gv:red "140";
+  gv:blue "68";
+  gv:green "110";
+  gv:score "0.45935702999999994";
+  gv:coverage "0.073333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.08103100000001"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.864589"
+];
+    w:bagOfWords "California\nIlusaatel\nALCOHOL 20% BY VOLUME\nBOTTLED FOR\nSIERRA WINE AND LIQUOR Co.\nRE N O NEVA D A\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

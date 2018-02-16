@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1817";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "HERATE\nTRITTENHEIMER\nVINTAGE 1934\nMOSEL WINE\nossMAND\nBOTTLED IN GERMANY\nNENGROS\nCONTENTS 1 PINT 61la FLUID OUNCES\nALCOHOL 12% TO 14% BY VOLUME\nITER\nIMPORTED BY\nB. A. RAILTON CO.,\nCHICAGO, ILL.\nMiddle Moselle\n"@deu;
+    gv:color [
+  gv:hex "d5c1a9";
+  gv:red "213";
+  gv:blue "169";
+  gv:green "193";
+  gv:score "24.578227";
+  gv:coverage "22.526667"
+], [
+  gv:hex "ae9b84";
+  gv:red "174";
+  gv:blue "132";
+  gv:green "155";
+  gv:score "18.554386";
+  gv:coverage "3.5933333999999997"
+], [
+  gv:hex "88755e";
+  gv:red "136";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "8.5050404";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "a99e95";
+  gv:red "169";
+  gv:blue "149";
+  gv:green "158";
+  gv:score "4.5890387";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "ecdac2";
+  gv:red "236";
+  gv:blue "194";
+  gv:green "218";
+  gv:score "4.2828225";
+  gv:coverage "8.7866664"
+], [
+  gv:hex "966c5f";
+  gv:red "150";
+  gv:blue "95";
+  gv:green "108";
+  gv:score "4.2300552";
+  gv:coverage "0.32"
+], [
+  gv:hex "784a3d";
+  gv:red "120";
+  gv:blue "61";
+  gv:green "74";
+  gv:score "4.0638607";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "b48b7e";
+  gv:red "180";
+  gv:blue "126";
+  gv:green "139";
+  gv:score "3.8798671";
+  gv:coverage "0.3"
+], [
+  gv:hex "667f53";
+  gv:red "102";
+  gv:blue "83";
+  gv:green "127";
+  gv:score "3.4841187000000002";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "c0b6ac";
+  gv:red "192";
+  gv:blue "172";
+  gv:green "182";
+  gv:score "2.9644338";
+  gv:coverage "4.2666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.91886000000001"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.316905"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.978728"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.397764"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.839948"
+];
+    w:bagOfWords "HERATE\nTRITTENHEIMER\nVINTAGE 1934\nMOSEL WINE\nossMAND\nBOTTLED IN GERMANY\nNENGROS\nCONTENTS 1 PINT 61la FLUID OUNCES\nALCOHOL 12% TO 14% BY VOLUME\nITER\nIMPORTED BY\nB. A. RAILTON CO.,\nCHICAGO, ILL.\nMiddle Moselle\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

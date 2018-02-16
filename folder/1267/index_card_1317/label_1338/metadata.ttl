@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1338";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "DO\nNORTE\nDE\nREAL COMPANHIA VINICOLA DO NORTE DE PORTUGAL\nFORNECEDORA DA PRESIDENCIA DA REPUBLICA\nVINHO DE MESA\nMADURO TINTO\n"@por;
+    gv:color [
+  gv:hex "d6c0a5";
+  gv:red "214";
+  gv:blue "165";
+  gv:green "192";
+  gv:score "72.21888899999999";
+  gv:coverage "32.24"
+], [
+  gv:hex "b29e84";
+  gv:red "178";
+  gv:blue "132";
+  gv:green "158";
+  gv:score "16.002226";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "8a7861";
+  gv:red "138";
+  gv:blue "97";
+  gv:green "120";
+  gv:score "5.6187503";
+  gv:coverage "0.62"
+], [
+  gv:hex "ead8c1";
+  gv:red "234";
+  gv:blue "193";
+  gv:green "216";
+  gv:score "3.3005934";
+  gv:coverage "1.6"
+], [
+  gv:hex "685640";
+  gv:red "104";
+  gv:blue "64";
+  gv:green "86";
+  gv:score "2.2400422";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "493822";
+  gv:red "73";
+  gv:blue "34";
+  gv:green "56";
+  gv:score "0.44614444000000003";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "e0dcd7";
+  gv:red "224";
+  gv:blue "215";
+  gv:green "220";
+  gv:score "0.056673045000000005";
+  gv:coverage "41.04"
+], [
+  gv:hex "c4c0bb";
+  gv:red "196";
+  gv:blue "187";
+  gv:green "192";
+  gv:score "0.0519434";
+  gv:coverage "21.626666"
+], [
+  gv:hex "5a544f";
+  gv:red "90";
+  gv:blue "79";
+  gv:green "84";
+  gv:score "0.026369357";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "827d75";
+  gv:red "130";
+  gv:blue "117";
+  gv:green "125";
+  gv:score "0.016543697";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.601099999999995"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.761842"
+];
+    w:bagOfWords "DO\nNORTE\nDE\nREAL COMPANHIA VINICOLA DO NORTE DE PORTUGAL\nFORNECEDORA DA PRESIDENCIA DA REPUBLICA\nVINHO DE MESA\nMADURO TINTO\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

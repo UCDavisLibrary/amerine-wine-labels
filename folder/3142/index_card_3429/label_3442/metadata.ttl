@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3442";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "1943\nOO\nJ. THOR IN\nLes Rouvres\" PONTANEVAUX S & L.) France\nRESERVE DES\nBURG ONDES\ntMP 8 ARNAUD LYON. PARIS\n"@fra;
+    gv:color [
+  gv:hex "debb8c";
+  gv:red "222";
+  gv:blue "140";
+  gv:green "187";
+  gv:score "24.599148";
+  gv:coverage "8.12"
+], [
+  gv:hex "c39058";
+  gv:red "195";
+  gv:blue "88";
+  gv:green "144";
+  gv:score "18.302858";
+  gv:coverage "6.4399999999999995"
+], [
+  gv:hex "a1703b";
+  gv:red "161";
+  gv:blue "59";
+  gv:green "112";
+  gv:score "9.3778141";
+  gv:coverage "3.8666666000000003"
+], [
+  gv:hex "dbbc97";
+  gv:red "219";
+  gv:blue "151";
+  gv:green "188";
+  gv:score "7.865571200000001";
+  gv:coverage "10.953333"
+], [
+  gv:hex "e2b383";
+  gv:red "226";
+  gv:blue "131";
+  gv:green "179";
+  gv:score "6.4913705";
+  gv:coverage "1.8866668"
+], [
+  gv:hex "bc9a6b";
+  gv:red "188";
+  gv:blue "107";
+  gv:green "154";
+  gv:score "5.9836615";
+  gv:coverage "2.4133334"
+], [
+  gv:hex "7c4c1f";
+  gv:red "124";
+  gv:blue "31";
+  gv:green "76";
+  gv:score "4.102562";
+  gv:coverage "1.1400000000000001"
+], [
+  gv:hex "ad7331";
+  gv:red "173";
+  gv:blue "49";
+  gv:green "115";
+  gv:score "3.7618417";
+  gv:coverage "0.9533333600000001"
+], [
+  gv:hex "c18743";
+  gv:red "193";
+  gv:blue "67";
+  gv:green "135";
+  gv:score "2.8910892";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "72482e";
+  gv:red "114";
+  gv:blue "46";
+  gv:green "72";
+  gv:score "1.9564148";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.463273"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "1943\nOO\nJ. THOR IN\nLes Rouvres\" PONTANEVAUX S & L.) France\nRESERVE DES\nBURG ONDES\ntMP 8 ARNAUD LYON. PARIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

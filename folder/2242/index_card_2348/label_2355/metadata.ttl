@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2348/label_2355";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "GRAND VIN\nCHATEAU\nUHART\nMILON\nGrand cru classe\n1937\nPAAUILLAC.MEDoc\n(FRANCE)\nMis en bouteille au chateau\nppellation Pauillac controlée\nIM PRIME EN FRANCE\n"@fra;
+    gv:color [
+  gv:hex "e0c5a1";
+  gv:red "224";
+  gv:blue "161";
+  gv:green "197";
+  gv:score "54.340816000000004";
+  gv:coverage "24.233334"
+], [
+  gv:hex "301200";
+  gv:red "48";
+  gv:blue "undefined";
+  gv:green "18";
+  gv:score "0.49664211";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "180300";
+  gv:red "24";
+  gv:blue "undefined";
+  gv:green "3";
+  gv:score "0.079507125";
+  gv:coverage "0.04"
+], [
+  gv:hex "dfbd90";
+  gv:red "223";
+  gv:blue "144";
+  gv:green "189";
+  gv:score "6.591960800000001";
+  gv:coverage "1.9533332"
+], [
+  gv:hex "b79c7b";
+  gv:red "183";
+  gv:blue "123";
+  gv:green "156";
+  gv:score "6.333030000000001";
+  gv:coverage "1.8666665999999998"
+], [
+  gv:hex "eab99b";
+  gv:red "234";
+  gv:blue "155";
+  gv:green "185";
+  gv:score "6.1001465";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "8d7454";
+  gv:red "141";
+  gv:blue "84";
+  gv:green "116";
+  gv:score "3.7767939";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "f0d7b8";
+  gv:red "240";
+  gv:blue "184";
+  gv:green "215";
+  gv:score "3.473312";
+  gv:coverage "22.46"
+], [
+  gv:hex "e0b488";
+  gv:red "224";
+  gv:blue "136";
+  gv:green "180";
+  gv:score "3.0040303";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "c5976c";
+  gv:red "197";
+  gv:blue "108";
+  gv:green "151";
+  gv:score "2.5967207";
+  gv:coverage "0.74"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "77.643752"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.818737"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "60.165143"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "60.000467"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GRAND VIN\nCHATEAU\nUHART\nMILON\nGrand cru classe\n1937\nPAAUILLAC.MEDoc\n(FRANCE)\nMis en bouteille au chateau\nppellation Pauillac controlée\nIM PRIME EN FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

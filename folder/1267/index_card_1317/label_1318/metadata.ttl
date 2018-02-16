@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1318";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "VINHO DE M GUIEIRA\nQUINTA MARCA\nREGISTADA\nMEDAL HA DE OURO\n2 GRANDS PRiX\nRio de Janeiro 1922\nSevilha 1930 Lisboa 1932\nEXPORTADORES\nSOCIEDADE AGRICOLA DA AGUIEIRA, L. DA,\nLISBOA PORTUGAL\n"@por;
+    gv:color [
+  gv:hex "d3c2ae";
+  gv:red "211";
+  gv:blue "174";
+  gv:green "194";
+  gv:score "41.991371";
+  gv:coverage "23.693334"
+], [
+  gv:hex "ad9a85";
+  gv:red "173";
+  gv:blue "133";
+  gv:green "154";
+  gv:score "28.155344999999997";
+  gv:coverage "2.8733334"
+], [
+  gv:hex "ebdcca";
+  gv:red "235";
+  gv:blue "202";
+  gv:green "220";
+  gv:score "11.737400000000001";
+  gv:coverage "11.18"
+], [
+  gv:hex "897864";
+  gv:red "137";
+  gv:blue "100";
+  gv:green "120";
+  gv:score "10.806348999999999";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "645543";
+  gv:red "100";
+  gv:blue "67";
+  gv:green "85";
+  gv:score "4.0381491";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "eae0d4";
+  gv:red "234";
+  gv:blue "212";
+  gv:green "224";
+  gv:score "1.2215661";
+  gv:coverage "43.36"
+], [
+  gv:hex "d5c9bc";
+  gv:red "213";
+  gv:blue "188";
+  gv:green "201";
+  gv:score "1.2126223";
+  gv:coverage "16.726667"
+], [
+  gv:hex "433425";
+  gv:red "67";
+  gv:blue "37";
+  gv:green "52";
+  gv:score "0.45644594";
+  gv:coverage "0.04"
+], [
+  gv:hex "a7a399";
+  gv:red "167";
+  gv:blue "153";
+  gv:green "163";
+  gv:score "0.15645248";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "31200c";
+  gv:red "49";
+  gv:blue "12";
+  gv:green "32";
+  gv:score "0.094049121";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.744893"
+];
+    w:bagOfWords "VINHO DE M GUIEIRA\nQUINTA MARCA\nREGISTADA\nMEDAL HA DE OURO\n2 GRANDS PRiX\nRio de Janeiro 1922\nSevilha 1930 Lisboa 1932\nEXPORTADORES\nSOCIEDADE AGRICOLA DA AGUIEIRA, L. DA,\nLISBOA PORTUGAL\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1829/label_1845";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "Steeger Tlur 9tiesling 20uslef\nGeigenes 9Badstum unb Originalabfiitolung\n"@deu;
+    gv:color [
+  gv:hex "dbcab6";
+  gv:red "219";
+  gv:blue "182";
+  gv:green "202";
+  gv:score "37.898615";
+  gv:coverage "32.633334000000005"
+], [
+  gv:hex "e7dfd6";
+  gv:red "231";
+  gv:blue "214";
+  gv:green "223";
+  gv:score "15.360560000000001";
+  gv:coverage "11.873333"
+], [
+  gv:hex "927137";
+  gv:red "146";
+  gv:blue "55";
+  gv:green "113";
+  gv:score "6.006762";
+  gv:coverage "2.5533333"
+], [
+  gv:hex "e9d9c9";
+  gv:red "233";
+  gv:blue "201";
+  gv:green "217";
+  gv:score "15.338959";
+  gv:coverage "17.02"
+], [
+  gv:hex "d8cdc3";
+  gv:red "216";
+  gv:blue "195";
+  gv:green "205";
+  gv:score "8.2589909";
+  gv:coverage "6.660000000000001"
+], [
+  gv:hex "715520";
+  gv:red "113";
+  gv:blue "32";
+  gv:green "85";
+  gv:score "5.1083494";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "976e38";
+  gv:red "151";
+  gv:blue "56";
+  gv:green "110";
+  gv:score "2.5092851";
+  gv:coverage "2.96"
+], [
+  gv:hex "765224";
+  gv:red "118";
+  gv:blue "36";
+  gv:green "82";
+  gv:score "1.5591146";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "b4935f";
+  gv:red "180";
+  gv:blue "95";
+  gv:green "147";
+  gv:score "1.2038174000000001";
+  gv:coverage "1.0466667"
+], [
+  gv:hex "8d7359";
+  gv:red "141";
+  gv:blue "89";
+  gv:green "115";
+  gv:score "1.1610610000000001";
+  gv:coverage "1.4000000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "68.186808"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.782264"
+];
+    w:bagOfWords "Steeger Tlur 9tiesling 20uslef\nGeigenes 9Badstum unb Originalabfiitolung\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

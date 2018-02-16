@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2957";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "SYLVAN ER\nJEAN GUIDAT\nNIE DER MORSCHWIHR-HT-RHIN\nAU PIE, DSS DES TROIS EPIS\n"@fra;
+    gv:color [
+  gv:hex "e2c092";
+  gv:red "226";
+  gv:blue "146";
+  gv:green "192";
+  gv:score "15.884431";
+  gv:coverage "7.213333199999999"
+], [
+  gv:hex "9f6f3f";
+  gv:red "159";
+  gv:blue "63";
+  gv:green "111";
+  gv:score "14.842705";
+  gv:coverage "3.56"
+], [
+  gv:hex "774c22";
+  gv:red "119";
+  gv:blue "34";
+  gv:green "76";
+  gv:score "11.462055";
+  gv:coverage "2.16"
+], [
+  gv:hex "c4905e";
+  gv:red "196";
+  gv:blue "94";
+  gv:green "144";
+  gv:score "10.942499";
+  gv:coverage "4.4933334"
+], [
+  gv:hex "ebb68b";
+  gv:red "235";
+  gv:blue "139";
+  gv:green "182";
+  gv:score "9.6111342";
+  gv:coverage "4.273333399999999"
+], [
+  gv:hex "e2c29a";
+  gv:red "226";
+  gv:blue "154";
+  gv:green "194";
+  gv:score "7.5961433";
+  gv:coverage "6.16"
+], [
+  gv:hex "572f0a";
+  gv:red "87";
+  gv:blue "10";
+  gv:green "47";
+  gv:score "4.6558525";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "b99665";
+  gv:red "185";
+  gv:blue "101";
+  gv:green "150";
+  gv:score "3.8359083000000003";
+  gv:coverage "1.78"
+], [
+  gv:hex "c08a41";
+  gv:red "192";
+  gv:blue "65";
+  gv:green "138";
+  gv:score "2.4698872";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "aa752e";
+  gv:red "170";
+  gv:blue "46";
+  gv:green "117";
+  gv:score "2.2205137";
+  gv:coverage "0.9133333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.679834"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.450746"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "50.644481"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.31450400000001"
+];
+    w:bagOfWords "SYLVAN ER\nJEAN GUIDAT\nNIE DER MORSCHWIHR-HT-RHIN\nAU PIE, DSS DES TROIS EPIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_3018";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "MARIOL.\nCHATEAU HAUT BRION\nen touteilles au (DRahaau\nDEPOSE.\n"@fra;
+    gv:color [
+  gv:hex "b49663";
+  gv:red "180";
+  gv:blue "99";
+  gv:green "150";
+  gv:score "45.518142";
+  gv:coverage "7.720000000000001"
+], [
+  gv:hex "d7bf9e";
+  gv:red "215";
+  gv:blue "158";
+  gv:green "191";
+  gv:score "23.67914";
+  gv:coverage "22.006667"
+], [
+  gv:hex "b49b77";
+  gv:red "180";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "12.117477000000001";
+  gv:coverage "3.66"
+], [
+  gv:hex "9b7e49";
+  gv:red "155";
+  gv:blue "73";
+  gv:green "126";
+  gv:score "7.6212838000000005";
+  gv:coverage "2.1533333000000003"
+], [
+  gv:hex "d4b685";
+  gv:red "212";
+  gv:blue "133";
+  gv:green "182";
+  gv:score "6.7660347";
+  gv:coverage "1.2866667"
+], [
+  gv:hex "ecd8bc";
+  gv:red "236";
+  gv:blue "188";
+  gv:green "216";
+  gv:score "1.8333974999999998";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "957e5c";
+  gv:red "149";
+  gv:blue "92";
+  gv:green "126";
+  gv:score "1.0143997";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "b68d56";
+  gv:red "182";
+  gv:blue "86";
+  gv:green "141";
+  gv:score "0.57887831";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "5b564d";
+  gv:red "91";
+  gv:blue "77";
+  gv:green "86";
+  gv:score "0.0050077284";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "dcb079";
+  gv:red "220";
+  gv:blue "121";
+  gv:green "176";
+  gv:score "0.17625715";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.252054"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "64.596367"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.605704"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.926714"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "51.040536"
+];
+    w:bagOfWords "MARIOL.\nCHATEAU HAUT BRION\nen touteilles au (DRahaau\nDEPOSE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

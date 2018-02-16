@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_3035";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "/c\nGRAND VIN\nCHATEAU\nーーーー, S/ソ/Wm/そ/ in 1 4-a4 ear-\nderズ\nante-\n1928\n覂ス거\nMARTILLAC\nB\n"@fra;
+    gv:color [
+  gv:hex "a89b91";
+  gv:red "168";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "24.778274";
+  gv:coverage "3.3000000000000003"
+], [
+  gv:hex "cec0b6";
+  gv:red "206";
+  gv:blue "182";
+  gv:green "192";
+  gv:score "23.69349";
+  gv:coverage "54.433334"
+], [
+  gv:hex "85786e";
+  gv:red "133";
+  gv:blue "110";
+  gv:green "120";
+  gv:score "14.162441000000001";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "a6988a";
+  gv:red "166";
+  gv:blue "138";
+  gv:green "152";
+  gv:score "12.372534";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "d1bfae";
+  gv:red "209";
+  gv:blue "174";
+  gv:green "191";
+  gv:score "8.0125891";
+  gv:coverage "5.9066668"
+], [
+  gv:hex "847768";
+  gv:red "132";
+  gv:blue "104";
+  gv:green "119";
+  gv:score "5.7157665";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "65574d";
+  gv:red "101";
+  gv:blue "77";
+  gv:green "87";
+  gv:score "2.9144991";
+  gv:coverage "0.36"
+], [
+  gv:hex "e8dad0";
+  gv:red "232";
+  gv:blue "208";
+  gv:green "218";
+  gv:score "2.3989713";
+  gv:coverage "31.319999999999997"
+], [
+  gv:hex "685a4d";
+  gv:red "104";
+  gv:blue "77";
+  gv:green "90";
+  gv:score "1.3301955";
+  gv:coverage "0.12"
+], [
+  gv:hex "ba9a8c";
+  gv:red "186";
+  gv:blue "140";
+  gv:green "154";
+  gv:score "1.1464349";
+  gv:coverage "0.16666667000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.367625"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.117458"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.655359000000004"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.5061"
+];
+    w:bagOfWords "/c\nGRAND VIN\nCHATEAU\nーーーー, S/ソ/Wm/そ/ in 1 4-a4 ear-\nderズ\nante-\n1928\n覂ス거\nMARTILLAC\nB\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

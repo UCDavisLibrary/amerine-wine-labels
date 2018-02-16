@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0512";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "Johanni\ner H\n1949er ans\nBeeren-Auslese A GLI ORIGINAL ABFULLUNG\nWMUMM,SCHE KE\n"@deu;
+    gv:color [
+  gv:hex "e2bf7f";
+  gv:red "226";
+  gv:blue "127";
+  gv:green "191";
+  gv:score "38.974841999999995";
+  gv:coverage "11.313333"
+], [
+  gv:hex "8f723d";
+  gv:red "143";
+  gv:blue "61";
+  gv:green "114";
+  gv:score "10.870498000000001";
+  gv:coverage "3.6466666"
+], [
+  gv:hex "784b21";
+  gv:red "120";
+  gv:blue "33";
+  gv:green "75";
+  gv:score "6.3846663";
+  gv:coverage "3.3066668"
+], [
+  gv:hex "a82321";
+  gv:red "168";
+  gv:blue "33";
+  gv:green "35";
+  gv:score "1.7214729000000002";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "b8985e";
+  gv:red "184";
+  gv:blue "94";
+  gv:green "152";
+  gv:score "7.5059533";
+  gv:coverage "2.5533333"
+], [
+  gv:hex "725622";
+  gv:red "114";
+  gv:blue "34";
+  gv:green "86";
+  gv:score "4.9669869";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "9b6c3d";
+  gv:red "155";
+  gv:blue "61";
+  gv:green "108";
+  gv:score "4.4729158";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "edb87f";
+  gv:red "237";
+  gv:blue "127";
+  gv:green "184";
+  gv:score "3.4150008";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "c8905b";
+  gv:red "200";
+  gv:blue "91";
+  gv:green "144";
+  gv:score "3.3433452000000004";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "2b1e30";
+  gv:red "43";
+  gv:blue "48";
+  gv:green "30";
+  gv:score "0.017578906000000002";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.351944"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.055299999999995"
+];
+    w:bagOfWords "Johanni\ner H\n1949er ans\nBeeren-Auslese A GLI ORIGINAL ABFULLUNG\nWMUMM,SCHE KE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

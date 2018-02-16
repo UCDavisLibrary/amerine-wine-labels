@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1976";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "24\nDulce elect to\nLIT. SAL DO JERE\n"@spa;
+    gv:color [
+  gv:hex "847361";
+  gv:red "132";
+  gv:blue "97";
+  gv:green "115";
+  gv:score "19.913955";
+  gv:coverage "2.9133333"
+], [
+  gv:hex "a89885";
+  gv:red "168";
+  gv:blue "133";
+  gv:green "152";
+  gv:score "15.365832";
+  gv:coverage "3.5533335"
+], [
+  gv:hex "d2c1ab";
+  gv:red "210";
+  gv:blue "171";
+  gv:green "193";
+  gv:score "13.748240000000001";
+  gv:coverage "33.533334999999994"
+], [
+  gv:hex "66553f";
+  gv:red "102";
+  gv:blue "63";
+  gv:green "85";
+  gv:score "12.901109";
+  gv:coverage "1.26"
+], [
+  gv:hex "7f7369";
+  gv:red "127";
+  gv:blue "105";
+  gv:green "115";
+  gv:score "7.3773772";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "d0c5b9";
+  gv:red "208";
+  gv:blue "185";
+  gv:green "197";
+  gv:score "6.9434315";
+  gv:coverage "6.800000000000001"
+], [
+  gv:hex "a4988e";
+  gv:red "164";
+  gv:blue "142";
+  gv:green "152";
+  gv:score "6.583116899999999";
+  gv:coverage "1.2133333"
+], [
+  gv:hex "e9dcd1";
+  gv:red "233";
+  gv:blue "209";
+  gv:green "220";
+  gv:score "5.3913049";
+  gv:coverage "16.6"
+], [
+  gv:hex "ecdac6";
+  gv:red "236";
+  gv:blue "198";
+  gv:green "218";
+  gv:score "3.66673";
+  gv:coverage "32.133331999999996"
+], [
+  gv:hex "61584f";
+  gv:red "97";
+  gv:blue "79";
+  gv:green "88";
+  gv:score "3.2821062999999997";
+  gv:coverage "0.42"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "74.80292899999999"
+], [
+  gv:mid <https://g.co/kg/m/013y0j>;
+  gv:desc "organ";
+  gv:score "64.398533"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "53.195959"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "53.05398099999999"
+];
+    w:bagOfWords "24\nDulce elect to\nLIT. SAL DO JERE\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

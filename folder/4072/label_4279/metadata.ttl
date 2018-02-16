@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4279";
+    dct:type "image";
+    w:bagOfWords "RED BURGUNDY WINE\nM A CO N\nPRODUCE OF\nABB\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDEPOSE\n"@fra;
+    gv:color [
+  gv:hex "a89994";
+  gv:red "168";
+  gv:blue "148";
+  gv:green "153";
+  gv:score "15.758219";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "ba6542";
+  gv:red "186";
+  gv:blue "66";
+  gv:green "101";
+  gv:score "2.8355101";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "84746f";
+  gv:red "132";
+  gv:blue "111";
+  gv:green "116";
+  gv:score "15.336215000000001";
+  gv:coverage "1.8266667"
+], [
+  gv:hex "cdc0ba";
+  gv:red "205";
+  gv:blue "186";
+  gv:green "192";
+  gv:score "13.132344000000002";
+  gv:coverage "10.5"
+], [
+  gv:hex "63524d";
+  gv:red "99";
+  gv:blue "77";
+  gv:green "82";
+  gv:score "10.881523";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "e8ddd7";
+  gv:red "232";
+  gv:blue "215";
+  gv:green "221";
+  gv:score "4.7756262000000005";
+  gv:coverage "76.573336"
+], [
+  gv:hex "81715b";
+  gv:red "129";
+  gv:blue "91";
+  gv:green "113";
+  gv:score "3.5059579";
+  gv:coverage "0.44"
+], [
+  gv:hex "685842";
+  gv:red "104";
+  gv:blue "66";
+  gv:green "88";
+  gv:score "3.401383";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "a99b87";
+  gv:red "169";
+  gv:blue "135";
+  gv:green "155";
+  gv:score "3.1073503";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "904020";
+  gv:red "144";
+  gv:blue "32";
+  gv:green "64";
+  gv:score "2.7933357";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.107258"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "RED BURGUNDY WINE\nM A CO N\nPRODUCE OF\nABB\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDEPOSE\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

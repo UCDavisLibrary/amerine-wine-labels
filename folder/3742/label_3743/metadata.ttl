@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3742/label_3743";
+    dct:type "image";
+    w:bagOfWords "B wea di S. Bethello\nA\nat Dome th\n"@ita;
+    gv:color [
+  gv:hex "d1c0ac";
+  gv:red "209";
+  gv:blue "172";
+  gv:green "192";
+  gv:score "58.053619";
+  gv:coverage "28.88"
+], [
+  gv:hex "ac9c88";
+  gv:red "172";
+  gv:blue "136";
+  gv:green "156";
+  gv:score "28.637945999999996";
+  gv:coverage "5.62"
+], [
+  gv:hex "8b7a67";
+  gv:red "139";
+  gv:blue "103";
+  gv:green "122";
+  gv:score "9.6494727";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "e8d7c4";
+  gv:red "232";
+  gv:blue "196";
+  gv:green "215";
+  gv:score "2.4459206";
+  gv:coverage "8.4866665"
+], [
+  gv:hex "695946";
+  gv:red "105";
+  gv:blue "70";
+  gv:green "89";
+  gv:score "0.88886768";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "d4c9bb";
+  gv:red "212";
+  gv:blue "187";
+  gv:green "201";
+  gv:score "0.15943483";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "e5d9cd";
+  gv:red "229";
+  gv:blue "205";
+  gv:green "217";
+  gv:score "0.10009545";
+  gv:coverage "52.366668000000004"
+], [
+  gv:hex "80766c";
+  gv:red "128";
+  gv:blue "108";
+  gv:green "118";
+  gv:score "0.039292147";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "60564b";
+  gv:red "96";
+  gv:blue "75";
+  gv:green "86";
+  gv:score "0.010880925";
+  gv:coverage "0.06"
+], [
+  gv:hex "2d2419";
+  gv:red "45";
+  gv:blue "25";
+  gv:green "36";
+  gv:score "0.0072913492";
+  gv:coverage "0.026666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "91.42344"
+], [
+  gv:mid <https://g.co/kg/m/0gkxy13>;
+  gv:desc "handwriting";
+  gv:score "83.18767"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "75.072312"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "67.014134"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.69334"
+];
+    w:bagOfWords "B wea di S. Bethello\nA\nat Dome th\n"@ita;
+    wdt:P219 "ita";
+    wdt:P298 "ITA".

@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4876";
+    dct:type "image";
+    w:bagOfWords "RUDE SHEIM RHEIN\nG. 48030\n"@eng;
+    gv:color [
+  gv:hex "d2c5af";
+  gv:red "210";
+  gv:blue "175";
+  gv:green "197";
+  gv:score "16.800764";
+  gv:coverage "4.413333199999999"
+], [
+  gv:hex "a59a93";
+  gv:red "165";
+  gv:blue "147";
+  gv:green "154";
+  gv:score "13.609917";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "837660";
+  gv:red "131";
+  gv:blue "96";
+  gv:green "118";
+  gv:score "11.986668";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "eadec9";
+  gv:red "234";
+  gv:blue "201";
+  gv:green "222";
+  gv:score "15.480146999999999";
+  gv:coverage "5.1333334"
+], [
+  gv:hex "cdc2b9";
+  gv:red "205";
+  gv:blue "185";
+  gv:green "194";
+  gv:score "11.917511";
+  gv:coverage "12.4"
+], [
+  gv:hex "aa9d88";
+  gv:red "170";
+  gv:blue "136";
+  gv:green "157";
+  gv:score "11.075090999999999";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "e8ded5";
+  gv:red "232";
+  gv:blue "213";
+  gv:green "222";
+  gv:score "6.6495918000000005";
+  gv:coverage "75.2"
+], [
+  gv:hex "695a3f";
+  gv:red "105";
+  gv:blue "63";
+  gv:green "90";
+  gv:score "6.0125947";
+  gv:coverage "0.24"
+], [
+  gv:hex "887b75";
+  gv:red "136";
+  gv:blue "117";
+  gv:green "123";
+  gv:score "5.3900827";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "4d3b20";
+  gv:red "77";
+  gv:blue "32";
+  gv:green "59";
+  gv:score "0.83909919";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.162853"
+], [
+  gv:mid <https://g.co/kg/m/0bby24z>;
+  gv:desc "moustache";
+  gv:score "59.197223"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "54.95762199999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.747465999999996"
+];
+    w:bagOfWords "RUDE SHEIM RHEIN\nG. 48030\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

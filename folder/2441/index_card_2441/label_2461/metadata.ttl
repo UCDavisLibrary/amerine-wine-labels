@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2441/label_2461";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "SELECTION NE\nVIN\nFIN\nDE\nLA PROPRIET\nBOURGOGNE\nA.Ropiteau mio mom\nPROPRIETAIRE\nCAVES A MEURSAULT\nFRANCE\nProduct of France\n"@fra;
+    gv:color [
+  gv:hex "9a6e50";
+  gv:red "154";
+  gv:blue "80";
+  gv:green "110";
+  gv:score "21.950656";
+  gv:coverage "3.9733332000000003"
+], [
+  gv:hex "e1c29c";
+  gv:red "225";
+  gv:blue "156";
+  gv:green "194";
+  gv:score "10.779389";
+  gv:coverage "12.22"
+], [
+  gv:hex "e6b48b";
+  gv:red "230";
+  gv:blue "139";
+  gv:green "180";
+  gv:score "6.7497142";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "ba8d70";
+  gv:red "186";
+  gv:blue "112";
+  gv:green "141";
+  gv:score "12.984708000000001";
+  gv:coverage "2.7666667"
+], [
+  gv:hex "7a4e32";
+  gv:red "122";
+  gv:blue "50";
+  gv:green "78";
+  gv:score "12.124187000000001";
+  gv:coverage "2.0666666"
+], [
+  gv:hex "754827";
+  gv:red "117";
+  gv:blue "39";
+  gv:green "72";
+  gv:score "8.0123559";
+  gv:coverage "1.52"
+], [
+  gv:hex "c6936a";
+  gv:red "198";
+  gv:blue "106";
+  gv:green "147";
+  gv:score "6.598746";
+  gv:coverage "2.4666666999999998"
+], [
+  gv:hex "9c6b45";
+  gv:red "156";
+  gv:blue "69";
+  gv:green "107";
+  gv:score "5.9238944";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "e1be92";
+  gv:red "225";
+  gv:blue "146";
+  gv:green "190";
+  gv:score "4.7845282000000005";
+  gv:coverage "3.4466665"
+], [
+  gv:hex "e3b594";
+  gv:red "227";
+  gv:blue "148";
+  gv:green "181";
+  gv:score "2.7626708";
+  gv:coverage "1.1133334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "63.257551"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.129223"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.13998600000001"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.2104"
+];
+    w:bagOfWords "SELECTION NE\nVIN\nFIN\nDE\nLA PROPRIET\nBOURGOGNE\nA.Ropiteau mio mom\nPROPRIETAIRE\nCAVES A MEURSAULT\nFRANCE\nProduct of France\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

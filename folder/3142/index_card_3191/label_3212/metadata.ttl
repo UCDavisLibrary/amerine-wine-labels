@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3212";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "MU SIGNY\nCUVEE VIEILLES VIGNES\nAPPELLATION CONTROLEE\nRéserve numérotée\nComte Georges de VOGUE\n1949\nNO 050197\nmis en bouteilles\nriété\n"@fra;
+    gv:color [
+  gv:hex "dac3a6";
+  gv:red "218";
+  gv:blue "166";
+  gv:green "195";
+  gv:score "58.295821999999994";
+  gv:coverage "21.94"
+], [
+  gv:hex "b39d81";
+  gv:red "179";
+  gv:blue "129";
+  gv:green "157";
+  gv:score "19.022611";
+  gv:coverage "2.5533333"
+], [
+  gv:hex "eddac0";
+  gv:red "237";
+  gv:blue "192";
+  gv:green "218";
+  gv:score "12.820210000000001";
+  gv:coverage "28.42"
+], [
+  gv:hex "8e7a5e";
+  gv:red "142";
+  gv:blue "94";
+  gv:green "122";
+  gv:score "4.2926271";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "675439";
+  gv:red "103";
+  gv:blue "57";
+  gv:green "84";
+  gv:score "2.5724692";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "bd997b";
+  gv:red "189";
+  gv:blue "123";
+  gv:green "153";
+  gv:score "0.7530089";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "dcb89c";
+  gv:red "220";
+  gv:blue "156";
+  gv:green "184";
+  gv:score "0.64230291";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "dbb68b";
+  gv:red "219";
+  gv:blue "139";
+  gv:green "182";
+  gv:score "0.51646829";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "b5986e";
+  gv:red "181";
+  gv:blue "110";
+  gv:green "152";
+  gv:score "0.262075";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "c29b74";
+  gv:red "194";
+  gv:blue "116";
+  gv:green "155";
+  gv:score "0.12974245";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.262774"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.039691"
+];
+    w:bagOfWords "MU SIGNY\nCUVEE VIEILLES VIGNES\nAPPELLATION CONTROLEE\nRéserve numérotée\nComte Georges de VOGUE\n1949\nNO 050197\nmis en bouteilles\nriété\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

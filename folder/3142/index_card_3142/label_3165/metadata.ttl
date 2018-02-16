@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3142/label_3165";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "STILL RED BURGUNDY WINE\nPRODUCT OF FRANCE\nPRODUCED AND BOTTLED BY\nierre Damoy\npropriétaire Gevrey- Chambertim\nmise en bouteilles la propriété\nROUALET BEAUNE.\n"@fra;
+    gv:color [
+  gv:hex "debb8b";
+  gv:red "222";
+  gv:blue "139";
+  gv:green "187";
+  gv:score "30.438643999999996";
+  gv:coverage "11.486667"
+], [
+  gv:hex "784b32";
+  gv:red "120";
+  gv:blue "50";
+  gv:green "75";
+  gv:score "3.2517735";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "dabf98";
+  gv:red "218";
+  gv:blue "152";
+  gv:green "191";
+  gv:score "18.235968";
+  gv:coverage "12.606667"
+], [
+  gv:hex "e0b281";
+  gv:red "224";
+  gv:blue "129";
+  gv:green "178";
+  gv:score "10.653454";
+  gv:coverage "4.6266668"
+], [
+  gv:hex "bc9c6c";
+  gv:red "188";
+  gv:blue "108";
+  gv:green "156";
+  gv:score "6.4390793";
+  gv:coverage "2.64"
+], [
+  gv:hex "c59869";
+  gv:red "197";
+  gv:blue "105";
+  gv:green "152";
+  gv:score "6.2673784999999995";
+  gv:coverage "2.5866667"
+], [
+  gv:hex "b49b76";
+  gv:red "180";
+  gv:blue "118";
+  gv:green "155";
+  gv:score "3.976528";
+  gv:coverage "1.3333334000000001"
+], [
+  gv:hex "8d7245";
+  gv:red "141";
+  gv:blue "69";
+  gv:green "114";
+  gv:score "3.5934348";
+  gv:coverage "0.96"
+], [
+  gv:hex "6d5429";
+  gv:red "109";
+  gv:blue "41";
+  gv:green "84";
+  gv:score "2.3888066";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "774927";
+  gv:red "119";
+  gv:blue "39";
+  gv:green "73";
+  gv:score "2.0065909";
+  gv:coverage "0.27999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.443133"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.878227"
+];
+    w:bagOfWords "STILL RED BURGUNDY WINE\nPRODUCT OF FRANCE\nPRODUCED AND BOTTLED BY\nierre Damoy\npropriétaire Gevrey- Chambertim\nmise en bouteilles la propriété\nROUALET BEAUNE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1483";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "BRAND\nALCOHOL\nBY VOLUME\nMADE AND BOTTLED BY\nPLEASANT VALLEY WINE Co.\nRHEIMs. NY.\nESTABLISHED\n1860\nBONDED WINERY N\nl 2ND PERMISSIVE DIST NY NYS uc, D wi\n"@eng;
+    gv:color [
+  gv:hex "21661e";
+  gv:red "33";
+  gv:blue "30";
+  gv:green "102";
+  gv:score "26.805171";
+  gv:coverage "3.9266667999999996"
+], [
+  gv:hex "8f7942";
+  gv:red "143";
+  gv:blue "66";
+  gv:green "121";
+  gv:score "14.496918";
+  gv:coverage "12"
+], [
+  gv:hex "415c2e";
+  gv:red "65";
+  gv:blue "46";
+  gv:green "92";
+  gv:score "1.7096087";
+  gv:coverage "0.38"
+], [
+  gv:hex "072300";
+  gv:red "7";
+  gv:blue "undefined";
+  gv:green "35";
+  gv:score "1.3506986";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "67a26e";
+  gv:red "103";
+  gv:blue "110";
+  gv:green "162";
+  gv:score "0.46860841";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "0a0e00";
+  gv:red "10";
+  gv:blue "undefined";
+  gv:green "14";
+  gv:score "0.19504323999999998";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "d8f4d3";
+  gv:red "216";
+  gv:blue "211";
+  gv:green "244";
+  gv:score "0.16691801";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "0a7119";
+  gv:red "10";
+  gv:blue "25";
+  gv:green "113";
+  gv:score "11.773667999999999";
+  gv:coverage "1.54"
+], [
+  gv:hex "0e7c23";
+  gv:red "14";
+  gv:blue "35";
+  gv:green "124";
+  gv:score "11.092351";
+  gv:coverage "1.66"
+], [
+  gv:hex "a69058";
+  gv:red "166";
+  gv:blue "88";
+  gv:green "144";
+  gv:score "6.367439";
+  gv:coverage "3.4000000000000004"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.289344"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "53.316444"
+];
+    w:bagOfWords "BRAND\nALCOHOL\nBY VOLUME\nMADE AND BOTTLED BY\nPLEASANT VALLEY WINE Co.\nRHEIMs. NY.\nESTABLISHED\n1860\nBONDED WINERY N\nl 2ND PERMISSIVE DIST NY NYS uc, D wi\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

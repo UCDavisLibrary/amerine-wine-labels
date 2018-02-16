@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0913";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "SANCER RE\nAPPELLATION CONTROLEE\nArmand Boulay Vinificateur Eleveur Sancerre\nRES E R VE DE LA FA MILLE JAR RA s s E\n"@fra;
+    gv:color [
+  gv:hex "d1c3a9";
+  gv:red "209";
+  gv:blue "169";
+  gv:green "195";
+  gv:score "5.7265557000000005";
+  gv:coverage "5.006666500000001"
+], [
+  gv:hex "78441d";
+  gv:red "120";
+  gv:blue "29";
+  gv:green "68";
+  gv:score "4.4878285";
+  gv:coverage "0.26"
+], [
+  gv:hex "e2c335";
+  gv:red "226";
+  gv:blue "53";
+  gv:green "195";
+  gv:score "3.79703";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "5f5237";
+  gv:red "95";
+  gv:blue "55";
+  gv:green "82";
+  gv:score "3.6752339000000003";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "ce471c";
+  gv:red "206";
+  gv:blue "28";
+  gv:green "71";
+  gv:score "1.0692241999999998";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "ffa881";
+  gv:red "255";
+  gv:blue "129";
+  gv:green "168";
+  gv:score "0.19510266";
+  gv:coverage "0.013333333"
+], [
+  gv:hex "8c3d1e";
+  gv:red "140";
+  gv:blue "30";
+  gv:green "61";
+  gv:score "4.1429706";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "a99c82";
+  gv:red "169";
+  gv:blue "130";
+  gv:green "156";
+  gv:score "4.1030388";
+  gv:coverage "1.6"
+], [
+  gv:hex "ece0c5";
+  gv:red "236";
+  gv:blue "197";
+  gv:green "224";
+  gv:score "3.8741673999999997";
+  gv:coverage "11.04"
+], [
+  gv:hex "3a3219";
+  gv:red "58";
+  gv:blue "25";
+  gv:green "50";
+  gv:score "3.4811742999999997";
+  gv:coverage "0.58666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.817978000000004"
+];
+    w:bagOfWords "SANCER RE\nAPPELLATION CONTROLEE\nArmand Boulay Vinificateur Eleveur Sancerre\nRES E R VE DE LA FA MILLE JAR RA s s E\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

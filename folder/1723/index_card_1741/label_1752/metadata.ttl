@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1752";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1932er\nOriginal Reuerabang\nGrowmand bottled in Germany, contents notivover.\nAuslese\nFAtc\n"@deu;
+    gv:color [
+  gv:hex "89755b";
+  gv:red "137";
+  gv:blue "91";
+  gv:green "117";
+  gv:score "23.084115999999998";
+  gv:coverage "5.6933332000000005"
+], [
+  gv:hex "a9957a";
+  gv:red "169";
+  gv:blue "122";
+  gv:green "149";
+  gv:score "18.6387";
+  gv:coverage "5.3133335"
+], [
+  gv:hex "67543b";
+  gv:red "103";
+  gv:blue "59";
+  gv:green "84";
+  gv:score "12.249237";
+  gv:coverage "2.6466666"
+], [
+  gv:hex "907740";
+  gv:red "144";
+  gv:blue "64";
+  gv:green "119";
+  gv:score "11.534476";
+  gv:coverage "2.56"
+], [
+  gv:hex "ae955c";
+  gv:red "174";
+  gv:blue "92";
+  gv:green "149";
+  gv:score "10.373914";
+  gv:coverage "2.74"
+], [
+  gv:hex "d4c0a3";
+  gv:red "212";
+  gv:blue "163";
+  gv:green "192";
+  gv:score "8.88028";
+  gv:coverage "10.893334000000001"
+], [
+  gv:hex "6b5420";
+  gv:red "107";
+  gv:blue "32";
+  gv:green "84";
+  gv:score "4.6251696";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "47341a";
+  gv:red "71";
+  gv:blue "26";
+  gv:green "52";
+  gv:score "1.9603767";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "d1bb82";
+  gv:red "209";
+  gv:blue "130";
+  gv:green "187";
+  gv:score "1.8088749000000002";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "eddabc";
+  gv:red "237";
+  gv:blue "188";
+  gv:green "218";
+  gv:score "1.755349";
+  gv:coverage "9.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.446212"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "59.061932999999996"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "52.28985"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.037"
+];
+    w:bagOfWords "1932er\nOriginal Reuerabang\nGrowmand bottled in Germany, contents notivover.\nAuslese\nFAtc\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

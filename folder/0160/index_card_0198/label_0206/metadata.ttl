@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0206";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "OTELDEL Moya\nGINAL HOTEL DEL MO\nONTE\nSELECTION S\nCALIFORNIA\nCABERNET\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST. 1876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\nTAGE\n1935\n"@eng;
+    gv:color [
+  gv:hex "e5b385";
+  gv:red "229";
+  gv:blue "133";
+  gv:green "179";
+  gv:score "25.311032";
+  gv:coverage "10.673333999999999"
+], [
+  gv:hex "dfb989";
+  gv:red "223";
+  gv:blue "137";
+  gv:green "185";
+  gv:score "17.45275";
+  gv:coverage "9.2133336"
+], [
+  gv:hex "c49468";
+  gv:red "196";
+  gv:blue "104";
+  gv:green "148";
+  gv:score "12.246817";
+  gv:coverage "3.8933333"
+], [
+  gv:hex "9d6f45";
+  gv:red "157";
+  gv:blue "69";
+  gv:green "111";
+  gv:score "9.021341099999999";
+  gv:coverage "2.1399999999999997"
+], [
+  gv:hex "be9a6b";
+  gv:red "190";
+  gv:blue "107";
+  gv:green "154";
+  gv:score "5.2465495";
+  gv:coverage "1.7466666"
+], [
+  gv:hex "debe99";
+  gv:red "222";
+  gv:blue "153";
+  gv:green "190";
+  gv:score "4.1304976";
+  gv:coverage "19.846667"
+], [
+  gv:hex "734c23";
+  gv:red "115";
+  gv:blue "35";
+  gv:green "76";
+  gv:score "3.6317180999999996";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "b79773";
+  gv:red "183";
+  gv:blue "115";
+  gv:green "151";
+  gv:score "3.4365053999999997";
+  gv:coverage "1.38"
+], [
+  gv:hex "8d7150";
+  gv:red "141";
+  gv:blue "80";
+  gv:green "113";
+  gv:score "2.9833702";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "543009";
+  gv:red "84";
+  gv:blue "9";
+  gv:green "48";
+  gv:score "1.9557554000000001";
+  gv:coverage "0.44666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.294814"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.430824"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.833924999999994"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.077303"
+];
+    w:bagOfWords "OTELDEL Moya\nGINAL HOTEL DEL MO\nONTE\nSELECTION S\nCALIFORNIA\nCABERNET\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST. 1876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\nTAGE\n1935\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

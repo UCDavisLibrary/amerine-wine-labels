@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0824";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "Appellation Control ée\n"@fra;
+    gv:color [
+  gv:hex "ddc19e";
+  gv:red "221";
+  gv:blue "158";
+  gv:green "193";
+  gv:score "68.734604";
+  gv:coverage "29.74"
+], [
+  gv:hex "6d5125";
+  gv:red "109";
+  gv:blue "37";
+  gv:green "81";
+  gv:score "1.8849747";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "4f3008";
+  gv:red "79";
+  gv:blue "8";
+  gv:green "48";
+  gv:score "0.27482992";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "d8b78a";
+  gv:red "216";
+  gv:blue "138";
+  gv:green "183";
+  gv:score "14.075342";
+  gv:coverage "4"
+], [
+  gv:hex "ba9b68";
+  gv:red "186";
+  gv:blue "104";
+  gv:green "155";
+  gv:score "4.2495418";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "ecd7bc";
+  gv:red "236";
+  gv:blue "188";
+  gv:green "215";
+  gv:score "3.3187419000000005";
+  gv:coverage "9.9333331"
+], [
+  gv:hex "b79c7c";
+  gv:red "183";
+  gv:blue "124";
+  gv:green "156";
+  gv:score "2.8109133";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "8e7040";
+  gv:red "142";
+  gv:blue "64";
+  gv:green "112";
+  gv:score "1.3370316";
+  gv:coverage "0.26"
+], [
+  gv:hex "8a7355";
+  gv:red "138";
+  gv:blue "85";
+  gv:green "115";
+  gv:score "0.81143063";
+  gv:coverage "0.18"
+], [
+  gv:hex "6c5437";
+  gv:red "108";
+  gv:blue "55";
+  gv:green "84";
+  gv:score "0.80528371";
+  gv:coverage "0.2"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.50266"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.313055999999996"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.24304599999999"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "52.233803"
+];
+    w:bagOfWords "Appellation Control ée\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

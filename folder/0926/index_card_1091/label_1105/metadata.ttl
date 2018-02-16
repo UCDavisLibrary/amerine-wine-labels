@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1091/label_1105";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "さが\nSt-Saphorin\napnor1n\nROUGE VIEUX PLANTS\nJet p.lestuz/vins Co lreytorrens-Lully\n"@deu;
+    gv:color [
+  gv:hex "dcc09f";
+  gv:red "220";
+  gv:blue "159";
+  gv:green "192";
+  gv:score "27.286041";
+  gv:coverage "15.073334"
+], [
+  gv:hex "621d07";
+  gv:red "98";
+  gv:blue "7";
+  gv:green "29";
+  gv:score "6.428144099999999";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "7b4425";
+  gv:red "123";
+  gv:blue "37";
+  gv:green "68";
+  gv:score "5.313357";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "e4b899";
+  gv:red "228";
+  gv:blue "153";
+  gv:green "184";
+  gv:score "15.681317";
+  gv:coverage "2.6599999999999997"
+], [
+  gv:hex "c29476";
+  gv:red "194";
+  gv:blue "118";
+  gv:green "148";
+  gv:score "9.9749312";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "9c6e51";
+  gv:red "156";
+  gv:blue "81";
+  gv:green "110";
+  gv:score "5.8732446000000005";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "5f2b0e";
+  gv:red "95";
+  gv:blue "14";
+  gv:green "43";
+  gv:score "4.0326003";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "a06746";
+  gv:red "160";
+  gv:blue "70";
+  gv:green "103";
+  gv:score "3.71948";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "bf9f7d";
+  gv:red "191";
+  gv:blue "125";
+  gv:green "159";
+  gv:score "3.6974818";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "853d25";
+  gv:red "133";
+  gv:blue "37";
+  gv:green "61";
+  gv:score "3.658022";
+  gv:coverage "0.35333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z04>;
+  gv:desc "skin";
+  gv:score "73.47961699999999"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "65.225774"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.248323"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.10067000000001"
+];
+    w:bagOfWords "さが\nSt-Saphorin\napnor1n\nROUGE VIEUX PLANTS\nJet p.lestuz/vins Co lreytorrens-Lully\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

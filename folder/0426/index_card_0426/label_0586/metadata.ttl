@@ -1,0 +1,113 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0586";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "RHEINGAU\n1935er\nRudesheimer Berg Zollhaus\nSpatlese\nOriginal-Abfullung Weingut Willy Hess, Rudesheim Rhein\nSEB We\nFELTVILLE\n"@deu;
+    gv:color [
+  gv:hex "cbbea8";
+  gv:red "203";
+  gv:blue "168";
+  gv:green "190";
+  gv:score "9.55182";
+  gv:coverage "8.4133334"
+], [
+  gv:hex "8f3b1b";
+  gv:red "143";
+  gv:blue "27";
+  gv:green "59";
+  gv:score "8.7731957";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "615235";
+  gv:red "97";
+  gv:blue "53";
+  gv:green "82";
+  gv:score "7.1712784";
+  gv:coverage "2.3466667"
+], [
+  gv:hex "a7390c";
+  gv:red "167";
+  gv:blue "12";
+  gv:green "57";
+  gv:score "2.0148972";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "c8c2b9";
+  gv:red "200";
+  gv:blue "185";
+  gv:green "194";
+  gv:score "9.1307804";
+  gv:coverage "12.393333"
+], [
+  gv:hex "ab9c83";
+  gv:red "171";
+  gv:blue "131";
+  gv:green "156";
+  gv:score "6.649132100000001";
+  gv:coverage "2.8400000000000003"
+], [
+  gv:hex "857558";
+  gv:red "133";
+  gv:blue "88";
+  gv:green "117";
+  gv:score "6.1615262";
+  gv:coverage "2.3533333"
+], [
+  gv:hex "b95f3d";
+  gv:red "185";
+  gv:blue "61";
+  gv:green "95";
+  gv:score "5.9785414";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "6d1c04";
+  gv:red "109";
+  gv:blue "4";
+  gv:green "28";
+  gv:score "4.6931677";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "44361c";
+  gv:red "68";
+  gv:blue "28";
+  gv:green "54";
+  gv:score "4.058989100000001";
+  gv:coverage "1.1400000000000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "73.15288199999999"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.293854"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.667985"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.819494000000006"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.656988999999996"
+];
+    w:bagOfWords "RHEINGAU\n1935er\nRudesheimer Berg Zollhaus\nSpatlese\nOriginal-Abfullung Weingut Willy Hess, Rudesheim Rhein\nSEB We\nFELTVILLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0349";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "SCATENA BROS.\nWINE COMPANY\nCALIFORNIA\nHEA LDS BURG\no o o oo o oo o\nAD\no O O O O\nCALIFORNIA\nAlcoholic\nCLARET\nContent\n18\nBy Volume\nBOTTLED BY\nSCATENA BROS. WINE CO\nIN HEALDSBURG, SONOMA COUNTY, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "62533e";
+  gv:red "98";
+  gv:blue "62";
+  gv:green "83";
+  gv:score "23.00573";
+  gv:coverage "2.08"
+], [
+  gv:hex "160a02";
+  gv:red "22";
+  gv:blue "2";
+  gv:green "10";
+  gv:score "11.189631";
+  gv:coverage "1.3933334"
+], [
+  gv:hex "d1c4b0";
+  gv:red "209";
+  gv:blue "176";
+  gv:green "196";
+  gv:score "11.108292";
+  gv:coverage "24.313334"
+], [
+  gv:hex "817059";
+  gv:red "129";
+  gv:blue "89";
+  gv:green "112";
+  gv:score "16.589942999999998";
+  gv:coverage "2.1866666"
+], [
+  gv:hex "41331e";
+  gv:red "65";
+  gv:blue "30";
+  gv:green "51";
+  gv:score "11.600149";
+  gv:coverage "0.80666663"
+], [
+  gv:hex "a79883";
+  gv:red "167";
+  gv:blue "131";
+  gv:green "152";
+  gv:score "10.012259";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "271908";
+  gv:red "39";
+  gv:blue "8";
+  gv:green "25";
+  gv:score "5.3697359";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "ebddc8";
+  gv:red "235";
+  gv:blue "200";
+  gv:green "221";
+  gv:score "2.6616227";
+  gv:coverage "20.873334"
+], [
+  gv:hex "d4c7ba";
+  gv:red "212";
+  gv:blue "186";
+  gv:green "199";
+  gv:score "2.2563836";
+  gv:coverage "4.7533332999999995"
+], [
+  gv:hex "8a7247";
+  gv:red "138";
+  gv:blue "71";
+  gv:green "114";
+  gv:score "1.8245792";
+  gv:coverage "0.13999999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.695984"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.286989000000005"
+];
+    w:bagOfWords "SCATENA BROS.\nWINE COMPANY\nCALIFORNIA\nHEA LDS BURG\no o o oo o oo o\nAD\no O O O O\nCALIFORNIA\nAlcoholic\nCLARET\nContent\n18\nBy Volume\nBOTTLED BY\nSCATENA BROS. WINE CO\nIN HEALDSBURG, SONOMA COUNTY, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

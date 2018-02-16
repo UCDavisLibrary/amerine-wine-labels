@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0048";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "Federico Paternina\nCOSECHA 1939\nRIO JA)\nREGISTROEMBOTELLADORES 329\nCEDA BORG ONA\n"@spa;
+    gv:color [
+  gv:hex "d1c2b0";
+  gv:red "209";
+  gv:blue "176";
+  gv:green "194";
+  gv:score "26.585782000000002";
+  gv:coverage "37.066665"
+], [
+  gv:hex "98623f";
+  gv:red "152";
+  gv:blue "63";
+  gv:green "98";
+  gv:score "5.6041621";
+  gv:coverage "0.1"
+], [
+  gv:hex "8f4b3a";
+  gv:red "143";
+  gv:blue "58";
+  gv:green "75";
+  gv:score "2.2717899999999998";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "aa9b8a";
+  gv:red "170";
+  gv:blue "138";
+  gv:green "155";
+  gv:score "14.244966";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "867762";
+  gv:red "134";
+  gv:blue "98";
+  gv:green "119";
+  gv:score "9.9078372";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "63533d";
+  gv:red "99";
+  gv:blue "61";
+  gv:green "83";
+  gv:score "5.985799399999999";
+  gv:coverage "0.8666666199999999"
+], [
+  gv:hex "85512f";
+  gv:red "133";
+  gv:blue "47";
+  gv:green "81";
+  gv:score "5.0454552999999995";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "3e3021";
+  gv:red "62";
+  gv:blue "33";
+  gv:green "48";
+  gv:score "4.194748000000001";
+  gv:coverage "0.76"
+], [
+  gv:hex "e7dac9";
+  gv:red "231";
+  gv:blue "201";
+  gv:green "218";
+  gv:score "3.4513224";
+  gv:coverage "34.653332999999996"
+], [
+  gv:hex "97684e";
+  gv:red "151";
+  gv:blue "78";
+  gv:green "104";
+  gv:score "2.7355115999999997";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.307987"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Federico Paternina\nCOSECHA 1939\nRIO JA)\nREGISTROEMBOTELLADORES 329\nCEDA BORG ONA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

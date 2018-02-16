@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1511";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "amyanilla k asada\nTa Tinta\ndavalacar de saamameda\nNe 373.\n(ESPANA)\n"@spa;
+    gv:color [
+  gv:hex "d4bda2";
+  gv:red "212";
+  gv:blue "162";
+  gv:green "189";
+  gv:score "26.973826000000003";
+  gv:coverage "23.22"
+], [
+  gv:hex "8e391f";
+  gv:red "142";
+  gv:blue "31";
+  gv:green "57";
+  gv:score "5.3332612";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "b49b7f";
+  gv:red "180";
+  gv:blue "127";
+  gv:green "155";
+  gv:score "17.046204";
+  gv:coverage "2.46"
+], [
+  gv:hex "c4957d";
+  gv:red "196";
+  gv:blue "125";
+  gv:green "149";
+  gv:score "8.0687508";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "ecb7a0";
+  gv:red "236";
+  gv:blue "160";
+  gv:green "183";
+  gv:score "6.195154";
+  gv:coverage "1.1466667"
+], [
+  gv:hex "9b6e56";
+  gv:red "155";
+  gv:blue "86";
+  gv:green "110";
+  gv:score "4.6992227";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "947a5d";
+  gv:red "148";
+  gv:blue "93";
+  gv:green "122";
+  gv:score "4.4541504000000005";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "784b35";
+  gv:red "120";
+  gv:blue "53";
+  gv:green "75";
+  gv:score "4.10069";
+  gv:coverage "0.38"
+], [
+  gv:hex "efd9c0";
+  gv:red "239";
+  gv:blue "192";
+  gv:green "217";
+  gv:score "3.3688548999999997";
+  gv:coverage "43.46"
+], [
+  gv:hex "b96246";
+  gv:red "185";
+  gv:blue "70";
+  gv:green "98";
+  gv:score "3.0021628000000002";
+  gv:coverage "0.15333333000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.998540000000006"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "amyanilla k asada\nTa Tinta\ndavalacar de saamameda\nNe 373.\n(ESPANA)\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

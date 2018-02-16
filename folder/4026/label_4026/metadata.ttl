@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4026";
+    dct:type "image";
+    w:bagOfWords "VINHO DEMEZAGARANTIDO PURO DA\n1948\nUINTA DE S. MIGUEL\nPAL HETE\nREGISTADO\nCPROXIMO AO BusSACO)\nMEALHADA.\nA. MARQUES\nPortugal\nViti -Vinicultor\n"@por;
+    gv:color [
+  gv:hex "d5c6b4";
+  gv:red "213";
+  gv:blue "180";
+  gv:green "198";
+  gv:score "25.161681";
+  gv:coverage "11.1"
+], [
+  gv:hex "69464d";
+  gv:red "105";
+  gv:blue "77";
+  gv:green "70";
+  gv:score "4.983072";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "cec4bd";
+  gv:red "206";
+  gv:blue "189";
+  gv:green "196";
+  gv:score "14.112036999999999";
+  gv:coverage "19.34"
+], [
+  gv:hex "ab9b88";
+  gv:red "171";
+  gv:blue "136";
+  gv:green "155";
+  gv:score "12.705874";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "a19b95";
+  gv:red "161";
+  gv:blue "149";
+  gv:green "155";
+  gv:score "8.9810483";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "e4dcd6";
+  gv:red "228";
+  gv:blue "214";
+  gv:green "220";
+  gv:score "5.8038458";
+  gv:coverage "60.693335999999995"
+], [
+  gv:hex "7f7974";
+  gv:red "127";
+  gv:blue "116";
+  gv:green "121";
+  gv:score "4.6639938";
+  gv:coverage "0.54"
+], [
+  gv:hex "4d2d32";
+  gv:red "77";
+  gv:blue "50";
+  gv:green "45";
+  gv:score "4.6389702999999995";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "e7d8c6";
+  gv:red "231";
+  gv:blue "198";
+  gv:green "216";
+  gv:score "4.614014200000001";
+  gv:coverage "4.3266665"
+], [
+  gv:hex "58524e";
+  gv:red "88";
+  gv:blue "78";
+  gv:green "82";
+  gv:score "2.6708076000000003";
+  gv:coverage "0.33333334000000003"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.56569400000001"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "59.518367000000005"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.690861999999996"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "51.704561999999996"
+];
+    w:bagOfWords "VINHO DEMEZAGARANTIDO PURO DA\n1948\nUINTA DE S. MIGUEL\nPAL HETE\nREGISTADO\nCPROXIMO AO BusSACO)\nMEALHADA.\nA. MARQUES\nPortugal\nViti -Vinicultor\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

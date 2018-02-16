@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_2999";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "GE\nAILLE\n1947\nNIS EU\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVES CONTROLEE\nAIL\nPLACE\nPRO ETA\nR E\na CA DAUJACE RES BORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
+    gv:color [
+  gv:hex "ddbc89";
+  gv:red "221";
+  gv:blue "137";
+  gv:green "188";
+  gv:score "25.698254";
+  gv:coverage "8.9"
+], [
+  gv:hex "624f35";
+  gv:red "98";
+  gv:blue "53";
+  gv:green "79";
+  gv:score "9.365154800000001";
+  gv:coverage "3.06"
+], [
+  gv:hex "ddc29d";
+  gv:red "221";
+  gv:blue "157";
+  gv:green "194";
+  gv:score "20.985390000000002";
+  gv:coverage "12.06"
+], [
+  gv:hex "bd9d6b";
+  gv:red "189";
+  gv:blue "107";
+  gv:green "157";
+  gv:score "11.015724";
+  gv:coverage "2.6599999999999997"
+], [
+  gv:hex "b49b77";
+  gv:red "180";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "8.8321857";
+  gv:coverage "2.6666667"
+], [
+  gv:hex "48361e";
+  gv:red "72";
+  gv:blue "30";
+  gv:green "54";
+  gv:score "5.5884846";
+  gv:coverage "1.92"
+], [
+  gv:hex "887254";
+  gv:red "136";
+  gv:blue "84";
+  gv:green "114";
+  gv:score "5.4195378000000005";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "8e7245";
+  gv:red "142";
+  gv:blue "69";
+  gv:green "114";
+  gv:score "2.9541619000000003";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "efd7b4";
+  gv:red "239";
+  gv:blue "180";
+  gv:green "215";
+  gv:score "1.6615346";
+  gv:coverage "2.3933332000000003"
+], [
+  gv:hex "e1b480";
+  gv:red "225";
+  gv:blue "128";
+  gv:green "180";
+  gv:score "1.6038973";
+  gv:coverage "0.64"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.478386"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "56.075209"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.93387"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.860662999999995"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.435238000000005"
+];
+    w:bagOfWords "GE\nAILLE\n1947\nNIS EU\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVES CONTROLEE\nAIL\nPLACE\nPRO ETA\nR E\na CA DAUJACE RES BORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

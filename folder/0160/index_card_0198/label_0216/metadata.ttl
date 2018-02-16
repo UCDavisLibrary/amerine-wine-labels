@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0216";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "BOTTLED AT\nALCOHOL 13%\nTHE WINERY\nBY VOLUME\nLluis Tartini\nCALIFORNIA\nPRODUCED AND BOTTLED BY\n2. M. Martini Grape Products\n(DST. HELENA NAPA cou NTY c ALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d1bd9f";
+  gv:red "209";
+  gv:blue "159";
+  gv:green "189";
+  gv:score "24.935579";
+  gv:coverage "33.653334"
+], [
+  gv:hex "7d4e27";
+  gv:red "125";
+  gv:blue "39";
+  gv:green "78";
+  gv:score "8.4088244";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "b29b7c";
+  gv:red "178";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "16.504414";
+  gv:coverage "4.2066667"
+], [
+  gv:hex "897557";
+  gv:red "137";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "7.5320795";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "8a3516";
+  gv:red "138";
+  gv:blue "22";
+  gv:green "53";
+  gv:score "6.1143748";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "655236";
+  gv:red "101";
+  gv:blue "54";
+  gv:green "82";
+  gv:score "5.149243";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "473417";
+  gv:red "71";
+  gv:blue "23";
+  gv:green "52";
+  gv:score "3.9741367";
+  gv:coverage "0.62"
+], [
+  gv:hex "c1a072";
+  gv:red "193";
+  gv:blue "114";
+  gv:green "160";
+  gv:score "3.6632909999999996";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "eddcc2";
+  gv:red "237";
+  gv:blue "194";
+  gv:green "220";
+  gv:score "3.0135974";
+  gv:coverage "6.5466665"
+], [
+  gv:hex "721f04";
+  gv:red "114";
+  gv:blue "4";
+  gv:green "31";
+  gv:score "2.7521728";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/012mj>;
+  gv:desc "alcoholic beverage";
+  gv:score "76.987565"
+], [
+  gv:mid <https://g.co/kg/m/081qc>;
+  gv:desc "wine";
+  gv:score "73.39096699999999"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "70.445806"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.913262"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "60.047357999999996"
+];
+    w:bagOfWords "BOTTLED AT\nALCOHOL 13%\nTHE WINERY\nBY VOLUME\nLluis Tartini\nCALIFORNIA\nPRODUCED AND BOTTLED BY\n2. M. Martini Grape Products\n(DST. HELENA NAPA cou NTY c ALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

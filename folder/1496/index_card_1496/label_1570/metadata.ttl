@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1570";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA OLOROSSAAMADURA\nTRADA)\nREGIS (MARCA ANGEL DEL RIO\nSAMLICARDEBARRAMEDA.\nNo 27\nJere Indushrial\n"@spa;
+    gv:color [
+  gv:hex "d3c5bb";
+  gv:red "211";
+  gv:blue "187";
+  gv:green "197";
+  gv:score "20.692293";
+  gv:coverage "11.493333"
+], [
+  gv:hex "857565";
+  gv:red "133";
+  gv:blue "101";
+  gv:green "117";
+  gv:score "10.609861";
+  gv:coverage "1.0066667"
+], [
+  gv:hex "eaddd4";
+  gv:red "234";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "12.875564";
+  gv:coverage "26.44"
+], [
+  gv:hex "d2c3b1";
+  gv:red "210";
+  gv:blue "177";
+  gv:green "195";
+  gv:score "11.2664";
+  gv:coverage "25.759999999999998"
+], [
+  gv:hex "a69786";
+  gv:red "166";
+  gv:blue "134";
+  gv:green "151";
+  gv:score "9.7797588";
+  gv:coverage "1"
+], [
+  gv:hex "85766d";
+  gv:red "133";
+  gv:blue "109";
+  gv:green "118";
+  gv:score "8.3272539";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "a89990";
+  gv:red "168";
+  gv:blue "144";
+  gv:green "153";
+  gv:score "6.8050608";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "635544";
+  gv:red "99";
+  gv:blue "68";
+  gv:green "85";
+  gv:score "4.980484000000001";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "62544b";
+  gv:red "98";
+  gv:blue "75";
+  gv:green "84";
+  gv:score "4.5196515";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "e9dac9";
+  gv:red "233";
+  gv:blue "201";
+  gv:green "218";
+  gv:score "2.6701732";
+  gv:coverage "31.506667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.286752"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MANZANILLA OLOROSSAAMADURA\nTRADA)\nREGIS (MARCA ANGEL DEL RIO\nSAMLICARDEBARRAMEDA.\nNo 27\nJere Indushrial\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3461/label_3472";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "CANNON\nCONC\nVINEYARDS\nualifurnia ubahlin\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 12% BY VOLUME\nLOUIS ROESCH CO.\n"@eng;
+    gv:color [
+  gv:hex "d3c1a8";
+  gv:red "211";
+  gv:blue "168";
+  gv:green "193";
+  gv:score "23.795682000000003";
+  gv:coverage "27.226665999999998"
+], [
+  gv:hex "867458";
+  gv:red "134";
+  gv:blue "88";
+  gv:green "116";
+  gv:score "22.690438";
+  gv:coverage "3.5000000000000004"
+], [
+  gv:hex "655336";
+  gv:red "101";
+  gv:blue "54";
+  gv:green "83";
+  gv:score "20.703885";
+  gv:coverage "2.6"
+], [
+  gv:hex "ac9a80";
+  gv:red "172";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "18.233612";
+  gv:coverage "5.1933333"
+], [
+  gv:hex "433116";
+  gv:red "67";
+  gv:blue "22";
+  gv:green "49";
+  gv:score "6.334253400000001";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "65542a";
+  gv:red "101";
+  gv:blue "42";
+  gv:green "84";
+  gv:score "3.0012513000000003";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "ebd9c1";
+  gv:red "235";
+  gv:blue "193";
+  gv:green "217";
+  gv:score "2.3342991";
+  gv:coverage "18.366666000000002"
+], [
+  gv:hex "2d1a02";
+  gv:red "45";
+  gv:blue "2";
+  gv:green "26";
+  gv:score "1.2566617";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "7c6f42";
+  gv:red "124";
+  gv:blue "66";
+  gv:green "111";
+  gv:score "0.392371";
+  gv:coverage "0.04"
+], [
+  gv:hex "1b0700";
+  gv:red "27";
+  gv:blue "undefined";
+  gv:green "7";
+  gv:score "0.36434252";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.996585"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "52.39054600000001"
+];
+    w:bagOfWords "CANNON\nCONC\nVINEYARDS\nualifurnia ubahlin\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 12% BY VOLUME\nLOUIS ROESCH CO.\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

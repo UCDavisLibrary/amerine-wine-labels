@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2637";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "CHATEAU DES CAPITANS\nAPPELLATION JULIE NAS CONT ROLE E\nMise en e du Chateau\nRESERVE\nPEYRET FRERES PRODRIETAIRES JULIENAS BOURGOGNE\n"@fra;
+    gv:color [
+  gv:hex "d5c1a8";
+  gv:red "213";
+  gv:blue "168";
+  gv:green "193";
+  gv:score "21.271893";
+  gv:coverage "24.953333999999998"
+], [
+  gv:hex "877767";
+  gv:red "135";
+  gv:blue "103";
+  gv:green "119";
+  gv:score "20.530668";
+  gv:coverage "1.2666667"
+], [
+  gv:hex "a59483";
+  gv:red "165";
+  gv:blue "131";
+  gv:green "148";
+  gv:score "17.19019";
+  gv:coverage "1.4333333"
+], [
+  gv:hex "dbb682";
+  gv:red "219";
+  gv:blue "130";
+  gv:green "182";
+  gv:score "7.853438";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "89776e";
+  gv:red "137";
+  gv:blue "110";
+  gv:green "119";
+  gv:score "6.1740082";
+  gv:coverage "0.48"
+], [
+  gv:hex "e0bdac";
+  gv:red "224";
+  gv:blue "172";
+  gv:green "189";
+  gv:score "5.2596241";
+  gv:coverage "1.04"
+], [
+  gv:hex "675644";
+  gv:red "103";
+  gv:blue "68";
+  gv:green "86";
+  gv:score "4.908157500000001";
+  gv:coverage "0.32"
+], [
+  gv:hex "ddaf76";
+  gv:red "221";
+  gv:blue "118";
+  gv:green "175";
+  gv:score "3.3052165000000002";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "d0a164";
+  gv:red "208";
+  gv:blue "100";
+  gv:green "161";
+  gv:score "2.8806182";
+  gv:coverage "0.36"
+], [
+  gv:hex "a18f86";
+  gv:red "161";
+  gv:blue "134";
+  gv:green "143";
+  gv:score "2.8149532";
+  gv:coverage "0.27333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.588963"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.460300000000004"
+];
+    w:bagOfWords "CHATEAU DES CAPITANS\nAPPELLATION JULIE NAS CONT ROLE E\nMise en e du Chateau\nRESERVE\nPEYRET FRERES PRODRIETAIRES JULIENAS BOURGOGNE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

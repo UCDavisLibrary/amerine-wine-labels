@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2278/label_2297";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "1937\nAU\nGRUA UD-LA ROSE\nSaint-Julien\nBOR D E A U X.\nN. 153, Déposé\nIMP. WETTERWALD FRERES. BORDEAUP\n"@fra;
+    gv:color [
+  gv:hex "d3bc9e";
+  gv:red "211";
+  gv:blue "158";
+  gv:green "188";
+  gv:score "31.778485";
+  gv:coverage "40.346667000000004"
+], [
+  gv:hex "b09c83";
+  gv:red "176";
+  gv:blue "131";
+  gv:green "156";
+  gv:score "18.617271";
+  gv:coverage "3.4000000000000004"
+], [
+  gv:hex "867762";
+  gv:red "134";
+  gv:blue "98";
+  gv:green "119";
+  gv:score "9.532768299999999";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "5f5241";
+  gv:red "95";
+  gv:blue "65";
+  gv:green "82";
+  gv:score "6.7141287";
+  gv:coverage "1.2066667"
+], [
+  gv:hex "3e3221";
+  gv:red "62";
+  gv:blue "33";
+  gv:green "50";
+  gv:score "4.780916100000001";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "d3b587";
+  gv:red "211";
+  gv:blue "135";
+  gv:green "181";
+  gv:score "4.2856749";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "bb957c";
+  gv:red "187";
+  gv:blue "124";
+  gv:green "149";
+  gv:score "3.1534046000000004";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "3d342b";
+  gv:red "61";
+  gv:blue "43";
+  gv:green "52";
+  gv:score "3.0575555";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "5b5048";
+  gv:red "91";
+  gv:blue "72";
+  gv:green "80";
+  gv:score "2.6425332";
+  gv:coverage "0.64"
+], [
+  gv:hex "bfa073";
+  gv:red "191";
+  gv:blue "115";
+  gv:green "160";
+  gv:score "2.4805175";
+  gv:coverage "0.5599999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.334"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.483572"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "50.99558199999999"
+];
+    w:bagOfWords "1937\nAU\nGRUA UD-LA ROSE\nSaint-Julien\nBOR D E A U X.\nN. 153, Déposé\nIMP. WETTERWALD FRERES. BORDEAUP\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

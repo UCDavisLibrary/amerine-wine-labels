@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1091/label_1092";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "CLOs RENARD\nDEPOSE\nHAOTES RECOMPENSES\nAUX EXPOSITIONS\n"@deu;
+    gv:color [
+  gv:hex "e2ba5c";
+  gv:red "226";
+  gv:blue "92";
+  gv:green "186";
+  gv:score "15.376163000000002";
+  gv:coverage "2.4266666"
+], [
+  gv:hex "dbb97e";
+  gv:red "219";
+  gv:blue "126";
+  gv:green "185";
+  gv:score "11.863267";
+  gv:coverage "5.7266667"
+], [
+  gv:hex "e8bf43";
+  gv:red "232";
+  gv:blue "67";
+  gv:green "191";
+  gv:score "10.52058";
+  gv:coverage "1.1733334"
+], [
+  gv:hex "bf9b60";
+  gv:red "191";
+  gv:blue "96";
+  gv:green "155";
+  gv:score "9.76282";
+  gv:coverage "3.8133334"
+], [
+  gv:hex "c2935c";
+  gv:red "194";
+  gv:blue "92";
+  gv:green "147";
+  gv:score "6.8144158";
+  gv:coverage "3.0533334"
+], [
+  gv:hex "c29c44";
+  gv:red "194";
+  gv:blue "68";
+  gv:green "156";
+  gv:score "6.259568";
+  gv:coverage "1.28"
+], [
+  gv:hex "a0713f";
+  gv:red "160";
+  gv:blue "63";
+  gv:green "113";
+  gv:score "5.691702299999999";
+  gv:coverage "1.72"
+], [
+  gv:hex "74491b";
+  gv:red "116";
+  gv:blue "27";
+  gv:green "73";
+  gv:score "4.8308328";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "dabd9b";
+  gv:red "218";
+  gv:blue "155";
+  gv:green "189";
+  gv:score "4.8150044";
+  gv:coverage "8.9266665"
+], [
+  gv:hex "542d06";
+  gv:red "84";
+  gv:blue "6";
+  gv:green "45";
+  gv:score "3.3565644";
+  gv:coverage "0.82666669"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.995355999999994"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "54.387873"
+];
+    w:bagOfWords "CLOs RENARD\nDEPOSE\nHAOTES RECOMPENSES\nAUX EXPOSITIONS\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

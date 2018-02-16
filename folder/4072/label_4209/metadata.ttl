@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4072/label_4209";
+    dct:type "image";
+    w:bagOfWords "CHAMPAGNE\nEPE NAY,\nGrande Cuvée\n255\n"@fra;
+    gv:color [
+  gv:hex "62503d";
+  gv:red "98";
+  gv:blue "61";
+  gv:green "80";
+  gv:score "12.73617";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "d2c6bd";
+  gv:red "210";
+  gv:blue "189";
+  gv:green "198";
+  gv:score "12.113961";
+  gv:coverage "13.446665999999999"
+], [
+  gv:hex "83735e";
+  gv:red "131";
+  gv:blue "94";
+  gv:green "115";
+  gv:score "12.685236";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "aa9986";
+  gv:red "170";
+  gv:blue "134";
+  gv:green "153";
+  gv:score "10.68112";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "ccbda9";
+  gv:red "204";
+  gv:blue "169";
+  gv:green "189";
+  gv:score "9.1913491";
+  gv:coverage "3.4333333"
+], [
+  gv:hex "e7ded6";
+  gv:red "231";
+  gv:blue "214";
+  gv:green "222";
+  gv:score "8.4883511";
+  gv:coverage "78.846669"
+], [
+  gv:hex "65463a";
+  gv:red "101";
+  gv:blue "58";
+  gv:green "70";
+  gv:score "6.1185956";
+  gv:coverage "0.1"
+], [
+  gv:hex "4a3724";
+  gv:red "74";
+  gv:blue "36";
+  gv:green "55";
+  gv:score "5.6864094";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "a89d94";
+  gv:red "168";
+  gv:blue "148";
+  gv:green "157";
+  gv:score "5.3319864";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "4d2d22";
+  gv:red "77";
+  gv:blue "34";
+  gv:green "45";
+  gv:score "5.1232003";
+  gv:coverage "0.086666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.995914"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "53.934616000000005"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.125692"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.423889"
+];
+    w:bagOfWords "CHAMPAGNE\nEPE NAY,\nGrande Cuvée\n255\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA".

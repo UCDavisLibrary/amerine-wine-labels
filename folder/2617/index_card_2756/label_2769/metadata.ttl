@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2756/label_2769";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "oles de Provence\nE GALOUPE\nDomaine da Galoapet\nRonde\nclasse\ncru\n941\nles maares\n"@fra;
+    gv:color [
+  gv:hex "e2ba65";
+  gv:red "226";
+  gv:blue "101";
+  gv:green "186";
+  gv:score "19.905472";
+  gv:coverage "6.786666800000001"
+], [
+  gv:hex "cd9545";
+  gv:red "205";
+  gv:blue "69";
+  gv:green "149";
+  gv:score "5.6503445";
+  gv:coverage "2.1333333"
+], [
+  gv:hex "5a2d06";
+  gv:red "90";
+  gv:blue "6";
+  gv:green "45";
+  gv:score "2.8785048";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "3b3314";
+  gv:red "59";
+  gv:blue "20";
+  gv:green "51";
+  gv:score "1.465517";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "e1be7c";
+  gv:red "225";
+  gv:blue "124";
+  gv:green "190";
+  gv:score "14.704744999999999";
+  gv:coverage "6.3266665"
+], [
+  gv:hex "b8985b";
+  gv:red "184";
+  gv:blue "91";
+  gv:green "152";
+  gv:score "6.2682532";
+  gv:coverage "1.82"
+], [
+  gv:hex "c69d49";
+  gv:red "198";
+  gv:blue "73";
+  gv:green "157";
+  gv:score "5.4819793";
+  gv:coverage "2.2266667"
+], [
+  gv:hex "e5ae5b";
+  gv:red "229";
+  gv:blue "91";
+  gv:green "174";
+  gv:score "5.3658709";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "90753c";
+  gv:red "144";
+  gv:blue "60";
+  gv:green "117";
+  gv:score "4.1123398";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "c4945b";
+  gv:red "196";
+  gv:blue "91";
+  gv:green "148";
+  gv:score "3.3381965";
+  gv:coverage "0.98"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.406995"
+];
+    w:bagOfWords "oles de Provence\nE GALOUPE\nDomaine da Galoapet\nRonde\nclasse\ncru\n941\nles maares\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

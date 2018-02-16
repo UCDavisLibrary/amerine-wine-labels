@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2837";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "LA\nPERLE BLA\nORDEAUXK\nVPRO DUCE OF FRANCE\n"@fra;
+    gv:color [
+  gv:hex "dbb160";
+  gv:red "219";
+  gv:blue "96";
+  gv:green "177";
+  gv:score "18.166019";
+  gv:coverage "4.279999999999999"
+], [
+  gv:hex "967335";
+  gv:red "150";
+  gv:blue "53";
+  gv:green "115";
+  gv:score "7.2602808";
+  gv:coverage "3.5266668"
+], [
+  gv:hex "c89e4d";
+  gv:red "200";
+  gv:blue "77";
+  gv:green "158";
+  gv:score "16.897623";
+  gv:coverage "4.546666500000001"
+], [
+  gv:hex "dcb575";
+  gv:red "220";
+  gv:blue "117";
+  gv:green "181";
+  gv:score "12.344570000000001";
+  gv:coverage "9.753333"
+], [
+  gv:hex "c69447";
+  gv:red "198";
+  gv:blue "71";
+  gv:green "148";
+  gv:score "10.007416";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "9f6f25";
+  gv:red "159";
+  gv:blue "37";
+  gv:green "111";
+  gv:score "8.08958";
+  gv:coverage "2.6533333999999997"
+], [
+  gv:hex "bd9859";
+  gv:red "189";
+  gv:blue "89";
+  gv:green "152";
+  gv:score "6.35163";
+  gv:coverage "4.0266667"
+], [
+  gv:hex "996d2f";
+  gv:red "153";
+  gv:blue "47";
+  gv:green "109";
+  gv:score "4.175913700000001";
+  gv:coverage "1.76"
+], [
+  gv:hex "c69555";
+  gv:red "198";
+  gv:blue "85";
+  gv:green "149";
+  gv:score "3.6712229";
+  gv:coverage "1.6066667"
+], [
+  gv:hex "9b7429";
+  gv:red "155";
+  gv:blue "41";
+  gv:green "116";
+  gv:score "3.2534300000000003";
+  gv:coverage "1.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.496135"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "56.096649"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.414315"
+];
+    w:bagOfWords "LA\nPERLE BLA\nORDEAUXK\nVPRO DUCE OF FRANCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

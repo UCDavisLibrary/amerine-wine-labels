@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_3016";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "CHATEAU HAUT BRION\n1983\nPREMIER GRAND CRU CLASSE\nJras en bouteilles au C ha\n(FAR, NCE\n"@fra;
+    gv:color [
+  gv:hex "d8c1a1";
+  gv:red "216";
+  gv:blue "161";
+  gv:green "193";
+  gv:score "29.845654999999997";
+  gv:coverage "19.686666"
+], [
+  gv:hex "b09363";
+  gv:red "176";
+  gv:blue "99";
+  gv:green "147";
+  gv:score "23.81749";
+  gv:coverage "3.5333332000000004"
+], [
+  gv:hex "b29976";
+  gv:red "178";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "17.182396";
+  gv:coverage "5.2533332"
+], [
+  gv:hex "977a4b";
+  gv:red "151";
+  gv:blue "75";
+  gv:green "122";
+  gv:score "16.090135";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "d2b587";
+  gv:red "210";
+  gv:blue "135";
+  gv:green "181";
+  gv:score "5.1465619";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "937c59";
+  gv:red "147";
+  gv:blue "89";
+  gv:green "124";
+  gv:score "4.3777734";
+  gv:coverage "1.6133332999999999"
+], [
+  gv:hex "74592d";
+  gv:red "116";
+  gv:blue "45";
+  gv:green "89";
+  gv:score "1.4363677";
+  gv:coverage "0.30666667"
+], [
+  gv:hex "edd6b6";
+  gv:red "237";
+  gv:blue "182";
+  gv:green "214";
+  gv:score "0.91684451";
+  gv:coverage "3.3466666999999997"
+], [
+  gv:hex "c09c7d";
+  gv:red "192";
+  gv:blue "125";
+  gv:green "156";
+  gv:score "0.52163843";
+  gv:coverage "0.1"
+], [
+  gv:hex "9c774b";
+  gv:red "156";
+  gv:blue "75";
+  gv:green "119";
+  gv:score "0.36293757";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.30425"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.361722"
+];
+    w:bagOfWords "CHATEAU HAUT BRION\n1983\nPREMIER GRAND CRU CLASSE\nJras en bouteilles au C ha\n(FAR, NCE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

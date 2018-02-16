@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3433";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "GEISWEILER RESERVE\nMARQUE COMMERCIALE DEPOS\nMAISON F\nDEE EN\nCONTROLEE\nOGNE\nGEISWEIT\nANTS APPELLATI\nST, GEORGES STE D'OR)\nA s. (FRANCE)\n"@fra;
+    gv:color [
+  gv:hex "dac0a7";
+  gv:red "218";
+  gv:blue "167";
+  gv:green "192";
+  gv:score "26.507285000000003";
+  gv:coverage "26.46"
+], [
+  gv:hex "99221b";
+  gv:red "153";
+  gv:blue "27";
+  gv:green "34";
+  gv:score "12.568020999999998";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "7f0c09";
+  gv:red "127";
+  gv:blue "9";
+  gv:green "12";
+  gv:score "8.67729";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "e5beaa";
+  gv:red "229";
+  gv:blue "170";
+  gv:green "190";
+  gv:score "7.2927773";
+  gv:coverage "2.4466667"
+], [
+  gv:hex "b09a86";
+  gv:red "176";
+  gv:blue "134";
+  gv:green "154";
+  gv:score "6.8764992";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "b99686";
+  gv:red "185";
+  gv:blue "134";
+  gv:green "150";
+  gv:score "3.8248792";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "c34842";
+  gv:red "195";
+  gv:blue "66";
+  gv:green "72";
+  gv:score "2.9929837";
+  gv:coverage "0.26"
+], [
+  gv:hex "74140c";
+  gv:red "116";
+  gv:blue "12";
+  gv:green "20";
+  gv:score "2.3768717";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "897665";
+  gv:red "137";
+  gv:blue "101";
+  gv:green "118";
+  gv:score "2.2746844";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "e18179";
+  gv:red "225";
+  gv:blue "121";
+  gv:green "129";
+  gv:score "2.1169564";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.988993"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "52.527975999999995"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "50.997841"
+];
+    w:bagOfWords "GEISWEILER RESERVE\nMARQUE COMMERCIALE DEPOS\nMAISON F\nDEE EN\nCONTROLEE\nOGNE\nGEISWEIT\nANTS APPELLATI\nST, GEORGES STE D'OR)\nA s. (FRANCE)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0212";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "19 43\nPRODUCED&BOTTLED BY F. SALMINA & Co. ALcoHOL 12% BY VOLUME\nBONDED WINERY No. 605 ST HELENA, NAPA CO., CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "18130f";
+  gv:red "24";
+  gv:blue "15";
+  gv:green "19";
+  gv:score "53.941017";
+  gv:coverage "20.919999999999998"
+], [
+  gv:hex "3c301e";
+  gv:red "60";
+  gv:blue "30";
+  gv:green "48";
+  gv:score "7.6600261000000005";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "87775e";
+  gv:red "135";
+  gv:blue "94";
+  gv:green "119";
+  gv:score "5.2350461";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "3a312a";
+  gv:red "58";
+  gv:blue "42";
+  gv:green "49";
+  gv:score "6.659565100000001";
+  gv:coverage "2.22"
+], [
+  gv:hex "251b0c";
+  gv:red "37";
+  gv:blue "12";
+  gv:green "27";
+  gv:score "6.0922954";
+  gv:coverage "1.6466666"
+], [
+  gv:hex "5e513f";
+  gv:red "94";
+  gv:blue "63";
+  gv:green "81";
+  gv:score "4.5965552";
+  gv:coverage "0.9666666399999999"
+], [
+  gv:hex "5b524b";
+  gv:red "91";
+  gv:blue "75";
+  gv:green "82";
+  gv:score "3.8515061000000004";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "a7967c";
+  gv:red "167";
+  gv:blue "124";
+  gv:green "150";
+  gv:score "3.4232505000000004";
+  gv:coverage "1.4733333"
+], [
+  gv:hex "7f746d";
+  gv:red "127";
+  gv:blue "109";
+  gv:green "116";
+  gv:score "2.6130721";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "a2978f";
+  gv:red "162";
+  gv:blue "143";
+  gv:green "151";
+  gv:score "1.8689025000000001";
+  gv:coverage "0.60666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "75.035989"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "67.629635"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "59.977508"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04qgp>;
+  gv:desc "liqueur";
+  gv:score "55.466616"
+];
+    w:bagOfWords "19 43\nPRODUCED&BOTTLED BY F. SALMINA & Co. ALcoHOL 12% BY VOLUME\nBONDED WINERY No. 605 ST HELENA, NAPA CO., CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

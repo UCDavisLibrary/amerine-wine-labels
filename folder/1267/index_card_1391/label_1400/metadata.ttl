@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1400";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "FLORIDA\nCran Dino\nChile\nIMPORT E PAR\nFAU VAR QU E ET CIE\nBRUXELLES\nContenance 70 cl\nR. C. Bruxelles 6ILO\n"@spa;
+    gv:color [
+  gv:hex "e1bf88";
+  gv:red "225";
+  gv:blue "136";
+  gv:green "191";
+  gv:score "19.648391";
+  gv:coverage "6.9666669"
+], [
+  gv:hex "ce8f41";
+  gv:red "206";
+  gv:blue "65";
+  gv:green "143";
+  gv:score "13.611124";
+  gv:coverage "2.74"
+], [
+  gv:hex "dec8a2";
+  gv:red "222";
+  gv:blue "162";
+  gv:green "200";
+  gv:score "8.1641294";
+  gv:coverage "12.993333000000002"
+], [
+  gv:hex "ca975c";
+  gv:red "202";
+  gv:blue "92";
+  gv:green "151";
+  gv:score "6.849137700000001";
+  gv:coverage "2.06"
+], [
+  gv:hex "e6b176";
+  gv:red "230";
+  gv:blue "118";
+  gv:green "177";
+  gv:score "6.7025006";
+  gv:coverage "1.7000000000000002"
+], [
+  gv:hex "f0dbb5";
+  gv:red "240";
+  gv:blue "181";
+  gv:green "219";
+  gv:score "6.1960507";
+  gv:coverage "31.886667000000003"
+], [
+  gv:hex "bb9b64";
+  gv:red "187";
+  gv:blue "100";
+  gv:green "155";
+  gv:score "5.6589104";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "f5d8a4";
+  gv:red "245";
+  gv:blue "164";
+  gv:green "216";
+  gv:score "4.5467343";
+  gv:coverage "2.0066667"
+], [
+  gv:hex "e9ac61";
+  gv:red "233";
+  gv:blue "97";
+  gv:green "172";
+  gv:score "4.2788286";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "d4861f";
+  gv:red "212";
+  gv:blue "31";
+  gv:green "134";
+  gv:score "3.6221188";
+  gv:coverage "0.55333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.735126"
+];
+    w:bagOfWords "FLORIDA\nCran Dino\nChile\nIMPORT E PAR\nFAU VAR QU E ET CIE\nBRUXELLES\nContenance 70 cl\nR. C. Bruxelles 6ILO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1270/label_1290";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "Walchauen.\nWEINGROSSHANDLUNG H & R. MAIER\nWIEN HEILIGENSTADT\n"@deu;
+    gv:color [
+  gv:hex "a79d93";
+  gv:red "167";
+  gv:blue "147";
+  gv:green "157";
+  gv:score "11.599594";
+  gv:coverage "3.4266666"
+], [
+  gv:hex "d1c3b8";
+  gv:red "209";
+  gv:blue "184";
+  gv:green "195";
+  gv:score "10.607038000000001";
+  gv:coverage "21.68"
+], [
+  gv:hex "e5b8b6";
+  gv:red "229";
+  gv:blue "182";
+  gv:green "184";
+  gv:score "9.1753118";
+  gv:coverage "0.88"
+], [
+  gv:hex "c39392";
+  gv:red "195";
+  gv:blue "146";
+  gv:green "147";
+  gv:score "8.8376634";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "cbbfb0";
+  gv:red "203";
+  gv:blue "176";
+  gv:green "191";
+  gv:score "8.8073693";
+  gv:coverage "3.4533332999999997"
+], [
+  gv:hex "e6dbce";
+  gv:red "230";
+  gv:blue "206";
+  gv:green "219";
+  gv:score "7.9344705";
+  gv:coverage "60.013335999999995"
+], [
+  gv:hex "847b72";
+  gv:red "132";
+  gv:blue "114";
+  gv:green "123";
+  gv:score "6.5820791000000005";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "aca393";
+  gv:red "172";
+  gv:blue "147";
+  gv:green "163";
+  gv:score "5.8200639";
+  gv:coverage "1.5333333"
+], [
+  gv:hex "9d6f71";
+  gv:red "157";
+  gv:blue "113";
+  gv:green "111";
+  gv:score "4.7890931";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "cf858f";
+  gv:red "207";
+  gv:blue "143";
+  gv:green "133";
+  gv:score "3.7891231";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.154479"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.996111"
+];
+    w:bagOfWords "Walchauen.\nWEINGROSSHANDLUNG H & R. MAIER\nWIEN HEILIGENSTADT\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "AUT".

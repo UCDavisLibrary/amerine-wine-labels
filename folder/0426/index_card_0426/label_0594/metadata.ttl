@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0594";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R H E I N G A U\nfiatinottwein\n1952er\nfilofterhielel\nNATUURRE\nDerwaltung der Staatsloeinguter\nEltoille\nEigener Rellerab3ug uno forkbrano\n"@deu;
+    gv:color [
+  gv:hex "d4c2ac";
+  gv:red "212";
+  gv:blue "172";
+  gv:green "194";
+  gv:score "52.126448999999994";
+  gv:coverage "17.04"
+], [
+  gv:hex "3c311f";
+  gv:red "60";
+  gv:blue "31";
+  gv:green "49";
+  gv:score "13.741922";
+  gv:coverage "2.6333334"
+], [
+  gv:hex "5f523e";
+  gv:red "95";
+  gv:blue "62";
+  gv:green "82";
+  gv:score "10.556011";
+  gv:coverage "3.0533334"
+], [
+  gv:hex "b09f87";
+  gv:red "176";
+  gv:blue "135";
+  gv:green "159";
+  gv:score "8.232898299999999";
+  gv:coverage "2.12"
+], [
+  gv:hex "81735f";
+  gv:red "129";
+  gv:blue "95";
+  gv:green "115";
+  gv:score "7.3430277";
+  gv:coverage "2.3333333"
+], [
+  gv:hex "e9d9c4";
+  gv:red "233";
+  gv:blue "196";
+  gv:green "217";
+  gv:score "4.1977659";
+  gv:coverage "2.08"
+], [
+  gv:hex "271d0d";
+  gv:red "39";
+  gv:blue "13";
+  gv:green "29";
+  gv:score "2.7015233";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "393026";
+  gv:red "57";
+  gv:blue "38";
+  gv:green "48";
+  gv:score "0.36605473";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "1a1205";
+  gv:red "26";
+  gv:blue "5";
+  gv:green "18";
+  gv:score "0.30474195000000004";
+  gv:coverage "0.06"
+], [
+  gv:hex "d5ccbf";
+  gv:red "213";
+  gv:blue "191";
+  gv:green "204";
+  gv:score "0.17308814";
+  gv:coverage "2.44"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.06624"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "R H E I N G A U\nfiatinottwein\n1952er\nfilofterhielel\nNATUURRE\nDerwaltung der Staatsloeinguter\nEltoille\nEigener Rellerab3ug uno forkbrano\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

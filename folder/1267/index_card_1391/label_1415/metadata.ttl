@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1415";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "OHOL VOLUME\nNOT OVER\n13\nNET CONTs. PINT, 12 oz.\nSPARKLING\nWINE\nSA,\n"@spa;
+    gv:color [
+  gv:hex "cb995d";
+  gv:red "203";
+  gv:blue "93";
+  gv:green "153";
+  gv:score "41.177338";
+  gv:coverage "10.82"
+], [
+  gv:hex "ddab72";
+  gv:red "221";
+  gv:blue "114";
+  gv:green "171";
+  gv:score "24.381109000000002";
+  gv:coverage "6.7266665"
+], [
+  gv:hex "c8934e";
+  gv:red "200";
+  gv:blue "78";
+  gv:green "147";
+  gv:score "11.809015";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "c0985d";
+  gv:red "192";
+  gv:blue "93";
+  gv:green "152";
+  gv:score "9.128207000000002";
+  gv:coverage "2.52"
+], [
+  gv:hex "dab37b";
+  gv:red "218";
+  gv:blue "123";
+  gv:green "179";
+  gv:score "5.967078";
+  gv:coverage "2.1999999999999997"
+], [
+  gv:hex "a47839";
+  gv:red "164";
+  gv:blue "57";
+  gv:green "120";
+  gv:score "3.1236645";
+  gv:coverage "0.58"
+], [
+  gv:hex "a97831";
+  gv:red "169";
+  gv:blue "49";
+  gv:green "120";
+  gv:score "1.9403517";
+  gv:coverage "0.38"
+], [
+  gv:hex "a17b3c";
+  gv:red "161";
+  gv:blue "60";
+  gv:green "123";
+  gv:score "1.2061602";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "d6b995";
+  gv:red "214";
+  gv:blue "149";
+  gv:green "185";
+  gv:score "0.8034126799999999";
+  gv:coverage "38.16"
+], [
+  gv:hex "9c7630";
+  gv:red "156";
+  gv:blue "48";
+  gv:green "118";
+  gv:score "0.20223656";
+  gv:coverage "0.033333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.13419999999999"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "61.573333"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.595013"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "51.722187"
+];
+    w:bagOfWords "OHOL VOLUME\nNOT OVER\n13\nNET CONTs. PINT, 12 oz.\nSPARKLING\nWINE\nSA,\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

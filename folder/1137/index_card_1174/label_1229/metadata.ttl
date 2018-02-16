@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1137/index_card_1174/label_1229";
+    dct:type "image";
+    dc:subject "Brandy@en";
+    w:bagOfWords "ENTURION\nSolera\niaiisirya\nDADA\nWEREZ\nCAREGISTR\n"@spa;
+    gv:color [
+  gv:hex "c8935b";
+  gv:red "200";
+  gv:blue "91";
+  gv:green "147";
+  gv:score "15.673247000000002";
+  gv:coverage "6.686666600000001"
+], [
+  gv:hex "ecdcc7";
+  gv:red "236";
+  gv:blue "199";
+  gv:green "220";
+  gv:score "0.13691915";
+  gv:coverage "4.06"
+], [
+  gv:hex "a06b38";
+  gv:red "160";
+  gv:blue "56";
+  gv:green "107";
+  gv:score "13.011180999999999";
+  gv:coverage "5.08"
+], [
+  gv:hex "e7b278";
+  gv:red "231";
+  gv:blue "120";
+  gv:green "178";
+  gv:score "12.03551";
+  gv:coverage "5.5666666"
+], [
+  gv:hex "d1964a";
+  gv:red "209";
+  gv:blue "74";
+  gv:green "150";
+  gv:score "9.069184199999999";
+  gv:coverage "3.2"
+], [
+  gv:hex "7f4b1b";
+  gv:red "127";
+  gv:blue "27";
+  gv:green "75";
+  gv:score "7.9725914";
+  gv:coverage "3.4466665"
+], [
+  gv:hex "e3bb7d";
+  gv:red "227";
+  gv:blue "125";
+  gv:green "187";
+  gv:score "7.777374200000001";
+  gv:coverage "4.8533332"
+], [
+  gv:hex "e8ad61";
+  gv:red "232";
+  gv:blue "97";
+  gv:green "173";
+  gv:score "6.1278328";
+  gv:coverage "2.2466667"
+], [
+  gv:hex "a56c28";
+  gv:red "165";
+  gv:blue "40";
+  gv:green "108";
+  gv:score "5.0066948";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "8b3b15";
+  gv:red "139";
+  gv:blue "21";
+  gv:green "59";
+  gv:score "4.6507761";
+  gv:coverage "1.2466666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/083vt>;
+  gv:desc "wood";
+  gv:score "60.806638"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.15660999999999"
+];
+    w:bagOfWords "ENTURION\nSolera\niaiisirya\nDADA\nWEREZ\nCAREGISTR\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

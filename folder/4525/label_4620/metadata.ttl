@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4620";
+    dct:type "image";
+    w:bagOfWords "Pedro Ximénez Viejo\n(ESPANA)\nN% 22 O\n"@spa;
+    gv:color [
+  gv:hex "a39a91";
+  gv:red "163";
+  gv:blue "145";
+  gv:green "154";
+  gv:score "36.915323";
+  gv:coverage "3.7199999999999998"
+], [
+  gv:hex "cbc2b9";
+  gv:red "203";
+  gv:blue "185";
+  gv:green "194";
+  gv:score "30.242866000000003";
+  gv:coverage "17.740000000000002"
+], [
+  gv:hex "827970";
+  gv:red "130";
+  gv:blue "112";
+  gv:green "121";
+  gv:score "16.088973";
+  gv:coverage "1.2"
+], [
+  gv:hex "e6ddd4";
+  gv:red "230";
+  gv:blue "212";
+  gv:green "221";
+  gv:score "16.0596";
+  gv:coverage "72.333336"
+], [
+  gv:hex "40372b";
+  gv:red "64";
+  gv:blue "43";
+  gv:green "55";
+  gv:score "0.017188472";
+  gv:coverage "0.02"
+], [
+  gv:hex "675e55";
+  gv:red "103";
+  gv:blue "85";
+  gv:green "94";
+  gv:score "0.32610765";
+  gv:coverage "0.08"
+], [
+  gv:hex "cbc2b3";
+  gv:red "203";
+  gv:blue "179";
+  gv:green "194";
+  gv:score "0.21126884999999998";
+  gv:coverage "3.2333333"
+], [
+  gv:hex "aea596";
+  gv:red "174";
+  gv:blue "150";
+  gv:green "165";
+  gv:score "0.13493126";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "484035";
+  gv:red "72";
+  gv:blue "53";
+  gv:green "64";
+  gv:score "0.0037392862999999998";
+  gv:coverage "0.02"
+], [
+  gv:hex "e1d8c7";
+  gv:red "225";
+  gv:blue "199";
+  gv:green "216";
+  gv:score "1.714373e-7";
+  gv:coverage "1.58"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.366646"
+], [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "54.171371"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "53.835595000000005"
+];
+    w:bagOfWords "Pedro Ximénez Viejo\n(ESPANA)\nN% 22 O\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

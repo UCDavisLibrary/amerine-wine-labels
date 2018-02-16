@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0209";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "1936\nBOTTLED BY\nAND\nPRODUCED CALIFORNIA\nVALLEY RUTHERFORD NAPA\nNAPA VALLEY\nCABERNET\nA full-flavored California claret made from the true Cabernet grape\nof Bordeaux long considered to produce America's finest red wine.\nNorthern\nCalifornia\nDistributors\nJmporters and mine cnerchantr\nCALIFORNIA\nSAN FRANCISCO\nCompany, Inc., New York\nSole Anerican Representatives Bellows Alcohol 12 4% by vol\n"@eng;
+    gv:color [
+  gv:hex "d9c3ac";
+  gv:red "217";
+  gv:blue "172";
+  gv:green "195";
+  gv:score "57.464695";
+  gv:coverage "30.726664999999997"
+], [
+  gv:hex "727779";
+  gv:red "114";
+  gv:blue "121";
+  gv:green "119";
+  gv:score "2.944286";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "e1b7a4";
+  gv:red "225";
+  gv:blue "164";
+  gv:green "183";
+  gv:score "11.229768";
+  gv:coverage "3.3066668"
+], [
+  gv:hex "c59582";
+  gv:red "197";
+  gv:blue "130";
+  gv:green "149";
+  gv:score "6.353092200000001";
+  gv:coverage "1.7666666000000002"
+], [
+  gv:hex "b4a088";
+  gv:red "180";
+  gv:blue "136";
+  gv:green "160";
+  gv:score "4.7611263";
+  gv:coverage "2.0333333"
+], [
+  gv:hex "979a98";
+  gv:red "151";
+  gv:blue "152";
+  gv:green "154";
+  gv:score "2.628479";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "54585a";
+  gv:red "84";
+  gv:blue "90";
+  gv:green "88";
+  gv:score "2.4763374000000002";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "e8d7bf";
+  gv:red "232";
+  gv:blue "191";
+  gv:green "215";
+  gv:score "2.2407008";
+  gv:coverage "5.9066668"
+], [
+  gv:hex "65778a";
+  gv:red "101";
+  gv:blue "138";
+  gv:green "119";
+  gv:score "1.8502299";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "cdc3ba";
+  gv:red "205";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "1.6301261";
+  gv:coverage "8.8333331"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.95150699999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "1936\nBOTTLED BY\nAND\nPRODUCED CALIFORNIA\nVALLEY RUTHERFORD NAPA\nNAPA VALLEY\nCABERNET\nA full-flavored California claret made from the true Cabernet grape\nof Bordeaux long considered to produce America's finest red wine.\nNorthern\nCalifornia\nDistributors\nJmporters and mine cnerchantr\nCALIFORNIA\nSAN FRANCISCO\nCompany, Inc., New York\nSole Anerican Representatives Bellows Alcohol 12 4% by vol\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

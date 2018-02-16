@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0779/label_0785";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "VIN BL\nDE\nCHATEAU GRILLET\nAPPELLATION CONTROLEE\nMise en bouteilles au cha tea\nde Chatasu\nEYRETLGACHET, proprietaire\nBrin et Saint-Michel (Loire)\n"@fra;
+    gv:color [
+  gv:hex "d4ba96";
+  gv:red "212";
+  gv:blue "150";
+  gv:green "186";
+  gv:score "25.727952";
+  gv:coverage "8.3933331"
+], [
+  gv:hex "b89c77";
+  gv:red "184";
+  gv:blue "119";
+  gv:green "156";
+  gv:score "20.919773";
+  gv:coverage "4.06"
+], [
+  gv:hex "dab98a";
+  gv:red "218";
+  gv:blue "138";
+  gv:green "185";
+  gv:score "15.318985";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "b8996b";
+  gv:red "184";
+  gv:blue "107";
+  gv:green "153";
+  gv:score "11.904785";
+  gv:coverage "1.7133333"
+], [
+  gv:hex "94764c";
+  gv:red "148";
+  gv:blue "76";
+  gv:green "118";
+  gv:score "5.0645046";
+  gv:coverage "0.9133333299999999"
+], [
+  gv:hex "917653";
+  gv:red "145";
+  gv:blue "83";
+  gv:green "118";
+  gv:score "4.2424798";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "bf9464";
+  gv:red "191";
+  gv:blue "100";
+  gv:green "148";
+  gv:score "3.6746692";
+  gv:coverage "0.52"
+], [
+  gv:hex "9b7040";
+  gv:red "155";
+  gv:blue "64";
+  gv:green "112";
+  gv:score "3.3424068";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "724e22";
+  gv:red "114";
+  gv:blue "34";
+  gv:green "78";
+  gv:score "2.474919";
+  gv:coverage "0.48"
+], [
+  gv:hex "6d5534";
+  gv:red "109";
+  gv:blue "52";
+  gv:green "85";
+  gv:score "1.7906304000000002";
+  gv:coverage "0.41333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.0516"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "52.441496"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.335620000000006"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.078712"
+];
+    w:bagOfWords "VIN BL\nDE\nCHATEAU GRILLET\nAPPELLATION CONTROLEE\nMise en bouteilles au cha tea\nde Chatasu\nEYRETLGACHET, proprietaire\nBrin et Saint-Michel (Loire)\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

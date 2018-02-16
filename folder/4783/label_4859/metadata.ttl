@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4859";
+    dct:type "image";
+    w:bagOfWords "Liebfraumilch\n1963\nV "@eng;
+    gv:color [
+  gv:hex "615238";
+  gv:red "97";
+  gv:blue "56";
+  gv:green "82";
+  gv:score "12.438612000000001";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "8c3721";
+  gv:red "140";
+  gv:blue "33";
+  gv:green "55";
+  gv:score "11.855755";
+  gv:coverage "0.68666665"
+], [
+  gv:hex "3f331b";
+  gv:red "63";
+  gv:blue "27";
+  gv:green "51";
+  gv:score "8.3004333";
+  gv:coverage "1.6466666"
+], [
+  gv:hex "827356";
+  gv:red "130";
+  gv:blue "86";
+  gv:green "115";
+  gv:score "7.4235857";
+  gv:coverage "1.6533334"
+], [
+  gv:hex "a63025";
+  gv:red "166";
+  gv:blue "37";
+  gv:green "48";
+  gv:score "5.7763256";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "a99a7f";
+  gv:red "169";
+  gv:blue "127";
+  gv:green "154";
+  gv:score "4.6546511";
+  gv:coverage "1.34"
+], [
+  gv:hex "cfc3ab";
+  gv:red "207";
+  gv:blue "171";
+  gv:green "195";
+  gv:score "4.229542599999999";
+  gv:coverage "1.8066667"
+], [
+  gv:hex "764b36";
+  gv:red "118";
+  gv:blue "54";
+  gv:green "75";
+  gv:score "3.8505297";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "7b4726";
+  gv:red "123";
+  gv:blue "38";
+  gv:green "71";
+  gv:score "3.7740305000000003";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "66200b";
+  gv:red "102";
+  gv:blue "11";
+  gv:green "32";
+  gv:score "2.7463356";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/050h26>;
+  gv:desc "drinkware";
+  gv:score "63.115387999999996"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "55.953568"
+], [
+  gv:mid <https://g.co/kg/m/04dr76w>;
+  gv:desc "bottle";
+  gv:score "55.365551"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.845387"
+], [
+  gv:mid <https://g.co/kg/m/09tvcd>;
+  gv:desc "wine glass";
+  gv:score "54.384363"
+];
+    w:bagOfWords "Liebfraumilch\n1963\nV "@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1798";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "CARLWIEWELSTRIER\n1929er\nPiesporter Falkenberg\nWachstum Winzerverein\nWEINE\n"@deu;
+    gv:color [
+  gv:hex "dac2a4";
+  gv:red "218";
+  gv:blue "164";
+  gv:green "194";
+  gv:score "20.392852";
+  gv:coverage "35.773334"
+], [
+  gv:hex "bd8f74";
+  gv:red "189";
+  gv:blue "116";
+  gv:green "143";
+  gv:score "6.8720847";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "685030";
+  gv:red "104";
+  gv:blue "48";
+  gv:green "80";
+  gv:score "6.855323200000001";
+  gv:coverage "3.0066667"
+], [
+  gv:hex "4b2b12";
+  gv:red "75";
+  gv:blue "18";
+  gv:green "43";
+  gv:score "5.659085500000001";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "b19778";
+  gv:red "177";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "6.5416344";
+  gv:coverage "3.2266665"
+], [
+  gv:hex "e3b79d";
+  gv:red "227";
+  gv:blue "157";
+  gv:green "183";
+  gv:score "6.4183921";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "8d7455";
+  gv:red "141";
+  gv:blue "85";
+  gv:green "116";
+  gv:score "5.7477358999999995";
+  gv:coverage "2.5266666"
+], [
+  gv:hex "9b7055";
+  gv:red "155";
+  gv:blue "85";
+  gv:green "112";
+  gv:score "5.1072892";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "a76d49";
+  gv:red "167";
+  gv:blue "73";
+  gv:green "109";
+  gv:score "5.0698265";
+  gv:coverage "0.52"
+], [
+  gv:hex "6f4c31";
+  gv:red "111";
+  gv:blue "49";
+  gv:green "76";
+  gv:score "4.691508";
+  gv:coverage "1.2066667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "68.022"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.065832"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "52.891141"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "51.911914"
+];
+    w:bagOfWords "CARLWIEWELSTRIER\n1929er\nPiesporter Falkenberg\nWachstum Winzerverein\nWEINE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

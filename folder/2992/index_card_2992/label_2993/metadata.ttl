@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_2992/label_2993";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "GE\nAILLE\n1928\nvis EU\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVES CONTROLEE\nAILLE\nVICTOR PLACE\nPRO PRI ETA R E\nCA DAUJAc PRES BoR DE Aux.\nMis en Bouteilles au Chateau\n"@fra;
+    gv:color [
+  gv:hex "dcbe9b";
+  gv:red "220";
+  gv:blue "155";
+  gv:green "190";
+  gv:score "28.982428";
+  gv:coverage "11.62"
+], [
+  gv:hex "655039";
+  gv:red "101";
+  gv:blue "57";
+  gv:green "80";
+  gv:score "11.482693";
+  gv:coverage "3.4066666000000003"
+], [
+  gv:hex "dcb787";
+  gv:red "220";
+  gv:blue "135";
+  gv:green "183";
+  gv:score "15.875015000000001";
+  gv:coverage "6.353333599999999"
+], [
+  gv:hex "b59a7a";
+  gv:red "181";
+  gv:blue "122";
+  gv:green "154";
+  gv:score "8.6368561";
+  gv:coverage "2.5066666"
+], [
+  gv:hex "e0b380";
+  gv:red "224";
+  gv:blue "128";
+  gv:green "179";
+  gv:score "8.2527287";
+  gv:coverage "3.4799999999999995"
+], [
+  gv:hex "8a7257";
+  gv:red "138";
+  gv:blue "87";
+  gv:green "114";
+  gv:score "6.7292877";
+  gv:coverage "1.6666668"
+], [
+  gv:hex "483621";
+  gv:red "72";
+  gv:blue "33";
+  gv:green "54";
+  gv:score "4.34106";
+  gv:coverage "1.4466667"
+], [
+  gv:hex "c19e70";
+  gv:red "193";
+  gv:blue "112";
+  gv:green "158";
+  gv:score "3.7537433";
+  gv:coverage "1.2"
+], [
+  gv:hex "c89d6c";
+  gv:red "200";
+  gv:blue "108";
+  gv:green "157";
+  gv:score "3.3120044";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "987144";
+  gv:red "152";
+  gv:blue "68";
+  gv:green "113";
+  gv:score "1.7365653";
+  gv:coverage "0.48"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.48131599999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.69892900000001"
+];
+    w:bagOfWords "GE\nAILLE\n1928\nvis EU\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVES CONTROLEE\nAILLE\nVICTOR PLACE\nPRO PRI ETA R E\nCA DAUJAc PRES BoR DE Aux.\nMis en Bouteilles au Chateau\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

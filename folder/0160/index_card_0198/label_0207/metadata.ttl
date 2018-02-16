@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0207";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "/29/47\nA\nt.\nALCOHOL 12%\nNET CONTENTS\nBY VOLUME\nPINT 8 FLUID OUNCES\nNAPA VALLEY\nCABERNET\nPRODUCED & BOTTLED BY\nINGLE NOOK VINEYARD CO.\nESTABLISHED 1879\nBONDED WINERY No. 14th DIS\nCAL\nRUTHERFORD, NAPA COUNTY, CALIF.\nTAX PAID BY STAMPS AFFIXED TO CASE\nk\n"@eng;
+    gv:color [
+  gv:hex "c68c73";
+  gv:red "198";
+  gv:blue "115";
+  gv:green "140";
+  gv:score "13.832834";
+  gv:coverage "1.2"
+], [
+  gv:hex "8d3927";
+  gv:red "141";
+  gv:blue "39";
+  gv:green "57";
+  gv:score "11.208077";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "b05f4f";
+  gv:red "176";
+  gv:blue "79";
+  gv:green "95";
+  gv:score "10.358708";
+  gv:coverage "0.42"
+], [
+  gv:hex "d6c0a6";
+  gv:red "214";
+  gv:blue "166";
+  gv:green "192";
+  gv:score "6.3289031";
+  gv:coverage "59.74"
+], [
+  gv:hex "291a03";
+  gv:red "41";
+  gv:blue "3";
+  gv:green "26";
+  gv:score "1.4383134";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "b35947";
+  gv:red "179";
+  gv:blue "71";
+  gv:green "89";
+  gv:score "9.0765037";
+  gv:coverage "0.3"
+], [
+  gv:hex "a96d56";
+  gv:red "169";
+  gv:blue "86";
+  gv:green "109";
+  gv:score "7.9561442";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "d3816e";
+  gv:red "211";
+  gv:blue "110";
+  gv:green "129";
+  gv:score "5.4244582";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "8c4132";
+  gv:red "140";
+  gv:blue "50";
+  gv:green "65";
+  gv:score "4.9540929";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "ad9a80";
+  gv:red "173";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "4.1871257";
+  gv:coverage "4.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.316627"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "/29/47\nA\nt.\nALCOHOL 12%\nNET CONTENTS\nBY VOLUME\nPINT 8 FLUID OUNCES\nNAPA VALLEY\nCABERNET\nPRODUCED & BOTTLED BY\nINGLE NOOK VINEYARD CO.\nESTABLISHED 1879\nBONDED WINERY No. 14th DIS\nCAL\nRUTHERFORD, NAPA COUNTY, CALIF.\nTAX PAID BY STAMPS AFFIXED TO CASE\nk\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

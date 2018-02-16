@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4525/label_4538";
+    dct:type "image";
+    w:bagOfWords "TIO PEPE\nb/ndustrial\n"@spa;
+    gv:color [
+  gv:hex "cfc2b7";
+  gv:red "207";
+  gv:blue "183";
+  gv:green "194";
+  gv:score "27.556798";
+  gv:coverage "25.513333"
+], [
+  gv:hex "a6998b";
+  gv:red "166";
+  gv:blue "139";
+  gv:green "153";
+  gv:score "19.958298";
+  gv:coverage "1.9133333"
+], [
+  gv:hex "a5988e";
+  gv:red "165";
+  gv:blue "142";
+  gv:green "152";
+  gv:score "15.572985000000001";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "8a7d70";
+  gv:red "138";
+  gv:blue "112";
+  gv:green "125";
+  gv:score "11.372221";
+  gv:coverage "0.5599999999999999"
+], [
+  gv:hex "887d73";
+  gv:red "136";
+  gv:blue "115";
+  gv:green "125";
+  gv:score "10.433552";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "cbbfb0";
+  gv:red "203";
+  gv:blue "176";
+  gv:green "191";
+  gv:score "9.9802241";
+  gv:coverage "10.7"
+], [
+  gv:hex "e6dacd";
+  gv:red "230";
+  gv:blue "205";
+  gv:green "218";
+  gv:score "5.0265238";
+  gv:coverage "56.366664"
+], [
+  gv:hex "3a3225";
+  gv:red "58";
+  gv:blue "37";
+  gv:green "50";
+  gv:score "0.011279619999999999";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "e8d7c3";
+  gv:red "232";
+  gv:blue "195";
+  gv:green "215";
+  gv:score "0.06499598999999999";
+  gv:coverage "2.7199999999999998"
+], [
+  gv:hex "655d52";
+  gv:red "101";
+  gv:blue "82";
+  gv:green "93";
+  gv:score "0.019745769";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.873651"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "65.931219"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "54.988921000000005"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.266130999999994"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "54.258966"
+];
+    w:bagOfWords "TIO PEPE\nb/ndustrial\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

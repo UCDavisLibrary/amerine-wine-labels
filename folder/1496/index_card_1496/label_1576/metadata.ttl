@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1576";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "dade D. Rodriguez Ja-Cave\nMANZANILLA SELECTA\nMARCAREGISTRADA\nANLUCAR DE BARRAMEDA\nEmbotellador N9 26\n"@spa;
+    gv:color [
+  gv:hex "9f261c";
+  gv:red "159";
+  gv:blue "28";
+  gv:green "38";
+  gv:score "22.806409";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "efb9a5";
+  gv:red "239";
+  gv:blue "165";
+  gv:green "185";
+  gv:score "7.7954343999999995";
+  gv:coverage "1.68"
+], [
+  gv:hex "933621";
+  gv:red "147";
+  gv:blue "33";
+  gv:green "54";
+  gv:score "11.915689";
+  gv:coverage "0.57333335"
+], [
+  gv:hex "c44b3c";
+  gv:red "196";
+  gv:blue "60";
+  gv:green "75";
+  gv:score "7.163506699999999";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "b5563f";
+  gv:red "181";
+  gv:blue "63";
+  gv:green "86";
+  gv:score "5.8561463";
+  gv:coverage "0.3"
+], [
+  gv:hex "a21f0c";
+  gv:red "162";
+  gv:blue "12";
+  gv:green "31";
+  gv:score "5.4518532";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "dac3ae";
+  gv:red "218";
+  gv:blue "174";
+  gv:green "195";
+  gv:score "4.6640009000000004";
+  gv:coverage "28.046668000000004"
+], [
+  gv:hex "f3dbc4";
+  gv:red "243";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "3.4309436";
+  gv:coverage "38.84"
+], [
+  gv:hex "e07f66";
+  gv:red "224";
+  gv:blue "102";
+  gv:green "127";
+  gv:score "3.3673603000000005";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "b55f55";
+  gv:red "181";
+  gv:blue "85";
+  gv:green "95";
+  gv:score "3.2527308999999995";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.055363"
+];
+    w:bagOfWords "dade D. Rodriguez Ja-Cave\nMANZANILLA SELECTA\nMARCAREGISTRADA\nANLUCAR DE BARRAMEDA\nEmbotellador N9 26\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

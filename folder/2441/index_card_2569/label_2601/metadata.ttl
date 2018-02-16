@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2569/label_2601";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "APPELLATION CONTROLEE\nMA A 73\n"@fra;
+    gv:color [
+  gv:hex "e7be7f";
+  gv:red "231";
+  gv:blue "127";
+  gv:green "190";
+  gv:score "31.510108999999996";
+  gv:coverage "11.559999999999999"
+], [
+  gv:hex "44250c";
+  gv:red "68";
+  gv:blue "12";
+  gv:green "37";
+  gv:score "0.89422828";
+  gv:coverage "1.5733332999999998"
+], [
+  gv:hex "e9b677";
+  gv:red "233";
+  gv:blue "119";
+  gv:green "182";
+  gv:score "17.291212";
+  gv:coverage "5.2333333"
+], [
+  gv:hex "e6b066";
+  gv:red "230";
+  gv:blue "102";
+  gv:green "176";
+  gv:score "15.681735";
+  gv:coverage "3.5533335"
+], [
+  gv:hex "ce9a51";
+  gv:red "206";
+  gv:blue "81";
+  gv:green "154";
+  gv:score "9.2802748";
+  gv:coverage "2.2733333"
+], [
+  gv:hex "e3b76a";
+  gv:red "227";
+  gv:blue "106";
+  gv:green "183";
+  gv:score "7.4393614999999995";
+  gv:coverage "2.2466667"
+], [
+  gv:hex "cb995b";
+  gv:red "203";
+  gv:blue "91";
+  gv:green "153";
+  gv:score "5.0078269";
+  gv:coverage "1.92"
+], [
+  gv:hex "c19a5f";
+  gv:red "193";
+  gv:blue "95";
+  gv:green "154";
+  gv:score "2.6112527";
+  gv:coverage "1.32"
+], [
+  gv:hex "a06f3b";
+  gv:red "160";
+  gv:blue "59";
+  gv:green "111";
+  gv:score "2.1438058";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "784a1a";
+  gv:red "120";
+  gv:blue "26";
+  gv:green "74";
+  gv:score "1.1209531";
+  gv:coverage "0.60666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.920209"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.219927000000006"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "56.38132099999999"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.98589200000001"
+];
+    w:bagOfWords "APPELLATION CONTROLEE\nMA A 73\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

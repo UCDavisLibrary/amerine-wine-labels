@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2334/label_2339";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-ESTEPHE\nME DOC\nRécolte\nen Bouteille\n1943\nau Chateau\nAppellation Saint-Estephe contr 1ée\nPosé IMP. wETTERwALD FRERES BORDEAux\n"@fra;
+    gv:color [
+  gv:hex "dfc28f";
+  gv:red "223";
+  gv:blue "143";
+  gv:green "194";
+  gv:score "40.832716000000005";
+  gv:coverage "15.32"
+], [
+  gv:hex "867251";
+  gv:red "134";
+  gv:blue "81";
+  gv:green "114";
+  gv:score "12.613921999999999";
+  gv:coverage "2.4133334"
+], [
+  gv:hex "e8b88a";
+  gv:red "232";
+  gv:blue "138";
+  gv:green "184";
+  gv:score "8.5008";
+  gv:coverage "2.46"
+], [
+  gv:hex "695535";
+  gv:red "105";
+  gv:blue "53";
+  gv:green "85";
+  gv:score "7.323052700000001";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "dcc49d";
+  gv:red "220";
+  gv:blue "157";
+  gv:green "196";
+  gv:score "6.478634499999999";
+  gv:coverage "4.6933334"
+], [
+  gv:hex "b89c6b";
+  gv:red "184";
+  gv:blue "107";
+  gv:green "156";
+  gv:score "5.7349797";
+  gv:coverage "1.7733334"
+], [
+  gv:hex "c49465";
+  gv:red "196";
+  gv:blue "101";
+  gv:green "148";
+  gv:score "4.2419136";
+  gv:coverage "1.5"
+], [
+  gv:hex "aa9571";
+  gv:red "170";
+  gv:blue "113";
+  gv:green "149";
+  gv:score "3.7373111";
+  gv:coverage "0.85333334"
+], [
+  gv:hex "a06e41";
+  gv:red "160";
+  gv:blue "65";
+  gv:green "110";
+  gv:score "2.4939612";
+  gv:coverage "0.58666668"
+], [
+  gv:hex "917848";
+  gv:red "145";
+  gv:blue "72";
+  gv:green "120";
+  gv:score "2.3025233";
+  gv:coverage "0.71333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.22111099999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-ESTEPHE\nME DOC\nRécolte\nen Bouteille\n1943\nau Chateau\nAppellation Saint-Estephe contr 1ée\nPosé IMP. wETTERwALD FRERES BORDEAux\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

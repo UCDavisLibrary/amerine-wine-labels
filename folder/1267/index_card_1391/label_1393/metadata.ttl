@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1391/label_1393";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "RIESLING\nSUPERIOR\nA Light White Wine\nNET CONTENTS\n1 PT. 8V2 FL. 0 Z\nADUSSALLANT\nPRODUCED & BOTTLED BY\nA. DUSSAILLANT L\nLON TUE, CHILE\nP R O D U C E\nO F\nC H I L E\n"@spa;
+    gv:color [
+  gv:hex "d5bfa5";
+  gv:red "213";
+  gv:blue "165";
+  gv:green "191";
+  gv:score "16.998874";
+  gv:coverage "50.46000000000001"
+], [
+  gv:hex "8b3b34";
+  gv:red "139";
+  gv:blue "52";
+  gv:green "59";
+  gv:score "5.6181531";
+  gv:coverage "0.42"
+], [
+  gv:hex "e8b8ab";
+  gv:red "232";
+  gv:blue "171";
+  gv:green "184";
+  gv:score "10.855821";
+  gv:coverage "2.86"
+], [
+  gv:hex "b49d82";
+  gv:red "180";
+  gv:blue "130";
+  gv:green "157";
+  gv:score "10.746635";
+  gv:coverage "3.1466666999999995"
+], [
+  gv:hex "c89383";
+  gv:red "200";
+  gv:blue "131";
+  gv:green "147";
+  gv:score "9.408614";
+  gv:coverage "1.4533333000000002"
+], [
+  gv:hex "da877f";
+  gv:red "218";
+  gv:blue "127";
+  gv:green "135";
+  gv:score "5.3045988";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "9e6f5e";
+  gv:red "158";
+  gv:blue "94";
+  gv:green "111";
+  gv:score "5.2726939";
+  gv:coverage "0.75333333"
+], [
+  gv:hex "b45f59";
+  gv:red "180";
+  gv:blue "89";
+  gv:green "95";
+  gv:score "5.0248895000000005";
+  gv:coverage "0.3"
+], [
+  gv:hex "862d1e";
+  gv:red "134";
+  gv:blue "30";
+  gv:green "45";
+  gv:score "3.3992928";
+  gv:coverage "0.12"
+], [
+  gv:hex "8f795a";
+  gv:red "143";
+  gv:blue "90";
+  gv:green "121";
+  gv:score "3.1336598";
+  gv:coverage "0.85333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.333075"
+];
+    w:bagOfWords "RIESLING\nSUPERIOR\nA Light White Wine\nNET CONTENTS\n1 PT. 8V2 FL. 0 Z\nADUSSALLANT\nPRODUCED & BOTTLED BY\nA. DUSSAILLANT L\nLON TUE, CHILE\nP R O D U C E\nO F\nC H I L E\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "CHL".

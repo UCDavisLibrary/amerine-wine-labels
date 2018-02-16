@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1654/index_card_1702/label_1721";
+    dct:type "image";
+    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
+    w:bagOfWords "KAVAKLIDERE\nSARAPLARI LiMiTED SIRKETI\nA N K A R A\nDIKMEN KIZI\nOrta Anadolu uziiminden yapulmist\nCI 70\nFiat P200\nKuru\nme No. 24 Te\nDerec. 11 12\n"@grc;
+    gv:color [
+  gv:hex "be1607";
+  gv:red "190";
+  gv:blue "7";
+  gv:green "22";
+  gv:score "35.178599999999996";
+  gv:coverage "4.1666668"
+], [
+  gv:hex "dbc7ae";
+  gv:red "219";
+  gv:blue "174";
+  gv:green "199";
+  gv:score "2.6360666";
+  gv:coverage "12.953334"
+], [
+  gv:hex "ae1a09";
+  gv:red "174";
+  gv:blue "9";
+  gv:green "26";
+  gv:score "35.02461";
+  gv:coverage "4.9866665"
+], [
+  gv:hex "460100";
+  gv:red "70";
+  gv:blue "undefined";
+  gv:green "1";
+  gv:score "0.25622649000000003";
+  gv:coverage "0.06"
+], [
+  gv:hex "a02115";
+  gv:red "160";
+  gv:blue "21";
+  gv:green "33";
+  gv:score "8.4824853";
+  gv:coverage "1.4866667"
+], [
+  gv:hex "cd2112";
+  gv:red "205";
+  gv:blue "18";
+  gv:green "33";
+  gv:score "4.3273963";
+  gv:coverage "0.47333334000000005"
+], [
+  gv:hex "7f0801";
+  gv:red "127";
+  gv:blue "1";
+  gv:green "8";
+  gv:score "3.3477165";
+  gv:coverage "0.36"
+], [
+  gv:hex "6b0b03";
+  gv:red "107";
+  gv:blue "3";
+  gv:green "11";
+  gv:score "1.7922886";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "f3bda8";
+  gv:red "243";
+  gv:blue "168";
+  gv:green "189";
+  gv:score "1.0437082";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "c62d18";
+  gv:red "198";
+  gv:blue "24";
+  gv:green "45";
+  gv:score "1.0146782";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.584655999999995"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.005841000000004"
+];
+    w:bagOfWords "KAVAKLIDERE\nSARAPLARI LiMiTED SIRKETI\nA N K A R A\nDIKMEN KIZI\nOrta Anadolu uziiminden yapulmist\nCI 70\nFiat P200\nKuru\nme No. 24 Te\nDerec. 11 12\n"@grc;
+    wdt:P219 "grc";
+    w:WineType w:Still;
+    wdt:P298 "GRC".

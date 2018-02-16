@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0958";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "HARD o\nhen da lett\nLo& FERD DUC RET\nPROPR VIGNERONS\nCHAR DONNE\n"@deu;
+    gv:color [
+  gv:hex "dbb98c";
+  gv:red "219";
+  gv:blue "140";
+  gv:green "185";
+  gv:score "17.841738";
+  gv:coverage "8.16"
+], [
+  gv:hex "a12b18";
+  gv:red "161";
+  gv:blue "24";
+  gv:green "43";
+  gv:score "4.6983562";
+  gv:coverage "0.36"
+], [
+  gv:hex "e2c39d";
+  gv:red "226";
+  gv:blue "157";
+  gv:green "195";
+  gv:score "15.717540999999999";
+  gv:coverage "14.193333999999998"
+], [
+  gv:hex "ba996b";
+  gv:red "186";
+  gv:blue "107";
+  gv:green "153";
+  gv:score "14.611445";
+  gv:coverage "3.7600000000000002"
+], [
+  gv:hex "8f7344";
+  gv:red "143";
+  gv:blue "68";
+  gv:green "115";
+  gv:score "13.088635000000002";
+  gv:coverage "3.02"
+], [
+  gv:hex "92331a";
+  gv:red "146";
+  gv:blue "26";
+  gv:green "51";
+  gv:score "4.3475546";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "6f5426";
+  gv:red "111";
+  gv:blue "38";
+  gv:green "84";
+  gv:score "4.0199071";
+  gv:coverage "0.83333338"
+], [
+  gv:hex "b39874";
+  gv:red "179";
+  gv:blue "116";
+  gv:green "152";
+  gv:score "3.4999046";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "8c7553";
+  gv:red "140";
+  gv:blue "83";
+  gv:green "117";
+  gv:score "3.3777757999999998";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "996d45";
+  gv:red "153";
+  gv:blue "69";
+  gv:green "109";
+  gv:score "3.0094838";
+  gv:coverage "0.61333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.509265"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "59.459233"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "55.851763"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.21919499999999"
+];
+    w:bagOfWords "HARD o\nhen da lett\nLo& FERD DUC RET\nPROPR VIGNERONS\nCHAR DONNE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

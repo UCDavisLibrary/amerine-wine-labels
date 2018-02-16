@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0918";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "OSERROC\nMARQUE DE POSE E\n12\nR PEINDARIES NEGOCIANT CAHORS LOT\n"@fra;
+    gv:color [
+  gv:hex "e4c289";
+  gv:red "228";
+  gv:blue "137";
+  gv:green "194";
+  gv:score "25.832379";
+  gv:coverage "6.7266665"
+], [
+  gv:hex "794a1f";
+  gv:red "121";
+  gv:blue "31";
+  gv:green "74";
+  gv:score "6.0966227";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "e9b77e";
+  gv:red "233";
+  gv:blue "126";
+  gv:green "183";
+  gv:score "8.6306237";
+  gv:coverage "2.5733333000000003"
+], [
+  gv:hex "c79660";
+  gv:red "199";
+  gv:blue "96";
+  gv:green "150";
+  gv:score "7.389401600000001";
+  gv:coverage "2.3066666"
+], [
+  gv:hex "9e6d3f";
+  gv:red "158";
+  gv:blue "63";
+  gv:green "109";
+  gv:score "4.7481548";
+  gv:coverage "1.46"
+], [
+  gv:hex "e9b260";
+  gv:red "233";
+  gv:blue "96";
+  gv:green "178";
+  gv:score "4.7228165";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "e3b966";
+  gv:red "227";
+  gv:blue "102";
+  gv:green "185";
+  gv:score "4.1608654000000005";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "f8d7a0";
+  gv:red "248";
+  gv:blue "160";
+  gv:green "215";
+  gv:score "4.088163";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "e2c49f";
+  gv:red "226";
+  gv:blue "159";
+  gv:green "196";
+  gv:score "3.9964195";
+  gv:coverage "2.2333333"
+], [
+  gv:hex "bc9a64";
+  gv:red "188";
+  gv:blue "100";
+  gv:green "154";
+  gv:score "3.9920848";
+  gv:coverage "1.1733334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "OSERROC\nMARQUE DE POSE E\n12\nR PEINDARIES NEGOCIANT CAHORS LOT\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

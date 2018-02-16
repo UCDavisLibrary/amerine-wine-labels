@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2696/label_2734";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "RED R HO NE WINE\nGRAND\nHERMITAGE\nDES v LOKNOBLES MA. DE LA SIZER ANNE\nROPR\nTE DE\nCHAPOUTIER 83. CIN\nTAIN DROME\nPRODUCT OF FRANCE\nSpecially reserved and inported by\nE3 EL Lo MAIS & Co ANY, INC.\nNEW YORK\n"@fra;
+    gv:color [
+  gv:hex "d0baa2";
+  gv:red "208";
+  gv:blue "162";
+  gv:green "186";
+  gv:score "39.555126";
+  gv:coverage "24.08"
+], [
+  gv:hex "b98e63";
+  gv:red "185";
+  gv:blue "99";
+  gv:green "142";
+  gv:score "3.1433116999999995";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "b39c81";
+  gv:red "179";
+  gv:blue "129";
+  gv:green "156";
+  gv:score "31.066549";
+  gv:coverage "7.9533331"
+], [
+  gv:hex "d0c0b6";
+  gv:red "208";
+  gv:blue "182";
+  gv:green "192";
+  gv:score "5.656575";
+  gv:coverage "31.726667"
+], [
+  gv:hex "917b64";
+  gv:red "145";
+  gv:blue "100";
+  gv:green "123";
+  gv:score "4.1281365";
+  gv:coverage "1.06"
+], [
+  gv:hex "bb996a";
+  gv:red "187";
+  gv:blue "106";
+  gv:green "153";
+  gv:score "3.0570205";
+  gv:coverage "0.38"
+], [
+  gv:hex "9a713f";
+  gv:red "154";
+  gv:blue "63";
+  gv:green "113";
+  gv:score "2.9487781";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "ad9e95";
+  gv:red "173";
+  gv:blue "149";
+  gv:green "158";
+  gv:score "1.776937";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "93723c";
+  gv:red "147";
+  gv:blue "60";
+  gv:green "114";
+  gv:score "1.7067596";
+  gv:coverage "0.12"
+], [
+  gv:hex "bc9675";
+  gv:red "188";
+  gv:blue "117";
+  gv:green "150";
+  gv:score "1.2520498";
+  gv:coverage "0.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.577006"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.31381699999999"
+];
+    w:bagOfWords "RED R HO NE WINE\nGRAND\nHERMITAGE\nDES v LOKNOBLES MA. DE LA SIZER ANNE\nROPR\nTE DE\nCHAPOUTIER 83. CIN\nTAIN DROME\nPRODUCT OF FRANCE\nSpecially reserved and inported by\nE3 EL Lo MAIS & Co ANY, INC.\nNEW YORK\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

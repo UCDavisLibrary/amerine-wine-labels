@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3115/label_3123";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "BOURG VIEUX\nAPPELLATION BOURG CONTROLEE\nExpédié en fat par\nBORDEAUX\nDEPOSE\n"@fra;
+    gv:color [
+  gv:hex "e3c8a7";
+  gv:red "227";
+  gv:blue "167";
+  gv:green "200";
+  gv:score "54.816728999999995";
+  gv:coverage "26.733333"
+], [
+  gv:hex "9b6e4a";
+  gv:red "155";
+  gv:blue "74";
+  gv:green "110";
+  gv:score "3.3070967";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "f1d7b7";
+  gv:red "241";
+  gv:blue "183";
+  gv:green "215";
+  gv:score "11.304889999999999";
+  gv:coverage "6.573333600000001"
+], [
+  gv:hex "ddb988";
+  gv:red "221";
+  gv:blue "136";
+  gv:green "185";
+  gv:score "7.6392263";
+  gv:coverage "2.5"
+], [
+  gv:hex "ba9c7b";
+  gv:red "186";
+  gv:blue "123";
+  gv:green "156";
+  gv:score "5.0315116";
+  gv:coverage "1.3733333"
+], [
+  gv:hex "bb9373";
+  gv:red "187";
+  gv:blue "115";
+  gv:green "147";
+  gv:score "5.0121076";
+  gv:coverage "0.74"
+], [
+  gv:hex "e4bb9a";
+  gv:red "228";
+  gv:blue "154";
+  gv:green "187";
+  gv:score "3.2406285";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "9c7455";
+  gv:red "156";
+  gv:blue "85";
+  gv:green "116";
+  gv:score "3.1159855";
+  gv:coverage "0.50666668"
+], [
+  gv:hex "784d29";
+  gv:red "120";
+  gv:blue "41";
+  gv:green "77";
+  gv:score "1.4944702";
+  gv:coverage "0.2"
+], [
+  gv:hex "bc8f67";
+  gv:red "188";
+  gv:blue "103";
+  gv:green "143";
+  gv:score "1.3725404";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.96414600000001"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.711755999999994"
+];
+    w:bagOfWords "BOURG VIEUX\nAPPELLATION BOURG CONTROLEE\nExpédié en fat par\nBORDEAUX\nDEPOSE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

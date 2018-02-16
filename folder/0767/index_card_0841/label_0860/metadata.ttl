@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0841/label_0860";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "PINK AMPAGNE\nSELEC\nMaison fondée en\nEPER NAY\nLCOHet 12 BY VOLUME\n"@fra;
+    gv:color [
+  gv:hex "be0b0b";
+  gv:red "190";
+  gv:blue "11";
+  gv:green "11";
+  gv:score "43.111423";
+  gv:coverage "8.1933334"
+], [
+  gv:hex "ce463c";
+  gv:red "206";
+  gv:blue "60";
+  gv:green "70";
+  gv:score "7.5091489";
+  gv:coverage "2.8133333"
+], [
+  gv:hex "deceb8";
+  gv:red "222";
+  gv:blue "184";
+  gv:green "206";
+  gv:score "0.92796413";
+  gv:coverage "18.486667"
+], [
+  gv:hex "d87c70";
+  gv:red "216";
+  gv:blue "112";
+  gv:green "124";
+  gv:score "0.58232755";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "d31a1c";
+  gv:red "211";
+  gv:blue "28";
+  gv:green "26";
+  gv:score "15.699015999999999";
+  gv:coverage "2.9533334"
+], [
+  gv:hex "ab160a";
+  gv:red "171";
+  gv:blue "10";
+  gv:green "22";
+  gv:score "12.176146000000001";
+  gv:coverage "2.88"
+], [
+  gv:hex "0f0706";
+  gv:red "15";
+  gv:blue "6";
+  gv:green "7";
+  gv:score "0.11538292";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "a9201a";
+  gv:red "169";
+  gv:blue "26";
+  gv:green "32";
+  gv:score "5.535062";
+  gv:coverage "1.48"
+], [
+  gv:hex "d73233";
+  gv:red "215";
+  gv:blue "51";
+  gv:green "50";
+  gv:score "3.9570175";
+  gv:coverage "1"
+], [
+  gv:hex "002e00";
+  gv:red "undefined";
+  gv:blue "undefined";
+  gv:green "46";
+  gv:score "0.023652185";
+  gv:coverage "0.006666666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06fvc>;
+  gv:desc "red";
+  gv:score "90.296835"
+], [
+  gv:mid <https://g.co/kg/m/02mf1n>;
+  gv:desc "gadget";
+  gv:score "79.924375"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.915018"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "51.421452"
+];
+    w:bagOfWords "PINK AMPAGNE\nSELEC\nMaison fondée en\nEPER NAY\nLCOHet 12 BY VOLUME\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

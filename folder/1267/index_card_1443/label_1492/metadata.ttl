@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1492";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nTO KAY\nWIN E\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY, INC\nURBANA, HAMMONDSPORT, N. Y.\nESTABLISHED 1865\nALCOHOL 19% BY VOLUME\n"@eng;
+    gv:color [
+  gv:hex "45341c";
+  gv:red "69";
+  gv:blue "28";
+  gv:green "52";
+  gv:score "35.144207";
+  gv:coverage "1.68"
+], [
+  gv:hex "cec2b9";
+  gv:red "206";
+  gv:blue "185";
+  gv:green "194";
+  gv:score "5.4026335";
+  gv:coverage "3.1333334999999995"
+], [
+  gv:hex "150c06";
+  gv:red "21";
+  gv:blue "6";
+  gv:green "12";
+  gv:score "5.0016694";
+  gv:coverage "3.26"
+], [
+  gv:hex "5e4e34";
+  gv:red "94";
+  gv:blue "52";
+  gv:green "78";
+  gv:score "22.443369";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "827259";
+  gv:red "130";
+  gv:blue "89";
+  gv:green "114";
+  gv:score "4.4528469";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "cfc1b0";
+  gv:red "207";
+  gv:blue "176";
+  gv:green "193";
+  gv:score "4.2717561";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "291b0a";
+  gv:red "41";
+  gv:blue "10";
+  gv:green "27";
+  gv:score "4.1456472";
+  gv:coverage "0.5"
+], [
+  gv:hex "ede2d9";
+  gv:red "237";
+  gv:blue "217";
+  gv:green "226";
+  gv:score "3.894176";
+  gv:coverage "82.233334"
+], [
+  gv:hex "aea08c";
+  gv:red "174";
+  gv:blue "140";
+  gv:green "160";
+  gv:score "2.6343953";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "ede0ce";
+  gv:red "237";
+  gv:blue "206";
+  gv:green "224";
+  gv:score "2.5997331";
+  gv:coverage "2.1733332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.56953"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "51.729327000000005"
+];
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nTO KAY\nWIN E\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY, INC\nURBANA, HAMMONDSPORT, N. Y.\nESTABLISHED 1865\nALCOHOL 19% BY VOLUME\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

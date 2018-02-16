@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2623";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "noD DEPOSE\nAPPELLATION CONTROLEE\n75I.R\nCUVELIER PARIS\n"@fra;
+    gv:color [
+  gv:hex "e8ded4";
+  gv:red "232";
+  gv:blue "212";
+  gv:green "222";
+  gv:score "58.760303";
+  gv:coverage "42.393333"
+], [
+  gv:hex "8a3211";
+  gv:red "138";
+  gv:blue "17";
+  gv:green "50";
+  gv:score "1.5684000999999999";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "a21d0b";
+  gv:red "162";
+  gv:blue "11";
+  gv:green "29";
+  gv:score "1.4968314999999999";
+  gv:coverage "0.16"
+], [
+  gv:hex "614d2b";
+  gv:red "97";
+  gv:blue "43";
+  gv:green "77";
+  gv:score "1.3443985999999999";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "c2935e";
+  gv:red "194";
+  gv:blue "94";
+  gv:green "147";
+  gv:score "0.33312859";
+  gv:coverage "6.36"
+], [
+  gv:hex "301300";
+  gv:red "48";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "0.30296273";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "e7dbc9";
+  gv:red "231";
+  gv:blue "201";
+  gv:green "219";
+  gv:score "10.919526";
+  gv:coverage "10.52"
+], [
+  gv:hex "decfba";
+  gv:red "222";
+  gv:blue "186";
+  gv:green "207";
+  gv:score "8.6497657";
+  gv:coverage "13.053334"
+], [
+  gv:hex "dbd2c8";
+  gv:red "219";
+  gv:blue "200";
+  gv:green "210";
+  gv:score "6.269124199999999";
+  gv:coverage "5.72"
+], [
+  gv:hex "9e2812";
+  gv:red "158";
+  gv:blue "18";
+  gv:green "40";
+  gv:score "1.4042165";
+  gv:coverage "0.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "61.38640600000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.938854"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "58.21182700000001"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "55.432588"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.131817000000005"
+];
+    w:bagOfWords "noD DEPOSE\nAPPELLATION CONTROLEE\n75I.R\nCUVELIER PARIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0210";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "10/23\nB y.\nNGLEN00\nTRADE MARK\nREGISTEREo\nNET CONTENTS\nALCOHOL 12%\nBY VOLUME\nl PIN 8 FLUID OUNCES\nCALIFORNIA\nNAPA VALLEY\nCABERNET\nPRODUCED & BOTTLED BY\nING ENOOK VINEYARD co\nESTABLISHED 1879\nBONDED\n.0.69\n14th DIST., CAL\nD, NAPA COUNTY, CALIF.\nSTAMPS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "cc9363";
+  gv:red "204";
+  gv:blue "99";
+  gv:green "147";
+  gv:score "17.915715";
+  gv:coverage "3.66"
+], [
+  gv:hex "b45d3c";
+  gv:red "180";
+  gv:blue "60";
+  gv:green "93";
+  gv:score "10.354754";
+  gv:coverage "0.96"
+], [
+  gv:hex "442f13";
+  gv:red "68";
+  gv:blue "19";
+  gv:green "47";
+  gv:score "0.51213955";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "311300";
+  gv:red "49";
+  gv:blue "undefined";
+  gv:green "19";
+  gv:score "0.40997313";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "e3af7e";
+  gv:red "227";
+  gv:blue "126";
+  gv:green "175";
+  gv:score "15.448534";
+  gv:coverage "4.6533335000000005"
+], [
+  gv:hex "913a1a";
+  gv:red "145";
+  gv:blue "26";
+  gv:green "58";
+  gv:score "8.732113199999999";
+  gv:coverage "0.76666665"
+], [
+  gv:hex "a56d44";
+  gv:red "165";
+  gv:blue "68";
+  gv:green "109";
+  gv:score "5.7232402";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "dcb191";
+  gv:red "220";
+  gv:blue "145";
+  gv:green "177";
+  gv:score "4.7914639";
+  gv:coverage "4.0666666"
+], [
+  gv:hex "d7b999";
+  gv:red "215";
+  gv:blue "153";
+  gv:green "185";
+  gv:score "4.1939527";
+  gv:coverage "7.8866668"
+], [
+  gv:hex "d57e5d";
+  gv:red "213";
+  gv:blue "93";
+  gv:green "126";
+  gv:score "3.6426250000000002";
+  gv:coverage "0.38"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "77.654582"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.661314000000004"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "10/23\nB y.\nNGLEN00\nTRADE MARK\nREGISTEREo\nNET CONTENTS\nALCOHOL 12%\nBY VOLUME\nl PIN 8 FLUID OUNCES\nCALIFORNIA\nNAPA VALLEY\nCABERNET\nPRODUCED & BOTTLED BY\nING ENOOK VINEYARD co\nESTABLISHED 1879\nBONDED\n.0.69\n14th DIST., CAL\nD, NAPA COUNTY, CALIF.\nSTAMPS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

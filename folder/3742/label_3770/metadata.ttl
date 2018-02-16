@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3742/label_3770";
+    dct:type "image";
+    w:bagOfWords "SORRENTO\nEXCELSIOR\nGRAND HOTEL VITTORIA\nSORRENTO\n"@ita;
+    gv:color [
+  gv:hex "959fb7";
+  gv:red "149";
+  gv:blue "183";
+  gv:green "159";
+  gv:score "24.390838000000002";
+  gv:coverage "1.5733332999999998"
+], [
+  gv:hex "b7c0d6";
+  gv:red "183";
+  gv:blue "214";
+  gv:green "192";
+  gv:score "21.593639";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "c1c2ca";
+  gv:red "193";
+  gv:blue "202";
+  gv:green "194";
+  gv:score "18.263581000000002";
+  gv:coverage "16.1"
+], [
+  gv:hex "6b7997";
+  gv:red "107";
+  gv:blue "151";
+  gv:green "121";
+  gv:score "10.620692";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "9ea2ab";
+  gv:red "158";
+  gv:blue "171";
+  gv:green "162";
+  gv:score "8.1216387";
+  gv:coverage "1.7666666000000002"
+], [
+  gv:hex "d5e2fa";
+  gv:red "213";
+  gv:blue "250";
+  gv:green "226";
+  gv:score "6.5415464000000005";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "e1e0e3";
+  gv:red "225";
+  gv:blue "227";
+  gv:green "224";
+  gv:score "5.955445";
+  gv:coverage "65.686667"
+], [
+  gv:hex "475876";
+  gv:red "71";
+  gv:blue "118";
+  gv:green "88";
+  gv:score "1.532213";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "767981";
+  gv:red "118";
+  gv:blue "129";
+  gv:green "121";
+  gv:score "1.0594144";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "7696c3";
+  gv:red "118";
+  gv:blue "195";
+  gv:green "150";
+  gv:score "0.72163795";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.7685"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.680381"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "54.572314"
+];
+    w:bagOfWords "SORRENTO\nEXCELSIOR\nGRAND HOTEL VITTORIA\nSORRENTO\n"@ita;
+    wdt:P219 "ita";
+    wdt:P298 "ITA".

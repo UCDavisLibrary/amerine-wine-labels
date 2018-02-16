@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1579/label_1582";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MOSCATEL FRUTA\nMARCA REG STRADA\nMARCA REGISTRADA\nNo 132\n"@spa;
+    gv:color [
+  gv:hex "d6c1a7";
+  gv:red "214";
+  gv:blue "167";
+  gv:green "193";
+  gv:score "21.764654";
+  gv:coverage "31.466666"
+], [
+  gv:hex "b0987b";
+  gv:red "176";
+  gv:blue "123";
+  gv:green "152";
+  gv:score "16.141021";
+  gv:coverage "1.8066667"
+], [
+  gv:hex "8e7557";
+  gv:red "142";
+  gv:blue "87";
+  gv:green "117";
+  gv:score "13.411875";
+  gv:coverage "0.9333332999999999"
+], [
+  gv:hex "8e6f45";
+  gv:red "142";
+  gv:blue "69";
+  gv:green "111";
+  gv:score "11.093712";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "eedcc5";
+  gv:red "238";
+  gv:blue "197";
+  gv:green "220";
+  gv:score "6.154117";
+  gv:coverage "36.720000000000006"
+], [
+  gv:hex "956d41";
+  gv:red "149";
+  gv:blue "65";
+  gv:green "109";
+  gv:score "5.1698133";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "665541";
+  gv:red "102";
+  gv:blue "65";
+  gv:green "85";
+  gv:score "4.48449";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "d3c5b9";
+  gv:red "211";
+  gv:blue "185";
+  gv:green "197";
+  gv:score "3.5225768";
+  gv:coverage "8.8933334"
+], [
+  gv:hex "ecdfd2";
+  gv:red "236";
+  gv:blue "210";
+  gv:green "223";
+  gv:score "3.2527874999999997";
+  gv:coverage "18.013333"
+], [
+  gv:hex "bc9b6e";
+  gv:red "188";
+  gv:blue "110";
+  gv:green "155";
+  gv:score "2.6975241";
+  gv:coverage "0.08"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.76907700000001"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "63.858336"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "MOSCATEL FRUTA\nMARCA REG STRADA\nMARCA REGISTRADA\nNo 132\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

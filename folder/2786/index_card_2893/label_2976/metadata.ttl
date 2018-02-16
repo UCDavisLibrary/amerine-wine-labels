@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2976";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "Tand Vin d\nNlsa\nDEPUIS\nTRAM i N E R\nG RAND CRU\n\"H U G E L,\nFE HUGEL ET FILS NEGOCIANTSARIOUEwlHR HIRHIN\n"@fra;
+    gv:color [
+  gv:hex "e4ad54";
+  gv:red "228";
+  gv:blue "84";
+  gv:green "173";
+  gv:score "39.272231000000005";
+  gv:coverage "10.059999999999999"
+], [
+  gv:hex "b49056";
+  gv:red "180";
+  gv:blue "86";
+  gv:green "144";
+  gv:score "4.187501200000001";
+  gv:coverage "3.3133332"
+], [
+  gv:hex "dcc29e";
+  gv:red "220";
+  gv:blue "158";
+  gv:green "194";
+  gv:score "0.35986756000000003";
+  gv:coverage "10.653333"
+], [
+  gv:hex "ce9845";
+  gv:red "206";
+  gv:blue "69";
+  gv:green "152";
+  gv:score "33.924058";
+  gv:coverage "10.5"
+], [
+  gv:hex "a67024";
+  gv:red "166";
+  gv:blue "36";
+  gv:green "112";
+  gv:score "7.5023882";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "e1b15a";
+  gv:red "225";
+  gv:blue "90";
+  gv:green "177";
+  gv:score "5.15358";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "ca9d4e";
+  gv:red "202";
+  gv:blue "78";
+  gv:green "157";
+  gv:score "2.7250875";
+  gv:coverage "0.84666666"
+], [
+  gv:hex "bc8e51";
+  gv:red "188";
+  gv:blue "81";
+  gv:green "142";
+  gv:score "1.3728008999999999";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "9c7b44";
+  gv:red "156";
+  gv:blue "68";
+  gv:green "123";
+  gv:score "1.3038771";
+  gv:coverage "0.64"
+], [
+  gv:hex "9d723d";
+  gv:red "157";
+  gv:blue "61";
+  gv:green "114";
+  gv:score "1.2711785";
+  gv:coverage "0.29333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.934495"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.037834"
+];
+    w:bagOfWords "Tand Vin d\nNlsa\nDEPUIS\nTRAM i N E R\nG RAND CRU\n\"H U G E L,\nFE HUGEL ET FILS NEGOCIANTSARIOUEwlHR HIRHIN\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

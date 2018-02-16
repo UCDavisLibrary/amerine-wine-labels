@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0980/label_0984";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "Dey, ley\nlappuis\".步reyes\n"@deu;
+    gv:color [
+  gv:hex "ae9777";
+  gv:red "174";
+  gv:blue "119";
+  gv:green "151";
+  gv:score "24.691145";
+  gv:coverage "4.2466667"
+], [
+  gv:hex "8b7556";
+  gv:red "139";
+  gv:blue "86";
+  gv:green "117";
+  gv:score "22.204421";
+  gv:coverage "3.04"
+], [
+  gv:hex "d5be9f";
+  gv:red "213";
+  gv:blue "159";
+  gv:green "190";
+  gv:score "19.654635000000003";
+  gv:coverage "13.106667"
+], [
+  gv:hex "695538";
+  gv:red "105";
+  gv:blue "56";
+  gv:green "85";
+  gv:score "9.5268853";
+  gv:coverage "1.3666667000000001"
+], [
+  gv:hex "b79567";
+  gv:red "183";
+  gv:blue "103";
+  gv:green "149";
+  gv:score "4.7359411";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "eedbc0";
+  gv:red "238";
+  gv:blue "192";
+  gv:green "219";
+  gv:score "4.2158131";
+  gv:coverage "29.913332999999998"
+], [
+  gv:hex "94754b";
+  gv:red "148";
+  gv:blue "75";
+  gv:green "117";
+  gv:score "4.0272359";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "443218";
+  gv:red "68";
+  gv:blue "24";
+  gv:green "50";
+  gv:score "2.9802809999999997";
+  gv:coverage "0.4"
+], [
+  gv:hex "d7b583";
+  gv:red "215";
+  gv:blue "131";
+  gv:green "181";
+  gv:score "2.7648327999999998";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "6c512a";
+  gv:red "108";
+  gv:blue "42";
+  gv:green "81";
+  gv:score "1.3509013";
+  gv:coverage "0.11333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "57.9318"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "53.13797"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "51.800817"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.0967"
+];
+    w:bagOfWords "Dey, ley\nlappuis\".步reyes\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

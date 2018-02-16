@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0962";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "CHARDONNE\necole de\nom maine\n"@deu;
+    gv:color [
+  gv:hex "d3b691";
+  gv:red "211";
+  gv:blue "145";
+  gv:green "182";
+  gv:score "32.795313";
+  gv:coverage "13.066667"
+], [
+  gv:hex "681f0c";
+  gv:red "104";
+  gv:blue "12";
+  gv:green "31";
+  gv:score "2.0741031";
+  gv:coverage "0.38"
+], [
+  gv:hex "b89b77";
+  gv:red "184";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "24.646857";
+  gv:coverage "9.986666600000001"
+], [
+  gv:hex "8b7751";
+  gv:red "139";
+  gv:blue "81";
+  gv:green "119";
+  gv:score "7.135759999999999";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "b89c70";
+  gv:red "184";
+  gv:blue "112";
+  gv:green "156";
+  gv:score "5.5467844";
+  gv:coverage "3.5333332000000004"
+], [
+  gv:hex "e1b296";
+  gv:red "225";
+  gv:blue "150";
+  gv:green "178";
+  gv:score "4.3890569";
+  gv:coverage "1.52"
+], [
+  gv:hex "c39578";
+  gv:red "195";
+  gv:blue "120";
+  gv:green "149";
+  gv:score "3.7147392000000004";
+  gv:coverage "1.22"
+], [
+  gv:hex "8a784b";
+  gv:red "138";
+  gv:blue "75";
+  gv:green "120";
+  gv:score "3.1527948";
+  gv:coverage "0.96"
+], [
+  gv:hex "6d5834";
+  gv:red "109";
+  gv:blue "52";
+  gv:green "88";
+  gv:score "2.6444948999999998";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "9a6e51";
+  gv:red "154";
+  gv:blue "81";
+  gv:green "110";
+  gv:score "1.9654372999999998";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.331081"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "CHARDONNE\necole de\nom maine\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

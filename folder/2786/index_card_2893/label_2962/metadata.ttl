@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2962";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "GRAN Ds VINS D ALSACE\nSylvaner\nPROPRIETAIRES VITICULTEU\nBERGHEIM\nr\nHAUT RH\n"@fra;
+    gv:color [
+  gv:hex "deb258";
+  gv:red "222";
+  gv:blue "88";
+  gv:green "178";
+  gv:score "40.718913";
+  gv:coverage "10.16"
+], [
+  gv:hex "8c765e";
+  gv:red "140";
+  gv:blue "94";
+  gv:green "118";
+  gv:score "5.4977722";
+  gv:coverage "2.6333334"
+], [
+  gv:hex "dabfa1";
+  gv:red "218";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "5.1678419";
+  gv:coverage "7.5666666"
+], [
+  gv:hex "704a0b";
+  gv:red "112";
+  gv:blue "11";
+  gv:green "74";
+  gv:score "1.1043509";
+  gv:coverage "0.3"
+], [
+  gv:hex "c99f49";
+  gv:red "201";
+  gv:blue "73";
+  gv:green "159";
+  gv:score "8.2157388";
+  gv:coverage "2.9933332999999998"
+], [
+  gv:hex "e0ad55";
+  gv:red "224";
+  gv:blue "85";
+  gv:green "173";
+  gv:score "6.7526065";
+  gv:coverage "2.0533333000000002"
+], [
+  gv:hex "cd9943";
+  gv:red "205";
+  gv:blue "67";
+  gv:green "153";
+  gv:score "5.9460565";
+  gv:coverage "1.92"
+], [
+  gv:hex "ba9659";
+  gv:red "186";
+  gv:blue "89";
+  gv:green "150";
+  gv:score "5.5575817999999995";
+  gv:coverage "2.8066667"
+], [
+  gv:hex "ddb97c";
+  gv:red "221";
+  gv:blue "124";
+  gv:green "185";
+  gv:score "5.1660374000000004";
+  gv:coverage "2.26"
+], [
+  gv:hex "ab947b";
+  gv:red "171";
+  gv:blue "123";
+  gv:green "148";
+  gv:score "5.0671987000000005";
+  gv:coverage "2.6133334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "63.582414"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.714316999999994"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "57.472974"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.959047000000005"
+];
+    w:bagOfWords "GRAN Ds VINS D ALSACE\nSylvaner\nPROPRIETAIRES VITICULTEU\nBERGHEIM\nr\nHAUT RH\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1902/label_1919";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "EL ALAMO\ntjo dePedio homero Villarreal\nSANLUCAR DE BARRAMEDA\nNo 25\nHidos MIGUEL SALDO JEREZ\n"@spa;
+    gv:color [
+  gv:hex "e2bb7e";
+  gv:red "226";
+  gv:blue "126";
+  gv:green "187";
+  gv:score "63.806850000000004";
+  gv:coverage "18.673334"
+], [
+  gv:hex "bb995f";
+  gv:red "187";
+  gv:blue "95";
+  gv:green "153";
+  gv:score "15.579572";
+  gv:coverage "4.6333332"
+], [
+  gv:hex "90733f";
+  gv:red "144";
+  gv:blue "63";
+  gv:green "115";
+  gv:score "8.4639646";
+  gv:coverage "1.7733334"
+], [
+  gv:hex "e7b775";
+  gv:red "231";
+  gv:blue "117";
+  gv:green "183";
+  gv:score "6.1398532";
+  gv:coverage "1.2066667"
+], [
+  gv:hex "765927";
+  gv:red "118";
+  gv:blue "39";
+  gv:green "89";
+  gv:score "1.3085072999999998";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "c39759";
+  gv:red "195";
+  gv:blue "89";
+  gv:green "151";
+  gv:score "1.0828107";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "827753";
+  gv:red "130";
+  gv:blue "83";
+  gv:green "119";
+  gv:score "1.0396775";
+  gv:coverage "0.4"
+], [
+  gv:hex "956d32";
+  gv:red "149";
+  gv:blue "50";
+  gv:green "109";
+  gv:score "0.56894091";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "e3c9a1";
+  gv:red "227";
+  gv:blue "161";
+  gv:green "201";
+  gv:score "0.53997608";
+  gv:coverage "33.426666"
+], [
+  gv:hex "e7b76e";
+  gv:red "231";
+  gv:blue "110";
+  gv:green "183";
+  gv:score "0.42735594";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.275419"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "EL ALAMO\ntjo dePedio homero Villarreal\nSANLUCAR DE BARRAMEDA\nNo 25\nHidos MIGUEL SALDO JEREZ\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

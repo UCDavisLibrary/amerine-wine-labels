@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0198/label_0214";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "0.30)\n12 ALCOHOL\nBY VOLUM\nCALIFORNIA\nCABERNET SAUVIGNON\ninte made Dalerne\nLOUIS MARTINI\nBRAND\nProduced and Bottled at the winery by\nL. M\nMARTIN I GRA PE PRO D U C T S\nST. HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "a79a81";
+  gv:red "167";
+  gv:blue "129";
+  gv:green "154";
+  gv:score "25.048712000000002";
+  gv:coverage "4.4066668"
+], [
+  gv:hex "c9926d";
+  gv:red "201";
+  gv:blue "109";
+  gv:green "146";
+  gv:score "8.0173112";
+  gv:coverage "0.24"
+], [
+  gv:hex "cebfac";
+  gv:red "206";
+  gv:blue "172";
+  gv:green "191";
+  gv:score "19.172271";
+  gv:coverage "34.526667"
+], [
+  gv:hex "867860";
+  gv:red "134";
+  gv:blue "96";
+  gv:green "120";
+  gv:score "11.142254999999999";
+  gv:coverage "1.7733334"
+], [
+  gv:hex "625642";
+  gv:red "98";
+  gv:blue "66";
+  gv:green "86";
+  gv:score "6.8617954999999995";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "a5694a";
+  gv:red "165";
+  gv:blue "74";
+  gv:green "105";
+  gv:score "4.7283165";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "c19678";
+  gv:red "193";
+  gv:blue "120";
+  gv:green "150";
+  gv:score "4.1913938";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "a07159";
+  gv:red "160";
+  gv:blue "89";
+  gv:green "113";
+  gv:score "3.7866779000000004";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "c8bdb2";
+  gv:red "200";
+  gv:blue "178";
+  gv:green "189";
+  gv:score "3.1170333";
+  gv:coverage "23.826666"
+], [
+  gv:hex "a9a095";
+  gv:red "169";
+  gv:blue "149";
+  gv:green "160";
+  gv:score "2.8660191";
+  gv:coverage "1.3733333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "93.180639"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.319895"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.482797"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.520844000000004"
+];
+    w:bagOfWords "0.30)\n12 ALCOHOL\nBY VOLUM\nCALIFORNIA\nCABERNET SAUVIGNON\ninte made Dalerne\nLOUIS MARTINI\nBRAND\nProduced and Bottled at the winery by\nL. M\nMARTIN I GRA PE PRO D U C T S\nST. HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0181/label_0190";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "NET CONTENTS\nALCOHOL\nPINT 8 FLUID OZ\n13% BY VOLUME\nPRODUCED AND BOTTLED BY\nMontiate of Los Gatos\nBONDED WINERY NO. 107\n4 TH DISTRICT CALIF.\nLOS GATOS. CALIFORNIA\nFOUNDED 1888\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    gv:color [
+  gv:hex "d9c4ab";
+  gv:red "217";
+  gv:blue "171";
+  gv:green "196";
+  gv:score "33.546355";
+  gv:coverage "17.693333"
+], [
+  gv:hex "6d1c0a";
+  gv:red "109";
+  gv:blue "10";
+  gv:green "28";
+  gv:score "4.1099586";
+  gv:coverage "0.32"
+], [
+  gv:hex "512a16";
+  gv:red "81";
+  gv:blue "22";
+  gv:green "42";
+  gv:score "2.340379";
+  gv:coverage "0.74"
+], [
+  gv:hex "e1bc89";
+  gv:red "225";
+  gv:blue "137";
+  gv:green "188";
+  gv:score "15.528338";
+  gv:coverage "1.78"
+], [
+  gv:hex "b29c85";
+  gv:red "178";
+  gv:blue "133";
+  gv:green "156";
+  gv:score "8.9910649";
+  gv:coverage "2.2866666"
+], [
+  gv:hex "edd9c2";
+  gv:red "237";
+  gv:blue "194";
+  gv:green "217";
+  gv:score "6.12768";
+  gv:coverage "13.913333"
+], [
+  gv:hex "e5baa4";
+  gv:red "229";
+  gv:blue "164";
+  gv:green "186";
+  gv:score "4.6086807";
+  gv:coverage "0.89333337"
+], [
+  gv:hex "c4927a";
+  gv:red "196";
+  gv:blue "122";
+  gv:green "146";
+  gv:score "3.857927";
+  gv:coverage "0.64"
+], [
+  gv:hex "8a755e";
+  gv:red "138";
+  gv:blue "94";
+  gv:green "117";
+  gv:score "2.808208";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "882e1c";
+  gv:red "136";
+  gv:blue "28";
+  gv:green "46";
+  gv:score "2.1834228";
+  gv:coverage "0.14666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.159411"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "55.073309"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.704848999999996"
+];
+    w:bagOfWords "NET CONTENTS\nALCOHOL\nPINT 8 FLUID OZ\n13% BY VOLUME\nPRODUCED AND BOTTLED BY\nMontiate of Los Gatos\nBONDED WINERY NO. 107\n4 TH DISTRICT CALIF.\nLOS GATOS. CALIFORNIA\nFOUNDED 1888\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0502";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R H E I N G A U\n1950er\nfiochheimer\nStein\nNATUR REIN\nDerwaltung der Staatsuoeinguter\nEltoille\nEigener Rellerab3ug uno Rorkbranb\n"@deu;
+    gv:color [
+  gv:hex "dbc5ae";
+  gv:red "219";
+  gv:blue "174";
+  gv:green "197";
+  gv:score "71.745688";
+  gv:coverage "19.866666"
+], [
+  gv:hex "ae9983";
+  gv:red "174";
+  gv:blue "131";
+  gv:green "153";
+  gv:score "9.6197009";
+  gv:coverage "4.0266667"
+], [
+  gv:hex "87745f";
+  gv:red "135";
+  gv:blue "95";
+  gv:green "116";
+  gv:score "5.0246447";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "61513d";
+  gv:red "97";
+  gv:blue "61";
+  gv:green "81";
+  gv:score "4.7694296";
+  gv:coverage "1.0133334"
+], [
+  gv:hex "403221";
+  gv:red "64";
+  gv:blue "33";
+  gv:green "50";
+  gv:score "3.3362493";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "ead7c1";
+  gv:red "234";
+  gv:blue "193";
+  gv:green "215";
+  gv:score "2.3885785";
+  gv:coverage "1.7399999999999998"
+], [
+  gv:hex "271705";
+  gv:red "39";
+  gv:blue "5";
+  gv:green "23";
+  gv:score "1.0895001";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "dacfc3";
+  gv:red "218";
+  gv:blue "195";
+  gv:green "207";
+  gv:score "0.49690311";
+  gv:coverage "2.16"
+], [
+  gv:hex "41362d";
+  gv:red "65";
+  gv:blue "45";
+  gv:green "54";
+  gv:score "0.37758574";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "1a0c01";
+  gv:red "26";
+  gv:blue "1";
+  gv:green "12";
+  gv:score "0.34157909";
+  gv:coverage "0.13333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "54.480922"
+];
+    w:bagOfWords "R H E I N G A U\n1950er\nfiochheimer\nStein\nNATUR REIN\nDerwaltung der Staatsuoeinguter\nEltoille\nEigener Rellerab3ug uno Rorkbranb\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

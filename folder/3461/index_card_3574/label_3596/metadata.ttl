@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3574/label_3596";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "SONOMA\nSYLVAN EA\nA California Rhine Wine made from Sylvaner grapes\nWILLIAMSBURG INN\nWILLIAMSBURG, VIRGINIA\nBOTTLED BY ALMA DEN VINEYARDS, LOS GATOS, CALIFORNIA\n12% ALCOHOL BY VOLUME\nDistributed by F. S. Importing Co., Ltd., New York, N. Y.\n"@eng;
+    gv:color [
+  gv:hex "532e1a";
+  gv:red "83";
+  gv:blue "26";
+  gv:green "46";
+  gv:score "58.293504";
+  gv:coverage "21.793333"
+], [
+  gv:hex "68442f";
+  gv:red "104";
+  gv:blue "47";
+  gv:green "68";
+  gv:score "28.028741";
+  gv:coverage "11.4"
+], [
+  gv:hex "926e5a";
+  gv:red "146";
+  gv:blue "90";
+  gv:green "110";
+  gv:score "6.2942289";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "b4907c";
+  gv:red "180";
+  gv:blue "124";
+  gv:green "144";
+  gv:score "2.4718449";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "381502";
+  gv:red "56";
+  gv:blue "2";
+  gv:green "21";
+  gv:score "1.4695081";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "d7b3a0";
+  gv:red "215";
+  gv:blue "160";
+  gv:green "179";
+  gv:score "0.68997927";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "d3b9a6";
+  gv:red "211";
+  gv:blue "166";
+  gv:green "185";
+  gv:score "0.6673257800000001";
+  gv:coverage "1.4933334"
+], [
+  gv:hex "4c3623";
+  gv:red "76";
+  gv:blue "35";
+  gv:green "54";
+  gv:score "0.6391142";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "b59c87";
+  gv:red "181";
+  gv:blue "135";
+  gv:green "156";
+  gv:score "0.57417979";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "634b35";
+  gv:red "99";
+  gv:blue "53";
+  gv:green "75";
+  gv:score "0.39802290999999995";
+  gv:coverage "0.26666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.123286"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "SONOMA\nSYLVAN EA\nA California Rhine Wine made from Sylvaner grapes\nWILLIAMSBURG INN\nWILLIAMSBURG, VIRGINIA\nBOTTLED BY ALMA DEN VINEYARDS, LOS GATOS, CALIFORNIA\n12% ALCOHOL BY VOLUME\nDistributed by F. S. Importing Co., Ltd., New York, N. Y.\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

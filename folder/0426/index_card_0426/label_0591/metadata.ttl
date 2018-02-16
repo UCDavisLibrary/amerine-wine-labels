@@ -1,0 +1,109 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0591";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "R b ein g a u\nRiitesheimer Bessel\nR i e l i n g\nAriginal atyfiilung\nESoeingut tub. \"allenstein nadyf.\nRiioesbeim am Rhein\nG.J 6763\n"@deu;
+    gv:color [
+  gv:hex "d6c7a5";
+  gv:red "214";
+  gv:blue "165";
+  gv:green "199";
+  gv:score "15.468243000000001";
+  gv:coverage "11.493333"
+], [
+  gv:hex "ae9c5d";
+  gv:red "174";
+  gv:blue "93";
+  gv:green "156";
+  gv:score "13.97033";
+  gv:coverage "7.9133332"
+], [
+  gv:hex "95220d";
+  gv:red "149";
+  gv:blue "13";
+  gv:green "34";
+  gv:score "4.6990473";
+  gv:coverage "0.26666666"
+], [
+  gv:hex "460600";
+  gv:red "70";
+  gv:blue "undefined";
+  gv:green "6";
+  gv:score "0.30261904";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "d0bd81";
+  gv:red "208";
+  gv:blue "129";
+  gv:green "189";
+  gv:score "11.333262";
+  gv:coverage "4.0333334"
+], [
+  gv:hex "89783a";
+  gv:red "137";
+  gv:blue "58";
+  gv:green "120";
+  gv:score "9.6391283";
+  gv:coverage "4.7666664999999995"
+], [
+  gv:hex "665317";
+  gv:red "102";
+  gv:blue "23";
+  gv:green "83";
+  gv:score "4.6556503";
+  gv:coverage "1.46"
+], [
+  gv:hex "a99b7c";
+  gv:red "169";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "3.8930535";
+  gv:coverage "2.56"
+], [
+  gv:hex "8a3317";
+  gv:red "138";
+  gv:blue "23";
+  gv:green "51";
+  gv:score "3.8181949";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "e8dbbc";
+  gv:red "232";
+  gv:blue "188";
+  gv:green "219";
+  gv:score "3.6607586";
+  gv:coverage "5.96"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.945319"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "57.422292"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.777789"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.748326999999996"
+];
+    w:bagOfWords "R b ein g a u\nRiitesheimer Bessel\nR i e l i n g\nAriginal atyfiilung\nESoeingut tub. \"allenstein nadyf.\nRiioesbeim am Rhein\nG.J 6763\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

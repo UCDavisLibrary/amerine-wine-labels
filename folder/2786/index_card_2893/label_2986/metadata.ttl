@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2986";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "ALCOHOLIC STRENGTH BY VOL\nVI\n1935\nALs\nFRENCH WHITE WINE\nCe\nTRA MINER\nMade from Traminer Grapes\nSHIPPED BY\nBORDEAUX, FRANCE\nTRADE MARK\nPRODUCE OF FRANCE.\n"@fra;
+    gv:color [
+  gv:hex "a89d8a";
+  gv:red "168";
+  gv:blue "138";
+  gv:green "157";
+  gv:score "24.428724";
+  gv:coverage "5.0733331999999995"
+], [
+  gv:hex "8d7140";
+  gv:red "141";
+  gv:blue "64";
+  gv:green "113";
+  gv:score "14.383739";
+  gv:coverage "2.8466666000000003"
+], [
+  gv:hex "c7bca9";
+  gv:red "199";
+  gv:blue "169";
+  gv:green "188";
+  gv:score "24.203056";
+  gv:coverage "51.013333"
+], [
+  gv:hex "827764";
+  gv:red "130";
+  gv:blue "100";
+  gv:green "119";
+  gv:score "11.964575";
+  gv:coverage "2.08"
+], [
+  gv:hex "ae8e59";
+  gv:red "174";
+  gv:blue "89";
+  gv:green "142";
+  gv:score "6.1077505";
+  gv:coverage "1.7466666"
+], [
+  gv:hex "625745";
+  gv:red "98";
+  gv:blue "69";
+  gv:green "87";
+  gv:score "5.6963053";
+  gv:coverage "1"
+], [
+  gv:hex "775a2e";
+  gv:red "119";
+  gv:blue "46";
+  gv:green "90";
+  gv:score "5.6763164999999995";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "a3988d";
+  gv:red "163";
+  gv:blue "141";
+  gv:green "152";
+  gv:score "2.1081509";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "c4b9ae";
+  gv:red "196";
+  gv:blue "174";
+  gv:green "185";
+  gv:score "1.5919995999999998";
+  gv:coverage "4.8933335"
+], [
+  gv:hex "795525";
+  gv:red "121";
+  gv:blue "37";
+  gv:green "85";
+  gv:score "1.0026774";
+  gv:coverage "0.16"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "74.456906"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.02243100000001"
+];
+    w:bagOfWords "ALCOHOLIC STRENGTH BY VOL\nVI\n1935\nALs\nFRENCH WHITE WINE\nCe\nTRA MINER\nMade from Traminer Grapes\nSHIPPED BY\nBORDEAUX, FRANCE\nTRADE MARK\nPRODUCE OF FRANCE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

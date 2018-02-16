@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3037/label_3098";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "GRAND VIN\nST, EMILIO\nBORDEAUX\nAppellation Saint-Emilion controlée\n35 cl\nETIO DEPO SEE\nR. C. TRAI 3,127\nCOURT "@fra;
+    gv:color [
+  gv:hex "dac6ad";
+  gv:red "218";
+  gv:blue "173";
+  gv:green "198";
+  gv:score "25.181894999999997";
+  gv:coverage "35.273334"
+], [
+  gv:hex "8b3522";
+  gv:red "139";
+  gv:blue "34";
+  gv:green "53";
+  gv:score "5.6814611";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "42301e";
+  gv:red "66";
+  gv:blue "30";
+  gv:green "48";
+  gv:score "4.1215625";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "e98670";
+  gv:red "233";
+  gv:blue "112";
+  gv:green "134";
+  gv:score "2.4078975";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "b09c82";
+  gv:red "176";
+  gv:blue "130";
+  gv:green "156";
+  gv:score "11.379313";
+  gv:coverage "0.9933332899999999"
+], [
+  gv:hex "bc8d77";
+  gv:red "188";
+  gv:blue "119";
+  gv:green "141";
+  gv:score "7.4025646";
+  gv:coverage "0.52"
+], [
+  gv:hex "a36f59";
+  gv:red "163";
+  gv:blue "89";
+  gv:green "111";
+  gv:score "7.38021";
+  gv:coverage "0.44666668"
+], [
+  gv:hex "8c775f";
+  gv:red "140";
+  gv:blue "95";
+  gv:green "119";
+  gv:score "6.8035893";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "ecdac2";
+  gv:red "236";
+  gv:blue "194";
+  gv:green "218";
+  gv:score "4.9837034000000004";
+  gv:coverage "3.1133333"
+], [
+  gv:hex "e9b9a4";
+  gv:red "233";
+  gv:blue "164";
+  gv:green "185";
+  gv:score "4.5384556";
+  gv:coverage "0.7266666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.182068"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "GRAND VIN\nST, EMILIO\nBORDEAUX\nAppellation Saint-Emilion controlée\n35 cl\nETIO DEPO SEE\nR. C. TRAI 3,127\nCOURT "@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

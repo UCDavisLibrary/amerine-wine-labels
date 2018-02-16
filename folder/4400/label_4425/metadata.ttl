@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4400/label_4425";
+    dct:type "image";
+    w:bagOfWords "R.E.Ne 43\nMARCA REGISTRADA\nReseroa 1929\ncelou\nvino de spana\n"@spa;
+    gv:color [
+  gv:hex "d9c1a2";
+  gv:red "217";
+  gv:blue "162";
+  gv:green "193";
+  gv:score "53.111237";
+  gv:coverage "27.873334"
+], [
+  gv:hex "8e3a26";
+  gv:red "142";
+  gv:blue "38";
+  gv:green "58";
+  gv:score "2.2350645";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "ebb79d";
+  gv:red "235";
+  gv:blue "157";
+  gv:green "183";
+  gv:score "11.402027";
+  gv:coverage "3.0533334"
+], [
+  gv:hex "b29b7a";
+  gv:red "178";
+  gv:blue "122";
+  gv:green "155";
+  gv:score "8.6204611";
+  gv:coverage "2.4866667"
+], [
+  gv:hex "8a7654";
+  gv:red "138";
+  gv:blue "84";
+  gv:green "118";
+  gv:score "5.04573";
+  gv:coverage "1.48"
+], [
+  gv:hex "c99377";
+  gv:red "201";
+  gv:blue "119";
+  gv:green "147";
+  gv:score "2.9829562";
+  gv:coverage "0.8"
+], [
+  gv:hex "361e00";
+  gv:red "54";
+  gv:blue "undefined";
+  gv:green "30";
+  gv:score "0.029326347";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "6b5534";
+  gv:red "107";
+  gv:blue "52";
+  gv:green "85";
+  gv:score "2.5517941";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "8a7046";
+  gv:red "138";
+  gv:blue "70";
+  gv:green "112";
+  gv:score "1.234064";
+  gv:coverage "0.32"
+], [
+  gv:hex "b05b42";
+  gv:red "176";
+  gv:blue "66";
+  gv:green "91";
+  gv:score "1.1817523";
+  gv:coverage "0.17333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.187919"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "51.670682"
+];
+    w:bagOfWords "R.E.Ne 43\nMARCA REGISTRADA\nReseroa 1929\ncelou\nvino de spana\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1343";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "VINTAGE 1924\nGraial\nLIGHT WINE\nBOTTLED & EXPORTED BY\nCompanhia Portuguesa de Licores\nLIS BON\nPRODUCE OF PORTUGAL\n"@por;
+    gv:color [
+  gv:hex "e4c787";
+  gv:red "228";
+  gv:blue "135";
+  gv:green "199";
+  gv:score "38.766542";
+  gv:coverage "16.206667"
+], [
+  gv:hex "a22307";
+  gv:red "162";
+  gv:blue "7";
+  gv:green "35";
+  gv:score "5.9321851";
+  gv:coverage "0.48"
+], [
+  gv:hex "b45c34";
+  gv:red "180";
+  gv:blue "52";
+  gv:green "92";
+  gv:score "4.6705291";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "293e1d";
+  gv:red "41";
+  gv:blue "29";
+  gv:green "62";
+  gv:score "0.15282769";
+  gv:coverage "0.08"
+], [
+  gv:hex "f3bb86";
+  gv:red "243";
+  gv:blue "134";
+  gv:green "187";
+  gv:score "11.422352";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "c9905b";
+  gv:red "201";
+  gv:blue "91";
+  gv:green "144";
+  gv:score "4.1770853";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "a46b39";
+  gv:red "164";
+  gv:blue "57";
+  gv:green "107";
+  gv:score "3.673204";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "b1965e";
+  gv:red "177";
+  gv:blue "94";
+  gv:green "150";
+  gv:score "2.9783146";
+  gv:coverage "2.2666667"
+], [
+  gv:hex "d9c39f";
+  gv:red "217";
+  gv:blue "159";
+  gv:green "195";
+  gv:score "2.4165062";
+  gv:coverage "39.76"
+], [
+  gv:hex "f1d798";
+  gv:red "241";
+  gv:blue "152";
+  gv:green "215";
+  gv:score "2.2401003";
+  gv:coverage "0.8"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.261456"
+];
+    w:bagOfWords "VINTAGE 1924\nGraial\nLIGHT WINE\nBOTTLED & EXPORTED BY\nCompanhia Portuguesa de Licores\nLIS BON\nPRODUCE OF PORTUGAL\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

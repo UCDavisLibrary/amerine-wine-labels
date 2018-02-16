@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1447";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "Boordy Vineyard\nWHITE WINE\nPRODUCED AND BOTTLED AT\nBOORDY VINEYARD, RIDERWOOD, MARYLAND\nCONTENTS FOUR-FIFTH QUART\n"@eng;
+    gv:color [
+  gv:hex "d5c7b6";
+  gv:red "213";
+  gv:blue "182";
+  gv:green "199";
+  gv:score "45.384765";
+  gv:coverage "14.293334"
+], [
+  gv:hex "637c6a";
+  gv:red "99";
+  gv:blue "106";
+  gv:green "124";
+  gv:score "3.7870627";
+  gv:coverage "1.58"
+], [
+  gv:hex "3d694f";
+  gv:red "61";
+  gv:blue "79";
+  gv:green "105";
+  gv:score "1.7501136000000002";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "c9c5b8";
+  gv:red "201";
+  gv:blue "184";
+  gv:green "197";
+  gv:score "11.318722000000001";
+  gv:coverage "8.1266664"
+], [
+  gv:hex "a99f8e";
+  gv:red "169";
+  gv:blue "142";
+  gv:green "159";
+  gv:score "9.844657";
+  gv:coverage "2.1133333"
+], [
+  gv:hex "a6a798";
+  gv:red "166";
+  gv:blue "152";
+  gv:green "167";
+  gv:score "6.1082162";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "afcbb7";
+  gv:red "175";
+  gv:blue "183";
+  gv:green "203";
+  gv:score "4.5013502";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "897a6a";
+  gv:red "137";
+  gv:blue "106";
+  gv:green "122";
+  gv:score "3.6532637";
+  gv:coverage "0.76"
+], [
+  gv:hex "e8daca";
+  gv:red "232";
+  gv:blue "202";
+  gv:green "218";
+  gv:score "3.6241002";
+  gv:coverage "3.4533332999999997"
+], [
+  gv:hex "d8ddcf";
+  gv:red "216";
+  gv:blue "207";
+  gv:green "221";
+  gv:score "2.3949943";
+  gv:coverage "63.166666000000006"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "70.978874"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.23297000000001"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "61.557888999999996"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "50.293517"
+];
+    w:bagOfWords "Boordy Vineyard\nWHITE WINE\nPRODUCED AND BOTTLED AT\nBOORDY VINEYARD, RIDERWOOD, MARYLAND\nCONTENTS FOUR-FIFTH QUART\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

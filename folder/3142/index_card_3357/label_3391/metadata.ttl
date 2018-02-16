@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3357/label_3391";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "188\nARIS 1889\nDIJON\nPOMMARD\nIMP. B. ARNAUD LYON PARIS\n"@fra;
+    gv:color [
+  gv:hex "dcc3a4";
+  gv:red "220";
+  gv:blue "164";
+  gv:green "195";
+  gv:score "19.633317";
+  gv:coverage "18.666667"
+], [
+  gv:hex "2d1502";
+  gv:red "45";
+  gv:blue "2";
+  gv:green "21";
+  gv:score "0.92078";
+  gv:coverage "0.08"
+], [
+  gv:hex "160000";
+  gv:red "22";
+  gv:blue "undefined";
+  gv:green "undefined";
+  gv:score "0.24657091";
+  gv:coverage "0.04"
+], [
+  gv:hex "b19878";
+  gv:red "177";
+  gv:blue "120";
+  gv:green "152";
+  gv:score "17.849664";
+  gv:coverage "2.46"
+], [
+  gv:hex "8a724f";
+  gv:red "138";
+  gv:blue "79";
+  gv:green "114";
+  gv:score "16.954495";
+  gv:coverage "1.2"
+], [
+  gv:hex "6c5433";
+  gv:red "108";
+  gv:blue "51";
+  gv:green "84";
+  gv:score "11.545624";
+  gv:coverage "0.62"
+], [
+  gv:hex "f2dabb";
+  gv:red "242";
+  gv:blue "187";
+  gv:green "218";
+  gv:score "10.136128";
+  gv:coverage "14.486666000000001"
+], [
+  gv:hex "b49764";
+  gv:red "180";
+  gv:blue "100";
+  gv:green "151";
+  gv:score "6.3741982";
+  gv:coverage "1.66"
+], [
+  gv:hex "675129";
+  gv:red "103";
+  gv:blue "41";
+  gv:green "81";
+  gv:score "5.691329400000001";
+  gv:coverage "0.27999999999999997"
+], [
+  gv:hex "92784b";
+  gv:red "146";
+  gv:blue "75";
+  gv:green "120";
+  gv:score "3.6494717000000003";
+  gv:coverage "0.77333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.6302"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "56.307471"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.61185699999999"
+];
+    w:bagOfWords "188\nARIS 1889\nDIJON\nPOMMARD\nIMP. B. ARNAUD LYON PARIS\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

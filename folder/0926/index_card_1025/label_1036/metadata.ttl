@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1025/label_1036";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "AM\nJohannisberg\nMartin Zeeb's Erben, Weinhandlung, Bern\nNe 555\n"@deu;
+    gv:color [
+  gv:hex "c09259";
+  gv:red "192";
+  gv:blue "89";
+  gv:green "146";
+  gv:score "17.425989";
+  gv:coverage "4.9133334"
+], [
+  gv:hex "dfba88";
+  gv:red "223";
+  gv:blue "136";
+  gv:green "186";
+  gv:score "12.902769";
+  gv:coverage "7.5266667"
+], [
+  gv:hex "9e6e3d";
+  gv:red "158";
+  gv:blue "61";
+  gv:green "110";
+  gv:score "15.105835";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "794a21";
+  gv:red "121";
+  gv:blue "33";
+  gv:green "74";
+  gv:score "13.174526";
+  gv:coverage "2.2399999999999998"
+], [
+  gv:hex "bc9761";
+  gv:red "188";
+  gv:blue "97";
+  gv:green "151";
+  gv:score "10.438421";
+  gv:coverage "3.06"
+], [
+  gv:hex "e1b482";
+  gv:red "225";
+  gv:blue "130";
+  gv:green "180";
+  gv:score "6.6423364";
+  gv:coverage "5.993333499999999"
+], [
+  gv:hex "592e0a";
+  gv:red "89";
+  gv:blue "10";
+  gv:green "46";
+  gv:score "6.0811851";
+  gv:coverage "1.0866666"
+], [
+  gv:hex "bd8a42";
+  gv:red "189";
+  gv:blue "66";
+  gv:green "138";
+  gv:score "4.0144403";
+  gv:coverage "0.74666669"
+], [
+  gv:hex "dfbe99";
+  gv:red "223";
+  gv:blue "153";
+  gv:green "190";
+  gv:score "3.6521968";
+  gv:coverage "5.8133334"
+], [
+  gv:hex "9e7a44";
+  gv:red "158";
+  gv:blue "68";
+  gv:green "122";
+  gv:score "1.5711297999999998";
+  gv:coverage "0.33999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/083vt>;
+  gv:desc "wood";
+  gv:score "60.16736"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "52.203429"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.687915"
+];
+    w:bagOfWords "AM\nJohannisberg\nMartin Zeeb's Erben, Weinhandlung, Bern\nNe 555\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

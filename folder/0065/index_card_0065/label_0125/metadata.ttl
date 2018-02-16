@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0125";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "SPUMANTE EXTRA SECCO\nMARTINI\nMARTINI E ROSSI S. A.- TORINO\nITALIA\n"@ita;
+    gv:color [
+  gv:hex "4081b4";
+  gv:red "64";
+  gv:blue "180";
+  gv:green "129";
+  gv:score "22.503875";
+  gv:coverage "1.44"
+], [
+  gv:hex "817158";
+  gv:red "129";
+  gv:blue "88";
+  gv:green "113";
+  gv:score "6.9305748000000005";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "d2c0a8";
+  gv:red "210";
+  gv:blue "168";
+  gv:green "192";
+  gv:score "4.936";
+  gv:coverage "3.52"
+], [
+  gv:hex "130f0c";
+  gv:red "19";
+  gv:blue "12";
+  gv:green "15";
+  gv:score "1.0680544";
+  gv:coverage "2.2266667"
+], [
+  gv:hex "567994";
+  gv:red "86";
+  gv:blue "148";
+  gv:green "121";
+  gv:score "14.851803";
+  gv:coverage "1.4866667"
+], [
+  gv:hex "498199";
+  gv:red "73";
+  gv:blue "153";
+  gv:green "129";
+  gv:score "6.6963963";
+  gv:coverage "0.6666666800000001"
+], [
+  gv:hex "6f7371";
+  gv:red "111";
+  gv:blue "113";
+  gv:green "115";
+  gv:score "5.0350804";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "5696c9";
+  gv:red "86";
+  gv:blue "201";
+  gv:green "150";
+  gv:score "3.7025753000000003";
+  gv:coverage "0.23333333"
+], [
+  gv:hex "3987b2";
+  gv:red "57";
+  gv:blue "178";
+  gv:green "135";
+  gv:score "3.2269955";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "a99a80";
+  gv:red "169";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "2.5864614";
+  gv:coverage "0.8"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.0538"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "56.272215"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.401697000000006"
+];
+    w:bagOfWords "SPUMANTE EXTRA SECCO\nMARTINI\nMARTINI E ROSSI S. A.- TORINO\nITALIA\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

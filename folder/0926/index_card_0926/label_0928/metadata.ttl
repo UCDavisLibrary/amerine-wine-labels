@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_0926/label_0928";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "H o BA DO O X\nPROPRIETAIRE\nA GLE.\n"@deu;
+    gv:color [
+  gv:hex "faa83b";
+  gv:red "250";
+  gv:blue "59";
+  gv:green "168";
+  gv:score "19.229585";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "d5923b";
+  gv:red "213";
+  gv:blue "59";
+  gv:green "146";
+  gv:score "14.825504";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "8f7643";
+  gv:red "143";
+  gv:blue "67";
+  gv:green "118";
+  gv:score "12.719596999999998";
+  gv:coverage "8.666666600000001"
+], [
+  gv:hex "413113";
+  gv:red "65";
+  gv:blue "19";
+  gv:green "49";
+  gv:score "2.7187234";
+  gv:coverage "1.16"
+], [
+  gv:hex "dc8f28";
+  gv:red "220";
+  gv:blue "40";
+  gv:green "143";
+  gv:score "7.8436";
+  gv:coverage "0.6"
+], [
+  gv:hex "f0ab51";
+  gv:red "240";
+  gv:blue "81";
+  gv:green "171";
+  gv:score "5.7790115";
+  gv:coverage "0.5"
+], [
+  gv:hex "6c5423";
+  gv:red "108";
+  gv:blue "35";
+  gv:green "84";
+  gv:score "4.654805";
+  gv:coverage "1.66"
+], [
+  gv:hex "9d691f";
+  gv:red "157";
+  gv:blue "31";
+  gv:green "105";
+  gv:score "4.335734599999999";
+  gv:coverage "0.74"
+], [
+  gv:hex "764e16";
+  gv:red "118";
+  gv:blue "22";
+  gv:green "78";
+  gv:score "3.8402513";
+  gv:coverage "0.79333335"
+], [
+  gv:hex "fd9f32";
+  gv:red "253";
+  gv:blue "50";
+  gv:green "159";
+  gv:score "3.3071436000000003";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "54.052979"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "50.279456"
+];
+    w:bagOfWords "H o BA DO O X\nPROPRIETAIRE\nA GLE.\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3461/index_card_3484/label_3503";
+    dct:type "image";
+    dc:subject "California White@en";
+    w:bagOfWords "elnglenook\nNapa Valley\nRIESLING\nRhine Wine\nPRODUCED AND\nINGLENooK VINEYARD co. ALCOHOL 12\nBY VOLUME\nBOTTLED RUTHERFORD, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "d6c2a1";
+  gv:red "214";
+  gv:blue "161";
+  gv:green "194";
+  gv:score "27.049688";
+  gv:coverage "50.06"
+], [
+  gv:hex "92a374";
+  gv:red "146";
+  gv:blue "116";
+  gv:green "163";
+  gv:score "14.482623";
+  gv:coverage "0.61333333"
+], [
+  gv:hex "717f4a";
+  gv:red "113";
+  gv:blue "74";
+  gv:green "127";
+  gv:score "8.635003900000001";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "492e18";
+  gv:red "73";
+  gv:blue "24";
+  gv:green "46";
+  gv:score "1.0388118";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "a99a78";
+  gv:red "169";
+  gv:blue "120";
+  gv:green "154";
+  gv:score "11.823004";
+  gv:coverage "1.58"
+], [
+  gv:hex "8a7958";
+  gv:red "138";
+  gv:blue "88";
+  gv:green "121";
+  gv:score "9.7704425";
+  gv:coverage "0.8999999999999999"
+], [
+  gv:hex "768255";
+  gv:red "118";
+  gv:blue "85";
+  gv:green "130";
+  gv:score "8.0189906";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "939e68";
+  gv:red "147";
+  gv:blue "104";
+  gv:green "158";
+  gv:score "5.1642265";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "adbf91";
+  gv:red "173";
+  gv:blue "145";
+  gv:green "191";
+  gv:score "3.2330219000000002";
+  gv:coverage "0.18"
+], [
+  gv:hex "6b583d";
+  gv:red "107";
+  gv:blue "61";
+  gv:green "88";
+  gv:score "2.8032172";
+  gv:coverage "0.33999999999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.902826"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "elnglenook\nNapa Valley\nRIESLING\nRhine Wine\nPRODUCED AND\nINGLENooK VINEYARD co. ALCOHOL 12\nBY VOLUME\nBOTTLED RUTHERFORD, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA";
+    w:WineColor w:White.

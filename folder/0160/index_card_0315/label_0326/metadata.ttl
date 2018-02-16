@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0326";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "FOUNTAIN GROVE\nCALIFORNIA\nSPARKLING BURGUNDY\nNATURALLY FERMENTED\nTHE .....BOTTLE\nPRODUCED AND BOTTLED BY\nFOUNTAIN GROVE\nVINE YARD\nSANTA ROSA, SONOMA COUNTY, CALIFORNIA\nALCOHOL 12 95 BY VOLU ME NET CONTENTS 1\nPINT 10 FL. OZ.\n"@eng;
+    gv:color [
+  gv:hex "b50407";
+  gv:red "181";
+  gv:blue "7";
+  gv:green "4";
+  gv:score "40.186152";
+  gv:coverage "12.659999999999998"
+], [
+  gv:hex "da8275";
+  gv:red "218";
+  gv:blue "117";
+  gv:green "130";
+  gv:score "1.3321979";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "a70704";
+  gv:red "167";
+  gv:blue "4";
+  gv:green "7";
+  gv:score "31.175005";
+  gv:coverage "10.100000000000001"
+], [
+  gv:hex "e3d7cc";
+  gv:red "227";
+  gv:blue "204";
+  gv:green "215";
+  gv:score "0.19242921";
+  gv:coverage "50.6"
+], [
+  gv:hex "a31f18";
+  gv:red "163";
+  gv:blue "24";
+  gv:green "31";
+  gv:score "10.763513";
+  gv:coverage "3.7266668000000003"
+], [
+  gv:hex "993f26";
+  gv:red "153";
+  gv:blue "38";
+  gv:green "63";
+  gv:score "3.1439929999999996";
+  gv:coverage "0.82666669"
+], [
+  gv:hex "c7433e";
+  gv:red "199";
+  gv:blue "62";
+  gv:green "67";
+  gv:score "2.0895191";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "d0191a";
+  gv:red "208";
+  gv:blue "26";
+  gv:green "25";
+  gv:score "1.5227677";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "b0553d";
+  gv:red "176";
+  gv:blue "61";
+  gv:green "85";
+  gv:score "1.2322158";
+  gv:coverage "0.32"
+], [
+  gv:hex "cc927c";
+  gv:red "204";
+  gv:blue "124";
+  gv:green "146";
+  gv:score "1.1374556";
+  gv:coverage "0.54666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06fvc>;
+  gv:desc "red";
+  gv:score "90.85354799999999"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.783165"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "FOUNTAIN GROVE\nCALIFORNIA\nSPARKLING BURGUNDY\nNATURALLY FERMENTED\nTHE .....BOTTLE\nPRODUCED AND BOTTLED BY\nFOUNTAIN GROVE\nVINE YARD\nSANTA ROSA, SONOMA COUNTY, CALIFORNIA\nALCOHOL 12 95 BY VOLU ME NET CONTENTS 1\nPINT 10 FL. OZ.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

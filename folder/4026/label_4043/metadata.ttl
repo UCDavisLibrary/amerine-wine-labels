@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4026/label_4043";
+    dct:type "image";
+    w:bagOfWords "R.c.v. N\nDAO\n\"REAL VINICOLA\nVINHO DE MESA TINTO\nDA REGIAO\nPRIVILEGIADA\nPORTUGAL\n"@por;
+    gv:color [
+  gv:hex "ebb47c";
+  gv:red "235";
+  gv:blue "124";
+  gv:green "180";
+  gv:score "23.170911999999998";
+  gv:coverage "6.34"
+], [
+  gv:hex "89381d";
+  gv:red "137";
+  gv:blue "29";
+  gv:green "56";
+  gv:score "5.0588891";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "e1ba7a";
+  gv:red "225";
+  gv:blue "122";
+  gv:green "186";
+  gv:score "18.723872";
+  gv:coverage "7.4733332"
+], [
+  gv:hex "e4ba69";
+  gv:red "228";
+  gv:blue "105";
+  gv:green "186";
+  gv:score "11.189472";
+  gv:coverage "3.1399999999999997"
+], [
+  gv:hex "c99361";
+  gv:red "201";
+  gv:blue "97";
+  gv:green "147";
+  gv:score "8.0638051";
+  gv:coverage "2.2066665999999997"
+], [
+  gv:hex "eab469";
+  gv:red "234";
+  gv:blue "105";
+  gv:green "180";
+  gv:score "6.2312651";
+  gv:coverage "1.8333333"
+], [
+  gv:hex "bc9a5e";
+  gv:red "188";
+  gv:blue "94";
+  gv:green "154";
+  gv:score "5.1859319";
+  gv:coverage "1.7000000000000002"
+], [
+  gv:hex "a36d3e";
+  gv:red "163";
+  gv:blue "62";
+  gv:green "109";
+  gv:score "4.3447316";
+  gv:coverage "1.08"
+], [
+  gv:hex "7e491d";
+  gv:red "126";
+  gv:blue "29";
+  gv:green "73";
+  gv:score "2.9844504";
+  gv:coverage "0.62"
+], [
+  gv:hex "6f2209";
+  gv:red "111";
+  gv:blue "9";
+  gv:green "34";
+  gv:score "1.8844238999999998";
+  gv:coverage "0.24666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.700189"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.569638"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.55873"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.062628999999994"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.734286"
+];
+    w:bagOfWords "R.c.v. N\nDAO\n\"REAL VINICOLA\nVINHO DE MESA TINTO\nDA REGIAO\nPRIVILEGIADA\nPORTUGAL\n"@por;
+    wdt:P219 "por";
+    wdt:P298 "PRT".

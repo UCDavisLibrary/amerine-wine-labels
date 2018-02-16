@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1317/label_1359";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "50MBARRAi\nCOMPANHIAAGRICOLAEOSANGUINHAALARA\nPROPRIETARIA DA\no BOMBARRAL- PORTUGAL\nCLARETE RE SERVA\n"@por;
+    gv:color [
+  gv:hex "d7bda2";
+  gv:red "215";
+  gv:blue "162";
+  gv:green "189";
+  gv:score "44.555286";
+  gv:coverage "26.66"
+], [
+  gv:hex "b0987f";
+  gv:red "176";
+  gv:blue "127";
+  gv:green "152";
+  gv:score "24.476941";
+  gv:coverage "5.3333335"
+], [
+  gv:hex "8d765e";
+  gv:red "141";
+  gv:blue "94";
+  gv:green "118";
+  gv:score "16.798687";
+  gv:coverage "3.2666668000000003"
+], [
+  gv:hex "6c543a";
+  gv:red "108";
+  gv:blue "58";
+  gv:green "84";
+  gv:score "6.3729368";
+  gv:coverage "1.4133333"
+], [
+  gv:hex "d9b486";
+  gv:red "217";
+  gv:blue "134";
+  gv:green "180";
+  gv:score "3.66963";
+  gv:coverage "0.62"
+], [
+  gv:hex "be9c72";
+  gv:red "190";
+  gv:blue "114";
+  gv:green "156";
+  gv:score "1.2261977";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "ecd6be";
+  gv:red "236";
+  gv:blue "190";
+  gv:green "214";
+  gv:score "1.1075095";
+  gv:coverage "0.73333331"
+], [
+  gv:hex "dfb585";
+  gv:red "223";
+  gv:blue "133";
+  gv:green "181";
+  gv:score "0.6715191500000001";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "513c25";
+  gv:red "81";
+  gv:blue "37";
+  gv:green "60";
+  gv:score "0.24769763000000003";
+  gv:coverage "0.04"
+], [
+  gv:hex "68492c";
+  gv:red "104";
+  gv:blue "44";
+  gv:green "73";
+  gv:score "0.24153457";
+  gv:coverage "0.06"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "72.177774"
+], [
+  gv:mid <https://g.co/kg/m/013y0j>;
+  gv:desc "organ";
+  gv:score "65.908951"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "64.657503"
+];
+    w:bagOfWords "50MBARRAi\nCOMPANHIAAGRICOLAEOSANGUINHAALARA\nPROPRIETARIA DA\no BOMBARRAL- PORTUGAL\nCLARETE RE SERVA\n"@por;
+    wdt:P219 "por";
+    w:WineType w:Still;
+    wdt:P298 "PRT".

@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2617/index_card_2617/label_2646";
+    dct:type "image";
+    dc:subject "Rhone Misc & French Red@en";
+    w:bagOfWords "dent\nAppellation Controlée\nnégociants macon (Saome-& foire)\n"@fra;
+    gv:color [
+  gv:hex "dcbd9b";
+  gv:red "220";
+  gv:blue "155";
+  gv:green "189";
+  gv:score "18.317401";
+  gv:coverage "11.073333"
+], [
+  gv:hex "e0b282";
+  gv:red "224";
+  gv:blue "130";
+  gv:green "178";
+  gv:score "14.548177";
+  gv:coverage "4.44"
+], [
+  gv:hex "ddb88a";
+  gv:red "221";
+  gv:blue "138";
+  gv:green "184";
+  gv:score "9.8892719";
+  gv:coverage "2.9066667"
+], [
+  gv:hex "b79977";
+  gv:red "183";
+  gv:blue "119";
+  gv:green "153";
+  gv:score "9.138944";
+  gv:coverage "3.1199999999999997"
+], [
+  gv:hex "c29568";
+  gv:red "194";
+  gv:blue "104";
+  gv:green "149";
+  gv:score "7.3544";
+  gv:coverage "3.64"
+], [
+  gv:hex "907352";
+  gv:red "144";
+  gv:blue "82";
+  gv:green "115";
+  gv:score "6.7672022";
+  gv:coverage "2.3466667"
+], [
+  gv:hex "9b6f46";
+  gv:red "155";
+  gv:blue "70";
+  gv:green "111";
+  gv:score "5.2536640000000006";
+  gv:coverage "2.1"
+], [
+  gv:hex "e7ba9a";
+  gv:red "231";
+  gv:blue "154";
+  gv:green "186";
+  gv:score "5.11077";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "764b25";
+  gv:red "118";
+  gv:blue "37";
+  gv:green "75";
+  gv:score "4.8782088";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "bb976b";
+  gv:red "187";
+  gv:blue "107";
+  gv:green "151";
+  gv:score "3.7889406";
+  gv:coverage "1.6866666999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.439684"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "52.675349000000004"
+];
+    w:bagOfWords "dent\nAppellation Controlée\nnégociants macon (Saome-& foire)\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

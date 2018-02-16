@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0181/label_0182";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "BRAND\nCALIFORNIA\nWINE\nPRODUCED AND BOTTLED BY\nB. CRIBARI G SONS INC.\nBONDED WINERY NO. 164.\nMADRONE, CALIFORNIA\nTax Paid by Stamps Affixed to Case\nSCHWASA CHER FREY COMPANY\n"@eng;
+    gv:color [
+  gv:hex "d7b77e";
+  gv:red "215";
+  gv:blue "126";
+  gv:green "183";
+  gv:score "26.883867";
+  gv:coverage "10.713334"
+], [
+  gv:hex "774b21";
+  gv:red "119";
+  gv:blue "33";
+  gv:green "75";
+  gv:score "5.0122529";
+  gv:coverage "1.6199999999999999"
+], [
+  gv:hex "532716";
+  gv:red "83";
+  gv:blue "22";
+  gv:green "39";
+  gv:score "4.0868014";
+  gv:coverage "1.3599999999999999"
+], [
+  gv:hex "e8ae55";
+  gv:red "232";
+  gv:blue "85";
+  gv:green "174";
+  gv:score "2.5124500000000003";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "be9d65";
+  gv:red "190";
+  gv:blue "101";
+  gv:green "157";
+  gv:score "21.647811";
+  gv:coverage "6.886667"
+], [
+  gv:hex "927341";
+  gv:red "146";
+  gv:blue "65";
+  gv:green "115";
+  gv:score "6.102410300000001";
+  gv:coverage "2.56"
+], [
+  gv:hex "9c6d40";
+  gv:red "156";
+  gv:blue "64";
+  gv:green "109";
+  gv:score "4.7517084";
+  gv:coverage "1.5533333999999999"
+], [
+  gv:hex "764a35";
+  gv:red "118";
+  gv:blue "53";
+  gv:green "74";
+  gv:score "3.7083663000000002";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "c49061";
+  gv:red "196";
+  gv:blue "97";
+  gv:green "144";
+  gv:score "3.3142656";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "715423";
+  gv:red "113";
+  gv:blue "35";
+  gv:green "84";
+  gv:score "3.2538131";
+  gv:coverage "1.7066667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "76.968825"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.862441"
+];
+    w:bagOfWords "BRAND\nCALIFORNIA\nWINE\nPRODUCED AND BOTTLED BY\nB. CRIBARI G SONS INC.\nBONDED WINERY NO. 164.\nMADRONE, CALIFORNIA\nTax Paid by Stamps Affixed to Case\nSCHWASA CHER FREY COMPANY\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

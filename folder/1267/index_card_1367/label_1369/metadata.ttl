@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1367/label_1369";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "B. F Nozar Anchoreno e Hijos\nNazar Anchorena Vinedos Rio Colorado\nAP.\n800.000\nCAP. 400.000\nADOR BUENOS AIRES\nPRODUCTOR RIO NEGRO\nBARILOCHE\nCARRODILLA\nCONT NETO\n100 VINO TINTO INDUSTRIA ARGENTINA\nCM\n3\n"@spa;
+    gv:color [
+  gv:hex "d0bea4";
+  gv:red "208";
+  gv:blue "164";
+  gv:green "190";
+  gv:score "20.740531";
+  gv:coverage "21.626666"
+], [
+  gv:hex "522616";
+  gv:red "82";
+  gv:blue "22";
+  gv:green "38";
+  gv:score "6.474614099999999";
+  gv:coverage "0.74"
+], [
+  gv:hex "8b3a20";
+  gv:red "139";
+  gv:blue "32";
+  gv:green "58";
+  gv:score "4.3826446";
+  gv:coverage "0.52"
+], [
+  gv:hex "ac9b7f";
+  gv:red "172";
+  gv:blue "127";
+  gv:green "155";
+  gv:score "12.236172";
+  gv:coverage "4.8866667"
+], [
+  gv:hex "e8b69c";
+  gv:red "232";
+  gv:blue "156";
+  gv:green "182";
+  gv:score "7.220257800000001";
+  gv:coverage "2.8400000000000003"
+], [
+  gv:hex "857660";
+  gv:red "133";
+  gv:blue "96";
+  gv:green "118";
+  gv:score "7.2114712999999995";
+  gv:coverage "1.8599999999999999"
+], [
+  gv:hex "c1947b";
+  gv:red "193";
+  gv:blue "123";
+  gv:green "148";
+  gv:score "6.1922409";
+  gv:coverage "2.1666666"
+], [
+  gv:hex "615341";
+  gv:red "97";
+  gv:blue "65";
+  gv:green "83";
+  gv:score "5.9029788";
+  gv:coverage "1.3466666"
+], [
+  gv:hex "734634";
+  gv:red "115";
+  gv:blue "52";
+  gv:green "70";
+  gv:score "5.67526";
+  gv:coverage "0.81333332"
+], [
+  gv:hex "9d6f5b";
+  gv:red "157";
+  gv:blue "91";
+  gv:green "111";
+  gv:score "3.9288200000000004";
+  gv:coverage "0.81333332"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.1961"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.493818000000005"
+];
+    w:bagOfWords "B. F Nozar Anchoreno e Hijos\nNazar Anchorena Vinedos Rio Colorado\nAP.\n800.000\nCAP. 400.000\nADOR BUENOS AIRES\nPRODUCTOR RIO NEGRO\nBARILOCHE\nCARRODILLA\nCONT NETO\n100 VINO TINTO INDUSTRIA ARGENTINA\nCM\n3\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ARG".

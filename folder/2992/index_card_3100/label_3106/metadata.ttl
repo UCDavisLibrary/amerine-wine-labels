@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3100/label_3106";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "HAUT.Po MEROL\nGrand er\nCru\nLEVANGILE\n19 28\nMME PAUL DUCASSE\nPROPRIETAIRE\n"@fra;
+    gv:color [
+  gv:hex "dbc7ad";
+  gv:red "219";
+  gv:blue "173";
+  gv:green "199";
+  gv:score "43.576305999999995";
+  gv:coverage "26.640000000000004"
+], [
+  gv:hex "403325";
+  gv:red "64";
+  gv:blue "37";
+  gv:green "51";
+  gv:score "10.456489";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "3f322a";
+  gv:red "63";
+  gv:blue "42";
+  gv:green "50";
+  gv:score "9.2093676";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "5f5040";
+  gv:red "95";
+  gv:blue "64";
+  gv:green "80";
+  gv:score "8.9474767";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "857562";
+  gv:red "133";
+  gv:blue "98";
+  gv:green "117";
+  gv:score "7.2657481";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "ab9985";
+  gv:red "171";
+  gv:blue "133";
+  gv:green "153";
+  gv:score "7.204318";
+  gv:coverage "1.9666666"
+], [
+  gv:hex "5a4d45";
+  gv:red "90";
+  gv:blue "69";
+  gv:green "77";
+  gv:score "4.6882119";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "ebd9c3";
+  gv:red "235";
+  gv:blue "195";
+  gv:green "217";
+  gv:score "4.2431619";
+  gv:coverage "9.8466665"
+], [
+  gv:hex "796c63";
+  gv:red "121";
+  gv:blue "99";
+  gv:green "108";
+  gv:score "1.5622519";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "271a13";
+  gv:red "39";
+  gv:blue "19";
+  gv:green "26";
+  gv:score "0.86502517";
+  gv:coverage "0.10666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.440363"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.329612999999995"
+];
+    w:bagOfWords "HAUT.Po MEROL\nGrand er\nCru\nLEVANGILE\n19 28\nMME PAUL DUCASSE\nPROPRIETAIRE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

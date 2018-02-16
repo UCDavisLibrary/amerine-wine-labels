@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0172";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "HOTEL DEL\nMONTE\n188o\nHOTEL DEL MONTE\nSELECTION S\nCALIFORNIA\nBURGUNDY\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI EST. 1876\nWINERIES\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nHEALDSBURG, SONOMA Co., CALIF.\nSAN FRANCISCO, CALIFORNIA\nB. W. No. 2332\n(01941 P & Co.\n"@eng;
+    gv:color [
+  gv:hex "e2c29c";
+  gv:red "226";
+  gv:blue "156";
+  gv:green "194";
+  gv:score "31.952958999999996";
+  gv:coverage "16.46"
+], [
+  gv:hex "893c23";
+  gv:red "137";
+  gv:blue "35";
+  gv:green "60";
+  gv:score "1.6327869";
+  gv:coverage "0.28666668"
+], [
+  gv:hex "b79876";
+  gv:red "183";
+  gv:blue "118";
+  gv:green "152";
+  gv:score "10.397234";
+  gv:coverage "2.7199999999999998"
+], [
+  gv:hex "ebb899";
+  gv:red "235";
+  gv:blue "153";
+  gv:green "184";
+  gv:score "9.3729846";
+  gv:coverage "3.1133333"
+], [
+  gv:hex "e8c498";
+  gv:red "232";
+  gv:blue "152";
+  gv:green "196";
+  gv:score "8.369734099999999";
+  gv:coverage "3.6466666"
+], [
+  gv:hex "c39374";
+  gv:red "195";
+  gv:blue "116";
+  gv:green "147";
+  gv:score "7.211208299999999";
+  gv:coverage "1.7866666999999998"
+], [
+  gv:hex "927556";
+  gv:red "146";
+  gv:blue "86";
+  gv:green "117";
+  gv:score "5.721102699999999";
+  gv:coverage "1.0999999999999999"
+], [
+  gv:hex "f3d6b3";
+  gv:red "243";
+  gv:blue "179";
+  gv:green "214";
+  gv:score "3.6156914999999996";
+  gv:coverage "5.3666666"
+], [
+  gv:hex "6f5437";
+  gv:red "111";
+  gv:blue "55";
+  gv:green "84";
+  gv:score "2.5152219";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "ecbd94";
+  gv:red "236";
+  gv:blue "148";
+  gv:green "189";
+  gv:score "2.4845853";
+  gv:coverage "0.90666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.320238"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "51.906985000000006"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "51.016062"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.7247"
+];
+    w:bagOfWords "HOTEL DEL\nMONTE\n188o\nHOTEL DEL MONTE\nSELECTION S\nCALIFORNIA\nBURGUNDY\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI EST. 1876\nWINERIES\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nHEALDSBURG, SONOMA Co., CALIF.\nSAN FRANCISCO, CALIFORNIA\nB. W. No. 2332\n(01941 P & Co.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3142/label_3158";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "CHAMBER\n1867 PARIS 1878\nLON\nMONAf\nMED. OR a D ARGENT\nRADE\nMED\nDOR DARGENT\nPOISOT Suc\nu Chateau de\nCHASSAGNE (Cote dor)\nFRANCE\nMAISON FONDE E EN 18 O3\nDE POSE E\na 193 y\n"@fra;
+    gv:color [
+  gv:hex "9d703f";
+  gv:red "157";
+  gv:blue "63";
+  gv:green "112";
+  gv:score "14.7692";
+  gv:coverage "2.8866666999999997"
+], [
+  gv:hex "d5ba9c";
+  gv:red "213";
+  gv:blue "156";
+  gv:green "186";
+  gv:score "11.308346";
+  gv:coverage "9.1266669"
+], [
+  gv:hex "4e2f17";
+  gv:red "78";
+  gv:blue "23";
+  gv:green "47";
+  gv:score "9.422418500000001";
+  gv:coverage "1.68"
+], [
+  gv:hex "bb8e5c";
+  gv:red "187";
+  gv:blue "92";
+  gv:green "142";
+  gv:score "11.537865";
+  gv:coverage "2.42"
+], [
+  gv:hex "b69a7b";
+  gv:red "182";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "11.022986999999999";
+  gv:coverage "4.306666600000001"
+], [
+  gv:hex "bc9868";
+  gv:red "188";
+  gv:blue "104";
+  gv:green "152";
+  gv:score "6.0392126";
+  gv:coverage "1.72"
+], [
+  gv:hex "744b21";
+  gv:red "116";
+  gv:blue "33";
+  gv:green "75";
+  gv:score "5.3857643";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "907559";
+  gv:red "144";
+  gv:blue "89";
+  gv:green "117";
+  gv:score "4.9841657";
+  gv:coverage "1.44"
+], [
+  gv:hex "67462d";
+  gv:red "103";
+  gv:blue "45";
+  gv:green "70";
+  gv:score "4.7848504";
+  gv:coverage "0.84666666"
+], [
+  gv:hex "49341f";
+  gv:red "73";
+  gv:blue "31";
+  gv:green "52";
+  gv:score "2.9488813";
+  gv:coverage "0.6799999999999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/013y0j>;
+  gv:desc "organ";
+  gv:score "67.006481"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.915972"
+], [
+  gv:mid <https://g.co/kg/m/014sv8>;
+  gv:desc "eye";
+  gv:score "60.97749999999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "55.318659999999994"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "51.788729000000004"
+];
+    w:bagOfWords "CHAMBER\n1867 PARIS 1878\nLON\nMONAf\nMED. OR a D ARGENT\nRADE\nMED\nDOR DARGENT\nPOISOT Suc\nu Chateau de\nCHASSAGNE (Cote dor)\nFRANCE\nMAISON FONDE E EN 18 O3\nDE POSE E\na 193 y\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2786/label_2825";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "origine\nObroues\nAPPELLATION CONTRO LEE\nDéposé n? 73\nnon net Paris\n"@fra;
+    gv:color [
+  gv:hex "ba9166";
+  gv:red "186";
+  gv:blue "102";
+  gv:green "145";
+  gv:score "23.940611";
+  gv:coverage "7.140000000000001"
+], [
+  gv:hex "be9b70";
+  gv:red "190";
+  gv:blue "112";
+  gv:green "155";
+  gv:score "18.343614";
+  gv:coverage "5.319999999999999"
+], [
+  gv:hex "9d7347";
+  gv:red "157";
+  gv:blue "71";
+  gv:green "115";
+  gv:score "17.066945";
+  gv:coverage "5.4733332"
+], [
+  gv:hex "bd9d79";
+  gv:red "189";
+  gv:blue "121";
+  gv:green "157";
+  gv:score "12.690459";
+  gv:coverage "5.4266665"
+], [
+  gv:hex "d1b08b";
+  gv:red "209";
+  gv:blue "139";
+  gv:green "176";
+  gv:score "6.6728249";
+  gv:coverage "4.8333332"
+], [
+  gv:hex "794e25";
+  gv:red "121";
+  gv:blue "37";
+  gv:green "78";
+  gv:score "4.5158178";
+  gv:coverage "1.6"
+], [
+  gv:hex "c09976";
+  gv:red "192";
+  gv:blue "118";
+  gv:green "153";
+  gv:score "3.7290457999999997";
+  gv:coverage "1.1266666"
+], [
+  gv:hex "d1ad83";
+  gv:red "209";
+  gv:blue "131";
+  gv:green "173";
+  gv:score "2.0470078999999997";
+  gv:coverage "0.46666664999999996"
+], [
+  gv:hex "977151";
+  gv:red "151";
+  gv:blue "81";
+  gv:green "113";
+  gv:score "1.4331609";
+  gv:coverage "0.63333334"
+], [
+  gv:hex "582f0c";
+  gv:red "88";
+  gv:blue "12";
+  gv:green "47";
+  gv:score "1.3650499999999999";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "63.079953"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.796945"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.725838"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "54.3262"
+];
+    w:bagOfWords "origine\nObroues\nAPPELLATION CONTRO LEE\nDéposé n? 73\nnon net Paris\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

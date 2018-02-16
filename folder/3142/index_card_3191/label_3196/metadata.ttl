@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3196";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "BONNES- MARES\nAPPELLATION CONTROLEE\nComte Georges de MoGUE\n1947\nGRAND VIN DE BOURGOGNE\nmis en bouteilles la propriete\n"@fra;
+    gv:color [
+  gv:hex "dbbe9e";
+  gv:red "219";
+  gv:blue "158";
+  gv:green "190";
+  gv:score "79.10706400000001";
+  gv:coverage "32.266667"
+], [
+  gv:hex "492c10";
+  gv:red "73";
+  gv:blue "16";
+  gv:green "44";
+  gv:score "0.5584518";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "b89b7a";
+  gv:red "184";
+  gv:blue "122";
+  gv:green "155";
+  gv:score "11.573134999999999";
+  gv:coverage "3.0333333000000002"
+], [
+  gv:hex "8f7457";
+  gv:red "143";
+  gv:blue "87";
+  gv:green "116";
+  gv:score "4.5473386";
+  gv:coverage "0.84"
+], [
+  gv:hex "695033";
+  gv:red "105";
+  gv:blue "51";
+  gv:green "80";
+  gv:score "1.8277743999999998";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "eed7be";
+  gv:red "238";
+  gv:blue "190";
+  gv:green "215";
+  gv:score "0.95073832";
+  gv:coverage "4.08"
+], [
+  gv:hex "4d3518";
+  gv:red "77";
+  gv:blue "24";
+  gv:green "53";
+  gv:score "0.33138555";
+  gv:coverage "0.073333335"
+], [
+  gv:hex "533513";
+  gv:red "83";
+  gv:blue "19";
+  gv:green "53";
+  gv:score "0.32817724000000004";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "725232";
+  gv:red "114";
+  gv:blue "50";
+  gv:green "82";
+  gv:score "0.29171309";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "866545";
+  gv:red "134";
+  gv:blue "69";
+  gv:green "101";
+  gv:score "0.17210959";
+  gv:coverage "0.033333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "67.464507"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "58.036363"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.731933"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "55.883514999999996"
+];
+    w:bagOfWords "BONNES- MARES\nAPPELLATION CONTROLEE\nComte Georges de MoGUE\n1947\nGRAND VIN DE BOURGOGNE\nmis en bouteilles la propriete\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

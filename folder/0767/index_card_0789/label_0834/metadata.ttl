@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0789/label_0834";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "Sancerre-Sauvignon\nPAUL VERDIER\nALCOHOL BY VOLUME :11\nCONTENTS 1 PINT 8 FL.OZS\nLoire\n"@fra;
+    gv:color [
+  gv:hex "d0b999";
+  gv:red "208";
+  gv:blue "153";
+  gv:green "185";
+  gv:score "25.979671";
+  gv:coverage "22.106666999999998"
+], [
+  gv:hex "c06123";
+  gv:red "192";
+  gv:blue "35";
+  gv:green "97";
+  gv:score "12.67878";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "c98f61";
+  gv:red "201";
+  gv:blue "97";
+  gv:green "143";
+  gv:score "7.8360766";
+  gv:coverage "1.5866667"
+], [
+  gv:hex "db5503";
+  gv:red "219";
+  gv:blue "3";
+  gv:green "85";
+  gv:score "2.7211934";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "351102";
+  gv:red "53";
+  gv:blue "2";
+  gv:green "17";
+  gv:score "1.322356";
+  gv:coverage "0.26"
+], [
+  gv:hex "150804";
+  gv:red "21";
+  gv:blue "4";
+  gv:green "8";
+  gv:score "0.94378265";
+  gv:coverage "0.62"
+], [
+  gv:hex "e8b181";
+  gv:red "232";
+  gv:blue "129";
+  gv:green "177";
+  gv:score "5.9552703";
+  gv:coverage "1.2133333"
+], [
+  gv:hex "b8a183";
+  gv:red "184";
+  gv:blue "131";
+  gv:green "161";
+  gv:score "4.7413368";
+  gv:coverage "2.7733333"
+], [
+  gv:hex "da7e3f";
+  gv:red "218";
+  gv:blue "63";
+  gv:green "126";
+  gv:score "4.4185553";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "a66d41";
+  gv:red "166";
+  gv:blue "65";
+  gv:green "109";
+  gv:score "4.0204208";
+  gv:coverage "0.69333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01jwgf>;
+  gv:desc "product";
+  gv:score "73.633438"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.40823"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.710147"
+];
+    w:bagOfWords "Sancerre-Sauvignon\nPAUL VERDIER\nALCOHOL BY VOLUME :11\nCONTENTS 1 PINT 8 FL.OZS\nLoire\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

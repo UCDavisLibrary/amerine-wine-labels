@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0285/label_0298";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ALCOHOL 13%\nBOTTLED AT\nBY VOLUME\nTHE WINERY\nCALIFORNIA\nPRODUCED AND BOTTLED BY\nB. III. Illaptimi Grape products\nST. HELENA, NA PA COUNTY, CALIFORNIA\n1936\n"@eng;
+    gv:color [
+  gv:hex "d2bfa4";
+  gv:red "210";
+  gv:blue "164";
+  gv:green "191";
+  gv:score "45.994851";
+  gv:coverage "31.673333"
+], [
+  gv:hex "7c4926";
+  gv:red "124";
+  gv:blue "38";
+  gv:green "73";
+  gv:score "3.7307922000000002";
+  gv:coverage "0.26"
+], [
+  gv:hex "b29e80";
+  gv:red "178";
+  gv:blue "128";
+  gv:green "158";
+  gv:score "15.113623";
+  gv:coverage "4.2666666"
+], [
+  gv:hex "87755a";
+  gv:red "135";
+  gv:blue "90";
+  gv:green "117";
+  gv:score "5.7421353";
+  gv:coverage "1.4200000000000002"
+], [
+  gv:hex "665438";
+  gv:red "102";
+  gv:blue "56";
+  gv:green "84";
+  gv:score "4.932842";
+  gv:coverage "1.0933333"
+], [
+  gv:hex "413016";
+  gv:red "65";
+  gv:blue "22";
+  gv:green "48";
+  gv:score "3.059222";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "ebdac0";
+  gv:red "235";
+  gv:blue "192";
+  gv:green "218";
+  gv:score "2.29455";
+  gv:coverage "5.0533332"
+], [
+  gv:hex "83391f";
+  gv:red "131";
+  gv:blue "31";
+  gv:green "57";
+  gv:score "2.2827819";
+  gv:coverage "0.13333333"
+], [
+  gv:hex "b99f71";
+  gv:red "185";
+  gv:blue "113";
+  gv:green "159";
+  gv:score "1.9804971";
+  gv:coverage "0.34666667"
+], [
+  gv:hex "6a210b";
+  gv:red "106";
+  gv:blue "11";
+  gv:green "33";
+  gv:score "1.7066613000000002";
+  gv:coverage "0.093333336"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.249234"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "62.08238"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "55.664044999999994"
+];
+    w:bagOfWords "ALCOHOL 13%\nBOTTLED AT\nBY VOLUME\nTHE WINERY\nCALIFORNIA\nPRODUCED AND BOTTLED BY\nB. III. Illaptimi Grape products\nST. HELENA, NA PA COUNTY, CALIFORNIA\n1936\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

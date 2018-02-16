@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1516";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "24\nLOLA\nMANZANILLA FINA\nLIT. ..SALIDO M. JEREZ\n"@spa;
+    gv:color [
+  gv:hex "d6c1aa";
+  gv:red "214";
+  gv:blue "170";
+  gv:green "193";
+  gv:score "31.520733";
+  gv:coverage "42.733333"
+], [
+  gv:hex "887560";
+  gv:red "136";
+  gv:blue "96";
+  gv:green "117";
+  gv:score "20.386538";
+  gv:coverage "3.9"
+], [
+  gv:hex "ad9983";
+  gv:red "173";
+  gv:blue "131";
+  gv:green "153";
+  gv:score "18.839021";
+  gv:coverage "5.4066665"
+], [
+  gv:hex "665339";
+  gv:red "102";
+  gv:blue "57";
+  gv:green "83";
+  gv:score "6.937865899999999";
+  gv:coverage "1.1199999999999999"
+], [
+  gv:hex "e8baa5";
+  gv:red "232";
+  gv:blue "165";
+  gv:green "186";
+  gv:score "5.170304";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "c3907f";
+  gv:red "195";
+  gv:blue "127";
+  gv:green "144";
+  gv:score "4.7432058";
+  gv:coverage "0.48"
+], [
+  gv:hex "ead8c1";
+  gv:red "234";
+  gv:blue "193";
+  gv:green "216";
+  gv:score "3.5236631";
+  gv:coverage "27.806666000000003"
+], [
+  gv:hex "9d6a58";
+  gv:red "157";
+  gv:blue "88";
+  gv:green "106";
+  gv:score "2.5167873";
+  gv:coverage "0.26"
+], [
+  gv:hex "7e4c37";
+  gv:red "126";
+  gv:blue "55";
+  gv:green "76";
+  gv:score "2.4122841999999998";
+  gv:coverage "0.24"
+], [
+  gv:hex "47381e";
+  gv:red "71";
+  gv:blue "30";
+  gv:green "56";
+  gv:score "1.3353122";
+  gv:coverage "0.23333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.22166"
+];
+    w:bagOfWords "24\nLOLA\nMANZANILLA FINA\nLIT. ..SALIDO M. JEREZ\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0926/index_card_1091/label_1096";
+    dct:type "image";
+    dc:subject "Swiss@en";
+    w:bagOfWords "RIEx\nn ron rieta\n"@deu;
+    gv:color [
+  gv:hex "ccb297";
+  gv:red "204";
+  gv:blue "151";
+  gv:green "178";
+  gv:score "34.397903";
+  gv:coverage "18.240000000000002"
+], [
+  gv:hex "6d180f";
+  gv:red "109";
+  gv:blue "15";
+  gv:green "24";
+  gv:score "4.5271903";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "435d50";
+  gv:red "67";
+  gv:blue "80";
+  gv:green "93";
+  gv:score "1.271134";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "b59e85";
+  gv:red "181";
+  gv:blue "133";
+  gv:green "158";
+  gv:score "20.894434";
+  gv:coverage "10.413333"
+], [
+  gv:hex "180500";
+  gv:red "24";
+  gv:blue "undefined";
+  gv:green "5";
+  gv:score "0.16694939";
+  gv:coverage "0.1"
+], [
+  gv:hex "bc957d";
+  gv:red "188";
+  gv:blue "125";
+  gv:green "149";
+  gv:score "5.688805100000001";
+  gv:coverage "3.9466668000000005"
+], [
+  gv:hex "88755f";
+  gv:red "136";
+  gv:blue "95";
+  gv:green "117";
+  gv:score "5.5592999999999995";
+  gv:coverage "1.6333334000000002"
+], [
+  gv:hex "64543d";
+  gv:red "100";
+  gv:blue "61";
+  gv:green "84";
+  gv:score "3.9794549";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "97715c";
+  gv:red "151";
+  gv:blue "92";
+  gv:green "113";
+  gv:score "3.8347803";
+  gv:coverage "1.26"
+], [
+  gv:hex "661e19";
+  gv:red "102";
+  gv:blue "25";
+  gv:green "30";
+  gv:score "3.7513889000000002";
+  gv:coverage "0.43333330999999997"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.932474000000006"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "54.771328"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.876084999999996"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "52.800619999999995"
+];
+    w:bagOfWords "RIEx\nn ron rieta\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "CHE".

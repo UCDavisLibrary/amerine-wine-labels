@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3191/label_3198";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "GRANDS VINS DE BOURGOGNE\nChambolle-musigmy\nBonnes\nare\n1949\nMIS EN BOUTEILLES\nCOTE\nD'OR.\nAU DOMAINE\nAPPELLATIOn eonTROLGe\n"@fra;
+    gv:color [
+  gv:hex "ecb564";
+  gv:red "236";
+  gv:blue "100";
+  gv:green "181";
+  gv:score "24.11228";
+  gv:coverage "9.1066666"
+], [
+  gv:hex "8b390f";
+  gv:red "139";
+  gv:blue "15";
+  gv:green "57";
+  gv:score "2.6878668";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "ecb97a";
+  gv:red "236";
+  gv:blue "122";
+  gv:green "185";
+  gv:score "14.487665999999999";
+  gv:coverage "4.5666665"
+], [
+  gv:hex "e7bf80";
+  gv:red "231";
+  gv:blue "128";
+  gv:green "191";
+  gv:score "14.278987";
+  gv:coverage "6.1533332000000005"
+], [
+  gv:hex "cd9343";
+  gv:red "205";
+  gv:blue "67";
+  gv:green "147";
+  gv:score "8.2375422";
+  gv:coverage "3.0066667"
+], [
+  gv:hex "eabc6e";
+  gv:red "234";
+  gv:blue "110";
+  gv:green "188";
+  gv:score "7.4808836";
+  gv:coverage "2.5466667"
+], [
+  gv:hex "c89459";
+  gv:red "200";
+  gv:blue "89";
+  gv:green "148";
+  gv:score "6.437627999999999";
+  gv:coverage "1.6"
+], [
+  gv:hex "a06f39";
+  gv:red "160";
+  gv:blue "57";
+  gv:green "111";
+  gv:score "3.6215656";
+  gv:coverage "0.74"
+], [
+  gv:hex "bd9861";
+  gv:red "189";
+  gv:blue "97";
+  gv:green "152";
+  gv:score "2.91483";
+  gv:coverage "0.77333334"
+], [
+  gv:hex "a96f27";
+  gv:red "169";
+  gv:blue "39";
+  gv:green "111";
+  gv:score "2.5517106000000003";
+  gv:coverage "0.68666665"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.649979"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.70080000000001"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "52.304894000000004"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.091868"
+];
+    w:bagOfWords "GRANDS VINS DE BOURGOGNE\nChambolle-musigmy\nBonnes\nare\n1949\nMIS EN BOUTEILLES\nCOTE\nD'OR.\nAU DOMAINE\nAPPELLATIOn eonTROLGe\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

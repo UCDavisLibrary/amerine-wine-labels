@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2893/label_2943";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "VINS D'ALSACE\nSCHLUMBERGE\nORMAVITICOLES SCHLUMBERGER GUEBWILLER\n"@fra;
+    gv:color [
+  gv:hex "e4b184";
+  gv:red "228";
+  gv:blue "132";
+  gv:green "177";
+  gv:score "26.663124999999997";
+  gv:coverage "3.56"
+], [
+  gv:hex "ae9773";
+  gv:red "174";
+  gv:blue "115";
+  gv:green "151";
+  gv:score "7.5505316";
+  gv:coverage "5.3"
+], [
+  gv:hex "c99268";
+  gv:red "201";
+  gv:blue "104";
+  gv:green "146";
+  gv:score "19.188757000000003";
+  gv:coverage "2.9266667"
+], [
+  gv:hex "a67046";
+  gv:red "166";
+  gv:blue "70";
+  gv:green "112";
+  gv:score "7.9958290000000005";
+  gv:coverage "1.2733334"
+], [
+  gv:hex "b39668";
+  gv:red "179";
+  gv:blue "104";
+  gv:green "150";
+  gv:score "6.6873512999999996";
+  gv:coverage "2.9466666"
+], [
+  gv:hex "d9b585";
+  gv:red "217";
+  gv:blue "133";
+  gv:green "181";
+  gv:score "6.613382700000001";
+  gv:coverage "1.46"
+], [
+  gv:hex "8c7755";
+  gv:red "140";
+  gv:blue "85";
+  gv:green "119";
+  gv:score "5.3004406";
+  gv:coverage "3.6799999999999997"
+], [
+  gv:hex "92794c";
+  gv:red "146";
+  gv:blue "76";
+  gv:green "121";
+  gv:score "5.0723214";
+  gv:coverage "2.68"
+], [
+  gv:hex "d2b895";
+  gv:red "210";
+  gv:blue "149";
+  gv:green "184";
+  gv:score "3.9058052";
+  gv:coverage "17.233333000000002"
+], [
+  gv:hex "774b24";
+  gv:red "119";
+  gv:blue "36";
+  gv:green "75";
+  gv:score "1.8962165";
+  gv:coverage "0.47333334000000005"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "67.78362999999999"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "65.362203"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.825827999999994"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "60.784483"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.615393000000005"
+];
+    w:bagOfWords "VINS D'ALSACE\nSCHLUMBERGE\nORMAVITICOLES SCHLUMBERGER GUEBWILLER\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

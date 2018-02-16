@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2441/index_card_2522/label_2533";
+    dct:type "image";
+    dc:subject "Burgundy White@en";
+    w:bagOfWords "CAVES\nDE LA MAISON PRUNIER\nCHABLIS\nLECHET 1943\nPARIS\nLONDRES\n9, Rue Duphot\n72, St James's Street\n16, Avenue Victor Hugo\nS. W\n"@fra;
+    gv:color [
+  gv:hex "dbc1a0";
+  gv:red "219";
+  gv:blue "160";
+  gv:green "193";
+  gv:score "46.802282";
+  gv:coverage "23.593333"
+], [
+  gv:hex "a95c4b";
+  gv:red "169";
+  gv:blue "75";
+  gv:green "92";
+  gv:score "4.2717735999999995";
+  gv:coverage "0.24"
+], [
+  gv:hex "b39b7b";
+  gv:red "179";
+  gv:blue "123";
+  gv:green "155";
+  gv:score "14.187716";
+  gv:coverage "1.8399999999999999"
+], [
+  gv:hex "ecbca0";
+  gv:red "236";
+  gv:blue "160";
+  gv:green "188";
+  gv:score "8.3287254";
+  gv:coverage "1.5466667"
+], [
+  gv:hex "f4d9b9";
+  gv:red "244";
+  gv:blue "185";
+  gv:green "217";
+  gv:score "8.273475600000001";
+  gv:coverage "4.6533335000000005"
+], [
+  gv:hex "90785a";
+  gv:red "144";
+  gv:blue "90";
+  gv:green "120";
+  gv:score "5.52183";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "cd907a";
+  gv:red "205";
+  gv:blue "122";
+  gv:green "144";
+  gv:score "4.1922033";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "fbd2b5";
+  gv:red "251";
+  gv:blue "181";
+  gv:green "210";
+  gv:score "2.978516";
+  gv:coverage "0.26"
+], [
+  gv:hex "9d6148";
+  gv:red "157";
+  gv:blue "72";
+  gv:green "97";
+  gv:score "1.3934951";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "393027";
+  gv:red "57";
+  gv:blue "39";
+  gv:green "48";
+  gv:score "0.012946957";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.27833199999999"
+], [
+  gv:mid <https://g.co/kg/m/03gq5hm>;
+  gv:desc "font";
+  gv:score "77.006537"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "62.169706999999995"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "57.962388"
+];
+    w:bagOfWords "CAVES\nDE LA MAISON PRUNIER\nCHABLIS\nLECHET 1943\nPARIS\nLONDRES\n9, Rue Duphot\n72, St James's Street\n16, Avenue Victor Hugo\nS. W\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

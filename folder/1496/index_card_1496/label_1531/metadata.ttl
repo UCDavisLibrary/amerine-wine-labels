@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1531";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "MANZANILLA\nLA MESA REDONDA''\n(ESPANA)\nN 20\n"@spa;
+    gv:color [
+  gv:hex "a19a94";
+  gv:red "161";
+  gv:blue "148";
+  gv:green "154";
+  gv:score "28.381332999999998";
+  gv:coverage "3.04"
+], [
+  gv:hex "cac3bd";
+  gv:red "202";
+  gv:blue "189";
+  gv:green "195";
+  gv:score "26.405110999999998";
+  gv:coverage "13.22"
+], [
+  gv:hex "7f7772";
+  gv:red "127";
+  gv:blue "114";
+  gv:green "119";
+  gv:score "24.127382";
+  gv:coverage "1.8466666"
+], [
+  gv:hex "e7dfd9";
+  gv:red "231";
+  gv:blue "217";
+  gv:green "223";
+  gv:score "15.421215";
+  gv:coverage "34.833332999999996"
+], [
+  gv:hex "635c56";
+  gv:red "99";
+  gv:blue "86";
+  gv:green "92";
+  gv:score "5.3012546";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "d6caba";
+  gv:red "214";
+  gv:blue "186";
+  gv:green "202";
+  gv:score "0.089854316";
+  gv:coverage "17.073332999999998"
+], [
+  gv:hex "615545";
+  gv:red "97";
+  gv:blue "69";
+  gv:green "85";
+  gv:score "0.074950425";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "857969";
+  gv:red "133";
+  gv:blue "105";
+  gv:green "121";
+  gv:score "0.065502722";
+  gv:coverage "0.06"
+], [
+  gv:hex "afa292";
+  gv:red "175";
+  gv:blue "146";
+  gv:green "162";
+  gv:score "0.05174668";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "433626";
+  gv:red "67";
+  gv:blue "38";
+  gv:green "54";
+  gv:score "0.044798703";
+  gv:coverage "0.053333334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.474623"
+], [
+  gv:mid <https://g.co/kg/m/019sc6>;
+  gv:desc "lighting";
+  gv:score "64.414841"
+], [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "59.216106"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "53.668642"
+];
+    w:bagOfWords "MANZANILLA\nLA MESA REDONDA''\n(ESPANA)\nN 20\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

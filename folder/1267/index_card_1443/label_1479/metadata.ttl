@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1479";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "12 1/2 ALCOHOL BY VOLUME\nCAN AN DAI CUA\nA LIGHT, SEMI-DRY WINE MADE FROM NIAGARA GRAPES\nPRODUCED AND BOTTLED AT THE WINERY BY\nWIDMER'S WINE CELLARS. INC.\nNAPLES, NEW YORK\n"@eng;
+    gv:color [
+  gv:hex "b1a063";
+  gv:red "177";
+  gv:blue "99";
+  gv:green "160";
+  gv:score "32.7627";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "d1bfa1";
+  gv:red "209";
+  gv:blue "161";
+  gv:green "191";
+  gv:score "15.341735";
+  gv:coverage "10.56"
+], [
+  gv:hex "867741";
+  gv:red "134";
+  gv:blue "65";
+  gv:green "119";
+  gv:score "13.524979";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "ae9b7f";
+  gv:red "174";
+  gv:blue "127";
+  gv:green "155";
+  gv:score "12.144912";
+  gv:coverage "2.1466667"
+], [
+  gv:hex "645724";
+  gv:red "100";
+  gv:blue "36";
+  gv:green "87";
+  gv:score "8.224091699999999";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "cebb82";
+  gv:red "206";
+  gv:blue "130";
+  gv:green "187";
+  gv:score "5.8817126";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "867654";
+  gv:red "134";
+  gv:blue "84";
+  gv:green "118";
+  gv:score "4.1777149";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "5f5630";
+  gv:red "95";
+  gv:blue "48";
+  gv:green "86";
+  gv:score "2.3489842";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "45380a";
+  gv:red "69";
+  gv:blue "10";
+  gv:green "56";
+  gv:score "1.8285781";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "ecdbc6";
+  gv:red "236";
+  gv:blue "198";
+  gv:green "219";
+  gv:score "1.2760399";
+  gv:coverage "3.6133334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.692992"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.421812"
+];
+    w:bagOfWords "12 1/2 ALCOHOL BY VOLUME\nCAN AN DAI CUA\nA LIGHT, SEMI-DRY WINE MADE FROM NIAGARA GRAPES\nPRODUCED AND BOTTLED AT THE WINERY BY\nWIDMER'S WINE CELLARS. INC.\nNAPLES, NEW YORK\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

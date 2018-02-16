@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2207";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "INA-IDA\nVINTAGE\nBOTTLED AT THE OLIVIN\nAULTS\nGROWER\n"@eng;
+    gv:color [
+  gv:hex "d6c1a7";
+  gv:red "214";
+  gv:blue "167";
+  gv:green "193";
+  gv:score "27.277687";
+  gv:coverage "18.466666"
+], [
+  gv:hex "ae9b82";
+  gv:red "174";
+  gv:blue "130";
+  gv:green "155";
+  gv:score "15.107882";
+  gv:coverage "4.1133333"
+], [
+  gv:hex "b89867";
+  gv:red "184";
+  gv:blue "103";
+  gv:green "152";
+  gv:score "13.693468000000001";
+  gv:coverage "2.5"
+], [
+  gv:hex "927444";
+  gv:red "146";
+  gv:blue "68";
+  gv:green "116";
+  gv:score "9.369245900000001";
+  gv:coverage "2.2466667"
+], [
+  gv:hex "88765f";
+  gv:red "136";
+  gv:blue "95";
+  gv:green "118";
+  gv:score "7.696945199999999";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "7f756d";
+  gv:red "127";
+  gv:blue "109";
+  gv:green "117";
+  gv:score "3.9164998";
+  gv:coverage "0.76"
+], [
+  gv:hex "a1988f";
+  gv:red "161";
+  gv:blue "143";
+  gv:green "152";
+  gv:score "3.4317572";
+  gv:coverage "0.7266666700000001"
+], [
+  gv:hex "665642";
+  gv:red "102";
+  gv:blue "66";
+  gv:green "86";
+  gv:score "3.1716816000000003";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "eedbc4";
+  gv:red "238";
+  gv:blue "196";
+  gv:green "219";
+  gv:score "2.6443670999999997";
+  gv:coverage "9.3733333"
+], [
+  gv:hex "d3b484";
+  gv:red "211";
+  gv:blue "132";
+  gv:green "180";
+  gv:score "2.4316299999999997";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.53282899999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.659895000000006"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "53.802687000000006"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "53.673667"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.6032"
+];
+    w:bagOfWords "INA-IDA\nVINTAGE\nBOTTLED AT THE OLIVIN\nAULTS\nGROWER\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

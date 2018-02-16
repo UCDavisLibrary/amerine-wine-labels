@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1367/label_1374";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "CONTENIDO NETO\nINDUSTRIA ARGENTINA\nzoo CM\nLUJAN\nDE CUYO (MENDOZA\nBLA WCO\nBUENOS AIRES\nD/ MAZAR\nPRODUCTOR\n"@spa;
+    gv:color [
+  gv:hex "d5b99d";
+  gv:red "213";
+  gv:blue "157";
+  gv:green "185";
+  gv:score "45.121071";
+  gv:coverage "33.733332"
+], [
+  gv:hex "b79b7c";
+  gv:red "183";
+  gv:blue "124";
+  gv:green "155";
+  gv:score "31.833273000000002";
+  gv:coverage "3.8666666000000003"
+], [
+  gv:hex "977959";
+  gv:red "151";
+  gv:blue "89";
+  gv:green "121";
+  gv:score "5.6273766";
+  gv:coverage "0.5666666699999999"
+], [
+  gv:hex "b99474";
+  gv:red "185";
+  gv:blue "116";
+  gv:green "148";
+  gv:score "3.6437493";
+  gv:coverage "0.3"
+], [
+  gv:hex "ba976c";
+  gv:red "186";
+  gv:blue "108";
+  gv:green "151";
+  gv:score "2.88716";
+  gv:coverage "0.18"
+], [
+  gv:hex "ba9167";
+  gv:red "186";
+  gv:blue "103";
+  gv:green "145";
+  gv:score "2.3711696";
+  gv:coverage "0.16"
+], [
+  gv:hex "98774e";
+  gv:red "152";
+  gv:blue "78";
+  gv:green "119";
+  gv:score "2.1023631000000003";
+  gv:coverage "0.12666667"
+], [
+  gv:hex "5c5449";
+  gv:red "92";
+  gv:blue "73";
+  gv:green "84";
+  gv:score "0.018989875";
+  gv:coverage "0.08"
+], [
+  gv:hex "d4b387";
+  gv:red "212";
+  gv:blue "135";
+  gv:green "179";
+  gv:score "1.5141094000000002";
+  gv:coverage "0.15333333000000002"
+], [
+  gv:hex "99724b";
+  gv:red "153";
+  gv:blue "75";
+  gv:green "114";
+  gv:score "1.4845951";
+  gv:coverage "0.073333335"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.214212"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "55.434281"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "55.032682"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.133160999999994"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "50.188613000000004"
+];
+    w:bagOfWords "CONTENIDO NETO\nINDUSTRIA ARGENTINA\nzoo CM\nLUJAN\nDE CUYO (MENDOZA\nBLA WCO\nBUENOS AIRES\nD/ MAZAR\nPRODUCTOR\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ARG".

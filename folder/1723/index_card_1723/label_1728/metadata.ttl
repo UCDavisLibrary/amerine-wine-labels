@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1723/label_1728";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "PRIESTERSEM\nen\nWA c H s TU M u O RIGINAL KELLER A, B ZUG\nMOSEL-SAAR-RUWER\n"@deu;
+    gv:color [
+  gv:hex "d8bf9f";
+  gv:red "216";
+  gv:blue "159";
+  gv:green "191";
+  gv:score "26.74841";
+  gv:coverage "26.706666000000002"
+], [
+  gv:hex "b19a7b";
+  gv:red "177";
+  gv:blue "123";
+  gv:green "154";
+  gv:score "11.261331";
+  gv:coverage "2.7133333"
+], [
+  gv:hex "d8b584";
+  gv:red "216";
+  gv:blue "132";
+  gv:green "181";
+  gv:score "10.724119";
+  gv:coverage "1.5666666999999999"
+], [
+  gv:hex "bb9c69";
+  gv:red "187";
+  gv:blue "105";
+  gv:green "156";
+  gv:score "7.129226600000001";
+  gv:coverage "1.9066667"
+], [
+  gv:hex "cb9566";
+  gv:red "203";
+  gv:blue "102";
+  gv:green "149";
+  gv:score "6.7969449";
+  gv:coverage "0.86"
+], [
+  gv:hex "927547";
+  gv:red "146";
+  gv:blue "71";
+  gv:green "117";
+  gv:score "6.3800536";
+  gv:coverage "1.5933333"
+], [
+  gv:hex "877456";
+  gv:red "135";
+  gv:blue "86";
+  gv:green "116";
+  gv:score "5.897548";
+  gv:coverage "1.7266667"
+], [
+  gv:hex "e3ae80";
+  gv:red "227";
+  gv:blue "128";
+  gv:green "174";
+  gv:score "3.7897576";
+  gv:coverage "0.55333334"
+], [
+  gv:hex "c19177";
+  gv:red "193";
+  gv:blue "119";
+  gv:green "145";
+  gv:score "3.3642821000000005";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "e4b597";
+  gv:red "228";
+  gv:blue "151";
+  gv:green "181";
+  gv:score "2.5654074";
+  gv:coverage "1.1133334"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.652169"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "68.887192"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.714658"
+], [
+  gv:mid <https://g.co/kg/m/016nqd>;
+  gv:desc "shape";
+  gv:score "58.022165"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "57.11995399999999"
+];
+    w:bagOfWords "PRIESTERSEM\nen\nWA c H s TU M u O RIGINAL KELLER A, B ZUG\nMOSEL-SAAR-RUWER\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

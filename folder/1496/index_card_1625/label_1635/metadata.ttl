@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1635";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "B 1821\nVina del Cuco\nBALB AINA ALTA\nrio Nuo BAR BA DILLO\n"@spa;
+    gv:color [
+  gv:hex "05335b";
+  gv:red "5";
+  gv:blue "91";
+  gv:green "51";
+  gv:score "47.240539999999996";
+  gv:coverage "13.48"
+], [
+  gv:hex "dfebf2";
+  gv:red "223";
+  gv:blue "242";
+  gv:green "235";
+  gv:score "0.70542237";
+  gv:coverage "18.88"
+], [
+  gv:hex "0e3150";
+  gv:red "14";
+  gv:blue "80";
+  gv:green "49";
+  gv:score "33.071306";
+  gv:coverage "14.38"
+], [
+  gv:hex "071f38";
+  gv:red "7";
+  gv:blue "56";
+  gv:green "31";
+  gv:score "5.4380666";
+  gv:coverage "2.54"
+], [
+  gv:hex "385672";
+  gv:red "56";
+  gv:blue "114";
+  gv:green "86";
+  gv:score "4.27394";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "587893";
+  gv:red "88";
+  gv:blue "147";
+  gv:green "120";
+  gv:score "3.2719772000000003";
+  gv:coverage "1.58"
+], [
+  gv:hex "869fb6";
+  gv:red "134";
+  gv:blue "182";
+  gv:green "159";
+  gv:score "1.0531016";
+  gv:coverage "0.36"
+], [
+  gv:hex "012147";
+  gv:red "1";
+  gv:blue "71";
+  gv:green "33";
+  gv:score "0.92583662";
+  gv:coverage "0.24"
+], [
+  gv:hex "adc4d9";
+  gv:red "173";
+  gv:blue "217";
+  gv:green "196";
+  gv:score "0.8877444099999999";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "cfe2f4";
+  gv:red "207";
+  gv:blue "244";
+  gv:green "226";
+  gv:score "0.42126924";
+  gv:coverage "0.18"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.82744699999999"
+];
+    w:bagOfWords "B 1821\nVina del Cuco\nBALB AINA ALTA\nrio Nuo BAR BA DILLO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

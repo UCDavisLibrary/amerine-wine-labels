@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0161/label_0170";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "No. 509P\nPran u s A\nOPRIETO\nBUNDs\nRHINE FARM VINE ARDS\nBACCHUS WINE CELLARS\nSONOMA\nSANTA MARIA\nCALIFORNIA BURGUNDY\nGUNDLACH BUNDSCHUWINE Co.\nJ. GUNDLACH & Co.\nSan Francisco Cal\n"@eng;
+    gv:color [
+  gv:hex "0d0a07";
+  gv:red "13";
+  gv:blue "7";
+  gv:green "10";
+  gv:score "33.7412";
+  gv:coverage "24.006666"
+], [
+  gv:hex "8f7141";
+  gv:red "143";
+  gv:blue "65";
+  gv:green "113";
+  gv:score "19.876429";
+  gv:coverage "0.74"
+], [
+  gv:hex "41311b";
+  gv:red "65";
+  gv:blue "27";
+  gv:green "49";
+  gv:score "5.4880839";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "e3ddd5";
+  gv:red "227";
+  gv:blue "213";
+  gv:green "221";
+  gv:score "0.45173909";
+  gv:coverage "58.793336"
+], [
+  gv:hex "8c7455";
+  gv:red "140";
+  gv:blue "85";
+  gv:green "116";
+  gv:score "9.8448128";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "6d5223";
+  gv:red "109";
+  gv:blue "35";
+  gv:green "82";
+  gv:score "5.7892248";
+  gv:coverage "0.22"
+], [
+  gv:hex "645236";
+  gv:red "100";
+  gv:blue "54";
+  gv:green "82";
+  gv:score "5.3288341";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "322d26";
+  gv:red "50";
+  gv:blue "38";
+  gv:green "45";
+  gv:score "3.3185706";
+  gv:coverage "1.4666666"
+], [
+  gv:hex "6e4c22";
+  gv:red "110";
+  gv:blue "34";
+  gv:green "76";
+  gv:score "2.5777992";
+  gv:coverage "0.093333336"
+], [
+  gv:hex "271c0b";
+  gv:red "39";
+  gv:blue "11";
+  gv:green "28";
+  gv:score "2.0872647";
+  gv:coverage "0.38666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "75.727916"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "60.608578"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "54.863477"
+];
+    w:bagOfWords "No. 509P\nPran u s A\nOPRIETO\nBUNDs\nRHINE FARM VINE ARDS\nBACCHUS WINE CELLARS\nSONOMA\nSANTA MARIA\nCALIFORNIA BURGUNDY\nGUNDLACH BUNDSCHUWINE Co.\nJ. GUNDLACH & Co.\nSan Francisco Cal\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

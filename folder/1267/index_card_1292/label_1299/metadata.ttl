@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1292/label_1299";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "VIN DE LA\nMOSELLE\nCAVES TH.HOFFELD GREVENMACHER\n1946\nieslin Gglpaner\nNVIN EST MIS EN BOUTEILLE DANS Nos (MOSELLE\n"@deu;
+    gv:color [
+  gv:hex "b19879";
+  gv:red "177";
+  gv:blue "121";
+  gv:green "152";
+  gv:score "30.663607";
+  gv:coverage "13.153334"
+], [
+  gv:hex "6a7c44";
+  gv:red "106";
+  gv:blue "68";
+  gv:green "124";
+  gv:score "1.9481063";
+  gv:coverage "0.24"
+], [
+  gv:hex "d3bb9e";
+  gv:red "211";
+  gv:blue "158";
+  gv:green "187";
+  gv:score "23.903947";
+  gv:coverage "15.226666999999999"
+], [
+  gv:hex "8d7657";
+  gv:red "141";
+  gv:blue "87";
+  gv:green "118";
+  gv:score "19.473667";
+  gv:coverage "7.1333334"
+], [
+  gv:hex "685335";
+  gv:red "104";
+  gv:blue "53";
+  gv:green "83";
+  gv:score "7.7151857";
+  gv:coverage "1.9733334000000002"
+], [
+  gv:hex "473516";
+  gv:red "71";
+  gv:blue "22";
+  gv:green "53";
+  gv:score "3.0544193";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "625325";
+  gv:red "98";
+  gv:blue "37";
+  gv:green "83";
+  gv:score "2.1364557";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "857445";
+  gv:red "133";
+  gv:blue "69";
+  gv:green "116";
+  gv:score "1.5799817";
+  gv:coverage "0.39333333000000004"
+], [
+  gv:hex "4c5d28";
+  gv:red "76";
+  gv:blue "40";
+  gv:green "93";
+  gv:score "1.3536423";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "423a0c";
+  gv:red "66";
+  gv:blue "12";
+  gv:green "58";
+  gv:score "0.9950642500000001";
+  gv:coverage "0.12666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "64.43039999999999"
+], [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "60.416156"
+];
+    w:bagOfWords "VIN DE LA\nMOSELLE\nCAVES TH.HOFFELD GREVENMACHER\n1946\nieslin Gglpaner\nNVIN EST MIS EN BOUTEILLE DANS Nos (MOSELLE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "LUX".

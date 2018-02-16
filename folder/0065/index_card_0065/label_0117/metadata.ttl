@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0117";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "PROVVEDITORI\nDELLA REAL CASA\nFREI SA\nCALISSAI20\nLUIGI CALISSARo FIGLI\n1MBOTTIGLIATO\nAL CLIENTE\nALBA ITALIA\n"@ita;
+    gv:color [
+  gv:hex "efbb9f";
+  gv:red "239";
+  gv:blue "159";
+  gv:green "187";
+  gv:score "19.982474";
+  gv:coverage "5.6733332999999995"
+], [
+  gv:hex "dec1a3";
+  gv:red "222";
+  gv:blue "163";
+  gv:green "193";
+  gv:score "14.09515";
+  gv:coverage "11.666667"
+], [
+  gv:hex "c39478";
+  gv:red "195";
+  gv:blue "120";
+  gv:green "148";
+  gv:score "9.2526674";
+  gv:coverage "3"
+], [
+  gv:hex "b4997c";
+  gv:red "180";
+  gv:blue "124";
+  gv:green "153";
+  gv:score "5.7257734";
+  gv:coverage "2.0266667"
+], [
+  gv:hex "9b7056";
+  gv:red "155";
+  gv:blue "86";
+  gv:green "112";
+  gv:score "4.7074135";
+  gv:coverage "1.82"
+], [
+  gv:hex "9f6947";
+  gv:red "159";
+  gv:blue "71";
+  gv:green "105";
+  gv:score "4.0994663000000005";
+  gv:coverage "1.2466666"
+], [
+  gv:hex "b35b43";
+  gv:red "179";
+  gv:blue "67";
+  gv:green "91";
+  gv:score "3.941004";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "754932";
+  gv:red "117";
+  gv:blue "50";
+  gv:green "73";
+  gv:score "3.82981";
+  gv:coverage "1.52"
+], [
+  gv:hex "c6926b";
+  gv:red "198";
+  gv:blue "107";
+  gv:green "146";
+  gv:score "3.476708";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "7c4727";
+  gv:red "124";
+  gv:blue "39";
+  gv:green "71";
+  gv:score "3.0941650000000003";
+  gv:coverage "1.2666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "69.0207"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "58.708978"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "55.200595"
+];
+    w:bagOfWords "PROVVEDITORI\nDELLA REAL CASA\nFREI SA\nCALISSAI20\nLUIGI CALISSARo FIGLI\n1MBOTTIGLIATO\nAL CLIENTE\nALBA ITALIA\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

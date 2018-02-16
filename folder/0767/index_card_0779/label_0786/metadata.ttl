@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0767/index_card_0779/label_0786";
+    dct:type "image";
+    dc:subject "France Misc White@en";
+    w:bagOfWords "ROUSSETTE DE DRYSSEL\nAPPELLATION CONTROLEE\nMOLLEX ERNEST, ropriétaire-\nCORBON0D (Ain)\n"@fra;
+    gv:color [
+  gv:hex "e1c5a1";
+  gv:red "225";
+  gv:blue "161";
+  gv:green "197";
+  gv:score "64.454454";
+  gv:coverage "24.959999999999997"
+], [
+  gv:hex "b39875";
+  gv:red "179";
+  gv:blue "117";
+  gv:green "152";
+  gv:score "7.8043833000000005";
+  gv:coverage "2.0466667000000003"
+], [
+  gv:hex "8e7451";
+  gv:red "142";
+  gv:blue "81";
+  gv:green "116";
+  gv:score "7.739301";
+  gv:coverage "1.8133333"
+], [
+  gv:hex "f0d6b3";
+  gv:red "240";
+  gv:blue "179";
+  gv:green "214";
+  gv:score "7.3127516";
+  gv:coverage "4.1866668"
+], [
+  gv:hex "69502f";
+  gv:red "105";
+  gv:blue "47";
+  gv:green "80";
+  gv:score "4.851111";
+  gv:coverage "1.4666666"
+], [
+  gv:hex "e0bf92";
+  gv:red "224";
+  gv:blue "146";
+  gv:green "191";
+  gv:score "2.4770898999999997";
+  gv:coverage "1.3133333"
+], [
+  gv:hex "4d3616";
+  gv:red "77";
+  gv:blue "22";
+  gv:green "54";
+  gv:score "2.3527585";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "4d3310";
+  gv:red "77";
+  gv:blue "16";
+  gv:green "51";
+  gv:score "1.0595351";
+  gv:coverage "0.43333330999999997"
+], [
+  gv:hex "6c5029";
+  gv:red "108";
+  gv:blue "41";
+  gv:green "80";
+  gv:score "0.59454138";
+  gv:coverage "0.20666666999999997"
+], [
+  gv:hex "876c44";
+  gv:red "135";
+  gv:blue "68";
+  gv:green "108";
+  gv:score "0.31854543";
+  gv:coverage "0.11333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.981424"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "57.986349000000004"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "51.582175"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.1421"
+];
+    w:bagOfWords "ROUSSETTE DE DRYSSEL\nAPPELLATION CONTROLEE\nMOLLEX ERNEST, ropriétaire-\nCORBON0D (Ain)\n"@fra;
+    wdt:P219 "fra";
+    wdt:P298 "FRA";
+    w:WineColor w:White.

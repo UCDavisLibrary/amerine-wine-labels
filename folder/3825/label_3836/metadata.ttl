@@ -1,0 +1,104 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3825/label_3836";
+    dct:type "image";
+    w:bagOfWords "LABFULL\nNATUR REINER FRANKEN WEIN\n1950 er\nWurzburger Stein Riesling\nBeerenauslefe\nOEKELLEM\n"@deu;
+    gv:color [
+  gv:hex "8e7138";
+  gv:red "142";
+  gv:blue "56";
+  gv:green "113";
+  gv:score "9.6492104";
+  gv:coverage "1.0666666999999999"
+], [
+  gv:hex "dbc4a3";
+  gv:red "219";
+  gv:blue "163";
+  gv:green "196";
+  gv:score "8.0233887";
+  gv:coverage "8.7266669"
+], [
+  gv:hex "744b12";
+  gv:red "116";
+  gv:blue "18";
+  gv:green "75";
+  gv:score "6.7043595";
+  gv:coverage "0.62666666"
+], [
+  gv:hex "321600";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "22";
+  gv:score "0.21555326000000002";
+  gv:coverage "0.033333333"
+], [
+  gv:hex "947222";
+  gv:red "148";
+  gv:blue "34";
+  gv:green "114";
+  gv:score "9.6198075";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "e1c189";
+  gv:red "225";
+  gv:blue "137";
+  gv:green "193";
+  gv:score "7.610765799999999";
+  gv:coverage "1.26"
+], [
+  gv:hex "b6975d";
+  gv:red "182";
+  gv:blue "93";
+  gv:green "151";
+  gv:score "7.319186599999999";
+  gv:coverage "0.96"
+], [
+  gv:hex "966a34";
+  gv:red "150";
+  gv:blue "52";
+  gv:green "106";
+  gv:score "5.5122592";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "9a6b20";
+  gv:red "154";
+  gv:blue "32";
+  gv:green "107";
+  gv:score "5.1302116";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "70541b";
+  gv:red "112";
+  gv:blue "27";
+  gv:green "84";
+  gv:score "4.9897697";
+  gv:coverage "0.49333335000000006"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04_x4>;
+  gv:desc "money";
+  gv:score "79.734147"
+], [
+  gv:mid <https://g.co/kg/m/01q7l>;
+  gv:desc "currency";
+  gv:score "69.1867"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.60089500000001"
+];
+    w:bagOfWords "LABFULL\nNATUR REINER FRANKEN WEIN\n1950 er\nWurzburger Stein Riesling\nBeerenauslefe\nOEKELLEM\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "DEU".

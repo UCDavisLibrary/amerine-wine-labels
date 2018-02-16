@@ -1,0 +1,101 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0426/index_card_0426/label_0514";
+    dct:type "image";
+    dc:subject "Rhinegau@en";
+    w:bagOfWords "4825\nPETER OHLIG\nGEGR\nEE WEIN BAU UND WEIN HANDEL\nL\n1953er\nHollee\nRiesling\nWachstum Winzerverein\n"@deu;
+    gv:color [
+  gv:hex "ddc5a5";
+  gv:red "221";
+  gv:blue "165";
+  gv:green "197";
+  gv:score "29.330045";
+  gv:coverage "14.52"
+], [
+  gv:hex "9f222a";
+  gv:red "159";
+  gv:blue "42";
+  gv:green "34";
+  gv:score "1.3032727";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "b19b7b";
+  gv:red "177";
+  gv:blue "123";
+  gv:green "155";
+  gv:score "12.754088999999999";
+  gv:coverage "3.64"
+], [
+  gv:hex "f0d9b9";
+  gv:red "240";
+  gv:blue "185";
+  gv:green "217";
+  gv:score "11.075775";
+  gv:coverage "12.18"
+], [
+  gv:hex "877458";
+  gv:red "135";
+  gv:blue "88";
+  gv:green "116";
+  gv:score "9.947742499999999";
+  gv:coverage "2.1"
+], [
+  gv:hex "64543c";
+  gv:red "100";
+  gv:blue "60";
+  gv:green "84";
+  gv:score "7.6150142";
+  gv:coverage "1.2266667"
+], [
+  gv:hex "724a35";
+  gv:red "114";
+  gv:blue "53";
+  gv:green "74";
+  gv:score "4.3928843";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "e3b99a";
+  gv:red "227";
+  gv:blue "154";
+  gv:green "185";
+  gv:score "3.1584412";
+  gv:coverage "0.9733333300000001"
+], [
+  gv:hex "ddbf8e";
+  gv:red "221";
+  gv:blue "142";
+  gv:green "191";
+  gv:score "3.0485962";
+  gv:coverage "0.9466666699999999"
+], [
+  gv:hex "542d19";
+  gv:red "84";
+  gv:blue "25";
+  gv:green "45";
+  gv:score "2.2446772";
+  gv:coverage "0.19333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.218297"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "54.369026"
+];
+    w:bagOfWords "4825\nPETER OHLIG\nGEGR\nEE WEIN BAU UND WEIN HANDEL\nL\n1953er\nHollee\nRiesling\nWachstum Winzerverein\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still.

@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1496/label_1537";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "BLANCA\nMANZANILLA FINA\nJUAN PEDROLUQUE\nT., J.\n"@spa;
+    gv:color [
+  gv:hex "cec4bc";
+  gv:red "206";
+  gv:blue "188";
+  gv:green "196";
+  gv:score "32.2209";
+  gv:coverage "12.6"
+], [
+  gv:hex "eae0d8";
+  gv:red "234";
+  gv:blue "216";
+  gv:green "224";
+  gv:score "27.403813999999997";
+  gv:coverage "43.486667000000004"
+], [
+  gv:hex "a69c94";
+  gv:red "166";
+  gv:blue "148";
+  gv:green "156";
+  gv:score "16.973302";
+  gv:coverage "2.1066668"
+], [
+  gv:hex "7f756d";
+  gv:red "127";
+  gv:blue "109";
+  gv:green "117";
+  gv:score "9.952531800000001";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "5f544c";
+  gv:red "95";
+  gv:blue "76";
+  gv:green "84";
+  gv:score "6.5053537";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "3f352d";
+  gv:red "63";
+  gv:blue "45";
+  gv:green "53";
+  gv:score "3.610716";
+  gv:coverage "0.27333333"
+], [
+  gv:hex "221811";
+  gv:red "34";
+  gv:blue "17";
+  gv:green "24";
+  gv:score "2.2982135";
+  gv:coverage "0.086666667"
+], [
+  gv:hex "cfc2b1";
+  gv:red "207";
+  gv:blue "177";
+  gv:green "194";
+  gv:score "0.24997275";
+  gv:coverage "15.32"
+], [
+  gv:hex "5f5242";
+  gv:red "95";
+  gv:blue "66";
+  gv:green "82";
+  gv:score "0.18509699";
+  gv:coverage "0.1"
+], [
+  gv:hex "a59889";
+  gv:red "165";
+  gv:blue "137";
+  gv:green "152";
+  gv:score "0.17714794";
+  gv:coverage "0.10666667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.43414799999999"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "56.624413"
+];
+    w:bagOfWords "BLANCA\nMANZANILLA FINA\nJUAN PEDROLUQUE\nT., J.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

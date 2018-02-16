@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2992/index_card_3037/label_3041";
+    dct:type "image";
+    dc:subject "Bordeaux Misc Red@en";
+    w:bagOfWords "194\nCHATEAU AUSONE\nST EMILICON\n1923\nEDOUARD DUBOIS-CHALLON\nMISEN BOUTEILLE AU CHATEAU\nROUSSEAU FRERES,\nB\nIn a\n"@fra;
+    gv:color [
+  gv:hex "d9bea4";
+  gv:red "217";
+  gv:blue "164";
+  gv:green "190";
+  gv:score "32.840544";
+  gv:coverage "21.553333"
+], [
+  gv:hex "4d2a18";
+  gv:red "77";
+  gv:blue "24";
+  gv:green "42";
+  gv:score "15.403165";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "b89c81";
+  gv:red "184";
+  gv:blue "129";
+  gv:green "156";
+  gv:score "9.812149400000001";
+  gv:coverage "2.8533334"
+], [
+  gv:hex "6e4c36";
+  gv:red "110";
+  gv:blue "54";
+  gv:green "76";
+  gv:score "9.5602676";
+  gv:coverage "1.0533334"
+], [
+  gv:hex "b9957a";
+  gv:red "185";
+  gv:blue "122";
+  gv:green "149";
+  gv:score "5.567072";
+  gv:coverage "0.86"
+], [
+  gv:hex "926f57";
+  gv:red "146";
+  gv:blue "87";
+  gv:green "111";
+  gv:score "5.1679678";
+  gv:coverage "0.72"
+], [
+  gv:hex "361405";
+  gv:red "54";
+  gv:blue "5";
+  gv:green "20";
+  gv:score "3.4070648";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "91765c";
+  gv:red "145";
+  gv:blue "92";
+  gv:green "118";
+  gv:score "3.3732034";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "d7b297";
+  gv:red "215";
+  gv:blue "151";
+  gv:green "178";
+  gv:score "2.5063286000000002";
+  gv:coverage "0.5333333299999999"
+], [
+  gv:hex "c5996b";
+  gv:red "197";
+  gv:blue "107";
+  gv:green "153";
+  gv:score "2.084248";
+  gv:coverage "0.4"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.95331"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.234978"
+];
+    w:bagOfWords "194\nCHATEAU AUSONE\nST EMILICON\n1923\nEDOUARD DUBOIS-CHALLON\nMISEN BOUTEILLE AU CHATEAU\nROUSSEAU FRERES,\nB\nIn a\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

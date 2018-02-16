@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0002/index_card_0014/label_0049";
+    dct:type "image";
+    dc:subject "Spain@en";
+    w:bagOfWords "CARE GIS\nmoja Dana ,3\nGRAN PREMIO Y\nEXPOSICION INTERNACIONAL\nDE BARCELONA\n1929.\nMEDALLA DE ORO\n29 CONG RESO INTERNACIONAL\nDE LA VINA\nY DEL NO\n"@spa;
+    gv:color [
+  gv:hex "d6c1a4";
+  gv:red "214";
+  gv:blue "164";
+  gv:green "193";
+  gv:score "20.523037";
+  gv:coverage "34.866667"
+], [
+  gv:hex "b8644a";
+  gv:red "184";
+  gv:blue "74";
+  gv:green "100";
+  gv:score "7.422216199999999";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "af9b7f";
+  gv:red "175";
+  gv:blue "127";
+  gv:green "155";
+  gv:score "13.154419";
+  gv:coverage "6.5933332"
+], [
+  gv:hex "ecb69c";
+  gv:red "236";
+  gv:blue "156";
+  gv:green "182";
+  gv:score "11.584840999999999";
+  gv:coverage "1.6"
+], [
+  gv:hex "cb9177";
+  gv:red "203";
+  gv:blue "119";
+  gv:green "145";
+  gv:score "9.3331024";
+  gv:coverage "1.1333332999999999"
+], [
+  gv:hex "8b765c";
+  gv:red "139";
+  gv:blue "92";
+  gv:green "118";
+  gv:score "5.7372052";
+  gv:coverage "3.0933334"
+], [
+  gv:hex "d27e62";
+  gv:red "210";
+  gv:blue "98";
+  gv:green "126";
+  gv:score "5.672327800000001";
+  gv:coverage "0.38666667"
+], [
+  gv:hex "a96e58";
+  gv:red "169";
+  gv:blue "88";
+  gv:green "110";
+  gv:score "3.4032233";
+  gv:coverage "0.33333334000000003"
+], [
+  gv:hex "ba6858";
+  gv:red "186";
+  gv:blue "88";
+  gv:green "104";
+  gv:score "2.991363";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "eed9bd";
+  gv:red "238";
+  gv:blue "189";
+  gv:green "217";
+  gv:score "2.8749019000000002";
+  gv:coverage "27.326667"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.709158"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "52.129245000000004"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.505256"
+];
+    w:bagOfWords "CARE GIS\nmoja Dana ,3\nGRAN PREMIO Y\nEXPOSICION INTERNACIONAL\nDE BARCELONA\n1929.\nMEDALLA DE ORO\n29 CONG RESO INTERNACIONAL\nDE LA VINA\nY DEL NO\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ESP".

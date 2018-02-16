@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/3142/index_card_3429/label_3458";
+    dct:type "image";
+    dc:subject "Burgundy Red@en";
+    w:bagOfWords "MAIS ON FONDEE EN\n1821\nET BURGUNDY\nL SPARKLING RED FRANCE\nMETHODE CHAM PEN OISE.\n"@fra;
+    gv:color [
+  gv:hex "96763f";
+  gv:red "150";
+  gv:blue "63";
+  gv:green "118";
+  gv:score "17.862289";
+  gv:coverage "2.16"
+], [
+  gv:hex "d3c3ba";
+  gv:red "211";
+  gv:blue "186";
+  gv:green "195";
+  gv:score "9.2753924";
+  gv:coverage "22.653334"
+], [
+  gv:hex "b29051";
+  gv:red "178";
+  gv:blue "81";
+  gv:green "144";
+  gv:score "10.786766";
+  gv:coverage "1.7999999999999998"
+], [
+  gv:hex "b69144";
+  gv:red "182";
+  gv:blue "68";
+  gv:green "145";
+  gv:score "8.316398399999999";
+  gv:coverage "1.0266666"
+], [
+  gv:hex "d3c1ac";
+  gv:red "211";
+  gv:blue "172";
+  gv:green "193";
+  gv:score "7.287031400000001";
+  gv:coverage "4.9133334"
+], [
+  gv:hex "e9dbd1";
+  gv:red "233";
+  gv:blue "209";
+  gv:green "219";
+  gv:score "6.6724068999999995";
+  gv:coverage "55.800000000000004"
+], [
+  gv:hex "9b7236";
+  gv:red "155";
+  gv:blue "54";
+  gv:green "114";
+  gv:score "5.5531684";
+  gv:coverage "0.54666665"
+], [
+  gv:hex "af9b81";
+  gv:red "175";
+  gv:blue "129";
+  gv:green "155";
+  gv:score "4.6738178";
+  gv:coverage "1"
+], [
+  gv:hex "eddbc8";
+  gv:red "237";
+  gv:blue "200";
+  gv:green "219";
+  gv:score "3.9526604";
+  gv:coverage "5.7933334"
+], [
+  gv:hex "8d7759";
+  gv:red "141";
+  gv:blue "89";
+  gv:green "119";
+  gv:score "3.9073545000000003";
+  gv:coverage "0.7266666700000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "73.63379599999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "51.02812599999999"
+];
+    w:bagOfWords "MAIS ON FONDEE EN\n1821\nET BURGUNDY\nL SPARKLING RED FRANCE\nMETHODE CHAM PEN OISE.\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

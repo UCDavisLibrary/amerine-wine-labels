@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2361/label_2363";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "1928\nCHATEAU CAN MERLE\nGRAND CRU CLASS E DE ME DO C\n"@fra;
+    gv:color [
+  gv:hex "a7998a";
+  gv:red "167";
+  gv:blue "138";
+  gv:green "153";
+  gv:score "29.497904000000002";
+  gv:coverage "5.48"
+], [
+  gv:hex "cbbeb2";
+  gv:red "203";
+  gv:blue "178";
+  gv:green "190";
+  gv:score "9.1974631";
+  gv:coverage "12.413333"
+], [
+  gv:hex "837567";
+  gv:red "131";
+  gv:blue "103";
+  gv:green "117";
+  gv:score "17.992390999999998";
+  gv:coverage "2.4066666"
+], [
+  gv:hex "a99d93";
+  gv:red "169";
+  gv:blue "147";
+  gv:green "157";
+  gv:score "7.423593100000001";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "655749";
+  gv:red "101";
+  gv:blue "73";
+  gv:green "87";
+  gv:score "7.3607057000000005";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "c8bbab";
+  gv:red "200";
+  gv:blue "171";
+  gv:green "187";
+  gv:score "6.4502612";
+  gv:coverage "9.7066663"
+], [
+  gv:hex "916f66";
+  gv:red "145";
+  gv:blue "102";
+  gv:green "111";
+  gv:score "5.217655000000001";
+  gv:coverage "0.47333334000000005"
+], [
+  gv:hex "6f4d44";
+  gv:red "111";
+  gv:blue "68";
+  gv:green "77";
+  gv:score "4.7569691999999995";
+  gv:coverage "0.36666666000000003"
+], [
+  gv:hex "81766c";
+  gv:red "129";
+  gv:blue "108";
+  gv:green "118";
+  gv:score "4.0654965";
+  gv:coverage "1.0733333"
+], [
+  gv:hex "ae8e84";
+  gv:red "174";
+  gv:blue "132";
+  gv:green "142";
+  gv:score "2.6720222";
+  gv:coverage "0.28666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.36905"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.28116"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "53.940833"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.314020000000006"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "50.743169"
+];
+    w:bagOfWords "1928\nCHATEAU CAN MERLE\nGRAND CRU CLASS E DE ME DO C\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

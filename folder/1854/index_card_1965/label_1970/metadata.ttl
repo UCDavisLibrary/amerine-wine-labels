@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1965/label_1970";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "MUY VIEJO\nB\n182\nMU Y FIN O\nPRINCIPE\"\nVINA DE BALBAINA ALTA JEREz\nSherry\nN. 32\nANTONIO BARBADILLo S. L\nSanlucar de B da ANDALUCIA. ESPANA\njeres Industrial\nLit "@spa;
+    gv:color [
+  gv:hex "efca45";
+  gv:red "239";
+  gv:blue "69";
+  gv:green "202";
+  gv:score "63.494647";
+  gv:coverage "24.833333"
+], [
+  gv:hex "967714";
+  gv:red "150";
+  gv:blue "20";
+  gv:green "119";
+  gv:score "4.1136093";
+  gv:coverage "1.1666667"
+], [
+  gv:hex "502f01";
+  gv:red "80";
+  gv:blue "1";
+  gv:green "47";
+  gv:score "0.64016106";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "321400";
+  gv:red "50";
+  gv:blue "undefined";
+  gv:green "20";
+  gv:score "0.45487089";
+  gv:coverage "0.24"
+], [
+  gv:hex "e3c45e";
+  gv:red "227";
+  gv:blue "94";
+  gv:green "196";
+  gv:score "7.699871099999999";
+  gv:coverage "4.3333333000000005"
+], [
+  gv:hex "f2d7b9";
+  gv:red "242";
+  gv:blue "185";
+  gv:green "215";
+  gv:score "0.06850664499999999";
+  gv:coverage "24.306667"
+], [
+  gv:hex "fbd856";
+  gv:red "251";
+  gv:blue "86";
+  gv:green "216";
+  gv:score "6.717111200000001";
+  gv:coverage "1.9666666"
+], [
+  gv:hex "bd9920";
+  gv:red "189";
+  gv:blue "32";
+  gv:green "153";
+  gv:score "4.8332717";
+  gv:coverage "2.0866666"
+], [
+  gv:hex "b79632";
+  gv:red "183";
+  gv:blue "50";
+  gv:green "150";
+  gv:score "3.9683502";
+  gv:coverage "1.4000000000000001"
+], [
+  gv:hex "745702";
+  gv:red "116";
+  gv:blue "2";
+  gv:green "87";
+  gv:score "1.7280767";
+  gv:coverage "0.5133333200000001"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/088fh>;
+  gv:desc "yellow";
+  gv:score "81.959951"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.068926"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "51.434863"
+];
+    w:bagOfWords "MUY VIEJO\nB\n182\nMU Y FIN O\nPRINCIPE\"\nVINA DE BALBAINA ALTA JEREz\nSherry\nN. 32\nANTONIO BARBADILLo S. L\nSanlucar de B da ANDALUCIA. ESPANA\njeres Industrial\nLit "@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

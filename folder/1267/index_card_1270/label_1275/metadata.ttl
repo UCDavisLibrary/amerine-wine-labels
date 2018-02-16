@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1270/label_1275";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "jumpoldskindner\nA USL, ESE\nMAR\n& Co., WIE\n"@deu;
+    gv:color [
+  gv:hex "d4c3ac";
+  gv:red "212";
+  gv:blue "172";
+  gv:green "195";
+  gv:score "24.065571";
+  gv:coverage "17.106667"
+], [
+  gv:hex "877456";
+  gv:red "135";
+  gv:blue "86";
+  gv:green "116";
+  gv:score "16.005513";
+  gv:coverage "2.64"
+], [
+  gv:hex "ad9b82";
+  gv:red "173";
+  gv:blue "130";
+  gv:green "155";
+  gv:score "15.750608999999999";
+  gv:coverage "3.56"
+], [
+  gv:hex "64543e";
+  gv:red "100";
+  gv:blue "62";
+  gv:green "84";
+  gv:score "9.406986100000001";
+  gv:coverage "1.4866667"
+], [
+  gv:hex "eddac2";
+  gv:red "237";
+  gv:blue "194";
+  gv:green "218";
+  gv:score "8.2497627";
+  gv:coverage "7.933333500000001"
+], [
+  gv:hex "d3c4b8";
+  gv:red "211";
+  gv:blue "184";
+  gv:green "196";
+  gv:score "5.4628339";
+  gv:coverage "15.340000000000002"
+], [
+  gv:hex "3f3220";
+  gv:red "63";
+  gv:blue "32";
+  gv:green "50";
+  gv:score "4.5474395";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "897146";
+  gv:red "137";
+  gv:blue "70";
+  gv:green "113";
+  gv:score "3.4180522";
+  gv:coverage "0.5"
+], [
+  gv:hex "ecddd2";
+  gv:red "236";
+  gv:blue "210";
+  gv:green "221";
+  gv:score "2.8136076";
+  gv:coverage "48.5"
+], [
+  gv:hex "827469";
+  gv:red "130";
+  gv:blue "105";
+  gv:green "116";
+  gv:score "2.2051865";
+  gv:coverage "0.5333333299999999"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.738952"
+], [
+  gv:mid <https://g.co/kg/m/0hwky>;
+  gv:desc "pattern";
+  gv:score "59.7361"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02cwm>;
+  gv:desc "design";
+  gv:score "57.144391999999996"
+];
+    w:bagOfWords "jumpoldskindner\nA USL, ESE\nMAR\n& Co., WIE\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "AUT".

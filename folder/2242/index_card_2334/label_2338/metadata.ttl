@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2334/label_2338";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "19 42\nMEDoc\nco\nHT\nTION EILLER\n1942\nEXPRESS Pup CITE\n"@fra;
+    gv:color [
+  gv:hex "a92c27";
+  gv:red "169";
+  gv:blue "39";
+  gv:green "44";
+  gv:score "20.134795999999998";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "d4c1ab";
+  gv:red "212";
+  gv:blue "171";
+  gv:green "193";
+  gv:score "15.110937999999999";
+  gv:coverage "33.533334999999994"
+], [
+  gv:hex "8a6e3b";
+  gv:red "138";
+  gv:blue "59";
+  gv:green "110";
+  gv:score "6.2381081";
+  gv:coverage "0.6799999999999999"
+], [
+  gv:hex "973a36";
+  gv:red "151";
+  gv:blue "54";
+  gv:green "58";
+  gv:score "2.9067585";
+  gv:coverage "0.06"
+], [
+  gv:hex "e3b9ac";
+  gv:red "227";
+  gv:blue "172";
+  gv:green "185";
+  gv:score "12.909545";
+  gv:coverage "1.38"
+], [
+  gv:hex "bd9284";
+  gv:red "189";
+  gv:blue "132";
+  gv:green "146";
+  gv:score "10.141566000000001";
+  gv:coverage "0.76"
+], [
+  gv:hex "b09e83";
+  gv:red "176";
+  gv:blue "131";
+  gv:green "158";
+  gv:score "5.714697";
+  gv:coverage "1.3066667"
+], [
+  gv:hex "705626";
+  gv:red "112";
+  gv:blue "38";
+  gv:green "86";
+  gv:score "4.5212366";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "be3c3c";
+  gv:red "190";
+  gv:blue "60";
+  gv:green "60";
+  gv:score "3.2916173";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "9f7468";
+  gv:red "159";
+  gv:blue "104";
+  gv:green "116";
+  gv:score "2.773717";
+  gv:coverage "0.24"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.132405000000006"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "50.302952999999995"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "50.028348"
+];
+    w:bagOfWords "19 42\nMEDoc\nco\nHT\nTION EILLER\n1942\nEXPRESS Pup CITE\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.

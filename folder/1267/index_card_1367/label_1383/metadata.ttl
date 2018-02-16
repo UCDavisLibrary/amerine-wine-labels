@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1367/label_1383";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "INDUSTRIA ARGENTINA\nB. F. Nazar Anchorena e Hijos\nBUENOS AIRES\nFRACCIONADORES)\nVOLUMEN NETO 650 CM,s\nPRODUCTOR MEN DO Z\n"@spa;
+    gv:color [
+  gv:hex "dac0a3";
+  gv:red "218";
+  gv:blue "163";
+  gv:green "192";
+  gv:score "53.42341699999999";
+  gv:coverage "32.533333"
+], [
+  gv:hex "c4986c";
+  gv:red "196";
+  gv:blue "108";
+  gv:green "152";
+  gv:score "8.891751600000001";
+  gv:coverage "2.68"
+], [
+  gv:hex "ae987f";
+  gv:red "174";
+  gv:blue "127";
+  gv:green "152";
+  gv:score "20.35574";
+  gv:coverage "5.6733332999999995"
+], [
+  gv:hex "917c65";
+  gv:red "145";
+  gv:blue "101";
+  gv:green "124";
+  gv:score "6.7956425000000005";
+  gv:coverage "1.44"
+], [
+  gv:hex "d7ac80";
+  gv:red "215";
+  gv:blue "128";
+  gv:green "172";
+  gv:score "2.6403382";
+  gv:coverage "0.96"
+], [
+  gv:hex "ecd7bf";
+  gv:red "236";
+  gv:blue "191";
+  gv:green "215";
+  gv:score "2.0903198";
+  gv:coverage "4.5866668"
+], [
+  gv:hex "a1764b";
+  gv:red "161";
+  gv:blue "75";
+  gv:green "118";
+  gv:score "1.6896542";
+  gv:coverage "0.49333335000000006"
+], [
+  gv:hex "d4ae8a";
+  gv:red "212";
+  gv:blue "138";
+  gv:green "174";
+  gv:score "1.1639837";
+  gv:coverage "0.40666666"
+], [
+  gv:hex "c19b77";
+  gv:red "193";
+  gv:blue "119";
+  gv:green "155";
+  gv:score "1.1087734999999999";
+  gv:coverage "0.45333332"
+], [
+  gv:hex "d6b186";
+  gv:red "214";
+  gv:blue "134";
+  gv:green "177";
+  gv:score "0.80922069";
+  gv:coverage "0.22666666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.72659999999999"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.661516"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "51.279604"
+];
+    w:bagOfWords "INDUSTRIA ARGENTINA\nB. F. Nazar Anchorena e Hijos\nBUENOS AIRES\nFRACCIONADORES)\nVOLUMEN NETO 650 CM,s\nPRODUCTOR MEN DO Z\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Still;
+    wdt:P298 "ARG".

@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0228";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "HOUSE OF HOWE\nC\nCABERNET\nGrapes from Rixford\nVintage 1941\nBottled June 1943\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH WINE CELLARS\nWALNUT CREEK, CALIFORNIA\n"@eng;
+    gv:color [
+  gv:hex "961010";
+  gv:red "150";
+  gv:blue "16";
+  gv:green "16";
+  gv:score "20.894669";
+  gv:coverage "1.3333334000000001"
+], [
+  gv:hex "430100";
+  gv:red "67";
+  gv:blue "undefined";
+  gv:green "1";
+  gv:score "5.8592044";
+  gv:coverage "0.64666667"
+], [
+  gv:hex "d3c2a9";
+  gv:red "211";
+  gv:blue "169";
+  gv:green "194";
+  gv:score "5.444217500000001";
+  gv:coverage "14.16"
+], [
+  gv:hex "877456";
+  gv:red "135";
+  gv:blue "86";
+  gv:green "116";
+  gv:score "3.072";
+  gv:coverage "2.62"
+], [
+  gv:hex "810808";
+  gv:red "129";
+  gv:blue "8";
+  gv:green "8";
+  gv:score "9.8994017";
+  gv:coverage "0.69333334"
+], [
+  gv:hex "9c0604";
+  gv:red "156";
+  gv:blue "4";
+  gv:green "6";
+  gv:score "7.087064499999999";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "6a0d06";
+  gv:red "106";
+  gv:blue "6";
+  gv:green "13";
+  gv:score "5.969261";
+  gv:coverage "0.52666669"
+], [
+  gv:hex "5d0d0e";
+  gv:red "93";
+  gv:blue "14";
+  gv:green "13";
+  gv:score "4.471102";
+  gv:coverage "0.42666667"
+], [
+  gv:hex "893020";
+  gv:red "137";
+  gv:blue "32";
+  gv:green "48";
+  gv:score "3.2868533999999996";
+  gv:coverage "0.31333333"
+], [
+  gv:hex "502a1d";
+  gv:red "80";
+  gv:blue "29";
+  gv:green "42";
+  gv:score "3.1460252";
+  gv:coverage "1.24"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/06z37_>;
+  gv:desc "picture frame";
+  gv:score "73.246837"
+], [
+  gv:mid <https://g.co/kg/m/0jjw>;
+  gv:desc "art";
+  gv:score "66.379136"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "63.590526999999994"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "60.927814000000005"
+];
+    w:bagOfWords "HOUSE OF HOWE\nC\nCABERNET\nGrapes from Rixford\nVintage 1941\nBottled June 1943\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH WINE CELLARS\nWALNUT CREEK, CALIFORNIA\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

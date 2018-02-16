@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2111/index_card_2184/label_2190";
+    dct:type "image";
+    dc:subject "Misc Fortified@en";
+    w:bagOfWords "WINE GROWERS\nGUILD so\nSELECT\nRESERVE\nTHIS WINE produced by membe\nof witte rowers Guild, Lodi, California; grower\nowned, grower controlled and gro\nroperateddgricultural association, in which all of the\nnet proceeds are returned to the grower All Gaild label wines are produced exclusively\nin our members own wine cellars from grapes\nour in our members' own vineyards.\nThis bottling done by Lodi Ce...s of Win\nwers Guild, Lodi, California\nREG. U. S. PAT. OFF.\nBOTTLED IN CALIFORNIA BY THE WINERY\nAlcohol 20% by volume Distributed by Wine Growers Guild, New York City\n"@eng;
+    gv:color [
+  gv:hex "e4c28e";
+  gv:red "228";
+  gv:blue "142";
+  gv:green "194";
+  gv:score "34.017181";
+  gv:coverage "15.8"
+], [
+  gv:hex "913a1f";
+  gv:red "145";
+  gv:blue "31";
+  gv:green "58";
+  gv:score "20.764144";
+  gv:coverage "2.3866666000000003"
+], [
+  gv:hex "341500";
+  gv:red "52";
+  gv:blue "undefined";
+  gv:green "21";
+  gv:score "0.35337799";
+  gv:coverage "0.18"
+], [
+  gv:hex "b25b3e";
+  gv:red "178";
+  gv:blue "62";
+  gv:green "91";
+  gv:score "9.9651337";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "eab88b";
+  gv:red "234";
+  gv:blue "139";
+  gv:green "184";
+  gv:score "7.0336387";
+  gv:coverage "3.2133333"
+], [
+  gv:hex "c79267";
+  gv:red "199";
+  gv:blue "103";
+  gv:green "146";
+  gv:score "4.3004163";
+  gv:coverage "2.0133332999999998"
+], [
+  gv:hex "bb9968";
+  gv:red "187";
+  gv:blue "104";
+  gv:green "153";
+  gv:score "4.1804358";
+  gv:coverage "2.6866667"
+], [
+  gv:hex "a36941";
+  gv:red "163";
+  gv:blue "65";
+  gv:green "105";
+  gv:score "3.5703961";
+  gv:coverage "1.4733333"
+], [
+  gv:hex "6d2007";
+  gv:red "109";
+  gv:blue "7";
+  gv:green "32";
+  gv:score "3.3127606";
+  gv:coverage "0.41333335"
+], [
+  gv:hex "dec29b";
+  gv:red "222";
+  gv:blue "155";
+  gv:green "194";
+  gv:score "2.8678622000000003";
+  gv:coverage "14.96"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "64.148986"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "57.187712000000005"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "50.913036"
+];
+    w:bagOfWords "WINE GROWERS\nGUILD so\nSELECT\nRESERVE\nTHIS WINE produced by membe\nof witte rowers Guild, Lodi, California; grower\nowned, grower controlled and gro\nroperateddgricultural association, in which all of the\nnet proceeds are returned to the grower All Gaild label wines are produced exclusively\nin our members own wine cellars from grapes\nour in our members' own vineyards.\nThis bottling done by Lodi Ce...s of Win\nwers Guild, Lodi, California\nREG. U. S. PAT. OFF.\nBOTTLED IN CALIFORNIA BY THE WINERY\nAlcohol 20% by volume Distributed by Wine Growers Guild, New York City\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Fortified;
+    wdt:P298 "USA".

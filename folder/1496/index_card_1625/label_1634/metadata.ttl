@@ -1,0 +1,102 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1496/index_card_1625/label_1634";
+    dct:type "image";
+    dc:subject "Spanish Misc Sweet and Fortified@en";
+    w:bagOfWords "FIN o B DELICA DO\nVina del Cuco\nBALBALNA ALTA-JEREz\nANTONIO BARBADILLO S. L\nSa p l car de Bda ESPANA\n"@spa;
+    gv:color [
+  gv:hex "0a3754";
+  gv:red "10";
+  gv:blue "84";
+  gv:green "55";
+  gv:score "72.704941";
+  gv:coverage "19.566667"
+], [
+  gv:hex "dfeaef";
+  gv:red "223";
+  gv:blue "239";
+  gv:green "234";
+  gv:score "0.73620989";
+  gv:coverage "20.62"
+], [
+  gv:hex "053a5f";
+  gv:red "5";
+  gv:blue "95";
+  gv:green "58";
+  gv:score "6.2787749";
+  gv:coverage "1.2066667"
+], [
+  gv:hex "2e556f";
+  gv:red "46";
+  gv:blue "111";
+  gv:green "85";
+  gv:score "6.0662452";
+  gv:coverage "2.04"
+], [
+  gv:hex "557992";
+  gv:red "85";
+  gv:blue "146";
+  gv:green "121";
+  gv:score "4.2334113";
+  gv:coverage "1.28"
+], [
+  gv:hex "031f35";
+  gv:red "3";
+  gv:blue "53";
+  gv:green "31";
+  gv:score "4.110615699999999";
+  gv:coverage "1.2933333"
+], [
+  gv:hex "819eb2";
+  gv:red "129";
+  gv:blue "178";
+  gv:green "158";
+  gv:score "1.0282937";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "95a2a9";
+  gv:red "149";
+  gv:blue "169";
+  gv:green "162";
+  gv:score "0.67998329";
+  gv:coverage "0.78666667"
+], [
+  gv:hex "0d1419";
+  gv:red "13";
+  gv:blue "25";
+  gv:green "20";
+  gv:score "0.6457381";
+  gv:coverage "0.37333333999999996"
+], [
+  gv:hex "a8c3d5";
+  gv:red "168";
+  gv:blue "213";
+  gv:green "195";
+  gv:score "0.59590372";
+  gv:coverage "0.18666666999999998"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.64964599999999"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "55.96261"
+];
+    w:bagOfWords "FIN o B DELICA DO\nVina del Cuco\nBALBALNA ALTA-JEREz\nANTONIO BARBADILLO S. L\nSa p l car de Bda ESPANA\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

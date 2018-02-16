@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2856";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "SAUTEF ES APPELLATI N CONTROLEE\n1 37\nMIS EN BOUT\nLLE AU CHATEAU\nAMEAU. B\n"@fra;
+    gv:color [
+  gv:hex "cfbead";
+  gv:red "207";
+  gv:blue "173";
+  gv:green "190";
+  gv:score "42.712229";
+  gv:coverage "30.193334999999998"
+], [
+  gv:hex "b0a08f";
+  gv:red "176";
+  gv:blue "143";
+  gv:green "160";
+  gv:score "28.182249999999996";
+  gv:coverage "1.8666665999999998"
+], [
+  gv:hex "ead7c4";
+  gv:red "234";
+  gv:blue "196";
+  gv:green "215";
+  gv:score "9.9545583";
+  gv:coverage "41.6"
+], [
+  gv:hex "cbbdb3";
+  gv:red "203";
+  gv:blue "179";
+  gv:green "189";
+  gv:score "9.3419187";
+  gv:coverage "11.16"
+], [
+  gv:hex "e6d7ce";
+  gv:red "230";
+  gv:blue "206";
+  gv:green "215";
+  gv:score "5.1140785";
+  gv:coverage "14.606667000000002"
+], [
+  gv:hex "90816f";
+  gv:red "144";
+  gv:blue "111";
+  gv:green "129";
+  gv:score "2.6803048";
+  gv:coverage "0.24"
+], [
+  gv:hex "b2a89e";
+  gv:red "178";
+  gv:blue "158";
+  gv:green "168";
+  gv:score "1.8978814";
+  gv:coverage "0.17333333"
+], [
+  gv:hex "5f5342";
+  gv:red "95";
+  gv:blue "66";
+  gv:green "83";
+  gv:score "0.059784460000000005";
+  gv:coverage "0.1"
+], [
+  gv:hex "443726";
+  gv:red "68";
+  gv:blue "38";
+  gv:green "55";
+  gv:score "0.048490570000000004";
+  gv:coverage "0.046666668"
+], [
+  gv:hex "211403";
+  gv:red "33";
+  gv:blue "3";
+  gv:green "20";
+  gv:score "0.0085019252";
+  gv:coverage "0.013333333"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "70.70394800000001"
+];
+    w:bagOfWords "SAUTEF ES APPELLATI N CONTROLEE\n1 37\nMIS EN BOUT\nLLE AU CHATEAU\nAMEAU. B\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

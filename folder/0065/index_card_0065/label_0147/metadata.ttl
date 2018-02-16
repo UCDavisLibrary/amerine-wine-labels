@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0147";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "BOLLA\nRISER VA\nFRATELLI BOLL A -VERONA\n"@ita;
+    gv:color [
+  gv:hex "d8c1a4";
+  gv:red "216";
+  gv:blue "164";
+  gv:green "193";
+  gv:score "17.014679";
+  gv:coverage "11.933333"
+], [
+  gv:hex "d09949";
+  gv:red "208";
+  gv:blue "73";
+  gv:green "153";
+  gv:score "14.1281";
+  gv:coverage "2.0533333000000002"
+], [
+  gv:hex "392f25";
+  gv:red "57";
+  gv:blue "37";
+  gv:green "47";
+  gv:score "0.6413759699999999";
+  gv:coverage "0.11333333"
+], [
+  gv:hex "271d14";
+  gv:red "39";
+  gv:blue "20";
+  gv:green "29";
+  gv:score "0.41583609";
+  gv:coverage "0.04"
+], [
+  gv:hex "dbb780";
+  gv:red "219";
+  gv:blue "128";
+  gv:green "183";
+  gv:score "16.432807999999998";
+  gv:coverage "2.5333334"
+], [
+  gv:hex "d0c5ba";
+  gv:red "208";
+  gv:blue "186";
+  gv:green "197";
+  gv:score "7.495077";
+  gv:coverage "19.406667"
+], [
+  gv:hex "e4ad5f";
+  gv:red "228";
+  gv:blue "95";
+  gv:green "173";
+  gv:score "6.981153";
+  gv:coverage "0.58"
+], [
+  gv:hex "c19d67";
+  gv:red "193";
+  gv:blue "103";
+  gv:green "157";
+  gv:score "4.3736815";
+  gv:coverage "0.9866667000000001"
+], [
+  gv:hex "e2b173";
+  gv:red "226";
+  gv:blue "115";
+  gv:green "177";
+  gv:score "4.348370399999999";
+  gv:coverage "0.5933333199999999"
+], [
+  gv:hex "ecdac1";
+  gv:red "236";
+  gv:blue "193";
+  gv:green "218";
+  gv:score "4.3122116";
+  gv:coverage "7.48"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "66.283274"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "50.508964"
+], [
+  gv:mid <https://g.co/kg/m/02wbm>;
+  gv:desc "food";
+  gv:score "50.446957000000005"
+];
+    w:bagOfWords "BOLLA\nRISER VA\nFRATELLI BOLL A -VERONA\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

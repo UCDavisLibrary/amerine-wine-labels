@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0315/label_0321";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "ALCOHOL 12% BY VOLUME\nNTENTS 1 PT. 10 FL. OZS\nGRAND VIN MOUSSEUX\nCALIFORNIA\nSPARKLING WINE\nBOTTLED BY F. CHA UVENET co. IN CUCA MON GA\nALIFORNIA\nPRODUCED AND BOTTLE D BY\nCHAUVE NET Co., CUCAMONGA, CALIFORNIA\nDISTRIBUTORS McKES SON & ROBBINS, INC., NEW YORK, N. Y\nA. Y\n"@eng;
+    gv:color [
+  gv:hex "a20505";
+  gv:red "162";
+  gv:blue "5";
+  gv:green "5";
+  gv:score "37.519040999999994";
+  gv:coverage "5.9533332"
+], [
+  gv:hex "b29462";
+  gv:red "178";
+  gv:blue "98";
+  gv:green "148";
+  gv:score "2.5148661999999997";
+  gv:coverage "2.7066667"
+], [
+  gv:hex "d2c0a1";
+  gv:red "210";
+  gv:blue "161";
+  gv:green "192";
+  gv:score "0.67235022";
+  gv:coverage "7.0666663000000005"
+], [
+  gv:hex "a01b14";
+  gv:red "160";
+  gv:blue "20";
+  gv:green "27";
+  gv:score "15.673877";
+  gv:coverage "2.74"
+], [
+  gv:hex "b20406";
+  gv:red "178";
+  gv:blue "6";
+  gv:green "4";
+  gv:score "12.405583";
+  gv:coverage "1.7933333"
+], [
+  gv:hex "ca4840";
+  gv:red "202";
+  gv:blue "64";
+  gv:green "72";
+  gv:score "5.6409481999999995";
+  gv:coverage "1.02"
+], [
+  gv:hex "860300";
+  gv:red "134";
+  gv:blue "undefined";
+  gv:green "3";
+  gv:score "5.0949305";
+  gv:coverage "0.87333331"
+], [
+  gv:hex "f17269";
+  gv:red "241";
+  gv:blue "105";
+  gv:green "114";
+  gv:score "2.431237";
+  gv:coverage "0.45999999999999996"
+], [
+  gv:hex "8d3420";
+  gv:red "141";
+  gv:blue "32";
+  gv:green "52";
+  gv:score "2.3700872";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "bc8a60";
+  gv:red "188";
+  gv:blue "96";
+  gv:green "138";
+  gv:score "2.2507810999999998";
+  gv:coverage "1.9266667000000002"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "61.723644"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/01l0y0>;
+  gv:desc "material";
+  gv:score "52.256857999999994"
+], [
+  gv:mid <https://g.co/kg/m/02w08>;
+  gv:desc "flavor";
+  gv:score "50.573725"
+];
+    w:bagOfWords "ALCOHOL 12% BY VOLUME\nNTENTS 1 PT. 10 FL. OZS\nGRAND VIN MOUSSEUX\nCALIFORNIA\nSPARKLING WINE\nBOTTLED BY F. CHA UVENET co. IN CUCA MON GA\nALIFORNIA\nPRODUCED AND BOTTLE D BY\nCHAUVE NET Co., CUCAMONGA, CALIFORNIA\nDISTRIBUTORS McKES SON & ROBBINS, INC., NEW YORK, N. Y\nA. Y\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

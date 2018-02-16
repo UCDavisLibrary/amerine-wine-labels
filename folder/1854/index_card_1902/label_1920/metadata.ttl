@@ -1,0 +1,106 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1854/index_card_1902/label_1920";
+    dct:type "image";
+    dc:subject "Spanish Sherry@en";
+    w:bagOfWords "TIO PEPE\n1559981 N\nLIT. BARR oro. JERE2.\n"@spa;
+    gv:color [
+  gv:hex "a2988e";
+  gv:red "162";
+  gv:blue "142";
+  gv:green "152";
+  gv:score "35.155809";
+  gv:coverage "3.2800000000000002"
+], [
+  gv:hex "ccc2b8";
+  gv:red "204";
+  gv:blue "184";
+  gv:green "194";
+  gv:score "29.432175";
+  gv:coverage "27.48"
+], [
+  gv:hex "887e74";
+  gv:red "136";
+  gv:blue "116";
+  gv:green "126";
+  gv:score "17.043442";
+  gv:coverage "1.6733333"
+], [
+  gv:hex "e6dbd2";
+  gv:red "230";
+  gv:blue "210";
+  gv:green "219";
+  gv:score "16.906399999999998";
+  gv:coverage "67.2"
+], [
+  gv:hex "ad9f92";
+  gv:red "173";
+  gv:blue "146";
+  gv:green "159";
+  gv:score "0.59238654";
+  gv:coverage "0.1"
+], [
+  gv:hex "887a6d";
+  gv:red "136";
+  gv:blue "109";
+  gv:green "122";
+  gv:score "0.55845813";
+  gv:coverage "0.053333334"
+], [
+  gv:hex "6a5f56";
+  gv:red "106";
+  gv:blue "86";
+  gv:green "95";
+  gv:score "0.20082872000000002";
+  gv:coverage "0.12"
+], [
+  gv:hex "43372e";
+  gv:red "67";
+  gv:blue "46";
+  gv:green "55";
+  gv:score "0.06229732";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "706255";
+  gv:red "112";
+  gv:blue "85";
+  gv:green "98";
+  gv:score "0.041044596999999995";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "292019";
+  gv:red "41";
+  gv:blue "25";
+  gv:green "32";
+  gv:score "0.0071588096000000006";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/02mrp>;
+  gv:desc "electronics";
+  gv:score "78.663141"
+], [
+  gv:mid <https://g.co/kg/m/07c1v>;
+  gv:desc "technology";
+  gv:score "60.550654"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.459244"
+];
+    w:bagOfWords "TIO PEPE\n1559981 N\nLIT. BARR oro. JERE2.\n"@spa;
+    wdt:P219 "spa";
+    w:WineType w:Fortified;
+    wdt:P298 "ESP".

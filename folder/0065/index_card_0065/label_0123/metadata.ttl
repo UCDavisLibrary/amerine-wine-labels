@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0065/index_card_0065/label_0123";
+    dct:type "image";
+    dc:subject "Italy@en";
+    w:bagOfWords "JELERT\nGebr. Jllert, 6.m.b.H., Lith. Kunstanstalt, Kl.-Auheim-Hanau (Allemagne).\nNo. 6642. Reichsm. 22.50 per 1000. Texte impression en plus.\n6642\n"@ita;
+    gv:color [
+  gv:hex "ad9a80";
+  gv:red "173";
+  gv:blue "128";
+  gv:green "154";
+  gv:score "14.105248000000001";
+  gv:coverage "6.1133333"
+], [
+  gv:hex "9f251a";
+  gv:red "159";
+  gv:blue "26";
+  gv:green "37";
+  gv:score "7.5451292";
+  gv:coverage "0.38"
+], [
+  gv:hex "d0bda3";
+  gv:red "208";
+  gv:blue "163";
+  gv:green "189";
+  gv:score "10.800674";
+  gv:coverage "8.546666799999999"
+], [
+  gv:hex "8c785e";
+  gv:red "140";
+  gv:blue "94";
+  gv:green "120";
+  gv:score "5.9148517";
+  gv:coverage "2.6066666"
+], [
+  gv:hex "f0dec7";
+  gv:red "240";
+  gv:blue "199";
+  gv:green "222";
+  gv:score "5.6395985";
+  gv:coverage "17.22"
+], [
+  gv:hex "aa1b09";
+  gv:red "170";
+  gv:blue "9";
+  gv:green "27";
+  gv:score "5.3483561";
+  gv:coverage "0.24666667"
+], [
+  gv:hex "8f3623";
+  gv:red "143";
+  gv:blue "35";
+  gv:green "54";
+  gv:score "4.1057933";
+  gv:coverage "0.29333334"
+], [
+  gv:hex "bb5a42";
+  gv:red "187";
+  gv:blue "66";
+  gv:green "90";
+  gv:score "3.5197712";
+  gv:coverage "0.25333334"
+], [
+  gv:hex "ca483b";
+  gv:red "202";
+  gv:blue "59";
+  gv:green "72";
+  gv:score "3.3856414";
+  gv:coverage "0.18"
+], [
+  gv:hex "8c7042";
+  gv:red "140";
+  gv:blue "66";
+  gv:green "112";
+  gv:score "3.2621804999999995";
+  gv:coverage "2.1866666"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "65.1787"
+];
+    w:bagOfWords "JELERT\nGebr. Jllert, 6.m.b.H., Lith. Kunstanstalt, Kl.-Auheim-Hanau (Allemagne).\nNo. 6642. Reichsm. 22.50 per 1000. Texte impression en plus.\n6642\n"@ita;
+    wdt:P219 "ita";
+    w:WineType w:Still;
+    wdt:P298 "ITA".

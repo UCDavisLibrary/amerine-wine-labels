@@ -1,0 +1,100 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4783/label_4793";
+    dct:type "image";
+    w:bagOfWords "OGIER\nIETE DE CUVEE\n"@eng;
+    gv:color [
+  gv:hex "dcc3a1";
+  gv:red "220";
+  gv:blue "161";
+  gv:green "195";
+  gv:score "28.587692999999998";
+  gv:coverage "3.8733333"
+], [
+  gv:hex "2c1400";
+  gv:red "44";
+  gv:blue "undefined";
+  gv:green "20";
+  gv:score "0.6359321099999999";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "ddbf8b";
+  gv:red "221";
+  gv:blue "139";
+  gv:green "191";
+  gv:score "18.022886";
+  gv:coverage "0.8200000000000001"
+], [
+  gv:hex "b99a67";
+  gv:red "185";
+  gv:blue "103";
+  gv:green "154";
+  gv:score "14.400071";
+  gv:coverage "0.60666665"
+], [
+  gv:hex "b49b79";
+  gv:red "180";
+  gv:blue "121";
+  gv:green "155";
+  gv:score "13.232599";
+  gv:coverage "1.2133333"
+], [
+  gv:hex "f2daba";
+  gv:red "242";
+  gv:blue "186";
+  gv:green "218";
+  gv:score "7.9076752";
+  gv:coverage "6.233333399999999"
+], [
+  gv:hex "987640";
+  gv:red "152";
+  gv:blue "64";
+  gv:green "118";
+  gv:score "6.0158785";
+  gv:coverage "0.21333334"
+], [
+  gv:hex "8e7659";
+  gv:red "142";
+  gv:blue "89";
+  gv:green "118";
+  gv:score "3.747911";
+  gv:coverage "0.32666668"
+], [
+  gv:hex "6c5539";
+  gv:red "108";
+  gv:blue "57";
+  gv:green "85";
+  gv:score "2.0312522";
+  gv:coverage "0.18666666999999998"
+], [
+  gv:hex "f2d8a5";
+  gv:red "242";
+  gv:blue "165";
+  gv:green "216";
+  gv:score "1.8680577999999999";
+  gv:coverage "0.1"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.329433"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+];
+    w:bagOfWords "OGIER\nIETE DE CUVEE\n"@eng;
+    wdt:P219 "eng";
+    wdt:P298 "USA".

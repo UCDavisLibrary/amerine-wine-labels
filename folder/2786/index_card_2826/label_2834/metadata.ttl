@@ -1,0 +1,111 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2786/index_card_2826/label_2834";
+    dct:type "image";
+    dc:subject "Bordeaux White@en";
+    w:bagOfWords "O\nノ乏ーイーンー ーーーーーーー\n5 GALLON\nPAID A\nMIS EN BOUTEILLE\nAU CHATEAU\nCHATEAU LAFAURIE-PEYRAGUEY\nIER GRAND CRUDE SAUTERNES\nt 4 n can noVropPLete.AUConte Duchatel\nAnciennegroprveteauComteCouchiitet\n1918---------\n"@fra;
+    gv:color [
+  gv:hex "d1bda7";
+  gv:red "209";
+  gv:blue "167";
+  gv:green "189";
+  gv:score "49.962395";
+  gv:coverage "22.366667"
+], [
+  gv:hex "b29d86";
+  gv:red "178";
+  gv:blue "134";
+  gv:green "157";
+  gv:score "39.008859";
+  gv:coverage "3.8133334"
+], [
+  gv:hex "907a64";
+  gv:red "144";
+  gv:blue "100";
+  gv:green "122";
+  gv:score "3.7640706";
+  gv:coverage "0.26"
+], [
+  gv:hex "dbb59f";
+  gv:red "219";
+  gv:blue "159";
+  gv:green "181";
+  gv:score "2.5773033";
+  gv:coverage "0.22666666"
+], [
+  gv:hex "c39e87";
+  gv:red "195";
+  gv:blue "135";
+  gv:green "158";
+  gv:score "1.6540103";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "ecd9c2";
+  gv:red "236";
+  gv:blue "194";
+  gv:green "217";
+  gv:score "1.0022458";
+  gv:coverage "7.84"
+], [
+  gv:hex "847570";
+  gv:red "132";
+  gv:blue "112";
+  gv:green "117";
+  gv:score "0.76443362";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "a6948f";
+  gv:red "166";
+  gv:blue "143";
+  gv:green "148";
+  gv:score "0.62349639";
+  gv:coverage "0.35333333"
+], [
+  gv:hex "ccbdb4";
+  gv:red "204";
+  gv:blue "180";
+  gv:green "189";
+  gv:score "0.25542602000000003";
+  gv:coverage "4.58"
+], [
+  gv:hex "564b3e";
+  gv:red "86";
+  gv:blue "62";
+  gv:green "75";
+  gv:score "0.1483988";
+  gv:coverage "0.04"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "71.369636"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "56.65158"
+], [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "56.046945"
+];
+    w:bagOfWords "O\nノ乏ーイーンー ーーーーーーー\n5 GALLON\nPAID A\nMIS EN BOUTEILLE\nAU CHATEAU\nCHATEAU LAFAURIE-PEYRAGUEY\nIER GRAND CRUDE SAUTERNES\nt 4 n can noVropPLete.AUConte Duchatel\nAnciennegroprveteauComteCouchiitet\n1918---------\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:White.

@@ -1,0 +1,107 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/0160/index_card_0221/label_0223";
+    dct:type "image";
+    dc:subject "California Red@en";
+    w:bagOfWords "SANTA CLARA\nCABERNET\nA California Claret made from Cabernet grapes\nSheratally elected for\nTHE UNIVERSITY CLUB\nNEW YORK\nBOTTLED BY ALMADEN VINEYARDS, LOs GATOs, CALIF o RNIA\n12 ALCOHOL BY VOLUME\nDistributed by F. S. I\norting C\nLtd., New York, N. Y.\n"@eng;
+    gv:color [
+  gv:hex "d1bbaa";
+  gv:red "209";
+  gv:blue "170";
+  gv:green "187";
+  gv:score "55.772597000000005";
+  gv:coverage "30.633333"
+], [
+  gv:hex "b29c8b";
+  gv:red "178";
+  gv:blue "139";
+  gv:green "156";
+  gv:score "19.289811";
+  gv:coverage "3.8466666"
+], [
+  gv:hex "8a7464";
+  gv:red "138";
+  gv:blue "100";
+  gv:green "116";
+  gv:score "9.304522";
+  gv:coverage "1.1533333"
+], [
+  gv:hex "695342";
+  gv:red "105";
+  gv:blue "66";
+  gv:green "83";
+  gv:score "4.346513";
+  gv:coverage "0.4"
+], [
+  gv:hex "d8c9bc";
+  gv:red "216";
+  gv:blue "188";
+  gv:green "201";
+  gv:score "4.1335441";
+  gv:coverage "24.433332999999998"
+], [
+  gv:hex "6a4e3e";
+  gv:red "106";
+  gv:blue "62";
+  gv:green "78";
+  gv:score "2.0668222";
+  gv:coverage "0.19333333"
+], [
+  gv:hex "ead7c8";
+  gv:red "234";
+  gv:blue "200";
+  gv:green "215";
+  gv:score "1.5238559";
+  gv:coverage "0.48666666"
+], [
+  gv:hex "8f7262";
+  gv:red "143";
+  gv:blue "98";
+  gv:green "114";
+  gv:score "1.3838404";
+  gv:coverage "0.13999999999999999"
+], [
+  gv:hex "4c3627";
+  gv:red "76";
+  gv:blue "39";
+  gv:green "54";
+  gv:score "0.5829837600000001";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "e8d8cb";
+  gv:red "232";
+  gv:blue "203";
+  gv:green "216";
+  gv:score "0.56765517";
+  gv:coverage "38.22"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "59.798849"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "59.20592"
+];
+    w:bagOfWords "SANTA CLARA\nCABERNET\nA California Claret made from Cabernet grapes\nSheratally elected for\nTHE UNIVERSITY CLUB\nNEW YORK\nBOTTLED BY ALMADEN VINEYARDS, LOs GATOs, CALIF o RNIA\n12 ALCOHOL BY VOLUME\nDistributed by F. S. I\norting C\nLtd., New York, N. Y.\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA";
+    w:WineColor w:Red.

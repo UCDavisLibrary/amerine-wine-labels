@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1267/index_card_1443/label_1489";
+    dct:type "image";
+    dc:subject "Misc Table Wines@en";
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nCOCKTAIL SHERRY\nWIN E\nVERY PALE AND DRY\nPRODUCED AND BOTTLED BY\nURBANA, WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y.\nALCOHOL 19% BY VOLUME\nESTABLISHED 1865\n"@eng;
+    gv:color [
+  gv:hex "43341b";
+  gv:red "67";
+  gv:blue "27";
+  gv:green "52";
+  gv:score "31.132844";
+  gv:coverage "1.9"
+], [
+  gv:hex "ece1d7";
+  gv:red "236";
+  gv:blue "215";
+  gv:green "225";
+  gv:score "11.284642999999999";
+  gv:coverage "79.10000000000001"
+], [
+  gv:hex "5b4c32";
+  gv:red "91";
+  gv:blue "50";
+  gv:green "76";
+  gv:score "15.861087";
+  gv:coverage "0.9266667100000001"
+], [
+  gv:hex "837257";
+  gv:red "131";
+  gv:blue "87";
+  gv:green "114";
+  gv:score "8.2930885";
+  gv:coverage "2.2533333"
+], [
+  gv:hex "efe0cd";
+  gv:red "239";
+  gv:blue "205";
+  gv:green "224";
+  gv:score "5.957639599999999";
+  gv:coverage "3.64"
+], [
+  gv:hex "ccc1b8";
+  gv:red "204";
+  gv:blue "184";
+  gv:green "193";
+  gv:score "5.7377771";
+  gv:coverage "3.44"
+], [
+  gv:hex "d1c1ae";
+  gv:red "209";
+  gv:blue "174";
+  gv:green "193";
+  gv:score "4.9642473";
+  gv:coverage "1.4333333"
+], [
+  gv:hex "aa9a88";
+  gv:red "170";
+  gv:blue "136";
+  gv:green "154";
+  gv:score "4.1133665";
+  gv:coverage "0.7799999999999999"
+], [
+  gv:hex "aa9f96";
+  gv:red "170";
+  gv:blue "150";
+  gv:green "159";
+  gv:score "3.0685389";
+  gv:coverage "1"
+], [
+  gv:hex "281a06";
+  gv:red "40";
+  gv:blue "6";
+  gv:green "26";
+  gv:score "2.5643475";
+  gv:coverage "0.58666668"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "68.61640799999999"
+], [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/04shl0>;
+  gv:desc "distilled beverage";
+  gv:score "56.498951"
+], [
+  gv:mid <https://g.co/kg/m/0271t>;
+  gv:desc "drink";
+  gv:score "53.022373"
+];
+    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nCOCKTAIL SHERRY\nWIN E\nVERY PALE AND DRY\nPRODUCED AND BOTTLED BY\nURBANA, WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y.\nALCOHOL 19% BY VOLUME\nESTABLISHED 1865\n"@eng;
+    wdt:P219 "eng";
+    w:WineType w:Still;
+    wdt:P298 "USA".

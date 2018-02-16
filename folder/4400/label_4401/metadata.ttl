@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4400/label_4401";
+    dct:type "image";
+    w:bagOfWords "1949\n"@spa;
+    gv:color [
+  gv:hex "cfc1a3";
+  gv:red "207";
+  gv:blue "163";
+  gv:green "193";
+  gv:score "69.956768";
+  gv:coverage "8.526666500000001"
+], [
+  gv:hex "ac9e7d";
+  gv:red "172";
+  gv:blue "125";
+  gv:green "158";
+  gv:score "21.956125";
+  gv:coverage "0.7000000000000001"
+], [
+  gv:hex "887d5d";
+  gv:red "136";
+  gv:blue "93";
+  gv:green "125";
+  gv:score "5.1989872";
+  gv:coverage "0.16666667000000002"
+], [
+  gv:hex "e5d8bf";
+  gv:red "229";
+  gv:blue "191";
+  gv:green "216";
+  gv:score "1.5620371";
+  gv:coverage "1.8933333"
+], [
+  gv:hex "d8cec1";
+  gv:red "216";
+  gv:blue "193";
+  gv:green "206";
+  gv:score "0.52811387";
+  gv:coverage "21.686667"
+], [
+  gv:hex "665735";
+  gv:red "102";
+  gv:blue "53";
+  gv:green "87";
+  gv:score "0.442717";
+  gv:coverage "0.026666667"
+], [
+  gv:hex "e4d8cb";
+  gv:red "228";
+  gv:blue "203";
+  gv:green "216";
+  gv:score "0.25963925";
+  gv:coverage "66.75999999999999"
+], [
+  gv:hex "7c7268";
+  gv:red "124";
+  gv:blue "104";
+  gv:green "114";
+  gv:score "0.041976771999999996";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "a59b91";
+  gv:red "165";
+  gv:blue "145";
+  gv:green "155";
+  gv:score "0.025445735";
+  gv:coverage "0.066666666"
+], [
+  gv:hex "3e3529";
+  gv:red "62";
+  gv:blue "41";
+  gv:green "53";
+  gv:score "0.013253616999999999";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/0j62f>;
+  gv:desc "rectangle";
+  gv:score "58.728486000000004"
+], [
+  gv:mid <https://g.co/kg/m/016nqd>;
+  gv:desc "shape";
+  gv:score "58.044070000000005"
+], [
+  gv:mid <https://g.co/kg/m/0h8nvk9>;
+  gv:desc "dishware";
+  gv:score "53.575194"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "52.934045"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "50.246125"
+];
+    w:bagOfWords "1949\n"@spa;
+    wdt:P219 "spa";
+    wdt:P298 "ESP".

@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/4670/label_4676";
+    dct:type "image";
+    w:bagOfWords "FENDANTPETILLANT\nLES MVRETTES\nR.GILLIARD\nSION\nMPR. LITH FIOR.\nPELLET.\nUll\n"@deu;
+    gv:color [
+  gv:hex "faac05";
+  gv:red "250";
+  gv:blue "5";
+  gv:green "172";
+  gv:score "12.226412999999999";
+  gv:coverage "0.76"
+], [
+  gv:hex "d6c19f";
+  gv:red "214";
+  gv:blue "159";
+  gv:green "193";
+  gv:score "11.872615999999999";
+  gv:coverage "18.813333"
+], [
+  gv:hex "913a1b";
+  gv:red "145";
+  gv:blue "27";
+  gv:green "58";
+  gv:score "0.9845337799999999";
+  gv:coverage "0.10666667"
+], [
+  gv:hex "ab9778";
+  gv:red "171";
+  gv:blue "120";
+  gv:green "151";
+  gv:score "11.815527000000001";
+  gv:coverage "7.1866669"
+], [
+  gv:hex "8b7759";
+  gv:red "139";
+  gv:blue "89";
+  gv:green "119";
+  gv:score "11.580746999999999";
+  gv:coverage "5.9799999999999995"
+], [
+  gv:hex "efa81b";
+  gv:red "239";
+  gv:blue "27";
+  gv:green "168";
+  gv:score "10.153788";
+  gv:coverage "0.65333336"
+], [
+  gv:hex "da981e";
+  gv:red "218";
+  gv:blue "30";
+  gv:green "152";
+  gv:score "5.3943548";
+  gv:coverage "0.4"
+], [
+  gv:hex "dbc18c";
+  gv:red "219";
+  gv:blue "140";
+  gv:green "193";
+  gv:score "3.6630068000000002";
+  gv:coverage "1.5266667"
+], [
+  gv:hex "b29661";
+  gv:red "178";
+  gv:blue "97";
+  gv:green "150";
+  gv:score "3.6227614";
+  gv:coverage "1.04"
+], [
+  gv:hex "695739";
+  gv:red "105";
+  gv:blue "57";
+  gv:green "87";
+  gv:score "2.8641367";
+  gv:coverage "1.72"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/01cd9>;
+  gv:desc "brand";
+  gv:score "59.691668"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.155793"
+], [
+  gv:mid <https://g.co/kg/m/01kr8f>;
+  gv:desc "illustration";
+  gv:score "54.652739"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "52.399439"
+];
+    w:bagOfWords "FENDANTPETILLANT\nLES MVRETTES\nR.GILLIARD\nSION\nMPR. LITH FIOR.\nPELLET.\nUll\n"@deu;
+    wdt:P219 "deu";
+    wdt:P298 "CHE".

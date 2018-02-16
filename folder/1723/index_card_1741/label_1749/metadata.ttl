@@ -1,0 +1,114 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/1723/index_card_1741/label_1749";
+    dct:type "image";
+    dc:subject "Moselle Misc German@en";
+    w:bagOfWords "1935\nBerncastel Cueser Weissenstein\nKardinal Cusanu\nStiftswein\nMOSELLE WINE PRODUCE OF GERMANY\nacob Hufwohl Steeg bei Badbarad a.\nRh.\nThe Hitmoht familu hape been rotne grape groupers in Steeg stnce 1647\n"@deu;
+    gv:color [
+  gv:hex "dbc3a8";
+  gv:red "219";
+  gv:blue "168";
+  gv:green "195";
+  gv:score "23.785248";
+  gv:coverage "17.933333"
+], [
+  gv:hex "62503a";
+  gv:red "98";
+  gv:blue "58";
+  gv:green "80";
+  gv:score "17.01891";
+  gv:coverage "2.96"
+], [
+  gv:hex "4e2f05";
+  gv:red "78";
+  gv:blue "5";
+  gv:green "47";
+  gv:score "0.18747161";
+  gv:coverage "0.04"
+], [
+  gv:hex "b0997e";
+  gv:red "176";
+  gv:blue "126";
+  gv:green "153";
+  gv:score "15.881591";
+  gv:coverage "5.1333334"
+], [
+  gv:hex "88745c";
+  gv:red "136";
+  gv:blue "92";
+  gv:green "116";
+  gv:score "15.515886000000002";
+  gv:coverage "3.6333334"
+], [
+  gv:hex "44331e";
+  gv:red "68";
+  gv:blue "30";
+  gv:green "51";
+  gv:score "14.926463000000002";
+  gv:coverage "2.4466667"
+], [
+  gv:hex "efd8be";
+  gv:red "239";
+  gv:blue "190";
+  gv:green "216";
+  gv:score "3.1504471";
+  gv:coverage "11.913333"
+], [
+  gv:hex "e5bf89";
+  gv:red "229";
+  gv:blue "137";
+  gv:green "191";
+  gv:score "2.8887058";
+  gv:coverage "1.1133334"
+], [
+  gv:hex "2c1a06";
+  gv:red "44";
+  gv:blue "6";
+  gv:green "26";
+  gv:score "1.9319359";
+  gv:coverage "0.33999999999999997"
+], [
+  gv:hex "e7b77c";
+  gv:red "231";
+  gv:blue "124";
+  gv:green "183";
+  gv:score "1.6634547999999998";
+  gv:coverage "0.47333334000000005"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/07s6nbt>;
+  gv:desc "text";
+  gv:score "92.64398200000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "60.410255"
+], [
+  gv:mid <https://g.co/kg/m/0f1tz>;
+  gv:desc "calligraphy";
+  gv:score "60.37926099999999"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "58.308184"
+], [
+  gv:mid <https://g.co/kg/m/07glzq>;
+  gv:desc "sketch";
+  gv:score "56.12463399999999"
+];
+    w:bagOfWords "1935\nBerncastel Cueser Weissenstein\nKardinal Cusanu\nStiftswein\nMOSELLE WINE PRODUCE OF GERMANY\nacob Hufwohl Steeg bei Badbarad a.\nRh.\nThe Hitmoht familu hape been rotne grape groupers in Steeg stnce 1647\n"@deu;
+    wdt:P219 "deu";
+    w:WineType w:Still;
+    wdt:P298 "DEU".

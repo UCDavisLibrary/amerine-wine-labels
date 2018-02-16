@@ -1,0 +1,115 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gv: <http://google.com/google-vision/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+
+<> a w:WineLabel;
+    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
+    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
+    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    ebucore:hasMimeType "image/jpeg";
+    dc:identifier "folder/2242/index_card_2379/label_2405";
+    dct:type "image";
+    dc:subject "Medoc Red@en";
+    w:bagOfWords "GRAD D VID\nMODULIS MEDOC\n1998\nMrs EN Bbu TEILLES Au CHATEAU\n"@fra;
+    gv:color [
+  gv:hex "d6c4ae";
+  gv:red "214";
+  gv:blue "174";
+  gv:green "196";
+  gv:score "77.80385";
+  gv:coverage "29.046667"
+], [
+  gv:hex "b09d86";
+  gv:red "176";
+  gv:blue "134";
+  gv:green "157";
+  gv:score "11.073611999999999";
+  gv:coverage "3"
+], [
+  gv:hex "8a7862";
+  gv:red "138";
+  gv:blue "98";
+  gv:green "120";
+  gv:score "4.651672";
+  gv:coverage "0.9199999999999999"
+], [
+  gv:hex "e9d8c4";
+  gv:red "233";
+  gv:blue "196";
+  gv:green "216";
+  gv:score "4.552851599999999";
+  gv:coverage "7.1733332999999995"
+], [
+  gv:hex "63503c";
+  gv:red "99";
+  gv:blue "60";
+  gv:green "80";
+  gv:score "0.6890454300000001";
+  gv:coverage "0.16"
+], [
+  gv:hex "d6c6ba";
+  gv:red "214";
+  gv:blue "186";
+  gv:green "198";
+  gv:score "0.56724129";
+  gv:coverage "1.52"
+], [
+  gv:hex "af9d94";
+  gv:red "175";
+  gv:blue "148";
+  gv:green "157";
+  gv:score "0.37003513";
+  gv:coverage "0.14666667"
+], [
+  gv:hex "e4d8ca";
+  gv:red "228";
+  gv:blue "202";
+  gv:green "216";
+  gv:score "0.13333036999999998";
+  gv:coverage "57.84"
+], [
+  gv:hex "8c764d";
+  gv:red "140";
+  gv:blue "77";
+  gv:green "118";
+  gv:score "0.074410497";
+  gv:coverage "0.006666666700000001"
+], [
+  gv:hex "533e28";
+  gv:red "83";
+  gv:blue "40";
+  gv:green "62";
+  gv:score "0.036389925000000004";
+  gv:coverage "0.02"
+];
+    gv:label [
+  gv:mid <https://g.co/kg/m/015bv3>;
+  gv:desc "document";
+  gv:score "59.48757500000001"
+], [
+  gv:mid <https://g.co/kg/m/05c0n6k>;
+  gv:desc "label";
+  gv:score "58.091265"
+], [
+  gv:mid <https://g.co/kg/m/02csf>;
+  gv:desc "drawing";
+  gv:score "54.566866000000005"
+], [
+  gv:mid <https://g.co/kg/m/0641k>;
+  gv:desc "paper";
+  gv:score "54.425687"
+], [
+  gv:mid <https://g.co/kg/m/081rb>;
+  gv:desc "writing";
+  gv:score "53.842282"
+];
+    w:bagOfWords "GRAD D VID\nMODULIS MEDOC\n1998\nMrs EN Bbu TEILLES Au CHATEAU\n"@fra;
+    wdt:P219 "fra";
+    w:WineType w:Still;
+    wdt:P298 "FRA";
+    w:WineColor w:Red.
