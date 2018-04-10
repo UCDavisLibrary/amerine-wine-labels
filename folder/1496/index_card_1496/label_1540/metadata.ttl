@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1540";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "TVI AN ZAN I LLA\nBR\nN. 222\nVIVI A MANU ON\nANLV CAR E BAR, RAM EDA.\n"@spa;
-    gv:color [
-  gv:hex "cebfae";
-  gv:red "206";
-  gv:blue "174";
-  gv:green "191";
-  gv:score "18.127990999999998";
-  gv:coverage "15.493333000000002"
-], [
-  gv:hex "625241";
-  gv:red "98";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "16.342758";
-  gv:coverage "6.5933332"
-], [
-  gv:hex "aa9a89";
-  gv:red "170";
-  gv:blue "137";
-  gv:green "154";
-  gv:score "17.323288";
-  gv:coverage "7.0933335"
-], [
-  gv:hex "847563";
-  gv:red "132";
-  gv:blue "99";
-  gv:green "117";
-  gv:score "16.201264000000002";
-  gv:coverage "6.2066666999999995"
-], [
-  gv:hex "413222";
-  gv:red "65";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "15.477587000000002";
-  gv:coverage "4.7266666"
-], [
-  gv:hex "ebddcc";
-  gv:red "235";
-  gv:blue "204";
-  gv:green "221";
-  gv:score "5.9627842";
-  gv:coverage "22.193334"
-], [
-  gv:hex "291a0c";
-  gv:red "41";
-  gv:blue "12";
-  gv:green "26";
-  gv:score "3.7298277";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "ece0d3";
-  gv:red "236";
-  gv:blue "211";
-  gv:green "224";
-  gv:score "2.0097561";
-  gv:coverage "27.813333"
-], [
-  gv:hex "d4c7bb";
-  gv:red "212";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "1.7412438999999997";
-  gv:coverage "6.9"
-], [
-  gv:hex "dbb9af";
-  gv:red "219";
-  gv:blue "175";
-  gv:green "185";
-  gv:score "0.7603799";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.416529999999995"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.653662000000004"
-];
-    w:bagOfWords "TVI AN ZAN I LLA\nBR\nN. 222\nVIVI A MANU ON\nANLV CAR E BAR, RAM EDA.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1540";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2716";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "VIIS\nAND\nVINS D'ORIGIN\neauneufalpape\nETS VITIS 1, Rue du Médoc Paris\nMAA\n"@fra;
-    gv:color [
-  gv:hex "eaddcc";
-  gv:red "234";
-  gv:blue "204";
-  gv:green "221";
-  gv:score "46.517682";
-  gv:coverage "33.18"
-], [
-  gv:hex "764a21";
-  gv:red "118";
-  gv:blue "33";
-  gv:green "74";
-  gv:score "1.4752515000000002";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "b18f58";
-  gv:red "177";
-  gv:blue "88";
-  gv:green "143";
-  gv:score "0.71680122";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "39.722133";
-  gv:coverage "25.966668"
-], [
-  gv:hex "3d1200";
-  gv:red "61";
-  gv:blue "undefined";
-  gv:green "18";
-  gv:score "0.17575823000000002";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "3d3425";
-  gv:red "61";
-  gv:blue "37";
-  gv:green "52";
-  gv:score "0.14935186";
-  gv:coverage "0.06"
-], [
-  gv:hex "decebc";
-  gv:red "222";
-  gv:blue "188";
-  gv:green "206";
-  gv:score "5.1929791000000005";
-  gv:coverage "6.5266669"
-], [
-  gv:hex "dbd3ca";
-  gv:red "219";
-  gv:blue "202";
-  gv:green "211";
-  gv:score "2.3439585999999997";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "5a2c07";
-  gv:red "90";
-  gv:blue "7";
-  gv:green "44";
-  gv:score "0.9359261000000001";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "96693d";
-  gv:red "150";
-  gv:blue "61";
-  gv:green "105";
-  gv:score "0.67279697";
-  gv:coverage "4.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.84360000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.562107000000005"
-];
-    w:bagOfWords "VIIS\nAND\nVINS D'ORIGIN\neauneufalpape\nETS VITIS 1, Rue du Médoc Paris\nMAA\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2716";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4823";
-    dct:type "image";
-    w:bagOfWords "Calamia\nPORT\nSELECTED AND BOTTLED BY\nL. D. McLEAN CO. SAN FRANCISCO\nQUART ALCOHOL 20% BY VOLUME\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
-    gv:color [
-  gv:hex "d0c2b0";
-  gv:red "208";
-  gv:blue "176";
-  gv:green "194";
-  gv:score "23.374392";
-  gv:coverage "5.92"
-], [
-  gv:hex "e9ddd1";
-  gv:red "233";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "12.660043000000002";
-  gv:coverage "71.946669"
-], [
-  gv:hex "a89b8a";
-  gv:red "168";
-  gv:blue "138";
-  gv:green "155";
-  gv:score "19.941556";
-  gv:coverage "2.06"
-], [
-  gv:hex "a59b90";
-  gv:red "165";
-  gv:blue "144";
-  gv:green "155";
-  gv:score "13.555425";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "d0c5b9";
-  gv:red "208";
-  gv:blue "185";
-  gv:green "197";
-  gv:score "10.851196999999999";
-  gv:coverage "8.9666665"
-], [
-  gv:hex "e9dccb";
-  gv:red "233";
-  gv:blue "203";
-  gv:green "220";
-  gv:score "7.1188226";
-  gv:coverage "7.12"
-], [
-  gv:hex "877968";
-  gv:red "135";
-  gv:blue "104";
-  gv:green "121";
-  gv:score "5.9467096";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "877d72";
-  gv:red "135";
-  gv:blue "114";
-  gv:green "125";
-  gv:score "4.5684338";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "615244";
-  gv:red "97";
-  gv:blue "68";
-  gv:green "82";
-  gv:score "0.40987315999999996";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "564d43";
-  gv:red "86";
-  gv:blue "67";
-  gv:green "77";
-  gv:score "0.40770611";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.645709"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Calamia\nPORT\nSELECTED AND BOTTLED BY\nL. D. McLEAN CO. SAN FRANCISCO\nQUART ALCOHOL 20% BY VOLUME\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4823";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

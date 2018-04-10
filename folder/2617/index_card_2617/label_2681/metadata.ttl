@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2681";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "BEAUJOLAIS\nAPPELLATION CONTROLEE\nNEGOCIANTS A ZMAA CON\nFRANCE\nIMP B ARNAUD. LYON PARIS\n"@fra;
-    gv:color [
-  gv:hex "d8c1a4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "40.793195";
-  gv:coverage "27.060000000000002"
-], [
-  gv:hex "695437";
-  gv:red "105";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "13.028997";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "b19c82";
-  gv:red "177";
-  gv:blue "130";
-  gv:green "156";
-  gv:score "15.160929000000001";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "887257";
-  gv:red "136";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "10.201248999999999";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "d5b988";
-  gv:red "213";
-  gv:blue "136";
-  gv:green "185";
-  gv:score "5.1396817";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "eddbc4";
-  gv:red "237";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "4.4006053000000005";
-  gv:coverage "29.473335"
-], [
-  gv:hex "b79b6b";
-  gv:red "183";
-  gv:blue "107";
-  gv:green "155";
-  gv:score "2.6474295";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "8f7146";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "2.5632577";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "6c5126";
-  gv:red "108";
-  gv:blue "38";
-  gv:green "81";
-  gv:score "1.6607281";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "dfb99f";
-  gv:red "223";
-  gv:blue "159";
-  gv:green "185";
-  gv:score "0.9290164300000001";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.045143"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.225681"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.146035999999995"
-];
-    w:bagOfWords "BEAUJOLAIS\nAPPELLATION CONTROLEE\nNEGOCIANTS A ZMAA CON\nFRANCE\nIMP B ARNAUD. LYON PARIS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2681";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

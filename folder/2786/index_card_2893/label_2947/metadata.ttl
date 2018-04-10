@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2947";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "UNION VINICOLE MITTELBERGHEIM\nContents\nFt. 0 CS. Alcohoi 12,8% by volume\nProduce of France\nRIESLING MITTELBERGHEIM\nSO PAL STRASBOURG\n"@fra;
-    gv:color [
-  gv:hex "d9c1a0";
-  gv:red "217";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "12.967118999999999";
-  gv:coverage "6.859999999999999"
-], [
-  gv:hex "877556";
-  gv:red "135";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "11.532339";
-  gv:coverage "3.6066665999999996"
-], [
-  gv:hex "2d3332";
-  gv:red "45";
-  gv:blue "50";
-  gv:green "51";
-  gv:score "5.843021";
-  gv:coverage "5.226666900000001"
-], [
-  gv:hex "917644";
-  gv:red "145";
-  gv:blue "68";
-  gv:green "118";
-  gv:score "10.691398000000001";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "635438";
-  gv:red "99";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "7.364678400000001";
-  gv:coverage "2.62"
-], [
-  gv:hex "b49663";
-  gv:red "180";
-  gv:blue "99";
-  gv:green "150";
-  gv:score "6.834781199999999";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "ad9a7a";
-  gv:red "173";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "6.2709339";
-  gv:coverage "2.5"
-], [
-  gv:hex "151818";
-  gv:red "21";
-  gv:blue "24";
-  gv:green "24";
-  gv:score "5.1857226";
-  gv:coverage "2.9133333"
-], [
-  gv:hex "d9b98b";
-  gv:red "217";
-  gv:blue "139";
-  gv:green "185";
-  gv:score "3.9128288999999996";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "695225";
-  gv:red "105";
-  gv:blue "37";
-  gv:green "82";
-  gv:score "3.1740948999999996";
-  gv:coverage "0.54"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "70.117295"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.1276"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.187962000000006"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.522949"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "52.995431"
-];
-    w:bagOfWords "UNION VINICOLE MITTELBERGHEIM\nContents\nFt. 0 CS. Alcohoi 12,8% by volume\nProduce of France\nRIESLING MITTELBERGHEIM\nSO PAL STRASBOURG\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2947";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

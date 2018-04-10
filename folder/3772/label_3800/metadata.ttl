@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3800";
-    dct:type "image";
-    w:bagOfWords "18 74,\nODD\n1949er\n183 K 074\ne WILHELM GEIGER, HEIDELBERG,\nWEIN GROSS HAND LUNG,\nDeidesheimer Nonnenstuck\nRheinpfalz\nWachstum Mayer\nJLLRAT\n24071\n"@deu;
-    gv:color [
-  gv:hex "d0bfa0";
-  gv:red "208";
-  gv:blue "160";
-  gv:green "191";
-  gv:score "26.385924";
-  gv:coverage "25.026667000000003"
-], [
-  gv:hex "c39565";
-  gv:red "195";
-  gv:blue "101";
-  gv:green "149";
-  gv:score "8.6570777";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "a89a7c";
-  gv:red "168";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "25.363400000000002";
-  gv:coverage "9.6866667"
-], [
-  gv:hex "87795e";
-  gv:red "135";
-  gv:blue "94";
-  gv:green "121";
-  gv:score "13.757126";
-  gv:coverage "4.3999999999999995"
-], [
-  gv:hex "e3b688";
-  gv:red "227";
-  gv:blue "136";
-  gv:green "182";
-  gv:score "5.1839143";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "a77643";
-  gv:red "167";
-  gv:blue "67";
-  gv:green "118";
-  gv:score "4.0627543";
-  gv:coverage "0.66"
-], [
-  gv:hex "655640";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "86";
-  gv:score "3.2603568999999997";
-  gv:coverage "0.86"
-], [
-  gv:hex "b69565";
-  gv:red "182";
-  gv:blue "101";
-  gv:green "149";
-  gv:score "2.7946532";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "eadabd";
-  gv:red "234";
-  gv:blue "189";
-  gv:green "218";
-  gv:score "2.2688452000000003";
-  gv:coverage "16.506666"
-], [
-  gv:hex "92794c";
-  gv:red "146";
-  gv:blue "76";
-  gv:green "121";
-  gv:score "1.7234394";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.811574"
-];
-    w:bagOfWords "18 74,\nODD\n1949er\n183 K 074\ne WILHELM GEIGER, HEIDELBERG,\nWEIN GROSS HAND LUNG,\nDeidesheimer Nonnenstuck\nRheinpfalz\nWachstum Mayer\nJLLRAT\n24071\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3800";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

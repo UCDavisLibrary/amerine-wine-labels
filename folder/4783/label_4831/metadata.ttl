@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4831";
-    dct:type "image";
-    w:bagOfWords "MAIRIE\n"@eng;
-    gv:color [
-  gv:hex "95783f";
-  gv:red "149";
-  gv:blue "63";
-  gv:green "120";
-  gv:score "13.646068999999999";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "e2b896";
-  gv:red "226";
-  gv:blue "150";
-  gv:green "184";
-  gv:score "6.7176029";
-  gv:coverage "2.0533333000000002"
-], [
-  gv:hex "9d6e41";
-  gv:red "157";
-  gv:blue "65";
-  gv:green "110";
-  gv:score "13.161132";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "c29163";
-  gv:red "194";
-  gv:blue "99";
-  gv:green "145";
-  gv:score "9.6366465";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "b2935b";
-  gv:red "178";
-  gv:blue "91";
-  gv:green "147";
-  gv:score "9.2423461";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "794a20";
-  gv:red "121";
-  gv:blue "32";
-  gv:green "74";
-  gv:score "8.633507";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "dcc0a3";
-  gv:red "220";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "5.2616786";
-  gv:coverage "4.9133334"
-], [
-  gv:hex "e2b287";
-  gv:red "226";
-  gv:blue "135";
-  gv:green "178";
-  gv:score "3.630216";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "b29676";
-  gv:red "178";
-  gv:blue "118";
-  gv:green "150";
-  gv:score "3.4619361";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "bf9274";
-  gv:red "191";
-  gv:blue "116";
-  gv:green "146";
-  gv:score "3.3525091";
-  gv:coverage "0.6666666800000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "85.0334"
-], [
-  gv:mid <https://g.co/kg/m/05fc9mj>;
-  gv:desc "christmas decoration";
-  gv:score "50.7792"
-];
-    w:bagOfWords "MAIRIE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4831";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

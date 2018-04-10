@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1358";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "VINHO DE MEZA GARANTIDO PURO DA\nUINTA DE S. MIGUEL\nREGISTADO\nCPROXIMO AO Bus SACO)\nMEALHADA\nA. MAROUES\nPortugal\nViti -Vinicultor\n"@por;
-    gv:color [
-  gv:hex "d5c0a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "28.263277";
-  gv:coverage "19.026667"
-], [
-  gv:hex "6b454e";
-  gv:red "107";
-  gv:blue "78";
-  gv:green "69";
-  gv:score "9.69429";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "c8c3c2";
-  gv:red "200";
-  gv:blue "194";
-  gv:green "195";
-  gv:score "11.197139";
-  gv:coverage "17.580000000000002"
-], [
-  gv:hex "e3ddd5";
-  gv:red "227";
-  gv:blue "213";
-  gv:green "221";
-  gv:score "8.8454686";
-  gv:coverage "52.02666500000001"
-], [
-  gv:hex "af9c86";
-  gv:red "175";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "8.7021761";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "9e9c9a";
-  gv:red "158";
-  gv:blue "154";
-  gv:green "156";
-  gv:score "5.7814851";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "5a5555";
-  gv:red "90";
-  gv:blue "85";
-  gv:green "85";
-  gv:score "5.0164621";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "e9d9c8";
-  gv:red "233";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "4.522719599999999";
-  gv:coverage "7.2866663"
-], [
-  gv:hex "562f39";
-  gv:red "86";
-  gv:blue "57";
-  gv:green "47";
-  gv:score "3.4170358999999997";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "7a797a";
-  gv:red "122";
-  gv:blue "122";
-  gv:green "121";
-  gv:score "3.3011585";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "77.387613"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.754772"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.11615400000001"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.655577"
-];
-    w:bagOfWords "VINHO DE MEZA GARANTIDO PURO DA\nUINTA DE S. MIGUEL\nREGISTADO\nCPROXIMO AO Bus SACO)\nMEALHADA\nA. MAROUES\nPortugal\nViti -Vinicultor\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1358";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

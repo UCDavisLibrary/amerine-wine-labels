@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0779/label_0781";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "Dae 1939.\nDae , s\", is 39,\nk]\nPROPRIETAIRES-NEGOCI ANTS\nTAIN-L,HERMITAGE\nPRODUCT OF FRANCE\nF-P.5,\n1874\nALCO HOL 13 % BY VOL.\n& urs\n[R\n"@fra;
-    gv:color [
-  gv:hex "d4c0a0";
-  gv:red "212";
-  gv:blue "160";
-  gv:green "192";
-  gv:score "47.931334";
-  gv:coverage "26.919999999999998"
-], [
-  gv:hex "dcbd87";
-  gv:red "220";
-  gv:blue "135";
-  gv:green "189";
-  gv:score "28.222212000000003";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "b09d80";
-  gv:red "176";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "8.362449";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "c3a370";
-  gv:red "195";
-  gv:blue "112";
-  gv:green "163";
-  gv:score "4.3905251";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "ecdbc1";
-  gv:red "236";
-  gv:blue "193";
-  gv:green "219";
-  gv:score "4.3593496";
-  gv:coverage "19.146666"
-], [
-  gv:hex "84745e";
-  gv:red "132";
-  gv:blue "94";
-  gv:green "116";
-  gv:score "2.9163737";
-  gv:coverage "0.66"
-], [
-  gv:hex "64543a";
-  gv:red "100";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "1.3208943";
-  gv:coverage "0.26"
-], [
-  gv:hex "d2c3b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "0.67544375";
-  gv:coverage "6.3"
-], [
-  gv:hex "7f6f66";
-  gv:red "127";
-  gv:blue "102";
-  gv:green "111";
-  gv:score "0.43421607";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "a5968d";
-  gv:red "165";
-  gv:blue "141";
-  gv:green "150";
-  gv:score "0.38596708";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.133741"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "58.565253"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.700747"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.501375"
-];
-    w:bagOfWords "Dae 1939.\nDae , s\", is 39,\nk]\nPROPRIETAIRES-NEGOCI ANTS\nTAIN-L,HERMITAGE\nPRODUCT OF FRANCE\nF-P.5,\n1874\nALCO HOL 13 % BY VOL.\n& urs\n[R\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0781";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

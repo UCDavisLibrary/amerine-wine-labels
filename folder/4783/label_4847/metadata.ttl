@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4847";
-    dct:type "image";
-    w:bagOfWords "ESTABLISHED\nYEAR 1837\nHomiltons\nMUSCAT\nBOTTLED BY\nHAMILTON'S EWELL VINEYARDS LTD.\nGLENELG. SOUTH AUSTRALIA\nAVERAGE NET CONTENTS 26 FL.0ZS.\n"@eng;
-    gv:color [
-  gv:hex "f5c93a";
-  gv:red "245";
-  gv:blue "58";
-  gv:green "201";
-  gv:score "47.540644";
-  gv:coverage "11.12"
-], [
-  gv:hex "ae6e11";
-  gv:red "174";
-  gv:blue "17";
-  gv:green "110";
-  gv:score "5.9557948";
-  gv:coverage "7.1466669"
-], [
-  gv:hex "704918";
-  gv:red "112";
-  gv:blue "24";
-  gv:green "73";
-  gv:score "0.99161528";
-  gv:coverage "0.36"
-], [
-  gv:hex "f1d9b7";
-  gv:red "241";
-  gv:blue "183";
-  gv:green "217";
-  gv:score "0.25853738";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "fed645";
-  gv:red "254";
-  gv:blue "69";
-  gv:green "214";
-  gv:score "8.1981391";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "f5cb26";
-  gv:red "245";
-  gv:blue "38";
-  gv:green "203";
-  gv:score "6.4361662";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "f6b63b";
-  gv:red "246";
-  gv:blue "59";
-  gv:green "182";
-  gv:score "6.2391888";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "d69422";
-  gv:red "214";
-  gv:blue "34";
-  gv:green "148";
-  gv:score "4.8193973";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "3d1101";
-  gv:red "61";
-  gv:blue "1";
-  gv:green "17";
-  gv:score "0.040094936000000005";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "e8c160";
-  gv:red "232";
-  gv:blue "96";
-  gv:green "193";
-  gv:score "3.2115862";
-  gv:coverage "1.68"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.233258"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.425290000000004"
-];
-    w:bagOfWords "ESTABLISHED\nYEAR 1837\nHomiltons\nMUSCAT\nBOTTLED BY\nHAMILTON'S EWELL VINEYARDS LTD.\nGLENELG. SOUTH AUSTRALIA\nAVERAGE NET CONTENTS 26 FL.0ZS.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4847";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

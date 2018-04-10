@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2503";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "M 0 N T R A C h E T\nALcoHoL 13,8 BY voLUME\n8 MEDAILLES OR & ARGENT CHICAGO HORS CONCOURS\nALBERG\nPRODUCE of FRANC\nor he\nCONTENTS 1 PINT 8 FL OZ\nFRANCE\nTRADE MARK\n"@fra;
-    gv:color [
-  gv:hex "d3bda6";
-  gv:red "211";
-  gv:blue "166";
-  gv:green "189";
-  gv:score "27.421795999999997";
-  gv:coverage "33.533334999999994"
-], [
-  gv:hex "6e5229";
-  gv:red "110";
-  gv:blue "41";
-  gv:green "82";
-  gv:score "12.791346";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "b19b82";
-  gv:red "177";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "24.535038";
-  gv:coverage "6.34"
-], [
-  gv:hex "8a7459";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "116";
-  gv:score "11.338095";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "6c5437";
-  gv:red "108";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "5.505494";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "897042";
-  gv:red "137";
-  gv:blue "66";
-  gv:green "112";
-  gv:score "3.2289784000000004";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "ecd8c3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "2.9121067";
-  gv:coverage "34.506667"
-], [
-  gv:hex "cdbcb2";
-  gv:red "205";
-  gv:blue "178";
-  gv:green "188";
-  gv:score "2.2137249000000003";
-  gv:coverage "4.2266667"
-], [
-  gv:hex "6e4e25";
-  gv:red "110";
-  gv:blue "37";
-  gv:green "78";
-  gv:score "2.1520378";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "aa9a92";
-  gv:red "170";
-  gv:blue "146";
-  gv:green "154";
-  gv:score "1.2002415";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.61539499999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.688908999999995"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.636689999999994"
-];
-    w:bagOfWords "M 0 N T R A C h E T\nALcoHoL 13,8 BY voLUME\n8 MEDAILLES OR & ARGENT CHICAGO HORS CONCOURS\nALBERG\nPRODUCE of FRANC\nor he\nCONTENTS 1 PINT 8 FL OZ\nFRANCE\nTRADE MARK\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2503";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3716";
-    dct:type "image";
-    w:bagOfWords "Le COGNAC MARTELL est le produit naturel des vins récoltés\net distillés dans la région de COGNAC telle qu'elle est délimitée\npar le décret du 1er Mai 1908\nExportation\nerd\n"@spa;
-    gv:color [
-  gv:hex "707794";
-  gv:red "112";
-  gv:blue "148";
-  gv:green "119";
-  gv:score "14.740159";
-  gv:coverage "2.94"
-], [
-  gv:hex "474e85";
-  gv:red "71";
-  gv:blue "133";
-  gv:green "78";
-  gv:score "10.617897";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "0a1161";
-  gv:red "10";
-  gv:blue "97";
-  gv:green "17";
-  gv:score "1.6715524999999998";
-  gv:coverage "0.1"
-], [
-  gv:hex "9299b4";
-  gv:red "146";
-  gv:blue "180";
-  gv:green "153";
-  gv:score "12.496206";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "9b9ba1";
-  gv:red "155";
-  gv:blue "161";
-  gv:green "155";
-  gv:score "9.1729708";
-  gv:coverage "7.793333400000001"
-], [
-  gv:hex "292f67";
-  gv:red "41";
-  gv:blue "103";
-  gv:green "47";
-  gv:score "8.455613300000001";
-  gv:coverage "0.74"
-], [
-  gv:hex "6a71a9";
-  gv:red "106";
-  gv:blue "169";
-  gv:green "113";
-  gv:score "5.7092208";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "4f5674";
-  gv:red "79";
-  gv:blue "116";
-  gv:green "86";
-  gv:score "5.1825792";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "c2bfc1";
-  gv:red "194";
-  gv:blue "193";
-  gv:green "191";
-  gv:score "4.5880258";
-  gv:coverage "6.493333"
-], [
-  gv:hex "0d134c";
-  gv:red "13";
-  gv:blue "76";
-  gv:green "19";
-  gv:score "4.2175878";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.197567"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.926936"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.964543"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.890170999999995"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.733363"
-];
-    w:bagOfWords "Le COGNAC MARTELL est le produit naturel des vins récoltés\net distillés dans la région de COGNAC telle qu'elle est délimitée\npar le décret du 1er Mai 1908\nExportation\nerd\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3716";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

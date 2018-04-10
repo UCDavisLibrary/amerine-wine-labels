@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3825/label_3827";
-    dct:type "image";
-    w:bagOfWords "R A N K E N\nDolhader natsherr\nSylvaner\nWachstum Artur Braun\nBRAUN VOLKACH AMA\nDREAS "@deu;
-    gv:color [
-  gv:hex "dbc2a3";
-  gv:red "219";
-  gv:blue "163";
-  gv:green "194";
-  gv:score "11.288882000000001";
-  gv:coverage "9.0466663"
-], [
-  gv:hex "d58d0d";
-  gv:red "213";
-  gv:blue "13";
-  gv:green "141";
-  gv:score "6.6689469";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "ac2809";
-  gv:red "172";
-  gv:blue "9";
-  gv:green "40";
-  gv:score "6.2191617";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "774819";
-  gv:red "119";
-  gv:blue "25";
-  gv:green "72";
-  gv:score "5.838469";
-  gv:coverage "0.98"
-], [
-  gv:hex "a36a12";
-  gv:red "163";
-  gv:blue "18";
-  gv:green "106";
-  gv:score "5.728902300000001";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "897257";
-  gv:red "137";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "3.1559288999999997";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "6a5220";
-  gv:red "106";
-  gv:blue "32";
-  gv:green "82";
-  gv:score "5.005308599999999";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "ce4320";
-  gv:red "206";
-  gv:blue "32";
-  gv:green "67";
-  gv:score "4.5733083";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "dc2c17";
-  gv:red "220";
-  gv:blue "23";
-  gv:green "44";
-  gv:score "4.5696259";
-  gv:coverage "0.4"
-], [
-  gv:hex "8a3814";
-  gv:red "138";
-  gv:blue "20";
-  gv:green "56";
-  gv:score "3.2128695";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.5849"
-];
-    w:bagOfWords "R A N K E N\nDolhader natsherr\nSylvaner\nWachstum Artur Braun\nBRAUN VOLKACH AMA\nDREAS "@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3827";
+    <schema.keywords> "Germany Frankenwein Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

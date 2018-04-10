@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2932";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "VIN FIN\nD'ALSACE\nDOMAINES DopFF\nRESERVE\nRIESLING\n1945\nPRODUCE OF FRANCE\nDOMAINES DOPFF\nPROPRIETAIRES a NEGOCIANTS AU CLOS DU MOULIN-RIQUEwIHR ALSACE\n"@fra;
-    gv:color [
-  gv:hex "e15903";
-  gv:red "225";
-  gv:blue "3";
-  gv:green "89";
-  gv:score "46.440688";
-  gv:coverage "11.846667"
-], [
-  gv:hex "c05c13";
-  gv:red "192";
-  gv:blue "19";
-  gv:green "92";
-  gv:score "5.6278739";
-  gv:coverage "1.94"
-], [
-  gv:hex "6c2003";
-  gv:red "108";
-  gv:blue "3";
-  gv:green "32";
-  gv:score "0.72007529";
-  gv:coverage "0.22"
-], [
-  gv:hex "ec6405";
-  gv:red "236";
-  gv:blue "5";
-  gv:green "100";
-  gv:score "26.831332000000003";
-  gv:coverage "8.74"
-], [
-  gv:hex "381201";
-  gv:red "56";
-  gv:blue "1";
-  gv:green "18";
-  gv:score "0.17554139";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ccba9c";
-  gv:red "204";
-  gv:blue "156";
-  gv:green "186";
-  gv:score "0.17005984";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "cc470a";
-  gv:red "204";
-  gv:blue "10";
-  gv:green "71";
-  gv:score "5.51436";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "1d140f";
-  gv:red "29";
-  gv:blue "15";
-  gv:green "20";
-  gv:score "0.040041198";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "132003";
-  gv:red "19";
-  gv:blue "3";
-  gv:green "32";
-  gv:score "0.036467292";
-  gv:coverage "0.02"
-], [
-  gv:hex "983c03";
-  gv:red "152";
-  gv:blue "3";
-  gv:green "60";
-  gv:score "2.462903";
-  gv:coverage "0.68666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jc_p>;
-  gv:desc "orange";
-  gv:score "80.489922"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.28944"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.908623"
-];
-    w:bagOfWords "VIN FIN\nD'ALSACE\nDOMAINES DopFF\nRESERVE\nRIESLING\n1945\nPRODUCE OF FRANCE\nDOMAINES DOPFF\nPROPRIETAIRES a NEGOCIANTS AU CLOS DU MOULIN-RIQUEwIHR ALSACE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2932";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

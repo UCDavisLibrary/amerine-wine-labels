@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4617";
-    dct:type "image";
-    w:bagOfWords "LIT- Hlell OS E LSALIDO JFREZ\nMIGUEL SAN CAR\n"@spa;
-    gv:color [
-  gv:hex "a49d96";
-  gv:red "164";
-  gv:blue "150";
-  gv:green "157";
-  gv:score "31.111103";
-  gv:coverage "5.2533332"
-], [
-  gv:hex "c9c1ba";
-  gv:red "201";
-  gv:blue "186";
-  gv:green "193";
-  gv:score "30.116832";
-  gv:coverage "21.4"
-], [
-  gv:hex "807972";
-  gv:red "128";
-  gv:blue "114";
-  gv:green "121";
-  gv:score "18.223212999999998";
-  gv:coverage "3.52"
-], [
-  gv:hex "5c564f";
-  gv:red "92";
-  gv:blue "79";
-  gv:green "86";
-  gv:score "10.186485000000001";
-  gv:coverage "2.3"
-], [
-  gv:hex "e6ddd5";
-  gv:red "230";
-  gv:blue "213";
-  gv:green "221";
-  gv:score "6.5149873";
-  gv:coverage "61.366665"
-], [
-  gv:hex "3f3731";
-  gv:red "63";
-  gv:blue "49";
-  gv:green "55";
-  gv:score "3.1987328";
-  gv:coverage "0.8"
-], [
-  gv:hex "221a13";
-  gv:red "34";
-  gv:blue "19";
-  gv:green "26";
-  gv:score "0.5968854299999999";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "dbd2c1";
-  gv:red "219";
-  gv:blue "193";
-  gv:green "210";
-  gv:score "0.015879732";
-  gv:coverage "3.8133334"
-], [
-  gv:hex "3b3527";
-  gv:red "59";
-  gv:blue "39";
-  gv:green "53";
-  gv:score "0.014576623";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "251f11";
-  gv:red "37";
-  gv:blue "17";
-  gv:green "31";
-  gv:score "0.010793404";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "75.571024"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "67.13655"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "64.002353"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.410523"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.225080999999996"
-];
-    w:bagOfWords "LIT- Hlell OS E LSALIDO JFREZ\nMIGUEL SAN CAR\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4617";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

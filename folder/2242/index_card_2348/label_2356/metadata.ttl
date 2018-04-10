@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2348/label_2356";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Grand Cru Classé\nCHATEAU LA TOUR CARNET\nME DO C\n1937\nMLS EN BOUTEILLES AU CHATEAU\n,Appellation Haut-Médoc controlée\n"@fra;
-    gv:color [
-  gv:hex "d6bda2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "189";
-  gv:score "44.05944";
-  gv:coverage "23.466666"
-], [
-  gv:hex "b88c51";
-  gv:red "184";
-  gv:blue "81";
-  gv:green "140";
-  gv:score "0.32826529";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b1987e";
-  gv:red "177";
-  gv:blue "126";
-  gv:green "152";
-  gv:score "31.080234";
-  gv:coverage "9.9266663"
-], [
-  gv:hex "8d745c";
-  gv:red "141";
-  gv:blue "92";
-  gv:green "116";
-  gv:score "13.867553";
-  gv:coverage "4.5666665"
-], [
-  gv:hex "6b543e";
-  gv:red "107";
-  gv:blue "62";
-  gv:green "84";
-  gv:score "5.787323";
-  gv:coverage "2.02"
-], [
-  gv:hex "463422";
-  gv:red "70";
-  gv:blue "34";
-  gv:green "52";
-  gv:score "1.5532406";
-  gv:coverage "0.6"
-], [
-  gv:hex "edd7c0";
-  gv:red "237";
-  gv:blue "192";
-  gv:green "215";
-  gv:score "1.1219925";
-  gv:coverage "4.4933334"
-], [
-  gv:hex "6c4e35";
-  gv:red "108";
-  gv:blue "53";
-  gv:green "78";
-  gv:score "0.64936676";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "9a7240";
-  gv:red "154";
-  gv:blue "64";
-  gv:green "114";
-  gv:score "0.24887745000000003";
-  gv:coverage "0.08"
-], [
-  gv:hex "4f341f";
-  gv:red "79";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "0.21400561";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.35417699999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.879412"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "57.706267"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.154323"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.210596"
-];
-    w:bagOfWords "Grand Cru Classé\nCHATEAU LA TOUR CARNET\nME DO C\n1937\nMLS EN BOUTEILLES AU CHATEAU\n,Appellation Haut-Médoc controlée\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2356";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

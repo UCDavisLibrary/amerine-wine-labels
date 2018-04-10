@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1753";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "3/24/4 7\nGESETzuCH GESCHUTZT\n1933er\nMoselle Wine\nHAGEN,SCHAAR a\nDATHE,TRIER\nMiddle MD seller\n"@deu;
-    gv:color [
-  gv:hex "8b7653";
-  gv:red "139";
-  gv:blue "83";
-  gv:green "118";
-  gv:score "19.329515";
-  gv:coverage "4.52"
-], [
-  gv:hex "ad9673";
-  gv:red "173";
-  gv:blue "115";
-  gv:green "150";
-  gv:score "18.851364";
-  gv:coverage "5.4466669"
-], [
-  gv:hex "8d7546";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "117";
-  gv:score "13.37363";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "af9561";
-  gv:red "175";
-  gv:blue "97";
-  gv:green "149";
-  gv:score "11.692891";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "2b1400";
-  gv:red "43";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.10607681";
-  gv:coverage "0.02"
-], [
-  gv:hex "d2be9f";
-  gv:red "210";
-  gv:blue "159";
-  gv:green "190";
-  gv:score "10.239556";
-  gv:coverage "16.76"
-], [
-  gv:hex "685332";
-  gv:red "104";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "10.194407";
-  gv:coverage "2.0533333000000002"
-], [
-  gv:hex "685227";
-  gv:red "104";
-  gv:blue "39";
-  gv:green "82";
-  gv:score "7.6977915999999995";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "493515";
-  gv:red "73";
-  gv:blue "21";
-  gv:green "53";
-  gv:score "2.4583213";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "4e3810";
-  gv:red "78";
-  gv:blue "16";
-  gv:green "56";
-  gv:score "1.8101424000000002";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.301943"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.021528"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "56.87510999999999"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.435100000000006"
-];
-    w:bagOfWords "3/24/4 7\nGESETzuCH GESCHUTZT\n1933er\nMoselle Wine\nHAGEN,SCHAAR a\nDATHE,TRIER\nMiddle MD seller\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1753";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

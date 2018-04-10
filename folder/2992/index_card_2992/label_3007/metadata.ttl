@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3007";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "1943\nCHATEAU\nFANNING LAFONTAINE\n1ERES GRAVES ROUGES DE PES SAC\nAPPELLATION CONTROLEE\nMIS EN BOUTEILLE PAR LE PRO PRI ETA IRE\nE-TAFFARD-GRAV. BORD\n"@fra;
-    gv:color [
-  gv:hex "d6c3af";
-  gv:red "214";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "57.834309";
-  gv:coverage "24.206667"
-], [
-  gv:hex "ac9986";
-  gv:red "172";
-  gv:blue "134";
-  gv:green "153";
-  gv:score "14.680610999999999";
-  gv:coverage "3.7266668000000003"
-], [
-  gv:hex "8f6d47";
-  gv:red "143";
-  gv:blue "71";
-  gv:green "109";
-  gv:score "0.0967642";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "d9c9bd";
-  gv:red "217";
-  gv:blue "189";
-  gv:green "201";
-  gv:score "7.9961821";
-  gv:coverage "3.3666666999999997"
-], [
-  gv:hex "8a7867";
-  gv:red "138";
-  gv:blue "103";
-  gv:green "120";
-  gv:score "5.0045956";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "605042";
-  gv:red "96";
-  gv:blue "66";
-  gv:green "80";
-  gv:score "4.7460541";
-  gv:coverage "0.62"
-], [
-  gv:hex "e9d8c6";
-  gv:red "233";
-  gv:blue "198";
-  gv:green "216";
-  gv:score "2.4192628000000003";
-  gv:coverage "7.113332999999999"
-], [
-  gv:hex "443325";
-  gv:red "68";
-  gv:blue "37";
-  gv:green "51";
-  gv:score "2.2879941";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "e8d9cc";
-  gv:red "232";
-  gv:blue "204";
-  gv:green "217";
-  gv:score "1.9678247999999998";
-  gv:coverage "58.973335999999996"
-], [
-  gv:hex "85766c";
-  gv:red "133";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "0.73554683";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.83019300000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.02797"
-];
-    w:bagOfWords "1943\nCHATEAU\nFANNING LAFONTAINE\n1ERES GRAVES ROUGES DE PES SAC\nAPPELLATION CONTROLEE\nMIS EN BOUTEILLE PAR LE PRO PRI ETA IRE\nE-TAFFARD-GRAV. BORD\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3007";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1091/label_1102";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "ecolte\nde la 1949\nUNE\nDE\nROTA L SA UTE R 5.A. LA US AN NE\n"@deu;
-    gv:color [
-  gv:hex "ddc09d";
-  gv:red "221";
-  gv:blue "157";
-  gv:green "192";
-  gv:score "53.205999999999996";
-  gv:coverage "29.046667"
-], [
-  gv:hex "9d6e24";
-  gv:red "157";
-  gv:blue "36";
-  gv:green "110";
-  gv:score "5.2243087";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "91733f";
-  gv:red "145";
-  gv:blue "63";
-  gv:green "115";
-  gv:score "4.7220837";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "527371";
-  gv:red "82";
-  gv:blue "113";
-  gv:green "115";
-  gv:score "2.1581996";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "301300";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "19";
-  gv:score "0.51571946";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "dcb98c";
-  gv:red "220";
-  gv:blue "140";
-  gv:green "185";
-  gv:score "8.0293819";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "b79a77";
-  gv:red "183";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "4.9323402000000005";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "bd9a6a";
-  gv:red "189";
-  gv:blue "106";
-  gv:green "154";
-  gv:score "4.3995008";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "976e35";
-  gv:red "151";
-  gv:blue "53";
-  gv:green "110";
-  gv:score "2.3049022999999997";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "8e7756";
-  gv:red "142";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "2.144107";
-  gv:coverage "0.9133333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.637949000000006"
-];
-    w:bagOfWords "ecolte\nde la 1949\nUNE\nDE\nROTA L SA UTE R 5.A. LA US AN NE\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1102";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

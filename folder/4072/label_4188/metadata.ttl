@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4188";
-    dct:type "image";
-    w:bagOfWords "GRAN\nHEVILLOT\nCORTON CHARLEMAGNE\nAPPELLATION CONTROLEE\nS. A. GRANDS VINS CHEVILLOT & HOTEL DE LA POSTE REUNIS\nNEGOCIANTS A BEAUNE (COTE-D'OR\nMAA\n"@fra;
-    gv:color [
-  gv:hex "d9bf9c";
-  gv:red "217";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "32.759907999999996";
-  gv:coverage "23.246667"
-], [
-  gv:hex "b09879";
-  gv:red "176";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "20.285103";
-  gv:coverage "3.7466668000000003"
-], [
-  gv:hex "8b7457";
-  gv:red "139";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "16.918074";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "685338";
-  gv:red "104";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "8.7652363";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "dfbd8d";
-  gv:red "223";
-  gv:blue "141";
-  gv:green "189";
-  gv:score "7.238703200000001";
-  gv:coverage "3.9133333"
-], [
-  gv:hex "e1b483";
-  gv:red "225";
-  gv:blue "131";
-  gv:green "180";
-  gv:score "3.0317297";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "c79664";
-  gv:red "199";
-  gv:blue "100";
-  gv:green "150";
-  gv:score "2.3382809";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "48361d";
-  gv:red "72";
-  gv:blue "29";
-  gv:green "54";
-  gv:score "2.2625698";
-  gv:coverage "0.38"
-], [
-  gv:hex "bd9b6b";
-  gv:red "189";
-  gv:blue "107";
-  gv:green "155";
-  gv:score "1.9348858";
-  gv:coverage "1.3"
-], [
-  gv:hex "f3d8b7";
-  gv:red "243";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "0.8232293700000001";
-  gv:coverage "16.273333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.777286"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.530546"
-];
-    w:bagOfWords "GRAN\nHEVILLOT\nCORTON CHARLEMAGNE\nAPPELLATION CONTROLEE\nS. A. GRANDS VINS CHEVILLOT & HOTEL DE LA POSTE REUNIS\nNEGOCIANTS A BEAUNE (COTE-D'OR\nMAA\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4188";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

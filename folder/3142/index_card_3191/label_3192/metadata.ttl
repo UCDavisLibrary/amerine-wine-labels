@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3191/label_3192";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Berry Bros. & Co. ,\n3 St.ジJames's Street, London, . S. W.1 Qt®ce\nde Beaune\ngll[11/MARi,る2\n10- Cdte de\nte deg(ui\n192\n.2BONNES MARES\nProduce of France\nFROM THE CELLARS OF THE LATE\nNICI-OLAS H. BRADY\nSOLD BY\nM, LEI-MANN, INC.\nEstc b!ished\n1893 (Lic. L-12)\n5\nNew York, N. Y.\nc/2\nCho\nCA\nelos a\n105 dema\nd,MAR\ny es\nes\n人白!\n"@fra;
-    gv:color [
-  gv:hex "dcc19f";
-  gv:red "220";
-  gv:blue "159";
-  gv:green "193";
-  gv:score "54.825210999999996";
-  gv:coverage "35.293335"
-], [
-  gv:hex "e5b68c";
-  gv:red "229";
-  gv:blue "140";
-  gv:green "182";
-  gv:score "4.1445851";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "b39a79";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "21.578628";
-  gv:coverage "7.5666666"
-], [
-  gv:hex "967c5c";
-  gv:red "150";
-  gv:blue "92";
-  gv:green "124";
-  gv:score "4.4617139";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "f1d8b8";
-  gv:red "241";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "4.1795149";
-  gv:coverage "4.9466666"
-], [
-  gv:hex "c9966d";
-  gv:red "201";
-  gv:blue "109";
-  gv:green "150";
-  gv:score "2.9455328";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "e0bd91";
-  gv:red "224";
-  gv:blue "145";
-  gv:green "189";
-  gv:score "2.7168838";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "e5b996";
-  gv:red "229";
-  gv:blue "150";
-  gv:green "185";
-  gv:score "2.6840119";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "a7724a";
-  gv:red "167";
-  gv:blue "74";
-  gv:green "114";
-  gv:score "0.93642958";
-  gv:coverage "0.36"
-], [
-  gv:hex "c19575";
-  gv:red "193";
-  gv:blue "117";
-  gv:green "149";
-  gv:score "0.79003973";
-  gv:coverage "0.36"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "81.400245"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.67150000000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.293083"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.875476000000006"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.117675999999996"
-];
-    w:bagOfWords "Berry Bros. & Co. ,\n3 St.ジJames's Street, London, . S. W.1 Qt®ce\nde Beaune\ngll[11/MARi,る2\n10- Cdte de\nte deg(ui\n192\n.2BONNES MARES\nProduce of France\nFROM THE CELLARS OF THE LATE\nNICI-OLAS H. BRADY\nSOLD BY\nM, LEI-MANN, INC.\nEstc b!ished\n1893 (Lic. L-12)\n5\nNew York, N. Y.\nc/2\nCho\nCA\nelos a\n105 dema\nd,MAR\ny es\nes\n人白!\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3192";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

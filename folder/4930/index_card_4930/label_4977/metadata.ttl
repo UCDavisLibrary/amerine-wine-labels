@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4977";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Contents: 1 Pint and B fluide 7 oes\n| |酾奝\neaox\nPRODUCE OF FRANCE\nase clos des 05uettes\n9\nili 끼\n3ouriegne a\n6 BZBernard,Beaune (Cote 10:)\nernard, Seanne (Cote Loer)\n/on Fondée en 1795\n"@undefined;
-    gv:color [
-  gv:hex "e7e2e0";
-  gv:red "231";
-  gv:blue "224";
-  gv:green "226";
-  gv:score "30.102313000000002";
-  gv:coverage "27.026665"
-], [
-  gv:hex "151011";
-  gv:red "21";
-  gv:blue "17";
-  gv:green "16";
-  gv:score "12.102143";
-  gv:coverage "9.533332999999999"
-], [
-  gv:hex "634f3b";
-  gv:red "99";
-  gv:blue "59";
-  gv:green "79";
-  gv:score "6.650424000000001";
-  gv:coverage "3.1933334"
-], [
-  gv:hex "f1e0cb";
-  gv:red "241";
-  gv:blue "203";
-  gv:green "224";
-  gv:score "11.443361000000001";
-  gv:coverage "14.886667000000001"
-], [
-  gv:hex "dac3a8";
-  gv:red "218";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "8.301307300000001";
-  gv:coverage "11.946667"
-], [
-  gv:hex "d0c6be";
-  gv:red "208";
-  gv:blue "190";
-  gv:green "198";
-  gv:score "7.1638912";
-  gv:coverage "4.9266666"
-], [
-  gv:hex "363132";
-  gv:red "54";
-  gv:blue "50";
-  gv:green "49";
-  gv:score "5.7244796000000004";
-  gv:coverage "3.42"
-], [
-  gv:hex "44321f";
-  gv:red "68";
-  gv:blue "31";
-  gv:green "50";
-  gv:score "5.0942648";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "b0997e";
-  gv:red "176";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "2.5778236";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "a79b93";
-  gv:red "167";
-  gv:blue "147";
-  gv:green "155";
-  gv:score "2.5563229";
-  gv:coverage "1.4866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "60.327268000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "58.199524999999994"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.576605"
-];
-    w:bagOfWords "Contents: 1 Pint and B fluide 7 oes\n| |酾奝\neaox\nPRODUCE OF FRANCE\nase clos des 05uettes\n9\nili 끼\n3ouriegne a\n6 BZBernard,Beaune (Cote 10:)\nernard, Seanne (Cote Loer)\n/on Fondée en 1795\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4977";
+    <schema.keywords> "UC Reporters Notebook@en".
+

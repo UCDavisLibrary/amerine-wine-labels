@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1902/label_1911";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "Amour\nOREye\nROUE Moo\nJerez Fino\nANLUCAR DE\nEBARRAMED\n\\\nTIMBRE A METALIC。\nCAR DE BARR)\n"@spa;
-    gv:color [
-  gv:hex "e8e1e5";
-  gv:red "232";
-  gv:blue "229";
-  gv:green "225";
-  gv:score "26.406157000000004";
-  gv:coverage "29.26"
-], [
-  gv:hex "595259";
-  gv:red "89";
-  gv:blue "89";
-  gv:green "82";
-  gv:score "11.578713";
-  gv:coverage "1.44"
-], [
-  gv:hex "cbc4c9";
-  gv:red "203";
-  gv:blue "201";
-  gv:green "196";
-  gv:score "16.635612";
-  gv:coverage "10"
-], [
-  gv:hex "a39ca2";
-  gv:red "163";
-  gv:blue "162";
-  gv:green "156";
-  gv:score "12.715689999999999";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "7c757a";
-  gv:red "124";
-  gv:blue "122";
-  gv:green "117";
-  gv:score "10.231838";
-  gv:coverage "1.5"
-], [
-  gv:hex "3b343c";
-  gv:red "59";
-  gv:blue "60";
-  gv:green "52";
-  gv:score "6.1586589";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "150f19";
-  gv:red "21";
-  gv:blue "25";
-  gv:green "15";
-  gv:score "2.9160304000000004";
-  gv:coverage "0.22"
-], [
-  gv:hex "1b1627";
-  gv:red "27";
-  gv:blue "39";
-  gv:green "22";
-  gv:score "2.584039";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "3b3546";
-  gv:red "59";
-  gv:blue "70";
-  gv:green "53";
-  gv:score "2.2559587";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "797489";
-  gv:red "121";
-  gv:blue "137";
-  gv:green "116";
-  gv:score "1.9288136";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.242863"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Amour\nOREye\nROUE Moo\nJerez Fino\nANLUCAR DE\nEBARRAMED\n\\\nTIMBRE A METALIC。\nCAR DE BARR)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1911";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1050";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "UIN S\npétiltant\nBourgeois freres E. Ced\nallaigues VA UD\n"@deu;
-    gv:color [
-  gv:hex "e0bd84";
-  gv:red "224";
-  gv:blue "132";
-  gv:green "189";
-  gv:score "25.609865999999997";
-  gv:coverage "9.8466665"
-], [
-  gv:hex "c49c44";
-  gv:red "196";
-  gv:blue "68";
-  gv:green "156";
-  gv:score "10.071387";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "a06e27";
-  gv:red "160";
-  gv:blue "39";
-  gv:green "110";
-  gv:score "7.568429999999999";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "754b10";
-  gv:red "117";
-  gv:blue "16";
-  gv:green "75";
-  gv:score "6.1161958";
-  gv:coverage "1.24"
-], [
-  gv:hex "381400";
-  gv:red "56";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.2255287";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "c09b5c";
-  gv:red "192";
-  gv:blue "92";
-  gv:green "155";
-  gv:score "6.8958767000000005";
-  gv:coverage "2.12"
-], [
-  gv:hex "dbb35c";
-  gv:red "219";
-  gv:blue "92";
-  gv:green "179";
-  gv:score "6.772036100000001";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "c59147";
-  gv:red "197";
-  gv:blue "71";
-  gv:green "145";
-  gv:score "5.9531786";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "e4c5a2";
-  gv:red "228";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "5.5263031";
-  gv:coverage "15.299999999999999"
-], [
-  gv:hex "9b6e34";
-  gv:red "155";
-  gv:blue "52";
-  gv:green "110";
-  gv:score "4.8707079";
-  gv:coverage "1.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "58.561122"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.574668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.501383999999995"
-];
-    w:bagOfWords "UIN S\npétiltant\nBourgeois freres E. Ced\nallaigues VA UD\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1050";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4078";
-    dct:type "image";
-    w:bagOfWords "CREMANT\nGRAND\nDUCHESSEDEBOUR60 (GNE\nMO NO POLE\nGRAND BOURGOGNE MOUSSEUX\nENTREPOTS.A BORDEAUX ET EPERNAY\nELLE\nFlus EPERNAY\n"@fra;
-    gv:color [
-  gv:hex "84735a";
-  gv:red "132";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "23.188511000000002";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "a99980";
-  gv:red "169";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "15.995954000000001";
-  gv:coverage "2.64"
-], [
-  gv:hex "cfc0a8";
-  gv:red "207";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "14.16291";
-  gv:coverage "7.8"
-], [
-  gv:hex "6d5a3e";
-  gv:red "109";
-  gv:blue "62";
-  gv:green "90";
-  gv:score "10.463600000000001";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "cec5bd";
-  gv:red "206";
-  gv:blue "189";
-  gv:green "197";
-  gv:score "10.044271";
-  gv:coverage "22.900000000000002"
-], [
-  gv:hex "af9360";
-  gv:red "175";
-  gv:blue "96";
-  gv:green "147";
-  gv:score "8.7790981";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "e5dbd2";
-  gv:red "229";
-  gv:blue "210";
-  gv:green "219";
-  gv:score "4.8922896";
-  gv:coverage "56.013334"
-], [
-  gv:hex "a39b94";
-  gv:red "163";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "4.6307728";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "e9dcc6";
-  gv:red "233";
-  gv:blue "198";
-  gv:green "220";
-  gv:score "4.5144964000000005";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "827972";
-  gv:red "130";
-  gv:blue "114";
-  gv:green "121";
-  gv:score "1.6348153";
-  gv:coverage "0.5133333200000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.46654799999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CREMANT\nGRAND\nDUCHESSEDEBOUR60 (GNE\nMO NO POLE\nGRAND BOURGOGNE MOUSSEUX\nENTREPOTS.A BORDEAUX ET EPERNAY\nELLE\nFlus EPERNAY\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4078";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

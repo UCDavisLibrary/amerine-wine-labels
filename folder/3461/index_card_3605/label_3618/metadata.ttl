@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3618";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BE\nNAPA VALLEY\nTaine\nTabite\nSpecially selected for the\nBOHEMIAN CLUB\nSAN FRANCISCO\nProduced and Bottled by\nINGLENOOK VINEYARD CO.\nRutherford, Napa County, California\nAlcobol 12h per cent by Volume.\nPr\n"@eng;
-    gv:color [
-  gv:hex "cbc2a6";
-  gv:red "203";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "23.502259";
-  gv:coverage "5.546666699999999"
-], [
-  gv:hex "ece2c7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "226";
-  gv:score "16.614069";
-  gv:coverage "21.58"
-], [
-  gv:hex "9e9c82";
-  gv:red "158";
-  gv:blue "130";
-  gv:green "156";
-  gv:score "16.231254";
-  gv:coverage "1.18"
-], [
-  gv:hex "dbc085";
-  gv:red "219";
-  gv:blue "133";
-  gv:green "192";
-  gv:score "13.635290999999999";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "7c7a62";
-  gv:red "124";
-  gv:blue "98";
-  gv:green "122";
-  gv:score "9.213382000000001";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "f7dda2";
-  gv:red "247";
-  gv:blue "162";
-  gv:green "221";
-  gv:score "6.8845712";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "5b5a41";
-  gv:red "91";
-  gv:blue "65";
-  gv:green "90";
-  gv:score "5.9877329";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "c1a36b";
-  gv:red "193";
-  gv:blue "107";
-  gv:green "163";
-  gv:score "1.959932";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "dbbb6a";
-  gv:red "219";
-  gv:blue "106";
-  gv:green "187";
-  gv:score "1.7505422";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "ede4d8";
-  gv:red "237";
-  gv:blue "216";
-  gv:green "228";
-  gv:score "1.3557942";
-  gv:coverage "65.573335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.339789"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BE\nNAPA VALLEY\nTaine\nTabite\nSpecially selected for the\nBOHEMIAN CLUB\nSAN FRANCISCO\nProduced and Bottled by\nINGLENOOK VINEYARD CO.\nRutherford, Napa County, California\nAlcobol 12h per cent by Volume.\nPr\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3618";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1929/label_1948";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "EL ALAMO\nMijode Pedro Romero Villa/yneal\nSANLUCAR DE BARRAMEDA\nNo 25\nHidos MIGUEL 3ALIDO -UEREZ\n"@spa;
-    gv:color [
-  gv:hex "e6c083";
-  gv:red "230";
-  gv:blue "131";
-  gv:green "192";
-  gv:score "67.098629";
-  gv:coverage "19.16"
-], [
-  gv:hex "bb9a61";
-  gv:red "187";
-  gv:blue "97";
-  gv:green "154";
-  gv:score "16.768073";
-  gv:coverage "4.5066666"
-], [
-  gv:hex "957944";
-  gv:red "149";
-  gv:blue "68";
-  gv:green "121";
-  gv:score "8.9140967";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "eabb7c";
-  gv:red "234";
-  gv:blue "124";
-  gv:green "187";
-  gv:score "2.4657531";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "e2c8a2";
-  gv:red "226";
-  gv:blue "162";
-  gv:green "200";
-  gv:score "1.2113056";
-  gv:coverage "31.846666000000003"
-], [
-  gv:hex "f7d59b";
-  gv:red "247";
-  gv:blue "155";
-  gv:green "213";
-  gv:score "1.1809704";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "e4bc6f";
-  gv:red "228";
-  gv:blue "111";
-  gv:green "188";
-  gv:score "0.7317482";
-  gv:coverage "0.22"
-], [
-  gv:hex "c59959";
-  gv:red "197";
-  gv:blue "89";
-  gv:green "153";
-  gv:score "0.52922806";
-  gv:coverage "0.18"
-], [
-  gv:hex "3e3122";
-  gv:red "62";
-  gv:blue "34";
-  gv:green "49";
-  gv:score "0.0052323074";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "84764d";
-  gv:red "132";
-  gv:blue "77";
-  gv:green "118";
-  gv:score "0.3012646";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.979253"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.181332000000005"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.231611"
-];
-    w:bagOfWords "EL ALAMO\nMijode Pedro Romero Villa/yneal\nSANLUCAR DE BARRAMEDA\nNo 25\nHidos MIGUEL 3ALIDO -UEREZ\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1948";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

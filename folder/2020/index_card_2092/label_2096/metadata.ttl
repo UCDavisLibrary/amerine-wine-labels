@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2092/label_2096";
-    dct:type "image";
-    w:bagOfWords "1760\nGesetzligeschutzt\nSCHULZ & WAGNER\n1929 EIME\nRED SEAL\nCONTENTS 1 PT. 6,5 FL. OZS. ALCOHOLIC CONTENTS NOT EXCEEDING\n1\nolo BY WEIGHT\nTheir fa/z.\n"@undefined;
-    gv:color [
-  gv:hex "b69d84";
-  gv:red "182";
-  gv:blue "132";
-  gv:green "157";
-  gv:score "43.579754";
-  gv:coverage "14.426665999999999"
-], [
-  gv:hex "cfb59b";
-  gv:red "207";
-  gv:blue "155";
-  gv:green "181";
-  gv:score "27.908549";
-  gv:coverage "12.18"
-], [
-  gv:hex "8d755d";
-  gv:red "141";
-  gv:blue "93";
-  gv:green "117";
-  gv:score "17.553325";
-  gv:coverage "7.86"
-], [
-  gv:hex "6e563f";
-  gv:red "110";
-  gv:blue "63";
-  gv:green "86";
-  gv:score "6.3514054";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "e3b897";
-  gv:red "227";
-  gv:blue "151";
-  gv:green "184";
-  gv:score "2.5815365999999997";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "f2d9be";
-  gv:red "242";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "0.8670257400000001";
-  gv:coverage "10.666667"
-], [
-  gv:hex "c39b7c";
-  gv:red "195";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "0.5543555099999999";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "fad1b4";
-  gv:red "250";
-  gv:blue "180";
-  gv:green "209";
-  gv:score "0.22478139";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "533a23";
-  gv:red "83";
-  gv:blue "35";
-  gv:green "58";
-  gv:score "0.12010657000000001";
-  gv:coverage "0.04"
-], [
-  gv:hex "674c39";
-  gv:red "103";
-  gv:blue "57";
-  gv:green "76";
-  gv:score "0.10367687";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.928507"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.647499999999994"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.751478"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.894824"
-];
-    w:bagOfWords "1760\nGesetzligeschutzt\nSCHULZ & WAGNER\n1929 EIME\nRED SEAL\nCONTENTS 1 PT. 6,5 FL. OZS. ALCOHOLIC CONTENTS NOT EXCEEDING\n1\nolo BY WEIGHT\nTheir fa/z.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2096";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

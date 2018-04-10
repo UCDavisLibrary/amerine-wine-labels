@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3698";
-    dct:type "image";
-    w:bagOfWords "BRANDY BOBADILLA\nGRAN RESERVA\nESPECIAL\nBGRadilla y Cia.\n30 DEGA 5 DE MANUEL FERNANDEZ Y CIA.. s L.\nJE REZ SP ANA\n"@spa;
-    gv:color [
-  gv:hex "dcbc7c";
-  gv:red "220";
-  gv:blue "124";
-  gv:green "188";
-  gv:score "30.593791999999997";
-  gv:coverage "10.6"
-], [
-  gv:hex "8b7443";
-  gv:red "139";
-  gv:blue "67";
-  gv:green "116";
-  gv:score "17.684929";
-  gv:coverage "2.8533334"
-], [
-  gv:hex "6b5634";
-  gv:red "107";
-  gv:blue "52";
-  gv:green "86";
-  gv:score "12.203073999999999";
-  gv:coverage "2.18"
-], [
-  gv:hex "836e49";
-  gv:red "131";
-  gv:blue "73";
-  gv:green "110";
-  gv:score "9.7976252";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "b4975f";
-  gv:red "180";
-  gv:blue "95";
-  gv:green "151";
-  gv:score "7.704518";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "6d5628";
-  gv:red "109";
-  gv:blue "40";
-  gv:green "86";
-  gv:score "6.3376814";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "dcbc6b";
-  gv:red "220";
-  gv:blue "107";
-  gv:green "188";
-  gv:score "4.389197";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "ca9159";
-  gv:red "202";
-  gv:blue "89";
-  gv:green "145";
-  gv:score "3.2980409";
-  gv:coverage "0.6"
-], [
-  gv:hex "eab47b";
-  gv:red "234";
-  gv:blue "123";
-  gv:green "180";
-  gv:score "2.5609598";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "ae6e39";
-  gv:red "174";
-  gv:blue "57";
-  gv:green "110";
-  gv:score "1.7229412";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.725087"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "60.683668000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.06"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "51.931839999999994"
-];
-    w:bagOfWords "BRANDY BOBADILLA\nGRAN RESERVA\nESPECIAL\nBGRadilla y Cia.\n30 DEGA 5 DE MANUEL FERNANDEZ Y CIA.. s L.\nJE REZ SP ANA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3698";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

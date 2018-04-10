@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1312";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "G\nWVORMELDANGE\nNo 65\n"@deu;
-    gv:color [
-  gv:hex "e4ba5e";
-  gv:red "228";
-  gv:blue "94";
-  gv:green "186";
-  gv:score "16.992024999999998";
-  gv:coverage "4.74"
-], [
-  gv:hex "b2995d";
-  gv:red "178";
-  gv:blue "93";
-  gv:green "153";
-  gv:score "12.210827";
-  gv:coverage "2.9000000000000004"
-], [
-  gv:hex "8c773e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "119";
-  gv:score "10.714699";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "dcbf83";
-  gv:red "220";
-  gv:blue "131";
-  gv:green "191";
-  gv:score "8.2061939";
-  gv:coverage "3.7066668"
-], [
-  gv:hex "bc9840";
-  gv:red "188";
-  gv:blue "64";
-  gv:green "152";
-  gv:score "7.3078118";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "a26e3b";
-  gv:red "162";
-  gv:blue "59";
-  gv:green "110";
-  gv:score "5.359143";
-  gv:coverage "1.18"
-], [
-  gv:hex "d7c3a3";
-  gv:red "215";
-  gv:blue "163";
-  gv:green "195";
-  gv:score "5.159742400000001";
-  gv:coverage "8.206667"
-], [
-  gv:hex "c58e5c";
-  gv:red "197";
-  gv:blue "92";
-  gv:green "142";
-  gv:score "3.9858665";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "6a5721";
-  gv:red "106";
-  gv:blue "33";
-  gv:green "87";
-  gv:score "3.5902835";
-  gv:coverage "1"
-], [
-  gv:hex "a46c21";
-  gv:red "164";
-  gv:blue "33";
-  gv:green "108";
-  gv:score "3.4253191000000003";
-  gv:coverage "0.47333334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.743162"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "50.522487999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.306588"
-];
-    w:bagOfWords "G\nWVORMELDANGE\nNo 65\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1312";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

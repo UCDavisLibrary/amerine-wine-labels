@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0037";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "Malaga\nNo. 7309. Reichsm. 93.50 per 1000.\nTexte impression en plus\no 7309\nILLERT\n"@spa;
-    gv:color [
-  gv:hex "a82505";
-  gv:red "168";
-  gv:blue "5";
-  gv:green "37";
-  gv:score "5.9428882000000005";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "f3e2c8";
-  gv:red "243";
-  gv:blue "200";
-  gv:green "226";
-  gv:score "4.3706249";
-  gv:coverage "12.5"
-], [
-  gv:hex "8f371e";
-  gv:red "143";
-  gv:blue "30";
-  gv:green "55";
-  gv:score "4.324233899999999";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "8a7341";
-  gv:red "138";
-  gv:blue "65";
-  gv:green "115";
-  gv:score "2.8729573";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "774733";
-  gv:red "119";
-  gv:blue "51";
-  gv:green "71";
-  gv:score "2.0284653";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "f48424";
-  gv:red "244";
-  gv:blue "36";
-  gv:green "132";
-  gv:score "1.7223733";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "292f47";
-  gv:red "41";
-  gv:blue "71";
-  gv:green "47";
-  gv:score "1.5631707000000001";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "151549";
-  gv:red "21";
-  gv:blue "73";
-  gv:green "21";
-  gv:score "0.8745473800000001";
-  gv:coverage "0.18"
-], [
-  gv:hex "b75d40";
-  gv:red "183";
-  gv:blue "64";
-  gv:green "93";
-  gv:score "3.2351192";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "d1c3a4";
-  gv:red "209";
-  gv:blue "164";
-  gv:green "195";
-  gv:score "3.0048788";
-  gv:coverage "3.3666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.130876"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.763182"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.587029"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.159792"
-];
-    w:bagOfWords "Malaga\nNo. 7309. Reichsm. 93.50 per 1000.\nTexte impression en plus\no 7309\nILLERT\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0037";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

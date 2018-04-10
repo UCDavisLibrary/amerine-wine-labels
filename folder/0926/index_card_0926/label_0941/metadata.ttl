@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0941";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "AUBONNE\nelos Capitaine\noiNTNN\nRAS\nesence de\nI 217\nCANTI NIE R\ntotee de la eoste, oft cergue\n"@deu;
-    gv:color [
-  gv:hex "cb913b";
-  gv:red "203";
-  gv:blue "59";
-  gv:green "145";
-  gv:score "15.660177000000001";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "f5e1c1";
-  gv:red "245";
-  gv:blue "193";
-  gv:green "225";
-  gv:score "5.5283427000000005";
-  gv:coverage "31.04"
-], [
-  gv:hex "ddbe87";
-  gv:red "221";
-  gv:blue "135";
-  gv:green "190";
-  gv:score "5.1810488";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "744712";
-  gv:red "116";
-  gv:blue "18";
-  gv:green "71";
-  gv:score "2.8272524";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "3d3016";
-  gv:red "61";
-  gv:blue "22";
-  gv:green "48";
-  gv:score "2.4528923000000002";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "c09840";
-  gv:red "192";
-  gv:blue "64";
-  gv:green "152";
-  gv:score "6.7872435";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "d08f23";
-  gv:red "208";
-  gv:blue "35";
-  gv:green "143";
-  gv:score "5.7658091";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "bb9a62";
-  gv:red "187";
-  gv:blue "98";
-  gv:green "154";
-  gv:score "4.8144028";
-  gv:coverage "0.66"
-], [
-  gv:hex "c69058";
-  gv:red "198";
-  gv:blue "88";
-  gv:green "144";
-  gv:score "4.6783682";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "d7c2a2";
-  gv:red "215";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "3.9922121999999995";
-  gv:coverage "9.4133332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.004253"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.97232199999999"
-];
-    w:bagOfWords "AUBONNE\nelos Capitaine\noiNTNN\nRAS\nesence de\nI 217\nCANTI NIE R\ntotee de la eoste, oft cergue\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0941";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

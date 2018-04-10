@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0723";
-    dct:type "image";
-    w:bagOfWords "MARQUES DE MURRIETA\nL O G R O N O)\nMARCAREGISTRADA\nEMBOYELLADOR N9 53.\nCARTA BLANCA\nCOSECHA 1942\n"@undefined;
-    gv:color [
-  gv:hex "dbc5ab";
-  gv:red "219";
-  gv:blue "171";
-  gv:green "197";
-  gv:score "58.078799999999994";
-  gv:coverage "32.519999999999996"
-], [
-  gv:hex "bc9165";
-  gv:red "188";
-  gv:blue "101";
-  gv:green "145";
-  gv:score "3.1802509";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "b59b7d";
-  gv:red "181";
-  gv:blue "125";
-  gv:green "155";
-  gv:score "11.791515";
-  gv:coverage "4.9733333"
-], [
-  gv:hex "ebd7bf";
-  gv:red "235";
-  gv:blue "191";
-  gv:green "215";
-  gv:score "6.9936924";
-  gv:coverage "6.1933335"
-], [
-  gv:hex "927859";
-  gv:red "146";
-  gv:blue "89";
-  gv:green "120";
-  gv:score "3.2527559";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "ba9868";
-  gv:red "186";
-  gv:blue "104";
-  gv:green "152";
-  gv:score "3.0898331";
-  gv:coverage "0.52"
-], [
-  gv:hex "997147";
-  gv:red "153";
-  gv:blue "71";
-  gv:green "113";
-  gv:score "2.6256885";
-  gv:coverage "0.32"
-], [
-  gv:hex "e1be8f";
-  gv:red "225";
-  gv:blue "143";
-  gv:green "190";
-  gv:score "1.6040092";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "94764c";
-  gv:red "148";
-  gv:blue "76";
-  gv:green "118";
-  gv:score "1.5721796";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "be9877";
-  gv:red "190";
-  gv:blue "119";
-  gv:green "152";
-  gv:score "1.4131779";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.057294"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.849818000000006"
-];
-    w:bagOfWords "MARQUES DE MURRIETA\nL O G R O N O)\nMARCAREGISTRADA\nEMBOYELLADOR N9 53.\nCARTA BLANCA\nCOSECHA 1942\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0723";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

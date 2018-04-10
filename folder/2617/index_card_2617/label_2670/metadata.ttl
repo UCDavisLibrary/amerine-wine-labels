@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2670";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "Alcoholic Content 13%. by volume\nNet Contents 1 Pint 8 Fl. 02.\nProduce of France\nAPPELLATION CONTROLEE\nLEON GRIVE LET-C US SET, s. A.\nNEGOCIANT ANUITS ST GEORGES (COTE D'OR)\nDEPOsE\n"@fra;
-    gv:color [
-  gv:hex "e2c49e";
-  gv:red "226";
-  gv:blue "158";
-  gv:green "196";
-  gv:score "41.252184";
-  gv:coverage "15.113333"
-], [
-  gv:hex "7d4930";
-  gv:red "125";
-  gv:blue "48";
-  gv:green "73";
-  gv:score "2.1229578";
-  gv:coverage "0.26"
-], [
-  gv:hex "6a2411";
-  gv:red "106";
-  gv:blue "17";
-  gv:green "36";
-  gv:score "1.5358591";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e3c295";
-  gv:red "227";
-  gv:blue "149";
-  gv:green "194";
-  gv:score "15.697835";
-  gv:coverage "5.6933332000000005"
-], [
-  gv:hex "e8b78d";
-  gv:red "232";
-  gv:blue "141";
-  gv:green "183";
-  gv:score "6.8342023";
-  gv:coverage "2.56"
-], [
-  gv:hex "b89b77";
-  gv:red "184";
-  gv:blue "119";
-  gv:green "155";
-  gv:score "5.8899257";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "ca966d";
-  gv:red "202";
-  gv:blue "109";
-  gv:green "150";
-  gv:score "2.8900523000000002";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "e8bb9a";
-  gv:red "232";
-  gv:blue "154";
-  gv:green "187";
-  gv:score "2.7986312";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "8d7455";
-  gv:red "141";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "2.3764016";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "f3d7b2";
-  gv:red "243";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "2.3575054";
-  gv:coverage "12.373333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.537429"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "61.897718999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "61.090648"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "59.03350699999999"
-];
-    w:bagOfWords "Alcoholic Content 13%. by volume\nNet Contents 1 Pint 8 Fl. 02.\nProduce of France\nAPPELLATION CONTROLEE\nLEON GRIVE LET-C US SET, s. A.\nNEGOCIANT ANUITS ST GEORGES (COTE D'OR)\nDEPOsE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2670";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

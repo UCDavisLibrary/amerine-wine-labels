@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0652";
-    dct:type "image";
-    w:bagOfWords "C\nBLANC\nDE RAISINS BLAN\nTRES SEC\n11 o 5\n"@undefined;
-    gv:color [
-  gv:hex "d9c39e";
-  gv:red "217";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "43.652126";
-  gv:coverage "10.299999999999999"
-], [
-  gv:hex "d9bb89";
-  gv:red "217";
-  gv:blue "137";
-  gv:green "187";
-  gv:score "25.760785000000002";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "bf9d67";
-  gv:red "191";
-  gv:blue "103";
-  gv:green "157";
-  gv:score "14.934109000000001";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "b7a07a";
-  gv:red "183";
-  gv:blue "122";
-  gv:green "160";
-  gv:score "8.37273";
-  gv:coverage "0.98"
-], [
-  gv:hex "ebd7b9";
-  gv:red "235";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "2.1127319";
-  gv:coverage "3.2533332999999995"
-], [
-  gv:hex "c3965b";
-  gv:red "195";
-  gv:blue "91";
-  gv:green "150";
-  gv:score "1.9909653999999999";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "9d7e48";
-  gv:red "157";
-  gv:blue "72";
-  gv:green "126";
-  gv:score "1.1628675";
-  gv:coverage "0.1"
-], [
-  gv:hex "a27840";
-  gv:red "162";
-  gv:blue "64";
-  gv:green "120";
-  gv:score "0.6456861700000001";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "f1d7a7";
-  gv:red "241";
-  gv:blue "167";
-  gv:green "215";
-  gv:score "0.44130054";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "98825e";
-  gv:red "152";
-  gv:blue "94";
-  gv:green "130";
-  gv:score "0.39769229";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.378632"
-], [
-  gv:mid <https://g.co/kg/m/0bby24z>;
-  gv:desc "moustache";
-  gv:score "64.17183899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.463142"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.435662"
-];
-    w:bagOfWords "C\nBLANC\nDE RAISINS BLAN\nTRES SEC\n11 o 5\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0652";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

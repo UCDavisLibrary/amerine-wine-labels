@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0751";
-    dct:type "image";
-    w:bagOfWords "IN A US\nSPIT\nNIEDER\nROSTER\nEICH\nBEZIRK KIRCH BERG A M WAG RAM\nRHEIN RIES LIN G\nSPEZIALFULLUNG FUR VEREINIGTE KELLEREIEN\nMARSONER u. RAINER in INNSBRUCK SALZBURG\n"@undefined;
-    gv:color [
-  gv:hex "cec2b1";
-  gv:red "206";
-  gv:blue "177";
-  gv:green "194";
-  gv:score "21.08517";
-  gv:coverage "6.54"
-], [
-  gv:hex "e8ded0";
-  gv:red "232";
-  gv:blue "208";
-  gv:green "222";
-  gv:score "9.694699199999999";
-  gv:coverage "75.066668"
-], [
-  gv:hex "637b5b";
-  gv:red "99";
-  gv:blue "91";
-  gv:green "123";
-  gv:score "7.7934094";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "a89f8e";
-  gv:red "168";
-  gv:blue "142";
-  gv:green "159";
-  gv:score "9.7076334";
-  gv:coverage "1.72"
-], [
-  gv:hex "7b7863";
-  gv:red "123";
-  gv:blue "99";
-  gv:green "120";
-  gv:score "7.484401";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "47603f";
-  gv:red "71";
-  gv:blue "63";
-  gv:green "96";
-  gv:score "6.4719312";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "e8b49d";
-  gv:red "232";
-  gv:blue "157";
-  gv:green "180";
-  gv:score "5.869687";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "5d5844";
-  gv:red "93";
-  gv:blue "68";
-  gv:green "88";
-  gv:score "4.6609376000000005";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "d1c7bb";
-  gv:red "209";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "4.3879006";
-  gv:coverage "6.353333599999999"
-], [
-  gv:hex "468652";
-  gv:red "70";
-  gv:blue "82";
-  gv:green "134";
-  gv:score "3.4771148000000003";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.574893"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.038492999999995"
-];
-    w:bagOfWords "IN A US\nSPIT\nNIEDER\nROSTER\nEICH\nBEZIRK KIRCH BERG A M WAG RAM\nRHEIN RIES LIN G\nSPEZIALFULLUNG FUR VEREINIGTE KELLEREIEN\nMARSONER u. RAINER in INNSBRUCK SALZBURG\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0751";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

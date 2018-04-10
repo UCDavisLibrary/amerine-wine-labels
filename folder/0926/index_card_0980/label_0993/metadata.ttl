@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_0993";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "en\nERANI B 013 BUMOUD-BULLY\nn\n"@deu;
-    gv:color [
-  gv:hex "d5b99b";
-  gv:red "213";
-  gv:blue "155";
-  gv:green "185";
-  gv:score "25.374654000000003";
-  gv:coverage "23.366667"
-], [
-  gv:hex "af300f";
-  gv:red "175";
-  gv:blue "15";
-  gv:green "48";
-  gv:score "24.578581999999997";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "923b18";
-  gv:red "146";
-  gv:blue "24";
-  gv:green "59";
-  gv:score "7.7078253";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "a86b3a";
-  gv:red "168";
-  gv:blue "58";
-  gv:green "107";
-  gv:score "2.4086718";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "b59b7c";
-  gv:red "181";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "7.047998199999999";
-  gv:coverage "5.3666666"
-], [
-  gv:hex "c03618";
-  gv:red "192";
-  gv:blue "24";
-  gv:green "54";
-  gv:score "5.2232984";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "9c3c10";
-  gv:red "156";
-  gv:blue "16";
-  gv:green "60";
-  gv:score "3.8602881";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "a22f17";
-  gv:red "162";
-  gv:blue "23";
-  gv:green "47";
-  gv:score "3.6760736";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "8e7456";
-  gv:red "142";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "3.2317720000000003";
-  gv:coverage "2.02"
-], [
-  gv:hex "ad552c";
-  gv:red "173";
-  gv:blue "44";
-  gv:green "85";
-  gv:score "2.0339623000000002";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.76779400000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "en\nERANI B 013 BUMOUD-BULLY\nn\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0993";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

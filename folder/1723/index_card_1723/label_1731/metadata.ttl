@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1723/label_1731";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "swEINGRoss HAND\nSITZER\nLight Moselle\nA l c o h o l b y\nvolume 9.61\n1942 SE\nWin e\nMaximin-Grunhauser Herrenberg\nOriginal-Abfullung G. von Schubert sche Rittergutsverwaltung\n2 44\nBB\n"@deu;
-    gv:color [
-  gv:hex "af9577";
-  gv:red "175";
-  gv:blue "119";
-  gv:green "149";
-  gv:score "38.942796";
-  gv:coverage "17.313333"
-], [
-  gv:hex "2b3a16";
-  gv:red "43";
-  gv:blue "22";
-  gv:green "58";
-  gv:score "11.425261";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "8e785b";
-  gv:red "142";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "13.640025";
-  gv:coverage "4.54"
-], [
-  gv:hex "b28d6d";
-  gv:red "178";
-  gv:blue "109";
-  gv:green "141";
-  gv:score "5.9681416";
-  gv:coverage "2.7266665999999997"
-], [
-  gv:hex "615539";
-  gv:red "97";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "5.7430822";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "4b5935";
-  gv:red "75";
-  gv:blue "53";
-  gv:green "89";
-  gv:score "5.4154024000000005";
-  gv:coverage "0.8"
-], [
-  gv:hex "967252";
-  gv:red "150";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "3.4776467999999996";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "6a7753";
-  gv:red "106";
-  gv:blue "83";
-  gv:green "119";
-  gv:score "3.3398206999999998";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "393618";
-  gv:red "57";
-  gv:blue "24";
-  gv:green "54";
-  gv:score "3.0655737999999997";
-  gv:coverage "0.58"
-], [
-  gv:hex "cfb798";
-  gv:red "207";
-  gv:blue "152";
-  gv:green "183";
-  gv:score "1.7895391";
-  gv:coverage "24.933334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.935861"
-];
-    w:bagOfWords "swEINGRoss HAND\nSITZER\nLight Moselle\nA l c o h o l b y\nvolume 9.61\n1942 SE\nWin e\nMaximin-Grunhauser Herrenberg\nOriginal-Abfullung G. von Schubert sche Rittergutsverwaltung\n2 44\nBB\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1731";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

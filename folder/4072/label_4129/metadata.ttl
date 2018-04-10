@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4129";
-    dct:type "image";
-    w:bagOfWords "TTEE\nNIEI\nAPPELLATION CONTROLEE\nSOCIETE ANONY ME DE S ETABLISSEMENTS\nMAISON CENTENAIRE\nLIMoux\nFRANCE\nAU DE\n"@fra;
-    gv:color [
-  gv:hex "dbc4a5";
-  gv:red "219";
-  gv:blue "165";
-  gv:green "196";
-  gv:score "31.202993";
-  gv:coverage "20.766666999999998"
-], [
-  gv:hex "b09876";
-  gv:red "176";
-  gv:blue "118";
-  gv:green "152";
-  gv:score "17.463759";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "8e7654";
-  gv:red "142";
-  gv:blue "84";
-  gv:green "118";
-  gv:score "13.933732";
-  gv:coverage "1.22"
-], [
-  gv:hex "e4b89f";
-  gv:red "228";
-  gv:blue "159";
-  gv:green "184";
-  gv:score "7.797780599999999";
-  gv:coverage "1.46"
-], [
-  gv:hex "c0947a";
-  gv:red "192";
-  gv:blue "122";
-  gv:green "148";
-  gv:score "6.8375625";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "f0d9bb";
-  gv:red "240";
-  gv:blue "187";
-  gv:green "217";
-  gv:score "5.8365226";
-  gv:coverage "12.353333"
-], [
-  gv:hex "966a4d";
-  gv:red "150";
-  gv:blue "77";
-  gv:green "106";
-  gv:score "5.2462105";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "7a4d32";
-  gv:red "122";
-  gv:blue "50";
-  gv:green "77";
-  gv:score "4.9380075";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "6e5737";
-  gv:red "110";
-  gv:blue "55";
-  gv:green "87";
-  gv:score "2.2600321";
-  gv:coverage "0.24"
-], [
-  gv:hex "754d2b";
-  gv:red "117";
-  gv:blue "43";
-  gv:green "77";
-  gv:score "1.7547540000000001";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.265857"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "TTEE\nNIEI\nAPPELLATION CONTROLEE\nSOCIETE ANONY ME DE S ETABLISSEMENTS\nMAISON CENTENAIRE\nLIMoux\nFRANCE\nAU DE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4129";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1181";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BAR BAD ILLO\nEXTRA''\nVIEJO\nANDALUCIA ESPANA\nTODOS Los VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAvADAS EN LAS\nZONAS DE SANLUCARY JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLERAS, SON LAS MEJORES GARANIfAS DE SUS PRODUCTOs\n"@spa;
-    gv:color [
-  gv:hex "bd9d7a";
-  gv:red "189";
-  gv:blue "122";
-  gv:green "157";
-  gv:score "15.279555";
-  gv:coverage "5.04"
-], [
-  gv:hex "c69670";
-  gv:red "198";
-  gv:blue "112";
-  gv:green "150";
-  gv:score "12.123497";
-  gv:coverage "1.92"
-], [
-  gv:hex "981b18";
-  gv:red "152";
-  gv:blue "24";
-  gv:green "27";
-  gv:score "9.0347014";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "d2b390";
-  gv:red "210";
-  gv:blue "144";
-  gv:green "179";
-  gv:score "12.597427";
-  gv:coverage "38.54"
-], [
-  gv:hex "c1a075";
-  gv:red "193";
-  gv:blue "117";
-  gv:green "160";
-  gv:score "7.3635526";
-  gv:coverage "1.54"
-], [
-  gv:hex "c69877";
-  gv:red "198";
-  gv:blue "119";
-  gv:green "152";
-  gv:score "6.8828925";
-  gv:coverage "1.68"
-], [
-  gv:hex "927454";
-  gv:red "146";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "5.0490025";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "e5b092";
-  gv:red "229";
-  gv:blue "146";
-  gv:green "176";
-  gv:score "4.5863908";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "800a05";
-  gv:red "128";
-  gv:blue "5";
-  gv:green "10";
-  gv:score "4.4772133";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "a26c49";
-  gv:red "162";
-  gv:blue "73";
-  gv:green "108";
-  gv:score "3.3929735";
-  gv:coverage "0.64666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.448532"
-];
-    w:bagOfWords "BAR BAD ILLO\nEXTRA''\nVIEJO\nANDALUCIA ESPANA\nTODOS Los VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAvADAS EN LAS\nZONAS DE SANLUCARY JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLERAS, SON LAS MEJORES GARANIfAS DE SUS PRODUCTOs\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1181";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

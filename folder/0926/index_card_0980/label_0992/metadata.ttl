@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_0992";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "GRAND CLOS\nyeorges louis goni allay\neorges. 0tus Jon alla\nǒuid\npropnetoure-llugneron()\nroprietairc-Op igneron0\nCull\n自mmm /\n0\n"@deu;
-    gv:color [
-  gv:hex "e0c4a2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "18.987225";
-  gv:coverage "13.133334"
-], [
-  gv:hex "ac2e23";
-  gv:red "172";
-  gv:blue "35";
-  gv:green "46";
-  gv:score "5.1831793";
-  gv:coverage "0.24"
-], [
-  gv:hex "3a5d56";
-  gv:red "58";
-  gv:blue "86";
-  gv:green "93";
-  gv:score "0.3628229";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "dcb785";
-  gv:red "220";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "16.731744000000003";
-  gv:coverage "5.5066667"
-], [
-  gv:hex "be9b69";
-  gv:red "190";
-  gv:blue "105";
-  gv:green "155";
-  gv:score "10.801817";
-  gv:coverage "3.9800000000000004"
-], [
-  gv:hex "3c3d29";
-  gv:red "60";
-  gv:blue "41";
-  gv:green "61";
-  gv:score "0.0965689";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "c59664";
-  gv:red "197";
-  gv:blue "100";
-  gv:green "150";
-  gv:score "8.5307561";
-  gv:coverage "6.0666665"
-], [
-  gv:hex "dfb281";
-  gv:red "223";
-  gv:blue "129";
-  gv:green "178";
-  gv:score "7.207275200000001";
-  gv:coverage "2.58"
-], [
-  gv:hex "b49a78";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "5.515771399999999";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "f2d7b8";
-  gv:red "242";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "4.0193312";
-  gv:coverage "23.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.071039999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.965536"
-];
-    w:bagOfWords "GRAND CLOS\nyeorges louis goni allay\neorges. 0tus Jon alla\nǒuid\npropnetoure-llugneron()\nroprietairc-Op igneron0\nCull\n自mmm /\n0\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0992";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

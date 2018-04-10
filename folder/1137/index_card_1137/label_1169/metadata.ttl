@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1169";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "SALI GNAC\nCOGNAC\nMARK\nTRADE\nMADE BY\nLOUIS DE SALIGNAC&Co\nCOGNAC (FRANCE)\nPRODUCT OF FRANCE\n1/2 PINT\nIMPORTED\n84 PROOF\nAUSTIN NICHO I S\n& CERPORATED\nBROOKLYN\nNEW\nSOLE DISTRIBUTERS FOR\n"@undefined;
-    gv:color [
-  gv:hex "a9987f";
-  gv:red "169";
-  gv:blue "127";
-  gv:green "152";
-  gv:score "22.583835999999998";
-  gv:coverage "4.46"
-], [
-  gv:hex "87755b";
-  gv:red "135";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "22.097448";
-  gv:coverage "4.06"
-], [
-  gv:hex "d2c2aa";
-  gv:red "210";
-  gv:blue "170";
-  gv:green "194";
-  gv:score "20.945452";
-  gv:coverage "5.786666599999999"
-], [
-  gv:hex "665337";
-  gv:red "102";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "14.431842";
-  gv:coverage "1.94"
-], [
-  gv:hex "edddc6";
-  gv:red "237";
-  gv:blue "198";
-  gv:green "221";
-  gv:score "11.216783";
-  gv:coverage "8.646666999999999"
-], [
-  gv:hex "48351b";
-  gv:red "72";
-  gv:blue "27";
-  gv:green "53";
-  gv:score "3.8362034000000005";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "6b532a";
-  gv:red "107";
-  gv:blue "42";
-  gv:green "83";
-  gv:score "1.6817355999999999";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "886e42";
-  gv:red "136";
-  gv:blue "66";
-  gv:green "110";
-  gv:score "1.0281758";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "d3c3b8";
-  gv:red "211";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "0.85404972";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "eedfd3";
-  gv:red "238";
-  gv:blue "211";
-  gv:green "223";
-  gv:score "0.4806011";
-  gv:coverage "72.833335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.16929999999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.687973"
-];
-    w:bagOfWords "SALI GNAC\nCOGNAC\nMARK\nTRADE\nMADE BY\nLOUIS DE SALIGNAC&Co\nCOGNAC (FRANCE)\nPRODUCT OF FRANCE\n1/2 PINT\nIMPORTED\n84 PROOF\nAUSTIN NICHO I S\n& CERPORATED\nBROOKLYN\nNEW\nSOLE DISTRIBUTERS FOR\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1169";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

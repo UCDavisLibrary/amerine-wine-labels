@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2543";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "REM VICI\nO M UM V\nTO CHABLIS GRAND CRU\nMOUTONNE\nAPPELLATION CHABLIS GRAND CRU CONTROLEE\nNOP\nLONG DEPAQUIT\nNEGOCIANTACHABLIS (YONNE)\nG DEP\n"@fra;
-    gv:color [
-  gv:hex "e0c59e";
-  gv:red "224";
-  gv:blue "158";
-  gv:green "197";
-  gv:score "42.683339";
-  gv:coverage "22.7"
-], [
-  gv:hex "e2c08f";
-  gv:red "226";
-  gv:blue "143";
-  gv:green "192";
-  gv:score "24.399579";
-  gv:coverage "7.153333000000001"
-], [
-  gv:hex "b39975";
-  gv:red "179";
-  gv:blue "117";
-  gv:green "153";
-  gv:score "10.686495";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "907654";
-  gv:red "144";
-  gv:blue "84";
-  gv:green "118";
-  gv:score "5.0465523999999995";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "f2dab5";
-  gv:red "242";
-  gv:blue "181";
-  gv:green "218";
-  gv:score "4.8273206";
-  gv:coverage "13.466667"
-], [
-  gv:hex "b8996b";
-  gv:red "184";
-  gv:blue "107";
-  gv:green "153";
-  gv:score "4.5994204";
-  gv:coverage "0.96"
-], [
-  gv:hex "917349";
-  gv:red "145";
-  gv:blue "73";
-  gv:green "115";
-  gv:score "2.2643364999999998";
-  gv:coverage "0.54"
-], [
-  gv:hex "6a5232";
-  gv:red "106";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "1.9312235";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "6c5129";
-  gv:red "108";
-  gv:blue "41";
-  gv:green "81";
-  gv:score "1.1632862000000002";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "4a3316";
-  gv:red "74";
-  gv:blue "22";
-  gv:green "51";
-  gv:score "1.0065359";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.538636"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.309346"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.517678"
-];
-    w:bagOfWords "REM VICI\nO M UM V\nTO CHABLIS GRAND CRU\nMOUTONNE\nAPPELLATION CHABLIS GRAND CRU CONTROLEE\nNOP\nLONG DEPAQUIT\nNEGOCIANTACHABLIS (YONNE)\nG DEP\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2543";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

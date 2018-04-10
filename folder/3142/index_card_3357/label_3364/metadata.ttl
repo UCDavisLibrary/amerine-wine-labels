@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3364";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "ALCOHOLIC STRENGTH BY VOLUME 120\nCONTENTS PINT 8 FLUID OUNCES\nGrand Juin\nASON FONDEE\nde Bourgogne\n30 ommaro Rugtens\nAppellation Pommard Controlée 1937\nPRODUCED BY\nTRADE MARK\nJose DreouHIr\nEN 188o,\nPROPRIETAIRE ET NEGOCIANT\nCOTE D'OR)\nA BEAU NE\nBOTTLED IN FRANCE\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "dec09b";
-  gv:red "222";
-  gv:blue "155";
-  gv:green "192";
-  gv:score "39.067423";
-  gv:coverage "16.093333"
-], [
-  gv:hex "bb644f";
-  gv:red "187";
-  gv:blue "79";
-  gv:green "100";
-  gv:score "2.2685818";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "6b190d";
-  gv:red "107";
-  gv:blue "13";
-  gv:green "25";
-  gv:score "1.7928613";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "e9b898";
-  gv:red "233";
-  gv:blue "152";
-  gv:green "184";
-  gv:score "16.265307";
-  gv:coverage "5.48"
-], [
-  gv:hex "b69976";
-  gv:red "182";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "9.0106376";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "c69275";
-  gv:red "198";
-  gv:blue "117";
-  gv:green "146";
-  gv:score "6.1223775";
-  gv:coverage "1.66"
-], [
-  gv:hex "927754";
-  gv:red "146";
-  gv:blue "84";
-  gv:green "119";
-  gv:score "4.019507";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "c48d6b";
-  gv:red "196";
-  gv:blue "107";
-  gv:green "141";
-  gv:score "3.2185338";
-  gv:coverage "1"
-], [
-  gv:hex "9f6f54";
-  gv:red "159";
-  gv:blue "84";
-  gv:green "111";
-  gv:score "2.1952722000000002";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "8e3b28";
-  gv:red "142";
-  gv:blue "40";
-  gv:green "59";
-  gv:score "1.7824311";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.699476"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.645567"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.559718999999994"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.47304200000001"
-];
-    w:bagOfWords "ALCOHOLIC STRENGTH BY VOLUME 120\nCONTENTS PINT 8 FLUID OUNCES\nGrand Juin\nASON FONDEE\nde Bourgogne\n30 ommaro Rugtens\nAppellation Pommard Controlée 1937\nPRODUCED BY\nTRADE MARK\nJose DreouHIr\nEN 188o,\nPROPRIETAIRE ET NEGOCIANT\nCOTE D'OR)\nA BEAU NE\nBOTTLED IN FRANCE\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3364";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

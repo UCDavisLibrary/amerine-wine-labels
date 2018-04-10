@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2415";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU\nPAVEIL DE LUZE\nAppellation HAUT-MEDOC Controlée\n1945\nBORDEAUX\nIM PR\nEN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "7d756e";
-  gv:red "125";
-  gv:blue "110";
-  gv:green "117";
-  gv:score "36.540997";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "a09790";
-  gv:red "160";
-  gv:blue "144";
-  gv:green "151";
-  gv:score "21.557553";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "5f5851";
-  gv:red "95";
-  gv:blue "81";
-  gv:green "88";
-  gv:score "20.742546";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "c8bfb8";
-  gv:red "200";
-  gv:blue "184";
-  gv:green "191";
-  gv:score "16.415368";
-  gv:coverage "15.793334"
-], [
-  gv:hex "e7ddd6";
-  gv:red "231";
-  gv:blue "214";
-  gv:green "221";
-  gv:score "3.0947542";
-  gv:coverage "25.013333999999997"
-], [
-  gv:hex "413b35";
-  gv:red "65";
-  gv:blue "53";
-  gv:green "59";
-  gv:score "1.3131823";
-  gv:coverage "0.08"
-], [
-  gv:hex "c8bdab";
-  gv:red "200";
-  gv:blue "171";
-  gv:green "189";
-  gv:score "0.081091921";
-  gv:coverage "21.7"
-], [
-  gv:hex "3c301e";
-  gv:red "60";
-  gv:blue "30";
-  gv:green "48";
-  gv:score "0.077985326";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "5e5240";
-  gv:red "94";
-  gv:blue "64";
-  gv:green "82";
-  gv:score "0.060012645999999996";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "a99d8b";
-  gv:red "169";
-  gv:blue "139";
-  gv:green "157";
-  gv:score "0.055237155";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "65.68225600000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.120892000000005"
-];
-    w:bagOfWords "CHATEAU\nPAVEIL DE LUZE\nAppellation HAUT-MEDOC Controlée\n1945\nBORDEAUX\nIM PR\nEN FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2415";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3077";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHATEAU\nLYONNAT\nLUSSAC STEMILION\n1937\nAPPELLATION LUSSAC-ST. EMILION CONTROLEE\nV ve\nBaudou, Prop\nMis en Bouteilles au Chameau\nDEPOSE\nBERTIMON L180URWE\n"@fra;
-    gv:color [
-  gv:hex "dfc7a7";
-  gv:red "223";
-  gv:blue "167";
-  gv:green "199";
-  gv:score "36.146125";
-  gv:coverage "19.220000000000002"
-], [
-  gv:hex "190500";
-  gv:red "25";
-  gv:blue "undefined";
-  gv:green "5";
-  gv:score "0.81231836";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "ab967d";
-  gv:red "171";
-  gv:blue "125";
-  gv:green "150";
-  gv:score "24.967365";
-  gv:coverage "4.7933333000000005"
-], [
-  gv:hex "8b775d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "17.064027";
-  gv:coverage "2.86"
-], [
-  gv:hex "f0dabb";
-  gv:red "240";
-  gv:blue "187";
-  gv:green "218";
-  gv:score "7.5223573";
-  gv:coverage "7.3266670000000005"
-], [
-  gv:hex "67533b";
-  gv:red "103";
-  gv:blue "59";
-  gv:green "83";
-  gv:score "7.2994106";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "48341b";
-  gv:red "72";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "2.9830353";
-  gv:coverage "0.62"
-], [
-  gv:hex "2b1903";
-  gv:red "43";
-  gv:blue "3";
-  gv:green "25";
-  gv:score "0.6488286";
-  gv:coverage "0.18"
-], [
-  gv:hex "2d1501";
-  gv:red "45";
-  gv:blue "1";
-  gv:green "21";
-  gv:score "0.54502976";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "ede3da";
-  gv:red "237";
-  gv:blue "218";
-  gv:green "227";
-  gv:score "0.51014614";
-  gv:coverage "58.873332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.55803399999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.373077"
-];
-    w:bagOfWords "CHATEAU\nLYONNAT\nLUSSAC STEMILION\n1937\nAPPELLATION LUSSAC-ST. EMILION CONTROLEE\nV ve\nBaudou, Prop\nMis en Bouteilles au Chameau\nDEPOSE\nBERTIMON L180URWE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3077";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

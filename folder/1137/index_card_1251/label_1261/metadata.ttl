@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1251/label_1261";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "IMPORTED BRANDY\na CAPE\nOF\nDISTRIBUTED BY\nBROWN-FORMAN DISTILLERS CORPORATION\nLOUISVILLE, KY.\nPRODUCT OF UNI 0 N 0 F SOUTH AFRICA\n"@undefined;
-    gv:color [
-  gv:hex "d6bfa2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "191";
-  gv:score "22.873852";
-  gv:coverage "15.886667"
-], [
-  gv:hex "883722";
-  gv:red "136";
-  gv:blue "34";
-  gv:green "55";
-  gv:score "2.246232";
-  gv:coverage "0.12"
-], [
-  gv:hex "191108";
-  gv:red "25";
-  gv:blue "8";
-  gv:green "17";
-  gv:score "1.8288838000000003";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "b29979";
-  gv:red "178";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "22.66303";
-  gv:coverage "7.3933333"
-], [
-  gv:hex "917858";
-  gv:red "145";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "12.286305";
-  gv:coverage "2.8466666000000003"
-], [
-  gv:hex "efd9be";
-  gv:red "239";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "5.0633751";
-  gv:coverage "4.8333332"
-], [
-  gv:hex "c0907c";
-  gv:red "192";
-  gv:blue "124";
-  gv:green "144";
-  gv:score "4.372987200000001";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "9a6d56";
-  gv:red "154";
-  gv:blue "86";
-  gv:green "109";
-  gv:score "3.5363037";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "e6b9a8";
-  gv:red "230";
-  gv:blue "168";
-  gv:green "185";
-  gv:score "3.1575661";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "92774d";
-  gv:red "146";
-  gv:blue "77";
-  gv:green "119";
-  gv:score "2.9963544";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.872337"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "62.078672999999995"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "57.1775"
-];
-    w:bagOfWords "IMPORTED BRANDY\na CAPE\nOF\nDISTRIBUTED BY\nBROWN-FORMAN DISTILLERS CORPORATION\nLOUISVILLE, KY.\nPRODUCT OF UNI 0 N 0 F SOUTH AFRICA\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1261";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

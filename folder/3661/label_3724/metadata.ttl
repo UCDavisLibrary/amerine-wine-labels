@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3724";
-    dct:type "image";
-    w:bagOfWords "ALBARINO FEFINANE.\npONTEVEDRA)\nAMBADOS\nn. 65\n"@spa;
-    gv:color [
-  gv:hex "d7c4ac";
-  gv:red "215";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "30.342537000000004";
-  gv:coverage "22.106666999999998"
-], [
-  gv:hex "877560";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "21.586575";
-  gv:coverage "6.460000000000001"
-], [
-  gv:hex "ab9982";
-  gv:red "171";
-  gv:blue "130";
-  gv:green "153";
-  gv:score "20.399816";
-  gv:coverage "7.76"
-], [
-  gv:hex "645442";
-  gv:red "100";
-  gv:blue "66";
-  gv:green "84";
-  gv:score "18.690427";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "ecdac3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "4.561208199999999";
-  gv:coverage "12.193333"
-], [
-  gv:hex "463726";
-  gv:red "70";
-  gv:blue "38";
-  gv:green "55";
-  gv:score "3.8192052";
-  gv:coverage "0.74"
-], [
-  gv:hex "64544a";
-  gv:red "100";
-  gv:blue "74";
-  gv:green "84";
-  gv:score "0.34918527";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "2b1d09";
-  gv:red "43";
-  gv:blue "9";
-  gv:green "29";
-  gv:score "0.20392248";
-  gv:coverage "0.06"
-], [
-  gv:hex "7d746a";
-  gv:red "125";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "0.015409045";
-  gv:coverage "0.08"
-], [
-  gv:hex "e7dcd3";
-  gv:red "231";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "0.012869362";
-  gv:coverage "44.913334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.556353"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "67.757571"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "66.109622"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.823959"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "58.920443"
-];
-    w:bagOfWords "ALBARINO FEFINANE.\npONTEVEDRA)\nAMBADOS\nn. 65\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3724";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

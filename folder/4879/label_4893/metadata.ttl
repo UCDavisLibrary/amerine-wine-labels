@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4893";
-    dct:type "image";
-    w:bagOfWords "Desde\n1884\nLas winos de Escorihuela\nse elaboran desde 1884\nrespetando rigurosamente\nnormas y practicas de tra-\nbajo que con el transcurso\nde las anos se han conver-\nen\nel de\nla tradicioin enologica\nmen-\nEnvasado en origen por\nSA. Establecimientos Viti.\nuinicolas Escorihuela en\nBelyrano 1188\nGodoy\nMendaga\n1.N.V A-74104, 2.1.900\nIndustria Argentina\n700ml\nCant.\nMeta\npont\nVINO FINO TINTO\nTT\n"@undefined;
-    gv:color [
-  gv:hex "642202";
-  gv:red "100";
-  gv:blue "2";
-  gv:green "34";
-  gv:score "27.789411";
-  gv:coverage "6.306666900000001"
-], [
-  gv:hex "130d0c";
-  gv:red "19";
-  gv:blue "12";
-  gv:green "13";
-  gv:score "1.9076247000000002";
-  gv:coverage "3.8466666"
-], [
-  gv:hex "e7b498";
-  gv:red "231";
-  gv:blue "152";
-  gv:green "180";
-  gv:score "1.7585640999999999";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "80390f";
-  gv:red "128";
-  gv:blue "15";
-  gv:green "57";
-  gv:score "18.032816";
-  gv:coverage "4.1666668"
-], [
-  gv:hex "7b3f1b";
-  gv:red "123";
-  gv:blue "27";
-  gv:green "63";
-  gv:score "17.323111";
-  gv:coverage "4.58"
-], [
-  gv:hex "612909";
-  gv:red "97";
-  gv:blue "9";
-  gv:green "41";
-  gv:score "11.216871000000001";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "8e3c06";
-  gv:red "142";
-  gv:blue "6";
-  gv:green "60";
-  gv:score "3.4581147";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "4f1000";
-  gv:red "79";
-  gv:blue "undefined";
-  gv:green "16";
-  gv:score "3.0790279";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "450700";
-  gv:red "69";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "2.7069263";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "4e1d09";
-  gv:red "78";
-  gv:blue "9";
-  gv:green "29";
-  gv:score "1.6445859999999999";
-  gv:coverage "0.5133333200000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.833313"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Desde\n1884\nLas winos de Escorihuela\nse elaboran desde 1884\nrespetando rigurosamente\nnormas y practicas de tra-\nbajo que con el transcurso\nde las anos se han conver-\nen\nel de\nla tradicioin enologica\nmen-\nEnvasado en origen por\nSA. Establecimientos Viti.\nuinicolas Escorihuela en\nBelyrano 1188\nGodoy\nMendaga\n1.N.V A-74104, 2.1.900\nIndustria Argentina\n700ml\nCant.\nMeta\npont\nVINO FINO TINTO\nTT\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4893";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2809";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "MARK\nTRADE\nGRAVES SUPERIEUR\nAppellation Graves Control ee\nMARQUE DU CASQUE\nAUDINET & BUHAN\nMAISON FOND EE E N 8 18\nNEGOCIANTS A BORDEAUX GIRON DE\n"@fra;
-    gv:color [
-  gv:hex "9d1620";
-  gv:red "157";
-  gv:blue "32";
-  gv:green "22";
-  gv:score "25.127667";
-  gv:coverage "0.36"
-], [
-  gv:hex "cdbcab";
-  gv:red "205";
-  gv:blue "171";
-  gv:green "188";
-  gv:score "14.906849";
-  gv:coverage "8.3"
-], [
-  gv:hex "6a1917";
-  gv:red "106";
-  gv:blue "23";
-  gv:green "25";
-  gv:score "4.2278651";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "cfc4bd";
-  gv:red "207";
-  gv:blue "189";
-  gv:green "196";
-  gv:score "8.9247584";
-  gv:coverage "18.759999999999998"
-], [
-  gv:hex "9d2832";
-  gv:red "157";
-  gv:blue "50";
-  gv:green "40";
-  gv:score "5.921907399999999";
-  gv:coverage "0.1"
-], [
-  gv:hex "810b12";
-  gv:red "129";
-  gv:blue "18";
-  gv:green "11";
-  gv:score "5.1251660999999995";
-  gv:coverage "0.08"
-], [
-  gv:hex "a69b95";
-  gv:red "166";
-  gv:blue "149";
-  gv:green "155";
-  gv:score "4.7397278";
-  gv:coverage "1.38"
-], [
-  gv:hex "b91226";
-  gv:red "185";
-  gv:blue "38";
-  gv:green "18";
-  gv:score "3.7376437";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "827672";
-  gv:red "130";
-  gv:blue "114";
-  gv:green "118";
-  gv:score "3.4569412";
-  gv:coverage "0.84"
-], [
-  gv:hex "e6dcd6";
-  gv:red "230";
-  gv:blue "214";
-  gv:green "220";
-  gv:score "3.3813119";
-  gv:coverage "61.733335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.016634"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.13729000000001"
-];
-    w:bagOfWords "MARK\nTRADE\nGRAVES SUPERIEUR\nAppellation Graves Control ee\nMARQUE DU CASQUE\nAUDINET & BUHAN\nMAISON FOND EE E N 8 18\nNEGOCIANTS A BORDEAUX GIRON DE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2809";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

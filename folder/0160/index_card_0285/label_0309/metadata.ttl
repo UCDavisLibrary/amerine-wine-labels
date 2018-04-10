@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0309";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "INTAGE\n1935\nORIGINAL\nHOTEL DEL MONTE\nSELECTION S\nCALIFORNIA\nZINFANDEL\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST\n876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & Co.\nSAN FRANCISCO, CALIFORNIA\n01941 P & co.\n"@eng;
-    gv:color [
-  gv:hex "debb8e";
-  gv:red "222";
-  gv:blue "142";
-  gv:green "187";
-  gv:score "18.144738999999998";
-  gv:coverage "9.7133331"
-], [
-  gv:hex "dbbb96";
-  gv:red "219";
-  gv:blue "150";
-  gv:green "187";
-  gv:score "16.509472";
-  gv:coverage "13.786666"
-], [
-  gv:hex "e5b58d";
-  gv:red "229";
-  gv:blue "141";
-  gv:green "181";
-  gv:score "10.734605";
-  gv:coverage "4.9133334"
-], [
-  gv:hex "b49675";
-  gv:red "180";
-  gv:blue "117";
-  gv:green "150";
-  gv:score "10.5745";
-  gv:coverage "3.5666667"
-], [
-  gv:hex "907354";
-  gv:red "144";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "8.277968300000001";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "b9986d";
-  gv:red "185";
-  gv:blue "109";
-  gv:green "152";
-  gv:score "3.6174491000000004";
-  gv:coverage "0.98"
-], [
-  gv:hex "6d5234";
-  gv:red "109";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "3.4522358000000004";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "c8936e";
-  gv:red "200";
-  gv:blue "110";
-  gv:green "147";
-  gv:score "2.9312655";
-  gv:coverage "1.06"
-], [
-  gv:hex "93744a";
-  gv:red "147";
-  gv:blue "74";
-  gv:green "116";
-  gv:score "2.8663594";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "9f6d47";
-  gv:red "159";
-  gv:blue "71";
-  gv:green "109";
-  gv:score "2.8259207";
-  gv:coverage "0.7799999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.248417"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "54.288733"
-];
-    w:bagOfWords "INTAGE\n1935\nORIGINAL\nHOTEL DEL MONTE\nSELECTION S\nCALIFORNIA\nZINFANDEL\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST\n876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & Co.\nSAN FRANCISCO, CALIFORNIA\n01941 P & co.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0309";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

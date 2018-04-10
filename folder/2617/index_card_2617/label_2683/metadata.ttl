@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2683";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "MARK\nTRADE\nBeaujolais Supérieur 1949\nBotlled and Shipped by Armand ROUX\nNegociant BEAUNE (Cote-d'Or) France\nBURGUNDY RED WINE\nPRODUCE\nOF FRANCE\nBERCUT VANDERVOORT & Co. INC.\n10. LOM BARD STREET. SAN FRANCISCO, STATES\nSOLE AGENTS FOR THE UNITED PRINTED IN FRANCE\nCONTENTS\nI PT 8 FL. OZ.\nALCOHOL 12,5\nBY VOLUME\nMAA-poor\n"@fra;
-    gv:color [
-  gv:hex "dec3a0";
-  gv:red "222";
-  gv:blue "160";
-  gv:green "195";
-  gv:score "65.5651";
-  gv:coverage "36.573333000000005"
-], [
-  gv:hex "b59a7a";
-  gv:red "181";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "15.420511000000001";
-  gv:coverage "5.226666900000001"
-], [
-  gv:hex "e1bf90";
-  gv:red "225";
-  gv:blue "144";
-  gv:green "191";
-  gv:score "7.2720595";
-  gv:coverage "2.4"
-], [
-  gv:hex "8e7659";
-  gv:red "142";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "5.7907231";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "efd7b7";
-  gv:red "239";
-  gv:blue "183";
-  gv:green "215";
-  gv:score "3.347858";
-  gv:coverage "27.36"
-], [
-  gv:hex "6d5637";
-  gv:red "109";
-  gv:blue "55";
-  gv:green "86";
-  gv:score "1.1257951";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "e1b787";
-  gv:red "225";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "0.8255802099999999";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "bf9d6e";
-  gv:red "191";
-  gv:blue "110";
-  gv:green "157";
-  gv:score "0.28471693000000003";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "cca06e";
-  gv:red "204";
-  gv:blue "110";
-  gv:green "160";
-  gv:score "0.08863372500000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "977a52";
-  gv:red "151";
-  gv:blue "82";
-  gv:green "122";
-  gv:score "0.045068498";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.912474"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.3624"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.96885999999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.385946000000004"
-];
-    w:bagOfWords "MARK\nTRADE\nBeaujolais Supérieur 1949\nBotlled and Shipped by Armand ROUX\nNegociant BEAUNE (Cote-d'Or) France\nBURGUNDY RED WINE\nPRODUCE\nOF FRANCE\nBERCUT VANDERVOORT & Co. INC.\n10. LOM BARD STREET. SAN FRANCISCO, STATES\nSOLE AGENTS FOR THE UNITED PRINTED IN FRANCE\nCONTENTS\nI PT 8 FL. OZ.\nALCOHOL 12,5\nBY VOLUME\nMAA-poor\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2683";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4204";
-    dct:type "image";
-    w:bagOfWords "Yieux Gzemache\nClu\nMas Amiel\n"@fra;
-    gv:color [
-  gv:hex "dcc2a1";
-  gv:red "220";
-  gv:blue "161";
-  gv:green "194";
-  gv:score "70.973408";
-  gv:coverage "28.860000000000003"
-], [
-  gv:hex "b49a7a";
-  gv:red "180";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "9.4784282";
-  gv:coverage "3.1333334999999995"
-], [
-  gv:hex "e2b999";
-  gv:red "226";
-  gv:blue "153";
-  gv:green "185";
-  gv:score "3.6600322";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "91785a";
-  gv:red "145";
-  gv:blue "90";
-  gv:green "120";
-  gv:score "2.9798377";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "efd6b8";
-  gv:red "239";
-  gv:blue "184";
-  gv:green "214";
-  gv:score "2.8551314000000003";
-  gv:coverage "14.84"
-], [
-  gv:hex "bf9677";
-  gv:red "191";
-  gv:blue "119";
-  gv:green "150";
-  gv:score "2.4332326";
-  gv:coverage "0.6"
-], [
-  gv:hex "e4b489";
-  gv:red "228";
-  gv:blue "137";
-  gv:green "180";
-  gv:score "2.3478296";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "bc9b70";
-  gv:red "188";
-  gv:blue "112";
-  gv:green "155";
-  gv:score "1.3689751000000001";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "c6956a";
-  gv:red "198";
-  gv:blue "106";
-  gv:green "149";
-  gv:score "1.3186521999999998";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "d7b589";
-  gv:red "215";
-  gv:blue "137";
-  gv:green "181";
-  gv:score "1.2514204";
-  gv:coverage "0.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "77.188158"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.52544"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "65.118849"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "58.662683"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.533880999999994"
-];
-    w:bagOfWords "Yieux Gzemache\nClu\nMas Amiel\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4204";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

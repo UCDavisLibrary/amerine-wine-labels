@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2736";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "ILIE\nPROPRIETAIRES-NEGOCIANTS\nTAIN L'HERMITAGE\nPRODUCT OF FRANCE\nDROME\n"@fra;
-    gv:color [
-  gv:hex "d7c6b1";
-  gv:red "215";
-  gv:blue "177";
-  gv:green "198";
-  gv:score "61.842692";
-  gv:coverage "38.9"
-], [
-  gv:hex "ad9c87";
-  gv:red "173";
-  gv:blue "135";
-  gv:green "156";
-  gv:score "12.819064999999998";
-  gv:coverage "1.72"
-], [
-  gv:hex "ebdac6";
-  gv:red "235";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "11.694423";
-  gv:coverage "22.973333"
-], [
-  gv:hex "867562";
-  gv:red "134";
-  gv:blue "98";
-  gv:green "117";
-  gv:score "7.9312153";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "675643";
-  gv:red "103";
-  gv:blue "67";
-  gv:green "86";
-  gv:score "5.2152041";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "a69466";
-  gv:red "166";
-  gv:blue "102";
-  gv:green "148";
-  gv:score "0.18426159";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "453621";
-  gv:red "69";
-  gv:blue "33";
-  gv:green "54";
-  gv:score "0.14524742999999998";
-  gv:coverage "0.06"
-], [
-  gv:hex "d2cabe";
-  gv:red "210";
-  gv:blue "190";
-  gv:green "202";
-  gv:score "0.064321526";
-  gv:coverage "4.306666600000001"
-], [
-  gv:hex "837b6f";
-  gv:red "131";
-  gv:blue "111";
-  gv:green "123";
-  gv:score "0.028704409";
-  gv:coverage "0.06"
-], [
-  gv:hex "aba396";
-  gv:red "171";
-  gv:blue "150";
-  gv:green "163";
-  gv:score "0.02860055";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.651717"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.46891"
-];
-    w:bagOfWords "ILIE\nPROPRIETAIRES-NEGOCIANTS\nTAIN L'HERMITAGE\nPRODUCT OF FRANCE\nDROME\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2736";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1631";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "B (821\nVino del Abuelo\nANTONI o BAR BA DI LLO, S.L\nSanlucar de Bda ANDALUCIA-ESPANA\n"@spa;
-    gv:color [
-  gv:hex "d42f0b";
-  gv:red "212";
-  gv:blue "11";
-  gv:green "47";
-  gv:score "52.792317";
-  gv:coverage "17.293333999999998"
-], [
-  gv:hex "6e1e06";
-  gv:red "110";
-  gv:blue "6";
-  gv:green "30";
-  gv:score "3.7803261999999997";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "cb350b";
-  gv:red "203";
-  gv:blue "11";
-  gv:green "53";
-  gv:score "20.135067";
-  gv:coverage "8.82"
-], [
-  gv:hex "e1b49c";
-  gv:red "225";
-  gv:blue "156";
-  gv:green "180";
-  gv:score "0.11924895";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "ae2907";
-  gv:red "174";
-  gv:blue "7";
-  gv:green "41";
-  gv:score "7.9509787";
-  gv:coverage "2.6133334"
-], [
-  gv:hex "de7461";
-  gv:red "222";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "0.047436918";
-  gv:coverage "0.22"
-], [
-  gv:hex "e32e04";
-  gv:red "227";
-  gv:blue "4";
-  gv:green "46";
-  gv:score "4.4187654";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "e8e2bf";
-  gv:red "232";
-  gv:blue "191";
-  gv:green "226";
-  gv:score "0.043695266";
-  gv:coverage "32.193333"
-], [
-  gv:hex "9e2517";
-  gv:red "158";
-  gv:blue "23";
-  gv:green "37";
-  gv:score "2.5873352";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "872b11";
-  gv:red "135";
-  gv:blue "17";
-  gv:green "43";
-  gv:score "2.3303021";
-  gv:coverage "1.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.077509"
-];
-    w:bagOfWords "B (821\nVino del Abuelo\nANTONI o BAR BA DI LLO, S.L\nSanlucar de Bda ANDALUCIA-ESPANA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1631";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

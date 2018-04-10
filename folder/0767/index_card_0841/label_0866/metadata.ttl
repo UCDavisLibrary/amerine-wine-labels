@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0866";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "No. 509 P\nto H. M. The King\nBy Appointment\nCHAMPAGNE\nCharles Heidsieck 2.\nR E I MA S France\nFINEST EV\nTRA DRY\n"@fra;
-    gv:color [
-  gv:hex "d4bfa3";
-  gv:red "212";
-  gv:blue "163";
-  gv:green "191";
-  gv:score "41.49543";
-  gv:coverage "24.886665999999998"
-], [
-  gv:hex "675132";
-  gv:red "103";
-  gv:blue "50";
-  gv:green "81";
-  gv:score "11.588583";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "b29b7e";
-  gv:red "178";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "15.780871";
-  gv:coverage "3.0466666"
-], [
-  gv:hex "361c00";
-  gv:red "54";
-  gv:blue "undefined";
-  gv:green "28";
-  gv:score "0.10660233000000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "8a7556";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "10.519908000000001";
-  gv:coverage "1.28"
-], [
-  gv:hex "49351a";
-  gv:red "73";
-  gv:blue "26";
-  gv:green "53";
-  gv:score "4.8468009";
-  gv:coverage "0.32"
-], [
-  gv:hex "bc996f";
-  gv:red "188";
-  gv:blue "111";
-  gv:green "153";
-  gv:score "3.570433";
-  gv:coverage "0.26"
-], [
-  gv:hex "ebdac5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "2.8983852";
-  gv:coverage "9.2466667"
-], [
-  gv:hex "d4b185";
-  gv:red "212";
-  gv:blue "133";
-  gv:green "177";
-  gv:score "2.0920394";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "694f28";
-  gv:red "105";
-  gv:blue "40";
-  gv:green "79";
-  gv:score "1.7369922";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.818625"
-], [
-  gv:mid <https://g.co/kg/m/0gkxy13>;
-  gv:desc "handwriting";
-  gv:score "82.172525"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.6489"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "66.624457"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "No. 509 P\nto H. M. The King\nBy Appointment\nCHAMPAGNE\nCharles Heidsieck 2.\nR E I MA S France\nFINEST EV\nTRA DRY\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0866";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

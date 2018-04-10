@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3512";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "NAPA VALLEY\nRIESLING\nESPECIALLY SELECTED FOR\nTHE PACIFIC-UNION CLUB\nPRODUCED AND BOTTLED BY\nINGLE NOOK VINEYARD CO\nRUTHERFORD, CALIFORNIA\nALCOHOL 123 BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "cfc5bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "28.288612";
-  gv:coverage "19.606666"
-], [
-  gv:hex "9a9c83";
-  gv:red "154";
-  gv:blue "131";
-  gv:green "156";
-  gv:score "14.402992000000001";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "a59b92";
-  gv:red "165";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "13.77874";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "e6dcd3";
-  gv:red "230";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "8.649889400000001";
-  gv:coverage "19.220000000000002"
-], [
-  gv:hex "cbc2ab";
-  gv:red "203";
-  gv:blue "171";
-  gv:green "194";
-  gv:score "8.153636";
-  gv:coverage "38.78"
-], [
-  gv:hex "7f756c";
-  gv:red "127";
-  gv:blue "108";
-  gv:green "117";
-  gv:score "7.5167559";
-  gv:coverage "0.52"
-], [
-  gv:hex "5d534a";
-  gv:red "93";
-  gv:blue "74";
-  gv:green "83";
-  gv:score "5.512571";
-  gv:coverage "0.26"
-], [
-  gv:hex "919c78";
-  gv:red "145";
-  gv:blue "120";
-  gv:green "156";
-  gv:score "5.3660128";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "3e352c";
-  gv:red "62";
-  gv:blue "44";
-  gv:green "53";
-  gv:score "2.1831913000000003";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "84856c";
-  gv:red "132";
-  gv:blue "108";
-  gv:green "133";
-  gv:score "1.9829471";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.862784999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "NAPA VALLEY\nRIESLING\nESPECIALLY SELECTED FOR\nTHE PACIFIC-UNION CLUB\nPRODUCED AND BOTTLED BY\nINGLE NOOK VINEYARD CO\nRUTHERFORD, CALIFORNIA\nALCOHOL 123 BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3512";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1765";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "ARDE MAR\nDE IN HARD S\nBERNCASTELER\nEstate Wine\nDEIN HARD& COBLENZ\non Rhine Moselle\nZargest growers in the\no\nlibeir/amous poelor vineyards\nREGISTERED\nProduce of Germany\n"@deu;
-    gv:color [
-  gv:hex "83a589";
-  gv:red "131";
-  gv:blue "137";
-  gv:green "165";
-  gv:score "34.77864";
-  gv:coverage "11.766667"
-], [
-  gv:hex "33372b";
-  gv:red "51";
-  gv:blue "43";
-  gv:green "55";
-  gv:score "3.0533392";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "618166";
-  gv:red "97";
-  gv:blue "102";
-  gv:green "129";
-  gv:score "20.33456";
-  gv:coverage "7.42"
-], [
-  gv:hex "83a991";
-  gv:red "131";
-  gv:blue "145";
-  gv:green "169";
-  gv:score "11.619375999999999";
-  gv:coverage "2.9266667"
-], [
-  gv:hex "9cbea2";
-  gv:red "156";
-  gv:blue "162";
-  gv:green "190";
-  gv:score "7.240195600000001";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "446047";
-  gv:red "68";
-  gv:blue "71";
-  gv:green "96";
-  gv:score "6.5846942";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "63826c";
-  gv:red "99";
-  gv:blue "108";
-  gv:green "130";
-  gv:score "3.6707833";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "98bea6";
-  gv:red "152";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "3.1538442";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "4e5447";
-  gv:red "78";
-  gv:blue "71";
-  gv:green "84";
-  gv:score "1.4115557";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "2f3524";
-  gv:red "47";
-  gv:blue "36";
-  gv:green "53";
-  gv:score "1.2254363000000001";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.647508"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.914496"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.740596"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.816474"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.016861000000006"
-];
-    w:bagOfWords "ARDE MAR\nDE IN HARD S\nBERNCASTELER\nEstate Wine\nDEIN HARD& COBLENZ\non Rhine Moselle\nZargest growers in the\no\nlibeir/amous poelor vineyards\nREGISTERED\nProduce of Germany\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1765";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4586";
-    dct:type "image";
-    w:bagOfWords "TIO PEPE\nGrafico,\no\n"@spa;
-    gv:color [
-  gv:hex "d3c6b5";
-  gv:red "211";
-  gv:blue "181";
-  gv:green "198";
-  gv:score "34.912142";
-  gv:coverage "24.98"
-], [
-  gv:hex "867969";
-  gv:red "134";
-  gv:blue "105";
-  gv:green "121";
-  gv:score "28.892329";
-  gv:coverage "2.44"
-], [
-  gv:hex "a69888";
-  gv:red "166";
-  gv:blue "136";
-  gv:green "152";
-  gv:score "27.520850000000003";
-  gv:coverage "3.54"
-], [
-  gv:hex "e7daca";
-  gv:red "231";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "6.127562";
-  gv:coverage "10.213332999999999"
-], [
-  gv:hex "6a5d4d";
-  gv:red "106";
-  gv:blue "77";
-  gv:green "93";
-  gv:score "1.6883966";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "aa9890";
-  gv:red "170";
-  gv:blue "144";
-  gv:green "152";
-  gv:score "0.29257259";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e6dace";
-  gv:red "230";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "0.28179197";
-  gv:coverage "52.206664999999994"
-], [
-  gv:hex "d3c3b8";
-  gv:red "211";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "0.20224742999999998";
-  gv:coverage "6.1866667"
-], [
-  gv:hex "7c7368";
-  gv:red "124";
-  gv:blue "104";
-  gv:green "115";
-  gv:score "0.049600453";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "645a50";
-  gv:red "100";
-  gv:blue "80";
-  gv:green "90";
-  gv:score "0.021623816";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "69.762164"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.157046"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "58.520300000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.344943"
-];
-    w:bagOfWords "TIO PEPE\nGrafico,\no\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4586";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

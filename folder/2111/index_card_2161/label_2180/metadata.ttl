@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2161/label_2180";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "PARADISE\nSHERRY\nBW 1430-11.\nTAX PAID BY STAMPS AFFIXED TO CAat\nMANUFACTURED BY\nBisceglia Bros.\n19% TO 21\nCONTENTS\n32 FL OZ.\nALCOHOL\nBY VOLUME\nSAN JOSE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "655638";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "21.850625";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "d0c1a9";
-  gv:red "208";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "20.190531";
-  gv:coverage "19.453333"
-], [
-  gv:hex "827150";
-  gv:red "130";
-  gv:blue "80";
-  gv:green "113";
-  gv:score "18.39527";
-  gv:coverage "3.2533332999999995"
-], [
-  gv:hex "ab9c81";
-  gv:red "171";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "11.240546";
-  gv:coverage "4.32"
-], [
-  gv:hex "837043";
-  gv:red "131";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "8.0569662";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "3f3115";
-  gv:red "63";
-  gv:blue "21";
-  gv:green "49";
-  gv:score "6.3709";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "6d5a31";
-  gv:red "109";
-  gv:blue "49";
-  gv:green "90";
-  gv:score "2.7626555";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "281b06";
-  gv:red "40";
-  gv:blue "6";
-  gv:green "27";
-  gv:score "2.6275748";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "e7dac3";
-  gv:red "231";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "2.2016797";
-  gv:coverage "11.433333"
-], [
-  gv:hex "47350e";
-  gv:red "71";
-  gv:blue "14";
-  gv:green "53";
-  gv:score "2.0402173";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.483029"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.591891000000004"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.45903200000001"
-];
-    w:bagOfWords "PARADISE\nSHERRY\nBW 1430-11.\nTAX PAID BY STAMPS AFFIXED TO CAat\nMANUFACTURED BY\nBisceglia Bros.\n19% TO 21\nCONTENTS\n32 FL OZ.\nALCOHOL\nBY VOLUME\nSAN JOSE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2180";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

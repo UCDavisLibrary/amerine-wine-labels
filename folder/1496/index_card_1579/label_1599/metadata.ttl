@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1599";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "VINA\nTORRE BRE VA\nM OSCE\nS AN LU CAR.\nODE GAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nIDA\nSPA SA\nANDALUCIA\nES PANA\nLit Jeres industrisi\n"@spa;
-    gv:color [
-  gv:hex "b6c5c5";
-  gv:red "182";
-  gv:blue "197";
-  gv:green "197";
-  gv:score "6.5982521";
-  gv:coverage "16.48"
-], [
-  gv:hex "c9c635";
-  gv:red "201";
-  gv:blue "53";
-  gv:green "198";
-  gv:score "5.862304900000001";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "bd9e13";
-  gv:red "189";
-  gv:blue "19";
-  gv:green "158";
-  gv:score "3.4753922";
-  gv:coverage "0.26"
-], [
-  gv:hex "737c15";
-  gv:red "115";
-  gv:blue "21";
-  gv:green "124";
-  gv:score "2.657729";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "4d5c19";
-  gv:red "77";
-  gv:blue "25";
-  gv:green "92";
-  gv:score "2.5618499999999997";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "182785";
-  gv:red "24";
-  gv:blue "133";
-  gv:green "39";
-  gv:score "2.0589488";
-  gv:coverage "0.16"
-], [
-  gv:hex "0f4a9e";
-  gv:red "15";
-  gv:blue "158";
-  gv:green "74";
-  gv:score "1.5095748";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "132d69";
-  gv:red "19";
-  gv:blue "105";
-  gv:green "45";
-  gv:score "1.2482813000000001";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "194e85";
-  gv:red "25";
-  gv:blue "133";
-  gv:green "78";
-  gv:score "0.84550111";
-  gv:coverage "0.12"
-], [
-  gv:hex "9f2817";
-  gv:red "159";
-  gv:blue "23";
-  gv:green "40";
-  gv:score "0.77134543";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.124694999999996"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.797163000000005"
-];
-    w:bagOfWords "VINA\nTORRE BRE VA\nM OSCE\nS AN LU CAR.\nODE GAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nIDA\nSPA SA\nANDALUCIA\nES PANA\nLit Jeres industrisi\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1599";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

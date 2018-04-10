@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2980";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "19 T\nVINDALSACE\nGEWURZTRAMINER\nMARQUE DEPOSEE\nMETZ FRERES-NEGOCIANTS A RIBEAUVILLE (HAUT-RHIN\nDEPOSE\n"@fra;
-    gv:color [
-  gv:hex "e0c3a4";
-  gv:red "224";
-  gv:blue "164";
-  gv:green "195";
-  gv:score "27.710465";
-  gv:coverage "19.053334"
-], [
-  gv:hex "a26b14";
-  gv:red "162";
-  gv:blue "20";
-  gv:green "107";
-  gv:score "6.0467869";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "774b17";
-  gv:red "119";
-  gv:blue "23";
-  gv:green "75";
-  gv:score "3.2749258";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e3bf89";
-  gv:red "227";
-  gv:blue "137";
-  gv:green "191";
-  gv:score "12.66591";
-  gv:coverage "3.36"
-], [
-  gv:hex "b29779";
-  gv:red "178";
-  gv:blue "121";
-  gv:green "151";
-  gv:score "5.6854743999999995";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "c78e37";
-  gv:red "199";
-  gv:blue "55";
-  gv:green "142";
-  gv:score "4.1896679";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "cf8f1c";
-  gv:red "207";
-  gv:blue "28";
-  gv:green "143";
-  gv:score "3.8242232";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "907559";
-  gv:red "144";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "3.0764334";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "e7b77e";
-  gv:red "231";
-  gv:blue "126";
-  gv:green "183";
-  gv:score "3.0356659";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "e6bda0";
-  gv:red "230";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "2.6339466";
-  gv:coverage "1.1333332999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.62708400000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.565008"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.480931"
-];
-    w:bagOfWords "19 T\nVINDALSACE\nGEWURZTRAMINER\nMARQUE DEPOSEE\nMETZ FRERES-NEGOCIANTS A RIBEAUVILLE (HAUT-RHIN\nDEPOSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2980";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

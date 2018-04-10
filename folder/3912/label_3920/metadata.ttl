@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3912/label_3920";
-    dct:type "image";
-    w:bagOfWords "Marke\nbath\nllralt\"\nift ein echter alter\nBale in b r a n\naus Der Asbach-Brennerei\nRiidesheim am Rheino\n8998\n"@deu;
-    gv:color [
-  gv:hex "8f765d";
-  gv:red "143";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "23.528817";
-  gv:coverage "7.2733335"
-], [
-  gv:hex "672512";
-  gv:red "103";
-  gv:blue "18";
-  gv:green "37";
-  gv:score "1.8150128";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "956d55";
-  gv:red "149";
-  gv:blue "85";
-  gv:green "109";
-  gv:score "23.131553999999998";
-  gv:coverage "4.5733333"
-], [
-  gv:hex "ac9277";
-  gv:red "172";
-  gv:blue "119";
-  gv:green "146";
-  gv:score "19.813992";
-  gv:coverage "7.933333500000001"
-], [
-  gv:hex "795039";
-  gv:red "121";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "9.407167900000001";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "68523e";
-  gv:red "104";
-  gv:blue "62";
-  gv:green "82";
-  gv:score "4.8264533";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "b58c74";
-  gv:red "181";
-  gv:blue "116";
-  gv:green "140";
-  gv:score "4.1489743";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "45321e";
-  gv:red "69";
-  gv:blue "30";
-  gv:green "50";
-  gv:score "3.3326916";
-  gv:coverage "0.62"
-], [
-  gv:hex "4f2c1a";
-  gv:red "79";
-  gv:blue "26";
-  gv:green "44";
-  gv:score "1.8164808000000001";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "2a1907";
-  gv:red "42";
-  gv:blue "7";
-  gv:green "25";
-  gv:score "1.4773053";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.373176"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.671569999999996"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.866861"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.103776"
-];
-    w:bagOfWords "Marke\nbath\nllralt\"\nift ein echter alter\nBale in b r a n\naus Der Asbach-Brennerei\nRiidesheim am Rheino\n8998\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3920";
+    <schema.keywords> "Germany Naturrein-Unvergoren Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

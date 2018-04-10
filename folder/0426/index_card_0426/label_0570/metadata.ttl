@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0570";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E N G A U\n1949 Qt\nRauenthalor\npfaffenberg\nNATUR REIN\nDerwaltung der Staatsuoeingutet\nEttoille\nEigener Rellerabyug unb forkbranb\n"@deu;
-    gv:color [
-  gv:hex "dbc3a7";
-  gv:red "219";
-  gv:blue "167";
-  gv:green "195";
-  gv:score "66.17742199999999";
-  gv:coverage "17.053333000000002"
-], [
-  gv:hex "665337";
-  gv:red "102";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "8.1235662";
-  gv:coverage "3.42"
-], [
-  gv:hex "877355";
-  gv:red "135";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "7.040488";
-  gv:coverage "3.1733334"
-], [
-  gv:hex "b59d80";
-  gv:red "181";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "6.4288259";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "423118";
-  gv:red "66";
-  gv:blue "24";
-  gv:green "49";
-  gv:score "3.1791585999999996";
-  gv:coverage "0.76"
-], [
-  gv:hex "dfb99f";
-  gv:red "223";
-  gv:blue "159";
-  gv:green "185";
-  gv:score "2.8982954";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "ead7bd";
-  gv:red "234";
-  gv:blue "189";
-  gv:green "215";
-  gv:score "2.6312044";
-  gv:coverage "3.0666666"
-], [
-  gv:hex "c19c80";
-  gv:red "193";
-  gv:blue "128";
-  gv:green "156";
-  gv:score "0.8146558";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "2d1b04";
-  gv:red "45";
-  gv:blue "4";
-  gv:green "27";
-  gv:score "0.771759";
-  gv:coverage "0.2"
-], [
-  gv:hex "715d34";
-  gv:red "113";
-  gv:blue "52";
-  gv:green "93";
-  gv:score "0.67999484";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.72072"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "R H E N G A U\n1949 Qt\nRauenthalor\npfaffenberg\nNATUR REIN\nDerwaltung der Staatsuoeingutet\nEttoille\nEigener Rellerabyug unb forkbranb\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0570";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

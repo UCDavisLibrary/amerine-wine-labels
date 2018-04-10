@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2438";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "VIEUX BORDEAUX\nCALVET\nDEPO SEE\nMARQUE\nJ CALNET & IE\nBORDEAUX\nAppellation Bordeaux contr lée\n"@fra;
-    gv:color [
-  gv:hex "953a26";
-  gv:red "149";
-  gv:blue "38";
-  gv:green "58";
-  gv:score "13.623697000000002";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "d7c3ad";
-  gv:red "215";
-  gv:blue "173";
-  gv:green "195";
-  gv:score "6.2395934";
-  gv:coverage "23.533334"
-], [
-  gv:hex "fca798";
-  gv:red "252";
-  gv:blue "152";
-  gv:green "167";
-  gv:score "4.6595341999999995";
-  gv:coverage "0.22"
-], [
-  gv:hex "b55943";
-  gv:red "181";
-  gv:blue "67";
-  gv:green "89";
-  gv:score "7.1054146";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "a33021";
-  gv:red "163";
-  gv:blue "33";
-  gv:green "48";
-  gv:score "6.9822729";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "754d13";
-  gv:red "117";
-  gv:blue "19";
-  gv:green "77";
-  gv:score "5.4426406";
-  gv:coverage "0.24"
-], [
-  gv:hex "552f02";
-  gv:red "85";
-  gv:blue "2";
-  gv:green "47";
-  gv:score "4.1974943";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "e2846c";
-  gv:red "226";
-  gv:blue "108";
-  gv:green "132";
-  gv:score "4.0610433";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "b35b4f";
-  gv:red "179";
-  gv:blue "79";
-  gv:green "91";
-  gv:score "3.6425959";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "df8b7c";
-  gv:red "223";
-  gv:blue "124";
-  gv:green "139";
-  gv:score "3.4980033";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.363641"
-];
-    w:bagOfWords "VIEUX BORDEAUX\nCALVET\nDEPO SEE\nMARQUE\nJ CALNET & IE\nBORDEAUX\nAppellation Bordeaux contr lée\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2438";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

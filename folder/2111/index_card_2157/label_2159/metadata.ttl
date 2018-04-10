@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2157/label_2159";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "LESA\nTARRAGONA\nGebr\nert. G. m. b. H., Lith, Kunstanstalt, Kl. Auheim-Hanau (Allemagne\nNo. 7215. Reichsm. 99.50 per 1000. Texte impression en plus.\n"@undefined;
-    gv:color [
-  gv:hex "140f0e";
-  gv:red "20";
-  gv:blue "14";
-  gv:green "15";
-  gv:score "5.2059285";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "522a19";
-  gv:red "82";
-  gv:blue "25";
-  gv:green "42";
-  gv:score "4.8807681";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "867459";
-  gv:red "134";
-  gv:blue "89";
-  gv:green "116";
-  gv:score "4.741821799999999";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "1c2961";
-  gv:red "28";
-  gv:blue "97";
-  gv:green "41";
-  gv:score "4.4925533";
-  gv:coverage "0.52"
-], [
-  gv:hex "991f21";
-  gv:red "153";
-  gv:blue "33";
-  gv:green "31";
-  gv:score "4.1969497";
-  gv:coverage "0.18"
-], [
-  gv:hex "9d6e5a";
-  gv:red "157";
-  gv:blue "90";
-  gv:green "110";
-  gv:score "4.6603542";
-  gv:coverage "0.52"
-], [
-  gv:hex "0b162c";
-  gv:red "11";
-  gv:blue "44";
-  gv:green "22";
-  gv:score "4.0055569";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "635139";
-  gv:red "99";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "3.8829938";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "883820";
-  gv:red "136";
-  gv:blue "32";
-  gv:green "56";
-  gv:score "3.8667057";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "ad997f";
-  gv:red "173";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "3.75804";
-  gv:coverage "2.8666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "62.987095000000004"
-];
-    w:bagOfWords "LESA\nTARRAGONA\nGebr\nert. G. m. b. H., Lith, Kunstanstalt, Kl. Auheim-Hanau (Allemagne\nNo. 7215. Reichsm. 99.50 per 1000. Texte impression en plus.\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2159";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

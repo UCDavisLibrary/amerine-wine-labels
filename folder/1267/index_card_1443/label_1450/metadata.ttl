@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1450";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nSPARKLING BURGUNDY\nFERMENTED IN THE BOTTLE\nPRODUCED AND BOTTLEQAY URBANA WINE.COMPANY, INC.,URBANA HAMMONDSPORT. N.Y.\nCONTENTS ESTABLISHED 1855\nALCOHOL 12% BY\n"@eng;
-    gv:color [
-  gv:hex "9d1d17";
-  gv:red "157";
-  gv:blue "23";
-  gv:green "29";
-  gv:score "58.053343999999996";
-  gv:coverage "13.86"
-], [
-  gv:hex "c88e73";
-  gv:red "200";
-  gv:blue "115";
-  gv:green "142";
-  gv:score "0.5998969500000001";
-  gv:coverage "0.4"
-], [
-  gv:hex "170f08";
-  gv:red "23";
-  gv:blue "8";
-  gv:green "15";
-  gv:score "0.32380447";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "820704";
-  gv:red "130";
-  gv:blue "4";
-  gv:green "7";
-  gv:score "16.005526";
-  gv:coverage "4.44"
-], [
-  gv:hex "fbe0d2";
-  gv:red "251";
-  gv:blue "210";
-  gv:green "224";
-  gv:score "0.083487929";
-  gv:coverage "0.96"
-], [
-  gv:hex "6e1507";
-  gv:red "110";
-  gv:blue "7";
-  gv:green "21";
-  gv:score "7.809380000000001";
-  gv:coverage "2.48"
-], [
-  gv:hex "8f3422";
-  gv:red "143";
-  gv:blue "34";
-  gv:green "52";
-  gv:score "6.7141682";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "bd463b";
-  gv:red "189";
-  gv:blue "59";
-  gv:green "70";
-  gv:score "1.8389756";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "9a0a06";
-  gv:red "154";
-  gv:blue "6";
-  gv:green "10";
-  gv:score "1.4951078";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "b35744";
-  gv:red "179";
-  gv:blue "68";
-  gv:green "87";
-  gv:score "1.3310479";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "89.489818"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "70.35614799999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.734908"
-];
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nSPARKLING BURGUNDY\nFERMENTED IN THE BOTTLE\nPRODUCED AND BOTTLEQAY URBANA WINE.COMPANY, INC.,URBANA HAMMONDSPORT. N.Y.\nCONTENTS ESTABLISHED 1855\nALCOHOL 12% BY\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1450";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

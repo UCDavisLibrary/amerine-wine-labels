@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3626";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "A FRANK SCHOON MAKER SELE C T I ON\nCALIFORNIA\nA fine dry white wine of rare Veltliner grapes\nALCOHOL 11% BY VOLUME\nBOTTLED AT THE MADRONE WINERY BY\nALMADEN MADRONE VINEYARDS.\nMADRONE, SANTA CLARA COUNTY, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "a89e7f";
-  gv:red "168";
-  gv:blue "127";
-  gv:green "158";
-  gv:score "28.872734";
-  gv:coverage "6.0133334"
-], [
-  gv:hex "313420";
-  gv:red "49";
-  gv:blue "32";
-  gv:green "52";
-  gv:score "4.1637763";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "17150c";
-  gv:red "23";
-  gv:blue "12";
-  gv:green "21";
-  gv:score "1.6031218999999999";
-  gv:coverage "1.38"
-], [
-  gv:hex "cec1a3";
-  gv:red "206";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "26.936315999999998";
-  gv:coverage "15.093334"
-], [
-  gv:hex "817e63";
-  gv:red "129";
-  gv:blue "99";
-  gv:green "126";
-  gv:score "10.529441";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "eddabd";
-  gv:red "237";
-  gv:blue "189";
-  gv:green "218";
-  gv:score "7.3817767000000005";
-  gv:coverage "15.6"
-], [
-  gv:hex "9ca988";
-  gv:red "156";
-  gv:blue "136";
-  gv:green "169";
-  gv:score "4.2590909";
-  gv:coverage "0.96"
-], [
-  gv:hex "525740";
-  gv:red "82";
-  gv:blue "64";
-  gv:green "87";
-  gv:score "3.9656054000000003";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "abb898";
-  gv:red "171";
-  gv:blue "152";
-  gv:green "184";
-  gv:score "2.123867";
-  gv:coverage "0.5"
-], [
-  gv:hex "545d40";
-  gv:red "84";
-  gv:blue "64";
-  gv:green "93";
-  gv:score "1.5962876000000001";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.9798"
-];
-    w:bagOfWords "A FRANK SCHOON MAKER SELE C T I ON\nCALIFORNIA\nA fine dry white wine of rare Veltliner grapes\nALCOHOL 11% BY VOLUME\nBOTTLED AT THE MADRONE WINERY BY\nALMADEN MADRONE VINEYARDS.\nMADRONE, SANTA CLARA COUNTY, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3626";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

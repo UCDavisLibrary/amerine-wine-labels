@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2572";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "nry\nEuvep tiperialf\nBOUCHARD AINE & FILS, NEGOCIANTS A BEAUNE (COTE-D'OR)\nFRANCE\nAppellation Pouilly-Fuissé Controlée\n"@fra;
-    gv:color [
-  gv:hex "dbc5a6";
-  gv:red "219";
-  gv:blue "166";
-  gv:green "197";
-  gv:score "32.784596";
-  gv:coverage "16.033334"
-], [
-  gv:hex "b16048";
-  gv:red "177";
-  gv:blue "72";
-  gv:green "96";
-  gv:score "1.3624835";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "af997d";
-  gv:red "175";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "18.055327";
-  gv:coverage "2.0533333000000002"
-], [
-  gv:hex "8d775b";
-  gv:red "141";
-  gv:blue "91";
-  gv:green "119";
-  gv:score "11.202957";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "efd9bb";
-  gv:red "239";
-  gv:blue "187";
-  gv:green "217";
-  gv:score "9.28663";
-  gv:coverage "15.993333000000002"
-], [
-  gv:hex "ebb99f";
-  gv:red "235";
-  gv:blue "159";
-  gv:green "185";
-  gv:score "8.1758112";
-  gv:coverage "0.84"
-], [
-  gv:hex "c8977e";
-  gv:red "200";
-  gv:blue "126";
-  gv:green "151";
-  gv:score "7.31947";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "675337";
-  gv:red "103";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "4.7794946";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "9b7157";
-  gv:red "155";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "2.1238979000000002";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "6c472f";
-  gv:red "108";
-  gv:blue "47";
-  gv:green "71";
-  gv:score "1.1316332";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.815245"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.743743"
-];
-    w:bagOfWords "nry\nEuvep tiperialf\nBOUCHARD AINE & FILS, NEGOCIANTS A BEAUNE (COTE-D'OR)\nFRANCE\nAppellation Pouilly-Fuissé Controlée\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2572";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2089";
-    dct:type "image";
-    w:bagOfWords "RHINE\n1932\nTRADE\nMARK\nPRODUCT OF GERMANY\nADE MAR\nR H E I N\nOppenheimer\n& Kruskal Frankfurt a.\nMINE CONTENTS\nRheinhessen\n"@undefined;
-    gv:color [
-  gv:hex "f0bf48";
-  gv:red "240";
-  gv:blue "72";
-  gv:green "191";
-  gv:score "15.090924999999999";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "cdc2a6";
-  gv:red "205";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "14.267807";
-  gv:coverage "7.3533334"
-], [
-  gv:hex "a76f42";
-  gv:red "167";
-  gv:blue "66";
-  gv:green "111";
-  gv:score "2.2842776";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "a89d83";
-  gv:red "168";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "9.11051";
-  gv:coverage "3.6066665999999996"
-], [
-  gv:hex "eac05f";
-  gv:red "234";
-  gv:blue "95";
-  gv:green "192";
-  gv:score "8.6449824";
-  gv:coverage "2.5133334"
-], [
-  gv:hex "f4b744";
-  gv:red "244";
-  gv:blue "68";
-  gv:green "183";
-  gv:score "6.684608";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "f2b85b";
-  gv:red "242";
-  gv:blue "91";
-  gv:green "184";
-  gv:score "5.8077954";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "84775b";
-  gv:red "132";
-  gv:blue "91";
-  gv:green "119";
-  gv:score "5.73211";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "e1c386";
-  gv:red "225";
-  gv:blue "134";
-  gv:green "195";
-  gv:score "3.9776973";
-  gv:coverage "1.96"
-], [
-  gv:hex "625439";
-  gv:red "98";
-  gv:blue "57";
-  gv:green "84";
-  gv:score "3.9363343000000004";
-  gv:coverage "1.9066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.988332"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.561983"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "55.242239999999995"
-];
-    w:bagOfWords "RHINE\n1932\nTRADE\nMARK\nPRODUCT OF GERMANY\nADE MAR\nR H E I N\nOppenheimer\n& Kruskal Frankfurt a.\nMINE CONTENTS\nRheinhessen\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2089";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

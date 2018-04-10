@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4370/label_4372";
-    dct:type "image";
-    w:bagOfWords "Blauburgunder\n(Spatlese)\nVEREINIGTE KELLER EIEN\nMARSONER & RAINER INNSBRUCK. SALZBURG, MERAN\nTyroliadrvck\n"@deu;
-    gv:color [
-  gv:hex "d8c3a4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "195";
-  gv:score "15.933405";
-  gv:coverage "7.853333699999999"
-], [
-  gv:hex "675424";
-  gv:red "103";
-  gv:blue "36";
-  gv:green "84";
-  gv:score "8.8069327";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "af9980";
-  gv:red "175";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "10.305147";
-  gv:coverage "3.9533332"
-], [
-  gv:hex "635336";
-  gv:red "99";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "8.3847128";
-  gv:coverage "2.5533333"
-], [
-  gv:hex "8b733f";
-  gv:red "139";
-  gv:blue "63";
-  gv:green "115";
-  gv:score "7.7392794";
-  gv:coverage "3.3533334999999997"
-], [
-  gv:hex "857356";
-  gv:red "133";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "7.333684";
-  gv:coverage "3.02"
-], [
-  gv:hex "b99385";
-  gv:red "185";
-  gv:blue "133";
-  gv:green "147";
-  gv:score "6.1812606";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "b29762";
-  gv:red "178";
-  gv:blue "98";
-  gv:green "151";
-  gv:score "5.3983811";
-  gv:coverage "2.36"
-], [
-  gv:hex "d7c089";
-  gv:red "215";
-  gv:blue "137";
-  gv:green "192";
-  gv:score "5.2348066";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "413318";
-  gv:red "65";
-  gv:blue "24";
-  gv:green "51";
-  gv:score "4.8506647";
-  gv:coverage "1.3133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "84.977216"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "68.309247"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.973076999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.3329"
-];
-    w:bagOfWords "Blauburgunder\n(Spatlese)\nVEREINIGTE KELLER EIEN\nMARSONER & RAINER INNSBRUCK. SALZBURG, MERAN\nTyroliadrvck\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "AUT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4372";
+    <schema.keywords> "Austria Folder@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "AT".
+

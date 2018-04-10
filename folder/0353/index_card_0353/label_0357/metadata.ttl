@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0353/label_0357";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "On\nENHAVw 1872\nAKVAVIT OG R\nKOBENHAVN 1888\nRec filtrere\nof\nse\nAKVAVIT\nSPIRITUSFABRIKANTERN\nAALBORG\nE.Q. 5/46.\nL.LEVISON JUNR. ANTS. KOBENHAVN.\n"@undefined;
-    gv:color [
-  gv:hex "dcc1a3";
-  gv:red "220";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "16.605197";
-  gv:coverage "8.36"
-], [
-  gv:hex "c5a36c";
-  gv:red "197";
-  gv:blue "108";
-  gv:green "163";
-  gv:score "15.864486";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "8e3424";
-  gv:red "142";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "2.3571684999999998";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "d4b380";
-  gv:red "212";
-  gv:blue "128";
-  gv:green "179";
-  gv:score "15.134652";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "e8b8a0";
-  gv:red "232";
-  gv:blue "160";
-  gv:green "184";
-  gv:score "12.105528";
-  gv:coverage "5.1866665"
-], [
-  gv:hex "c7927c";
-  gv:red "199";
-  gv:blue "124";
-  gv:green "146";
-  gv:score "10.35365";
-  gv:coverage "3.1399999999999997"
-], [
-  gv:hex "dc8476";
-  gv:red "220";
-  gv:blue "118";
-  gv:green "132";
-  gv:score "4.8293773";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "b76054";
-  gv:red "183";
-  gv:blue "84";
-  gv:green "96";
-  gv:score "3.2012559000000005";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "a6705c";
-  gv:red "166";
-  gv:blue "92";
-  gv:green "112";
-  gv:score "2.8778745000000003";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "fba498";
-  gv:red "251";
-  gv:blue "152";
-  gv:green "164";
-  gv:score "2.5704987";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.05284499999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.995854"
-];
-    w:bagOfWords "On\nENHAVw 1872\nAKVAVIT OG R\nKOBENHAVN 1888\nRec filtrere\nof\nse\nAKVAVIT\nSPIRITUSFABRIKANTERN\nAALBORG\nE.Q. 5/46.\nL.LEVISON JUNR. ANTS. KOBENHAVN.\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0357";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

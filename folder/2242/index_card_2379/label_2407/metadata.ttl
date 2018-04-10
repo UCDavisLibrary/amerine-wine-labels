@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2407";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "AU\nPAUILLAC MEDOC\n1929\nJ M\nPropriétaire\n"@fra;
-    gv:color [
-  gv:hex "d4c3af";
-  gv:red "212";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "32.240272";
-  gv:coverage "16.373333000000002"
-], [
-  gv:hex "aa9b85";
-  gv:red "170";
-  gv:blue "133";
-  gv:green "155";
-  gv:score "16.93045";
-  gv:coverage "2.68"
-], [
-  gv:hex "867762";
-  gv:red "134";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "10.586347";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "5f5240";
-  gv:red "95";
-  gv:blue "64";
-  gv:green "82";
-  gv:score "8.204218000000001";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "7f7469";
-  gv:red "127";
-  gv:blue "105";
-  gv:green "116";
-  gv:score "6.4941145";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "433624";
-  gv:red "67";
-  gv:blue "36";
-  gv:green "54";
-  gv:score "4.4313129";
-  gv:coverage "0.58"
-], [
-  gv:hex "5e554b";
-  gv:red "94";
-  gv:blue "75";
-  gv:green "85";
-  gv:score "4.050117";
-  gv:coverage "0.6"
-], [
-  gv:hex "e9d8c3";
-  gv:red "233";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "3.9944377";
-  gv:coverage "12.04"
-], [
-  gv:hex "a2978c";
-  gv:red "162";
-  gv:blue "140";
-  gv:green "151";
-  gv:score "3.8656559";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "cfc3b7";
-  gv:red "207";
-  gv:blue "183";
-  gv:green "195";
-  gv:score "3.8305193";
-  gv:coverage "2.6333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.26239999999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.6175"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "57.772946000000005"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.647471"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "52.179359999999996"
-];
-    w:bagOfWords "AU\nPAUILLAC MEDOC\n1929\nJ M\nPropriétaire\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2407";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

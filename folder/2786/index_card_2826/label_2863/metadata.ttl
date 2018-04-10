@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2863";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "DEPOSEE\nMARQUE\nSAUTE\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "ae9a87";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "154";
-  gv:score "35.582274000000005";
-  gv:coverage "10.113332999999999"
-], [
-  gv:hex "d0bcaa";
-  gv:red "208";
-  gv:blue "170";
-  gv:green "188";
-  gv:score "30.714762";
-  gv:coverage "48.293334"
-], [
-  gv:hex "bc9383";
-  gv:red "188";
-  gv:blue "131";
-  gv:green "147";
-  gv:score "8.832968";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "907b68";
-  gv:red "144";
-  gv:blue "104";
-  gv:green "123";
-  gv:score "8.0304295";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "9e7161";
-  gv:red "158";
-  gv:blue "97";
-  gv:green "113";
-  gv:score "7.673309000000001";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "dab1a2";
-  gv:red "218";
-  gv:blue "162";
-  gv:green "177";
-  gv:score "3.7405662";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "7c4e3f";
-  gv:red "124";
-  gv:blue "63";
-  gv:green "78";
-  gv:score "1.495476";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "ccbcb0";
-  gv:red "204";
-  gv:blue "176";
-  gv:green "188";
-  gv:score "1.2274995";
-  gv:coverage "2.4733333"
-], [
-  gv:hex "e7d5c1";
-  gv:red "231";
-  gv:blue "193";
-  gv:green "213";
-  gv:score "0.5616609";
-  gv:coverage "26.833335"
-], [
-  gv:hex "b4605c";
-  gv:red "180";
-  gv:blue "92";
-  gv:green "96";
-  gv:score "0.40301294";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.59233900000001"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.294356"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.419200000000004"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.9651"
-], [
-  gv:mid <https://g.co/kg/m/04lbp>;
-  gv:desc "leather";
-  gv:score "52.421021"
-];
-    w:bagOfWords "DEPOSEE\nMARQUE\nSAUTE\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2863";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3726";
-    dct:type "image";
-    w:bagOfWords "E N\n1 8 7 0\nCASA Ft NDA\nMARCA REG STRADA\nSPANISH CHABLIS\nWHITE WINE\nMiguel Orres\nCO S E C H E R O Y E X P O R T A D O R\nD E I N O S\nuillafranca del Nanades\nNet Contents\nAlcottol 12 olo\nPRODUCT OF SPAIN\nPint 8 Fl. Oz\nby volume\n"@spa;
-    gv:color [
-  gv:hex "d9bda0";
-  gv:red "217";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "47.06398";
-  gv:coverage "22.38"
-], [
-  gv:hex "4c2c13";
-  gv:red "76";
-  gv:blue "19";
-  gv:green "44";
-  gv:score "3.6234885";
-  gv:coverage "0.74"
-], [
-  gv:hex "9a281d";
-  gv:red "154";
-  gv:blue "29";
-  gv:green "40";
-  gv:score "3.1632479";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "e5b89f";
-  gv:red "229";
-  gv:blue "159";
-  gv:green "184";
-  gv:score "7.792316400000001";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "b89a7e";
-  gv:red "184";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "7.6336718999999995";
-  gv:coverage "2.58"
-], [
-  gv:hex "bd937a";
-  gv:red "189";
-  gv:blue "122";
-  gv:green "147";
-  gv:score "4.4143647";
-  gv:coverage "1.2"
-], [
-  gv:hex "967158";
-  gv:red "150";
-  gv:blue "88";
-  gv:green "113";
-  gv:score "4.1496757";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "937659";
-  gv:red "147";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "3.5211612000000003";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "8e3420";
-  gv:red "142";
-  gv:blue "32";
-  gv:green "52";
-  gv:score "2.9870056";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "6f4e34";
-  gv:red "111";
-  gv:blue "52";
-  gv:green "78";
-  gv:score "2.9512376";
-  gv:coverage "0.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.480917"
-];
-    w:bagOfWords "E N\n1 8 7 0\nCASA Ft NDA\nMARCA REG STRADA\nSPANISH CHABLIS\nWHITE WINE\nMiguel Orres\nCO S E C H E R O Y E X P O R T A D O R\nD E I N O S\nuillafranca del Nanades\nNet Contents\nAlcottol 12 olo\nPRODUCT OF SPAIN\nPint 8 Fl. Oz\nby volume\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3726";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

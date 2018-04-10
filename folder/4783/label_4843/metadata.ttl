@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4843";
-    dct:type "image";
-    w:bagOfWords "FOUNDED\n1837\nhamilton\nSuperb (DLD nru\nSherru\nGrown and Bottled by\nHAMILTON'S EWELL VINEYARDS LTD.\nADELAIDE SYDNEY MELBOURNE\nNET CONTENTS 26 FLUID OUNCES\n"@eng;
-    gv:color [
-  gv:hex "ccc2bb";
-  gv:red "204";
-  gv:blue "187";
-  gv:green "194";
-  gv:score "26.852452999999997";
-  gv:coverage "8.82"
-], [
-  gv:hex "785d50";
-  gv:red "120";
-  gv:blue "80";
-  gv:green "93";
-  gv:score "0.84341085";
-  gv:coverage "0.02"
-], [
-  gv:hex "a49b93";
-  gv:red "164";
-  gv:blue "147";
-  gv:green "155";
-  gv:score "25.752883999999998";
-  gv:coverage "1.18"
-], [
-  gv:hex "e9e0d9";
-  gv:red "233";
-  gv:blue "217";
-  gv:green "224";
-  gv:score "24.724605999999998";
-  gv:coverage "85.86666600000001"
-], [
-  gv:hex "837a73";
-  gv:red "131";
-  gv:blue "115";
-  gv:green "122";
-  gv:score "14.228266000000001";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "655850";
-  gv:red "101";
-  gv:blue "80";
-  gv:green "88";
-  gv:score "3.4307126";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "b19d90";
-  gv:red "177";
-  gv:blue "144";
-  gv:green "157";
-  gv:score "0.96633164";
-  gv:coverage "0.06"
-], [
-  gv:hex "d3c3b4";
-  gv:red "211";
-  gv:blue "180";
-  gv:green "195";
-  gv:score "0.600152";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "765e51";
-  gv:red "118";
-  gv:blue "81";
-  gv:green "94";
-  gv:score "0.55323429";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "927468";
-  gv:red "146";
-  gv:blue "104";
-  gv:green "116";
-  gv:score "0.52206945";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.88235100000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.543606"
-];
-    w:bagOfWords "FOUNDED\n1837\nhamilton\nSuperb (DLD nru\nSherru\nGrown and Bottled by\nHAMILTON'S EWELL VINEYARDS LTD.\nADELAIDE SYDNEY MELBOURNE\nNET CONTENTS 26 FLUID OUNCES\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4843";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

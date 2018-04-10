@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0821";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CLOS LE MONT\nPREMIERE TETE\nAPPELLATION VOUVRAY CONTROLEE\nVOUVRAY\nBOTTLED BY\nBARON R. DE LUZE\nTOURAINE FRANCE\nPROPRIETAIRE\nAgents for the United States\nBELLO VVS & Co\nN C\nNE W Y OR K\nVIN DE LA LOIRE PRODUCE OF FRANCE\nCONTENTS\n1 PINT & 8 FLUID OUNCES\nALCOHOL\n12 o BY VOLUME\nLoire\n"@fra;
-    gv:color [
-  gv:hex "d3c8b2";
-  gv:red "211";
-  gv:blue "178";
-  gv:green "200";
-  gv:score "23.365302";
-  gv:coverage "12.94"
-], [
-  gv:hex "79773f";
-  gv:red "121";
-  gv:blue "63";
-  gv:green "119";
-  gv:score "6.391234699999999";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "50531a";
-  gv:red "80";
-  gv:blue "26";
-  gv:green "83";
-  gv:score "6.3552842";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "e7dcc8";
-  gv:red "231";
-  gv:blue "200";
-  gv:green "220";
-  gv:score "20.763849";
-  gv:coverage "15.546666"
-], [
-  gv:hex "e4dace";
-  gv:red "228";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "10.117331";
-  gv:coverage "61.053336"
-], [
-  gv:hex "5c5a24";
-  gv:red "92";
-  gv:blue "36";
-  gv:green "90";
-  gv:score "5.0464507";
-  gv:coverage "0.44"
-], [
-  gv:hex "a59f86";
-  gv:red "165";
-  gv:blue "134";
-  gv:green "159";
-  gv:score "4.8050027";
-  gv:coverage "1.44"
-], [
-  gv:hex "4f5630";
-  gv:red "79";
-  gv:blue "48";
-  gv:green "86";
-  gv:score "4.5531493";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "d8cec2";
-  gv:red "216";
-  gv:blue "194";
-  gv:green "206";
-  gv:score "3.1569447";
-  gv:coverage "5.7266667"
-], [
-  gv:hex "7a7756";
-  gv:red "122";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "2.5911364999999997";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "73.824275"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.51764700000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.624505000000006"
-];
-    w:bagOfWords "CLOS LE MONT\nPREMIERE TETE\nAPPELLATION VOUVRAY CONTROLEE\nVOUVRAY\nBOTTLED BY\nBARON R. DE LUZE\nTOURAINE FRANCE\nPROPRIETAIRE\nAgents for the United States\nBELLO VVS & Co\nN C\nNE W Y OR K\nVIN DE LA LOIRE PRODUCE OF FRANCE\nCONTENTS\n1 PINT & 8 FLUID OUNCES\nALCOHOL\n12 o BY VOLUME\nLoire\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0821";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

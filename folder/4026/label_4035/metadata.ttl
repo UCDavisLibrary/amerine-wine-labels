@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4026/label_4035";
-    dct:type "image";
-    w:bagOfWords "BRAN CO SECO\nA ZEITA o\nSET UBAL\nP O R T U G A L\nUN DADA EM.\n"@por;
-    gv:color [
-  gv:hex "b79c66";
-  gv:red "183";
-  gv:blue "102";
-  gv:green "156";
-  gv:score "39.268294";
-  gv:coverage "11.353333000000001"
-], [
-  gv:hex "d2b583";
-  gv:red "210";
-  gv:blue "131";
-  gv:green "181";
-  gv:score "28.859057999999997";
-  gv:coverage "9.5466666"
-], [
-  gv:hex "8f7745";
-  gv:red "143";
-  gv:blue "69";
-  gv:green "119";
-  gv:score "15.066925000000001";
-  gv:coverage "5.1533334"
-], [
-  gv:hex "d4b991";
-  gv:red "212";
-  gv:blue "145";
-  gv:green "185";
-  gv:score "6.537122300000001";
-  gv:coverage "5.7"
-], [
-  gv:hex "6d5728";
-  gv:red "109";
-  gv:blue "40";
-  gv:green "87";
-  gv:score "4.3202076";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "b39a72";
-  gv:red "179";
-  gv:blue "114";
-  gv:green "154";
-  gv:score "3.0464226";
-  gv:coverage "1.24"
-], [
-  gv:hex "8d7650";
-  gv:red "141";
-  gv:blue "80";
-  gv:green "118";
-  gv:score "0.76081245";
-  gv:coverage "0.5"
-], [
-  gv:hex "eddac0";
-  gv:red "237";
-  gv:blue "192";
-  gv:green "218";
-  gv:score "0.51895236";
-  gv:coverage "3.34"
-], [
-  gv:hex "906e54";
-  gv:red "144";
-  gv:blue "84";
-  gv:green "110";
-  gv:score "0.33591883";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "6b4b30";
-  gv:red "107";
-  gv:blue "48";
-  gv:green "75";
-  gv:score "0.28808108";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.102384"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "61.4216"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "60.125774"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.279896"
-];
-    w:bagOfWords "BRAN CO SECO\nA ZEITA o\nSET UBAL\nP O R T U G A L\nUN DADA EM.\n"@por;
-    wdt:P219 "por";
-    wdt:P298 "PRT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4035";
+    <schema.keywords> "Portugal Folder@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "PT".
+

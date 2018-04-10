@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2302";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Chateau\nLeoville Royferré\n1918\ne en Bouteille au Chateau\n"@fra;
-    gv:color [
-  gv:hex "e8e0d6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "224";
-  gv:score "72.712767";
-  gv:coverage "43.746668"
-], [
-  gv:hex "552e07";
-  gv:red "85";
-  gv:blue "7";
-  gv:green "46";
-  gv:score "0.44096555";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "e7dbc9";
-  gv:red "231";
-  gv:blue "201";
-  gv:green "219";
-  gv:score "14.532085";
-  gv:coverage "12.733333"
-], [
-  gv:hex "595147";
-  gv:red "89";
-  gv:blue "71";
-  gv:green "81";
-  gv:score "0.12649739000000002";
-  gv:coverage "0.06"
-], [
-  gv:hex "352e21";
-  gv:red "53";
-  gv:blue "33";
-  gv:green "46";
-  gv:score "0.11778319999999999";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d5cbc0";
-  gv:red "213";
-  gv:blue "192";
-  gv:green "203";
-  gv:score "5.2817442";
-  gv:coverage "3.3000000000000003"
-], [
-  gv:hex "ddcbb6";
-  gv:red "221";
-  gv:blue "182";
-  gv:green "203";
-  gv:score "4.6878975";
-  gv:coverage "8.5733332"
-], [
-  gv:hex "20180d";
-  gv:red "32";
-  gv:blue "13";
-  gv:green "24";
-  gv:score "0.030135962999999998";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "aaa196";
-  gv:red "170";
-  gv:blue "150";
-  gv:green "161";
-  gv:score "0.62704002";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "72481e";
-  gv:red "114";
-  gv:blue "30";
-  gv:green "72";
-  gv:score "0.32138866";
-  gv:coverage "0.5933333199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.883324"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.427417000000005"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "54.102039000000005"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "52.923471"
-];
-    w:bagOfWords "Chateau\nLeoville Royferré\n1918\ne en Bouteille au Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2302";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

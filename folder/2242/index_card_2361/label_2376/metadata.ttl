@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2361/label_2376";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "SHIPPED BY\nJOHNSTON\nTABLISH\nBORDEA\nRED WINE\nCHATEAU\n1933\nCOHOL 11 BY VOLUME\n12 FLUID OUNCES\nPRODUCE OF FRANCE\nLes vins rouges doivent etre bus chambrés,\nc'est-a-dire la température de\nla sallc manger\nNous recommandons donc de monter les bouteilles\nune ou deux heures\nant deales servir.\nPost\nPRINTED IN FRANCE\n7\n"@fra;
-    gv:color [
-  gv:hex "d6c0a2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "38.805088";
-  gv:coverage "23.799999999999997"
-], [
-  gv:hex "b39c7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "22.854847";
-  gv:coverage "5.800000000000001"
-], [
-  gv:hex "b79968";
-  gv:red "183";
-  gv:blue "104";
-  gv:green "153";
-  gv:score "9.8762274";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "917547";
-  gv:red "145";
-  gv:blue "71";
-  gv:green "117";
-  gv:score "9.3662612";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "8c7553";
-  gv:red "140";
-  gv:blue "83";
-  gv:green "117";
-  gv:score "7.08781";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "dab986";
-  gv:red "218";
-  gv:blue "134";
-  gv:green "185";
-  gv:score "4.4980199999999995";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "ebd8bd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "4.0757671";
-  gv:coverage "18.573333"
-], [
-  gv:hex "c6985b";
-  gv:red "198";
-  gv:blue "91";
-  gv:green "152";
-  gv:score "1.4102617";
-  gv:coverage "0.1"
-], [
-  gv:hex "745a2f";
-  gv:red "116";
-  gv:blue "47";
-  gv:green "90";
-  gv:score "0.49973824";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "735c3a";
-  gv:red "115";
-  gv:blue "58";
-  gv:green "92";
-  gv:score "0.40820874";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.770431"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.012491000000004"
-];
-    w:bagOfWords "SHIPPED BY\nJOHNSTON\nTABLISH\nBORDEA\nRED WINE\nCHATEAU\n1933\nCOHOL 11 BY VOLUME\n12 FLUID OUNCES\nPRODUCE OF FRANCE\nLes vins rouges doivent etre bus chambrés,\nc'est-a-dire la température de\nla sallc manger\nNous recommandons donc de monter les bouteilles\nune ou deux heures\nant deales servir.\nPost\nPRINTED IN FRANCE\n7\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2376";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

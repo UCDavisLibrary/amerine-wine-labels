@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1825";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Mosel-Saar-Ruwer\n1949 et\n3eltinget himmeleeith\nRiesling\norig. Abilinung SDm. Ames-Ames\n"@deu;
-    gv:color [
-  gv:hex "ddba89";
-  gv:red "221";
-  gv:blue "137";
-  gv:green "186";
-  gv:score "20.633824";
-  gv:coverage "6.04"
-], [
-  gv:hex "ddbc98";
-  gv:red "221";
-  gv:blue "152";
-  gv:green "188";
-  gv:score "19.737561";
-  gv:coverage "10.84"
-], [
-  gv:hex "ba9861";
-  gv:red "186";
-  gv:blue "97";
-  gv:green "152";
-  gv:score "14.339815";
-  gv:coverage "5.453333300000001"
-], [
-  gv:hex "95743c";
-  gv:red "149";
-  gv:blue "60";
-  gv:green "116";
-  gv:score "7.901348199999999";
-  gv:coverage "3.0466666"
-], [
-  gv:hex "976e3b";
-  gv:red "151";
-  gv:blue "59";
-  gv:green "110";
-  gv:score "5.9093654";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "e0b998";
-  gv:red "224";
-  gv:blue "152";
-  gv:green "185";
-  gv:score "5.038353799999999";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "77501e";
-  gv:red "119";
-  gv:blue "30";
-  gv:green "80";
-  gv:score "4.9690068";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "bf9462";
-  gv:red "191";
-  gv:blue "98";
-  gv:green "148";
-  gv:score "4.2855281000000005";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "e0b58a";
-  gv:red "224";
-  gv:blue "138";
-  gv:green "181";
-  gv:score "2.9436413000000003";
-  gv:coverage "0.72"
-], [
-  gv:hex "99752a";
-  gv:red "153";
-  gv:blue "42";
-  gv:green "117";
-  gv:score "2.0676507";
-  gv:coverage "0.68666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "76.20930700000001"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "68.227589"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.797548"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.665053"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.434284"
-];
-    w:bagOfWords "Mosel-Saar-Ruwer\n1949 et\n3eltinget himmeleeith\nRiesling\norig. Abilinung SDm. Ames-Ames\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1825";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

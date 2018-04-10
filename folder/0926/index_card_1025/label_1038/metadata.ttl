@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1038";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "PRODUCE OF\nSWITZERLAND\nJohannisberg\nin Valais\nAlbert Isozeron, roprietatre\nAuvernier\nAlcohol by volume 13\n12\nfluid ounc e\ns\nDEP\nSE\n"@deu;
-    gv:color [
-  gv:hex "e0c4a2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "32.611567";
-  gv:coverage "20.9"
-], [
-  gv:hex "ac2604";
-  gv:red "172";
-  gv:blue "4";
-  gv:green "38";
-  gv:score "5.071767";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "cc8f3a";
-  gv:red "204";
-  gv:blue "58";
-  gv:green "143";
-  gv:score "2.4204778";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "8d3915";
-  gv:red "141";
-  gv:blue "21";
-  gv:green "57";
-  gv:score "2.0560596";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "f2a72d";
-  gv:red "242";
-  gv:blue "45";
-  gv:green "167";
-  gv:score "1.6820174";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "e3c191";
-  gv:red "227";
-  gv:blue "145";
-  gv:green "193";
-  gv:score "14.892957000000001";
-  gv:coverage "4.64"
-], [
-  gv:hex "ecb787";
-  gv:red "236";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "6.1169654";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "f0d9ba";
-  gv:red "240";
-  gv:blue "186";
-  gv:green "217";
-  gv:score "5.4793227";
-  gv:coverage "11.1"
-], [
-  gv:hex "b39a7b";
-  gv:red "179";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "4.364418199999999";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "ebbf9f";
-  gv:red "235";
-  gv:blue "159";
-  gv:green "191";
-  gv:score "3.5886891";
-  gv:coverage "1.3066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.654032"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.649089"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.25685"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.936415000000004"
-];
-    w:bagOfWords "PRODUCE OF\nSWITZERLAND\nJohannisberg\nin Valais\nAlbert Isozeron, roprietatre\nAuvernier\nAlcohol by volume 13\n12\nfluid ounc e\ns\nDEP\nSE\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1038";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

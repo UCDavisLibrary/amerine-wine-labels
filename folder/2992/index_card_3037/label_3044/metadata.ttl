@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3044";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHATEAU AUSONE\nST EMILION\n1928\nEDOUARD DUBOIS CHALLON\nMIS EN BOUTEILLE AU CHATEAU\nROUSSEAU FRERES, B\n"@fra;
-    gv:color [
-  gv:hex "4c301d";
-  gv:red "76";
-  gv:blue "29";
-  gv:green "48";
-  gv:score "19.111666";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "d8c0a9";
-  gv:red "216";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "16.523002";
-  gv:coverage "31.546667"
-], [
-  gv:hex "8b705d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "112";
-  gv:score "12.290645";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "654835";
-  gv:red "101";
-  gv:blue "53";
-  gv:green "72";
-  gv:score "14.579302";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "705643";
-  gv:red "112";
-  gv:blue "67";
-  gv:green "86";
-  gv:score "9.4019651";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "d1c3b9";
-  gv:red "209";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "7.424190599999999";
-  gv:coverage "15.98"
-], [
-  gv:hex "ae9582";
-  gv:red "174";
-  gv:blue "130";
-  gv:green "149";
-  gv:score "5.6733385";
-  gv:coverage "0.62"
-], [
-  gv:hex "ac9e95";
-  gv:red "172";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "3.557298";
-  gv:coverage "1.5"
-], [
-  gv:hex "e8dbd1";
-  gv:red "232";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "2.9738672";
-  gv:coverage "25.493333"
-], [
-  gv:hex "8a6c5a";
-  gv:red "138";
-  gv:blue "90";
-  gv:green "108";
-  gv:score "2.0421514000000003";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.599337"
-];
-    w:bagOfWords "CHATEAU AUSONE\nST EMILION\n1928\nEDOUARD DUBOIS CHALLON\nMIS EN BOUTEILLE AU CHATEAU\nROUSSEAU FRERES, B\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3044";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

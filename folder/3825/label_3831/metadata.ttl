@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3825/label_3831";
-    dct:type "image";
-    w:bagOfWords "SEIT\n1843\nBERNHARD\nRANDERSACKERER\nTeufelskdicr\nSilva ner\nR A N KEN\n"@deu;
-    gv:color [
-  gv:hex "b8581a";
-  gv:red "184";
-  gv:blue "26";
-  gv:green "88";
-  gv:score "8.8148333";
-  gv:coverage "0.44"
-], [
-  gv:hex "a46a39";
-  gv:red "164";
-  gv:blue "57";
-  gv:green "106";
-  gv:score "5.6484368";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "3b311c";
-  gv:red "59";
-  gv:blue "28";
-  gv:green "49";
-  gv:score "3.6305096000000003";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "d3903e";
-  gv:red "211";
-  gv:blue "62";
-  gv:green "144";
-  gv:score "3.3499550000000005";
-  gv:coverage "0.18"
-], [
-  gv:hex "983a06";
-  gv:red "152";
-  gv:blue "6";
-  gv:green "58";
-  gv:score "8.4613189";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "8f3d19";
-  gv:red "143";
-  gv:blue "25";
-  gv:green "61";
-  gv:score "8.3395727";
-  gv:coverage "0.62"
-], [
-  gv:hex "a72c04";
-  gv:red "167";
-  gv:blue "4";
-  gv:green "44";
-  gv:score "4.8833422";
-  gv:coverage "0.22"
-], [
-  gv:hex "7d481e";
-  gv:red "125";
-  gv:blue "30";
-  gv:green "72";
-  gv:score "4.4059858";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "ae5930";
-  gv:red "174";
-  gv:blue "48";
-  gv:green "89";
-  gv:score "3.9816335";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "6f1f02";
-  gv:red "111";
-  gv:blue "2";
-  gv:green "31";
-  gv:score "3.4900792";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.173334"
-], [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "66.189033"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "50.180972000000004"
-];
-    w:bagOfWords "SEIT\n1843\nBERNHARD\nRANDERSACKERER\nTeufelskdicr\nSilva ner\nR A N KEN\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3831";
+    <schema.keywords> "Germany Frankenwein Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

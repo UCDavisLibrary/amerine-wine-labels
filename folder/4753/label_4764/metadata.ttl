@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4764";
-    dct:type "image";
-    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID OUNCES\nMEDAL AWARDED\nST LOUIS EXPOSITION 19o4\nCALIFORNIA\nVINTAGES\nw M. HoEL SCHER & Co\nSAN FRANCISCO, CAL\nTITLE C\nRIGHTED\n"@eng;
-    gv:color [
-  gv:hex "ab9883";
-  gv:red "171";
-  gv:blue "131";
-  gv:green "152";
-  gv:score "18.260691";
-  gv:coverage "6.933333"
-], [
-  gv:hex "604f35";
-  gv:red "96";
-  gv:blue "53";
-  gv:green "79";
-  gv:score "14.502928";
-  gv:coverage "3.2133333"
-], [
-  gv:hex "cebca7";
-  gv:red "206";
-  gv:blue "167";
-  gv:green "188";
-  gv:score "16.103601";
-  gv:coverage "11.886667"
-], [
-  gv:hex "87755d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "117";
-  gv:score "12.364072";
-  gv:coverage "3.7199999999999998"
-], [
-  gv:hex "47371e";
-  gv:red "71";
-  gv:blue "30";
-  gv:green "55";
-  gv:score "7.7319123";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "6a5324";
-  gv:red "106";
-  gv:blue "36";
-  gv:green "83";
-  gv:score "6.2255315";
-  gv:coverage "0.98"
-], [
-  gv:hex "866e39";
-  gv:red "134";
-  gv:blue "57";
-  gv:green "110";
-  gv:score "4.7776867";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "6f493b";
-  gv:red "111";
-  gv:blue "59";
-  gv:green "73";
-  gv:score "4.3193385";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "936e60";
-  gv:red "147";
-  gv:blue "96";
-  gv:green "110";
-  gv:score "3.0500676";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "b58f82";
-  gv:red "181";
-  gv:blue "130";
-  gv:green "143";
-  gv:score "2.7236132";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.55066500000001"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.105791"
-];
-    w:bagOfWords "NET CONTENTS 1 PINT 8 FLUID OUNCES\nMEDAL AWARDED\nST LOUIS EXPOSITION 19o4\nCALIFORNIA\nVINTAGES\nw M. HoEL SCHER & Co\nSAN FRANCISCO, CAL\nTITLE C\nRIGHTED\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4764";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

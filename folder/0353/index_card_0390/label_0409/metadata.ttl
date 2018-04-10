@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0409";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "LIQUEUR DIGESTIVE\nvec une morale saine me hygiene ratiout\nl'homme me meurt que vie itlesse.\nLAN\nFOR MULE N 2\nen vertu d'un acte notarie pass\ndevant M RABION de 14 Nov. 1878\nRDEA\na meilleure liqueur de famille\nEssentiellement la meilleure\nFORMULENT ET RUETTE JAUNE liqueur de Famille.\nFORMULE Ne2-ETIQUETTE VERTE Moins edulcoree Plus puissante\nFORMULE N3r ETIQUETTE BLAWCHE. Liqueur fortement an\nMEDAILLES DOR: PARIS 1889-BORDEAUx 1882\nMEDAILLE DE BRONzE: ANGERS\nCAZANOV\nFRANCE\nBORDEAUX\nWETTERWALD\n"@undefined;
-    gv:color [
-  gv:hex "837f23";
-  gv:red "131";
-  gv:blue "35";
-  gv:green "127";
-  gv:score "14.445941000000001";
-  gv:coverage "4.5266665999999995"
-], [
-  gv:hex "847637";
-  gv:red "132";
-  gv:blue "55";
-  gv:green "118";
-  gv:score "12.138044";
-  gv:coverage "3.8533334000000004"
-], [
-  gv:hex "655133";
-  gv:red "101";
-  gv:blue "51";
-  gv:green "81";
-  gv:score "6.8178125000000005";
-  gv:coverage "1.72"
-], [
-  gv:hex "4d2a13";
-  gv:red "77";
-  gv:blue "19";
-  gv:green "42";
-  gv:score "6.7935266";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "827923";
-  gv:red "130";
-  gv:blue "35";
-  gv:green "121";
-  gv:score "11.372919";
-  gv:coverage "3.6466666"
-], [
-  gv:hex "887151";
-  gv:red "136";
-  gv:blue "81";
-  gv:green "113";
-  gv:score "6.2083974";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "685722";
-  gv:red "104";
-  gv:blue "34";
-  gv:green "87";
-  gv:score "5.7957672";
-  gv:coverage "1.5"
-], [
-  gv:hex "b0995f";
-  gv:red "176";
-  gv:blue "95";
-  gv:green "153";
-  gv:score "5.0039738";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "96932f";
-  gv:red "150";
-  gv:blue "47";
-  gv:green "147";
-  gv:score "4.6229634";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "6c482f";
-  gv:red "108";
-  gv:blue "47";
-  gv:green "72";
-  gv:score "3.1776912999999998";
-  gv:coverage "0.54666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "LIQUEUR DIGESTIVE\nvec une morale saine me hygiene ratiout\nl'homme me meurt que vie itlesse.\nLAN\nFOR MULE N 2\nen vertu d'un acte notarie pass\ndevant M RABION de 14 Nov. 1878\nRDEA\na meilleure liqueur de famille\nEssentiellement la meilleure\nFORMULENT ET RUETTE JAUNE liqueur de Famille.\nFORMULE Ne2-ETIQUETTE VERTE Moins edulcoree Plus puissante\nFORMULE N3r ETIQUETTE BLAWCHE. Liqueur fortement an\nMEDAILLES DOR: PARIS 1889-BORDEAUx 1882\nMEDAILLE DE BRONzE: ANGERS\nCAZANOV\nFRANCE\nBORDEAUX\nWETTERWALD\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0409";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

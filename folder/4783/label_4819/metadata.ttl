@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4819";
-    dct:type "image";
-    w:bagOfWords "The White enesta anca,\nmore\nCal4ornia\nCRESTA BLANCA\nALCOHOL 1235%\nBY VOLUME\ne Mountain\nHITE WINE\nBOTTLED BY CRESTA BLANCA WINE COMPANY LIVERMORE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "97a172";
-  gv:red "151";
-  gv:blue "114";
-  gv:green "161";
-  gv:score "17.449342";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "cdc7a5";
-  gv:red "205";
-  gv:blue "165";
-  gv:green "199";
-  gv:score "15.271707000000001";
-  gv:coverage "19.633333"
-], [
-  gv:hex "a99861";
-  gv:red "169";
-  gv:blue "97";
-  gv:green "152";
-  gv:score "9.343035500000001";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "301700";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "23";
-  gv:score "0.46539855999999996";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "bbc394";
-  gv:red "187";
-  gv:blue "148";
-  gv:green "195";
-  gv:score "12.15627";
-  gv:coverage "2.16"
-], [
-  gv:hex "747d50";
-  gv:red "116";
-  gv:blue "80";
-  gv:green "125";
-  gv:score "8.909286600000001";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "8a7943";
-  gv:red "138";
-  gv:blue "67";
-  gv:green "121";
-  gv:score "4.841126099999999";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "a49d78";
-  gv:red "164";
-  gv:blue "120";
-  gv:green "157";
-  gv:score "4.7011189";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "747d45";
-  gv:red "116";
-  gv:blue "69";
-  gv:green "125";
-  gv:score "4.4758569";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "9a9f63";
-  gv:red "154";
-  gv:blue "99";
-  gv:green "159";
-  gv:score "3.855972";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.464131"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.523624999999996"
-];
-    w:bagOfWords "The White enesta anca,\nmore\nCal4ornia\nCRESTA BLANCA\nALCOHOL 1235%\nBY VOLUME\ne Mountain\nHITE WINE\nBOTTLED BY CRESTA BLANCA WINE COMPANY LIVERMORE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4819";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0548";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "asis r. 4944\nRHEINGAU\n1949er\nKiedricher Grafenberg\nRiesling Spatlese\nOriginalabfullung in den Kellern\ndes Reichsfreiherrn von Ritter zu Groenesteyn\nRudesheim a. Rhein\nGESETZL. GESCHOTZT.\n"@deu;
-    gv:color [
-  gv:hex "e2c992";
-  gv:red "226";
-  gv:blue "146";
-  gv:green "201";
-  gv:score "64.29092899999999";
-  gv:coverage "24.606666"
-], [
-  gv:hex "ba9842";
-  gv:red "186";
-  gv:blue "66";
-  gv:green "152";
-  gv:score "10.90792";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "685d1c";
-  gv:red "104";
-  gv:blue "28";
-  gv:green "93";
-  gv:score "1.7771194000000001";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "b79f62";
-  gv:red "183";
-  gv:blue "98";
-  gv:green "159";
-  gv:score "5.157349600000001";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "f0d7a2";
-  gv:red "240";
-  gv:blue "162";
-  gv:green "215";
-  gv:score "4.2143404";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "d8b763";
-  gv:red "216";
-  gv:blue "99";
-  gv:green "183";
-  gv:score "3.5407487";
-  gv:coverage "0.6"
-], [
-  gv:hex "e2cda2";
-  gv:red "226";
-  gv:blue "162";
-  gv:green "205";
-  gv:score "3.2240983";
-  gv:coverage "10.093334"
-], [
-  gv:hex "a17e28";
-  gv:red "161";
-  gv:blue "40";
-  gv:green "126";
-  gv:score "1.596041";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "86793d";
-  gv:red "134";
-  gv:blue "61";
-  gv:green "121";
-  gv:score "1.2979082";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "69712d";
-  gv:red "105";
-  gv:blue "45";
-  gv:green "113";
-  gv:score "0.78522721";
-  gv:coverage "0.47333334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.934635"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.213783"
-];
-    w:bagOfWords "asis r. 4944\nRHEINGAU\n1949er\nKiedricher Grafenberg\nRiesling Spatlese\nOriginalabfullung in den Kellern\ndes Reichsfreiherrn von Ritter zu Groenesteyn\nRudesheim a. Rhein\nGESETZL. GESCHOTZT.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0548";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

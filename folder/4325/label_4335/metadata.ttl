@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4335";
-    dct:type "image";
-    w:bagOfWords "PRODUIT DE YOUGOSLAVIE\nROME L\nVIN BLANC DE DAL MATI E\nVINO PRO MET\nZAGREB\n"@undefined;
-    gv:color [
-  gv:hex "d4c4ac";
-  gv:red "212";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "29.301479000000004";
-  gv:coverage "25.633331999999996"
-], [
-  gv:hex "ae9b7b";
-  gv:red "174";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "24.693808";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "b69768";
-  gv:red "182";
-  gv:blue "104";
-  gv:green "151";
-  gv:score "17.683204999999997";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "e9dbc6";
-  gv:red "233";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "10.47672";
-  gv:coverage "14.113334"
-], [
-  gv:hex "977849";
-  gv:red "151";
-  gv:blue "73";
-  gv:green "120";
-  gv:score "6.4601377";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "8d7d64";
-  gv:red "141";
-  gv:blue "100";
-  gv:green "125";
-  gv:score "5.3165033";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "dabb89";
-  gv:red "218";
-  gv:blue "137";
-  gv:green "187";
-  gv:score "5.1869825";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "372e22";
-  gv:red "55";
-  gv:blue "34";
-  gv:green "46";
-  gv:score "0.032673698";
-  gv:coverage "0.04"
-], [
-  gv:hex "f9dba5";
-  gv:red "249";
-  gv:blue "165";
-  gv:green "219";
-  gv:score "0.58985916";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e4dad0";
-  gv:red "228";
-  gv:blue "208";
-  gv:green "218";
-  gv:score "0.091058575";
-  gv:coverage "48.606666999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.489286"
-];
-    w:bagOfWords "PRODUIT DE YOUGOSLAVIE\nROME L\nVIN BLANC DE DAL MATI E\nVINO PRO MET\nZAGREB\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4335";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

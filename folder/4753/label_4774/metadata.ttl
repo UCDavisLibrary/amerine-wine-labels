@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4774";
-    dct:type "image";
-    w:bagOfWords "elnglenook\nNapa Vallev\nCABERNET SAUVIGNON\n(Claret)\nALCOHOL 12%\nNGLENO OK VINEYARD CO\nPRODUCED AND\nBY VOLUME\nBOTTLED BY\nRUTHERFORD, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "b65c45";
-  gv:red "182";
-  gv:blue "69";
-  gv:green "92";
-  gv:score "17.528726";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "d48272";
-  gv:red "212";
-  gv:blue "114";
-  gv:green "130";
-  gv:score "9.1786817";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "edb9aa";
-  gv:red "237";
-  gv:blue "170";
-  gv:green "185";
-  gv:score "7.7427007";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "903a23";
-  gv:red "144";
-  gv:blue "35";
-  gv:green "58";
-  gv:score "12.591115";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "d6c4b0";
-  gv:red "214";
-  gv:blue "176";
-  gv:green "196";
-  gv:score "6.8999268";
-  gv:coverage "12.686666999999998"
-], [
-  gv:hex "cb8f7e";
-  gv:red "203";
-  gv:blue "126";
-  gv:green "143";
-  gv:score "5.4467931";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "d77c65";
-  gv:red "215";
-  gv:blue "101";
-  gv:green "124";
-  gv:score "5.4307953";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "b56355";
-  gv:red "181";
-  gv:blue "85";
-  gv:green "99";
-  gv:score "5.3032424";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "a26655";
-  gv:red "162";
-  gv:blue "85";
-  gv:green "102";
-  gv:score "4.7171731";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "8b4337";
-  gv:red "139";
-  gv:blue "55";
-  gv:green "67";
-  gv:score "4.3222826";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.6029"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "elnglenook\nNapa Vallev\nCABERNET SAUVIGNON\n(Claret)\nALCOHOL 12%\nNGLENO OK VINEYARD CO\nPRODUCED AND\nBY VOLUME\nBOTTLED BY\nRUTHERFORD, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4774";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4493";
-    dct:type "image";
-    w:bagOfWords "MARCA REGISTRADA\nIMPERIAL\nPRECIO BN ORIORN\nP RESERVA ESPECIAL 1938\nESET A S\nGIST\nrn N 44.\nHARO BILBAO\nCTELLA\nCONSEJ\nON 30\n"@spa;
-    gv:color [
-  gv:hex "d6c2a4";
-  gv:red "214";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "46.192878";
-  gv:coverage "28.173333"
-], [
-  gv:hex "873316";
-  gv:red "135";
-  gv:blue "22";
-  gv:green "51";
-  gv:score "1.9939684999999998";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "b29d7d";
-  gv:red "178";
-  gv:blue "125";
-  gv:green "157";
-  gv:score "19.23763";
-  gv:coverage "4.0933333"
-], [
-  gv:hex "b39c68";
-  gv:red "179";
-  gv:blue "104";
-  gv:green "156";
-  gv:score "9.7475968";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "d2bb86";
-  gv:red "210";
-  gv:blue "134";
-  gv:green "187";
-  gv:score "5.255704";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "ebd9bd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "3.9399751";
-  gv:coverage "7.3266670000000005"
-], [
-  gv:hex "8f7b5d";
-  gv:red "143";
-  gv:blue "93";
-  gv:green "123";
-  gv:score "2.2800808999999997";
-  gv:coverage "0.5"
-], [
-  gv:hex "b89f39";
-  gv:red "184";
-  gv:blue "57";
-  gv:green "159";
-  gv:score "1.0047967999999998";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "9a6f5b";
-  gv:red "154";
-  gv:blue "91";
-  gv:green "111";
-  gv:score "0.9172041000000001";
-  gv:coverage "0.08"
-], [
-  gv:hex "7d4618";
-  gv:red "125";
-  gv:blue "24";
-  gv:green "70";
-  gv:score "0.83512319";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.298293"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.714493000000004"
-];
-    w:bagOfWords "MARCA REGISTRADA\nIMPERIAL\nPRECIO BN ORIORN\nP RESERVA ESPECIAL 1938\nESET A S\nGIST\nrn N 44.\nHARO BILBAO\nCTELLA\nCONSEJ\nON 30\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4493";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

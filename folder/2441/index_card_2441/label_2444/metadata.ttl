@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2441/label_2444";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CONTENTS i PiNT 8 FLUID OUNCES\nALCOHOLIC STRENGTH BY VOLUME HO4\nolo\nbrand in\nASON FONDEE\nBourgogne\nAleursault\nAppellation Controlée\n1937\nAUTOUE\nPRODUCED BY\nTRADE MARK\nEN 188O\npROPRIETAIRE ET NEGOCIANT\nA BEAUNE (COTE D'OR\nPRODUCE FRANCE\nBOTTLED IN FRANCE\nPre.....\n"@fra;
-    gv:color [
-  gv:hex "dac0a2";
-  gv:red "218";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "18.244308";
-  gv:coverage "51.306664999999995"
-], [
-  gv:hex "b46054";
-  gv:red "180";
-  gv:blue "84";
-  gv:green "96";
-  gv:score "6.2124874";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "b0997b";
-  gv:red "176";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "14.297412000000001";
-  gv:coverage "3.7266668000000003"
-], [
-  gv:hex "c49179";
-  gv:red "196";
-  gv:blue "121";
-  gv:green "145";
-  gv:score "11.08165";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "e9b9a0";
-  gv:red "233";
-  gv:blue "160";
-  gv:green "185";
-  gv:score "10.610542";
-  gv:coverage "4.2866666"
-], [
-  gv:hex "8b7558";
-  gv:red "139";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "8.795808300000001";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "8c3a34";
-  gv:red "140";
-  gv:blue "52";
-  gv:green "58";
-  gv:score "4.9609471";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "db8577";
-  gv:red "219";
-  gv:blue "119";
-  gv:green "133";
-  gv:score "4.8792869";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "a06e58";
-  gv:red "160";
-  gv:blue "88";
-  gv:green "110";
-  gv:score "4.757832";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "6b5437";
-  gv:red "107";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "2.7733931";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.94552900000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.794526"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.715084999999995"
-];
-    w:bagOfWords "CONTENTS i PiNT 8 FLUID OUNCES\nALCOHOLIC STRENGTH BY VOLUME HO4\nolo\nbrand in\nASON FONDEE\nBourgogne\nAleursault\nAppellation Controlée\n1937\nAUTOUE\nPRODUCED BY\nTRADE MARK\nEN 188O\npROPRIETAIRE ET NEGOCIANT\nA BEAUNE (COTE D'OR\nPRODUCE FRANCE\nBOTTLED IN FRANCE\nPre.....\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2444";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

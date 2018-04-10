@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1233";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "nou\nJunto\nG.O alcoholico 44/45\nHIJO DE PEDRO RoMERO\nSANLUCAR DE BARRA MEDA\nANDALUCIA ESPANA\nN. 25\no LIT. DURA VALENCA\n"@spa;
-    gv:color [
-  gv:hex "d0bfa5";
-  gv:red "208";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "17.773455";
-  gv:coverage "35.073334"
-], [
-  gv:hex "121448";
-  gv:red "18";
-  gv:blue "72";
-  gv:green "20";
-  gv:score "12.896121999999998";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "7c7191";
-  gv:red "124";
-  gv:blue "145";
-  gv:green "113";
-  gv:score "2.183749";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "161534";
-  gv:red "22";
-  gv:blue "52";
-  gv:green "21";
-  gv:score "10.128486";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "cbc0bd";
-  gv:red "203";
-  gv:blue "189";
-  gv:green "192";
-  gv:score "8.9494526";
-  gv:coverage "4.8666667"
-], [
-  gv:hex "11172e";
-  gv:red "17";
-  gv:blue "46";
-  gv:green "23";
-  gv:score "6.6351674";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "a49b9c";
-  gv:red "164";
-  gv:blue "156";
-  gv:green "155";
-  gv:score "4.8616331";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "222659";
-  gv:red "34";
-  gv:blue "89";
-  gv:green "38";
-  gv:score "3.7405655";
-  gv:coverage "0.1"
-], [
-  gv:hex "2d334c";
-  gv:red "45";
-  gv:blue "76";
-  gv:green "51";
-  gv:score "3.7190117000000003";
-  gv:coverage "0.24"
-], [
-  gv:hex "2f284a";
-  gv:red "47";
-  gv:blue "74";
-  gv:green "40";
-  gv:score "2.8492428";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.968070999999995"
-];
-    w:bagOfWords "nou\nJunto\nG.O alcoholico 44/45\nHIJO DE PEDRO RoMERO\nSANLUCAR DE BARRA MEDA\nANDALUCIA ESPANA\nN. 25\no LIT. DURA VALENCA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1233";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

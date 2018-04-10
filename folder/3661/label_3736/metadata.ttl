@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3736";
-    dct:type "image";
-    w:bagOfWords "Riojanas\nEMBOTELLADOR 123\nBooegas\neen icero\nEmbotellado en nuestras\nBodegas de Cenicero\nAioi a\np an a\n"@spa;
-    gv:color [
-  gv:hex "eae1d7";
-  gv:red "234";
-  gv:blue "215";
-  gv:green "225";
-  gv:score "53.226328";
-  gv:coverage "45.64"
-], [
-  gv:hex "9e2322";
-  gv:red "158";
-  gv:blue "34";
-  gv:green "35";
-  gv:score "4.988952";
-  gv:coverage "1"
-], [
-  gv:hex "734c1c";
-  gv:red "115";
-  gv:blue "28";
-  gv:green "76";
-  gv:score "2.9380167";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "412e18";
-  gv:red "65";
-  gv:blue "24";
-  gv:green "46";
-  gv:score "2.3646141999999997";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "8b6f3d";
-  gv:red "139";
-  gv:blue "61";
-  gv:green "111";
-  gv:score "1.973908";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "2d1301";
-  gv:red "45";
-  gv:blue "1";
-  gv:green "19";
-  gv:score "1.6395798";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "e9ddcc";
-  gv:red "233";
-  gv:blue "204";
-  gv:green "221";
-  gv:score "11.406018";
-  gv:coverage "10.186667"
-], [
-  gv:hex "dad0c5";
-  gv:red "218";
-  gv:blue "197";
-  gv:green "208";
-  gv:score "2.8328147";
-  gv:coverage "2.54"
-], [
-  gv:hex "614d36";
-  gv:red "97";
-  gv:blue "54";
-  gv:green "77";
-  gv:score "2.1554528";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "d37c69";
-  gv:red "211";
-  gv:blue "105";
-  gv:green "124";
-  gv:score "0.018901429";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.148654"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.548747000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.960294"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.107365"
-];
-    w:bagOfWords "Riojanas\nEMBOTELLADOR 123\nBooegas\neen icero\nEmbotellado en nuestras\nBodegas de Cenicero\nAioi a\np an a\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3736";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

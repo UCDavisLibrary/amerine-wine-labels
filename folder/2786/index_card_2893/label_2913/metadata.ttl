@@ -1,100 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2913";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "HOMOLOGATION C. M. 1396\nGRAND VIN D'ALSACE\nGEWURZTRAMINER\nKuehn\nMARQUE DEPOSEE\nVINS D'ALSACE KUEHN\nNEGOCIANT AMMERSCHWIHR (H-R)\nCAMIS PARIS\n"@fra;
-    gv:color [
-  gv:hex "c3bfbb";
-  gv:red "195";
-  gv:blue "187";
-  gv:green "191";
-  gv:score "50.978261";
-  gv:coverage "17.380000000000003"
-], [
-  gv:hex "181412";
-  gv:red "24";
-  gv:blue "18";
-  gv:green "20";
-  gv:score "6.3031293";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "a39e9b";
-  gv:red "163";
-  gv:blue "155";
-  gv:green "158";
-  gv:score "16.56989";
-  gv:coverage "4.7733333"
-], [
-  gv:hex "7c7773";
-  gv:red "124";
-  gv:blue "115";
-  gv:green "119";
-  gv:score "11.129467";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "5b5753";
-  gv:red "91";
-  gv:blue "83";
-  gv:green "87";
-  gv:score "6.64566";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "e5e0d9";
-  gv:red "229";
-  gv:blue "217";
-  gv:green "224";
-  gv:score "4.17588";
-  gv:coverage "68.43333200000001"
-], [
-  gv:hex "383431";
-  gv:red "56";
-  gv:blue "49";
-  gv:green "52";
-  gv:score "4.0679574";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "d8ccbd";
-  gv:red "216";
-  gv:blue "189";
-  gv:green "204";
-  gv:score "0.12159206000000002";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "e2d5c5";
-  gv:red "226";
-  gv:blue "197";
-  gv:green "213";
-  gv:score "0.0081625658";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.636287"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.504616"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "60.178268"
-];
-    w:bagOfWords "HOMOLOGATION C. M. 1396\nGRAND VIN D'ALSACE\nGEWURZTRAMINER\nKuehn\nMARQUE DEPOSEE\nVINS D'ALSACE KUEHN\nNEGOCIANT AMMERSCHWIHR (H-R)\nCAMIS PARIS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2913";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

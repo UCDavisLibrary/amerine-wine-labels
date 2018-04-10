@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2794";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "CHATEAU CARBONNIEUX\nGRAVES DE LE O G NAN\n1937\nAPPELLATION GRAVES CONTROLEE\n1er\nCru\nde Graves\nMISE EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d9c4a2";
-  gv:red "217";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "40.185887";
-  gv:coverage "26.046667"
-], [
-  gv:hex "a79c77";
-  gv:red "167";
-  gv:blue "119";
-  gv:green "156";
-  gv:score "16.950287";
-  gv:coverage "4.44"
-], [
-  gv:hex "7e7852";
-  gv:red "126";
-  gv:blue "82";
-  gv:green "120";
-  gv:score "14.929844000000001";
-  gv:coverage "3"
-], [
-  gv:hex "dfbd8f";
-  gv:red "223";
-  gv:blue "143";
-  gv:green "189";
-  gv:score "8.6890221";
-  gv:coverage "4.1866668"
-], [
-  gv:hex "5e5833";
-  gv:red "94";
-  gv:blue "51";
-  gv:green "88";
-  gv:score "8.6229973";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "ead9b7";
-  gv:red "234";
-  gv:blue "183";
-  gv:green "217";
-  gv:score "2.8571246";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "b79a6c";
-  gv:red "183";
-  gv:blue "108";
-  gv:green "154";
-  gv:score "1.8061105000000002";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "e2b78a";
-  gv:red "226";
-  gv:blue "138";
-  gv:green "183";
-  gv:score "1.1541692";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "423b16";
-  gv:red "66";
-  gv:blue "22";
-  gv:green "59";
-  gv:score "1.1094048";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "8b7648";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "1.0840066000000002";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.2849"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.103712"
-];
-    w:bagOfWords "CHATEAU CARBONNIEUX\nGRAVES DE LE O G NAN\n1937\nAPPELLATION GRAVES CONTROLEE\n1er\nCru\nde Graves\nMISE EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2794";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

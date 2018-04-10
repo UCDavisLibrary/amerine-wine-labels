@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4814";
-    dct:type "image";
-    w:bagOfWords "WIDMER'S\nHILLSIDE\nREG. u\nMARK\nND PERMISSIVE\nPERMIT\nDISTRICT NY Dw\n7\nW 776\nNEW YORK STATE\nSAUTER NE\nPRODUCED AND BOTTLED BY\nWIDMERS WINE CELLARS INC\nNAPLES, NEW YORK\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    gv:color [
-  gv:hex "d6c7ad";
-  gv:red "214";
-  gv:blue "173";
-  gv:green "199";
-  gv:score "17.475304";
-  gv:coverage "13.793332999999999"
-], [
-  gv:hex "8f7c45";
-  gv:red "143";
-  gv:blue "69";
-  gv:green "124";
-  gv:score "13.85788";
-  gv:coverage "1.28"
-], [
-  gv:hex "160c04";
-  gv:red "22";
-  gv:blue "4";
-  gv:green "12";
-  gv:score "2.0935569000000003";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "a7945a";
-  gv:red "167";
-  gv:blue "90";
-  gv:green "148";
-  gv:score "12.623951";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "837556";
-  gv:red "131";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "12.290545999999999";
-  gv:coverage "3.4066666000000003"
-], [
-  gv:hex "ab9c7d";
-  gv:red "171";
-  gv:blue "125";
-  gv:green "156";
-  gv:score "11.107603000000001";
-  gv:coverage "4.5"
-], [
-  gv:hex "625437";
-  gv:red "98";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "9.683083";
-  gv:coverage "2.16"
-], [
-  gv:hex "eadcc1";
-  gv:red "234";
-  gv:blue "193";
-  gv:green "220";
-  gv:score "8.062838";
-  gv:coverage "9.1466665"
-], [
-  gv:hex "403319";
-  gv:red "64";
-  gv:blue "25";
-  gv:green "51";
-  gv:score "5.7521082";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "6b5723";
-  gv:red "107";
-  gv:blue "35";
-  gv:green "87";
-  gv:score "2.5935734";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.264174"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.166557999999995"
-];
-    w:bagOfWords "WIDMER'S\nHILLSIDE\nREG. u\nMARK\nND PERMISSIVE\nPERMIT\nDISTRICT NY Dw\n7\nW 776\nNEW YORK STATE\nSAUTER NE\nPRODUCED AND BOTTLED BY\nWIDMERS WINE CELLARS INC\nNAPLES, NEW YORK\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4814";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

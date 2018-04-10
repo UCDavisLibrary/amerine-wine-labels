@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2901";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "REG. COMM. LILLE 867\nSelection\nichael Lauvarque a\nREG COMM BRUXELLES 6110\n"@fra;
-    gv:color [
-  gv:hex "ddc6a5";
-  gv:red "221";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "18.643953";
-  gv:coverage "11.673333"
-], [
-  gv:hex "c99160";
-  gv:red "201";
-  gv:blue "96";
-  gv:green "145";
-  gv:score "5.6669410000000005";
-  gv:coverage "2.0533333000000002"
-], [
-  gv:hex "913b1b";
-  gv:red "145";
-  gv:blue "27";
-  gv:green "59";
-  gv:score "3.6516067";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "3f301b";
-  gv:red "63";
-  gv:blue "27";
-  gv:green "48";
-  gv:score "3.0564293";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "ae2c0f";
-  gv:red "174";
-  gv:blue "15";
-  gv:green "44";
-  gv:score "2.1657307";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "f0d9b9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "217";
-  gv:score "12.330689";
-  gv:coverage "22.193334"
-], [
-  gv:hex "af9a7e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "5.4048605";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "c88b3d";
-  gv:red "200";
-  gv:blue "61";
-  gv:green "139";
-  gv:score "4.7879666";
-  gv:coverage "1.16"
-], [
-  gv:hex "88765d";
-  gv:red "136";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "4.3874696";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "eab683";
-  gv:red "234";
-  gv:blue "131";
-  gv:green "182";
-  gv:score "3.3578499999999996";
-  gv:coverage "1.2133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/015p6>;
-  gv:desc "bird";
-  gv:score "68.360621"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.807185999999994"
-];
-    w:bagOfWords "REG. COMM. LILLE 867\nSelection\nichael Lauvarque a\nREG COMM BRUXELLES 6110\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2901";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

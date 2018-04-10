@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1973";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "SAN LUCAR\nJEREZ OSCURO ABOCADO\nN932\n"@spa;
-    gv:color [
-  gv:hex "e2bb7a";
-  gv:red "226";
-  gv:blue "122";
-  gv:green "187";
-  gv:score "55.003023";
-  gv:coverage "27.58"
-], [
-  gv:hex "883b0b";
-  gv:red "136";
-  gv:blue "11";
-  gv:green "59";
-  gv:score "1.2220744000000001";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "eeb57b";
-  gv:red "238";
-  gv:blue "123";
-  gv:green "181";
-  gv:score "27.011692999999998";
-  gv:coverage "8.02"
-], [
-  gv:hex "d0945a";
-  gv:red "208";
-  gv:blue "90";
-  gv:green "148";
-  gv:score "7.416449999999999";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "aa6b33";
-  gv:red "170";
-  gv:blue "51";
-  gv:green "107";
-  gv:score "2.546671";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "8f400d";
-  gv:red "143";
-  gv:blue "13";
-  gv:green "64";
-  gv:score "1.1742126";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "dfb76c";
-  gv:red "223";
-  gv:blue "108";
-  gv:green "183";
-  gv:score "1.1405920999999999";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "854710";
-  gv:red "133";
-  gv:blue "16";
-  gv:green "71";
-  gv:score "0.83969682";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "b36131";
-  gv:red "179";
-  gv:blue "49";
-  gv:green "97";
-  gv:score "0.7801640000000001";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "c9a361";
-  gv:red "201";
-  gv:blue "97";
-  gv:green "163";
-  gv:score "0.57924865";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.58160699999999"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "63.26805399999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.757976000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.678018"
-];
-    w:bagOfWords "SAN LUCAR\nJEREZ OSCURO ABOCADO\nN932\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1973";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

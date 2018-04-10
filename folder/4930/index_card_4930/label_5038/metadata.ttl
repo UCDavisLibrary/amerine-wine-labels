@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5038";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "ZO\nBURGUNDY TABLE WINE\nPRODUCE OF FRANCE\nES\nMONT DE MI LIEU\nCONTROLEE\nAND BOTTLED BY\nPRODUCED & (FRANCE)\nDE\nMILLY, PAR\nCHABLIS CHATEAU CONTENTS 12 FLUID. OUNCES\nNEW YORK N.Y.\nIN FRANCE\nOF BURGUNDY PRINTED THE HOUSE IMPORTED BY "@undefined;
-    gv:color [
-  gv:hex "ebdac1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "31.883907";
-  gv:coverage "17.126666"
-], [
-  gv:hex "0f0905";
-  gv:red "15";
-  gv:blue "5";
-  gv:green "9";
-  gv:score "5.289501700000001";
-  gv:coverage "12.793334000000002"
-], [
-  gv:hex "944025";
-  gv:red "148";
-  gv:blue "37";
-  gv:green "64";
-  gv:score "2.487966";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "dac9af";
-  gv:red "218";
-  gv:blue "175";
-  gv:green "201";
-  gv:score "29.248261";
-  gv:coverage "17.586666"
-], [
-  gv:hex "fe5d4b";
-  gv:red "254";
-  gv:blue "75";
-  gv:green "93";
-  gv:score "0.23629486";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ac9c84";
-  gv:red "172";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "6.2209085";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "887860";
-  gv:red "136";
-  gv:blue "96";
-  gv:green "120";
-  gv:score "2.465893";
-  gv:coverage "2.18"
-], [
-  gv:hex "b35536";
-  gv:red "179";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "1.7188543";
-  gv:coverage "0.24"
-], [
-  gv:hex "c24231";
-  gv:red "194";
-  gv:blue "49";
-  gv:green "66";
-  gv:score "1.5501786";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "c74124";
-  gv:red "199";
-  gv:blue "36";
-  gv:green "65";
-  gv:score "1.2895576";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "62.740445"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.066984"
-];
-    w:bagOfWords "ZO\nBURGUNDY TABLE WINE\nPRODUCE OF FRANCE\nES\nMONT DE MI LIEU\nCONTROLEE\nAND BOTTLED BY\nPRODUCED & (FRANCE)\nDE\nMILLY, PAR\nCHABLIS CHATEAU CONTENTS 12 FLUID. OUNCES\nNEW YORK N.Y.\nIN FRANCE\nOF BURGUNDY PRINTED THE HOUSE IMPORTED BY "@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5038";
+    <schema.keywords> "UC Reporters Notebook@en".
+

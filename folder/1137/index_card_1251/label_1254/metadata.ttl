@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1251/label_1254";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "1900\nTHIS\nTWENTY\n90\nYEARS OLD\nBRANDY\nIS\nPRODUCE OF FRANCE\nCONDOM 2\n(gers)\nTHE BRANDY OF LAFAYETTE\n84 PROOF\nCONTENTS 25/32 QUART.\n"@undefined;
-    gv:color [
-  gv:hex "d8b386";
-  gv:red "216";
-  gv:blue "134";
-  gv:green "179";
-  gv:score "18.489914";
-  gv:coverage "3.62"
-], [
-  gv:hex "bd9469";
-  gv:red "189";
-  gv:blue "105";
-  gv:green "148";
-  gv:score "16.18814";
-  gv:coverage "4.06"
-], [
-  gv:hex "ba966a";
-  gv:red "186";
-  gv:blue "106";
-  gv:green "150";
-  gv:score "15.755087000000001";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "d6ba9b";
-  gv:red "214";
-  gv:blue "155";
-  gv:green "186";
-  gv:score "13.850524";
-  gv:coverage "7.9266667"
-], [
-  gv:hex "dab085";
-  gv:red "218";
-  gv:blue "133";
-  gv:green "176";
-  gv:score "11.452682";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "9f764c";
-  gv:red "159";
-  gv:blue "76";
-  gv:green "118";
-  gv:score "6.072801";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "bc9e7f";
-  gv:red "188";
-  gv:blue "127";
-  gv:green "158";
-  gv:score "4.9507465";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "bb9373";
-  gv:red "187";
-  gv:blue "115";
-  gv:green "147";
-  gv:score "3.2967999999999997";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "dbb191";
-  gv:red "219";
-  gv:blue "145";
-  gv:green "177";
-  gv:score "1.6705416";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "efd8c0";
-  gv:red "239";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "1.6045373";
-  gv:coverage "4.8466667999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.32731"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.044177"
-];
-    w:bagOfWords "1900\nTHIS\nTWENTY\n90\nYEARS OLD\nBRANDY\nIS\nPRODUCE OF FRANCE\nCONDOM 2\n(gers)\nTHE BRANDY OF LAFAYETTE\n84 PROOF\nCONTENTS 25/32 QUART.\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1254";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

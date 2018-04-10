@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1800";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "M O SEL SAAR RUWER\n1949\nPiesporter Falkenberg feinste Spallese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nWEILER, SCHAARa DA THE TRIER\n"@deu;
-    gv:color [
-  gv:hex "d6c1a2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "193";
-  gv:score "34.510097";
-  gv:coverage "36.04"
-], [
-  gv:hex "b29d7d";
-  gv:red "178";
-  gv:blue "125";
-  gv:green "157";
-  gv:score "14.422372";
-  gv:coverage "3.1333334999999995"
-], [
-  gv:hex "867559";
-  gv:red "134";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "7.3323667";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "b89d6c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "157";
-  gv:score "7.042363999999999";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "d6b886";
-  gv:red "214";
-  gv:blue "134";
-  gv:green "184";
-  gv:score "5.8695704";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "645437";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "4.38368";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "6a5426";
-  gv:red "106";
-  gv:blue "38";
-  gv:green "84";
-  gv:score "3.6337825999999995";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "876f43";
-  gv:red "135";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "3.5907390999999995";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "c4927b";
-  gv:red "196";
-  gv:blue "123";
-  gv:green "146";
-  gv:score "3.2904819";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "ebd8bb";
-  gv:red "235";
-  gv:blue "187";
-  gv:green "216";
-  gv:score "2.1541694";
-  gv:coverage "6.986666499999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.261616"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.937568999999996"
-];
-    w:bagOfWords "M O SEL SAAR RUWER\n1949\nPiesporter Falkenberg feinste Spallese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nWEILER, SCHAARa DA THE TRIER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1800";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

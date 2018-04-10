@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1577";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "ORanzanilla Pasaua\nREGISTRO OFICIAL DE EMBOTELLADORES N.0 25\nMijodePedrohomero Villarreal\nSANLUCAR DE BARRAMEDA\nUT S, DURA VALENCIA\n"@spa;
-    gv:color [
-  gv:hex "ccc3b9";
-  gv:red "204";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "39.23395";
-  gv:coverage "14.7"
-], [
-  gv:hex "a29d92";
-  gv:red "162";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "32.960764";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "e3dbd1";
-  gv:red "227";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "13.151760000000001";
-  gv:coverage "28.926668"
-], [
-  gv:hex "817e73";
-  gv:red "129";
-  gv:blue "115";
-  gv:green "126";
-  gv:score "11.28122";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "d2c5b4";
-  gv:red "210";
-  gv:blue "180";
-  gv:green "197";
-  gv:score "1.3878593";
-  gv:coverage "22.206667"
-], [
-  gv:hex "ac9e90";
-  gv:red "172";
-  gv:blue "144";
-  gv:green "158";
-  gv:score "1.1502197";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "271a0a";
-  gv:red "39";
-  gv:blue "10";
-  gv:green "26";
-  gv:score "0.0063725231";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "615f53";
-  gv:red "97";
-  gv:blue "83";
-  gv:green "95";
-  gv:score "0.43633417";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e4d7c6";
-  gv:red "228";
-  gv:blue "198";
-  gv:green "215";
-  gv:score "0.20712726";
-  gv:coverage "29.373333000000002"
-], [
-  gv:hex "877b6b";
-  gv:red "135";
-  gv:blue "107";
-  gv:green "123";
-  gv:score "0.13923472";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "72.93947899999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.92362"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "64.534134"
-];
-    w:bagOfWords "ORanzanilla Pasaua\nREGISTRO OFICIAL DE EMBOTELLADORES N.0 25\nMijodePedrohomero Villarreal\nSANLUCAR DE BARRAMEDA\nUT S, DURA VALENCIA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1577";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

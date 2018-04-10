@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1994";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "02\nCOCHRAN\nSHERRY\nShipped by\nGONZALEZ BYASS E O ITD\nJEREZ DE LA FRONTERA\nAlcoholic Strength\nContents\n20 o/o\n1 Pint & 9 Fluid ozs\nPRODUCE OF SPAIN\n"@spa;
-    gv:color [
-  gv:hex "671d01";
-  gv:red "103";
-  gv:blue "1";
-  gv:green "29";
-  gv:score "12.522578000000001";
-  gv:coverage "0.58"
-], [
-  gv:hex "e0c8a6";
-  gv:red "224";
-  gv:blue "166";
-  gv:green "200";
-  gv:score "11.74578";
-  gv:coverage "12.34"
-], [
-  gv:hex "f4b78c";
-  gv:red "244";
-  gv:blue "140";
-  gv:green "183";
-  gv:score "11.122807";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "f3dbba";
-  gv:red "243";
-  gv:blue "186";
-  gv:green "219";
-  gv:score "8.069412400000001";
-  gv:coverage "16.206667"
-], [
-  gv:hex "ce9066";
-  gv:red "206";
-  gv:blue "102";
-  gv:green "144";
-  gv:score "8.0194011";
-  gv:coverage "0.52"
-], [
-  gv:hex "893a11";
-  gv:red "137";
-  gv:blue "17";
-  gv:green "58";
-  gv:score "6.3278072000000005";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "a66a40";
-  gv:red "166";
-  gv:blue "64";
-  gv:green "106";
-  gv:score "5.8258481";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "b0987a";
-  gv:red "176";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "3.6803375999999997";
-  gv:coverage "1.9"
-], [
-  gv:hex "82471a";
-  gv:red "130";
-  gv:blue "26";
-  gv:green "71";
-  gv:score "3.2343632999999996";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "fbd9a9";
-  gv:red "251";
-  gv:blue "169";
-  gv:green "217";
-  gv:score "3.2136492000000003";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.162556"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.599352"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.75826"
-];
-    w:bagOfWords "02\nCOCHRAN\nSHERRY\nShipped by\nGONZALEZ BYASS E O ITD\nJEREZ DE LA FRONTERA\nAlcoholic Strength\nContents\n20 o/o\n1 Pint & 9 Fluid ozs\nPRODUCE OF SPAIN\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1994";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

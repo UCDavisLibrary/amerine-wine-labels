@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3525/label_3526";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "HOUSE OF HOUTE\nTINOT BLANC 1946\nente O S\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH WINE CELLARS\nWALNUT CREEK, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "dac2a2";
-  gv:red "218";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "12.353525";
-  gv:coverage "16.453333"
-], [
-  gv:hex "65511a";
-  gv:red "101";
-  gv:blue "26";
-  gv:green "81";
-  gv:score "9.36139";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "8e731c";
-  gv:red "142";
-  gv:blue "28";
-  gv:green "115";
-  gv:score "7.4663654";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "f1a922";
-  gv:red "241";
-  gv:blue "34";
-  gv:green "169";
-  gv:score "5.7247084";
-  gv:coverage "0.24"
-], [
-  gv:hex "402f16";
-  gv:red "64";
-  gv:blue "22";
-  gv:green "47";
-  gv:score "4.0249329";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "6b748f";
-  gv:red "107";
-  gv:blue "143";
-  gv:green "116";
-  gv:score "0.23150689";
-  gv:coverage "0.08"
-], [
-  gv:hex "8e733e";
-  gv:red "142";
-  gv:blue "62";
-  gv:green "115";
-  gv:score "6.595153400000001";
-  gv:coverage "2.56"
-], [
-  gv:hex "b39a77";
-  gv:red "179";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "4.8838608";
-  gv:coverage "3.2866668000000003"
-], [
-  gv:hex "b3955f";
-  gv:red "179";
-  gv:blue "95";
-  gv:green "149";
-  gv:score "4.8668057000000005";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "d89112";
-  gv:red "216";
-  gv:blue "18";
-  gv:green "145";
-  gv:score "4.2550709";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.338042"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.280106999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.846447"
-];
-    w:bagOfWords "HOUSE OF HOUTE\nTINOT BLANC 1946\nente O S\nPRODUCED AND BOTTLED BY\nGOPHER GULCH RANCH WINE CELLARS\nWALNUT CREEK, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3526";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

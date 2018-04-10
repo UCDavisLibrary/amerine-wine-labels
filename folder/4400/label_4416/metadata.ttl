@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4416";
-    dct:type "image";
-    w:bagOfWords "CION DE\nLLA DE 1 A\nNCES\nTIQUE F\n1865\nCTO RIP\nSDE\nHEREDEROS DEL\nMARQUES DE RISCAL\nALLA DE\nDE\nELCIEGO (ALAVA) s\nGE\n1948\nMARQUIS\nDE RISCAL\nELCIEGO\nPARIS 1872.\nMARCA CONCEDIDA MAROUE DEPOSEE TRADE MARK SCHUTZ MARKE\nG.PIULATS. BARNA\n"@spa;
-    gv:color [
-  gv:hex "cebda1";
-  gv:red "206";
-  gv:blue "161";
-  gv:green "189";
-  gv:score "58.287382";
-  gv:coverage "26.593333"
-], [
-  gv:hex "b29f7f";
-  gv:red "178";
-  gv:blue "127";
-  gv:green "159";
-  gv:score "33.547494";
-  gv:coverage "4.2466667"
-], [
-  gv:hex "8b7959";
-  gv:red "139";
-  gv:blue "89";
-  gv:green "121";
-  gv:score "5.4206759";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "e9d7bc";
-  gv:red "233";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "1.9042328000000002";
-  gv:coverage "5.6000000000000005"
-], [
-  gv:hex "b4986d";
-  gv:red "180";
-  gv:blue "109";
-  gv:green "152";
-  gv:score "0.43972585999999997";
-  gv:coverage "0.04"
-], [
-  gv:hex "6d5d43";
-  gv:red "109";
-  gv:blue "67";
-  gv:green "93";
-  gv:score "0.34549511";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "cec4ba";
-  gv:red "206";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "0.02047054";
-  gv:coverage "9.5"
-], [
-  gv:hex "e4dbd1";
-  gv:red "228";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "0.012218705";
-  gv:coverage "52.253336"
-], [
-  gv:hex "7b7166";
-  gv:red "123";
-  gv:blue "102";
-  gv:green "113";
-  gv:score "0.010988368";
-  gv:coverage "0.08"
-], [
-  gv:hex "40362a";
-  gv:red "64";
-  gv:blue "42";
-  gv:green "54";
-  gv:score "0.0056918132";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.047612"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "56.500733000000004"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.428546000000004"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "55.706495000000004"
-], [
-  gv:mid <https://g.co/kg/m/01504>;
-  gv:desc "brass";
-  gv:score "52.815324"
-];
-    w:bagOfWords "CION DE\nLLA DE 1 A\nNCES\nTIQUE F\n1865\nCTO RIP\nSDE\nHEREDEROS DEL\nMARQUES DE RISCAL\nALLA DE\nDE\nELCIEGO (ALAVA) s\nGE\n1948\nMARQUIS\nDE RISCAL\nELCIEGO\nPARIS 1872.\nMARCA CONCEDIDA MAROUE DEPOSEE TRADE MARK SCHUTZ MARKE\nG.PIULATS. BARNA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4416";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

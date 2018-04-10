@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2909";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "NOT\nDoni\nSOCIETE ARESPONSAe\nTELIMITEE\nHAUTRHIN\nVIN D'ALSACE\nEDELZWICKER\nPINA\n"@fra;
-    gv:color [
-  gv:hex "bb9a5a";
-  gv:red "187";
-  gv:blue "90";
-  gv:green "154";
-  gv:score "21.268857999999998";
-  gv:coverage "3.7933334999999997"
-], [
-  gv:hex "be0506";
-  gv:red "190";
-  gv:blue "6";
-  gv:green "5";
-  gv:score "4.14186";
-  gv:coverage "0.48"
-], [
-  gv:hex "0e0806";
-  gv:red "14";
-  gv:blue "6";
-  gv:green "8";
-  gv:score "1.5836322999999999";
-  gv:coverage "2.86"
-], [
-  gv:hex "3c3216";
-  gv:red "60";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "1.1850759";
-  gv:coverage "0.58"
-], [
-  gv:hex "b69341";
-  gv:red "182";
-  gv:blue "65";
-  gv:green "147";
-  gv:score "17.411648";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "d8ba83";
-  gv:red "216";
-  gv:blue "131";
-  gv:green "186";
-  gv:score "9.1177233";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "dcc29e";
-  gv:red "220";
-  gv:blue "158";
-  gv:green "194";
-  gv:score "5.4553498";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "a17e2a";
-  gv:red "161";
-  gv:blue "42";
-  gv:green "126";
-  gv:score "5.303517";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "aa1706";
-  gv:red "170";
-  gv:blue "6";
-  gv:green "23";
-  gv:score "3.6311272999999997";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "c99561";
-  gv:red "201";
-  gv:blue "97";
-  gv:green "149";
-  gv:score "3.2049689";
-  gv:coverage "0.6666666800000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.517792"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "59.289181"
-], [
-  gv:mid <https://g.co/kg/m/06zsq>;
-  gv:desc "sign";
-  gv:score "52.014261"
-];
-    w:bagOfWords "NOT\nDoni\nSOCIETE ARESPONSAe\nTELIMITEE\nHAUTRHIN\nVIN D'ALSACE\nEDELZWICKER\nPINA\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2909";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

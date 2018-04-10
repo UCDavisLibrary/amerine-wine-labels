@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2674";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "CONTENTS\n1 PINT 8 FL. OUNCES\nALCOHOL 12 o/o BY VOLUME\nRED BURGUNDY WINE\nPRODUCT OF FRANCE\nBEAUJOLAIS\nAPPELLATION CONTROLEE\nMAISON FONDEE EN 1720\nCoMAREY LIGER BELAIR,\nLIGER-BELAIR & FILs. Sucrs\nPROPRIETAIRES-NEGOCIANTS A NUITS-SAINT-GEORGES (COTE-D'OR)\nFRANCE\nSOLE AGENT\nEMPIRE STATE BUILDING\nNEW YORK\n1, N. Y.\nMP PARIS A NUITS\nCEA\n"@fra;
-    gv:color [
-  gv:hex "d9c2a7";
-  gv:red "217";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "56.040186000000006";
-  gv:coverage "30.680000000000003"
-], [
-  gv:hex "b19a80";
-  gv:red "177";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "21.758732";
-  gv:coverage "5.593333400000001"
-], [
-  gv:hex "8c765e";
-  gv:red "140";
-  gv:blue "94";
-  gv:green "118";
-  gv:score "10.285822";
-  gv:coverage "2.76"
-], [
-  gv:hex "edd7bf";
-  gv:red "237";
-  gv:blue "191";
-  gv:green "215";
-  gv:score "5.07435";
-  gv:coverage "19.606666"
-], [
-  gv:hex "665139";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "4.6486594";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "dfc295";
-  gv:red "223";
-  gv:blue "149";
-  gv:green "194";
-  gv:score "1.0265145999999998";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "4f3c28";
-  gv:red "79";
-  gv:blue "40";
-  gv:green "60";
-  gv:score "0.32420097999999997";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "cfc1b7";
-  gv:red "207";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "0.16450369";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "987650";
-  gv:red "152";
-  gv:blue "80";
-  gv:green "118";
-  gv:score "0.1552906";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "967451";
-  gv:red "150";
-  gv:blue "81";
-  gv:green "116";
-  gv:score "0.14526761";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.194856"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "68.307829"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.313279"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.002449000000006"
-];
-    w:bagOfWords "CONTENTS\n1 PINT 8 FL. OUNCES\nALCOHOL 12 o/o BY VOLUME\nRED BURGUNDY WINE\nPRODUCT OF FRANCE\nBEAUJOLAIS\nAPPELLATION CONTROLEE\nMAISON FONDEE EN 1720\nCoMAREY LIGER BELAIR,\nLIGER-BELAIR & FILs. Sucrs\nPROPRIETAIRES-NEGOCIANTS A NUITS-SAINT-GEORGES (COTE-D'OR)\nFRANCE\nSOLE AGENT\nEMPIRE STATE BUILDING\nNEW YORK\n1, N. Y.\nMP PARIS A NUITS\nCEA\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2674";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

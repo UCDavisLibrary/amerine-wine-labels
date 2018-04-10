@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1949/label_1955";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "OF\nPRODUCE\nSPAIN\nON SA\nTRADE\nMARK\nESTABE\n81 4\nPALE DRY\nSHERRY\nSouTHARD & Co TD\nSH/PPERS SINCE 1814\nLONDON & Pue RTO DE STA MARIA\nPRINTED IN ENGLANO\n"@spa;
-    gv:color [
-  gv:hex "e5ca97";
-  gv:red "229";
-  gv:blue "151";
-  gv:green "202";
-  gv:score "41.906565";
-  gv:coverage "16.553333000000002"
-], [
-  gv:hex "7a4521";
-  gv:red "122";
-  gv:blue "33";
-  gv:green "69";
-  gv:score "2.9167976";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "361a00";
-  gv:red "54";
-  gv:blue "undefined";
-  gv:green "26";
-  gv:score "0.21257149000000003";
-  gv:coverage "0.04"
-], [
-  gv:hex "f1d7a5";
-  gv:red "241";
-  gv:blue "165";
-  gv:green "215";
-  gv:score "11.548422";
-  gv:coverage "3.88"
-], [
-  gv:hex "b49a6b";
-  gv:red "180";
-  gv:blue "107";
-  gv:green "154";
-  gv:score "8.2267046";
-  gv:coverage "2.0133332999999998"
-], [
-  gv:hex "e0c79e";
-  gv:red "224";
-  gv:blue "158";
-  gv:green "199";
-  gv:score "6.0392879";
-  gv:coverage "6"
-], [
-  gv:hex "8b7446";
-  gv:red "139";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "5.4984558";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "f2dab2";
-  gv:red "242";
-  gv:blue "178";
-  gv:green "218";
-  gv:score "3.8767163";
-  gv:coverage "14.793333"
-], [
-  gv:hex "6a5527";
-  gv:red "106";
-  gv:blue "39";
-  gv:green "85";
-  gv:score "2.7291860000000003";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "a16b46";
-  gv:red "161";
-  gv:blue "70";
-  gv:green "107";
-  gv:score "2.4215641";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.509156"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "67.770213"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "64.763635"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "58.468222999999995"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "56.97206299999999"
-];
-    w:bagOfWords "OF\nPRODUCE\nSPAIN\nON SA\nTRADE\nMARK\nESTABE\n81 4\nPALE DRY\nSHERRY\nSouTHARD & Co TD\nSH/PPERS SINCE 1814\nLONDON & Pue RTO DE STA MARIA\nPRINTED IN ENGLANO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1955";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

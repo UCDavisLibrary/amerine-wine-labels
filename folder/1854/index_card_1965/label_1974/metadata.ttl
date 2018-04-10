@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1974";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "Sonera.\n1888\nESTEBAN BOZZANO\nSANLUCAR DE BARRAMEDA\nESPANA\nN9373\nziteleres Industrial\n"@spa;
-    gv:color [
-  gv:hex "dbb879";
-  gv:red "219";
-  gv:blue "121";
-  gv:green "184";
-  gv:score "60.75269599999999";
-  gv:coverage "18.493333"
-], [
-  gv:hex "794c16";
-  gv:red "121";
-  gv:blue "22";
-  gv:green "76";
-  gv:score "3.4235127";
-  gv:coverage "0.5"
-], [
-  gv:hex "c29f63";
-  gv:red "194";
-  gv:blue "99";
-  gv:green "159";
-  gv:score "12.345859";
-  gv:coverage "4.6133332"
-], [
-  gv:hex "e4b57d";
-  gv:red "228";
-  gv:blue "125";
-  gv:green "181";
-  gv:score "5.0455358";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "c3955e";
-  gv:red "195";
-  gv:blue "94";
-  gv:green "149";
-  gv:score "3.183724";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "9b6e37";
-  gv:red "155";
-  gv:blue "55";
-  gv:green "110";
-  gv:score "3.1405255";
-  gv:coverage "0.48"
-], [
-  gv:hex "582d00";
-  gv:red "88";
-  gv:blue "undefined";
-  gv:green "45";
-  gv:score "3.1393167";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "917540";
-  gv:red "145";
-  gv:blue "64";
-  gv:green "117";
-  gv:score "3.0075125000000003";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "6d5425";
-  gv:red "109";
-  gv:blue "37";
-  gv:green "84";
-  gv:score "1.7289698";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "dcb466";
-  gv:red "220";
-  gv:blue "102";
-  gv:green "180";
-  gv:score "0.93328618";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.26454000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Sonera.\n1888\nESTEBAN BOZZANO\nSANLUCAR DE BARRAMEDA\nESPANA\nN9373\nziteleres Industrial\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1974";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

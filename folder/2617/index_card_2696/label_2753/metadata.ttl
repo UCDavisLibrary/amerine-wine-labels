@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2753";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "APPELLATION\nTAVEL\nCONTROL EE\nPERE ANSELME\nETS\nNEGOCIANTS A CHATEAU NEUF-DU-PAPE (VAUCLUSE)\n"@fra;
-    gv:color [
-  gv:hex "e7b27d";
-  gv:red "231";
-  gv:blue "125";
-  gv:green "178";
-  gv:score "16.305263";
-  gv:coverage "4.9133334"
-], [
-  gv:hex "e5c7a3";
-  gv:red "229";
-  gv:blue "163";
-  gv:green "199";
-  gv:score "11.09742";
-  gv:coverage "8.18"
-], [
-  gv:hex "7a491b";
-  gv:red "122";
-  gv:blue "27";
-  gv:green "73";
-  gv:score "5.5897985";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "af2a0f";
-  gv:red "175";
-  gv:blue "15";
-  gv:green "42";
-  gv:score "1.5691172";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "3f3514";
-  gv:red "63";
-  gv:blue "20";
-  gv:green "53";
-  gv:score "0.61160633";
-  gv:coverage "0.16"
-], [
-  gv:hex "cd945f";
-  gv:red "205";
-  gv:blue "95";
-  gv:green "148";
-  gv:score "11.874094";
-  gv:coverage "2.94"
-], [
-  gv:hex "e0bd88";
-  gv:red "224";
-  gv:blue "136";
-  gv:green "189";
-  gv:score "8.9860708";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "d09146";
-  gv:red "208";
-  gv:blue "70";
-  gv:green "145";
-  gv:score "4.9204037";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "be9b65";
-  gv:red "190";
-  gv:blue "101";
-  gv:green "155";
-  gv:score "3.9231468";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "5c2e06";
-  gv:red "92";
-  gv:blue "6";
-  gv:green "46";
-  gv:score "3.830725";
-  gv:coverage "0.45999999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.010466"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "55.594283"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.614713"
-];
-    w:bagOfWords "APPELLATION\nTAVEL\nCONTROL EE\nPERE ANSELME\nETS\nNEGOCIANTS A CHATEAU NEUF-DU-PAPE (VAUCLUSE)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2753";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4871";
-    dct:type "image";
-    w:bagOfWords "Elm\nVOZAR\nLIEBFRAUMILCH\nAo IMPORTED BY HERMES IMPORTS, SAN FRANCISCO/CAL\nS 369\n"@eng;
-    gv:color [
-  gv:hex "d5c198";
-  gv:red "213";
-  gv:blue "152";
-  gv:green "193";
-  gv:score "23.067451";
-  gv:coverage "5.6733332999999995"
-], [
-  gv:hex "645434";
-  gv:red "100";
-  gv:blue "52";
-  gv:green "84";
-  gv:score "9.23781";
-  gv:coverage "1.2"
-], [
-  gv:hex "150b07";
-  gv:red "21";
-  gv:blue "7";
-  gv:green "11";
-  gv:score "2.762422";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "f4e0b7";
-  gv:red "244";
-  gv:blue "183";
-  gv:green "224";
-  gv:score "18.666665";
-  gv:coverage "19.333333"
-], [
-  gv:hex "ad9b74";
-  gv:red "173";
-  gv:blue "116";
-  gv:green "155";
-  gv:score "12.009915";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "877552";
-  gv:red "135";
-  gv:blue "82";
-  gv:green "117";
-  gv:score "7.4609421";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "dcc091";
-  gv:red "220";
-  gv:blue "145";
-  gv:green "192";
-  gv:score "5.5435218";
-  gv:coverage "1.16"
-], [
-  gv:hex "f4dcab";
-  gv:red "244";
-  gv:blue "171";
-  gv:green "220";
-  gv:score "4.251210400000001";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "3f2f13";
-  gv:red "63";
-  gv:blue "19";
-  gv:green "47";
-  gv:score "4.2279549";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "b39b6e";
-  gv:red "179";
-  gv:blue "110";
-  gv:green "155";
-  gv:score "2.3104096000000003";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.78158499999999"
-];
-    w:bagOfWords "Elm\nVOZAR\nLIEBFRAUMILCH\nAo IMPORTED BY HERMES IMPORTS, SAN FRANCISCO/CAL\nS 369\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4871";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

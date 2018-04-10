@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4370/label_4377";
-    dct:type "image";
-    w:bagOfWords "teslingrSylvaner\nEIDGEN. VERSUCHSANSTALT FUR DBST WEIN- U.6ARTENBAU, WADENSWIL\n"@deu;
-    gv:color [
-  gv:hex "5f7c6d";
-  gv:red "95";
-  gv:blue "109";
-  gv:green "124";
-  gv:score "22.865409";
-  gv:coverage "3.3666666999999997"
-], [
-  gv:hex "a59a7d";
-  gv:red "165";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "19.075152";
-  gv:coverage "6.5866664"
-], [
-  gv:hex "d7bf9c";
-  gv:red "215";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "16.303919";
-  gv:coverage "18.84"
-], [
-  gv:hex "87775a";
-  gv:red "135";
-  gv:blue "90";
-  gv:green "119";
-  gv:score "7.673374600000001";
-  gv:coverage "2.8066667"
-], [
-  gv:hex "436055";
-  gv:red "67";
-  gv:blue "85";
-  gv:green "96";
-  gv:score "6.4829148000000005";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "86967e";
-  gv:red "134";
-  gv:blue "126";
-  gv:green "150";
-  gv:score "5.0846446";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "6e816b";
-  gv:red "110";
-  gv:blue "107";
-  gv:green "129";
-  gv:score "4.5559175";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "b49669";
-  gv:red "180";
-  gv:blue "105";
-  gv:green "150";
-  gv:score "3.1514715";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "809381";
-  gv:red "128";
-  gv:blue "129";
-  gv:green "147";
-  gv:score "2.6983219999999997";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "96794e";
-  gv:red "150";
-  gv:blue "78";
-  gv:green "121";
-  gv:score "2.4403812";
-  gv:coverage "0.9400000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.50707"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "50.563407000000005"
-];
-    w:bagOfWords "teslingrSylvaner\nEIDGEN. VERSUCHSANSTALT FUR DBST WEIN- U.6ARTENBAU, WADENSWIL\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "AUT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4377";
+    <schema.keywords> "Austria Folder@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "AT".
+

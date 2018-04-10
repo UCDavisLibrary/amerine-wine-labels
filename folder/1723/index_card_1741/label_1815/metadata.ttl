@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1815";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "MOSEL-SAAR-RUWER\n194 et\nSettiget\n50eppslei\ndudet nt. 48\nNATURRE\nStaatliche Domanen 00einbauvermaltung\nTriet\nEigener Rellerabyug und Rorkbrand\n"@deu;
-    gv:color [
-  gv:hex "604f37";
-  gv:red "96";
-  gv:blue "55";
-  gv:green "79";
-  gv:score "18.609312";
-  gv:coverage "3.6333334"
-], [
-  gv:hex "d7c7b3";
-  gv:red "215";
-  gv:blue "179";
-  gv:green "199";
-  gv:score "17.196004000000002";
-  gv:coverage "7.779999999999999"
-], [
-  gv:hex "c78f7f";
-  gv:red "199";
-  gv:blue "127";
-  gv:green "143";
-  gv:score "9.1310024";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "423421";
-  gv:red "66";
-  gv:blue "33";
-  gv:green "52";
-  gv:score "11.996429000000001";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "eadac8";
-  gv:red "234";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "10.01639";
-  gv:coverage "6.933333"
-], [
-  gv:hex "82725b";
-  gv:red "130";
-  gv:blue "91";
-  gv:green "114";
-  gv:score "8.5898332";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "ab9c8a";
-  gv:red "171";
-  gv:blue "138";
-  gv:green "156";
-  gv:score "6.4787135";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "edb6a6";
-  gv:red "237";
-  gv:blue "166";
-  gv:green "182";
-  gv:score "5.467383600000001";
-  gv:coverage "0.5"
-], [
-  gv:hex "e9dbce";
-  gv:red "233";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "3.298777";
-  gv:coverage "68.106669"
-], [
-  gv:hex "291c0f";
-  gv:red "41";
-  gv:blue "15";
-  gv:green "28";
-  gv:score "2.9535102";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.721388"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MOSEL-SAAR-RUWER\n194 et\nSettiget\n50eppslei\ndudet nt. 48\nNATURRE\nStaatliche Domanen 00einbauvermaltung\nTriet\nEigener Rellerabyug und Rorkbrand\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1815";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

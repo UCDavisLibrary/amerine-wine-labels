@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2640";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "org\nAPP CATION CONTROLEE\nDAVID 8 L.FOILLARD-ST GEORGES(RHONE)\nMP H RICHARD, LYON\n"@fra;
-    gv:color [
-  gv:hex "cd9749";
-  gv:red "205";
-  gv:blue "73";
-  gv:green "151";
-  gv:score "33.790994000000005";
-  gv:coverage "13.139999999999999"
-], [
-  gv:hex "d6bb98";
-  gv:red "214";
-  gv:blue "152";
-  gv:green "187";
-  gv:score "8.0891371";
-  gv:coverage "7.4466668"
-], [
-  gv:hex "331100";
-  gv:red "51";
-  gv:blue "undefined";
-  gv:green "17";
-  gv:score "0.5710509100000001";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "442f17";
-  gv:red "68";
-  gv:blue "23";
-  gv:green "47";
-  gv:score "0.40552788";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "c6965b";
-  gv:red "198";
-  gv:blue "91";
-  gv:green "150";
-  gv:score "10.986338";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "c19c64";
-  gv:red "193";
-  gv:blue "100";
-  gv:green "156";
-  gv:score "6.920909999999999";
-  gv:coverage "3.02"
-], [
-  gv:hex "d8b580";
-  gv:red "216";
-  gv:blue "128";
-  gv:green "181";
-  gv:score "6.865532000000001";
-  gv:coverage "2.7533334"
-], [
-  gv:hex "9d6f36";
-  gv:red "157";
-  gv:blue "54";
-  gv:green "111";
-  gv:score "5.729773300000001";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "c89c4d";
-  gv:red "200";
-  gv:blue "77";
-  gv:green "156";
-  gv:score "4.1896895";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "e0af76";
-  gv:red "224";
-  gv:blue "118";
-  gv:green "175";
-  gv:score "3.9753281";
-  gv:coverage "1.2733334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.387226"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.318454"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.677626"
-];
-    w:bagOfWords "org\nAPP CATION CONTROLEE\nDAVID 8 L.FOILLARD-ST GEORGES(RHONE)\nMP H RICHARD, LYON\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2640";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3654";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "ROMA\nALCOHOL 2\nBY VOLUME\n11 CALIFORNIA\nBULK PRO CESS\nSPARKLING WINE\nde and bottled by ROMA WINE COMPANY, resno, Califot Ri\nsales offices: San Franciseo, Cali\nNew ork N Y\nt\n3,0247.46\n"@eng;
-    gv:color [
-  gv:hex "dcc2a2";
-  gv:red "220";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "37.17604";
-  gv:coverage "16.56"
-], [
-  gv:hex "341200";
-  gv:red "52";
-  gv:blue "undefined";
-  gv:green "18";
-  gv:score "0.12018008999999999";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "dab786";
-  gv:red "218";
-  gv:blue "134";
-  gv:green "183";
-  gv:score "9.4506443";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "bb9b69";
-  gv:red "187";
-  gv:blue "105";
-  gv:green "155";
-  gv:score "9.2060581";
-  gv:coverage "2.3"
-], [
-  gv:hex "c69668";
-  gv:red "198";
-  gv:blue "104";
-  gv:green "150";
-  gv:score "9.1014937";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "b59b7a";
-  gv:red "181";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "8.676143699999999";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "e0b07e";
-  gv:red "224";
-  gv:blue "126";
-  gv:green "176";
-  gv:score "5.2196011";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "e9b89c";
-  gv:red "233";
-  gv:blue "156";
-  gv:green "184";
-  gv:score "4.15718";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "efd7b8";
-  gv:red "239";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "3.1156303";
-  gv:coverage "3.7199999999999998"
-], [
-  gv:hex "c9977a";
-  gv:red "201";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "3.1085417";
-  gv:coverage "0.73333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.513751"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.972640000000006"
-];
-    w:bagOfWords "ROMA\nALCOHOL 2\nBY VOLUME\n11 CALIFORNIA\nBULK PRO CESS\nSPARKLING WINE\nde and bottled by ROMA WINE COMPANY, resno, Califot Ri\nsales offices: San Franciseo, Cali\nNew ork N Y\nt\n3,0247.46\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3654";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0553";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "a a a a\nRHEINGAU\nIflittelbeimet Fionigberg\nWEINGUT RICHARD NAGLE R.WINKEL RHG\n"@deu;
-    gv:color [
-  gv:hex "7e7558";
-  gv:red "126";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "24.653046";
-  gv:coverage "6.273333"
-], [
-  gv:hex "a49b7e";
-  gv:red "164";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "19.003667";
-  gv:coverage "7.64"
-], [
-  gv:hex "cbc0a4";
-  gv:red "203";
-  gv:blue "164";
-  gv:green "192";
-  gv:score "10.365499999999999";
-  gv:coverage "11.66"
-], [
-  gv:hex "5f5a3e";
-  gv:red "95";
-  gv:blue "62";
-  gv:green "90";
-  gv:score "9.4164371";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "e9b6a9";
-  gv:red "233";
-  gv:blue "169";
-  gv:green "182";
-  gv:score "4.2459961";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "6e7956";
-  gv:red "110";
-  gv:blue "86";
-  gv:green "121";
-  gv:score "4.1009244";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "867446";
-  gv:red "134";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "3.6413927";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "cc9386";
-  gv:red "204";
-  gv:blue "134";
-  gv:green "147";
-  gv:score "3.1773239";
-  gv:coverage "1.18"
-], [
-  gv:hex "909c7a";
-  gv:red "144";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "2.9935928";
-  gv:coverage "0.74"
-], [
-  gv:hex "ecdbc3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "2.789693";
-  gv:coverage "11.92"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.285741"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.612567000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.78676299999999"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.1424"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.4955"
-];
-    w:bagOfWords "a a a a\nRHEINGAU\nIflittelbeimet Fionigberg\nWEINGUT RICHARD NAGLE R.WINKEL RHG\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0553";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

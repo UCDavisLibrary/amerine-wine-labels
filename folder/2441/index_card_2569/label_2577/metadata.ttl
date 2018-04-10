@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2577";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CAFE DE PARIS\nRESTAURANT FOUQUET\nPAVILLON D'ARMENONVILLE\nLE PRE CATE LAN\nPouilly Fuissé\nLE CLOS\nAPPELLATION CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "b59b7c";
-  gv:red "181";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "44.249916";
-  gv:coverage "7.6866664"
-], [
-  gv:hex "dac09f";
-  gv:red "218";
-  gv:blue "159";
-  gv:green "192";
-  gv:score "39.910027";
-  gv:coverage "22.313334"
-], [
-  gv:hex "8f7658";
-  gv:red "143";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "7.761718300000001";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "f2d8b7";
-  gv:red "242";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "5.399164900000001";
-  gv:coverage "6.64"
-], [
-  gv:hex "6f5739";
-  gv:red "111";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "1.7970396";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "241d14";
-  gv:red "36";
-  gv:blue "20";
-  gv:green "29";
-  gv:score "0.0066587323";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e6c69b";
-  gv:red "230";
-  gv:blue "155";
-  gv:green "198";
-  gv:score "0.37470767";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "533b1d";
-  gv:red "83";
-  gv:blue "29";
-  gv:green "59";
-  gv:score "0.26342866000000004";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "b69478";
-  gv:red "182";
-  gv:blue "120";
-  gv:green "148";
-  gv:score "0.10259439";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "4c3217";
-  gv:red "76";
-  gv:blue "23";
-  gv:green "50";
-  gv:score "0.07899956";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.52505"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.903059"
-];
-    w:bagOfWords "CAFE DE PARIS\nRESTAURANT FOUQUET\nPAVILLON D'ARMENONVILLE\nLE PRE CATE LAN\nPouilly Fuissé\nLE CLOS\nAPPELLATION CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2577";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

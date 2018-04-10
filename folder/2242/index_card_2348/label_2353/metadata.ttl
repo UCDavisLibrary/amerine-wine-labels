@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2348/label_2353";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATRA0 BEYCHEVELLE\nrand Vin 1945\nAPPELLATION CONTROLEE S JULIEN\nAchille FOULD\n"@fra;
-    gv:color [
-  gv:hex "d1c3b2";
-  gv:red "209";
-  gv:blue "178";
-  gv:green "195";
-  gv:score "27.426415999999996";
-  gv:coverage "30.959999999999997"
-], [
-  gv:hex "a79988";
-  gv:red "167";
-  gv:blue "136";
-  gv:green "153";
-  gv:score "21.79514";
-  gv:coverage "4.0933333"
-], [
-  gv:hex "847565";
-  gv:red "132";
-  gv:blue "101";
-  gv:green "117";
-  gv:score "16.715102";
-  gv:coverage "2.5666667"
-], [
-  gv:hex "635545";
-  gv:red "99";
-  gv:blue "69";
-  gv:green "85";
-  gv:score "8.0412358";
-  gv:coverage "1.02"
-], [
-  gv:hex "e3b8ae";
-  gv:red "227";
-  gv:blue "174";
-  gv:green "184";
-  gv:score "3.8313851000000003";
-  gv:coverage "0.52"
-], [
-  gv:hex "724e44";
-  gv:red "114";
-  gv:blue "68";
-  gv:green "78";
-  gv:score "3.8212191";
-  gv:coverage "0.32"
-], [
-  gv:hex "986d64";
-  gv:red "152";
-  gv:blue "100";
-  gv:green "109";
-  gv:score "3.6986380999999997";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "bf9188";
-  gv:red "191";
-  gv:blue "136";
-  gv:green "145";
-  gv:score "3.6661713999999996";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "453626";
-  gv:red "69";
-  gv:blue "38";
-  gv:green "54";
-  gv:score "2.9109962";
-  gv:coverage "0.32"
-], [
-  gv:hex "e7d9c8";
-  gv:red "231";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "2.6770951000000003";
-  gv:coverage "7.6666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "73.569083"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.00975700000001"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.139472"
-];
-    w:bagOfWords "CHATRA0 BEYCHEVELLE\nrand Vin 1945\nAPPELLATION CONTROLEE S JULIEN\nAchille FOULD\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2353";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2441/label_2443";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CONTENTS: 12 FLUID OUNCES\nALCOHOL BY VOLUME 120 PER CENT\nTRADE MARK\nhen RI DARVOT\n& NEGOCIANT\nA BEAUNE COTE D'OR)\nMEURSAULT\nLA VELLE\nPRODUCE OF FRANCE\nMONOPOLE\n"@fra;
-    gv:color [
-  gv:hex "e2c8a5";
-  gv:red "226";
-  gv:blue "165";
-  gv:green "200";
-  gv:score "28.217903";
-  gv:coverage "15.573333"
-], [
-  gv:hex "42301a";
-  gv:red "66";
-  gv:blue "26";
-  gv:green "48";
-  gv:score "7.8267917";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "897458";
-  gv:red "137";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "7.5109422";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "e4c395";
-  gv:red "228";
-  gv:blue "149";
-  gv:green "195";
-  gv:score "9.0773605";
-  gv:coverage "4.5533333"
-], [
-  gv:hex "291907";
-  gv:red "41";
-  gv:blue "7";
-  gv:green "25";
-  gv:score "7.299291300000001";
-  gv:coverage "1.34"
-], [
-  gv:hex "ae997c";
-  gv:red "174";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "6.8203412000000005";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "f0d7b5";
-  gv:red "240";
-  gv:blue "181";
-  gv:green "215";
-  gv:score "6.66297";
-  gv:coverage "5.806666600000001"
-], [
-  gv:hex "645137";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "81";
-  gv:score "5.909219";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "1e110a";
-  gv:red "30";
-  gv:blue "10";
-  gv:green "17";
-  gv:score "3.189889";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "ba9a69";
-  gv:red "186";
-  gv:blue "105";
-  gv:green "154";
-  gv:score "2.7646577";
-  gv:coverage "0.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.669973"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "52.395409"
-];
-    w:bagOfWords "CONTENTS: 12 FLUID OUNCES\nALCOHOL BY VOLUME 120 PER CENT\nTRADE MARK\nhen RI DARVOT\n& NEGOCIANT\nA BEAUNE COTE D'OR)\nMEURSAULT\nLA VELLE\nPRODUCE OF FRANCE\nMONOPOLE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2443";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

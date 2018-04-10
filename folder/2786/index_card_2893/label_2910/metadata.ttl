@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2910";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "D'ALSACE\nVIN FIN\nGEWURZTRAMINER\nDOPFF & IR ION\nDOP FF & IRI ON NEGOCIANTS\nAU CHATEAU DE RIQUE WIHR\nA RIQUE WIHR CHAUT RHIN)\n"@fra;
-    gv:color [
-  gv:hex "d4c5b3";
-  gv:red "212";
-  gv:blue "179";
-  gv:green "197";
-  gv:score "22.761609";
-  gv:coverage "22.726667"
-], [
-  gv:hex "513100";
-  gv:red "81";
-  gv:blue "undefined";
-  gv:green "49";
-  gv:score "0.30531832000000003";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ab9c89";
-  gv:red "171";
-  gv:blue "137";
-  gv:green "156";
-  gv:score "13.856038000000002";
-  gv:coverage "2.1"
-], [
-  gv:hex "88755e";
-  gv:red "136";
-  gv:blue "94";
-  gv:green "117";
-  gv:score "9.8393194";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "f0bbad";
-  gv:red "240";
-  gv:blue "173";
-  gv:green "187";
-  gv:score "9.6962504";
-  gv:coverage "1.48"
-], [
-  gv:hex "c29080";
-  gv:red "194";
-  gv:blue "128";
-  gv:green "144";
-  gv:score "6.9023750999999995";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "ebdaca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "6.594085700000001";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "9e6b5c";
-  gv:red "158";
-  gv:blue "92";
-  gv:green "107";
-  gv:score "5.4349478";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "854f41";
-  gv:red "133";
-  gv:blue "65";
-  gv:green "79";
-  gv:score "3.1626812999999996";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "69583f";
-  gv:red "105";
-  gv:blue "63";
-  gv:green "88";
-  gv:score "3.0064452";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.94559000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.035372"
-];
-    w:bagOfWords "D'ALSACE\nVIN FIN\nGEWURZTRAMINER\nDOPFF & IR ION\nDOP FF & IRI ON NEGOCIANTS\nAU CHATEAU DE RIQUE WIHR\nA RIQUE WIHR CHAUT RHIN)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2910";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

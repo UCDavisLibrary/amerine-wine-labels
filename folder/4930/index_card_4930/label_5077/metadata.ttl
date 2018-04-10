@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5077";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "CALIFORNIA\nNAPA\nTRADE MARr\nAND WINE LAR\nRRA REGISTERED\nINTERNAL\nNOT OVER\nREV. TAX\n14% ALCOHOL\nCAVALERIA\nPAID\nBY VOLUME\nMOS ELLE\n1 Pt. 8 Fl. 0z.\nCALIFORNM\nNet Contents\nTA\nEXPOSITIONS\nAUXFRA\n1895. AL INTERNATIONALERPOS 1894\n00,\nRIS FR\nLSTATE EXP\nST. LOUIS 1904\nBUFFALO 1901\nep RTLAND ORt 1905\nProducers\nA Repsold Co\nWINERY AT NAPA\nSAN FRANCISCO\nCALIFORNIA\nThis brilliant Moselle\nwas d by a com-\ntta of New York experts\none of California out\nstanding wines of 1935\nrawn off or Bottled by\nA. REPSOLD CO\n1st District, California\n91\nFrom Tax Paid Container received from\nA. REPSOL CO\n1st District, California\nGreet\nHungarian\n.93\nBurger\nBiolayS\nwitt som.\n"@undefined;
-    gv:color [
-  gv:hex "d8c3a9";
-  gv:red "216";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "24.774465";
-  gv:coverage "27.62"
-], [
-  gv:hex "937440";
-  gv:red "147";
-  gv:blue "64";
-  gv:green "116";
-  gv:score "8.111441899999999";
-  gv:coverage "0.98"
-], [
-  gv:hex "b2997d";
-  gv:red "178";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "11.304381";
-  gv:coverage "5.993333499999999"
-], [
-  gv:hex "b69562";
-  gv:red "182";
-  gv:blue "98";
-  gv:green "149";
-  gv:score "5.6808192";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "8f7759";
-  gv:red "143";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "5.361712";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "986c3e";
-  gv:red "152";
-  gv:blue "62";
-  gv:green "108";
-  gv:score "5.1739108";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "dabc87";
-  gv:red "218";
-  gv:blue "135";
-  gv:green "188";
-  gv:score "4.9849834";
-  gv:coverage "2.4866667"
-], [
-  gv:hex "744b20";
-  gv:red "116";
-  gv:blue "32";
-  gv:green "75";
-  gv:score "4.8851474999999995";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "eddbc3";
-  gv:red "237";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "4.7829352";
-  gv:coverage "16.56"
-], [
-  gv:hex "e1b7a3";
-  gv:red "225";
-  gv:blue "163";
-  gv:green "183";
-  gv:score "3.0952139";
-  gv:coverage "1.4666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "69.115311"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.287935999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.159310999999995"
-];
-    w:bagOfWords "CALIFORNIA\nNAPA\nTRADE MARr\nAND WINE LAR\nRRA REGISTERED\nINTERNAL\nNOT OVER\nREV. TAX\n14% ALCOHOL\nCAVALERIA\nPAID\nBY VOLUME\nMOS ELLE\n1 Pt. 8 Fl. 0z.\nCALIFORNM\nNet Contents\nTA\nEXPOSITIONS\nAUXFRA\n1895. AL INTERNATIONALERPOS 1894\n00,\nRIS FR\nLSTATE EXP\nST. LOUIS 1904\nBUFFALO 1901\nep RTLAND ORt 1905\nProducers\nA Repsold Co\nWINERY AT NAPA\nSAN FRANCISCO\nCALIFORNIA\nThis brilliant Moselle\nwas d by a com-\ntta of New York experts\none of California out\nstanding wines of 1935\nrawn off or Bottled by\nA. REPSOLD CO\n1st District, California\n91\nFrom Tax Paid Container received from\nA. REPSOL CO\n1st District, California\nGreet\nHungarian\n.93\nBurger\nBiolayS\nwitt som.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5077";
+    <schema.keywords> "UC Reporters Notebook@en".
+

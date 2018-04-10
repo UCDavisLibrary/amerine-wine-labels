@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0458";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "gebr-un For cbungsanftalt\nJR beiro\nOeifenbeinu\nam\nbeing a\n1952er\nGeifenbeimer Ratenlocb\nRiesling x Sulpaner\nOriginal Abfiilung\n"@deu;
-    gv:color [
-  gv:hex "e6c792";
-  gv:red "230";
-  gv:blue "146";
-  gv:green "199";
-  gv:score "38.112646";
-  gv:coverage "14.286667"
-], [
-  gv:hex "d9c69f";
-  gv:red "217";
-  gv:blue "159";
-  gv:green "198";
-  gv:score "10.967343";
-  gv:coverage "7.813333"
-], [
-  gv:hex "b79965";
-  gv:red "183";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "8.49321";
-  gv:coverage "3.4933332"
-], [
-  gv:hex "937543";
-  gv:red "147";
-  gv:blue "67";
-  gv:green "117";
-  gv:score "5.631179";
-  gv:coverage "2.42"
-], [
-  gv:hex "aa9c78";
-  gv:red "170";
-  gv:blue "120";
-  gv:green "156";
-  gv:score "5.5828850999999995";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "f5d8a3";
-  gv:red "245";
-  gv:blue "163";
-  gv:green "216";
-  gv:score "4.1392267";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "9d6b3e";
-  gv:red "157";
-  gv:blue "62";
-  gv:green "107";
-  gv:score "3.4772683";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "76491e";
-  gv:red "118";
-  gv:blue "30";
-  gv:green "73";
-  gv:score "2.8959554";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "c69062";
-  gv:red "198";
-  gv:blue "98";
-  gv:green "144";
-  gv:score "2.8267268000000003";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "edb987";
-  gv:red "237";
-  gv:blue "135";
-  gv:green "185";
-  gv:score "2.7798396";
-  gv:coverage "0.9333332999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.512475"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "58.675717999999996"
-];
-    w:bagOfWords "gebr-un For cbungsanftalt\nJR beiro\nOeifenbeinu\nam\nbeing a\n1952er\nGeifenbeimer Ratenlocb\nRiesling x Sulpaner\nOriginal Abfiilung\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0458";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

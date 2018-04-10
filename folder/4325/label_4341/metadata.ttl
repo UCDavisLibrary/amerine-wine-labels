@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4341";
-    dct:type "image";
-    w:bagOfWords "VIN BLANC DE CROATIE\nMET\ngra seanna\nVINOPROMET\nZAGREB\nPRODUIT, DE, YOUGOSLAV, E\n83\n"@undefined;
-    gv:color [
-  gv:hex "d2bb9a";
-  gv:red "210";
-  gv:blue "154";
-  gv:green "187";
-  gv:score "23.651132";
-  gv:coverage "6.68"
-], [
-  gv:hex "d7b886";
-  gv:red "215";
-  gv:blue "134";
-  gv:green "184";
-  gv:score "11.768077";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "b79965";
-  gv:red "183";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "9.6677043";
-  gv:coverage "1.76"
-], [
-  gv:hex "b39f7e";
-  gv:red "179";
-  gv:blue "126";
-  gv:green "159";
-  gv:score "9.2850521";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "967840";
-  gv:red "150";
-  gv:blue "64";
-  gv:green "120";
-  gv:score "6.9426507";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "9c7139";
-  gv:red "156";
-  gv:blue "57";
-  gv:green "113";
-  gv:score "4.132594500000001";
-  gv:coverage "0.96"
-], [
-  gv:hex "f0ddbe";
-  gv:red "240";
-  gv:blue "190";
-  gv:green "221";
-  gv:score "3.9581403";
-  gv:coverage "4.533333300000001"
-], [
-  gv:hex "89a583";
-  gv:red "137";
-  gv:blue "131";
-  gv:green "165";
-  gv:score "3.4086529";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "9c7a2a";
-  gv:red "156";
-  gv:blue "42";
-  gv:green "122";
-  gv:score "2.4589712";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "5e805d";
-  gv:red "94";
-  gv:blue "93";
-  gv:green "128";
-  gv:score "2.4011202";
-  gv:coverage "0.35333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.596333"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.641549"
-];
-    w:bagOfWords "VIN BLANC DE CROATIE\nMET\ngra seanna\nVINOPROMET\nZAGREB\nPRODUIT, DE, YOUGOSLAV, E\n83\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4341";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

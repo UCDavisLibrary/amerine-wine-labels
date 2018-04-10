@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3759";
-    dct:type "image";
-    w:bagOfWords "0\narchesudOd001CO' &\nier(Y\nTtortunoru ~ JLOnence\nVILLA ANTI NORI\n(gran \"Mn0-di (R Cristina\nPLstna\n"@ita;
-    gv:color [
-  gv:hex "a9998a";
-  gv:red "169";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "42.824635";
-  gv:coverage "9.54"
-], [
-  gv:hex "ccbcad";
-  gv:red "204";
-  gv:blue "173";
-  gv:green "188";
-  gv:score "25.029847";
-  gv:coverage "16.086666"
-], [
-  gv:hex "877768";
-  gv:red "135";
-  gv:blue "104";
-  gv:green "119";
-  gv:score "23.397382999999998";
-  gv:coverage "4.6066668"
-], [
-  gv:hex "eadbcb";
-  gv:red "234";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "4.2701859";
-  gv:coverage "19.913334"
-], [
-  gv:hex "645445";
-  gv:red "100";
-  gv:blue "69";
-  gv:green "84";
-  gv:score "4.1144017";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "4c3c2d";
-  gv:red "76";
-  gv:blue "45";
-  gv:green "60";
-  gv:score "0.29261669";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "d4cabe";
-  gv:red "212";
-  gv:blue "190";
-  gv:green "202";
-  gv:score "0.026942187";
-  gv:coverage "4.52"
-], [
-  gv:hex "e8ded2";
-  gv:red "232";
-  gv:blue "210";
-  gv:green "222";
-  gv:score "0.017833848";
-  gv:coverage "44.379999999999995"
-], [
-  gv:hex "81786c";
-  gv:red "129";
-  gv:blue "108";
-  gv:green "120";
-  gv:score "0.017693601";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "231b0c";
-  gv:red "35";
-  gv:blue "12";
-  gv:green "27";
-  gv:score "0.0044220418";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.846427999999996"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.940707"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.125471"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.99858400000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.435048"
-];
-    w:bagOfWords "0\narchesudOd001CO' &\nier(Y\nTtortunoru ~ JLOnence\nVILLA ANTI NORI\n(gran \"Mn0-di (R Cristina\nPLstna\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3759";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

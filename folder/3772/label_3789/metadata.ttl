@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3789";
-    dct:type "image";
-    w:bagOfWords "■■聪履■■■■■ila噩严■關醞■■腽鼎■■■■■■■■■ng\nRHEINRIESLINGIE\nWE:ING UTWELLINGH OFVITZECK BEUEIBNITZ\n"@deu;
-    gv:color [
-  gv:hex "ccc5a5";
-  gv:red "204";
-  gv:blue "165";
-  gv:green "197";
-  gv:score "41.626075";
-  gv:coverage "20.66"
-], [
-  gv:hex "a09b7a";
-  gv:red "160";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "35.872319000000005";
-  gv:coverage "12.986666"
-], [
-  gv:hex "827d5e";
-  gv:red "130";
-  gv:blue "94";
-  gv:green "125";
-  gv:score "13.595039";
-  gv:coverage "3.7666667"
-], [
-  gv:hex "5a5538";
-  gv:red "90";
-  gv:blue "56";
-  gv:green "85";
-  gv:score "5.7786480000000005";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "3d381b";
-  gv:red "61";
-  gv:blue "27";
-  gv:green "56";
-  gv:score "1.8409183";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "e3dbc2";
-  gv:red "227";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "1.0344522999999999";
-  gv:coverage "9.2733331"
-], [
-  gv:hex "252004";
-  gv:red "37";
-  gv:blue "4";
-  gv:green "32";
-  gv:score "0.17857718";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d4c9be";
-  gv:red "212";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "0.022311276999999997";
-  gv:coverage "3.5133332000000004"
-], [
-  gv:hex "e4dacf";
-  gv:red "228";
-  gv:blue "207";
-  gv:green "218";
-  gv:score "0.019584292";
-  gv:coverage "47.72"
-], [
-  gv:hex "150f01";
-  gv:red "21";
-  gv:blue "1";
-  gv:green "15";
-  gv:score "0.012784868999999999";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.237115"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.52622100000001"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.939986"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.192677"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.892136"
-];
-    w:bagOfWords "■■聪履■■■■■ila噩严■關醞■■腽鼎■■■■■■■■■ng\nRHEINRIESLINGIE\nWE:ING UTWELLINGH OFVITZECK BEUEIBNITZ\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3789";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

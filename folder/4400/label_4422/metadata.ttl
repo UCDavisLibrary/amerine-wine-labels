@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4422";
-    dct:type "image";
-    w:bagOfWords "REGISTRO DE\nNe ELLADORE\nMARCA\nCONCEDIDA.\nSOCIEDAD DE CoSE CHER OS DE VINO\nFUNDADA EN 890\nRIOJA CLARETE\nEMBOTELLADO En SU 6e Ano\n"@spa;
-    gv:color [
-  gv:hex "d2c2af";
-  gv:red "210";
-  gv:blue "175";
-  gv:green "194";
-  gv:score "19.98533";
-  gv:coverage "22.426666"
-], [
-  gv:hex "b80808";
-  gv:red "184";
-  gv:blue "8";
-  gv:green "8";
-  gv:score "11.479462999999999";
-  gv:coverage "2.7199999999999998"
-], [
-  gv:hex "ab9c8a";
-  gv:red "171";
-  gv:blue "138";
-  gv:green "156";
-  gv:score "12.72451";
-  gv:coverage "2.78"
-], [
-  gv:hex "a60a06";
-  gv:red "166";
-  gv:blue "6";
-  gv:green "10";
-  gv:score "11.432102";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "867666";
-  gv:red "134";
-  gv:blue "102";
-  gv:green "118";
-  gv:score "7.4192993";
-  gv:coverage "1.3"
-], [
-  gv:hex "615343";
-  gv:red "97";
-  gv:blue "67";
-  gv:green "83";
-  gv:score "6.955950700000001";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "9e1b15";
-  gv:red "158";
-  gv:blue "21";
-  gv:green "27";
-  gv:score "6.255661";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "ecdcca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "5.2349783";
-  gv:coverage "7.4466668"
-], [
-  gv:hex "f2c2ae";
-  gv:red "242";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "2.4583982";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "fba193";
-  gv:red "251";
-  gv:blue "147";
-  gv:green "161";
-  gv:score "2.1598846000000003";
-  gv:coverage "0.77333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.878879"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.032272999999996"
-];
-    w:bagOfWords "REGISTRO DE\nNe ELLADORE\nMARCA\nCONCEDIDA.\nSOCIEDAD DE CoSE CHER OS DE VINO\nFUNDADA EN 890\nRIOJA CLARETE\nEMBOTELLADO En SU 6e Ano\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4422";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

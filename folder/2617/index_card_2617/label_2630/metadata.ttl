@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2630";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "MTE DE M. DE Lup\n1CoMTE\nGH\nFLE\nLIGHT WINE\nProduce of France\nLUPE CHOLET. PROPRIETAIRESNEGOCIANTS\nITS ST GEORGES COTE D'OR (FRANCE\nNet Cop ents 1 Pint 8 Fluid Ounces\n12 o by volume\n"@fra;
-    gv:color [
-  gv:hex "dbb989";
-  gv:red "219";
-  gv:blue "137";
-  gv:green "185";
-  gv:score "23.748659";
-  gv:coverage "7.3533334"
-], [
-  gv:hex "c79367";
-  gv:red "199";
-  gv:blue "103";
-  gv:green "147";
-  gv:score "14.670727";
-  gv:coverage "3.1666666"
-], [
-  gv:hex "e4b287";
-  gv:red "228";
-  gv:blue "135";
-  gv:green "178";
-  gv:score "14.057665";
-  gv:coverage "3.56"
-], [
-  gv:hex "be9d6e";
-  gv:red "190";
-  gv:blue "110";
-  gv:green "157";
-  gv:score "11.801729";
-  gv:coverage "3.3866666"
-], [
-  gv:hex "dabb96";
-  gv:red "218";
-  gv:blue "150";
-  gv:green "187";
-  gv:score "11.564663";
-  gv:coverage "31.926668000000003"
-], [
-  gv:hex "a47146";
-  gv:red "164";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "5.3040802";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "b89973";
-  gv:red "184";
-  gv:blue "115";
-  gv:green "153";
-  gv:score "4.9670383";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "95764b";
-  gv:red "149";
-  gv:blue "75";
-  gv:green "118";
-  gv:score "4.6278823";
-  gv:coverage "1.16"
-], [
-  gv:hex "e5b692";
-  gv:red "229";
-  gv:blue "146";
-  gv:green "182";
-  gv:score "1.6817687000000001";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "947753";
-  gv:red "148";
-  gv:blue "83";
-  gv:green "119";
-  gv:score "1.4567167";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.732458"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "62.509614"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.673083"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.648680000000006"
-];
-    w:bagOfWords "MTE DE M. DE Lup\n1CoMTE\nGH\nFLE\nLIGHT WINE\nProduce of France\nLUPE CHOLET. PROPRIETAIRESNEGOCIANTS\nITS ST GEORGES COTE D'OR (FRANCE\nNet Cop ents 1 Pint 8 Fluid Ounces\n12 o by volume\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2630";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

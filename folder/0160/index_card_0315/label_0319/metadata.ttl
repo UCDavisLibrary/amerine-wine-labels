@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0319";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "8 FLUID\nJNC ES\n\"CAyi A Brand\nThe fine me lid bottling wines of\nWinehaven.\n(A Matured Table Claret)\nCALIFORNIA WINE ASSOCIATION\nAN FRANCISCO, CALIFORNIA\nBottled on Bonded Premises No. 6-- 1st District alifornia\nALCOHOL\nSTRENGTH 11t\n2 e BY VOLLIME\n"@eng;
-    gv:color [
-  gv:hex "cebdaa";
-  gv:red "206";
-  gv:blue "170";
-  gv:green "189";
-  gv:score "51.403707";
-  gv:coverage "23.02"
-], [
-  gv:hex "ae9d89";
-  gv:red "174";
-  gv:blue "137";
-  gv:green "157";
-  gv:score "24.919987";
-  gv:coverage "6.959999999999999"
-], [
-  gv:hex "b99384";
-  gv:red "185";
-  gv:blue "132";
-  gv:green "147";
-  gv:score "8.3838016";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "d3c6ba";
-  gv:red "211";
-  gv:blue "186";
-  gv:green "198";
-  gv:score "6.8114638";
-  gv:coverage "12.086666"
-], [
-  gv:hex "8d7b67";
-  gv:red "141";
-  gv:blue "103";
-  gv:green "123";
-  gv:score "3.5235180999999995";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "9d7769";
-  gv:red "157";
-  gv:blue "105";
-  gv:green "119";
-  gv:score "1.9075110999999998";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "dab6a8";
-  gv:red "218";
-  gv:blue "168";
-  gv:green "182";
-  gv:score "1.8237222000000002";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "383428";
-  gv:red "56";
-  gv:blue "40";
-  gv:green "52";
-  gv:score "0.0074427647999999996";
-  gv:coverage "0.08"
-], [
-  gv:hex "e6d7c4";
-  gv:red "230";
-  gv:blue "196";
-  gv:green "215";
-  gv:score "0.46479427";
-  gv:coverage "0.76"
-], [
-  gv:hex "dcbbb5";
-  gv:red "220";
-  gv:blue "181";
-  gv:green "187";
-  gv:score "0.18016747";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.985347999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.01854"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.371615999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.477684"
-];
-    w:bagOfWords "8 FLUID\nJNC ES\n\"CAyi A Brand\nThe fine me lid bottling wines of\nWinehaven.\n(A Matured Table Claret)\nCALIFORNIA WINE ASSOCIATION\nAN FRANCISCO, CALIFORNIA\nBottled on Bonded Premises No. 6-- 1st District alifornia\nALCOHOL\nSTRENGTH 11t\n2 e BY VOLLIME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0319";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

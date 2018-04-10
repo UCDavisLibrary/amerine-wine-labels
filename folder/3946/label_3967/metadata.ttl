@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3967";
-    dct:type "image";
-    w:bagOfWords "R H E I N H E S S E N\nOppenheimer Krotenbrunnen\nHERMANN SCHOTT A. G., R HEYDT\nNr. 23821 DM 28\n700\n23 8 21\n"@deu;
-    gv:color [
-  gv:hex "d6c49f";
-  gv:red "214";
-  gv:blue "159";
-  gv:green "196";
-  gv:score "24.433339";
-  gv:coverage "20.606667"
-], [
-  gv:hex "d6be83";
-  gv:red "214";
-  gv:blue "131";
-  gv:green "190";
-  gv:score "15.664536000000002";
-  gv:coverage "2.8466666000000003"
-], [
-  gv:hex "b29a5f";
-  gv:red "178";
-  gv:blue "95";
-  gv:green "154";
-  gv:score "12.017305";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "8a7640";
-  gv:red "138";
-  gv:blue "64";
-  gv:green "118";
-  gv:score "8.720123000000001";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "eddab7";
-  gv:red "237";
-  gv:blue "183";
-  gv:green "218";
-  gv:score "8.37173";
-  gv:coverage "17.886667"
-], [
-  gv:hex "ad9d78";
-  gv:red "173";
-  gv:blue "120";
-  gv:green "157";
-  gv:score "6.0908817";
-  gv:coverage "3.6466666"
-], [
-  gv:hex "827651";
-  gv:red "130";
-  gv:blue "81";
-  gv:green "118";
-  gv:score "5.28499";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "665523";
-  gv:red "102";
-  gv:blue "35";
-  gv:green "85";
-  gv:score "5.0935533";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "d7bf69";
-  gv:red "215";
-  gv:blue "105";
-  gv:green "191";
-  gv:score "2.5180219";
-  gv:coverage "0.2"
-], [
-  gv:hex "9c713f";
-  gv:red "156";
-  gv:blue "63";
-  gv:green "113";
-  gv:score "1.8997353000000001";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.596417"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.71506"
-], [
-  gv:mid <https://g.co/kg/m/0c9ph5>;
-  gv:desc "flower";
-  gv:score "56.702662000000004"
-];
-    w:bagOfWords "R H E I N H E S S E N\nOppenheimer Krotenbrunnen\nHERMANN SCHOTT A. G., R HEYDT\nNr. 23821 DM 28\n700\n23 8 21\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3967";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

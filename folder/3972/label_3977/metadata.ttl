@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3972/label_3977";
-    dct:type "image";
-    w:bagOfWords "VERBAND DEUTSCHER\nNATURWEINVERSTEIGERER\nE. V\nUnsere Mitglieder\nbesitzen Lagen von Weltruf\nDieses Zeichen\nin Verbindung mit dem\nKork brand\nverburgt reinen Wein\nVEREIN DER\nNATURWEINVERSTEIGERER\nDERRHEINPFALZ\nRHEINPFALZ\nCiara ter\nand elring\nSilvaner\norigin a l a b f\nu l l u n g\nder Landesanstalt fur Wein-, Obst- und Gartenbau\nNeustadt an der WeinstraBe\n"@deu;
-    gv:color [
-  gv:hex "8e3925";
-  gv:red "142";
-  gv:blue "37";
-  gv:green "57";
-  gv:score "9.4543956";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "d4c5a9";
-  gv:red "212";
-  gv:blue "169";
-  gv:green "197";
-  gv:score "7.8868143";
-  gv:coverage "9.1066666"
-], [
-  gv:hex "933d36";
-  gv:red "147";
-  gv:blue "54";
-  gv:green "61";
-  gv:score "6.4902484";
-  gv:coverage "0.08"
-], [
-  gv:hex "6d422c";
-  gv:red "109";
-  gv:blue "44";
-  gv:green "66";
-  gv:score "5.6124695000000004";
-  gv:coverage "0.12"
-], [
-  gv:hex "cfc4be";
-  gv:red "207";
-  gv:blue "190";
-  gv:green "196";
-  gv:score "5.4278865000000005";
-  gv:coverage "13.56"
-], [
-  gv:hex "eaddd6";
-  gv:red "234";
-  gv:blue "214";
-  gv:green "221";
-  gv:score "5.1642548";
-  gv:coverage "57.54"
-], [
-  gv:hex "532c18";
-  gv:red "83";
-  gv:blue "24";
-  gv:green "44";
-  gv:score "4.969452700000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "ecdcca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "4.610578";
-  gv:coverage "11.433333"
-], [
-  gv:hex "966b56";
-  gv:red "150";
-  gv:blue "86";
-  gv:green "107";
-  gv:score "4.0183637";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "695134";
-  gv:red "105";
-  gv:blue "52";
-  gv:green "81";
-  gv:score "3.83557";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.543412"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.202313"
-];
-    w:bagOfWords "VERBAND DEUTSCHER\nNATURWEINVERSTEIGERER\nE. V\nUnsere Mitglieder\nbesitzen Lagen von Weltruf\nDieses Zeichen\nin Verbindung mit dem\nKork brand\nverburgt reinen Wein\nVEREIN DER\nNATURWEINVERSTEIGERER\nDERRHEINPFALZ\nRHEINPFALZ\nCiara ter\nand elring\nSilvaner\norigin a l a b f\nu l l u n g\nder Landesanstalt fur Wein-, Obst- und Gartenbau\nNeustadt an der WeinstraBe\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3977";
+    <schema.keywords> "Germany Rheinpfalz Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

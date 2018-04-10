@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3507";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "MADRONE\nS U P R E M E\nCALIFORNIA\nJOHANNES BERO RIESLING\nA delicate dry white wine of Johannisberg Riesling gra pes\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY MADRONE VINEYARDS, MADRONE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "dfc8af";
-  gv:red "223";
-  gv:blue "175";
-  gv:green "200";
-  gv:score "34.200478000000004";
-  gv:coverage "17.266666999999998"
-], [
-  gv:hex "eed9c1";
-  gv:red "238";
-  gv:blue "193";
-  gv:green "217";
-  gv:score "24.090222999999998";
-  gv:coverage "16.46"
-], [
-  gv:hex "b09880";
-  gv:red "176";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "16.402628999999997";
-  gv:coverage "3.6066665999999996"
-], [
-  gv:hex "8b725b";
-  gv:red "139";
-  gv:blue "91";
-  gv:green "114";
-  gv:score "10.274094";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "69513a";
-  gv:red "105";
-  gv:blue "58";
-  gv:green "81";
-  gv:score "8.2947075";
-  gv:coverage "0.98"
-], [
-  gv:hex "e7ded3";
-  gv:red "231";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "3.0708207";
-  gv:coverage "57.553332999999995"
-], [
-  gv:hex "4e3721";
-  gv:red "78";
-  gv:blue "33";
-  gv:green "55";
-  gv:score "2.5653997";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "432a14";
-  gv:red "67";
-  gv:blue "20";
-  gv:green "42";
-  gv:score "0.34729750000000004";
-  gv:coverage "0.04"
-], [
-  gv:hex "674b38";
-  gv:red "103";
-  gv:blue "56";
-  gv:green "75";
-  gv:score "0.33990028";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d0c9c0";
-  gv:red "208";
-  gv:blue "192";
-  gv:green "201";
-  gv:score "0.24095663999999997";
-  gv:coverage "1.8933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.807328"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.288933"
-];
-    w:bagOfWords "MADRONE\nS U P R E M E\nCALIFORNIA\nJOHANNES BERO RIESLING\nA delicate dry white wine of Johannisberg Riesling gra pes\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY MADRONE VINEYARDS, MADRONE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3507";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2412";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "HATE AU\nPAVEIL DE LUZE\nRécolte 1920\nuse\nBORDEAUX\nbourgeous Gromth\n3 o s s g n s\n"@fra;
-    gv:color [
-  gv:hex "c7bbaf";
-  gv:red "199";
-  gv:blue "175";
-  gv:green "187";
-  gv:score "25.333136";
-  gv:coverage "30.646667"
-], [
-  gv:hex "62574d";
-  gv:red "98";
-  gv:blue "77";
-  gv:green "87";
-  gv:score "13.634034";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "7e7369";
-  gv:red "126";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "12.981518";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "aa9e94";
-  gv:red "170";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "12.734559";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "7f7264";
-  gv:red "127";
-  gv:blue "100";
-  gv:green "114";
-  gv:score "12.573458";
-  gv:coverage "1.04"
-], [
-  gv:hex "615346";
-  gv:red "97";
-  gv:blue "70";
-  gv:green "83";
-  gv:score "9.9865876";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "a49689";
-  gv:red "164";
-  gv:blue "137";
-  gv:green "150";
-  gv:score "9.1653295";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "44372a";
-  gv:red "68";
-  gv:blue "42";
-  gv:green "55";
-  gv:score "1.3080656";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "e7dcd2";
-  gv:red "231";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "1.1642136";
-  gv:coverage "55.233335"
-], [
-  gv:hex "c1b5a7";
-  gv:red "193";
-  gv:blue "167";
-  gv:green "181";
-  gv:score "0.56064348";
-  gv:coverage "0.74666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.77369"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.866445"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.012448"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.433734"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.88202199999999"
-];
-    w:bagOfWords "HATE AU\nPAVEIL DE LUZE\nRécolte 1920\nuse\nBORDEAUX\nbourgeous Gromth\n3 o s s g n s\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2412";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

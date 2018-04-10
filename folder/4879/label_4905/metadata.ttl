@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4905";
-    dct:type "image";
-    w:bagOfWords "Captain\nService\nTreasury Restaurant\n14031\nNo. People Table No\nDate\nTHE HARDY COLLECTION\nJIMMY WATSON TROPHY WINNER\n1987 PADTHAMAY CABERNETSAUVIGNON\nWINEMAKER: DAVID O'LEARY\nARTIST: ARTHUR BOYD\nFine art and wine have been synonymous for centuries and Hardy's\nas patrons of Australian art, have created the Hardy Collection series\nof fine varietal wines. To add to the character and personality of\neach individual wine in the series, we have used original paintings\npermanently displayed at our Homestead at Reynella.\nThis wine epitomises the success of the Hardy Collection range of\nwines since their launch in 1985. The Jimmy Watson Trophy is\nawarded annually at the Melbourne Wine Show and is considered to\nbe Australia's top red wine prize. This wine is a fine example of\nAustralia's most elegant Cabernet Sauvignon for the 1987 vintage\nThis wine shows an intense varietal character and a bouquet of spicy\nCabernet aromas. The wine is well balanced with fruit and oak and\nshows berry flavours on the palate followed by a firm\ntannin finish.\nt is a marvellous drinking wine now and has the potential to\ndevelop further through a period of cellaring.\nWe are indeed proud to present this 1988 Jimmy Watson Trophy\nwine from the Hardy Collection. Cheers\nBOTTLED BY THE MAKERS\nTHOMAS HARDY & SONS PM LTD\nREYNELL ROAD, REYNELLA\nSIR JAMES HARDY OBE.\nSOUTH AUSTRALIA 5161\nCHAIRMAN HARDY S WINES\nALCOHOL\n1.9% BY VOLUME\nPRESERVATIVE (220) ADDED\nCOPYRIGHT COURTESY OF B\nFINE ART\n"@undefined;
-    gv:color [
-  gv:hex "c6bdb4";
-  gv:red "198";
-  gv:blue "180";
-  gv:green "189";
-  gv:score "55.191243";
-  gv:coverage "19.506666"
-], [
-  gv:hex "aaa198";
-  gv:red "170";
-  gv:blue "152";
-  gv:green "161";
-  gv:score "32.491251999999996";
-  gv:coverage "5.1466666000000005"
-], [
-  gv:hex "e8dfd7";
-  gv:red "232";
-  gv:blue "215";
-  gv:green "223";
-  gv:score "8.77401";
-  gv:coverage "68.8"
-], [
-  gv:hex "887f77";
-  gv:red "136";
-  gv:blue "119";
-  gv:green "127";
-  gv:score "3.4348960999999996";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "d8bdbc";
-  gv:red "216";
-  gv:blue "188";
-  gv:green "189";
-  gv:score "0.041785641000000005";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "685f58";
-  gv:red "104";
-  gv:blue "88";
-  gv:green "95";
-  gv:score "0.040944826000000004";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "51493c";
-  gv:red "81";
-  gv:blue "60";
-  gv:green "73";
-  gv:score "0.006432361300000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "372f22";
-  gv:red "55";
-  gv:blue "34";
-  gv:green "47";
-  gv:score "0.0061414692";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "433b30";
-  gv:red "67";
-  gv:blue "48";
-  gv:green "59";
-  gv:score "0.0051678468000000005";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "99817f";
-  gv:red "153";
-  gv:blue "127";
-  gv:green "129";
-  gv:score "0.0030099793";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "62.043004999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.122113"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.122969000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.382324000000004"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "52.28796"
-];
-    w:bagOfWords "Captain\nService\nTreasury Restaurant\n14031\nNo. People Table No\nDate\nTHE HARDY COLLECTION\nJIMMY WATSON TROPHY WINNER\n1987 PADTHAMAY CABERNETSAUVIGNON\nWINEMAKER: DAVID O'LEARY\nARTIST: ARTHUR BOYD\nFine art and wine have been synonymous for centuries and Hardy's\nas patrons of Australian art, have created the Hardy Collection series\nof fine varietal wines. To add to the character and personality of\neach individual wine in the series, we have used original paintings\npermanently displayed at our Homestead at Reynella.\nThis wine epitomises the success of the Hardy Collection range of\nwines since their launch in 1985. The Jimmy Watson Trophy is\nawarded annually at the Melbourne Wine Show and is considered to\nbe Australia's top red wine prize. This wine is a fine example of\nAustralia's most elegant Cabernet Sauvignon for the 1987 vintage\nThis wine shows an intense varietal character and a bouquet of spicy\nCabernet aromas. The wine is well balanced with fruit and oak and\nshows berry flavours on the palate followed by a firm\ntannin finish.\nt is a marvellous drinking wine now and has the potential to\ndevelop further through a period of cellaring.\nWe are indeed proud to present this 1988 Jimmy Watson Trophy\nwine from the Hardy Collection. Cheers\nBOTTLED BY THE MAKERS\nTHOMAS HARDY & SONS PM LTD\nREYNELL ROAD, REYNELLA\nSIR JAMES HARDY OBE.\nSOUTH AUSTRALIA 5161\nCHAIRMAN HARDY S WINES\nALCOHOL\n1.9% BY VOLUME\nPRESERVATIVE (220) ADDED\nCOPYRIGHT COURTESY OF B\nFINE ART\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4905";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4026/label_4031";
-    dct:type "image";
-    w:bagOfWords "REGISTERED\nTRADE MARK\nDRY WHITE\nAPERITIF\nPORT\nothyyed by\nto\nPRODUCE OF PORTUGAL\n"@por;
-    gv:color [
-  gv:hex "d7c3a6";
-  gv:red "215";
-  gv:blue "166";
-  gv:green "195";
-  gv:score "56.141746000000005";
-  gv:coverage "31.78"
-], [
-  gv:hex "af9b7d";
-  gv:red "175";
-  gv:blue "125";
-  gv:green "155";
-  gv:score "20.4229";
-  gv:coverage "2.8666666"
-], [
-  gv:hex "8b7758";
-  gv:red "139";
-  gv:blue "88";
-  gv:green "119";
-  gv:score "9.28784";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "edd9bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "217";
-  gv:score "7.9028286";
-  gv:coverage "5.2066665"
-], [
-  gv:hex "695333";
-  gv:red "105";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "5.4161754";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "4a3515";
-  gv:red "74";
-  gv:blue "21";
-  gv:green "53";
-  gv:score "0.5701652300000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "725b32";
-  gv:red "114";
-  gv:blue "50";
-  gv:green "91";
-  gv:score "0.17132630000000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d6cac0";
-  gv:red "214";
-  gv:blue "192";
-  gv:green "202";
-  gv:score "0.027156217";
-  gv:coverage "11.946667"
-], [
-  gv:hex "796f65";
-  gv:red "121";
-  gv:blue "101";
-  gv:green "111";
-  gv:score "0.025735908999999998";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "a69d92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "0.016957887999999997";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.773657"
-];
-    w:bagOfWords "REGISTERED\nTRADE MARK\nDRY WHITE\nAPERITIF\nPORT\nothyyed by\nto\nPRODUCE OF PORTUGAL\n"@por;
-    wdt:P219 "por";
-    wdt:P298 "PRT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4031";
+    <schema.keywords> "Portugal Folder@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "PT".
+

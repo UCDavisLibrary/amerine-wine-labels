@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0252";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "Still Red\nQ\nWine\nCalifornia lighi\nPinot Noir\nVINTAGE 1936\nCONTENTS 34 QT\nPRODUCE D & B OTT LED BY PAUL MAS SON CHAM P A G NE CO M P A N Y\nBonded Winery No. 144, 14th District, Saratoga, California\nCopr. P. M. C. Co., 1937\n"@eng;
-    gv:color [
-  gv:hex "877540";
-  gv:red "135";
-  gv:blue "64";
-  gv:green "117";
-  gv:score "10.730353";
-  gv:coverage "4.5133334"
-], [
-  gv:hex "a7987b";
-  gv:red "167";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "6.727586700000001";
-  gv:coverage "6.493333"
-], [
-  gv:hex "532715";
-  gv:red "83";
-  gv:blue "21";
-  gv:green "39";
-  gv:score "3.3807565";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "6d170e";
-  gv:red "109";
-  gv:blue "14";
-  gv:green "23";
-  gv:score "2.7759235";
-  gv:coverage "0.4"
-], [
-  gv:hex "9b2321";
-  gv:red "155";
-  gv:blue "33";
-  gv:green "35";
-  gv:score "2.6679443000000003";
-  gv:coverage "0.3"
-], [
-  gv:hex "567f8d";
-  gv:red "86";
-  gv:blue "141";
-  gv:green "127";
-  gv:score "0.63370606";
-  gv:coverage "0.08"
-], [
-  gv:hex "857758";
-  gv:red "133";
-  gv:blue "88";
-  gv:green "119";
-  gv:score "6.1555248";
-  gv:coverage "4.36"
-], [
-  gv:hex "665723";
-  gv:red "102";
-  gv:blue "35";
-  gv:green "87";
-  gv:score "5.9293538";
-  gv:coverage "2.06"
-], [
-  gv:hex "a3935c";
-  gv:red "163";
-  gv:blue "92";
-  gv:green "147";
-  gv:score "3.4548227000000002";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "625639";
-  gv:red "98";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "3.164709";
-  gv:coverage "1.9333333000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03bt1gh>;
-  gv:desc "games";
-  gv:score "51.613580999999996"
-];
-    w:bagOfWords "Still Red\nQ\nWine\nCalifornia lighi\nPinot Noir\nVINTAGE 1936\nCONTENTS 34 QT\nPRODUCE D & B OTT LED BY PAUL MAS SON CHAM P A G NE CO M P A N Y\nBonded Winery No. 144, 14th District, Saratoga, California\nCopr. P. M. C. Co., 1937\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0252";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4562";
-    dct:type "image";
-    w:bagOfWords "RODUCE of SPAIN\nTHE PRODUCT OF THE FINEST\nVINEYARDS OF THE JEREZ DISTRICT\nSHERRY\nBOTTLED AND SHIPPED BY\nMANUEL CORTINA\nJEREZ DE LA FRONTERA\nContents 1 Pint 9 fluid ounces\nAlcohol 20 by Volume\nIMPORTED BY:\nJOHN K. ES QUIN\nSAN FRANCISCO, CAL.\nPERMIT I-1266\n"@spa;
-    gv:color [
-  gv:hex "0c0705";
-  gv:red "12";
-  gv:blue "5";
-  gv:green "7";
-  gv:score "35.590382999999996";
-  gv:coverage "28.546667"
-], [
-  gv:hex "8c371d";
-  gv:red "140";
-  gv:blue "29";
-  gv:green "55";
-  gv:score "9.3213275";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "9f6742";
-  gv:red "159";
-  gv:blue "66";
-  gv:green "103";
-  gv:score "3.5045840000000004";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "dbc3a1";
-  gv:red "219";
-  gv:blue "161";
-  gv:green "195";
-  gv:score "2.6938852";
-  gv:coverage "4.9866665"
-], [
-  gv:hex "732207";
-  gv:red "115";
-  gv:blue "7";
-  gv:green "34";
-  gv:score "5.5813558";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "37322a";
-  gv:red "55";
-  gv:blue "42";
-  gv:green "50";
-  gv:score "3.8912211";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "7d4b25";
-  gv:red "125";
-  gv:blue "37";
-  gv:green "75";
-  gv:score "3.3337243";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "56524b";
-  gv:red "86";
-  gv:blue "75";
-  gv:green "82";
-  gv:score "3.2002591";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "744830";
-  gv:red "116";
-  gv:blue "48";
-  gv:green "72";
-  gv:score "2.9081689";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "982413";
-  gv:red "152";
-  gv:blue "19";
-  gv:green "36";
-  gv:score "2.5976446";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.661906"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "56.44941300000001"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "55.015278"
-];
-    w:bagOfWords "RODUCE of SPAIN\nTHE PRODUCT OF THE FINEST\nVINEYARDS OF THE JEREZ DISTRICT\nSHERRY\nBOTTLED AND SHIPPED BY\nMANUEL CORTINA\nJEREZ DE LA FRONTERA\nContents 1 Pint 9 fluid ounces\nAlcohol 20 by Volume\nIMPORTED BY:\nJOHN K. ES QUIN\nSAN FRANCISCO, CAL.\nPERMIT I-1266\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4562";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

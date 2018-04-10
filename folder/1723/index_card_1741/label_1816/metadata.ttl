@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1816";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "CONTENTS 12 FL. OZ.\nALCOHOLIC STRENGTH\n11 Vol.\nT ADOLPH HUESGEN TRABEN TRARBACH\n8 14\nSIX GENERATIONS\n1931\nT R A B E N E R\nPRODUCE AND BOTTLED IN GERMANY\na\n"@deu;
-    gv:color [
-  gv:hex "ebe4da";
-  gv:red "235";
-  gv:blue "218";
-  gv:green "228";
-  gv:score "42.103353";
-  gv:coverage "49.626666"
-], [
-  gv:hex "d9c28a";
-  gv:red "217";
-  gv:blue "138";
-  gv:green "194";
-  gv:score "11.177487999999999";
-  gv:coverage "9.8266669"
-], [
-  gv:hex "837652";
-  gv:red "131";
-  gv:blue "82";
-  gv:green "118";
-  gv:score "4.4950914";
-  gv:coverage "3.06"
-], [
-  gv:hex "ede1ca";
-  gv:red "237";
-  gv:blue "202";
-  gv:green "225";
-  gv:score "9.88661";
-  gv:coverage "10.74"
-], [
-  gv:hex "b09d63";
-  gv:red "176";
-  gv:blue "99";
-  gv:green "157";
-  gv:score "5.7868235";
-  gv:coverage "5.3333335"
-], [
-  gv:hex "847742";
-  gv:red "132";
-  gv:blue "66";
-  gv:green "119";
-  gv:score "3.9107668999999996";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "605333";
-  gv:red "96";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "3.8438965";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "605423";
-  gv:red "96";
-  gv:blue "35";
-  gv:green "84";
-  gv:score "3.6660403";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "3e3215";
-  gv:red "62";
-  gv:blue "21";
-  gv:green "50";
-  gv:score "3.6409773";
-  gv:coverage "1.9"
-], [
-  gv:hex "a69874";
-  gv:red "166";
-  gv:blue "116";
-  gv:green "152";
-  gv:score "2.6709734";
-  gv:coverage "1.78"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "72.7303"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.841627"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "61.967582"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.937157"
-];
-    w:bagOfWords "CONTENTS 12 FL. OZ.\nALCOHOLIC STRENGTH\n11 Vol.\nT ADOLPH HUESGEN TRABEN TRARBACH\n8 14\nSIX GENERATIONS\n1931\nT R A B E N E R\nPRODUCE AND BOTTLED IN GERMANY\na\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1816";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

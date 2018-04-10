@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4077";
-    dct:type "image";
-    w:bagOfWords "188o\nDJON\ns 1889\nHOSPICES DE\nIMP. B. ARNAUD LYON PARIS\n"@fra;
-    gv:color [
-  gv:hex "d8c3a7";
-  gv:red "216";
-  gv:blue "167";
-  gv:green "195";
-  gv:score "30.528223999999998";
-  gv:coverage "22.6"
-], [
-  gv:hex "af9a7b";
-  gv:red "175";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "19.35329";
-  gv:coverage "3.5733335"
-], [
-  gv:hex "877253";
-  gv:red "135";
-  gv:blue "83";
-  gv:green "114";
-  gv:score "15.6764";
-  gv:coverage "1.5"
-], [
-  gv:hex "675333";
-  gv:red "103";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "13.372886000000001";
-  gv:coverage "0.98"
-], [
-  gv:hex "eedabf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "218";
-  gv:score "6.378357900000001";
-  gv:coverage "8.0866665"
-], [
-  gv:hex "b39a66";
-  gv:red "179";
-  gv:blue "102";
-  gv:green "154";
-  gv:score "3.5287682";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "473219";
-  gv:red "71";
-  gv:blue "25";
-  gv:green "50";
-  gv:score "3.4075651";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "957d4d";
-  gv:red "149";
-  gv:blue "77";
-  gv:green "125";
-  gv:score "3.3910397000000003";
-  gv:coverage "0.48"
-], [
-  gv:hex "d4b989";
-  gv:red "212";
-  gv:blue "137";
-  gv:green "185";
-  gv:score "1.452879";
-  gv:coverage "0.26"
-], [
-  gv:hex "67542b";
-  gv:red "103";
-  gv:blue "43";
-  gv:green "84";
-  gv:score "1.4163789";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.334027"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.303758"
-];
-    w:bagOfWords "188o\nDJON\ns 1889\nHOSPICES DE\nIMP. B. ARNAUD LYON PARIS\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4077";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

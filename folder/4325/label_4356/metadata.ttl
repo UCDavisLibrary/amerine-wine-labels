@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4356";
-    dct:type "image";
-    w:bagOfWords "aulignon\nVINARSKA ZADRUGA MARIBOR\n"@undefined;
-    gv:color [
-  gv:hex "d8c3a9";
-  gv:red "216";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "17.451426";
-  gv:coverage "18.82"
-], [
-  gv:hex "c49167";
-  gv:red "196";
-  gv:blue "103";
-  gv:green "145";
-  gv:score "8.1965685";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "8c361b";
-  gv:red "140";
-  gv:blue "27";
-  gv:green "54";
-  gv:score "7.1021192";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "3f3021";
-  gv:red "63";
-  gv:blue "33";
-  gv:green "48";
-  gv:score "0.7971703099999999";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "c3927a";
-  gv:red "195";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "7.958106";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "ae997c";
-  gv:red "174";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "7.0637695";
-  gv:coverage "1.6"
-], [
-  gv:hex "9b2514";
-  gv:red "155";
-  gv:blue "20";
-  gv:green "37";
-  gv:score "5.878373600000001";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "a36b46";
-  gv:red "163";
-  gv:blue "70";
-  gv:green "107";
-  gv:score "5.2018709";
-  gv:coverage "0.88"
-], [
-  gv:hex "9c674f";
-  gv:red "156";
-  gv:blue "79";
-  gv:green "103";
-  gv:score "5.0481752";
-  gv:coverage "1.06"
-], [
-  gv:hex "b29464";
-  gv:red "178";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "4.7942784000000005";
-  gv:coverage "0.79333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.326821"
-];
-    w:bagOfWords "aulignon\nVINARSKA ZADRUGA MARIBOR\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4356";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

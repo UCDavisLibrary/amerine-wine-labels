@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4339";
-    dct:type "image";
-    w:bagOfWords "ROME\nEXPORT\nB I S E R\nPLUM BRANDY\nVINOPROMET\nZAGREB\nO S L A V E\nPRO D UIT DE\n"@undefined;
-    gv:color [
-  gv:hex "d2c6a1";
-  gv:red "210";
-  gv:blue "161";
-  gv:green "198";
-  gv:score "15.561363";
-  gv:coverage "8.14"
-], [
-  gv:hex "362d4c";
-  gv:red "54";
-  gv:blue "76";
-  gv:green "45";
-  gv:score "9.440441400000001";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "474f6c";
-  gv:red "71";
-  gv:blue "108";
-  gv:green "79";
-  gv:score "7.4881307999999995";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "455936";
-  gv:red "69";
-  gv:blue "54";
-  gv:green "89";
-  gv:score "1.242559";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "d3c790";
-  gv:red "211";
-  gv:blue "144";
-  gv:green "199";
-  gv:score "12.558168";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "211735";
-  gv:red "33";
-  gv:blue "53";
-  gv:green "23";
-  gv:score "5.9953995";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "31344e";
-  gv:red "49";
-  gv:blue "78";
-  gv:green "52";
-  gv:score "5.038312100000001";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "c6cb8f";
-  gv:red "198";
-  gv:blue "143";
-  gv:green "203";
-  gv:score "4.9098577";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "ebdcbd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "220";
-  gv:score "4.126551";
-  gv:coverage "19.48"
-], [
-  gv:hex "ac9d7e";
-  gv:red "172";
-  gv:blue "126";
-  gv:green "157";
-  gv:score "3.9170891";
-  gv:coverage "1.3866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05s2s>;
-  gv:desc "plant";
-  gv:score "78.175843"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "74.970806"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "73.467803"
-], [
-  gv:mid <https://g.co/kg/m/036qh8>;
-  gv:desc "produce";
-  gv:score "71.091467"
-], [
-  gv:mid <https://g.co/kg/m/01v728>;
-  gv:desc "land plant";
-  gv:score "70.969409"
-];
-    w:bagOfWords "ROME\nEXPORT\nB I S E R\nPLUM BRANDY\nVINOPROMET\nZAGREB\nO S L A V E\nPRO D UIT DE\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4339";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

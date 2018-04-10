@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4140";
-    dct:type "image";
-    w:bagOfWords "FRENCH RHINE WINE\nBOTTLED AT THE ESTATE)\nFONDEE\nEN 1817\nRIESLING\nANTOINE GASCHY\nNEGOCIANTAWETTOLSHEIM HAUTRHIN\nBERCUT VANDERVOORT &\nCo\nI O Lombard Street San Francisco, California\nAlcohol: 0,5 to 13,5 by volume\noz. SOLE AGENTS FOR THE WESTERN UNITED STATES\nContents\n2,5 Fl. "@fra;
-    gv:color [
-  gv:hex "dac3a3";
-  gv:red "218";
-  gv:blue "163";
-  gv:green "195";
-  gv:score "24.023408";
-  gv:coverage "19"
-], [
-  gv:hex "887453";
-  gv:red "136";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "13.047123999999998";
-  gv:coverage "3.7266668000000003"
-], [
-  gv:hex "a16a47";
-  gv:red "161";
-  gv:blue "71";
-  gv:green "106";
-  gv:score "4.2998016";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "863c21";
-  gv:red "134";
-  gv:blue "33";
-  gv:green "60";
-  gv:score "3.324705";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "af9a7b";
-  gv:red "175";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "12.165473";
-  gv:coverage "4.4333335"
-], [
-  gv:hex "edbc9c";
-  gv:red "237";
-  gv:blue "156";
-  gv:green "188";
-  gv:score "10.229217";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "685534";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "85";
-  gv:score "8.0936424";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "f0d9b8";
-  gv:red "240";
-  gv:blue "184";
-  gv:green "217";
-  gv:score "5.4506648";
-  gv:coverage "8.813333499999999"
-], [
-  gv:hex "c49779";
-  gv:red "196";
-  gv:blue "121";
-  gv:green "151";
-  gv:score "4.503287";
-  gv:coverage "0.58"
-], [
-  gv:hex "7f4a29";
-  gv:red "127";
-  gv:blue "41";
-  gv:green "74";
-  gv:score "3.2023121000000003";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.298456"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FRENCH RHINE WINE\nBOTTLED AT THE ESTATE)\nFONDEE\nEN 1817\nRIESLING\nANTOINE GASCHY\nNEGOCIANTAWETTOLSHEIM HAUTRHIN\nBERCUT VANDERVOORT &\nCo\nI O Lombard Street San Francisco, California\nAlcohol: 0,5 to 13,5 by volume\noz. SOLE AGENTS FOR THE WESTERN UNITED STATES\nContents\n2,5 Fl. "@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4140";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

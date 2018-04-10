@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0241";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "FRANK SCHOONMAKER SELECTION\nA distinguished California BURGUNDY\nmade from Pinot Noir Grapes\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nALMADEN VINEYARDS\nLOS GATOS, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York\nN. Y.\n"@eng;
-    gv:color [
-  gv:hex "bc6345";
-  gv:red "188";
-  gv:blue "69";
-  gv:green "99";
-  gv:score "17.054097";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "d7c2a4";
-  gv:red "215";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "11.540864000000001";
-  gv:coverage "22.226667"
-], [
-  gv:hex "774631";
-  gv:red "119";
-  gv:blue "49";
-  gv:green "70";
-  gv:score "3.5538461";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "110904";
-  gv:red "17";
-  gv:blue "4";
-  gv:green "9";
-  gv:score "0.7149633";
-  gv:coverage "1.08"
-], [
-  gv:hex "d67753";
-  gv:red "214";
-  gv:blue "83";
-  gv:green "119";
-  gv:score "12.574558999999999";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "ad987a";
-  gv:red "173";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "9.829508500000001";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "8c3e23";
-  gv:red "140";
-  gv:blue "35";
-  gv:green "62";
-  gv:score "7.9349764";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "d18a65";
-  gv:red "209";
-  gv:blue "101";
-  gv:green "138";
-  gv:score "4.8225891";
-  gv:coverage "0.4"
-], [
-  gv:hex "672108";
-  gv:red "103";
-  gv:blue "8";
-  gv:green "33";
-  gv:score "3.2097448";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "512714";
-  gv:red "81";
-  gv:blue "20";
-  gv:green "39";
-  gv:score "2.9527338";
-  gv:coverage "0.35333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.315369"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.15876000000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.877075"
-];
-    w:bagOfWords "FRANK SCHOONMAKER SELECTION\nA distinguished California BURGUNDY\nmade from Pinot Noir Grapes\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nALMADEN VINEYARDS\nLOS GATOS, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York\nN. Y.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0241";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

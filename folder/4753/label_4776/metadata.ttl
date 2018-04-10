@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4776";
-    dct:type "image";
-    w:bagOfWords "The\nChristian Brothers\nanda\nOUR ORDER, LONG IDENTIFIED WITH THE\nEUROPEAN ART OF WINE MAKING, HAS SKILL-\nFULLY PREPARED AND BLENDED THIS CHOICE\nAMERICAN BRANDY OF OLD WORLD QUALITY\nThe\nCHRISTIAN BROTHERS OF CALIFORNIA\nPREPARED, BLENDED AND BOTTLED BY\nMONT LA SALLE VINEYARDS, REEDLEY, CALIF. AAA\nOWNED AND OPERATED BY\nTHE CHRISTIAN BROTHERS OF CALIFORNIA\n84 SY P R O o F\nFROMM AND CHEL, INC., SELLING AGENTS\nTV V\nNEW YORK, N. y. SAN FRANCISCO, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "e6c395";
-  gv:red "230";
-  gv:blue "149";
-  gv:green "195";
-  gv:score "38.056200000000004";
-  gv:coverage "13.726667"
-], [
-  gv:hex "ecbb90";
-  gv:red "236";
-  gv:blue "144";
-  gv:green "187";
-  gv:score "13.825972";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "e5c6a0";
-  gv:red "229";
-  gv:blue "160";
-  gv:green "198";
-  gv:score "13.54696";
-  gv:coverage "9.6466668"
-], [
-  gv:hex "f2d6b1";
-  gv:red "242";
-  gv:blue "177";
-  gv:green "214";
-  gv:score "6.4549416";
-  gv:coverage "9.313333"
-], [
-  gv:hex "ca966c";
-  gv:red "202";
-  gv:blue "108";
-  gv:green "150";
-  gv:score "6.2213581";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "bf9e70";
-  gv:red "191";
-  gv:blue "112";
-  gv:green "158";
-  gv:score "5.72415";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "a66b43";
-  gv:red "166";
-  gv:blue "67";
-  gv:green "107";
-  gv:score "2.4396569";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "7a461e";
-  gv:red "122";
-  gv:blue "30";
-  gv:green "70";
-  gv:score "2.2036379";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "b89a75";
-  gv:red "184";
-  gv:blue "117";
-  gv:green "154";
-  gv:score "2.0763498";
-  gv:coverage "0.62"
-], [
-  gv:hex "f7d4a6";
-  gv:red "247";
-  gv:blue "166";
-  gv:green "212";
-  gv:score "1.9187048000000002";
-  gv:coverage "0.76666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.406004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "The\nChristian Brothers\nanda\nOUR ORDER, LONG IDENTIFIED WITH THE\nEUROPEAN ART OF WINE MAKING, HAS SKILL-\nFULLY PREPARED AND BLENDED THIS CHOICE\nAMERICAN BRANDY OF OLD WORLD QUALITY\nThe\nCHRISTIAN BROTHERS OF CALIFORNIA\nPREPARED, BLENDED AND BOTTLED BY\nMONT LA SALLE VINEYARDS, REEDLEY, CALIF. AAA\nOWNED AND OPERATED BY\nTHE CHRISTIAN BROTHERS OF CALIFORNIA\n84 SY P R O o F\nFROMM AND CHEL, INC., SELLING AGENTS\nTV V\nNEW YORK, N. y. SAN FRANCISCO, CALIF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4776";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

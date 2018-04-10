@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3786";
-    dct:type "image";
-    w:bagOfWords "B A D E N\nBadenweiler Oberweiler-Berg\nHER MANN SCHOT T A.- G., R HEY DT\nNr. 23816 DM 28. loo\n23816\n"@deu;
-    gv:color [
-  gv:hex "d4c2a0";
-  gv:red "212";
-  gv:blue "160";
-  gv:green "194";
-  gv:score "17.931336";
-  gv:coverage "11.799999999999999"
-], [
-  gv:hex "b09b65";
-  gv:red "176";
-  gv:blue "101";
-  gv:green "155";
-  gv:score "12.942344";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "aa9b78";
-  gv:red "170";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "12.642703999999998";
-  gv:coverage "5.3133335"
-], [
-  gv:hex "d4bf86";
-  gv:red "212";
-  gv:blue "134";
-  gv:green "191";
-  gv:score "12.470973";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "8b7846";
-  gv:red "139";
-  gv:blue "70";
-  gv:green "120";
-  gv:score "11.445572";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "837757";
-  gv:red "131";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "11.107443";
-  gv:coverage "4.5266665999999995"
-], [
-  gv:hex "61563a";
-  gv:red "97";
-  gv:blue "58";
-  gv:green "86";
-  gv:score "7.6337985999999995";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "eddcbc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "220";
-  gv:score "7.6093964";
-  gv:coverage "21.166667"
-], [
-  gv:hex "6a5729";
-  gv:red "106";
-  gv:blue "41";
-  gv:green "87";
-  gv:score "2.6586359";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "473a1f";
-  gv:red "71";
-  gv:blue "31";
-  gv:green "58";
-  gv:score "0.8030101700000001";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.417361"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.024955999999996"
-];
-    w:bagOfWords "B A D E N\nBadenweiler Oberweiler-Berg\nHER MANN SCHOT T A.- G., R HEY DT\nNr. 23816 DM 28. loo\n23816\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3786";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

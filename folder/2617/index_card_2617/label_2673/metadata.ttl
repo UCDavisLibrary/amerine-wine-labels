@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2673";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "Bercut-Vandervoort & Co, Inc., San-Francisco, Cal.\nSOLE AGENTS FoR THE U. S. A.\nMTE DE M.DE\nLUP\nCOMTE FDE CH\nBEAUJOLAIS SUPERIEUR\nRED BURGUNDY WINE\nAPPELLATION CONTROL EE\nLUPE CHOLEIT\nLUPE-CHO LET & Co\nNégociants Nuits-Saint-Georges (Cote-d'Or) France\nIMP G. PARIS NUIT s s' GE o RGE s\nPRODUCE OF FRANCE\nNet contents 1 Pint 8 Fluid Ounces\nAlcohol 12\no/o by volume\n"@fra;
-    gv:color [
-  gv:hex "ddc4a5";
-  gv:red "221";
-  gv:blue "165";
-  gv:green "196";
-  gv:score "38.144571";
-  gv:coverage "23.086667"
-], [
-  gv:hex "b65a44";
-  gv:red "182";
-  gv:blue "68";
-  gv:green "90";
-  gv:score "6.9620177000000005";
-  gv:coverage "0.58"
-], [
-  gv:hex "ecbca0";
-  gv:red "236";
-  gv:blue "160";
-  gv:green "188";
-  gv:score "11.874203";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "b29a7b";
-  gv:red "178";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "10.448828";
-  gv:coverage "4.3733332"
-], [
-  gv:hex "8d7658";
-  gv:red "141";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "6.0150493";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "c9967b";
-  gv:red "201";
-  gv:blue "123";
-  gv:green "150";
-  gv:score "5.477695199999999";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "efd7b9";
-  gv:red "239";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "4.3610025";
-  gv:coverage "5.46"
-], [
-  gv:hex "dd7d67";
-  gv:red "221";
-  gv:blue "103";
-  gv:green "125";
-  gv:score "4.0553395";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "99402a";
-  gv:red "153";
-  gv:blue "42";
-  gv:green "64";
-  gv:score "1.7888703999999997";
-  gv:coverage "0.16"
-], [
-  gv:hex "695437";
-  gv:red "105";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "1.5174177";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.93164"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Bercut-Vandervoort & Co, Inc., San-Francisco, Cal.\nSOLE AGENTS FoR THE U. S. A.\nMTE DE M.DE\nLUP\nCOMTE FDE CH\nBEAUJOLAIS SUPERIEUR\nRED BURGUNDY WINE\nAPPELLATION CONTROL EE\nLUPE CHOLEIT\nLUPE-CHO LET & Co\nNégociants Nuits-Saint-Georges (Cote-d'Or) France\nIMP G. PARIS NUIT s s' GE o RGE s\nPRODUCE OF FRANCE\nNet contents 1 Pint 8 Fluid Ounces\nAlcohol 12\no/o by volume\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2673";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

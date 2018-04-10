@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3429/label_3455";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "VINTAGE 1929\nNATURAL FERMENTATION\nEXTRA DRY\nIN BOTTLE\nmaison fondée aBeaune en 1877\nRED SPARKLING BURGUNDY\nPRODUCT OF FRANCE\nROBIN Tong-le-Saunier\nCONTENTS ONE PINT TEN FLUID OUNCES ALCOHOLIC STRENGTH 12 PER GENT BY VOLUME\nImported by THE JOSEPH ABRAMSCOMPANY, SAN FRANCISCO California\n"@fra;
-    gv:color [
-  gv:hex "ecb578";
-  gv:red "236";
-  gv:blue "120";
-  gv:green "181";
-  gv:score "26.251248";
-  gv:coverage "11.526667"
-], [
-  gv:hex "6e1006";
-  gv:red "110";
-  gv:blue "6";
-  gv:green "16";
-  gv:score "3.7907232";
-  gv:coverage "0.4"
-], [
-  gv:hex "972217";
-  gv:red "151";
-  gv:blue "23";
-  gv:green "34";
-  gv:score "2.656351";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "f4d9b8";
-  gv:red "244";
-  gv:blue "184";
-  gv:green "217";
-  gv:score "0.41815471000000004";
-  gv:coverage "18.759999999999998"
-], [
-  gv:hex "371000";
-  gv:red "55";
-  gv:blue "undefined";
-  gv:green "16";
-  gv:score "0.30585988";
-  gv:coverage "0.1"
-], [
-  gv:hex "eeb36a";
-  gv:red "238";
-  gv:blue "106";
-  gv:green "179";
-  gv:score "15.875916";
-  gv:coverage "6.0333334"
-], [
-  gv:hex "ca965c";
-  gv:red "202";
-  gv:blue "92";
-  gv:green "150";
-  gv:score "11.754625";
-  gv:coverage "4.8066668"
-], [
-  gv:hex "9f6f37";
-  gv:red "159";
-  gv:blue "55";
-  gv:green "111";
-  gv:score "6.6187643000000005";
-  gv:coverage "2.44"
-], [
-  gv:hex "e5bc80";
-  gv:red "229";
-  gv:blue "128";
-  gv:green "188";
-  gv:score "5.4095495";
-  gv:coverage "2.78"
-], [
-  gv:hex "d59951";
-  gv:red "213";
-  gv:blue "81";
-  gv:green "153";
-  gv:score "4.4787675";
-  gv:coverage "1.5599999999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.720922"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "VINTAGE 1929\nNATURAL FERMENTATION\nEXTRA DRY\nIN BOTTLE\nmaison fondée aBeaune en 1877\nRED SPARKLING BURGUNDY\nPRODUCT OF FRANCE\nROBIN Tong-le-Saunier\nCONTENTS ONE PINT TEN FLUID OUNCES ALCOHOLIC STRENGTH 12 PER GENT BY VOLUME\nImported by THE JOSEPH ABRAMSCOMPANY, SAN FRANCISCO California\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3455";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

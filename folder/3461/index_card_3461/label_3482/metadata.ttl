@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3482";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BOTTLED AT THE WINERY\nESTABLISHED\nBBB\nVALLE de ORO\nLIVERMORE VALLEY\nPRODUCED AND BOTTLED BY\nWENTE BROS\n14TH DIST.\nCALIF.\nNo. 893\nLIVERMORE. CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d6c0a2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "36.879972";
-  gv:coverage "23.9"
-], [
-  gv:hex "675235";
-  gv:red "103";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "8.7250829";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "b29c7c";
-  gv:red "178";
-  gv:blue "124";
-  gv:green "156";
-  gv:score "16.276614000000002";
-  gv:coverage "4.2866666"
-], [
-  gv:hex "b59867";
-  gv:red "181";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "10.324009";
-  gv:coverage "1.06"
-], [
-  gv:hex "8a7557";
-  gv:red "138";
-  gv:blue "87";
-  gv:green "117";
-  gv:score "7.839940500000001";
-  gv:coverage "1"
-], [
-  gv:hex "453014";
-  gv:red "69";
-  gv:blue "20";
-  gv:green "48";
-  gv:score "5.5033986";
-  gv:coverage "0.52"
-], [
-  gv:hex "d2b686";
-  gv:red "210";
-  gv:blue "134";
-  gv:green "182";
-  gv:score "3.3201676";
-  gv:coverage "0.42"
-], [
-  gv:hex "edd9be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "3.2550227";
-  gv:coverage "9.4733335"
-], [
-  gv:hex "92784a";
-  gv:red "146";
-  gv:blue "74";
-  gv:green "120";
-  gv:score "3.0646689";
-  gv:coverage "0.36"
-], [
-  gv:hex "2b1900";
-  gv:red "43";
-  gv:blue "undefined";
-  gv:green "25";
-  gv:score "1.675231";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.161891"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BOTTLED AT THE WINERY\nESTABLISHED\nBBB\nVALLE de ORO\nLIVERMORE VALLEY\nPRODUCED AND BOTTLED BY\nWENTE BROS\n14TH DIST.\nCALIF.\nNo. 893\nLIVERMORE. CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3482";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3695";
-    dct:type "image";
-    w:bagOfWords "TIO PEPE\nhit Geres, Indus\n"@spa;
-    gv:color [
-  gv:hex "87796f";
-  gv:red "135";
-  gv:blue "111";
-  gv:green "121";
-  gv:score "23.489916";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "a5978e";
-  gv:red "165";
-  gv:blue "142";
-  gv:green "151";
-  gv:score "22.742563";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "d2c3b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "21.965887000000002";
-  gv:coverage "15.753333"
-], [
-  gv:hex "a7998b";
-  gv:red "167";
-  gv:blue "139";
-  gv:green "153";
-  gv:score "12.474391";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "e8dacf";
-  gv:red "232";
-  gv:blue "207";
-  gv:green "218";
-  gv:score "9.3333535";
-  gv:coverage "66.886669"
-], [
-  gv:hex "ccbdae";
-  gv:red "204";
-  gv:blue "174";
-  gv:green "189";
-  gv:score "3.8861953";
-  gv:coverage "5.2466668"
-], [
-  gv:hex "8c7e71";
-  gv:red "140";
-  gv:blue "113";
-  gv:green "126";
-  gv:score "3.8063735000000003";
-  gv:coverage "0.22"
-], [
-  gv:hex "271f13";
-  gv:red "39";
-  gv:blue "19";
-  gv:green "31";
-  gv:score "0.016189148";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "ebddcb";
-  gv:red "235";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "1.3056931";
-  gv:coverage "7.153333000000001"
-], [
-  gv:hex "6c5e55";
-  gv:red "108";
-  gv:blue "85";
-  gv:green "94";
-  gv:score "0.9621257";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.260064"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "64.934242"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "57.23089"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.125336000000004"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "52.189004000000004"
-];
-    w:bagOfWords "TIO PEPE\nhit Geres, Indus\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3695";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

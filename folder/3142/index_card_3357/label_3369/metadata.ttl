@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3369";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "3, 42.\nVINTAGE 1933\nCONTENTS 1 PINT 8 FLUIO 0Z\nPRODUCE CF FRANCE\nMARK\nTRADE\nPH BOUCHARD & Co\nBOTTLED & SHIPPED BY\nrz RIITs S GEORGES COTE D'OR\nMEME MAIS ON A BOR DEAUX\n(FRANCE)\nPO M M A R D\nBURGUNDY w I NE\n"@fra;
-    gv:color [
-  gv:hex "debb83";
-  gv:red "222";
-  gv:blue "131";
-  gv:green "187";
-  gv:score "23.541418";
-  gv:coverage "6.3866667"
-], [
-  gv:hex "c99246";
-  gv:red "201";
-  gv:blue "70";
-  gv:green "146";
-  gv:score "10.367754999999999";
-  gv:coverage "1.52"
-], [
-  gv:hex "bf9b65";
-  gv:red "191";
-  gv:blue "101";
-  gv:green "155";
-  gv:score "13.072743000000001";
-  gv:coverage "3.0133333"
-], [
-  gv:hex "c4955b";
-  gv:red "196";
-  gv:blue "91";
-  gv:green "149";
-  gv:score "8.109381";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "dcc09c";
-  gv:red "220";
-  gv:blue "156";
-  gv:green "192";
-  gv:score "7.885107399999999";
-  gv:coverage "19.18"
-], [
-  gv:hex "927343";
-  gv:red "146";
-  gv:blue "67";
-  gv:green "115";
-  gv:score "6.6288568";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "9b713b";
-  gv:red "155";
-  gv:blue "59";
-  gv:green "113";
-  gv:score "4.6913058";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "e1b278";
-  gv:red "225";
-  gv:blue "120";
-  gv:green "178";
-  gv:score "3.1836137";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "b59a76";
-  gv:red "181";
-  gv:blue "118";
-  gv:green "154";
-  gv:score "2.8178759";
-  gv:coverage "1.32"
-], [
-  gv:hex "c39a4c";
-  gv:red "195";
-  gv:blue "76";
-  gv:green "154";
-  gv:score "2.60446";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.360635"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.108443"
-];
-    w:bagOfWords "3, 42.\nVINTAGE 1933\nCONTENTS 1 PINT 8 FLUIO 0Z\nPRODUCE CF FRANCE\nMARK\nTRADE\nPH BOUCHARD & Co\nBOTTLED & SHIPPED BY\nrz RIITs S GEORGES COTE D'OR\nMEME MAIS ON A BOR DEAUX\n(FRANCE)\nPO M M A R D\nBURGUNDY w I NE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3369";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

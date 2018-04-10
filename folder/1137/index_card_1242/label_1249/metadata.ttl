@@ -1,107 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1242/label_1249";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "十ーーーーーTTTTTTTT\nXXX\n(313\n似-\"T-S\n</men res\nco c3\nL\nH.\n"@eng;
-    gv:color [
-  gv:hex "d3cabf";
-  gv:red "211";
-  gv:blue "191";
-  gv:green "202";
-  gv:score "42.335534";
-  gv:coverage "34.426665"
-], [
-  gv:hex "d4c8b5";
-  gv:red "212";
-  gv:blue "181";
-  gv:green "200";
-  gv:score "27.710017999999998";
-  gv:coverage "30.373331999999998"
-], [
-  gv:hex "e8dcca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "17.475156";
-  gv:coverage "20.573332999999998"
-], [
-  gv:hex "e4dcd4";
-  gv:red "228";
-  gv:blue "212";
-  gv:green "220";
-  gv:score "12.085135";
-  gv:coverage "14.213334"
-], [
-  gv:hex "bba485";
-  gv:red "187";
-  gv:blue "133";
-  gv:green "164";
-  gv:score "0.28017812999999997";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "b4aa9f";
-  gv:red "180";
-  gv:blue "159";
-  gv:green "170";
-  gv:score "0.08000466";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "bea378";
-  gv:red "190";
-  gv:blue "120";
-  gv:green "163";
-  gv:score "0.022650884";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "d7b48a";
-  gv:red "215";
-  gv:blue "138";
-  gv:green "180";
-  gv:score "0.005662721";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "93846f";
-  gv:red "147";
-  gv:blue "111";
-  gv:green "132";
-  gv:score "0.005662721";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.82230700000001"
-], [
-  gv:mid <https://g.co/kg/m/0gkxy13>;
-  gv:desc "handwriting";
-  gv:score "85.235119"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "66.827267"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "64.37887500000001"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.87622"
-];
-    w:bagOfWords "十ーーーーーTTTTTTTT\nXXX\n(313\n似-\"T-S\n</men res\nco c3\nL\nH.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1249";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

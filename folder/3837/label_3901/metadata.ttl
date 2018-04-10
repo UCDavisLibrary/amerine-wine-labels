@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3901";
-    dct:type "image";
-    w:bagOfWords "GEORG BEST\nMinttidet AroBet Sjettgott\nylatut\nWachstum Porn\nMO SEL SAAR RUWER\nNNEINBAU u.MVENHANDEL\nGEGR 3896\n"@deu;
-    gv:color [
-  gv:hex "bbcc9f";
-  gv:red "187";
-  gv:blue "159";
-  gv:green "204";
-  gv:score "10.03174";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "6e4435";
-  gv:red "110";
-  gv:blue "53";
-  gv:green "68";
-  gv:score "2.761104";
-  gv:coverage "0.26"
-], [
-  gv:hex "0c0d01";
-  gv:red "12";
-  gv:blue "1";
-  gv:green "13";
-  gv:score "0.9069444600000001";
-  gv:coverage "0.38"
-], [
-  gv:hex "86a376";
-  gv:red "134";
-  gv:blue "118";
-  gv:green "163";
-  gv:score "8.0501415";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "648157";
-  gv:red "100";
-  gv:blue "87";
-  gv:green "129";
-  gv:score "7.6203249";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "cfc9a3";
-  gv:red "207";
-  gv:blue "163";
-  gv:green "201";
-  gv:score "6.99057";
-  gv:coverage "7.6066665"
-], [
-  gv:hex "e5e0ba";
-  gv:red "229";
-  gv:blue "186";
-  gv:green "224";
-  gv:score "4.4353053000000005";
-  gv:coverage "18.553333"
-], [
-  gv:hex "465d3a";
-  gv:red "70";
-  gv:blue "58";
-  gv:green "93";
-  gv:score "3.2638217999999997";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "6faa75";
-  gv:red "111";
-  gv:blue "117";
-  gv:green "170";
-  gv:score "3.1536285";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "d7e5b8";
-  gv:red "215";
-  gv:blue "184";
-  gv:green "229";
-  gv:score "3.0613437";
-  gv:coverage "1.7066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.298912"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.773743"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.363465"
-];
-    w:bagOfWords "GEORG BEST\nMinttidet AroBet Sjettgott\nylatut\nWachstum Porn\nMO SEL SAAR RUWER\nNNEINBAU u.MVENHANDEL\nGEGR 3896\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3901";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

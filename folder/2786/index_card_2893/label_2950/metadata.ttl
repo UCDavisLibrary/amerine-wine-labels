@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2950";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "rus D ALSACE\nRIESLING\nCuvée de Réserve\n1929\nF.WOITNER\n"@fra;
-    gv:color [
-  gv:hex "82a4a4";
-  gv:red "130";
-  gv:blue "164";
-  gv:green "164";
-  gv:score "24.658573";
-  gv:coverage "6.08"
-], [
-  gv:hex "9cbcbd";
-  gv:red "156";
-  gv:blue "189";
-  gv:green "188";
-  gv:score "13.690390999999998";
-  gv:coverage "3.62"
-], [
-  gv:hex "5f827a";
-  gv:red "95";
-  gv:blue "122";
-  gv:green "130";
-  gv:score "12.883221";
-  gv:coverage "2.7733333"
-], [
-  gv:hex "95a6a4";
-  gv:red "149";
-  gv:blue "164";
-  gv:green "166";
-  gv:score "7.919412100000001";
-  gv:coverage "3.2199999999999998"
-], [
-  gv:hex "aabcbd";
-  gv:red "170";
-  gv:blue "189";
-  gv:green "188";
-  gv:score "7.3260388999999995";
-  gv:coverage "12.98"
-], [
-  gv:hex "81a7b2";
-  gv:red "129";
-  gv:blue "178";
-  gv:green "167";
-  gv:score "5.5926062";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "96bbc6";
-  gv:red "150";
-  gv:blue "198";
-  gv:green "187";
-  gv:score "5.2241113";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "6e7b76";
-  gv:red "110";
-  gv:blue "118";
-  gv:green "123";
-  gv:score "3.4943428";
-  gv:coverage "1.48"
-], [
-  gv:hex "515c54";
-  gv:red "81";
-  gv:blue "84";
-  gv:green "92";
-  gv:score "2.617811";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "8ca9b7";
-  gv:red "140";
-  gv:blue "183";
-  gv:green "169";
-  gv:score "2.1974964";
-  gv:coverage "0.5133333200000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.19962100000001"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "60.379255"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.509231"
-];
-    w:bagOfWords "rus D ALSACE\nRIESLING\nCuvée de Réserve\n1929\nF.WOITNER\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2950";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

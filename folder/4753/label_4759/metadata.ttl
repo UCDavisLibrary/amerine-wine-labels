@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4759";
-    dct:type "image";
-    w:bagOfWords "BY VOLUME\n12 ALCOHOL\nCALIFORNIA\nCABERNET SAUVIGNON\nShed ame made from babernet Sauruanon Cheahes\neo P r o d u c e d and Bottled at the Win ery by\nLOUIS M. MARTINI\nST. HELENA. NAPA COUNTY, CALIFORNIA\nDISTRIBUTED BY Parrott & Co., SAN FRANCIsco, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "cac0b5";
-  gv:red "202";
-  gv:blue "181";
-  gv:green "192";
-  gv:score "19.670460000000002";
-  gv:coverage "8.4533334"
-], [
-  gv:hex "c6bdaa";
-  gv:red "198";
-  gv:blue "170";
-  gv:green "189";
-  gv:score "17.242903000000002";
-  gv:coverage "3.3466666999999997"
-], [
-  gv:hex "aa9e8d";
-  gv:red "170";
-  gv:blue "141";
-  gv:green "158";
-  gv:score "10.294754000000001";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "a79f94";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "159";
-  gv:score "9.4965324";
-  gv:coverage "2.8933332999999997"
-], [
-  gv:hex "ebded3";
-  gv:red "235";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "8.1899092";
-  gv:coverage "70.38"
-], [
-  gv:hex "c08e83";
-  gv:red "192";
-  gv:blue "131";
-  gv:green "142";
-  gv:score "7.7022946999999995";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "9d7167";
-  gv:red "157";
-  gv:blue "103";
-  gv:green "113";
-  gv:score "5.3413134";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "d7ab99";
-  gv:red "215";
-  gv:blue "153";
-  gv:green "171";
-  gv:score "3.8745969999999996";
-  gv:coverage "0.18"
-], [
-  gv:hex "81786e";
-  gv:red "129";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "3.1264931000000002";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "837969";
-  gv:red "131";
-  gv:blue "105";
-  gv:green "121";
-  gv:score "1.9998052999999998";
-  gv:coverage "0.47333334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.038864000000004"
-];
-    w:bagOfWords "BY VOLUME\n12 ALCOHOL\nCALIFORNIA\nCABERNET SAUVIGNON\nShed ame made from babernet Sauruanon Cheahes\neo P r o d u c e d and Bottled at the Win ery by\nLOUIS M. MARTINI\nST. HELENA. NAPA COUNTY, CALIFORNIA\nDISTRIBUTED BY Parrott & Co., SAN FRANCIsco, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4759";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

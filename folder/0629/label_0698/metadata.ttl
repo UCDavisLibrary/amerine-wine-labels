@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0698";
-    dct:type "image";
-    w:bagOfWords "4\n3 Le Vin de Bourgogne\nest une liqueur divine qui pour etre parfaite\ndoit réunir la douceur de\nlenchantement et la caresse d une volupte\nll ny a a le boiree\nLes Dieuar debout\nque les Dieur, nos\nnos Dames assises\nDames et Mous\net Mous a genoua\nReserve\nde la\nRotisserie de la Reine Pédaugue\nRouALET BEAUNE\nCE 2\n"@undefined;
-    gv:color [
-  gv:hex "e4bf87";
-  gv:red "228";
-  gv:blue "135";
-  gv:green "191";
-  gv:score "39.607731";
-  gv:coverage "13.946666999999998"
-], [
-  gv:hex "754e1b";
-  gv:red "117";
-  gv:blue "27";
-  gv:green "78";
-  gv:score "8.0291055";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "be9860";
-  gv:red "190";
-  gv:blue "96";
-  gv:green "152";
-  gv:score "11.073484";
-  gv:coverage "2.1733332"
-], [
-  gv:hex "e6b67d";
-  gv:red "230";
-  gv:blue "125";
-  gv:green "182";
-  gv:score "8.384677";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "966d37";
-  gv:red "150";
-  gv:blue "55";
-  gv:green "109";
-  gv:score "7.070317900000001";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "c4965d";
-  gv:red "196";
-  gv:blue "93";
-  gv:green "150";
-  gv:score "5.6787468";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "e1c69f";
-  gv:red "225";
-  gv:blue "159";
-  gv:green "198";
-  gv:score "4.1534680999999996";
-  gv:coverage "5.66"
-], [
-  gv:hex "95733e";
-  gv:red "149";
-  gv:blue "62";
-  gv:green "115";
-  gv:score "4.013624";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "f6d6a4";
-  gv:red "246";
-  gv:blue "164";
-  gv:green "214";
-  gv:score "3.8709577000000004";
-  gv:coverage "1.76"
-], [
-  gv:hex "f2d8b2";
-  gv:red "242";
-  gv:blue "178";
-  gv:green "216";
-  gv:score "2.0230297";
-  gv:coverage "6.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.004385"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "4\n3 Le Vin de Bourgogne\nest une liqueur divine qui pour etre parfaite\ndoit réunir la douceur de\nlenchantement et la caresse d une volupte\nll ny a a le boiree\nLes Dieuar debout\nque les Dieur, nos\nnos Dames assises\nDames et Mous\net Mous a genoua\nReserve\nde la\nRotisserie de la Reine Pédaugue\nRouALET BEAUNE\nCE 2\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0698";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

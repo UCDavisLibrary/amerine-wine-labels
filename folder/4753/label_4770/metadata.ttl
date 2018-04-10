@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4770";
-    dct:type "image";
-    w:bagOfWords "H A R A S Z H Y\nSONO MA VALLEY\nSYLVAN ER.\nPRODUCED AND BOTTLED BY\nBUENAVISTAVINEYARDS\nS O N O M A C A L\nI F O R N\nl A\nALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "eecc50";
-  gv:red "238";
-  gv:blue "80";
-  gv:green "204";
-  gv:score "46.143377";
-  gv:coverage "14.053333000000002"
-], [
-  gv:hex "e7c660";
-  gv:red "231";
-  gv:blue "96";
-  gv:green "198";
-  gv:score "27.413802999999998";
-  gv:coverage "11.04"
-], [
-  gv:hex "bc9d3b";
-  gv:red "188";
-  gv:blue "59";
-  gv:green "157";
-  gv:score "7.374156299999999";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "f9d85c";
-  gv:red "249";
-  gv:blue "92";
-  gv:green "216";
-  gv:score "4.4956211";
-  gv:coverage "1.28"
-], [
-  gv:hex "f9d973";
-  gv:red "249";
-  gv:blue "115";
-  gv:green "217";
-  gv:score "3.7183527";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "957616";
-  gv:red "149";
-  gv:blue "22";
-  gv:green "118";
-  gv:score "3.3167191";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "e8cb86";
-  gv:red "232";
-  gv:blue "134";
-  gv:green "203";
-  gv:score "1.7322408";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "ba9b22";
-  gv:red "186";
-  gv:blue "34";
-  gv:green "155";
-  gv:score "1.3663342";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "90743a";
-  gv:red "144";
-  gv:blue "58";
-  gv:green "116";
-  gv:score "0.996024";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "694e1d";
-  gv:red "105";
-  gv:blue "29";
-  gv:green "78";
-  gv:score "0.93646375";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.7458"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "H A R A S Z H Y\nSONO MA VALLEY\nSYLVAN ER.\nPRODUCED AND BOTTLED BY\nBUENAVISTAVINEYARDS\nS O N O M A C A L\nI F O R N\nl A\nALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4770";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

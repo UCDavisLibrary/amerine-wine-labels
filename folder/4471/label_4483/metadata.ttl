@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4483";
-    dct:type "image";
-    w:bagOfWords "DODEGAS PALACIOS A\nCOSECHEROS. CASA FUNDA DA EN 1894\nLAGUARDIA RIOJA ALAVA\nReserva Especial\nREGISTRO DE EMBOTELLADORES N9564\n"@spa;
-    gv:color [
-  gv:hex "d4c1aa";
-  gv:red "212";
-  gv:blue "170";
-  gv:green "193";
-  gv:score "28.551978";
-  gv:coverage "32.28"
-], [
-  gv:hex "8f794c";
-  gv:red "143";
-  gv:blue "76";
-  gv:green "121";
-  gv:score "14.228214";
-  gv:coverage "1.3"
-], [
-  gv:hex "ad997e";
-  gv:red "173";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "25.384602";
-  gv:coverage "4.0466666"
-], [
-  gv:hex "8b755a";
-  gv:red "139";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "13.886629000000001";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "68543d";
-  gv:red "104";
-  gv:blue "61";
-  gv:green "84";
-  gv:score "5.2062072";
-  gv:coverage "0.42"
-], [
-  gv:hex "a88f61";
-  gv:red "168";
-  gv:blue "97";
-  gv:green "143";
-  gv:score "3.6741919999999997";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "6d572e";
-  gv:red "109";
-  gv:blue "46";
-  gv:green "87";
-  gv:score "3.6731119999999997";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "ead8c4";
-  gv:red "234";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "2.7154986";
-  gv:coverage "5.12"
-], [
-  gv:hex "433221";
-  gv:red "67";
-  gv:blue "33";
-  gv:green "50";
-  gv:score "2.0027116";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "523c15";
-  gv:red "82";
-  gv:blue "21";
-  gv:green "60";
-  gv:score "0.26988732000000004";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.409655"
-];
-    w:bagOfWords "DODEGAS PALACIOS A\nCOSECHEROS. CASA FUNDA DA EN 1894\nLAGUARDIA RIOJA ALAVA\nReserva Especial\nREGISTRO DE EMBOTELLADORES N9564\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4483";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

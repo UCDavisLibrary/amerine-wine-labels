@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3730";
-    dct:type "image";
-    w:bagOfWords "LLA DE\nCION DE\nBu\nTIQUE\nENCES\n1865\nhours\nSOR DEAU\nHEREDEROS DEL\nMARQUES DE RISCAL\nALLA DE D\nACION DE PA\nELCIEGO (ALAVA)\nMENT\n1954\nMARQUIS\nELCIEGO\nPARIS 1872\nMARCA CONCEDIDA.MAROUEDEposEE TRADE MARK. SCHiTZ M. KE\n"@spa;
-    gv:color [
-  gv:hex "d0bda9";
-  gv:red "208";
-  gv:blue "169";
-  gv:green "189";
-  gv:score "56.779241999999996";
-  gv:coverage "22.54"
-], [
-  gv:hex "b09d84";
-  gv:red "176";
-  gv:blue "132";
-  gv:green "157";
-  gv:score "33.403372999999995";
-  gv:coverage "3.5133332000000004"
-], [
-  gv:hex "e9d8c4";
-  gv:red "233";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "5.1831465";
-  gv:coverage "15.493333000000002"
-], [
-  gv:hex "927f66";
-  gv:red "146";
-  gv:blue "102";
-  gv:green "127";
-  gv:score "3.8510751";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "cebbb0";
-  gv:red "206";
-  gv:blue "176";
-  gv:green "187";
-  gv:score "0.66599697";
-  gv:coverage "6.34"
-], [
-  gv:hex "241b0f";
-  gv:red "36";
-  gv:blue "15";
-  gv:green "27";
-  gv:score "0.006162344700000001";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "bca99e";
-  gv:red "188";
-  gv:blue "158";
-  gv:green "169";
-  gv:score "0.068144844";
-  gv:coverage "0.06"
-], [
-  gv:hex "e7ddd3";
-  gv:red "231";
-  gv:blue "211";
-  gv:green "221";
-  gv:score "0.016852476999999998";
-  gv:coverage "51.073330999999996"
-], [
-  gv:hex "7b7367";
-  gv:red "123";
-  gv:blue "103";
-  gv:green "115";
-  gv:score "0.011534826";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "6c6156";
-  gv:red "108";
-  gv:blue "86";
-  gv:green "97";
-  gv:score "0.0086160726";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.925503"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.662017"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.632979000000006"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "54.402488000000005"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.175311"
-];
-    w:bagOfWords "LLA DE\nCION DE\nBu\nTIQUE\nENCES\n1865\nhours\nSOR DEAU\nHEREDEROS DEL\nMARQUES DE RISCAL\nALLA DE D\nACION DE PA\nELCIEGO (ALAVA)\nMENT\n1954\nMARQUIS\nELCIEGO\nPARIS 1872\nMARCA CONCEDIDA.MAROUEDEposEE TRADE MARK. SCHiTZ M. KE\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3730";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

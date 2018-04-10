@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4761";
-    dct:type "image";
-    w:bagOfWords "MEDAL\nCEREMONY\nBRANDY\n84 PROOF\n1949\n1951\nGOLD MEDAL AWARDS\nGOLD MEDAL AWARDS\n1951\n1952\nLOS ANGELES COUNTY FAIR\nCALIFORNIA STATE FAIR\n1952\n"@eng;
-    gv:color [
-  gv:hex "877355";
-  gv:red "135";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "21.983749";
-  gv:coverage "3.4666665"
-], [
-  gv:hex "d3c3b1";
-  gv:red "211";
-  gv:blue "177";
-  gv:green "195";
-  gv:score "14.581301999999999";
-  gv:coverage "4.3"
-], [
-  gv:hex "aa9880";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "11.560189";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "65543c";
-  gv:red "101";
-  gv:blue "60";
-  gv:green "84";
-  gv:score "10.501947000000001";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "edddca";
-  gv:red "237";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "8.2129367";
-  gv:coverage "15.566666000000001"
-], [
-  gv:hex "3f311e";
-  gv:red "63";
-  gv:blue "30";
-  gv:green "49";
-  gv:score "6.970754299999999";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "8c744a";
-  gv:red "140";
-  gv:blue "74";
-  gv:green "116";
-  gv:score "5.9992510999999995";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "251a0a";
-  gv:red "37";
-  gv:blue "10";
-  gv:green "26";
-  gv:score "3.6464017";
-  gv:coverage "0.4"
-], [
-  gv:hex "e2bbaf";
-  gv:red "226";
-  gv:blue "175";
-  gv:green "187";
-  gv:score "2.7518978";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "bd9386";
-  gv:red "189";
-  gv:blue "134";
-  gv:green "147";
-  gv:score "2.4495050000000003";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.678374"
-];
-    w:bagOfWords "MEDAL\nCEREMONY\nBRANDY\n84 PROOF\n1949\n1951\nGOLD MEDAL AWARDS\nGOLD MEDAL AWARDS\n1951\n1952\nLOS ANGELES COUNTY FAIR\nCALIFORNIA STATE FAIR\n1952\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4761";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

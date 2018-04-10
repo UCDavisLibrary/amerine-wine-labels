@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1069";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "clos\nOe\nontibeux\nan\nen\nORSAT\nAGNY\nFEOLER SA LACHAUA DE FONDS\n"@deu;
-    gv:color [
-  gv:hex "dbc5a8";
-  gv:red "219";
-  gv:blue "168";
-  gv:green "197";
-  gv:score "62.479669";
-  gv:coverage "25.813332"
-], [
-  gv:hex "795019";
-  gv:red "121";
-  gv:blue "25";
-  gv:green "80";
-  gv:score "4.4147465";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "403020";
-  gv:red "64";
-  gv:blue "32";
-  gv:green "48";
-  gv:score "3.4218412";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "edd8be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "4.539204";
-  gv:coverage "4.6333332"
-], [
-  gv:hex "b09c85";
-  gv:red "176";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "4.1762188";
-  gv:coverage "0.98"
-], [
-  gv:hex "92682f";
-  gv:red "146";
-  gv:blue "47";
-  gv:green "104";
-  gv:score "4.1095175";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "d9ba8b";
-  gv:red "217";
-  gv:blue "139";
-  gv:green "186";
-  gv:score "3.33431";
-  gv:coverage "1.72"
-], [
-  gv:hex "857463";
-  gv:red "133";
-  gv:blue "99";
-  gv:green "116";
-  gv:score "2.1610843";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "bb9861";
-  gv:red "187";
-  gv:blue "97";
-  gv:green "152";
-  gv:score "2.0863036";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "615140";
-  gv:red "97";
-  gv:blue "64";
-  gv:green "81";
-  gv:score "1.7505920000000001";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0p833>;
-  gv:desc "perfume";
-  gv:score "72.876638"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.60309099999999"
-];
-    w:bagOfWords "clos\nOe\nontibeux\nan\nen\nORSAT\nAGNY\nFEOLER SA LACHAUA DE FONDS\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1069";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

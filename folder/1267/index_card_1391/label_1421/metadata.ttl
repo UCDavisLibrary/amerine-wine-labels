@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1391/label_1421";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "VINTAGE OF\nUNIVERSO\nALCOHOL 12,\nNET CONTENTS\nBY VOLUME\n1 Pt. 83 Fi. Oz.\nCHILEAN\nRiesling\nPRODUCED AND BOTTLED BY\nVINA CASA BLANCA\nL ONT UTE\nCHILE\nSOLE UNITED STATES IMPORTER\nPARROTT\nCO\nSAN FRANCISCO, CALIFORNIA\nWINE F CHILE\n"@spa;
-    gv:color [
-  gv:hex "181410";
-  gv:red "24";
-  gv:blue "16";
-  gv:green "20";
-  gv:score "40.105658999999996";
-  gv:coverage "10.653333"
-], [
-  gv:hex "c9c4b9";
-  gv:red "201";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "2.9783955";
-  gv:coverage "12.786667"
-], [
-  gv:hex "342f28";
-  gv:red "52";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "8.817403";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "37301c";
-  gv:red "55";
-  gv:blue "28";
-  gv:green "48";
-  gv:score "8.2505472";
-  gv:coverage "0.8"
-], [
-  gv:hex "221a08";
-  gv:red "34";
-  gv:blue "8";
-  gv:green "26";
-  gv:score "4.7517594";
-  gv:coverage "0.54"
-], [
-  gv:hex "5e5640";
-  gv:red "94";
-  gv:blue "64";
-  gv:green "86";
-  gv:score "4.6291642";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "7d755f";
-  gv:red "125";
-  gv:blue "95";
-  gv:green "117";
-  gv:score "4.435893500000001";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "627f64";
-  gv:red "98";
-  gv:blue "100";
-  gv:green "127";
-  gv:score "3.5309928999999998";
-  gv:coverage "0.52"
-], [
-  gv:hex "86a387";
-  gv:red "134";
-  gv:blue "135";
-  gv:green "163";
-  gv:score "3.5263132";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "575149";
-  gv:red "87";
-  gv:blue "73";
-  gv:green "81";
-  gv:score "3.5096329";
-  gv:coverage "1.0333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01n5jq>;
-  gv:desc "poster";
-  gv:score "66.193235"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.30072700000001"
-], [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "62.332845000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.659734"
-];
-    w:bagOfWords "VINTAGE OF\nUNIVERSO\nALCOHOL 12,\nNET CONTENTS\nBY VOLUME\n1 Pt. 83 Fi. Oz.\nCHILEAN\nRiesling\nPRODUCED AND BOTTLED BY\nVINA CASA BLANCA\nL ONT UTE\nCHILE\nSOLE UNITED STATES IMPORTER\nPARROTT\nCO\nSAN FRANCISCO, CALIFORNIA\nWINE F CHILE\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1421";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-CL";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHL".
+    wdt:P297 "CL".
+

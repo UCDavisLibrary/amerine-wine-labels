@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2304";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Chateau\nLeoville Royferré\n1998\nen Bouteille tul Chateau\n"@fra;
-    gv:color [
-  gv:hex "dabfa6";
-  gv:red "218";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "26.96659";
-  gv:coverage "44.693333"
-], [
-  gv:hex "492c14";
-  gv:red "73";
-  gv:blue "20";
-  gv:green "44";
-  gv:score "11.489686";
-  gv:coverage "0.32"
-], [
-  gv:hex "b3977f";
-  gv:red "179";
-  gv:blue "127";
-  gv:green "151";
-  gv:score "19.003665";
-  gv:coverage "2.52"
-], [
-  gv:hex "f7dac2";
-  gv:red "247";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "17.571609";
-  gv:coverage "32.2"
-], [
-  gv:hex "1a0401";
-  gv:red "26";
-  gv:blue "1";
-  gv:green "4";
-  gv:score "0.17382123";
-  gv:coverage "0.02"
-], [
-  gv:hex "8e735a";
-  gv:red "142";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "10.19524";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "70553d";
-  gv:red "112";
-  gv:blue "61";
-  gv:green "85";
-  gv:score "4.9471013";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "8f6f57";
-  gv:red "143";
-  gv:blue "87";
-  gv:green "111";
-  gv:score "4.503276199999999";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "301401";
-  gv:red "48";
-  gv:blue "1";
-  gv:green "20";
-  gv:score "2.4617074";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "71523a";
-  gv:red "113";
-  gv:blue "58";
-  gv:green "82";
-  gv:score "1.5655352";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "73.101854"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.259574"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "52.377796"
-];
-    w:bagOfWords "Chateau\nLeoville Royferré\n1998\nen Bouteille tul Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2304";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3402/label_3403";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "1929\nAPPELLATION\nCONTROL EE\nMYPO\nA PASSER.\nDIFFICILE.\nooo\nDOMAINE LE FLAIVE PULIGNY-MONTRACHET\nED.JOUFFROY. BEAUNE\n"@fra;
-    gv:color [
-  gv:hex "d7bc98";
-  gv:red "215";
-  gv:blue "152";
-  gv:green "188";
-  gv:score "14.928058";
-  gv:coverage "25.833333000000003"
-], [
-  gv:hex "c79967";
-  gv:red "199";
-  gv:blue "103";
-  gv:green "153";
-  gv:score "9.414263100000001";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "6f5428";
-  gv:red "111";
-  gv:blue "40";
-  gv:green "84";
-  gv:score "6.6363931";
-  gv:coverage "0.76"
-], [
-  gv:hex "d5b480";
-  gv:red "213";
-  gv:blue "128";
-  gv:green "180";
-  gv:score "13.783501000000001";
-  gv:coverage "3.6999999999999997"
-], [
-  gv:hex "be9c6a";
-  gv:red "190";
-  gv:blue "106";
-  gv:green "156";
-  gv:score "8.9493014";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "b69b79";
-  gv:red "182";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "8.2136787";
-  gv:coverage "3.3333334999999997"
-], [
-  gv:hex "765125";
-  gv:red "118";
-  gv:blue "37";
-  gv:green "81";
-  gv:score "6.329034999999999";
-  gv:coverage "0.54"
-], [
-  gv:hex "907142";
-  gv:red "144";
-  gv:blue "66";
-  gv:green "113";
-  gv:score "6.234376500000001";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "897253";
-  gv:red "137";
-  gv:blue "83";
-  gv:green "114";
-  gv:score "5.1178828";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "675536";
-  gv:red "103";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "4.4806685";
-  gv:coverage "0.74"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.095874"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.804481"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.499658000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.692665000000005"
-];
-    w:bagOfWords "1929\nAPPELLATION\nCONTROL EE\nMYPO\nA PASSER.\nDIFFICILE.\nooo\nDOMAINE LE FLAIVE PULIGNY-MONTRACHET\nED.JOUFFROY. BEAUNE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3403";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

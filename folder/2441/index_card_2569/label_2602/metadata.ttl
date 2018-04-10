@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2602";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Net Contents 12 Fl. Oz.\nAlcohol 12 by volume\nN FONDEE E\nBOUCHARD AiNE & FILS\nNEGOCIANTS A BEAU NE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d4bea3";
-  gv:red "212";
-  gv:blue "163";
-  gv:green "190";
-  gv:score "51.222742";
-  gv:coverage "37.206668"
-], [
-  gv:hex "b29c81";
-  gv:red "178";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "17.578257999999998";
-  gv:coverage "2.9666666"
-], [
-  gv:hex "867257";
-  gv:red "134";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "9.8767281";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "65543b";
-  gv:red "101";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "9.2366338";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "eddbc3";
-  gv:red "237";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "4.0064637";
-  gv:coverage "20.886667"
-], [
-  gv:hex "46351e";
-  gv:red "70";
-  gv:blue "30";
-  gv:green "53";
-  gv:score "2.4150811";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "bd9d63";
-  gv:red "189";
-  gv:blue "99";
-  gv:green "157";
-  gv:score "1.7251929";
-  gv:coverage "0.12"
-], [
-  gv:hex "cfb380";
-  gv:red "207";
-  gv:blue "128";
-  gv:green "179";
-  gv:score "1.4008720000000001";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "323632";
-  gv:red "50";
-  gv:blue "50";
-  gv:green "54";
-  gv:score "0.49315253";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "545651";
-  gv:red "84";
-  gv:blue "81";
-  gv:green "86";
-  gv:score "0.37947085";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.708288"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.258486999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.528448999999995"
-];
-    w:bagOfWords "Net Contents 12 Fl. Oz.\nAlcohol 12 by volume\nN FONDEE E\nBOUCHARD AiNE & FILS\nNEGOCIANTS A BEAU NE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2602";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

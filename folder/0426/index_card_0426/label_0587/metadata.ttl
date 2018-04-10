@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0587";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "egr.\n1872\n1937\nRudesheimer Berg Riesling\na\nWachstum Heim\nLight Rhine Wine\nAlcoho\nmy volume 12,5\n"@deu;
-    gv:color [
-  gv:hex "d3bea1";
-  gv:red "211";
-  gv:blue "161";
-  gv:green "190";
-  gv:score "20.325336999999998";
-  gv:coverage "18.433334000000002"
-], [
-  gv:hex "b4925e";
-  gv:red "180";
-  gv:blue "94";
-  gv:green "146";
-  gv:score "14.798998999999998";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "90381e";
-  gv:red "144";
-  gv:blue "30";
-  gv:green "56";
-  gv:score "2.4165498";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "b54520";
-  gv:red "181";
-  gv:blue "32";
-  gv:green "69";
-  gv:score "0.1361754";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "997842";
-  gv:red "153";
-  gv:blue "66";
-  gv:green "120";
-  gv:score "13.119703999999999";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "b19c7f";
-  gv:red "177";
-  gv:blue "127";
-  gv:green "156";
-  gv:score "9.052632";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "9d713a";
-  gv:red "157";
-  gv:blue "58";
-  gv:green "113";
-  gv:score "6.7064531";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "d9b883";
-  gv:red "217";
-  gv:blue "131";
-  gv:green "184";
-  gv:score "3.9908085000000004";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "bc8e5a";
-  gv:red "188";
-  gv:blue "90";
-  gv:green "142";
-  gv:score "3.9284768999999997";
-  gv:coverage "0.76"
-], [
-  gv:hex "e9b59d";
-  gv:red "233";
-  gv:blue "157";
-  gv:green "181";
-  gv:score "2.7864737";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.484358"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.352256000000004"
-];
-    w:bagOfWords "egr.\n1872\n1937\nRudesheimer Berg Riesling\na\nWachstum Heim\nLight Rhine Wine\nAlcoho\nmy volume 12,5\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0587";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

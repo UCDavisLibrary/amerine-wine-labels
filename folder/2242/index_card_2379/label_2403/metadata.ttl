@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2403";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "3/ 47\nA 934\no/election CCRothschild\nordeauuba\nteleclionne er tiaite naar tee llaitie.\neye houton Zmaailhac\nsuivant\nmethods deculairesguiony\nla gloure de ces deudo.\nGrands clauses.\n"@fra;
-    gv:color [
-  gv:hex "dbc9b2";
-  gv:red "219";
-  gv:blue "178";
-  gv:green "201";
-  gv:score "66.883147";
-  gv:coverage "31.153333"
-], [
-  gv:hex "e8d8c2";
-  gv:red "232";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "14.863612000000002";
-  gv:coverage "16.713333"
-], [
-  gv:hex "af9c84";
-  gv:red "175";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "12.333727999999999";
-  gv:coverage "3.8533334000000004"
-], [
-  gv:hex "8c785c";
-  gv:red "140";
-  gv:blue "92";
-  gv:green "120";
-  gv:score "2.7606856";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "e5dbcf";
-  gv:red "229";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "1.6242282000000001";
-  gv:coverage "38.746667"
-], [
-  gv:hex "6a5335";
-  gv:red "106";
-  gv:blue "53";
-  gv:green "83";
-  gv:score "0.58287159";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "3f392f";
-  gv:red "63";
-  gv:blue "47";
-  gv:green "57";
-  gv:score "0.0035383433";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d0c6bc";
-  gv:red "208";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "0.29224325";
-  gv:coverage "6.713333"
-], [
-  gv:hex "8a7043";
-  gv:red "138";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "0.28732737999999997";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "b39869";
-  gv:red "179";
-  gv:blue "105";
-  gv:green "152";
-  gv:score "0.13663453";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.723975"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.008661000000004"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.195296000000006"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.77826"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.382684999999995"
-];
-    w:bagOfWords "3/ 47\nA 934\no/election CCRothschild\nordeauuba\nteleclionne er tiaite naar tee llaitie.\neye houton Zmaailhac\nsuivant\nmethods deculairesguiony\nla gloure de ces deudo.\nGrands clauses.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2403";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

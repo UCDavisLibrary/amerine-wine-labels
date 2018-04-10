@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4196";
-    dct:type "image";
-    w:bagOfWords "gstel\nLABE\nA\nde Garantie\narque Déposée\nAI-302\nntes be p\nEts Cauvieres, Negociant-Eleveur CANNES (a. m.)\nVin délimité de qualité supérieure\n120\n0.75\nHOMOLOGATION C. M. NUMERO 930\nMr. CART .1NNE MAR. EILLE\n"@fra;
-    gv:color [
-  gv:hex "ba975c";
-  gv:red "186";
-  gv:blue "92";
-  gv:green "151";
-  gv:score "19.132961";
-  gv:coverage "10.36"
-], [
-  gv:hex "c23c1c";
-  gv:red "194";
-  gv:blue "28";
-  gv:green "60";
-  gv:score "1.4794052";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "bf9745";
-  gv:red "191";
-  gv:blue "69";
-  gv:green "151";
-  gv:score "13.524736";
-  gv:coverage "4.14"
-], [
-  gv:hex "c28f3f";
-  gv:red "194";
-  gv:blue "63";
-  gv:green "143";
-  gv:score "9.979997599999999";
-  gv:coverage "2.76"
-], [
-  gv:hex "c39258";
-  gv:red "195";
-  gv:blue "88";
-  gv:green "146";
-  gv:score "7.5769849";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "d8b578";
-  gv:red "216";
-  gv:blue "120";
-  gv:green "181";
-  gv:score "5.963466700000001";
-  gv:coverage "3.8533334000000004"
-], [
-  gv:hex "97773f";
-  gv:red "151";
-  gv:blue "63";
-  gv:green "119";
-  gv:score "5.0363693000000005";
-  gv:coverage "2.22"
-], [
-  gv:hex "9e6d3d";
-  gv:red "158";
-  gv:blue "61";
-  gv:green "109";
-  gv:score "3.4039";
-  gv:coverage "1.22"
-], [
-  gv:hex "dab25d";
-  gv:red "218";
-  gv:blue "93";
-  gv:green "178";
-  gv:score "3.3267908";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "774a1d";
-  gv:red "119";
-  gv:blue "29";
-  gv:green "74";
-  gv:score "3.0465085";
-  gv:coverage "0.77333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.936451000000005"
-];
-    w:bagOfWords "gstel\nLABE\nA\nde Garantie\narque Déposée\nAI-302\nntes be p\nEts Cauvieres, Negociant-Eleveur CANNES (a. m.)\nVin délimité de qualité supérieure\n120\n0.75\nHOMOLOGATION C. M. NUMERO 930\nMr. CART .1NNE MAR. EILLE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4196";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

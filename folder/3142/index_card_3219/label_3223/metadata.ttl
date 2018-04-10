@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3223";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "BOUCHARD PERE a FILS\nBEAU N E (COTE D'OR\nMEME\nAISON A BO R DE A UX\nb ROSE\n"@fra;
-    gv:color [
-  gv:hex "ce913e";
-  gv:red "206";
-  gv:blue "62";
-  gv:green "145";
-  gv:score "72.89459099999999";
-  gv:coverage "19.333333"
-], [
-  gv:hex "a86f22";
-  gv:red "168";
-  gv:blue "34";
-  gv:green "111";
-  gv:score "16.940252";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "e4a854";
-  gv:red "228";
-  gv:blue "84";
-  gv:green "168";
-  gv:score "3.2201029";
-  gv:coverage "0.84"
-], [
-  gv:hex "411000";
-  gv:red "65";
-  gv:blue "undefined";
-  gv:green "16";
-  gv:score "0.022784015";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "885107";
-  gv:red "136";
-  gv:blue "7";
-  gv:green "81";
-  gv:score "1.8043796";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "c29947";
-  gv:red "194";
-  gv:blue "71";
-  gv:green "153";
-  gv:score "1.2233774";
-  gv:coverage "0.5"
-], [
-  gv:hex "c09c65";
-  gv:red "192";
-  gv:blue "101";
-  gv:green "156";
-  gv:score "0.7303813";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "c79656";
-  gv:red "199";
-  gv:blue "86";
-  gv:green "150";
-  gv:score "0.72162361";
-  gv:coverage "0.36"
-], [
-  gv:hex "a27032";
-  gv:red "162";
-  gv:blue "50";
-  gv:green "112";
-  gv:score "0.48941159999999995";
-  gv:coverage "0.1"
-], [
-  gv:hex "dbb67d";
-  gv:red "219";
-  gv:blue "125";
-  gv:green "182";
-  gv:score "0.45147389";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.2415"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.4626"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.526593999999996"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.059888"
-];
-    w:bagOfWords "BOUCHARD PERE a FILS\nBEAU N E (COTE D'OR\nMEME\nAISON A BO R DE A UX\nb ROSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3223";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

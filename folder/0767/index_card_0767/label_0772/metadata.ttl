@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0767/label_0772";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "No. 509 P\nMETHODE\nCHAMPIENOISE\nARBOIS\nGRAND VIN MOUSSEUX\nR. SIMONIN, Propr Négt\nContenance\nPOLIGNY (Jura)\n0 I. 80\n0. 20 w. g\nVura\n"@fra;
-    gv:color [
-  gv:hex "e6dcd4";
-  gv:red "230";
-  gv:blue "212";
-  gv:green "220";
-  gv:score "21.590574";
-  gv:coverage "67.233336"
-], [
-  gv:hex "847351";
-  gv:red "132";
-  gv:blue "81";
-  gv:green "115";
-  gv:score "12.793599";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "d0c7bf";
-  gv:red "208";
-  gv:blue "191";
-  gv:green "199";
-  gv:score "11.902306";
-  gv:coverage "5.1"
-], [
-  gv:hex "d1c3ad";
-  gv:red "209";
-  gv:blue "173";
-  gv:green "195";
-  gv:score "11.334775";
-  gv:coverage "3.1466666999999995"
-], [
-  gv:hex "e6ddca";
-  gv:red "230";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "8.8116065";
-  gv:coverage "17.186667"
-], [
-  gv:hex "6c5c39";
-  gv:red "108";
-  gv:blue "57";
-  gv:green "92";
-  gv:score "8.114147200000001";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "a69d96";
-  gv:red "166";
-  gv:blue "150";
-  gv:green "157";
-  gv:score "6.1267264";
-  gv:coverage "1.28"
-], [
-  gv:hex "ab9b7b";
-  gv:red "171";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "5.9164792";
-  gv:coverage "1.22"
-], [
-  gv:hex "7d746d";
-  gv:red "125";
-  gv:blue "109";
-  gv:green "116";
-  gv:score "3.9949882999999997";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "5f564f";
-  gv:red "95";
-  gv:blue "79";
-  gv:green "86";
-  gv:score "3.7107009000000004";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.89515999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.851737"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.460887"
-];
-    w:bagOfWords "No. 509 P\nMETHODE\nCHAMPIENOISE\nARBOIS\nGRAND VIN MOUSSEUX\nR. SIMONIN, Propr Négt\nContenance\nPOLIGNY (Jura)\n0 I. 80\n0. 20 w. g\nVura\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0772";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

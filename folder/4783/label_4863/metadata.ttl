@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4863";
-    dct:type "image";
-    w:bagOfWords "MOSEL SAAR-RUWERI\nAlcohol 11% by Vol\nMoselle-Wine\nContents: 1 Pt. 7,5 Fl. Oz\n1962 Piesporter Goldtroepfchen Sonderfullung\nProduced and bottled in Germany\nHans Heinrich Havemeyer\"-Weine, Grosshandels-GMBH Bingen/Rhein\no, Jan Francisco oalifornia\nVercul Van den voor\nSOLE AGENTS FOR THE WESTERN U. S. A.\nG. J, 57919\n"@eng;
-    gv:color [
-  gv:hex "d0c988";
-  gv:red "208";
-  gv:blue "136";
-  gv:green "201";
-  gv:score "27.473112999999998";
-  gv:coverage "10.433333000000001"
-], [
-  gv:hex "cbc983";
-  gv:red "203";
-  gv:blue "131";
-  gv:green "201";
-  gv:score "20.572402";
-  gv:coverage "8.546666799999999"
-], [
-  gv:hex "a8a164";
-  gv:red "168";
-  gv:blue "100";
-  gv:green "161";
-  gv:score "8.167021700000001";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "a5a461";
-  gv:red "165";
-  gv:blue "97";
-  gv:green "164";
-  gv:score "6.9257781000000005";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "80793d";
-  gv:red "128";
-  gv:blue "61";
-  gv:green "121";
-  gv:score "5.2837811";
-  gv:coverage "2.18"
-], [
-  gv:hex "c8c09b";
-  gv:red "200";
-  gv:blue "155";
-  gv:green "192";
-  gv:score "4.8022412";
-  gv:coverage "5.3333335"
-], [
-  gv:hex "e0df99";
-  gv:red "224";
-  gv:blue "153";
-  gv:green "223";
-  gv:score "4.5407712";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "a49e7e";
-  gv:red "164";
-  gv:blue "126";
-  gv:green "158";
-  gv:score "4.3432566999999995";
-  gv:coverage "1.68"
-], [
-  gv:hex "e3dd9b";
-  gv:red "227";
-  gv:blue "155";
-  gv:green "221";
-  gv:score "4.2868721999999995";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "7c7858";
-  gv:red "124";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "2.9173352";
-  gv:coverage "0.8"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.236307"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.400006999999995"
-];
-    w:bagOfWords "MOSEL SAAR-RUWERI\nAlcohol 11% by Vol\nMoselle-Wine\nContents: 1 Pt. 7,5 Fl. Oz\n1962 Piesporter Goldtroepfchen Sonderfullung\nProduced and bottled in Germany\nHans Heinrich Havemeyer\"-Weine, Grosshandels-GMBH Bingen/Rhein\no, Jan Francisco oalifornia\nVercul Van den voor\nSOLE AGENTS FOR THE WESTERN U. S. A.\nG. J, 57919\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4863";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

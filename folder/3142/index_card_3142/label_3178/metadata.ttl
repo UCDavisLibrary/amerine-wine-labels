@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3178";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DE POSE N\n35\nGRAND VIN\nDE BOURGOGNE\n1947\nGEVREY CHAMBERTIN\nappellation Controlée\nMichel Faunarque\nCont\n68-70 cl\nR. C. Bruxelles 0110\nImprimé en France\nIMP. NO LAS B.\nSQUE "@fra;
-    gv:color [
-  gv:hex "c5935d";
-  gv:red "197";
-  gv:blue "93";
-  gv:green "147";
-  gv:score "26.034921";
-  gv:coverage "5.546666699999999"
-], [
-  gv:hex "e1c4a2";
-  gv:red "225";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "15.052702000000002";
-  gv:coverage "18.52"
-], [
-  gv:hex "a06e39";
-  gv:red "160";
-  gv:blue "57";
-  gv:green "110";
-  gv:score "16.260803";
-  gv:coverage "2.9466666"
-], [
-  gv:hex "e3b37e";
-  gv:red "227";
-  gv:blue "126";
-  gv:green "179";
-  gv:score "13.777351";
-  gv:coverage "3.5066668"
-], [
-  gv:hex "e4be8d";
-  gv:red "228";
-  gv:blue "141";
-  gv:green "190";
-  gv:score "9.7033255";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "814f1a";
-  gv:red "129";
-  gv:blue "26";
-  gv:green "79";
-  gv:score "4.1883864";
-  gv:coverage "0.74"
-], [
-  gv:hex "b19678";
-  gv:red "177";
-  gv:blue "120";
-  gv:green "150";
-  gv:score "3.1196458";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "8b7356";
-  gv:red "139";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "2.7635094";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "c39d6a";
-  gv:red "195";
-  gv:blue "106";
-  gv:green "157";
-  gv:score "2.2976482";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "f1d6b9";
-  gv:red "241";
-  gv:blue "185";
-  gv:green "214";
-  gv:score "1.5400947";
-  gv:coverage "17.64"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.577349999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.920239"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.309948999999996"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.54387500000001"
-];
-    w:bagOfWords "DE POSE N\n35\nGRAND VIN\nDE BOURGOGNE\n1947\nGEVREY CHAMBERTIN\nappellation Controlée\nMichel Faunarque\nCont\n68-70 cl\nR. C. Bruxelles 0110\nImprimé en France\nIMP. NO LAS B.\nSQUE "@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3178";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

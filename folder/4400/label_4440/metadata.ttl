@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4440";
-    dct:type "image";
-    w:bagOfWords "6/7/\natti. has Radaout\nzrtzeそ\n씬theeE\nん一人:mrVnnn\n74\nα\nア\n"@spa;
-    gv:color [
-  gv:hex "d4bda5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "69.950026";
-  gv:coverage "37.086666"
-], [
-  gv:hex "b19c88";
-  gv:red "177";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "14.868414";
-  gv:coverage "5.006666500000001"
-], [
-  gv:hex "d7b3a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "179";
-  gv:score "4.6805053999999995";
-  gv:coverage "3.0266667000000003"
-], [
-  gv:hex "8c7966";
-  gv:red "140";
-  gv:blue "102";
-  gv:green "121";
-  gv:score "4.5970369";
-  gv:coverage "1.3"
-], [
-  gv:hex "ead7c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "215";
-  gv:score "1.7882416";
-  gv:coverage "4.22"
-], [
-  gv:hex "c6a292";
-  gv:red "198";
-  gv:blue "146";
-  gv:green "162";
-  gv:score "1.5572621";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "cbbfb3";
-  gv:red "203";
-  gv:blue "179";
-  gv:green "191";
-  gv:score "0.7094455000000001";
-  gv:coverage "6.933333"
-], [
-  gv:hex "6b5946";
-  gv:red "107";
-  gv:blue "70";
-  gv:green "89";
-  gv:score "0.66320542";
-  gv:coverage "0.2"
-], [
-  gv:hex "a69c91";
-  gv:red "166";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "0.56936271";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "907160";
-  gv:red "144";
-  gv:blue "96";
-  gv:green "113";
-  gv:score "0.27262159";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.991812"
-], [
-  gv:mid <https://g.co/kg/m/0gkxy13>;
-  gv:desc "handwriting";
-  gv:score "88.408858"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "83.803016"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "67.56301500000001"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.25410000000001"
-];
-    w:bagOfWords "6/7/\natti. has Radaout\nzrtzeそ\n씬theeE\nん一人:mrVnnn\n74\nα\nア\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4440";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

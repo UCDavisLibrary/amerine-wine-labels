@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0779/label_0782";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "PROPRIETAIRES-NEGOCIANTs\nTAIN L'HERMITAGE\nDROME\nPRODUCT OF FRANCE\n7, P. S.\n"@fra;
-    gv:color [
-  gv:hex "d2c1a5";
-  gv:red "210";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "63.662183000000006";
-  gv:coverage "29.766667"
-], [
-  gv:hex "afa086";
-  gv:red "175";
-  gv:blue "134";
-  gv:green "160";
-  gv:score "11.495726000000001";
-  gv:coverage "2.04"
-], [
-  gv:hex "84755b";
-  gv:red "132";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "8.1256263";
-  gv:coverage "0.88"
-], [
-  gv:hex "eadcc5";
-  gv:red "234";
-  gv:blue "197";
-  gv:green "220";
-  gv:score "5.372018";
-  gv:coverage "20.426667000000002"
-], [
-  gv:hex "64563e";
-  gv:red "100";
-  gv:blue "62";
-  gv:green "86";
-  gv:score "4.2225554999999995";
-  gv:coverage "0.42"
-], [
-  gv:hex "d2b583";
-  gv:red "210";
-  gv:blue "131";
-  gv:green "181";
-  gv:score "3.3971183000000003";
-  gv:coverage "0.22"
-], [
-  gv:hex "c0a26f";
-  gv:red "192";
-  gv:blue "111";
-  gv:green "162";
-  gv:score "2.8751111";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "d2c7bc";
-  gv:red "210";
-  gv:blue "188";
-  gv:green "199";
-  gv:score "0.31561912000000003";
-  gv:coverage "4.993333300000001"
-], [
-  gv:hex "eee3d7";
-  gv:red "238";
-  gv:blue "215";
-  gv:green "227";
-  gv:score "0.29075758";
-  gv:coverage "40.773332"
-], [
-  gv:hex "463818";
-  gv:red "70";
-  gv:blue "24";
-  gv:green "56";
-  gv:score "0.13040347";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.2504"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.851121000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.912079"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.948266"
-];
-    w:bagOfWords "PROPRIETAIRES-NEGOCIANTs\nTAIN L'HERMITAGE\nDROME\nPRODUCT OF FRANCE\n7, P. S.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0782";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

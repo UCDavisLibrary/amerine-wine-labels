@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1326";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "COLADO\n50MBARA\nRED TABLE WINE\nLISBOA BOMBARRAL- PORTUGAL\n"@por;
-    gv:color [
-  gv:hex "d8bd89";
-  gv:red "216";
-  gv:blue "137";
-  gv:green "189";
-  gv:score "47.694913";
-  gv:coverage "6.913333400000001"
-], [
-  gv:hex "d7bf97";
-  gv:red "215";
-  gv:blue "151";
-  gv:green "191";
-  gv:score "16.403100000000002";
-  gv:coverage "48.106666999999995"
-], [
-  gv:hex "b69c6c";
-  gv:red "182";
-  gv:blue "108";
-  gv:green "156";
-  gv:score "12.844862000000001";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "8e7648";
-  gv:red "142";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "7.8723355999999995";
-  gv:coverage "1"
-], [
-  gv:hex "b29c75";
-  gv:red "178";
-  gv:blue "117";
-  gv:green "156";
-  gv:score "7.3710278";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "6a5328";
-  gv:red "106";
-  gv:blue "40";
-  gv:green "83";
-  gv:score "2.2595425999999996";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "8e7854";
-  gv:red "142";
-  gv:blue "84";
-  gv:green "120";
-  gv:score "2.0615911000000002";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "49330b";
-  gv:red "73";
-  gv:blue "11";
-  gv:green "51";
-  gv:score "1.2468974000000002";
-  gv:coverage "0.16"
-], [
-  gv:hex "6e5936";
-  gv:red "110";
-  gv:blue "54";
-  gv:green "89";
-  gv:score "0.98478012";
-  gv:coverage "0.24"
-], [
-  gv:hex "efd9af";
-  gv:red "239";
-  gv:blue "175";
-  gv:green "217";
-  gv:score "0.41605267";
-  gv:coverage "26.546666000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.293221"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.520873"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.25528499999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "50.974047"
-];
-    w:bagOfWords "COLADO\n50MBARA\nRED TABLE WINE\nLISBOA BOMBARRAL- PORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1326";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

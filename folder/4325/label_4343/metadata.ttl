@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4343";
-    dct:type "image";
-    w:bagOfWords "CRNO VINO\nVINE ROUGE\n'D\n99\nVINOPROMET\nZAGREB\nPRO D U i T D E. Y O U G O. S LAVI E.\n83\n72\n"@undefined;
-    gv:color [
-  gv:hex "bb9b68";
-  gv:red "187";
-  gv:blue "104";
-  gv:green "155";
-  gv:score "18.991105";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "dabf9e";
-  gv:red "218";
-  gv:blue "158";
-  gv:green "191";
-  gv:score "14.874816";
-  gv:coverage "17.086667"
-], [
-  gv:hex "b3605d";
-  gv:red "179";
-  gv:blue "93";
-  gv:green "96";
-  gv:score "6.6778392";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "dbba86";
-  gv:red "219";
-  gv:blue "134";
-  gv:green "186";
-  gv:score "12.95934";
-  gv:coverage "1.58"
-], [
-  gv:hex "ebb8a9";
-  gv:red "235";
-  gv:blue "169";
-  gv:green "184";
-  gv:score "6.5007433";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "c69861";
-  gv:red "198";
-  gv:blue "97";
-  gv:green "152";
-  gv:score "4.9183603";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "b89b78";
-  gv:red "184";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "4.5119997000000005";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "c49283";
-  gv:red "196";
-  gv:blue "131";
-  gv:green "146";
-  gv:score "4.1548707";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "f1dabd";
-  gv:red "241";
-  gv:blue "189";
-  gv:green "218";
-  gv:score "4.0156879";
-  gv:coverage "13.566666999999999"
-], [
-  gv:hex "d88381";
-  gv:red "216";
-  gv:blue "129";
-  gv:green "131";
-  gv:score "3.8283411000000003";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.024614"
-];
-    w:bagOfWords "CRNO VINO\nVINE ROUGE\n'D\n99\nVINOPROMET\nZAGREB\nPRO D U i T D E. Y O U G O. S LAVI E.\n83\n72\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4343";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

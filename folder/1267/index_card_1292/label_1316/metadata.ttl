@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1316";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "LUXEMBURGISCHER SCHAUMWEIN\nDIAMANT\nGREVENMACHER a d. MOSEL\n56 4\n"@deu;
-    gv:color [
-  gv:hex "cfb9a0";
-  gv:red "207";
-  gv:blue "160";
-  gv:green "185";
-  gv:score "56.24262100000001";
-  gv:coverage "24.22"
-], [
-  gv:hex "53281b";
-  gv:red "83";
-  gv:blue "27";
-  gv:green "40";
-  gv:score "1.7810674";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "151715";
-  gv:red "21";
-  gv:blue "21";
-  gv:green "23";
-  gv:score "0.72100461";
-  gv:coverage "0.18"
-], [
-  gv:hex "b5a087";
-  gv:red "181";
-  gv:blue "135";
-  gv:green "160";
-  gv:score "19.564374";
-  gv:coverage "6.08"
-], [
-  gv:hex "89745c";
-  gv:red "137";
-  gv:blue "92";
-  gv:green "116";
-  gv:score "6.642642599999999";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "67533c";
-  gv:red "103";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "5.5166479";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "48361f";
-  gv:red "72";
-  gv:blue "31";
-  gv:green "54";
-  gv:score "1.5572059";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "bf9784";
-  gv:red "191";
-  gv:blue "132";
-  gv:green "151";
-  gv:score "1.2487393";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "662320";
-  gv:red "102";
-  gv:blue "32";
-  gv:green "35";
-  gv:score "1.198344";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "966e5b";
-  gv:red "150";
-  gv:blue "91";
-  gv:green "110";
-  gv:score "1.1187826";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.050178"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.242239000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.668467"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.97886200000001"
-];
-    w:bagOfWords "LUXEMBURGISCHER SCHAUMWEIN\nDIAMANT\nGREVENMACHER a d. MOSEL\n56 4\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1316";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

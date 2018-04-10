@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4608";
-    dct:type "image";
-    w:bagOfWords "LA CASA PEDRO DOMECQ TIENE POR NORMA DESDE su\nFUNDACION EN 1730, NO CONCURRIR CON Sus pRODucTOS\nANINGUNA EXPOSICION NACIONAL NI EXTRANJERA\nNo 202\nPROPIEDAD\nVINEDo CHARNUDO COLOROSO\nJ C\nCao Lin\nen 1730.\nLrt deres industri\n"@spa;
-    gv:color [
-  gv:hex "d1c3b1";
-  gv:red "209";
-  gv:blue "177";
-  gv:green "195";
-  gv:score "11.182801000000001";
-  gv:coverage "26.606667"
-], [
-  gv:hex "655542";
-  gv:red "101";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "9.8762155";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "992430";
-  gv:red "153";
-  gv:blue "48";
-  gv:green "36";
-  gv:score "7.9911813";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "a99a88";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "154";
-  gv:score "9.0942875";
-  gv:coverage "3.3666666999999997"
-], [
-  gv:hex "827360";
-  gv:red "130";
-  gv:blue "96";
-  gv:green "115";
-  gv:score "8.8762708";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "8a3434";
-  gv:red "138";
-  gv:blue "52";
-  gv:green "52";
-  gv:score "6.4398661";
-  gv:coverage "0.24"
-], [
-  gv:hex "eeb9b0";
-  gv:red "238";
-  gv:blue "176";
-  gv:green "185";
-  gv:score "6.376337299999999";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "701c1a";
-  gv:red "112";
-  gv:blue "26";
-  gv:green "28";
-  gv:score "6.1807532";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "eaddcb";
-  gv:red "234";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "4.815244300000001";
-  gv:coverage "18.48"
-], [
-  gv:hex "b75f61";
-  gv:red "183";
-  gv:blue "97";
-  gv:green "95";
-  gv:score "4.0110718";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.73698"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.886095"
-];
-    w:bagOfWords "LA CASA PEDRO DOMECQ TIENE POR NORMA DESDE su\nFUNDACION EN 1730, NO CONCURRIR CON Sus pRODucTOS\nANINGUNA EXPOSICION NACIONAL NI EXTRANJERA\nNo 202\nPROPIEDAD\nVINEDo CHARNUDO COLOROSO\nJ C\nCao Lin\nen 1730.\nLrt deres industri\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4608";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

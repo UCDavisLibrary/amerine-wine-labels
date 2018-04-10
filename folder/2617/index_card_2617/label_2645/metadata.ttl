@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2645";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "ANONYME i\nCIETE PROPRIETAIRE\nMOULIN-A-VENT\n1923\nvosNE ROMANE\nA UGEOT & DIJOS\n"@fra;
-    gv:color [
-  gv:hex "d8c3ac";
-  gv:red "216";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "16.795319";
-  gv:coverage "16.74"
-], [
-  gv:hex "897155";
-  gv:red "137";
-  gv:blue "85";
-  gv:green "113";
-  gv:score "16.336578";
-  gv:coverage "3.0933334"
-], [
-  gv:hex "976f41";
-  gv:red "151";
-  gv:blue "65";
-  gv:green "111";
-  gv:score "10.016835";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "af9a81";
-  gv:red "175";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "10.848524";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "6d5539";
-  gv:red "109";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "10.390523";
-  gv:coverage "2"
-], [
-  gv:hex "8e6e40";
-  gv:red "142";
-  gv:blue "64";
-  gv:green "110";
-  gv:score "7.405962000000001";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "765127";
-  gv:red "118";
-  gv:blue "39";
-  gv:green "81";
-  gv:score "6.1668861999999995";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "eedbc4";
-  gv:red "238";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "5.95374";
-  gv:coverage "4.6533335000000005"
-], [
-  gv:hex "76582d";
-  gv:red "118";
-  gv:blue "45";
-  gv:green "88";
-  gv:score "5.2772760000000005";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "b18f5a";
-  gv:red "177";
-  gv:blue "90";
-  gv:green "143";
-  gv:score "4.0582925";
-  gv:coverage "0.5599999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "76.210022"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.558505"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "57.796651"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "54.616427"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.361900000000006"
-];
-    w:bagOfWords "ANONYME i\nCIETE PROPRIETAIRE\nMOULIN-A-VENT\n1923\nvosNE ROMANE\nA UGEOT & DIJOS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2645";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

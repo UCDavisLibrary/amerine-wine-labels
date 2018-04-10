@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0343";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "CONTENTS\n1 PINT AND 8 FLUID OUNCES\nMONT-ROUGE VINEYARD\nLIVERMORE VALLEY\nCALIFORNIA\nCIL A R E T\netour\niatiche\nSAN FRANCISCO\nRETOUR D'EUROPE.\nThis Wine was shipped in casks to Liverpool,\nEngland. It was then re-shipped to San Francisco\nDuring its several voyages the casks had never been\nopened. The Wine was about eleven months in transit,\nhas crossed through many temperatures and climates,\nhas passed Cape Horn twice and the equator four times.\nCHA UCHE GF BON\n"@eng;
-    gv:color [
-  gv:hex "d8bea4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "190";
-  gv:score "51.775181";
-  gv:coverage "39.96"
-], [
-  gv:hex "e1b9a3";
-  gv:red "225";
-  gv:blue "163";
-  gv:green "185";
-  gv:score "16.738185";
-  gv:coverage "6.4133331"
-], [
-  gv:hex "bd967f";
-  gv:red "189";
-  gv:blue "127";
-  gv:green "150";
-  gv:score "14.202379";
-  gv:coverage "4.72"
-], [
-  gv:hex "bea287";
-  gv:red "190";
-  gv:blue "135";
-  gv:green "162";
-  gv:score "8.7223448";
-  gv:coverage "5.4333333"
-], [
-  gv:hex "9c715c";
-  gv:red "156";
-  gv:blue "92";
-  gv:green "113";
-  gv:score "4.3169531999999995";
-  gv:coverage "1.24"
-], [
-  gv:hex "7b4e3a";
-  gv:red "123";
-  gv:blue "58";
-  gv:green "78";
-  gv:score "1.3476354";
-  gv:coverage "0.3"
-], [
-  gv:hex "eed7c0";
-  gv:red "238";
-  gv:blue "192";
-  gv:green "215";
-  gv:score "1.3219291";
-  gv:coverage "3.8866665"
-], [
-  gv:hex "e6d9cc";
-  gv:red "230";
-  gv:blue "204";
-  gv:green "217";
-  gv:score "0.46480517";
-  gv:coverage "30.306666999999997"
-], [
-  gv:hex "fad2bd";
-  gv:red "250";
-  gv:blue "189";
-  gv:green "210";
-  gv:score "0.39373892000000005";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "562b17";
-  gv:red "86";
-  gv:blue "23";
-  gv:green "43";
-  gv:score "0.24417789999999998";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.66732800000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.962104"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.613524999999996"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "51.531863"
-];
-    w:bagOfWords "CONTENTS\n1 PINT AND 8 FLUID OUNCES\nMONT-ROUGE VINEYARD\nLIVERMORE VALLEY\nCALIFORNIA\nCIL A R E T\netour\niatiche\nSAN FRANCISCO\nRETOUR D'EUROPE.\nThis Wine was shipped in casks to Liverpool,\nEngland. It was then re-shipped to San Francisco\nDuring its several voyages the casks had never been\nopened. The Wine was about eleven months in transit,\nhas crossed through many temperatures and climates,\nhas passed Cape Horn twice and the equator four times.\nCHA UCHE GF BON\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0343";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

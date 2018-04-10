@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4741/label_4748";
-    dct:type "image";
-    w:bagOfWords "onquistador\nCASA LAZO, S. A\nJEREZ\nJeres Industrial\n"@undefined;
-    gv:color [
-  gv:hex "e1c8a8";
-  gv:red "225";
-  gv:blue "168";
-  gv:green "200";
-  gv:score "42.871812";
-  gv:coverage "23.833333"
-], [
-  gv:hex "b8986a";
-  gv:red "184";
-  gv:blue "106";
-  gv:green "152";
-  gv:score "8.2995944";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "9d6e43";
-  gv:red "157";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "7.9680689";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "c18f65";
-  gv:red "193";
-  gv:blue "101";
-  gv:green "143";
-  gv:score "7.372879999999999";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "7c4e22";
-  gv:red "124";
-  gv:blue "34";
-  gv:green "78";
-  gv:score "4.9146064";
-  gv:coverage "0.5"
-], [
-  gv:hex "94774a";
-  gv:red "148";
-  gv:blue "74";
-  gv:green "119";
-  gv:score "4.4319469";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "dcb88b";
-  gv:red "220";
-  gv:blue "139";
-  gv:green "184";
-  gv:score "4.1541357";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "b69d78";
-  gv:red "182";
-  gv:blue "120";
-  gv:green "157";
-  gv:score "3.7620059999999995";
-  gv:coverage "0.98"
-], [
-  gv:hex "eed7b7";
-  gv:red "238";
-  gv:blue "183";
-  gv:green "215";
-  gv:score "2.9839485999999997";
-  gv:coverage "6.4733334000000005"
-], [
-  gv:hex "eabb9c";
-  gv:red "234";
-  gv:blue "156";
-  gv:green "187";
-  gv:score "2.2478689";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.626634"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.879517"
-];
-    w:bagOfWords "onquistador\nCASA LAZO, S. A\nJEREZ\nJeres Industrial\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4748";
+    <schema.keywords> "Brandy Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3092";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "PRODUCT OF\n193G\nST-EMILION\nAROT & ROGER FILS\nNEGOCIA MTS A\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "625445";
-  gv:red "98";
-  gv:blue "69";
-  gv:green "84";
-  gv:score "19.506121";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "d5c3b1";
-  gv:red "213";
-  gv:blue "177";
-  gv:green "195";
-  gv:score "14.945257000000002";
-  gv:coverage "23.919999999999998"
-], [
-  gv:hex "817162";
-  gv:red "129";
-  gv:blue "98";
-  gv:green "113";
-  gv:score "11.852208000000001";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "5c5349";
-  gv:red "92";
-  gv:blue "73";
-  gv:green "83";
-  gv:score "9.8607";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "7c7166";
-  gv:red "124";
-  gv:blue "102";
-  gv:green "113";
-  gv:score "7.7476464";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "3f3527";
-  gv:red "63";
-  gv:blue "39";
-  gv:green "53";
-  gv:score "7.1268894";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "aa9786";
-  gv:red "170";
-  gv:blue "134";
-  gv:green "151";
-  gv:score "6.7460939";
-  gv:coverage "3.08"
-], [
-  gv:hex "eadbca";
-  gv:red "234";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "4.4999059";
-  gv:coverage "3.5000000000000004"
-], [
-  gv:hex "40362c";
-  gv:red "64";
-  gv:blue "44";
-  gv:green "54";
-  gv:score "2.9729813000000003";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "937265";
-  gv:red "147";
-  gv:blue "101";
-  gv:green "114";
-  gv:score "2.863273";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.18305899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCT OF\n193G\nST-EMILION\nAROT & ROGER FILS\nNEGOCIA MTS A\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3092";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

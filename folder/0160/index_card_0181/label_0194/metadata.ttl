@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0181/label_0194";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "halliant\nfamily BRAND\nALCOHOL 13%\nNET CONTENTS\nBY VOLUME\nSAN BENITO WINERY\nPRODUCED & BOTTLED BY\n1 PT. 8 FL OZ.\nHOLLISTER, CALIFORNIA.\nCROCKER UNION. S F.\n"@eng;
-    gv:color [
-  gv:hex "ccc0ae";
-  gv:red "204";
-  gv:blue "174";
-  gv:green "192";
-  gv:score "12.890975";
-  gv:coverage "11.4"
-], [
-  gv:hex "60533a";
-  gv:red "96";
-  gv:blue "58";
-  gv:green "83";
-  gv:score "10.467327";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "8e3824";
-  gv:red "142";
-  gv:blue "36";
-  gv:green "56";
-  gv:score "9.3605138";
-  gv:coverage "0.1"
-], [
-  gv:hex "cec4b9";
-  gv:red "206";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "10.640689";
-  gv:coverage "11.18"
-], [
-  gv:hex "a89e89";
-  gv:red "168";
-  gv:blue "137";
-  gv:green "158";
-  gv:score "8.1595607";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "80735d";
-  gv:red "128";
-  gv:blue "93";
-  gv:green "115";
-  gv:score "7.4836135";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "764932";
-  gv:red "118";
-  gv:blue "50";
-  gv:green "73";
-  gv:score "7.246037600000001";
-  gv:coverage "0.18"
-], [
-  gv:hex "413724";
-  gv:red "65";
-  gv:blue "36";
-  gv:green "55";
-  gv:score "4.7784746";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "b25441";
-  gv:red "178";
-  gv:blue "65";
-  gv:green "84";
-  gv:score "4.444902399999999";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "7b482a";
-  gv:red "123";
-  gv:blue "42";
-  gv:green "72";
-  gv:score "4.0855568";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.572777"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "64.616066"
-];
-    w:bagOfWords "halliant\nfamily BRAND\nALCOHOL 13%\nNET CONTENTS\nBY VOLUME\nSAN BENITO WINERY\nPRODUCED & BOTTLED BY\n1 PT. 8 FL OZ.\nHOLLISTER, CALIFORNIA.\nCROCKER UNION. S F.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0194";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

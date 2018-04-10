@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2836";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "EN CHATEAU\nMIS\nAU CHATEAU LAFAURIE-PEYRAGUEY\nER\nGRAND CRU DE SAUTERNES\n1945\nAPPELLATION CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "d5c2ae";
-  gv:red "213";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "52.943282999999994";
-  gv:coverage "22.96"
-], [
-  gv:hex "b1a08c";
-  gv:red "177";
-  gv:blue "140";
-  gv:green "160";
-  gv:score "28.346002";
-  gv:coverage "2.5"
-], [
-  gv:hex "e9d7c4";
-  gv:red "233";
-  gv:blue "196";
-  gv:green "215";
-  gv:score "10.892731999999999";
-  gv:coverage "11.16"
-], [
-  gv:hex "e0ba9e";
-  gv:red "224";
-  gv:blue "158";
-  gv:green "186";
-  gv:score "3.1495470999999995";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "927f69";
-  gv:red "146";
-  gv:blue "105";
-  gv:green "127";
-  gv:score "1.8524737999999998";
-  gv:coverage "0.1"
-], [
-  gv:hex "bc967a";
-  gv:red "188";
-  gv:blue "122";
-  gv:green "150";
-  gv:score "1.7269412000000002";
-  gv:coverage "0.2"
-], [
-  gv:hex "40382d";
-  gv:red "64";
-  gv:blue "45";
-  gv:green "56";
-  gv:score "0.0077053925999999995";
-  gv:coverage "0.04"
-], [
-  gv:hex "a07b5f";
-  gv:red "160";
-  gv:blue "95";
-  gv:green "123";
-  gv:score "0.77034873";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "261e12";
-  gv:red "38";
-  gv:blue "18";
-  gv:green "30";
-  gv:score "0.006116195400000001";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "fdd9bf";
-  gv:red "253";
-  gv:blue "191";
-  gv:green "217";
-  gv:score "0.24037989999999998";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.295718"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.863216"
-];
-    w:bagOfWords "EN CHATEAU\nMIS\nAU CHATEAU LAFAURIE-PEYRAGUEY\nER\nGRAND CRU DE SAUTERNES\n1945\nAPPELLATION CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2836";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0121";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "PRODUCED AN\nBOTTLED IN ITALY BY: F.LLI GANCIA & C.- CANELLI (ITALY)\nVINTAGE 1942\nGRIGNOLINO\nITALIAN RED WINE\nDELLA REAL CASA\nFLLI GANCIA C.\nCANELLI TALIA\nNET CONTENTS: 1 PINT, 7 FL ozs. ALCOHOL BY VOLUME: 13\n"@ita;
-    gv:color [
-  gv:hex "dfc3a1";
-  gv:red "223";
-  gv:blue "161";
-  gv:green "195";
-  gv:score "24.350108000000002";
-  gv:coverage "10.74"
-], [
-  gv:hex "8a755c";
-  gv:red "138";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "8.11847";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "924430";
-  gv:red "146";
-  gv:blue "48";
-  gv:green "68";
-  gv:score "3.2329164";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "efbb9e";
-  gv:red "239";
-  gv:blue "158";
-  gv:green "187";
-  gv:score "8.155652100000001";
-  gv:coverage "4.0466666"
-], [
-  gv:hex "b1997d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "7.5040683";
-  gv:coverage "2.26"
-], [
-  gv:hex "64513b";
-  gv:red "100";
-  gv:blue "59";
-  gv:green "81";
-  gv:score "7.009090499999999";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "9b6d55";
-  gv:red "155";
-  gv:blue "85";
-  gv:green "109";
-  gv:score "5.4579061";
-  gv:coverage "1.72"
-], [
-  gv:hex "c19178";
-  gv:red "193";
-  gv:blue "120";
-  gv:green "145";
-  gv:score "5.4347184";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "45331e";
-  gv:red "69";
-  gv:blue "30";
-  gv:green "51";
-  gv:score "5.1089268";
-  gv:coverage "1.02"
-], [
-  gv:hex "744d36";
-  gv:red "116";
-  gv:blue "54";
-  gv:green "77";
-  gv:score "3.3893939";
-  gv:coverage "0.76666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.020209"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "57.61020799999999"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "55.449479999999994"
-];
-    w:bagOfWords "PRODUCED AN\nBOTTLED IN ITALY BY: F.LLI GANCIA & C.- CANELLI (ITALY)\nVINTAGE 1942\nGRIGNOLINO\nITALIAN RED WINE\nDELLA REAL CASA\nFLLI GANCIA C.\nCANELLI TALIA\nNET CONTENTS: 1 PINT, 7 FL ozs. ALCOHOL BY VOLUME: 13\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0121";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

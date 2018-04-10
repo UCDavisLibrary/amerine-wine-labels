@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2924";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "PINOT D'ALSACE\nGUSTAVE LORENTZ\nVITICULTEUR NEG o CIA, NT\nBER G HEI M\nH A U T\n"@fra;
-    gv:color [
-  gv:hex "e1bf8f";
-  gv:red "225";
-  gv:blue "143";
-  gv:green "191";
-  gv:score "41.239833999999995";
-  gv:coverage "14.366667"
-], [
-  gv:hex "695226";
-  gv:red "105";
-  gv:blue "38";
-  gv:green "82";
-  gv:score "1.9929484000000002";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "84361e";
-  gv:red "132";
-  gv:blue "30";
-  gv:green "54";
-  gv:score "1.7408697000000002";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "3c3715";
-  gv:red "60";
-  gv:blue "21";
-  gv:green "55";
-  gv:score "1.0774201";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "dec29c";
-  gv:red "222";
-  gv:blue "156";
-  gv:green "194";
-  gv:score "13.656241";
-  gv:coverage "11.799999999999999"
-], [
-  gv:hex "e5b688";
-  gv:red "229";
-  gv:blue "136";
-  gv:green "182";
-  gv:score "10.904814";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "bf9e6d";
-  gv:red "191";
-  gv:blue "109";
-  gv:green "158";
-  gv:score "5.513734";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "c99466";
-  gv:red "201";
-  gv:blue "102";
-  gv:green "148";
-  gv:score "5.0013717";
-  gv:coverage "1.72"
-], [
-  gv:hex "a16d45";
-  gv:red "161";
-  gv:blue "69";
-  gv:green "109";
-  gv:score "2.2790557";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "8d7046";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "112";
-  gv:score "1.9458758";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.245849"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.506615000000004"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.176034"
-];
-    w:bagOfWords "PINOT D'ALSACE\nGUSTAVE LORENTZ\nVITICULTEUR NEG o CIA, NT\nBER G HEI M\nH A U T\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2924";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

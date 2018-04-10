@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2508";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Alcoholic Strength by volume 13o5\nContents 1 pint 8 fluid ounces\nAPPELLATION CONTROLEE\n1947\nMAS CUE DE POSE E\nBottled in France\nProduce of France\n"@fra;
-    gv:color [
-  gv:hex "d5bfa2";
-  gv:red "213";
-  gv:blue "162";
-  gv:green "191";
-  gv:score "68.220872";
-  gv:coverage "32.846665"
-], [
-  gv:hex "efddc3";
-  gv:red "239";
-  gv:blue "195";
-  gv:green "221";
-  gv:score "9.342849300000001";
-  gv:coverage "15.326666999999999"
-], [
-  gv:hex "baa389";
-  gv:red "186";
-  gv:blue "137";
-  gv:green "163";
-  gv:score "8.1446327";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "dcb9a7";
-  gv:red "220";
-  gv:blue "167";
-  gv:green "185";
-  gv:score "5.5890854";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "bc9885";
-  gv:red "188";
-  gv:blue "133";
-  gv:green "152";
-  gv:score "5.4857071";
-  gv:coverage "0.16"
-], [
-  gv:hex "443a2e";
-  gv:red "68";
-  gv:blue "46";
-  gv:green "58";
-  gv:score "0.041731843";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "594c43";
-  gv:red "89";
-  gv:blue "67";
-  gv:green "76";
-  gv:score "0.020021561";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "a57763";
-  gv:red "165";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "1.762029";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "f4d4c5";
-  gv:red "244";
-  gv:blue "197";
-  gv:green "212";
-  gv:score "1.0360738";
-  gv:coverage "0.08"
-], [
-  gv:hex "a5998f";
-  gv:red "165";
-  gv:blue "143";
-  gv:green "153";
-  gv:score "0.11530850999999999";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.760087"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.041328"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.852346000000004"
-];
-    w:bagOfWords "Alcoholic Strength by volume 13o5\nContents 1 pint 8 fluid ounces\nAPPELLATION CONTROLEE\n1947\nMAS CUE DE POSE E\nBottled in France\nProduce of France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2508";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

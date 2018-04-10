@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2397";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "1947\nCHATEAU HOUISSANT\nSaint-Estephe\nAppellation Saint-Estephe controlée\nJ. ARAGON, Negociant Caudéran-Bordeaux (Gironde)\nNR. WETTERWALD FRERES, BORDEA\nNo 230, DEF, osE\n"@fra;
-    gv:color [
-  gv:hex "dfc4a4";
-  gv:red "223";
-  gv:blue "164";
-  gv:green "196";
-  gv:score "61.649984";
-  gv:coverage "39.453334"
-], [
-  gv:hex "b06051";
-  gv:red "176";
-  gv:blue "81";
-  gv:green "96";
-  gv:score "7.5466983";
-  gv:coverage "0.42"
-], [
-  gv:hex "c88d76";
-  gv:red "200";
-  gv:blue "118";
-  gv:green "141";
-  gv:score "6.581174600000001";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "d18072";
-  gv:red "209";
-  gv:blue "114";
-  gv:green "128";
-  gv:score "6.318373200000001";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "b4987b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "4.382701600000001";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "e5b49a";
-  gv:red "229";
-  gv:blue "154";
-  gv:green "180";
-  gv:score "3.4385707";
-  gv:coverage "0.6"
-], [
-  gv:hex "8e7458";
-  gv:red "142";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "3.2197628";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "f0d8bd";
-  gv:red "240";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "1.8906489";
-  gv:coverage "5.12"
-], [
-  gv:hex "b1715c";
-  gv:red "177";
-  gv:blue "92";
-  gv:green "113";
-  gv:score "1.5572466";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "f4a597";
-  gv:red "244";
-  gv:blue "151";
-  gv:green "165";
-  gv:score "1.1989187000000001";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.6363"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.968759"
-];
-    w:bagOfWords "1947\nCHATEAU HOUISSANT\nSaint-Estephe\nAppellation Saint-Estephe controlée\nJ. ARAGON, Negociant Caudéran-Bordeaux (Gironde)\nNR. WETTERWALD FRERES, BORDEA\nNo 230, DEF, osE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2397";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3268";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "E1906\nPRODUCE OF FRANCE\nPRODUCE OF FRANCE\nTRADE\nMARK\nALCOHOL BY VOLUME\n3.5\nolo\nCONTENTS\n1 PINT 8 FLUID oz.\nROMA NEE St-VIVANT\nJ. FAIVELEY\nPROPRIETAIRE & NEGOCIANT A NUITS (COTE-D'OR\n"@fra;
-    gv:color [
-  gv:hex "e0c5a3";
-  gv:red "224";
-  gv:blue "163";
-  gv:green "197";
-  gv:score "49.929410000000004";
-  gv:coverage "18.373333"
-], [
-  gv:hex "ca906d";
-  gv:red "202";
-  gv:blue "109";
-  gv:green "144";
-  gv:score "4.0176962";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "b49a77";
-  gv:red "180";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "17.91131";
-  gv:coverage "6.493333"
-], [
-  gv:hex "e7b897";
-  gv:red "231";
-  gv:blue "151";
-  gv:green "184";
-  gv:score "6.2967628";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "f0d6b6";
-  gv:red "240";
-  gv:blue "182";
-  gv:green "214";
-  gv:score "5.7206105";
-  gv:coverage "11.333334"
-], [
-  gv:hex "c89777";
-  gv:red "200";
-  gv:blue "119";
-  gv:green "151";
-  gv:score "3.5255875";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "927958";
-  gv:red "146";
-  gv:blue "88";
-  gv:green "121";
-  gv:score "3.1988221999999995";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "a26c47";
-  gv:red "162";
-  gv:blue "71";
-  gv:green "108";
-  gv:score "1.9851126000000001";
-  gv:coverage "0.22"
-], [
-  gv:hex "b3976c";
-  gv:red "179";
-  gv:blue "108";
-  gv:green "151";
-  gv:score "1.8141124000000002";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "967b50";
-  gv:red "150";
-  gv:blue "80";
-  gv:green "123";
-  gv:score "1.0561472";
-  gv:coverage "0.52666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.370917"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.5014"
-];
-    w:bagOfWords "E1906\nPRODUCE OF FRANCE\nPRODUCE OF FRANCE\nTRADE\nMARK\nALCOHOL BY VOLUME\n3.5\nolo\nCONTENTS\n1 PINT 8 FLUID oz.\nROMA NEE St-VIVANT\nJ. FAIVELEY\nPROPRIETAIRE & NEGOCIANT A NUITS (COTE-D'OR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3268";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

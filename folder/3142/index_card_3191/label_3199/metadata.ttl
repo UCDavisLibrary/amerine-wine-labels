@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3191/label_3199";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "STILL RED BURCUNDY MINE\nBonnes STQaRes\nAPPELLATION CONTROLEE\nMise en bouteille a u d o m a in e\nPRODUCED AND BOTTLED BY\nR. A DR EN\np ROpRIETAIRE-VITICULTEUR\nCHAM BOLLE MUSIGNY\nCOTE D OR\n"@fra;
-    gv:color [
-  gv:hex "e0bf9b";
-  gv:red "224";
-  gv:blue "155";
-  gv:green "191";
-  gv:score "28.526386999999996";
-  gv:coverage "17.740000000000002"
-], [
-  gv:hex "4e1d0b";
-  gv:red "78";
-  gv:blue "11";
-  gv:green "29";
-  gv:score "6.1170798";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "e2b897";
-  gv:red "226";
-  gv:blue "151";
-  gv:green "184";
-  gv:score "15.389584000000001";
-  gv:coverage "4.6866667"
-], [
-  gv:hex "bd9272";
-  gv:red "189";
-  gv:blue "114";
-  gv:green "146";
-  gv:score "10.026352";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "dcb78b";
-  gv:red "220";
-  gv:blue "139";
-  gv:green "183";
-  gv:score "8.3870426";
-  gv:coverage "3.7600000000000002"
-], [
-  gv:hex "9c6f52";
-  gv:red "156";
-  gv:blue "82";
-  gv:green "111";
-  gv:score "5.6062974";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "c3986e";
-  gv:red "195";
-  gv:blue "110";
-  gv:green "152";
-  gv:score "4.3335184";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "dbb185";
-  gv:red "219";
-  gv:blue "133";
-  gv:green "177";
-  gv:score "3.7608080000000004";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "996d47";
-  gv:red "153";
-  gv:blue "71";
-  gv:green "109";
-  gv:score "3.3458307";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "5a2a0d";
-  gv:red "90";
-  gv:blue "13";
-  gv:green "42";
-  gv:score "3.3312413999999997";
-  gv:coverage "0.65333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.93568"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.096517999999996"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.944877999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.683793"
-];
-    w:bagOfWords "STILL RED BURCUNDY MINE\nBonnes STQaRes\nAPPELLATION CONTROLEE\nMise en bouteille a u d o m a in e\nPRODUCED AND BOTTLED BY\nR. A DR EN\np ROpRIETAIRE-VITICULTEUR\nCHAM BOLLE MUSIGNY\nCOTE D OR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3199";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

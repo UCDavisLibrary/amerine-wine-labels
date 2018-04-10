@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1921/label_1925";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "FLORIDO\nBOTTLED IN THE\nSHERRY DISTRICT\nUCE OF SPA\nFull Golden Sherry,\nSHERRY GROWERS\nSANLUCAR DE BARRAMEDA\n20 ALCOHOL BY VOLUME\nCONTENTS: 1 PT 9 FL. OZS.\n"@spa;
-    gv:color [
-  gv:hex "eadbc9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "219";
-  gv:score "33.106169";
-  gv:coverage "25.966668"
-], [
-  gv:hex "120401";
-  gv:red "18";
-  gv:blue "1";
-  gv:green "4";
-  gv:score "3.7581805000000004";
-  gv:coverage "3.0866666"
-], [
-  gv:hex "9d6c21";
-  gv:red "157";
-  gv:blue "33";
-  gv:green "108";
-  gv:score "2.4744265000000003";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "ddb55e";
-  gv:red "221";
-  gv:blue "94";
-  gv:green "181";
-  gv:score "2.1218078";
-  gv:coverage "6.433333500000001"
-], [
-  gv:hex "605037";
-  gv:red "96";
-  gv:blue "55";
-  gv:green "80";
-  gv:score "1.0915671";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "6c2000";
-  gv:red "108";
-  gv:blue "undefined";
-  gv:green "32";
-  gv:score "0.23126209";
-  gv:coverage "0.08"
-], [
-  gv:hex "e6dfd7";
-  gv:red "230";
-  gv:blue "215";
-  gv:green "223";
-  gv:score "17.582934";
-  gv:coverage "15.86"
-], [
-  gv:hex "ddceb7";
-  gv:red "221";
-  gv:blue "183";
-  gv:green "206";
-  gv:score "16.642693";
-  gv:coverage "16.18"
-], [
-  gv:hex "ddd0c5";
-  gv:red "221";
-  gv:blue "197";
-  gv:green "208";
-  gv:score "2.0362778";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "cd9743";
-  gv:red "205";
-  gv:blue "67";
-  gv:green "151";
-  gv:score "1.8895578";
-  gv:coverage "5.6533333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.566541"
-];
-    w:bagOfWords "FLORIDO\nBOTTLED IN THE\nSHERRY DISTRICT\nUCE OF SPA\nFull Golden Sherry,\nSHERRY GROWERS\nSANLUCAR DE BARRAMEDA\n20 ALCOHOL BY VOLUME\nCONTENTS: 1 PT 9 FL. OZS.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1925";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

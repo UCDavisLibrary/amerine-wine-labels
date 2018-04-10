@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0796";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "NES\nCLOS DES\nAd\nCONTROLEE\nAPPELLATION COAHAUDUDA\nMONOPOLE DE\nANDRE BIROTECIE\nSTE D'EXPORTATIO\nDE P\nPAGANDE\nDES GRAND\nVNS D'ANJOU\no G O\nNEGOCIANTSA MURS (MAINEC LoIRE)\n"@fra;
-    gv:color [
-  gv:hex "e0c5a5";
-  gv:red "224";
-  gv:blue "165";
-  gv:green "197";
-  gv:score "41.011795";
-  gv:coverage "17.353334"
-], [
-  gv:hex "983f21";
-  gv:red "152";
-  gv:blue "33";
-  gv:green "63";
-  gv:score "1.7049603";
-  gv:coverage "0.2"
-], [
-  gv:hex "c33f1e";
-  gv:red "195";
-  gv:blue "30";
-  gv:green "63";
-  gv:score "1.3838121";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "f1d7b7";
-  gv:red "241";
-  gv:blue "183";
-  gv:green "215";
-  gv:score "9.857574099999999";
-  gv:coverage "6.0866665"
-], [
-  gv:hex "b29b7e";
-  gv:red "178";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "8.8249482";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "e0c291";
-  gv:red "224";
-  gv:blue "145";
-  gv:green "194";
-  gv:score "5.0909054000000005";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "e8bc9f";
-  gv:red "232";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "4.5728273999999995";
-  gv:coverage "1.22"
-], [
-  gv:hex "edb58a";
-  gv:red "237";
-  gv:blue "138";
-  gv:green "181";
-  gv:score "3.4973275";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "8c795e";
-  gv:red "140";
-  gv:blue "94";
-  gv:green "121";
-  gv:score "3.3238016000000004";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "cb966a";
-  gv:red "203";
-  gv:blue "106";
-  gv:green "150";
-  gv:score "1.9559191999999999";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.452471"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "NES\nCLOS DES\nAd\nCONTROLEE\nAPPELLATION COAHAUDUDA\nMONOPOLE DE\nANDRE BIROTECIE\nSTE D'EXPORTATIO\nDE P\nPAGANDE\nDES GRAND\nVNS D'ANJOU\no G O\nNEGOCIANTSA MURS (MAINEC LoIRE)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0796";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

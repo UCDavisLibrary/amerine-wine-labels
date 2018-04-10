@@ -1,99 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4935";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Weingut Contents 1 P\nand 7 Fl. OZ.\nD\nBeinbaugebiet\nAlcohol 8,5 olo\nby Volume\nGMBH\nAN WEINGROSSKELLEREIEN\nRiesling\nProduct of German\nOn\nOF GERMANY\nPRODUCE Contents\nOz.\n1 Pint 8 er\niefer att oer\nchor(enter\nrier\nelteret\nTRIER\nDACKWEILER Co.\nentral\nreiherr\nin set\nabgefillt orhprano "@undefined;
-    gv:color [
-  gv:hex "d5c2ac";
-  gv:red "213";
-  gv:blue "172";
-  gv:green "194";
-  gv:score "18.349204999999998";
-  gv:coverage "16.853334"
-], [
-  gv:hex "a06c5b";
-  gv:red "160";
-  gv:blue "91";
-  gv:green "108";
-  gv:score "5.9147231";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "5c1205";
-  gv:red "92";
-  gv:blue "5";
-  gv:green "18";
-  gv:score "0.48217772999999997";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "cdc1b8";
-  gv:red "205";
-  gv:blue "184";
-  gv:green "193";
-  gv:score "10.487908";
-  gv:coverage "14.126667000000001"
-], [
-  gv:hex "e8ddd3";
-  gv:red "232";
-  gv:blue "211";
-  gv:green "221";
-  gv:score "9.608402100000001";
-  gv:coverage "33.313334"
-], [
-  gv:hex "ae9c87";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "156";
-  gv:score "7.7457927";
-  gv:coverage "3.6933333"
-], [
-  gv:hex "a99d94";
-  gv:red "169";
-  gv:blue "148";
-  gv:green "157";
-  gv:score "6.8442725";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "ebdcc9";
-  gv:red "235";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "5.6528248";
-  gv:coverage "13.706666"
-], [
-  gv:hex "88755e";
-  gv:red "136";
-  gv:blue "94";
-  gv:green "117";
-  gv:score "4.796838";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "8b6e38";
-  gv:red "139";
-  gv:blue "56";
-  gv:green "110";
-  gv:score "3.7114158";
-  gv:coverage "0.9466666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.227035"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Weingut Contents 1 P\nand 7 Fl. OZ.\nD\nBeinbaugebiet\nAlcohol 8,5 olo\nby Volume\nGMBH\nAN WEINGROSSKELLEREIEN\nRiesling\nProduct of German\nOn\nOF GERMANY\nPRODUCE Contents\nOz.\n1 Pint 8 er\niefer att oer\nchor(enter\nrier\nelteret\nTRIER\nDACKWEILER Co.\nentral\nreiherr\nin set\nabgefillt orhprano "@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4935";
+    <schema.keywords> "UC Reporters Notebook@en".
+

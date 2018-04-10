@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2188";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "anning\nCALIFORNIA\nALCOHOL 20% BY VOLUME\nPRODUCED AND BOTTLED BY\nTULARE WINERY COMPANY\nTULARE, CALIFORNIA\nBOTTLED AT THE WINERY\nLOUIS ROESCH Co. LITHO, S. F.\n"@eng;
-    gv:color [
-  gv:hex "d7c2a7";
-  gv:red "215";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "20.563169000000002";
-  gv:coverage "26.746666"
-], [
-  gv:hex "8f3a26";
-  gv:red "143";
-  gv:blue "38";
-  gv:green "58";
-  gv:score "3.7663691";
-  gv:coverage "0.22"
-], [
-  gv:hex "efb9a1";
-  gv:red "239";
-  gv:blue "161";
-  gv:green "185";
-  gv:score "14.247245";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "b09c7e";
-  gv:red "176";
-  gv:blue "126";
-  gv:green "156";
-  gv:score "8.6128287";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "f0dabc";
-  gv:red "240";
-  gv:blue "188";
-  gv:green "218";
-  gv:score "7.015409999999999";
-  gv:coverage "13.893333"
-], [
-  gv:hex "c79279";
-  gv:red "199";
-  gv:blue "121";
-  gv:green "146";
-  gv:score "6.357559999999999";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "8b7657";
-  gv:red "139";
-  gv:blue "87";
-  gv:green "118";
-  gv:score "4.7014039";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "a16e56";
-  gv:red "161";
-  gv:blue "86";
-  gv:green "110";
-  gv:score "4.1004151";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "d98476";
-  gv:red "217";
-  gv:blue "118";
-  gv:green "132";
-  gv:score "3.2593273";
-  gv:coverage "0.16"
-], [
-  gv:hex "a32c21";
-  gv:red "163";
-  gv:blue "33";
-  gv:green "44";
-  gv:score "3.2366805";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.97808400000001"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "60.150087"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.410500000000006"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "50.798916999999996"
-];
-    w:bagOfWords "anning\nCALIFORNIA\nALCOHOL 20% BY VOLUME\nPRODUCED AND BOTTLED BY\nTULARE WINERY COMPANY\nTULARE, CALIFORNIA\nBOTTLED AT THE WINERY\nLOUIS ROESCH Co. LITHO, S. F.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2188";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

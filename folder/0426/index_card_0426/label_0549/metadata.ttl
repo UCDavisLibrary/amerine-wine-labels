@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0549";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E I N G A U\n1950er\nRio richer\nGrafenberg\nNATUR REIN\nDerwaltung Der Staatsloeinguter\nEltoille\nElgenet Rellerabyug unt fork branb\n"@deu;
-    gv:color [
-  gv:hex "d7bfa4";
-  gv:red "215";
-  gv:blue "164";
-  gv:green "191";
-  gv:score "74.517065";
-  gv:coverage "20.066667"
-], [
-  gv:hex "b79e84";
-  gv:red "183";
-  gv:blue "132";
-  gv:green "158";
-  gv:score "9.754017";
-  gv:coverage "5.04"
-], [
-  gv:hex "8b755d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "117";
-  gv:score "4.1688319";
-  gv:coverage "1.28"
-], [
-  gv:hex "68553f";
-  gv:red "104";
-  gv:blue "63";
-  gv:green "85";
-  gv:score "3.4683321000000005";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "cec2b6";
-  gv:red "206";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "1.2990041";
-  gv:coverage "4.4733334"
-], [
-  gv:hex "413222";
-  gv:red "65";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "0.95885079";
-  gv:coverage "0.26"
-], [
-  gv:hex "bb987b";
-  gv:red "187";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "0.9319333399999999";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "5d554d";
-  gv:red "93";
-  gv:blue "77";
-  gv:green "85";
-  gv:score "0.77825654";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "e0bca2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "188";
-  gv:score "0.7305161600000001";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e3d9ce";
-  gv:red "227";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "0.67435773";
-  gv:coverage "65.386665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.958357"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "R H E I N G A U\n1950er\nRio richer\nGrafenberg\nNATUR REIN\nDerwaltung Der Staatsloeinguter\nEltoille\nElgenet Rellerabyug unt fork branb\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0549";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

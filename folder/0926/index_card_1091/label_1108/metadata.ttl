@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1091/label_1108";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "LA VAUX\nBourgeoit frere\nCadot.\nalfaiques VA UD\n"@deu;
-    gv:color [
-  gv:hex "cb933c";
-  gv:red "203";
-  gv:blue "60";
-  gv:green "147";
-  gv:score "13.89835";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "e3c6a5";
-  gv:red "227";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "12.393089999999999";
-  gv:coverage "16.626666"
-], [
-  gv:hex "e9b158";
-  gv:red "233";
-  gv:blue "88";
-  gv:green "177";
-  gv:score "8.5139573";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "cd9220";
-  gv:red "205";
-  gv:blue "32";
-  gv:green "146";
-  gv:score "7.897361399999999";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "a66f1e";
-  gv:red "166";
-  gv:blue "30";
-  gv:green "111";
-  gv:score "7.7839218";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "e6b481";
-  gv:red "230";
-  gv:blue "129";
-  gv:green "180";
-  gv:score "7.0169665000000006";
-  gv:coverage "2.4"
-], [
-  gv:hex "cc9768";
-  gv:red "204";
-  gv:blue "104";
-  gv:green "151";
-  gv:score "6.6033788";
-  gv:coverage "2.06"
-], [
-  gv:hex "e7b85e";
-  gv:red "231";
-  gv:blue "94";
-  gv:green "184";
-  gv:score "4.8684523";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "e3c18d";
-  gv:red "227";
-  gv:blue "141";
-  gv:green "193";
-  gv:score "4.1189793";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "e9af3c";
-  gv:red "233";
-  gv:blue "60";
-  gv:green "175";
-  gv:score "4.0613461";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "64.818054"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.50026700000001"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.006724"
-];
-    w:bagOfWords "LA VAUX\nBourgeoit frere\nCadot.\nalfaiques VA UD\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1108";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

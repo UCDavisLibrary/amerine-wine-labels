@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4340";
-    dct:type "image";
-    w:bagOfWords "PRODUIT DE YOUGOSLAVIE\nLOK\nPOLJOPRIVREDNO DOBRO\nROMA\nVIN BLANC DE CRO ATIE\nVINOPROMET\nZAGREB\n"@undefined;
-    gv:color [
-  gv:hex "d6c0a3";
-  gv:red "214";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "27.747723";
-  gv:coverage "9.32"
-], [
-  gv:hex "b59763";
-  gv:red "181";
-  gv:blue "99";
-  gv:green "151";
-  gv:score "16.262273";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "b69d7d";
-  gv:red "182";
-  gv:blue "125";
-  gv:green "157";
-  gv:score "14.713414";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "eedabf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "218";
-  gv:score "11.135302";
-  gv:coverage "15.013333000000001"
-], [
-  gv:hex "cac4c0";
-  gv:red "202";
-  gv:blue "192";
-  gv:green "196";
-  gv:score "7.7613138";
-  gv:coverage "9.4933331"
-], [
-  gv:hex "d9bb8a";
-  gv:red "217";
-  gv:blue "138";
-  gv:green "187";
-  gv:score "6.616783099999999";
-  gv:coverage "0.62"
-], [
-  gv:hex "e6e0de";
-  gv:red "230";
-  gv:blue "222";
-  gv:green "224";
-  gv:score "4.6509933000000006";
-  gv:coverage "58.75333499999999"
-], [
-  gv:hex "9d7f4f";
-  gv:red "157";
-  gv:blue "79";
-  gv:green "127";
-  gv:score "2.2068204000000002";
-  gv:coverage "0.48"
-], [
-  gv:hex "ba8b5a";
-  gv:red "186";
-  gv:blue "90";
-  gv:green "139";
-  gv:score "2.069678";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "a3a1a1";
-  gv:red "163";
-  gv:blue "161";
-  gv:green "161";
-  gv:score "1.6355663999999999";
-  gv:coverage "0.9933332899999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.937628999999994"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUIT DE YOUGOSLAVIE\nLOK\nPOLJOPRIVREDNO DOBRO\nROMA\nVIN BLANC DE CRO ATIE\nVINOPROMET\nZAGREB\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4340";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

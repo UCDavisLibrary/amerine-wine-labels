@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0855";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CHAMPAGNE\nVICTOR CLICO U OT\nMaison Fondée en 1892\nPIERRE ANDRE Succ\"\nFRANCE\nN. M. 3.630.362\n"@fra;
-    gv:color [
-  gv:hex "d7c4af";
-  gv:red "215";
-  gv:blue "175";
-  gv:green "196";
-  gv:score "74.139196";
-  gv:coverage "24.993333"
-], [
-  gv:hex "ab9886";
-  gv:red "171";
-  gv:blue "134";
-  gv:green "152";
-  gv:score "9.6743487";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "867563";
-  gv:red "134";
-  gv:blue "99";
-  gv:green "117";
-  gv:score "7.239999599999999";
-  gv:coverage "1.28"
-], [
-  gv:hex "645242";
-  gv:red "100";
-  gv:blue "66";
-  gv:green "82";
-  gv:score "3.5284612";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "ebd9c7";
-  gv:red "235";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "3.2429129000000003";
-  gv:coverage "12.306666"
-], [
-  gv:hex "473625";
-  gv:red "71";
-  gv:blue "37";
-  gv:green "54";
-  gv:score "1.865644";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "2e1e0c";
-  gv:red "46";
-  gv:blue "12";
-  gv:green "30";
-  gv:score "0.14732864";
-  gv:coverage "0.02"
-], [
-  gv:hex "d1c2b6";
-  gv:red "209";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "0.10076296000000001";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "e4ddd1";
-  gv:red "228";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "0.027667734000000003";
-  gv:coverage "56.48"
-], [
-  gv:hex "575347";
-  gv:red "87";
-  gv:blue "71";
-  gv:green "83";
-  gv:score "0.011832197";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.566204"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "59.74195"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.705837"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.592643"
-];
-    w:bagOfWords "CHAMPAGNE\nVICTOR CLICO U OT\nMaison Fondée en 1892\nPIERRE ANDRE Succ\"\nFRANCE\nN. M. 3.630.362\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0855";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

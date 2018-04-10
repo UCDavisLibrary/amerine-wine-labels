@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0338";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "No. 509P\ni\nCHUS WINE\nBUND\nBACCHUS\nRHINE FARM\nVINEYARDS\nSONOMA\nLOMA PRIETA\nCALIFORNIA\nSPECIAL MEDOC\nBORDEAUX TYPE\nGUNDLACH-BUNDSCHU WINE Co. NC\nSAN FRANCISCO\nGOLD MEDALS AND HIGHEST AWARDS\nCONFERRED AT ALL LEADING EXPOSITIONS.\nCONTENTS 12 FLUID OZS\n"@eng;
-    gv:color [
-  gv:hex "d5c0a0";
-  gv:red "213";
-  gv:blue "160";
-  gv:green "192";
-  gv:score "31.914794";
-  gv:coverage "21.46"
-], [
-  gv:hex "90713e";
-  gv:red "144";
-  gv:blue "62";
-  gv:green "113";
-  gv:score "21.826728";
-  gv:coverage "2.5"
-], [
-  gv:hex "b19c7a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "16.625953";
-  gv:coverage "3.08"
-], [
-  gv:hex "b49663";
-  gv:red "180";
-  gv:blue "99";
-  gv:green "150";
-  gv:score "6.707528999999999";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "775826";
-  gv:red "119";
-  gv:blue "38";
-  gv:green "88";
-  gv:score "6.3554451";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "956b2d";
-  gv:red "149";
-  gv:blue "45";
-  gv:green "107";
-  gv:score "6.2038749";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "79531a";
-  gv:red "121";
-  gv:blue "26";
-  gv:green "83";
-  gv:score "3.049385";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "917b58";
-  gv:red "145";
-  gv:blue "88";
-  gv:green "123";
-  gv:score "2.9715395";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "ecd8b8";
-  gv:red "236";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "1.8192396999999998";
-  gv:coverage "8.34"
-], [
-  gv:hex "383429";
-  gv:red "56";
-  gv:blue "41";
-  gv:green "52";
-  gv:score "0.016146207000000003";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "71.507275"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.191300000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "58.48602699999999"
-];
-    w:bagOfWords "No. 509P\ni\nCHUS WINE\nBUND\nBACCHUS\nRHINE FARM\nVINEYARDS\nSONOMA\nLOMA PRIETA\nCALIFORNIA\nSPECIAL MEDOC\nBORDEAUX TYPE\nGUNDLACH-BUNDSCHU WINE Co. NC\nSAN FRANCISCO\nGOLD MEDALS AND HIGHEST AWARDS\nCONFERRED AT ALL LEADING EXPOSITIONS.\nCONTENTS 12 FLUID OZS\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0338";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

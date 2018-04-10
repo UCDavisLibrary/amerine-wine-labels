@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4476";
-    dct:type "image";
-    w:bagOfWords "REG EM\nB BAIN AS\nBODEGA S\nVINA DO MAL\nBILBAO HARO\nCO SE CHA 19 21\n"@spa;
-    gv:color [
-  gv:hex "b3915b";
-  gv:red "179";
-  gv:blue "91";
-  gv:green "145";
-  gv:score "53.676057";
-  gv:coverage "16.76"
-], [
-  gv:hex "201a15";
-  gv:red "32";
-  gv:blue "21";
-  gv:green "26";
-  gv:score "0.50829388";
-  gv:coverage "3.2199999999999998"
-], [
-  gv:hex "9d7d49";
-  gv:red "157";
-  gv:blue "73";
-  gv:green "125";
-  gv:score "24.815558";
-  gv:coverage "6.706666899999999"
-], [
-  gv:hex "d6b279";
-  gv:red "214";
-  gv:blue "121";
-  gv:green "178";
-  gv:score "6.0546689";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "ba905a";
-  gv:red "186";
-  gv:blue "90";
-  gv:green "144";
-  gv:score "4.553293099999999";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "a47c4b";
-  gv:red "164";
-  gv:blue "75";
-  gv:green "124";
-  gv:score "2.3755025";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "dabe9a";
-  gv:red "218";
-  gv:blue "154";
-  gv:green "190";
-  gv:score "2.2749547";
-  gv:coverage "4.9866665"
-], [
-  gv:hex "b59973";
-  gv:red "181";
-  gv:blue "115";
-  gv:green "153";
-  gv:score "2.1388241999999997";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "bb984c";
-  gv:red "187";
-  gv:blue "76";
-  gv:green "152";
-  gv:score "1.1225582";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "8c7651";
-  gv:red "140";
-  gv:blue "81";
-  gv:green "118";
-  gv:score "0.59236707";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "71.064645"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.260039"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "66.206479"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REG EM\nB BAIN AS\nBODEGA S\nVINA DO MAL\nBILBAO HARO\nCO SE CHA 19 21\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4476";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

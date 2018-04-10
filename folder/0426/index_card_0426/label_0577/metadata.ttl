@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0577";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "5 3 1 9 53\nR HEIN G A u\n1952er Riidesheimer Berg Marienwingert\nRiesling Spatlese\nKeller abzug Erbhof Dr. A. M. Brogsitter-Findk\n"@deu;
-    gv:color [
-  gv:hex "a79a83";
-  gv:red "167";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "26.467791000000002";
-  gv:coverage "3.8733333"
-], [
-  gv:hex "cec1a9";
-  gv:red "206";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "21.67283";
-  gv:coverage "6.54"
-], [
-  gv:hex "857861";
-  gv:red "133";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "20.572059";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "635640";
-  gv:red "99";
-  gv:blue "64";
-  gv:green "86";
-  gv:score "8.5161559";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "cec4ba";
-  gv:red "206";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "6.671672300000001";
-  gv:coverage "7.3866665"
-], [
-  gv:hex "e7ddd3";
-  gv:red "231";
-  gv:blue "211";
-  gv:green "221";
-  gv:score "5.0358251";
-  gv:coverage "70.39999999999999"
-], [
-  gv:hex "a69c92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "4.8952356";
-  gv:coverage "1.76"
-], [
-  gv:hex "e8dbc7";
-  gv:red "232";
-  gv:blue "199";
-  gv:green "219";
-  gv:score "2.6982695000000003";
-  gv:coverage "5.346666600000001"
-], [
-  gv:hex "81776d";
-  gv:red "129";
-  gv:blue "109";
-  gv:green "119";
-  gv:score "2.2373078";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "453822";
-  gv:red "69";
-  gv:blue "34";
-  gv:green "56";
-  gv:score "1.0572249";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.490977"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.346576000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.151576000000006"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.458676000000004"
-];
-    w:bagOfWords "5 3 1 9 53\nR HEIN G A u\n1952er Riidesheimer Berg Marienwingert\nRiesling Spatlese\nKeller abzug Erbhof Dr. A. M. Brogsitter-Findk\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0577";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

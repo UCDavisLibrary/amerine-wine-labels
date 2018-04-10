@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2548";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CHABLIS\nOF FRANCE\nPRODUC\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NEC COTE D'OR)\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "ae9c88";
-  gv:red "174";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "30.443344";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "8c3b23";
-  gv:red "140";
-  gv:blue "35";
-  gv:green "59";
-  gv:score "2.092216";
-  gv:coverage "0.16"
-], [
-  gv:hex "60280f";
-  gv:red "96";
-  gv:blue "15";
-  gv:green "40";
-  gv:score "0.33590386";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "d1bfaa";
-  gv:red "209";
-  gv:blue "170";
-  gv:green "191";
-  gv:score "30.272463";
-  gv:coverage "48.94"
-], [
-  gv:hex "887662";
-  gv:red "136";
-  gv:blue "98";
-  gv:green "118";
-  gv:score "9.142386199999999";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "bc9380";
-  gv:red "188";
-  gv:blue "128";
-  gv:green "147";
-  gv:score "5.5693485";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "ecdbc7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "219";
-  gv:score "5.4923631";
-  gv:coverage "35.04"
-], [
-  gv:hex "614f3a";
-  gv:red "97";
-  gv:blue "58";
-  gv:green "79";
-  gv:score "4.3124862";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "d8b19e";
-  gv:red "216";
-  gv:blue "158";
-  gv:green "177";
-  gv:score "3.2185145";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "96715d";
-  gv:red "150";
-  gv:blue "93";
-  gv:green "113";
-  gv:score "2.6800591";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.139540000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHABLIS\nOF FRANCE\nPRODUC\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NEC COTE D'OR)\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2548";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

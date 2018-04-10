@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4763";
-    dct:type "image";
-    w:bagOfWords "PRODUCE OF AMERICA\nroNCDI ROYAL SELECT\nROYAL MONOPOLE\nS P A R K LIN G\nWINE\nCALIFORNIA CHAMPAGNE\nBULK\nP R O C E S S\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nALCOHOL 13% BY VOLUME\nHEALDSBURG, CALIF.\nCONTENTS 1 PINT, 10 FLUID OZ.\nSOLE SALE REPRESENTATIVE JOHN ESQUIN. LTD. SAN FRANCIsco, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "eee3dc";
-  gv:red "238";
-  gv:blue "220";
-  gv:green "227";
-  gv:score "19.994034";
-  gv:coverage "86.16"
-], [
-  gv:hex "e7bfbc";
-  gv:red "231";
-  gv:blue "188";
-  gv:green "191";
-  gv:score "10.183813";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "3a3330";
-  gv:red "58";
-  gv:blue "48";
-  gv:green "51";
-  gv:score "2.192995";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "cfc3bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "195";
-  gv:score "9.880333400000001";
-  gv:coverage "3.3266667"
-], [
-  gv:hex "fbd7d4";
-  gv:red "251";
-  gv:blue "212";
-  gv:green "215";
-  gv:score "8.4904894";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "e8b7b2";
-  gv:red "232";
-  gv:blue "178";
-  gv:green "183";
-  gv:score "6.6509320999999995";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "d2c7b5";
-  gv:red "210";
-  gv:blue "181";
-  gv:green "199";
-  gv:score "5.7527941";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "bc9491";
-  gv:red "188";
-  gv:blue "145";
-  gv:green "148";
-  gv:score "5.2879564";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "a9a09a";
-  gv:red "169";
-  gv:blue "154";
-  gv:green "160";
-  gv:score "4.543392";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "afa292";
-  gv:red "175";
-  gv:blue "146";
-  gv:green "162";
-  gv:score "4.362135";
-  gv:coverage "0.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.110832"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "55.661671999999996"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "51.290338999999996"
-];
-    w:bagOfWords "PRODUCE OF AMERICA\nroNCDI ROYAL SELECT\nROYAL MONOPOLE\nS P A R K LIN G\nWINE\nCALIFORNIA CHAMPAGNE\nBULK\nP R O C E S S\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nALCOHOL 13% BY VOLUME\nHEALDSBURG, CALIF.\nCONTENTS 1 PINT, 10 FLUID OZ.\nSOLE SALE REPRESENTATIVE JOHN ESQUIN. LTD. SAN FRANCIsco, CALIF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4763";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

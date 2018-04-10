@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2547";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Produit de France\nMarque Déposée\nollS\nondée en 1798\nBeaune (Cote d'or)\nGrand Chablis ,,Pluie d'Or\" 1949\n11 13 alc\n"@fra;
-    gv:color [
-  gv:hex "bb5f44";
-  gv:red "187";
-  gv:blue "68";
-  gv:green "95";
-  gv:score "9.125333300000001";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "f3ba9e";
-  gv:red "243";
-  gv:blue "158";
-  gv:green "186";
-  gv:score "6.4856037";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "a4301c";
-  gv:red "164";
-  gv:blue "28";
-  gv:green "48";
-  gv:score "5.74668";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "dd8266";
-  gv:red "221";
-  gv:blue "102";
-  gv:green "130";
-  gv:score "8.8239446";
-  gv:coverage "0.52"
-], [
-  gv:hex "dac4a6";
-  gv:red "218";
-  gv:blue "166";
-  gv:green "196";
-  gv:score "6.1875843";
-  gv:coverage "26.386665999999998"
-], [
-  gv:hex "c69077";
-  gv:red "198";
-  gv:blue "119";
-  gv:green "144";
-  gv:score "6.0908619";
-  gv:coverage "0.96"
-], [
-  gv:hex "a06e58";
-  gv:red "160";
-  gv:blue "88";
-  gv:green "110";
-  gv:score "6.0397271";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "ad987c";
-  gv:red "173";
-  gv:blue "124";
-  gv:green "152";
-  gv:score "5.7075124";
-  gv:coverage "2.48"
-], [
-  gv:hex "963a1e";
-  gv:red "150";
-  gv:blue "30";
-  gv:green "58";
-  gv:score "4.7780357";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "8c765a";
-  gv:red "140";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "4.1214474";
-  gv:coverage "1.3066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.656983"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.728927"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.144147000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.550956"
-];
-    w:bagOfWords "Produit de France\nMarque Déposée\nollS\nondée en 1798\nBeaune (Cote d'or)\nGrand Chablis ,,Pluie d'Or\" 1949\n11 13 alc\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2547";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

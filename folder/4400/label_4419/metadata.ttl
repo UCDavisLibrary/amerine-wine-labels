@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4419";
-    dct:type "image";
-    w:bagOfWords "DE 18\nWCION DE B\no ENCES\nTIQUE\n1865\nAMR\n38\nCTO\nRous\nHEREDEROS DEL\ns ORDEAU\nMARQUES DE RISCAL\nNLLA DE D\nON DE PARIS\nELCIEGO (AL AVA)\nAAGEMENT\n1949\nMARQUIS\nDE RISCAL\nELCIEGO\nPARIS 1872\nMARCA CONCEDIDA MARni E DEI TE\n"@spa;
-    gv:color [
-  gv:hex "d0c0a8";
-  gv:red "208";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "64.913839";
-  gv:coverage "17.06"
-], [
-  gv:hex "b19f84";
-  gv:red "177";
-  gv:blue "132";
-  gv:green "159";
-  gv:score "19.761245";
-  gv:coverage "1.6"
-], [
-  gv:hex "e8dac5";
-  gv:red "232";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "8.015316";
-  gv:coverage "9.04"
-], [
-  gv:hex "8d7f64";
-  gv:red "141";
-  gv:blue "100";
-  gv:green "127";
-  gv:score "5.702243";
-  gv:coverage "0.62"
-], [
-  gv:hex "d9cec0";
-  gv:red "217";
-  gv:blue "192";
-  gv:green "206";
-  gv:score "0.9689908500000001";
-  gv:coverage "11.086667"
-], [
-  gv:hex "3e3529";
-  gv:red "62";
-  gv:blue "41";
-  gv:green "53";
-  gv:score "0.007358584799999999";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e3dacb";
-  gv:red "227";
-  gv:blue "203";
-  gv:green "218";
-  gv:score "0.6096235";
-  gv:coverage "60.346669"
-], [
-  gv:hex "7e7369";
-  gv:red "126";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "0.014140153";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "a79b92";
-  gv:red "167";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "0.0072428367000000006";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "5f574c";
-  gv:red "95";
-  gv:blue "76";
-  gv:green "87";
-  gv:score "2.4402128e-9";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.449892999999996"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "57.693624"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "57.187462"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "55.871922"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.660173"
-];
-    w:bagOfWords "DE 18\nWCION DE B\no ENCES\nTIQUE\n1865\nAMR\n38\nCTO\nRous\nHEREDEROS DEL\ns ORDEAU\nMARQUES DE RISCAL\nNLLA DE D\nON DE PARIS\nELCIEGO (AL AVA)\nAAGEMENT\n1949\nMARQUIS\nDE RISCAL\nELCIEGO\nPARIS 1872\nMARCA CONCEDIDA MARni E DEI TE\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4419";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

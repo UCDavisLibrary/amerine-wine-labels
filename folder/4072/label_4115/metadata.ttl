@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4115";
-    dct:type "image";
-    w:bagOfWords "outin a f enfo\nhatteau deaf acque\nLES DOMAIN. ES J. THOR IN\nROMAN ECHE THORIN S-BOURGOGNE\nIMP.X.PER Roux MACON 1946\n"@fra;
-    gv:color [
-  gv:hex "dac1a6";
-  gv:red "218";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "35.828447000000004";
-  gv:coverage "24.073334"
-], [
-  gv:hex "c58e7a";
-  gv:red "197";
-  gv:blue "122";
-  gv:green "142";
-  gv:score "14.811948";
-  gv:coverage "1.38"
-], [
-  gv:hex "914439";
-  gv:red "145";
-  gv:blue "57";
-  gv:green "68";
-  gv:score "3.9926883";
-  gv:coverage "0.18"
-], [
-  gv:hex "a16c57";
-  gv:red "161";
-  gv:blue "87";
-  gv:green "108";
-  gv:score "10.753734";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "e6b8a1";
-  gv:red "230";
-  gv:blue "161";
-  gv:green "184";
-  gv:score "9.628804";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "b49c82";
-  gv:red "180";
-  gv:blue "130";
-  gv:green "156";
-  gv:score "9.448839000000001";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "f1d8be";
-  gv:red "241";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "5.1225055";
-  gv:coverage "8.66"
-], [
-  gv:hex "ab5e52";
-  gv:red "171";
-  gv:blue "82";
-  gv:green "94";
-  gv:score "3.8777649";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "86503b";
-  gv:red "134";
-  gv:blue "59";
-  gv:green "80";
-  gv:score "2.4690205";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "93795e";
-  gv:red "147";
-  gv:blue "94";
-  gv:green "121";
-  gv:score "1.5195698";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.571237"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.829269999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.1859"
-];
-    w:bagOfWords "outin a f enfo\nhatteau deaf acque\nLES DOMAIN. ES J. THOR IN\nROMAN ECHE THORIN S-BOURGOGNE\nIMP.X.PER Roux MACON 1946\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4115";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

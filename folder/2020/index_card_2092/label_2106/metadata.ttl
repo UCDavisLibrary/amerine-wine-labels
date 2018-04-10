@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2092/label_2106";
-    dct:type "image";
-    w:bagOfWords "1934\nForster Schnepfenflug\nRHINE WINE PRODUCE OF GERMANY\nacob Hiitwohl Steeg bei bacharach a\nRh.\nThe Hitwohl familu haoe been mine grape growers in Steeg since 16\nRhein few\n"@undefined;
-    gv:color [
-  gv:hex "b0967a";
-  gv:red "176";
-  gv:blue "122";
-  gv:green "150";
-  gv:score "18.4661";
-  gv:coverage "5.1933333"
-], [
-  gv:hex "625039";
-  gv:red "98";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "18.174829";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "8b745a";
-  gv:red "139";
-  gv:blue "90";
-  gv:green "116";
-  gv:score "17.766346";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "41321d";
-  gv:red "65";
-  gv:blue "29";
-  gv:green "50";
-  gv:score "17.330721";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "d8c0a4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "192";
-  gv:score "16.591452";
-  gv:coverage "21.546666000000002"
-], [
-  gv:hex "291b08";
-  gv:red "41";
-  gv:blue "8";
-  gv:green "27";
-  gv:score "5.5935811";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "efd8bd";
-  gv:red "239";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "1.8865277999999999";
-  gv:coverage "11.206666"
-], [
-  gv:hex "3c3328";
-  gv:red "60";
-  gv:blue "40";
-  gv:green "51";
-  gv:score "1.3812306";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "6a4d37";
-  gv:red "106";
-  gv:blue "55";
-  gv:green "77";
-  gv:score "0.59943069";
-  gv:coverage "0.08"
-], [
-  gv:hex "1c0e02";
-  gv:red "28";
-  gv:blue "2";
-  gv:green "14";
-  gv:score "0.5417916";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.538579"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.778375999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.94855"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.745177"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.630975"
-];
-    w:bagOfWords "1934\nForster Schnepfenflug\nRHINE WINE PRODUCE OF GERMANY\nacob Hiitwohl Steeg bei bacharach a\nRh.\nThe Hitwohl familu haoe been mine grape growers in Steeg since 16\nRhein few\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2106";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

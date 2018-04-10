@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0762";
-    dct:type "image";
-    w:bagOfWords "2\nrands Wins\nde\nBourgogne\nETS LACHEZE FRERES\nNEGOCIANTS A VINCENNES\nCUVELIER PARIS.\n"@undefined;
-    gv:color [
-  gv:hex "dfc6a6";
-  gv:red "223";
-  gv:blue "166";
-  gv:green "198";
-  gv:score "51.376355";
-  gv:coverage "16.046667"
-], [
-  gv:hex "b35a34";
-  gv:red "179";
-  gv:blue "52";
-  gv:green "90";
-  gv:score "4.773822099999999";
-  gv:coverage "0.4"
-], [
-  gv:hex "c64f2d";
-  gv:red "198";
-  gv:blue "45";
-  gv:green "79";
-  gv:score "0.37353793";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "efd8b8";
-  gv:red "239";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "11.232924";
-  gv:coverage "7.166666500000001"
-], [
-  gv:hex "b0997a";
-  gv:red "176";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "10.36509";
-  gv:coverage "2.7533334"
-], [
-  gv:hex "8d7759";
-  gv:red "141";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "5.049983";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "a5683d";
-  gv:red "165";
-  gv:blue "61";
-  gv:green "104";
-  gv:score "2.1855409999999997";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "675135";
-  gv:red "103";
-  gv:blue "53";
-  gv:green "81";
-  gv:score "1.9167337999999998";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "907045";
-  gv:red "144";
-  gv:blue "69";
-  gv:green "112";
-  gv:score "1.4089401";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "ecbe9e";
-  gv:red "236";
-  gv:blue "158";
-  gv:green "190";
-  gv:score "1.3358157000000002";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.77224299999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.1246"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.036395999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.029258"
-];
-    w:bagOfWords "2\nrands Wins\nde\nBourgogne\nETS LACHEZE FRERES\nNEGOCIANTS A VINCENNES\nCUVELIER PARIS.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0762";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

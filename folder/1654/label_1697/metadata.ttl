@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1697";
-    dct:type "image";
-    w:bagOfWords "184.4\nEST.\nMARK\n7 O o PROOF\nCRIST. HAGGIPAAILU & SONS LTD\nC O L D M E D A\nL S A N D\nDIPLO MAS OF\nHON O U R\nGRAND\ned from the bes\nwines of Mt. OLYMPUS CYPRUS\nDis\nand bottled under Governmen\nSupervision\nfor\nEDWARD YOUNG & CO., LTD.\nLIVERPOOL\nGLASGOVV\nLON DON\n"@eng;
-    gv:color [
-  gv:hex "dec5a2";
-  gv:red "222";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "50.38385399999999";
-  gv:coverage "27.233331999999997"
-], [
-  gv:hex "ddbf8f";
-  gv:red "221";
-  gv:blue "143";
-  gv:green "191";
-  gv:score "15.942167";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "b39c7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "10.996465";
-  gv:coverage "5.52"
-], [
-  gv:hex "b7996b";
-  gv:red "183";
-  gv:blue "107";
-  gv:green "153";
-  gv:score "6.3071243";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "eed7b6";
-  gv:red "238";
-  gv:blue "182";
-  gv:green "215";
-  gv:score "4.7767911000000005";
-  gv:coverage "22.053333"
-], [
-  gv:hex "927549";
-  gv:red "146";
-  gv:blue "73";
-  gv:green "117";
-  gv:score "4.6846092";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "8d7756";
-  gv:red "141";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "4.3372825";
-  gv:coverage "1.52"
-], [
-  gv:hex "6b5636";
-  gv:red "107";
-  gv:blue "54";
-  gv:green "86";
-  gv:score "0.81651267";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "70542a";
-  gv:red "112";
-  gv:blue "42";
-  gv:green "84";
-  gv:score "0.74393409";
-  gv:coverage "0.12"
-], [
-  gv:hex "453012";
-  gv:red "69";
-  gv:blue "18";
-  gv:green "48";
-  gv:score "0.40185000000000004";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.991649"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.097171"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "63.595247"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.86811099999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.374871"
-];
-    w:bagOfWords "184.4\nEST.\nMARK\n7 O o PROOF\nCRIST. HAGGIPAAILU & SONS LTD\nC O L D M E D A\nL S A N D\nDIPLO MAS OF\nHON O U R\nGRAND\ned from the bes\nwines of Mt. OLYMPUS CYPRUS\nDis\nand bottled under Governmen\nSupervision\nfor\nEDWARD YOUNG & CO., LTD.\nLIVERPOOL\nGLASGOVV\nLON DON\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1697";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

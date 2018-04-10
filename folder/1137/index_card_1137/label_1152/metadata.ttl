@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1152";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "FLEUR AC\nAA\nMarcel FLEURAC\nCg\nCOGNAC\nPROPRIETE LA NM ETA IRIE\n82 PROOF\n4/5 QUART\nPRODUCE OF FRANCE\nIMPORTED BY JOHN K. ESQUIN\nSAN FRANCISCO, CALIF.\nFAC COGNAC\n"@undefined;
-    gv:color [
-  gv:hex "6f9ec0";
-  gv:red "111";
-  gv:blue "192";
-  gv:green "158";
-  gv:score "17.639057";
-  gv:coverage "12.06"
-], [
-  gv:hex "857035";
-  gv:red "133";
-  gv:blue "53";
-  gv:green "112";
-  gv:score "4.6557534";
-  gv:coverage "1"
-], [
-  gv:hex "5d817a";
-  gv:red "93";
-  gv:blue "122";
-  gv:green "129";
-  gv:score "1.6967749";
-  gv:coverage "0.74"
-], [
-  gv:hex "d9cfba";
-  gv:red "217";
-  gv:blue "186";
-  gv:green "207";
-  gv:score "0.20122966";
-  gv:coverage "16.933334"
-], [
-  gv:hex "6aa3c0";
-  gv:red "106";
-  gv:blue "192";
-  gv:green "163";
-  gv:score "17.041510000000002";
-  gv:coverage "8.8333331"
-], [
-  gv:hex "6a9ed1";
-  gv:red "106";
-  gv:blue "209";
-  gv:green "158";
-  gv:score "13.136951999999999";
-  gv:coverage "4.1733332"
-], [
-  gv:hex "5b7f9c";
-  gv:red "91";
-  gv:blue "156";
-  gv:green "127";
-  gv:score "5.8810446";
-  gv:coverage "4.4933334"
-], [
-  gv:hex "6b5820";
-  gv:red "107";
-  gv:blue "32";
-  gv:green "88";
-  gv:score "3.9568324";
-  gv:coverage "0.64"
-], [
-  gv:hex "7b7153";
-  gv:red "123";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "3.0648233";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "8b721b";
-  gv:red "139";
-  gv:blue "27";
-  gv:green "114";
-  gv:score "2.9714245";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.424122000000004"
-];
-    w:bagOfWords "FLEUR AC\nAA\nMarcel FLEURAC\nCg\nCOGNAC\nPROPRIETE LA NM ETA IRIE\n82 PROOF\n4/5 QUART\nPRODUCE OF FRANCE\nIMPORTED BY JOHN K. ESQUIN\nSAN FRANCISCO, CALIF.\nFAC COGNAC\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1152";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

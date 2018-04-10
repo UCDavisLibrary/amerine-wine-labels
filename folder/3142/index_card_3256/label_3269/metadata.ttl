@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3269";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Gre\nRADE MA\nBottled and shipped by\nB. M. J. STRAUSS, LTD.\nLONDON. E.C.3\n"@fra;
-    gv:color [
-  gv:hex "dac2a6";
-  gv:red "218";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "29.958859";
-  gv:coverage "19.906667"
-], [
-  gv:hex "b09a7f";
-  gv:red "176";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "18.530095";
-  gv:coverage "5.1866665"
-], [
-  gv:hex "8a745b";
-  gv:red "138";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "13.649628";
-  gv:coverage "3.02"
-], [
-  gv:hex "675239";
-  gv:red "103";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "8.1824847";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "f1dabe";
-  gv:red "241";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "7.5301461";
-  gv:coverage "8.66"
-], [
-  gv:hex "c09378";
-  gv:red "192";
-  gv:blue "120";
-  gv:green "147";
-  gv:score "7.474333800000001";
-  gv:coverage "2.6666667"
-], [
-  gv:hex "e7baa1";
-  gv:red "231";
-  gv:blue "161";
-  gv:green "186";
-  gv:score "5.648011";
-  gv:coverage "3.36"
-], [
-  gv:hex "46321a";
-  gv:red "70";
-  gv:blue "26";
-  gv:green "50";
-  gv:score "3.0588608";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "9c6f58";
-  gv:red "156";
-  gv:blue "88";
-  gv:green "111";
-  gv:score "2.6541831";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "fed0b5";
-  gv:red "254";
-  gv:blue "181";
-  gv:green "208";
-  gv:score "1.2491543";
-  gv:coverage "0.61333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.92960000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.495269"
-];
-    w:bagOfWords "Gre\nRADE MA\nBottled and shipped by\nB. M. J. STRAUSS, LTD.\nLONDON. E.C.3\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3269";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

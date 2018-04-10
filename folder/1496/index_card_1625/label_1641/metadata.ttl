@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1641";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "VIRGIN DRY\n192 G VINTAGE\nFLORIO\nFLORIO & C\nMENT TO HM\nTHE\n10 H. M. THE\nTO H.R.\nTHE\nREG. U. S. PAT. OFF.\nTo H.M. THE\nMARSALA\nSUPERIOR EXTRA MARSALA\nCONTENTS 1 PT. 6 FLD OZ. ALCOHOL 18% BY VOLUME\nProduced and Bottled at MARSALA (Sicily) ITALY\nBy\nEstablished 1833\nSOCIETA ANONIMA VI NICOLA ITALIANA\nMARSALA\nITALY\nImported by: BANFI PRODUCTS CORP. U. Sa AGENTS\n206 SPRING STREET NEW YORK\n"@spa;
-    gv:color [
-  gv:hex "d3bea1";
-  gv:red "211";
-  gv:blue "161";
-  gv:green "190";
-  gv:score "28.168896";
-  gv:coverage "26.366666"
-], [
-  gv:hex "b19c7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "156";
-  gv:score "20.212772";
-  gv:coverage "4.8"
-], [
-  gv:hex "88755c";
-  gv:red "136";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "11.653966";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "dabc8b";
-  gv:red "218";
-  gv:blue "139";
-  gv:green "188";
-  gv:score "7.6819934000000005";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "66553d";
-  gv:red "102";
-  gv:blue "61";
-  gv:green "85";
-  gv:score "5.5689491";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "eedcc4";
-  gv:red "238";
-  gv:blue "196";
-  gv:green "220";
-  gv:score "5.102580000000001";
-  gv:coverage "26.926665999999997"
-], [
-  gv:hex "b79b6e";
-  gv:red "183";
-  gv:blue "110";
-  gv:green "155";
-  gv:score "4.8671052";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "40301c";
-  gv:red "64";
-  gv:blue "28";
-  gv:green "48";
-  gv:score "4.0296372";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "8b7347";
-  gv:red "139";
-  gv:blue "71";
-  gv:green "115";
-  gv:score "2.5981739";
-  gv:coverage "0.2"
-], [
-  gv:hex "271909";
-  gv:red "39";
-  gv:blue "9";
-  gv:green "25";
-  gv:score "2.2097563";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.666561"
-];
-    w:bagOfWords "VIRGIN DRY\n192 G VINTAGE\nFLORIO\nFLORIO & C\nMENT TO HM\nTHE\n10 H. M. THE\nTO H.R.\nTHE\nREG. U. S. PAT. OFF.\nTo H.M. THE\nMARSALA\nSUPERIOR EXTRA MARSALA\nCONTENTS 1 PT. 6 FLD OZ. ALCOHOL 18% BY VOLUME\nProduced and Bottled at MARSALA (Sicily) ITALY\nBy\nEstablished 1833\nSOCIETA ANONIMA VI NICOLA ITALIANA\nMARSALA\nITALY\nImported by: BANFI PRODUCTS CORP. U. Sa AGENTS\n206 SPRING STREET NEW YORK\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1641";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

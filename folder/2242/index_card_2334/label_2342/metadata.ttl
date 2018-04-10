@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2334/label_2342";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Grand Clau C la s s\nLA BAR DE\n1943\nAPPELLATION HAUT MEDoc CONTROLEE\nMis en boute\nau Chatea u\n"@fra;
-    gv:color [
-  gv:hex "d2c0aa";
-  gv:red "210";
-  gv:blue "170";
-  gv:green "192";
-  gv:score "59.136826";
-  gv:coverage "32.653335"
-], [
-  gv:hex "ae9c86";
-  gv:red "174";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "22.358601";
-  gv:coverage "1.8733334000000001"
-], [
-  gv:hex "877760";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "11.046298";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "ebd9c3";
-  gv:red "235";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "4.11052";
-  gv:coverage "2.52"
-], [
-  gv:hex "685842";
-  gv:red "104";
-  gv:blue "66";
-  gv:green "88";
-  gv:score "3.2212649000000004";
-  gv:coverage "0.22"
-], [
-  gv:hex "d3c9c0";
-  gv:red "211";
-  gv:blue "192";
-  gv:green "201";
-  gv:score "0.050523889";
-  gv:coverage "10.193333"
-], [
-  gv:hex "e8dfd6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "0.029983526000000003";
-  gv:coverage "51.546669"
-], [
-  gv:hex "887f77";
-  gv:red "136";
-  gv:blue "119";
-  gv:green "127";
-  gv:score "0.014269156";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "595047";
-  gv:red "89";
-  gv:blue "71";
-  gv:green "80";
-  gv:score "0.0094419011";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "afa69e";
-  gv:red "175";
-  gv:blue "158";
-  gv:green "166";
-  gv:score "0.009222514900000001";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.271344"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.316314999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.658550999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.167713000000006"
-];
-    w:bagOfWords "Grand Clau C la s s\nLA BAR DE\n1943\nAPPELLATION HAUT MEDoc CONTROLEE\nMis en boute\nau Chatea u\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2342";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4522/label_4524";
-    dct:type "image";
-    w:bagOfWords "Tature\nPrut\nFreixenet\nSan Sadurni del2oya\nEMB. 494\n"@spa;
-    gv:color [
-  gv:hex "b08a32";
-  gv:red "176";
-  gv:blue "50";
-  gv:green "138";
-  gv:score "43.095982";
-  gv:coverage "15.406666999999999"
-], [
-  gv:hex "311400";
-  gv:red "49";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.65792464";
-  gv:coverage "0.24"
-], [
-  gv:hex "a17d29";
-  gv:red "161";
-  gv:blue "41";
-  gv:green "125";
-  gv:score "22.728543000000002";
-  gv:coverage "6.88"
-], [
-  gv:hex "927638";
-  gv:red "146";
-  gv:blue "56";
-  gv:green "118";
-  gv:score "5.9963189";
-  gv:coverage "1.82"
-], [
-  gv:hex "ba8937";
-  gv:red "186";
-  gv:blue "55";
-  gv:green "137";
-  gv:score "4.7407884";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "6c5017";
-  gv:red "108";
-  gv:blue "23";
-  gv:green "80";
-  gv:score "4.0981106";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "ac8f4d";
-  gv:red "172";
-  gv:blue "77";
-  gv:green "143";
-  gv:score "3.6962293";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "704a16";
-  gv:red "112";
-  gv:blue "22";
-  gv:green "74";
-  gv:score "2.9780218";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "a67227";
-  gv:red "166";
-  gv:blue "39";
-  gv:green "114";
-  gv:score "2.9334455999999998";
-  gv:coverage "0.74"
-], [
-  gv:hex "523204";
-  gv:red "82";
-  gv:blue "4";
-  gv:green "50";
-  gv:score "1.7222002";
-  gv:coverage "0.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.069577"
-];
-    w:bagOfWords "Tature\nPrut\nFreixenet\nSan Sadurni del2oya\nEMB. 494\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4524";
+    <schema.keywords> "Spain San Sadurni de Nova Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

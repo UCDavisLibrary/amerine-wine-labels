@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1367/label_1376";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "VINO BLANCO\nCONT NETO\nRESERVA\nB. F. Nazar Anchoreno Mendoza S. R. L\nB. F. Nazor Andworeno e Hijos S. R. L\nCAP. 1.200.000\nCAP. 800.000\nPRODUCTOR\nFRACCIONADOR BUENOS AIRES\nINDUSTRIA ARGENTINA\n"@spa;
-    gv:color [
-  gv:hex "dac1a3";
-  gv:red "218";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "49.358988";
-  gv:coverage "31.78"
-], [
-  gv:hex "c1976c";
-  gv:red "193";
-  gv:blue "108";
-  gv:green "151";
-  gv:score "8.702326600000001";
-  gv:coverage "2.8533334"
-], [
-  gv:hex "6d5328";
-  gv:red "109";
-  gv:blue "40";
-  gv:green "83";
-  gv:score "3.9218200000000003";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "b49b7c";
-  gv:red "180";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "13.257682";
-  gv:coverage "4.32"
-], [
-  gv:hex "8b765a";
-  gv:red "139";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "5.8154561000000005";
-  gv:coverage "1.02"
-], [
-  gv:hex "b8996c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "153";
-  gv:score "4.334911";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "675133";
-  gv:red "103";
-  gv:blue "51";
-  gv:green "81";
-  gv:score "3.0016920999999996";
-  gv:coverage "0.48"
-], [
-  gv:hex "d7b88a";
-  gv:red "215";
-  gv:blue "138";
-  gv:green "184";
-  gv:score "2.909863";
-  gv:coverage "0.64"
-], [
-  gv:hex "c09977";
-  gv:red "192";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "1.9733852";
-  gv:coverage "0.76"
-], [
-  gv:hex "897045";
-  gv:red "137";
-  gv:blue "69";
-  gv:green "112";
-  gv:score "1.7799566";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "74.91380600000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.735905"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.85867"
-];
-    w:bagOfWords "VINO BLANCO\nCONT NETO\nRESERVA\nB. F. Nazar Anchoreno Mendoza S. R. L\nB. F. Nazor Andworeno e Hijos S. R. L\nCAP. 1.200.000\nCAP. 800.000\nPRODUCTOR\nFRACCIONADOR BUENOS AIRES\nINDUSTRIA ARGENTINA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1376";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-AR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ARG".
+    wdt:P297 "AR".
+

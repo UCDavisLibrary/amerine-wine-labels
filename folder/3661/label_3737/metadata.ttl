@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3737";
-    dct:type "image";
-    w:bagOfWords "CARLA ORO\nBODEGAS EL MONTECILLO S. A\n(LOG RON o)\nCO SE CH ER O\nR. E. 27\n"@spa;
-    gv:color [
-  gv:hex "bfb79b";
-  gv:red "191";
-  gv:blue "155";
-  gv:green "183";
-  gv:score "57.687265";
-  gv:coverage "30.973332999999997"
-], [
-  gv:hex "605639";
-  gv:red "96";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "8.043813700000001";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "ada387";
-  gv:red "173";
-  gv:blue "135";
-  gv:green "163";
-  gv:score "18.063195";
-  gv:coverage "7.0933335"
-], [
-  gv:hex "7e7457";
-  gv:red "126";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "7.6937318";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "190d00";
-  gv:red "25";
-  gv:blue "undefined";
-  gv:green "13";
-  gv:score "0.031321513";
-  gv:coverage "0.02"
-], [
-  gv:hex "ba9281";
-  gv:red "186";
-  gv:blue "129";
-  gv:green "146";
-  gv:score "2.7015351";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "966d5d";
-  gv:red "150";
-  gv:blue "93";
-  gv:green "109";
-  gv:score "2.3219004";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "4a391b";
-  gv:red "74";
-  gv:blue "27";
-  gv:green "57";
-  gv:score "1.7941853";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "794e3e";
-  gv:red "121";
-  gv:blue "62";
-  gv:green "78";
-  gv:score "0.9403905799999999";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "d3ab9c";
-  gv:red "211";
-  gv:blue "156";
-  gv:green "171";
-  gv:score "0.35475874";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.383332"
-];
-    w:bagOfWords "CARLA ORO\nBODEGAS EL MONTECILLO S. A\n(LOG RON o)\nCO SE CH ER O\nR. E. 27\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3737";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

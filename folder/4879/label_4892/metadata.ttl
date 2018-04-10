@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4892";
-    dct:type "image";
-    w:bagOfWords "ENVASADO EN GEN\nPRODUCT OF ARGENTINA\nSINCE\n1883\nTRAPICHE\nMENDOZA\nDry Chenin Blanc\nIMPORTED BY VINOS ARGENTINOS IMPORTs U.S.A. INC., NEW YORK, NY\nALC 12% BY VOL\nELABORADO Y EMBOTELLADO EN MENDOZA POR ESTABLECIMIENTO A ExP 01019\n1.5 LITERS\nTRAPICHE\nDry Chenin Blanc\nThe Chenin Blanc whCse\nroot stocks we brought\nfrom France over 10\nyears ago and planted in\nour Mendoza Valley offe\no 34156 04140 2\nred us the possibility to\nprepare a Contemporary\n1,5\ndry white wine which Vve\nvinified slowly at cold temperature\nto cornpiete\ndryness with a pronounced fruity aftertaste\nCONTAINS SUL FITES\nBEVERAGESDURING PREGNANCY BECAUSE0F THE FISK OF BIRTHDEFECTS (2) CONStMPTI)N FA\nBEVERAGES MPARS YOURABLTYTODRNEACAROROPERAEMACHNERYANL MAY CAUSE HEAllHPRUBLEinS\n"@undefined;
-    gv:color [
-  gv:hex "cfc5a7";
-  gv:red "207";
-  gv:blue "167";
-  gv:green "197";
-  gv:score "36.397040000000004";
-  gv:coverage "16.553333000000002"
-], [
-  gv:hex "ede3c4";
-  gv:red "237";
-  gv:blue "196";
-  gv:green "227";
-  gv:score "19.976234";
-  gv:coverage "47.253335"
-], [
-  gv:hex "a89d81";
-  gv:red "168";
-  gv:blue "129";
-  gv:green "157";
-  gv:score "16.719058";
-  gv:coverage "3.54"
-], [
-  gv:hex "83765d";
-  gv:red "131";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "12.279648";
-  gv:coverage "1.44"
-], [
-  gv:hex "62553b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "85";
-  gv:score "8.048813";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "403316";
-  gv:red "64";
-  gv:blue "22";
-  gv:green "51";
-  gv:score "2.9397171";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "bbc59f";
-  gv:red "187";
-  gv:blue "159";
-  gv:green "197";
-  gv:score "1.2588325";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "2a1c01";
-  gv:red "42";
-  gv:blue "1";
-  gv:green "28";
-  gv:score "1.2315047000000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "99a67f";
-  gv:red "153";
-  gv:blue "127";
-  gv:green "166";
-  gv:score "0.61754552";
-  gv:coverage "0.12"
-], [
-  gv:hex "d8e1bd";
-  gv:red "216";
-  gv:blue "189";
-  gv:green "225";
-  gv:score "0.26225476";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "73.47537899999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.168232"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.71883699999999"
-];
-    w:bagOfWords "ENVASADO EN GEN\nPRODUCT OF ARGENTINA\nSINCE\n1883\nTRAPICHE\nMENDOZA\nDry Chenin Blanc\nIMPORTED BY VINOS ARGENTINOS IMPORTs U.S.A. INC., NEW YORK, NY\nALC 12% BY VOL\nELABORADO Y EMBOTELLADO EN MENDOZA POR ESTABLECIMIENTO A ExP 01019\n1.5 LITERS\nTRAPICHE\nDry Chenin Blanc\nThe Chenin Blanc whCse\nroot stocks we brought\nfrom France over 10\nyears ago and planted in\nour Mendoza Valley offe\no 34156 04140 2\nred us the possibility to\nprepare a Contemporary\n1,5\ndry white wine which Vve\nvinified slowly at cold temperature\nto cornpiete\ndryness with a pronounced fruity aftertaste\nCONTAINS SUL FITES\nBEVERAGESDURING PREGNANCY BECAUSE0F THE FISK OF BIRTHDEFECTS (2) CONStMPTI)N FA\nBEVERAGES MPARS YOURABLTYTODRNEACAROROPERAEMACHNERYANL MAY CAUSE HEAllHPRUBLEinS\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4892";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

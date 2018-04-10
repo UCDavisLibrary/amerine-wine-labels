@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3066";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "EAO CHEVALBLA\n1947\nLONDRES 602\nDA RIS 1878\nHiers Fou RCA UD-LA uss AAC\nPROPRIETAIRES\nMis en bouteille au Chateau\nFRANCE\nAPPELLATION CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "d6bfa6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "41.654891";
-  gv:coverage "23.446666999999998"
-], [
-  gv:hex "b59b7b";
-  gv:red "181";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "17.88972";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "b89767";
-  gv:red "184";
-  gv:blue "103";
-  gv:green "151";
-  gv:score "13.294084";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "bd9362";
-  gv:red "189";
-  gv:blue "98";
-  gv:green "147";
-  gv:score "5.4090142";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "edd8c1";
-  gv:red "237";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "4.8866589000000005";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "95774a";
-  gv:red "149";
-  gv:blue "74";
-  gv:green "119";
-  gv:score "4.6263758";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "d8b484";
-  gv:red "216";
-  gv:blue "132";
-  gv:green "180";
-  gv:score "3.7941072";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "94795a";
-  gv:red "148";
-  gv:blue "90";
-  gv:green "121";
-  gv:score "2.7719259";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "9f7747";
-  gv:red "159";
-  gv:blue "71";
-  gv:green "119";
-  gv:score "2.1933183";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "b6916f";
-  gv:red "182";
-  gv:blue "111";
-  gv:green "145";
-  gv:score "0.9069528400000001";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.63194"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "EAO CHEVALBLA\n1947\nLONDRES 602\nDA RIS 1878\nHiers Fou RCA UD-LA uss AAC\nPROPRIETAIRES\nMis en bouteille au Chateau\nFRANCE\nAPPELLATION CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3066";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3516";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "VAILLANT\n1888\nJOHANNISBERG\nRIESLING\neGalifor/nia\n器lahi hinzagg Wrat9rylle2 cC gee\nvs so s s s s s s s s s szs s s szszszss s s s s s s\nEG\nnsssssss sz szszszsz ss s szsz sa s s s so s s sx ssss\n"@eng;
-    gv:color [
-  gv:hex "d3c1b0";
-  gv:red "211";
-  gv:blue "176";
-  gv:green "193";
-  gv:score "34.530556000000004";
-  gv:coverage "22.32"
-], [
-  gv:hex "ac9a89";
-  gv:red "172";
-  gv:blue "137";
-  gv:green "154";
-  gv:score "21.521379";
-  gv:coverage "5.6333333"
-], [
-  gv:hex "88745e";
-  gv:red "136";
-  gv:blue "94";
-  gv:green "116";
-  gv:score "16.694935";
-  gv:coverage "4.0466666"
-], [
-  gv:hex "69543b";
-  gv:red "105";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "12.593252999999999";
-  gv:coverage "1.96"
-], [
-  gv:hex "e9d8c7";
-  gv:red "233";
-  gv:blue "199";
-  gv:green "216";
-  gv:score "3.7241347";
-  gv:coverage "10.366665999999999"
-], [
-  gv:hex "4a3722";
-  gv:red "74";
-  gv:blue "34";
-  gv:green "55";
-  gv:score "3.4248203";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "846940";
-  gv:red "132";
-  gv:blue "64";
-  gv:green "105";
-  gv:score "1.7464669";
-  gv:coverage "0.16"
-], [
-  gv:hex "d3c2b7";
-  gv:red "211";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "1.5188762";
-  gv:coverage "1.92"
-], [
-  gv:hex "715730";
-  gv:red "113";
-  gv:blue "48";
-  gv:green "87";
-  gv:score "0.9646210000000001";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "73512b";
-  gv:red "115";
-  gv:blue "43";
-  gv:green "81";
-  gv:score "0.9340347699999999";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.427878"
-];
-    w:bagOfWords "VAILLANT\n1888\nJOHANNISBERG\nRIESLING\neGalifor/nia\n器lahi hinzagg Wrat9rylle2 cC gee\nvs so s s s s s s s s s szs s s szszszss s s s s s s\nEG\nnsssssss sz szszszsz ss s szsz sa s s s so s s sx ssss\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3516";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

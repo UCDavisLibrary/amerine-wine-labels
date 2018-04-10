@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3595";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "1942\nAt\nPioneer Vineyards in Livermore Valley\nBOTTLE D AT\nTHE W I N E RY\nLIVER MORE\nSYLVAN ER\nA LIGHT WINE OF SYLVAN ER GRAPES\nPRODUCED AND BOTTLE D BY\nWENT BROS\nALCOHOL 12% BY VOLUME LIVERMORE, CALIFORNIA\nCONTENTS QUART\n"@eng;
-    gv:color [
-  gv:hex "a29c82";
-  gv:red "162";
-  gv:blue "130";
-  gv:green "156";
-  gv:score "30.725780000000004";
-  gv:coverage "9.8066665"
-], [
-  gv:hex "7f7860";
-  gv:red "127";
-  gv:blue "96";
-  gv:green "120";
-  gv:score "26.019009999999998";
-  gv:coverage "6.9466665"
-], [
-  gv:hex "c7bea6";
-  gv:red "199";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "22.010566";
-  gv:coverage "13.413333999999999"
-], [
-  gv:hex "5d5740";
-  gv:red "93";
-  gv:blue "64";
-  gv:green "87";
-  gv:score "13.497517";
-  gv:coverage "3.1466666999999995"
-], [
-  gv:hex "3e3822";
-  gv:red "62";
-  gv:blue "34";
-  gv:green "56";
-  gv:score "3.6021723999999997";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "e9dccb";
-  gv:red "233";
-  gv:blue "203";
-  gv:green "220";
-  gv:score "2.8443061";
-  gv:coverage "6.04"
-], [
-  gv:hex "e6dcd0";
-  gv:red "230";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "0.56955018";
-  gv:coverage "58.26"
-], [
-  gv:hex "231c07";
-  gv:red "35";
-  gv:blue "7";
-  gv:green "28";
-  gv:score "0.48072054000000003";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "d2c5b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "197";
-  gv:score "0.16419882";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "0e0500";
-  gv:red "14";
-  gv:blue "undefined";
-  gv:green "5";
-  gv:score "0.027439537";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.375739"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "62.940746999999995"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.78612699999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.03488"
-];
-    w:bagOfWords "1942\nAt\nPioneer Vineyards in Livermore Valley\nBOTTLE D AT\nTHE W I N E RY\nLIVER MORE\nSYLVAN ER\nA LIGHT WINE OF SYLVAN ER GRAPES\nPRODUCED AND BOTTLE D BY\nWENT BROS\nALCOHOL 12% BY VOLUME LIVERMORE, CALIFORNIA\nCONTENTS QUART\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3595";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

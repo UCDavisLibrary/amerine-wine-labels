@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/index_card_1702/label_1720";
-    dct:type "image";
-    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
-    w:bagOfWords "O\nSUOMUURA\nllarli 1\nAt J STAdA Marigy ini ja tikoorite hd s M AREl Ov No:5565\nTurku\nLi kooteJa\nぐーーーー, li-\nM >\n"@grc;
-    gv:color [
-  gv:hex "645220";
-  gv:red "100";
-  gv:blue "32";
-  gv:green "82";
-  gv:score "8.9807078";
-  gv:coverage "3.5000000000000004"
-], [
-  gv:hex "34411d";
-  gv:red "52";
-  gv:blue "29";
-  gv:green "65";
-  gv:score "8.0573104";
-  gv:coverage "5.1266667"
-], [
-  gv:hex "e5ba30";
-  gv:red "229";
-  gv:blue "48";
-  gv:green "186";
-  gv:score "5.3939153";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "ce920b";
-  gv:red "206";
-  gv:blue "11";
-  gv:green "146";
-  gv:score "4.568053";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "a83612";
-  gv:red "168";
-  gv:blue "18";
-  gv:green "54";
-  gv:score "0.8155479999999999";
-  gv:coverage "0.1"
-], [
-  gv:hex "cdc8af";
-  gv:red "205";
-  gv:blue "175";
-  gv:green "200";
-  gv:score "0.24702735";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "594f2d";
-  gv:red "89";
-  gv:blue "45";
-  gv:green "79";
-  gv:score "8.8550858";
-  gv:coverage "4.4533335"
-], [
-  gv:hex "3d3a19";
-  gv:red "61";
-  gv:blue "25";
-  gv:green "58";
-  gv:score "7.1498565";
-  gv:coverage "6.1933335"
-], [
-  gv:hex "794b22";
-  gv:red "121";
-  gv:blue "34";
-  gv:green "75";
-  gv:score "5.799487200000001";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "8f3d1d";
-  gv:red "143";
-  gv:blue "29";
-  gv:green "61";
-  gv:score "5.1024225";
-  gv:coverage "0.7000000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "89.23732"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.017314999999996"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "59.569693"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "57.195741"
-];
-    w:bagOfWords "O\nSUOMUURA\nllarli 1\nAt J STAdA Marigy ini ja tikoorite hd s M AREl Ov No:5565\nTurku\nLi kooteJa\nぐーーーー, li-\nM >\n"@grc;
-    wdt:P219 "grc";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1720";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "el-GR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "GRC".
+    wdt:P297 "GR".
+

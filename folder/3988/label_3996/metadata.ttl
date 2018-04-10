@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_3996";
-    dct:type "image";
-    w:bagOfWords "GRANGE HILL\nJAMAICA RUM\nGENUINE PRODUCT OF\nWEST INDIAN SUGAR CANE\nPRODUCED IN JAMAICA BY\nGRANGE HILL PRODUCTS CO\nKINGSTON JA MAI CA B. W. I\n"@eng;
-    gv:color [
-  gv:hex "e4ba99";
-  gv:red "228";
-  gv:blue "153";
-  gv:green "186";
-  gv:score "10.300124";
-  gv:coverage "3.0466666"
-], [
-  gv:hex "734e26";
-  gv:red "115";
-  gv:blue "38";
-  gv:green "78";
-  gv:score "7.2429068";
-  gv:coverage "3.02"
-], [
-  gv:hex "90743f";
-  gv:red "144";
-  gv:blue "63";
-  gv:green "116";
-  gv:score "6.9343164999999996";
-  gv:coverage "3.36"
-], [
-  gv:hex "4a2c13";
-  gv:red "74";
-  gv:blue "19";
-  gv:green "44";
-  gv:score "6.035923599999999";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "e6b68c";
-  gv:red "230";
-  gv:blue "140";
-  gv:green "182";
-  gv:score "8.5859485";
-  gv:coverage "1.38"
-], [
-  gv:hex "dcbc9e";
-  gv:red "220";
-  gv:blue "158";
-  gv:green "188";
-  gv:score "6.8986453";
-  gv:coverage "5.76"
-], [
-  gv:hex "966e45";
-  gv:red "150";
-  gv:blue "69";
-  gv:green "110";
-  gv:score "6.349068099999999";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "ba9374";
-  gv:red "186";
-  gv:blue "116";
-  gv:green "147";
-  gv:score "6.3095085";
-  gv:coverage "2.42"
-], [
-  gv:hex "6e4d31";
-  gv:red "110";
-  gv:blue "49";
-  gv:green "77";
-  gv:score "5.4738945999999995";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "947052";
-  gv:red "148";
-  gv:blue "82";
-  gv:green "112";
-  gv:score "5.2895363";
-  gv:coverage "1.8066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.957395000000005"
-];
-    w:bagOfWords "GRANGE HILL\nJAMAICA RUM\nGENUINE PRODUCT OF\nWEST INDIAN SUGAR CANE\nPRODUCED IN JAMAICA BY\nGRANGE HILL PRODUCTS CO\nKINGSTON JA MAI CA B. W. I\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3996";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

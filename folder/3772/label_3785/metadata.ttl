@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3785";
-    dct:type "image";
-    w:bagOfWords "Serm. edott\nSchleife 24247\nNr. 24246\n0/00\nDM 8\nloo\nDM 20\nSriefenbeiner Labrmeg\n"@deu;
-    gv:color [
-  gv:hex "dfc6a1";
-  gv:red "223";
-  gv:blue "161";
-  gv:green "198";
-  gv:score "44.853494";
-  gv:coverage "24.779999999999998"
-], [
-  gv:hex "8c7352";
-  gv:red "140";
-  gv:blue "82";
-  gv:green "115";
-  gv:score "12.93824";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "20110b";
-  gv:red "32";
-  gv:blue "11";
-  gv:green "17";
-  gv:score "0.49480693";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b19875";
-  gv:red "177";
-  gv:blue "117";
-  gv:green "152";
-  gv:score "10.851789";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "6b5336";
-  gv:red "107";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "8.6996749";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "8d7248";
-  gv:red "141";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "7.263634400000001";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "f0d8b6";
-  gv:red "240";
-  gv:blue "182";
-  gv:green "216";
-  gv:score "3.3425290000000003";
-  gv:coverage "11.953332999999999"
-], [
-  gv:hex "6f552c";
-  gv:red "111";
-  gv:blue "44";
-  gv:green "85";
-  gv:score "2.8274151";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "ae9266";
-  gv:red "174";
-  gv:blue "102";
-  gv:green "146";
-  gv:score "2.00121";
-  gv:coverage "0.3"
-], [
-  gv:hex "ddc294";
-  gv:red "221";
-  gv:blue "148";
-  gv:green "194";
-  gv:score "1.54623";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.24022599999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.736973"
-];
-    w:bagOfWords "Serm. edott\nSchleife 24247\nNr. 24246\n0/00\nDM 8\nloo\nDM 20\nSriefenbeiner Labrmeg\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3785";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

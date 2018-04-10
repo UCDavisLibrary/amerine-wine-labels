@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2855";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "SAUTERNES APPELLATION CONTROLEE\n1936\nMIS EN BOUTEILLE AU CHATEAU\nMERI B\n"@fra;
-    gv:color [
-  gv:hex "d6c1a6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "58.721977";
-  gv:coverage "21.746667"
-], [
-  gv:hex "b29e81";
-  gv:red "178";
-  gv:blue "129";
-  gv:green "158";
-  gv:score "15.534605";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "d6b785";
-  gv:red "214";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "6.8864346";
-  gv:coverage "0.58"
-], [
-  gv:hex "bb9c69";
-  gv:red "187";
-  gv:blue "105";
-  gv:green "156";
-  gv:score "6.3927516";
-  gv:coverage "0.62"
-], [
-  gv:hex "ebd8c0";
-  gv:red "235";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "2.546761";
-  gv:coverage "14.32"
-], [
-  gv:hex "c79a68";
-  gv:red "199";
-  gv:blue "104";
-  gv:green "154";
-  gv:score "2.5268666";
-  gv:coverage "0.22"
-], [
-  gv:hex "947f63";
-  gv:red "148";
-  gv:blue "99";
-  gv:green "127";
-  gv:score "2.3069154000000003";
-  gv:coverage "0.54"
-], [
-  gv:hex "987a4a";
-  gv:red "152";
-  gv:blue "74";
-  gv:green "122";
-  gv:score "1.6817625999999999";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "e0b484";
-  gv:red "224";
-  gv:blue "132";
-  gv:green "180";
-  gv:score "1.2239371000000001";
-  gv:coverage "0.12"
-], [
-  gv:hex "d8b49e";
-  gv:red "216";
-  gv:blue "158";
-  gv:green "180";
-  gv:score "0.5832111";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.675032"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.670038"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.596900000000005"
-];
-    w:bagOfWords "SAUTERNES APPELLATION CONTROLEE\n1936\nMIS EN BOUTEILLE AU CHATEAU\nMERI B\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2855";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

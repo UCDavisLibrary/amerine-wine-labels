@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2524";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Contents\n12 FL oz\n1926\nHICETU\nC H A BLIS\nBORDEAUX\nAlcohol by volume\nPRODUCT OF FRANCE\n12 olo\n"@fra;
-    gv:color [
-  gv:hex "d8c3a6";
-  gv:red "216";
-  gv:blue "166";
-  gv:green "195";
-  gv:score "62.215573";
-  gv:coverage "19.246666"
-], [
-  gv:hex "b19b79";
-  gv:red "177";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "18.198659";
-  gv:coverage "4.3133333"
-], [
-  gv:hex "8a7656";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "9.718776499999999";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "665436";
-  gv:red "102";
-  gv:blue "54";
-  gv:green "84";
-  gv:score "4.2883836";
-  gv:coverage "0.98"
-], [
-  gv:hex "ead8bf";
-  gv:red "234";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "3.2726184";
-  gv:coverage "18.52"
-], [
-  gv:hex "ad9368";
-  gv:red "173";
-  gv:blue "104";
-  gv:green "147";
-  gv:score "0.83271051";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "91754c";
-  gv:red "145";
-  gv:blue "76";
-  gv:green "117";
-  gv:score "0.8150257200000001";
-  gv:coverage "0.12"
-], [
-  gv:hex "4d3b1d";
-  gv:red "77";
-  gv:blue "29";
-  gv:green "59";
-  gv:score "0.23237006";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "dabf91";
-  gv:red "218";
-  gv:blue "145";
-  gv:green "191";
-  gv:score "0.22422193999999998";
-  gv:coverage "0.06"
-], [
-  gv:hex "e7dcd0";
-  gv:red "231";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "0.10227834999999999";
-  gv:coverage "52.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.48239600000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.563"
-];
-    w:bagOfWords "Contents\n12 FL oz\n1926\nHICETU\nC H A BLIS\nBORDEAUX\nAlcohol by volume\nPRODUCT OF FRANCE\n12 olo\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2524";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

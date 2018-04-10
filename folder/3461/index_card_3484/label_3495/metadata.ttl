@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3495";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BOTTLED IN CALIFORNIA\nSELECTED 1012 NTAGE\nFOUNTAIN GROVE\nFRUITY, FRESH, ELEGANT\nPRODUCED AND BOTTLED AT THE WINERY BY\nG ROVE SANTA ROSA. SONOMA COUNTY. CALIFORNIA\nALCOHOL 1 2 BY V 0 LUM E\n"@eng;
-    gv:color [
-  gv:hex "ccc5b8";
-  gv:red "204";
-  gv:blue "184";
-  gv:green "197";
-  gv:score "19.90146";
-  gv:coverage "11.06"
-], [
-  gv:hex "31583e";
-  gv:red "49";
-  gv:blue "62";
-  gv:green "88";
-  gv:score "5.6249142";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "1b1008";
-  gv:red "27";
-  gv:blue "8";
-  gv:green "16";
-  gv:score "3.0606624";
-  gv:coverage "0.54"
-], [
-  gv:hex "ccc5b4";
-  gv:red "204";
-  gv:blue "180";
-  gv:green "197";
-  gv:score "11.668887";
-  gv:coverage "11.266667"
-], [
-  gv:hex "e3ddcf";
-  gv:red "227";
-  gv:blue "207";
-  gv:green "221";
-  gv:score "9.99255";
-  gv:coverage "46.573332"
-], [
-  gv:hex "a09f91";
-  gv:red "160";
-  gv:blue "145";
-  gv:green "159";
-  gv:score "8.11825";
-  gv:coverage "1.68"
-], [
-  gv:hex "e3dccb";
-  gv:red "227";
-  gv:blue "203";
-  gv:green "220";
-  gv:score "4.5239922";
-  gv:coverage "18.92"
-], [
-  gv:hex "a7a190";
-  gv:red "167";
-  gv:blue "144";
-  gv:green "161";
-  gv:score "4.451289399999999";
-  gv:coverage "1.24"
-], [
-  gv:hex "1a4227";
-  gv:red "26";
-  gv:blue "39";
-  gv:green "66";
-  gv:score "3.5525981";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "1b5836";
-  gv:red "27";
-  gv:blue "54";
-  gv:green "88";
-  gv:score "3.1706303";
-  gv:coverage "0.43333330999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.048154"
-];
-    w:bagOfWords "BOTTLED IN CALIFORNIA\nSELECTED 1012 NTAGE\nFOUNTAIN GROVE\nFRUITY, FRESH, ELEGANT\nPRODUCED AND BOTTLED AT THE WINERY BY\nG ROVE SANTA ROSA. SONOMA COUNTY. CALIFORNIA\nALCOHOL 1 2 BY V 0 LUM E\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3495";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

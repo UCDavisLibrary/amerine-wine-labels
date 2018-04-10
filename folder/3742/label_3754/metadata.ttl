@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3754";
-    dct:type "image";
-    w:bagOfWords "SOAVE\nCANTINE NUNZIO Ciap URS o\nVERONA\n"@ita;
-    gv:color [
-  gv:hex "e5caa5";
-  gv:red "229";
-  gv:blue "165";
-  gv:green "202";
-  gv:score "51.095926999999996";
-  gv:coverage "18.759999999999998"
-], [
-  gv:hex "e6c79a";
-  gv:red "230";
-  gv:blue "154";
-  gv:green "199";
-  gv:score "29.480677999999997";
-  gv:coverage "7.6733336"
-], [
-  gv:hex "4b2f13";
-  gv:red "75";
-  gv:blue "19";
-  gv:green "47";
-  gv:score "0.14467798999999998";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "f1d7b4";
-  gv:red "241";
-  gv:blue "180";
-  gv:green "215";
-  gv:score "9.355589";
-  gv:coverage "11.753333000000001"
-], [
-  gv:hex "b59c7c";
-  gv:red "181";
-  gv:blue "124";
-  gv:green "156";
-  gv:score "3.9420034999999998";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "b7996c";
-  gv:red "183";
-  gv:blue "108";
-  gv:green "153";
-  gv:score "2.2108119";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "927858";
-  gv:red "146";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "1.5376463999999999";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "92754a";
-  gv:red "146";
-  gv:blue "74";
-  gv:green "117";
-  gv:score "1.009487";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "f4d6a8";
-  gv:red "244";
-  gv:blue "168";
-  gv:green "214";
-  gv:score "0.59628459";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "6c5539";
-  gv:red "108";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "0.21401572";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.478617"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "57.756591"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "53.501117"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.176475"
-];
-    w:bagOfWords "SOAVE\nCANTINE NUNZIO Ciap URS o\nVERONA\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3754";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

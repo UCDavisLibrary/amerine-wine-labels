@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2598";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "1926\nANTONIN RODET\nPr\na Oe\nARCHAT\nCONTENTS 1 Pint 8 Fluid Ounces\nAlcohol by volume 13\nANTONIN RODET\nMERCUREY\n"@fra;
-    gv:color [
-  gv:hex "e3c7a3";
-  gv:red "227";
-  gv:blue "163";
-  gv:green "199";
-  gv:score "20.166938000000002";
-  gv:coverage "18.126666999999998"
-], [
-  gv:hex "724c34";
-  gv:red "114";
-  gv:blue "52";
-  gv:green "76";
-  gv:score "15.515815";
-  gv:coverage "3.0666666"
-], [
-  gv:hex "784a25";
-  gv:red "120";
-  gv:blue "37";
-  gv:green "74";
-  gv:score "12.722738";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "9d6a41";
-  gv:red "157";
-  gv:blue "65";
-  gv:green "106";
-  gv:score "11.762068000000001";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "53301b";
-  gv:red "83";
-  gv:blue "27";
-  gv:green "48";
-  gv:score "6.7777507";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "c28e62";
-  gv:red "194";
-  gv:blue "98";
-  gv:green "142";
-  gv:score "6.4504094";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "8f694f";
-  gv:red "143";
-  gv:blue "79";
-  gv:green "105";
-  gv:score "5.9035674";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "5d310d";
-  gv:red "93";
-  gv:blue "13";
-  gv:green "49";
-  gv:score "3.6817878";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "e8be9c";
-  gv:red "232";
-  gv:blue "156";
-  gv:green "190";
-  gv:score "1.97513";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "bc9171";
-  gv:red "188";
-  gv:blue "113";
-  gv:green "145";
-  gv:score "1.8713647";
-  gv:coverage "0.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.026471"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "52.658892"
-];
-    w:bagOfWords "1926\nANTONIN RODET\nPr\na Oe\nARCHAT\nCONTENTS 1 Pint 8 Fluid Ounces\nAlcohol by volume 13\nANTONIN RODET\nMERCUREY\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2598";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,100 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4517/label_4521";
-    dct:type "image";
-    w:bagOfWords "REG. EMB. N 10\nPRECIO EN ORIGEN\n10' 25 PESETAS\nVINA PACETA\nBLANCO SECO\nCoSECHA 1947\nHARO-RIOJA\nEMBOTELLADO EN LA BODEGA\nBoaegas Biabainas.\n"@spa;
-    gv:color [
-  gv:hex "e0cb90";
-  gv:red "224";
-  gv:blue "144";
-  gv:green "203";
-  gv:score "52.240533";
-  gv:coverage "14.506666"
-], [
-  gv:hex "655333";
-  gv:red "101";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "6.3202709";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "b19a66";
-  gv:red "177";
-  gv:blue "102";
-  gv:green "154";
-  gv:score "6.306824799999999";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "8e7748";
-  gv:red "142";
-  gv:blue "72";
-  gv:green "119";
-  gv:score "6.1661955";
-  gv:coverage "2.3133334"
-], [
-  gv:hex "83714e";
-  gv:red "131";
-  gv:blue "78";
-  gv:green "113";
-  gv:score "5.7723965";
-  gv:coverage "2.1"
-], [
-  gv:hex "efd9a0";
-  gv:red "239";
-  gv:blue "160";
-  gv:green "217";
-  gv:score "5.1749926";
-  gv:coverage "1.58"
-], [
-  gv:hex "dcc7a0";
-  gv:red "220";
-  gv:blue "160";
-  gv:green "199";
-  gv:score "3.9367039";
-  gv:coverage "7.739999999999999"
-], [
-  gv:hex "675024";
-  gv:red "103";
-  gv:blue "36";
-  gv:green "80";
-  gv:score "3.1378377";
-  gv:coverage "1.44"
-], [
-  gv:hex "ac9771";
-  gv:red "172";
-  gv:blue "113";
-  gv:green "151";
-  gv:score "2.344046";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "6c491e";
-  gv:red "108";
-  gv:blue "30";
-  gv:green "73";
-  gv:score "1.9631287000000002";
-  gv:coverage "1.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.637248"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.303124"
-];
-    w:bagOfWords "REG. EMB. N 10\nPRECIO EN ORIGEN\n10' 25 PESETAS\nVINA PACETA\nBLANCO SECO\nCoSECHA 1947\nHARO-RIOJA\nEMBOTELLADO EN LA BODEGA\nBoaegas Biabainas.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4521";
+    <schema.keywords> "Spain Rioja White Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES";
+    w:WineColor w:White.
+

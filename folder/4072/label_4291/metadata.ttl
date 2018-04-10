@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4291";
-    dct:type "image";
-    w:bagOfWords "Bottled 193\nWHITE BORDEAUX WIN\nVINTAGE\n19 3 3\nPAUL FAURE & ME\nB OR DEAUX\nCONTENTS 1 PINT 8 FLUID OUNCES\nALCOHOLIC STRENGTH 11 BY VOLUME\nPRODUCE OF FRANCE\nPRINTED IN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "c10f09";
-  gv:red "193";
-  gv:blue "9";
-  gv:green "15";
-  gv:score "11.381471";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "cdc3bb";
-  gv:red "205";
-  gv:blue "187";
-  gv:green "195";
-  gv:score "11.008488";
-  gv:coverage "18.060000000000002"
-], [
-  gv:hex "a4251d";
-  gv:red "164";
-  gv:blue "29";
-  gv:green "37";
-  gv:score "9.9398017";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "f5bdad";
-  gv:red "245";
-  gv:blue "173";
-  gv:green "189";
-  gv:score "2.2866534";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "6e4638";
-  gv:red "110";
-  gv:blue "56";
-  gv:green "70";
-  gv:score "2.130379";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "d11a11";
-  gv:red "209";
-  gv:blue "17";
-  gv:green "26";
-  gv:score "9.9417925";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "ab160a";
-  gv:red "171";
-  gv:blue "10";
-  gv:green "22";
-  gv:score "8.6341247";
-  gv:coverage "0.44"
-], [
-  gv:hex "a49b94";
-  gv:red "164";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "7.9325482";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "e7ddd5";
-  gv:red "231";
-  gv:blue "213";
-  gv:green "221";
-  gv:score "5.693347";
-  gv:coverage "67.046666"
-], [
-  gv:hex "7e756f";
-  gv:red "126";
-  gv:blue "111";
-  gv:green "117";
-  gv:score "5.6104116";
-  gv:coverage "1.2333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02v0m2>;
-  gv:desc "diagram";
-  gv:score "66.516274"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.901818"
-];
-    w:bagOfWords "Bottled 193\nWHITE BORDEAUX WIN\nVINTAGE\n19 3 3\nPAUL FAURE & ME\nB OR DEAUX\nCONTENTS 1 PINT 8 FLUID OUNCES\nALCOHOLIC STRENGTH 11 BY VOLUME\nPRODUCE OF FRANCE\nPRINTED IN FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4291";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

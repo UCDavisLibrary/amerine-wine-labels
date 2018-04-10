@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4220";
-    dct:type "image";
-    w:bagOfWords "415 QUART 58 PR00\nJOUR DE\nGREEN\nARTIFICIALLY COLORED\nMADE BY\nBORDEAUX-FRANCE\nPRODUCT OR FRANCE\nGREEN\n"@fra;
-    gv:color [
-  gv:hex "8ca886";
-  gv:red "140";
-  gv:blue "134";
-  gv:green "168";
-  gv:score "7.706105000000001";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "b39b5d";
-  gv:red "179";
-  gv:blue "93";
-  gv:green "155";
-  gv:score "6.7661889";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "800506";
-  gv:red "128";
-  gv:blue "6";
-  gv:green "5";
-  gv:score "4.8130509";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "26344d";
-  gv:red "38";
-  gv:blue "77";
-  gv:green "52";
-  gv:score "1.2458749";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "0a1245";
-  gv:red "10";
-  gv:blue "69";
-  gv:green "18";
-  gv:score "1.0833143";
-  gv:coverage "0.1"
-], [
-  gv:hex "6e4752";
-  gv:red "110";
-  gv:blue "82";
-  gv:green "71";
-  gv:score "0.78650825";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "971416";
-  gv:red "151";
-  gv:blue "22";
-  gv:green "20";
-  gv:score "4.7321439";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "d2bb7e";
-  gv:red "210";
-  gv:blue "126";
-  gv:green "187";
-  gv:score "4.1595515";
-  gv:coverage "1.52"
-], [
-  gv:hex "6c1206";
-  gv:red "108";
-  gv:blue "6";
-  gv:green "18";
-  gv:score "3.1249957";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "68161e";
-  gv:red "104";
-  gv:blue "30";
-  gv:green "22";
-  gv:score "3.0742286";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "76.798779"
-], [
-  gv:mid <https://g.co/kg/m/0bby24z>;
-  gv:desc "moustache";
-  gv:score "67.753053"
-];
-    w:bagOfWords "415 QUART 58 PR00\nJOUR DE\nGREEN\nARTIFICIALLY COLORED\nMADE BY\nBORDEAUX-FRANCE\nPRODUCT OR FRANCE\nGREEN\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4220";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

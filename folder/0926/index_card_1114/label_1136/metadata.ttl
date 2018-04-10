@@ -1,93 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1114/label_1136";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "YvoRNe\natovo gel & Coht erren.\nltigle\n"@deu;
-    gv:color [
-  gv:hex "dfb258";
-  gv:red "223";
-  gv:blue "88";
-  gv:green "178";
-  gv:score "15.95245";
-  gv:coverage "2.9066667"
-], [
-  gv:hex "ca9745";
-  gv:red "202";
-  gv:blue "69";
-  gv:green "151";
-  gv:score "13.018015";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "784918";
-  gv:red "120";
-  gv:blue "24";
-  gv:green "73";
-  gv:score "7.2050393";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "e4ae59";
-  gv:red "228";
-  gv:blue "89";
-  gv:green "174";
-  gv:score "11.591756";
-  gv:coverage "2.32"
-], [
-  gv:hex "cb9f49";
-  gv:red "203";
-  gv:blue "73";
-  gv:green "159";
-  gv:score "6.338998699999999";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "9d6d39";
-  gv:red "157";
-  gv:blue "57";
-  gv:green "109";
-  gv:score "5.1169604";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "8f713a";
-  gv:red "143";
-  gv:blue "58";
-  gv:green "113";
-  gv:score "5.0554127";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "dfb97b";
-  gv:red "223";
-  gv:blue "123";
-  gv:green "185";
-  gv:score "4.5184541000000005";
-  gv:coverage "2.9066667"
-], [
-  gv:hex "6b521f";
-  gv:red "107";
-  gv:blue "31";
-  gv:green "82";
-  gv:score "4.0280465";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "a37127";
-  gv:red "163";
-  gv:blue "39";
-  gv:green "113";
-  gv:score "3.9839845";
-  gv:coverage "0.9666666399999999"
-];
-    w:bagOfWords "YvoRNe\natovo gel & Coht erren.\nltigle\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1136";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

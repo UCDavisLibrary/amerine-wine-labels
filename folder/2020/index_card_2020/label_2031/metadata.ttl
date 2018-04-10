@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2031";
-    dct:type "image";
-    w:bagOfWords "a\n1793\nRST\n1934\nLIEBFRAUMILCH\nSHIPPED BY\nAVERY'S of BRISTOL\nSpark St\nBRISTOL\nCharles St.,\nCARDIFF\nRheinhessen\n"@undefined;
-    gv:color [
-  gv:hex "d2c0a9";
-  gv:red "210";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "55.984217";
-  gv:coverage "47.113332"
-], [
-  gv:hex "ac9e89";
-  gv:red "172";
-  gv:blue "137";
-  gv:green "158";
-  gv:score "18.583772";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "ebdfca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "223";
-  gv:score "11.808778";
-  gv:coverage "28.313333"
-], [
-  gv:hex "e6dccf";
-  gv:red "230";
-  gv:blue "207";
-  gv:green "220";
-  gv:score "5.3772736000000005";
-  gv:coverage "17.766666"
-], [
-  gv:hex "d3cabd";
-  gv:red "211";
-  gv:blue "189";
-  gv:green "202";
-  gv:score "5.0196122";
-  gv:coverage "5.62"
-], [
-  gv:hex "a79e93";
-  gv:red "167";
-  gv:blue "147";
-  gv:green "158";
-  gv:score "1.5198121";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "918571";
-  gv:red "145";
-  gv:blue "113";
-  gv:green "133";
-  gv:score "1.3096225";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "8d8579";
-  gv:red "141";
-  gv:blue "121";
-  gv:green "133";
-  gv:score "0.35775239";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "665440";
-  gv:red "102";
-  gv:blue "64";
-  gv:green "84";
-  gv:score "0.039158657";
-  gv:coverage "0.1"
-], [
-  gv:hex "40301f";
-  gv:red "64";
-  gv:blue "31";
-  gv:green "48";
-  gv:score "6.088241699999999e-9";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.140283"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.03956"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.583"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.491296999999996"
-];
-    w:bagOfWords "a\n1793\nRST\n1934\nLIEBFRAUMILCH\nSHIPPED BY\nAVERY'S of BRISTOL\nSpark St\nBRISTOL\nCharles St.,\nCARDIFF\nRheinhessen\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2031";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

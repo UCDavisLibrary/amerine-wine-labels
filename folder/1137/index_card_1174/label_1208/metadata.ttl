@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1208";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "0\nア-tu-4-7-Zn-de-d-ci-\n(Rarden)\nccでei_c l l952-\nLE PANTO\n/767\nGONZALEZ Byass\nXEREZ\n"@spa;
-    gv:color [
-  gv:hex "a07038";
-  gv:red "160";
-  gv:blue "56";
-  gv:green "112";
-  gv:score "30.507308";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "d8be9d";
-  gv:red "216";
-  gv:blue "157";
-  gv:green "190";
-  gv:score "1.3297847999999999";
-  gv:coverage "12.213334000000001"
-], [
-  gv:hex "bb8b53";
-  gv:red "187";
-  gv:blue "83";
-  gv:green "139";
-  gv:score "26.944694000000002";
-  gv:coverage "2.44"
-], [
-  gv:hex "7c4b17";
-  gv:red "124";
-  gv:blue "23";
-  gv:green "75";
-  gv:score "16.846538";
-  gv:coverage "1.46"
-], [
-  gv:hex "b8955e";
-  gv:red "184";
-  gv:blue "94";
-  gv:green "149";
-  gv:score "9.9531949";
-  gv:coverage "1.38"
-], [
-  gv:hex "612f03";
-  gv:red "97";
-  gv:blue "3";
-  gv:green "47";
-  gv:score "3.1056887";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "9e6f2b";
-  gv:red "158";
-  gv:blue "43";
-  gv:green "111";
-  gv:score "2.895388";
-  gv:coverage "0.22"
-], [
-  gv:hex "b88841";
-  gv:red "184";
-  gv:blue "65";
-  gv:green "136";
-  gv:score "2.5541945999999998";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "b78e42";
-  gv:red "183";
-  gv:blue "66";
-  gv:green "142";
-  gv:score "1.4328116";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "a07b3e";
-  gv:red "160";
-  gv:blue "62";
-  gv:green "123";
-  gv:score "1.4115871";
-  gv:coverage "0.13999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "66.730708"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.81587800000001"
-];
-    w:bagOfWords "0\nア-tu-4-7-Zn-de-d-ci-\n(Rarden)\nccでei_c l l952-\nLE PANTO\n/767\nGONZALEZ Byass\nXEREZ\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1208";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

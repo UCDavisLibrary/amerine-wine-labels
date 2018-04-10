@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3932/label_3936";
-    dct:type "image";
-    w:bagOfWords "R H E I N G A U\nRabinottwein\n1949 or\nAAmannshauler\nfiollenberg\nSpat burgunber\nNATUR REIN\nDermaltung der Staatsueinguter\nEl t pille\nEigenet Rellera bug uno Rorkbranb\n"@deu;
-    gv:color [
-  gv:hex "dbc3a5";
-  gv:red "219";
-  gv:blue "165";
-  gv:green "195";
-  gv:score "47.161004";
-  gv:coverage "24.32"
-], [
-  gv:hex "665136";
-  gv:red "102";
-  gv:blue "54";
-  gv:green "81";
-  gv:score "15.841885999999999";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "b39c7d";
-  gv:red "179";
-  gv:blue "125";
-  gv:green "156";
-  gv:score "13.829066000000001";
-  gv:coverage "3.2"
-], [
-  gv:hex "877458";
-  gv:red "135";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "12.321916";
-  gv:coverage "3.1466666999999995"
-], [
-  gv:hex "4b351d";
-  gv:red "75";
-  gv:blue "29";
-  gv:green "53";
-  gv:score "5.3177997";
-  gv:coverage "0.76"
-], [
-  gv:hex "edd8bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "216";
-  gv:score "3.1362407";
-  gv:coverage "18.26"
-], [
-  gv:hex "92754a";
-  gv:red "146";
-  gv:blue "74";
-  gv:green "117";
-  gv:score "0.8625625600000001";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "e0ba9d";
-  gv:red "224";
-  gv:blue "157";
-  gv:green "186";
-  gv:score "0.60379845";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "c29d7e";
-  gv:red "194";
-  gv:blue "126";
-  gv:green "157";
-  gv:score "0.37038859";
-  gv:coverage "0.04"
-], [
-  gv:hex "aa8c62";
-  gv:red "170";
-  gv:blue "98";
-  gv:green "140";
-  gv:score "0.36498513";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.4066"
-];
-    w:bagOfWords "R H E I N G A U\nRabinottwein\n1949 or\nAAmannshauler\nfiollenberg\nSpat burgunber\nNATUR REIN\nDermaltung der Staatsueinguter\nEl t pille\nEigenet Rellera bug uno Rorkbranb\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3936";
+    <schema.keywords> "Germany Rheingau Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

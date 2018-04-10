@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4686";
-    dct:type "image";
-    w:bagOfWords "50\nGold\n50 Gold\nand\nand\nPrize Medals\nPARIS\nGE BY APPOINTMENT\nSCOTCH WHISKY DISTILLERS\nJOHN DEWAR & SONS, LTD.\nQUEENSLAND NT\nIgo6\nRGH JAMAICA BRUSSELS CA\nAN\nRO 1889\n89\n894\n89\n893\nWhite Labet\nFINEST SCOTCH WHISKY\nOF GREAT AGE\nJohn Dewar & Sons Ltd\nDISTILLERS\nLondon Off\nDemar House, Haymarket, SWI.\nSCOTLAND\nDISTILLED, BLENDED AND BOTTLED IN SCOTLAND.\n"@undefined;
-    gv:color [
-  gv:hex "d8c4ab";
-  gv:red "216";
-  gv:blue "171";
-  gv:green "196";
-  gv:score "30.341607";
-  gv:coverage "23.32"
-], [
-  gv:hex "94472e";
-  gv:red "148";
-  gv:blue "46";
-  gv:green "71";
-  gv:score "1.6033622";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "866d93";
-  gv:red "134";
-  gv:blue "147";
-  gv:green "109";
-  gv:score "1.3957436";
-  gv:coverage "0.22"
-], [
-  gv:hex "ad9c84";
-  gv:red "173";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "14.661208";
-  gv:coverage "4.413333199999999"
-], [
-  gv:hex "f1bca4";
-  gv:red "241";
-  gv:blue "164";
-  gv:green "188";
-  gv:score "12.31763";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "897860";
-  gv:red "137";
-  gv:blue "96";
-  gv:green "120";
-  gv:score "6.824562";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "a66d55";
-  gv:red "166";
-  gv:blue "85";
-  gv:green "109";
-  gv:score "4.4078682";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "c88d77";
-  gv:red "200";
-  gv:blue "119";
-  gv:green "141";
-  gv:score "4.3753497";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "ecd8bf";
-  gv:red "236";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "4.195527";
-  gv:coverage "7.2733335"
-], [
-  gv:hex "fdd1b8";
-  gv:red "253";
-  gv:blue "184";
-  gv:green "209";
-  gv:score "1.9169725";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.81698"
-];
-    w:bagOfWords "50\nGold\n50 Gold\nand\nand\nPrize Medals\nPARIS\nGE BY APPOINTMENT\nSCOTCH WHISKY DISTILLERS\nJOHN DEWAR & SONS, LTD.\nQUEENSLAND NT\nIgo6\nRGH JAMAICA BRUSSELS CA\nAN\nRO 1889\n89\n894\n89\n893\nWhite Labet\nFINEST SCOTCH WHISKY\nOF GREAT AGE\nJohn Dewar & Sons Ltd\nDISTILLERS\nLondon Off\nDemar House, Haymarket, SWI.\nSCOTLAND\nDISTILLED, BLENDED AND BOTTLED IN SCOTLAND.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4686";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

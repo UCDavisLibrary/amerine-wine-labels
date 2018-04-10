@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3179";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "VINTAG\n1929\nRBEM\no DE\nMARCILLY RES\nPROPRIETAIRES DE VIGNoBLES\nNEGOCIANTs EN VINS A BEAUNE (co TE-D'OR)\nBOURGOGNE\nGEVREY-CHAMBER TIN\nSOLE U. S. AGENTS MUNSON G. SHAW & Co., INC. NEW YORK\nALCOHOL 140\nBY VOLUME\nCONTENT 1 PINT 7,6 FLUID OZ.\nPRODUCE OF FRANCE\nPrinted in France\nIMP. ROUALET BEAUNE.\n"@fra;
-    gv:color [
-  gv:hex "dab98d";
-  gv:red "218";
-  gv:blue "141";
-  gv:green "185";
-  gv:score "37.785312999999995";
-  gv:coverage "10.473333"
-], [
-  gv:hex "d9ba94";
-  gv:red "217";
-  gv:blue "148";
-  gv:green "186";
-  gv:score "28.368261";
-  gv:coverage "18.060000000000002"
-], [
-  gv:hex "ba9a6e";
-  gv:red "186";
-  gv:blue "110";
-  gv:green "154";
-  gv:score "9.5879719";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "917248";
-  gv:red "145";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "6.6810124";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "b89b76";
-  gv:red "184";
-  gv:blue "118";
-  gv:green "155";
-  gv:score "5.9860978000000005";
-  gv:coverage "3.7933334999999997"
-], [
-  gv:hex "71562b";
-  gv:red "113";
-  gv:blue "43";
-  gv:green "86";
-  gv:score "2.3919879";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "dbb38e";
-  gv:red "219";
-  gv:blue "142";
-  gv:green "179";
-  gv:score "2.1096965";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "927753";
-  gv:red "146";
-  gv:blue "83";
-  gv:green "119";
-  gv:score "1.6394226";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "6d4c22";
-  gv:red "109";
-  gv:blue "34";
-  gv:green "76";
-  gv:score "0.9178601200000001";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "624f2c";
-  gv:red "98";
-  gv:blue "44";
-  gv:green "79";
-  gv:score "0.7933503";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.51612"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.034192000000004"
-];
-    w:bagOfWords "VINTAG\n1929\nRBEM\no DE\nMARCILLY RES\nPROPRIETAIRES DE VIGNoBLES\nNEGOCIANTs EN VINS A BEAUNE (co TE-D'OR)\nBOURGOGNE\nGEVREY-CHAMBER TIN\nSOLE U. S. AGENTS MUNSON G. SHAW & Co., INC. NEW YORK\nALCOHOL 140\nBY VOLUME\nCONTENT 1 PINT 7,6 FLUID OZ.\nPRODUCE OF FRANCE\nPrinted in France\nIMP. ROUALET BEAUNE.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3179";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

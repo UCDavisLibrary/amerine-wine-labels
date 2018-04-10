@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0939";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "NTRO\nJaP Testuj\npropriétair\nCully\n"@deu;
-    gv:color [
-  gv:hex "ddcaad";
-  gv:red "221";
-  gv:blue "173";
-  gv:green "202";
-  gv:score "16.808671";
-  gv:coverage "15.973334"
-], [
-  gv:hex "af9457";
-  gv:red "175";
-  gv:blue "87";
-  gv:green "148";
-  gv:score "13.161939";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "424e68";
-  gv:red "66";
-  gv:blue "104";
-  gv:green "78";
-  gv:score "8.102767199999999";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "444b7e";
-  gv:red "68";
-  gv:blue "126";
-  gv:green "75";
-  gv:score "1.8342748";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "ebdac2";
-  gv:red "235";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "9.8078638";
-  gv:coverage "33.266667"
-], [
-  gv:hex "dcc187";
-  gv:red "220";
-  gv:blue "135";
-  gv:green "193";
-  gv:score "7.251045100000001";
-  gv:coverage "1.9"
-], [
-  gv:hex "b49a4c";
-  gv:red "180";
-  gv:blue "76";
-  gv:green "154";
-  gv:score "5.3099852";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "4f5358";
-  gv:red "79";
-  gv:blue "88";
-  gv:green "83";
-  gv:score "5.1968709";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "cdc6c3";
-  gv:red "205";
-  gv:blue "195";
-  gv:green "198";
-  gv:score "4.6807829000000005";
-  gv:coverage "6.3466668"
-], [
-  gv:hex "947b42";
-  gv:red "148";
-  gv:blue "66";
-  gv:green "123";
-  gv:score "3.7117783";
-  gv:coverage "1.9"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.996357999999994"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "53.740913"
-];
-    w:bagOfWords "NTRO\nJaP Testuj\npropriétair\nCully\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0939";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

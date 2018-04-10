@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3147";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "randa in\nLt(RICIERES CHAMBERTIN\nAPPELPATION CONTROLEE\nS. A. GRANDS VINS CHEVILLOT\n& HOTEL de la POSTE réunis\nNEGOCIANT A BEAUNE (COTE DOR)\n"@fra;
-    gv:color [
-  gv:hex "dabe9b";
-  gv:red "218";
-  gv:blue "155";
-  gv:green "190";
-  gv:score "38.133204";
-  gv:coverage "17.593333"
-], [
-  gv:hex "c6956a";
-  gv:red "198";
-  gv:blue "106";
-  gv:green "149";
-  gv:score "4.4696391";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "883a1c";
-  gv:red "136";
-  gv:blue "28";
-  gv:green "58";
-  gv:score "1.9383274";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "b49b7a";
-  gv:red "180";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "8.7223873";
-  gv:coverage "3.5533335"
-], [
-  gv:hex "dab98b";
-  gv:red "218";
-  gv:blue "139";
-  gv:green "185";
-  gv:score "7.263296800000001";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "8d7457";
-  gv:red "141";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "6.6052251";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "6a5338";
-  gv:red "106";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "4.988341";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "e3b796";
-  gv:red "227";
-  gv:blue "150";
-  gv:green "183";
-  gv:score "3.9500333";
-  gv:coverage "1.28"
-], [
-  gv:hex "976e52";
-  gv:red "151";
-  gv:blue "82";
-  gv:green "110";
-  gv:score "3.2496883999999997";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "e0b185";
-  gv:red "224";
-  gv:blue "133";
-  gv:green "177";
-  gv:score "2.7360586";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.5001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.417697"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "60.54334"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.251615"
-];
-    w:bagOfWords "randa in\nLt(RICIERES CHAMBERTIN\nAPPELPATION CONTROLEE\nS. A. GRANDS VINS CHEVILLOT\n& HOTEL de la POSTE réunis\nNEGOCIANT A BEAUNE (COTE DOR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3147";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0137";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "Riesling\na are\na G. Rett m e f r 5.\nC a 8 a i n i c o\n"@ita;
-    gv:color [
-  gv:hex "ac997a";
-  gv:red "172";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "10.419407";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "9d272a";
-  gv:red "157";
-  gv:blue "42";
-  gv:green "39";
-  gv:score "0.31008997";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "d6c4a5";
-  gv:red "214";
-  gv:blue "165";
-  gv:green "196";
-  gv:score "10.234765999999999";
-  gv:coverage "15.226666999999999"
-], [
-  gv:hex "85765b";
-  gv:red "133";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "9.806862500000001";
-  gv:coverage "3.16"
-], [
-  gv:hex "b69762";
-  gv:red "182";
-  gv:blue "98";
-  gv:green "151";
-  gv:score "7.6193556";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "60533b";
-  gv:red "96";
-  gv:blue "59";
-  gv:green "83";
-  gv:score "7.0336655";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "3e331d";
-  gv:red "62";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "4.5771729";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "757978";
-  gv:red "117";
-  gv:blue "120";
-  gv:green "121";
-  gv:score "4.3596137";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "917547";
-  gv:red "145";
-  gv:blue "71";
-  gv:green "117";
-  gv:score "3.7928574";
-  gv:coverage "1.06"
-], [
-  gv:hex "bd8e5c";
-  gv:red "189";
-  gv:blue "92";
-  gv:green "142";
-  gv:score "3.6141056999999996";
-  gv:coverage "0.65333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.866094"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.877700000000004"
-];
-    w:bagOfWords "Riesling\na are\na G. Rett m e f r 5.\nC a 8 a i n i c o\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0137";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

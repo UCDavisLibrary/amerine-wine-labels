@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_0987";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "VIGNERON\nRIVAL\n"@deu;
-    gv:color [
-  gv:hex "dac09f";
-  gv:red "218";
-  gv:blue "159";
-  gv:green "192";
-  gv:score "38.621128";
-  gv:coverage "26.493335000000002"
-], [
-  gv:hex "a82e1e";
-  gv:red "168";
-  gv:blue "30";
-  gv:green "46";
-  gv:score "8.0727465";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "b1997c";
-  gv:red "177";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "15.700148";
-  gv:coverage "5.993333499999999"
-], [
-  gv:hex "8a7458";
-  gv:red "138";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "10.84873";
-  gv:coverage "2.92"
-], [
-  gv:hex "675239";
-  gv:red "103";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "4.1792966";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "913824";
-  gv:red "145";
-  gv:blue "36";
-  gv:green "56";
-  gv:score "3.3266392";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "bd4131";
-  gv:red "189";
-  gv:blue "49";
-  gv:green "65";
-  gv:score "2.7569508";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "efd8bd";
-  gv:red "239";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "2.6949136";
-  gv:coverage "25.673333"
-], [
-  gv:hex "c09177";
-  gv:red "192";
-  gv:blue "119";
-  gv:green "145";
-  gv:score "2.5737565";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "b2583f";
-  gv:red "178";
-  gv:blue "63";
-  gv:green "88";
-  gv:score "1.9237905999999998";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.236397"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.918724999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.606334000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.371909"
-];
-    w:bagOfWords "VIGNERON\nRIVAL\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0987";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4153";
-    dct:type "image";
-    w:bagOfWords "CHATEAU MOUTON ROTHSCHILD\n1900\nBORDEAUX\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "ac9b7b";
-  gv:red "172";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "35.957831";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "cebe9f";
-  gv:red "206";
-  gv:blue "159";
-  gv:green "190";
-  gv:score "27.343743999999997";
-  gv:coverage "6.0666665"
-], [
-  gv:hex "917f5e";
-  gv:red "145";
-  gv:blue "94";
-  gv:green "127";
-  gv:score "11.201832";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "98a1a3";
-  gv:red "152";
-  gv:blue "163";
-  gv:green "161";
-  gv:score "8.3834678";
-  gv:coverage "1.5"
-], [
-  gv:hex "ebdabf";
-  gv:red "235";
-  gv:blue "191";
-  gv:green "218";
-  gv:score "5.857640900000001";
-  gv:coverage "1.94"
-], [
-  gv:hex "c2c4c1";
-  gv:red "194";
-  gv:blue "193";
-  gv:green "196";
-  gv:score "5.2604195";
-  gv:coverage "29.14"
-], [
-  gv:hex "717e80";
-  gv:red "113";
-  gv:blue "128";
-  gv:green "126";
-  gv:score "1.6957724";
-  gv:coverage "0.44"
-], [
-  gv:hex "d9ded9";
-  gv:red "217";
-  gv:blue "217";
-  gv:green "222";
-  gv:score "1.5799647";
-  gv:coverage "57.879999999999995"
-], [
-  gv:hex "af9e6f";
-  gv:red "175";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "1.2629036999999999";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "485759";
-  gv:red "72";
-  gv:blue "89";
-  gv:green "87";
-  gv:score "0.4791012";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.254856"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHATEAU MOUTON ROTHSCHILD\n1900\nBORDEAUX\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4153";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

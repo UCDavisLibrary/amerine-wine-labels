@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3850";
-    dct:type "image";
-    w:bagOfWords "LANDES WEINBAU-LEHRANSTALT BAD KREUZNACH\nWEIN\nNAHE\n1949er\nRteu nadjer rinfelitein\nRiesling edelbeerenauslere\nnatur rein\nOriginal 2lbfiillung Sag 49O38\n"@deu;
-    gv:color [
-  gv:hex "764934";
-  gv:red "118";
-  gv:blue "52";
-  gv:green "73";
-  gv:score "10.402484";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "cec0b7";
-  gv:red "206";
-  gv:blue "183";
-  gv:green "192";
-  gv:score "8.034172700000001";
-  gv:coverage "7.82"
-], [
-  gv:hex "83351b";
-  gv:red "131";
-  gv:blue "27";
-  gv:green "53";
-  gv:score "7.8901276000000005";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "a0725e";
-  gv:red "160";
-  gv:blue "94";
-  gv:green "114";
-  gv:score "7.8591041";
-  gv:coverage "0.22"
-], [
-  gv:hex "522c16";
-  gv:red "82";
-  gv:blue "22";
-  gv:green "44";
-  gv:score "7.589250799999999";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "cdbda9";
-  gv:red "205";
-  gv:blue "169";
-  gv:green "189";
-  gv:score "6.7297935";
-  gv:coverage "7.046666699999999"
-], [
-  gv:hex "a89a91";
-  gv:red "168";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "5.2089654";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "bc8c7b";
-  gv:red "188";
-  gv:blue "123";
-  gv:green "140";
-  gv:score "4.5724418";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "380e00";
-  gv:red "56";
-  gv:blue "undefined";
-  gv:green "14";
-  gv:score "4.5713805";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "83766c";
-  gv:red "131";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "3.6632031";
-  gv:coverage "0.8666666199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.826266"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.381913999999995"
-];
-    w:bagOfWords "LANDES WEINBAU-LEHRANSTALT BAD KREUZNACH\nWEIN\nNAHE\n1949er\nRteu nadjer rinfelitein\nRiesling edelbeerenauslere\nnatur rein\nOriginal 2lbfiillung Sag 49O38\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3850";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

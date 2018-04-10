@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4435";
-    dct:type "image";
-    w:bagOfWords "I NOS I NOS\nR. E. 333\nNIA\nDomicilio Comercial y\nDeposito Centra\nMADRID\nPIDANSE EN TODAS PARTES\nVINA\nTONDONIA\nPLANTACION\n1914\n1913\n"@spa;
-    gv:color [
-  gv:hex "ccc2ba";
-  gv:red "204";
-  gv:blue "186";
-  gv:green "194";
-  gv:score "21.859952999999997";
-  gv:coverage "18.186666000000002"
-], [
-  gv:hex "201a16";
-  gv:red "32";
-  gv:blue "22";
-  gv:green "26";
-  gv:score "10.230476";
-  gv:coverage "9.9933334"
-], [
-  gv:hex "a49a92";
-  gv:red "164";
-  gv:blue "146";
-  gv:green "154";
-  gv:score "19.922924000000002";
-  gv:coverage "6.0733333"
-], [
-  gv:hex "80766e";
-  gv:red "128";
-  gv:blue "110";
-  gv:green "118";
-  gv:score "17.690475";
-  gv:coverage "4.7666664999999995"
-], [
-  gv:hex "e8ded6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "222";
-  gv:score "12.899712";
-  gv:coverage "52.693331"
-], [
-  gv:hex "5f554e";
-  gv:red "95";
-  gv:blue "78";
-  gv:green "85";
-  gv:score "9.0783156";
-  gv:coverage "2.5533333"
-], [
-  gv:hex "38302a";
-  gv:red "56";
-  gv:blue "42";
-  gv:green "48";
-  gv:score "7.873474099999999";
-  gv:coverage "4.8866667"
-], [
-  gv:hex "a5998a";
-  gv:red "165";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "0.13979832";
-  gv:coverage "0.22"
-], [
-  gv:hex "c8bdad";
-  gv:red "200";
-  gv:blue "173";
-  gv:green "189";
-  gv:score "0.08445570699999999";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "281a10";
-  gv:red "40";
-  gv:blue "16";
-  gv:green "26";
-  gv:score "0.055903196";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.73426500000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.613926"
-];
-    w:bagOfWords "I NOS I NOS\nR. E. 333\nNIA\nDomicilio Comercial y\nDeposito Centra\nMADRID\nPIDANSE EN TODAS PARTES\nVINA\nTONDONIA\nPLANTACION\n1914\n1913\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4435";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

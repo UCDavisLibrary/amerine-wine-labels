@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0487";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "RA, Pr,\n1921\" Steinberger\nund verliegelt unter\naRontrolle Der\neStaatlicpen\nGEBRUDER PETMECKY, AD\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "af9b80";
-  gv:red "175";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "33.283886";
-  gv:coverage "11.593333999999999"
-], [
-  gv:hex "ceb99d";
-  gv:red "206";
-  gv:blue "157";
-  gv:green "185";
-  gv:score "18.383992";
-  gv:coverage "16.16"
-], [
-  gv:hex "8c775d";
-  gv:red "140";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "14.140762";
-  gv:coverage "4.4733334"
-], [
-  gv:hex "8f7546";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "117";
-  gv:score "7.20186";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "655139";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "6.3036926";
-  gv:coverage "1.32"
-], [
-  gv:hex "b09666";
-  gv:red "176";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "6.303038399999999";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "483520";
-  gv:red "72";
-  gv:blue "32";
-  gv:green "53";
-  gv:score "3.4263737";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "4e3119";
-  gv:red "78";
-  gv:blue "25";
-  gv:green "49";
-  gv:score "2.1933513000000002";
-  gv:coverage "0.26"
-], [
-  gv:hex "735a2d";
-  gv:red "115";
-  gv:blue "45";
-  gv:green "90";
-  gv:score "1.7521825000000002";
-  gv:coverage "0.6"
-], [
-  gv:hex "d4b785";
-  gv:red "212";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "1.4829999";
-  gv:coverage "0.70666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.220274"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.451508999999994"
-];
-    w:bagOfWords "RA, Pr,\n1921\" Steinberger\nund verliegelt unter\naRontrolle Der\neStaatlicpen\nGEBRUDER PETMECKY, AD\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0487";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

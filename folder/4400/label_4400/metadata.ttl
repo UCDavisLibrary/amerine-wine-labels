@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4400";
-    dct:type "image";
-    w:bagOfWords "Federico\nPaternina\nBORGONA\nEN SU 6.0 ANO\nRIO JA\nR. E. 329\nVINA VIAL\n"@spa;
-    gv:color [
-  gv:hex "ad2409";
-  gv:red "173";
-  gv:blue "9";
-  gv:green "36";
-  gv:score "24.719727";
-  gv:coverage "2.4733333"
-], [
-  gv:hex "d8c6ad";
-  gv:red "216";
-  gv:blue "173";
-  gv:green "198";
-  gv:score "15.412887999999999";
-  gv:coverage "17.873333"
-], [
-  gv:hex "cf240e";
-  gv:red "207";
-  gv:blue "14";
-  gv:green "36";
-  gv:score "13.538004";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "c58a60";
-  gv:red "197";
-  gv:blue "96";
-  gv:green "138";
-  gv:score "2.9857734000000002";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "62543b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "0.72528287";
-  gv:coverage "0.8"
-], [
-  gv:hex "c21904";
-  gv:red "194";
-  gv:blue "4";
-  gv:green "25";
-  gv:score "7.8878246";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "9c2611";
-  gv:red "156";
-  gv:blue "17";
-  gv:green "38";
-  gv:score "5.010156";
-  gv:coverage "0.5"
-], [
-  gv:hex "c53316";
-  gv:red "197";
-  gv:blue "22";
-  gv:green "51";
-  gv:score "4.2169835";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "8f3717";
-  gv:red "143";
-  gv:blue "23";
-  gv:green "55";
-  gv:score "3.2406319000000003";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "b65b38";
-  gv:red "182";
-  gv:blue "56";
-  gv:green "91";
-  gv:score "2.8171113";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.498243"
-];
-    w:bagOfWords "Federico\nPaternina\nBORGONA\nEN SU 6.0 ANO\nRIO JA\nR. E. 329\nVINA VIAL\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4400";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0825";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "GERARD PICHOT\nCOTEAU \"LE MARIGNY''\nVOUVRAY-LES-VINS &-L\nBARSOT GALION. IMP. TOURs\n"@fra;
-    gv:color [
-  gv:hex "d4c5a9";
-  gv:red "212";
-  gv:blue "169";
-  gv:green "197";
-  gv:score "33.940777";
-  gv:coverage "17.153333"
-], [
-  gv:hex "604f32";
-  gv:red "96";
-  gv:blue "50";
-  gv:green "79";
-  gv:score "8.8359989";
-  gv:coverage "0.48"
-], [
-  gv:hex "d3b981";
-  gv:red "211";
-  gv:blue "129";
-  gv:green "185";
-  gv:score "14.163718";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "1e0f00";
-  gv:red "30";
-  gv:blue "undefined";
-  gv:green "15";
-  gv:score "0.083723885";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "827359";
-  gv:red "130";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "6.4515120999999995";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "ad9d80";
-  gv:red "173";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "6.3106626";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "c0a36d";
-  gv:red "192";
-  gv:blue "109";
-  gv:green "163";
-  gv:score "5.979486199999999";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "49391c";
-  gv:red "73";
-  gv:blue "28";
-  gv:green "57";
-  gv:score "3.9421818999999996";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "e8d9c0";
-  gv:red "232";
-  gv:blue "192";
-  gv:green "217";
-  gv:score "3.7757846999999995";
-  gv:coverage "4.38"
-], [
-  gv:hex "cec6bb";
-  gv:red "206";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "3.0085145";
-  gv:coverage "19.746667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.425686999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.209909"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.096414"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.286822"
-];
-    w:bagOfWords "GERARD PICHOT\nCOTEAU \"LE MARIGNY''\nVOUVRAY-LES-VINS &-L\nBARSOT GALION. IMP. TOURs\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0825";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

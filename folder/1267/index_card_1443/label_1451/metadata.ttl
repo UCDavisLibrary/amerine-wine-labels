@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1451";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nBURGUNDY\nWIN E\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y\ni ALCOHOL 12% BY VOLUME\nESTABLISHED 1865\n"@eng;
-    gv:color [
-  gv:hex "43341c";
-  gv:red "67";
-  gv:blue "28";
-  gv:green "52";
-  gv:score "29.746087999999997";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "aa9880";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "6.2814012";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "efe3d9";
-  gv:red "239";
-  gv:blue "217";
-  gv:green "227";
-  gv:score "6.20476";
-  gv:coverage "79.186666"
-], [
-  gv:hex "150b05";
-  gv:red "21";
-  gv:blue "5";
-  gv:green "11";
-  gv:score "3.2394603";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "5c4d33";
-  gv:red "92";
-  gv:blue "51";
-  gv:green "77";
-  gv:score "24.246261";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "88765f";
-  gv:red "136";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "5.8881719";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "ebdfca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "223";
-  gv:score "5.5277411";
-  gv:coverage "3.2066666"
-], [
-  gv:hex "cec2b9";
-  gv:red "206";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "5.4100915999999994";
-  gv:coverage "3.9133333"
-], [
-  gv:hex "d6c9b5";
-  gv:red "214";
-  gv:blue "181";
-  gv:green "201";
-  gv:score "3.804791";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "a69a92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "154";
-  gv:score "3.0142359";
-  gv:coverage "1.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.763321"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "51.66799399999999"
-];
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nBURGUNDY\nWIN E\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y\ni ALCOHOL 12% BY VOLUME\nESTABLISHED 1865\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1451";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

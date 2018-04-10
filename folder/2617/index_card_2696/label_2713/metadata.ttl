@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2713";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "Im2aison. Fondée\nen 78 O\nLE PATRIARCHE\nChateauneuf du Pape\nTRI ARCHE\nERE.\nIES\nnégociants a\net a une\ntet -d\nLith. H.Rouolet Beaune\nIMPRIME EN FRANCE\nR h\no ne\n"@fra;
-    gv:color [
-  gv:hex "d8be9a";
-  gv:red "216";
-  gv:blue "154";
-  gv:green "190";
-  gv:score "17.599697";
-  gv:coverage "25.96"
-], [
-  gv:hex "714f23";
-  gv:red "113";
-  gv:blue "35";
-  gv:green "79";
-  gv:score "3.2722566";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "dcba88";
-  gv:red "220";
-  gv:blue "136";
-  gv:green "186";
-  gv:score "13.173979999999998";
-  gv:coverage "2.3800000000000003"
-], [
-  gv:hex "b59b78";
-  gv:red "181";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "6.838783599999999";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "e5b17f";
-  gv:red "229";
-  gv:blue "127";
-  gv:green "177";
-  gv:score "6.62847";
-  gv:coverage "1.18"
-], [
-  gv:hex "b99768";
-  gv:red "185";
-  gv:blue "104";
-  gv:green "151";
-  gv:score "5.8010723";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "cc9467";
-  gv:red "204";
-  gv:blue "103";
-  gv:green "148";
-  gv:score "4.954318";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "dc856b";
-  gv:red "220";
-  gv:blue "107";
-  gv:green "133";
-  gv:score "4.858528799999999";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "ba654a";
-  gv:red "186";
-  gv:blue "74";
-  gv:green "101";
-  gv:score "4.0547684";
-  gv:coverage "0.3"
-], [
-  gv:hex "907144";
-  gv:red "144";
-  gv:blue "68";
-  gv:green "113";
-  gv:score "3.8964488";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.672646"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "58.641732000000005"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.246891"
-];
-    w:bagOfWords "Im2aison. Fondée\nen 78 O\nLE PATRIARCHE\nChateauneuf du Pape\nTRI ARCHE\nERE.\nIES\nnégociants a\net a une\ntet -d\nLith. H.Rouolet Beaune\nIMPRIME EN FRANCE\nR h\no ne\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2713";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

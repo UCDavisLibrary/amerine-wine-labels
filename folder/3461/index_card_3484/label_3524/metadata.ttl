@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3524";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Pioneer Dineyards in Livermore Valley.\nBOTTLED AT THE WIN ERY\nLIVER M ORE\nGREY RIESLING\nA LIGHT WINE OF GREY RIES LING GRAPES\nPRODUCED AND BOTTLED BY\nENTER B D\nO S\nALco HOL 12% BY VOLUME LIVERMO\n"@eng;
-    gv:color [
-  gv:hex "c9bea5";
-  gv:red "201";
-  gv:blue "165";
-  gv:green "190";
-  gv:score "37.245581";
-  gv:coverage "13.713333"
-], [
-  gv:hex "a79d83";
-  gv:red "167";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "31.911746";
-  gv:coverage "6.1066668"
-], [
-  gv:hex "82795f";
-  gv:red "130";
-  gv:blue "95";
-  gv:green "121";
-  gv:score "17.589961000000002";
-  gv:coverage "2.54"
-], [
-  gv:hex "180900";
-  gv:red "24";
-  gv:blue "undefined";
-  gv:green "9";
-  gv:score "0.13836718";
-  gv:coverage "0.06"
-], [
-  gv:hex "60573f";
-  gv:red "96";
-  gv:blue "63";
-  gv:green "87";
-  gv:score "7.2847664000000005";
-  gv:coverage "1.22"
-], [
-  gv:hex "eadcc9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "2.8513551";
-  gv:coverage "7.48"
-], [
-  gv:hex "d2c5b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "197";
-  gv:score "0.9283781099999999";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "403420";
-  gv:red "64";
-  gv:blue "32";
-  gv:green "52";
-  gv:score "0.92447642";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "ede1d5";
-  gv:red "237";
-  gv:blue "213";
-  gv:green "225";
-  gv:score "0.74307709";
-  gv:coverage "66.153336"
-], [
-  gv:hex "aa9e92";
-  gv:red "170";
-  gv:blue "146";
-  gv:green "158";
-  gv:score "0.25628249";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.426044000000005"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "60.19856300000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.008576"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.130649"
-];
-    w:bagOfWords "Pioneer Dineyards in Livermore Valley.\nBOTTLED AT THE WIN ERY\nLIVER M ORE\nGREY RIESLING\nA LIGHT WINE OF GREY RIES LING GRAPES\nPRODUCED AND BOTTLED BY\nENTER B D\nO S\nALco HOL 12% BY VOLUME LIVERMO\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3524";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

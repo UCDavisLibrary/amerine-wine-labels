@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4547";
-    dct:type "image";
-    w:bagOfWords "24\n\"LA GorA\"\nMANZANILLA PASADA\nLIT. SALIDO M. JEREZ.\n"@spa;
-    gv:color [
-  gv:hex "d7c6b5";
-  gv:red "215";
-  gv:blue "181";
-  gv:green "198";
-  gv:score "41.495582";
-  gv:coverage "22.753334"
-], [
-  gv:hex "847461";
-  gv:red "132";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "16.285489000000002";
-  gv:coverage "4.06"
-], [
-  gv:hex "ab9a87";
-  gv:red "171";
-  gv:blue "135";
-  gv:green "154";
-  gv:score "14.580406000000002";
-  gv:coverage "4.5866668"
-], [
-  gv:hex "675741";
-  gv:red "103";
-  gv:blue "65";
-  gv:green "87";
-  gv:score "10.34525";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "e8d8c7";
-  gv:red "232";
-  gv:blue "199";
-  gv:green "216";
-  gv:score "4.6804585";
-  gv:coverage "5.8533333"
-], [
-  gv:hex "d9cbbf";
-  gv:red "217";
-  gv:blue "191";
-  gv:green "203";
-  gv:score "4.5522418";
-  gv:coverage "10.653333"
-], [
-  gv:hex "ba9889";
-  gv:red "186";
-  gv:blue "137";
-  gv:green "152";
-  gv:score "1.6449740000000002";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "e5d8cc";
-  gv:red "229";
-  gv:blue "204";
-  gv:green "216";
-  gv:score "1.5034866";
-  gv:coverage "48.666668"
-], [
-  gv:hex "d7b4a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "180";
-  gv:score "0.9094980500000001";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "81766c";
-  gv:red "129";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "0.74612913";
-  gv:coverage "0.31333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "72.013915"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.691525"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "58.757156"
-];
-    w:bagOfWords "24\n\"LA GorA\"\nMANZANILLA PASADA\nLIT. SALIDO M. JEREZ.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4547";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1744";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "mutyam daureltiplatz\nMOSEL SAAR R u WE R\n1950\nBernt der Bad Itu be\nOrig. Abfiillung au\nDACKWEILERU CO, TRIER\n"@deu;
-    gv:color [
-  gv:hex "d6c2ad";
-  gv:red "214";
-  gv:blue "173";
-  gv:green "194";
-  gv:score "12.221138";
-  gv:coverage "28.026667"
-], [
-  gv:hex "877157";
-  gv:red "135";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "12.200477999999999";
-  gv:coverage "1.38"
-], [
-  gv:hex "6c181b";
-  gv:red "108";
-  gv:blue "27";
-  gv:green "24";
-  gv:score "8.476906300000001";
-  gv:coverage "0.2"
-], [
-  gv:hex "665438";
-  gv:red "102";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "8.7218821";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "ae9b83";
-  gv:red "174";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "8.1692673";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "be9287";
-  gv:red "190";
-  gv:blue "135";
-  gv:green "146";
-  gv:score "6.1386846";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "7a4f3e";
-  gv:red "122";
-  gv:blue "62";
-  gv:green "79";
-  gv:score "5.568577";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "966c5b";
-  gv:red "150";
-  gv:blue "91";
-  gv:green "108";
-  gv:score "5.0274495";
-  gv:coverage "0.42"
-], [
-  gv:hex "dcb5a9";
-  gv:red "220";
-  gv:blue "169";
-  gv:green "181";
-  gv:score "4.4191368";
-  gv:coverage "1.04"
-], [
-  gv:hex "d5c5bb";
-  gv:red "213";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "2.7561467";
-  gv:coverage "12.146667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.348032"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "mutyam daureltiplatz\nMOSEL SAAR R u WE R\n1950\nBernt der Bad Itu be\nOrig. Abfiillung au\nDACKWEILERU CO, TRIER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1744";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

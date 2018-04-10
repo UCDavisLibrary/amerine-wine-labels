@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2033";
-    dct:type "image";
-    w:bagOfWords "HSS\n1921\nLIEBFRAUMILCH A US LES E\nM\nBLU E N U N LA BEL\nShipped\nH. SI CHEL SOHNE, MAINZ\nby\nRHINE WINE\nPRODUCT OF GERMANY\n"@undefined;
-    gv:color [
-  gv:hex "87773f";
-  gv:red "135";
-  gv:blue "63";
-  gv:green "119";
-  gv:score "9.7335584";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "cbc0a1";
-  gv:red "203";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "6.6886373";
-  gv:coverage "14.866666"
-], [
-  gv:hex "4f2b14";
-  gv:red "79";
-  gv:blue "20";
-  gv:green "43";
-  gv:score "1.9665442000000002";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "223850";
-  gv:red "34";
-  gv:blue "80";
-  gv:green "56";
-  gv:score "0.55951895";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "817556";
-  gv:red "129";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "8.4881313";
-  gv:coverage "4.6466667"
-], [
-  gv:hex "63551e";
-  gv:red "99";
-  gv:blue "30";
-  gv:green "85";
-  gv:score "5.8711741";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "a9975d";
-  gv:red "169";
-  gv:blue "93";
-  gv:green "151";
-  gv:score "5.5111773";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "767c3e";
-  gv:red "118";
-  gv:blue "62";
-  gv:green "124";
-  gv:score "5.1455196";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "a69b7b";
-  gv:red "166";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "4.8288625000000005";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "615538";
-  gv:red "97";
-  gv:blue "56";
-  gv:green "85";
-  gv:score "4.5423276999999995";
-  gv:coverage "2.4733333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.320219"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.614121000000004"
-];
-    w:bagOfWords "HSS\n1921\nLIEBFRAUMILCH A US LES E\nM\nBLU E N U N LA BEL\nShipped\nH. SI CHEL SOHNE, MAINZ\nby\nRHINE WINE\nPRODUCT OF GERMANY\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2033";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

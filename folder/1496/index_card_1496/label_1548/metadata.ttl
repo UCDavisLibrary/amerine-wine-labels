@@ -1,91 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1548";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "No 22\nnarra requinhada\nHEREDERA DE LAS SOLERAS Y DE LA MARCA\nRAA INT ECR. A P ERE Z MI-ARIN\n"@spa;
-    gv:color [
-  gv:hex "d2c0ab";
-  gv:red "210";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "54.54409999999999";
-  gv:coverage "48.486668"
-], [
-  gv:hex "b09d89";
-  gv:red "176";
-  gv:blue "137";
-  gv:green "157";
-  gv:score "31.146175";
-  gv:coverage "3.26"
-], [
-  gv:hex "ebd9c7";
-  gv:red "235";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "6.7999721";
-  gv:coverage "32.506666"
-], [
-  gv:hex "8c7964";
-  gv:red "140";
-  gv:blue "100";
-  gv:green "121";
-  gv:score "6.0179427";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "675540";
-  gv:red "103";
-  gv:blue "64";
-  gv:green "85";
-  gv:score "1.0125636";
-  gv:coverage "0.12"
-], [
-  gv:hex "493820";
-  gv:red "73";
-  gv:blue "32";
-  gv:green "56";
-  gv:score "0.47098845";
-  gv:coverage "0.06"
-], [
-  gv:hex "221504";
-  gv:red "34";
-  gv:blue "4";
-  gv:green "21";
-  gv:score "0.0082587263";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "e6ded9";
-  gv:red "230";
-  gv:blue "217";
-  gv:green "222";
-  gv:score "0.0000013785723";
-  gv:coverage "11.559999999999999"
-], [
-  gv:hex "d7d0c8";
-  gv:red "215";
-  gv:blue "200";
-  gv:green "208";
-  gv:score "3.9910221999999997e-7";
-  gv:coverage "3.3466666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.406228999999996"
-];
-    w:bagOfWords "No 22\nnarra requinhada\nHEREDERA DE LAS SOLERAS Y DE LA MARCA\nRAA INT ECR. A P ERE Z MI-ARIN\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1548";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

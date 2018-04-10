@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/index_card_1702/label_1706";
-    dct:type "image";
-    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
-    w:bagOfWords "O\n\"maごーー( dle mane\npagCOLE spe\n.Gutland\nSTE-VINES\nVINICOL\nEMESTICA\nINOE\nETAIPIANPor nAPAEKEYHNOIN\nANs2NYMOE ETAPIAhp\nΠ AT PAI n,APA EKEYHNOINOY\n'EARas\nDS、\n"@grc;
-    gv:color [
-  gv:hex "a59984";
-  gv:red "165";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "34.047836";
-  gv:coverage "6.1133333"
-], [
-  gv:hex "953e1e";
-  gv:red "149";
-  gv:blue "30";
-  gv:green "62";
-  gv:score "2.6040946999999997";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "a12b06";
-  gv:red "161";
-  gv:blue "6";
-  gv:green "43";
-  gv:score "1.8242473";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "827864";
-  gv:red "130";
-  gv:blue "100";
-  gv:green "120";
-  gv:score "27.210122";
-  gv:coverage "4.1666668"
-], [
-  gv:hex "cebea8";
-  gv:red "206";
-  gv:blue "168";
-  gv:green "190";
-  gv:score "18.553983";
-  gv:coverage "19.913334"
-], [
-  gv:hex "615947";
-  gv:red "97";
-  gv:blue "71";
-  gv:green "89";
-  gv:score "7.6559715";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "e8dbc6";
-  gv:red "232";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "1.2947666";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "c0927b";
-  gv:red "192";
-  gv:blue "123";
-  gv:green "146";
-  gv:score "1.0862581";
-  gv:coverage "0.1"
-], [
-  gv:hex "dfb49b";
-  gv:red "223";
-  gv:blue "155";
-  gv:green "180";
-  gv:score "0.8069218100000001";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "b05c3c";
-  gv:red "176";
-  gv:blue "60";
-  gv:green "92";
-  gv:score "0.72469423";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "74.813718"
-], [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "74.012488"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "70.398748"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.132114"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "64.62614500000001"
-];
-    w:bagOfWords "O\n\"maごーー( dle mane\npagCOLE spe\n.Gutland\nSTE-VINES\nVINICOL\nEMESTICA\nINOE\nETAIPIANPor nAPAEKEYHNOIN\nANs2NYMOE ETAPIAhp\nΠ AT PAI n,APA EKEYHNOINOY\n'EARas\nDS、\n"@grc;
-    wdt:P219 "grc";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1706";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "el-GR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "GRC".
+    wdt:P297 "GR".
+

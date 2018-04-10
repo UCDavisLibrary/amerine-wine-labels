@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4295";
-    dct:type "image";
-    w:bagOfWords "TRADE\nMARK\nMARTIN Rod EE\nCOGNAC\nFINE COGNAC BRANDY\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "ccc3bd";
-  gv:red "204";
-  gv:blue "189";
-  gv:green "195";
-  gv:score "32.000011";
-  gv:coverage "22.42"
-], [
-  gv:hex "a49b95";
-  gv:red "164";
-  gv:blue "149";
-  gv:green "155";
-  gv:score "28.596854";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "847b75";
-  gv:red "132";
-  gv:blue "117";
-  gv:green "123";
-  gv:score "21.660912";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "e4dad4";
-  gv:red "228";
-  gv:blue "212";
-  gv:green "218";
-  gv:score "14.163291000000001";
-  gv:coverage "70.473331"
-], [
-  gv:hex "292013";
-  gv:red "41";
-  gv:blue "19";
-  gv:green "32";
-  gv:score "0.034226285";
-  gv:coverage "0.02"
-], [
-  gv:hex "5c534d";
-  gv:red "92";
-  gv:blue "77";
-  gv:green "83";
-  gv:score "2.5321078";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "d4cbbc";
-  gv:red "212";
-  gv:blue "188";
-  gv:green "203";
-  gv:score "0.9928613";
-  gv:coverage "3.16"
-], [
-  gv:hex "484035";
-  gv:red "72";
-  gv:blue "53";
-  gv:green "64";
-  gv:score "0.010045949";
-  gv:coverage "0.02"
-], [
-  gv:hex "2d251a";
-  gv:red "45";
-  gv:blue "26";
-  gv:green "37";
-  gv:score "0.0096899443";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e1d8c8";
-  gv:red "225";
-  gv:blue "200";
-  gv:green "216";
-  gv:score "2.2969657e-7";
-  gv:coverage "1.2133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.969787"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "TRADE\nMARK\nMARTIN Rod EE\nCOGNAC\nFINE COGNAC BRANDY\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4295";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

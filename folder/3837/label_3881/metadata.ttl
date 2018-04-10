@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3881";
-    dct:type "image";
-    w:bagOfWords "WEINGROSSHANDLUNG\n09\n1953\ner\nLieserer Niederberg Held Spatlese J\nOrig. Abf. Thanisch\nM O SEL S A A R\nR U W E R\nG. J. 44540\ne\n"@deu;
-    gv:color [
-  gv:hex "e5bf61";
-  gv:red "229";
-  gv:blue "97";
-  gv:green "191";
-  gv:score "29.71319";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "d4c3ab";
-  gv:red "212";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "7.6306708";
-  gv:coverage "13.666666999999999"
-], [
-  gv:hex "bc983e";
-  gv:red "188";
-  gv:blue "62";
-  gv:green "152";
-  gv:score "18.675354";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "b49657";
-  gv:red "180";
-  gv:blue "87";
-  gv:green "150";
-  gv:score "7.7741109";
-  gv:coverage "0.6"
-], [
-  gv:hex "b09d81";
-  gv:red "176";
-  gv:blue "129";
-  gv:green "157";
-  gv:score "4.8875842";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "9e7c29";
-  gv:red "158";
-  gv:blue "41";
-  gv:green "124";
-  gv:score "4.6524707";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "967842";
-  gv:red "150";
-  gv:blue "66";
-  gv:green "120";
-  gv:score "4.1180663";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "e3c37e";
-  gv:red "227";
-  gv:blue "126";
-  gv:green "195";
-  gv:score "3.9155845";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "eddbc2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "3.0630408";
-  gv:coverage "10.146666"
-], [
-  gv:hex "8c795d";
-  gv:red "140";
-  gv:blue "93";
-  gv:green "121";
-  gv:score "2.8815094";
-  gv:coverage "1.78"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.347737"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.664781"
-];
-    w:bagOfWords "WEINGROSSHANDLUNG\n09\n1953\ner\nLieserer Niederberg Held Spatlese J\nOrig. Abf. Thanisch\nM O SEL S A A R\nR U W E R\nG. J. 44540\ne\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3881";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2314";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "VIN DE PICHON LONGUEVILLE\n1933\nCTESSE DE LA LANDE\nPAUL LILAC\nMIS EN BOUTEILLES AU CHATEAU\nDEPOSE\n"@fra;
-    gv:color [
-  gv:hex "d6be99";
-  gv:red "214";
-  gv:blue "153";
-  gv:green "190";
-  gv:score "45.841858";
-  gv:coverage "28.046668000000004"
-], [
-  gv:hex "b49b76";
-  gv:red "180";
-  gv:blue "118";
-  gv:green "155";
-  gv:score "23.187193";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "d7b787";
-  gv:red "215";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "8.220443900000001";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "b79b6e";
-  gv:red "183";
-  gv:blue "110";
-  gv:green "155";
-  gv:score "8.0081783";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "8e7449";
-  gv:red "142";
-  gv:blue "73";
-  gv:green "116";
-  gv:score "6.374258500000001";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "947955";
-  gv:red "148";
-  gv:blue "85";
-  gv:green "121";
-  gv:score "5.3229223999999995";
-  gv:coverage "0.86"
-], [
-  gv:hex "edd6b5";
-  gv:red "237";
-  gv:blue "181";
-  gv:green "214";
-  gv:score "1.7513515";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "765d31";
-  gv:red "118";
-  gv:blue "49";
-  gv:green "93";
-  gv:score "0.8368220000000001";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "cdc4bc";
-  gv:red "205";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "0.21486033";
-  gv:coverage "28.186667"
-], [
-  gv:hex "e4dbd3";
-  gv:red "228";
-  gv:blue "211";
-  gv:green "219";
-  gv:score "0.14782315";
-  gv:coverage "33.839999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.073313"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.436446000000004"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.6897"
-];
-    w:bagOfWords "VIN DE PICHON LONGUEVILLE\n1933\nCTESSE DE LA LANDE\nPAUL LILAC\nMIS EN BOUTEILLES AU CHATEAU\nDEPOSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2314";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

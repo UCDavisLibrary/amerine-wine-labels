@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2791";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "VIN DE G\nRAV\nRELO\nRIETA\nCHATEAU (ARBONNIEUX\nrender Iran\nLEO GNAN\nMise en boute\nes a u ate a u\nDEPOSE\n"@fra;
-    gv:color [
-  gv:hex "d9bea0";
-  gv:red "217";
-  gv:blue "160";
-  gv:green "190";
-  gv:score "33.257556";
-  gv:coverage "23.306666"
-], [
-  gv:hex "b4987c";
-  gv:red "180";
-  gv:blue "124";
-  gv:green "152";
-  gv:score "22.082499";
-  gv:coverage "6.6133335"
-], [
-  gv:hex "8d7156";
-  gv:red "141";
-  gv:blue "86";
-  gv:green "113";
-  gv:score "14.530057";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "6b5237";
-  gv:red "107";
-  gv:blue "55";
-  gv:green "82";
-  gv:score "6.8618372";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "6c4d33";
-  gv:red "108";
-  gv:blue "51";
-  gv:green "77";
-  gv:score "6.261765199999999";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "4c3016";
-  gv:red "76";
-  gv:blue "22";
-  gv:green "48";
-  gv:score "4.1680384";
-  gv:coverage "0.64"
-], [
-  gv:hex "8f6e53";
-  gv:red "143";
-  gv:blue "83";
-  gv:green "110";
-  gv:score "3.4015934999999997";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "4b341b";
-  gv:red "75";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "2.8039139";
-  gv:coverage "0.5"
-], [
-  gv:hex "b29074";
-  gv:red "178";
-  gv:blue "116";
-  gv:green "144";
-  gv:score "1.8308712";
-  gv:coverage "0.38"
-], [
-  gv:hex "efd8bd";
-  gv:red "239";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "1.6080664000000002";
-  gv:coverage "10"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.26626399999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.811254"
-];
-    w:bagOfWords "VIN DE G\nRAV\nRELO\nRIETA\nCHATEAU (ARBONNIEUX\nrender Iran\nLEO GNAN\nMise en boute\nes a u ate a u\nDEPOSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2791";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

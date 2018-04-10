@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4330";
-    dct:type "image";
-    w:bagOfWords "GRA SE MINA\nLOZN RASADNIK.\nvocNI plies ivica\nJ A S T R E B A R S K C.\n"@undefined;
-    gv:color [
-  gv:hex "cbbba1";
-  gv:red "203";
-  gv:blue "161";
-  gv:green "187";
-  gv:score "63.04149999999999";
-  gv:coverage "24.566667"
-], [
-  gv:hex "e5dcd1";
-  gv:red "229";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "1.9344595999999998";
-  gv:coverage "47.36"
-], [
-  gv:hex "ab9c83";
-  gv:red "171";
-  gv:blue "131";
-  gv:green "156";
-  gv:score "14.730474";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "827764";
-  gv:red "130";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "6.901978000000001";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "78746a";
-  gv:red "120";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "3.4802100000000005";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "9d988e";
-  gv:red "157";
-  gv:blue "142";
-  gv:green "152";
-  gv:score "2.525186";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "cac3ba";
-  gv:red "202";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "1.8082527000000002";
-  gv:coverage "15.939999999999998"
-], [
-  gv:hex "e6dac7";
-  gv:red "230";
-  gv:blue "199";
-  gv:green "218";
-  gv:score "1.4813158";
-  gv:coverage "6.68"
-], [
-  gv:hex "675f4e";
-  gv:red "103";
-  gv:blue "78";
-  gv:green "95";
-  gv:score "1.2746673";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "5e5a53";
-  gv:red "94";
-  gv:blue "83";
-  gv:green "90";
-  gv:score "0.9209219399999999";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.398041"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GRA SE MINA\nLOZN RASADNIK.\nvocNI plies ivica\nJ A S T R E B A R S K C.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4330";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

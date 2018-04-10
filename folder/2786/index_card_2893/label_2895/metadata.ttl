@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2895";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "ZOCZEn BERG\nE.BOECKEILmICCELBERGhelm\nALSACE\n"@fra;
-    gv:color [
-  gv:hex "e0ae71";
-  gv:red "224";
-  gv:blue "113";
-  gv:green "174";
-  gv:score "17.929672999999998";
-  gv:coverage "5.6133334"
-], [
-  gv:hex "724a17";
-  gv:red "114";
-  gv:blue "23";
-  gv:green "74";
-  gv:score "6.8480648";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "311302";
-  gv:red "49";
-  gv:blue "2";
-  gv:green "19";
-  gv:score "2.2382269";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "ca995e";
-  gv:red "202";
-  gv:blue "94";
-  gv:green "153";
-  gv:score "17.727421";
-  gv:coverage "5.913333199999999"
-], [
-  gv:hex "dcb47c";
-  gv:red "220";
-  gv:blue "124";
-  gv:green "180";
-  gv:score "6.2197592";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "9e7039";
-  gv:red "158";
-  gv:blue "57";
-  gv:green "112";
-  gv:score "5.2996393";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "c09b64";
-  gv:red "192";
-  gv:blue "100";
-  gv:green "155";
-  gv:score "5.2347828";
-  gv:coverage "2.3"
-], [
-  gv:hex "b8963b";
-  gv:red "184";
-  gv:blue "59";
-  gv:green "150";
-  gv:score "5.095365999999999";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "96751a";
-  gv:red "150";
-  gv:blue "26";
-  gv:green "117";
-  gv:score "4.2621832";
-  gv:coverage "0.62"
-], [
-  gv:hex "543005";
-  gv:red "84";
-  gv:blue "5";
-  gv:green "48";
-  gv:score "4.145028399999999";
-  gv:coverage "1.1666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.519658"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.666199999999996"
-];
-    w:bagOfWords "ZOCZEn BERG\nE.BOECKEILmICCELBERGhelm\nALSACE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2895";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

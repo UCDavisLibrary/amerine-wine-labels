@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1425/label_1436";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "7 o\nMARQUE DEPO\nDomaine de la Trappe\nBOTTLED BY\nLUCIEN BORGEAUD, Propriétaire\nALGERIAN WHITE LIGHT WINE\nNASTAOUELI TRAppE\nMISE EN BOUTEILLE\nA U\nD O M A I N E\nPRES ALGER\nLITHO BACONNIER ALGEA\n"@undefined;
-    gv:color [
-  gv:hex "d7c1a6";
-  gv:red "215";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "39.066227999999995";
-  gv:coverage "30.853334"
-], [
-  gv:hex "981d23";
-  gv:red "152";
-  gv:blue "35";
-  gv:green "29";
-  gv:score "2.6637694";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "6d150d";
-  gv:red "109";
-  gv:blue "13";
-  gv:green "21";
-  gv:score "2.2231026000000003";
-  gv:coverage "0.12"
-], [
-  gv:hex "b56058";
-  gv:red "181";
-  gv:blue "88";
-  gv:green "96";
-  gv:score "1.9483145";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "b29d82";
-  gv:red "178";
-  gv:blue "130";
-  gv:green "157";
-  gv:score "13.838258";
-  gv:coverage "3.8600000000000003"
-], [
-  gv:hex "89765f";
-  gv:red "137";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "6.6047609";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "c09e6c";
-  gv:red "192";
-  gv:blue "108";
-  gv:green "158";
-  gv:score "4.618958";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "ecdac3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "4.0613558";
-  gv:coverage "23.873334"
-], [
-  gv:hex "d4b384";
-  gv:red "212";
-  gv:blue "132";
-  gv:green "179";
-  gv:score "3.9382067";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "65523d";
-  gv:red "101";
-  gv:blue "61";
-  gv:green "82";
-  gv:score "3.2660402";
-  gv:coverage "0.62666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.46688"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "7 o\nMARQUE DEPO\nDomaine de la Trappe\nBOTTLED BY\nLUCIEN BORGEAUD, Propriétaire\nALGERIAN WHITE LIGHT WINE\nNASTAOUELI TRAppE\nMISE EN BOUTEILLE\nA U\nD O M A I N E\nPRES ALGER\nLITHO BACONNIER ALGEA\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1436";
+    <schema.keywords> "Misc Table Wines@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

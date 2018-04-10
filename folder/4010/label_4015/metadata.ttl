@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4010/label_4015";
-    dct:type "image";
-    w:bagOfWords "GRES\nROULADUANR.\nGRAND VIN MAROCAIN\nDEPOSEE\nMARQUE\nPARLIER FERMAUD\nCASABLANCA\n/norimerie de FEDALA\n"@undefined;
-    gv:color [
-  gv:hex "b09b85";
-  gv:red "176";
-  gv:blue "133";
-  gv:green "155";
-  gv:score "34.354912999999996";
-  gv:coverage "11.62"
-], [
-  gv:hex "863c33";
-  gv:red "134";
-  gv:blue "51";
-  gv:green "60";
-  gv:score "6.0949802";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "e4d8ca";
-  gv:red "228";
-  gv:blue "202";
-  gv:green "216";
-  gv:score "0.26912359";
-  gv:coverage "54.606664"
-], [
-  gv:hex "c19483";
-  gv:red "193";
-  gv:blue "131";
-  gv:green "148";
-  gv:score "15.288307000000001";
-  gv:coverage "3.02"
-], [
-  gv:hex "8a7763";
-  gv:red "138";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "11.58277";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "9d6c5d";
-  gv:red "157";
-  gv:blue "93";
-  gv:green "108";
-  gv:score "7.3024817";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "682319";
-  gv:red "104";
-  gv:blue "25";
-  gv:green "35";
-  gv:score "3.9779630000000004";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "c7b39c";
-  gv:red "199";
-  gv:blue "156";
-  gv:green "179";
-  gv:score "3.8679400000000004";
-  gv:coverage "5.76"
-], [
-  gv:hex "e3ac9e";
-  gv:red "227";
-  gv:blue "158";
-  gv:green "172";
-  gv:score "3.6740314000000005";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "794636";
-  gv:red "121";
-  gv:blue "54";
-  gv:green "70";
-  gv:score "3.3983447";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.64096"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.61405799999999"
-];
-    w:bagOfWords "GRES\nROULADUANR.\nGRAND VIN MAROCAIN\nDEPOSEE\nMARQUE\nPARLIER FERMAUD\nCASABLANCA\n/norimerie de FEDALA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4015";
+    <schema.keywords> "North Africa Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

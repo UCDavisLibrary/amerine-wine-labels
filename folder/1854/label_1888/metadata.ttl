@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1888";
-    dct:type "image";
-    w:bagOfWords "AMONTILLADO\nAMBR\nTAU\nTRAB\nMAESTRE\nN933\nSANLUCAR\n"@spa;
-    gv:color [
-  gv:hex "a37180";
-  gv:red "163";
-  gv:blue "128";
-  gv:green "113";
-  gv:score "40.898207";
-  gv:coverage "18.12"
-], [
-  gv:hex "581512";
-  gv:red "88";
-  gv:blue "18";
-  gv:green "21";
-  gv:score "10.277493";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "ad6f85";
-  gv:red "173";
-  gv:blue "133";
-  gv:green "111";
-  gv:score "20.326279";
-  gv:coverage "6.706666899999999"
-], [
-  gv:hex "f2d7cf";
-  gv:red "242";
-  gv:blue "207";
-  gv:green "215";
-  gv:score "0.12246992";
-  gv:coverage "14.933333"
-], [
-  gv:hex "784e53";
-  gv:red "120";
-  gv:blue "83";
-  gv:green "78";
-  gv:score "6.361284100000001";
-  gv:coverage "1.92"
-], [
-  gv:hex "b1818e";
-  gv:red "177";
-  gv:blue "142";
-  gv:green "129";
-  gv:score "5.4137319";
-  gv:coverage "2.7666667"
-], [
-  gv:hex "8a3f54";
-  gv:red "138";
-  gv:blue "84";
-  gv:green "63";
-  gv:score "3.7629";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "e5ccbc";
-  gv:red "229";
-  gv:blue "188";
-  gv:green "204";
-  gv:score "0.028369622";
-  gv:coverage "17.153333"
-], [
-  gv:hex "794944";
-  gv:red "121";
-  gv:blue "68";
-  gv:green "73";
-  gv:score "2.4326699";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "490602";
-  gv:red "73";
-  gv:blue "2";
-  gv:green "6";
-  gv:score "2.3257833";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01fklc>;
-  gv:desc "pink";
-  gv:score "88.304174"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.144893"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "AMONTILLADO\nAMBR\nTAU\nTRAB\nMAESTRE\nN933\nSANLUCAR\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1888";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

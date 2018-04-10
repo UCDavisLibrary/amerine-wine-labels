@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1070/label_1073";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "VIGNOBLE DELEIAT\nEncavage dela Station dessa\nViticoles dAuvernier\nNEUCHATEL\ncri Auvermier\n1945\n"@deu;
-    gv:color [
-  gv:hex "dec29e";
-  gv:red "222";
-  gv:blue "158";
-  gv:green "194";
-  gv:score "27.505838999999998";
-  gv:coverage "12.953334"
-], [
-  gv:hex "c69038";
-  gv:red "198";
-  gv:blue "56";
-  gv:green "144";
-  gv:score "4.2514022";
-  gv:coverage "1.82"
-], [
-  gv:hex "503108";
-  gv:red "80";
-  gv:blue "8";
-  gv:green "49";
-  gv:score "1.1204238";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "e0c08d";
-  gv:red "224";
-  gv:blue "141";
-  gv:green "192";
-  gv:score "27.373365";
-  gv:coverage "9.959999999999999"
-], [
-  gv:hex "b79965";
-  gv:red "183";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "8.945269999999999";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "b49a78";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "6.0280461";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "937543";
-  gv:red "147";
-  gv:blue "67";
-  gv:green "117";
-  gv:score "4.3357946";
-  gv:coverage "0.86"
-], [
-  gv:hex "be9741";
-  gv:red "190";
-  gv:blue "65";
-  gv:green "151";
-  gv:score "2.6931254";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "927757";
-  gv:red "146";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "1.948835";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "eed7b6";
-  gv:red "238";
-  gv:blue "182";
-  gv:green "215";
-  gv:score "1.8867645";
-  gv:coverage "8.586666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "82.455981"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.191738"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.13199600000001"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.901489"
-];
-    w:bagOfWords "VIGNOBLE DELEIAT\nEncavage dela Station dessa\nViticoles dAuvernier\nNEUCHATEL\ncri Auvermier\n1945\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1073";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

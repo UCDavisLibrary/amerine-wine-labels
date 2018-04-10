@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3232";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "2/15\nBOTTLED\nPRODUCE STRAIGTH TRADE\nMARK\n(Los De VouGeoa\n(GRAND MAU PERT UIS)\nCONTENTS\nI PT. 8 FLUID OZS.\nPRODUCE OF FRANCE\nALCOHOL 13 I/2 BY VOLUME\nAn. S.\n"@fra;
-    gv:color [
-  gv:hex "e3c6a0";
-  gv:red "227";
-  gv:blue "160";
-  gv:green "198";
-  gv:score "30.832744";
-  gv:coverage "26.233333"
-], [
-  gv:hex "8c341c";
-  gv:red "140";
-  gv:blue "28";
-  gv:green "52";
-  gv:score "2.1055367";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e0c090";
-  gv:red "224";
-  gv:blue "144";
-  gv:green "192";
-  gv:score "29.777147999999997";
-  gv:coverage "11.073333"
-], [
-  gv:hex "f27c6e";
-  gv:red "242";
-  gv:blue "110";
-  gv:green "124";
-  gv:score "0.13082325";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ba9968";
-  gv:red "186";
-  gv:blue "104";
-  gv:green "153";
-  gv:score "8.1246324";
-  gv:coverage "2.5"
-], [
-  gv:hex "f3d6b1";
-  gv:red "243";
-  gv:blue "177";
-  gv:green "214";
-  gv:score "4.3924123";
-  gv:coverage "13.986667"
-], [
-  gv:hex "b69a75";
-  gv:red "182";
-  gv:blue "117";
-  gv:green "154";
-  gv:score "3.9332702999999998";
-  gv:coverage "1.76"
-], [
-  gv:hex "927345";
-  gv:red "146";
-  gv:blue "69";
-  gv:green "115";
-  gv:score "3.0575648";
-  gv:coverage "0.62"
-], [
-  gv:hex "9c6c46";
-  gv:red "156";
-  gv:blue "70";
-  gv:green "108";
-  gv:score "2.2913735";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "734b21";
-  gv:red "115";
-  gv:blue "33";
-  gv:green "75";
-  gv:score "1.7617371";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.49784199999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.734722"
-];
-    w:bagOfWords "2/15\nBOTTLED\nPRODUCE STRAIGTH TRADE\nMARK\n(Los De VouGeoa\n(GRAND MAU PERT UIS)\nCONTENTS\nI PT. 8 FLUID OZS.\nPRODUCE OF FRANCE\nALCOHOL 13 I/2 BY VOLUME\nAn. S.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3232";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

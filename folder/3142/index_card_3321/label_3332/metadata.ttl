@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3332";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "R. ANVERS\nD'OR\nPARIS\nCORTON-CHARLEMAGNE\nAPPELLATION CONTROLEE\nF. HASEN KLEVER\nNEGOCIANT A NUITS St GEORGES (cOTE-D'OR)\nCAREFULLY SELECTED. SHIPPED & BOTTLED BY\nMARSHALL TAPLOW Ltd\nWHITEHALL. STRATFORD\nLONDON\n"@fra;
-    gv:color [
-  gv:hex "685336";
-  gv:red "104";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "15.802753";
-  gv:coverage "3.0133333"
-], [
-  gv:hex "d8c2a6";
-  gv:red "216";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "15.476991000000002";
-  gv:coverage "10.353334"
-], [
-  gv:hex "644e57";
-  gv:red "100";
-  gv:blue "87";
-  gv:green "78";
-  gv:score "2.0724365000000002";
-  gv:coverage "0.44"
-], [
-  gv:hex "877154";
-  gv:red "135";
-  gv:blue "84";
-  gv:green "113";
-  gv:score "13.886438000000002";
-  gv:coverage "3.3333334999999997"
-], [
-  gv:hex "8b7043";
-  gv:red "139";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "7.568704299999999";
-  gv:coverage "1.3"
-], [
-  gv:hex "ae977b";
-  gv:red "174";
-  gv:blue "123";
-  gv:green "151";
-  gv:score "6.5582819";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "6a5227";
-  gv:red "106";
-  gv:blue "39";
-  gv:green "82";
-  gv:score "6.0200624000000005";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "47331a";
-  gv:red "71";
-  gv:blue "26";
-  gv:green "51";
-  gv:score "5.5402357";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "a79795";
-  gv:red "167";
-  gv:blue "149";
-  gv:green "151";
-  gv:score "2.4548909";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "837476";
-  gv:red "131";
-  gv:blue "118";
-  gv:green "116";
-  gv:score "2.3134736";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.266872"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.346055"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "58.835256"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "52.447468"
-];
-    w:bagOfWords "R. ANVERS\nD'OR\nPARIS\nCORTON-CHARLEMAGNE\nAPPELLATION CONTROLEE\nF. HASEN KLEVER\nNEGOCIANT A NUITS St GEORGES (cOTE-D'OR)\nCAREFULLY SELECTED. SHIPPED & BOTTLED BY\nMARSHALL TAPLOW Ltd\nWHITEHALL. STRATFORD\nLONDON\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3332";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

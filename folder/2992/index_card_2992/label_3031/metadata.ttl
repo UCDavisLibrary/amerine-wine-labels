@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3031";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "1 ER C R U\nCHATEAU PAPE CLEMENT\n1990\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d2c3b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "28.7215";
-  gv:coverage "44.34"
-], [
-  gv:hex "823e3d";
-  gv:red "130";
-  gv:blue "61";
-  gv:green "62";
-  gv:score "1.4100058";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "cebcae";
-  gv:red "206";
-  gv:blue "174";
-  gv:green "188";
-  gv:score "26.518154";
-  gv:coverage "11.826666"
-], [
-  gv:hex "b2a193";
-  gv:red "178";
-  gv:blue "147";
-  gv:green "161";
-  gv:score "16.767882";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "a99b91";
-  gv:red "169";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "11.380474";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "bb9289";
-  gv:red "187";
-  gv:blue "137";
-  gv:green "146";
-  gv:score "2.6515011";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "9f736c";
-  gv:red "159";
-  gv:blue "108";
-  gv:green "115";
-  gv:score "2.4039134";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "e7b9b1";
-  gv:red "231";
-  gv:blue "177";
-  gv:green "185";
-  gv:score "2.1461774";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "8e8076";
-  gv:red "142";
-  gv:blue "118";
-  gv:green "128";
-  gv:score "1.7827149";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "e6d7cd";
-  gv:red "230";
-  gv:blue "205";
-  gv:green "215";
-  gv:score "1.5808234";
-  gv:coverage "38.846666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "74.260932"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.039339"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.38732400000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.047520000000006"
-];
-    w:bagOfWords "1 ER C R U\nCHATEAU PAPE CLEMENT\n1990\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3031";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

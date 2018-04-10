@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1902/label_1904";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "Embotelladores n 37.\nAR\nSOLER A\nESPECIAL\nEGLA\nSANLUCARDEBARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "a42c1f";
-  gv:red "164";
-  gv:blue "31";
-  gv:green "44";
-  gv:score "15.640030999999999";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "dbc0a0";
-  gv:red "219";
-  gv:blue "160";
-  gv:green "192";
-  gv:score "5.5140644000000005";
-  gv:coverage "33.046666"
-], [
-  gv:hex "d32d23";
-  gv:red "211";
-  gv:blue "35";
-  gv:green "45";
-  gv:score "4.0518537";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "8b351e";
-  gv:red "139";
-  gv:blue "30";
-  gv:green "53";
-  gv:score "14.259793000000002";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "6e1e08";
-  gv:red "110";
-  gv:blue "8";
-  gv:green "30";
-  gv:score "10.675506";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "c33e33";
-  gv:red "195";
-  gv:blue "51";
-  gv:green "62";
-  gv:score "7.8993566";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "7d4927";
-  gv:red "125";
-  gv:blue "39";
-  gv:green "73";
-  gv:score "4.6216715";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "ad543d";
-  gv:red "173";
-  gv:blue "61";
-  gv:green "84";
-  gv:score "3.3455007";
-  gv:coverage "0.52"
-], [
-  gv:hex "784c32";
-  gv:red "120";
-  gv:blue "50";
-  gv:green "76";
-  gv:score "2.8620311999999997";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "9b6845";
-  gv:red "155";
-  gv:blue "69";
-  gv:green "104";
-  gv:score "2.7949478";
-  gv:coverage "0.76666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "66.874027"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.311283"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "57.8"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.849948999999995"
-];
-    w:bagOfWords "Embotelladores n 37.\nAR\nSOLER A\nESPECIAL\nEGLA\nSANLUCARDEBARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1904";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

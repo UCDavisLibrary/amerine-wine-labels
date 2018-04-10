@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2506";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "MARQUE DEPOSEE\n1929\nCate de Beaure\nPulis ry Mor Trac her\n"@fra;
-    gv:color [
-  gv:hex "b4997b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "62.303621";
-  gv:coverage "16.526666000000002"
-], [
-  gv:hex "d1b89a";
-  gv:red "209";
-  gv:blue "154";
-  gv:green "184";
-  gv:score "15.373997000000001";
-  gv:coverage "19.053334"
-], [
-  gv:hex "927857";
-  gv:red "146";
-  gv:blue "87";
-  gv:green "120";
-  gv:score "12.633771";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "8b7043";
-  gv:red "139";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "7.7576227";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "745b3c";
-  gv:red "116";
-  gv:blue "60";
-  gv:green "91";
-  gv:score "0.73678545";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "7d5f33";
-  gv:red "125";
-  gv:blue "51";
-  gv:green "95";
-  gv:score "0.42269812000000007";
-  gv:coverage "0.04"
-], [
-  gv:hex "1a1205";
-  gv:red "26";
-  gv:blue "5";
-  gv:green "18";
-  gv:score "0.0031927519999999997";
-  gv:coverage "0.02"
-], [
-  gv:hex "8b6a49";
-  gv:red "139";
-  gv:blue "73";
-  gv:green "106";
-  gv:score "0.17537485";
-  gv:coverage "0.04"
-], [
-  gv:hex "ebd7c0";
-  gv:red "235";
-  gv:blue "192";
-  gv:green "215";
-  gv:score "0.16444243";
-  gv:coverage "13.846666999999998"
-], [
-  gv:hex "b59377";
-  gv:red "181";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "0.16149071";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.089312"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.113015"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.171518000000006"
-];
-    w:bagOfWords "MARQUE DEPOSEE\n1929\nCate de Beaure\nPulis ry Mor Trac her\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2506";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

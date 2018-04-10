@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0198/label_0208";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "BOT T LED FOR\nFrank\nCo., INC., NEW YORK\n1934\nINGLE NOOK NAPA\nCABERNET\nA fine, full-bodied red wine, made from the Cabernet\ngrape of the Bordeaux country, grown in Napa\nCounty, California.\nAlcohol 12% by volume. Contents Pint\nPRODUCED\n& BOTTLED BY\nINGLE NOOK VINEYARD COMPANY\nCalifornia\n"@eng;
-    gv:color [
-  gv:hex "8a2b24";
-  gv:red "138";
-  gv:blue "36";
-  gv:green "43";
-  gv:score "30.680761";
-  gv:coverage "8.4933333"
-], [
-  gv:hex "8b332c";
-  gv:red "139";
-  gv:blue "44";
-  gv:green "51";
-  gv:score "24.339174999999997";
-  gv:coverage "7.3533334"
-], [
-  gv:hex "731a13";
-  gv:red "115";
-  gv:blue "19";
-  gv:green "26";
-  gv:score "14.255419";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "962c28";
-  gv:red "150";
-  gv:blue "40";
-  gv:green "44";
-  gv:score "9.547245499999999";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "6e1e18";
-  gv:red "110";
-  gv:blue "24";
-  gv:green "30";
-  gv:score "8.6668387";
-  gv:coverage "2.2666667"
-], [
-  gv:hex "b25b53";
-  gv:red "178";
-  gv:blue "83";
-  gv:green "91";
-  gv:score "6.1156809";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "d48178";
-  gv:red "212";
-  gv:blue "120";
-  gv:green "129";
-  gv:score "2.2840453";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "a16859";
-  gv:red "161";
-  gv:blue "89";
-  gv:green "104";
-  gv:score "0.865962";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "9d3433";
-  gv:red "157";
-  gv:blue "51";
-  gv:green "52";
-  gv:score "0.76440843";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "cb8f7f";
-  gv:red "203";
-  gv:blue "127";
-  gv:green "143";
-  gv:score "0.56737168";
-  gv:coverage "0.64"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.618334"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "58.819979000000004"
-], [
-  gv:mid <https://g.co/kg/m/081qc>;
-  gv:desc "wine";
-  gv:score "51.29550699999999"
-];
-    w:bagOfWords "BOT T LED FOR\nFrank\nCo., INC., NEW YORK\n1934\nINGLE NOOK NAPA\nCABERNET\nA fine, full-bodied red wine, made from the Cabernet\ngrape of the Bordeaux country, grown in Napa\nCounty, California.\nAlcohol 12% by volume. Contents Pint\nPRODUCED\n& BOTTLED BY\nINGLE NOOK VINEYARD COMPANY\nCalifornia\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0208";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

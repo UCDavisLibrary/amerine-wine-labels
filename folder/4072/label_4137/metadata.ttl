@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4137";
-    dct:type "image";
-    w:bagOfWords "FRENCH RHINE WINE\nVIN D'ALSACE\nALCOHOL\n0,5 To 13,5 BY VOLUME\nCONTENTS\n1 PINT 8 FL.Dz.\nSYN VA\ndyewiirzframiner\nPRODUCED, BOTTLED & SHIPPED BY\nSYNDICAT DES NEGOCIANTS EN VINS\nVITICULTEURS DU VIGNOBLE ALSACIEN\nNEGOCIANTS A COLMAR (HAU TRHIN\n"@fra;
-    gv:color [
-  gv:hex "dbc19f";
-  gv:red "219";
-  gv:blue "159";
-  gv:green "193";
-  gv:score "26.031100000000002";
-  gv:coverage "23.693334"
-], [
-  gv:hex "9b251a";
-  gv:red "155";
-  gv:blue "26";
-  gv:green "37";
-  gv:score "6.6435747";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "ecb69a";
-  gv:red "236";
-  gv:blue "154";
-  gv:green "182";
-  gv:score "11.210681000000001";
-  gv:coverage "3.18"
-], [
-  gv:hex "b29a7b";
-  gv:red "178";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "7.1288459";
-  gv:coverage "4.2266667"
-], [
-  gv:hex "8e3824";
-  gv:red "142";
-  gv:blue "36";
-  gv:green "56";
-  gv:score "6.538190000000001";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "c89077";
-  gv:red "200";
-  gv:blue "119";
-  gv:green "144";
-  gv:score "5.3348184";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "b45c46";
-  gv:red "180";
-  gv:blue "70";
-  gv:green "92";
-  gv:score "3.8806467999999996";
-  gv:coverage "0.44"
-], [
-  gv:hex "db8474";
-  gv:red "219";
-  gv:blue "116";
-  gv:green "132";
-  gv:score "2.8566342000000002";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "a16a53";
-  gv:red "161";
-  gv:blue "83";
-  gv:green "106";
-  gv:score "2.7454246";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "8e7658";
-  gv:red "142";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "2.6273454000000003";
-  gv:coverage "1.3933334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.217486"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FRENCH RHINE WINE\nVIN D'ALSACE\nALCOHOL\n0,5 To 13,5 BY VOLUME\nCONTENTS\n1 PINT 8 FL.Dz.\nSYN VA\ndyewiirzframiner\nPRODUCED, BOTTLED & SHIPPED BY\nSYNDICAT DES NEGOCIANTS EN VINS\nVITICULTEURS DU VIGNOBLE ALSACIEN\nNEGOCIANTS A COLMAR (HAU TRHIN\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4137";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

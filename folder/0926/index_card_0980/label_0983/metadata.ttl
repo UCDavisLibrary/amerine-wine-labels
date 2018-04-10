@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_0983";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "DEZALEY\nVICTOR BRON\nPRO PR\nETA, IRE\nCLOS DEZALEY TREYTOR RENS\nLAVAUX\n"@deu;
-    gv:color [
-  gv:hex "e2c187";
-  gv:red "226";
-  gv:blue "135";
-  gv:green "193";
-  gv:score "16.004968";
-  gv:coverage "7.2266668"
-], [
-  gv:hex "bc9943";
-  gv:red "188";
-  gv:blue "67";
-  gv:green "153";
-  gv:score "8.84696";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "704912";
-  gv:red "112";
-  gv:blue "18";
-  gv:green "73";
-  gv:score "4.0673114";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "e5c9a7";
-  gv:red "229";
-  gv:blue "167";
-  gv:green "201";
-  gv:score "11.985282999999999";
-  gv:coverage "14.680000000000001"
-], [
-  gv:hex "bb995d";
-  gv:red "187";
-  gv:blue "93";
-  gv:green "153";
-  gv:score "8.0328658";
-  gv:coverage "2.16"
-], [
-  gv:hex "deb965";
-  gv:red "222";
-  gv:blue "101";
-  gv:green "185";
-  gv:score "7.655869399999999";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "91723a";
-  gv:red "145";
-  gv:blue "58";
-  gv:green "114";
-  gv:score "5.8403779";
-  gv:coverage "0.98"
-], [
-  gv:hex "997621";
-  gv:red "153";
-  gv:blue "33";
-  gv:green "118";
-  gv:score "5.2050788";
-  gv:coverage "0.58"
-], [
-  gv:hex "9c6e24";
-  gv:red "156";
-  gv:blue "36";
-  gv:green "110";
-  gv:score "3.3790413";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "6e511c";
-  gv:red "110";
-  gv:blue "28";
-  gv:green "81";
-  gv:score "3.0729195000000002";
-  gv:coverage "0.42666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "52.738607"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "50.167227000000004"
-];
-    w:bagOfWords "DEZALEY\nVICTOR BRON\nPRO PR\nETA, IRE\nCLOS DEZALEY TREYTOR RENS\nLAVAUX\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0983";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

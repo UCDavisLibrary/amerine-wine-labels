@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3062";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHEVALBLA\nCHATEAU\n938\nmilion\nDAR IS 1878\nLONDRES 1602\nM DAILLE D OR\nMEDAILLE DE BRONZE\nFOUR CAUD LAUS SAC\nPROPRIETAIRE\nFRANCE\nMis en bouteille au Chateau.\nAPPELLATION CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "d4bda8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "189";
-  gv:score "28.719594999999998";
-  gv:coverage "12.866667000000001"
-], [
-  gv:hex "976f57";
-  gv:red "151";
-  gv:blue "87";
-  gv:green "111";
-  gv:score "17.600963";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "b49a83";
-  gv:red "180";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "16.536372999999998";
-  gv:coverage "2.52"
-], [
-  gv:hex "b99279";
-  gv:red "185";
-  gv:blue "121";
-  gv:green "146";
-  gv:score "14.924209999999999";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "77513b";
-  gv:red "119";
-  gv:blue "59";
-  gv:green "81";
-  gv:score "5.6573618";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "8f755f";
-  gv:red "143";
-  gv:blue "95";
-  gv:green "117";
-  gv:score "4.4711147";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "d9b39c";
-  gv:red "217";
-  gv:blue "156";
-  gv:green "179";
-  gv:score "3.7944693000000003";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "edd9c7";
-  gv:red "237";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "3.3996586000000004";
-  gv:coverage "9.9266663"
-], [
-  gv:hex "a06a49";
-  gv:red "160";
-  gv:blue "73";
-  gv:green "106";
-  gv:score "1.2172927";
-  gv:coverage "0.1"
-], [
-  gv:hex "d7c9bd";
-  gv:red "215";
-  gv:blue "189";
-  gv:green "201";
-  gv:score "1.1786832";
-  gv:coverage "4.4733334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.527162"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.364181"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.289699999999996"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.576054000000006"
-];
-    w:bagOfWords "CHEVALBLA\nCHATEAU\n938\nmilion\nDAR IS 1878\nLONDRES 1602\nM DAILLE D OR\nMEDAILLE DE BRONZE\nFOUR CAUD LAUS SAC\nPROPRIETAIRE\nFRANCE\nMis en bouteille au Chateau.\nAPPELLATION CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3062";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

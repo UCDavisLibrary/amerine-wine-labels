@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3429/label_3439";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "NET CONTENTS 3/4 QUART\nALCOHOL 13% BY VOLUME\nLA MARCHE\nBOUCHARD SPECIAL RESERVE\nGrand Red Burgundy\nBOTTLED BY\nBOUCHARD AINE & FILS\nNEGOCIANTS A EAU NE COTE D'OR) France\nLIShED\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "cb935d";
-  gv:red "203";
-  gv:blue "93";
-  gv:green "147";
-  gv:score "20.085464";
-  gv:coverage "6.986666499999999"
-], [
-  gv:hex "e5b27d";
-  gv:red "229";
-  gv:blue "125";
-  gv:green "178";
-  gv:score "18.423811";
-  gv:coverage "8.873333"
-], [
-  gv:hex "400600";
-  gv:red "64";
-  gv:blue "undefined";
-  gv:green "6";
-  gv:score "0.1149225";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "a56d38";
-  gv:red "165";
-  gv:blue "56";
-  gv:green "109";
-  gv:score "10.720196";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "e1ba89";
-  gv:red "225";
-  gv:blue "137";
-  gv:green "186";
-  gv:score "10.718732000000001";
-  gv:coverage "7.9266667"
-], [
-  gv:hex "af692b";
-  gv:red "175";
-  gv:blue "43";
-  gv:green "105";
-  gv:score "8.3581239";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "7e4817";
-  gv:red "126";
-  gv:blue "23";
-  gv:green "72";
-  gv:score "7.268237299999999";
-  gv:coverage "1.54"
-], [
-  gv:hex "cc8647";
-  gv:red "204";
-  gv:blue "71";
-  gv:green "134";
-  gv:score "3.8136713";
-  gv:coverage "0.84"
-], [
-  gv:hex "dfc19c";
-  gv:red "223";
-  gv:blue "156";
-  gv:green "193";
-  gv:score "3.660078";
-  gv:coverage "14.673333"
-], [
-  gv:hex "c09b68";
-  gv:red "192";
-  gv:blue "104";
-  gv:green "155";
-  gv:score "3.6593564";
-  gv:coverage "1.7266667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.7593"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.046857"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.2563"
-];
-    w:bagOfWords "NET CONTENTS 3/4 QUART\nALCOHOL 13% BY VOLUME\nLA MARCHE\nBOUCHARD SPECIAL RESERVE\nGrand Red Burgundy\nBOTTLED BY\nBOUCHARD AINE & FILS\nNEGOCIANTS A EAU NE COTE D'OR) France\nLIShED\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3439";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

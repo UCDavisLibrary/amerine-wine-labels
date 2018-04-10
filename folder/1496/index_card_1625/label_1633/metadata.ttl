@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1633";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "FLORIDO HERMANOS\nVINO PARA\nCONSAGRAR\nFLORIDO HERMANOs\nA\nanlatcae ded a learned a\n"@spa;
-    gv:color [
-  gv:hex "d6c0a6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "10.263451";
-  gv:coverage "12.479999999999999"
-], [
-  gv:hex "e2ba36";
-  gv:red "226";
-  gv:blue "54";
-  gv:green "186";
-  gv:score "7.1449243";
-  gv:coverage "0.72"
-], [
-  gv:hex "b49960";
-  gv:red "180";
-  gv:blue "96";
-  gv:green "153";
-  gv:score "7.061121600000001";
-  gv:coverage "1.72"
-], [
-  gv:hex "714a37";
-  gv:red "113";
-  gv:blue "55";
-  gv:green "74";
-  gv:score "3.3833664";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "0c0e26";
-  gv:red "12";
-  gv:blue "38";
-  gv:green "14";
-  gv:score "3.2343660000000005";
-  gv:coverage "1.78"
-], [
-  gv:hex "74748d";
-  gv:red "116";
-  gv:blue "141";
-  gv:green "116";
-  gv:score "0.56541129";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "b39c80";
-  gv:red "179";
-  gv:blue "128";
-  gv:green "156";
-  gv:score "5.5820644";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "f0dbc3";
-  gv:red "240";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "4.6581179";
-  gv:coverage "29.759999999999998"
-], [
-  gv:hex "debc5b";
-  gv:red "222";
-  gv:blue "91";
-  gv:green "188";
-  gv:score "4.4474304";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "c1a246";
-  gv:red "193";
-  gv:blue "70";
-  gv:green "162";
-  gv:score "4.134553299999999";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.89215399999999"
-];
-    w:bagOfWords "FLORIDO HERMANOS\nVINO PARA\nCONSAGRAR\nFLORIDO HERMANOs\nA\nanlatcae ded a learned a\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1633";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

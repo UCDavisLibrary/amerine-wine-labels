@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2594";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Maison Fondée\nen 1852\nE&D MOINGECON Fireregs\nEGOCIANTS EN VINS A\nBEAUNE FRANCE\nAPPELLATION CONTROLEE\nM PRIME EN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "dec4a0";
-  gv:red "222";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "60.27306300000001";
-  gv:coverage "26.02"
-], [
-  gv:hex "744a36";
-  gv:red "116";
-  gv:blue "54";
-  gv:green "74";
-  gv:score "2.5466571";
-  gv:coverage "0.32"
-], [
-  gv:hex "b49b79";
-  gv:red "180";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "8.4937811";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "d5b98c";
-  gv:red "213";
-  gv:blue "140";
-  gv:green "185";
-  gv:score "6.5394968";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "f0d9b9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "217";
-  gv:score "5.4105897";
-  gv:coverage "7.553332999999999"
-], [
-  gv:hex "8c7554";
-  gv:red "140";
-  gv:blue "84";
-  gv:green "117";
-  gv:score "5.3945318";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "695335";
-  gv:red "105";
-  gv:blue "53";
-  gv:green "83";
-  gv:score "1.6341846";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "463216";
-  gv:red "70";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "1.5761577999999998";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "8e7146";
-  gv:red "142";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "1.509691";
-  gv:coverage "0.26"
-], [
-  gv:hex "976b56";
-  gv:red "151";
-  gv:blue "86";
-  gv:green "107";
-  gv:score "1.2901919";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.294021"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "59.660363000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.009907999999996"
-];
-    w:bagOfWords "Maison Fondée\nen 1852\nE&D MOINGECON Fireregs\nEGOCIANTS EN VINS A\nBEAUNE FRANCE\nAPPELLATION CONTROLEE\nM PRIME EN FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2594";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

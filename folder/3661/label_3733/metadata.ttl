@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3733";
-    dct:type "image";
-    w:bagOfWords "Rioja Anbar\nTIMBRE\n123\n4 METALIC\nANO\nas R.ro\nCENICERO\nRIOJA ES PANA\nICER\nCA REGI\nVINA ALBINA\nOTRAS MARCAS SELECTAS\non Real\n"@spa;
-    gv:color [
-  gv:hex "d8c1a3";
-  gv:red "216";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "57.048511999999995";
-  gv:coverage "25.013333999999997"
-], [
-  gv:hex "af9c7f";
-  gv:red "175";
-  gv:blue "127";
-  gv:green "156";
-  gv:score "11.969671";
-  gv:coverage "6.3266665"
-], [
-  gv:hex "b39766";
-  gv:red "179";
-  gv:blue "102";
-  gv:green "151";
-  gv:score "7.90735";
-  gv:coverage "2.6"
-], [
-  gv:hex "87785b";
-  gv:red "135";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "5.4653805";
-  gv:coverage "3.9466668000000005"
-], [
-  gv:hex "e1b799";
-  gv:red "225";
-  gv:blue "153";
-  gv:green "183";
-  gv:score "4.4338695999999995";
-  gv:coverage "1.44"
-], [
-  gv:hex "947b4b";
-  gv:red "148";
-  gv:blue "75";
-  gv:green "123";
-  gv:score "3.9549325000000004";
-  gv:coverage "1.76"
-], [
-  gv:hex "dbbd8e";
-  gv:red "219";
-  gv:blue "142";
-  gv:green "189";
-  gv:score "3.0058537";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "c39676";
-  gv:red "195";
-  gv:blue "118";
-  gv:green "150";
-  gv:score "2.1486682999999998";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "ebd7bc";
-  gv:red "235";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "1.1687998";
-  gv:coverage "7.9799999999999995"
-], [
-  gv:hex "665a41";
-  gv:red "102";
-  gv:blue "65";
-  gv:green "90";
-  gv:score "0.9990707999999999";
-  gv:coverage "0.89333337"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.577731"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.491544999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.776392"
-];
-    w:bagOfWords "Rioja Anbar\nTIMBRE\n123\n4 METALIC\nANO\nas R.ro\nCENICERO\nRIOJA ES PANA\nICER\nCA REGI\nVINA ALBINA\nOTRAS MARCAS SELECTAS\non Real\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3733";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

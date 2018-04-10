@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0255/label_0261";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "SELECT\nNAPA VALLEY\nVIN ROSE\nA Light Table Wine made from selected grapes\ngrown in the Napa Valley\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "a79b84";
-  gv:red "167";
-  gv:blue "132";
-  gv:green "155";
-  gv:score "30.155199999999997";
-  gv:coverage "5.5"
-], [
-  gv:hex "cabfac";
-  gv:red "202";
-  gv:blue "172";
-  gv:green "191";
-  gv:score "22.697404";
-  gv:coverage "67.38"
-], [
-  gv:hex "867a64";
-  gv:red "134";
-  gv:blue "100";
-  gv:green "122";
-  gv:score "17.144014";
-  gv:coverage "1.94"
-], [
-  gv:hex "c3bfb1";
-  gv:red "195";
-  gv:blue "177";
-  gv:green "191";
-  gv:score "9.192888400000001";
-  gv:coverage "9.266666299999999"
-], [
-  gv:hex "9aa091";
-  gv:red "154";
-  gv:blue "145";
-  gv:green "160";
-  gv:score "7.708354300000001";
-  gv:coverage "1.06"
-], [
-  gv:hex "899d8c";
-  gv:red "137";
-  gv:blue "140";
-  gv:green "157";
-  gv:score "4.2807337";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "827e71";
-  gv:red "130";
-  gv:blue "113";
-  gv:green "126";
-  gv:score "3.4640353";
-  gv:coverage "0.36"
-], [
-  gv:hex "65594a";
-  gv:red "101";
-  gv:blue "74";
-  gv:green "89";
-  gv:score "2.4742136";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "728473";
-  gv:red "114";
-  gv:blue "115";
-  gv:green "132";
-  gv:score "1.1619031";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "e3dac9";
-  gv:red "227";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "0.43202331";
-  gv:coverage "6.76"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.677741"
-];
-    w:bagOfWords "SELECT\nNAPA VALLEY\nVIN ROSE\nA Light Table Wine made from selected grapes\ngrown in the Napa Valley\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0261";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

@@ -1,112 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1251/label_1256";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "a CAVA\nFondee\nen 1700\nCORCE\nMARC DE CHAMPAGNE\nQUALITE\nCorcelleb\n18, AV. DE L'OPERA\n116, AV. VICTOR-HUGO\n"@undefined;
-    gv:color [
-  gv:hex "495741";
-  gv:red "73";
-  gv:blue "65";
-  gv:green "87";
-  gv:score "11.012307";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "313725";
-  gv:red "49";
-  gv:blue "37";
-  gv:green "55";
-  gv:score "10.811094";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "c8c4b2";
-  gv:red "200";
-  gv:blue "178";
-  gv:green "196";
-  gv:score "10.126327999999999";
-  gv:coverage "5.64"
-], [
-  gv:hex "7c746a";
-  gv:red "124";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "5.207929";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "0f1002";
-  gv:red "15";
-  gv:blue "2";
-  gv:green "16";
-  gv:score "2.2235231";
-  gv:coverage "0.06"
-], [
-  gv:hex "4f523f";
-  gv:red "79";
-  gv:blue "63";
-  gv:green "82";
-  gv:score "10.623631999999999";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "e1e0cd";
-  gv:red "225";
-  gv:blue "205";
-  gv:green "224";
-  gv:score "7.7433988";
-  gv:coverage "9.58"
-], [
-  gv:hex "687861";
-  gv:red "104";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "6.393831199999999";
-  gv:coverage "0.12"
-], [
-  gv:hex "ccc6ba";
-  gv:red "204";
-  gv:blue "186";
-  gv:green "198";
-  gv:score "6.3373104";
-  gv:coverage "10.693332999999999"
-], [
-  gv:hex "787966";
-  gv:red "120";
-  gv:blue "102";
-  gv:green "121";
-  gv:score "4.7524687000000005";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "75.11106699999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.574521"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "56.54742699999999"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.166316"
-];
-    w:bagOfWords "a CAVA\nFondee\nen 1700\nCORCE\nMARC DE CHAMPAGNE\nQUALITE\nCorcelleb\n18, AV. DE L'OPERA\n116, AV. VICTOR-HUGO\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1256";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1194";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "Conac\nBegislador\nGerez\nLIT J. M. BARR Ogo. JERE2.\nGI anejamiento de este conac se efectua por el tipico sistema de soleras\nlimitandose su exportacion a la cantidad indispensable para :onservar perma\nnentemente el mismo tipo.\nF. G. CEBALLOS\n"@spa;
-    gv:color [
-  gv:hex "e2bf85";
-  gv:red "226";
-  gv:blue "133";
-  gv:green "191";
-  gv:score "52.570134";
-  gv:coverage "22.753334"
-], [
-  gv:hex "5e5339";
-  gv:red "94";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "2.7112306999999998";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "32554f";
-  gv:red "50";
-  gv:blue "79";
-  gv:green "85";
-  gv:score "1.9835228";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "ecb882";
-  gv:red "236";
-  gv:blue "130";
-  gv:green "184";
-  gv:score "7.3675938";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "bc9c66";
-  gv:red "188";
-  gv:blue "102";
-  gv:green "156";
-  gv:score "5.856384299999999";
-  gv:coverage "4.1733332"
-], [
-  gv:hex "cc925f";
-  gv:red "204";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "4.4165790000000005";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "d6c29c";
-  gv:red "214";
-  gv:blue "156";
-  gv:green "194";
-  gv:score "2.6815930000000003";
-  gv:coverage "4.18"
-], [
-  gv:hex "a56d3c";
-  gv:red "165";
-  gv:blue "60";
-  gv:green "109";
-  gv:score "1.9025029999999998";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "917340";
-  gv:red "145";
-  gv:blue "64";
-  gv:green "115";
-  gv:score "1.7996719";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "e4bc6f";
-  gv:red "228";
-  gv:blue "111";
-  gv:green "188";
-  gv:score "1.7762769";
-  gv:coverage "0.5133333200000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.442536"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.241817999999995"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.07269"
-];
-    w:bagOfWords "Conac\nBegislador\nGerez\nLIT J. M. BARR Ogo. JERE2.\nGI anejamiento de este conac se efectua por el tipico sistema de soleras\nlimitandose su exportacion a la cantidad indispensable para :onservar perma\nnentemente el mismo tipo.\nF. G. CEBALLOS\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1194";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

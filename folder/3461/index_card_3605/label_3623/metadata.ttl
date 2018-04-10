@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3623";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "AFFIXED TO CASE\nTAX PAID BY STAMPS\nWine\nCalifornia Light\nVINTAGE 1929\nCONTENTS QT\nPRODUCED & B OTT LED BY PAUL MASSON CH A MPA G NE COMPANY\nBonded Winery No. 144, 14th District, Saratoga, California\nCopr. P. M. C. Co., 1937\n"@eng;
-    gv:color [
-  gv:hex "8c763e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "118";
-  gv:score "12.893270000000001";
-  gv:coverage "4.8533332"
-], [
-  gv:hex "9c201e";
-  gv:red "156";
-  gv:blue "30";
-  gv:green "32";
-  gv:score "3.9595485";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "532715";
-  gv:red "83";
-  gv:blue "21";
-  gv:green "39";
-  gv:score "2.9022375";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "ab955b";
-  gv:red "171";
-  gv:blue "91";
-  gv:green "149";
-  gv:score "7.712706900000001";
-  gv:coverage "3.58"
-], [
-  gv:hex "a7977a";
-  gv:red "167";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "7.215767400000001";
-  gv:coverage "7.46"
-], [
-  gv:hex "877758";
-  gv:red "135";
-  gv:blue "88";
-  gv:green "119";
-  gv:score "6.8170152999999996";
-  gv:coverage "4.6133332"
-], [
-  gv:hex "685621";
-  gv:red "104";
-  gv:blue "33";
-  gv:green "86";
-  gv:score "5.1725905";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "9d6c58";
-  gv:red "157";
-  gv:blue "88";
-  gv:green "108";
-  gv:score "3.2335844000000002";
-  gv:coverage "1.3"
-], [
-  gv:hex "8c7b23";
-  gv:red "140";
-  gv:blue "35";
-  gv:green "123";
-  gv:score "3.0965568";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "784936";
-  gv:red "120";
-  gv:blue "54";
-  gv:green "73";
-  gv:score "2.7691107";
-  gv:coverage "0.9266667100000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03bt1gh>;
-  gv:desc "games";
-  gv:score "58.346849999999996"
-];
-    w:bagOfWords "AFFIXED TO CASE\nTAX PAID BY STAMPS\nWine\nCalifornia Light\nVINTAGE 1929\nCONTENTS QT\nPRODUCED & B OTT LED BY PAUL MASSON CH A MPA G NE COMPANY\nBonded Winery No. 144, 14th District, Saratoga, California\nCopr. P. M. C. Co., 1937\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3623";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

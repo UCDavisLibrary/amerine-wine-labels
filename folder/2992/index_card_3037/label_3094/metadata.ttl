@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3094";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "SAINT-EMILION\nT. JOUVET g IE\nBORDEAUX\nBELLOVATS & COMPANY\nNE VW YORK\nBOTTLED IN FRANCE\nCONTENT\nPRODUCT OF FRANCE\n12 FLUID OUNCES\no ALCOHOL BY VOLUME 12\nO O O O O O O\nO o o o o O O O O O O a O O O O O\n"@fra;
-    gv:color [
-  gv:hex "dbc09b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "192";
-  gv:score "35.565957";
-  gv:coverage "55.059999999999995"
-], [
-  gv:hex "a46948";
-  gv:red "164";
-  gv:blue "72";
-  gv:green "105";
-  gv:score "7.4543744";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "e8b38e";
-  gv:red "232";
-  gv:blue "142";
-  gv:green "179";
-  gv:score "7.060506900000001";
-  gv:coverage "0.38"
-], [
-  gv:hex "b49a77";
-  gv:red "180";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "23.585255";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "c9916d";
-  gv:red "201";
-  gv:blue "109";
-  gv:green "145";
-  gv:score "5.3864196";
-  gv:coverage "0.26"
-], [
-  gv:hex "ecbb98";
-  gv:red "236";
-  gv:blue "152";
-  gv:green "187";
-  gv:score "5.058451";
-  gv:coverage "0.66"
-], [
-  gv:hex "907756";
-  gv:red "144";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "4.3040305";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "c1977a";
-  gv:red "193";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "2.5633475";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "957157";
-  gv:red "149";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "1.5137549";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "704d37";
-  gv:red "112";
-  gv:blue "55";
-  gv:green "77";
-  gv:score "1.3696316";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.580395"
-];
-    w:bagOfWords "SAINT-EMILION\nT. JOUVET g IE\nBORDEAUX\nBELLOVATS & COMPANY\nNE VW YORK\nBOTTLED IN FRANCE\nCONTENT\nPRODUCT OF FRANCE\n12 FLUID OUNCES\no ALCOHOL BY VOLUME 12\nO O O O O O O\nO o o o o O O O O O O a O O O O O\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3094";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

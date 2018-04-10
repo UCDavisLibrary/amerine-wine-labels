@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_4008";
-    dct:type "image";
-    w:bagOfWords "RHUM VIEUX\nDE LA\nMARK\nTRADE\nMARTIN OUG\nCOMPAGNIE RHU MIERE\nUSINE SAINTE MARIE\n"@eng;
-    gv:color [
-  gv:hex "7e4926";
-  gv:red "126";
-  gv:blue "38";
-  gv:green "73";
-  gv:score "11.055665000000001";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "4b2712";
-  gv:red "75";
-  gv:blue "18";
-  gv:green "39";
-  gv:score "7.6475382";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "c4400c";
-  gv:red "196";
-  gv:blue "12";
-  gv:green "64";
-  gv:score "4.861911800000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "9e6840";
-  gv:red "158";
-  gv:blue "64";
-  gv:green "104";
-  gv:score "9.1107808";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "986a51";
-  gv:red "152";
-  gv:blue "81";
-  gv:green "106";
-  gv:score "8.294315600000001";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "572c09";
-  gv:red "87";
-  gv:blue "9";
-  gv:green "44";
-  gv:score "6.7944116999999995";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "784c34";
-  gv:red "120";
-  gv:blue "52";
-  gv:green "76";
-  gv:score "6.3487738";
-  gv:coverage "0.6"
-], [
-  gv:hex "381402";
-  gv:red "56";
-  gv:blue "2";
-  gv:green "20";
-  gv:score "5.7348579";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "bf947d";
-  gv:red "191";
-  gv:blue "125";
-  gv:green "148";
-  gv:score "4.1461561";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "883816";
-  gv:red "136";
-  gv:blue "22";
-  gv:green "56";
-  gv:score "3.4719247";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.273779"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "RHUM VIEUX\nDE LA\nMARK\nTRADE\nMARTIN OUG\nCOMPAGNIE RHU MIERE\nUSINE SAINTE MARIE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4008";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

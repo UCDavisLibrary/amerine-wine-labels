@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1241";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "Jerez Brandy\nJ E R E Z\nJ. BARROSO. JEREZ.\nESTOS PRODUCT os\nCON SOLER AS ESCOGIDAS\nESTAN E LABOR ADos\nDE VIEJOS VINOS DE JEREZ\nMARCA REGI STRADA\n"@spa;
-    gv:color [
-  gv:hex "8e7146";
-  gv:red "142";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "15.071935999999999";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "d9c3a8";
-  gv:red "217";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "11.331003";
-  gv:coverage "18.52"
-], [
-  gv:hex "6b1a0f";
-  gv:red "107";
-  gv:blue "15";
-  gv:green "26";
-  gv:score "1.7012607";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "a5251e";
-  gv:red "165";
-  gv:blue "30";
-  gv:green "37";
-  gv:score "1.5585405";
-  gv:coverage "0.26"
-], [
-  gv:hex "c11117";
-  gv:red "193";
-  gv:blue "23";
-  gv:green "17";
-  gv:score "0.49040993";
-  gv:coverage "0.06"
-], [
-  gv:hex "8c7252";
-  gv:red "140";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "14.847584";
-  gv:coverage "3.2"
-], [
-  gv:hex "6a5334";
-  gv:red "106";
-  gv:blue "52";
-  gv:green "83";
-  gv:score "7.680414600000001";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "f2dcc1";
-  gv:red "242";
-  gv:blue "193";
-  gv:green "220";
-  gv:score "6.4623781000000005";
-  gv:coverage "13.44"
-], [
-  gv:hex "ad9679";
-  gv:red "173";
-  gv:blue "121";
-  gv:green "150";
-  gv:score "6.1854746";
-  gv:coverage "2.96"
-], [
-  gv:hex "6b4f26";
-  gv:red "107";
-  gv:blue "38";
-  gv:green "79";
-  gv:score "5.2797046";
-  gv:coverage "0.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.45662300000001"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "54.535782"
-];
-    w:bagOfWords "Jerez Brandy\nJ E R E Z\nJ. BARROSO. JEREZ.\nESTOS PRODUCT os\nCON SOLER AS ESCOGIDAS\nESTAN E LABOR ADos\nDE VIEJOS VINOS DE JEREZ\nMARCA REGI STRADA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1241";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

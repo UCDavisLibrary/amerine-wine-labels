@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3853";
-    dct:type "image";
-    w:bagOfWords "GERMANY\n1760\nGesetzl geschutzt\nSCHULZ & WAGNER\nM 1953 BERNKASTELER\nALCOHOLIC CONTENT 9 TO\n11 elo BY VOL NAM E\n"@deu;
-    gv:color [
-  gv:hex "ccb5a0";
-  gv:red "204";
-  gv:blue "160";
-  gv:green "181";
-  gv:score "40.240964";
-  gv:coverage "18.373333"
-], [
-  gv:hex "b39b87";
-  gv:red "179";
-  gv:blue "135";
-  gv:green "155";
-  gv:score "26.554275";
-  gv:coverage "8.8533334"
-], [
-  gv:hex "8b735f";
-  gv:red "139";
-  gv:blue "95";
-  gv:green "115";
-  gv:score "20.276189";
-  gv:coverage "7.466666399999999"
-], [
-  gv:hex "715945";
-  gv:red "113";
-  gv:blue "69";
-  gv:green "89";
-  gv:score "6.6282772";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "331e0a";
-  gv:red "51";
-  gv:blue "10";
-  gv:green "30";
-  gv:score "0.045331727999999995";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e2bca7";
-  gv:red "226";
-  gv:blue "167";
-  gv:green "188";
-  gv:score "1.661996";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "b7937d";
-  gv:red "183";
-  gv:blue "125";
-  gv:green "147";
-  gv:score "1.5938131000000002";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "6a4e3d";
-  gv:red "106";
-  gv:blue "61";
-  gv:green "78";
-  gv:score "1.0172113999999999";
-  gv:coverage "0.38"
-], [
-  gv:hex "906f5c";
-  gv:red "144";
-  gv:blue "92";
-  gv:green "111";
-  gv:score "0.93625784";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "efdbc8";
-  gv:red "239";
-  gv:blue "200";
-  gv:green "219";
-  gv:score "0.5482913";
-  gv:coverage "8.200000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.645967"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.507656999999995"
-];
-    w:bagOfWords "GERMANY\n1760\nGesetzl geschutzt\nSCHULZ & WAGNER\nM 1953 BERNKASTELER\nALCOHOLIC CONTENT 9 TO\n11 elo BY VOL NAM E\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3853";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

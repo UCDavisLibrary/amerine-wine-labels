@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4639";
-    dct:type "image";
-    w:bagOfWords "MAR CA\n2 O\nREGIS TRADA\nMANZANILLA\nLA GITANA\nSUCESORES DE\nDA\nE. HIDALGO\nDE\nSAN LUCAR DE BARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "d4bfa1";
-  gv:red "212";
-  gv:blue "161";
-  gv:green "191";
-  gv:score "24.331194";
-  gv:coverage "28.58"
-], [
-  gv:hex "7b4d24";
-  gv:red "123";
-  gv:blue "36";
-  gv:green "77";
-  gv:score "4.0841747";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "ae9a78";
-  gv:red "174";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "17.976707";
-  gv:coverage "4.4933334"
-], [
-  gv:hex "8c7a57";
-  gv:red "140";
-  gv:blue "87";
-  gv:green "122";
-  gv:score "9.116362";
-  gv:coverage "1.26"
-], [
-  gv:hex "ad9666";
-  gv:red "173";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "5.8816697";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "8f7a4c";
-  gv:red "143";
-  gv:blue "76";
-  gv:green "122";
-  gv:score "5.7038385";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "9d6840";
-  gv:red "157";
-  gv:blue "64";
-  gv:green "104";
-  gv:score "3.3652645000000003";
-  gv:coverage "0.2"
-], [
-  gv:hex "9b6d55";
-  gv:red "155";
-  gv:blue "85";
-  gv:green "109";
-  gv:score "2.645795";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "e1b7a8";
-  gv:red "225";
-  gv:blue "168";
-  gv:green "183";
-  gv:score "2.2687279";
-  gv:coverage "1.2"
-], [
-  gv:hex "8c3a27";
-  gv:red "140";
-  gv:blue "39";
-  gv:green "58";
-  gv:score "2.124124";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.82721699999999"
-];
-    w:bagOfWords "MAR CA\n2 O\nREGIS TRADA\nMANZANILLA\nLA GITANA\nSUCESORES DE\nDA\nE. HIDALGO\nDE\nSAN LUCAR DE BARRAMEDA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4639";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2567";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CHABLIS\nGRAND CRU\nVALM U R\nVINTAGE 1929\nroprietaires, a Chablis. Trance\nCONTENTS\nPRODUCT\nPINT 8 FLUID OUNCES\nOF FRANCE\nIMPORTED BY\nHORTON & CONVERSE\n62\nWEST PICO STREET\nLOS ANGELES CALIFORNIA\n"@fra;
-    gv:color [
-  gv:hex "dfc4a0";
-  gv:red "223";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "40.625525";
-  gv:coverage "16.173333"
-], [
-  gv:hex "e1c192";
-  gv:red "225";
-  gv:blue "146";
-  gv:green "193";
-  gv:score "21.60327";
-  gv:coverage "3.8466666"
-], [
-  gv:hex "b19776";
-  gv:red "177";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "16.822581";
-  gv:coverage "6.4533331"
-], [
-  gv:hex "927959";
-  gv:red "146";
-  gv:blue "89";
-  gv:green "121";
-  gv:score "7.44057";
-  gv:coverage "3.3066668"
-], [
-  gv:hex "b8986c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "152";
-  gv:score "5.0403785";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "f0d7b5";
-  gv:red "240";
-  gv:blue "181";
-  gv:green "215";
-  gv:score "4.154991";
-  gv:coverage "7.2666667"
-], [
-  gv:hex "95774b";
-  gv:red "149";
-  gv:blue "75";
-  gv:green "119";
-  gv:score "1.4658282999999999";
-  gv:coverage "0.32"
-], [
-  gv:hex "6c5437";
-  gv:red "108";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "0.9456119500000001";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "f6d7a8";
-  gv:red "246";
-  gv:blue "168";
-  gv:green "215";
-  gv:score "0.45236167";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "977246";
-  gv:red "151";
-  gv:blue "70";
-  gv:green "114";
-  gv:score "0.35740016";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.063426"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "60.399455"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.96625099999999"
-];
-    w:bagOfWords "CHABLIS\nGRAND CRU\nVALM U R\nVINTAGE 1929\nroprietaires, a Chablis. Trance\nCONTENTS\nPRODUCT\nPINT 8 FLUID OUNCES\nOF FRANCE\nIMPORTED BY\nHORTON & CONVERSE\n62\nWEST PICO STREET\nLOS ANGELES CALIFORNIA\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2567";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4360";
-    dct:type "image";
-    w:bagOfWords "MARI\nOKOUS\nNO SORTNO 1953\nchauvignon\n2,11 11,48\nGORNJE SLOVENSKE GORICE\nVINARSKA ZADRUGA MARIBOR\nCHZ 1775 11. 4, 1954\n"@undefined;
-    gv:color [
-  gv:hex "8d7341";
-  gv:red "141";
-  gv:blue "65";
-  gv:green "115";
-  gv:score "39.989793";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "d5c0a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "13.666830999999998";
-  gv:coverage "18.973333"
-], [
-  gv:hex "543004";
-  gv:red "84";
-  gv:blue "4";
-  gv:green "48";
-  gv:score "0.62838728";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "ae9a7f";
-  gv:red "174";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "12.282593";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "8a7456";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "10.196555";
-  gv:coverage "1.38"
-], [
-  gv:hex "a98f5c";
-  gv:red "169";
-  gv:blue "92";
-  gv:green "143";
-  gv:score "6.268636900000001";
-  gv:coverage "0.26"
-], [
-  gv:hex "eedbc4";
-  gv:red "238";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "4.9219728";
-  gv:coverage "13.026667"
-], [
-  gv:hex "725929";
-  gv:red "114";
-  gv:blue "41";
-  gv:green "89";
-  gv:score "4.160152";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "69573d";
-  gv:red "105";
-  gv:blue "61";
-  gv:green "87";
-  gv:score "2.0251083999999997";
-  gv:coverage "0.36"
-], [
-  gv:hex "986e42";
-  gv:red "152";
-  gv:blue "66";
-  gv:green "110";
-  gv:score "1.5551429";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.016521"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.308359"
-];
-    w:bagOfWords "MARI\nOKOUS\nNO SORTNO 1953\nchauvignon\n2,11 11,48\nGORNJE SLOVENSKE GORICE\nVINARSKA ZADRUGA MARIBOR\nCHZ 1775 11. 4, 1954\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4360";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

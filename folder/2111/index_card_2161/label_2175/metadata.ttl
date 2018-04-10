@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2161/label_2175";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "I. V. Co\nCalifornia\nPALE DRY SHERRY\nPRODUCED AND BOTTLED BY\nl Thunerlea, GUASTI, CALIFbRNIA\nALCOHOL 20% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "18130f";
-  gv:red "24";
-  gv:blue "15";
-  gv:green "19";
-  gv:score "21.924451";
-  gv:coverage "13.693332999999999"
-], [
-  gv:hex "a98d55";
-  gv:red "169";
-  gv:blue "85";
-  gv:green "141";
-  gv:score "20.221737";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "eddcc5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "220";
-  gv:score "10.01958";
-  gv:coverage "22.993334"
-], [
-  gv:hex "987c45";
-  gv:red "152";
-  gv:blue "69";
-  gv:green "124";
-  gv:score "17.064958999999998";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "877455";
-  gv:red "135";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "4.7425386";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "372f29";
-  gv:red "55";
-  gv:blue "41";
-  gv:green "47";
-  gv:score "4.1699011";
-  gv:coverage "2.22"
-], [
-  gv:hex "d7c4a7";
-  gv:red "215";
-  gv:blue "167";
-  gv:green "196";
-  gv:score "3.865587";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "61533d";
-  gv:red "97";
-  gv:blue "61";
-  gv:green "83";
-  gv:score "3.7712634";
-  gv:coverage "0.66"
-], [
-  gv:hex "ac9673";
-  gv:red "172";
-  gv:blue "115";
-  gv:green "150";
-  gv:score "3.5185505";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "3f3423";
-  gv:red "63";
-  gv:blue "35";
-  gv:green "52";
-  gv:score "2.1424115";
-  gv:coverage "0.54666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "76.838464"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04lbp>;
-  gv:desc "leather";
-  gv:score "57.871777"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.515048"
-];
-    w:bagOfWords "I. V. Co\nCalifornia\nPALE DRY SHERRY\nPRODUCED AND BOTTLED BY\nl Thunerlea, GUASTI, CALIFbRNIA\nALCOHOL 20% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2175";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

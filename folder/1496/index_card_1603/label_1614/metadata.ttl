@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1614";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "dade Rodriguez\nCave\nPedro imenez\nM U Y VIEJO\nRegistro oficial de BARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "9a6d36";
-  gv:red "154";
-  gv:blue "54";
-  gv:green "109";
-  gv:score "30.74111";
-  gv:coverage "8.3533332"
-], [
-  gv:hex "ddc4a6";
-  gv:red "221";
-  gv:blue "166";
-  gv:green "196";
-  gv:score "8.749712299999999";
-  gv:coverage "23.66"
-], [
-  gv:hex "a5722d";
-  gv:red "165";
-  gv:blue "45";
-  gv:green "114";
-  gv:score "10.407759";
-  gv:coverage "2.54"
-], [
-  gv:hex "7b511c";
-  gv:red "123";
-  gv:blue "28";
-  gv:green "81";
-  gv:score "9.9212281";
-  gv:coverage "1.78"
-], [
-  gv:hex "bd8f5a";
-  gv:red "189";
-  gv:blue "90";
-  gv:green "143";
-  gv:score "7.8770019";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "bb9663";
-  gv:red "187";
-  gv:blue "99";
-  gv:green "150";
-  gv:score "7.061587299999999";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "bc853c";
-  gv:red "188";
-  gv:blue "60";
-  gv:green "133";
-  gv:score "5.4970786";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "987440";
-  gv:red "152";
-  gv:blue "64";
-  gv:green "116";
-  gv:score "4.3454088";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "dab683";
-  gv:red "218";
-  gv:blue "131";
-  gv:green "182";
-  gv:score "2.4073854";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "f0d8c0";
-  gv:red "240";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "2.1031626";
-  gv:coverage "31.053334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.19198300000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "56.044781"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "53.644997000000004"
-];
-    w:bagOfWords "dade Rodriguez\nCave\nPedro imenez\nM U Y VIEJO\nRegistro oficial de BARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1614";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3571";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "13\nBOTTLED AT THE WINERY\nESTABLISHED\nIBB3\nVALLE de ORO\nLIVERMORE VALLEY\nHru Sauterne\nPRODUCED AND BOTTLED BY\nVVENTE BROS\nB. W. No. 893 14th DIST., CALIF.\nLIVERMORE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d9c6ae";
-  gv:red "217";
-  gv:blue "174";
-  gv:green "198";
-  gv:score "45.563304";
-  gv:coverage "19.753334"
-], [
-  gv:hex "ad997c";
-  gv:red "173";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "13.454664999999999";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "ead9c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "12.666225";
-  gv:coverage "6.2533334"
-], [
-  gv:hex "877459";
-  gv:red "135";
-  gv:blue "89";
-  gv:green "116";
-  gv:score "8.5718453";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "655238";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "6.3904561";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "b19967";
-  gv:red "177";
-  gv:blue "103";
-  gv:green "153";
-  gv:score "3.58612";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "46341b";
-  gv:red "70";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "3.4012791";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "92794a";
-  gv:red "146";
-  gv:blue "74";
-  gv:green "121";
-  gv:score "1.2379332";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "e6dcd0";
-  gv:red "230";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "1.1138561";
-  gv:coverage "65.473336"
-], [
-  gv:hex "d0b786";
-  gv:red "208";
-  gv:blue "134";
-  gv:green "183";
-  gv:score "0.90046134";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.728206"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "13\nBOTTLED AT THE WINERY\nESTABLISHED\nIBB3\nVALLE de ORO\nLIVERMORE VALLEY\nHru Sauterne\nPRODUCED AND BOTTLED BY\nVVENTE BROS\nB. W. No. 893 14th DIST., CALIF.\nLIVERMORE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3571";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

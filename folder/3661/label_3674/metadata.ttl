@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3674";
-    dct:type "image";
-    w:bagOfWords "2 65\nVINO FINO DE MESA\nR. EXPORTADORES No 4896\nREMBOTELLADORES N92020\nJAIME SERRA\n"@spa;
-    gv:color [
-  gv:hex "e7b3a7";
-  gv:red "231";
-  gv:blue "167";
-  gv:green "179";
-  gv:score "25.873974";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "30583d";
-  gv:red "48";
-  gv:blue "61";
-  gv:green "88";
-  gv:score "4.5187127";
-  gv:coverage "2.52"
-], [
-  gv:hex "c99387";
-  gv:red "201";
-  gv:blue "135";
-  gv:green "147";
-  gv:score "24.582119";
-  gv:coverage "1.6"
-], [
-  gv:hex "d3c6b6";
-  gv:red "211";
-  gv:blue "182";
-  gv:green "198";
-  gv:score "8.4304914";
-  gv:coverage "5.006666500000001"
-], [
-  gv:hex "d2867a";
-  gv:red "210";
-  gv:blue "122";
-  gv:green "134";
-  gv:score "6.793620000000001";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "e6dbca";
-  gv:red "230";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "4.620373600000001";
-  gv:coverage "9.5533334"
-], [
-  gv:hex "205b3a";
-  gv:red "32";
-  gv:blue "58";
-  gv:green "91";
-  gv:score "3.5284884";
-  gv:coverage "1.54"
-], [
-  gv:hex "e8e1d2";
-  gv:red "232";
-  gv:blue "210";
-  gv:green "225";
-  gv:score "2.7749458000000002";
-  gv:coverage "68.273336"
-], [
-  gv:hex "fbd2c7";
-  gv:red "251";
-  gv:blue "199";
-  gv:green "210";
-  gv:score "2.5402043";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "d1c9bb";
-  gv:red "209";
-  gv:blue "187";
-  gv:green "201";
-  gv:score "2.477303";
-  gv:coverage "3.5933333999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.05429000000001"
-];
-    w:bagOfWords "2 65\nVINO FINO DE MESA\nR. EXPORTADORES No 4896\nREMBOTELLADORES N92020\nJAIME SERRA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3674";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

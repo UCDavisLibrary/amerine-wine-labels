@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0932";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "AIG LE\nostettler de u Berne\n"@deu;
-    gv:color [
-  gv:hex "dfbd88";
-  gv:red "223";
-  gv:blue "136";
-  gv:green "189";
-  gv:score "15.537799999999999";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "744e1f";
-  gv:red "116";
-  gv:blue "31";
-  gv:green "78";
-  gv:score "12.819648";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "b99662";
-  gv:red "185";
-  gv:blue "98";
-  gv:green "150";
-  gv:score "15.390230999999998";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "957542";
-  gv:red "149";
-  gv:blue "66";
-  gv:green "117";
-  gv:score "11.386749";
-  gv:coverage "1.32"
-], [
-  gv:hex "956d3c";
-  gv:red "149";
-  gv:blue "60";
-  gv:green "109";
-  gv:score "10.909189";
-  gv:coverage "0.98"
-], [
-  gv:hex "715323";
-  gv:red "113";
-  gv:blue "35";
-  gv:green "83";
-  gv:score "5.6654818";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "dcc29f";
-  gv:red "220";
-  gv:blue "159";
-  gv:green "194";
-  gv:score "5.2101802";
-  gv:coverage "8.34"
-], [
-  gv:hex "bc905e";
-  gv:red "188";
-  gv:blue "94";
-  gv:green "144";
-  gv:score "5.110601";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "573305";
-  gv:red "87";
-  gv:blue "5";
-  gv:green "51";
-  gv:score "3.3745002000000004";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "b09775";
-  gv:red "176";
-  gv:blue "117";
-  gv:green "151";
-  gv:score "2.4616305";
-  gv:coverage "1.0266666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "55.966925999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.268264"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.635811000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.104006999999996"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "51.941115"
-];
-    w:bagOfWords "AIG LE\nostettler de u Berne\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0932";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

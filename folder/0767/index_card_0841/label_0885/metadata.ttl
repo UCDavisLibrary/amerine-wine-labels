@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0885";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "utiuM\nFOR THE U.S. A\nSONS &Co\nInc\nNEW YORK\nSOLE AGENTS\nESTABLISHED\ni877\nPRODUCE OF FRANCE\nALCOHOLIC\nSTRENGTH\nCONTENTS I3 FLUID\nO ZS\nPORT\nI PER ENT\nBY V\nME\nVintage 1929\nExtra Sec.\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d4c2b2";
-  gv:red "212";
-  gv:blue "178";
-  gv:green "194";
-  gv:score "22.792633000000002";
-  gv:coverage "6.8266667000000005"
-], [
-  gv:hex "1b1511";
-  gv:red "27";
-  gv:blue "17";
-  gv:green "21";
-  gv:score "10.697345";
-  gv:coverage "1.9"
-], [
-  gv:hex "ebdaca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "11.19179";
-  gv:coverage "22.473334"
-], [
-  gv:hex "3a332d";
-  gv:red "58";
-  gv:blue "45";
-  gv:green "51";
-  gv:score "10.595503";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "d0c1b7";
-  gv:red "208";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "9.259279099999999";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "ebe1d6";
-  gv:red "235";
-  gv:blue "214";
-  gv:green "225";
-  gv:score "8.1432268";
-  gv:coverage "61.686665"
-], [
-  gv:hex "af9e8f";
-  gv:red "175";
-  gv:blue "143";
-  gv:green "158";
-  gv:score "5.954935";
-  gv:coverage "0.64"
-], [
-  gv:hex "534d46";
-  gv:red "83";
-  gv:blue "70";
-  gv:green "77";
-  gv:score "5.8950126";
-  gv:coverage "0.66"
-], [
-  gv:hex "e0b8a9";
-  gv:red "224";
-  gv:blue "169";
-  gv:green "184";
-  gv:score "4.835039";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "ad9f97";
-  gv:red "173";
-  gv:blue "151";
-  gv:green "159";
-  gv:score "2.8839855";
-  gv:coverage "0.45999999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.963145"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.965019999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.173353"
-];
-    w:bagOfWords "utiuM\nFOR THE U.S. A\nSONS &Co\nInc\nNEW YORK\nSOLE AGENTS\nESTABLISHED\ni877\nPRODUCE OF FRANCE\nALCOHOLIC\nSTRENGTH\nCONTENTS I3 FLUID\nO ZS\nPORT\nI PER ENT\nBY V\nME\nVintage 1929\nExtra Sec.\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0885";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2800";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "PRODUCE OF FRA\nCHATEAU HAUT BRIO\nAPPELLATION GRAVES. GONTROLEE\nS. A. DU CHAN HAUT BR ON, PROPRIETAIFE A PESSAC\n"@fra;
-    gv:color [
-  gv:hex "cdbaa2";
-  gv:red "205";
-  gv:blue "162";
-  gv:green "186";
-  gv:score "44.338855";
-  gv:coverage "29.933333"
-], [
-  gv:hex "b6a38b";
-  gv:red "182";
-  gv:blue "139";
-  gv:green "163";
-  gv:score "19.792938";
-  gv:coverage "5.4933332"
-], [
-  gv:hex "c8baaf";
-  gv:red "200";
-  gv:blue "175";
-  gv:green "186";
-  gv:score "11.146702999999999";
-  gv:coverage "16.72"
-], [
-  gv:hex "d5b382";
-  gv:red "213";
-  gv:blue "130";
-  gv:green "179";
-  gv:score "9.2079945";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "c2a06f";
-  gv:red "194";
-  gv:blue "111";
-  gv:green "160";
-  gv:score "7.8328721";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "c59860";
-  gv:red "197";
-  gv:blue "96";
-  gv:green "152";
-  gv:score "3.7063941000000002";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "b7a89d";
-  gv:red "183";
-  gv:blue "157";
-  gv:green "168";
-  gv:score "2.0514162";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "daae78";
-  gv:red "218";
-  gv:blue "120";
-  gv:green "174";
-  gv:score "1.021773";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "e8d6c4";
-  gv:red "232";
-  gv:blue "196";
-  gv:green "214";
-  gv:score "0.3500971";
-  gv:coverage "4.2066667"
-], [
-  gv:hex "e3d6ca";
-  gv:red "227";
-  gv:blue "202";
-  gv:green "214";
-  gv:score "0.31981161";
-  gv:coverage "39.393333000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.162938"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.804494"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.677524999999996"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.619928"
-];
-    w:bagOfWords "PRODUCE OF FRA\nCHATEAU HAUT BRIO\nAPPELLATION GRAVES. GONTROLEE\nS. A. DU CHAN HAUT BR ON, PROPRIETAIFE A PESSAC\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2800";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0140";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "Oraminer aromatico\na a\np i n i c o l a B. Ret t m e r 6.\n2. 4 a l D a r o 21 I t o i d e\n"@ita;
-    gv:color [
-  gv:hex "aa987b";
-  gv:red "170";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "11.0704";
-  gv:coverage "4.2933334"
-], [
-  gv:hex "84765b";
-  gv:red "132";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "9.9052057";
-  gv:coverage "3.4533332999999997"
-], [
-  gv:hex "d3c3a5";
-  gv:red "211";
-  gv:blue "165";
-  gv:green "195";
-  gv:score "8.899314";
-  gv:coverage "15.58"
-], [
-  gv:hex "60543d";
-  gv:red "96";
-  gv:blue "61";
-  gv:green "84";
-  gv:score "6.5330729000000005";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "b49665";
-  gv:red "180";
-  gv:blue "101";
-  gv:green "150";
-  gv:score "6.3741662";
-  gv:coverage "1.48"
-], [
-  gv:hex "727a79";
-  gv:red "114";
-  gv:blue "121";
-  gv:green "122";
-  gv:score "4.8873257";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "bc9079";
-  gv:red "188";
-  gv:blue "121";
-  gv:green "144";
-  gv:score "4.5648709";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "555452";
-  gv:red "85";
-  gv:blue "82";
-  gv:green "84";
-  gv:score "4.1580036";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "40341e";
-  gv:red "64";
-  gv:blue "30";
-  gv:green "52";
-  gv:score "3.8453579";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "957749";
-  gv:red "149";
-  gv:blue "73";
-  gv:green "119";
-  gv:score "3.5952567999999996";
-  gv:coverage "0.9666666399999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.555831"
-];
-    w:bagOfWords "Oraminer aromatico\na a\np i n i c o l a B. Ret t m e r 6.\n2. 4 a l D a r o 21 I t o i d e\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0140";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

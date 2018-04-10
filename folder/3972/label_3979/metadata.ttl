@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3972/label_3979";
-    dct:type "image";
-    w:bagOfWords "N P F A L Z\nR H E\nMulibacher Knappengraben\nHER MANN SCHOTT A.-G., R HEY DT\nNr. 23822\nDM 28 00\n23 822\n"@deu;
-    gv:color [
-  gv:hex "d7c1a1";
-  gv:red "215";
-  gv:blue "161";
-  gv:green "193";
-  gv:score "22.245138999999998";
-  gv:coverage "15.1"
-], [
-  gv:hex "b39a79";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "13.479114000000001";
-  gv:coverage "6.273333"
-], [
-  gv:hex "eedcbf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "220";
-  gv:score "10.45442";
-  gv:coverage "20.46"
-], [
-  gv:hex "b49867";
-  gv:red "180";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "7.5545236000000004";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "907346";
-  gv:red "144";
-  gv:blue "70";
-  gv:green "115";
-  gv:score "6.6955216";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "dac18d";
-  gv:red "218";
-  gv:blue "141";
-  gv:green "193";
-  gv:score "6.5534316";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "8e7656";
-  gv:red "142";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "5.9193861";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "675133";
-  gv:red "103";
-  gv:blue "51";
-  gv:green "81";
-  gv:score "3.2802142";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "967052";
-  gv:red "150";
-  gv:blue "82";
-  gv:green "112";
-  gv:score "3.2437387999999996";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "966e42";
-  gv:red "150";
-  gv:blue "66";
-  gv:green "110";
-  gv:score "3.1789988";
-  gv:coverage "0.5666666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.932039"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.776118"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.270317"
-];
-    w:bagOfWords "N P F A L Z\nR H E\nMulibacher Knappengraben\nHER MANN SCHOTT A.-G., R HEY DT\nNr. 23822\nDM 28 00\n23 822\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3979";
+    <schema.keywords> "Germany Rheinpfalz Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

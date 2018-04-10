@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2678";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "0 L A N D S\nBEAUJOLAIS\nAPPELLATION CONTROLEE\nCAVES DES PO LA N D S\nALO X E C O R T O N\nCOTE-D'OR\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "dfc19d";
-  gv:red "223";
-  gv:blue "157";
-  gv:green "193";
-  gv:score "29.142269";
-  gv:coverage "21.213333000000002"
-], [
-  gv:hex "b39774";
-  gv:red "179";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "14.011787";
-  gv:coverage "3.6933333"
-], [
-  gv:hex "8f7553";
-  gv:red "143";
-  gv:blue "83";
-  gv:green "117";
-  gv:score "11.158331";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "e1bf92";
-  gv:red "225";
-  gv:blue "146";
-  gv:green "191";
-  gv:score "8.1237562";
-  gv:coverage "4.7733333"
-], [
-  gv:hex "eeb891";
-  gv:red "238";
-  gv:blue "145";
-  gv:green "184";
-  gv:score "7.0439495";
-  gv:coverage "2.36"
-], [
-  gv:hex "c7966f";
-  gv:red "199";
-  gv:blue "111";
-  gv:green "150";
-  gv:score "6.933212299999999";
-  gv:coverage "3.04"
-], [
-  gv:hex "e9bc9a";
-  gv:red "233";
-  gv:blue "154";
-  gv:green "188";
-  gv:score "6.440071799999999";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "c09776";
-  gv:red "192";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "3.4279129999999998";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "6c5534";
-  gv:red "108";
-  gv:blue "52";
-  gv:green "85";
-  gv:score "2.7324755";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "f3d7b4";
-  gv:red "243";
-  gv:blue "180";
-  gv:green "215";
-  gv:score "1.8139161000000001";
-  gv:coverage "4.3866667999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.016116"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "63.587189"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "61.9633"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.96312399999999"
-];
-    w:bagOfWords "0 L A N D S\nBEAUJOLAIS\nAPPELLATION CONTROLEE\nCAVES DES PO LA N D S\nALO X E C O R T O N\nCOTE-D'OR\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2678";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

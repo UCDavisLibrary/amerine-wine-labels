@@ -1,112 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1159";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "TRIOMPHE\n4/5 Quart.\nPRODUCE\n80 Proof\nOF FRANCE\nPant. Off.\nReg. U. S.\nLIQUEUR. COGNAC BRANDY\nDISTILLED & BOTTLED BY\nT HINE & Ce\nESTABLISHED\n1 7 6 3\nCOGNAC FRANCE\nIMPORTED BY\n21\nBRANDS\nInc.\nSeventeen West Fifty-second Street\nNEW YORK\nPRINTED IN FRANCE\n"@undefined;
-    gv:color [
-  gv:hex "ddc6a2";
-  gv:red "221";
-  gv:blue "162";
-  gv:green "198";
-  gv:score "64.633185";
-  gv:coverage "27.279999999999998"
-], [
-  gv:hex "be926b";
-  gv:red "190";
-  gv:blue "107";
-  gv:green "146";
-  gv:score "0.55902";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "b39c7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "12.614182";
-  gv:coverage "6.0666665"
-], [
-  gv:hex "eed8b7";
-  gv:red "238";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "8.3559036";
-  gv:coverage "8.86"
-], [
-  gv:hex "8b7554";
-  gv:red "139";
-  gv:blue "84";
-  gv:green "117";
-  gv:score "6.986609100000001";
-  gv:coverage "3.4533332999999997"
-], [
-  gv:hex "685334";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "83";
-  gv:score "3.4333516";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "463215";
-  gv:red "70";
-  gv:blue "21";
-  gv:green "50";
-  gv:score "0.7518889400000001";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ddb591";
-  gv:red "221";
-  gv:blue "145";
-  gv:green "181";
-  gv:score "0.47785932999999997";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "c19774";
-  gv:red "193";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "0.36154516999999997";
-  gv:coverage "0.08"
-], [
-  gv:hex "d0c8bc";
-  gv:red "208";
-  gv:blue "188";
-  gv:green "200";
-  gv:score "0.35770264999999996";
-  gv:coverage "6.279999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.79466000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.178751000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.890836"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.234159999999996"
-];
-    w:bagOfWords "TRIOMPHE\n4/5 Quart.\nPRODUCE\n80 Proof\nOF FRANCE\nPant. Off.\nReg. U. S.\nLIQUEUR. COGNAC BRANDY\nDISTILLED & BOTTLED BY\nT HINE & Ce\nESTABLISHED\n1 7 6 3\nCOGNAC FRANCE\nIMPORTED BY\n21\nBRANDS\nInc.\nSeventeen West Fifty-second Street\nNEW YORK\nPRINTED IN FRANCE\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1159";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

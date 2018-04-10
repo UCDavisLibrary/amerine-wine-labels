@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2247";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "MIS EN BOUTEILLES AU CHATEAU\nCHATEAU LAFITE\n1933\nBons de ROTHSCHILD. Propriétaires\nFRANCE\nBORDEAUX\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "ddc3a4";
-  gv:red "221";
-  gv:blue "164";
-  gv:green "195";
-  gv:score "19.608063";
-  gv:coverage "16.306667"
-], [
-  gv:hex "634f38";
-  gv:red "99";
-  gv:blue "56";
-  gv:green "79";
-  gv:score "16.714048000000002";
-  gv:coverage "2.62"
-], [
-  gv:hex "c99568";
-  gv:red "201";
-  gv:blue "104";
-  gv:green "149";
-  gv:score "5.1059071";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "46341e";
-  gv:red "70";
-  gv:blue "30";
-  gv:green "52";
-  gv:score "12.313153999999999";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "897257";
-  gv:red "137";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "11.495017";
-  gv:coverage "1.76"
-], [
-  gv:hex "b19676";
-  gv:red "177";
-  gv:blue "118";
-  gv:green "150";
-  gv:score "11.055115";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "e1af81";
-  gv:red "225";
-  gv:blue "129";
-  gv:green "175";
-  gv:score "4.235008";
-  gv:coverage "0.8"
-], [
-  gv:hex "b69365";
-  gv:red "182";
-  gv:blue "101";
-  gv:green "147";
-  gv:score "4.1773435";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "deba89";
-  gv:red "222";
-  gv:blue "137";
-  gv:green "186";
-  gv:score "3.7301451";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "9d7c52";
-  gv:red "157";
-  gv:blue "82";
-  gv:green "124";
-  gv:score "3.1856533";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.236549"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.546544"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.2614"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.579717"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.85267700000001"
-];
-    w:bagOfWords "MIS EN BOUTEILLES AU CHATEAU\nCHATEAU LAFITE\n1933\nBons de ROTHSCHILD. Propriétaires\nFRANCE\nBORDEAUX\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2247";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

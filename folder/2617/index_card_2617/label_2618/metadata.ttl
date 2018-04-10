@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2618";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "BROUILLY\nGrand\nBEAUJOLAIS\nAPPELLATION\nVILLAGES\nCONTROLEE\nPEUCHET & Cio, NEGOCIANTS PARIS\nJEAN BN. MPR\n"@fra;
-    gv:color [
-  gv:hex "e3be8b";
-  gv:red "227";
-  gv:blue "139";
-  gv:green "190";
-  gv:score "14.895141";
-  gv:coverage "6.279999999999999"
-], [
-  gv:hex "774b21";
-  gv:red "119";
-  gv:blue "33";
-  gv:green "75";
-  gv:score "10.327475999999999";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "681809";
-  gv:red "104";
-  gv:blue "9";
-  gv:green "24";
-  gv:score "4.2407274";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "e4b47c";
-  gv:red "228";
-  gv:blue "124";
-  gv:green "180";
-  gv:score "9.3820632";
-  gv:coverage "4.0866666"
-], [
-  gv:hex "986b3f";
-  gv:red "152";
-  gv:blue "63";
-  gv:green "107";
-  gv:score "8.165314";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "c5925f";
-  gv:red "197";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "7.6986313";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "e3c4a0";
-  gv:red "227";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "6.995309099999999";
-  gv:coverage "17.080000000000002"
-], [
-  gv:hex "907142";
-  gv:red "144";
-  gv:blue "66";
-  gv:green "113";
-  gv:score "6.1841685";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "b89665";
-  gv:red "184";
-  gv:blue "101";
-  gv:green "150";
-  gv:score "4.4425488";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "592e06";
-  gv:red "89";
-  gv:blue "6";
-  gv:green "46";
-  gv:score "3.5736315";
-  gv:coverage "0.62"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.353297"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.11120999999999"
-];
-    w:bagOfWords "BROUILLY\nGrand\nBEAUJOLAIS\nAPPELLATION\nVILLAGES\nCONTROLEE\nPEUCHET & Cio, NEGOCIANTS PARIS\nJEAN BN. MPR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2618";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

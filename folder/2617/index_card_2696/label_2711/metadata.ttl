@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2711";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "0\nDEL E PINE & CIE\nPROPRIETA IRES-NEGOCIANTS\nPRODUCT OF FRANCE TAIN-L,HERMITAGE\n(DROME)\n13 % BY VOL\n"@fra;
-    gv:color [
-  gv:hex "d7c0a3";
-  gv:red "215";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "46.020344";
-  gv:coverage "42.373332000000005"
-], [
-  gv:hex "b09b82";
-  gv:red "176";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "14.981805000000001";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "d8b887";
-  gv:red "216";
-  gv:blue "135";
-  gv:green "184";
-  gv:score "12.294476";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "573809";
-  gv:red "87";
-  gv:blue "9";
-  gv:green "56";
-  gv:score "0.11294624";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ba9962";
-  gv:red "186";
-  gv:blue "98";
-  gv:green "153";
-  gv:score "8.722534";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "8a755a";
-  gv:red "138";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "6.6700511";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "edd9bf";
-  gv:red "237";
-  gv:blue "191";
-  gv:green "217";
-  gv:score "4.559074300000001";
-  gv:coverage "18.506667"
-], [
-  gv:hex "937446";
-  gv:red "147";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "1.8704551999999999";
-  gv:coverage "0.1"
-], [
-  gv:hex "6f593c";
-  gv:red "111";
-  gv:blue "60";
-  gv:green "89";
-  gv:score "1.7208613000000001";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "c2965e";
-  gv:red "194";
-  gv:blue "94";
-  gv:green "150";
-  gv:score "1.2989334";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.79815099999999"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.324228"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.577483"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.861243"
-];
-    w:bagOfWords "0\nDEL E PINE & CIE\nPROPRIETA IRES-NEGOCIANTS\nPRODUCT OF FRANCE TAIN-L,HERMITAGE\n(DROME)\n13 % BY VOL\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2711";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

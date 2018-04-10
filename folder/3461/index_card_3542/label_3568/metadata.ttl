@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3568";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "PASTE NE\nSUPERIOR\nLivermore Valley\nDRY SAUTER NE\n(Serve chilled)\nA medium-bodied wine of fine favor and excellent bouquet.\nPASTENE\nBOTTLED EXPRESSLY FOR\nWINE & ITS Co. Inc\nBOSTON, MASS\nAlcohol 12% by volume\nProduced and bottled by Wente Bros. Winery, Livermore, Cal.\n"@eng;
-    gv:color [
-  gv:hex "cdbfad";
-  gv:red "205";
-  gv:blue "173";
-  gv:green "191";
-  gv:score "15.808497";
-  gv:coverage "29.98"
-], [
-  gv:hex "180f07";
-  gv:red "24";
-  gv:blue "7";
-  gv:green "15";
-  gv:score "0.60654646";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "cbc3b8";
-  gv:red "203";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "11.906203";
-  gv:coverage "5.9799999999999995"
-], [
-  gv:hex "a99c8b";
-  gv:red "169";
-  gv:blue "139";
-  gv:green "156";
-  gv:score "10.678986";
-  gv:coverage "1.46"
-], [
-  gv:hex "e9dfd4";
-  gv:red "233";
-  gv:blue "212";
-  gv:green "223";
-  gv:score "10.60347";
-  gv:coverage "29.573333"
-], [
-  gv:hex "c59489";
-  gv:red "197";
-  gv:blue "137";
-  gv:green "148";
-  gv:score "9.81758";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "a49a90";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "154";
-  gv:score "7.1946621";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "ecddcc";
-  gv:red "236";
-  gv:blue "204";
-  gv:green "221";
-  gv:score "6.329552099999999";
-  gv:coverage "29.393333"
-], [
-  gv:hex "827465";
-  gv:red "130";
-  gv:blue "101";
-  gv:green "116";
-  gv:score "5.6302547";
-  gv:coverage "0.32"
-], [
-  gv:hex "ddb4a8";
-  gv:red "221";
-  gv:blue "168";
-  gv:green "180";
-  gv:score "5.25063";
-  gv:coverage "0.42666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.781973"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PASTE NE\nSUPERIOR\nLivermore Valley\nDRY SAUTER NE\n(Serve chilled)\nA medium-bodied wine of fine favor and excellent bouquet.\nPASTENE\nBOTTLED EXPRESSLY FOR\nWINE & ITS Co. Inc\nBOSTON, MASS\nAlcohol 12% by volume\nProduced and bottled by Wente Bros. Winery, Livermore, Cal.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3568";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

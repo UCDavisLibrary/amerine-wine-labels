@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1573";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MANZANILLA PASADA\nSANLUCAR DE BARRAMEDA.\nN. 27\n"@spa;
-    gv:color [
-  gv:hex "d0c6bc";
-  gv:red "208";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "23.824545999999998";
-  gv:coverage "14.266667"
-], [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "20.250578";
-  gv:coverage "32.019999999999996"
-], [
-  gv:hex "d1c3b3";
-  gv:red "209";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "9.7117573";
-  gv:coverage "20.793333999999998"
-], [
-  gv:hex "a99e94";
-  gv:red "169";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "9.69444";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "82776e";
-  gv:red "130";
-  gv:blue "110";
-  gv:green "119";
-  gv:score "9.4101623";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "837565";
-  gv:red "131";
-  gv:blue "101";
-  gv:green "117";
-  gv:score "5.9314258";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "a59687";
-  gv:red "165";
-  gv:blue "135";
-  gv:green "150";
-  gv:score "5.8341257";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "60564c";
-  gv:red "96";
-  gv:blue "76";
-  gv:green "86";
-  gv:score "5.4268159";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "615444";
-  gv:red "97";
-  gv:blue "68";
-  gv:green "84";
-  gv:score "4.230859499999999";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "e9dbcb";
-  gv:red "233";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "1.9144598";
-  gv:coverage "29.526666000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.29615199999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MANZANILLA PASADA\nSANLUCAR DE BARRAMEDA.\nN. 27\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1573";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

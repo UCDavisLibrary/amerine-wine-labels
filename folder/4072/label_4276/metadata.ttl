@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4276";
-    dct:type "image";
-    w:bagOfWords "ARIS 1889\nDIJON\nCOTE de BEAUNE\nIMP. B ARNAUD. LYON PARIS\n"@fra;
-    gv:color [
-  gv:hex "dfc9ac";
-  gv:red "223";
-  gv:blue "172";
-  gv:green "201";
-  gv:score "49.552268";
-  gv:coverage "21.146667"
-], [
-  gv:hex "675232";
-  gv:red "103";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "6.998086000000001";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "2a1400";
-  gv:red "42";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.35086916999999995";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "edd8bb";
-  gv:red "237";
-  gv:blue "187";
-  gv:green "216";
-  gv:score "20.788792";
-  gv:coverage "11.966667000000001"
-], [
-  gv:hex "b19c7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "156";
-  gv:score "10.351545";
-  gv:coverage "3.38"
-], [
-  gv:hex "897454";
-  gv:red "137";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "5.8678523";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "4a3517";
-  gv:red "74";
-  gv:blue "23";
-  gv:green "53";
-  gv:score "3.1784358999999998";
-  gv:coverage "0.5"
-], [
-  gv:hex "a99064";
-  gv:red "169";
-  gv:blue "100";
-  gv:green "144";
-  gv:score "1.2022106";
-  gv:coverage "0.58"
-], [
-  gv:hex "e1d8cc";
-  gv:red "225";
-  gv:blue "204";
-  gv:green "216";
-  gv:score "0.52619018";
-  gv:coverage "54.400000000000006"
-], [
-  gv:hex "d0ba8b";
-  gv:red "208";
-  gv:blue "139";
-  gv:green "186";
-  gv:score "0.52079977";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.14846700000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.531934"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.291613999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.184487000000004"
-];
-    w:bagOfWords "ARIS 1889\nDIJON\nCOTE de BEAUNE\nIMP. B ARNAUD. LYON PARIS\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4276";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3648";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "1986 BRUT\nCALIFORNIA\nCHAMPAGNE\nNATURALLY FERMENTED IN THE BOTTLE\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nBONDED WINERY NO. 144\n14TH DIST\nCONTENTS SARATOGA, CALIFORNIA ALCOHOL 13%\nTAX PAID BY STAMPS AFFIXED TO CASE\nBY VOLUME\nREG US PAT OFF\n"@eng;
-    gv:color [
-  gv:hex "927238";
-  gv:red "146";
-  gv:blue "56";
-  gv:green "114";
-  gv:score "19.791271";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "d4c2a7";
-  gv:red "212";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "19.094238999999998";
-  gv:coverage "10.82"
-], [
-  gv:hex "976c33";
-  gv:red "151";
-  gv:blue "51";
-  gv:green "108";
-  gv:score "10.820229000000001";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "b19d80";
-  gv:red "177";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "9.1177225";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "957227";
-  gv:red "149";
-  gv:blue "39";
-  gv:green "114";
-  gv:score "7.680678400000001";
-  gv:coverage "0.48"
-], [
-  gv:hex "eedbc0";
-  gv:red "238";
-  gv:blue "192";
-  gv:green "219";
-  gv:score "7.4479169999999995";
-  gv:coverage "9.5866665"
-], [
-  gv:hex "6b2e1b";
-  gv:red "107";
-  gv:blue "27";
-  gv:green "46";
-  gv:score "0.056911429000000006";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "b09159";
-  gv:red "176";
-  gv:blue "89";
-  gv:green "145";
-  gv:score "4.296945";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "8d785c";
-  gv:red "141";
-  gv:blue "92";
-  gv:green "120";
-  gv:score "3.5785455";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "9d7328";
-  gv:red "157";
-  gv:blue "40";
-  gv:green "115";
-  gv:score "3.5489749";
-  gv:coverage "0.24"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.399057"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.243645"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.090336"
-];
-    w:bagOfWords "1986 BRUT\nCALIFORNIA\nCHAMPAGNE\nNATURALLY FERMENTED IN THE BOTTLE\nPRODUCED AND BOTTLED BY\nPAUL MASSON CHAMPAGNE COMPANY\nBONDED WINERY NO. 144\n14TH DIST\nCONTENTS SARATOGA, CALIFORNIA ALCOHOL 13%\nTAX PAID BY STAMPS AFFIXED TO CASE\nBY VOLUME\nREG US PAT OFF\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3648";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

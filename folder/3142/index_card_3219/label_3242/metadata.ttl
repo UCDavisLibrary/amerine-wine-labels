@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3242";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "las de Dongeot\nGENERAL\nREBOURSEAU\nMise en bouteille\nPROPRIETAIRE\na la Propriété\nGEVREY CHAM BERTIN\nCOTE D'OR)\n"@fra;
-    gv:color [
-  gv:hex "bc9d79";
-  gv:red "188";
-  gv:blue "121";
-  gv:green "157";
-  gv:score "29.196048";
-  gv:coverage "9.58"
-], [
-  gv:hex "774c2b";
-  gv:red "119";
-  gv:blue "43";
-  gv:green "76";
-  gv:score "1.1454400999999999";
-  gv:coverage "0.18"
-], [
-  gv:hex "d2b38e";
-  gv:red "210";
-  gv:blue "142";
-  gv:green "179";
-  gv:score "22.729373";
-  gv:coverage "17.419999999999998"
-], [
-  gv:hex "886e52";
-  gv:red "136";
-  gv:blue "82";
-  gv:green "110";
-  gv:score "13.506089";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "6c553c";
-  gv:red "108";
-  gv:blue "60";
-  gv:green "85";
-  gv:score "12.236797000000001";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "c49979";
-  gv:red "196";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "5.4641943";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "d8af8d";
-  gv:red "216";
-  gv:blue "141";
-  gv:green "175";
-  gv:score "3.516975";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "d6b589";
-  gv:red "214";
-  gv:blue "137";
-  gv:green "181";
-  gv:score "3.2488029000000003";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "4b3720";
-  gv:red "75";
-  gv:blue "32";
-  gv:green "55";
-  gv:score "1.5123136000000001";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "966e4e";
-  gv:red "150";
-  gv:blue "78";
-  gv:green "110";
-  gv:score "1.4955663";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.242403"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "62.608492000000005"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "60.849959"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "60.047776"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "59.72413399999999"
-];
-    w:bagOfWords "las de Dongeot\nGENERAL\nREBOURSEAU\nMise en bouteille\nPROPRIETAIRE\na la Propriété\nGEVREY CHAM BERTIN\nCOTE D'OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3242";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

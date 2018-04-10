@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4599";
-    dct:type "image";
-    w:bagOfWords "ARCA REGIS TR\nM. HIDALGO Y CA\nSANLUCAR DE BARRAMEDA\nHIJOS DE MIGUEL SALIDO UEREZ.\n"@spa;
-    gv:color [
-  gv:hex "c7c4a0";
-  gv:red "199";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "49.837928999999995";
-  gv:coverage "23.966667"
-], [
-  gv:hex "8a7446";
-  gv:red "138";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "7.645822300000001";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "734c23";
-  gv:red "115";
-  gv:blue "35";
-  gv:green "76";
-  gv:score "3.2436896";
-  gv:coverage "0.6"
-], [
-  gv:hex "ab9b76";
-  gv:red "171";
-  gv:blue "118";
-  gv:green "155";
-  gv:score "10.077627999999999";
-  gv:coverage "3.18"
-], [
-  gv:hex "857852";
-  gv:red "133";
-  gv:blue "82";
-  gv:green "120";
-  gv:score "7.075043";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "ad9567";
-  gv:red "173";
-  gv:blue "103";
-  gv:green "149";
-  gv:score "3.7862949";
-  gv:coverage "0.96"
-], [
-  gv:hex "635531";
-  gv:red "99";
-  gv:blue "49";
-  gv:green "85";
-  gv:score "3.0155014";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "be9063";
-  gv:red "190";
-  gv:blue "99";
-  gv:green "144";
-  gv:score "2.9281082";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "6d5a2e";
-  gv:red "109";
-  gv:blue "46";
-  gv:green "90";
-  gv:score "2.5158554";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "eadbbe";
-  gv:red "234";
-  gv:blue "190";
-  gv:green "219";
-  gv:score "2.2903126";
-  gv:coverage "7.166666500000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.040447"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.049412000000004"
-];
-    w:bagOfWords "ARCA REGIS TR\nM. HIDALGO Y CA\nSANLUCAR DE BARRAMEDA\nHIJOS DE MIGUEL SALIDO UEREZ.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4599";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

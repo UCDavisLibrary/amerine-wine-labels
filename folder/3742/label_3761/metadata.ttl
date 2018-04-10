@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3761";
-    dct:type "image";
-    w:bagOfWords "BOLLA\n4 Ex CASA Al\nBARDOLINO\nPRODOTTO ED INVECCHIATO\nNELLE CANTINE DI BARDOLINO\nCASA VINICOLA FRATELLI BOLLA\nVERONA\n"@ita;
-    gv:color [
-  gv:hex "1b1611";
-  gv:red "27";
-  gv:blue "17";
-  gv:green "22";
-  gv:score "37.334266";
-  gv:coverage "15.386665999999998"
-], [
-  gv:hex "8e3732";
-  gv:red "142";
-  gv:blue "50";
-  gv:green "55";
-  gv:score "7.46483";
-  gv:coverage "0.4"
-], [
-  gv:hex "440100";
-  gv:red "68";
-  gv:blue "undefined";
-  gv:green "1";
-  gv:score "6.7721985";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "eae2d9";
-  gv:red "234";
-  gv:blue "217";
-  gv:green "226";
-  gv:score "1.6878935000000002";
-  gv:coverage "60.81999999999999"
-], [
-  gv:hex "d38969";
-  gv:red "211";
-  gv:blue "105";
-  gv:green "137";
-  gv:score "0.30680869";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "322d27";
-  gv:red "50";
-  gv:blue "39";
-  gv:green "45";
-  gv:score "7.9491645";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "330e06";
-  gv:red "51";
-  gv:blue "6";
-  gv:green "14";
-  gv:score "4.694350399999999";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "5b554d";
-  gv:red "91";
-  gv:blue "77";
-  gv:green "85";
-  gv:score "4.4015869";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "611a14";
-  gv:red "97";
-  gv:blue "20";
-  gv:green "26";
-  gv:score "4.0916979";
-  gv:coverage "0.22"
-], [
-  gv:hex "79726b";
-  gv:red "121";
-  gv:blue "107";
-  gv:green "114";
-  gv:score "3.0111361";
-  gv:coverage "1.28"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.668076"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "57.358222999999995"
-];
-    w:bagOfWords "BOLLA\n4 Ex CASA Al\nBARDOLINO\nPRODOTTO ED INVECCHIATO\nNELLE CANTINE DI BARDOLINO\nCASA VINICOLA FRATELLI BOLLA\nVERONA\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3761";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

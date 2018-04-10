@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1612";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "RAB\nARCA\nPEDRO\nXIMENEZ\nM GARCIA MON\nN. 33\nM BR\nSANLUCAR\nETALIco\n"@spa;
-    gv:color [
-  gv:hex "9aab5f";
-  gv:red "154";
-  gv:blue "95";
-  gv:green "171";
-  gv:score "46.051911000000004";
-  gv:coverage "17.293333999999998"
-], [
-  gv:hex "530f0a";
-  gv:red "83";
-  gv:blue "10";
-  gv:green "15";
-  gv:score "2.1101136";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "d2d0a4";
-  gv:red "210";
-  gv:blue "164";
-  gv:green "208";
-  gv:score "0.5300400000000001";
-  gv:coverage "13.34"
-], [
-  gv:hex "a7bb6c";
-  gv:red "167";
-  gv:blue "108";
-  gv:green "187";
-  gv:score "14.084777";
-  gv:coverage "5.5533335"
-], [
-  gv:hex "747f3d";
-  gv:red "116";
-  gv:blue "61";
-  gv:green "127";
-  gv:score "10.183079000000001";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "86783e";
-  gv:red "134";
-  gv:blue "62";
-  gv:green "120";
-  gv:score "6.715173300000001";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "a4975d";
-  gv:red "164";
-  gv:blue "93";
-  gv:green "151";
-  gv:score "3.7584121999999995";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "535d20";
-  gv:red "83";
-  gv:blue "32";
-  gv:green "93";
-  gv:score "2.3436511";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "440502";
-  gv:red "68";
-  gv:blue "2";
-  gv:green "5";
-  gv:score "1.9273330000000002";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "665923";
-  gv:red "102";
-  gv:blue "35";
-  gv:green "89";
-  gv:score "1.9098370999999998";
-  gv:coverage "0.67333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.87817100000001"
-];
-    w:bagOfWords "RAB\nARCA\nPEDRO\nXIMENEZ\nM GARCIA MON\nN. 33\nM BR\nSANLUCAR\nETALIco\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1612";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

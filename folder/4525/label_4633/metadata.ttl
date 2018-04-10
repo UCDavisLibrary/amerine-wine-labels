@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4633";
-    dct:type "image";
-    w:bagOfWords "JEREZ OLOROSO\nANUEL M. OARRODAN\nVINO FINO DE\nJEREZ DE LA FRONTERA\nPOR R.o. to DE 1924\nMARzo "@spa;
-    gv:color [
-  gv:hex "9399b3";
-  gv:red "147";
-  gv:blue "179";
-  gv:green "153";
-  gv:score "10.173991000000001";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "c8c3c8";
-  gv:red "200";
-  gv:blue "200";
-  gv:green "195";
-  gv:score "9.2807233";
-  gv:coverage "10.026667"
-], [
-  gv:hex "a86c4b";
-  gv:red "168";
-  gv:blue "75";
-  gv:green "108";
-  gv:score "0.8728938199999999";
-  gv:coverage "0.08"
-], [
-  gv:hex "545b89";
-  gv:red "84";
-  gv:blue "137";
-  gv:green "91";
-  gv:score "0.51766853";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "bcc2dc";
-  gv:red "188";
-  gv:blue "220";
-  gv:green "194";
-  gv:score "8.9735672";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "6d758f";
-  gv:red "109";
-  gv:blue "143";
-  gv:green "117";
-  gv:score "8.9106984";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "e2dee2";
-  gv:red "226";
-  gv:blue "226";
-  gv:green "222";
-  gv:score "8.8354327";
-  gv:coverage "64.34"
-], [
-  gv:hex "4c546f";
-  gv:red "76";
-  gv:blue "111";
-  gv:green "84";
-  gv:score "8.740411700000001";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "d3c2a2";
-  gv:red "211";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "5.5331334000000005";
-  gv:coverage "5.0333332"
-], [
-  gv:hex "b4a286";
-  gv:red "180";
-  gv:blue "134";
-  gv:green "162";
-  gv:score "5.3722724";
-  gv:coverage "2.7133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.799886"
-];
-    w:bagOfWords "JEREZ OLOROSO\nANUEL M. OARRODAN\nVINO FINO DE\nJEREZ DE LA FRONTERA\nPOR R.o. to DE 1924\nMARzo "@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4633";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

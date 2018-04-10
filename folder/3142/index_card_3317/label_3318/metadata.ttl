@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3317/label_3318";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "MARK\nTRADE\nNuits-Saint-Georges\nAPPELLATION CONTROLEE\nJ. FAIVELEY\nNEGOCIANT A NUITS-St-GEORGES (COTE-DOR)\nIMR PARIS ANUIT\nimprimé en France\n"@fra;
-    gv:color [
-  gv:hex "dbb98b";
-  gv:red "219";
-  gv:blue "139";
-  gv:green "185";
-  gv:score "22.596818";
-  gv:coverage "6.4533331"
-], [
-  gv:hex "c69167";
-  gv:red "198";
-  gv:blue "103";
-  gv:green "145";
-  gv:score "12.470418";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "dabd98";
-  gv:red "218";
-  gv:blue "152";
-  gv:green "189";
-  gv:score "11.509015";
-  gv:coverage "21.44"
-], [
-  gv:hex "bc9a6c";
-  gv:red "188";
-  gv:blue "108";
-  gv:green "154";
-  gv:score "8.101616100000001";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "a36f46";
-  gv:red "163";
-  gv:blue "70";
-  gv:green "111";
-  gv:score "7.9514824";
-  gv:coverage "1.54"
-], [
-  gv:hex "e5b38a";
-  gv:red "229";
-  gv:blue "138";
-  gv:green "179";
-  gv:score "7.0659854";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "b69773";
-  gv:red "182";
-  gv:blue "115";
-  gv:green "151";
-  gv:score "5.7712171";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "94754a";
-  gv:red "148";
-  gv:blue "74";
-  gv:green "117";
-  gv:score "5.2285388";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "7b4b23";
-  gv:red "123";
-  gv:blue "35";
-  gv:green "75";
-  gv:score "4.426080000000001";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "947754";
-  gv:red "148";
-  gv:blue "84";
-  gv:green "119";
-  gv:score "4.3924011";
-  gv:coverage "1.7866666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.2855"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.168114"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.619212000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.866299999999995"
-];
-    w:bagOfWords "MARK\nTRADE\nNuits-Saint-Georges\nAPPELLATION CONTROLEE\nJ. FAIVELEY\nNEGOCIANT A NUITS-St-GEORGES (COTE-DOR)\nIMR PARIS ANUIT\nimprimé en France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3318";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,99 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5024";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Appointment\nGeorge V\nIN THE YEAR 179O\nESTABLISHED\nP O R T\nTA w NR\nO Alcoholic contents\nContents\n415\nby volume\nOuart\n20\nSAN DEMAN & Co\nO PORTO\nimported by McKesson & Robbins Incorporated\nNew York N.Y. Sole Agents for U. S. A\nSANDEMAN\nREGISTERED TRADE MARK\nNATURAL FOR MOST\nGENUINE STILL wINES\nTO THROW A DEPOSIT WHEN THEY HAVE BEEN\nANY LENGTH OF TIME IN BOTTLE. IF THIS WINE\nIS NOT BRILLIANT,THE BOTTLE SHOULD BE STOoD\nUP IN A WARM ROOM SOME TIME BEFORE IT IS\nREQUIRED, AND THEN CAREFULLY DECANTE IN\nORDER TO LEAVE ANY DEPOSIT IN THE BA LEC\nSANDEMAN\n33L\nDO NOT LET THIS WINE BECOME CHILL\n"@undefined;
-    gv:color [
-  gv:hex "16120f";
-  gv:red "22";
-  gv:blue "15";
-  gv:green "18";
-  gv:score "34.115875";
-  gv:coverage "4.8866667"
-], [
-  gv:hex "cdc4bb";
-  gv:red "205";
-  gv:blue "187";
-  gv:green "196";
-  gv:score "8.815458399999999";
-  gv:coverage "9.8133333"
-], [
-  gv:hex "c99864";
-  gv:red "201";
-  gv:blue "100";
-  gv:green "152";
-  gv:score "6.5402851";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "7d756c";
-  gv:red "125";
-  gv:blue "108";
-  gv:green "117";
-  gv:score "4.530683499999999";
-  gv:coverage "2.7199999999999998"
-], [
-  gv:hex "d3c5ac";
-  gv:red "211";
-  gv:blue "172";
-  gv:green "197";
-  gv:score "6.7593209000000005";
-  gv:coverage "11.813334000000001"
-], [
-  gv:hex "e6ded5";
-  gv:red "230";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "5.7059653";
-  gv:coverage "39.26"
-], [
-  gv:hex "352e28";
-  gv:red "53";
-  gv:blue "40";
-  gv:green "46";
-  gv:score "5.1436611";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "a49b92";
-  gv:red "164";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "4.2374253";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "5a524a";
-  gv:red "90";
-  gv:blue "74";
-  gv:green "82";
-  gv:score "3.7899599999999998";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "a89a86";
-  gv:red "168";
-  gv:blue "134";
-  gv:green "154";
-  gv:score "3.0822092999999997";
-  gv:coverage "2.3066666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "50.095946000000005"
-];
-    w:bagOfWords "Appointment\nGeorge V\nIN THE YEAR 179O\nESTABLISHED\nP O R T\nTA w NR\nO Alcoholic contents\nContents\n415\nby volume\nOuart\n20\nSAN DEMAN & Co\nO PORTO\nimported by McKesson & Robbins Incorporated\nNew York N.Y. Sole Agents for U. S. A\nSANDEMAN\nREGISTERED TRADE MARK\nNATURAL FOR MOST\nGENUINE STILL wINES\nTO THROW A DEPOSIT WHEN THEY HAVE BEEN\nANY LENGTH OF TIME IN BOTTLE. IF THIS WINE\nIS NOT BRILLIANT,THE BOTTLE SHOULD BE STOoD\nUP IN A WARM ROOM SOME TIME BEFORE IT IS\nREQUIRED, AND THEN CAREFULLY DECANTE IN\nORDER TO LEAVE ANY DEPOSIT IN THE BA LEC\nSANDEMAN\n33L\nDO NOT LET THIS WINE BECOME CHILL\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5024";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2927";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "VIN D'ALSACE\na Bouteille du patron\nDI NOT BLANC\nHOTEL VILLE DE NANCY RIBEAUVILLE (HT, RH.\n"@fra;
-    gv:color [
-  gv:hex "d7c4ae";
-  gv:red "215";
-  gv:blue "174";
-  gv:green "196";
-  gv:score "35.678402";
-  gv:coverage "21.246667"
-], [
-  gv:hex "675438";
-  gv:red "103";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "17.878193";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "86735a";
-  gv:red "134";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "17.816831";
-  gv:coverage "2.8933332999999997"
-], [
-  gv:hex "ac9983";
-  gv:red "172";
-  gv:blue "131";
-  gv:green "153";
-  gv:score "16.375377999999998";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "eddbc6";
-  gv:red "237";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "5.9457507";
-  gv:coverage "7.199999999999999"
-], [
-  gv:hex "4a371d";
-  gv:red "74";
-  gv:blue "29";
-  gv:green "55";
-  gv:score "2.474145";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "6a552b";
-  gv:red "106";
-  gv:blue "43";
-  gv:green "85";
-  gv:score "1.9568436000000002";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "7d673c";
-  gv:red "125";
-  gv:blue "60";
-  gv:green "103";
-  gv:score "0.74460846";
-  gv:coverage "0.06"
-], [
-  gv:hex "d8c9bd";
-  gv:red "216";
-  gv:blue "189";
-  gv:green "201";
-  gv:score "0.6125826400000001";
-  gv:coverage "7.1866669"
-], [
-  gv:hex "2d1b0c";
-  gv:red "45";
-  gv:blue "12";
-  gv:green "27";
-  gv:score "0.16644569";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.634047"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "62.463278"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.806715"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.113845"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.060445"
-];
-    w:bagOfWords "VIN D'ALSACE\na Bouteille du patron\nDI NOT BLANC\nHOTEL VILLE DE NANCY RIBEAUVILLE (HT, RH.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2927";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

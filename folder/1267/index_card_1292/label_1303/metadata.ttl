@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1303";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "i Vin rouge de la Moselle Luxembourgeoise\nPINOT NOIR\nrul Jos. Kohll-Kohn, Wintrange\n"@deu;
-    gv:color [
-  gv:hex "495b1c";
-  gv:red "73";
-  gv:blue "28";
-  gv:green "91";
-  gv:score "17.4404";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "d4c5a6";
-  gv:red "212";
-  gv:blue "166";
-  gv:green "197";
-  gv:score "16.515321999999998";
-  gv:coverage "13.866666"
-], [
-  gv:hex "8a7743";
-  gv:red "138";
-  gv:blue "67";
-  gv:green "119";
-  gv:score "12.544205999999999";
-  gv:coverage "3.6866665"
-], [
-  gv:hex "aa9660";
-  gv:red "170";
-  gv:blue "96";
-  gv:green "150";
-  gv:score "7.1708769000000006";
-  gv:coverage "2.42"
-], [
-  gv:hex "625523";
-  gv:red "98";
-  gv:blue "35";
-  gv:green "85";
-  gv:score "6.3714854";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "ab9c7e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "156";
-  gv:score "6.274882699999999";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "837756";
-  gv:red "131";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "5.1437624";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "2f4105";
-  gv:red "47";
-  gv:blue "5";
-  gv:green "65";
-  gv:score "4.4955749";
-  gv:coverage "0.72"
-], [
-  gv:hex "647536";
-  gv:red "100";
-  gv:blue "54";
-  gv:green "117";
-  gv:score "4.118273";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "5b5332";
-  gv:red "91";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "4.0275007";
-  gv:coverage "0.98"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "84.020656"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.71558"
-], [
-  gv:mid <https://g.co/kg/m/0c9ph5>;
-  gv:desc "flower";
-  gv:score "60.40226800000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.531544"
-];
-    w:bagOfWords "i Vin rouge de la Moselle Luxembourgeoise\nPINOT NOIR\nrul Jos. Kohll-Kohn, Wintrange\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1303";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

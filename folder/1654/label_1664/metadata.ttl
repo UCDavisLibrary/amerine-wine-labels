@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1664";
-    dct:type "image";
-    w:bagOfWords "FOUR ACES\nAEYKOX\nWHITE\nSWEET WINE\nCYPRUS WINE & SPIRITS C9 LTD\nLIMASSOL CYPRUS\nDE Post.\n"@eng;
-    gv:color [
-  gv:hex "e8e0d9";
-  gv:red "232";
-  gv:blue "217";
-  gv:green "224";
-  gv:score "83.52678399999999";
-  gv:coverage "63.46000000000001"
-], [
-  gv:hex "d9c3a9";
-  gv:red "217";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "6.4156987";
-  gv:coverage "7.4333332"
-], [
-  gv:hex "764519";
-  gv:red "118";
-  gv:blue "25";
-  gv:green "69";
-  gv:score "0.70266263";
-  gv:coverage "1.26"
-], [
-  gv:hex "6b553d";
-  gv:red "107";
-  gv:blue "61";
-  gv:green "85";
-  gv:score "0.38357705";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "eaddc9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "221";
-  gv:score "4.606406";
-  gv:coverage "3.9866667000000002"
-], [
-  gv:hex "d9d1c7";
-  gv:red "217";
-  gv:blue "199";
-  gv:green "209";
-  gv:score "1.3226741";
-  gv:coverage "1.2"
-], [
-  gv:hex "b59d82";
-  gv:red "181";
-  gv:blue "130";
-  gv:green "157";
-  gv:score "0.60725166";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "5b2c05";
-  gv:red "91";
-  gv:blue "5";
-  gv:green "44";
-  gv:score "0.45748450999999996";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "99693c";
-  gv:red "153";
-  gv:blue "60";
-  gv:green "105";
-  gv:score "0.4124213";
-  gv:coverage "4.1000000000000005"
-], [
-  gv:hex "8d755b";
-  gv:red "141";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "0.18681298";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03bt1gh>;
-  gv:desc "games";
-  gv:score "75.631952"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.794466"
-];
-    w:bagOfWords "FOUR ACES\nAEYKOX\nWHITE\nSWEET WINE\nCYPRUS WINE & SPIRITS C9 LTD\nLIMASSOL CYPRUS\nDE Post.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1664";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

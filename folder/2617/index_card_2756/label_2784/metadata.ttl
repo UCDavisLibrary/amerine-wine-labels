@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2756/label_2784";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "VIN MIAR CILLY\nGRAN D VIN RO U GE\nMaison P. de Marcilly Freres\nBeaune\nM i s e n b o u t e\ni I l e s p a r A/S VI N M O N O P OLE T\n"@fra;
-    gv:color [
-  gv:hex "d6c1ae";
-  gv:red "214";
-  gv:blue "174";
-  gv:green "193";
-  gv:score "33.6931";
-  gv:coverage "52.133334"
-], [
-  gv:hex "ac9988";
-  gv:red "172";
-  gv:blue "136";
-  gv:green "153";
-  gv:score "16.774866";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "e7baad";
-  gv:red "231";
-  gv:blue "173";
-  gv:green "186";
-  gv:score "16.286048";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "887665";
-  gv:red "136";
-  gv:blue "101";
-  gv:green "118";
-  gv:score "11.006695";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "c29588";
-  gv:red "194";
-  gv:blue "136";
-  gv:green "149";
-  gv:score "5.6779835";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "ebd6c3";
-  gv:red "235";
-  gv:blue "195";
-  gv:green "214";
-  gv:score "3.9148692";
-  gv:coverage "32"
-], [
-  gv:hex "685644";
-  gv:red "104";
-  gv:blue "68";
-  gv:green "86";
-  gv:score "3.0027093000000002";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "9c6c60";
-  gv:red "156";
-  gv:blue "96";
-  gv:green "108";
-  gv:score "3.0006841";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "7e4e43";
-  gv:red "126";
-  gv:blue "67";
-  gv:green "78";
-  gv:score "1.6840016";
-  gv:coverage "0.12"
-], [
-  gv:hex "fcd4c6";
-  gv:red "252";
-  gv:blue "198";
-  gv:green "212";
-  gv:score "1.420128";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.536431"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "62.49209"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.685903999999994"
-];
-    w:bagOfWords "VIN MIAR CILLY\nGRAN D VIN RO U GE\nMaison P. de Marcilly Freres\nBeaune\nM i s e n b o u t e\ni I l e s p a r A/S VI N M O N O P OLE T\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2784";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

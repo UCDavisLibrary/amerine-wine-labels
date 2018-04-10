@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4824";
-    dct:type "image";
-    w:bagOfWords "SUTTER BRAND\nSHERRY\nBOTTLED BY\nL. D. MCLEAN CO\nSAN FRANCISCO\nALCOHOL 20% BY VOLUME\nCONTENTS\n448 Withdrawn from T\nPaid Package Serial No.\n"@eng;
-    gv:color [
-  gv:hex "e7c649";
-  gv:red "231";
-  gv:blue "73";
-  gv:green "198";
-  gv:score "35.819176000000006";
-  gv:coverage "3.1933334"
-], [
-  gv:hex "d3be9e";
-  gv:red "211";
-  gv:blue "158";
-  gv:green "190";
-  gv:score "12.387405";
-  gv:coverage "6.819999999999999"
-], [
-  gv:hex "1b1314";
-  gv:red "27";
-  gv:blue "20";
-  gv:green "19";
-  gv:score "0.9507826500000001";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "2b1206";
-  gv:red "43";
-  gv:blue "6";
-  gv:green "18";
-  gv:score "0.22143018";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e1c65f";
-  gv:red "225";
-  gv:blue "95";
-  gv:green "198";
-  gv:score "11.593577";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "b19d7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "157";
-  gv:score "10.741802";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "c09e26";
-  gv:red "192";
-  gv:blue "38";
-  gv:green "158";
-  gv:score "4.5029946";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "8d7a5f";
-  gv:red "141";
-  gv:blue "95";
-  gv:green "122";
-  gv:score "3.7564378";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "cfc1b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "193";
-  gv:score "3.5913352";
-  gv:coverage "8.08"
-], [
-  gv:hex "a99c93";
-  gv:red "169";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "2.3792003999999998";
-  gv:coverage "0.86"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.66467300000001"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.355094"
-];
-    w:bagOfWords "SUTTER BRAND\nSHERRY\nBOTTLED BY\nL. D. MCLEAN CO\nSAN FRANCISCO\nALCOHOL 20% BY VOLUME\nCONTENTS\n448 Withdrawn from T\nPaid Package Serial No.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4824";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

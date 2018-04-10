@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0541";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Schlofs Sohannisberger\n2Badstunt Siirft tettermid)\nRhein 44\n"@deu;
-    gv:color [
-  gv:hex "dacbb5";
-  gv:red "218";
-  gv:blue "181";
-  gv:green "203";
-  gv:score "36.291865";
-  gv:coverage "28.173333"
-], [
-  gv:hex "e7ded6";
-  gv:red "231";
-  gv:blue "214";
-  gv:green "222";
-  gv:score "22.68115";
-  gv:coverage "16.793333"
-], [
-  gv:hex "95743c";
-  gv:red "149";
-  gv:blue "60";
-  gv:green "116";
-  gv:score "4.236809500000001";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "5d4e33";
-  gv:red "93";
-  gv:blue "51";
-  gv:green "78";
-  gv:score "0.6065223399999999";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "e8dac9";
-  gv:red "232";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "18.862785000000002";
-  gv:coverage "17.8"
-], [
-  gv:hex "d8cdc3";
-  gv:red "216";
-  gv:blue "195";
-  gv:green "205";
-  gv:score "6.2450115";
-  gv:coverage "4.7866665"
-], [
-  gv:hex "b6955d";
-  gv:red "182";
-  gv:blue "93";
-  gv:green "149";
-  gv:score "3.1618293";
-  gv:coverage "3.3666666999999997"
-], [
-  gv:hex "9a7038";
-  gv:red "154";
-  gv:blue "56";
-  gv:green "112";
-  gv:score "2.1061935";
-  gv:coverage "5.08"
-], [
-  gv:hex "d4b77f";
-  gv:red "212";
-  gv:blue "127";
-  gv:green "183";
-  gv:score "1.4081245";
-  gv:coverage "2.48"
-], [
-  gv:hex "724c1e";
-  gv:red "114";
-  gv:blue "30";
-  gv:green "76";
-  gv:score "0.82861455";
-  gv:coverage "1.3466666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.385996"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.070256"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.964214999999996"
-];
-    w:bagOfWords "Schlofs Sohannisberger\n2Badstunt Siirft tettermid)\nRhein 44\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0541";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

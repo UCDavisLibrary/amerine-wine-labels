@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0181/label_0186";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "CALIFORNIA\nBURGUNDY\nMADE AND BOTTLED AT PAUL MASSON VINEYARD\nSony\nPRODUCT OF THE PAUL MASSON CHAMPAGNE COMPANY\nSAN JOSE, CALIFORNIA\nBONDED STOREROOM No. 146\nTAX PAID BY STAMPS\n14th DISTRICT\nAFFIXED TO CASE\nCONTENTS 34 QUART ALCOHOL 13% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "7f5025";
-  gv:red "127";
-  gv:blue "37";
-  gv:green "80";
-  gv:score "31.270945";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "d8c3ac";
-  gv:red "216";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "20.672587";
-  gv:coverage "17.746666"
-], [
-  gv:hex "986436";
-  gv:red "152";
-  gv:blue "54";
-  gv:green "100";
-  gv:score "17.068148";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "b19b84";
-  gv:red "177";
-  gv:blue "132";
-  gv:green "155";
-  gv:score "12.148399";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "f0dbc4";
-  gv:red "240";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "5.991026";
-  gv:coverage "12.76"
-], [
-  gv:hex "8a745d";
-  gv:red "138";
-  gv:blue "93";
-  gv:green "116";
-  gv:score "3.9957016999999997";
-  gv:coverage "0.84"
-], [
-  gv:hex "67523b";
-  gv:red "103";
-  gv:blue "59";
-  gv:green "82";
-  gv:score "2.4364127";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "704f2f";
-  gv:red "112";
-  gv:blue "47";
-  gv:green "79";
-  gv:score "2.2634549";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "936f52";
-  gv:red "147";
-  gv:blue "82";
-  gv:green "111";
-  gv:score "1.4071503";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "c08a5a";
-  gv:red "192";
-  gv:blue "90";
-  gv:green "138";
-  gv:score "0.8094800600000001";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.81977599999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.330262999999995"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "60.137522"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "57.514571999999994"
-];
-    w:bagOfWords "CALIFORNIA\nBURGUNDY\nMADE AND BOTTLED AT PAUL MASSON VINEYARD\nSony\nPRODUCT OF THE PAUL MASSON CHAMPAGNE COMPANY\nSAN JOSE, CALIFORNIA\nBONDED STOREROOM No. 146\nTAX PAID BY STAMPS\n14th DISTRICT\nAFFIXED TO CASE\nCONTENTS 34 QUART ALCOHOL 13% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0186";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

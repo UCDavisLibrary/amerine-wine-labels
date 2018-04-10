@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1494";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GARRETT's\nFIRST\nLADY\nof the\nLAND\nGARRETT\nS\nAmerican\nWHITE WINE\nTRADE MAR REGISTERED\nALCOHOL 13% BY VOLUME\nPRODUCED & BOTTLED BY GARRETT & COMPANY, INC. BROOKLYN NEW YORK\nESTABLISHED 1835\nLett\nNONE GENUINE WITHOUT THIS SIGNATURE\nThe original American Wine. Moderately sweet, delightfully tart. Made from choice American grapes\nThis superb wine (White or Red) is very appropriate with or after meals or any occasion. Serve cold\n"@eng;
-    gv:color [
-  gv:hex "eadac9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "35.058925";
-  gv:coverage "35.906667"
-], [
-  gv:hex "904203";
-  gv:red "144";
-  gv:blue "3";
-  gv:green "66";
-  gv:score "0.36465909999999996";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "dccbb7";
-  gv:red "220";
-  gv:blue "183";
-  gv:green "203";
-  gv:score "34.218004";
-  gv:coverage "32.813334"
-], [
-  gv:hex "5a3003";
-  gv:red "90";
-  gv:blue "3";
-  gv:green "48";
-  gv:score "0.2165453";
-  gv:coverage "0.08"
-], [
-  gv:hex "aa6922";
-  gv:red "170";
-  gv:blue "34";
-  gv:green "105";
-  gv:score "0.20776930999999998";
-  gv:coverage "0.38"
-], [
-  gv:hex "e8ded5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "12.697122";
-  gv:coverage "14.373333999999998"
-], [
-  gv:hex "d9ccc1";
-  gv:red "217";
-  gv:blue "193";
-  gv:green "204";
-  gv:score "5.5965409";
-  gv:coverage "5.8666665"
-], [
-  gv:hex "ae9b87";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "155";
-  gv:score "2.7301461";
-  gv:coverage "2"
-], [
-  gv:hex "87745e";
-  gv:red "135";
-  gv:blue "94";
-  gv:green "116";
-  gv:score "1.5876234999999999";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "624f3a";
-  gv:red "98";
-  gv:blue "58";
-  gv:green "79";
-  gv:score "1.5716348000000002";
-  gv:coverage "0.96"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.089037000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "53.148568"
-];
-    w:bagOfWords "GARRETT's\nFIRST\nLADY\nof the\nLAND\nGARRETT\nS\nAmerican\nWHITE WINE\nTRADE MAR REGISTERED\nALCOHOL 13% BY VOLUME\nPRODUCED & BOTTLED BY GARRETT & COMPANY, INC. BROOKLYN NEW YORK\nESTABLISHED 1835\nLett\nNONE GENUINE WITHOUT THIS SIGNATURE\nThe original American Wine. Moderately sweet, delightfully tart. Made from choice American grapes\nThis superb wine (White or Red) is very appropriate with or after meals or any occasion. Serve cold\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1494";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

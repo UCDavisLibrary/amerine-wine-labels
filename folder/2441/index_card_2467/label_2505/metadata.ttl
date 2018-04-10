@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2505";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "7/27/43\n1933\nMONTRACHET\nDomaine des Comtes LAFON\nmis en bouteilles a la propr ele\n"@fra;
-    gv:color [
-  gv:hex "dab887";
-  gv:red "218";
-  gv:blue "135";
-  gv:green "184";
-  gv:score "41.728356";
-  gv:coverage "16.2"
-], [
-  gv:hex "c99960";
-  gv:red "201";
-  gv:blue "96";
-  gv:green "153";
-  gv:score "12.548749";
-  gv:coverage "3.4533332999999997"
-], [
-  gv:hex "502b05";
-  gv:red "80";
-  gv:blue "5";
-  gv:green "43";
-  gv:score "0.41980854999999995";
-  gv:coverage "0.08"
-], [
-  gv:hex "361500";
-  gv:red "54";
-  gv:blue "undefined";
-  gv:green "21";
-  gv:score "0.33422359";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "443011";
-  gv:red "68";
-  gv:blue "17";
-  gv:green "48";
-  gv:score "0.28607219";
-  gv:coverage "0.08"
-], [
-  gv:hex "d9bf99";
-  gv:red "217";
-  gv:blue "153";
-  gv:green "191";
-  gv:score "20.694619";
-  gv:coverage "21.733333"
-], [
-  gv:hex "c4a06c";
-  gv:red "196";
-  gv:blue "108";
-  gv:green "160";
-  gv:score "11.832107";
-  gv:coverage "4.1466668"
-], [
-  gv:hex "dcaf79";
-  gv:red "220";
-  gv:blue "121";
-  gv:green "175";
-  gv:score "5.0775304";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "b49b76";
-  gv:red "180";
-  gv:blue "118";
-  gv:green "155";
-  gv:score "2.224686";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "8f7347";
-  gv:red "143";
-  gv:blue "71";
-  gv:green "115";
-  gv:score "1.1546041";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.934252"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "75.43138900000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "60.112463999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.322025"
-];
-    w:bagOfWords "7/27/43\n1933\nMONTRACHET\nDomaine des Comtes LAFON\nmis en bouteilles a la propr ele\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2505";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

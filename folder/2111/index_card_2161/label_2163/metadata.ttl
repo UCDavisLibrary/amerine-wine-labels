@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2161/label_2163";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "Tax Paid by\nAlcohol 20%\nStamps Affixed\nby Volume\nto Case\nCALIFORNIA\nBRAND\nVINTAGE 1926\nSherry\nPRODUCED AND BOTTLED B\nESTAB\n"@eng;
-    gv:color [
-  gv:hex "cdc2b7";
-  gv:red "205";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "15.761745999999999";
-  gv:coverage "9.6533336"
-], [
-  gv:hex "a79a86";
-  gv:red "167";
-  gv:blue "134";
-  gv:green "154";
-  gv:score "14.297099999999999";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "615035";
-  gv:red "97";
-  gv:blue "53";
-  gv:green "80";
-  gv:score "12.297659";
-  gv:coverage "2.8866666999999997"
-], [
-  gv:hex "d0c0aa";
-  gv:red "208";
-  gv:blue "170";
-  gv:green "192";
-  gv:score "7.8716718000000006";
-  gv:coverage "12.04"
-], [
-  gv:hex "a99e94";
-  gv:red "169";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "7.5999282";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "837761";
-  gv:red "131";
-  gv:blue "97";
-  gv:green "119";
-  gv:score "7.45569";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "6b5228";
-  gv:red "107";
-  gv:blue "40";
-  gv:green "82";
-  gv:score "5.4819096";
-  gv:coverage "1.82"
-], [
-  gv:hex "493622";
-  gv:red "73";
-  gv:blue "34";
-  gv:green "54";
-  gv:score "4.421775";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "e9dcd1";
-  gv:red "233";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "3.4473654";
-  gv:coverage "50.493336"
-], [
-  gv:hex "82766c";
-  gv:red "130";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "2.295102";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.595676"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.544763"
-];
-    w:bagOfWords "Tax Paid by\nAlcohol 20%\nStamps Affixed\nby Volume\nto Case\nCALIFORNIA\nBRAND\nVINTAGE 1926\nSherry\nPRODUCED AND BOTTLED B\nESTAB\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2163";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

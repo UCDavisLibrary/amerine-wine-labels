@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2789";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "GE\nOAILLE\n1940\nUIS EU\n1er GRAND CRU DE GRAVES\nee tallvy PLACE\nVICTOR ETA.\nCAA DAUJAC PRES BoRDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    gv:color [
-  gv:hex "d8b691";
-  gv:red "216";
-  gv:blue "145";
-  gv:green "182";
-  gv:score "20.103168";
-  gv:coverage "14.213334"
-], [
-  gv:hex "dab589";
-  gv:red "218";
-  gv:blue "137";
-  gv:green "181";
-  gv:score "12.075946";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "ba9976";
-  gv:red "186";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "11.386959000000001";
-  gv:coverage "3.1333334999999995"
-], [
-  gv:hex "8e7153";
-  gv:red "142";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "10.573386";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "dcb185";
-  gv:red "220";
-  gv:blue "133";
-  gv:green "177";
-  gv:score "9.34797";
-  gv:coverage "4.5866668"
-], [
-  gv:hex "bd9a6f";
-  gv:red "189";
-  gv:blue "111";
-  gv:green "154";
-  gv:score "6.865060000000001";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "c1986e";
-  gv:red "193";
-  gv:blue "110";
-  gv:green "152";
-  gv:score "6.340973099999999";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "705639";
-  gv:red "112";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "6.094338400000001";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "715034";
-  gv:red "113";
-  gv:blue "52";
-  gv:green "80";
-  gv:score "3.9297937999999997";
-  gv:coverage "1.02"
-], [
-  gv:hex "8e6d4f";
-  gv:red "142";
-  gv:blue "79";
-  gv:green "109";
-  gv:score "2.8852928";
-  gv:coverage "0.75333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.844868"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "59.956967999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.784016"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.816934"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.140660000000004"
-];
-    w:bagOfWords "GE\nOAILLE\n1940\nUIS EU\n1er GRAND CRU DE GRAVES\nee tallvy PLACE\nVICTOR ETA.\nCAA DAUJAC PRES BoRDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2789";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

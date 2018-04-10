@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3573";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "CALIFORNIA'S CHOICE PRODUCT\nBottled by\nProduced and\nALBERT HAENTZE\nPROP\nE V E R G R E E N\nSAN JOSE, CALIFORNIA\nPRIVATE\nBonded Winery\nSTOCK\nMember\nWine Institute\nNo. 621\nCALIFORNIA\nSAUTERNE\nWINE\n796\nALCOHOL 123h BY VOLUME\nNET CONTENTS 3A QUART\n"@eng;
-    gv:color [
-  gv:hex "e2c18a";
-  gv:red "226";
-  gv:blue "138";
-  gv:green "193";
-  gv:score "30.657943999999997";
-  gv:coverage "15.28"
-], [
-  gv:hex "d9c5a8";
-  gv:red "217";
-  gv:blue "168";
-  gv:green "197";
-  gv:score "23.500092";
-  gv:coverage "10.266667"
-], [
-  gv:hex "ac9a80";
-  gv:red "172";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "10.582395";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "bb9b64";
-  gv:red "187";
-  gv:blue "100";
-  gv:green "155";
-  gv:score "9.0897068";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "8e713c";
-  gv:red "142";
-  gv:blue "60";
-  gv:green "113";
-  gv:score "5.7887558";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "ecdabe";
-  gv:red "236";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "5.6766994";
-  gv:coverage "8.3533332"
-], [
-  gv:hex "87765d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "5.3882699999999994";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "6e5326";
-  gv:red "110";
-  gv:blue "38";
-  gv:green "83";
-  gv:score "3.0374559";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "655339";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "2.1968363";
-  gv:coverage "0.62"
-], [
-  gv:hex "f6d7a2";
-  gv:red "246";
-  gv:blue "162";
-  gv:green "215";
-  gv:score "1.1968778";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.23218"
-];
-    w:bagOfWords "CALIFORNIA'S CHOICE PRODUCT\nBottled by\nProduced and\nALBERT HAENTZE\nPROP\nE V E R G R E E N\nSAN JOSE, CALIFORNIA\nPRIVATE\nBonded Winery\nSTOCK\nMember\nWine Institute\nNo. 621\nCALIFORNIA\nSAUTERNE\nWINE\n796\nALCOHOL 123h BY VOLUME\nNET CONTENTS 3A QUART\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3573";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

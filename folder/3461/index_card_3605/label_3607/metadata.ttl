@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3607";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "NET CONTENTS\nI PINT 8 FLUID OUNCES\nALIFORNIA WIN,\nBrand\nNS\nThe fine matured bottling wines of\nWINE AC\nGreystone\nCALIFORNIA WINE ASSOCIATION\nSAN FRANCISCO. CALIFORNIA\nALCOHOLIC STRENGTH\nII 2% BY VOLUME\nBottled on Bonded Premises No. 1-1st Dist. Calif.\n"@eng;
-    gv:color [
-  gv:hex "d6c2ac";
-  gv:red "214";
-  gv:blue "172";
-  gv:green "194";
-  gv:score "35.105705";
-  gv:coverage "19.786666"
-], [
-  gv:hex "8e473f";
-  gv:red "142";
-  gv:blue "63";
-  gv:green "71";
-  gv:score "3.7430018";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "ae9b82";
-  gv:red "174";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "18.242017999999998";
-  gv:coverage "3.34"
-], [
-  gv:hex "e5b5a3";
-  gv:red "229";
-  gv:blue "163";
-  gv:green "181";
-  gv:score "9.7184367";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "c59382";
-  gv:red "197";
-  gv:blue "130";
-  gv:green "147";
-  gv:score "8.155341400000001";
-  gv:coverage "0.96"
-], [
-  gv:hex "8a765f";
-  gv:red "138";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "7.0938781";
-  gv:coverage "1"
-], [
-  gv:hex "a16b5c";
-  gv:red "161";
-  gv:blue "92";
-  gv:green "107";
-  gv:score "5.1739279";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "e9d9c5";
-  gv:red "233";
-  gv:blue "197";
-  gv:green "217";
-  gv:score "3.1527991999999996";
-  gv:coverage "9.193333200000001"
-], [
-  gv:hex "a85d57";
-  gv:red "168";
-  gv:blue "87";
-  gv:green "93";
-  gv:score "2.9773274";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "804a3c";
-  gv:red "128";
-  gv:blue "60";
-  gv:green "74";
-  gv:score "2.4268897000000003";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.09813"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "NET CONTENTS\nI PINT 8 FLUID OUNCES\nALIFORNIA WIN,\nBrand\nNS\nThe fine matured bottling wines of\nWINE AC\nGreystone\nCALIFORNIA WINE ASSOCIATION\nSAN FRANCISCO. CALIFORNIA\nALCOHOLIC STRENGTH\nII 2% BY VOLUME\nBottled on Bonded Premises No. 1-1st Dist. Calif.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3607";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

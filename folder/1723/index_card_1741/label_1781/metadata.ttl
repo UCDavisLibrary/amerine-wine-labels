@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1781";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "PRODUCE OF GER MAN Y\nALCOHOL\nCONTENTS\n9,5% TO 11,5% BY VOL.\n1 PINT 8 FL. OZS.\nMoselle\nWin e\n1943 BRAUNEBERGER\na n d\nShipped Bottled by\nby\nH.SICHEL SOHNE MAINZ a Rhein.\n6.2 38278\n"@deu;
-    gv:color [
-  gv:hex "d1bca5";
-  gv:red "209";
-  gv:blue "165";
-  gv:green "188";
-  gv:score "37.479681";
-  gv:coverage "42.4"
-], [
-  gv:hex "b19b7f";
-  gv:red "177";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "23.177059";
-  gv:coverage "5.1133335"
-], [
-  gv:hex "8f795b";
-  gv:red "143";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "7.983460000000001";
-  gv:coverage "1.76"
-], [
-  gv:hex "8d7348";
-  gv:red "141";
-  gv:blue "72";
-  gv:green "115";
-  gv:score "6.4868212";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "c39287";
-  gv:red "195";
-  gv:blue "135";
-  gv:green "146";
-  gv:score "5.785059599999999";
-  gv:coverage "0.64"
-], [
-  gv:hex "e6b7ac";
-  gv:red "230";
-  gv:blue "172";
-  gv:green "183";
-  gv:score "5.7392269";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "d4c1b7";
-  gv:red "212";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "2.1444425";
-  gv:coverage "5.3266667"
-], [
-  gv:hex "a77268";
-  gv:red "167";
-  gv:blue "104";
-  gv:green "114";
-  gv:score "1.8754502999999998";
-  gv:coverage "0.18"
-], [
-  gv:hex "aa8e63";
-  gv:red "170";
-  gv:blue "99";
-  gv:green "142";
-  gv:score "1.7990519999999999";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "735b32";
-  gv:red "115";
-  gv:blue "50";
-  gv:green "91";
-  gv:score "1.3805489";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.561771"
-];
-    w:bagOfWords "PRODUCE OF GER MAN Y\nALCOHOL\nCONTENTS\n9,5% TO 11,5% BY VOL.\n1 PINT 8 FL. OZS.\nMoselle\nWin e\n1943 BRAUNEBERGER\na n d\nShipped Bottled by\nby\nH.SICHEL SOHNE MAINZ a Rhein.\n6.2 38278\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1781";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

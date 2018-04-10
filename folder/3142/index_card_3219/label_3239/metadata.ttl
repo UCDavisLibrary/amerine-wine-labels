@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3239";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "1949\nCHOLET &\nBercut-Vandervoort & Co, Inc., San-Francisco, Cal\nSOLE AGENTS FOR THE U. S. A.\nMTE DE M.DE Lu PT\nMTE FDE CHO\nCLOS DE VOUGEOT\nRED BURGUNDY WINE\nAPPELLATION CONTROL EE\nLUPE-CHO LET & C\nNégociants Nuits-Saint-Georges (cote-d'Or) France\nPRODUCE OF FRANCE\nPint 8 Fluid Ounces\nAlcohol 12 o/o by volume\nNet contents\n"@fra;
-    gv:color [
-  gv:hex "dbc0a2";
-  gv:red "219";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "27.868432";
-  gv:coverage "19.74"
-], [
-  gv:hex "b36147";
-  gv:red "179";
-  gv:blue "71";
-  gv:green "97";
-  gv:score "2.3292106";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "b3997a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "13.155173000000001";
-  gv:coverage "4.8666667"
-], [
-  gv:hex "edba9d";
-  gv:red "237";
-  gv:blue "157";
-  gv:green "186";
-  gv:score "10.452741";
-  gv:coverage "4.3999999999999995"
-], [
-  gv:hex "c59578";
-  gv:red "197";
-  gv:blue "120";
-  gv:green "149";
-  gv:score "5.659097099999999";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "92785a";
-  gv:red "146";
-  gv:blue "90";
-  gv:green "120";
-  gv:score "5.0095342";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "c49167";
-  gv:red "196";
-  gv:blue "103";
-  gv:green "145";
-  gv:score "4.9935244";
-  gv:coverage "1.08"
-], [
-  gv:hex "bc996a";
-  gv:red "188";
-  gv:blue "106";
-  gv:green "153";
-  gv:score "4.4469259999999995";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "f1d8b9";
-  gv:red "241";
-  gv:blue "185";
-  gv:green "216";
-  gv:score "4.2113584";
-  gv:coverage "16.946666"
-], [
-  gv:hex "d8b688";
-  gv:red "216";
-  gv:blue "136";
-  gv:green "182";
-  gv:score "3.6262814";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.539717"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "1949\nCHOLET &\nBercut-Vandervoort & Co, Inc., San-Francisco, Cal\nSOLE AGENTS FOR THE U. S. A.\nMTE DE M.DE Lu PT\nMTE FDE CHO\nCLOS DE VOUGEOT\nRED BURGUNDY WINE\nAPPELLATION CONTROL EE\nLUPE-CHO LET & C\nNégociants Nuits-Saint-Georges (cote-d'Or) France\nPRODUCE OF FRANCE\nPint 8 Fluid Ounces\nAlcohol 12 o/o by volume\nNet contents\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3239";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

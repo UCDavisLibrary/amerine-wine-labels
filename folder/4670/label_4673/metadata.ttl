@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4670/label_4673";
-    dct:type "image";
-    w:bagOfWords "ROTH L SAUTER S.A. LAU ANNE\n'de\nDausanne.\ntigen\nbouchon\n"@deu;
-    gv:color [
-  gv:hex "d7c2a4";
-  gv:red "215";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "24.43507";
-  gv:coverage "17.466667"
-], [
-  gv:hex "897655";
-  gv:red "137";
-  gv:blue "85";
-  gv:green "118";
-  gv:score "20.167467";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "ce290a";
-  gv:red "206";
-  gv:blue "10";
-  gv:green "41";
-  gv:score "3.847437";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "b22c0d";
-  gv:red "178";
-  gv:blue "13";
-  gv:green "44";
-  gv:score "2.6925339999999998";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "8d350f";
-  gv:red "141";
-  gv:blue "15";
-  gv:green "53";
-  gv:score "0.73701907";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d96e4d";
-  gv:red "217";
-  gv:blue "77";
-  gv:green "110";
-  gv:score "0.73575634";
-  gv:coverage "0.04"
-], [
-  gv:hex "ac9778";
-  gv:red "172";
-  gv:blue "120";
-  gv:green "151";
-  gv:score "18.38039";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "685536";
-  gv:red "104";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "9.0754606";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "877245";
-  gv:red "135";
-  gv:blue "69";
-  gv:green "114";
-  gv:score "6.452492599999999";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "c43012";
-  gv:red "196";
-  gv:blue "18";
-  gv:green "48";
-  gv:score "2.3528555";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.688123"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.063599999999994"
-];
-    w:bagOfWords "ROTH L SAUTER S.A. LAU ANNE\n'de\nDausanne.\ntigen\nbouchon\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "CHE".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4673";
+    <schema.keywords> "Switzerland Folder@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CH".
+

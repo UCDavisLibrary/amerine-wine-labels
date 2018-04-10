@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3115/label_3136";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "MIA RK\nTRAD E\nBORDEAUX\nSUPERIEUR\nAppellation Bordeaux supérieur Controlée\nMARQUE DU CASQUE\nAUDINET & BUHAN\nM AI s o N FON D EE E N\n8 8\nNEGOCIANTS A BORDEAUX GIRONDE\n"@fra;
-    gv:color [
-  gv:hex "d4c0ad";
-  gv:red "212";
-  gv:blue "173";
-  gv:green "192";
-  gv:score "18.102618";
-  gv:coverage "13.153334"
-], [
-  gv:hex "9f2b35";
-  gv:red "159";
-  gv:blue "53";
-  gv:green "43";
-  gv:score "10.168019000000001";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "6b1a1a";
-  gv:red "107";
-  gv:blue "26";
-  gv:green "26";
-  gv:score "6.560001499999999";
-  gv:coverage "0.18"
-], [
-  gv:hex "635141";
-  gv:red "99";
-  gv:blue "65";
-  gv:green "81";
-  gv:score "1.9247118";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "d4c5bc";
-  gv:red "212";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "10.297841";
-  gv:coverage "14.38"
-], [
-  gv:hex "9c1724";
-  gv:red "156";
-  gv:blue "36";
-  gv:green "23";
-  gv:score "7.959632599999999";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "b39e8b";
-  gv:red "179";
-  gv:blue "139";
-  gv:green "158";
-  gv:score "5.4977621999999995";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "8d3738";
-  gv:red "141";
-  gv:blue "56";
-  gv:green "55";
-  gv:score "3.6329559999999996";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "e8b8af";
-  gv:red "232";
-  gv:blue "175";
-  gv:green "184";
-  gv:score "3.2708105";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "e3bfbb";
-  gv:red "227";
-  gv:blue "187";
-  gv:green "191";
-  gv:score "3.0906379";
-  gv:coverage "0.5933333199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.029018"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MIA RK\nTRAD E\nBORDEAUX\nSUPERIEUR\nAppellation Bordeaux supérieur Controlée\nMARQUE DU CASQUE\nAUDINET & BUHAN\nM AI s o N FON D EE E N\n8 8\nNEGOCIANTS A BORDEAUX GIRONDE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3136";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

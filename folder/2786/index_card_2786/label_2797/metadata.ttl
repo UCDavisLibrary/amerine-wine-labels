@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2797";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "CHATEAU HAUERTON\n1934\nGRAND VIN BLANC SEC\n"@fra;
-    gv:color [
-  gv:hex "cebca1";
-  gv:red "206";
-  gv:blue "161";
-  gv:green "188";
-  gv:score "39.492118";
-  gv:coverage "39.900000000000006"
-], [
-  gv:hex "ab9c86";
-  gv:red "171";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "32.781735";
-  gv:coverage "8.9066669"
-], [
-  gv:hex "a67f55";
-  gv:red "166";
-  gv:blue "85";
-  gv:green "127";
-  gv:score "0.25269068";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "a39990";
-  gv:red "163";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "12.185369999999999";
-  gv:coverage "3.8"
-], [
-  gv:hex "8f816c";
-  gv:red "143";
-  gv:blue "108";
-  gv:green "129";
-  gv:score "4.9175289";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "6b4d27";
-  gv:red "107";
-  gv:blue "39";
-  gv:green "77";
-  gv:score "0.033985116";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "c4b8ae";
-  gv:red "196";
-  gv:blue "174";
-  gv:green "184";
-  gv:score "3.0446567";
-  gv:coverage "8.8466667"
-], [
-  gv:hex "d3b787";
-  gv:red "211";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "2.1969588";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "ba9b6b";
-  gv:red "186";
-  gv:blue "107";
-  gv:green "155";
-  gv:score "1.6498922999999999";
-  gv:coverage "0.18"
-], [
-  gv:hex "8c8279";
-  gv:red "140";
-  gv:blue "121";
-  gv:green "130";
-  gv:score "1.5347259";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.939752"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.420146"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.359844"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "55.244768"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.011793"
-];
-    w:bagOfWords "CHATEAU HAUERTON\n1934\nGRAND VIN BLANC SEC\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2797";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

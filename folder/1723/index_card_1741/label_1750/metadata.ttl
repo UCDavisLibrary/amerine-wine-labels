@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1750";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Bern casteler Docto\nasteler Doctor\nz\nS\n20actistum\n6erPinharsiheelle Ptsoernnalhm gondernegfael-enes\nδer einhar81chenentsoermalfungeeBeenca fel ues\ner、Aleinharò lcten\noermallind\nncaltel-( 9)lies\ngeller-Abang ntif SRockbrans\nGESETZLGESCHUTZT\n"@deu;
-    gv:color [
-  gv:hex "d4bb9b";
-  gv:red "212";
-  gv:blue "155";
-  gv:green "187";
-  gv:score "56.374228";
-  gv:coverage "20"
-], [
-  gv:hex "b99f7e";
-  gv:red "185";
-  gv:blue "126";
-  gv:green "159";
-  gv:score "26.008141000000002";
-  gv:coverage "7.793333400000001"
-], [
-  gv:hex "8e7555";
-  gv:red "142";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "6.009324299999999";
-  gv:coverage "1.94"
-], [
-  gv:hex "685338";
-  gv:red "104";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "2.5991816";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "bc967a";
-  gv:red "188";
-  gv:blue "122";
-  gv:green "150";
-  gv:score "1.7700547";
-  gv:coverage "0.62"
-], [
-  gv:hex "936d51";
-  gv:red "147";
-  gv:blue "81";
-  gv:green "109";
-  gv:score "1.418101";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "714b36";
-  gv:red "113";
-  gv:blue "54";
-  gv:green "75";
-  gv:score "1.2257529";
-  gv:coverage "0.2"
-], [
-  gv:hex "ead7bf";
-  gv:red "234";
-  gv:blue "191";
-  gv:green "215";
-  gv:score "0.8779237000000001";
-  gv:coverage "10.566667"
-], [
-  gv:hex "473424";
-  gv:red "71";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "0.67865648";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "512b17";
-  gv:red "81";
-  gv:blue "23";
-  gv:green "43";
-  gv:score "0.66797719";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "64.940655"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.202007"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.317800000000005"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.217115"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.067156000000004"
-];
-    w:bagOfWords "Bern casteler Docto\nasteler Doctor\nz\nS\n20actistum\n6erPinharsiheelle Ptsoernnalhm gondernegfael-enes\nδer einhar81chenentsoermalfungeeBeenca fel ues\ner、Aleinharò lcten\noermallind\nncaltel-( 9)lies\ngeller-Abang ntif SRockbrans\nGESETZLGESCHUTZT\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1750";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

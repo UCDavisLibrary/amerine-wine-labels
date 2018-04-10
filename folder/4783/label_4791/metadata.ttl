@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4791";
-    dct:type "image";
-    w:bagOfWords "i WHITE WINE\n12\nc O U\nL LA G E s\nPRODUCT OF FRANCE\nFRU I\nMAR QUE\nPO SEE\nBLANC\nD E\nRECOLTE\n1964\nNA ERR\nVINTAGE\nGRAND\nVIN BLANC\nDE BLANC S\nDONATIEN BAHU AUD\n& CIE NEGOCIANTS\nLA CHAPELLE-HEUL\n(L.- A.) FRANCE\nCENTRE DEMBOUTEILLAGE No 44.02. O4\n"@eng;
-    gv:color [
-  gv:hex "d8c2a4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "26.167169";
-  gv:coverage "12.58"
-], [
-  gv:hex "bf9268";
-  gv:red "191";
-  gv:blue "104";
-  gv:green "146";
-  gv:score "14.427453000000002";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "f1dbbd";
-  gv:red "241";
-  gv:blue "189";
-  gv:green "219";
-  gv:score "11.680717999999999";
-  gv:coverage "22.413332999999998"
-], [
-  gv:hex "9e7148";
-  gv:red "158";
-  gv:blue "72";
-  gv:green "113";
-  gv:score "9.817345399999999";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "794d25";
-  gv:red "121";
-  gv:blue "37";
-  gv:green "77";
-  gv:score "6.2833272";
-  gv:coverage "0.22"
-], [
-  gv:hex "af9a7f";
-  gv:red "175";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "6.0862";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "e1b389";
-  gv:red "225";
-  gv:blue "137";
-  gv:green "179";
-  gv:score "6.0052916";
-  gv:coverage "0.26"
-], [
-  gv:hex "86735a";
-  gv:red "134";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "3.6561739";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "625038";
-  gv:red "98";
-  gv:blue "56";
-  gv:green "80";
-  gv:score "2.6614882";
-  gv:coverage "0.22"
-], [
-  gv:hex "5b2b06";
-  gv:red "91";
-  gv:blue "6";
-  gv:green "43";
-  gv:score "2.4788319999999997";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.290256"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "i WHITE WINE\n12\nc O U\nL LA G E s\nPRODUCT OF FRANCE\nFRU I\nMAR QUE\nPO SEE\nBLANC\nD E\nRECOLTE\n1964\nNA ERR\nVINTAGE\nGRAND\nVIN BLANC\nDE BLANC S\nDONATIEN BAHU AUD\n& CIE NEGOCIANTS\nLA CHAPELLE-HEUL\n(L.- A.) FRANCE\nCENTRE DEMBOUTEILLAGE No 44.02. O4\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4791";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

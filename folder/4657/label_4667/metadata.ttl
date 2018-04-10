@@ -1,100 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4657/label_4667";
-    dct:type "image";
-    w:bagOfWords "REG. EME No 10\nVINA PACETA\nBLANCO SECO\nHARO RIOJA\nCOSECHA 1935\nBodegas Buto ainas. S a\nRIELESSAT SA BARCELONA\n"@spa;
-    gv:color [
-  gv:hex "d4c19a";
-  gv:red "212";
-  gv:blue "154";
-  gv:green "193";
-  gv:score "54.9675";
-  gv:coverage "21.526666"
-], [
-  gv:hex "887252";
-  gv:red "136";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "14.234237";
-  gv:coverage "5.4733332"
-], [
-  gv:hex "6a5435";
-  gv:red "106";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "10.540968000000001";
-  gv:coverage "3.9133333"
-], [
-  gv:hex "af9a78";
-  gv:red "175";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "8.2769245";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "cebb8c";
-  gv:red "206";
-  gv:blue "140";
-  gv:green "187";
-  gv:score "2.6759112000000003";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "473215";
-  gv:red "71";
-  gv:blue "21";
-  gv:green "50";
-  gv:score "2.3627";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "b09d6e";
-  gv:red "176";
-  gv:blue "110";
-  gv:green "157";
-  gv:score "1.8729190999999998";
-  gv:coverage "0.48"
-], [
-  gv:hex "6a542b";
-  gv:red "106";
-  gv:blue "43";
-  gv:green "84";
-  gv:score "1.494483";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "877147";
-  gv:red "135";
-  gv:blue "71";
-  gv:green "113";
-  gv:score "1.4059979999999999";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "ebdabd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "218";
-  gv:score "0.83067305";
-  gv:coverage "6.4733334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.153554"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.221216999999996"
-];
-    w:bagOfWords "REG. EME No 10\nVINA PACETA\nBLANCO SECO\nHARO RIOJA\nCOSECHA 1935\nBodegas Buto ainas. S a\nRIELESSAT SA BARCELONA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4667";
+    <schema.keywords> "Spain Vino Blanco Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES";
+    w:WineColor w:White.
+

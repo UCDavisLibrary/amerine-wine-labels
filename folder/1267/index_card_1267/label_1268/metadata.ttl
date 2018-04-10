@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1267/label_1268";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "VINTAGES\nTRA\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@undefined;
-    gv:color [
-  gv:hex "3d0403";
-  gv:red "61";
-  gv:blue "3";
-  gv:green "4";
-  gv:score "24.134979";
-  gv:coverage "6.773333300000001"
-], [
-  gv:hex "562417";
-  gv:red "86";
-  gv:blue "23";
-  gv:green "36";
-  gv:score "19.988073";
-  gv:coverage "4.5733333"
-], [
-  gv:hex "dcc7af";
-  gv:red "220";
-  gv:blue "175";
-  gv:green "199";
-  gv:score "0.34367952";
-  gv:coverage "3.2066666"
-], [
-  gv:hex "390703";
-  gv:red "57";
-  gv:blue "3";
-  gv:green "7";
-  gv:score "17.854628";
-  gv:coverage "6.140000000000001"
-], [
-  gv:hex "764633";
-  gv:red "118";
-  gv:blue "51";
-  gv:green "70";
-  gv:score "14.287897999999998";
-  gv:coverage "4.3999999999999995"
-], [
-  gv:hex "784726";
-  gv:red "120";
-  gv:blue "38";
-  gv:green "71";
-  gv:score "6.4072058";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "531813";
-  gv:red "83";
-  gv:blue "19";
-  gv:green "24";
-  gv:score "5.227825";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "5e2d10";
-  gv:red "94";
-  gv:blue "16";
-  gv:green "45";
-  gv:score "3.1194499";
-  gv:coverage "0.5"
-], [
-  gv:hex "b08950";
-  gv:red "176";
-  gv:blue "80";
-  gv:green "137";
-  gv:score "0.030800263999999997";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "2d0001";
-  gv:red "45";
-  gv:blue "1";
-  gv:green "undefined";
-  gv:score "2.4309121";
-  gv:coverage "0.9333332999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.188036"
-];
-    w:bagOfWords "VINTAGES\nTRA\nBOTTLED AT THE OLIVINA VAULTS\nGROWER\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1268";
+    <schema.keywords> "Misc Table Wines@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

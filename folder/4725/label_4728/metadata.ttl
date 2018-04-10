@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4725/label_4728";
-    dct:type "image";
-    w:bagOfWords "INNS of\nCOU RT\nlendela\nSCO\nendeo\nMatured\nBottled\nwoodalLOP\nDistilleries scotland\nsialandby\nーこ( SOUTHARD& Co.,LTD\nNDONEST:I814,GLASGOW\nOOScotchWhiskies all overSYears Old\ngontenrsys Quart 86Proof --NTED-N\noriferEse\n"@undefined;
-    gv:color [
-  gv:hex "a09a96";
-  gv:red "160";
-  gv:blue "150";
-  gv:green "154";
-  gv:score "28.920814";
-  gv:coverage "7.213333199999999"
-], [
-  gv:hex "8aa185";
-  gv:red "138";
-  gv:blue "133";
-  gv:green "161";
-  gv:score "6.7584984";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "807874";
-  gv:red "128";
-  gv:blue "116";
-  gv:green "120";
-  gv:score "19.33765";
-  gv:coverage "4.859999999999999"
-], [
-  gv:hex "c0bcb8";
-  gv:red "192";
-  gv:blue "184";
-  gv:green "188";
-  gv:score "13.379304";
-  gv:coverage "6.746666900000001"
-], [
-  gv:hex "5c5553";
-  gv:red "92";
-  gv:blue "83";
-  gv:green "85";
-  gv:score "4.9290191";
-  gv:coverage "1.24"
-], [
-  gv:hex "b3c9ae";
-  gv:red "179";
-  gv:blue "174";
-  gv:green "201";
-  gv:score "4.8041463";
-  gv:coverage "0.42"
-], [
-  gv:hex "687d62";
-  gv:red "104";
-  gv:blue "98";
-  gv:green "125";
-  gv:score "3.7893627";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "445a3e";
-  gv:red "68";
-  gv:blue "62";
-  gv:green "90";
-  gv:score "2.2672787";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "9899b0";
-  gv:red "152";
-  gv:blue "176";
-  gv:green "153";
-  gv:score "2.2193134";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "383437";
-  gv:red "56";
-  gv:blue "55";
-  gv:green "52";
-  gv:score "1.8002659";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.206767"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.968985"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "51.827997"
-];
-    w:bagOfWords "INNS of\nCOU RT\nlendela\nSCO\nendeo\nMatured\nBottled\nwoodalLOP\nDistilleries scotland\nsialandby\nーこ( SOUTHARD& Co.,LTD\nNDONEST:I814,GLASGOW\nOOScotchWhiskies all overSYears Old\ngontenrsys Quart 86Proof --NTED-N\noriferEse\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4728";
+    <schema.keywords> "Fortified Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

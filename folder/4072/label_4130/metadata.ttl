@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4130";
-    dct:type "image";
-    w:bagOfWords "NIEILin\nLlanquette age Limoux\nAPPELLATION CONTROL EE\nSOCIETE ANONY ME DES ETABLISSEMENTS\nMAISON CENTENAIRE\nLIMoux\nAUDE\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d8c1a1";
-  gv:red "216";
-  gv:blue "161";
-  gv:green "193";
-  gv:score "26.290566";
-  gv:coverage "23.773333"
-], [
-  gv:hex "b29977";
-  gv:red "178";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "16.825993";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "8e7553";
-  gv:red "142";
-  gv:blue "83";
-  gv:green "117";
-  gv:score "13.835075";
-  gv:coverage "1.22"
-], [
-  gv:hex "e1b69d";
-  gv:red "225";
-  gv:blue "157";
-  gv:green "182";
-  gv:score "8.1928812";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "bf957b";
-  gv:red "191";
-  gv:blue "123";
-  gv:green "149";
-  gv:score "6.0597636";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "976d52";
-  gv:red "151";
-  gv:blue "82";
-  gv:green "109";
-  gv:score "5.939896";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "784e32";
-  gv:red "120";
-  gv:blue "50";
-  gv:green "78";
-  gv:score "5.4773357";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "eed7b9";
-  gv:red "238";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "4.835289";
-  gv:coverage "10.906667"
-], [
-  gv:hex "90784e";
-  gv:red "144";
-  gv:blue "78";
-  gv:green "120";
-  gv:score "4.5207195";
-  gv:coverage "0.32"
-], [
-  gv:hex "b29669";
-  gv:red "178";
-  gv:blue "105";
-  gv:green "150";
-  gv:score "3.4653354";
-  gv:coverage "0.31333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.882037"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "NIEILin\nLlanquette age Limoux\nAPPELLATION CONTROL EE\nSOCIETE ANONY ME DES ETABLISSEMENTS\nMAISON CENTENAIRE\nLIMoux\nAUDE\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4130";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

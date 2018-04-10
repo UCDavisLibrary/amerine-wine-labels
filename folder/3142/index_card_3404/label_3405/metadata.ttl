@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3404/label_3405";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "maine des HAUTES CORNICRES\nSANTENAY. COMMES\nAppellation Controlée\nPh. CHAPELLE, Propriétaire.Viticulteur, SANTENAY (Cote-d'Or,\n2 and\n"@fra;
-    gv:color [
-  gv:hex "897464";
-  gv:red "137";
-  gv:blue "100";
-  gv:green "116";
-  gv:score "27.718159999999997";
-  gv:coverage "3.2333333"
-], [
-  gv:hex "d2bca8";
-  gv:red "210";
-  gv:blue "168";
-  gv:green "188";
-  gv:score "26.733562";
-  gv:coverage "20.06"
-], [
-  gv:hex "c09158";
-  gv:red "192";
-  gv:blue "88";
-  gv:green "145";
-  gv:score "1.3591076";
-  gv:coverage "0.36"
-], [
-  gv:hex "ac9785";
-  gv:red "172";
-  gv:blue "133";
-  gv:green "151";
-  gv:score "26.525688";
-  gv:coverage "4.8466667999999995"
-], [
-  gv:hex "685545";
-  gv:red "104";
-  gv:blue "69";
-  gv:green "85";
-  gv:score "10.257674999999999";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "463424";
-  gv:red "70";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "2.4552142";
-  gv:coverage "0.3"
-], [
-  gv:hex "bd9968";
-  gv:red "189";
-  gv:blue "104";
-  gv:green "153";
-  gv:score "0.65567838";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "ebd9c8";
-  gv:red "235";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "0.60907886";
-  gv:coverage "4.0866666"
-], [
-  gv:hex "c6c5b9";
-  gv:red "198";
-  gv:blue "185";
-  gv:green "197";
-  gv:score "0.6087942";
-  gv:coverage "6.3733332"
-], [
-  gv:hex "dab586";
-  gv:red "218";
-  gv:blue "134";
-  gv:green "181";
-  gv:score "0.44820039";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.423912"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "59.173024"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.88496"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.044177999999995"
-];
-    w:bagOfWords "maine des HAUTES CORNICRES\nSANTENAY. COMMES\nAppellation Controlée\nPh. CHAPELLE, Propriétaire.Viticulteur, SANTENAY (Cote-d'Or,\n2 and\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3405";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

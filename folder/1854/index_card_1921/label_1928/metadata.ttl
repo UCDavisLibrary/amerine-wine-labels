@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1921/label_1928";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "of SPAIN\nPRODUCE\nN S\nTRADE\nMARK\nESTAB?\n1814\nrotin.\nSHERRY\nSouTHARD & o ITD\nSHIPPERS SINCE 18/4\nLONDON & PUERTO DE STA. MARIA\nPRINTED IN SPAIN\n"@spa;
-    gv:color [
-  gv:hex "ad731c";
-  gv:red "173";
-  gv:blue "28";
-  gv:green "115";
-  gv:score "40.873405";
-  gv:coverage "13.700000000000001"
-], [
-  gv:hex "76460e";
-  gv:red "118";
-  gv:blue "14";
-  gv:green "70";
-  gv:score "4.5176052";
-  gv:coverage "1.08"
-], [
-  gv:hex "671c01";
-  gv:red "103";
-  gv:blue "1";
-  gv:green "28";
-  gv:score "2.6447164";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "371200";
-  gv:red "55";
-  gv:blue "undefined";
-  gv:green "18";
-  gv:score "0.51997509";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "f3dcbc";
-  gv:red "243";
-  gv:blue "188";
-  gv:green "220";
-  gv:score "0.26160139";
-  gv:coverage "17.126666"
-], [
-  gv:hex "bf842e";
-  gv:red "191";
-  gv:blue "46";
-  gv:green "132";
-  gv:score "25.874534";
-  gv:coverage "8.3133332"
-], [
-  gv:hex "834e06";
-  gv:red "131";
-  gv:blue "6";
-  gv:green "78";
-  gv:score "4.2957667";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "a06d35";
-  gv:red "160";
-  gv:blue "53";
-  gv:green "109";
-  gv:score "3.7439447";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "8a3815";
-  gv:red "138";
-  gv:blue "21";
-  gv:green "56";
-  gv:score "2.3787208";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "be8b4f";
-  gv:red "190";
-  gv:blue "79";
-  gv:green "139";
-  gv:score "2.3357764";
-  gv:coverage "0.9133333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.650794"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.111436"
-];
-    w:bagOfWords "of SPAIN\nPRODUCE\nN S\nTRADE\nMARK\nESTAB?\n1814\nrotin.\nSHERRY\nSouTHARD & o ITD\nSHIPPERS SINCE 18/4\nLONDON & PUERTO DE STA. MARIA\nPRINTED IN SPAIN\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1928";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

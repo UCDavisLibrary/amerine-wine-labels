@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0455";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Rhein gnu\nSchloss Reinhartshausener\nORIGINAL\n1942er Erbacher Rheinhell\n"@deu;
-    gv:color [
-  gv:hex "4c7eab";
-  gv:red "76";
-  gv:blue "171";
-  gv:green "126";
-  gv:score "54.865706";
-  gv:coverage "12.866667000000001"
-], [
-  gv:hex "55799c";
-  gv:red "85";
-  gv:blue "156";
-  gv:green "121";
-  gv:score "12.32916";
-  gv:coverage "5.1"
-], [
-  gv:hex "345779";
-  gv:red "52";
-  gv:blue "121";
-  gv:green "87";
-  gv:score "11.296897";
-  gv:coverage "2.44"
-], [
-  gv:hex "305c86";
-  gv:red "48";
-  gv:blue "134";
-  gv:green "92";
-  gv:score "11.137837000000001";
-  gv:coverage "2.0933334"
-], [
-  gv:hex "1b3c5b";
-  gv:red "27";
-  gv:blue "91";
-  gv:green "60";
-  gv:score "3.0438423";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "5d90be";
-  gv:red "93";
-  gv:blue "190";
-  gv:green "144";
-  gv:score "2.3683326";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "183d64";
-  gv:red "24";
-  gv:blue "100";
-  gv:green "61";
-  gv:score "1.7210674";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "7e98b2";
-  gv:red "126";
-  gv:blue "178";
-  gv:green "152";
-  gv:score "1.5137511";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "635646";
-  gv:red "99";
-  gv:blue "70";
-  gv:green "86";
-  gv:score "0.010152553";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "969ea5";
-  gv:red "150";
-  gv:blue "165";
-  gv:green "158";
-  gv:score "0.63463645";
-  gv:coverage "2.1933333999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.33705099999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.00834400000001"
-];
-    w:bagOfWords "Rhein gnu\nSchloss Reinhartshausener\nORIGINAL\n1942er Erbacher Rheinhell\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0455";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

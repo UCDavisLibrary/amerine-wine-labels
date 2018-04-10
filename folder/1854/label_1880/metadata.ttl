@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1880";
-    dct:type "image";
-    w:bagOfWords "HARVEY\nS\nALCOHOLIC CONTENT\nCONTENTS\n20 PER CENT\n25/32 QUART\nBY APPOINTMENT\nBY VOLUME\nHARVEY DRY\nPALE AM ON TILL ADO\nSHERRY\nBOTTLED BY JOHN HARVEY & SONs. LTD.. BRISTOL, ENGLAND\nFOUNDED 1796.\nPARK & TILFORD IMpORT coRp NEW YORK,\nN.Y\nSOLE AGENT FOR UNITED STATES\nPRODUCE OF SPAIN\n"@spa;
-    gv:color [
-  gv:hex "d0c0af";
-  gv:red "208";
-  gv:blue "175";
-  gv:green "192";
-  gv:score "29.155548999999997";
-  gv:coverage "12.666667"
-], [
-  gv:hex "ad9c8c";
-  gv:red "173";
-  gv:blue "140";
-  gv:green "156";
-  gv:score "28.641713000000003";
-  gv:coverage "6.4399999999999995"
-], [
-  gv:hex "ecdbcb";
-  gv:red "236";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "13.666412";
-  gv:coverage "11.306667"
-], [
-  gv:hex "867564";
-  gv:red "134";
-  gv:blue "100";
-  gv:green "117";
-  gv:score "7.5128525";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "d0c1b6";
-  gv:red "208";
-  gv:blue "182";
-  gv:green "193";
-  gv:score "6.73865";
-  gv:coverage "8.64"
-], [
-  gv:hex "665342";
-  gv:red "102";
-  gv:blue "66";
-  gv:green "83";
-  gv:score "6.1770614";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "ecddd1";
-  gv:red "236";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "5.1893491";
-  gv:coverage "58.073336"
-], [
-  gv:hex "b2a398";
-  gv:red "178";
-  gv:blue "152";
-  gv:green "163";
-  gv:score "2.0028394";
-  gv:coverage "0.5"
-], [
-  gv:hex "483729";
-  gv:red "72";
-  gv:blue "41";
-  gv:green "55";
-  gv:score "0.85794283";
-  gv:coverage "0.08"
-], [
-  gv:hex "847d73";
-  gv:red "132";
-  gv:blue "115";
-  gv:green "125";
-  gv:score "0.020724571";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.808551"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "63.366187"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.734729"
-];
-    w:bagOfWords "HARVEY\nS\nALCOHOLIC CONTENT\nCONTENTS\n20 PER CENT\n25/32 QUART\nBY APPOINTMENT\nBY VOLUME\nHARVEY DRY\nPALE AM ON TILL ADO\nSHERRY\nBOTTLED BY JOHN HARVEY & SONs. LTD.. BRISTOL, ENGLAND\nFOUNDED 1796.\nPARK & TILFORD IMpORT coRp NEW YORK,\nN.Y\nSOLE AGENT FOR UNITED STATES\nPRODUCE OF SPAIN\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1880";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

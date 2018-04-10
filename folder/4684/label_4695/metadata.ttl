@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4695";
-    dct:type "image";
-    w:bagOfWords "REGISTERED\nTRADE\nMARK\nBAR DIN ET\nJAMAICA & FRENCH\nWEST INDIES\nRUM\nEARDINET, s\nDE 60\nE MENOS\n"@undefined;
-    gv:color [
-  gv:hex "dac4a4";
-  gv:red "218";
-  gv:blue "164";
-  gv:green "196";
-  gv:score "21.790487";
-  gv:coverage "7.213333199999999"
-], [
-  gv:hex "a21322";
-  gv:red "162";
-  gv:blue "34";
-  gv:green "19";
-  gv:score "10.453064";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "e8b07d";
-  gv:red "232";
-  gv:blue "125";
-  gv:green "176";
-  gv:score "9.758955199999999";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "631819";
-  gv:red "99";
-  gv:blue "25";
-  gv:green "24";
-  gv:score "4.9169339";
-  gv:coverage "0.84"
-], [
-  gv:hex "170b04";
-  gv:red "23";
-  gv:blue "4";
-  gv:green "11";
-  gv:score "1.7003322";
-  gv:coverage "0.8"
-], [
-  gv:hex "e8b9a3";
-  gv:red "232";
-  gv:blue "163";
-  gv:green "185";
-  gv:score "6.832392499999999";
-  gv:coverage "2.9666666"
-], [
-  gv:hex "ce9867";
-  gv:red "206";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "3.8885448000000005";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "b60d26";
-  gv:red "182";
-  gv:blue "38";
-  gv:green "13";
-  gv:score "3.0024163";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "c4917d";
-  gv:red "196";
-  gv:blue "125";
-  gv:green "145";
-  gv:score "2.9673524";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "dfbf8e";
-  gv:red "223";
-  gv:blue "142";
-  gv:green "191";
-  gv:score "2.7407499";
-  gv:coverage "0.37333333999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.714973"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/080jpd1>;
-  gv:desc "coin purse";
-  gv:score "51.912837999999994"
-];
-    w:bagOfWords "REGISTERED\nTRADE\nMARK\nBAR DIN ET\nJAMAICA & FRENCH\nWEST INDIES\nRUM\nEARDINET, s\nDE 60\nE MENOS\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4695";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

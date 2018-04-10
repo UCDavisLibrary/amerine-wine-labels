@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3183/label_3190";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Clos de Tart\nAPPELLATION CONTROLEE\nise du Domaine\nJ. MOMMESSIN\ni Seul Propriétaire\n"@fra;
-    gv:color [
-  gv:hex "e3caa6";
-  gv:red "227";
-  gv:blue "166";
-  gv:green "202";
-  gv:score "48.53853";
-  gv:coverage "20.713334"
-], [
-  gv:hex "f0d8b7";
-  gv:red "240";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "9.831325";
-  gv:coverage "6.313333699999999"
-], [
-  gv:hex "e3c295";
-  gv:red "227";
-  gv:blue "149";
-  gv:green "194";
-  gv:score "8.359412800000001";
-  gv:coverage "3.6533333"
-], [
-  gv:hex "b39b79";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "5.992179699999999";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "b8976a";
-  gv:red "184";
-  gv:blue "106";
-  gv:green "151";
-  gv:score "4.2891685";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "8a7457";
-  gv:red "138";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "3.9969935999999997";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "63533c";
-  gv:red "99";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "3.3306357";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "52554f";
-  gv:red "82";
-  gv:blue "79";
-  gv:green "85";
-  gv:score "3.021127";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "43321b";
-  gv:red "67";
-  gv:blue "27";
-  gv:green "50";
-  gv:score "1.5945645000000002";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "e2b999";
-  gv:red "226";
-  gv:blue "153";
-  gv:green "185";
-  gv:score "1.256502";
-  gv:coverage "0.55333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.590779"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "51.538366"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.504177"
-];
-    w:bagOfWords "Clos de Tart\nAPPELLATION CONTROLEE\nise du Domaine\nJ. MOMMESSIN\ni Seul Propriétaire\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3190";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

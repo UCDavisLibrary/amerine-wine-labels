@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4938";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Gegrundet\nagrundet\nI 8 6 4-\n8 6 4\nN FROM M BINGE ARHEIN\nGr wn and bottled in Germany\n"@undefined;
-    gv:color [
-  gv:hex "906943";
-  gv:red "144";
-  gv:blue "67";
-  gv:green "105";
-  gv:score "18.525542";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "d9c1a5";
-  gv:red "217";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "15.543476";
-  gv:coverage "15.326666999999999"
-], [
-  gv:hex "936e4f";
-  gv:red "147";
-  gv:blue "79";
-  gv:green "110";
-  gv:score "12.927301";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "8d7357";
-  gv:red "141";
-  gv:blue "87";
-  gv:green "115";
-  gv:score "10.957784";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "b09678";
-  gv:red "176";
-  gv:blue "120";
-  gv:green "150";
-  gv:score "10.808643";
-  gv:coverage "4.84"
-], [
-  gv:hex "eddbc5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "10.150988";
-  gv:coverage "36.88"
-], [
-  gv:hex "7c5530";
-  gv:red "124";
-  gv:blue "48";
-  gv:green "85";
-  gv:score "4.5266379";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "b58e70";
-  gv:red "181";
-  gv:blue "112";
-  gv:green "142";
-  gv:score "3.5728484";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "735134";
-  gv:red "115";
-  gv:blue "52";
-  gv:green "81";
-  gv:score "3.3803097999999996";
-  gv:coverage "0.44"
-], [
-  gv:hex "70593c";
-  gv:red "112";
-  gv:blue "60";
-  gv:green "89";
-  gv:score "3.2690786";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "73.343891"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.600815999999995"
-], [
-  gv:mid <https://g.co/kg/m/025dyy>;
-  gv:desc "box";
-  gv:score "50.71635799999999"
-];
-    w:bagOfWords "Gegrundet\nagrundet\nI 8 6 4-\n8 6 4\nN FROM M BINGE ARHEIN\nGr wn and bottled in Germany\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4938";
+    <schema.keywords> "UC Reporters Notebook@en".
+

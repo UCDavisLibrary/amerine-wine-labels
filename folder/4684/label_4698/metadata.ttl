@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4698";
-    dct:type "image";
-    w:bagOfWords "ESPECIAL PARA COCK-TAIL\nDESTILERIAS: PED R O GIRO\nBARCELONA (Espana)\n"@undefined;
-    gv:color [
-  gv:hex "8a7657";
-  gv:red "138";
-  gv:blue "87";
-  gv:green "118";
-  gv:score "29.312234999999998";
-  gv:coverage "8.3933331"
-], [
-  gv:hex "538497";
-  gv:red "83";
-  gv:blue "151";
-  gv:green "132";
-  gv:score "1.0443600000000002";
-  gv:coverage "0.76"
-], [
-  gv:hex "aa9575";
-  gv:red "170";
-  gv:blue "117";
-  gv:green "149";
-  gv:score "23.841884999999998";
-  gv:coverage "8.82"
-], [
-  gv:hex "665335";
-  gv:red "102";
-  gv:blue "53";
-  gv:green "83";
-  gv:score "16.268468";
-  gv:coverage "4.5600000000000005"
-], [
-  gv:hex "453216";
-  gv:red "69";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "7.4607857";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "d1bc9e";
-  gv:red "209";
-  gv:blue "158";
-  gv:green "188";
-  gv:score "3.7360292000000004";
-  gv:coverage "5.36"
-], [
-  gv:hex "b59965";
-  gv:red "181";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "3.4781820999999997";
-  gv:coverage "3.6533333"
-], [
-  gv:hex "8f7548";
-  gv:red "143";
-  gv:blue "72";
-  gv:green "117";
-  gv:score "1.9665807";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "d5b982";
-  gv:red "213";
-  gv:blue "130";
-  gv:green "185";
-  gv:score "1.1963507";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "2c1a02";
-  gv:red "44";
-  gv:blue "2";
-  gv:green "26";
-  gv:score "0.9617104200000001";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "66.465545"
-], [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "66.12367"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.922916"
-];
-    w:bagOfWords "ESPECIAL PARA COCK-TAIL\nDESTILERIAS: PED R O GIRO\nBARCELONA (Espana)\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4698";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

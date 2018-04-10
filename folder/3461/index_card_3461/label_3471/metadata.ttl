@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3471";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "CALIFORNIA\nChablis\nALCOHOL\n12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOLANO WINERY, INC.\nCOR DE LIA, CALIFORNIA\n(ESTABLISHED IN 893)\nBONDED WINERY No. 42 TAX PAID BY STAMPS\nAFFIXED TO CASE\n1 4TH SUPER. DISTRICT\nREG. U. S. PAT. OFF.\n"@eng;
-    gv:color [
-  gv:hex "896c38";
-  gv:red "137";
-  gv:blue "56";
-  gv:green "108";
-  gv:score "36.084872000000004";
-  gv:coverage "2.12"
-], [
-  gv:hex "d5c1a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "11.919707";
-  gv:coverage "22.673333"
-], [
-  gv:hex "867251";
-  gv:red "134";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "15.598582";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "685537";
-  gv:red "104";
-  gv:blue "55";
-  gv:green "85";
-  gv:score "9.3689382";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "ad997a";
-  gv:red "173";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "7.3726818";
-  gv:coverage "1.68"
-], [
-  gv:hex "ad905e";
-  gv:red "173";
-  gv:blue "94";
-  gv:green "144";
-  gv:score "5.182853";
-  gv:coverage "0.38"
-], [
-  gv:hex "765c2d";
-  gv:red "118";
-  gv:blue "45";
-  gv:green "92";
-  gv:score "4.610399200000001";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "efddc2";
-  gv:red "239";
-  gv:blue "194";
-  gv:green "221";
-  gv:score "3.9663754000000004";
-  gv:coverage "14.893334"
-], [
-  gv:hex "e2b9aa";
-  gv:red "226";
-  gv:blue "170";
-  gv:green "185";
-  gv:score "1.8635058999999998";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "bf9583";
-  gv:red "191";
-  gv:blue "131";
-  gv:green "149";
-  gv:score "1.3531408";
-  gv:coverage "0.54666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.854586999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CALIFORNIA\nChablis\nALCOHOL\n12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOLANO WINERY, INC.\nCOR DE LIA, CALIFORNIA\n(ESTABLISHED IN 893)\nBONDED WINERY No. 42 TAX PAID BY STAMPS\nAFFIXED TO CASE\n1 4TH SUPER. DISTRICT\nREG. U. S. PAT. OFF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3471";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

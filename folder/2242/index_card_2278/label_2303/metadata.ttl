@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2303";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Chateau\nLeoville Poyferré\n1996\nen Bouteille au Chateau\n"@fra;
-    gv:color [
-  gv:hex "e2c4a4";
-  gv:red "226";
-  gv:blue "164";
-  gv:green "196";
-  gv:score "73.25213600000001";
-  gv:coverage "30.146667"
-], [
-  gv:hex "765032";
-  gv:red "118";
-  gv:blue "50";
-  gv:green "80";
-  gv:score "2.9348431";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "593415";
-  gv:red "89";
-  gv:blue "21";
-  gv:green "52";
-  gv:score "0.35442584";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e4bc9f";
-  gv:red "228";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "7.805960600000001";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "bc9677";
-  gv:red "188";
-  gv:blue "119";
-  gv:green "150";
-  gv:score "4.8157632";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "c09f7f";
-  gv:red "192";
-  gv:blue "127";
-  gv:green "159";
-  gv:score "4.1285495999999995";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "f4d7ba";
-  gv:red "244";
-  gv:blue "186";
-  gv:green "215";
-  gv:score "2.8038003";
-  gv:coverage "9.5866665"
-], [
-  gv:hex "936d4f";
-  gv:red "147";
-  gv:blue "79";
-  gv:green "109";
-  gv:score "2.4766648";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "fbd3b6";
-  gv:red "251";
-  gv:blue "182";
-  gv:green "211";
-  gv:score "0.6605919";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "373328";
-  gv:red "55";
-  gv:blue "40";
-  gv:green "51";
-  gv:score "0.0063470885000000005";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.468919"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.062453"
-];
-    w:bagOfWords "Chateau\nLeoville Poyferré\n1996\nen Bouteille au Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2303";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

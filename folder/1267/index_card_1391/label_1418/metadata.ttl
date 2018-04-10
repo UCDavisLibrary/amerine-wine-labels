@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1391/label_1418";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GRAN INO\nRHIN\nM. R\nPRODUCTO CHILENO\nBU IN CHILE\nLIT. CADO\nANT.\n"@spa;
-    gv:color [
-  gv:hex "94783c";
-  gv:red "148";
-  gv:blue "60";
-  gv:green "120";
-  gv:score "26.648529999999997";
-  gv:coverage "4.06"
-], [
-  gv:hex "d6c1a0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "12.971136";
-  gv:coverage "36.846668"
-], [
-  gv:hex "b2965e";
-  gv:red "178";
-  gv:blue "94";
-  gv:green "150";
-  gv:score "23.34695";
-  gv:coverage "4.9266666"
-], [
-  gv:hex "d3ba86";
-  gv:red "211";
-  gv:blue "134";
-  gv:green "186";
-  gv:score "8.5466";
-  gv:coverage "2.3"
-], [
-  gv:hex "b39e7b";
-  gv:red "179";
-  gv:blue "123";
-  gv:green "158";
-  gv:score "7.3276512";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "b1923f";
-  gv:red "177";
-  gv:blue "63";
-  gv:green "146";
-  gv:score "6.0257933999999995";
-  gv:coverage "0.86"
-], [
-  gv:hex "9f7f33";
-  gv:red "159";
-  gv:blue "51";
-  gv:green "127";
-  gv:score "4.1442346";
-  gv:coverage "0.48"
-], [
-  gv:hex "705727";
-  gv:red "112";
-  gv:blue "39";
-  gv:green "87";
-  gv:score "2.8073963";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "eddabc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "218";
-  gv:score "2.0868769";
-  gv:coverage "29.24"
-], [
-  gv:hex "4c3837";
-  gv:red "76";
-  gv:blue "55";
-  gv:green "56";
-  gv:score "0.019022012";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.607657"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.458496"
-];
-    w:bagOfWords "GRAN INO\nRHIN\nM. R\nPRODUCTO CHILENO\nBU IN CHILE\nLIT. CADO\nANT.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1418";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-CL";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHL".
+    wdt:P297 "CL".
+

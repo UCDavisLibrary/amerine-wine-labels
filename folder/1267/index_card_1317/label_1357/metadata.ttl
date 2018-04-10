@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1357";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "19.30\nA\ninto de mesa velho\nanquinha\nDinho e amigo\no mais antigo\nSoe. Comm. tuben pereira da Fonseca\nfisboa\n"@por;
-    gv:color [
-  gv:hex "e3c29d";
-  gv:red "227";
-  gv:blue "157";
-  gv:green "194";
-  gv:score "53.905553";
-  gv:coverage "25.22"
-], [
-  gv:hex "947153";
-  gv:red "148";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "2.1981912";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "94734c";
-  gv:red "148";
-  gv:blue "76";
-  gv:green "115";
-  gv:score "1.9590914000000001";
-  gv:coverage "0.62"
-], [
-  gv:hex "e3c295";
-  gv:red "227";
-  gv:blue "149";
-  gv:green "194";
-  gv:score "25.187072";
-  gv:coverage "10.966667"
-], [
-  gv:hex "bb9a76";
-  gv:red "187";
-  gv:blue "118";
-  gv:green "154";
-  gv:score "5.9154388";
-  gv:coverage "2.0133332999999998"
-], [
-  gv:hex "f4d4b1";
-  gv:red "244";
-  gv:blue "177";
-  gv:green "212";
-  gv:score "2.1798128";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "714f30";
-  gv:red "113";
-  gv:blue "48";
-  gv:green "79";
-  gv:score "1.804526";
-  gv:coverage "0.42"
-], [
-  gv:hex "b7976c";
-  gv:red "183";
-  gv:blue "108";
-  gv:green "151";
-  gv:score "1.2950358";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "b39072";
-  gv:red "179";
-  gv:blue "114";
-  gv:green "144";
-  gv:score "1.0967787";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "6f4d29";
-  gv:red "111";
-  gv:blue "41";
-  gv:green "77";
-  gv:score "1.0835966000000001";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.16753899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "19.30\nA\ninto de mesa velho\nanquinha\nDinho e amigo\no mais antigo\nSoe. Comm. tuben pereira da Fonseca\nfisboa\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1357";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

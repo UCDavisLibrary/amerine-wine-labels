@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1638";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "Malaga Superior\nS a 2\nAREGISTR\nanlil can do. Darian\n"@spa;
-    gv:color [
-  gv:hex "b19877";
-  gv:red "177";
-  gv:blue "119";
-  gv:green "152";
-  gv:score "24.711753";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "6e532c";
-  gv:red "110";
-  gv:blue "44";
-  gv:green "83";
-  gv:score "16.382153";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "d8c1a3";
-  gv:red "216";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "22.826269";
-  gv:coverage "45.673335"
-], [
-  gv:hex "8e7654";
-  gv:red "142";
-  gv:blue "84";
-  gv:green "118";
-  gv:score "19.465265000000002";
-  gv:coverage "1.04"
-], [
-  gv:hex "8d7149";
-  gv:red "141";
-  gv:blue "73";
-  gv:green "113";
-  gv:score "7.482519";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "6b5333";
-  gv:red "107";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "5.2480575";
-  gv:coverage "0.26"
-], [
-  gv:hex "efdabe";
-  gv:red "239";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "3.0021872000000003";
-  gv:coverage "34.473333000000004"
-], [
-  gv:hex "634523";
-  gv:red "99";
-  gv:blue "35";
-  gv:green "69";
-  gv:score "0.29055167000000004";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "a4845b";
-  gv:red "164";
-  gv:blue "91";
-  gv:green "132";
-  gv:score "0.27416768";
-  gv:coverage "0.02"
-], [
-  gv:hex "503c27";
-  gv:red "80";
-  gv:blue "39";
-  gv:green "60";
-  gv:score "0.11929517";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.97588300000001"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.129943999999995"
-];
-    w:bagOfWords "Malaga Superior\nS a 2\nAREGISTR\nanlil can do. Darian\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1638";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

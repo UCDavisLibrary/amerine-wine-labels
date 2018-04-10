@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1615";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "HIJO B.\nPEDRO XIMENEZ\nVANIMCAR BRA\nVIEJISIMO\nLI. J. M. aARRoso. JEREZ.\n"@spa;
-    gv:color [
-  gv:hex "d2b9a4";
-  gv:red "210";
-  gv:blue "164";
-  gv:green "185";
-  gv:score "42.300177";
-  gv:coverage "31.319999999999997"
-], [
-  gv:hex "b69d88";
-  gv:red "182";
-  gv:blue "136";
-  gv:green "157";
-  gv:score "30.758736";
-  gv:coverage "5.2066665"
-], [
-  gv:hex "cfc1b6";
-  gv:red "207";
-  gv:blue "182";
-  gv:green "193";
-  gv:score "6.7092";
-  gv:coverage "9.606666899999999"
-], [
-  gv:hex "907762";
-  gv:red "144";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "6.419944800000001";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "ebddd1";
-  gv:red "235";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "3.2510258";
-  gv:coverage "22.826667"
-], [
-  gv:hex "aa9c92";
-  gv:red "170";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "3.1156361";
-  gv:coverage "0.88"
-], [
-  gv:hex "ecd9c7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "2.9658612";
-  gv:coverage "28.58"
-], [
-  gv:hex "977862";
-  gv:red "151";
-  gv:blue "98";
-  gv:green "120";
-  gv:score "1.4696188000000001";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "af8f79";
-  gv:red "175";
-  gv:blue "121";
-  gv:green "143";
-  gv:score "1.4482523";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "8c7e73";
-  gv:red "140";
-  gv:blue "115";
-  gv:green "126";
-  gv:score "0.9265353000000001";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "73.705804"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.095358"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.573206"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.551965"
-];
-    w:bagOfWords "HIJO B.\nPEDRO XIMENEZ\nVANIMCAR BRA\nVIEJISIMO\nLI. J. M. aARRoso. JEREZ.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1615";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

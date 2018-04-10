@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2931";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "RIESLIDG BOECKEL\nVID FID ALSACE\nGRANDE RESERVE\nE. BOECKEL mICCELBERGBEIm ALSACE\n"@fra;
-    gv:color [
-  gv:hex "dac39d";
-  gv:red "218";
-  gv:blue "157";
-  gv:green "195";
-  gv:score "29.433310000000002";
-  gv:coverage "10.046667"
-], [
-  gv:hex "817551";
-  gv:red "129";
-  gv:blue "81";
-  gv:green "117";
-  gv:score "15.871109";
-  gv:coverage "7.846666900000001"
-], [
-  gv:hex "18120e";
-  gv:red "24";
-  gv:blue "14";
-  gv:green "18";
-  gv:score "0.64409892";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "625737";
-  gv:red "98";
-  gv:blue "55";
-  gv:green "87";
-  gv:score "8.5229404";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "ad9974";
-  gv:red "173";
-  gv:blue "116";
-  gv:green "153";
-  gv:score "8.1699364";
-  gv:coverage "3.5266668"
-], [
-  gv:hex "dabe8e";
-  gv:red "218";
-  gv:blue "142";
-  gv:green "190";
-  gv:score "4.9810763";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "8b7648";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "4.754283699999999";
-  gv:coverage "1.26"
-], [
-  gv:hex "6c774c";
-  gv:red "108";
-  gv:blue "76";
-  gv:green "119";
-  gv:score "4.1285962000000005";
-  gv:coverage "0.98"
-], [
-  gv:hex "ad9666";
-  gv:red "173";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "4.1031484";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "6c572c";
-  gv:red "108";
-  gv:blue "44";
-  gv:green "87";
-  gv:score "2.2470117000000003";
-  gv:coverage "0.49333335000000006"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "84.174752"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "68.221253"
-];
-    w:bagOfWords "RIESLIDG BOECKEL\nVID FID ALSACE\nGRANDE RESERVE\nE. BOECKEL mICCELBERGBEIm ALSACE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2931";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

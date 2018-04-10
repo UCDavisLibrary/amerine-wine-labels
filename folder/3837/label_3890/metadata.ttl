@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3890";
-    dct:type "image";
-    w:bagOfWords "1949\ner\nrierer Rreu3berg\nBeerenauslele\nnaturrein\nOriginal Hellerabaug\nAusgezeichnet mit der goldenen Kammerpreismunze der\nMOSEL\nLandwirtschaftskammer Rheinland-Nassau und dem Staatsehrenpreis 1951\nSAAR\nLANDES-WEIN BAULEHRANSTALT\nRUWER\nTRIER/MOSEL\nD.ACQ.\n"@deu;
-    gv:color [
-  gv:hex "ece1d8";
-  gv:red "236";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "11.230297";
-  gv:coverage "71.813333"
-], [
-  gv:hex "ba5d24";
-  gv:red "186";
-  gv:blue "36";
-  gv:green "93";
-  gv:score "9.9129841";
-  gv:coverage "0.2"
-], [
-  gv:hex "ae9f89";
-  gv:red "174";
-  gv:blue "137";
-  gv:green "159";
-  gv:score "7.1214922";
-  gv:coverage "2.46"
-], [
-  gv:hex "9f6639";
-  gv:red "159";
-  gv:blue "57";
-  gv:green "102";
-  gv:score "6.645715200000001";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "351001";
-  gv:red "53";
-  gv:blue "1";
-  gv:green "16";
-  gv:score "1.0522989";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "530900";
-  gv:red "83";
-  gv:blue "undefined";
-  gv:green "9";
-  gv:score "0.47391276000000004";
-  gv:coverage "0.02"
-], [
-  gv:hex "cdc2b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "7.631376400000001";
-  gv:coverage "4.1333333"
-], [
-  gv:hex "b25c32";
-  gv:red "178";
-  gv:blue "50";
-  gv:green "92";
-  gv:score "6.3430995";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "a79d94";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "157";
-  gv:score "5.1026333";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "814d22";
-  gv:red "129";
-  gv:blue "34";
-  gv:green "77";
-  gv:score "4.8842356";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.294665"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.486074"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "1949\ner\nrierer Rreu3berg\nBeerenauslele\nnaturrein\nOriginal Hellerabaug\nAusgezeichnet mit der goldenen Kammerpreismunze der\nMOSEL\nLandwirtschaftskammer Rheinland-Nassau und dem Staatsehrenpreis 1951\nSAAR\nLANDES-WEIN BAULEHRANSTALT\nRUWER\nTRIER/MOSEL\nD.ACQ.\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3890";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

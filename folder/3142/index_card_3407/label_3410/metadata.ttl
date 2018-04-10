@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3410";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Produce of France\nContents 13 ounces\nBEAU NE eller\nAPPELLATION CONTROLEE\nMaul Bouchard &\n"@fra;
-    gv:color [
-  gv:hex "e0b186";
-  gv:red "224";
-  gv:blue "134";
-  gv:green "177";
-  gv:score "27.163866";
-  gv:coverage "9.32"
-], [
-  gv:hex "dbb98c";
-  gv:red "219";
-  gv:blue "140";
-  gv:green "185";
-  gv:score "15.643981000000002";
-  gv:coverage "4.533333300000001"
-], [
-  gv:hex "dabb96";
-  gv:red "218";
-  gv:blue "150";
-  gv:green "187";
-  gv:score "14.482941999999998";
-  gv:coverage "11.073333"
-], [
-  gv:hex "c9986e";
-  gv:red "201";
-  gv:blue "110";
-  gv:green "152";
-  gv:score "9.772665799999999";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "e0b592";
-  gv:red "224";
-  gv:blue "146";
-  gv:green "181";
-  gv:score "8.459011499999999";
-  gv:coverage "2.26"
-], [
-  gv:hex "bc9b6f";
-  gv:red "188";
-  gv:blue "111";
-  gv:green "155";
-  gv:score "4.988583500000001";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "ba9c76";
-  gv:red "186";
-  gv:blue "118";
-  gv:green "156";
-  gv:score "4.4668198";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "9d6c44";
-  gv:red "157";
-  gv:blue "68";
-  gv:green "108";
-  gv:score "3.6954813000000004";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "c09674";
-  gv:red "192";
-  gv:blue "116";
-  gv:green "150";
-  gv:score "2.391728";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "774a26";
-  gv:red "119";
-  gv:blue "38";
-  gv:green "74";
-  gv:score "1.7360721";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.687783"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.845403"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.876174999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.158228"
-];
-    w:bagOfWords "Produce of France\nContents 13 ounces\nBEAU NE eller\nAPPELLATION CONTROLEE\nMaul Bouchard &\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3410";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

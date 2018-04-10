@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1091/label_1113";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "Cabernet Schwanburg\nRODOLFO CARLI S, a g.\nCASTELLO SCHWANBURG\nNALLES\n"@deu;
-    gv:color [
-  gv:hex "615638";
-  gv:red "97";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "29.201454";
-  gv:coverage "6.08"
-], [
-  gv:hex "7f7152";
-  gv:red "127";
-  gv:blue "82";
-  gv:green "113";
-  gv:score "20.231518";
-  gv:coverage "5.7266667"
-], [
-  gv:hex "41331b";
-  gv:red "65";
-  gv:blue "27";
-  gv:green "51";
-  gv:score "9.7533531";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "7f7545";
-  gv:red "127";
-  gv:blue "69";
-  gv:green "117";
-  gv:score "6.0627252";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "6f4939";
-  gv:red "111";
-  gv:blue "57";
-  gv:green "73";
-  gv:score "5.5032406";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "552f20";
-  gv:red "85";
-  gv:blue "32";
-  gv:green "47";
-  gv:score "3.9663713000000005";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "a28f73";
-  gv:red "162";
-  gv:blue "115";
-  gv:green "143";
-  gv:score "3.6131337";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "926c5d";
-  gv:red "146";
-  gv:blue "93";
-  gv:green "108";
-  gv:score "3.2412457999999997";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "291c0b";
-  gv:red "41";
-  gv:blue "11";
-  gv:green "28";
-  gv:score "2.4447434";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "62592c";
-  gv:red "98";
-  gv:blue "44";
-  gv:green "89";
-  gv:score "2.4345834";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.279155"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "75.7593"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.10721899999999"
-];
-    w:bagOfWords "Cabernet Schwanburg\nRODOLFO CARLI S, a g.\nCASTELLO SCHWANBURG\nNALLES\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1113";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

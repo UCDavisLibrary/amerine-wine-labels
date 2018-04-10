@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1179";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BARBADILLO\nBRANDY\nBi ESPECIAL No 1\nRESERVA\nANDALUCIA ESPANA\nTODOS LOS VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAVADAS EN LAS\nZONAS DE SANLUCAR Y JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLERAS, SON LAS MEJORES GARANTIAS DE SUS PRODUCTOS\nindustrial\n"@spa;
-    gv:color [
-  gv:hex "d4b998";
-  gv:red "212";
-  gv:blue "152";
-  gv:green "185";
-  gv:score "36.742494";
-  gv:coverage "33.12"
-], [
-  gv:hex "843924";
-  gv:red "132";
-  gv:blue "36";
-  gv:green "57";
-  gv:score "3.5161238";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "b49a7b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "15.158121";
-  gv:coverage "4.9799999999999995"
-], [
-  gv:hex "c59377";
-  gv:red "197";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "8.1284642";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "e2b194";
-  gv:red "226";
-  gv:blue "148";
-  gv:green "177";
-  gv:score "7.6180235";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "8f7659";
-  gv:red "143";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "6.2324323";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "685235";
-  gv:red "104";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "3.2042626";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "a07055";
-  gv:red "160";
-  gv:blue "85";
-  gv:green "112";
-  gv:score "2.915075";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "7e4729";
-  gv:red "126";
-  gv:blue "41";
-  gv:green "71";
-  gv:score "2.4160272";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "744931";
-  gv:red "116";
-  gv:blue "49";
-  gv:green "73";
-  gv:score "2.3432294";
-  gv:coverage "0.61333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.41620999999999"
-];
-    w:bagOfWords "BARBADILLO\nBRANDY\nBi ESPECIAL No 1\nRESERVA\nANDALUCIA ESPANA\nTODOS LOS VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAVADAS EN LAS\nZONAS DE SANLUCAR Y JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLERAS, SON LAS MEJORES GARANTIAS DE SUS PRODUCTOS\nindustrial\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1179";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

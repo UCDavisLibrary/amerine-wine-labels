@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1331";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "a\nBURJACAS\nREGISTADO\nVINHOS DE TIPO\nINALTERAVEL\nCOLLARES-ALMocAGEME\nPORTUGAL\n"@por;
-    gv:color [
-  gv:hex "c7bd96";
-  gv:red "199";
-  gv:blue "150";
-  gv:green "189";
-  gv:score "39.676386";
-  gv:coverage "15.7"
-], [
-  gv:hex "b29a64";
-  gv:red "178";
-  gv:blue "100";
-  gv:green "154";
-  gv:score "18.708779";
-  gv:coverage "6.0266666"
-], [
-  gv:hex "8f3d26";
-  gv:red "143";
-  gv:blue "38";
-  gv:green "61";
-  gv:score "0.7865212899999999";
-  gv:coverage "0.12"
-], [
-  gv:hex "ada078";
-  gv:red "173";
-  gv:blue "120";
-  gv:green "160";
-  gv:score "14.909365999999999";
-  gv:coverage "4.533333300000001"
-], [
-  gv:hex "ccb886";
-  gv:red "204";
-  gv:blue "134";
-  gv:green "184";
-  gv:score "6.556574299999999";
-  gv:coverage "1.82"
-], [
-  gv:hex "8f794a";
-  gv:red "143";
-  gv:blue "74";
-  gv:green "121";
-  gv:score "5.3051058";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "877854";
-  gv:red "135";
-  gv:blue "84";
-  gv:green "120";
-  gv:score "4.7666758";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "605735";
-  gv:red "96";
-  gv:blue "53";
-  gv:green "87";
-  gv:score "1.3050999";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "6b5524";
-  gv:red "107";
-  gv:blue "36";
-  gv:green "85";
-  gv:score "0.84362011";
-  gv:coverage "0.3"
-], [
-  gv:hex "3c3516";
-  gv:red "60";
-  gv:blue "22";
-  gv:green "53";
-  gv:score "0.74753738";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.07226899999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.844306"
-];
-    w:bagOfWords "a\nBURJACAS\nREGISTADO\nVINHOS DE TIPO\nINALTERAVEL\nCOLLARES-ALMocAGEME\nPORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1331";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

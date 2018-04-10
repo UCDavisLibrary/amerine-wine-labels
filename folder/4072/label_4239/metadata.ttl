@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4239";
-    dct:type "image";
-    w:bagOfWords "PRODUCT OF FRANCE\nSAUTER NES\n1933\nALC. STRENGTH\nNET CONTENTS\nI PINT 9 FL. 02.\n3 BY VOLUME\nCLEMENT VAUTRIN\nNEGOCIANTA BORDEAUX (GIRONDE)\n"@fra;
-    gv:color [
-  gv:hex "a31d1b";
-  gv:red "163";
-  gv:blue "27";
-  gv:green "29";
-  gv:score "21.040174";
-  gv:coverage "1.68"
-], [
-  gv:hex "d3c1a9";
-  gv:red "211";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "6.7392059";
-  gv:coverage "6.926666900000001"
-], [
-  gv:hex "927441";
-  gv:red "146";
-  gv:blue "65";
-  gv:green "116";
-  gv:score "2.9213434";
-  gv:coverage "1.3"
-], [
-  gv:hex "bd8a56";
-  gv:red "189";
-  gv:blue "86";
-  gv:green "138";
-  gv:score "2.8794682";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "463318";
-  gv:red "70";
-  gv:blue "24";
-  gv:green "51";
-  gv:score "1.1724677";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "a7110c";
-  gv:red "167";
-  gv:blue "12";
-  gv:green "17";
-  gv:score "4.8971627";
-  gv:coverage "0.44"
-], [
-  gv:hex "8e351f";
-  gv:red "142";
-  gv:blue "31";
-  gv:green "53";
-  gv:score "4.719485000000001";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "b09c81";
-  gv:red "176";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "4.3750562";
-  gv:coverage "1.76"
-], [
-  gv:hex "7a4c20";
-  gv:red "122";
-  gv:blue "32";
-  gv:green "76";
-  gv:score "3.953857";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "cfc4bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "3.9176743";
-  gv:coverage "11.926667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.161632"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCT OF FRANCE\nSAUTER NES\n1933\nALC. STRENGTH\nNET CONTENTS\nI PINT 9 FL. 02.\n3 BY VOLUME\nCLEMENT VAUTRIN\nNEGOCIANTA BORDEAUX (GIRONDE)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4239";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

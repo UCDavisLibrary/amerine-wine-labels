@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1523";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MANZANILLA 0lob\nNILLA OLOROSAw\nPro:PLATA\nPICO-PLATA\nFLORIDO H ERMANOS\nSANLU CAR DE BARRIE\nAN LUCAR, DE\nAR DE BARRA MEDA\nζ'LE MEDA\n( ES PANA\n"@spa;
-    gv:color [
-  gv:hex "8e351f";
-  gv:red "142";
-  gv:blue "31";
-  gv:green "53";
-  gv:score "9.0400778";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "dec4a2";
-  gv:red "222";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "8.0803216";
-  gv:coverage "23.380000000000003"
-], [
-  gv:hex "b89762";
-  gv:red "184";
-  gv:blue "98";
-  gv:green "151";
-  gv:score "8.0408394";
-  gv:coverage "3.92"
-], [
-  gv:hex "f2baa1";
-  gv:red "242";
-  gv:blue "161";
-  gv:green "186";
-  gv:score "7.9466417";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "dbbc87";
-  gv:red "219";
-  gv:blue "135";
-  gv:green "188";
-  gv:score "7.1948357000000005";
-  gv:coverage "3.62"
-], [
-  gv:hex "9c291b";
-  gv:red "156";
-  gv:blue "27";
-  gv:green "41";
-  gv:score "6.2178943";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "c9927b";
-  gv:red "201";
-  gv:blue "123";
-  gv:green "146";
-  gv:score "4.1763786";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "f5daba";
-  gv:red "245";
-  gv:blue "186";
-  gv:green "218";
-  gv:score "4.1157";
-  gv:coverage "31.66"
-], [
-  gv:hex "e08477";
-  gv:red "224";
-  gv:blue "119";
-  gv:green "132";
-  gv:score "4.07406";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "c59065";
-  gv:red "197";
-  gv:blue "101";
-  gv:green "144";
-  gv:score "4.0011816";
-  gv:coverage "1.3333334000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.010052"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.428736"
-];
-    w:bagOfWords "MANZANILLA 0lob\nNILLA OLOROSAw\nPro:PLATA\nPICO-PLATA\nFLORIDO H ERMANOS\nSANLU CAR DE BARRIE\nAN LUCAR, DE\nAR DE BARRA MEDA\nζ'LE MEDA\n( ES PANA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1523";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0439";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R HEIN GAU\n1952er\nWeingut 6offi\nfrang mintel, Weinbau meinbanoel, Oeftrict i. Rhg.\n"@deu;
-    gv:color [
-  gv:hex "d2c2aa";
-  gv:red "210";
-  gv:blue "170";
-  gv:green "194";
-  gv:score "40.108958";
-  gv:coverage "17.599999999999998"
-], [
-  gv:hex "67140a";
-  gv:red "103";
-  gv:blue "10";
-  gv:green "20";
-  gv:score "3.4010261";
-  gv:coverage "0.36"
-], [
-  gv:hex "a2291c";
-  gv:red "162";
-  gv:blue "28";
-  gv:green "41";
-  gv:score "1.664006";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "ad9b84";
-  gv:red "173";
-  gv:blue "132";
-  gv:green "155";
-  gv:score "8.9911722";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "84735f";
-  gv:red "132";
-  gv:blue "95";
-  gv:green "115";
-  gv:score "6.981387";
-  gv:coverage "2.06"
-], [
-  gv:hex "65513a";
-  gv:red "101";
-  gv:blue "58";
-  gv:green "81";
-  gv:score "5.596898899999999";
-  gv:coverage "2.9466666"
-], [
-  gv:hex "6d4a31";
-  gv:red "109";
-  gv:blue "49";
-  gv:green "74";
-  gv:score "4.206939";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "4f2d19";
-  gv:red "79";
-  gv:blue "25";
-  gv:green "45";
-  gv:score "4.0848084";
-  gv:coverage "1.34"
-], [
-  gv:hex "eadac5";
-  gv:red "234";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "3.7193183";
-  gv:coverage "4.6066668"
-], [
-  gv:hex "493319";
-  gv:red "73";
-  gv:blue "25";
-  gv:green "51";
-  gv:score "3.4727257";
-  gv:coverage "1.4066666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "88.583529"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.49765599999999"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.029673"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "60.633652999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.87"
-];
-    w:bagOfWords "R HEIN GAU\n1952er\nWeingut 6offi\nfrang mintel, Weinbau meinbanoel, Oeftrict i. Rhg.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0439";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

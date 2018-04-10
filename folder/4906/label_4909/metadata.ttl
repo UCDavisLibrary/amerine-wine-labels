@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4906/label_4909";
-    dct:type "image";
-    w:bagOfWords "Suntory\nChateau Lion\nSUNTO\n1961\nvin blanc\nPREMIER GRAND CRU CLASSE\nMIS EN BOUTEILLES\nDANS MES CAVES\nMaison fondée en 18\nSUNTORY LIMITED\nOSAKA-TOKIO-JAPON\n"@undefined;
-    gv:color [
-  gv:hex "d0c2aa";
-  gv:red "208";
-  gv:blue "170";
-  gv:green "194";
-  gv:score "32.155383";
-  gv:coverage "9.56"
-], [
-  gv:hex "aa9a86";
-  gv:red "170";
-  gv:blue "134";
-  gv:green "154";
-  gv:score "22.862837";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "897762";
-  gv:red "137";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "20.155038";
-  gv:coverage "2.8533334"
-], [
-  gv:hex "eddec8";
-  gv:red "237";
-  gv:blue "200";
-  gv:green "222";
-  gv:score "15.063292";
-  gv:coverage "28.146665999999996"
-], [
-  gv:hex "6b5a48";
-  gv:red "107";
-  gv:blue "72";
-  gv:green "90";
-  gv:score "4.177919";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "d5c695";
-  gv:red "213";
-  gv:blue "149";
-  gv:green "198";
-  gv:score "3.9936669";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "d6c8bc";
-  gv:red "214";
-  gv:blue "188";
-  gv:green "200";
-  gv:score "0.7508947499999999";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "e9dccf";
-  gv:red "233";
-  gv:blue "207";
-  gv:green "220";
-  gv:score "0.54729381";
-  gv:coverage "51.68000000000001"
-], [
-  gv:hex "9c7d68";
-  gv:red "156";
-  gv:blue "104";
-  gv:green "125";
-  gv:score "0.1217877";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "403221";
-  gv:red "64";
-  gv:blue "33";
-  gv:green "50";
-  gv:score "0.10395039999999998";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.682952"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Suntory\nChateau Lion\nSUNTO\n1961\nvin blanc\nPREMIER GRAND CRU CLASSE\nMIS EN BOUTEILLES\nDANS MES CAVES\nMaison fondée en 18\nSUNTORY LIMITED\nOSAKA-TOKIO-JAPON\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4909";
+    <schema.keywords> "Additions from 1995 Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

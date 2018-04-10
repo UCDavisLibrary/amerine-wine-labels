@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2262";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1929\nMARQUE\nDE PO s EE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d3c1b0";
-  gv:red "211";
-  gv:blue "176";
-  gv:green "193";
-  gv:score "47.549105000000004";
-  gv:coverage "17.919999999999998"
-], [
-  gv:hex "af9c8b";
-  gv:red "175";
-  gv:blue "139";
-  gv:green "156";
-  gv:score "22.746941";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "897563";
-  gv:red "137";
-  gv:blue "99";
-  gv:green "117";
-  gv:score "9.539067699999999";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "ecdbcb";
-  gv:red "236";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "7.524356999999999";
-  gv:coverage "4.46"
-], [
-  gv:hex "3a362d";
-  gv:red "58";
-  gv:blue "45";
-  gv:green "54";
-  gv:score "0.049295096";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "6d5644";
-  gv:red "109";
-  gv:blue "68";
-  gv:green "86";
-  gv:score "3.212098";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "d1c4b9";
-  gv:red "209";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "2.8937029";
-  gv:coverage "10.573334"
-], [
-  gv:hex "e1bcb2";
-  gv:red "225";
-  gv:blue "178";
-  gv:green "188";
-  gv:score "2.3958220999999997";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "e9dcd1";
-  gv:red "233";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "1.506319";
-  gv:coverage "62.45333600000001"
-], [
-  gv:hex "b99489";
-  gv:red "185";
-  gv:blue "137";
-  gv:green "148";
-  gv:score "1.2012955";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.19941"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.517854"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.253867"
-];
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1929\nMARQUE\nDE PO s EE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2262";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

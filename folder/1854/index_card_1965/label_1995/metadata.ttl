@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1995";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "GONZALEZ\nBY APPOINTMENT T\nH. M. KING GEORGE VI\nCONTENTS\nALCOHOL\n4/5 QUART\n20% BY VOLUME\nPRODUCE OF SPAIN\nCREMA\nRICH MELLOW AND MEDIUM SWEET\nIMPORTED AND BOTTLED BY\nSCHENLEY MPORT CORP., NEW YORK\nTM REG. U\nS. T. O\nIMPORTED SHERRY\n"@spa;
-    gv:color [
-  gv:hex "e1c7a1";
-  gv:red "225";
-  gv:blue "161";
-  gv:green "199";
-  gv:score "50.8066";
-  gv:coverage "18.573333"
-], [
-  gv:hex "b55d43";
-  gv:red "181";
-  gv:blue "67";
-  gv:green "93";
-  gv:score "1.9376786";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "fca388";
-  gv:red "252";
-  gv:blue "136";
-  gv:green "163";
-  gv:score "0.90995291";
-  gv:coverage "0.08"
-], [
-  gv:hex "0f0602";
-  gv:red "15";
-  gv:blue "2";
-  gv:green "6";
-  gv:score "0.80297636";
-  gv:coverage "9.3333334"
-], [
-  gv:hex "b29976";
-  gv:red "178";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "9.6330486";
-  gv:coverage "5.6666669"
-], [
-  gv:hex "bb9c68";
-  gv:red "187";
-  gv:blue "104";
-  gv:green "156";
-  gv:score "5.3791948";
-  gv:coverage "1.02"
-], [
-  gv:hex "f3be9f";
-  gv:red "243";
-  gv:blue "159";
-  gv:green "190";
-  gv:score "4.817436600000001";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "d8bb89";
-  gv:red "216";
-  gv:blue "137";
-  gv:green "187";
-  gv:score "4.7518048";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "f1d9b5";
-  gv:red "241";
-  gv:blue "181";
-  gv:green "217";
-  gv:score "4.0091466";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "917a5a";
-  gv:red "145";
-  gv:blue "90";
-  gv:green "122";
-  gv:score "3.2823864";
-  gv:coverage "2.2733333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.602366"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.468992"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.25754"
-];
-    w:bagOfWords "GONZALEZ\nBY APPOINTMENT T\nH. M. KING GEORGE VI\nCONTENTS\nALCOHOL\n4/5 QUART\n20% BY VOLUME\nPRODUCE OF SPAIN\nCREMA\nRICH MELLOW AND MEDIUM SWEET\nIMPORTED AND BOTTLED BY\nSCHENLEY MPORT CORP., NEW YORK\nTM REG. U\nS. T. O\nIMPORTED SHERRY\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1995";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

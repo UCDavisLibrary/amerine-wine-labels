@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1767";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "MOSEL-SAAR RUWER\n1037er\nBerntafteler Riesling flatur\nWeingut 6dymidte Rung\nStill Wine\nContains 1 pint 8 fluid ounces. Produced in Germany Imported by\nRheinwein Imports Inc. 817 Boylston Street Boston (Mass) I-922\n"@deu;
-    gv:color [
-  gv:hex "b69868";
-  gv:red "182";
-  gv:blue "104";
-  gv:green "152";
-  gv:score "14.768951";
-  gv:coverage "5.3933333999999995"
-], [
-  gv:hex "907347";
-  gv:red "144";
-  gv:blue "71";
-  gv:green "115";
-  gv:score "13.030006";
-  gv:coverage "4.38"
-], [
-  gv:hex "c49465";
-  gv:red "196";
-  gv:blue "101";
-  gv:green "148";
-  gv:score "10.271101";
-  gv:coverage "4.5533333"
-], [
-  gv:hex "6b5127";
-  gv:red "107";
-  gv:blue "39";
-  gv:green "81";
-  gv:score "8.0330588";
-  gv:coverage "2.12"
-], [
-  gv:hex "9d6f43";
-  gv:red "157";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "6.7902893";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "675332";
-  gv:red "103";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "5.4773841";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "b69b76";
-  gv:red "182";
-  gv:blue "118";
-  gv:green "155";
-  gv:score "5.4554362";
-  gv:coverage "2.7333334000000002"
-], [
-  gv:hex "88714e";
-  gv:red "136";
-  gv:blue "78";
-  gv:green "113";
-  gv:score "4.635229";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "d1b590";
-  gv:red "209";
-  gv:blue "144";
-  gv:green "181";
-  gv:score "4.1701198";
-  gv:coverage "23.486666"
-], [
-  gv:hex "744d23";
-  gv:red "116";
-  gv:blue "35";
-  gv:green "77";
-  gv:score "4.1418951";
-  gv:coverage "0.89333337"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.987323"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "63.890266"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.453906"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.84075300000001"
-];
-    w:bagOfWords "MOSEL-SAAR RUWER\n1037er\nBerntafteler Riesling flatur\nWeingut 6dymidte Rung\nStill Wine\nContains 1 pint 8 fluid ounces. Produced in Germany Imported by\nRheinwein Imports Inc. 817 Boylston Street Boston (Mass) I-922\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1767";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

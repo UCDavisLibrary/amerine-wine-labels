@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0026";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "REGISTRAD\nMARCA\nEGISr\nCOSECHA 1941\nHARO-BILBAO\nN 44\nOTELLA\n1885-AMBERES MEDALLA pLATA-1894-AM BERES GRAND PRIX\nl 9 OO PARIS-GRAND PRI x\n1889-BARCELONA-MEDALLA ORO\n1908-ZARAGOZA-GRAN PREMIO\n1889- PARIS MEDALLA ORO\n193O-BARCELONA GRAN PREMIO\n1889-LONDON-DIPLOMA DE MERITO ExTRAORDINARIO-1930-SEVILLA GRAN PREMIO\nBORDEAUX 1895 (Hors Concours)MEMBRE DU JURY\n"@spa;
-    gv:color [
-  gv:hex "cec0b7";
-  gv:red "206";
-  gv:blue "183";
-  gv:green "192";
-  gv:score "17.781565999999998";
-  gv:coverage "10.193333"
-], [
-  gv:hex "754d45";
-  gv:red "117";
-  gv:blue "69";
-  gv:green "77";
-  gv:score "7.1022674";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "e4bbb1";
-  gv:red "228";
-  gv:blue "177";
-  gv:green "187";
-  gv:score "5.3096179";
-  gv:coverage "0.66"
-], [
-  gv:hex "a63129";
-  gv:red "166";
-  gv:blue "41";
-  gv:green "49";
-  gv:score "2.4464581";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "1d1309";
-  gv:red "29";
-  gv:blue "9";
-  gv:green "19";
-  gv:score "1.2289127";
-  gv:coverage "0.2"
-], [
-  gv:hex "ede0d6";
-  gv:red "237";
-  gv:blue "214";
-  gv:green "224";
-  gv:score "10.729951999999999";
-  gv:coverage "24.833333"
-], [
-  gv:hex "ac9d94";
-  gv:red "172";
-  gv:blue "148";
-  gv:green "157";
-  gv:score "9.970410000000001";
-  gv:coverage "2.82"
-], [
-  gv:hex "946d64";
-  gv:red "148";
-  gv:blue "100";
-  gv:green "109";
-  gv:score "6.5674372";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "be8e82";
-  gv:red "190";
-  gv:blue "130";
-  gv:green "142";
-  gv:score "5.127148699999999";
-  gv:coverage "0.38"
-], [
-  gv:hex "d5c2b1";
-  gv:red "213";
-  gv:blue "177";
-  gv:green "194";
-  gv:score "4.9556434000000005";
-  gv:coverage "25.786668000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.794084"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REGISTRAD\nMARCA\nEGISr\nCOSECHA 1941\nHARO-BILBAO\nN 44\nOTELLA\n1885-AMBERES MEDALLA pLATA-1894-AM BERES GRAND PRIX\nl 9 OO PARIS-GRAND PRI x\n1889-BARCELONA-MEDALLA ORO\n1908-ZARAGOZA-GRAN PREMIO\n1889- PARIS MEDALLA ORO\n193O-BARCELONA GRAN PREMIO\n1889-LONDON-DIPLOMA DE MERITO ExTRAORDINARIO-1930-SEVILLA GRAN PREMIO\nBORDEAUX 1895 (Hors Concours)MEMBRE DU JURY\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0026";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

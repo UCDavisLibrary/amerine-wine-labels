@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0898";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "BY APPOINTMENT\nPURVEYORS OF CHAMPAGNE\nTO H.M. THE KING\nFRANCE\nBRUT 1947\nCHAMPAGNE\nN. M. 3.642.242\nAS PREPARED FOR THE ENGLISH MARKET\nSole Agents for\nThe United States\n21 BRANr\nMPA\nNEW YORK N. Y.\nSHIPPED BY STAN\nNGTH\nNE\nLOUIS ROEDER ER L REIMS\nNT & 3 FL\n2 PER CENT BY VOLUME\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "91723e";
-  gv:red "145";
-  gv:blue "62";
-  gv:green "114";
-  gv:score "21.787579";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "d6c3ac";
-  gv:red "214";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "13.561513999999999";
-  gv:coverage "12.18"
-], [
-  gv:hex "d1c6bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "11.432602";
-  gv:coverage "15.620000000000001"
-], [
-  gv:hex "b2925f";
-  gv:red "178";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "9.1710359";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "e9ded3";
-  gv:red "233";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "7.054026400000001";
-  gv:coverage "55.77333599999999"
-], [
-  gv:hex "946b2f";
-  gv:red "148";
-  gv:blue "47";
-  gv:green "107";
-  gv:score "5.9957929";
-  gv:coverage "0.12"
-], [
-  gv:hex "ab977e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "151";
-  gv:score "5.2986097";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "79521b";
-  gv:red "121";
-  gv:blue "27";
-  gv:green "82";
-  gv:score "4.7819197";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "a79c92";
-  gv:red "167";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "3.0405791";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "917b5d";
-  gv:red "145";
-  gv:blue "93";
-  gv:green "123";
-  gv:score "2.9915057";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.226087"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.601470000000006"
-];
-    w:bagOfWords "BY APPOINTMENT\nPURVEYORS OF CHAMPAGNE\nTO H.M. THE KING\nFRANCE\nBRUT 1947\nCHAMPAGNE\nN. M. 3.642.242\nAS PREPARED FOR THE ENGLISH MARKET\nSole Agents for\nThe United States\n21 BRANr\nMPA\nNEW YORK N. Y.\nSHIPPED BY STAN\nNGTH\nNE\nLOUIS ROEDER ER L REIMS\nNT & 3 FL\n2 PER CENT BY VOLUME\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0898";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

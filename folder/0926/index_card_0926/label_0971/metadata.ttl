@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0971";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "A àteallde\n-Crans\nsenate\nOllis SOMYDERB1PSA\nOU/S SCHNY0E\nDER,BIRSFELDEN\nLOUIS S\nsel (eg\n"@deu;
-    gv:color [
-  gv:hex "ab9985";
-  gv:red "171";
-  gv:blue "133";
-  gv:green "153";
-  gv:score "20.631678";
-  gv:coverage "4.2533334"
-], [
-  gv:hex "eeb142";
-  gv:red "238";
-  gv:blue "66";
-  gv:green "177";
-  gv:score "6.9988392";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "d5c2ab";
-  gv:red "213";
-  gv:blue "171";
-  gv:green "194";
-  gv:score "16.903715";
-  gv:coverage "13.313334"
-], [
-  gv:hex "887665";
-  gv:red "136";
-  gv:blue "101";
-  gv:green "118";
-  gv:score "16.213371";
-  gv:coverage "2.8066667"
-], [
-  gv:hex "655340";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "83";
-  gv:score "8.2330979";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "492c2b";
-  gv:red "73";
-  gv:blue "43";
-  gv:green "44";
-  gv:score "0.06909662600000001";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "efdbc6";
-  gv:red "239";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "6.0087509";
-  gv:coverage "26.906666"
-], [
-  gv:hex "edb45e";
-  gv:red "237";
-  gv:blue "94";
-  gv:green "180";
-  gv:score "5.1468588";
-  gv:coverage "1.46"
-], [
-  gv:hex "eabe65";
-  gv:red "234";
-  gv:blue "101";
-  gv:green "190";
-  gv:score "3.347097";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "e9c793";
-  gv:red "233";
-  gv:blue "147";
-  gv:green "199";
-  gv:score "3.1658277";
-  gv:coverage "1.7666666000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.2925"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.020596000000005"
-];
-    w:bagOfWords "A àteallde\n-Crans\nsenate\nOllis SOMYDERB1PSA\nOU/S SCHNY0E\nDER,BIRSFELDEN\nLOUIS S\nsel (eg\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0971";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

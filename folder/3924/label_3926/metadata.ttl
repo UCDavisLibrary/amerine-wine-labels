@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3924/label_3926";
-    dct:type "image";
-    w:bagOfWords "& 1832\nHENKEL\nAGIN\nPRIYAT\nKNE\n312\nEXTRA DRY\nENG\nHENKELL Co. WIESBADEN-BIEBRICH\nPRO D\nPRODUCT OF\nD'ALLE MAGNE\nDEUTSCHER SEKT\nGERMANY BOTT\nVINO ESPU\nLED AT WIES-\nMANTE ALEMAN\nADEN (RHINE)\n"@deu;
-    gv:color [
-  gv:hex "b9985c";
-  gv:red "185";
-  gv:blue "92";
-  gv:green "152";
-  gv:score "50.811105999999995";
-  gv:coverage "8.646666999999999"
-], [
-  gv:hex "40311c";
-  gv:red "64";
-  gv:blue "28";
-  gv:green "49";
-  gv:score "1.5919335";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "150d09";
-  gv:red "21";
-  gv:blue "9";
-  gv:green "13";
-  gv:score "1.4432326";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "331401";
-  gv:red "51";
-  gv:blue "1";
-  gv:green "20";
-  gv:score "1.0891385999999998";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "f4dfc1";
-  gv:red "244";
-  gv:blue "193";
-  gv:green "223";
-  gv:score "0.42985864";
-  gv:coverage "12.1"
-], [
-  gv:hex "95753e";
-  gv:red "149";
-  gv:blue "62";
-  gv:green "117";
-  gv:score "13.915047";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "d3b173";
-  gv:red "211";
-  gv:blue "115";
-  gv:green "177";
-  gv:score "5.8212664";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "c19256";
-  gv:red "193";
-  gv:blue "86";
-  gv:green "146";
-  gv:score "3.4729514000000004";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "be9a4f";
-  gv:red "190";
-  gv:blue "79";
-  gv:green "154";
-  gv:score "3.3374012";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "72541f";
-  gv:red "114";
-  gv:blue "31";
-  gv:green "84";
-  gv:score "3.0861134";
-  gv:coverage "0.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.868539"
-];
-    w:bagOfWords "& 1832\nHENKEL\nAGIN\nPRIYAT\nKNE\n312\nEXTRA DRY\nENG\nHENKELL Co. WIESBADEN-BIEBRICH\nPRO D\nPRODUCT OF\nD'ALLE MAGNE\nDEUTSCHER SEKT\nGERMANY BOTT\nVINO ESPU\nLED AT WIES-\nMANTE ALEMAN\nADEN (RHINE)\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3926";
+    <schema.keywords> "Germany Sparkling Wine Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "DE".
+

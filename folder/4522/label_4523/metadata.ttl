@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4522/label_4523";
-    dct:type "image";
-    w:bagOfWords "NON PLUS\nULTR4\nGRAN VINO DERESERVA\nVENTUOS\nBRUT\nS.SADURNi DE NoYA.\nEMB.\n"@spa;
-    gv:color [
-  gv:hex "5f533b";
-  gv:red "95";
-  gv:blue "59";
-  gv:green "83";
-  gv:score "25.420582000000003";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "ccc2b8";
-  gv:red "204";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "12.10764";
-  gv:coverage "27.206665"
-], [
-  gv:hex "80745d";
-  gv:red "128";
-  gv:blue "93";
-  gv:green "116";
-  gv:score "19.655766";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "a59983";
-  gv:red "165";
-  gv:blue "131";
-  gv:green "153";
-  gv:score "14.436672999999999";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "cbbfab";
-  gv:red "203";
-  gv:blue "171";
-  gv:green "191";
-  gv:score "8.343437300000001";
-  gv:coverage "5.8133334"
-], [
-  gv:hex "a69c92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "6.284111";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "7f766b";
-  gv:red "127";
-  gv:blue "107";
-  gv:green "118";
-  gv:score "4.856101799999999";
-  gv:coverage "0.6"
-], [
-  gv:hex "e6dcd1";
-  gv:red "230";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "4.5272764";
-  gv:coverage "60.226667"
-], [
-  gv:hex "4a3d24";
-  gv:red "74";
-  gv:blue "36";
-  gv:green "61";
-  gv:score "2.600695";
-  gv:coverage "0.18"
-], [
-  gv:hex "60564b";
-  gv:red "96";
-  gv:blue "75";
-  gv:green "86";
-  gv:score "1.1670951";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.083574"
-];
-    w:bagOfWords "NON PLUS\nULTR4\nGRAN VINO DERESERVA\nVENTUOS\nBRUT\nS.SADURNi DE NoYA.\nEMB.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4523";
+    <schema.keywords> "Spain San Sadurni de Nova Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

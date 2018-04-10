@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3948";
-    dct:type "image";
-    w:bagOfWords "Roos\nR H E I N HES S EN\n1959\ninger ainfengarten\nabett boos,\neelin u\nollItein/hhh.\nWEIN BAU WEIN HANDEL\n"@deu;
-    gv:color [
-  gv:hex "887659";
-  gv:red "136";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "28.30686";
-  gv:coverage "3.9933335"
-], [
-  gv:hex "d1bfa5";
-  gv:red "209";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "22.016997999999997";
-  gv:coverage "12.393333"
-], [
-  gv:hex "ab997d";
-  gv:red "171";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "18.606985";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "6c593b";
-  gv:red "108";
-  gv:blue "59";
-  gv:green "89";
-  gv:score "7.2211467";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "ecdcc3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "220";
-  gv:score "6.0587134";
-  gv:coverage "10.040000000000001"
-], [
-  gv:hex "cfc5bb";
-  gv:red "207";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "4.3282267";
-  gv:coverage "13.733333"
-], [
-  gv:hex "87764a";
-  gv:red "135";
-  gv:blue "74";
-  gv:green "118";
-  gv:score "3.2964382";
-  gv:coverage "0.54"
-], [
-  gv:hex "a49a90";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "154";
-  gv:score "3.1623344999999996";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "e8ddd4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "221";
-  gv:score "2.5552701";
-  gv:coverage "51.693332000000005"
-], [
-  gv:hex "83786f";
-  gv:red "131";
-  gv:blue "111";
-  gv:green "120";
-  gv:score "2.2127304";
-  gv:coverage "0.64666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "73.877704"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.782597"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.860267"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.386983"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.809878"
-];
-    w:bagOfWords "Roos\nR H E I N HES S EN\n1959\ninger ainfengarten\nabett boos,\neelin u\nollItein/hhh.\nWEIN BAU WEIN HANDEL\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3948";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

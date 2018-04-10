@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1356";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "LICOROSO\nSacramental\n'INHO DE MISSA BRAN\nVINHO DE MISSA BRANCO\nFUNDADA\nEM 1834\nAZEITAO SETUBAL LISBOA\nPORTUGAL\n"@por;
-    gv:color [
-  gv:hex "a89f85";
-  gv:red "168";
-  gv:blue "133";
-  gv:green "159";
-  gv:score "43.622059";
-  gv:coverage "20.3"
-], [
-  gv:hex "41311a";
-  gv:red "65";
-  gv:blue "26";
-  gv:green "49";
-  gv:score "8.0399461";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "847b61";
-  gv:red "132";
-  gv:blue "97";
-  gv:green "123";
-  gv:score "22.36681";
-  gv:coverage "7.1"
-], [
-  gv:hex "c1b69e";
-  gv:red "193";
-  gv:blue "158";
-  gv:green "182";
-  gv:score "16.298927";
-  gv:coverage "13.053334"
-], [
-  gv:hex "60523a";
-  gv:red "96";
-  gv:blue "58";
-  gv:green "82";
-  gv:score "6.89342";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "2a1a04";
-  gv:red "42";
-  gv:blue "4";
-  gv:green "26";
-  gv:score "2.5339438";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "190a00";
-  gv:red "25";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "0.15411347";
-  gv:coverage "0.04"
-], [
-  gv:hex "e9dac3";
-  gv:red "233";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "0.064732932";
-  gv:coverage "16.04"
-], [
-  gv:hex "ecded4";
-  gv:red "236";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "0.010759767";
-  gv:coverage "39.08"
-], [
-  gv:hex "7d6f64";
-  gv:red "125";
-  gv:blue "100";
-  gv:green "111";
-  gv:score "0.0058912738";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.198644"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.791577"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "59.254712"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.443757999999995"
-];
-    w:bagOfWords "LICOROSO\nSacramental\n'INHO DE MISSA BRAN\nVINHO DE MISSA BRANCO\nFUNDADA\nEM 1834\nAZEITAO SETUBAL LISBOA\nPORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1356";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

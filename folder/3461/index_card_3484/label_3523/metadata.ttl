@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3523";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "All FORNIA WIN\nBrand\nNES\nCALWA\"\nThe fine matured bottling wines of\nWIN\nVine Cliff\n(finest Riesling)\nCALIFORNIA WINE ASSOCIATION\nSAN FRANCISCO, CALIFORNIA\nRAALCOHOLIC STRENGTH 11% BY VOLUME\n8\n"@eng;
-    gv:color [
-  gv:hex "d4ba9b";
-  gv:red "212";
-  gv:blue "155";
-  gv:green "186";
-  gv:score "31.09749";
-  gv:coverage "43.04"
-], [
-  gv:hex "b29b7c";
-  gv:red "178";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "20.105524";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "c1957b";
-  gv:red "193";
-  gv:blue "123";
-  gv:green "149";
-  gv:score "12.550904";
-  gv:coverage "1.44"
-], [
-  gv:hex "e1b69c";
-  gv:red "225";
-  gv:blue "156";
-  gv:green "182";
-  gv:score "12.446774";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "9f6c55";
-  gv:red "159";
-  gv:blue "85";
-  gv:green "108";
-  gv:score "8.8954166";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "917b5c";
-  gv:red "145";
-  gv:blue "92";
-  gv:green "123";
-  gv:score "6.0190894";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "d5b387";
-  gv:red "213";
-  gv:blue "135";
-  gv:green "179";
-  gv:score "2.16994";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "7c5137";
-  gv:red "124";
-  gv:blue "55";
-  gv:green "81";
-  gv:score "1.6997265000000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "937349";
-  gv:red "147";
-  gv:blue "73";
-  gv:green "115";
-  gv:score "1.459983";
-  gv:coverage "0.08"
-], [
-  gv:hex "bd936a";
-  gv:red "189";
-  gv:blue "106";
-  gv:green "147";
-  gv:score "1.2369491";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.31225500000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "All FORNIA WIN\nBrand\nNES\nCALWA\"\nThe fine matured bottling wines of\nWIN\nVine Cliff\n(finest Riesling)\nCALIFORNIA WINE ASSOCIATION\nSAN FRANCISCO, CALIFORNIA\nRAALCOHOLIC STRENGTH 11% BY VOLUME\n8\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3523";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

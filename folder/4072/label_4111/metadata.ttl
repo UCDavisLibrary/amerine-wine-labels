@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4111";
-    dct:type "image";
-    w:bagOfWords "REGISTERED AT\nHENNESSY\nCOGNAC\n304.\nSTATIONERS HALL\n"@fra;
-    gv:color [
-  gv:hex "635136";
-  gv:red "99";
-  gv:blue "54";
-  gv:green "81";
-  gv:score "22.425893";
-  gv:coverage "3.8"
-], [
-  gv:hex "d2c1a9";
-  gv:red "210";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "20.939179";
-  gv:coverage "11.08"
-], [
-  gv:hex "86745a";
-  gv:red "134";
-  gv:blue "90";
-  gv:green "116";
-  gv:score "18.548791";
-  gv:coverage "3.3133332"
-], [
-  gv:hex "ac9a80";
-  gv:red "172";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "17.624258";
-  gv:coverage "3.5666667"
-], [
-  gv:hex "47351c";
-  gv:red "71";
-  gv:blue "28";
-  gv:green "53";
-  gv:score "10.189024";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "ecdbc6";
-  gv:red "236";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "4.7290836";
-  gv:coverage "4.16"
-], [
-  gv:hex "685227";
-  gv:red "104";
-  gv:blue "39";
-  gv:green "82";
-  gv:score "1.7102081000000002";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "877044";
-  gv:red "135";
-  gv:blue "68";
-  gv:green "112";
-  gv:score "1.1604962";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "d9cabd";
-  gv:red "217";
-  gv:blue "189";
-  gv:green "202";
-  gv:score "0.694933";
-  gv:coverage "9.8733336"
-], [
-  gv:hex "2c1a03";
-  gv:red "44";
-  gv:blue "3";
-  gv:green "26";
-  gv:score "0.55069756";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.70097799999999"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.466567999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.22148"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.495312"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.62822"
-];
-    w:bagOfWords "REGISTERED AT\nHENNESSY\nCOGNAC\n304.\nSTATIONERS HALL\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4111";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

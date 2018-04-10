@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0269/label_0275";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "AND\nPRODUCED BOTTLED BY\nCALIFORNIA\nVALLEY RUTHERFORD NAPA\nNAPA VALLEY\nGA MAY\nA pleasant soft light wine produced in California from the\nSamay grape common to the Beaujolais area of Burgundy.\nSole Distributors for\nu SA\ncTrmporters and mine cherchantr\nESTABLISHED 1830\nBranches\nCOLORADO SPRINGS\nCHICAGO\nAlcohol 12 J\nby vol.\n"@eng;
-    gv:color [
-  gv:hex "d0baa6";
-  gv:red "208";
-  gv:blue "166";
-  gv:green "186";
-  gv:score "35.169765";
-  gv:coverage "35.053334"
-], [
-  gv:hex "c19688";
-  gv:red "193";
-  gv:blue "136";
-  gv:green "150";
-  gv:score "16.483370999999998";
-  gv:coverage "2.46"
-], [
-  gv:hex "43586b";
-  gv:red "67";
-  gv:blue "107";
-  gv:green "88";
-  gv:score "5.2195366";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "dcb5a6";
-  gv:red "220";
-  gv:blue "166";
-  gv:green "181";
-  gv:score "14.974675000000001";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "b29e8b";
-  gv:red "178";
-  gv:blue "139";
-  gv:green "158";
-  gv:score "12.222964";
-  gv:coverage "2.74"
-], [
-  gv:hex "a17061";
-  gv:red "161";
-  gv:blue "97";
-  gv:green "112";
-  gv:score "3.6146767000000004";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "59738b";
-  gv:red "89";
-  gv:blue "139";
-  gv:green "115";
-  gv:score "2.8107202";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "4d565a";
-  gv:red "77";
-  gv:blue "90";
-  gv:green "86";
-  gv:score "2.0233361";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "283d51";
-  gv:red "40";
-  gv:blue "81";
-  gv:green "61";
-  gv:score "1.5717708000000001";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "a09c95";
-  gv:red "160";
-  gv:blue "149";
-  gv:green "156";
-  gv:score "1.3545954";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.005872"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.325810000000004"
-];
-    w:bagOfWords "AND\nPRODUCED BOTTLED BY\nCALIFORNIA\nVALLEY RUTHERFORD NAPA\nNAPA VALLEY\nGA MAY\nA pleasant soft light wine produced in California from the\nSamay grape common to the Beaujolais area of Burgundy.\nSole Distributors for\nu SA\ncTrmporters and mine cherchantr\nESTABLISHED 1830\nBranches\nCOLORADO SPRINGS\nCHICAGO\nAlcohol 12 J\nby vol.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0275";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

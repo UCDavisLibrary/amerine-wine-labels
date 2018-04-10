@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2654";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "MIS EN BOUT EILLES\nAU MARQUISAT\nPASOUIER DESVIGNES\nAU MARQU i SAT DE PUIS 142O\nMOULIN-A-VENT\nAPPELLATION CONTROLEE\nNEGOCIANTs A\nST-LAGER CRH. FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d5c0a7";
-  gv:red "213";
-  gv:blue "167";
-  gv:green "192";
-  gv:score "27.127226999999998";
-  gv:coverage "23.586667"
-], [
-  gv:hex "61513c";
-  gv:red "97";
-  gv:blue "60";
-  gv:green "81";
-  gv:score "14.427952";
-  gv:coverage "0.84"
-], [
-  gv:hex "ad9a81";
-  gv:red "173";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "18.614607";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "87765d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "13.632273999999999";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "f0dfc9";
-  gv:red "240";
-  gv:blue "201";
-  gv:green "223";
-  gv:score "10.397547";
-  gv:coverage "8.58"
-], [
-  gv:hex "453622";
-  gv:red "69";
-  gv:blue "34";
-  gv:green "54";
-  gv:score "7.1849585";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "eabda0";
-  gv:red "234";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "3.8652565";
-  gv:coverage "0.86"
-], [
-  gv:hex "c5977a";
-  gv:red "197";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "3.2017170999999998";
-  gv:coverage "0.32"
-], [
-  gv:hex "2d1e0b";
-  gv:red "45";
-  gv:blue "11";
-  gv:green "30";
-  gv:score "0.6624337800000001";
-  gv:coverage "0.04"
-], [
-  gv:hex "fad3b6";
-  gv:red "250";
-  gv:blue "182";
-  gv:green "211";
-  gv:score "0.29015457";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.029747"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.667611"
-];
-    w:bagOfWords "MIS EN BOUT EILLES\nAU MARQUISAT\nPASOUIER DESVIGNES\nAU MARQU i SAT DE PUIS 142O\nMOULIN-A-VENT\nAPPELLATION CONTROLEE\nNEGOCIANTs A\nST-LAGER CRH. FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2654";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1543";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "O\nA MONEDAs\nmiu\nVID\nCENT;;\nN All(l(L (lee\n(1 derc/11(1川011 Z\na9inos etiacos al natural\nmos La clos at Atalll'ia\nc/a /////mz/lue//////////////\nMANZANILLA\nDE EMBOTELLA0%\nNE DIOS\n(0\nPAG DELra\nS\nVTTINYZNVW\n"@spa;
-    gv:color [
-  gv:hex "cebcad";
-  gv:red "206";
-  gv:blue "173";
-  gv:green "188";
-  gv:score "33.802259";
-  gv:coverage "38.373332999999995"
-], [
-  gv:hex "ac9b8d";
-  gv:red "172";
-  gv:blue "141";
-  gv:green "155";
-  gv:score "25.765613";
-  gv:coverage "4.3866667999999995"
-], [
-  gv:hex "d7c6b9";
-  gv:red "215";
-  gv:blue "185";
-  gv:green "198";
-  gv:score "17.34481";
-  gv:coverage "14.973333"
-], [
-  gv:hex "88776a";
-  gv:red "136";
-  gv:blue "106";
-  gv:green "119";
-  gv:score "9.542026400000001";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "ebdbce";
-  gv:red "235";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "5.4393087";
-  gv:coverage "15.32"
-], [
-  gv:hex "68574a";
-  gv:red "104";
-  gv:blue "74";
-  gv:green "87";
-  gv:score "3.3495801999999997";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "ab998f";
-  gv:red "171";
-  gv:blue "143";
-  gv:green "153";
-  gv:score "1.8707069";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "ead9c9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "217";
-  gv:score "0.90551469";
-  gv:coverage "23.400000000000002"
-], [
-  gv:hex "d5b7b0";
-  gv:red "213";
-  gv:blue "176";
-  gv:green "183";
-  gv:score "0.9006517900000001";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "8b7a70";
-  gv:red "139";
-  gv:blue "112";
-  gv:green "122";
-  gv:score "0.71028797";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.551008"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.566585999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.400805000000005"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.520289"
-];
-    w:bagOfWords "O\nA MONEDAs\nmiu\nVID\nCENT;;\nN All(l(L (lee\n(1 derc/11(1川011 Z\na9inos etiacos al natural\nmos La clos at Atalll'ia\nc/a /////mz/lue//////////////\nMANZANILLA\nDE EMBOTELLA0%\nNE DIOS\n(0\nPAG DELra\nS\nVTTINYZNVW\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1543";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0559";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1951er\nDerrider Senden\nRHEINGAU\noriginal Abfillung Grang Minkel\nFRANZ WINKEL,WEINGUTSBESITZER U WEINHANDLUNGIDESTRICH RHEINGAU\n"@deu;
-    gv:color [
-  gv:hex "cdc6a7";
-  gv:red "205";
-  gv:blue "167";
-  gv:green "198";
-  gv:score "15.94345";
-  gv:coverage "6.4399999999999995"
-], [
-  gv:hex "b09b5f";
-  gv:red "176";
-  gv:blue "95";
-  gv:green "155";
-  gv:score "7.1750008";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "506123";
-  gv:red "80";
-  gv:blue "35";
-  gv:green "97";
-  gv:score "2.0229391999999997";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "bb5a1d";
-  gv:red "187";
-  gv:blue "29";
-  gv:green "90";
-  gv:score "1.6217899";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "118195";
-  gv:red "17";
-  gv:blue "149";
-  gv:green "129";
-  gv:score "1.1437110000000001";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "8c3817";
-  gv:red "140";
-  gv:blue "23";
-  gv:green "56";
-  gv:score "0.68891";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "ed3405";
-  gv:red "237";
-  gv:blue "5";
-  gv:green "52";
-  gv:score "0.6278419399999999";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "aa9d80";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "6.054523199999999";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "8e773d";
-  gv:red "142";
-  gv:blue "61";
-  gv:green "119";
-  gv:score "6.0296904";
-  gv:coverage "1.26"
-], [
-  gv:hex "d0be84";
-  gv:red "208";
-  gv:blue "132";
-  gv:green "190";
-  gv:score "5.3122066000000006";
-  gv:coverage "0.9933332899999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.13920300000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.725694"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.520588000000004"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.49515"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.626830000000005"
-];
-    w:bagOfWords "1951er\nDerrider Senden\nRHEINGAU\noriginal Abfillung Grang Minkel\nFRANZ WINKEL,WEINGUTSBESITZER U WEINHANDLUNGIDESTRICH RHEINGAU\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0559";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

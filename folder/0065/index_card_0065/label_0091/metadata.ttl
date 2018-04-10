@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0091";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "MARCA\nCASTEL LANA\nDEPO-\nSITATA\nCEMBRA\nANTONIO Fondata 1813\n"@ita;
-    gv:color [
-  gv:hex "d04d14";
-  gv:red "208";
-  gv:blue "20";
-  gv:green "77";
-  gv:score "8.4494941";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "ebae5c";
-  gv:red "235";
-  gv:blue "92";
-  gv:green "174";
-  gv:score "5.0934203";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "7b4818";
-  gv:red "123";
-  gv:blue "24";
-  gv:green "72";
-  gv:score "3.2930102000000003";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "4c8599";
-  gv:red "76";
-  gv:blue "153";
-  gv:green "133";
-  gv:score "2.1804895";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "56a17c";
-  gv:red "86";
-  gv:blue "124";
-  gv:green "161";
-  gv:score "0.11837086999999999";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "edb57e";
-  gv:red "237";
-  gv:blue "126";
-  gv:green "181";
-  gv:score "4.3842003";
-  gv:coverage "2.7333334000000002"
-], [
-  gv:hex "be5e20";
-  gv:red "190";
-  gv:blue "32";
-  gv:green "94";
-  gv:score "4.0556163";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "a26c1c";
-  gv:red "162";
-  gv:blue "28";
-  gv:green "108";
-  gv:score "3.9289810000000003";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "d39540";
-  gv:red "211";
-  gv:blue "64";
-  gv:green "149";
-  gv:score "3.8666661999999996";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "e2bf85";
-  gv:red "226";
-  gv:blue "133";
-  gv:green "191";
-  gv:score "3.8372647000000004";
-  gv:coverage "2.5466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "73.079103"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.459373"
-];
-    w:bagOfWords "MARCA\nCASTEL LANA\nDEPO-\nSITATA\nCEMBRA\nANTONIO Fondata 1813\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0091";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

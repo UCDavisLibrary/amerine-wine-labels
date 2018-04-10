@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4010/label_4020";
-    dct:type "image";
-    w:bagOfWords "0\n4123 l sy\nReal . Tawyan\n70% 以f\nPegん\n79\n"@undefined;
-    gv:color [
-  gv:hex "d6c0a2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "63.16929999999999";
-  gv:coverage "29.646668"
-], [
-  gv:hex "b19c7e";
-  gv:red "177";
-  gv:blue "126";
-  gv:green "156";
-  gv:score "26.969910000000002";
-  gv:coverage "3.2199999999999998"
-], [
-  gv:hex "907a5e";
-  gv:red "144";
-  gv:blue "94";
-  gv:green "122";
-  gv:score "6.6718399999999995";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "ecd7ba";
-  gv:red "236";
-  gv:blue "186";
-  gv:green "215";
-  gv:score "2.7357282";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "3d3329";
-  gv:red "61";
-  gv:blue "41";
-  gv:green "51";
-  gv:score "0.0057151923";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "6f593c";
-  gv:red "111";
-  gv:blue "60";
-  gv:green "89";
-  gv:score "0.3615757";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "d5c9c1";
-  gv:red "213";
-  gv:blue "193";
-  gv:green "201";
-  gv:score "0.032755124";
-  gv:coverage "11.459999999999999"
-], [
-  gv:hex "786e64";
-  gv:red "120";
-  gv:blue "100";
-  gv:green "110";
-  gv:score "0.024343394";
-  gv:coverage "0.08"
-], [
-  gv:hex "a59b92";
-  gv:red "165";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "0.014546898";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "ebe3da";
-  gv:red "235";
-  gv:blue "218";
-  gv:green "227";
-  gv:score "0.0089047258";
-  gv:coverage "53.239999999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0gkxy13>;
-  gv:desc "handwriting";
-  gv:score "80.04860000000001"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "65.406889"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "60.294895999999994"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.79449999999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.245489000000006"
-];
-    w:bagOfWords "0\n4123 l sy\nReal . Tawyan\n70% 以f\nPegん\n79\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4020";
+    <schema.keywords> "North Africa Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

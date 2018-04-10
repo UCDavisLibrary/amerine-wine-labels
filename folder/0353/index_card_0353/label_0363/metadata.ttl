@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0353/label_0363";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "DF, in ONT\nIJON\nOLE\nEPINAC\nLEdAY LAGOUTE DIJON\nDEPOSE.\n"@undefined;
-    gv:color [
-  gv:hex "83745f";
-  gv:red "131";
-  gv:blue "95";
-  gv:green "116";
-  gv:score "30.458047999999998";
-  gv:coverage "11.06"
-], [
-  gv:hex "af9a7e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "24.210396";
-  gv:coverage "8.5"
-], [
-  gv:hex "d0b99c";
-  gv:red "208";
-  gv:blue "156";
-  gv:green "185";
-  gv:score "11.844531";
-  gv:coverage "5.800000000000001"
-], [
-  gv:hex "665945";
-  gv:red "102";
-  gv:blue "69";
-  gv:green "89";
-  gv:score "8.6448632";
-  gv:coverage "2.78"
-], [
-  gv:hex "906c5d";
-  gv:red "144";
-  gv:blue "93";
-  gv:green "108";
-  gv:score "5.867990900000001";
-  gv:coverage "2.76"
-], [
-  gv:hex "bb947c";
-  gv:red "187";
-  gv:blue "124";
-  gv:green "148";
-  gv:score "3.4803624999999996";
-  gv:coverage "1"
-], [
-  gv:hex "7a5145";
-  gv:red "122";
-  gv:blue "69";
-  gv:green "81";
-  gv:score "3.0363087";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "757468";
-  gv:red "117";
-  gv:blue "104";
-  gv:green "116";
-  gv:score "2.9456764";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "58584d";
-  gv:red "88";
-  gv:blue "77";
-  gv:green "88";
-  gv:score "1.8184675000000001";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "bd9e71";
-  gv:red "189";
-  gv:blue "113";
-  gv:green "158";
-  gv:score "1.4878243";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "62.65018"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.845862000000004"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.634806"
-];
-    w:bagOfWords "DF, in ONT\nIJON\nOLE\nEPINAC\nLEdAY LAGOUTE DIJON\nDEPOSE.\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0363";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

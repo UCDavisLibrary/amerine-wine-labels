@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4852";
-    dct:type "image";
-    w:bagOfWords "OBERHESEL\nRHEIN GA\nKLOSTER EREREACH\nCAUB\nTTELRHEIN\nAIN\nRHEINHESSE\nNAHE\nWORMS\nHAVE ME YER'S NIER STEIN ER\nare of outstanding mildness combined with delicate\nbouquet. They are\nfull-bodied and while dry, they\nare subtle, soft, and smooth on the palate and make\nfor a delightful drink on any occasion,\nSCHOTT AG. RHEYDT\n13920\n"@eng;
-    gv:color [
-  gv:hex "b39a5c";
-  gv:red "179";
-  gv:blue "92";
-  gv:green "154";
-  gv:score "13.135694";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "b7983f";
-  gv:red "183";
-  gv:blue "63";
-  gv:green "152";
-  gv:score "11.946476";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "d7be7f";
-  gv:red "215";
-  gv:blue "127";
-  gv:green "190";
-  gv:score "10.100254";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "937624";
-  gv:red "147";
-  gv:blue "36";
-  gv:green "118";
-  gv:score "9.6494026";
-  gv:coverage "0.96"
-], [
-  gv:hex "8f763a";
-  gv:red "143";
-  gv:blue "58";
-  gv:green "118";
-  gv:score "9.3176953";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "d6ba5f";
-  gv:red "214";
-  gv:blue "95";
-  gv:green "186";
-  gv:score "7.921706100000001";
-  gv:coverage "0.84"
-], [
-  gv:hex "d3c49f";
-  gv:red "211";
-  gv:blue "159";
-  gv:green "196";
-  gv:score "4.3157063";
-  gv:coverage "9.9333331"
-], [
-  gv:hex "9a6934";
-  gv:red "154";
-  gv:blue "52";
-  gv:green "105";
-  gv:score "4.1186616";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "7d4e1a";
-  gv:red "125";
-  gv:blue "26";
-  gv:green "78";
-  gv:score "2.8728392";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "a99977";
-  gv:red "169";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "2.8009802";
-  gv:coverage "1.68"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "66.380858"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.251433000000006"
-];
-    w:bagOfWords "OBERHESEL\nRHEIN GA\nKLOSTER EREREACH\nCAUB\nTTELRHEIN\nAIN\nRHEINHESSE\nNAHE\nWORMS\nHAVE ME YER'S NIER STEIN ER\nare of outstanding mildness combined with delicate\nbouquet. They are\nfull-bodied and while dry, they\nare subtle, soft, and smooth on the palate and make\nfor a delightful drink on any occasion,\nSCHOTT AG. RHEYDT\n13920\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4852";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

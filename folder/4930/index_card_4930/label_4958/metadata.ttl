@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4958";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "MIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTH SCHILD\n19 e 6\nEAU FRERE\nDE POSE\nGRAD D VID\nMOULIS-MEDOC\n1998\nMIS EN BOUTEILLES AU CHATEAU\n"@undefined;
-    gv:color [
-  gv:hex "d2c8bd";
-  gv:red "210";
-  gv:blue "189";
-  gv:green "200";
-  gv:score "19.466068";
-  gv:coverage "14.280000000000001"
-], [
-  gv:hex "847566";
-  gv:red "132";
-  gv:blue "102";
-  gv:green "117";
-  gv:score "15.099323";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "e5dbd0";
-  gv:red "229";
-  gv:blue "208";
-  gv:green "219";
-  gv:score "17.275633000000003";
-  gv:coverage "41.113332"
-], [
-  gv:hex "d6c8b7";
-  gv:red "214";
-  gv:blue "183";
-  gv:green "200";
-  gv:score "16.398448";
-  gv:coverage "17.646667"
-], [
-  gv:hex "a69788";
-  gv:red "166";
-  gv:blue "136";
-  gv:green "151";
-  gv:score "11.753948";
-  gv:coverage "4.0933333"
-], [
-  gv:hex "e9dbca";
-  gv:red "233";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "8.202300999999999";
-  gv:coverage "16.393334"
-], [
-  gv:hex "a69d93";
-  gv:red "166";
-  gv:blue "147";
-  gv:green "157";
-  gv:score "6.1406385";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "6c5d4d";
-  gv:red "108";
-  gv:blue "77";
-  gv:green "93";
-  gv:score "3.7232053";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "857b71";
-  gv:red "133";
-  gv:blue "113";
-  gv:green "123";
-  gv:score "1.6716282999999998";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "665c52";
-  gv:red "102";
-  gv:blue "82";
-  gv:green "92";
-  gv:score "0.13775502";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.997349"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "64.23197400000001"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.325316"
-];
-    w:bagOfWords "MIS EN BOUTEILLE AU CHATEAU\nCHATEAU LAFITE ROTH SCHILD\n19 e 6\nEAU FRERE\nDE POSE\nGRAD D VID\nMOULIS-MEDOC\n1998\nMIS EN BOUTEILLES AU CHATEAU\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4958";
+    <schema.keywords> "UC Reporters Notebook@en".
+

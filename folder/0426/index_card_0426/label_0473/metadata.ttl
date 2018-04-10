@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0473";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "GAU\nRHEIN\n195ler Geisenheimer Rothenberg Rigling\nOriginalabfiittung\nber Praflichmon rbonbornschen hellerei\nA\n"@deu;
-    gv:color [
-  gv:hex "c01102";
-  gv:red "192";
-  gv:blue "2";
-  gv:green "17";
-  gv:score "6.1993998";
-  gv:coverage "0.6"
-], [
-  gv:hex "e9b4a5";
-  gv:red "233";
-  gv:blue "165";
-  gv:green "180";
-  gv:score "5.586132800000001";
-  gv:coverage "1.34"
-], [
-  gv:hex "e8e1da";
-  gv:red "232";
-  gv:blue "218";
-  gv:green "225";
-  gv:score "4.5615137";
-  gv:coverage "71.26"
-], [
-  gv:hex "7f766f";
-  gv:red "127";
-  gv:blue "111";
-  gv:green "118";
-  gv:score "4.1547865";
-  gv:coverage "0.96"
-], [
-  gv:hex "db940f";
-  gv:red "219";
-  gv:blue "15";
-  gv:green "148";
-  gv:score "3.8812842";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "bd9839";
-  gv:red "189";
-  gv:blue "57";
-  gv:green "152";
-  gv:score "1.3946028";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "b12a04";
-  gv:red "177";
-  gv:blue "4";
-  gv:green "42";
-  gv:score "4.309646000000001";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "d09683";
-  gv:red "208";
-  gv:blue "131";
-  gv:green "150";
-  gv:score "4.2683586";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "c9410e";
-  gv:red "201";
-  gv:blue "14";
-  gv:green "65";
-  gv:score "4.1939713";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "d12008";
-  gv:red "209";
-  gv:blue "8";
-  gv:green "32";
-  gv:score "4.0413376";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.97559"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GAU\nRHEIN\n195ler Geisenheimer Rothenberg Rigling\nOriginalabfiittung\nber Praflichmon rbonbornschen hellerei\nA\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0473";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

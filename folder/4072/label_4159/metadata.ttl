@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4159";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN\nCHATEAU RAUSAN SEGLA\nMAR GAUX\n1937\nen au Chateau\nAppellation Haut-Médoc controlée\n"@fra;
-    gv:color [
-  gv:hex "d5c1a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "53.887326";
-  gv:coverage "29.733333000000002"
-], [
-  gv:hex "614e3a";
-  gv:red "97";
-  gv:blue "58";
-  gv:green "78";
-  gv:score "11.241265";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "af9c84";
-  gv:red "175";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "14.187188";
-  gv:coverage "2.98"
-], [
-  gv:hex "473522";
-  gv:red "71";
-  gv:blue "34";
-  gv:green "53";
-  gv:score "9.4758458";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "8a7760";
-  gv:red "138";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "8.229509";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "edd9bf";
-  gv:red "237";
-  gv:blue "191";
-  gv:green "217";
-  gv:score "2.0371871";
-  gv:coverage "9.22"
-], [
-  gv:hex "2f1c08";
-  gv:red "47";
-  gv:blue "8";
-  gv:green "28";
-  gv:score "0.43801744";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "473931";
-  gv:red "71";
-  gv:blue "49";
-  gv:green "57";
-  gv:score "0.3361501";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "50443b";
-  gv:red "80";
-  gv:blue "59";
-  gv:green "68";
-  gv:score "0.11742897000000001";
-  gv:coverage "0.06"
-], [
-  gv:hex "cec7bb";
-  gv:red "206";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "0.019600549000000002";
-  gv:coverage "8.14"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.377511"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GRAND VIN\nCHATEAU RAUSAN SEGLA\nMAR GAUX\n1937\nen au Chateau\nAppellation Haut-Médoc controlée\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4159";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

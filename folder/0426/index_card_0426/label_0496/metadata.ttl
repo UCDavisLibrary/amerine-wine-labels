@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0496";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E I N G A U\n1952er\nSteinberger\nNATUR REIN\nDerunaltung oer Staatsweinguter\nEltville\nEigener Rellerabyug uno korhbrano\n"@deu;
-    gv:color [
-  gv:hex "d3c0a6";
-  gv:red "211";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "12.648728";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "3c352f";
-  gv:red "60";
-  gv:blue "47";
-  gv:green "53";
-  gv:score "12.36923";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "6f5c32";
-  gv:red "111";
-  gv:blue "50";
-  gv:green "92";
-  gv:score "0.36009030999999997";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ccc1b7";
-  gv:red "204";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "11.759720999999999";
-  gv:coverage "9.8933332"
-], [
-  gv:hex "a79d93";
-  gv:red "167";
-  gv:blue "147";
-  gv:green "157";
-  gv:score "10.678393";
-  gv:coverage "2.82"
-], [
-  gv:hex "574f49";
-  gv:red "87";
-  gv:blue "73";
-  gv:green "79";
-  gv:score "9.9640645";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "80766e";
-  gv:red "128";
-  gv:blue "110";
-  gv:green "118";
-  gv:score "7.047879999999999";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "e9ded4";
-  gv:red "233";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "6.3388243";
-  gv:coverage "78.74666500000001"
-], [
-  gv:hex "d7b784";
-  gv:red "215";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "5.8594871";
-  gv:coverage "0.26"
-], [
-  gv:hex "ad9e8a";
-  gv:red "173";
-  gv:blue "138";
-  gv:green "158";
-  gv:score "3.7895199999999996";
-  gv:coverage "0.9866667000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.320739"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "57.8321"
-];
-    w:bagOfWords "R H E I N G A U\n1952er\nSteinberger\nNATUR REIN\nDerunaltung oer Staatsweinguter\nEltville\nEigener Rellerabyug uno korhbrano\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0496";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

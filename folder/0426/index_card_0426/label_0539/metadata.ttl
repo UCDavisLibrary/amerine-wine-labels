@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0539";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "etternich Winne\nRotlack 1952 er\nSchloss er\nOriginal Abfullung der\nFiirst von Metternich schen\nDomane.\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "ca3e1b";
-  gv:red "202";
-  gv:blue "27";
-  gv:green "62";
-  gv:score "11.492665";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "cbbca0";
-  gv:red "203";
-  gv:blue "160";
-  gv:green "188";
-  gv:score "6.267897";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "c9bc2e";
-  gv:red "201";
-  gv:blue "46";
-  gv:green "188";
-  gv:score "2.3302853";
-  gv:coverage "0.32"
-], [
-  gv:hex "ebca11";
-  gv:red "235";
-  gv:blue "17";
-  gv:green "202";
-  gv:score "1.9441571000000002";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "65521a";
-  gv:red "101";
-  gv:blue "26";
-  gv:green "82";
-  gv:score "1.78304";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "907611";
-  gv:red "144";
-  gv:blue "17";
-  gv:green "118";
-  gv:score "1.7699354999999999";
-  gv:coverage "0.54"
-], [
-  gv:hex "181312";
-  gv:red "24";
-  gv:blue "18";
-  gv:green "19";
-  gv:score "0.43013399999999996";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "237769";
-  gv:red "35";
-  gv:blue "105";
-  gv:green "119";
-  gv:score "0.11037954";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "0a5193";
-  gv:red "10";
-  gv:blue "147";
-  gv:green "81";
-  gv:score "0.098681462";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e0321a";
-  gv:red "224";
-  gv:blue "26";
-  gv:green "50";
-  gv:score "6.77301";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.073311"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.428563000000004"
-];
-    w:bagOfWords "etternich Winne\nRotlack 1952 er\nSchloss er\nOriginal Abfullung der\nFiirst von Metternich schen\nDomane.\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0539";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

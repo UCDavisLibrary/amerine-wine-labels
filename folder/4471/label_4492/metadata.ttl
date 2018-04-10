@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4492";
-    dct:type "image";
-    w:bagOfWords "GAS Roe\nREGI ST.\nMARC A\nBob\nAS\nRo -RA\nVINA ALBIN A\nVIEJA RESERVA\nEMBOTELLADOR\nEmbotellado en nuestras\nCEDICERO (RIOUA)\n12 3\nBodegas de Cenicero\n"@spa;
-    gv:color [
-  gv:hex "685334";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "83";
-  gv:score "31.910583";
-  gv:coverage "8.08"
-], [
-  gv:hex "876c40";
-  gv:red "135";
-  gv:blue "64";
-  gv:green "108";
-  gv:score "21.319902";
-  gv:coverage "5.0666668"
-], [
-  gv:hex "443216";
-  gv:red "68";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "17.977114";
-  gv:coverage "4.24"
-], [
-  gv:hex "806947";
-  gv:red "128";
-  gv:blue "71";
-  gv:green "105";
-  gv:score "11.725035";
-  gv:coverage "3.8333334"
-], [
-  gv:hex "6f562d";
-  gv:red "111";
-  gv:blue "45";
-  gv:green "86";
-  gv:score "11.038438000000001";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "4e3812";
-  gv:red "78";
-  gv:blue "18";
-  gv:green "56";
-  gv:score "1.5483418";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "2c1c05";
-  gv:red "44";
-  gv:blue "5";
-  gv:green "28";
-  gv:score "1.2492105999999998";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "a98d5a";
-  gv:red "169";
-  gv:blue "90";
-  gv:green "141";
-  gv:score "1.1018738";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "a48e6f";
-  gv:red "164";
-  gv:blue "111";
-  gv:green "142";
-  gv:score "0.48067481";
-  gv:coverage "0.5"
-], [
-  gv:hex "d2c2ae";
-  gv:red "210";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "0.41208086000000005";
-  gv:coverage "1.0466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "87.73673199999999"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "86.595446"
-], [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "77.258843"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.99324800000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GAS Roe\nREGI ST.\nMARC A\nBob\nAS\nRo -RA\nVINA ALBIN A\nVIEJA RESERVA\nEMBOTELLADOR\nEmbotellado en nuestras\nCEDICERO (RIOUA)\n12 3\nBodegas de Cenicero\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4492";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2738";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "APPELLATION HERMITAGE cONTROLEE\n1er G R A N D C R U\n1957\nMIS EN BOUT EILLE PAR\nH.JABOULETVERCHERRE.PROPRIETAREATAIN.LHERMITAGEDROME,\n"@fra;
-    gv:color [
-  gv:hex "d9c0a6";
-  gv:red "217";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "29.93325";
-  gv:coverage "27.533333999999996"
-], [
-  gv:hex "e4baa5";
-  gv:red "228";
-  gv:blue "165";
-  gv:green "186";
-  gv:score "23.562911";
-  gv:coverage "5.54"
-], [
-  gv:hex "c0957f";
-  gv:red "192";
-  gv:blue "127";
-  gv:green "149";
-  gv:score "16.060674";
-  gv:coverage "3.2066666"
-], [
-  gv:hex "b69d84";
-  gv:red "182";
-  gv:blue "132";
-  gv:green "157";
-  gv:score "8.869278399999999";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "9c6f5b";
-  gv:red "156";
-  gv:blue "91";
-  gv:green "111";
-  gv:score "7.9014972000000006";
-  gv:coverage "0.86"
-], [
-  gv:hex "c49466";
-  gv:red "196";
-  gv:blue "102";
-  gv:green "148";
-  gv:score "2.8429888";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "8f755b";
-  gv:red "143";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "2.8211283";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "7a4f3b";
-  gv:red "122";
-  gv:blue "59";
-  gv:green "79";
-  gv:score "2.0463249";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "efd6bf";
-  gv:red "239";
-  gv:blue "191";
-  gv:green "214";
-  gv:score "1.4770867";
-  gv:coverage "1.2"
-], [
-  gv:hex "e0b287";
-  gv:red "224";
-  gv:blue "135";
-  gv:green "178";
-  gv:score "1.2150022999999999";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.540016"
-];
-    w:bagOfWords "APPELLATION HERMITAGE cONTROLEE\n1er G R A N D C R U\n1957\nMIS EN BOUT EILLE PAR\nH.JABOULETVERCHERRE.PROPRIETAREATAIN.LHERMITAGEDROME,\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2738";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

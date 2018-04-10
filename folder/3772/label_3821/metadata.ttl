@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3821";
-    dct:type "image";
-    w:bagOfWords "ME O S E L\nS A A R\nR U W E R\n1953er\nBernkasteler Rosenberg\nRiesling\nFuder Nr.\n3\nOriginal-Abfullung W. Olk\n"@deu;
-    gv:color [
-  gv:hex "e1c19e";
-  gv:red "225";
-  gv:blue "158";
-  gv:green "193";
-  gv:score "22.600277";
-  gv:coverage "18.279999999999998"
-], [
-  gv:hex "8a391c";
-  gv:red "138";
-  gv:blue "28";
-  gv:green "57";
-  gv:score "5.8021896";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "b65722";
-  gv:red "182";
-  gv:blue "34";
-  gv:green "87";
-  gv:score "1.2437878";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "debc88";
-  gv:red "222";
-  gv:blue "136";
-  gv:green "188";
-  gv:score "8.6602069";
-  gv:coverage "4.3933332"
-], [
-  gv:hex "b8985e";
-  gv:red "184";
-  gv:blue "94";
-  gv:green "152";
-  gv:score "7.8376412";
-  gv:coverage "3.3333334999999997"
-], [
-  gv:hex "b4963a";
-  gv:red "180";
-  gv:blue "58";
-  gv:green "150";
-  gv:score "7.5789154";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "92743b";
-  gv:red "146";
-  gv:blue "59";
-  gv:green "116";
-  gv:score "4.9584825";
-  gv:coverage "2.0933334"
-], [
-  gv:hex "937821";
-  gv:red "147";
-  gv:blue "33";
-  gv:green "120";
-  gv:score "4.4546977000000005";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "9a6c3a";
-  gv:red "154";
-  gv:blue "58";
-  gv:green "108";
-  gv:score "4.17038";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "79491c";
-  gv:red "121";
-  gv:blue "28";
-  gv:green "73";
-  gv:score "3.7680611";
-  gv:coverage "1.1133334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.781541"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "66.804868"
-];
-    w:bagOfWords "ME O S E L\nS A A R\nR U W E R\n1953er\nBernkasteler Rosenberg\nRiesling\nFuder Nr.\n3\nOriginal-Abfullung W. Olk\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3821";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

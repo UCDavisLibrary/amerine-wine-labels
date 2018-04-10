@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1327";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "MARCA\nREGIST.\n50MBARRA\nVINHO DE MESA\nCEREJEIRAS\nTINTO\nQUINTA DAS CEREUEIRAS\nCOMPANHIA AGRICOLA DO SANGUINHALDA\nBOMBARRAL\nPORTUGAL\n"@por;
-    gv:color [
-  gv:hex "d8c3a9";
-  gv:red "216";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "33.805352";
-  gv:coverage "20.68"
-], [
-  gv:hex "1a1006";
-  gv:red "26";
-  gv:blue "6";
-  gv:green "16";
-  gv:score "1.8979747000000002";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "a99986";
-  gv:red "169";
-  gv:blue "134";
-  gv:green "153";
-  gv:score "15.896548";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "887968";
-  gv:red "136";
-  gv:blue "104";
-  gv:green "121";
-  gv:score "11.678255";
-  gv:coverage "1.82"
-], [
-  gv:hex "dab785";
-  gv:red "218";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "8.881210000000001";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "eadac6";
-  gv:red "234";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "4.8371642999999995";
-  gv:coverage "8.473333"
-], [
-  gv:hex "605141";
-  gv:red "96";
-  gv:blue "65";
-  gv:green "81";
-  gv:score "4.3827176";
-  gv:coverage "0.54"
-], [
-  gv:hex "cdc1b5";
-  gv:red "205";
-  gv:blue "181";
-  gv:green "193";
-  gv:score "4.0016375";
-  gv:coverage "6.34"
-], [
-  gv:hex "403224";
-  gv:red "64";
-  gv:blue "36";
-  gv:green "50";
-  gv:score "2.8695585";
-  gv:coverage "0.26"
-], [
-  gv:hex "83786d";
-  gv:red "131";
-  gv:blue "109";
-  gv:green "120";
-  gv:score "2.8350405";
-  gv:coverage "0.36"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "76.19074"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.674972"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.775694"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "53.984416"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "51.934123"
-];
-    w:bagOfWords "MARCA\nREGIST.\n50MBARRA\nVINHO DE MESA\nCEREJEIRAS\nTINTO\nQUINTA DAS CEREUEIRAS\nCOMPANHIA AGRICOLA DO SANGUINHALDA\nBOMBARRAL\nPORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1327";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

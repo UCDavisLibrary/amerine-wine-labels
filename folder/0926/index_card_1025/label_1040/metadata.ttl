@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1040";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "1945\nStill White Wine Produce of Switzerland\nImported by Sole U. S. A. Agents\nhandeau Winery Co. Inc., New York 54\nImport No. 2-1. 327\nhannisber\nUrsat\nORSAT\nNet contents 12 fluid ozs\nAlc. content 13 by vol\n"@deu;
-    gv:color [
-  gv:hex "dcc6a8";
-  gv:red "220";
-  gv:blue "168";
-  gv:green "198";
-  gv:score "39.646930000000005";
-  gv:coverage "16.086666"
-], [
-  gv:hex "714a11";
-  gv:red "113";
-  gv:blue "17";
-  gv:green "74";
-  gv:score "3.8437262";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "eedabe";
-  gv:red "238";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "8.818455799999999";
-  gv:coverage "13.313334"
-], [
-  gv:hex "e4bbaa";
-  gv:red "228";
-  gv:blue "170";
-  gv:green "187";
-  gv:score "6.0034536";
-  gv:coverage "1.22"
-], [
-  gv:hex "d5bc89";
-  gv:red "213";
-  gv:blue "137";
-  gv:green "188";
-  gv:score "4.745508";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "af9c86";
-  gv:red "175";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "3.4199156";
-  gv:coverage "0.84"
-], [
-  gv:hex "817462";
-  gv:red "129";
-  gv:blue "98";
-  gv:green "116";
-  gv:score "2.6164176";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "bd9f6a";
-  gv:red "189";
-  gv:blue "106";
-  gv:green "159";
-  gv:score "2.326568";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "bf9685";
-  gv:red "191";
-  gv:blue "133";
-  gv:green "150";
-  gv:score "2.2320606";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "5f5343";
-  gv:red "95";
-  gv:blue "67";
-  gv:green "83";
-  gv:score "2.1076148";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.245063"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "50.98438899999999"
-];
-    w:bagOfWords "1945\nStill White Wine Produce of Switzerland\nImported by Sole U. S. A. Agents\nhandeau Winery Co. Inc., New York 54\nImport No. 2-1. 327\nhannisber\nUrsat\nORSAT\nNet contents 12 fluid ozs\nAlc. content 13 by vol\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1040";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

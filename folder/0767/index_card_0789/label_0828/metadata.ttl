@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0828";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "BOURGUEILMOUSSEUX\nCH. VAVASSEUR\nVAVASSEUR & BERNARD ET\nVOUVRAY (Indre & Loire) FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d8c5aa";
-  gv:red "216";
-  gv:blue "170";
-  gv:green "197";
-  gv:score "29.088971";
-  gv:coverage "9.986666600000001"
-], [
-  gv:hex "d67f66";
-  gv:red "214";
-  gv:blue "102";
-  gv:green "127";
-  gv:score "7.970126700000001";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "3f342c";
-  gv:red "63";
-  gv:blue "44";
-  gv:green "52";
-  gv:score "0.31405408";
-  gv:coverage "0.12"
-], [
-  gv:hex "e3b6a1";
-  gv:red "227";
-  gv:blue "161";
-  gv:green "182";
-  gv:score "14.002025000000001";
-  gv:coverage "3.5266668"
-], [
-  gv:hex "b09c80";
-  gv:red "176";
-  gv:blue "128";
-  gv:green "156";
-  gv:score "6.5324366";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "ce9882";
-  gv:red "206";
-  gv:blue "130";
-  gv:green "152";
-  gv:score "5.9988833999999995";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "cb8c67";
-  gv:red "203";
-  gv:blue "103";
-  gv:green "140";
-  gv:score "5.4451607";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "db8574";
-  gv:red "219";
-  gv:blue "116";
-  gv:green "133";
-  gv:score "4.6162073";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "ead9c1";
-  gv:red "234";
-  gv:blue "193";
-  gv:green "217";
-  gv:score "4.184252";
-  gv:coverage "3.84"
-], [
-  gv:hex "897353";
-  gv:red "137";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "3.9985373999999996";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.548729"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BOURGUEILMOUSSEUX\nCH. VAVASSEUR\nVAVASSEUR & BERNARD ET\nVOUVRAY (Indre & Loire) FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0828";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

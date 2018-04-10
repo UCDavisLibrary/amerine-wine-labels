@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2215/label_2219";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "ine Sacramental Dine\nAMERICAN\nTOKAY\nMADE AND BOTTLED BY\nRheims nammon\ndspert,newyork.\nALCOHOL 182\nBY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "b09b82";
-  gv:red "176";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "13.371915000000001";
-  gv:coverage "2.44"
-], [
-  gv:hex "784b34";
-  gv:red "120";
-  gv:blue "52";
-  gv:green "75";
-  gv:score "11.21382";
-  gv:coverage "1.76"
-], [
-  gv:hex "b75c46";
-  gv:red "183";
-  gv:blue "70";
-  gv:green "92";
-  gv:score "2.5264572";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "d6bfa6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "12.534493";
-  gv:coverage "5.1066667"
-], [
-  gv:hex "9a6952";
-  gv:red "154";
-  gv:blue "82";
-  gv:green "105";
-  gv:score "11.1146";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "f4dec4";
-  gv:red "244";
-  gv:blue "196";
-  gv:green "222";
-  gv:score "10.304542";
-  gv:coverage "12.046666"
-], [
-  gv:hex "c0927a";
-  gv:red "192";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "7.677550599999999";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "8a765d";
-  gv:red "138";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "7.316853099999999";
-  gv:coverage "1.3"
-], [
-  gv:hex "eab9a1";
-  gv:red "234";
-  gv:blue "161";
-  gv:green "185";
-  gv:score "6.8961076";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "5c2f1a";
-  gv:red "92";
-  gv:blue "26";
-  gv:green "47";
-  gv:score "2.40578";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.899709"
-];
-    w:bagOfWords "ine Sacramental Dine\nAMERICAN\nTOKAY\nMADE AND BOTTLED BY\nRheims nammon\ndspert,newyork.\nALCOHOL 182\nBY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2219";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

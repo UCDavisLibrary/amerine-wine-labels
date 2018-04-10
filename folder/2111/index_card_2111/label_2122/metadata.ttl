@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2111/label_2122";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "Amah\nPORTO\nEZ\n"@undefined;
-    gv:color [
-  gv:hex "0d0906";
-  gv:red "13";
-  gv:blue "6";
-  gv:green "9";
-  gv:score "56.400114";
-  gv:coverage "21.5"
-], [
-  gv:hex "62533c";
-  gv:red "98";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "9.9618211";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "d5c9be";
-  gv:red "213";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "0.76805227";
-  gv:coverage "7.7"
-], [
-  gv:hex "857358";
-  gv:red "133";
-  gv:blue "88";
-  gv:green "115";
-  gv:score "9.1896705";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "38332a";
-  gv:red "56";
-  gv:blue "42";
-  gv:green "51";
-  gv:score "5.9230972";
-  gv:coverage "1.26"
-], [
-  gv:hex "3c331f";
-  gv:red "60";
-  gv:blue "31";
-  gv:green "51";
-  gv:score "5.5093475000000005";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "565049";
-  gv:red "86";
-  gv:blue "73";
-  gv:green "80";
-  gv:score "4.1378471999999995";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "251b0b";
-  gv:red "37";
-  gv:blue "11";
-  gv:green "27";
-  gv:score "3.6407288";
-  gv:coverage "0.5"
-], [
-  gv:hex "a89985";
-  gv:red "168";
-  gv:blue "133";
-  gv:green "153";
-  gv:score "1.0493662000000001";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "767067";
-  gv:red "118";
-  gv:blue "103";
-  gv:green "112";
-  gv:score "0.92268465";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.837256"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.564938"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.61808500000001"
-];
-    w:bagOfWords "Amah\nPORTO\nEZ\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2122";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

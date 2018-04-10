@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1144";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "4/5 Quart PRODUCT OF FRANCE.\n92 Proof\nGrande Fine Champagne\n1er Grand Cru de Cognac\nBottled and distilled by Gaston BRIAND\nMise du domaine\nDomaine de la Voute, Ambleville (Charente)\n"@undefined;
-    gv:color [
-  gv:hex "d9bc98";
-  gv:red "217";
-  gv:blue "152";
-  gv:green "188";
-  gv:score "81.46607900000001";
-  gv:coverage "54.713333"
-], [
-  gv:hex "b79977";
-  gv:red "183";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "8.011699499999999";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "d3b488";
-  gv:red "211";
-  gv:blue "136";
-  gv:green "180";
-  gv:score "5.720604600000001";
-  gv:coverage "1.9133333"
-], [
-  gv:hex "937654";
-  gv:red "147";
-  gv:blue "84";
-  gv:green "118";
-  gv:score "3.2893322000000005";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "715534";
-  gv:red "113";
-  gv:blue "52";
-  gv:green "85";
-  gv:score "0.34450756";
-  gv:coverage "0.18"
-], [
-  gv:hex "92734c";
-  gv:red "146";
-  gv:blue "76";
-  gv:green "115";
-  gv:score "0.34353097";
-  gv:coverage "0.1"
-], [
-  gv:hex "bfa176";
-  gv:red "191";
-  gv:blue "118";
-  gv:green "161";
-  gv:score "0.20437306";
-  gv:coverage "0.06"
-], [
-  gv:hex "efd6b7";
-  gv:red "239";
-  gv:blue "183";
-  gv:green "214";
-  gv:score "0.18475946999999998";
-  gv:coverage "30.159999999999997"
-], [
-  gv:hex "725232";
-  gv:red "114";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "0.11928646000000001";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "ad8a6a";
-  gv:red "173";
-  gv:blue "106";
-  gv:green "138";
-  gv:score "0.097082485";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.655519000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.023433"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.156568"
-];
-    w:bagOfWords "4/5 Quart PRODUCT OF FRANCE.\n92 Proof\nGrande Fine Champagne\n1er Grand Cru de Cognac\nBottled and distilled by Gaston BRIAND\nMise du domaine\nDomaine de la Voute, Ambleville (Charente)\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1144";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

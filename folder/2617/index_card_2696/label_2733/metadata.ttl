@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2733";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "RED RHONE WINE\nTETE DE CUVEE\n得\nCHAPOUTIER&CIE\nのROPRIETAIRES\nAND TAIN L'HERMITAGE\nPRODUCT OF FRANCE\nSpecially reserved and imported by\nIBELLOyy S COMPANY, INC.\nNIE1yy YDIRIK CITY NEW\"-YORk\nALCOHOL 13 % BY VOLUME\nzo ain74 6 LINId SLN3.LNOD\n"@fra;
-    gv:color [
-  gv:hex "d2c0ae";
-  gv:red "210";
-  gv:blue "174";
-  gv:green "192";
-  gv:score "29.312676";
-  gv:coverage "18.133333"
-], [
-  gv:hex "cca074";
-  gv:red "204";
-  gv:blue "116";
-  gv:green "160";
-  gv:score "6.8167805999999995";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "d7c7bb";
-  gv:red "215";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "17.619966";
-  gv:coverage "26.400000000000002"
-], [
-  gv:hex "ae9c8b";
-  gv:red "174";
-  gv:blue "139";
-  gv:green "156";
-  gv:score "15.268562999999999";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "89796c";
-  gv:red "137";
-  gv:blue "108";
-  gv:green "121";
-  gv:score "9.0331875";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "e9dacd";
-  gv:red "233";
-  gv:blue "205";
-  gv:green "218";
-  gv:score "6.8542913";
-  gv:coverage "42.059999999999995"
-], [
-  gv:hex "e8d8c8";
-  gv:red "232";
-  gv:blue "200";
-  gv:green "216";
-  gv:score "4.3928664";
-  gv:coverage "3.7066668"
-], [
-  gv:hex "d7aa7f";
-  gv:red "215";
-  gv:blue "127";
-  gv:green "170";
-  gv:score "2.8180575";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "615244";
-  gv:red "97";
-  gv:blue "68";
-  gv:green "82";
-  gv:score "1.9778601999999998";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "c09d6b";
-  gv:red "192";
-  gv:blue "107";
-  gv:green "157";
-  gv:score "1.2641231";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.48433299999999"
-];
-    w:bagOfWords "RED RHONE WINE\nTETE DE CUVEE\n得\nCHAPOUTIER&CIE\nのROPRIETAIRES\nAND TAIN L'HERMITAGE\nPRODUCT OF FRANCE\nSpecially reserved and imported by\nIBELLOyy S COMPANY, INC.\nNIE1yy YDIRIK CITY NEW\"-YORk\nALCOHOL 13 % BY VOLUME\nzo ain74 6 LINId SLN3.LNOD\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2733";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

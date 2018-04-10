@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4787";
-    dct:type "image";
-    w:bagOfWords "CONTENTS I PINT 8 FL OZ\nALCOHOL 12 BY VOLUME\nPRODUCED AND\nA V I G N O N\nBOTTLED BY\nVAUCLUSE\nA. OGIER et FILS\nFrance\nOGIER MONOPOLE\nRed One Wine\nN. 4 B\nProduce of France\nImported\nSTUART IMPORTS Ltd-SAN FRANCISCO-California\nby\nSole Agents Western U S.A.\n"@eng;
-    gv:color [
-  gv:hex "e9e1d7";
-  gv:red "233";
-  gv:blue "215";
-  gv:green "225";
-  gv:score "79.71576999999999";
-  gv:coverage "59.126669"
-], [
-  gv:hex "e8dcc9";
-  gv:red "232";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "9.3796216";
-  gv:coverage "11.693333"
-], [
-  gv:hex "dcc3a6";
-  gv:red "220";
-  gv:blue "166";
-  gv:green "195";
-  gv:score "5.05393";
-  gv:coverage "11.726667"
-], [
-  gv:hex "dad1c5";
-  gv:red "218";
-  gv:blue "197";
-  gv:green "209";
-  gv:score "1.917447";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "b49a7d";
-  gv:red "180";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "1.8583773000000001";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "8e765a";
-  gv:red "142";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "0.65426445";
-  gv:coverage "0.48"
-], [
-  gv:hex "674f34";
-  gv:red "103";
-  gv:blue "52";
-  gv:green "79";
-  gv:score "0.3721677";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "44341f";
-  gv:red "68";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "0.21277708";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "472b11";
-  gv:red "71";
-  gv:blue "17";
-  gv:green "43";
-  gv:score "0.12966562";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "a39b90";
-  gv:red "163";
-  gv:blue "144";
-  gv:green "155";
-  gv:score "0.11300882000000001";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "67.063141"
-], [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "63.611823"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "62.040013"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.039664"
-];
-    w:bagOfWords "CONTENTS I PINT 8 FL OZ\nALCOHOL 12 BY VOLUME\nPRODUCED AND\nA V I G N O N\nBOTTLED BY\nVAUCLUSE\nA. OGIER et FILS\nFrance\nOGIER MONOPOLE\nRed One Wine\nN. 4 B\nProduce of France\nImported\nSTUART IMPORTS Ltd-SAN FRANCISCO-California\nby\nSole Agents Western U S.A.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4787";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

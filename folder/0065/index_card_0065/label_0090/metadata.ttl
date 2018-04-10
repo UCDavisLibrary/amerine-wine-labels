@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0090";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "O\nROLIO ROSSO |\nCHIANTI\ng,ubolligl'ialo dal Cliente\ne) m bottlg L Lato da\n·PROPRIETARIO\nB\n"@ita;
-    gv:color [
-  gv:hex "d1bca5";
-  gv:red "209";
-  gv:blue "165";
-  gv:green "188";
-  gv:score "33.746874";
-  gv:coverage "16.8"
-], [
-  gv:hex "533401";
-  gv:red "83";
-  gv:blue "1";
-  gv:green "52";
-  gv:score "0.24307484000000001";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "b19c83";
-  gv:red "177";
-  gv:blue "131";
-  gv:green "156";
-  gv:score "19.255544";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "8d7a60";
-  gv:red "141";
-  gv:blue "96";
-  gv:green "122";
-  gv:score "10.196059";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "cfc2b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "8.7838963";
-  gv:coverage "8.34"
-], [
-  gv:hex "a79a91";
-  gv:red "167";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "7.8550264";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "b69568";
-  gv:red "182";
-  gv:blue "104";
-  gv:green "149";
-  gv:score "4.8305932";
-  gv:coverage "0.18"
-], [
-  gv:hex "e9ddd4";
-  gv:red "233";
-  gv:blue "212";
-  gv:green "221";
-  gv:score "3.9041441000000003";
-  gv:coverage "63.68000000000001"
-], [
-  gv:hex "867970";
-  gv:red "134";
-  gv:blue "112";
-  gv:green "121";
-  gv:score "3.1772755";
-  gv:coverage "0.4"
-], [
-  gv:hex "69563b";
-  gv:red "105";
-  gv:blue "59";
-  gv:green "86";
-  gv:score "1.8612654999999998";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.086934"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.163589"
-];
-    w:bagOfWords "O\nROLIO ROSSO |\nCHIANTI\ng,ubolligl'ialo dal Cliente\ne) m bottlg L Lato da\n·PROPRIETARIO\nB\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0090";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0288";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "32\nAWARDS\nAWARDS\nCALIFORNIA\nSAN FRANCISCO 1887-1915-1939\nSTATE FAIR\nDUBLIN 1892\nCHICAGO 1893\n1934-1935-1936 1937\nPARIS 1889-1900-1938\n1938-1939-1940. 1941\nCALIFORNIA\nAINPANDELi\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER\nROS\nINC\nBONDED WINERY No. 46-1\nLOS HERMAN OS VINEYARDS ST HELENA. CALIFORNIA\nESTABLISHED 1876\nLOUIS ROESCH co. LITHO. S. F.. CALIF.\n"@eng;
-    gv:color [
-  gv:hex "d4bc9f";
-  gv:red "212";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "49.970197999999996";
-  gv:coverage "60.086667999999996"
-], [
-  gv:hex "b49c81";
-  gv:red "180";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "16.119307";
-  gv:coverage "5.546666699999999"
-], [
-  gv:hex "be9d6c";
-  gv:red "190";
-  gv:blue "108";
-  gv:green "157";
-  gv:score "12.608859";
-  gv:coverage "2.68"
-], [
-  gv:hex "d2b384";
-  gv:red "210";
-  gv:blue "132";
-  gv:green "179";
-  gv:score "9.5202871";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "b89580";
-  gv:red "184";
-  gv:blue "128";
-  gv:green "149";
-  gv:score "3.6782402999999997";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "dcb9a3";
-  gv:red "220";
-  gv:blue "163";
-  gv:green "185";
-  gv:score "1.9339294999999999";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "947b61";
-  gv:red "148";
-  gv:blue "97";
-  gv:green "123";
-  gv:score "1.2775466";
-  gv:coverage "0.48"
-], [
-  gv:hex "9f7e4b";
-  gv:red "159";
-  gv:blue "75";
-  gv:green "126";
-  gv:score "1.2581236";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "c89e6c";
-  gv:red "200";
-  gv:blue "108";
-  gv:green "158";
-  gv:score "1.2512823";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "97745f";
-  gv:red "151";
-  gv:blue "95";
-  gv:green "116";
-  gv:score "1.1891996";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.282611"
-];
-    w:bagOfWords "32\nAWARDS\nAWARDS\nCALIFORNIA\nSAN FRANCISCO 1887-1915-1939\nSTATE FAIR\nDUBLIN 1892\nCHICAGO 1893\n1934-1935-1936 1937\nPARIS 1889-1900-1938\n1938-1939-1940. 1941\nCALIFORNIA\nAINPANDELi\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER\nROS\nINC\nBONDED WINERY No. 46-1\nLOS HERMAN OS VINEYARDS ST HELENA. CALIFORNIA\nESTABLISHED 1876\nLOUIS ROESCH co. LITHO. S. F.. CALIF.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0288";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

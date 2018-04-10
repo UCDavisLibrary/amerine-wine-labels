@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5015";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "FLORIO C. SINCE\nO NAZ\nVINTAGE\nIN\nITAL\nD FRY\nPRODUCT OF\nFLORIO\nFLORIO & C.\nORIDI S.M.ILR\nTORI SM\nRE DE\nPRIN LEO\nMARCA DEPOSITATA\nM.ILRE DI\nMARSALA\nCONTENTS 1 PT. 5 FLD. oz ALcoHOL 18% BY VOLUME\nEsta blished 1833\nSOCIETA AN ONIMA VINICOLA STALIANA\nMARSALA ITALY\nSOLE AMERICAN AGENTS\nBANFI PRODUCTS CORP\n140 SIXTH AV. NEW YORK\n"@undefined;
-    gv:color [
-  gv:hex "a99988";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "153";
-  gv:score "11.759145";
-  gv:coverage "4.2866666"
-], [
-  gv:hex "ecdfd4";
-  gv:red "236";
-  gv:blue "212";
-  gv:green "223";
-  gv:score "6.3318938000000005";
-  gv:coverage "45.146668"
-], [
-  gv:hex "28190c";
-  gv:red "40";
-  gv:blue "12";
-  gv:green "25";
-  gv:score "5.5123180000000005";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "ca4c26";
-  gv:red "202";
-  gv:blue "38";
-  gv:green "76";
-  gv:score "4.190162900000001";
-  gv:coverage "0.36"
-], [
-  gv:hex "b75a3a";
-  gv:red "183";
-  gv:blue "58";
-  gv:green "90";
-  gv:score "3.7577759000000004";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "847566";
-  gv:red "132";
-  gv:blue "102";
-  gv:green "117";
-  gv:score "9.0932809";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "5f5142";
-  gv:red "95";
-  gv:blue "66";
-  gv:green "81";
-  gv:score "8.124499";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "d0c1ac";
-  gv:red "208";
-  gv:blue "172";
-  gv:green "193";
-  gv:score "7.6789357";
-  gv:coverage "13.56"
-], [
-  gv:hex "cfc2b7";
-  gv:red "207";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "6.0213838";
-  gv:coverage "10.533334"
-], [
-  gv:hex "180b03";
-  gv:red "24";
-  gv:blue "3";
-  gv:green "11";
-  gv:score "5.3446147999999996";
-  gv:coverage "0.89333337"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.3044"
-], [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "51.68978"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.99656"
-];
-    w:bagOfWords "FLORIO C. SINCE\nO NAZ\nVINTAGE\nIN\nITAL\nD FRY\nPRODUCT OF\nFLORIO\nFLORIO & C.\nORIDI S.M.ILR\nTORI SM\nRE DE\nPRIN LEO\nMARCA DEPOSITATA\nM.ILRE DI\nMARSALA\nCONTENTS 1 PT. 5 FLD. oz ALcoHOL 18% BY VOLUME\nEsta blished 1833\nSOCIETA AN ONIMA VINICOLA STALIANA\nMARSALA ITALY\nSOLE AMERICAN AGENTS\nBANFI PRODUCTS CORP\n140 SIXTH AV. NEW YORK\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5015";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0425";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "AANHOBOKEN &C\nHOLLAND\nSOLE IMPORTERS\nSTROHMEYER & ARPE Co\nNEW YORK\nICHT Av.H\n"@undefined;
-    gv:color [
-  gv:hex "a79683";
-  gv:red "167";
-  gv:blue "131";
-  gv:green "150";
-  gv:score "61.550157999999996";
-  gv:coverage "5.0133333"
-], [
-  gv:hex "ccbba7";
-  gv:red "204";
-  gv:blue "167";
-  gv:green "187";
-  gv:score "32.251158000000004";
-  gv:coverage "18.153333999999997"
-], [
-  gv:hex "917d64";
-  gv:red "145";
-  gv:blue "100";
-  gv:green "125";
-  gv:score "2.5614971";
-  gv:coverage "0.18"
-], [
-  gv:hex "cabeb1";
-  gv:red "202";
-  gv:blue "177";
-  gv:green "190";
-  gv:score "1.1136949999999999";
-  gv:coverage "20.126666"
-], [
-  gv:hex "aaa094";
-  gv:red "170";
-  gv:blue "148";
-  gv:green "160";
-  gv:score "0.76285396";
-  gv:coverage "0.22"
-], [
-  gv:hex "96744d";
-  gv:red "150";
-  gv:blue "77";
-  gv:green "116";
-  gv:score "0.66408613";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "7d7468";
-  gv:red "125";
-  gv:blue "104";
-  gv:green "116";
-  gv:score "0.21096982999999997";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "7b5b35";
-  gv:red "123";
-  gv:blue "53";
-  gv:green "91";
-  gv:score "0.18564267";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "906d45";
-  gv:red "144";
-  gv:blue "69";
-  gv:green "109";
-  gv:score "0.18169685";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "765834";
-  gv:red "118";
-  gv:blue "52";
-  gv:green "88";
-  gv:score "0.18056205";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.09132699999999"
-];
-    w:bagOfWords "AANHOBOKEN &C\nHOLLAND\nSOLE IMPORTERS\nSTROHMEYER & ARPE Co\nNEW YORK\nICHT Av.H\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0425";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

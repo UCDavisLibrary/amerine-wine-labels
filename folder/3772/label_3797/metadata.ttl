@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3797";
-    dct:type "image";
-    w:bagOfWords "Helles\nExport.\nTafetBier\nfugustiner\nBrauerei-Abzu\n"@deu;
-    gv:color [
-  gv:hex "8f7443";
-  gv:red "143";
-  gv:blue "67";
-  gv:green "116";
-  gv:score "27.339593";
-  gv:coverage "3.7800000000000002"
-], [
-  gv:hex "837453";
-  gv:red "131";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "12.48377";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "ae915e";
-  gv:red "174";
-  gv:blue "94";
-  gv:green "145";
-  gv:score "11.410815000000001";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "ac9674";
-  gv:red "172";
-  gv:blue "116";
-  gv:green "150";
-  gv:score "9.48395";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "6f5729";
-  gv:red "111";
-  gv:blue "41";
-  gv:green "87";
-  gv:score "8.0333106";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "635739";
-  gv:red "99";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "7.0145816";
-  gv:coverage "1.34"
-], [
-  gv:hex "976f3b";
-  gv:red "151";
-  gv:blue "59";
-  gv:green "111";
-  gv:score "4.5776844";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "3c3019";
-  gv:red "60";
-  gv:blue "25";
-  gv:green "48";
-  gv:score "4.1292079";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "724d1c";
-  gv:red "114";
-  gv:blue "28";
-  gv:green "77";
-  gv:score "4.0975891";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "d2ba99";
-  gv:red "210";
-  gv:blue "153";
-  gv:green "186";
-  gv:score "3.4391169";
-  gv:coverage "4.6066668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.585368"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.218904"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.293082"
-];
-    w:bagOfWords "Helles\nExport.\nTafetBier\nfugustiner\nBrauerei-Abzu\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3797";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

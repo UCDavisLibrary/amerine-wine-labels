@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3633";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "ALCOHOL 12Va% BY VOLUME\nNET CONTENTS 4/5 QUART\nALMADEN\nBRUT\nSelected by\nFRANK SCHOON MAKER for WILLIAMSBURG INN\nWILLIAMSBURG, VIRGINIA\nProduced and Bottled by the\nALMADEN VINEYARDS. LOS GATOS, SANTA CLARA COUNTY, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d7c2a2";
-  gv:red "215";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "48.661622";
-  gv:coverage "16.153333"
-], [
-  gv:hex "0f0804";
-  gv:red "15";
-  gv:blue "4";
-  gv:green "8";
-  gv:score "1.5799079";
-  gv:coverage "6.9"
-], [
-  gv:hex "b19c7a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "20.906696";
-  gv:coverage "4.8533332"
-], [
-  gv:hex "eed9bd";
-  gv:red "238";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "10.327371000000001";
-  gv:coverage "8.033332999999999"
-], [
-  gv:hex "8a7554";
-  gv:red "138";
-  gv:blue "84";
-  gv:green "117";
-  gv:score "7.316981999999999";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "644f33";
-  gv:red "100";
-  gv:blue "51";
-  gv:green "79";
-  gv:score "4.8630681000000004";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "47341c";
-  gv:red "71";
-  gv:blue "28";
-  gv:green "52";
-  gv:score "1.4946167";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "665128";
-  gv:red "102";
-  gv:blue "40";
-  gv:green "81";
-  gv:score "1.2430962";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "aa976a";
-  gv:red "170";
-  gv:blue "106";
-  gv:green "151";
-  gv:score "0.95754";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "8a764b";
-  gv:red "138";
-  gv:blue "75";
-  gv:green "118";
-  gv:score "0.94241854";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.54993999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.9214"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "54.96552"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "51.472872"
-];
-    w:bagOfWords "ALCOHOL 12Va% BY VOLUME\nNET CONTENTS 4/5 QUART\nALMADEN\nBRUT\nSelected by\nFRANK SCHOON MAKER for WILLIAMSBURG INN\nWILLIAMSBURG, VIRGINIA\nProduced and Bottled by the\nALMADEN VINEYARDS. LOS GATOS, SANTA CLARA COUNTY, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3633";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

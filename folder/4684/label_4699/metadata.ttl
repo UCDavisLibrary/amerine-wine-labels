@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4699";
-    dct:type "image";
-    w:bagOfWords "RABBI\nREGISTERED\nPRODUCT OF SCOTLAND\nJOHN CR ABBIE & CO, LTD.\nLEITH SCOTLAND\nEST 1801\n"@undefined;
-    gv:color [
-  gv:hex "e1c9a9";
-  gv:red "225";
-  gv:blue "169";
-  gv:green "201";
-  gv:score "56.075591";
-  gv:coverage "32.313332"
-], [
-  gv:hex "412c0e";
-  gv:red "65";
-  gv:blue "14";
-  gv:green "44";
-  gv:score "2.1337563";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "eed7b9";
-  gv:red "238";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "11.377237";
-  gv:coverage "11.413334"
-], [
-  gv:hex "b39b7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "7.5813636";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "ebbca1";
-  gv:red "235";
-  gv:blue "161";
-  gv:green "188";
-  gv:score "7.15147";
-  gv:coverage "2.0866666"
-], [
-  gv:hex "8f7856";
-  gv:red "143";
-  gv:blue "86";
-  gv:green "120";
-  gv:score "4.4835858";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "c59378";
-  gv:red "197";
-  gv:blue "120";
-  gv:green "147";
-  gv:score "3.250102";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "675233";
-  gv:red "103";
-  gv:blue "51";
-  gv:green "82";
-  gv:score "2.0329077";
-  gv:coverage "0.54"
-], [
-  gv:hex "897344";
-  gv:red "137";
-  gv:blue "68";
-  gv:green "115";
-  gv:score "1.7107754999999998";
-  gv:coverage "0.2"
-], [
-  gv:hex "a16f54";
-  gv:red "161";
-  gv:blue "84";
-  gv:green "111";
-  gv:score "1.568931";
-  gv:coverage "0.32666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.0477"
-];
-    w:bagOfWords "RABBI\nREGISTERED\nPRODUCT OF SCOTLAND\nJOHN CR ABBIE & CO, LTD.\nLEITH SCOTLAND\nEST 1801\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4699";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1773";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "E stb\n1793\nraun berget i urg rslag\nBristol.\nMiddle Moselle\n"@deu;
-    gv:color [
-  gv:hex "e8e0d5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "224";
-  gv:score "64.068782";
-  gv:coverage "41.206667"
-], [
-  gv:hex "7b4212";
-  gv:red "123";
-  gv:blue "18";
-  gv:green "66";
-  gv:score "1.8274248";
-  gv:coverage "1.44"
-], [
-  gv:hex "565045";
-  gv:red "86";
-  gv:blue "69";
-  gv:green "80";
-  gv:score "0.16694088999999998";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "e8dcca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "16.175844";
-  gv:coverage "14.493333"
-], [
-  gv:hex "d8d0c5";
-  gv:red "216";
-  gv:blue "197";
-  gv:green "208";
-  gv:score "7.3142551000000005";
-  gv:coverage "5.5733334"
-], [
-  gv:hex "decfbd";
-  gv:red "222";
-  gv:blue "189";
-  gv:green "207";
-  gv:score "7.250047499999999";
-  gv:coverage "10.106666"
-], [
-  gv:hex "aba297";
-  gv:red "171";
-  gv:blue "151";
-  gv:green "162";
-  gv:score "0.54549309";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "682d02";
-  gv:red "104";
-  gv:blue "2";
-  gv:green "45";
-  gv:score "0.43752152";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "b1a28f";
-  gv:red "177";
-  gv:blue "143";
-  gv:green "162";
-  gv:score "0.42665823999999997";
-  gv:coverage "0.4"
-], [
-  gv:hex "8d4c0c";
-  gv:red "141";
-  gv:blue "12";
-  gv:green "76";
-  gv:score "0.40320167";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "68.512523"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.203759000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.744107"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.862817"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.82011"
-];
-    w:bagOfWords "E stb\n1793\nraun berget i urg rslag\nBristol.\nMiddle Moselle\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1773";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

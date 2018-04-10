@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1498";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MARCAREGISTRADA\nEREDEROS\nLEON\nMAR A REG\nRAD\nBarrameda\nelan luar\nLIT. J. M. BAAR os0. JERE z.\nNo 132\n"@spa;
-    gv:color [
-  gv:hex "d2c1a4";
-  gv:red "210";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "29.560846";
-  gv:coverage "27.206665"
-], [
-  gv:hex "655436";
-  gv:red "101";
-  gv:blue "54";
-  gv:green "84";
-  gv:score "14.772107000000002";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "ad9c7f";
-  gv:red "173";
-  gv:blue "127";
-  gv:green "156";
-  gv:score "20.091811";
-  gv:coverage "2"
-], [
-  gv:hex "1f130b";
-  gv:red "31";
-  gv:blue "11";
-  gv:green "19";
-  gv:score "0.17031628999999998";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "847254";
-  gv:red "132";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "12.894537";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "ebdcc2";
-  gv:red "235";
-  gv:blue "194";
-  gv:green "220";
-  gv:score "6.1096694";
-  gv:coverage "33.666667"
-], [
-  gv:hex "cfc3b7";
-  gv:red "207";
-  gv:blue "183";
-  gv:green "195";
-  gv:score "3.63681";
-  gv:coverage "6.706666899999999"
-], [
-  gv:hex "685229";
-  gv:red "104";
-  gv:blue "41";
-  gv:green "82";
-  gv:score "2.9112598";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "826c41";
-  gv:red "130";
-  gv:blue "65";
-  gv:green "108";
-  gv:score "2.2792323";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "4b3a1d";
-  gv:red "75";
-  gv:blue "29";
-  gv:green "58";
-  gv:score "2.1483306";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.52901200000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MARCAREGISTRADA\nEREDEROS\nLEON\nMAR A REG\nRAD\nBarrameda\nelan luar\nLIT. J. M. BAAR os0. JERE z.\nNo 132\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1498";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

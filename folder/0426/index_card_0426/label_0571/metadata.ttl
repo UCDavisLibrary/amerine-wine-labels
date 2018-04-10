@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0571";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "O\nSRauenthaler <Rotenberg\nauenthaler tydl\nOten.Dep\noder mit jedem beliebigen Eindruck\nGebrüder Illert G. m. b. H, Grossdruderei, Klein-Auheim-Hanau\nNo. 7682. Rm, 17.-per 1000. Eindruck extra.\n768 2\n"@deu;
-    gv:color [
-  gv:hex "dcc3a9";
-  gv:red "220";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "40.334199999999996";
-  gv:coverage "27.213332"
-], [
-  gv:hex "714e33";
-  gv:red "113";
-  gv:blue "51";
-  gv:green "78";
-  gv:score "6.3578106";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "b1987f";
-  gv:red "177";
-  gv:blue "127";
-  gv:green "152";
-  gv:score "12.060954";
-  gv:coverage "2.98"
-], [
-  gv:hex "8f745a";
-  gv:red "143";
-  gv:blue "90";
-  gv:green "116";
-  gv:score "9.0512626";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "eed9c3";
-  gv:red "238";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "5.6205653";
-  gv:coverage "15.946667"
-], [
-  gv:hex "6c5239";
-  gv:red "108";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "5.0244745";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "4c2e16";
-  gv:red "76";
-  gv:blue "22";
-  gv:green "46";
-  gv:score "4.004411";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "916b4f";
-  gv:red "145";
-  gv:blue "79";
-  gv:green "107";
-  gv:score "3.2259169999999995";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "744726";
-  gv:red "116";
-  gv:blue "38";
-  gv:green "71";
-  gv:score "2.5659855";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "843720";
-  gv:red "132";
-  gv:blue "32";
-  gv:green "55";
-  gv:score "2.3191459";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.378608"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.926947"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.554721"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.079983"
-];
-    w:bagOfWords "O\nSRauenthaler <Rotenberg\nauenthaler tydl\nOten.Dep\noder mit jedem beliebigen Eindruck\nGebrüder Illert G. m. b. H, Grossdruderei, Klein-Auheim-Hanau\nNo. 7682. Rm, 17.-per 1000. Eindruck extra.\n768 2\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0571";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

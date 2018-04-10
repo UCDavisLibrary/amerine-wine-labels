@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1929/label_1930";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "JEREZOLOROSO\nEROS\nM BAP\n2LEON\nARCA REGISTRADA z\n"@spa;
-    gv:color [
-  gv:hex "664f32";
-  gv:red "102";
-  gv:blue "50";
-  gv:green "79";
-  gv:score "17.84804";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "d4c0a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "17.507455999999998";
-  gv:coverage "42.466667"
-], [
-  gv:hex "8b7457";
-  gv:red "139";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "16.562033";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "ae987d";
-  gv:red "174";
-  gv:blue "125";
-  gv:green "152";
-  gv:score "16.186227";
-  gv:coverage "1.8733334000000001"
-], [
-  gv:hex "4a3517";
-  gv:red "74";
-  gv:blue "23";
-  gv:green "53";
-  gv:score "8.45513";
-  gv:coverage "0.42"
-], [
-  gv:hex "664c24";
-  gv:red "102";
-  gv:blue "36";
-  gv:green "76";
-  gv:score "7.774706200000001";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "f0dcc6";
-  gv:red "240";
-  gv:blue "198";
-  gv:green "220";
-  gv:score "7.182048300000001";
-  gv:coverage "37.3"
-], [
-  gv:hex "4e360f";
-  gv:red "78";
-  gv:blue "15";
-  gv:green "54";
-  gv:score "3.6963165";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "90734b";
-  gv:red "144";
-  gv:blue "75";
-  gv:green "115";
-  gv:score "1.3725793";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "4e3214";
-  gv:red "78";
-  gv:blue "20";
-  gv:green "50";
-  gv:score "1.2463299";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.240574"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.092189999999995"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.778436000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.451785"
-];
-    w:bagOfWords "JEREZOLOROSO\nEROS\nM BAP\n2LEON\nARCA REGISTRADA z\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1930";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

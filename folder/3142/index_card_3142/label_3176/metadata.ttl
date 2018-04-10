@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3176";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "ALCOHOLIC STRENGTH BY VOLUME\nCONTENTS PINT 8 FLUID OUNCES\naBourgogne\nAISON FONDEE\n00eureysel hamberlill\n1920\nPRODUCED BY\nTRA DE MARK\nPROPRIETAIRE ET NEGOCIANT\nA BEA UNE COTE D'OR\nBOTTLED IN FRANCE\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "e8e0d6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "224";
-  gv:score "84.174144";
-  gv:coverage "54.713333"
-], [
-  gv:hex "6e4820";
-  gv:red "110";
-  gv:blue "32";
-  gv:green "72";
-  gv:score "0.29647034";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "6a1c06";
-  gv:red "106";
-  gv:blue "6";
-  gv:green "28";
-  gv:score "0.22987502";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "664e2f";
-  gv:red "102";
-  gv:blue "47";
-  gv:green "78";
-  gv:score "0.20436915";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "e9dcca";
-  gv:red "233";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "9.0803184";
-  gv:coverage "8.3266668"
-], [
-  gv:hex "d6cdc2";
-  gv:red "214";
-  gv:blue "194";
-  gv:green "205";
-  gv:score "2.2328245";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "d2bca2";
-  gv:red "210";
-  gv:blue "162";
-  gv:green "188";
-  gv:score "1.230752";
-  gv:coverage "2.16"
-], [
-  gv:hex "b69e81";
-  gv:red "182";
-  gv:blue "129";
-  gv:green "158";
-  gv:score "0.5427001499999999";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "873618";
-  gv:red "135";
-  gv:blue "24";
-  gv:green "54";
-  gv:score "0.22611469";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "aca59a";
-  gv:red "172";
-  gv:blue "154";
-  gv:green "165";
-  gv:score "0.17945184";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.25961099999999"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.80894400000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.000581"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "58.82619999999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.29404"
-];
-    w:bagOfWords "ALCOHOLIC STRENGTH BY VOLUME\nCONTENTS PINT 8 FLUID OUNCES\naBourgogne\nAISON FONDEE\n00eureysel hamberlill\n1920\nPRODUCED BY\nTRA DE MARK\nPROPRIETAIRE ET NEGOCIANT\nA BEA UNE COTE D'OR\nBOTTLED IN FRANCE\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3176";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

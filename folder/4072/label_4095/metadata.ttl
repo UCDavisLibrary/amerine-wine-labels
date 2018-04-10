@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4095";
-    dct:type "image";
-    w:bagOfWords "PRODUCT OF FRANCE\nBA\nRSA C\n1933\nALC. STRENGTH\nNET CONTENTS\nI PINT 9 FL. OZ\n3 BY VOLUME\nCLEMENT VAUTRIN\nONDE)\nNEGOCI\nIANTA BORDEAUX GlRO\n"@fra;
-    gv:color [
-  gv:hex "9c1416";
-  gv:red "156";
-  gv:blue "22";
-  gv:green "20";
-  gv:score "25.589076";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "d4c3af";
-  gv:red "212";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "4.1197471";
-  gv:coverage "4.9333333999999995"
-], [
-  gv:hex "d3585e";
-  gv:red "211";
-  gv:blue "94";
-  gv:green "88";
-  gv:score "1.274465";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "893620";
-  gv:red "137";
-  gv:blue "32";
-  gv:green "54";
-  gv:score "8.682756099999999";
-  gv:coverage "0.54"
-], [
-  gv:hex "a40609";
-  gv:red "164";
-  gv:blue "9";
-  gv:green "6";
-  gv:score "5.5789713";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "7f0a09";
-  gv:red "127";
-  gv:blue "9";
-  gv:green "10";
-  gv:score "4.8459653";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "794a25";
-  gv:red "121";
-  gv:blue "37";
-  gv:green "74";
-  gv:score "4.5123736999999995";
-  gv:coverage "0.74"
-], [
-  gv:hex "711b0f";
-  gv:red "113";
-  gv:blue "15";
-  gv:green "27";
-  gv:score "3.9293356";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "d1c6be";
-  gv:red "209";
-  gv:blue "190";
-  gv:green "198";
-  gv:score "3.445065";
-  gv:coverage "14.293334"
-], [
-  gv:hex "97663e";
-  gv:red "151";
-  gv:blue "62";
-  gv:green "102";
-  gv:score "3.3766421999999996";
-  gv:coverage "0.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.017967"
-];
-    w:bagOfWords "PRODUCT OF FRANCE\nBA\nRSA C\n1933\nALC. STRENGTH\nNET CONTENTS\nI PINT 9 FL. OZ\n3 BY VOLUME\nCLEMENT VAUTRIN\nONDE)\nNEGOCI\nIANTA BORDEAUX GlRO\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4095";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

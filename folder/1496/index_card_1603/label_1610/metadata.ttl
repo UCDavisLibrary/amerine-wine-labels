@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1610";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "FLORIDO HERMANOS\nREC ADA\nPEDRO Xl MEN EEZ\nDE\nBARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "aa9986";
-  gv:red "170";
-  gv:blue "134";
-  gv:green "153";
-  gv:score "19.288255000000003";
-  gv:coverage "3.9800000000000004"
-], [
-  gv:hex "0b112a";
-  gv:red "11";
-  gv:blue "42";
-  gv:green "17";
-  gv:score "7.4991994";
-  gv:coverage "2.3133334"
-], [
-  gv:hex "d1c0ae";
-  gv:red "209";
-  gv:blue "174";
-  gv:green "192";
-  gv:score "15.788828999999998";
-  gv:coverage "16.7"
-], [
-  gv:hex "887764";
-  gv:red "136";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "14.149427000000001";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "63513e";
-  gv:red "99";
-  gv:blue "62";
-  gv:green "81";
-  gv:score "11.191571";
-  gv:coverage "1.52"
-], [
-  gv:hex "0e1133";
-  gv:red "14";
-  gv:blue "51";
-  gv:green "17";
-  gv:score "7.2105072";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "ebdbc9";
-  gv:red "235";
-  gv:blue "201";
-  gv:green "219";
-  gv:score "4.731128";
-  gv:coverage "41.86"
-], [
-  gv:hex "483725";
-  gv:red "72";
-  gv:blue "37";
-  gv:green "55";
-  gv:score "3.9758895";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "0e153e";
-  gv:red "14";
-  gv:blue "62";
-  gv:green "21";
-  gv:score "3.1545438000000003";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "d1c6be";
-  gv:red "209";
-  gv:blue "190";
-  gv:green "198";
-  gv:score "2.2785395";
-  gv:coverage "3.8533334000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.446648"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FLORIDO HERMANOS\nREC ADA\nPEDRO Xl MEN EEZ\nDE\nBARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1610";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

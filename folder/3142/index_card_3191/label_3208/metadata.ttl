@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3191/label_3208";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "MUSIC; NY\nAPPELLATION CONTROLEE\nComte Georges de VOGUE\n1937\nGRAND VIN DE BOURGOGNE\nmis en bouteilles la propriete\n"@fra;
-    gv:color [
-  gv:hex "dcc3a6";
-  gv:red "220";
-  gv:blue "166";
-  gv:green "195";
-  gv:score "62.183356";
-  gv:coverage "30.12"
-], [
-  gv:hex "b39b80";
-  gv:red "179";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "15.779461999999999";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "f1dac0";
-  gv:red "241";
-  gv:blue "192";
-  gv:green "218";
-  gv:score "11.922934999999999";
-  gv:coverage "22.046667"
-], [
-  gv:hex "91795f";
-  gv:red "145";
-  gv:blue "95";
-  gv:green "121";
-  gv:score "6.1698392";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "664f36";
-  gv:red "102";
-  gv:blue "54";
-  gv:green "79";
-  gv:score "3.37559";
-  gv:coverage "0.26"
-], [
-  gv:hex "493219";
-  gv:red "73";
-  gv:blue "25";
-  gv:green "50";
-  gv:score "0.30037968";
-  gv:coverage "0.06"
-], [
-  gv:hex "43280b";
-  gv:red "67";
-  gv:blue "11";
-  gv:green "40";
-  gv:score "0.083288085";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "eae1d8";
-  gv:red "234";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "0.059076276";
-  gv:coverage "40.113333000000004"
-], [
-  gv:hex "cec4bb";
-  gv:red "206";
-  gv:blue "187";
-  gv:green "196";
-  gv:score "0.046840261";
-  gv:coverage "5.2133332999999995"
-], [
-  gv:hex "80786c";
-  gv:red "128";
-  gv:blue "108";
-  gv:green "120";
-  gv:score "0.029787445";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.906949"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.678065"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.423624000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.522658"
-];
-    w:bagOfWords "MUSIC; NY\nAPPELLATION CONTROLEE\nComte Georges de VOGUE\n1937\nGRAND VIN DE BOURGOGNE\nmis en bouteilles la propriete\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3208";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

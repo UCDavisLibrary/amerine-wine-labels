@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1278";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "deutscher Mitterorden\nSandkommende SDS iett\nriginal SAbfullung\numpoloskirchner\nSchloisgut.\n"@deu;
-    gv:color [
-  gv:hex "5b5039";
-  gv:red "91";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "29.500154000000002";
-  gv:coverage "5.24"
-], [
-  gv:hex "a09e97";
-  gv:red "160";
-  gv:blue "151";
-  gv:green "158";
-  gv:score "12.667315000000002";
-  gv:coverage "7.3"
-], [
-  gv:hex "d6c0a7";
-  gv:red "214";
-  gv:blue "167";
-  gv:green "192";
-  gv:score "6.1042026";
-  gv:coverage "34.566668"
-], [
-  gv:hex "443722";
-  gv:red "68";
-  gv:blue "34";
-  gv:green "55";
-  gv:score "14.204861";
-  gv:coverage "2.92"
-], [
-  gv:hex "857257";
-  gv:red "133";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "6.831500699999999";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "ac9a82";
-  gv:red "172";
-  gv:blue "130";
-  gv:green "154";
-  gv:score "3.9429177";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "575049";
-  gv:red "87";
-  gv:blue "73";
-  gv:green "80";
-  gv:score "3.1645287";
-  gv:coverage "1.34"
-], [
-  gv:hex "3f3830";
-  gv:red "63";
-  gv:blue "48";
-  gv:green "56";
-  gv:score "3.0546503";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "7d7b75";
-  gv:red "125";
-  gv:blue "117";
-  gv:green "123";
-  gv:score "2.9137812999999997";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "c7b9b0";
-  gv:red "199";
-  gv:blue "176";
-  gv:green "185";
-  gv:score "2.4944306999999997";
-  gv:coverage "3.88"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "64.871132"
-];
-    w:bagOfWords "deutscher Mitterorden\nSandkommende SDS iett\nriginal SAbfullung\numpoloskirchner\nSchloisgut.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1278";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

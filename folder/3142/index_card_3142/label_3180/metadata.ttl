@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3180";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "REN CHAMBERTIy\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDEPOSE.\n"@fra;
-    gv:color [
-  gv:hex "8b755f";
-  gv:red "139";
-  gv:blue "95";
-  gv:green "117";
-  gv:score "22.74728";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "974328";
-  gv:red "151";
-  gv:blue "40";
-  gv:green "67";
-  gv:score "1.2833938";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "af9983";
-  gv:red "175";
-  gv:blue "131";
-  gv:green "153";
-  gv:score "21.414195";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "d5bfa9";
-  gv:red "213";
-  gv:blue "169";
-  gv:green "191";
-  gv:score "14.691768999999999";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "6a5542";
-  gv:red "106";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "7.3048435";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "906e5e";
-  gv:red "144";
-  gv:blue "94";
-  gv:green "110";
-  gv:score "4.3493703";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "efdbc4";
-  gv:red "239";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "3.3076442999999998";
-  gv:coverage "2.9666666"
-], [
-  gv:hex "d3c6bb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "2.9280284";
-  gv:coverage "7.453333600000001"
-], [
-  gv:hex "71513f";
-  gv:red "113";
-  gv:blue "63";
-  gv:green "81";
-  gv:score "2.3495743";
-  gv:coverage "0.18"
-], [
-  gv:hex "b6907e";
-  gv:red "182";
-  gv:blue "126";
-  gv:green "144";
-  gv:score "2.0841766";
-  gv:coverage "0.24"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.517816"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.09107"
-];
-    w:bagOfWords "REN CHAMBERTIy\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE D'OR\nDEPOSE.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3180";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

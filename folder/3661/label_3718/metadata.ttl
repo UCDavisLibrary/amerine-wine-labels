@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3718";
-    dct:type "image";
-    w:bagOfWords "LIT, J. M. BAP RO30. JERE z.\nCASA 1e60.\nEN FUNDADA 29\no\nJEREZ PALIDO\n"@spa;
-    gv:color [
-  gv:hex "847462";
-  gv:red "132";
-  gv:blue "98";
-  gv:green "116";
-  gv:score "19.285315";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "d1bfab";
-  gv:red "209";
-  gv:blue "171";
-  gv:green "191";
-  gv:score "15.156153";
-  gv:coverage "18.14"
-], [
-  gv:hex "a42619";
-  gv:red "164";
-  gv:blue "25";
-  gv:green "38";
-  gv:score "13.617560000000001";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "98603d";
-  gv:red "152";
-  gv:blue "61";
-  gv:green "96";
-  gv:score "1.9253508999999998";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "ac9a87";
-  gv:red "172";
-  gv:blue "135";
-  gv:green "154";
-  gv:score "14.012769";
-  gv:coverage "3.5999999999999996"
-], [
-  gv:hex "8e3620";
-  gv:red "142";
-  gv:blue "32";
-  gv:green "54";
-  gv:score "7.4893743";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "6a5843";
-  gv:red "106";
-  gv:blue "67";
-  gv:green "88";
-  gv:score "6.816332";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "edddca";
-  gv:red "237";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "4.1772485";
-  gv:coverage "23.746666"
-], [
-  gv:hex "a6140b";
-  gv:red "166";
-  gv:blue "11";
-  gv:green "20";
-  gv:score "2.4420021";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "bc4b3a";
-  gv:red "188";
-  gv:blue "58";
-  gv:green "75";
-  gv:score "2.0940787999999997";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.563871"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.6288"
-];
-    w:bagOfWords "LIT, J. M. BAP RO30. JERE z.\nCASA 1e60.\nEN FUNDADA 29\no\nJEREZ PALIDO\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3718";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

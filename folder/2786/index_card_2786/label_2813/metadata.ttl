@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2813";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "CAVES DE L HOTEL CALI FORNIA\nPARIS\nRICHARD&C Paris\n"@fra;
-    gv:color [
-  gv:hex "e3caa8";
-  gv:red "227";
-  gv:blue "168";
-  gv:green "202";
-  gv:score "66.08789";
-  gv:coverage "20.506667"
-], [
-  gv:hex "edd6b6";
-  gv:red "237";
-  gv:blue "182";
-  gv:green "214";
-  gv:score "18.158537";
-  gv:coverage "8.66"
-], [
-  gv:hex "b59c7a";
-  gv:red "181";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "7.9876058";
-  gv:coverage "3.5266668"
-], [
-  gv:hex "e4c395";
-  gv:red "228";
-  gv:blue "149";
-  gv:green "195";
-  gv:score "3.2556865";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "907758";
-  gv:red "144";
-  gv:blue "88";
-  gv:green "119";
-  gv:score "2.9793672";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "6f583b";
-  gv:red "111";
-  gv:blue "59";
-  gv:green "88";
-  gv:score "0.8665286";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "bf9e6f";
-  gv:red "191";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "0.36615897000000003";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "4b3418";
-  gv:red "75";
-  gv:blue "24";
-  gv:green "52";
-  gv:score "0.10981805";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e4d9cc";
-  gv:red "228";
-  gv:blue "204";
-  gv:green "217";
-  gv:score "0.059156015000000006";
-  gv:coverage "62.526667"
-], [
-  gv:hex "f3dcad";
-  gv:red "243";
-  gv:blue "173";
-  gv:green "220";
-  gv:score "0.049125275";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.958173"
-];
-    w:bagOfWords "CAVES DE L HOTEL CALI FORNIA\nPARIS\nRICHARD&C Paris\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2813";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

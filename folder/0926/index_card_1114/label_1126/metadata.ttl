@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1114/label_1126";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "Marque déposée\nRO\neCos\nA.\nMedaille d'or, Zurich 1939\nPRO\nIMPRIMERIE OU JURA, AUBONNE.\n"@deu;
-    gv:color [
-  gv:hex "e9e2d9";
-  gv:red "233";
-  gv:blue "217";
-  gv:green "226";
-  gv:score "43.139637";
-  gv:coverage "50.739999999999995"
-], [
-  gv:hex "c39a19";
-  gv:red "195";
-  gv:blue "25";
-  gv:green "154";
-  gv:score "13.329747";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "97740f";
-  gv:red "151";
-  gv:blue "15";
-  gv:green "116";
-  gv:score "7.0654377";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "903412";
-  gv:red "144";
-  gv:blue "18";
-  gv:green "52";
-  gv:score "0.6350738899999999";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "485d38";
-  gv:red "72";
-  gv:blue "56";
-  gv:green "93";
-  gv:score "0.61056721";
-  gv:coverage "0.22"
-], [
-  gv:hex "081f15";
-  gv:red "8";
-  gv:blue "21";
-  gv:green "31";
-  gv:score "0.11272989";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "dbb42c";
-  gv:red "219";
-  gv:blue "44";
-  gv:green "180";
-  gv:score "4.766526799999999";
-  gv:coverage "0.8"
-], [
-  gv:hex "13112b";
-  gv:red "19";
-  gv:blue "43";
-  gv:green "17";
-  gv:score "0.046279732";
-  gv:coverage "0.02"
-], [
-  gv:hex "1c214c";
-  gv:red "28";
-  gv:blue "76";
-  gv:green "33";
-  gv:score "0.046017428";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e8ddca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "4.5735147";
-  gv:coverage "6.906666599999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.398761"
-];
-    w:bagOfWords "Marque déposée\nRO\neCos\nA.\nMedaille d'or, Zurich 1939\nPRO\nIMPRIMERIE OU JURA, AUBONNE.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1126";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

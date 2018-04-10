@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1349";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "osCATEL DE S\nCECA\nREGIST\nMARCA\nRO\nGarantido por analyses feitas por\nPrimeiros premios em todas as\nLISBOA\nchimicos de todo o credito\nexposi coes a que concorreram.\n"@por;
-    gv:color [
-  gv:hex "b4997b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "46.178650999999995";
-  gv:coverage "6.0466666"
-], [
-  gv:hex "d3bda2";
-  gv:red "211";
-  gv:blue "162";
-  gv:green "189";
-  gv:score "38.996252";
-  gv:coverage "36.173335"
-], [
-  gv:hex "967c5e";
-  gv:red "150";
-  gv:blue "94";
-  gv:green "124";
-  gv:score "6.305702";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "edd9c2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "2.8303767";
-  gv:coverage "20.226665999999998"
-], [
-  gv:hex "b49367";
-  gv:red "180";
-  gv:blue "103";
-  gv:green "147";
-  gv:score "1.8386943";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "b99474";
-  gv:red "185";
-  gv:blue "116";
-  gv:green "148";
-  gv:score "1.5585575";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "bd956e";
-  gv:red "189";
-  gv:blue "110";
-  gv:green "149";
-  gv:score "0.76911887";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "d5b587";
-  gv:red "213";
-  gv:blue "135";
-  gv:green "181";
-  gv:score "0.4083313";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "9a794f";
-  gv:red "154";
-  gv:blue "79";
-  gv:green "121";
-  gv:score "0.38045493";
-  gv:coverage "0.02"
-], [
-  gv:hex "9e754f";
-  gv:red "158";
-  gv:blue "79";
-  gv:green "117";
-  gv:score "0.33761402999999995";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.737669"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "61.346447000000005"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "53.04785400000001"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "50.236571"
-];
-    w:bagOfWords "osCATEL DE S\nCECA\nREGIST\nMARCA\nRO\nGarantido por analyses feitas por\nPrimeiros premios em todas as\nLISBOA\nchimicos de todo o credito\nexposi coes a que concorreram.\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1349";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

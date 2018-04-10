@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4421";
-    dct:type "image";
-    w:bagOfWords "Federi\nPate nina\nBORGONA\nEN SU 6.0 ANO\nRIOJA\nR. E. 329\nVINA VIAL\n"@spa;
-    gv:color [
-  gv:hex "c83a1c";
-  gv:red "200";
-  gv:blue "28";
-  gv:green "58";
-  gv:score "26.782724";
-  gv:coverage "2.36"
-], [
-  gv:hex "b45b37";
-  gv:red "180";
-  gv:blue "55";
-  gv:green "91";
-  gv:score "5.5507243";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "d3c4ac";
-  gv:red "211";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "3.0483259";
-  gv:coverage "9.78"
-], [
-  gv:hex "38322a";
-  gv:red "56";
-  gv:blue "42";
-  gv:green "50";
-  gv:score "0.96594319";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "d73117";
-  gv:red "215";
-  gv:blue "23";
-  gv:green "49";
-  gv:score "18.062654000000002";
-  gv:coverage "1.58"
-], [
-  gv:hex "ad290d";
-  gv:red "173";
-  gv:blue "13";
-  gv:green "41";
-  gv:score "10.009466";
-  gv:coverage "0.84"
-], [
-  gv:hex "a02916";
-  gv:red "160";
-  gv:blue "22";
-  gv:green "41";
-  gv:score "5.2904312000000004";
-  gv:coverage "0.38"
-], [
-  gv:hex "963e1e";
-  gv:red "150";
-  gv:blue "30";
-  gv:green "62";
-  gv:score "4.4970222";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "be422c";
-  gv:red "190";
-  gv:blue "44";
-  gv:green "66";
-  gv:score "4.1116516999999995";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "a56a41";
-  gv:red "165";
-  gv:blue "65";
-  gv:green "106";
-  gv:score "3.8806591";
-  gv:coverage "0.5933333199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.16613699999999"
-];
-    w:bagOfWords "Federi\nPate nina\nBORGONA\nEN SU 6.0 ANO\nRIOJA\nR. E. 329\nVINA VIAL\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4421";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

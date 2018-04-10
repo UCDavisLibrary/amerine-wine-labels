@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0086";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "CASOLI\nCASTELLO\nIN\nCHIANTI\nVINICOLA\nBARONE RICA SOLI\nFIRENZE\n"@ita;
-    gv:color [
-  gv:hex "d6b993";
-  gv:red "214";
-  gv:blue "147";
-  gv:green "185";
-  gv:score "34.69314";
-  gv:coverage "14.613333"
-], [
-  gv:hex "423019";
-  gv:red "66";
-  gv:blue "25";
-  gv:green "48";
-  gv:score "2.1787561";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "d2b486";
-  gv:red "210";
-  gv:blue "134";
-  gv:green "180";
-  gv:score "19.163733999999998";
-  gv:coverage "4.96"
-], [
-  gv:hex "bb9d77";
-  gv:red "187";
-  gv:blue "119";
-  gv:green "157";
-  gv:score "14.744723";
-  gv:coverage "3.2266665"
-], [
-  gv:hex "bfa173";
-  gv:red "191";
-  gv:blue "115";
-  gv:green "161";
-  gv:score "8.934835300000001";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "cd8f65";
-  gv:red "205";
-  gv:blue "101";
-  gv:green "143";
-  gv:score "4.6932794";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "e0af85";
-  gv:red "224";
-  gv:blue "133";
-  gv:green "175";
-  gv:score "2.2115637";
-  gv:coverage "0.54"
-], [
-  gv:hex "8c7454";
-  gv:red "140";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "2.0156747";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "96794f";
-  gv:red "150";
-  gv:blue "79";
-  gv:green "121";
-  gv:score "1.9228134000000001";
-  gv:coverage "0.54"
-], [
-  gv:hex "655135";
-  gv:red "101";
-  gv:blue "53";
-  gv:green "81";
-  gv:score "1.8003035";
-  gv:coverage "0.87333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "75.42613700000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.540119"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "52.679253"
-];
-    w:bagOfWords "CASOLI\nCASTELLO\nIN\nCHIANTI\nVINICOLA\nBARONE RICA SOLI\nFIRENZE\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0086";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

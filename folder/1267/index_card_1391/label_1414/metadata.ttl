@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1391/label_1414";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "MACUL\nGran Gino\nSANTIAGO DE CHILE\n"@spa;
-    gv:color [
-  gv:hex "d3c1a4";
-  gv:red "211";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "36.461242999999996";
-  gv:coverage "52.26"
-], [
-  gv:hex "af9b7a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "29.415502999999998";
-  gv:coverage "3.1533334"
-], [
-  gv:hex "8c7757";
-  gv:red "140";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "24.300873";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "ecd8bf";
-  gv:red "236";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "4.7550771";
-  gv:coverage "27.633333"
-], [
-  gv:hex "725f40";
-  gv:red "114";
-  gv:blue "64";
-  gv:green "95";
-  gv:score "1.3114934";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "867648";
-  gv:red "134";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "1.2703109000000001";
-  gv:coverage "0.04"
-], [
-  gv:hex "cfc4bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "1.0506689";
-  gv:coverage "5.7933334"
-], [
-  gv:hex "a49890";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "152";
-  gv:score "0.44225812999999997";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "e3dbcf";
-  gv:red "227";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "0.32009995";
-  gv:coverage "8.813333499999999"
-], [
-  gv:hex "847c77";
-  gv:red "132";
-  gv:blue "119";
-  gv:green "124";
-  gv:score "0.22851257";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.718576000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.7779"
-];
-    w:bagOfWords "MACUL\nGran Gino\nSANTIAGO DE CHILE\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1414";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-CL";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHL".
+    wdt:P297 "CL".
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3100/label_3102";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "GRAND VIN\nCHATEAU\nLE BON PASTEUR\n1929\n1 BR\nCRU POMEROL\nHER RENARD Fils & Louis TEISSEDRE\nB O R D E A U X.\nRODE\nN i O i B.\n"@fra;
-    gv:color [
-  gv:hex "bf9378";
-  gv:red "191";
-  gv:blue "120";
-  gv:green "147";
-  gv:score "27.283018999999996";
-  gv:coverage "4.4666667"
-], [
-  gv:hex "dbc2a5";
-  gv:red "219";
-  gv:blue "165";
-  gv:green "194";
-  gv:score "22.165789999999998";
-  gv:coverage "38.873333"
-], [
-  gv:hex "b39b7e";
-  gv:red "179";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "12.050242";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "deb499";
-  gv:red "222";
-  gv:blue "153";
-  gv:green "180";
-  gv:score "11.555767";
-  gv:coverage "3.1666666"
-], [
-  gv:hex "a27459";
-  gv:red "162";
-  gv:blue "89";
-  gv:green "116";
-  gv:score "8.420792200000001";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "8b775d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "5.6884136000000005";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "f0d9bd";
-  gv:red "240";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "5.0261691";
-  gv:coverage "31.72"
-], [
-  gv:hex "604f38";
-  gv:red "96";
-  gv:blue "56";
-  gv:green "79";
-  gv:score "3.4715366";
-  gv:coverage "0.36"
-], [
-  gv:hex "433119";
-  gv:red "67";
-  gv:blue "25";
-  gv:green "49";
-  gv:score "2.6596833";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "7e4d34";
-  gv:red "126";
-  gv:blue "52";
-  gv:green "77";
-  gv:score "0.7439862";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.510122"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.082876"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.04693"
-];
-    w:bagOfWords "GRAND VIN\nCHATEAU\nLE BON PASTEUR\n1929\n1 BR\nCRU POMEROL\nHER RENARD Fils & Louis TEISSEDRE\nB O R D E A U X.\nRODE\nN i O i B.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3102";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

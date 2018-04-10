@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3515";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "JOHAN NIS BERG\nE T\nVALLIATT\ngaduced and Bollled\nalliant de Pon \"Vineyards, cytollisler, Galifornia\ncontent\nEstablished C Men City\n"@eng;
-    gv:color [
-  gv:hex "847563";
-  gv:red "132";
-  gv:blue "99";
-  gv:green "117";
-  gv:score "17.658573";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "cec2b7";
-  gv:red "206";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "15.459128";
-  gv:coverage "13.320000000000002"
-], [
-  gv:hex "ebdfd3";
-  gv:red "235";
-  gv:blue "211";
-  gv:green "223";
-  gv:score "13.237737";
-  gv:coverage "70.833331"
-], [
-  gv:hex "a59785";
-  gv:red "165";
-  gv:blue "133";
-  gv:green "151";
-  gv:score "13.081664000000002";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "cec0af";
-  gv:red "206";
-  gv:blue "175";
-  gv:green "192";
-  gv:score "9.5125079";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "625442";
-  gv:red "98";
-  gv:blue "66";
-  gv:green "84";
-  gv:score "9.386241400000001";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "a79c91";
-  gv:red "167";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "7.4635379";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "f1e4d2";
-  gv:red "241";
-  gv:blue "210";
-  gv:green "228";
-  gv:score "7.0850447";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "84796e";
-  gv:red "132";
-  gv:blue "110";
-  gv:green "121";
-  gv:score "4.0982977";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "5d5249";
-  gv:red "93";
-  gv:blue "73";
-  gv:green "82";
-  gv:score "1.935214";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.61809099999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.971666"
-];
-    w:bagOfWords "JOHAN NIS BERG\nE T\nVALLIATT\ngaduced and Bollled\nalliant de Pon \"Vineyards, cytollisler, Galifornia\ncontent\nEstablished C Men City\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3515";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

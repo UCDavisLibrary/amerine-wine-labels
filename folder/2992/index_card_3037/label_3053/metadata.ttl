@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3053";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "HE VAL BLANC\nMmilion\nFOURCAUD LAU SSAC\nPROPRIETAIRE\n"@fra;
-    gv:color [
-  gv:hex "ac987d";
-  gv:red "172";
-  gv:blue "125";
-  gv:green "152";
-  gv:score "38.960502000000005";
-  gv:coverage "3.66"
-], [
-  gv:hex "d0bfab";
-  gv:red "208";
-  gv:blue "171";
-  gv:green "191";
-  gv:score "18.495234999999997";
-  gv:coverage "11.219999999999999"
-], [
-  gv:hex "8e7a5c";
-  gv:red "142";
-  gv:blue "92";
-  gv:green "122";
-  gv:score "18.156452";
-  gv:coverage "1.48"
-], [
-  gv:hex "cec1b5";
-  gv:red "206";
-  gv:blue "181";
-  gv:green "193";
-  gv:score "9.5679656";
-  gv:coverage "13.646667"
-], [
-  gv:hex "ecdac6";
-  gv:red "236";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "6.506757400000001";
-  gv:coverage "3.9"
-], [
-  gv:hex "ada196";
-  gv:red "173";
-  gv:blue "150";
-  gv:green "161";
-  gv:score "2.5774725";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "e8dbcf";
-  gv:red "232";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "2.4914451";
-  gv:coverage "65.066665"
-], [
-  gv:hex "b49278";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "146";
-  gv:score "1.7797311999999998";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "86654d";
-  gv:red "134";
-  gv:blue "77";
-  gv:green "101";
-  gv:score "0.38390481";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "8f744c";
-  gv:red "143";
-  gv:blue "76";
-  gv:green "116";
-  gv:score "0.38225101";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.036311"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "53.164511999999995"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.909105999999994"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.556831"
-];
-    w:bagOfWords "HE VAL BLANC\nMmilion\nFOURCAUD LAU SSAC\nPROPRIETAIRE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3053";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4589";
-    dct:type "image";
-    w:bagOfWords "VINO SELECTO Q\nCRIADO POR\nMATA\nOMPANIA\nUNION DEBODEGASANDALULASSA\nEGAS\nBODEGAS\nGRANDES\nPEGISTR\nMALAGA\nCA.\n"@spa;
-    gv:color [
-  gv:hex "0e0905";
-  gv:red "14";
-  gv:blue "5";
-  gv:green "9";
-  gv:score "32.25112";
-  gv:coverage "19.433333"
-], [
-  gv:hex "827967";
-  gv:red "130";
-  gv:blue "103";
-  gv:green "121";
-  gv:score "8.2640938";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "a19885";
-  gv:red "161";
-  gv:blue "133";
-  gv:green "152";
-  gv:score "7.9057984";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "7d776d";
-  gv:red "125";
-  gv:blue "109";
-  gv:green "119";
-  gv:score "7.75194";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "cfc6b1";
-  gv:red "207";
-  gv:blue "177";
-  gv:green "198";
-  gv:score "6.9602816999999995";
-  gv:coverage "4.3933332"
-], [
-  gv:hex "5a554c";
-  gv:red "90";
-  gv:blue "76";
-  gv:green "85";
-  gv:score "5.8936965";
-  gv:coverage "2.4"
-], [
-  gv:hex "5b5342";
-  gv:red "91";
-  gv:blue "66";
-  gv:green "83";
-  gv:score "5.5506304";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "a09a8f";
-  gv:red "160";
-  gv:blue "143";
-  gv:green "154";
-  gv:score "5.1971994";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "38342b";
-  gv:red "56";
-  gv:blue "43";
-  gv:green "52";
-  gv:score "4.8769947";
-  gv:coverage "1.94"
-], [
-  gv:hex "e6ddc8";
-  gv:red "230";
-  gv:blue "200";
-  gv:green "221";
-  gv:score "4.5978419";
-  gv:coverage "13.600000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.30833299999999"
-];
-    w:bagOfWords "VINO SELECTO Q\nCRIADO POR\nMATA\nOMPANIA\nUNION DEBODEGASANDALULASSA\nEGAS\nBODEGAS\nGRANDES\nPEGISTR\nMALAGA\nCA.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4589";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

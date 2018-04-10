@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4561";
-    dct:type "image";
-    w:bagOfWords "roduce of\nS\nOSGORD\nOLOROSO SIESTA\nop\nPUERTO STA MARIA\nSPAIN.\nSHOPPERS SINCE 8304\nCONTENTS\n25/32 UART\nAlcohol 19.5% by Volume.\nPRINTED IN ENOLANO.\n"@spa;
-    gv:color [
-  gv:hex "0e0705";
-  gv:red "14";
-  gv:blue "5";
-  gv:green "7";
-  gv:score "11.920726";
-  gv:coverage "7.779999999999999"
-], [
-  gv:hex "d6c4a5";
-  gv:red "214";
-  gv:blue "165";
-  gv:green "196";
-  gv:score "10.334617999999999";
-  gv:coverage "8.3666667"
-], [
-  gv:hex "754631";
-  gv:red "117";
-  gv:blue "49";
-  gv:green "70";
-  gv:score "5.1943522";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "6d190f";
-  gv:red "109";
-  gv:blue "15";
-  gv:green "25";
-  gv:score "2.5621247";
-  gv:coverage "0.06"
-], [
-  gv:hex "a89776";
-  gv:red "168";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "9.52483";
-  gv:coverage "2.6"
-], [
-  gv:hex "887858";
-  gv:red "136";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "9.4743513";
-  gv:coverage "2.02"
-], [
-  gv:hex "eedcbc";
-  gv:red "238";
-  gv:blue "188";
-  gv:green "220";
-  gv:score "5.0400164";
-  gv:coverage "22.073333"
-], [
-  gv:hex "857846";
-  gv:red "133";
-  gv:blue "70";
-  gv:green "120";
-  gv:score "4.2167522";
-  gv:coverage "0.44"
-], [
-  gv:hex "9e6d58";
-  gv:red "158";
-  gv:blue "88";
-  gv:green "109";
-  gv:score "3.932219";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "625437";
-  gv:red "98";
-  gv:blue "55";
-  gv:green "84";
-  gv:score "3.5574074999999996";
-  gv:coverage "0.66"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.943669"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "roduce of\nS\nOSGORD\nOLOROSO SIESTA\nop\nPUERTO STA MARIA\nSPAIN.\nSHOPPERS SINCE 8304\nCONTENTS\n25/32 UART\nAlcohol 19.5% by Volume.\nPRINTED IN ENOLANO.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4561";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

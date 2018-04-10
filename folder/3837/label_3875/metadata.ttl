@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3875";
-    dct:type "image";
-    w:bagOfWords "MOSEL\nSAAR\nRUWER\n1952\ner\nRafeler Taubenberg\nAuslere\nmatur rein\nOriginal Hellerab8ug\nLANDES-WEINBAULEHRANSTALT\nTRIER/MOSEL\n"@deu;
-    gv:color [
-  gv:hex "d24d1d";
-  gv:red "210";
-  gv:blue "29";
-  gv:green "77";
-  gv:score "12.302452";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "ede1d9";
-  gv:red "237";
-  gv:blue "217";
-  gv:green "225";
-  gv:score "9.7062178";
-  gv:coverage "68.373334"
-], [
-  gv:hex "ad9e84";
-  gv:red "173";
-  gv:blue "132";
-  gv:green "158";
-  gv:score "7.5702675";
-  gv:coverage "2.0066667"
-], [
-  gv:hex "341001";
-  gv:red "52";
-  gv:blue "1";
-  gv:green "16";
-  gv:score "0.64084386";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "b35b1d";
-  gv:red "179";
-  gv:blue "29";
-  gv:green "91";
-  gv:score "6.8449800000000005";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "c7b9a0";
-  gv:red "199";
-  gv:blue "160";
-  gv:green "185";
-  gv:score "6.1702218";
-  gv:coverage "4.42"
-], [
-  gv:hex "a79d94";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "157";
-  gv:score "5.0539784";
-  gv:coverage "1.82"
-], [
-  gv:hex "ba5f38";
-  gv:red "186";
-  gv:blue "56";
-  gv:green "95";
-  gv:score "4.2401425999999995";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "b79c66";
-  gv:red "183";
-  gv:blue "102";
-  gv:green "156";
-  gv:score "4.1900094999999995";
-  gv:coverage "0.22"
-], [
-  gv:hex "cdc3ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "3.5197046000000003";
-  gv:coverage "4.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.129617"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.273329"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MOSEL\nSAAR\nRUWER\n1952\ner\nRafeler Taubenberg\nAuslere\nmatur rein\nOriginal Hellerab8ug\nLANDES-WEINBAULEHRANSTALT\nTRIER/MOSEL\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3875";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

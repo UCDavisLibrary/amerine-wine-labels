@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_4009";
-    dct:type "image";
-    w:bagOfWords "RUM\nBRAND\nJAMAICA "@eng;
-    gv:color [
-  gv:hex "dac3a9";
-  gv:red "218";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "12.917404";
-  gv:coverage "5.66"
-], [
-  gv:hex "40331b";
-  gv:red "64";
-  gv:blue "27";
-  gv:green "51";
-  gv:score "6.096217";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "85753b";
-  gv:red "133";
-  gv:blue "59";
-  gv:green "117";
-  gv:score "5.8205295";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "40526a";
-  gv:red "64";
-  gv:blue "106";
-  gv:green "82";
-  gv:score "1.1675608";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "484777";
-  gv:red "72";
-  gv:blue "119";
-  gv:green "71";
-  gv:score "0.20018325";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e2c78e";
-  gv:red "226";
-  gv:blue "142";
-  gv:green "199";
-  gv:score "10.522067";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "61541d";
-  gv:red "97";
-  gv:blue "29";
-  gv:green "84";
-  gv:score "5.1205833";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "deb5aa";
-  gv:red "222";
-  gv:blue "170";
-  gv:green "181";
-  gv:score "4.5983888";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "87735d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "115";
-  gv:score "4.5246638";
-  gv:coverage "2.06"
-], [
-  gv:hex "af9984";
-  gv:red "175";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "4.4536684";
-  gv:coverage "2.1466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "83.390158"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.227257"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.145292999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.785973"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.620528"
-];
-    w:bagOfWords "RUM\nBRAND\nJAMAICA "@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4009";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

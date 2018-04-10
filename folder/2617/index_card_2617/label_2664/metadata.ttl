@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2664";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "NUVENET\nso\nEN 1853\nDEE BEAUJOLAIS\nF. Chauvenet\nFRANCE\nMrs EN BouTEILLE DANS MES CHAS A Nurms\n"@fra;
-    gv:color [
-  gv:hex "ab2220";
-  gv:red "171";
-  gv:blue "32";
-  gv:green "34";
-  gv:score "17.683605999999997";
-  gv:coverage "4.3333333000000005"
-], [
-  gv:hex "1e1712";
-  gv:red "30";
-  gv:blue "18";
-  gv:green "23";
-  gv:score "11.507828";
-  gv:coverage "4.4266667"
-], [
-  gv:hex "40311e";
-  gv:red "64";
-  gv:blue "30";
-  gv:green "49";
-  gv:score "10.741681999999999";
-  gv:coverage "2.64"
-], [
-  gv:hex "f1dac8";
-  gv:red "241";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "0.32023701";
-  gv:coverage "12.906666"
-], [
-  gv:hex "604f38";
-  gv:red "96";
-  gv:blue "56";
-  gv:green "79";
-  gv:score "9.7267978";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "271b0c";
-  gv:red "39";
-  gv:blue "12";
-  gv:green "27";
-  gv:score "6.036477199999999";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "342b26";
-  gv:red "52";
-  gv:blue "38";
-  gv:green "43";
-  gv:score "4.160101699999999";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "af1d11";
-  gv:red "175";
-  gv:blue "17";
-  gv:green "29";
-  gv:score "3.8657933";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "827053";
-  gv:red "130";
-  gv:blue "83";
-  gv:green "112";
-  gv:score "3.2788288";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "c33c36";
-  gv:red "195";
-  gv:blue "54";
-  gv:green "60";
-  gv:score "2.9193804";
-  gv:coverage "0.76"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.281588"
-];
-    w:bagOfWords "NUVENET\nso\nEN 1853\nDEE BEAUJOLAIS\nF. Chauvenet\nFRANCE\nMrs EN BouTEILLE DANS MES CHAS A Nurms\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2664";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0651";
-    dct:type "image";
-    w:bagOfWords "HAUT.PoMEROL\ner\nCru\nLEVANGILE\n19 2 4\nPAUL DUCESSE\nPROPRIETAIRE\n"@undefined;
-    gv:color [
-  gv:hex "3b322a";
-  gv:red "59";
-  gv:blue "42";
-  gv:green "50";
-  gv:score "23.847519000000002";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "cabfb6";
-  gv:red "202";
-  gv:blue "182";
-  gv:green "191";
-  gv:score "11.555567";
-  gv:coverage "18.426667"
-], [
-  gv:hex "584f46";
-  gv:red "88";
-  gv:blue "70";
-  gv:green "79";
-  gv:score "11.222854";
-  gv:coverage "1.02"
-], [
-  gv:hex "cfbfa6";
-  gv:red "207";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "9.4515532";
-  gv:coverage "10.653333"
-], [
-  gv:hex "3e3123";
-  gv:red "62";
-  gv:blue "35";
-  gv:green "49";
-  gv:score "6.387887200000001";
-  gv:coverage "0.5"
-], [
-  gv:hex "a69c93";
-  gv:red "166";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "6.0255114";
-  gv:coverage "2.9066667"
-], [
-  gv:hex "615341";
-  gv:red "97";
-  gv:blue "65";
-  gv:green "83";
-  gv:score "5.8974996";
-  gv:coverage "0.62"
-], [
-  gv:hex "7e746a";
-  gv:red "126";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "5.6506816";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "ae9d85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "4.9243998";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "84735f";
-  gv:red "132";
-  gv:blue "95";
-  gv:green "115";
-  gv:score "4.2977742999999995";
-  gv:coverage "0.76666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.337525"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.39834"
-];
-    w:bagOfWords "HAUT.PoMEROL\ner\nCru\nLEVANGILE\n19 2 4\nPAUL DUCESSE\nPROPRIETAIRE\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0651";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

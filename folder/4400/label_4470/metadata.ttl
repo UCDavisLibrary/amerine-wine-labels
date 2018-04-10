@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4470";
-    dct:type "image";
-    w:bagOfWords "MANTEQUERIAS\nEMBOTELLADO EN SU TERCER ANO\nMARQUES DE URQUJQ32\nTng 23 61 00\nRIO\nEMB 123\nEXP 723\nRCA REGISTRA\nDOMICILIO SOCIAL\nCE NICE RO\nESPA NA\nind. Graf UFA. Log\n"@spa;
-    gv:color [
-  gv:hex "dab884";
-  gv:red "218";
-  gv:blue "132";
-  gv:green "184";
-  gv:score "44.043611999999996";
-  gv:coverage "18.186666000000002"
-], [
-  gv:hex "6e5434";
-  gv:red "110";
-  gv:blue "52";
-  gv:green "84";
-  gv:score "2.7842859";
-  gv:coverage "0.48"
-], [
-  gv:hex "28384b";
-  gv:red "40";
-  gv:blue "75";
-  gv:green "56";
-  gv:score "1.5992176";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "be9e6d";
-  gv:red "190";
-  gv:blue "109";
-  gv:green "158";
-  gv:score "11.091560000000001";
-  gv:coverage "3.8333334"
-], [
-  gv:hex "d3b994";
-  gv:red "211";
-  gv:blue "148";
-  gv:green "185";
-  gv:score "7.576717400000001";
-  gv:coverage "7.6"
-], [
-  gv:hex "2e1400";
-  gv:red "46";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.06848697100000001";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e5b485";
-  gv:red "229";
-  gv:blue "133";
-  gv:green "180";
-  gv:score "6.800144199999999";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "c89365";
-  gv:red "200";
-  gv:blue "101";
-  gv:green "147";
-  gv:score "6.5041989";
-  gv:coverage "2.4733333"
-], [
-  gv:hex "b89b79";
-  gv:red "184";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "4.089167300000001";
-  gv:coverage "1.58"
-], [
-  gv:hex "a67042";
-  gv:red "166";
-  gv:blue "66";
-  gv:green "112";
-  gv:score "2.3855634";
-  gv:coverage "0.8"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.43282500000001"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "56.733948"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.350206"
-];
-    w:bagOfWords "MANTEQUERIAS\nEMBOTELLADO EN SU TERCER ANO\nMARQUES DE URQUJQ32\nTng 23 61 00\nRIO\nEMB 123\nEXP 723\nRCA REGISTRA\nDOMICILIO SOCIAL\nCE NICE RO\nESPA NA\nind. Graf UFA. Log\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4470";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

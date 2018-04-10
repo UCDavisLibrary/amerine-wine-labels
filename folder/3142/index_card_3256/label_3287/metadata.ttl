@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3287";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "O\nDOMAINE DE LA ROMANEE-CONTI\nLES GAUDICHOTS\nes GaudichotsGranDPPREMIER CRU\nGRAND PREMIER CRU\nLes Gaudichots Grand Premier Cru Appellation Centrélée\nContenNN5Ert1RR点f France. Alcob\nAN\nPropueta Area\nContents 3,4 Quart\nichi France. Alcohol 14 % by Volume\n"@fra;
-    gv:color [
-  gv:hex "d2c5b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "197";
-  gv:score "21.754028";
-  gv:coverage "11.173333000000001"
-], [
-  gv:hex "cec3b3";
-  gv:red "206";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "20.109104";
-  gv:coverage "8.1"
-], [
-  gv:hex "a99e8f";
-  gv:red "169";
-  gv:blue "143";
-  gv:green "158";
-  gv:score "15.119050000000001";
-  gv:coverage "2.3"
-], [
-  gv:hex "e8dcd0";
-  gv:red "232";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "12.17375";
-  gv:coverage "63.293332"
-], [
-  gv:hex "85796a";
-  gv:red "133";
-  gv:blue "106";
-  gv:green "121";
-  gv:score "7.2727524";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "a89d92";
-  gv:red "168";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "6.6668026000000005";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "e7dbca";
-  gv:red "231";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "5.9413843";
-  gv:coverage "8.8466667"
-], [
-  gv:hex "625547";
-  gv:red "98";
-  gv:blue "71";
-  gv:green "85";
-  gv:score "4.7752928";
-  gv:coverage "0.98"
-], [
-  gv:hex "83796e";
-  gv:red "131";
-  gv:blue "110";
-  gv:green "121";
-  gv:score "2.6615655";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "3f3124";
-  gv:red "63";
-  gv:blue "36";
-  gv:green "49";
-  gv:score "1.8490445000000002";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.78356"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "64.54576800000001"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "60.092853999999996"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "54.312782999999996"
-];
-    w:bagOfWords "O\nDOMAINE DE LA ROMANEE-CONTI\nLES GAUDICHOTS\nes GaudichotsGranDPPREMIER CRU\nGRAND PREMIER CRU\nLes Gaudichots Grand Premier Cru Appellation Centrélée\nContenNN5Ert1RR点f France. Alcob\nAN\nPropueta Area\nContents 3,4 Quart\nichi France. Alcohol 14 % by Volume\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3287";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

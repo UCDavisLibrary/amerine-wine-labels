@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2329";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU\n1920\nMARG AUX\nMis en Bouteilles\nChateau\n"@fra;
-    gv:color [
-  gv:hex "dac1a0";
-  gv:red "218";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "29.584750999999997";
-  gv:coverage "17.04"
-], [
-  gv:hex "b09777";
-  gv:red "176";
-  gv:blue "119";
-  gv:green "151";
-  gv:score "16.668372";
-  gv:coverage "4.82"
-], [
-  gv:hex "907656";
-  gv:red "144";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "11.8238";
-  gv:coverage "3.6266666"
-], [
-  gv:hex "dab887";
-  gv:red "218";
-  gv:blue "135";
-  gv:green "184";
-  gv:score "6.8360709";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "907245";
-  gv:red "144";
-  gv:blue "69";
-  gv:green "114";
-  gv:score "5.9624407";
-  gv:coverage "2.1"
-], [
-  gv:hex "6a5232";
-  gv:red "106";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "5.7175782";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "ba9a6a";
-  gv:red "186";
-  gv:blue "106";
-  gv:green "154";
-  gv:score "5.3071287";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "70552b";
-  gv:red "112";
-  gv:blue "43";
-  gv:green "85";
-  gv:score "3.3831018999999998";
-  gv:coverage "1.04"
-], [
-  gv:hex "996e3b";
-  gv:red "153";
-  gv:blue "59";
-  gv:green "110";
-  gv:score "3.0192554";
-  gv:coverage "1.48"
-], [
-  gv:hex "edd7b8";
-  gv:red "237";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "2.5919892";
-  gv:coverage "3.5266668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.90823400000001"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "57.752669"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.434479"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.316607000000005"
-];
-    w:bagOfWords "CHATEAU\n1920\nMARG AUX\nMis en Bouteilles\nChateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2329";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

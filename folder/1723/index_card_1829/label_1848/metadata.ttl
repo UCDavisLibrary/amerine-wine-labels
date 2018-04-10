@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1848";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "bein\nllerdiger QBiiragarten 20uslefe\nQBadstum gnglen\n"@deu;
-    gv:color [
-  gv:hex "dacab8";
-  gv:red "218";
-  gv:blue "184";
-  gv:green "202";
-  gv:score "27.448338";
-  gv:coverage "22.759999999999998"
-], [
-  gv:hex "e8ded5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "21.943712";
-  gv:coverage "16.953333"
-], [
-  gv:hex "937139";
-  gv:red "147";
-  gv:blue "57";
-  gv:green "113";
-  gv:score "4.759157399999999";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "e9daca";
-  gv:red "233";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "20.171387";
-  gv:coverage "20.693333"
-], [
-  gv:hex "d9cdc4";
-  gv:red "217";
-  gv:blue "196";
-  gv:green "205";
-  gv:score "8.550787";
-  gv:coverage "6.859999999999999"
-], [
-  gv:hex "956d35";
-  gv:red "149";
-  gv:blue "53";
-  gv:green "109";
-  gv:score "3.7664245999999997";
-  gv:coverage "6.3266665"
-], [
-  gv:hex "755823";
-  gv:red "117";
-  gv:blue "35";
-  gv:green "88";
-  gv:score "3.3148929000000003";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "765121";
-  gv:red "118";
-  gv:blue "33";
-  gv:green "81";
-  gv:score "2.9561984999999997";
-  gv:coverage "2.9266667"
-], [
-  gv:hex "b4925c";
-  gv:red "180";
-  gv:blue "92";
-  gv:green "146";
-  gv:score "1.8544715";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "9f742c";
-  gv:red "159";
-  gv:blue "44";
-  gv:green "116";
-  gv:score "0.99418219";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.215686000000005"
-];
-    w:bagOfWords "bein\nllerdiger QBiiragarten 20uslefe\nQBadstum gnglen\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1848";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

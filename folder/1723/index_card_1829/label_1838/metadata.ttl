@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1838";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "LIEF E\nValckenberg Bocksbeutel\nVintage 1951\n"@deu;
-    gv:color [
-  gv:hex "b09c79";
-  gv:red "176";
-  gv:blue "121";
-  gv:green "156";
-  gv:score "39.915946000000005";
-  gv:coverage "4.8133332"
-], [
-  gv:hex "cfbd9e";
-  gv:red "207";
-  gv:blue "158";
-  gv:green "189";
-  gv:score "25.807288";
-  gv:coverage "8.506666899999999"
-], [
-  gv:hex "b59c6d";
-  gv:red "181";
-  gv:blue "109";
-  gv:green "156";
-  gv:score "12.264661";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "d0b785";
-  gv:red "208";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "5.1924478";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "917e5f";
-  gv:red "145";
-  gv:blue "95";
-  gv:green "126";
-  gv:score "4.1650488999999995";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "e7dac2";
-  gv:red "231";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "3.0276042999999997";
-  gv:coverage "32.22"
-], [
-  gv:hex "d0c7bd";
-  gv:red "208";
-  gv:blue "189";
-  gv:green "199";
-  gv:score "2.5055755";
-  gv:coverage "3.94"
-], [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "1.7640511";
-  gv:coverage "46.9"
-], [
-  gv:hex "967e52";
-  gv:red "150";
-  gv:blue "82";
-  gv:green "126";
-  gv:score "1.4623978";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "9f958b";
-  gv:red "159";
-  gv:blue "139";
-  gv:green "149";
-  gv:score "1.4144048";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.66669399999999"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.329739"
-];
-    w:bagOfWords "LIEF E\nValckenberg Bocksbeutel\nVintage 1951\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1838";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

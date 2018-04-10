@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1320";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "VERDEHNTO\nFERNANDO GUEDES\nPENAFIEL\nPORTUGAL\n"@por;
-    gv:color [
-  gv:hex "ba070e";
-  gv:red "186";
-  gv:blue "14";
-  gv:green "7";
-  gv:score "44.242805000000004";
-  gv:coverage "14.146666"
-], [
-  gv:hex "c88a66";
-  gv:red "200";
-  gv:blue "102";
-  gv:green "138";
-  gv:score "0.46616984";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "a80c08";
-  gv:red "168";
-  gv:blue "8";
-  gv:green "12";
-  gv:score "26.753068000000003";
-  gv:coverage "7.8666665"
-], [
-  gv:hex "d8c3aa";
-  gv:red "216";
-  gv:blue "170";
-  gv:green "195";
-  gv:score "0.18661163";
-  gv:coverage "4.38"
-], [
-  gv:hex "a92218";
-  gv:red "169";
-  gv:blue "24";
-  gv:green "34";
-  gv:score "10.578249000000001";
-  gv:coverage "3.9933335"
-], [
-  gv:hex "ca4135";
-  gv:red "202";
-  gv:blue "53";
-  gv:green "65";
-  gv:score "6.6122293";
-  gv:coverage "2.0133332999999998"
-], [
-  gv:hex "d32e31";
-  gv:red "211";
-  gv:blue "49";
-  gv:green "46";
-  gv:score "3.4505114000000003";
-  gv:coverage "1.32"
-], [
-  gv:hex "ce1e21";
-  gv:red "206";
-  gv:blue "33";
-  gv:green "30";
-  gv:score "2.5099291";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "bf1520";
-  gv:red "191";
-  gv:blue "32";
-  gv:green "21";
-  gv:score "1.9876768999999999";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "850c00";
-  gv:red "133";
-  gv:blue "undefined";
-  gv:green "12";
-  gv:score "0.63035861";
-  gv:coverage "0.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "93.310249"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.311765"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.08341899999999"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.160745999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.267765"
-];
-    w:bagOfWords "VERDEHNTO\nFERNANDO GUEDES\nPENAFIEL\nPORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1320";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

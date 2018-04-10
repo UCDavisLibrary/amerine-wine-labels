@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0255/label_0258";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "BV\nBIE A UROSE\nMADE OF GAMAY GRAPES\nA NAPA VALLEY LIGHT WINE\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nRUTHERFORD NAPA COUNTY CALIFORNIA\nALCOHOL 13% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
-    gv:color [
-  gv:hex "e0b6a6";
-  gv:red "224";
-  gv:blue "166";
-  gv:green "182";
-  gv:score "20.9341";
-  gv:coverage "5.88"
-], [
-  gv:hex "bd9483";
-  gv:red "189";
-  gv:blue "131";
-  gv:green "148";
-  gv:score "20.724051";
-  gv:coverage "3.7066668"
-], [
-  gv:hex "d5baa7";
-  gv:red "213";
-  gv:blue "167";
-  gv:green "186";
-  gv:score "16.380945999999998";
-  gv:coverage "26.146665000000002"
-], [
-  gv:hex "9c7060";
-  gv:red "156";
-  gv:blue "96";
-  gv:green "112";
-  gv:score "13.60604";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "b79c89";
-  gv:red "183";
-  gv:blue "137";
-  gv:green "156";
-  gv:score "7.954584100000001";
-  gv:coverage "3.0533334"
-], [
-  gv:hex "ae635d";
-  gv:red "174";
-  gv:blue "93";
-  gv:green "99";
-  gv:score "6.3240044";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "7b5141";
-  gv:red "123";
-  gv:blue "65";
-  gv:green "81";
-  gv:score "4.766680999999999";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "d0807b";
-  gv:red "208";
-  gv:blue "123";
-  gv:green "128";
-  gv:score "3.6085293";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "924741";
-  gv:red "146";
-  gv:blue "65";
-  gv:green "71";
-  gv:score "3.0731581";
-  gv:coverage "0.1"
-], [
-  gv:hex "363226";
-  gv:red "54";
-  gv:blue "38";
-  gv:green "50";
-  gv:score "0.013057741000000001";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.967781"
-];
-    w:bagOfWords "BV\nBIE A UROSE\nMADE OF GAMAY GRAPES\nA NAPA VALLEY LIGHT WINE\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nRUTHERFORD NAPA COUNTY CALIFORNIA\nALCOHOL 13% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0258";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

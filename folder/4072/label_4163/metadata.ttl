@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4163";
-    dct:type "image";
-    w:bagOfWords "Contents 1 pint 8 fluid ounces\nAlcoholic Strength by volume 13o5 o/o\n1949\nProduced by\nAPPEL\nCONTROLEE\nMARQUE DE POSE E\nBottled in France\nProduce of France\nED JOUFFROY. DEANNE\n"@fra;
-    gv:color [
-  gv:hex "d3c1ad";
-  gv:red "211";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "59.072286";
-  gv:coverage "21.946667"
-], [
-  gv:hex "b19d86";
-  gv:red "177";
-  gv:blue "134";
-  gv:green "157";
-  gv:score "30.302386999999996";
-  gv:coverage "3.9866667000000002"
-], [
-  gv:hex "ead8c4";
-  gv:red "234";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "5.2859254";
-  gv:coverage "5.7666667"
-], [
-  gv:hex "937e67";
-  gv:red "147";
-  gv:blue "103";
-  gv:green "126";
-  gv:score "2.8230846";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "3a3529";
-  gv:red "58";
-  gv:blue "41";
-  gv:green "53";
-  gv:score "0.0075117656";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "be998a";
-  gv:red "190";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "0.7428222299999999";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "e2c0b0";
-  gv:red "226";
-  gv:blue "176";
-  gv:green "192";
-  gv:score "0.5889541";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "d2c2b6";
-  gv:red "210";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "0.48296396";
-  gv:coverage "15.340000000000002"
-], [
-  gv:hex "906b5a";
-  gv:red "144";
-  gv:blue "90";
-  gv:green "107";
-  gv:score "0.46696495000000005";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e7dacd";
-  gv:red "231";
-  gv:blue "205";
-  gv:green "218";
-  gv:score "0.20574676";
-  gv:coverage "52.186668000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.991791"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "51.112038000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.695276"
-];
-    w:bagOfWords "Contents 1 pint 8 fluid ounces\nAlcoholic Strength by volume 13o5 o/o\n1949\nProduced by\nAPPEL\nCONTROLEE\nMARQUE DE POSE E\nBottled in France\nProduce of France\nED JOUFFROY. DEANNE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4163";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

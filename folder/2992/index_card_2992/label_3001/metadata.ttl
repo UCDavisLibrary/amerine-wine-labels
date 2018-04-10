@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3001";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "3/2/ 4\nCHATEAU CARBON NIEUX\nGRAVES DE LE O GNAN\n1924\n1er Cru\nde Grav\nMISE EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "dbc39e";
-  gv:red "219";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "47.262266000000004";
-  gv:coverage "30.520000000000003"
-], [
-  gv:hex "aa9b77";
-  gv:red "170";
-  gv:blue "119";
-  gv:green "155";
-  gv:score "19.719903";
-  gv:coverage "5.140000000000001"
-], [
-  gv:hex "827855";
-  gv:red "130";
-  gv:blue "85";
-  gv:green "120";
-  gv:score "12.388596999999999";
-  gv:coverage "2.64"
-], [
-  gv:hex "ddbd8e";
-  gv:red "221";
-  gv:blue "142";
-  gv:green "189";
-  gv:score "7.390935";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "655b37";
-  gv:red "101";
-  gv:blue "55";
-  gv:green "91";
-  gv:score "4.811522";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "edd8b4";
-  gv:red "237";
-  gv:blue "180";
-  gv:green "216";
-  gv:score "2.7745100000000003";
-  gv:coverage "2.06"
-], [
-  gv:hex "ba9c6c";
-  gv:red "186";
-  gv:blue "108";
-  gv:green "156";
-  gv:score "2.7646657";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "93784b";
-  gv:red "147";
-  gv:blue "75";
-  gv:green "120";
-  gv:score "1.6603161000000002";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "dcae74";
-  gv:red "220";
-  gv:blue "116";
-  gv:green "174";
-  gv:score "0.31129762";
-  gv:coverage "0.08"
-], [
-  gv:hex "65552b";
-  gv:red "101";
-  gv:blue "43";
-  gv:green "85";
-  gv:score "0.15408113";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.126478000000006"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.87404299999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.22051999999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.019238"
-];
-    w:bagOfWords "3/2/ 4\nCHATEAU CARBON NIEUX\nGRAVES DE LE O GNAN\n1924\n1er Cru\nde Grav\nMISE EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3001";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

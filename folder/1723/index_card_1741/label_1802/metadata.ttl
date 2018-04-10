@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1802";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "19 3.3\nPIES PORTER\nGOLDTROPFCHEN\nA US LESE\n7556\nNATURGEWACHS\nMOSEL WINE\nPRODUCE OF GERMANY\n1 PINT 71a F1. ozs\nAlc. Cont. between 12 and 14% by vo\nunder 14% by vo\nFor private use, not for sale.\nJ. F. C. HAGENS.\nSAN FRANCISCO, CAL.\nGES. GESCHUTZT\n"@deu;
-    gv:color [
-  gv:hex "d4bea1";
-  gv:red "212";
-  gv:blue "161";
-  gv:green "190";
-  gv:score "38.849685";
-  gv:coverage "32.566667"
-], [
-  gv:hex "96a059";
-  gv:red "150";
-  gv:blue "89";
-  gv:green "160";
-  gv:score "5.0975617";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "af9b83";
-  gv:red "175";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "14.787982";
-  gv:coverage "3.6933333"
-], [
-  gv:hex "887762";
-  gv:red "136";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "8.718618";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "717f34";
-  gv:red "113";
-  gv:blue "52";
-  gv:green "127";
-  gv:score "3.4609004999999997";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "d3b889";
-  gv:red "211";
-  gv:blue "137";
-  gv:green "184";
-  gv:score "3.4527930999999996";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "665542";
-  gv:red "102";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "3.195224";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "734b3e";
-  gv:red "115";
-  gv:blue "62";
-  gv:green "75";
-  gv:score "2.8188191000000002";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "966e61";
-  gv:red "150";
-  gv:blue "97";
-  gv:green "110";
-  gv:score "2.6140951";
-  gv:coverage "0.42"
-], [
-  gv:hex "502719";
-  gv:red "80";
-  gv:blue "25";
-  gv:green "39";
-  gv:score "2.5082564";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.04520699999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.564420000000005"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.668653"
-];
-    w:bagOfWords "19 3.3\nPIES PORTER\nGOLDTROPFCHEN\nA US LESE\n7556\nNATURGEWACHS\nMOSEL WINE\nPRODUCE OF GERMANY\n1 PINT 71a F1. ozs\nAlc. Cont. between 12 and 14% by vo\nunder 14% by vo\nFor private use, not for sale.\nJ. F. C. HAGENS.\nSAN FRANCISCO, CAL.\nGES. GESCHUTZT\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1802";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

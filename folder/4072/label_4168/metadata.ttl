@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4168";
-    dct:type "image";
-    w:bagOfWords "BARSAC\nent\nBORDEAUX\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d8c6a5";
-  gv:red "216";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "51.602678999999995";
-  gv:coverage "23.493333"
-], [
-  gv:hex "b39a65";
-  gv:red "179";
-  gv:blue "101";
-  gv:green "154";
-  gv:score "19.726302";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "af9a74";
-  gv:red "175";
-  gv:blue "116";
-  gv:green "154";
-  gv:score "16.979729";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "e9d8b7";
-  gv:red "233";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "6.6280894";
-  gv:coverage "7.546667"
-], [
-  gv:hex "d0b685";
-  gv:red "208";
-  gv:blue "133";
-  gv:green "182";
-  gv:score "3.0885705999999997";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "967e48";
-  gv:red "150";
-  gv:blue "72";
-  gv:green "126";
-  gv:score "1.4637446";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "96805e";
-  gv:red "150";
-  gv:blue "94";
-  gv:green "128";
-  gv:score "0.44311928";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "4a4034";
-  gv:red "74";
-  gv:blue "52";
-  gv:green "64";
-  gv:score "0.0024447521";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "d1c5bb";
-  gv:red "209";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "0.030631013";
-  gv:coverage "14.766666"
-], [
-  gv:hex "e3dad1";
-  gv:red "227";
-  gv:blue "209";
-  gv:green "218";
-  gv:score "0.015367821";
-  gv:coverage "47.593334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.556521"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BARSAC\nent\nBORDEAUX\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4168";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

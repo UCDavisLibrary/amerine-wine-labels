@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0292";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "Fountain Grove\nSONOMA COUNTY\nZINFANDEL\nALCOHOL 1 2 35% BY VOLUME\nPRODUCE D AND BOTT LED AT THE WIN ERY BY\nFOUNTAIN GROVE VINEYARD, SANTA ROSA, SONOMA CO., CALIFORNIA\nrowers of Fine Stines Since 1873\n"@eng;
-    gv:color [
-  gv:hex "d3c1aa";
-  gv:red "211";
-  gv:blue "170";
-  gv:green "193";
-  gv:score "32.734108";
-  gv:coverage "37.593332000000004"
-], [
-  gv:hex "9c6b5d";
-  gv:red "156";
-  gv:blue "93";
-  gv:green "107";
-  gv:score "5.2636743";
-  gv:coverage "0.5"
-], [
-  gv:hex "1d1308";
-  gv:red "29";
-  gv:blue "8";
-  gv:green "19";
-  gv:score "1.4313303";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "ae9d85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "18.556908";
-  gv:coverage "3.1666666"
-], [
-  gv:hex "744a3a";
-  gv:red "116";
-  gv:blue "58";
-  gv:green "74";
-  gv:score "4.0918838";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "ccc0b5";
-  gv:red "204";
-  gv:blue "181";
-  gv:green "192";
-  gv:score "4.0607221";
-  gv:coverage "11.546667"
-], [
-  gv:hex "efb8ad";
-  gv:red "239";
-  gv:blue "173";
-  gv:green "184";
-  gv:score "3.9274387";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "542a1a";
-  gv:red "84";
-  gv:blue "26";
-  gv:green "42";
-  gv:score "3.4819461000000005";
-  gv:coverage "0.2"
-], [
-  gv:hex "c38d81";
-  gv:red "195";
-  gv:blue "129";
-  gv:green "141";
-  gv:score "3.2574296";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "8b7a69";
-  gv:red "139";
-  gv:blue "105";
-  gv:green "122";
-  gv:score "3.0013448";
-  gv:coverage "0.60666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.83844099999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.055648999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.950685"
-];
-    w:bagOfWords "Fountain Grove\nSONOMA COUNTY\nZINFANDEL\nALCOHOL 1 2 35% BY VOLUME\nPRODUCE D AND BOTT LED AT THE WIN ERY BY\nFOUNTAIN GROVE VINEYARD, SANTA ROSA, SONOMA CO., CALIFORNIA\nrowers of Fine Stines Since 1873\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0292";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

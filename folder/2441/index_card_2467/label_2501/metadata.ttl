@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2501";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "PULIGNY MONTRACHET\nLES PUCELLES\nESTATE\nBOTTLED\nMise du Domaine\nProduced and Bottled by\nJulien\nMONNOT, eur\nPULIGNY-MONTRACHET (Cote-d'Or)\nAppellation controlée\nStill white Burgundy wine\n"@fra;
-    gv:color [
-  gv:hex "e2c5a2";
-  gv:red "226";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "64.44245";
-  gv:coverage "22.893333"
-], [
-  gv:hex "e2bf92";
-  gv:red "226";
-  gv:blue "146";
-  gv:green "191";
-  gv:score "10.380768999999999";
-  gv:coverage "3.7600000000000002"
-], [
-  gv:hex "b69976";
-  gv:red "182";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "9.0114586";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "f1d8b8";
-  gv:red "241";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "4.614935099999999";
-  gv:coverage "5.4333333"
-], [
-  gv:hex "8e7452";
-  gv:red "142";
-  gv:blue "82";
-  gv:green "116";
-  gv:score "4.1389897";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "e7b899";
-  gv:red "231";
-  gv:blue "153";
-  gv:green "184";
-  gv:score "2.0810759";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "c69677";
-  gv:red "198";
-  gv:blue "119";
-  gv:green "150";
-  gv:score "1.5336368";
-  gv:coverage "0.32"
-], [
-  gv:hex "e3b78e";
-  gv:red "227";
-  gv:blue "142";
-  gv:green "183";
-  gv:score "0.8998544900000001";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "b7946c";
-  gv:red "183";
-  gv:blue "108";
-  gv:green "148";
-  gv:score "0.78999316";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "bf956e";
-  gv:red "191";
-  gv:blue "110";
-  gv:green "149";
-  gv:score "0.72971745";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.301595"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.097814"
-];
-    w:bagOfWords "PULIGNY MONTRACHET\nLES PUCELLES\nESTATE\nBOTTLED\nMise du Domaine\nProduced and Bottled by\nJulien\nMONNOT, eur\nPULIGNY-MONTRACHET (Cote-d'Or)\nAppellation controlée\nStill white Burgundy wine\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2501";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

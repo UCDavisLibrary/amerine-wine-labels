@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2136/label_2154";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "No. 509 P\nGRANDE CAPE LA\nPRODUCE OF THE ISLAND OF MADEIRA (PORTUGAL)\nAlcoholic\nNet\nNico\nStrength\nContents\nMAD\nby volume\ni pt. 9 fl. oz.\n19\nFINE MADEIRA WINE\nEXTRA\nSER CIAL-Vintage 1924\nEXTRA\nDRY\nBOTTLED & EXPORTED BY\nUNIAo VI Nico LA (FUN CHAL) LDA.\nOJER IGIN 13GO\nISLAND OF MADEIRA\nGRAND PRIX and GOLD MED ALS (a warded)\nPANAMA PACIFIC INTERNATIONAL EXPOSITION SAN FRANCISCO 191 5\nEXPOSITION UNIVERSELLE DE PARIS 1 8 89-EXPOSITION INTERNATIONALE D'ANVERS 193O\n"@undefined;
-    gv:color [
-  gv:hex "d5c0b0";
-  gv:red "213";
-  gv:blue "176";
-  gv:green "192";
-  gv:score "15.367444999999998";
-  gv:coverage "12.846667"
-], [
-  gv:hex "ae9889";
-  gv:red "174";
-  gv:blue "137";
-  gv:green "152";
-  gv:score "15.188926";
-  gv:coverage "4.0533334"
-], [
-  gv:hex "b5985b";
-  gv:red "181";
-  gv:blue "91";
-  gv:green "152";
-  gv:score "13.292423000000001";
-  gv:coverage "8.653333"
-], [
-  gv:hex "d5c2b7";
-  gv:red "213";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "9.3078382";
-  gv:coverage "15.593334"
-], [
-  gv:hex "bb9089";
-  gv:red "187";
-  gv:blue "137";
-  gv:green "144";
-  gv:score "9.086473999999999";
-  gv:coverage "1.24"
-], [
-  gv:hex "e2b8b1";
-  gv:red "226";
-  gv:blue "177";
-  gv:green "184";
-  gv:score "6.958428799999999";
-  gv:coverage "1.92"
-], [
-  gv:hex "d6ba81";
-  gv:red "214";
-  gv:blue "129";
-  gv:green "186";
-  gv:score "4.5575865";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "8d786a";
-  gv:red "141";
-  gv:blue "106";
-  gv:green "120";
-  gv:score "4.3314181";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "99766d";
-  gv:red "153";
-  gv:blue "109";
-  gv:green "118";
-  gv:score "4.207731";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "edd8c4";
-  gv:red "237";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "3.3056165999999996";
-  gv:coverage "9.7866669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.75004"
-];
-    w:bagOfWords "No. 509 P\nGRANDE CAPE LA\nPRODUCE OF THE ISLAND OF MADEIRA (PORTUGAL)\nAlcoholic\nNet\nNico\nStrength\nContents\nMAD\nby volume\ni pt. 9 fl. oz.\n19\nFINE MADEIRA WINE\nEXTRA\nSER CIAL-Vintage 1924\nEXTRA\nDRY\nBOTTLED & EXPORTED BY\nUNIAo VI Nico LA (FUN CHAL) LDA.\nOJER IGIN 13GO\nISLAND OF MADEIRA\nGRAND PRIX and GOLD MED ALS (a warded)\nPANAMA PACIFIC INTERNATIONAL EXPOSITION SAN FRANCISCO 191 5\nEXPOSITION UNIVERSELLE DE PARIS 1 8 89-EXPOSITION INTERNATIONALE D'ANVERS 193O\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2154";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

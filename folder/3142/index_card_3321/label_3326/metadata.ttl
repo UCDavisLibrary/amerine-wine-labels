@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3326";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DDInaiperDa GISTEAkI DE-B qiine\nLE CORTON\n广9 lien eewelled a and ladenew du Gh w tui\n"@fra;
-    gv:color [
-  gv:hex "957051";
-  gv:red "149";
-  gv:blue "81";
-  gv:green "112";
-  gv:score "21.946984999999998";
-  gv:coverage "1.6"
-], [
-  gv:hex "d9bda0";
-  gv:red "217";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "21.142691";
-  gv:coverage "40.82"
-], [
-  gv:hex "b89171";
-  gv:red "184";
-  gv:blue "113";
-  gv:green "145";
-  gv:score "20.000515999999998";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "b79a7d";
-  gv:red "183";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "9.3990862";
-  gv:coverage "2"
-], [
-  gv:hex "7b573a";
-  gv:red "123";
-  gv:blue "58";
-  gv:green "87";
-  gv:score "6.846506099999999";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "9b704b";
-  gv:red "155";
-  gv:blue "75";
-  gv:green "112";
-  gv:score "6.056504";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "bb9168";
-  gv:red "187";
-  gv:blue "104";
-  gv:green "145";
-  gv:score "3.221374";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "dbb392";
-  gv:red "219";
-  gv:blue "146";
-  gv:green "179";
-  gv:score "3.1511128";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "90775d";
-  gv:red "144";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "2.4121871";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "eddac1";
-  gv:red "237";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "1.9240441000000001";
-  gv:coverage "35.973334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.783304"
-];
-    w:bagOfWords "DDInaiperDa GISTEAkI DE-B qiine\nLE CORTON\n广9 lien eewelled a and ladenew du Gh w tui\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3326";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

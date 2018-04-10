@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0540";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "0\nRhein 44\nneihqdu\nStloss Iobannisberge\nSpatiefe.\n"@deu;
-    gv:color [
-  gv:hex "d7c5ac";
-  gv:red "215";
-  gv:blue "172";
-  gv:green "197";
-  gv:score "61.650223000000004";
-  gv:coverage "30.693334"
-], [
-  gv:hex "754925";
-  gv:red "117";
-  gv:blue "37";
-  gv:green "73";
-  gv:score "1.5579895";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "ad9a7b";
-  gv:red "173";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "11.855401";
-  gv:coverage "3.5000000000000004"
-], [
-  gv:hex "8e7b5d";
-  gv:red "142";
-  gv:blue "93";
-  gv:green "123";
-  gv:score "6.5779112";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "e7d8c4";
-  gv:red "231";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "5.730819";
-  gv:coverage "9.0733334"
-], [
-  gv:hex "e3dace";
-  gv:red "227";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "2.8640136";
-  gv:coverage "49.14"
-], [
-  gv:hex "837244";
-  gv:red "131";
-  gv:blue "68";
-  gv:green "114";
-  gv:score "1.6238181";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "9c6945";
-  gv:red "156";
-  gv:blue "69";
-  gv:green "105";
-  gv:score "1.55006";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "986e4e";
-  gv:red "152";
-  gv:blue "78";
-  gv:green "110";
-  gv:score "0.9387873999999999";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ad9b6d";
-  gv:red "173";
-  gv:blue "109";
-  gv:green "155";
-  gv:score "0.8781119199999999";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.412158"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.842638"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.941192"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.481384"
-];
-    w:bagOfWords "0\nRhein 44\nneihqdu\nStloss Iobannisberge\nSpatiefe.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0540";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0650";
-    dct:type "image";
-    w:bagOfWords "CHATEAU\nGUIRAUD PEYREBRUNE\nM DOC\nAppellation Medoc Contro/ee\n"@undefined;
-    gv:color [
-  gv:hex "d7c0a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "32.220876";
-  gv:coverage "30.586666"
-], [
-  gv:hex "9b1e1a";
-  gv:red "155";
-  gv:blue "26";
-  gv:green "30";
-  gv:score "4.6046097";
-  gv:coverage "0.1"
-], [
-  gv:hex "702113";
-  gv:red "112";
-  gv:blue "19";
-  gv:green "33";
-  gv:score "1.7283071";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "dbb989";
-  gv:red "219";
-  gv:blue "137";
-  gv:green "185";
-  gv:score "9.212461099999999";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "ecb59f";
-  gv:red "236";
-  gv:blue "159";
-  gv:green "181";
-  gv:score "7.20722";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "b09d86";
-  gv:red "176";
-  gv:blue "134";
-  gv:green "157";
-  gv:score "6.4108044";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "857462";
-  gv:red "133";
-  gv:blue "98";
-  gv:green "116";
-  gv:score "4.5295354";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "ecdac7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "218";
-  gv:score "4.2155709";
-  gv:coverage "5.9666667"
-], [
-  gv:hex "665544";
-  gv:red "102";
-  gv:blue "68";
-  gv:green "85";
-  gv:score "4.0146027";
-  gv:coverage "0.52"
-], [
-  gv:hex "c8907a";
-  gv:red "200";
-  gv:blue "122";
-  gv:green "144";
-  gv:score "3.9674025000000004";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.579386"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHATEAU\nGUIRAUD PEYREBRUNE\nM DOC\nAppellation Medoc Contro/ee\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0650";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

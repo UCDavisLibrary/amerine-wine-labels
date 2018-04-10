@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2648";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "MOULIN A VENT\nmis en bouteilles dans les caves\nde\nFAYE & I E\nNEGOCIANTS A MACON (S. ET L.)\n"@fra;
-    gv:color [
-  gv:hex "e0c9a7";
-  gv:red "224";
-  gv:blue "167";
-  gv:green "201";
-  gv:score "23.553579";
-  gv:coverage "15.086667"
-], [
-  gv:hex "da2012";
-  gv:red "218";
-  gv:blue "18";
-  gv:green "32";
-  gv:score "18.818209";
-  gv:coverage "3.3533334999999997"
-], [
-  gv:hex "af1c0d";
-  gv:red "175";
-  gv:blue "13";
-  gv:green "28";
-  gv:score "4.5845378";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "532914";
-  gv:red "83";
-  gv:blue "20";
-  gv:green "41";
-  gv:score "1.5445711000000002";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "ecbba0";
-  gv:red "236";
-  gv:blue "160";
-  gv:green "187";
-  gv:score "5.6332938";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "efdabb";
-  gv:red "239";
-  gv:blue "187";
-  gv:green "218";
-  gv:score "4.5080215";
-  gv:coverage "5.0466668"
-], [
-  gv:hex "c11309";
-  gv:red "193";
-  gv:blue "9";
-  gv:green "19";
-  gv:score "4.4604085";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "a8281b";
-  gv:red "168";
-  gv:blue "27";
-  gv:green "40";
-  gv:score "3.7760302";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "a99c79";
-  gv:red "169";
-  gv:blue "121";
-  gv:green "156";
-  gv:score "3.3457093";
-  gv:coverage "0.76"
-], [
-  gv:hex "bc927a";
-  gv:red "188";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "2.347346";
-  gv:coverage "0.62"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.73810999999999"
-];
-    w:bagOfWords "MOULIN A VENT\nmis en bouteilles dans les caves\nde\nFAYE & I E\nNEGOCIANTS A MACON (S. ET L.)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2648";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

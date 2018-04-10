@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3584";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "THE HALLMARK\nOF LOS AMIGOS\nFOUNDED\n8 8 8\nCALIFORNIA\nSAUVIGNON\nCALIFORNIA SAUVIGNON IS A WHITE TABLE WINE MADE\nFROM SAUVIGNON GRAPES; IT IS EMINENTLY SUITED\nUSE IN THE BETTER HOMES AND CLUBS.\nPRODUCED AND BOTTLED BY\nLOS AMIGOS VINEYARDS\nBONDED WINERY No. 5\nMISSION SAN JOSE, CALIFORNIA\nALCOHOL\n1 2 BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "dec19f";
-  gv:red "222";
-  gv:blue "159";
-  gv:green "193";
-  gv:score "62.288368000000006";
-  gv:coverage "28.139999999999997"
-], [
-  gv:hex "b19677";
-  gv:red "177";
-  gv:blue "119";
-  gv:green "150";
-  gv:score "15.628644999999999";
-  gv:coverage "4.4733334"
-], [
-  gv:hex "907657";
-  gv:red "144";
-  gv:blue "87";
-  gv:green "118";
-  gv:score "10.720842";
-  gv:coverage "2.68"
-], [
-  gv:hex "331a04";
-  gv:red "51";
-  gv:blue "4";
-  gv:green "26";
-  gv:score "0.03868771";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "dfbc90";
-  gv:red "223";
-  gv:blue "144";
-  gv:green "188";
-  gv:score "3.8476564";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "6d5334";
-  gv:red "109";
-  gv:blue "52";
-  gv:green "83";
-  gv:score "2.7777236";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "f2d8b8";
-  gv:red "242";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "2.4743471";
-  gv:coverage "10.56"
-], [
-  gv:hex "553715";
-  gv:red "85";
-  gv:blue "21";
-  gv:green "55";
-  gv:score "0.023005903";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e1b78b";
-  gv:red "225";
-  gv:blue "139";
-  gv:green "183";
-  gv:score "1.1615383";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "563c1c";
-  gv:red "86";
-  gv:blue "28";
-  gv:green "60";
-  gv:score "0.27672243";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.220079"
-];
-    w:bagOfWords "THE HALLMARK\nOF LOS AMIGOS\nFOUNDED\n8 8 8\nCALIFORNIA\nSAUVIGNON\nCALIFORNIA SAUVIGNON IS A WHITE TABLE WINE MADE\nFROM SAUVIGNON GRAPES; IT IS EMINENTLY SUITED\nUSE IN THE BETTER HOMES AND CLUBS.\nPRODUCED AND BOTTLED BY\nLOS AMIGOS VINEYARDS\nBONDED WINERY No. 5\nMISSION SAN JOSE, CALIFORNIA\nALCOHOL\n1 2 BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3584";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

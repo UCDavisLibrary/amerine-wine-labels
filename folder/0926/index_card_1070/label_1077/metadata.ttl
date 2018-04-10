@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1070/label_1077";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "IXe EXPO SIT N SUISSE D AGRICULTURE BERNE 1925\nMembre du Jury\nHORS CONCOURS\nMED. D'ARGENT a\nMED. D'ARGENT\nO AGR\n1927 GENEVE 1896\nBOUDRY MEDAILLE D'OR\nBERNE 1895\n1945 CLOS DE LA PIERRE 19\nAUVERNIER\nPROPRIETAIRES\nGES S LER, OLOMBIER\n"@deu;
-    gv:color [
-  gv:hex "d9c4a9";
-  gv:red "217";
-  gv:blue "169";
-  gv:green "196";
-  gv:score "30.122167";
-  gv:coverage "13.84"
-], [
-  gv:hex "ae9a7e";
-  gv:red "174";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "10.724247";
-  gv:coverage "3.3266667"
-], [
-  gv:hex "867359";
-  gv:red "134";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "8.9956932";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "eddabf";
-  gv:red "237";
-  gv:blue "191";
-  gv:green "218";
-  gv:score "8.0971979";
-  gv:coverage "10.353334"
-], [
-  gv:hex "90783f";
-  gv:red "144";
-  gv:blue "63";
-  gv:green "120";
-  gv:score "7.7782191";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "af955c";
-  gv:red "175";
-  gv:blue "92";
-  gv:green "149";
-  gv:score "7.7207588";
-  gv:coverage "2.1"
-], [
-  gv:hex "655339";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "7.0248857";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "44331a";
-  gv:red "68";
-  gv:blue "26";
-  gv:green "51";
-  gv:score "3.5047601999999998";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "d5bc89";
-  gv:red "213";
-  gv:blue "137";
-  gv:green "188";
-  gv:score "3.0310651";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "675224";
-  gv:red "103";
-  gv:blue "36";
-  gv:green "82";
-  gv:score "2.1473987";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.383243"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.93785400000001"
-];
-    w:bagOfWords "IXe EXPO SIT N SUISSE D AGRICULTURE BERNE 1925\nMembre du Jury\nHORS CONCOURS\nMED. D'ARGENT a\nMED. D'ARGENT\nO AGR\n1927 GENEVE 1896\nBOUDRY MEDAILLE D'OR\nBERNE 1895\n1945 CLOS DE LA PIERRE 19\nAUVERNIER\nPROPRIETAIRES\nGES S LER, OLOMBIER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1077";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

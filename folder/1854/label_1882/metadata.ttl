@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1882";
-    dct:type "image";
-    w:bagOfWords "JUAN PEDRO LUQUE\nGRANA po Elanlucan\n"@spa;
-    gv:color [
-  gv:hex "d4141a";
-  gv:red "212";
-  gv:blue "26";
-  gv:green "20";
-  gv:score "70.1573";
-  gv:coverage "26.58"
-], [
-  gv:hex "e6b2a0";
-  gv:red "230";
-  gv:blue "160";
-  gv:green "178";
-  gv:score "0.23913691";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "c50c11";
-  gv:red "197";
-  gv:blue "17";
-  gv:green "12";
-  gv:score "14.252442000000002";
-  gv:coverage "7.199999999999999"
-], [
-  gv:hex "db2e35";
-  gv:red "219";
-  gv:blue "53";
-  gv:green "46";
-  gv:score "5.8794297";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "d1453f";
-  gv:red "209";
-  gv:blue "63";
-  gv:green "69";
-  gv:score "3.1441033";
-  gv:coverage "2.02"
-], [
-  gv:hex "b1170f";
-  gv:red "177";
-  gv:blue "15";
-  gv:green "23";
-  gv:score "0.78805527";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "ef6960";
-  gv:red "239";
-  gv:blue "96";
-  gv:green "105";
-  gv:score "0.76678605";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "c01a24";
-  gv:red "192";
-  gv:blue "36";
-  gv:green "26";
-  gv:score "0.7169764000000001";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "b32522";
-  gv:red "179";
-  gv:blue "34";
-  gv:green "37";
-  gv:score "0.71438788";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "e07d66";
-  gv:red "224";
-  gv:blue "102";
-  gv:green "125";
-  gv:score "0.58171921";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "89.903182"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.607019"
-];
-    w:bagOfWords "JUAN PEDRO LUQUE\nGRANA po Elanlucan\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1882";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

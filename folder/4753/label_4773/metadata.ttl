@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4773";
-    dct:type "image";
-    w:bagOfWords "SELECT\nCharles heug\nNAPA VALLEY\nLINFANDEL\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12.5% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "c6c3b8";
-  gv:red "198";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "24.17897";
-  gv:coverage "12.213334000000001"
-], [
-  gv:hex "c7bba2";
-  gv:red "199";
-  gv:blue "162";
-  gv:green "187";
-  gv:score "16.663249999999998";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "ada085";
-  gv:red "173";
-  gv:blue "133";
-  gv:green "160";
-  gv:score "15.867147000000001";
-  gv:coverage "1.22"
-], [
-  gv:hex "a19d92";
-  gv:red "161";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "14.099740999999998";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "e3dcd2";
-  gv:red "227";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "10.637771";
-  gv:coverage "75.08"
-], [
-  gv:hex "81786e";
-  gv:red "129";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "9.3368113";
-  gv:coverage "1.16"
-], [
-  gv:hex "90a699";
-  gv:red "144";
-  gv:blue "153";
-  gv:green "166";
-  gv:score "3.3175964000000002";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "aabfb3";
-  gv:red "170";
-  gv:blue "179";
-  gv:green "191";
-  gv:score "2.6844652";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "e3d9c5";
-  gv:red "227";
-  gv:blue "197";
-  gv:green "217";
-  gv:score "1.6034182000000001";
-  gv:coverage "4.8333332"
-], [
-  gv:hex "655a50";
-  gv:red "101";
-  gv:blue "80";
-  gv:green "90";
-  gv:score "0.88297185";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.745445000000004"
-];
-    w:bagOfWords "SELECT\nCharles heug\nNAPA VALLEY\nLINFANDEL\nPRODUCED AND BOTTLED BY\nCHARLES KRUG WINERY\nEstablished in 1861\nST. HELENA CALIFORNIA\nALCOHOL 12.5% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4773";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

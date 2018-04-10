@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0353/label_0358";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "DEPOS\nRos\nSPA\nRSDIPLOM\nBEKROOND MET D\nONDERS\nRoME LONDON PARIJS- SPA\nMAATSCHAPPIJ HOLLAND\"\nDISTILLEERDERIJ- LIKEURSTOKERIJ-ADvoCAATFABRIEK BITTERFABRIEK\nLUIK (LIEGE)\nSCHIEDAM-MAASTRICHT\nBELGIQUE\n(HOLLAND)\n"@undefined;
-    gv:color [
-  gv:hex "d9bb86";
-  gv:red "217";
-  gv:blue "134";
-  gv:green "187";
-  gv:score "34.384859";
-  gv:coverage "16.78"
-], [
-  gv:hex "6e1601";
-  gv:red "110";
-  gv:blue "1";
-  gv:green "22";
-  gv:score "2.0591905";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "8f1c09";
-  gv:red "143";
-  gv:blue "9";
-  gv:green "28";
-  gv:score "1.1341986";
-  gv:coverage "0.1"
-], [
-  gv:hex "1c1435";
-  gv:red "28";
-  gv:blue "53";
-  gv:green "20";
-  gv:score "0.36697132";
-  gv:coverage "0.06"
-], [
-  gv:hex "171a18";
-  gv:red "23";
-  gv:blue "24";
-  gv:green "26";
-  gv:score "0.33206374";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "b59862";
-  gv:red "181";
-  gv:blue "98";
-  gv:green "152";
-  gv:score "16.18374";
-  gv:coverage "6.5466665"
-], [
-  gv:hex "91733e";
-  gv:red "145";
-  gv:blue "62";
-  gv:green "115";
-  gv:score "14.946066";
-  gv:coverage "5.6133334"
-], [
-  gv:hex "312c5d";
-  gv:red "49";
-  gv:blue "93";
-  gv:green "44";
-  gv:score "0.11073092";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "715420";
-  gv:red "113";
-  gv:blue "32";
-  gv:green "84";
-  gv:score "6.7534453999999995";
-  gv:coverage "2.64"
-], [
-  gv:hex "d5bf99";
-  gv:red "213";
-  gv:blue "153";
-  gv:green "191";
-  gv:score "3.2379378";
-  gv:coverage "2.5666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.59874"
-];
-    w:bagOfWords "DEPOS\nRos\nSPA\nRSDIPLOM\nBEKROOND MET D\nONDERS\nRoME LONDON PARIJS- SPA\nMAATSCHAPPIJ HOLLAND\"\nDISTILLEERDERIJ- LIKEURSTOKERIJ-ADvoCAATFABRIEK BITTERFABRIEK\nLUIK (LIEGE)\nSCHIEDAM-MAASTRICHT\nBELGIQUE\n(HOLLAND)\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0358";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

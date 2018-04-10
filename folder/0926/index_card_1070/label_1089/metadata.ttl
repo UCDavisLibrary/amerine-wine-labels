@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1070/label_1089";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "0\nPLANT IJURII IN\n"@deu;
-    gv:color [
-  gv:hex "8f723e";
-  gv:red "143";
-  gv:blue "62";
-  gv:green "114";
-  gv:score "50.093955";
-  gv:coverage "11.5"
-], [
-  gv:hex "69221c";
-  gv:red "105";
-  gv:blue "28";
-  gv:green "34";
-  gv:score "0.35589335";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "af905b";
-  gv:red "175";
-  gv:blue "91";
-  gv:green "144";
-  gv:score "14.267215";
-  gv:coverage "4.2066667"
-], [
-  gv:hex "897352";
-  gv:red "137";
-  gv:blue "82";
-  gv:green "115";
-  gv:score "7.9748519";
-  gv:coverage "2.3"
-], [
-  gv:hex "745b2e";
-  gv:red "116";
-  gv:blue "46";
-  gv:green "91";
-  gv:score "5.6270685";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "966e3c";
-  gv:red "150";
-  gv:blue "60";
-  gv:green "110";
-  gv:score "5.4388499999999995";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "af9876";
-  gv:red "175";
-  gv:blue "118";
-  gv:green "152";
-  gv:score "3.9692208";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "6d5738";
-  gv:red "109";
-  gv:blue "56";
-  gv:green "87";
-  gv:score "3.3452164";
-  gv:coverage "1.18"
-], [
-  gv:hex "d5bea0";
-  gv:red "213";
-  gv:blue "160";
-  gv:green "190";
-  gv:score "2.590115";
-  gv:coverage "21.26"
-], [
-  gv:hex "463318";
-  gv:red "70";
-  gv:blue "24";
-  gv:green "51";
-  gv:score "0.91930749";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.70649"
-];
-    w:bagOfWords "0\nPLANT IJURII IN\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1089";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

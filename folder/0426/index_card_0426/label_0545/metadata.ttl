@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0545";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E I N G A U\n1952er\nUchannisberger Vogelsang\nRIESLING\nfullung Winzerverein Johannisberg i. Rhg\nrigina\nNR 3056\nCAESAR\n"@deu;
-    gv:color [
-  gv:hex "d0c3b0";
-  gv:red "208";
-  gv:blue "176";
-  gv:green "195";
-  gv:score "23.530723000000002";
-  gv:coverage "11.766667"
-], [
-  gv:hex "1e6338";
-  gv:red "30";
-  gv:blue "56";
-  gv:green "99";
-  gv:score "9.69037";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "a79a88";
-  gv:red "167";
-  gv:blue "136";
-  gv:green "154";
-  gv:score "11.497409";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "837762";
-  gv:red "131";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "10.022736";
-  gv:coverage "1.96"
-], [
-  gv:hex "d4c8bb";
-  gv:red "212";
-  gv:blue "187";
-  gv:green "200";
-  gv:score "9.4844893";
-  gv:coverage "14.540000000000001"
-], [
-  gv:hex "605440";
-  gv:red "96";
-  gv:blue "64";
-  gv:green "84";
-  gv:score "8.0344282";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "395c3c";
-  gv:red "57";
-  gv:blue "60";
-  gv:green "92";
-  gv:score "3.7910793";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "413623";
-  gv:red "65";
-  gv:blue "35";
-  gv:green "54";
-  gv:score "3.2181978";
-  gv:coverage "0.58"
-], [
-  gv:hex "327e4f";
-  gv:red "50";
-  gv:blue "79";
-  gv:green "126";
-  gv:score "2.9178096";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "e6dcc9";
-  gv:red "230";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "2.7428014000000003";
-  gv:coverage "2.1933333999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.071063"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "61.586456999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.052462"
-];
-    w:bagOfWords "R H E I N G A U\n1952er\nUchannisberger Vogelsang\nRIESLING\nfullung Winzerverein Johannisberg i. Rhg\nrigina\nNR 3056\nCAESAR\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0545";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

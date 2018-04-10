@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1466";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nDELAWARE\nWINE\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY INC.\nURBANA, HAMMONDSPORT NY\nALCOHOL 12% BY VOLUME ESTABLISHED 1865\n"@eng;
-    gv:color [
-  gv:hex "42331c";
-  gv:red "66";
-  gv:blue "28";
-  gv:green "51";
-  gv:score "26.114735";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "d2c3b1";
-  gv:red "210";
-  gv:blue "177";
-  gv:green "195";
-  gv:score "13.818125";
-  gv:coverage "8.3466664"
-], [
-  gv:hex "1a130c";
-  gv:red "26";
-  gv:blue "12";
-  gv:green "19";
-  gv:score "3.9903197";
-  gv:coverage "3.3333334999999997"
-], [
-  gv:hex "5d4e35";
-  gv:red "93";
-  gv:blue "53";
-  gv:green "78";
-  gv:score "17.763391000000002";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "aa9b89";
-  gv:red "170";
-  gv:blue "137";
-  gv:green "155";
-  gv:score "9.2337847";
-  gv:coverage "1.92"
-], [
-  gv:hex "85765f";
-  gv:red "133";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "7.8382439999999995";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "ebdcca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "5.0465990000000005";
-  gv:coverage "4.8533332"
-], [
-  gv:hex "d4c4b9";
-  gv:red "212";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "4.7836844";
-  gv:coverage "6.7"
-], [
-  gv:hex "2a1c0a";
-  gv:red "42";
-  gv:blue "10";
-  gv:green "28";
-  gv:score "3.3322852";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "ebddd2";
-  gv:red "235";
-  gv:blue "210";
-  gv:green "221";
-  gv:score "2.6972614";
-  gv:coverage "67.75999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.716246"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "55.79815500000001"
-];
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nDELAWARE\nWINE\nPRODUCED AND BOTTLED BY\nURBANA WINE COMPANY INC.\nURBANA, HAMMONDSPORT NY\nALCOHOL 12% BY VOLUME ESTABLISHED 1865\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1466";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

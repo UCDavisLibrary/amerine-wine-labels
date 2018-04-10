@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0133";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "PER BELLINI\nNEL 1844\nC. FONDATA\nOMNIA\nTEC CO\nAMARONE\n"@ita;
-    gv:color [
-  gv:hex "100d0c";
-  gv:red "16";
-  gv:blue "12";
-  gv:green "13";
-  gv:score "58.409445999999996";
-  gv:coverage "28.386667"
-], [
-  gv:hex "ece4da";
-  gv:red "236";
-  gv:blue "218";
-  gv:green "228";
-  gv:score "6.4636976";
-  gv:coverage "56.39999999999999"
-], [
-  gv:hex "7c756c";
-  gv:red "124";
-  gv:blue "108";
-  gv:green "117";
-  gv:score "5.1771097";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "cac2b8";
-  gv:red "202";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "5.3890742";
-  gv:coverage "4.6933334"
-], [
-  gv:hex "a49c93";
-  gv:red "164";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "5.128250599999999";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "59534b";
-  gv:red "89";
-  gv:blue "75";
-  gv:green "83";
-  gv:score "4.79596";
-  gv:coverage "1.9133333"
-], [
-  gv:hex "39332c";
-  gv:red "57";
-  gv:blue "44";
-  gv:green "51";
-  gv:score "4.7383741";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "3c3222";
-  gv:red "60";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "2.548678";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "5b5141";
-  gv:red "91";
-  gv:blue "65";
-  gv:green "81";
-  gv:score "1.9716449";
-  gv:coverage "0.4"
-], [
-  gv:hex "251e11";
-  gv:red "37";
-  gv:blue "17";
-  gv:green "30";
-  gv:score "1.8805102";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.347645"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PER BELLINI\nNEL 1844\nC. FONDATA\nOMNIA\nTEC CO\nAMARONE\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0133";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

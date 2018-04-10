@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4136";
-    dct:type "image";
-    w:bagOfWords "50\nRosc d'Anjou\nAPPELLATION ANJOU CONTROLEE\nSTE LE\nDES ENTREPOTS MODERNES DE PANTIN\n3I, QUA\nDE L'OURCQ, PANTIN (SEINE)\n"@fra;
-    gv:color [
-  gv:hex "d3bfa8";
-  gv:red "211";
-  gv:blue "168";
-  gv:green "191";
-  gv:score "29.398384999999998";
-  gv:coverage "21.253334"
-], [
-  gv:hex "2a1615";
-  gv:red "42";
-  gv:blue "21";
-  gv:green "22";
-  gv:score "0.65384";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "b29c84";
-  gv:red "178";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "17.611486000000003";
-  gv:coverage "6.2933333"
-], [
-  gv:hex "cbb6ae";
-  gv:red "203";
-  gv:blue "174";
-  gv:green "182";
-  gv:score "10.581254";
-  gv:coverage "18.326667"
-], [
-  gv:hex "b7a199";
-  gv:red "183";
-  gv:blue "153";
-  gv:green "161";
-  gv:score "7.9418711";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "8b7455";
-  gv:red "139";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "7.2414510000000005";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "8a703e";
-  gv:red "138";
-  gv:blue "62";
-  gv:green "112";
-  gv:score "6.4168937999999995";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "6c5537";
-  gv:red "108";
-  gv:blue "55";
-  gv:green "85";
-  gv:score "3.5798240000000003";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "6f5527";
-  gv:red "111";
-  gv:blue "39";
-  gv:green "85";
-  gv:score "2.8917797";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "ebd9c2";
-  gv:red "235";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "1.8046535999999997";
-  gv:coverage "3.4333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.579922"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.71354"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "53.439462000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.354832"
-];
-    w:bagOfWords "50\nRosc d'Anjou\nAPPELLATION ANJOU CONTROLEE\nSTE LE\nDES ENTREPOTS MODERNES DE PANTIN\n3I, QUA\nDE L'OURCQ, PANTIN (SEINE)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4136";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

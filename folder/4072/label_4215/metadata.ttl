@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4215";
-    dct:type "image";
-    w:bagOfWords "AR QUE DEPOSE\nCHERRY BRANDY\nETABLISSEMts ADRIEN SARRAZIN\nANCIENNE SOCIETE JAVILLIER B SARRAZIN FONDEE EN 1859, DI JON\n2.2208\n"@fra;
-    gv:color [
-  gv:hex "d2c0aa";
-  gv:red "210";
-  gv:blue "170";
-  gv:green "192";
-  gv:score "19.511751999999998";
-  gv:coverage "9.526667"
-], [
-  gv:hex "b35d5c";
-  gv:red "179";
-  gv:blue "92";
-  gv:green "93";
-  gv:score "4.7206428";
-  gv:coverage "0.18"
-], [
-  gv:hex "b09d86";
-  gv:red "176";
-  gv:blue "134";
-  gv:green "157";
-  gv:score "14.286734000000001";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "b29058";
-  gv:red "178";
-  gv:blue "88";
-  gv:green "144";
-  gv:score "9.0381347";
-  gv:coverage "3.7066668"
-], [
-  gv:hex "e9b6ab";
-  gv:red "233";
-  gv:blue "171";
-  gv:green "182";
-  gv:score "6.3027024";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "b98b51";
-  gv:red "185";
-  gv:blue "81";
-  gv:green "139";
-  gv:score "5.0252751";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "c69187";
-  gv:red "198";
-  gv:blue "135";
-  gv:green "145";
-  gv:score "4.8394009";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "e9dac6";
-  gv:red "233";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "4.4191305";
-  gv:coverage "6.746666900000001"
-], [
-  gv:hex "d4c5ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "4.3584388";
-  gv:coverage "8.959999999999999"
-], [
-  gv:hex "9b685f";
-  gv:red "155";
-  gv:blue "95";
-  gv:green "104";
-  gv:score "4.2645257";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.273776"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.930246999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.21851399999999"
-];
-    w:bagOfWords "AR QUE DEPOSE\nCHERRY BRANDY\nETABLISSEMts ADRIEN SARRAZIN\nANCIENNE SOCIETE JAVILLIER B SARRAZIN FONDEE EN 1859, DI JON\n2.2208\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4215";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1878";
-    dct:type "image";
-    w:bagOfWords "GONZALEZ\nPRODUCE OF SPAIN\nCONTENTS\nALCOHOL\n18% BY VOLUME\n4/5 QUART\nAPPOINTMENT\nTIO PEPE\nEXTREMELY DRY AND DELICATE\nH. M. KING GEORGE VI\nSHERRY\nIMPORTED AND BOTTLED BY\nSCHENLEY IMPORT CORPORATION\nNEW YORK\n"@spa;
-    gv:color [
-  gv:hex "d7cab2";
-  gv:red "215";
-  gv:blue "178";
-  gv:green "202";
-  gv:score "39.81806";
-  gv:coverage "20.826666"
-], [
-  gv:hex "0f0803";
-  gv:red "15";
-  gv:blue "3";
-  gv:green "8";
-  gv:score "3.3629626000000004";
-  gv:coverage "8.3533332"
-], [
-  gv:hex "833e2e";
-  gv:red "131";
-  gv:blue "46";
-  gv:green "62";
-  gv:score "1.2123079";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "aa9d85";
-  gv:red "170";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "13.743329000000001";
-  gv:coverage "8.5533336"
-], [
-  gv:hex "e7dac2";
-  gv:red "231";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "11.880416";
-  gv:coverage "9.4266668"
-], [
-  gv:hex "837763";
-  gv:red "131";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "8.0649383";
-  gv:coverage "3.82"
-], [
-  gv:hex "ba9b60";
-  gv:red "186";
-  gv:blue "96";
-  gv:green "155";
-  gv:score "3.7104449999999995";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "edb9a7";
-  gv:red "237";
-  gv:blue "167";
-  gv:green "185";
-  gv:score "3.6585859999999997";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "655946";
-  gv:red "101";
-  gv:blue "70";
-  gv:green "89";
-  gv:score "3.0402772000000002";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "ca917e";
-  gv:red "202";
-  gv:blue "126";
-  gv:green "145";
-  gv:score "1.6958399999999998";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.079364"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GONZALEZ\nPRODUCE OF SPAIN\nCONTENTS\nALCOHOL\n18% BY VOLUME\n4/5 QUART\nAPPOINTMENT\nTIO PEPE\nEXTREMELY DRY AND DELICATE\nH. M. KING GEORGE VI\nSHERRY\nIMPORTED AND BOTTLED BY\nSCHENLEY IMPORT CORPORATION\nNEW YORK\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1878";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

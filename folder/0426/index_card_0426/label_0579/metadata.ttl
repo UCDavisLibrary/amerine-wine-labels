@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0579";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "LLE\nJ.J.S\nRHEING A u\n1945 et\nRiioesheimer Berg Orleans Riesling\n"@deu;
-    gv:color [
-  gv:hex "c6c0b8";
-  gv:red "198";
-  gv:blue "184";
-  gv:green "192";
-  gv:score "28.675821000000003";
-  gv:coverage "19.2"
-], [
-  gv:hex "a19b94";
-  gv:red "161";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "26.219981999999998";
-  gv:coverage "6.2133335"
-], [
-  gv:hex "7f7770";
-  gv:red "127";
-  gv:blue "112";
-  gv:green "119";
-  gv:score "19.06614";
-  gv:coverage "4.1066665"
-], [
-  gv:hex "5e554e";
-  gv:red "94";
-  gv:blue "78";
-  gv:green "85";
-  gv:score "9.9105991";
-  gv:coverage "1.8733334000000001"
-], [
-  gv:hex "87a195";
-  gv:red "135";
-  gv:blue "149";
-  gv:green "161";
-  gv:score "3.6242167999999997";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "e2dcd4";
-  gv:red "226";
-  gv:blue "212";
-  gv:green "220";
-  gv:score "3.2853667000000004";
-  gv:coverage "19.5"
-], [
-  gv:hex "3e3730";
-  gv:red "62";
-  gv:blue "48";
-  gv:green "55";
-  gv:score "3.032623";
-  gv:coverage "0.58"
-], [
-  gv:hex "d0c6b5";
-  gv:red "208";
-  gv:blue "181";
-  gv:green "198";
-  gv:score "1.7980011";
-  gv:coverage "21.273333"
-], [
-  gv:hex "847a6b";
-  gv:red "132";
-  gv:blue "107";
-  gv:green "122";
-  gv:score "1.5358711";
-  gv:coverage "0.44"
-], [
-  gv:hex "a4bdb6";
-  gv:red "164";
-  gv:blue "182";
-  gv:green "189";
-  gv:score "0.8066375699999999";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.171549999999996"
-];
-    w:bagOfWords "LLE\nJ.J.S\nRHEING A u\n1945 et\nRiioesheimer Berg Orleans Riesling\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0579";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

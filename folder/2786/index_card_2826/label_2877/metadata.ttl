@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2877";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "Y-VEDRINES\nAU DOISFIED\n1940\nMIS EN BOUTEILLES\nAU CHATEAU\nTAC-SAUTERNES\nJ. I EYSSONNEAU\n/-BARSAC.SAU\nAPPELLATION CONTROLEE\nSR\nH\n"@fra;
-    gv:color [
-  gv:hex "d4bea1";
-  gv:red "212";
-  gv:blue "161";
-  gv:green "190";
-  gv:score "38.207531";
-  gv:coverage "19.553334"
-], [
-  gv:hex "b39a79";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "35.09807";
-  gv:coverage "5.56"
-], [
-  gv:hex "7f5d37";
-  gv:red "127";
-  gv:blue "55";
-  gv:green "93";
-  gv:score "0.32397346";
-  gv:coverage "0.02"
-], [
-  gv:hex "8f7655";
-  gv:red "143";
-  gv:blue "85";
-  gv:green "118";
-  gv:score "16.651973";
-  gv:coverage "3"
-], [
-  gv:hex "90724a";
-  gv:red "144";
-  gv:blue "74";
-  gv:green "114";
-  gv:score "4.5161352";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "ecd6bb";
-  gv:red "236";
-  gv:blue "187";
-  gv:green "214";
-  gv:score "2.1244492";
-  gv:coverage "5.3866666"
-], [
-  gv:hex "b09165";
-  gv:red "176";
-  gv:blue "101";
-  gv:green "145";
-  gv:score "1.760757";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "735b3a";
-  gv:red "115";
-  gv:blue "58";
-  gv:green "91";
-  gv:score "0.79041757";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "8f6c46";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "108";
-  gv:score "0.21266050000000003";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "7d5d37";
-  gv:red "125";
-  gv:blue "55";
-  gv:green "93";
-  gv:score "0.091279706";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.817636"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.947223"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "51.67022300000001"
-];
-    w:bagOfWords "Y-VEDRINES\nAU DOISFIED\n1940\nMIS EN BOUTEILLES\nAU CHATEAU\nTAC-SAUTERNES\nJ. I EYSSONNEAU\n/-BARSAC.SAU\nAPPELLATION CONTROLEE\nSR\nH\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2877";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

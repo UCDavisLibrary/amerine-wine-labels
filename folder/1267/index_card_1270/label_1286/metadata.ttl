@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1286";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "Steirijcher\nSchilcher\noder mit jedem beliebigen Eindruck\nEindruckkosten gesondert Etikett M. C J. 644 L\nliefert\nMARIO CARINI, Lustenau\nVORARLBERG OSTERREICH\n"@deu;
-    gv:color [
-  gv:hex "c88e3b";
-  gv:red "200";
-  gv:blue "59";
-  gv:green "142";
-  gv:score "27.083328";
-  gv:coverage "12.213334000000001"
-], [
-  gv:hex "a81a07";
-  gv:red "168";
-  gv:blue "7";
-  gv:green "26";
-  gv:score "3.5635754";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "1e6674";
-  gv:red "30";
-  gv:blue "116";
-  gv:green "102";
-  gv:score "0.16323780999999998";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "21877e";
-  gv:red "33";
-  gv:blue "126";
-  gv:green "135";
-  gv:score "0.10948804000000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "cc9764";
-  gv:red "204";
-  gv:blue "100";
-  gv:green "151";
-  gv:score "10.734624";
-  gv:coverage "4.26"
-], [
-  gv:hex "dfac7d";
-  gv:red "223";
-  gv:blue "125";
-  gv:green "172";
-  gv:score "6.5006077";
-  gv:coverage "2.04"
-], [
-  gv:hex "ab7527";
-  gv:red "171";
-  gv:blue "39";
-  gv:green "117";
-  gv:score "5.1782571";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "c79b7b";
-  gv:red "199";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "4.3092929";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "dfbb7f";
-  gv:red "223";
-  gv:blue "127";
-  gv:green "187";
-  gv:score "3.1147378999999997";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "a56f3c";
-  gv:red "165";
-  gv:blue "60";
-  gv:green "111";
-  gv:score "3.0163784";
-  gv:coverage "1.4733333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.911046999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.521699999999996"
-];
-    w:bagOfWords "Steirijcher\nSchilcher\noder mit jedem beliebigen Eindruck\nEindruckkosten gesondert Etikett M. C J. 644 L\nliefert\nMARIO CARINI, Lustenau\nVORARLBERG OSTERREICH\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1286";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

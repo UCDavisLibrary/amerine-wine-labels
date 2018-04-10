@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4236";
-    dct:type "image";
-    w:bagOfWords "NET CONTENTS 415th QUART\n20 PER CENT BY VOLUME\nALCOHOLIC CONTENT\n40 PROOF\n40 PROOF\nSINCE\n1861\nADWO NAAT\nEGG CREAM\nPRODUCED AND BOTTLED IN GERMANY\nPRODUCED BY\na HEILBRONN GERMANY\nE\n"@fra;
-    gv:color [
-  gv:hex "e6cc70";
-  gv:red "230";
-  gv:blue "112";
-  gv:green "204";
-  gv:score "21.267438";
-  gv:coverage "4.7266666"
-], [
-  gv:hex "d34b18";
-  gv:red "211";
-  gv:blue "24";
-  gv:green "75";
-  gv:score "15.920934";
-  gv:coverage "5.3866666"
-], [
-  gv:hex "e83305";
-  gv:red "232";
-  gv:blue "5";
-  gv:green "51";
-  gv:score "4.121992";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "f3da7d";
-  gv:red "243";
-  gv:blue "125";
-  gv:green "218";
-  gv:score "7.9773605";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "ddc57f";
-  gv:red "221";
-  gv:blue "127";
-  gv:green "197";
-  gv:score "7.3671266";
-  gv:coverage "2.8466666000000003"
-], [
-  gv:hex "b19957";
-  gv:red "177";
-  gv:blue "87";
-  gv:green "153";
-  gv:score "5.4563027";
-  gv:coverage "2.02"
-], [
-  gv:hex "8f7840";
-  gv:red "143";
-  gv:blue "64";
-  gv:green "120";
-  gv:score "5.23481";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "de320f";
-  gv:red "222";
-  gv:blue "15";
-  gv:green "50";
-  gv:score "2.8052358";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "be5b20";
-  gv:red "190";
-  gv:blue "32";
-  gv:green "91";
-  gv:score "2.7603364";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "f3db96";
-  gv:red "243";
-  gv:blue "150";
-  gv:green "219";
-  gv:score "2.2633884";
-  gv:coverage "1.1866666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.0306"
-];
-    w:bagOfWords "NET CONTENTS 415th QUART\n20 PER CENT BY VOLUME\nALCOHOLIC CONTENT\n40 PROOF\n40 PROOF\nSINCE\n1861\nADWO NAAT\nEGG CREAM\nPRODUCED AND BOTTLED IN GERMANY\nPRODUCED BY\na HEILBRONN GERMANY\nE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4236";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

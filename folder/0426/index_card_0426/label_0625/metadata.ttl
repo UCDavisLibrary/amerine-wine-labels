@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0625";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V.\nunsere Mitglieder besitzen\nLagen von We\nGOLD MED\nKORKBRAND\nST. LOUIS 1904\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1951 er SC H LOSSABZUG\nKork brand verbirgt\nnaturreinen Wein I\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IMI RHEINGAU\nWEIN GUTER.\nGraf Matuschka-Greiffenclau'sche Originalabfullun\nE. V\n"@deu;
-    gv:color [
-  gv:hex "754939";
-  gv:red "117";
-  gv:blue "57";
-  gv:green "73";
-  gv:score "10.801941";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "a7987f";
-  gv:red "167";
-  gv:blue "127";
-  gv:green "152";
-  gv:score "8.6712696";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "8f3d25";
-  gv:red "143";
-  gv:blue "37";
-  gv:green "61";
-  gv:score "3.6246050000000003";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "d2c2a8";
-  gv:red "210";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "7.8095727";
-  gv:coverage "4.3333333000000005"
-], [
-  gv:hex "552c1b";
-  gv:red "85";
-  gv:blue "27";
-  gv:green "44";
-  gv:score "6.7974806";
-  gv:coverage "0.3"
-], [
-  gv:hex "cdc3ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "6.6693559";
-  gv:coverage "6.0466666"
-], [
-  gv:hex "897862";
-  gv:red "137";
-  gv:blue "98";
-  gv:green "120";
-  gv:score "6.595179399999999";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "976857";
-  gv:red "151";
-  gv:blue "87";
-  gv:green "104";
-  gv:score "5.5553343";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "a49b93";
-  gv:red "164";
-  gv:blue "147";
-  gv:green "155";
-  gv:score "5.539651999999999";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "e9dfd6";
-  gv:red "233";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "4.6017963";
-  gv:coverage "68.873334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.644395"
-];
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V.\nunsere Mitglieder besitzen\nLagen von We\nGOLD MED\nKORKBRAND\nST. LOUIS 1904\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1951 er SC H LOSSABZUG\nKork brand verbirgt\nnaturreinen Wein I\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IMI RHEINGAU\nWEIN GUTER.\nGraf Matuschka-Greiffenclau'sche Originalabfullun\nE. V\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0625";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

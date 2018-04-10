@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3378";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "A\n7\nBramos lins Bourgogne,\nTRADE\nMARK\nPOM M A R D\nPIERRE LAIGLON\nPROPRIETAIRE & NEGOCIANT\nA BEAUNE (COTE D'OR)\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d8c0a8";
-  gv:red "216";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "56.5029";
-  gv:coverage "17.413333"
-], [
-  gv:hex "b69b7e";
-  gv:red "182";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "13.024920000000002";
-  gv:coverage "2.8133333"
-], [
-  gv:hex "d7b29d";
-  gv:red "215";
-  gv:blue "157";
-  gv:green "178";
-  gv:score "6.5872319";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "bf9b7e";
-  gv:red "191";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "5.7875957";
-  gv:coverage "1.3"
-], [
-  gv:hex "8e785f";
-  gv:red "142";
-  gv:blue "95";
-  gv:green "120";
-  gv:score "4.119938599999999";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "997b50";
-  gv:red "153";
-  gv:blue "80";
-  gv:green "123";
-  gv:score "3.1160083000000003";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "9d744a";
-  gv:red "157";
-  gv:blue "74";
-  gv:green "116";
-  gv:score "1.8642940000000001";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "b29165";
-  gv:red "178";
-  gv:blue "101";
-  gv:green "145";
-  gv:score "1.4143612";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "d1c1b7";
-  gv:red "209";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "1.1087072999999998";
-  gv:coverage "4.3333333000000005"
-], [
-  gv:hex "655340";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "83";
-  gv:score "1.0941494";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.708824"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.289899999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.599213999999996"
-];
-    w:bagOfWords "A\n7\nBramos lins Bourgogne,\nTRADE\nMARK\nPOM M A R D\nPIERRE LAIGLON\nPROPRIETAIRE & NEGOCIANT\nA BEAUNE (COTE D'OR)\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3378";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

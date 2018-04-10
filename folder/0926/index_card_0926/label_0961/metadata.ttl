@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0961";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "で6ationne\nAWaillissstuters\nallene Nevroud\nymsnrietaim witicalteMa\".\nCHARD ONNE\n"@deu;
-    gv:color [
-  gv:hex "e0c4a0";
-  gv:red "224";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "18.119827";
-  gv:coverage "14.899999999999999"
-], [
-  gv:hex "c19464";
-  gv:red "193";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "10.614102";
-  gv:coverage "5.86"
-], [
-  gv:hex "a40d08";
-  gv:red "164";
-  gv:blue "8";
-  gv:green "13";
-  gv:score "7.904311999999999";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "6d1604";
-  gv:red "109";
-  gv:blue "4";
-  gv:green "22";
-  gv:score "3.2126188";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "3e2b11";
-  gv:red "62";
-  gv:blue "17";
-  gv:green "43";
-  gv:score "0.41759657";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "b8080c";
-  gv:red "184";
-  gv:blue "12";
-  gv:green "8";
-  gv:score "6.192859299999999";
-  gv:coverage "0.26"
-], [
-  gv:hex "b49975";
-  gv:red "180";
-  gv:blue "117";
-  gv:green "153";
-  gv:score "5.980241299999999";
-  gv:coverage "2.26"
-], [
-  gv:hex "9a1d12";
-  gv:red "154";
-  gv:blue "18";
-  gv:green "29";
-  gv:score "5.9362497";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "dfba8d";
-  gv:red "223";
-  gv:blue "141";
-  gv:green "186";
-  gv:score "5.6705974";
-  gv:coverage "3.06"
-], [
-  gv:hex "f3d6b3";
-  gv:red "243";
-  gv:blue "179";
-  gv:green "214";
-  gv:score "4.7636392999999995";
-  gv:coverage "22.106666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "64.65233"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.027278"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "55.777328999999995"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "50.998288"
-];
-    w:bagOfWords "で6ationne\nAWaillissstuters\nallene Nevroud\nymsnrietaim witicalteMa\".\nCHARD ONNE\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0961";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

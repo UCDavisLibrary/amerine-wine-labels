@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2756/label_2760";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "Chinon\nAPPELLATION CONTROLEE\nRéserve des Caves du Pont-de-Cisse\n"@fra;
-    gv:color [
-  gv:hex "d6c39d";
-  gv:red "214";
-  gv:blue "157";
-  gv:green "195";
-  gv:score "40.232279999999996";
-  gv:coverage "37.306666"
-], [
-  gv:hex "47280d";
-  gv:red "71";
-  gv:blue "13";
-  gv:green "40";
-  gv:score "1.9060779";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "c89346";
-  gv:red "200";
-  gv:blue "70";
-  gv:green "147";
-  gv:score "0.9950093";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "d2bb86";
-  gv:red "210";
-  gv:blue "134";
-  gv:green "187";
-  gv:score "27.212158";
-  gv:coverage "5.2866668"
-], [
-  gv:hex "bb9f69";
-  gv:red "187";
-  gv:blue "105";
-  gv:green "159";
-  gv:score "9.6855789";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "b39c7b";
-  gv:red "179";
-  gv:blue "123";
-  gv:green "156";
-  gv:score "6.2303565";
-  gv:coverage "1.44"
-], [
-  gv:hex "8e7454";
-  gv:red "142";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "2.3440642";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "8f7447";
-  gv:red "143";
-  gv:blue "71";
-  gv:green "116";
-  gv:score "2.204462";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "341500";
-  gv:red "52";
-  gv:blue "undefined";
-  gv:green "21";
-  gv:score "1.7505320000000002";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "967457";
-  gv:red "150";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "1.0904021";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.417225"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "63.862658"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Chinon\nAPPELLATION CONTROLEE\nRéserve des Caves du Pont-de-Cisse\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2760";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0528";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Tgtu\nCabine Wein\nRHEING\n"@deu;
-    gv:color [
-  gv:hex "625235";
-  gv:red "98";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "22.65867";
-  gv:coverage "8.586666699999999"
-], [
-  gv:hex "9a6d47";
-  gv:red "154";
-  gv:blue "71";
-  gv:green "109";
-  gv:score "5.7848733";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "857354";
-  gv:red "133";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "17.030282";
-  gv:coverage "7.8266665"
-], [
-  gv:hex "665126";
-  gv:red "102";
-  gv:blue "38";
-  gv:green "81";
-  gv:score "12.25888";
-  gv:coverage "5.66"
-], [
-  gv:hex "45361a";
-  gv:red "69";
-  gv:blue "26";
-  gv:green "54";
-  gv:score "8.4588096";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "ac997b";
-  gv:red "172";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "8.431071800000002";
-  gv:coverage "5.36"
-], [
-  gv:hex "867142";
-  gv:red "134";
-  gv:blue "66";
-  gv:green "113";
-  gv:score "5.749704700000001";
-  gv:coverage "2.8466666000000003"
-], [
-  gv:hex "774e29";
-  gv:red "119";
-  gv:blue "41";
-  gv:green "78";
-  gv:score "3.66157";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "cbb89b";
-  gv:red "203";
-  gv:blue "155";
-  gv:green "184";
-  gv:score "2.9146465999999998";
-  gv:coverage "20.873334"
-], [
-  gv:hex "704e32";
-  gv:red "112";
-  gv:blue "50";
-  gv:green "78";
-  gv:score "2.5187977";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "77.342683"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "69.3224"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.073543"
-];
-    w:bagOfWords "Tgtu\nCabine Wein\nRHEING\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0528";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

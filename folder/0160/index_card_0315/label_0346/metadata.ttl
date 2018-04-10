@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0346";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "BOTTLED IN\nCALIFORNIA\nRESERVE\nCalifornia\nCLARE T\nALCOHOL 12% BY VOLUME\nMADE AND BOTTLED BY\nPADRE VINEYARD COMPANY\nC U C A M O N G A\nA L I F O R N l A\nMcKESSON & ROBBINS, INC., EXCLUSIVE DISTRIBUTORS, NEW YORK, N. Y.\n"@eng;
-    gv:color [
-  gv:hex "ac9e89";
-  gv:red "172";
-  gv:blue "137";
-  gv:green "158";
-  gv:score "14.113495";
-  gv:coverage "6.873333500000001"
-], [
-  gv:hex "754a22";
-  gv:red "117";
-  gv:blue "34";
-  gv:green "74";
-  gv:score "4.7564626";
-  gv:coverage "0.24"
-], [
-  gv:hex "99410d";
-  gv:red "153";
-  gv:blue "13";
-  gv:green "65";
-  gv:score "2.5463112";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "c8baa5";
-  gv:red "200";
-  gv:blue "165";
-  gv:green "186";
-  gv:score "11.643022";
-  gv:coverage "31.419999999999998"
-], [
-  gv:hex "82745f";
-  gv:red "130";
-  gv:blue "95";
-  gv:green "116";
-  gv:score "7.7846542";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "63533d";
-  gv:red "99";
-  gv:blue "61";
-  gv:green "83";
-  gv:score "5.6218375";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "56524b";
-  gv:red "86";
-  gv:blue "75";
-  gv:green "82";
-  gv:score "4.785813399999999";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "a29c92";
-  gv:red "162";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "4.2883914";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "9b7060";
-  gv:red "155";
-  gv:blue "96";
-  gv:green "112";
-  gv:score "3.9797325000000003";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "7a776f";
-  gv:red "122";
-  gv:blue "111";
-  gv:green "119";
-  gv:score "3.8747302999999995";
-  gv:coverage "1.8933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.956884"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "65.749496"
-];
-    w:bagOfWords "BOTTLED IN\nCALIFORNIA\nRESERVE\nCalifornia\nCLARE T\nALCOHOL 12% BY VOLUME\nMADE AND BOTTLED BY\nPADRE VINEYARD COMPANY\nC U C A M O N G A\nA L I F O R N l A\nMcKESSON & ROBBINS, INC., EXCLUSIVE DISTRIBUTORS, NEW YORK, N. Y.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0346";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4154";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN\nCAROSE\nCHATEAU 19OO\nBORDEAUX\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d3c2ac";
-  gv:red "211";
-  gv:blue "172";
-  gv:green "194";
-  gv:score "36.602685";
-  gv:coverage "8.1466667"
-], [
-  gv:hex "465b6d";
-  gv:red "70";
-  gv:blue "109";
-  gv:green "91";
-  gv:score "2.1214098";
-  gv:coverage "0.12"
-], [
-  gv:hex "ad9b84";
-  gv:red "173";
-  gv:blue "132";
-  gv:green "155";
-  gv:score "19.129886";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "cfc9c2";
-  gv:red "207";
-  gv:blue "194";
-  gv:green "201";
-  gv:score "11.992003";
-  gv:coverage "25.613335"
-], [
-  gv:hex "928066";
-  gv:red "146";
-  gv:blue "102";
-  gv:green "128";
-  gv:score "7.2217964";
-  gv:coverage "0.2"
-], [
-  gv:hex "ead9c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "6.2523276";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "e1dcd5";
-  gv:red "225";
-  gv:blue "213";
-  gv:green "220";
-  gv:score "5.6601003";
-  gv:coverage "60.333335"
-], [
-  gv:hex "9a9e9f";
-  gv:red "154";
-  gv:blue "159";
-  gv:green "158";
-  gv:score "5.0308272";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "787c7e";
-  gv:red "120";
-  gv:blue "126";
-  gv:green "124";
-  gv:score "2.2049004";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "667a8a";
-  gv:red "102";
-  gv:blue "138";
-  gv:green "122";
-  gv:score "1.6333209000000002";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.648133"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.799507"
-];
-    w:bagOfWords "GRAND VIN\nCAROSE\nCHATEAU 19OO\nBORDEAUX\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4154";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

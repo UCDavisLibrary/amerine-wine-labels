@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3872";
-    dct:type "image";
-    w:bagOfWords "VERBAND DEUTSCHE R\nMOS EL-SAAR RUWER\nNATURWEIN\nVERSTEIGERER E. V.\nUnsere Mitglieder besitzen\nLagen von Weltruf\n1121\n1951\nor\nDieses Zeichen\nin Verbindung mit dem\nGra acher Stablay\nKorkbrand verburgt\nnaturreinen Wein.\nAuslese\nTRIERER VEREIN VON\nWEINGUTSBESITZERN\nORIGINAL KELLERABFOLLUNG\nDER MOSEL, SAAR\nWACHSTUM JOH. JOS. PRUM, WE HLEN /MoSEL\nUND RUWER\n"@deu;
-    gv:color [
-  gv:hex "a59a91";
-  gv:red "165";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "10.271008";
-  gv:coverage "4.0133335"
-], [
-  gv:hex "877c45";
-  gv:red "135";
-  gv:blue "69";
-  gv:green "124";
-  gv:score "8.3833016";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "7f756b";
-  gv:red "127";
-  gv:blue "107";
-  gv:green "117";
-  gv:score "9.6587092";
-  gv:coverage "2.02"
-], [
-  gv:hex "ab9b80";
-  gv:red "171";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "8.6295709";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "cbc0b7";
-  gv:red "203";
-  gv:blue "183";
-  gv:green "192";
-  gv:score "6.7413278";
-  gv:coverage "10.866667000000001"
-], [
-  gv:hex "cdbda3";
-  gv:red "205";
-  gv:blue "163";
-  gv:green "189";
-  gv:score "6.6939";
-  gv:coverage "10.086667"
-], [
-  gv:hex "80755d";
-  gv:red "128";
-  gv:blue "93";
-  gv:green "117";
-  gv:score "5.9880562";
-  gv:coverage "0.98"
-], [
-  gv:hex "5f543c";
-  gv:red "95";
-  gv:blue "60";
-  gv:green "84";
-  gv:score "5.7593893";
-  gv:coverage "0.66"
-], [
-  gv:hex "61574d";
-  gv:red "97";
-  gv:blue "77";
-  gv:green "87";
-  gv:score "5.351561299999999";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "ece0d8";
-  gv:red "236";
-  gv:blue "216";
-  gv:green "224";
-  gv:score "4.9350508";
-  gv:coverage "51.446664"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.203927"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "VERBAND DEUTSCHE R\nMOS EL-SAAR RUWER\nNATURWEIN\nVERSTEIGERER E. V.\nUnsere Mitglieder besitzen\nLagen von Weltruf\n1121\n1951\nor\nDieses Zeichen\nin Verbindung mit dem\nGra acher Stablay\nKorkbrand verburgt\nnaturreinen Wein.\nAuslese\nTRIERER VEREIN VON\nWEINGUTSBESITZERN\nORIGINAL KELLERABFOLLUNG\nDER MOSEL, SAAR\nWACHSTUM JOH. JOS. PRUM, WE HLEN /MoSEL\nUND RUWER\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3872";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

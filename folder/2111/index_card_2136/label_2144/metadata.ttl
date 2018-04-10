@@ -1,112 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2136/label_2144";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "PRODUCE OF\nTHE ISLAND OF MADEIRA\n(PORTUGAL)\nRAIN WATER\nPALE DRY\nMADEIRA\nNET CONTENTS\nALCOHOL 21\n4/5 QUART\nBY VOLUME\nPRODUCED BY\nJUSTINO FILHOS, LDA\nFunchal, Madeira\nIMPORTED AND BOTTLED BY\nHORTON & CON VERSE\nLos Angeles, California\nBottled from Tax Paid Container\n"@undefined;
-    gv:color [
-  gv:hex "dbc6a9";
-  gv:red "219";
-  gv:blue "169";
-  gv:green "198";
-  gv:score "17.022471";
-  gv:coverage "16.686666"
-], [
-  gv:hex "897345";
-  gv:red "137";
-  gv:blue "69";
-  gv:green "115";
-  gv:score "14.209316999999999";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "b45739";
-  gv:red "180";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "6.301261499999999";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "efdabe";
-  gv:red "239";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "8.2523167";
-  gv:coverage "19.526666000000002"
-], [
-  gv:hex "ae997c";
-  gv:red "174";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "7.833266999999999";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "a06e43";
-  gv:red "160";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "5.8553625";
-  gv:coverage "0.6"
-], [
-  gv:hex "8a7556";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "5.4122921";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "c84d38";
-  gv:red "200";
-  gv:blue "56";
-  gv:green "77";
-  gv:score "4.2610064";
-  gv:coverage "0.4"
-], [
-  gv:hex "6f5a2d";
-  gv:red "111";
-  gv:blue "45";
-  gv:green "90";
-  gv:score "4.1687697";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "845027";
-  gv:red "132";
-  gv:blue "39";
-  gv:green "80";
-  gv:score "3.0895140000000003";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.193159"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.995186000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.162878000000006"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "52.272743"
-];
-    w:bagOfWords "PRODUCE OF\nTHE ISLAND OF MADEIRA\n(PORTUGAL)\nRAIN WATER\nPALE DRY\nMADEIRA\nNET CONTENTS\nALCOHOL 21\n4/5 QUART\nBY VOLUME\nPRODUCED BY\nJUSTINO FILHOS, LDA\nFunchal, Madeira\nIMPORTED AND BOTTLED BY\nHORTON & CON VERSE\nLos Angeles, California\nBottled from Tax Paid Container\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2144";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

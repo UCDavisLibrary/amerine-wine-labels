@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1806";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "JLL\n133\nMOSEL\nSAAR\nRUIWER\npie sporter Golotropcfen\n7989\n"@deu;
-    gv:color [
-  gv:hex "d4c07e";
-  gv:red "212";
-  gv:blue "126";
-  gv:green "192";
-  gv:score "42.16066";
-  gv:coverage "11.5"
-], [
-  gv:hex "422f14";
-  gv:red "66";
-  gv:blue "20";
-  gv:green "47";
-  gv:score "2.0467084";
-  gv:coverage "1.9"
-], [
-  gv:hex "af9e5f";
-  gv:red "175";
-  gv:blue "95";
-  gv:green "158";
-  gv:score "17.102411";
-  gv:coverage "5.8133334"
-], [
-  gv:hex "887740";
-  gv:red "136";
-  gv:blue "64";
-  gv:green "119";
-  gv:score "9.465903";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "c19f4c";
-  gv:red "193";
-  gv:blue "76";
-  gv:green "159";
-  gv:score "4.7589086";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "675522";
-  gv:red "103";
-  gv:blue "34";
-  gv:green "85";
-  gv:score "4.3505101999999995";
-  gv:coverage "1.5"
-], [
-  gv:hex "727c40";
-  gv:red "114";
-  gv:blue "64";
-  gv:green "124";
-  gv:score "2.6720949000000003";
-  gv:coverage "0.38"
-], [
-  gv:hex "4b5b1e";
-  gv:red "75";
-  gv:blue "30";
-  gv:green "91";
-  gv:score "2.233954";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "969d5e";
-  gv:red "150";
-  gv:blue "94";
-  gv:green "157";
-  gv:score "2.1808671000000004";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "483509";
-  gv:red "72";
-  gv:blue "9";
-  gv:green "53";
-  gv:score "1.9242469000000002";
-  gv:coverage "0.88666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "64.126509"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.723478"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.075917000000004"
-];
-    w:bagOfWords "JLL\n133\nMOSEL\nSAAR\nRUIWER\npie sporter Golotropcfen\n7989\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1806";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

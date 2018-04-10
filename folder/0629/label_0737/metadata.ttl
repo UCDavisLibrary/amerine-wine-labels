@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0737";
-    dct:type "image";
-    w:bagOfWords "~ -vん\nY/23/s-2.\n/3\nC4S4\nMO\nVIN/ COLA FAZI -B\nCUPRA\ncy\n421-BATTAGLIA\n"@undefined;
-    gv:color [
-  gv:hex "ecb588";
-  gv:red "236";
-  gv:blue "136";
-  gv:green "181";
-  gv:score "24.322811";
-  gv:coverage "2.98"
-], [
-  gv:hex "8b7252";
-  gv:red "139";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "1.9201374";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "ca9064";
-  gv:red "202";
-  gv:blue "100";
-  gv:green "144";
-  gv:score "20.526911000000002";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "a66c41";
-  gv:red "166";
-  gv:blue "65";
-  gv:green "108";
-  gv:score "15.072147999999999";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "e0bc8b";
-  gv:red "224";
-  gv:blue "139";
-  gv:green "188";
-  gv:score "8.6105682";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "814e27";
-  gv:red "129";
-  gv:blue "39";
-  gv:green "78";
-  gv:score "4.764022300000001";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "b0613a";
-  gv:red "176";
-  gv:blue "58";
-  gv:green "97";
-  gv:score "4.0578533";
-  gv:coverage "0.32"
-], [
-  gv:hex "e9b696";
-  gv:red "233";
-  gv:blue "150";
-  gv:green "182";
-  gv:score "2.802667";
-  gv:coverage "0.5"
-], [
-  gv:hex "dbbd9a";
-  gv:red "219";
-  gv:blue "154";
-  gv:green "189";
-  gv:score "2.652999";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "bc9869";
-  gv:red "188";
-  gv:blue "105";
-  gv:green "152";
-  gv:score "2.3940072999999997";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.775881"
-], [
-  gv:mid <https://g.co/kg/m/0bby24z>;
-  gv:desc "moustache";
-  gv:score "67.761248"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.661035999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.764978000000006"
-];
-    w:bagOfWords "~ -vん\nY/23/s-2.\n/3\nC4S4\nMO\nVIN/ COLA FAZI -B\nCUPRA\ncy\n421-BATTAGLIA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0737";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

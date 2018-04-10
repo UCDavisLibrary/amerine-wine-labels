@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3911";
-    dct:type "image";
-    w:bagOfWords "LAND\n1950et\nJettiget 2Uingettsbed\nBettwaltung der Staatlicben 1Beinbaudomanem arist\n"@deu;
-    gv:color [
-  gv:hex "665039";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "25.537691000000002";
-  gv:coverage "4.9799999999999995"
-], [
-  gv:hex "8a7259";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "114";
-  gv:score "21.171198999999998";
-  gv:coverage "5.9533332"
-], [
-  gv:hex "af967b";
-  gv:red "175";
-  gv:blue "123";
-  gv:green "150";
-  gv:score "15.690207000000001";
-  gv:coverage "4.7133334"
-], [
-  gv:hex "49341f";
-  gv:red "73";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "13.173887";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "d6bda2";
-  gv:red "214";
-  gv:blue "162";
-  gv:green "189";
-  gv:score "8.9333467";
-  gv:coverage "10.753334"
-], [
-  gv:hex "4c301b";
-  gv:red "76";
-  gv:blue "27";
-  gv:green "48";
-  gv:score "3.850225";
-  gv:coverage "0.64"
-], [
-  gv:hex "694b37";
-  gv:red "105";
-  gv:blue "55";
-  gv:green "75";
-  gv:score "2.8856257";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "f0dcc6";
-  gv:red "240";
-  gv:blue "198";
-  gv:green "220";
-  gv:score "2.5506483";
-  gv:coverage "10.92"
-], [
-  gv:hex "93725e";
-  gv:red "147";
-  gv:blue "94";
-  gv:green "114";
-  gv:score "0.87743988";
-  gv:coverage "0.24"
-], [
-  gv:hex "b39b6c";
-  gv:red "179";
-  gv:blue "108";
-  gv:green "155";
-  gv:score "0.7505764300000001";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.45019500000001"
-];
-    w:bagOfWords "LAND\n1950et\nJettiget 2Uingettsbed\nBettwaltung der Staatlicben 1Beinbaudomanem arist\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3911";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

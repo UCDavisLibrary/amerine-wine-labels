@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3088";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "fsBanaRu\nf-catnactu\nAPPELLATION CONTROLEE\nMARCEL BORIE, PROPRETAIRE\n도( s 3c54 teDe E\nMISE EN BO\nTEILLES DU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "120d07";
-  gv:red "18";
-  gv:blue "7";
-  gv:green "13";
-  gv:score "32.820687";
-  gv:coverage "17.28"
-], [
-  gv:hex "655237";
-  gv:red "101";
-  gv:blue "55";
-  gv:green "82";
-  gv:score "13.583215000000001";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "907446";
-  gv:red "144";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "11.041715";
-  gv:coverage "2.08"
-], [
-  gv:hex "e8dbd2";
-  gv:red "232";
-  gv:blue "210";
-  gv:green "219";
-  gv:score "0.42229742000000003";
-  gv:coverage "60.566664"
-], [
-  gv:hex "40311a";
-  gv:red "64";
-  gv:blue "26";
-  gv:green "49";
-  gv:score "12.039013";
-  gv:coverage "3.0133333"
-], [
-  gv:hex "846f4f";
-  gv:red "132";
-  gv:blue "79";
-  gv:green "111";
-  gv:score "8.2564145";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "271b09";
-  gv:red "39";
-  gv:blue "9";
-  gv:green "27";
-  gv:score "4.878429";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "6d552b";
-  gv:red "109";
-  gv:blue "43";
-  gv:green "85";
-  gv:score "3.7458323";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "373129";
-  gv:red "55";
-  gv:blue "41";
-  gv:green "49";
-  gv:score "3.6240518";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "ad8f5f";
-  gv:red "173";
-  gv:blue "95";
-  gv:green "143";
-  gv:score "3.4424309";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "77.029461"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.625133"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "51.196265"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.96659100000001"
-];
-    w:bagOfWords "fsBanaRu\nf-catnactu\nAPPELLATION CONTROLEE\nMARCEL BORIE, PROPRETAIRE\n도( s 3c54 teDe E\nMISE EN BO\nTEILLES DU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3088";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

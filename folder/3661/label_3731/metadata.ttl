@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3731";
-    dct:type "image";
-    w:bagOfWords "RAVENTOS COD ORNIU\nCODORNIU, 155\nRAVENTOS, 1872\n,S...SA mIIRNi DE NoYA\nEMB. 375\n"@spa;
-    gv:color [
-  gv:hex "9d6c47";
-  gv:red "157";
-  gv:blue "71";
-  gv:green "108";
-  gv:score "13.570726";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "8b7355";
-  gv:red "139";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "10.46029";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "d6c3ab";
-  gv:red "214";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "9.151957900000001";
-  gv:coverage "5.06"
-], [
-  gv:hex "c38e67";
-  gv:red "195";
-  gv:blue "103";
-  gv:green "142";
-  gv:score "9.7733229";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "784b25";
-  gv:red "120";
-  gv:blue "37";
-  gv:green "75";
-  gv:score "9.3928367";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "c5917d";
-  gv:red "197";
-  gv:blue "125";
-  gv:green "145";
-  gv:score "7.2721533";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "e6b49f";
-  gv:red "230";
-  gv:blue "159";
-  gv:green "180";
-  gv:score "6.443543";
-  gv:coverage "1.16"
-], [
-  gv:hex "ae9a7d";
-  gv:red "174";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "6.1493291999999995";
-  gv:coverage "1.28"
-], [
-  gv:hex "996f5a";
-  gv:red "153";
-  gv:blue "90";
-  gv:green "111";
-  gv:score "4.1569188";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "5d2d09";
-  gv:red "93";
-  gv:blue "9";
-  gv:green "45";
-  gv:score "3.9437159999999998";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.762915"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "RAVENTOS COD ORNIU\nCODORNIU, 155\nRAVENTOS, 1872\n,S...SA mIIRNi DE NoYA\nEMB. 375\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3731";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

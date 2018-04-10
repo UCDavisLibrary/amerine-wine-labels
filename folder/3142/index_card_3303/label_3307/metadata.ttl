@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3303/label_3307";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Berry Bros. & Co\n3 St. James's Street\nLondon, S.W. I\nde B\nA A\ncome\nA\nRA O RA\nde\nA\nOZ\nCO\n1923\nNUITS ST. GEORGES\nACO\nProduce of France\n"@fra;
-    gv:color [
-  gv:hex "d5bea6";
-  gv:red "213";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "45.628089";
-  gv:coverage "46.673334"
-], [
-  gv:hex "b29c85";
-  gv:red "178";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "32.347944";
-  gv:coverage "6.433333500000001"
-], [
-  gv:hex "c09479";
-  gv:red "192";
-  gv:blue "121";
-  gv:green "148";
-  gv:score "6.2692069";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "e4b99d";
-  gv:red "228";
-  gv:blue "157";
-  gv:green "185";
-  gv:score "6.1350375";
-  gv:coverage "2.7333334000000002"
-], [
-  gv:hex "eed7c0";
-  gv:red "238";
-  gv:blue "192";
-  gv:green "215";
-  gv:score "5.1741149";
-  gv:coverage "20.573332999999998"
-], [
-  gv:hex "927d66";
-  gv:red "146";
-  gv:blue "102";
-  gv:green "125";
-  gv:score "2.5507266";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "a4755a";
-  gv:red "164";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "1.3050161";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "75533f";
-  gv:red "117";
-  gv:blue "63";
-  gv:green "83";
-  gv:score "0.34272396";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "ffd8bc";
-  gv:red "255";
-  gv:blue "188";
-  gv:green "216";
-  gv:score "0.13746438";
-  gv:coverage "0.12"
-], [
-  gv:hex "6f5b46";
-  gv:red "111";
-  gv:blue "70";
-  gv:green "91";
-  gv:score "0.059958728";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.929114"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.21527"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.041838000000006"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.263338"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "56.904829"
-];
-    w:bagOfWords "Berry Bros. & Co\n3 St. James's Street\nLondon, S.W. I\nde B\nA A\ncome\nA\nRA O RA\nde\nA\nOZ\nCO\n1923\nNUITS ST. GEORGES\nACO\nProduce of France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3307";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

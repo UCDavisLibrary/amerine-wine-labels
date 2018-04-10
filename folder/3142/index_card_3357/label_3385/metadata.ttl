@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3385";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "FRA UCEaeF FRANCE.\nPOM MARI)\n\"ARC DE TRIOMPHE\n"@fra;
-    gv:color [
-  gv:hex "e1c5a2";
-  gv:red "225";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "44.857845000000005";
-  gv:coverage "21.666667"
-], [
-  gv:hex "f3b890";
-  gv:red "243";
-  gv:blue "144";
-  gv:green "184";
-  gv:score "5.0133716";
-  gv:coverage "0.8"
-], [
-  gv:hex "8f4220";
-  gv:red "143";
-  gv:blue "32";
-  gv:green "66";
-  gv:score "1.576242";
-  gv:coverage "0.16"
-], [
-  gv:hex "b49879";
-  gv:red "180";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "7.9239085000000005";
-  gv:coverage "2.3"
-], [
-  gv:hex "8d7359";
-  gv:red "141";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "7.019802899999999";
-  gv:coverage "1.26"
-], [
-  gv:hex "937159";
-  gv:red "147";
-  gv:blue "89";
-  gv:green "113";
-  gv:score "6.0244549";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "edc0a1";
-  gv:red "237";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "4.889620799999999";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "e2c092";
-  gv:red "226";
-  gv:blue "146";
-  gv:green "192";
-  gv:score "3.3582151";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "6c543b";
-  gv:red "108";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "3.2689969999999997";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "b49077";
-  gv:red "180";
-  gv:blue "119";
-  gv:green "144";
-  gv:score "2.8938122";
-  gv:coverage "0.58666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.01067900000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "62.762368"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.961931"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.367012"
-];
-    w:bagOfWords "FRA UCEaeF FRANCE.\nPOM MARI)\n\"ARC DE TRIOMPHE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3385";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

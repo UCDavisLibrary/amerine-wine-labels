@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0198/label_0200";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "36\nGEORGES DE LA TOUR\nPRIVATE RESERVE\nCALIFORNIA CABERNET\nPRODUCED SOLELY FROM CABERNET SAUVIGNON GRAPES\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nRUTHERFORD, NAPA COUNTY CALIFORNIA\nNET CONTENTS 12.8 FLUID ozs\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
-    gv:color [
-  gv:hex "c8925b";
-  gv:red "200";
-  gv:blue "91";
-  gv:green "146";
-  gv:score "19.897081";
-  gv:coverage "2"
-], [
-  gv:hex "be9b62";
-  gv:red "190";
-  gv:blue "98";
-  gv:green "155";
-  gv:score "17.906116";
-  gv:coverage "3.0266667000000003"
-], [
-  gv:hex "d8b57e";
-  gv:red "216";
-  gv:blue "126";
-  gv:green "181";
-  gv:score "14.682122";
-  gv:coverage "2.86"
-], [
-  gv:hex "d8bd9b";
-  gv:red "216";
-  gv:blue "155";
-  gv:green "189";
-  gv:score "9.7315758";
-  gv:coverage "39.22"
-], [
-  gv:hex "a7703a";
-  gv:red "167";
-  gv:blue "58";
-  gv:green "112";
-  gv:score "8.910319999999999";
-  gv:coverage "0.86"
-], [
-  gv:hex "ca944d";
-  gv:red "202";
-  gv:blue "77";
-  gv:green "148";
-  gv:score "4.4158585";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "e0ad79";
-  gv:red "224";
-  gv:blue "121";
-  gv:green "173";
-  gv:score "4.1674986";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "ab702e";
-  gv:red "171";
-  gv:blue "46";
-  gv:green "112";
-  gv:score "3.4859426";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "b99f7c";
-  gv:red "185";
-  gv:blue "124";
-  gv:green "159";
-  gv:score "3.0238183";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "9d7a41";
-  gv:red "157";
-  gv:blue "65";
-  gv:green "122";
-  gv:score "2.4177808";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.85625300000001"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.991586999999996"
-];
-    w:bagOfWords "36\nGEORGES DE LA TOUR\nPRIVATE RESERVE\nCALIFORNIA CABERNET\nPRODUCED SOLELY FROM CABERNET SAUVIGNON GRAPES\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nRUTHERFORD, NAPA COUNTY CALIFORNIA\nNET CONTENTS 12.8 FLUID ozs\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0200";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

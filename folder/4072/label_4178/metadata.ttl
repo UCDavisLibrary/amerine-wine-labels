@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4178";
-    dct:type "image";
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-E STEPH E\nMEDOC\nRécolte\nen Bouteille\n1937\nau Chateau\nAppellation Saint-Estephe controlée\nOS\nIMP wETTERwALD FRERKs\n"@fra;
-    gv:color [
-  gv:hex "dac2a4";
-  gv:red "218";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "52.242678";
-  gv:coverage "24.406667000000002"
-], [
-  gv:hex "ae997d";
-  gv:red "174";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "14.870645";
-  gv:coverage "4.0266667"
-], [
-  gv:hex "88755c";
-  gv:red "136";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "12.025513";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "e4baa0";
-  gv:red "228";
-  gv:blue "160";
-  gv:green "186";
-  gv:score "8.5568771";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "68563d";
-  gv:red "104";
-  gv:blue "61";
-  gv:green "86";
-  gv:score "4.81498";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "c3977d";
-  gv:red "195";
-  gv:blue "125";
-  gv:green "151";
-  gv:score "4.0518012";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "edd6b9";
-  gv:red "237";
-  gv:blue "185";
-  gv:green "214";
-  gv:score "1.5955374000000002";
-  gv:coverage "3.54"
-], [
-  gv:hex "a4755c";
-  gv:red "164";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "0.89339959";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "4a371e";
-  gv:red "74";
-  gv:blue "30";
-  gv:green "55";
-  gv:score "0.41311872";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "fcd1b8";
-  gv:red "252";
-  gv:blue "184";
-  gv:green "209";
-  gv:score "0.39735";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.858682"
-];
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-E STEPH E\nMEDOC\nRécolte\nen Bouteille\n1937\nau Chateau\nAppellation Saint-Estephe controlée\nOS\nIMP wETTERwALD FRERKs\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4178";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

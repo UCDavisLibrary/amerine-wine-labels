@@ -1,93 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1114/label_1121";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "TILLLITE\nARAN\n"@deu;
-    gv:color [
-  gv:hex "dfc4a0";
-  gv:red "223";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "31.651511999999997";
-  gv:coverage "24.186666000000002"
-], [
-  gv:hex "e1b387";
-  gv:red "225";
-  gv:blue "135";
-  gv:green "179";
-  gv:score "9.3760446";
-  gv:coverage "2.6933333"
-], [
-  gv:hex "877645";
-  gv:red "135";
-  gv:blue "69";
-  gv:green "118";
-  gv:score "7.345001399999999";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "b19a74";
-  gv:red "177";
-  gv:blue "116";
-  gv:green "154";
-  gv:score "8.907847100000001";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "dabd8e";
-  gv:red "218";
-  gv:blue "142";
-  gv:green "189";
-  gv:score "6.543146800000001";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "ad9968";
-  gv:red "173";
-  gv:blue "104";
-  gv:green "153";
-  gv:score "6.1728552";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "665629";
-  gv:red "102";
-  gv:blue "41";
-  gv:green "86";
-  gv:score "5.8568921000000005";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "8a7550";
-  gv:red "138";
-  gv:blue "80";
-  gv:green "117";
-  gv:score "5.2302357";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "966c44";
-  gv:red "150";
-  gv:blue "68";
-  gv:green "108";
-  gv:score "3.5378657000000002";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "f2d7b2";
-  gv:red "242";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "2.4457816";
-  gv:coverage "26.6"
-];
-    w:bagOfWords "TILLLITE\nARAN\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1121";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

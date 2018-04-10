@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3222";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "0\nJACQUES BOUCHARD &Ce\nNEGOCIANTS A BEAUNE ET PARIS\n((oon cedadonnaires exclusifaouGatiauce gence\nDnceddtonn aired exclud1栖ou òhaleau () e Jona e\nN?CLOS VOUGEOT\nDF\nm.\nAPPELLATION CONTROLEE\nFLEU\n"@fra;
-    gv:color [
-  gv:hex "e0c39e";
-  gv:red "224";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "43.957216";
-  gv:coverage "15.833333"
-], [
-  gv:hex "c49367";
-  gv:red "196";
-  gv:blue "103";
-  gv:green "147";
-  gv:score "4.4589911";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "e1be90";
-  gv:red "225";
-  gv:blue "144";
-  gv:green "190";
-  gv:score "22.19715";
-  gv:coverage "7.5733334"
-], [
-  gv:hex "b4997a";
-  gv:red "180";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "11.423245999999999";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "b9976c";
-  gv:red "185";
-  gv:blue "108";
-  gv:green "151";
-  gv:score "3.6890678";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "e0b485";
-  gv:red "224";
-  gv:blue "133";
-  gv:green "180";
-  gv:score "3.3616666000000004";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "f0d6b7";
-  gv:red "240";
-  gv:blue "183";
-  gv:green "214";
-  gv:score "1.7942585";
-  gv:coverage "5.04"
-], [
-  gv:hex "9f7248";
-  gv:red "159";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "1.6267852999999999";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "a79994";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "153";
-  gv:score "1.3447559";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "927b60";
-  gv:red "146";
-  gv:blue "96";
-  gv:green "123";
-  gv:score "1.1634598";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.435770000000005"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.58898000000001"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "58.484899999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.993128999999996"
-];
-    w:bagOfWords "0\nJACQUES BOUCHARD &Ce\nNEGOCIANTS A BEAUNE ET PARIS\n((oon cedadonnaires exclusifaouGatiauce gence\nDnceddtonn aired exclud1栖ou òhaleau () e Jona e\nN?CLOS VOUGEOT\nDF\nm.\nAPPELLATION CONTROLEE\nFLEU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3222";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

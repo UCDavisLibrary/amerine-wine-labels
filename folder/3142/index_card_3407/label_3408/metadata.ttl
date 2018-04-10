@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3408";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "ROUALET\nBEAUNE\nBEA UNE-AVAUX\n1947\nCONT. 0,68 0,70 cl.\nR. C. BRUXELLES 197646\n"@fra;
-    gv:color [
-  gv:hex "dabd9e";
-  gv:red "218";
-  gv:blue "158";
-  gv:green "189";
-  gv:score "18.536448";
-  gv:coverage "15.646666000000002"
-], [
-  gv:hex "996e43";
-  gv:red "153";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "8.6158335";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "b6997a";
-  gv:red "182";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "10.492834";
-  gv:coverage "2.48"
-], [
-  gv:hex "bb9475";
-  gv:red "187";
-  gv:blue "117";
-  gv:green "148";
-  gv:score "7.9366";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "967051";
-  gv:red "150";
-  gv:blue "81";
-  gv:green "112";
-  gv:score "7.4133694";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "744b23";
-  gv:red "116";
-  gv:blue "35";
-  gv:green "75";
-  gv:score "7.282971600000001";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "c19464";
-  gv:red "193";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "5.9764441";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "734d30";
-  gv:red "115";
-  gv:blue "48";
-  gv:green "77";
-  gv:score "5.7771984";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "dab292";
-  gv:red "218";
-  gv:blue "146";
-  gv:green "178";
-  gv:score "3.9713405";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "512d12";
-  gv:red "81";
-  gv:blue "18";
-  gv:green "45";
-  gv:score "3.4201305";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.669044"
-];
-    w:bagOfWords "ROUALET\nBEAUNE\nBEA UNE-AVAUX\n1947\nCONT. 0,68 0,70 cl.\nR. C. BRUXELLES 197646\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3408";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

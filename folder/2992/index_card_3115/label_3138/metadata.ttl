@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3115/label_3138";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "ESCHENAU\nBO\nREUGE\nCON\nALCOHOL 12% BY VOLUME\nSERVE AT ROOM TEMPERATURE\n"@fra;
-    gv:color [
-  gv:hex "9d6e57";
-  gv:red "157";
-  gv:blue "87";
-  gv:green "110";
-  gv:score "17.971916";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "d4c0a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "16.730894";
-  gv:coverage "12.673333000000001"
-], [
-  gv:hex "be8e79";
-  gv:red "190";
-  gv:blue "121";
-  gv:green "142";
-  gv:score "16.176735";
-  gv:coverage "2.6666667"
-], [
-  gv:hex "b09a7f";
-  gv:red "176";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "13.315615";
-  gv:coverage "4.3533333"
-], [
-  gv:hex "8c7558";
-  gv:red "140";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "7.7553615";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "784d33";
-  gv:red "120";
-  gv:blue "51";
-  gv:green "77";
-  gv:score "6.2016439";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "655032";
-  gv:red "101";
-  gv:blue "50";
-  gv:green "80";
-  gv:score "5.1570769";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "edd9c0";
-  gv:red "237";
-  gv:blue "192";
-  gv:green "217";
-  gv:score "4.5837279";
-  gv:coverage "4.88"
-], [
-  gv:hex "e2b6a0";
-  gv:red "226";
-  gv:blue "160";
-  gv:green "182";
-  gv:score "4.5751158";
-  gv:coverage "1.52"
-], [
-  gv:hex "af6659";
-  gv:red "175";
-  gv:blue "89";
-  gv:green "102";
-  gv:score "1.7746952999999999";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "85.947931"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "83.085692"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.157016"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.135890999999994"
-];
-    w:bagOfWords "ESCHENAU\nBO\nREUGE\nCON\nALCOHOL 12% BY VOLUME\nSERVE AT ROOM TEMPERATURE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3138";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

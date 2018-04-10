@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2215/label_2220";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "BRAND\nALCOHOL\n19-21% BY VOLUME\nMADE AND BOTTLED BY\nPLEASANT VALLEY WINE Co.\nESTABLISHED 1860\nBONDED WINERY Neu a D PERMIssIVE DIST NY NY s Luc D w\n"@eng;
-    gv:color [
-  gv:hex "917b44";
-  gv:red "145";
-  gv:blue "68";
-  gv:green "123";
-  gv:score "23.776785";
-  gv:coverage "9.8533332"
-], [
-  gv:hex "0d0502";
-  gv:red "13";
-  gv:blue "2";
-  gv:green "5";
-  gv:score "7.6291158999999995";
-  gv:coverage "5.92"
-], [
-  gv:hex "764738";
-  gv:red "118";
-  gv:blue "56";
-  gv:green "71";
-  gv:score "4.3475822";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "361004";
-  gv:red "54";
-  gv:blue "4";
-  gv:green "16";
-  gv:score "3.490885";
-  gv:coverage "0.52"
-], [
-  gv:hex "9b2720";
-  gv:red "155";
-  gv:blue "32";
-  gv:green "39";
-  gv:score "2.7119145000000002";
-  gv:coverage "0.16"
-], [
-  gv:hex "ab9356";
-  gv:red "171";
-  gv:blue "86";
-  gv:green "147";
-  gv:score "18.083969";
-  gv:coverage "6.419999999999999"
-], [
-  gv:hex "695524";
-  gv:red "105";
-  gv:blue "36";
-  gv:green "85";
-  gv:score "4.2052381";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "883934";
-  gv:red "136";
-  gv:blue "52";
-  gv:green "57";
-  gv:score "3.5564605";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "240202";
-  gv:red "36";
-  gv:blue "2";
-  gv:green "2";
-  gv:score "3.0368866000000003";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "502718";
-  gv:red "80";
-  gv:blue "24";
-  gv:green "39";
-  gv:score "2.9731167";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.842067"
-];
-    w:bagOfWords "BRAND\nALCOHOL\n19-21% BY VOLUME\nMADE AND BOTTLED BY\nPLEASANT VALLEY WINE Co.\nESTABLISHED 1860\nBONDED WINERY Neu a D PERMIssIVE DIST NY NY s Luc D w\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2220";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

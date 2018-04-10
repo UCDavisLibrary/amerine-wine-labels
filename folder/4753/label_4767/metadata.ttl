@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4767";
-    dct:type "image";
-    w:bagOfWords "CALIFORNIA\nCHAMPAGNE\nALCOHOL 12\nNET CONTENTS\nBY VOLUME\n4/5 PINT\nEXTRA\nBRAND\nSELECTED AND BOTTLED BY GRAND LIFE CHAMPAGNE WINERY MISSION SAN JOSE, CALIFORNIA\nNATURALLY FERMENTED IN THE BOTTLE BY THE WORLD FAMOUS\nCHAMPAGNE PROCESS USED IN THE CHAMPAGNE DISTRICT OF FRANCE\n"@eng;
-    gv:color [
-  gv:hex "f67205";
-  gv:red "246";
-  gv:blue "5";
-  gv:green "114";
-  gv:score "53.756744";
-  gv:coverage "13.28"
-], [
-  gv:hex "bd5a0e";
-  gv:red "189";
-  gv:blue "14";
-  gv:green "90";
-  gv:score "6.1192729";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "731600";
-  gv:red "115";
-  gv:blue "undefined";
-  gv:green "22";
-  gv:score "0.86478991";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "734918";
-  gv:red "115";
-  gv:blue "24";
-  gv:green "73";
-  gv:score "0.86310571";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "8a6b38";
-  gv:red "138";
-  gv:blue "56";
-  gv:green "107";
-  gv:score "0.7578352";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "3f2d14";
-  gv:red "63";
-  gv:blue "20";
-  gv:green "45";
-  gv:score "0.24749865";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "ec7914";
-  gv:red "236";
-  gv:blue "20";
-  gv:green "121";
-  gv:score "17.429805";
-  gv:coverage "5.7266667"
-], [
-  gv:hex "e9dfd5";
-  gv:red "233";
-  gv:blue "213";
-  gv:green "223";
-  gv:score "0.08374435100000001";
-  gv:coverage "55.653334"
-], [
-  gv:hex "d26409";
-  gv:red "210";
-  gv:blue "9";
-  gv:green "100";
-  gv:score "2.7851190000000003";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "9b3b01";
-  gv:red "155";
-  gv:blue "1";
-  gv:green "59";
-  gv:score "2.6953641";
-  gv:coverage "0.73333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.943046"
-];
-    w:bagOfWords "CALIFORNIA\nCHAMPAGNE\nALCOHOL 12\nNET CONTENTS\nBY VOLUME\n4/5 PINT\nEXTRA\nBRAND\nSELECTED AND BOTTLED BY GRAND LIFE CHAMPAGNE WINERY MISSION SAN JOSE, CALIFORNIA\nNATURALLY FERMENTED IN THE BOTTLE BY THE WORLD FAMOUS\nCHAMPAGNE PROCESS USED IN THE CHAMPAGNE DISTRICT OF FRANCE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4767";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

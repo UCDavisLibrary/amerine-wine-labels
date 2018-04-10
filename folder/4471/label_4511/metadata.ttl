@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4511";
-    dct:type "image";
-    w:bagOfWords "U N\nGRAN VINO\nSIGLO AZPiLiCUETA\nTRO MERAL\"\nPRECIO en ORIGEN 620 PTAS.\nREGISTRO DEEMBOTELLADORES No go\nREGIS TRADA\nARCA.\nSIGLO\nUN GRAN\nVINO.\nCose cheros\nREGULADOR\nFUENMAYOR (RIOJA) ESPANA\n"@spa;
-    gv:color [
-  gv:hex "cec5bc";
-  gv:red "206";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "20.091172";
-  gv:coverage "11.326667"
-], [
-  gv:hex "151310";
-  gv:red "21";
-  gv:blue "16";
-  gv:green "19";
-  gv:score "12.358284999999999";
-  gv:coverage "4.7266666"
-], [
-  gv:hex "e7b8b2";
-  gv:red "231";
-  gv:blue "178";
-  gv:green "184";
-  gv:score "4.3605495";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "a49c94";
-  gv:red "164";
-  gv:blue "148";
-  gv:green "156";
-  gv:score "14.256866000000002";
-  gv:coverage "3.2800000000000002"
-], [
-  gv:hex "e7ded5";
-  gv:red "231";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "11.976767";
-  gv:coverage "67.386669"
-], [
-  gv:hex "34302b";
-  gv:red "52";
-  gv:blue "43";
-  gv:green "48";
-  gv:score "10.097626";
-  gv:coverage "2.8066667"
-], [
-  gv:hex "7e776f";
-  gv:red "126";
-  gv:blue "111";
-  gv:green "119";
-  gv:score "9.7819477";
-  gv:coverage "2"
-], [
-  gv:hex "5a5550";
-  gv:red "90";
-  gv:blue "80";
-  gv:green "85";
-  gv:score "5.805775199999999";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "cb9693";
-  gv:red "203";
-  gv:blue "147";
-  gv:green "150";
-  gv:score "3.2158399999999996";
-  gv:coverage "0.2"
-], [
-  gv:hex "d1bdb0";
-  gv:red "209";
-  gv:blue "176";
-  gv:green "189";
-  gv:score "2.1620924";
-  gv:coverage "1.9866666000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.06077900000001"
-];
-    w:bagOfWords "U N\nGRAN VINO\nSIGLO AZPiLiCUETA\nTRO MERAL\"\nPRECIO en ORIGEN 620 PTAS.\nREGISTRO DEEMBOTELLADORES No go\nREGIS TRADA\nARCA.\nSIGLO\nUN GRAN\nVINO.\nCose cheros\nREGULADOR\nFUENMAYOR (RIOJA) ESPANA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4511";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

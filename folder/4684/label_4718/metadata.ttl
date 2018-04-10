@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4718";
-    dct:type "image";
-    w:bagOfWords "CALISAY\nARCA REGISTRADA INTERNACIONAL\nDESTILERIASMULLFULLEDA SA.\nARE NYS\nBARCELONA\n"@undefined;
-    gv:color [
-  gv:hex "d7bea1";
-  gv:red "215";
-  gv:blue "161";
-  gv:green "190";
-  gv:score "19.287445";
-  gv:coverage "6.2066666999999995"
-], [
-  gv:hex "887153";
-  gv:red "136";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "14.903301999999998";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "631f0d";
-  gv:red "99";
-  gv:blue "13";
-  gv:green "31";
-  gv:score "1.9225539999999999";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "695333";
-  gv:red "105";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "14.250709";
-  gv:coverage "3.3466666999999997"
-], [
-  gv:hex "b1997c";
-  gv:red "177";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "9.8234259";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "e7b79e";
-  gv:red "231";
-  gv:blue "158";
-  gv:green "183";
-  gv:score "5.627301";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "c2947a";
-  gv:red "194";
-  gv:blue "122";
-  gv:green "148";
-  gv:score "4.8301771";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "986c52";
-  gv:red "152";
-  gv:blue "82";
-  gv:green "108";
-  gv:score "4.8103314";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "6b532a";
-  gv:red "107";
-  gv:blue "42";
-  gv:green "83";
-  gv:score "4.591921699999999";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "7b4f35";
-  gv:red "123";
-  gv:blue "53";
-  gv:green "79";
-  gv:score "4.2687226";
-  gv:coverage "0.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.415531"
-], [
-  gv:mid <https://g.co/kg/m/0bby24z>;
-  gv:desc "moustache";
-  gv:score "66.904795"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.399404999999994"
-];
-    w:bagOfWords "CALISAY\nARCA REGISTRADA INTERNACIONAL\nDESTILERIASMULLFULLEDA SA.\nARE NYS\nBARCELONA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4718";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

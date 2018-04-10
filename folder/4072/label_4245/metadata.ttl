@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4245";
-    dct:type "image";
-    w:bagOfWords "Pacific Coast Agent J. K ESQUIN, San Francisco\nCONTENTS 17/64 GALLoNS\nALCOHOL 16 o/o BY VOLUME\nHAMBERYZETTE\nERMOUT\nA LA RAISE\nDES\nflLPES\nVERMOUTH\nD SUGAR\nU ICE AND\nEARLE LORING\nPRODU\nED BY\nOLIN\nIE\nMARQUE DE FABRIQUE\nCHAMBERY\nPRODUCE OF FRANCE\nINPGOUGEN PR\n"@fra;
-    gv:color [
-  gv:hex "d0c2a7";
-  gv:red "208";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "9.5776767";
-  gv:coverage "7.3533334"
-], [
-  gv:hex "6d1c08";
-  gv:red "109";
-  gv:blue "8";
-  gv:green "28";
-  gv:score "7.0855968";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "921a10";
-  gv:red "146";
-  gv:blue "16";
-  gv:green "26";
-  gv:score "6.6763788";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "784a39";
-  gv:red "120";
-  gv:blue "57";
-  gv:green "74";
-  gv:score "4.5872137";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "a89a80";
-  gv:red "168";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "5.5717926";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "c0917e";
-  gv:red "192";
-  gv:blue "126";
-  gv:green "145";
-  gv:score "5.4078713";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "cfc3bb";
-  gv:red "207";
-  gv:blue "187";
-  gv:green "195";
-  gv:score "4.5837291";
-  gv:coverage "14.326666"
-], [
-  gv:hex "e7b8a6";
-  gv:red "231";
-  gv:blue "166";
-  gv:green "184";
-  gv:score "3.7984118";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "af9a65";
-  gv:red "175";
-  gv:blue "101";
-  gv:green "154";
-  gv:score "3.7944842";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "9d6e5c";
-  gv:red "157";
-  gv:blue "92";
-  gv:green "110";
-  gv:score "3.7834421";
-  gv:coverage "0.74666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.255251"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "53.601372000000005"
-];
-    w:bagOfWords "Pacific Coast Agent J. K ESQUIN, San Francisco\nCONTENTS 17/64 GALLoNS\nALCOHOL 16 o/o BY VOLUME\nHAMBERYZETTE\nERMOUT\nA LA RAISE\nDES\nflLPES\nVERMOUTH\nD SUGAR\nU ICE AND\nEARLE LORING\nPRODU\nED BY\nOLIN\nIE\nMARQUE DE FABRIQUE\nCHAMBERY\nPRODUCE OF FRANCE\nINPGOUGEN PR\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4245";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

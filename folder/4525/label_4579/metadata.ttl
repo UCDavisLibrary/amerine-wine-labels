@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4579";
-    dct:type "image";
-    w:bagOfWords "LICOR DE NARANJAS\nARRODA\nANUEL\nMALAGA\nTRIPLE\nSECO\n1924\nr O. o DE MARzo "@spa;
-    gv:color [
-  gv:hex "6d7690";
-  gv:red "109";
-  gv:blue "144";
-  gv:green "118";
-  gv:score "9.943430000000001";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "c8c7ce";
-  gv:red "200";
-  gv:blue "206";
-  gv:green "199";
-  gv:score "9.375093099999999";
-  gv:coverage "14.746666"
-], [
-  gv:hex "2e3362";
-  gv:red "46";
-  gv:blue "98";
-  gv:green "51";
-  gv:score "0.91666523";
-  gv:coverage "0.02"
-], [
-  gv:hex "8b433e";
-  gv:red "139";
-  gv:blue "62";
-  gv:green "67";
-  gv:score "0.60211658";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "949cb6";
-  gv:red "148";
-  gv:blue "182";
-  gv:green "156";
-  gv:score "9.8724417";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "4a516b";
-  gv:red "74";
-  gv:blue "107";
-  gv:green "81";
-  gv:score "9.1293618";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "bdc5df";
-  gv:red "189";
-  gv:blue "223";
-  gv:green "197";
-  gv:score "8.7999217";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "e0dfe3";
-  gv:red "224";
-  gv:blue "227";
-  gv:green "223";
-  gv:score "7.1468696";
-  gv:coverage "60.946667"
-], [
-  gv:hex "d4c2a7";
-  gv:red "212";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "5.6506686";
-  gv:coverage "7.6666668"
-], [
-  gv:hex "9d9ea7";
-  gv:red "157";
-  gv:blue "167";
-  gv:green "158";
-  gv:score "5.1665332";
-  gv:coverage "1.4133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.959131"
-];
-    w:bagOfWords "LICOR DE NARANJAS\nARRODA\nANUEL\nMALAGA\nTRIPLE\nSECO\n1924\nr O. o DE MARzo "@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4579";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

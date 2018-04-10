@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0063";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "ACA IST\nGIS\nN 44\nnELLA\nRESERVA ESPECIAL\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nBILBAO\nHAR O\n"@spa;
-    gv:color [
-  gv:hex "d6bca6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "188";
-  gv:score "31.442413000000002";
-  gv:coverage "54.66"
-], [
-  gv:hex "951f21";
-  gv:red "149";
-  gv:blue "33";
-  gv:green "31";
-  gv:score "1.8179728";
-  gv:coverage "0.04"
-], [
-  gv:hex "701909";
-  gv:red "112";
-  gv:blue "9";
-  gv:green "25";
-  gv:score "1.113158";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "b89d84";
-  gv:red "184";
-  gv:blue "132";
-  gv:green "157";
-  gv:score "16.327945999999997";
-  gv:coverage "2.92"
-], [
-  gv:hex "bb9580";
-  gv:red "187";
-  gv:blue "128";
-  gv:green "149";
-  gv:score "10.572560000000001";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "deb9a8";
-  gv:red "222";
-  gv:blue "168";
-  gv:green "185";
-  gv:score "7.20386";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "927556";
-  gv:red "146";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "5.7290744";
-  gv:coverage "0.58"
-], [
-  gv:hex "977157";
-  gv:red "151";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "5.2732516";
-  gv:coverage "0.36"
-], [
-  gv:hex "a99895";
-  gv:red "169";
-  gv:blue "149";
-  gv:green "152";
-  gv:score "2.8467469";
-  gv:coverage "0.86"
-], [
-  gv:hex "857571";
-  gv:red "133";
-  gv:blue "113";
-  gv:green "117";
-  gv:score "2.2386251";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.917966"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.453717"
-];
-    w:bagOfWords "ACA IST\nGIS\nN 44\nnELLA\nRESERVA ESPECIAL\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nBILBAO\nHAR O\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0063";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

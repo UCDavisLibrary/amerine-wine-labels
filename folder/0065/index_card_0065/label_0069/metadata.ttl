@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0069";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "D. CAN TINE\nCAN TINE\nGENOVA\nImportazione\nEsportazione\nBARBERA EXTRA\nMontegrosso d'Asti\nont. 750 circa\nSup. gr. 10\nRenu\n"@ita;
-    gv:color [
-  gv:hex "d6bfa6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "31.275308000000003";
-  gv:coverage "18.62"
-], [
-  gv:hex "b65c40";
-  gv:red "182";
-  gv:blue "64";
-  gv:green "92";
-  gv:score "2.3730596999999998";
-  gv:coverage "0.2"
-], [
-  gv:hex "e7b8a3";
-  gv:red "231";
-  gv:blue "163";
-  gv:green "184";
-  gv:score "12.329821";
-  gv:coverage "2.8866666999999997"
-], [
-  gv:hex "c69583";
-  gv:red "198";
-  gv:blue "131";
-  gv:green "149";
-  gv:score "11.74299";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "c99462";
-  gv:red "201";
-  gv:blue "98";
-  gv:green "148";
-  gv:score "7.0636615";
-  gv:coverage "1.26"
-], [
-  gv:hex "b59b7f";
-  gv:red "181";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "6.5098009999999995";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "c09e6e";
-  gv:red "192";
-  gv:blue "110";
-  gv:green "158";
-  gv:score "4.0138643";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "e3ad7e";
-  gv:red "227";
-  gv:blue "126";
-  gv:green "173";
-  gv:score "3.1028619";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "d6b282";
-  gv:red "214";
-  gv:blue "130";
-  gv:green "178";
-  gv:score "2.8778318";
-  gv:coverage "0.54"
-], [
-  gv:hex "a5725f";
-  gv:red "165";
-  gv:blue "95";
-  gv:green "114";
-  gv:score "2.8254474000000003";
-  gv:coverage "0.69333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "76.51937"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.293823"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.544862"
-];
-    w:bagOfWords "D. CAN TINE\nCAN TINE\nGENOVA\nImportazione\nEsportazione\nBARBERA EXTRA\nMontegrosso d'Asti\nont. 750 circa\nSup. gr. 10\nRenu\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0069";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

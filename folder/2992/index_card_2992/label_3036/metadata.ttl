@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3036";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "1995\nCHATEAU LA TOUR\nUT-BRIO\nGRAND VIN\nGRAVES\nROUGE S\nTALE NCE\nBORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    gv:color [
-  gv:hex "71562a";
-  gv:red "113";
-  gv:blue "42";
-  gv:green "86";
-  gv:score "27.663273";
-  gv:coverage "7.779999999999999"
-], [
-  gv:hex "886a39";
-  gv:red "136";
-  gv:blue "57";
-  gv:green "106";
-  gv:score "26.654612999999998";
-  gv:coverage "7.2866663"
-], [
-  gv:hex "695332";
-  gv:red "105";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "22.683877";
-  gv:coverage "5.9666667"
-], [
-  gv:hex "493516";
-  gv:red "73";
-  gv:blue "22";
-  gv:green "53";
-  gv:score "4.9306359";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "775428";
-  gv:red "119";
-  gv:blue "40";
-  gv:green "84";
-  gv:score "3.74825";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "8c6634";
-  gv:red "140";
-  gv:blue "52";
-  gv:green "102";
-  gv:score "3.7099421";
-  gv:coverage "1"
-], [
-  gv:hex "816846";
-  gv:red "129";
-  gv:blue "70";
-  gv:green "104";
-  gv:score "3.6822949";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "e7e2d8";
-  gv:red "231";
-  gv:blue "216";
-  gv:green "226";
-  gv:score "0.028237443999999997";
-  gv:coverage "56.08"
-], [
-  gv:hex "4f3711";
-  gv:red "79";
-  gv:blue "17";
-  gv:green "55";
-  gv:score "1.5704192";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "2c1a01";
-  gv:red "44";
-  gv:blue "1";
-  gv:green "26";
-  gv:score "0.8970435699999999";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.846738"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.468785"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.232085999999995"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.680479000000005"
-];
-    w:bagOfWords "1995\nCHATEAU LA TOUR\nUT-BRIO\nGRAND VIN\nGRAVES\nROUGE S\nTALE NCE\nBORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3036";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

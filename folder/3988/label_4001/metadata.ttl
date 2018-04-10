@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_4001";
-    dct:type "image";
-    w:bagOfWords "DE POSE\nRHUM VIEUX\nMARTINIQUE\nNo 213\nIMP. TTERWALD.BORDEAU\n"@eng;
-    gv:color [
-  gv:hex "7e7762";
-  gv:red "126";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "18.924057";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "932514";
-  gv:red "147";
-  gv:blue "20";
-  gv:green "37";
-  gv:score "3.3481604999999997";
-  gv:coverage "0.1"
-], [
-  gv:hex "a39b84";
-  gv:red "163";
-  gv:blue "132";
-  gv:green "155";
-  gv:score "10.817103";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "c6bea7";
-  gv:red "198";
-  gv:blue "167";
-  gv:green "190";
-  gv:score "9.4807714";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "d1c4bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "8.0771856";
-  gv:coverage "17.633334"
-], [
-  gv:hex "ebded7";
-  gv:red "235";
-  gv:blue "215";
-  gv:green "222";
-  gv:score "4.9120194999999995";
-  gv:coverage "68.34666700000001"
-], [
-  gv:hex "7f776d";
-  gv:red "127";
-  gv:blue "109";
-  gv:green "119";
-  gv:score "4.6478797";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "a59991";
-  gv:red "165";
-  gv:blue "145";
-  gv:green "153";
-  gv:score "4.4769824";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "b49592";
-  gv:red "180";
-  gv:blue "146";
-  gv:green "149";
-  gv:score "4.3031864";
-  gv:coverage "0.44"
-], [
-  gv:hex "625b46";
-  gv:red "98";
-  gv:blue "70";
-  gv:green "91";
-  gv:score "4.102971";
-  gv:coverage "0.71333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.61289500000001"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.243911000000004"
-];
-    w:bagOfWords "DE POSE\nRHUM VIEUX\nMARTINIQUE\nNo 213\nIMP. TTERWALD.BORDEAU\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4001";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4702";
-    dct:type "image";
-    w:bagOfWords "MARCA\nREGIS TRADA\nDESTILERIAS J.GOMIS BARCELONA\n"@undefined;
-    gv:color [
-  gv:hex "debc8c";
-  gv:red "222";
-  gv:blue "140";
-  gv:green "188";
-  gv:score "60.370153";
-  gv:coverage "13.36"
-], [
-  gv:hex "bc9a6a";
-  gv:red "188";
-  gv:blue "106";
-  gv:green "154";
-  gv:score "27.760755999999997";
-  gv:coverage "5.4399999999999995"
-], [
-  gv:hex "dbbf9a";
-  gv:red "219";
-  gv:blue "154";
-  gv:green "191";
-  gv:score "6.4561389";
-  gv:coverage "6.34"
-], [
-  gv:hex "9f7d4e";
-  gv:red "159";
-  gv:blue "78";
-  gv:green "125";
-  gv:score "1.4454893";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "9d7647";
-  gv:red "157";
-  gv:blue "71";
-  gv:green "118";
-  gv:score "1.357179";
-  gv:coverage "0.22"
-], [
-  gv:hex "b28a59";
-  gv:red "178";
-  gv:blue "89";
-  gv:green "138";
-  gv:score "1.1608772";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "bc9d77";
-  gv:red "188";
-  gv:blue "119";
-  gv:green "157";
-  gv:score "0.9177201399999999";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "857b72";
-  gv:red "133";
-  gv:blue "114";
-  gv:green "123";
-  gv:score "0.0052446074";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "e7d8c1";
-  gv:red "231";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "0.25537751999999997";
-  gv:coverage "4.32"
-], [
-  gv:hex "f4d3a1";
-  gv:red "244";
-  gv:blue "161";
-  gv:green "211";
-  gv:score "0.22055067";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.307823"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.478589"
-];
-    w:bagOfWords "MARCA\nREGIS TRADA\nDESTILERIAS J.GOMIS BARCELONA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4702";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

@@ -1,94 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2092/label_2093";
-    dct:type "image";
-    w:bagOfWords "Rhein alz\nOFLIEFERANTEN\nESITZER\nWEIN GU\nAlcoholic content:\nContent\n11% by volume\npt. 8 fl. oz.\n1947\nDeidesheimer Herrgottsacker\nRiesling\ntillebran\nsholl\ngrowth: Winzerverein\nG3. 38533\n"@undefined;
-    gv:color [
-  gv:hex "d2c0ab";
-  gv:red "210";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "11.622438";
-  gv:coverage "45.1"
-], [
-  gv:hex "60523d";
-  gv:red "96";
-  gv:blue "61";
-  gv:green "82";
-  gv:score "11.50953";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "943e28";
-  gv:red "148";
-  gv:blue "40";
-  gv:green "62";
-  gv:score "5.9933942";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "847461";
-  gv:red "132";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "8.6103208";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "ac9a86";
-  gv:red "172";
-  gv:blue "134";
-  gv:green "154";
-  gv:score "8.275383699999999";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "565251";
-  gv:red "86";
-  gv:blue "81";
-  gv:green "82";
-  gv:score "6.2995963";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "3b363a";
-  gv:red "59";
-  gv:blue "58";
-  gv:green "54";
-  gv:score "5.3425536000000005";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "734536";
-  gv:red "115";
-  gv:blue "54";
-  gv:green "69";
-  gv:score "4.4496816";
-  gv:coverage "0.22"
-], [
-  gv:hex "b1563d";
-  gv:red "177";
-  gv:blue "61";
-  gv:green "86";
-  gv:score "3.534504";
-  gv:coverage "0.06"
-], [
-  gv:hex "443923";
-  gv:red "68";
-  gv:blue "35";
-  gv:green "57";
-  gv:score "3.5321243000000004";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.48062999999999"
-];
-    w:bagOfWords "Rhein alz\nOFLIEFERANTEN\nESITZER\nWEIN GU\nAlcoholic content:\nContent\n11% by volume\npt. 8 fl. oz.\n1947\nDeidesheimer Herrgottsacker\nRiesling\ntillebran\nsholl\ngrowth: Winzerverein\nG3. 38533\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2093";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

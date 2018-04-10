@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5056";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "CONTENTS 1\nOZ.\nADE MA\nMEIERS\nOHIO\nSweet Catawba\nAWINE\nPRODU\nAND BOTTLED BY\nsteVERTON. OHIO\nOHIO A-88 8TH DIST.\n"@undefined;
-    gv:color [
-  gv:hex "88704f";
-  gv:red "136";
-  gv:blue "79";
-  gv:green "112";
-  gv:score "23.994462";
-  gv:coverage "3.3133332"
-], [
-  gv:hex "392a46";
-  gv:red "57";
-  gv:blue "70";
-  gv:green "42";
-  gv:score "0.67295278";
-  gv:coverage "0.06"
-], [
-  gv:hex "8c7244";
-  gv:red "140";
-  gv:blue "68";
-  gv:green "114";
-  gv:score "23.504637";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "a192ae";
-  gv:red "161";
-  gv:blue "174";
-  gv:green "146";
-  gv:score "0.21300158000000002";
-  gv:coverage "0.02"
-], [
-  gv:hex "c5bfd8";
-  gv:red "197";
-  gv:blue "216";
-  gv:green "191";
-  gv:score "0.13968671";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "6c5434";
-  gv:red "108";
-  gv:blue "52";
-  gv:green "84";
-  gv:score "13.927709";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "a99475";
-  gv:red "169";
-  gv:blue "117";
-  gv:green "148";
-  gv:score "6.3035339";
-  gv:coverage "3.4799999999999995"
-], [
-  gv:hex "6e5429";
-  gv:red "110";
-  gv:blue "41";
-  gv:green "84";
-  gv:score "5.7534259";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "ab8f5e";
-  gv:red "171";
-  gv:blue "94";
-  gv:green "143";
-  gv:score "4.4674382";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "694b2d";
-  gv:red "105";
-  gv:blue "45";
-  gv:green "75";
-  gv:score "3.3192918000000002";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0gzznm>;
-  gv:desc "powder";
-  gv:score "63.227367"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "55.228031"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.614422000000005"
-];
-    w:bagOfWords "CONTENTS 1\nOZ.\nADE MA\nMEIERS\nOHIO\nSweet Catawba\nAWINE\nPRODU\nAND BOTTLED BY\nsteVERTON. OHIO\nOHIO A-88 8TH DIST.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5056";
+    <schema.keywords> "UC Reporters Notebook@en".
+

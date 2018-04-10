@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4638";
-    dct:type "image";
-    w:bagOfWords "FINO GONZALEZ\nJerez Gratico.\n"@spa;
-    gv:color [
-  gv:hex "a2988e";
-  gv:red "162";
-  gv:blue "142";
-  gv:green "152";
-  gv:score "38.076088000000006";
-  gv:coverage "3.6999999999999997"
-], [
-  gv:hex "ccc2b9";
-  gv:red "204";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "26.991813999999998";
-  gv:coverage "18.766667"
-], [
-  gv:hex "867c73";
-  gv:red "134";
-  gv:blue "115";
-  gv:green "124";
-  gv:score "24.595058";
-  gv:coverage "1.68"
-], [
-  gv:hex "e6dcd2";
-  gv:red "230";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "8.7245084";
-  gv:coverage "71.36"
-], [
-  gv:hex "3f3629";
-  gv:red "63";
-  gv:blue "41";
-  gv:green "54";
-  gv:score "0.024684306";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "cfc6b7";
-  gv:red "207";
-  gv:blue "183";
-  gv:green "198";
-  gv:score "1.0181789";
-  gv:coverage "2.88"
-], [
-  gv:hex "675d54";
-  gv:red "103";
-  gv:blue "84";
-  gv:green "93";
-  gv:score "0.56458078";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "423a2f";
-  gv:red "66";
-  gv:blue "47";
-  gv:green "58";
-  gv:score "0.0050866307";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e4dac9";
-  gv:red "228";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "1.8953647999999998e-7";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "231a0d";
-  gv:red "35";
-  gv:blue "13";
-  gv:green "26";
-  gv:score "1.7152622999999998e-9";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.126726"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "64.140719"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.655379"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.924583999999996"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "53.586518999999996"
-];
-    w:bagOfWords "FINO GONZALEZ\nJerez Gratico.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4638";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

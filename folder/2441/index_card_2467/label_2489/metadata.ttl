@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2489";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "AGE\nWHITE BURGUNDY TABLE WINE\nHEVALIER MONTRACIIET\n%vnt Les Demoiselles\nPRODUCED AND\nBOTTLED BY\nLOUIS JADOT ,A BEA UNE- FRAN\nMise en Bouteilles du Domaine\nCONTENTS 3/4 QUART\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d7c0a3";
-  gv:red "215";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "46.916741";
-  gv:coverage "17.426667000000002"
-], [
-  gv:hex "af987e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "152";
-  gv:score "23.085867";
-  gv:coverage "6.6733329999999995"
-], [
-  gv:hex "8c775e";
-  gv:red "140";
-  gv:blue "94";
-  gv:green "119";
-  gv:score "17.023633";
-  gv:coverage "5.04"
-], [
-  gv:hex "f0d8bd";
-  gv:red "240";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "7.5575382";
-  gv:coverage "7.12"
-], [
-  gv:hex "69533a";
-  gv:red "105";
-  gv:blue "58";
-  gv:green "83";
-  gv:score "3.9953984";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "493319";
-  gv:red "73";
-  gv:blue "25";
-  gv:green "51";
-  gv:score "1.172231";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "1f1a11";
-  gv:red "31";
-  gv:blue "17";
-  gv:green "26";
-  gv:score "0.0062237996";
-  gv:coverage "0.04"
-], [
-  gv:hex "432a10";
-  gv:red "67";
-  gv:blue "16";
-  gv:green "42";
-  gv:score "0.17785135";
-  gv:coverage "0.02"
-], [
-  gv:hex "e6ddd3";
-  gv:red "230";
-  gv:blue "211";
-  gv:green "221";
-  gv:score "0.024364417";
-  gv:coverage "55.966669"
-], [
-  gv:hex "ccc4ba";
-  gv:red "204";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "0.019656416";
-  gv:coverage "6.573333600000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.242222"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.536766"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.402618000000004"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.247169"
-];
-    w:bagOfWords "AGE\nWHITE BURGUNDY TABLE WINE\nHEVALIER MONTRACIIET\n%vnt Les Demoiselles\nPRODUCED AND\nBOTTLED BY\nLOUIS JADOT ,A BEA UNE- FRAN\nMise en Bouteilles du Domaine\nCONTENTS 3/4 QUART\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2489";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

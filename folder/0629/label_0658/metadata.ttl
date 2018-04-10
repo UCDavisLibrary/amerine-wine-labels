@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0658";
-    dct:type "image";
-    w:bagOfWords "CHATEAU\nPAVEIL DE LUZE\nAppellation HAUT MEDoc Control ée\nBORDEAUX\n"@undefined;
-    gv:color [
-  gv:hex "7e7469";
-  gv:red "126";
-  gv:blue "105";
-  gv:green "116";
-  gv:score "27.114946";
-  gv:coverage "2.58"
-], [
-  gv:hex "d4c0a6";
-  gv:red "212";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "10.502359";
-  gv:coverage "8.0466665"
-], [
-  gv:hex "c1a06a";
-  gv:red "193";
-  gv:blue "106";
-  gv:green "160";
-  gv:score "5.1047988";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "62584e";
-  gv:red "98";
-  gv:blue "78";
-  gv:green "88";
-  gv:score "16.634555000000002";
-  gv:coverage "1.44"
-], [
-  gv:hex "a3988f";
-  gv:red "163";
-  gv:blue "143";
-  gv:green "152";
-  gv:score "12.145992";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "2b2117";
-  gv:red "43";
-  gv:blue "23";
-  gv:green "33";
-  gv:score "0.10551244000000001";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "cdc2b8";
-  gv:red "205";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "10.161480000000001";
-  gv:coverage "16.7"
-], [
-  gv:hex "d7b47e";
-  gv:red "215";
-  gv:blue "126";
-  gv:green "180";
-  gv:score "4.6476059";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "7c7363";
-  gv:red "124";
-  gv:blue "99";
-  gv:green "115";
-  gv:score "3.1190915";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "e6dcd2";
-  gv:red "230";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "2.7683826000000002";
-  gv:coverage "62.053335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "76.005703"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.582879999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHATEAU\nPAVEIL DE LUZE\nAppellation HAUT MEDoc Control ée\nBORDEAUX\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0658";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

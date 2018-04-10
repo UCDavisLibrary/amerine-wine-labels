@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3168";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "MAISON FOND EE EN 797\nNEGOCIANT A BEAUNE (COTE D'OR)\nAPPELLATION CONTROLEE\nROUALET BEAUNE.\n"@fra;
-    gv:color [
-  gv:hex "d4c4b4";
-  gv:red "212";
-  gv:blue "180";
-  gv:green "196";
-  gv:score "53.985929";
-  gv:coverage "14.2"
-], [
-  gv:hex "aa9b8b";
-  gv:red "170";
-  gv:blue "139";
-  gv:green "155";
-  gv:score "19.258613999999998";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "e8d9c9";
-  gv:red "232";
-  gv:blue "201";
-  gv:green "217";
-  gv:score "18.053086";
-  gv:coverage "9.5933333"
-], [
-  gv:hex "887868";
-  gv:red "136";
-  gv:blue "104";
-  gv:green "120";
-  gv:score "5.9108436";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "d9cbbe";
-  gv:red "217";
-  gv:blue "190";
-  gv:green "203";
-  gv:score "1.0900725";
-  gv:coverage "5.6866668"
-], [
-  gv:hex "e5d9cc";
-  gv:red "229";
-  gv:blue "204";
-  gv:green "217";
-  gv:score "0.92741223";
-  gv:coverage "68.026668"
-], [
-  gv:hex "6f5e4f";
-  gv:red "111";
-  gv:blue "79";
-  gv:green "94";
-  gv:score "0.6517828";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "242014";
-  gv:red "36";
-  gv:blue "20";
-  gv:green "32";
-  gv:score "0.005656312";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "afa599";
-  gv:red "175";
-  gv:blue "153";
-  gv:green "165";
-  gv:score "0.038994625";
-  gv:coverage "0.08"
-], [
-  gv:hex "767165";
-  gv:red "118";
-  gv:blue "101";
-  gv:green "113";
-  gv:score "0.031287319";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "72.737151"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.3398"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.445"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.498008"
-];
-    w:bagOfWords "MAISON FOND EE EN 797\nNEGOCIANT A BEAUNE (COTE D'OR)\nAPPELLATION CONTROLEE\nROUALET BEAUNE.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3168";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

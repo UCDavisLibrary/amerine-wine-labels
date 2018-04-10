@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3021";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nCHATEAU HAUT BRION\nPREMIER GRAND CRU CLASS\nE\nAPPELLATION GRAVES CONTR LEE\nM S E N\nB OUT E\nLLES AU CHAT E AU\nS.A. DU CHATEAU HAUT.BRION. PROPRIETAIRE A PESSAC (GIRONDE\n1 DE POSE\n"@fra;
-    gv:color [
-  gv:hex "8d7656";
-  gv:red "141";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "35.388264";
-  gv:coverage "6.7666665"
-], [
-  gv:hex "d7c2a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "194";
-  gv:score "31.030165999999998";
-  gv:coverage "22.246666"
-], [
-  gv:hex "ad9777";
-  gv:red "173";
-  gv:blue "119";
-  gv:green "151";
-  gv:score "26.721549";
-  gv:coverage "6.660000000000001"
-], [
-  gv:hex "edd9be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "3.0170862";
-  gv:coverage "5.16"
-], [
-  gv:hex "6b5739";
-  gv:red "107";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "2.8259819";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "8f7a4f";
-  gv:red "143";
-  gv:blue "79";
-  gv:green "122";
-  gv:score "0.48779113999999996";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "ab996b";
-  gv:red "171";
-  gv:blue "107";
-  gv:green "153";
-  gv:score "0.24171234";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "453419";
-  gv:red "69";
-  gv:blue "25";
-  gv:green "52";
-  gv:score "0.10498977";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "705f35";
-  gv:red "112";
-  gv:blue "53";
-  gv:green "95";
-  gv:score "0.047849098";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "947256";
-  gv:red "148";
-  gv:blue "86";
-  gv:green "114";
-  gv:score "0.045101863";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.485648000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.16016200000001"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.727951"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.82122699999999"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nCHATEAU HAUT BRION\nPREMIER GRAND CRU CLASS\nE\nAPPELLATION GRAVES CONTR LEE\nM S E N\nB OUT E\nLLES AU CHAT E AU\nS.A. DU CHATEAU HAUT.BRION. PROPRIETAIRE A PESSAC (GIRONDE\n1 DE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3021";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

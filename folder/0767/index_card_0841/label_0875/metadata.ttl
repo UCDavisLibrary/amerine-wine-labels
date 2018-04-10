@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0875";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "MARQUE\nCHAM PAGNE\nAbel Lepitre\nIDEALE CUVEE\nudes pres Reims\nN. M. 3.321.392 A\n"@fra;
-    gv:color [
-  gv:hex "2f2f26";
-  gv:red "47";
-  gv:blue "38";
-  gv:green "47";
-  gv:score "24.698064";
-  gv:coverage "10.466667000000001"
-], [
-  gv:hex "b65c21";
-  gv:red "182";
-  gv:blue "33";
-  gv:green "92";
-  gv:score "2.7292632";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "d2916a";
-  gv:red "210";
-  gv:blue "106";
-  gv:green "145";
-  gv:score "1.8248545";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "c4c2b8";
-  gv:red "196";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "1.3555175";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "efb298";
-  gv:red "239";
-  gv:blue "152";
-  gv:green "178";
-  gv:score "0.68711811";
-  gv:coverage "0.06"
-], [
-  gv:hex "1c1c14";
-  gv:red "28";
-  gv:blue "20";
-  gv:green "28";
-  gv:score "24.604312";
-  gv:coverage "9.02"
-], [
-  gv:hex "342f1d";
-  gv:red "52";
-  gv:blue "29";
-  gv:green "47";
-  gv:score "8.688388";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "221e0d";
-  gv:red "34";
-  gv:blue "13";
-  gv:green "30";
-  gv:score "6.2689923";
-  gv:coverage "1.2"
-], [
-  gv:hex "525147";
-  gv:red "82";
-  gv:blue "71";
-  gv:green "81";
-  gv:score "4.2327382";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "5a513c";
-  gv:red "90";
-  gv:blue "60";
-  gv:green "81";
-  gv:score "4.0591009";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.874474"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "66.266477"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.177834999999995"
-];
-    w:bagOfWords "MARQUE\nCHAM PAGNE\nAbel Lepitre\nIDEALE CUVEE\nudes pres Reims\nN. M. 3.321.392 A\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0875";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,0 +1,857 @@
+** Managethis statistics
+
+ #+name: label_info
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+		 select identifier,language,category
+		 from labels_label order by identifier
+		 limit 5;
+ #+end_src
+
+ #+RESULTS: label_info
+ | identifier | language | category |
+ |------------+----------+----------|
+ |       0002 | spa      | Spain    |
+ |       0003 | spa      | Spain    |
+ |       0004 | spa      | Spain    |
+ |       0005 | spa      | Spain    |
+ |       0006 | spa      | Spain    |
+
+
+First, we'd like to know the total number of marks that we have.
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+		 select mark_type,count(*) from labels_mark group by 1 order by 1;
+ #+end_src
+
+ #+RESULTS:
+ | mark_type | count |
+ |-----------+-------|
+ | image     |  6492 |
+ | text      | 37590 |
+
+Next, lets get a list of the labels with the most and least marks, and let's get
+a histogram of the marks.
+
+Here are some labels with no text marks;
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+	 with m as (
+			select label_id as id,mark_type,count(*) as count
+			from labels_mark group by 1,2
+			),
+			t as (
+			select l.identifier,count
+			from m join labels_label l
+			using (id) where mark_type='text'
+			)
+			select l.identifier
+			from labels_label l left join t using (identifier)
+			where t is null order by 1;
+ #+end_src
+
+ #+RESULTS:
+ | identifier |
+ |------------|
+ |       0449 |
+ |       0845 |
+ |       1213 |
+ |       1763 |
+ |       4827 |
+ |       4828 |
+ |       4829 |
+ |       4831 |
+
+
+And here's a histogram of the number of text marks for the labels.
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+		 with m as (
+		select label_id as id,mark_type,count(*) as count
+		from labels_mark
+		group by 1,2
+		),
+		t as (
+		select l.identifier,count
+		from m join labels_label l using (id)
+		where mark_type='text'
+		),
+		h as (
+		select (count/5) as num,count(*)
+		from t
+		group by 1 order by 1
+		)
+		select 5*num||'-'||5*(num+1)-1 as range,count
+		from h;
+#+end_src
+
+#+RESULTS:
+| range | count |
+|-------+-------|
+|   0-4 |   606 |
+|   5-9 |  2568 |
+| 10-14 |  1161 |
+| 15-19 |   210 |
+| 20-24 |    32 |
+| 25-29 |     7 |
+| 30-34 |     3 |
+| 40-44 |     1 |
+
+
+Similarly for images....
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+		 with m as (
+		select label_id as id,mark_type,count(*) as count
+		from labels_mark
+		group by 1,2
+		),
+		t as (
+		select l.identifier,count
+		from m join labels_label l using (id)
+		where mark_type='image'
+		),
+		h as (
+		select (count/5) as num,count(*)
+		from t
+		group by 1 order by 1
+		)
+		select 5*num||'-'||5*(num+1)-1 as range,count
+		from h;
+#+end_src
+
+#+RESULTS:
+| range | count |
+|-------+-------|
+|   0-4 |  3844 |
+|   5-9 |   107 |
+| 10-14 |     4 |
+| 15-19 |     1 |
+
+
+*** Text Transcriptions
+
+Now, we want to see the transcriptions that we have for these images.  We know
+that we have about 15K transcriptions from the marks.
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+	 with
+				t as (
+			 select l.identifier,text
+			 from labels_transcription t
+			 join labels_mark m on (t.mark_id=m.id)
+			 join labels_label l on (m.label_id=l.id)
+			 where m.mark_type='text'
+			 ) ,
+			d as (select distinct * from t)
+				 select 'total'::text,count(*) from t
+			 union
+			select 'distinct',count(*) from d;
+ #+end_src
+
+ #+RESULTS:
+ | text     | count |
+ |----------+-------|
+ | distinct | 15335 |
+ | total    | 15861 |
+
+
+Here's how we can get all the transcriptions. Where we can see that we have
+transcriptions on only about 1500 labels;
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+		create or replace view transcription_bag as
+		 with t as (
+			select l.identifier,text
+			from labels_transcription t
+			join labels_mark m on (t.mark_id=m.id)
+			join labels_label l on (m.label_id=l.id)
+			where m.mark_type='text'
+			)
+			select identifier,
+			string_agg(text,E'\n' order by text) as text
+			from t
+			group by identifier;
+	 select count(*) from  transcription_bag;
+ #+end_src
+
+ #+RESULTS:
+ | CREATE VIEW |
+ |-------------|
+ | count       |
+ | 1527        |
+
+
+How about a histogram that shows how many transcriptions per mark
+
+ #+header: :engine postgresql :cmdline "service=managethis"
+ #+begin_src sql
+			with t as (
+			 select m.identifier,m.mark_type,text
+			 from labels_mark m
+			 join labels_transcription t on (t.mark_id=m.id)
+			 ),
+			 s as (
+			 select identifier,mark_type,count(*) as transcriptions
+			 from t
+			 group by identifier,mark_type)
+		select mark_type,transcriptions,count(*)
+		from s group by 1,2
+			union
+	 select 'image',0,count(*) from labels_mark m
+   left join labels_transcription t on (m.id=t.mark_id)
+   where m.mark_type='image' and t is null
+union
+	 select 'text',0,count(*) from labels_mark m
+   left join labels_transcription t on (m.id=t.mark_id)
+   where m.mark_type='text' and t is null
+order by 1,2;
+
+ #+end_src
+
+ #+RESULTS:
+ | mark_type | transcriptions | count |
+ |-----------+----------------+-------|
+ | image     |              0 |  4580 |
+ | image     |              1 |   767 |
+ | image     |              2 |  1104 |
+ | image     |              3 |    19 |
+ | image     |              4 |     2 |
+ | image     |              5 |     1 |
+ | image     |              7 |     2 |
+ | image     |              8 |     1 |
+ | image     |              9 |     2 |
+ | image     |             11 |     1 |
+ | image     |             13 |     1 |
+ | image     |             16 |     3 |
+ | image     |             18 |     1 |
+ | image     |             19 |     2 |
+ | image     |             21 |     1 |
+ | image     |             22 |     2 |
+ | image     |             24 |     1 |
+ | image     |             25 |     2 |
+ | text      |              0 | 27535 |
+ | text      |              1 |  4967 |
+ | text      |              2 |  4895 |
+ | text      |              3 |   104 |
+ | text      |              4 |    21 |
+ | text      |              5 |    12 |
+ | text      |              6 |    10 |
+ | text      |              7 |     5 |
+ | text      |              8 |     8 |
+ | text      |              9 |     3 |
+ | text      |             10 |     4 |
+ | text      |             11 |     2 |
+ | text      |             12 |     5 |
+ | text      |             13 |     3 |
+ | text      |             14 |     1 |
+ | text      |             15 |     4 |
+ | text      |             16 |     1 |
+ | text      |             17 |     1 |
+ | text      |             18 |     3 |
+ | text      |             21 |     1 |
+ | text      |             22 |     1 |
+ | text      |             23 |     1 |
+ | text      |             24 |     1 |
+ | text      |             25 |     2 |
+
+
+** Google Vision Ripoff
+
+Finally, we want to create a new JSON file, as if we had run this through google
+vision.  We want to include the marks, and the rectangles.
+
+*** Scripting
+
+In the end we want to populate our metadata files with the label_this data, as
+in
+
+#+begin_src bash
+	for i in ../a????; do
+		n=`basename $i | tr -d 'a'`;
+		j=`psql -At -d managethis -c "select json from pseudo_vision where identifier='$n'"`;
+		if [[ -z $j ]]; then
+			echo $i MISSING ;
+		else
+			echo $j | jq . > $i/label_this.json;
+		fi ;
+	done
+#+end_src
+
+#+RESULTS:
+| ../a0001 | MISSING |
+| ../a0014 | MISSING |
+| ../a0065 | MISSING |
+| ../a0161 | MISSING |
+| ../a0181 | MISSING |
+| ../a0198 | MISSING |
+| ../a0221 | MISSING |
+| ../a0240 | MISSING |
+| ../a0255 | MISSING |
+| ../a0269 | MISSING |
+| ../a0276 | MISSING |
+| ../a0285 | MISSING |
+| ../a0315 | MISSING |
+| ../a0353 | MISSING |
+| ../a0369 | MISSING |
+| ../a0370 | MISSING |
+| ../a0371 | MISSING |
+| ../a0372 | MISSING |
+| ../a0373 | MISSING |
+| ../a0374 | MISSING |
+| ../a0375 | MISSING |
+| ../a0376 | MISSING |
+| ../a0377 | MISSING |
+| ../a0378 | MISSING |
+| ../a0379 | MISSING |
+| ../a0380 | MISSING |
+| ../a0381 | MISSING |
+| ../a0383 | MISSING |
+| ../a0384 | MISSING |
+| ../a0385 | MISSING |
+| ../a0386 | MISSING |
+| ../a0390 | MISSING |
+| ../a0416 | MISSING |
+| ../a0419 | MISSING |
+| ../a0426 | MISSING |
+| ../a0449 | MISSING |
+| ../a0767 | MISSING |
+| ../a0779 | MISSING |
+| ../a0789 | MISSING |
+| ../a0841 | MISSING |
+| ../a0845 | MISSING |
+| ../a0926 | MISSING |
+| ../a0980 | MISSING |
+| ../a1025 | MISSING |
+| ../a1044 | MISSING |
+| ../a1070 | MISSING |
+| ../a1091 | MISSING |
+| ../a1111 | MISSING |
+| ../a1114 | MISSING |
+| ../a1133 | MISSING |
+| ../a1137 | MISSING |
+| ../a1147 | MISSING |
+| ../a1155 | MISSING |
+| ../a1174 | MISSING |
+| ../a1176 | MISSING |
+| ../a1195 | MISSING |
+| ../a1196 | MISSING |
+| ../a1217 | MISSING |
+| ../a1220 | MISSING |
+| ../a1230 | MISSING |
+| ../a1232 | MISSING |
+| ../a1236 | MISSING |
+| ../a1237 | MISSING |
+| ../a1242 | MISSING |
+| ../a1248 | MISSING |
+| ../a1249 | MISSING |
+| ../a1251 | MISSING |
+| ../a1267 | MISSING |
+| ../a1270 | MISSING |
+| ../a1292 | MISSING |
+| ../a1317 | MISSING |
+| ../a1366 | MISSING |
+| ../a1367 | MISSING |
+| ../a1391 | MISSING |
+| ../a1396 | MISSING |
+| ../a1402 | MISSING |
+| ../a1421 | MISSING |
+| ../a1425 | MISSING |
+| ../a1429 | MISSING |
+| ../a1443 | MISSING |
+| ../a1496 | MISSING |
+| ../a1514 | MISSING |
+| ../a1517 | MISSING |
+| ../a1518 | MISSING |
+| ../a1571 | MISSING |
+| ../a1579 | MISSING |
+| ../a1603 | MISSING |
+| ../a1616 | MISSING |
+| ../a1617 | MISSING |
+| ../a1620 | MISSING |
+| ../a1621 | MISSING |
+| ../a1623 | MISSING |
+| ../a1625 | MISSING |
+| ../a1626 | MISSING |
+| ../a1627 | MISSING |
+| ../a1628 | MISSING |
+| ../a1629 | MISSING |
+| ../a1630 | MISSING |
+| ../a1632 | MISSING |
+| ../a1641 | MISSING |
+| ../a1648 | MISSING |
+| ../a1691 | MISSING |
+| ../a1692 | MISSING |
+| ../a1693 | MISSING |
+| ../a1695 | MISSING |
+| ../a1702 | MISSING |
+| ../a1719 | MISSING |
+| ../a1723 | MISSING |
+| ../a1741 | MISSING |
+| ../a1763 | MISSING |
+| ../a1829 | MISSING |
+| ../a1859 | MISSING |
+| ../a1862 | MISSING |
+| ../a1864 | MISSING |
+| ../a1865 | MISSING |
+| ../a1867 | MISSING |
+| ../a1871 | MISSING |
+| ../a1874 | MISSING |
+| ../a1875 | MISSING |
+| ../a1876 | MISSING |
+| ../a1878 | MISSING |
+| ../a1894 | MISSING |
+| ../a1897 | MISSING |
+| ../a1900 | MISSING |
+| ../a1902 | MISSING |
+| ../a1918 | MISSING |
+| ../a1921 | MISSING |
+| ../a1922 | MISSING |
+| ../a1923 | MISSING |
+| ../a1924 | MISSING |
+| ../a1925 | MISSING |
+| ../a1926 | MISSING |
+| ../a1929 | MISSING |
+| ../a1934 | MISSING |
+| ../a1935 | MISSING |
+| ../a1936 | MISSING |
+| ../a1938 | MISSING |
+| ../a1939 | MISSING |
+| ../a1940 | MISSING |
+| ../a1941 | MISSING |
+| ../a1949 | MISSING |
+| ../a1951 | MISSING |
+| ../a1952 | MISSING |
+| ../a1954 | MISSING |
+| ../a1956 | MISSING |
+| ../a1957 | MISSING |
+| ../a1959 | MISSING |
+| ../a1960 | MISSING |
+| ../a1962 | MISSING |
+| ../a1964 | MISSING |
+| ../a1965 | MISSING |
+| ../a1975 | MISSING |
+| ../a1977 | MISSING |
+| ../a1984 | MISSING |
+| ../a1986 | MISSING |
+| ../a1987 | MISSING |
+| ../a1988 | MISSING |
+| ../a1989 | MISSING |
+| ../a1990 | MISSING |
+| ../a1991 | MISSING |
+| ../a2020 | MISSING |
+| ../a2092 | MISSING |
+| ../a2111 | MISSING |
+| ../a2115 | MISSING |
+| ../a2118 | MISSING |
+| ../a2119 | MISSING |
+| ../a2120 | MISSING |
+| ../a2125 | MISSING |
+| ../a2127 | MISSING |
+| ../a2128 | MISSING |
+| ../a2130 | MISSING |
+| ../a2134 | MISSING |
+| ../a2136 | MISSING |
+| ../a2139 | MISSING |
+| ../a2140 | MISSING |
+| ../a2157 | MISSING |
+| ../a2161 | MISSING |
+| ../a2171 | MISSING |
+| ../a2172 | MISSING |
+| ../a2173 | MISSING |
+| ../a2183 | MISSING |
+| ../a2184 | MISSING |
+| ../a2191 | MISSING |
+| ../a2201 | MISSING |
+| ../a2215 | MISSING |
+| ../a2221 | MISSING |
+| ../a2222 | MISSING |
+| ../a2223 | MISSING |
+| ../a2224 | MISSING |
+| ../a2225 | MISSING |
+| ../a2226 | MISSING |
+| ../a2227 | MISSING |
+| ../a2228 | MISSING |
+| ../a2229 | MISSING |
+| ../a2230 | MISSING |
+| ../a2231 | MISSING |
+| ../a2232 | MISSING |
+| ../a2233 | MISSING |
+| ../a2234 | MISSING |
+| ../a2235 | MISSING |
+| ../a2236 | MISSING |
+| ../a2237 | MISSING |
+| ../a2238 | MISSING |
+| ../a2239 | MISSING |
+| ../a2240 | MISSING |
+| ../a2241 | MISSING |
+| ../a2242 | MISSING |
+| ../a2278 | MISSING |
+| ../a2293 | MISSING |
+| ../a2334 | MISSING |
+| ../a2348 | MISSING |
+| ../a2361 | MISSING |
+| ../a2379 | MISSING |
+| ../a2403 | MISSING |
+| ../a2422 | MISSING |
+| ../a2441 | MISSING |
+| ../a2467 | MISSING |
+| ../a2522 | MISSING |
+| ../a2569 | MISSING |
+| ../a2603 | MISSING |
+| ../a2617 | MISSING |
+| ../a2696 | MISSING |
+| ../a2756 | MISSING |
+| ../a2786 | MISSING |
+| ../a2792 | MISSING |
+| ../a2805 | MISSING |
+| ../a2814 | MISSING |
+| ../a2826 | MISSING |
+| ../a2847 | MISSING |
+| ../a2883 | MISSING |
+| ../a2893 | MISSING |
+| ../a2992 | MISSING |
+| ../a3026 | MISSING |
+| ../a3037 | MISSING |
+| ../a3043 | MISSING |
+| ../a3100 | MISSING |
+| ../a3115 | MISSING |
+| ../a3142 | MISSING |
+| ../a3183 | MISSING |
+| ../a3191 | MISSING |
+| ../a3219 | MISSING |
+| ../a3243 | MISSING |
+| ../a3256 | MISSING |
+| ../a3303 | MISSING |
+| ../a3317 | MISSING |
+| ../a3320 | MISSING |
+| ../a3321 | MISSING |
+| ../a3351 | MISSING |
+| ../a3357 | MISSING |
+| ../a3394 | MISSING |
+| ../a3402 | MISSING |
+| ../a3404 | MISSING |
+| ../a3407 | MISSING |
+| ../a3429 | MISSING |
+| ../a3461 | MISSING |
+| ../a3484 | MISSING |
+| ../a3515 | MISSING |
+| ../a3516 | MISSING |
+| ../a3517 | MISSING |
+| ../a3518 | MISSING |
+| ../a3525 | MISSING |
+| ../a3542 | MISSING |
+| ../a3545 | MISSING |
+| ../a3553 | MISSING |
+| ../a3574 | MISSING |
+| ../a3605 | MISSING |
+| ../a3629 | MISSING |
+| ../a3659 | MISSING |
+| ../a3669 | MISSING |
+| ../a3692 | MISSING |
+| ../a3693 | MISSING |
+| ../a3694 | MISSING |
+| ../a3697 | MISSING |
+| ../a3713 | MISSING |
+| ../a3714 | MISSING |
+| ../a3721 | MISSING |
+| ../a3732 | MISSING |
+| ../a3740 | MISSING |
+| ../a3746 | MISSING |
+| ../a3747 | MISSING |
+| ../a3748 | MISSING |
+| ../a3749 | MISSING |
+| ../a3750 | MISSING |
+| ../a3751 | MISSING |
+| ../a3752 | MISSING |
+| ../a3755 | MISSING |
+| ../a3756 | MISSING |
+| ../a3757 | MISSING |
+| ../a3760 | MISSING |
+| ../a3768 | MISSING |
+| ../a3771 | MISSING |
+| ../a3775 | MISSING |
+| ../a3808 | MISSING |
+| ../a3809 | MISSING |
+| ../a3823 | MISSING |
+| ../a3842 | MISSING |
+| ../a3851 | MISSING |
+| ../a3908 | MISSING |
+| ../a3912 | MISSING |
+| ../a3935 | MISSING |
+| ../a3936 | MISSING |
+| ../a3941 | MISSING |
+| ../a3945 | MISSING |
+| ../a3992 | MISSING |
+| ../a3993 | MISSING |
+| ../a3994 | MISSING |
+| ../a3995 | MISSING |
+| ../a4112 | MISSING |
+| ../a4119 | MISSING |
+| ../a4158 | MISSING |
+| ../a4160 | MISSING |
+| ../a4161 | MISSING |
+| ../a4171 | MISSING |
+| ../a4172 | MISSING |
+| ../a4225 | MISSING |
+| ../a4234 | MISSING |
+| ../a4255 | MISSING |
+| ../a4258 | MISSING |
+| ../a4265 | MISSING |
+| ../a4288 | MISSING |
+| ../a4305 | MISSING |
+| ../a4339 | MISSING |
+| ../a4375 | MISSING |
+| ../a4431 | MISSING |
+| ../a4465 | MISSING |
+| ../a4486 | MISSING |
+| ../a4490 | MISSING |
+| ../a4526 | MISSING |
+| ../a4527 | MISSING |
+| ../a4528 | MISSING |
+| ../a4541 | MISSING |
+| ../a4544 | MISSING |
+| ../a4549 | MISSING |
+| ../a4555 | MISSING |
+| ../a4556 | MISSING |
+| ../a4557 | MISSING |
+| ../a4558 | MISSING |
+| ../a4559 | MISSING |
+| ../a4560 | MISSING |
+| ../a4561 | MISSING |
+| ../a4562 | MISSING |
+| ../a4563 | MISSING |
+| ../a4564 | MISSING |
+| ../a4565 | MISSING |
+| ../a4566 | MISSING |
+| ../a4567 | MISSING |
+| ../a4570 | MISSING |
+| ../a4572 | MISSING |
+| ../a4577 | MISSING |
+| ../a4585 | MISSING |
+| ../a4589 | MISSING |
+| ../a4605 | MISSING |
+| ../a4608 | MISSING |
+| ../a4609 | MISSING |
+| ../a4613 | MISSING |
+| ../a4628 | MISSING |
+| ../a4645 | MISSING |
+| ../a4647 | MISSING |
+| ../a4691 | MISSING |
+| ../a4692 | MISSING |
+| ../a4693 | MISSING |
+| ../a4696 | MISSING |
+| ../a4697 | MISSING |
+| ../a4700 | MISSING |
+| ../a4704 | MISSING |
+| ../a4705 | MISSING |
+| ../a4706 | MISSING |
+| ../a4707 | MISSING |
+| ../a4723 | MISSING |
+| ../a4724 | MISSING |
+| ../a4727 | MISSING |
+| ../a4742 | MISSING |
+| ../a4750 | MISSING |
+| ../a4751 | MISSING |
+| ../a4777 | MISSING |
+| ../a4784 | MISSING |
+| ../a4786 | MISSING |
+| ../a4788 | MISSING |
+| ../a4790 | MISSING |
+| ../a4794 | MISSING |
+| ../a4798 | MISSING |
+| ../a4801 | MISSING |
+| ../a4812 | MISSING |
+| ../a4817 | MISSING |
+| ../a4818 | MISSING |
+| ../a4837 | MISSING |
+| ../a4840 | MISSING |
+| ../a4848 | MISSING |
+| ../a4850 | MISSING |
+| ../a4851 | MISSING |
+| ../a4853 | MISSING |
+| ../a4855 | MISSING |
+| ../a4859 | MISSING |
+| ../a4864 | MISSING |
+| ../a4873 | MISSING |
+| ../a4882 | MISSING |
+| ../a4894 | MISSING |
+| ../a4943 | MISSING |
+| ../a4946 | MISSING |
+| ../a4947 | MISSING |
+| ../a4948 | MISSING |
+| ../a4949 | MISSING |
+| ../a4950 | MISSING |
+| ../a4952 | MISSING |
+| ../a4953 | MISSING |
+| ../a4954 | MISSING |
+| ../a4956 | MISSING |
+| ../a4957 | MISSING |
+| ../a4958 | MISSING |
+| ../a4959 | MISSING |
+| ../a4961 | MISSING |
+| ../a4962 | MISSING |
+| ../a4963 | MISSING |
+| ../a4966 | MISSING |
+| ../a4968 | MISSING |
+| ../a4969 | MISSING |
+| ../a4971 | MISSING |
+| ../a4973 | MISSING |
+| ../a4974 | MISSING |
+| ../a4979 | MISSING |
+| ../a4980 | MISSING |
+| ../a4981 | MISSING |
+| ../a4983 | MISSING |
+| ../a4984 | MISSING |
+| ../a4985 | MISSING |
+| ../a4988 | MISSING |
+| ../a4993 | MISSING |
+| ../a4994 | MISSING |
+| ../a4997 | MISSING |
+| ../a5002 | MISSING |
+| ../a5005 | MISSING |
+| ../a5006 | MISSING |
+| ../a5007 | MISSING |
+| ../a5008 | MISSING |
+| ../a5009 | MISSING |
+| ../a5011 | MISSING |
+| ../a5012 | MISSING |
+| ../a5014 | MISSING |
+| ../a5015 | MISSING |
+| ../a5016 | MISSING |
+| ../a5017 | MISSING |
+| ../a5018 | MISSING |
+| ../a5019 | MISSING |
+| ../a5020 | MISSING |
+| ../a5021 | MISSING |
+| ../a5022 | MISSING |
+| ../a5023 | MISSING |
+| ../a5024 | MISSING |
+| ../a5025 | MISSING |
+| ../a5027 | MISSING |
+| ../a5028 | MISSING |
+| ../a5030 | MISSING |
+| ../a5031 | MISSING |
+| ../a5032 | MISSING |
+| ../a5033 | MISSING |
+| ../a5034 | MISSING |
+| ../a5035 | MISSING |
+| ../a5036 | MISSING |
+| ../a5037 | MISSING |
+| ../a5039 | MISSING |
+| ../a5041 | MISSING |
+| ../a5045 | MISSING |
+| ../a5046 | MISSING |
+| ../a5047 | MISSING |
+| ../a5048 | MISSING |
+| ../a5051 | MISSING |
+| ../a5053 | MISSING |
+| ../a5054 | MISSING |
+| ../a5055 | MISSING |
+| ../a5056 | MISSING |
+| ../a5057 | MISSING |
+| ../a5058 | MISSING |
+| ../a5060 | MISSING |
+| ../a5061 | MISSING |
+| ../a5063 | MISSING |
+| ../a5064 | MISSING |
+| ../a5065 | MISSING |
+| ../a5067 | MISSING |
+| ../a5068 | MISSING |
+| ../a5069 | MISSING |
+| ../a5070 | MISSING |
+| ../a5071 | MISSING |
+| ../a5072 | MISSING |
+| ../a5075 | MISSING |
+| ../a5076 | MISSING |
+| ../a5078 | MISSING |
+| ../a5079 | MISSING |
+| ../a5080 | MISSING |
+
+*** Pseudo Vision
+
+In the Labelthis Application, the origin (0,0) is the UL of the image, x,y is
+the upper left hand corner, and the width and height are added to that. In the
+Google Vision, Origin (0,0) is also the UL, and regions don't have to be
+rectangles; they are a series of marks, that can be in this order
+(UL,UR,LR,LL).
+
+#+header: :engine postgresql :cmdline "service=managethis"
+#+begin_src sql
+		create table pseudo_vision as
+			with r as (
+			 select l.identifier,t.text,mark_type,
+				floor((m.result->'region'->>'y')::float) as ymin,
+				floor((m.result->'region'->>'x')::float) as x,
+				floor((m.result->'region'->>'y')::float) as y,
+				ceil((m.result->'region'->>'height')::float) as h,
+				ceil((m.result->'region'->>'width')::float) as w
+			 from labels_mark m join labels_label l on (m.label_id=l.id)
+			 left join labels_transcription t on (t.mark_id=m.id)
+			),
+			x as (
+			 select identifier,string_agg(text,E'\n' order by y,x) as text,
+			 'text'::text as mark_type,
+			 0 as ymin,
+			 min(x) as x,min(y) as y,
+			 max(x+w)-min(x) as w, max(y+h)-min(y) as h
+			 from r
+			 where mark_type='text'
+			 group by identifier
+			),
+			a as (
+				select identifier,text,mark_type,x,y,h,w,ymin
+				from x
+				union
+				select identifier,text,mark_type,x,y,h,w,ymin
+				from r
+				order by ymin,x
+			),
+			t as (
+			 select
+			 identifier,
+			 array_to_json(array_agg(
+			 json_build_object('desc',text,
+				 'bounds',array_to_json(ARRAY[jsonb_build_object('x',x,'y',y),
+																		 jsonb_build_object('x',x+w,'y',y),
+																		 jsonb_build_object('x',x+w,'y',y+h),
+																		 jsonb_build_object('x',x,'y',y+h)]::jsonb[]))
+				order by ymin,x)) as text
+			from a
+			where mark_type='text'
+			group by identifier
+			),
+			i as (
+			 select
+			 identifier,
+			 array_to_json(array_agg(
+			 json_build_object('desc',text,
+				 'bounds',array_to_json(ARRAY[jsonb_build_object('x',x,'y',y),
+																		 jsonb_build_object('x',x+w,'y',y),
+																		 jsonb_build_object('x',x+w,'y',y+h),
+																		 jsonb_build_object('x',x,'y',y+h)]::jsonb[]))
+				)) as image
+			from a
+			where mark_type='image'
+			group by identifier
+			)
+			select identifier,
+				case when (image is null) then
+						 json_build_object('text',text)
+				when (text is null) then
+						 json_build_object('image',image)
+				else
+						 json_build_object('text',text,'image',image)
+				end as json
+			from t full outer join i using (identifier);
+#+end_src
+
+#+RESULTS:
+| SELECT 4593 |
+|-------------|

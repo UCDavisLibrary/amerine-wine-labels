@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0641";
-    dct:type "image";
-    w:bagOfWords "13\n1940\nAPPELLATION CONTROLEE\nEtabte DIGNIMONT & JUILLARD\nPARIS\nJOUNBA,\nPAR\n"@undefined;
-    gv:color [
-  gv:hex "bda07c";
-  gv:red "189";
-  gv:blue "124";
-  gv:green "160";
-  gv:score "19.121391";
-  gv:coverage "7.42"
-], [
-  gv:hex "661c05";
-  gv:red "102";
-  gv:blue "5";
-  gv:green "28";
-  gv:score "1.9006129";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "2e1301";
-  gv:red "46";
-  gv:blue "1";
-  gv:green "19";
-  gv:score "0.8953210899999999";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "d0b28d";
-  gv:red "208";
-  gv:blue "141";
-  gv:green "178";
-  gv:score "16.733669000000003";
-  gv:coverage "7.2066665"
-], [
-  gv:hex "cb9979";
-  gv:red "203";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "11.018144000000001";
-  gv:coverage "2.7266665999999997"
-], [
-  gv:hex "be9164";
-  gv:red "190";
-  gv:blue "100";
-  gv:green "145";
-  gv:score "7.3576695999999995";
-  gv:coverage "2.6"
-], [
-  gv:hex "8d7357";
-  gv:red "141";
-  gv:blue "87";
-  gv:green "115";
-  gv:score "6.560738400000001";
-  gv:coverage "2.8933332999999997"
-], [
-  gv:hex "deac8b";
-  gv:red "222";
-  gv:blue "139";
-  gv:green "172";
-  gv:score "6.410589999999999";
-  gv:coverage "1.48"
-], [
-  gv:hex "a07047";
-  gv:red "160";
-  gv:blue "71";
-  gv:green "112";
-  gv:score "6.1964907";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "be9c6f";
-  gv:red "190";
-  gv:blue "111";
-  gv:green "156";
-  gv:score "4.6380375";
-  gv:coverage "1.5933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.43500499999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.916005"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.433208"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "52.73336199999999"
-];
-    w:bagOfWords "13\n1940\nAPPELLATION CONTROLEE\nEtabte DIGNIMONT & JUILLARD\nPARIS\nJOUNBA,\nPAR\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0641";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

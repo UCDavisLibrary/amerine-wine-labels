@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3757";
-    dct:type "image";
-    w:bagOfWords "CASTELLO DELLA SALA\nTENUTA ANTI NORI\nORVIETO\nSALA (Orvieto)\n"@ita;
-    gv:color [
-  gv:hex "e7c693";
-  gv:red "231";
-  gv:blue "147";
-  gv:green "198";
-  gv:score "55.715650000000004";
-  gv:coverage "18.226667"
-], [
-  gv:hex "863b24";
-  gv:red "134";
-  gv:blue "36";
-  gv:green "59";
-  gv:score "0.42150662999999994";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "bb9c6c";
-  gv:red "187";
-  gv:blue "108";
-  gv:green "156";
-  gv:score "11.975949";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "f5d5a2";
-  gv:red "245";
-  gv:blue "162";
-  gv:green "213";
-  gv:score "8.3221339";
-  gv:coverage "3.02"
-], [
-  gv:hex "927548";
-  gv:red "146";
-  gv:blue "72";
-  gv:green "117";
-  gv:score "5.3121395";
-  gv:coverage "0.96"
-], [
-  gv:hex "dcc29c";
-  gv:red "220";
-  gv:blue "156";
-  gv:green "194";
-  gv:score "3.3861414";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "b29671";
-  gv:red "178";
-  gv:blue "113";
-  gv:green "150";
-  gv:score "3.3498455000000003";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "8d714f";
-  gv:red "141";
-  gv:blue "79";
-  gv:green "113";
-  gv:score "2.8253846";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "71552a";
-  gv:red "113";
-  gv:blue "42";
-  gv:green "85";
-  gv:score "2.0514853";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "eabb8b";
-  gv:red "234";
-  gv:blue "139";
-  gv:green "187";
-  gv:score "1.6844224";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.961748"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.704955999999996"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.069841"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.576142999999995"
-];
-    w:bagOfWords "CASTELLO DELLA SALA\nTENUTA ANTI NORI\nORVIETO\nSALA (Orvieto)\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3757";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

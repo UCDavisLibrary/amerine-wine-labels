@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4836";
-    dct:type "image";
-    w:bagOfWords "The Great Fountain Store.\nS, MARIANI, PROP\nS. W. COR, 23RD AND COLUMBIA STS\nSAN FRANCISCO\n"@eng;
-    gv:color [
-  gv:hex "cebb9e";
-  gv:red "206";
-  gv:blue "158";
-  gv:green "187";
-  gv:score "22.097974";
-  gv:coverage "16.919999999999998"
-], [
-  gv:hex "c4925f";
-  gv:red "196";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "6.0624741";
-  gv:coverage "0.66"
-], [
-  gv:hex "88a292";
-  gv:red "136";
-  gv:blue "146";
-  gv:green "162";
-  gv:score "2.0285631";
-  gv:coverage "0.74"
-], [
-  gv:hex "b29e80";
-  gv:red "178";
-  gv:blue "128";
-  gv:green "158";
-  gv:score "16.5681";
-  gv:coverage "8.2866669"
-], [
-  gv:hex "d6b985";
-  gv:red "214";
-  gv:blue "133";
-  gv:green "185";
-  gv:score "5.5163316";
-  gv:coverage "1.24"
-], [
-  gv:hex "9a6b40";
-  gv:red "154";
-  gv:blue "64";
-  gv:green "107";
-  gv:score "5.3318311";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "d28e45";
-  gv:red "210";
-  gv:blue "69";
-  gv:green "142";
-  gv:score "4.9041428";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "794b22";
-  gv:red "121";
-  gv:blue "34";
-  gv:green "75";
-  gv:score "4.173959";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "8f775b";
-  gv:red "143";
-  gv:blue "91";
-  gv:green "119";
-  gv:score "4.0192153";
-  gv:coverage "1.5866667"
-], [
-  gv:hex "bb9b68";
-  gv:red "187";
-  gv:blue "104";
-  gv:green "155";
-  gv:score "3.7882290999999997";
-  gv:coverage "0.64666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.123580000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.122713"
-];
-    w:bagOfWords "The Great Fountain Store.\nS, MARIANI, PROP\nS. W. COR, 23RD AND COLUMBIA STS\nSAN FRANCISCO\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4836";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

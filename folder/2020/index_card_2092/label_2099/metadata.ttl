@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2092/label_2099";
-    dct:type "image";
-    w:bagOfWords "DEP. N 91412\nRHEINPFALZ\nS.\n223eintellevei (Single,\nKRUG MANN\n"@undefined;
-    gv:color [
-  gv:hex "e0c4a2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "33.39766";
-  gv:coverage "21.153333999999997"
-], [
-  gv:hex "9c6d39";
-  gv:red "156";
-  gv:blue "57";
-  gv:green "109";
-  gv:score "10.482714";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "e1bf8e";
-  gv:red "225";
-  gv:blue "142";
-  gv:green "191";
-  gv:score "11.921229";
-  gv:coverage "5.08"
-], [
-  gv:hex "7a4d1f";
-  gv:red "122";
-  gv:blue "31";
-  gv:green "77";
-  gv:score "7.636762399999999";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "bf905b";
-  gv:red "191";
-  gv:blue "91";
-  gv:green "144";
-  gv:score "6.9350831";
-  gv:coverage "1.68"
-], [
-  gv:hex "b89b78";
-  gv:red "184";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "6.739071000000001";
-  gv:coverage "2.8400000000000003"
-], [
-  gv:hex "bc9a65";
-  gv:red "188";
-  gv:blue "101";
-  gv:green "154";
-  gv:score "5.995959399999999";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "e5b784";
-  gv:red "229";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "2.4405003";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "8b7145";
-  gv:red "139";
-  gv:blue "69";
-  gv:green "113";
-  gv:score "2.1455718";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "695328";
-  gv:red "105";
-  gv:blue "40";
-  gv:green "83";
-  gv:score "1.9649947";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "74.58507399999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.844949"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.429961000000006"
-];
-    w:bagOfWords "DEP. N 91412\nRHEINPFALZ\nS.\n223eintellevei (Single,\nKRUG MANN\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2099";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

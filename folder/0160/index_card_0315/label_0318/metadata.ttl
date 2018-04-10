@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0318";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "BONDED WINERY NO. 46-1\nPRODUCED AND\nESTABLISHED 1876\n-14TH SUP. ADM. DIST. CALIF\nBOTTLED BY\ns HERMANOS VINEYAR\nFOR HES\nAWARDS\nAWARDS\nCHICAGO 1893\nSAN FRANCISCO 1887-1915\nPARIS 1889-1900\nDUBLIN 1892\nCALIFORNIA STATE FAIR\n1934-1935\nCALIFORNIA RED CHIANTI\nNET CONTENTS\nI PINT, 8 FLUID OZS\nALCOHOL 12% TO 4% BY VOLUME\nTAX PAID BY STAMP\nAFFIXED TO CASE\nROESCH co.. SAN FRANCISCO.\n"@eng;
-    gv:color [
-  gv:hex "d2c1ac";
-  gv:red "210";
-  gv:blue "172";
-  gv:green "193";
-  gv:score "26.90112";
-  gv:coverage "25.3"
-], [
-  gv:hex "ab9c88";
-  gv:red "171";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "15.570739999999999";
-  gv:coverage "3.8733333"
-], [
-  gv:hex "837562";
-  gv:red "131";
-  gv:blue "98";
-  gv:green "117";
-  gv:score "13.886904999999999";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "5e5241";
-  gv:red "94";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "12.933175";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "3f3823";
-  gv:red "63";
-  gv:blue "35";
-  gv:green "56";
-  gv:score "10.561526";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "7f736a";
-  gv:red "127";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "6.2706992";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "eadac7";
-  gv:red "234";
-  gv:blue "199";
-  gv:green "218";
-  gv:score "4.4863712";
-  gv:coverage "9.2133336"
-], [
-  gv:hex "60564d";
-  gv:red "96";
-  gv:blue "77";
-  gv:green "86";
-  gv:score "4.047215";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "a3978d";
-  gv:red "163";
-  gv:blue "141";
-  gv:green "151";
-  gv:score "2.0387363";
-  gv:coverage "0.42"
-], [
-  gv:hex "ccbfb3";
-  gv:red "204";
-  gv:blue "179";
-  gv:green "191";
-  gv:score "1.5549596";
-  gv:coverage "2.98"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.127639"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BONDED WINERY NO. 46-1\nPRODUCED AND\nESTABLISHED 1876\n-14TH SUP. ADM. DIST. CALIF\nBOTTLED BY\ns HERMANOS VINEYAR\nFOR HES\nAWARDS\nAWARDS\nCHICAGO 1893\nSAN FRANCISCO 1887-1915\nPARIS 1889-1900\nDUBLIN 1892\nCALIFORNIA STATE FAIR\n1934-1935\nCALIFORNIA RED CHIANTI\nNET CONTENTS\nI PINT, 8 FLUID OZS\nALCOHOL 12% TO 4% BY VOLUME\nTAX PAID BY STAMP\nAFFIXED TO CASE\nROESCH co.. SAN FRANCISCO.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0318";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

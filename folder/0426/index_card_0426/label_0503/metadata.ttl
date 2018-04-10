@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0503";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R HEIN-\nGAU\n1952er Hochheimer Stein Riesling\nOriginalabfuittung\n"@deu;
-    gv:color [
-  gv:hex "b02604";
-  gv:red "176";
-  gv:blue "4";
-  gv:green "38";
-  gv:score "7.94639";
-  gv:coverage "0.86"
-], [
-  gv:hex "d6c6ad";
-  gv:red "214";
-  gv:blue "173";
-  gv:green "198";
-  gv:score "6.4877555000000005";
-  gv:coverage "4.8466667999999995"
-], [
-  gv:hex "c39c15";
-  gv:red "195";
-  gv:blue "21";
-  gv:green "156";
-  gv:score "4.5303889";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "7e756b";
-  gv:red "126";
-  gv:blue "107";
-  gv:green "117";
-  gv:score "2.7912445";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "4e741f";
-  gv:red "78";
-  gv:blue "31";
-  gv:green "116";
-  gv:score "0.10127324";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e6b3a2";
-  gv:red "230";
-  gv:blue "162";
-  gv:green "179";
-  gv:score "5.420123";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "d49885";
-  gv:red "212";
-  gv:blue "133";
-  gv:green "152";
-  gv:score "4.8146781";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "c5400b";
-  gv:red "197";
-  gv:blue "11";
-  gv:green "64";
-  gv:score "4.0568318";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "e1887b";
-  gv:red "225";
-  gv:blue "123";
-  gv:green "136";
-  gv:score "3.6847937999999996";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "dcb014";
-  gv:red "220";
-  gv:blue "20";
-  gv:green "176";
-  gv:score "3.5328824";
-  gv:coverage "0.70666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.93057"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.50909"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.558"
-];
-    w:bagOfWords "R HEIN-\nGAU\n1952er Hochheimer Stein Riesling\nOriginalabfuittung\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0503";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

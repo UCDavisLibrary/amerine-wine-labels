@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1142";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "LIQueuR COGNAC\nSAX STA\nTwenty years Old\nBY APPOINTMENT\nBY APPOINTMENT\nTO\nTO\nH.R.H THE\nH, M. THE KING\nPRINCE OF WALES\nThe Connoisseurs\nDistilled and bottled in Cognac, France\nFor\nBERRY BROS &\nEstablished in the XVII Centuro\nat 38t James's 8treet, London\npRopucT OP FRANCE\n45 QuART\n80 PROOF\nPRINTED IN CREAT DRITAIN\nIMPORTED BY\nTHE BuckINGHAM cORPORATION, NEW YORR CITY,\nSOME SECRING AGENTS FOR THE UNITED STATES OF\nAMERICA\n"@undefined;
-    gv:color [
-  gv:hex "dec7a9";
-  gv:red "222";
-  gv:blue "169";
-  gv:green "199";
-  gv:score "40.233967";
-  gv:coverage "32.573333"
-], [
-  gv:hex "675031";
-  gv:red "103";
-  gv:blue "49";
-  gv:green "80";
-  gv:score "18.006843";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "b1997a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "16.024559999999997";
-  gv:coverage "6.98"
-], [
-  gv:hex "897252";
-  gv:red "137";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "10.994847";
-  gv:coverage "3.5933333999999997"
-], [
-  gv:hex "edd7bb";
-  gv:red "237";
-  gv:blue "187";
-  gv:green "215";
-  gv:score "6.5953307";
-  gv:coverage "10.046667"
-], [
-  gv:hex "513a1b";
-  gv:red "81";
-  gv:blue "27";
-  gv:green "58";
-  gv:score "2.8823167";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "e9b99e";
-  gv:red "233";
-  gv:blue "158";
-  gv:green "185";
-  gv:score "1.8695749000000002";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "c99177";
-  gv:red "201";
-  gv:blue "119";
-  gv:green "145";
-  gv:score "1.4584783000000001";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "4d2c19";
-  gv:red "77";
-  gv:blue "25";
-  gv:green "44";
-  gv:score "0.51742904";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "a27058";
-  gv:red "162";
-  gv:blue "88";
-  gv:green "112";
-  gv:score "0.38897945";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.08362"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.216903"
-];
-    w:bagOfWords "LIQueuR COGNAC\nSAX STA\nTwenty years Old\nBY APPOINTMENT\nBY APPOINTMENT\nTO\nTO\nH.R.H THE\nH, M. THE KING\nPRINCE OF WALES\nThe Connoisseurs\nDistilled and bottled in Cognac, France\nFor\nBERRY BROS &\nEstablished in the XVII Centuro\nat 38t James's 8treet, London\npRopucT OP FRANCE\n45 QuART\n80 PROOF\nPRINTED IN CREAT DRITAIN\nIMPORTED BY\nTHE BuckINGHAM cORPORATION, NEW YORR CITY,\nSOME SECRING AGENTS FOR THE UNITED STATES OF\nAMERICA\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1142";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

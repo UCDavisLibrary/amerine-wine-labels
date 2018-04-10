@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0353/label_0360";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "UN DU VAL\nDUVAL\nde\nDU VAL FILs\nBRUXELLES\nMAISON FOND\nSSE)\nMAISONS\nIER (FRANCE)\nPONT\nDéposé\nReg. Com. elles 8323\n"@undefined;
-    gv:color [
-  gv:hex "cfc3a0";
-  gv:red "207";
-  gv:blue "160";
-  gv:green "195";
-  gv:score "32.979891";
-  gv:coverage "17.18"
-], [
-  gv:hex "9b221c";
-  gv:red "155";
-  gv:blue "28";
-  gv:green "34";
-  gv:score "7.908219099999999";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "6e1f0e";
-  gv:red "110";
-  gv:blue "14";
-  gv:green "31";
-  gv:score "3.9647184";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "ab9b77";
-  gv:red "171";
-  gv:blue "119";
-  gv:green "155";
-  gv:score "9.3310051";
-  gv:coverage "4.66"
-], [
-  gv:hex "867551";
-  gv:red "134";
-  gv:blue "81";
-  gv:green "117";
-  gv:score "8.9055404";
-  gv:coverage "3.4799999999999995"
-], [
-  gv:hex "8b3323";
-  gv:red "139";
-  gv:blue "35";
-  gv:green "51";
-  gv:score "3.9141223000000003";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "837446";
-  gv:red "131";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "3.2688044";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "6a5835";
-  gv:red "106";
-  gv:blue "53";
-  gv:green "88";
-  gv:score "3.137685";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "bec9a0";
-  gv:red "190";
-  gv:blue "160";
-  gv:green "201";
-  gv:score "2.5074355";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "c28f74";
-  gv:red "194";
-  gv:blue "116";
-  gv:green "143";
-  gv:score "2.0542268";
-  gv:coverage "0.52666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.846907"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "63.277149"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "52.994978"
-];
-    w:bagOfWords "UN DU VAL\nDUVAL\nde\nDU VAL FILs\nBRUXELLES\nMAISON FOND\nSSE)\nMAISONS\nIER (FRANCE)\nPONT\nDéposé\nReg. Com. elles 8323\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0360";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

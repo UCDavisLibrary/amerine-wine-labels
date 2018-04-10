@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4228";
-    dct:type "image";
-    w:bagOfWords "LIQUEUR.\nLABB\nDE\nCENON\npped by\nEi\n"@fra;
-    gv:color [
-  gv:hex "c6873a";
-  gv:red "198";
-  gv:blue "58";
-  gv:green "135";
-  gv:score "8.9883536";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "d3c1a6";
-  gv:red "211";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "8.5036807";
-  gv:coverage "6.72"
-], [
-  gv:hex "857858";
-  gv:red "133";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "6.252424400000001";
-  gv:coverage "2.0066667"
-], [
-  gv:hex "e7811c";
-  gv:red "231";
-  gv:blue "28";
-  gv:green "129";
-  gv:score "4.1046157";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "724c40";
-  gv:red "114";
-  gv:blue "64";
-  gv:green "76";
-  gv:score "2.0851158";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "c48c5a";
-  gv:red "196";
-  gv:blue "90";
-  gv:green "140";
-  gv:score "7.7181242";
-  gv:coverage "0.58"
-], [
-  gv:hex "a4997b";
-  gv:red "164";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "6.1257195";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "887945";
-  gv:red "136";
-  gv:blue "69";
-  gv:green "121";
-  gv:score "4.78052";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "edb78a";
-  gv:red "237";
-  gv:blue "138";
-  gv:green "183";
-  gv:score "4.4318479";
-  gv:coverage "0.32"
-], [
-  gv:hex "b2955f";
-  gv:red "178";
-  gv:blue "95";
-  gv:green "149";
-  gv:score "3.9580211";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.531447"
-], [
-  gv:mid <https://g.co/kg/m/0h8nvk9>;
-  gv:desc "dishware";
-  gv:score "52.378409999999995"
-];
-    w:bagOfWords "LIQUEUR.\nLABB\nDE\nCENON\npped by\nEi\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4228";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

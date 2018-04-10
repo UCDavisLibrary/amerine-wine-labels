@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1182";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BARBADILLO\nAN\nBRANDY\nEXTRA\nB 1821\nVIEJO\nANDALUCIA-ESPANA\ntit Jerez Industrial\nTODOS LOS VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAVADAS EN LAS\nZONAS DE SANLUCAR Y JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLER AS, SON LAS MEJORES GARANTIAS DE SUS PRODUCTOs\n"@spa;
-    gv:color [
-  gv:hex "d5b484";
-  gv:red "213";
-  gv:blue "132";
-  gv:green "180";
-  gv:score "37.470153";
-  gv:coverage "18.593334"
-], [
-  gv:hex "9b1914";
-  gv:red "155";
-  gv:blue "20";
-  gv:green "25";
-  gv:score "8.3883308";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "c2a06f";
-  gv:red "194";
-  gv:blue "111";
-  gv:green "160";
-  gv:score "16.861442";
-  gv:coverage "6.6266663"
-], [
-  gv:hex "e6b087";
-  gv:red "230";
-  gv:blue "135";
-  gv:green "176";
-  gv:score "6.6112451000000005";
-  gv:coverage "2.2666667"
-], [
-  gv:hex "ca936a";
-  gv:red "202";
-  gv:blue "106";
-  gv:green "147";
-  gv:score "5.4627426";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "a20f07";
-  gv:red "162";
-  gv:blue "7";
-  gv:green "15";
-  gv:score "3.3869337";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "95774a";
-  gv:red "149";
-  gv:blue "74";
-  gv:green "119";
-  gv:score "2.8932249";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "d4b88f";
-  gv:red "212";
-  gv:blue "143";
-  gv:green "184";
-  gv:score "2.8869124";
-  gv:coverage "4.62"
-], [
-  gv:hex "a66c44";
-  gv:red "166";
-  gv:blue "68";
-  gv:green "108";
-  gv:score "2.5690131000000003";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "8b361d";
-  gv:red "139";
-  gv:blue "29";
-  gv:green "54";
-  gv:score "1.728016";
-  gv:coverage "0.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.53062200000001"
-];
-    w:bagOfWords "BARBADILLO\nAN\nBRANDY\nEXTRA\nB 1821\nVIEJO\nANDALUCIA-ESPANA\ntit Jerez Industrial\nTODOS LOS VINOS DE ESTA CASA PROCEDEN DE VINAS ENCLAVADAS EN LAS\nZONAS DE SANLUCAR Y JEREZ, CUYA CIRCUNSTANCIA, UNIDA A LA ANTIGUEDAD\nDE SUS SOLER AS, SON LAS MEJORES GARANTIAS DE SUS PRODUCTOs\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1182";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

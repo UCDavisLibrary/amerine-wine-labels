@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4344";
-    dct:type "image";
-    w:bagOfWords "VINOPROMET\nZAGREB\n"@undefined;
-    gv:color [
-  gv:hex "4b1f29";
-  gv:red "75";
-  gv:blue "41";
-  gv:green "31";
-  gv:score "22.012603";
-  gv:coverage "1.82"
-], [
-  gv:hex "d9c0a3";
-  gv:red "217";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "8.384177099999999";
-  gv:coverage "10.626667"
-], [
-  gv:hex "b99d68";
-  gv:red "185";
-  gv:blue "104";
-  gv:green "157";
-  gv:score "4.0734183";
-  gv:coverage "2.64"
-], [
-  gv:hex "4b231b";
-  gv:red "75";
-  gv:blue "27";
-  gv:green "35";
-  gv:score "17.894582";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "4d1931";
-  gv:red "77";
-  gv:blue "49";
-  gv:green "25";
-  gv:score "8.333167399999999";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "3c130e";
-  gv:red "60";
-  gv:blue "14";
-  gv:green "19";
-  gv:score "5.6764543";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "f1dbbf";
-  gv:red "241";
-  gv:blue "191";
-  gv:green "219";
-  gv:score "3.8753450000000003";
-  gv:coverage "16.113333"
-], [
-  gv:hex "3d111c";
-  gv:red "61";
-  gv:blue "28";
-  gv:green "17";
-  gv:score "3.8278565";
-  gv:coverage "0.3"
-], [
-  gv:hex "6f4c3c";
-  gv:red "111";
-  gv:blue "60";
-  gv:green "76";
-  gv:score "3.71152";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "b89e7f";
-  gv:red "184";
-  gv:blue "127";
-  gv:green "158";
-  gv:score "3.5880900000000002";
-  gv:coverage "1.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.7743"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.397026000000004"
-];
-    w:bagOfWords "VINOPROMET\nZAGREB\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4344";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

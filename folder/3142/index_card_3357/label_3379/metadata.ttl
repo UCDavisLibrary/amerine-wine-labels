@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3379";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "////min/\nMAISON FONDEE EN 1797 BTAAUN (COTE DOR)\n0\n"@fra;
-    gv:color [
-  gv:hex "d3c4b4";
-  gv:red "211";
-  gv:blue "180";
-  gv:green "196";
-  gv:score "51.683074";
-  gv:coverage "17.98"
-], [
-  gv:hex "ecddcd";
-  gv:red "236";
-  gv:blue "205";
-  gv:green "221";
-  gv:score "23.465048";
-  gv:coverage "28.32"
-], [
-  gv:hex "aa9b8b";
-  gv:red "170";
-  gv:blue "139";
-  gv:green "155";
-  gv:score "15.633543999999999";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "867867";
-  gv:red "134";
-  gv:blue "103";
-  gv:green "120";
-  gv:score "5.9370052";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "635645";
-  gv:red "99";
-  gv:blue "69";
-  gv:green "86";
-  gv:score "2.260107";
-  gv:coverage "0.12"
-], [
-  gv:hex "f4ebdf";
-  gv:red "244";
-  gv:blue "223";
-  gv:green "235";
-  gv:score "0.42317477";
-  gv:coverage "50.566666999999995"
-], [
-  gv:hex "cfc5bb";
-  gv:red "207";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "0.29516765";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "a49a90";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "154";
-  gv:score "0.16980082000000002";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "5a5147";
-  gv:red "90";
-  gv:blue "71";
-  gv:green "81";
-  gv:score "0.058684696";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "7d7569";
-  gv:red "125";
-  gv:blue "105";
-  gv:green "117";
-  gv:score "0.031198089999999998";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.236409"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.037274000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.592206"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.502173"
-];
-    w:bagOfWords "////min/\nMAISON FONDEE EN 1797 BTAAUN (COTE DOR)\n0\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3379";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

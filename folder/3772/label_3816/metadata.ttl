@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3816";
-    dct:type "image";
-    w:bagOfWords "6 raad er Bistum\nCrescenz J. Bernard Kieren\nMOSEL SAAR RUWER\n"@deu;
-    gv:color [
-  gv:hex "af9e7c";
-  gv:red "175";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "39.074838";
-  gv:coverage "13.98"
-], [
-  gv:hex "9b6f41";
-  gv:red "155";
-  gv:blue "65";
-  gv:green "111";
-  gv:score "3.160917";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "85785a";
-  gv:red "133";
-  gv:blue "90";
-  gv:green "120";
-  gv:score "13.436738";
-  gv:coverage "6.0266666"
-], [
-  gv:hex "645638";
-  gv:red "100";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "8.93061";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "cab897";
-  gv:red "202";
-  gv:blue "151";
-  gv:green "184";
-  gv:score "8.0649868";
-  gv:coverage "7.62"
-], [
-  gv:hex "3f3216";
-  gv:red "63";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "4.3628812";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "774d24";
-  gv:red "119";
-  gv:blue "36";
-  gv:green "77";
-  gv:score "2.7631221";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "6e7c5c";
-  gv:red "110";
-  gv:blue "92";
-  gv:green "124";
-  gv:score "1.6736107";
-  gv:coverage "0.96"
-], [
-  gv:hex "8d3a1f";
-  gv:red "141";
-  gv:blue "31";
-  gv:green "58";
-  gv:score "1.5904506999999999";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "291c04";
-  gv:red "41";
-  gv:blue "4";
-  gv:green "28";
-  gv:score "1.5310033";
-  gv:coverage "0.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.536236"
-], [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "65.548295"
-], [
-  gv:mid <https://g.co/kg/m/089d6h>;
-  gv:desc "belt buckle";
-  gv:score "58.711892"
-], [
-  gv:mid <https://g.co/kg/m/039x97>;
-  gv:desc "buckle";
-  gv:score "55.762583"
-];
-    w:bagOfWords "6 raad er Bistum\nCrescenz J. Bernard Kieren\nMOSEL SAAR RUWER\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3816";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

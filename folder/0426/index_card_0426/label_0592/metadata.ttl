@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0592";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "119\n.179\nDEINHARD's\nRUDESHEIMER HINTERHAUS\nKOBLENZ AN RHEIN UND MOSEL\nREGIST TRADE MARK\nPRODUCE OF GERMANY\n"@deu;
-    gv:color [
-  gv:hex "ecc46d";
-  gv:red "236";
-  gv:blue "109";
-  gv:green "196";
-  gv:score "39.783195";
-  gv:coverage "8.08"
-], [
-  gv:hex "815504";
-  gv:red "129";
-  gv:blue "4";
-  gv:green "85";
-  gv:score "0.77967588";
-  gv:coverage "0.36"
-], [
-  gv:hex "e3c480";
-  gv:red "227";
-  gv:blue "128";
-  gv:green "196";
-  gv:score "9.1513641";
-  gv:coverage "4.58"
-], [
-  gv:hex "bd9a44";
-  gv:red "189";
-  gv:blue "68";
-  gv:green "154";
-  gv:score "6.7906812";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "f9d781";
-  gv:red "249";
-  gv:blue "129";
-  gv:green "215";
-  gv:score "5.7486281";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "efba68";
-  gv:red "239";
-  gv:blue "104";
-  gv:green "186";
-  gv:score "4.5075808";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "b69857";
-  gv:red "182";
-  gv:blue "87";
-  gv:green "152";
-  gv:score "4.2430725";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "8e7436";
-  gv:red "142";
-  gv:blue "54";
-  gv:green "116";
-  gv:score "4.061003400000001";
-  gv:coverage "1.44"
-], [
-  gv:hex "977523";
-  gv:red "151";
-  gv:blue "35";
-  gv:green "117";
-  gv:score "3.6912277000000002";
-  gv:coverage "1.22"
-], [
-  gv:hex "f7d992";
-  gv:red "247";
-  gv:blue "146";
-  gv:green "217";
-  gv:score "3.1723138";
-  gv:coverage "1.3133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.063462"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "52.190703000000006"
-];
-    w:bagOfWords "119\n.179\nDEINHARD's\nRUDESHEIMER HINTERHAUS\nKOBLENZ AN RHEIN UND MOSEL\nREGIST TRADE MARK\nPRODUCE OF GERMANY\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0592";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

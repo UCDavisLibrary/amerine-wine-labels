@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1617/label_1619";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "B 1821\nODE\nONCHE DE LAS\nTRES GALERAS\nANTONIO BARBADILLO S.L\nSANLUCAR DE BAR RAM EDA\nCANDALUCIA-ESPANA)\nLIT J. M. BARROSO JEAEZ\nN. o 32\n"@spa;
-    gv:color [
-  gv:hex "ab9b82";
-  gv:red "171";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "10.614026";
-  gv:coverage "2.52"
-], [
-  gv:hex "0f1831";
-  gv:red "15";
-  gv:blue "49";
-  gv:green "24";
-  gv:score "7.329279199999999";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "784c3a";
-  gv:red "120";
-  gv:blue "58";
-  gv:green "76";
-  gv:score "4.4490956";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "181331";
-  gv:red "24";
-  gv:blue "49";
-  gv:green "19";
-  gv:score "7.192475299999999";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "d0c0a8";
-  gv:red "208";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "7.0974976";
-  gv:coverage "26.353332"
-], [
-  gv:hex "83765c";
-  gv:red "131";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "4.1951161";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "2a0e19";
-  gv:red "42";
-  gv:blue "25";
-  gv:green "14";
-  gv:score "3.918625";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "eab7a8";
-  gv:red "234";
-  gv:blue "168";
-  gv:green "183";
-  gv:score "3.6168177000000004";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "bf917e";
-  gv:red "191";
-  gv:blue "126";
-  gv:green "145";
-  gv:score "3.5868481";
-  gv:coverage "0.72"
-], [
-  gv:hex "7a4921";
-  gv:red "122";
-  gv:blue "33";
-  gv:green "73";
-  gv:score "3.2591369";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.533322"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "B 1821\nODE\nONCHE DE LAS\nTRES GALERAS\nANTONIO BARBADILLO S.L\nSANLUCAR DE BAR RAM EDA\nCANDALUCIA-ESPANA)\nLIT J. M. BARROSO JEAEZ\nN. o 32\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1619";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0602";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Net contents 1 pint 7 fluid ounces\nRU DEC S HEIM ER\nWine: Alcoholic content 9 to 11 per cent by weight\nProduced and bottled in Germany\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "d9bb98";
-  gv:red "217";
-  gv:blue "152";
-  gv:green "187";
-  gv:score "22.998227";
-  gv:coverage "36.106666999999995"
-], [
-  gv:hex "7d4b27";
-  gv:red "125";
-  gv:blue "39";
-  gv:green "75";
-  gv:score "18.379138";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "9d6b44";
-  gv:red "157";
-  gv:blue "68";
-  gv:green "107";
-  gv:score "18.086198";
-  gv:coverage "1.9"
-], [
-  gv:hex "bf8f66";
-  gv:red "191";
-  gv:blue "102";
-  gv:green "143";
-  gv:score "12.268208";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "5d2e0e";
-  gv:red "93";
-  gv:blue "14";
-  gv:green "46";
-  gv:score "5.1936794";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "dcb48f";
-  gv:red "220";
-  gv:blue "143";
-  gv:green "180";
-  gv:score "4.6851888";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "b09678";
-  gv:red "176";
-  gv:blue "120";
-  gv:green "150";
-  gv:score "4.1442014";
-  gv:coverage "2.5533333"
-], [
-  gv:hex "ddb289";
-  gv:red "221";
-  gv:blue "137";
-  gv:green "178";
-  gv:score "3.2409526";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "764d30";
-  gv:red "118";
-  gv:blue "48";
-  gv:green "77";
-  gv:score "2.1493506";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "996c4d";
-  gv:red "153";
-  gv:blue "77";
-  gv:green "108";
-  gv:score "1.6033171";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.224216"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.765081"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.087312"
-];
-    w:bagOfWords "Net contents 1 pint 7 fluid ounces\nRU DEC S HEIM ER\nWine: Alcoholic content 9 to 11 per cent by weight\nProduced and bottled in Germany\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0602";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

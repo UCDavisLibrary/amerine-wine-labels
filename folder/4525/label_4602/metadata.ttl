@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4602";
-    dct:type "image";
-    w:bagOfWords "FINO VIA AB\nAP 2\ndere industrial\n"@spa;
-    gv:color [
-  gv:hex "817869";
-  gv:red "129";
-  gv:blue "105";
-  gv:green "120";
-  gv:score "30.611944";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "cbc2b2";
-  gv:red "203";
-  gv:blue "178";
-  gv:green "194";
-  gv:score "27.865731999999998";
-  gv:coverage "15.58"
-], [
-  gv:hex "e3dacb";
-  gv:red "227";
-  gv:blue "203";
-  gv:green "218";
-  gv:score "5.6697611000000006";
-  gv:coverage "63.086664999999996"
-], [
-  gv:hex "a3998a";
-  gv:red "163";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "27.017438";
-  gv:coverage "3.3133332"
-], [
-  gv:hex "d8cdbf";
-  gv:red "216";
-  gv:blue "191";
-  gv:green "205";
-  gv:score "5.1444314";
-  gv:coverage "11.486667"
-], [
-  gv:hex "675e4f";
-  gv:red "103";
-  gv:blue "79";
-  gv:green "94";
-  gv:score "3.1756453";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "353125";
-  gv:red "53";
-  gv:blue "37";
-  gv:green "49";
-  gv:score "0.008871605";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "eaddcd";
-  gv:red "234";
-  gv:blue "205";
-  gv:green "221";
-  gv:score "0.42633852";
-  gv:coverage "4.3266665"
-], [
-  gv:hex "7c776c";
-  gv:red "124";
-  gv:blue "108";
-  gv:green "119";
-  gv:score "0.061422783999999994";
-  gv:coverage "0.08"
-], [
-  gv:hex "a59e93";
-  gv:red "165";
-  gv:blue "147";
-  gv:green "158";
-  gv:score "0.018414839000000002";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "69.360185"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.386568"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "57.952000000000005"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.906677"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "52.422655"
-];
-    w:bagOfWords "FINO VIA AB\nAP 2\ndere industrial\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4602";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

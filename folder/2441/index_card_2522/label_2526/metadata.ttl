@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2526";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "GRANDES\nES\nBOUTAUT\nBORDEAUX\nCHA\nBLIS\nPRODUCED & BOTTLED IN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d6c4ab";
-  gv:red "214";
-  gv:blue "171";
-  gv:green "196";
-  gv:score "27.837550999999998";
-  gv:coverage "47.626665"
-], [
-  gv:hex "aa9980";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "20.292005";
-  gv:coverage "3.4066666000000003"
-], [
-  gv:hex "857661";
-  gv:red "133";
-  gv:blue "97";
-  gv:green "118";
-  gv:score "13.763687";
-  gv:coverage "1.9133333"
-], [
-  gv:hex "605443";
-  gv:red "96";
-  gv:blue "67";
-  gv:green "84";
-  gv:score "10.259749999999999";
-  gv:coverage "1.32"
-], [
-  gv:hex "3e3324";
-  gv:red "62";
-  gv:blue "36";
-  gv:green "51";
-  gv:score "8.4894426";
-  gv:coverage "0.98"
-], [
-  gv:hex "ead8c0";
-  gv:red "234";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "7.1966343";
-  gv:coverage "34.56"
-], [
-  gv:hex "7c7267";
-  gv:red "124";
-  gv:blue "103";
-  gv:green "114";
-  gv:score "5.320055399999999";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "5e544a";
-  gv:red "94";
-  gv:blue "74";
-  gv:green "84";
-  gv:score "4.1192792";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "433a30";
-  gv:red "67";
-  gv:blue "48";
-  gv:green "58";
-  gv:score "1.2196046999999999";
-  gv:coverage "0.16"
-], [
-  gv:hex "2a1e0f";
-  gv:red "42";
-  gv:blue "15";
-  gv:green "30";
-  gv:score "0.8866539999999999";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.80462"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.612808"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.184411"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.624053"
-];
-    w:bagOfWords "GRANDES\nES\nBOUTAUT\nBORDEAUX\nCHA\nBLIS\nPRODUCED & BOTTLED IN FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2526";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

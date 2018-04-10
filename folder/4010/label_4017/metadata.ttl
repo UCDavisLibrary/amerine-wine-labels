@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4010/label_4017";
-    dct:type "image";
-    w:bagOfWords "CUVEE RESERVE\nSELECTION NE\nSTE COOPERATIVE\nVINICOLE\nMEKNES\n"@undefined;
-    gv:color [
-  gv:hex "dcb4be";
-  gv:red "220";
-  gv:blue "190";
-  gv:green "180";
-  gv:score "13.355258000000001";
-  gv:coverage "2.7266665999999997"
-], [
-  gv:hex "836e57";
-  gv:red "131";
-  gv:blue "87";
-  gv:green "110";
-  gv:score "9.32827";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "6c464e";
-  gv:red "108";
-  gv:blue "78";
-  gv:green "70";
-  gv:score "5.7584058";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "270d14";
-  gv:red "39";
-  gv:blue "20";
-  gv:green "13";
-  gv:score "5.5130482";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "65543d";
-  gv:red "101";
-  gv:blue "61";
-  gv:green "84";
-  gv:score "8.2975946";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "c297a2";
-  gv:red "194";
-  gv:blue "162";
-  gv:green "151";
-  gv:score "7.610976";
-  gv:coverage "0.96"
-], [
-  gv:hex "cbc1be";
-  gv:red "203";
-  gv:blue "190";
-  gv:green "193";
-  gv:score "5.7046186";
-  gv:coverage "14.506666"
-], [
-  gv:hex "4c2832";
-  gv:red "76";
-  gv:blue "50";
-  gv:green "40";
-  gv:score "5.3910177";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "6d4c3b";
-  gv:red "109";
-  gv:blue "59";
-  gv:green "76";
-  gv:score "4.3771259";
-  gv:coverage "0.24"
-], [
-  gv:hex "e6dcd8";
-  gv:red "230";
-  gv:blue "216";
-  gv:green "220";
-  gv:score "4.0256821";
-  gv:coverage "70.82000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "75.586486"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "66.06107399999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.733865"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "59.858954"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "55.877632"
-];
-    w:bagOfWords "CUVEE RESERVE\nSELECTION NE\nSTE COOPERATIVE\nVINICOLE\nMEKNES\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4017";
+    <schema.keywords> "North Africa Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

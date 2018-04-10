@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1057";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "1889\n1878\nMEDAILLES D'OR\nPARIS\nDARGENT\nEDAILLE DEVERMEIL\nMEDAILLE\nARG\nALLE ZURICH 1883\nERNE1851\nCCERNE 1881\nMONT DOR\nSION\nAncienne propriété Georges Masson\nMis en bouteilles la propriété Etiquette déposée\n"@deu;
-    gv:color [
-  gv:hex "8a7038";
-  gv:red "138";
-  gv:blue "56";
-  gv:green "112";
-  gv:score "35.374953999999995";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "d6c4ab";
-  gv:red "214";
-  gv:blue "171";
-  gv:green "196";
-  gv:score "7.4281216";
-  gv:coverage "31.4"
-], [
-  gv:hex "1b1006";
-  gv:red "27";
-  gv:blue "6";
-  gv:green "16";
-  gv:score "0.4668477";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "705a27";
-  gv:red "112";
-  gv:blue "39";
-  gv:green "90";
-  gv:score "14.943233";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "957626";
-  gv:red "149";
-  gv:blue "38";
-  gv:green "118";
-  gv:score "7.7882938";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "867458";
-  gv:red "134";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "5.8012173";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "ab997e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "5.4896805";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "695639";
-  gv:red "105";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "5.2195944";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "eddbc1";
-  gv:red "237";
-  gv:blue "193";
-  gv:green "219";
-  gv:score "4.0478852000000005";
-  gv:coverage "34.506667"
-], [
-  gv:hex "ac8f54";
-  gv:red "172";
-  gv:blue "84";
-  gv:green "143";
-  gv:score "3.9073583000000003";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.498313"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "67.05901"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.48047700000001"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "55.097437000000006"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "51.270830999999994"
-];
-    w:bagOfWords "1889\n1878\nMEDAILLES D'OR\nPARIS\nDARGENT\nEDAILLE DEVERMEIL\nMEDAILLE\nARG\nALLE ZURICH 1883\nERNE1851\nCCERNE 1881\nMONT DOR\nSION\nAncienne propriété Georges Masson\nMis en bouteilles la propriété Etiquette déposée\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1057";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

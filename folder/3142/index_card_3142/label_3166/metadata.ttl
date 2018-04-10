@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3166";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "MARK\nTRADE\nhomberfin\n(Clos de Beze)\nL. DORET\nCOTE D OR)\n"@fra;
-    gv:color [
-  gv:hex "e3c49d";
-  gv:red "227";
-  gv:blue "157";
-  gv:green "196";
-  gv:score "41.234958";
-  gv:coverage "30.633333"
-], [
-  gv:hex "681c0a";
-  gv:red "104";
-  gv:blue "10";
-  gv:green "28";
-  gv:score "2.9934742";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "695131";
-  gv:red "105";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "2.1683287";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "a16d4c";
-  gv:red "161";
-  gv:blue "76";
-  gv:green "109";
-  gv:score "1.6672991000000001";
-  gv:coverage "0.3"
-], [
-  gv:hex "482509";
-  gv:red "72";
-  gv:blue "9";
-  gv:green "37";
-  gv:score "1.3029613";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "e4c194";
-  gv:red "228";
-  gv:blue "148";
-  gv:green "193";
-  gv:score "20.981914";
-  gv:coverage "8.0466665"
-], [
-  gv:hex "ebbc9a";
-  gv:red "235";
-  gv:blue "154";
-  gv:green "188";
-  gv:score "5.643504500000001";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "b69a77";
-  gv:red "182";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "3.3914067";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "c79374";
-  gv:red "199";
-  gv:blue "116";
-  gv:green "147";
-  gv:score "2.7035024";
-  gv:coverage "0.52"
-], [
-  gv:hex "8a704f";
-  gv:red "138";
-  gv:blue "79";
-  gv:green "112";
-  gv:score "1.7740931000000002";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.229667"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.979188"
-];
-    w:bagOfWords "MARK\nTRADE\nhomberfin\n(Clos de Beze)\nL. DORET\nCOTE D OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3166";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

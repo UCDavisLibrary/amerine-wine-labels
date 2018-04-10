@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4103";
-    dct:type "image";
-    w:bagOfWords "R. PRIX\nGRAND PARIS\n1900 GA\nUNIVERSELLE\nEXPOSITION\nSAINT ESTEPHE\nBORDEAUX\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d3c2a7";
-  gv:red "211";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "45.679410999999995";
-  gv:coverage "22.673333"
-], [
-  gv:hex "ad9a7e";
-  gv:red "173";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "31.456943999999996";
-  gv:coverage "2.76"
-], [
-  gv:hex "8f7d5d";
-  gv:red "143";
-  gv:blue "93";
-  gv:green "125";
-  gv:score "19.732252";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "ead8bf";
-  gv:red "234";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "1.9668186";
-  gv:coverage "2.5666667"
-], [
-  gv:hex "453c2f";
-  gv:red "69";
-  gv:blue "47";
-  gv:green "60";
-  gv:score "0.011132602";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "af9e5e";
-  gv:red "175";
-  gv:blue "94";
-  gv:green "158";
-  gv:score "0.73003662";
-  gv:coverage "0.32"
-], [
-  gv:hex "d7c7bb";
-  gv:red "215";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "0.35774114";
-  gv:coverage "22.46"
-], [
-  gv:hex "797065";
-  gv:red "121";
-  gv:blue "101";
-  gv:green "112";
-  gv:score "0.042065585";
-  gv:coverage "0.08"
-], [
-  gv:hex "a2978e";
-  gv:red "162";
-  gv:blue "142";
-  gv:green "151";
-  gv:score "0.011138868";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "e4dace";
-  gv:red "228";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "0.0071331211";
-  gv:coverage "47.826666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.486766"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.416829"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.919943"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.073508999999994"
-];
-    w:bagOfWords "R. PRIX\nGRAND PARIS\n1900 GA\nUNIVERSELLE\nEXPOSITION\nSAINT ESTEPHE\nBORDEAUX\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4103";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

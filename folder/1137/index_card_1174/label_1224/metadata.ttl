@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1224";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVIN A.\nTORRE ,BRE VA\nBRANDY TRES ABE\nANDALUCIA (ESPANA)\nSAN LUCAR\nJere3 Indi\n"@spa;
-    gv:color [
-  gv:hex "a26811";
-  gv:red "162";
-  gv:blue "17";
-  gv:green "104";
-  gv:score "13.729559";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "d7b987";
-  gv:red "215";
-  gv:blue "135";
-  gv:green "185";
-  gv:score "9.9615619";
-  gv:coverage "7.8666665"
-], [
-  gv:hex "c78916";
-  gv:red "199";
-  gv:blue "22";
-  gv:green "137";
-  gv:score "2.9436937";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "202b65";
-  gv:red "32";
-  gv:blue "101";
-  gv:green "43";
-  gv:score "0.86710816";
-  gv:coverage "0.16"
-], [
-  gv:hex "9ebbb6";
-  gv:red "158";
-  gv:blue "182";
-  gv:green "187";
-  gv:score "0.6598677";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "22334d";
-  gv:red "34";
-  gv:blue "77";
-  gv:green "51";
-  gv:score "0.55722645";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "b99b68";
-  gv:red "185";
-  gv:blue "104";
-  gv:green "155";
-  gv:score "7.0539691";
-  gv:coverage "3.82"
-], [
-  gv:hex "d7bb96";
-  gv:red "215";
-  gv:blue "150";
-  gv:green "187";
-  gv:score "6.410513099999999";
-  gv:coverage "8.76"
-], [
-  gv:hex "865105";
-  gv:red "134";
-  gv:blue "5";
-  gv:green "81";
-  gv:score "4.7251675";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "937640";
-  gv:red "147";
-  gv:blue "64";
-  gv:green "118";
-  gv:score "4.0171321";
-  gv:coverage "1.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.023286"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.088165"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.546884999999996"
-];
-    w:bagOfWords "BODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVIN A.\nTORRE ,BRE VA\nBRANDY TRES ABE\nANDALUCIA (ESPANA)\nSAN LUCAR\nJere3 Indi\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1224";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

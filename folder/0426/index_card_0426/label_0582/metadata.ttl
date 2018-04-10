@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0582";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "RHEINGAU\n1952 et\nbeimet Berg Rottlano\nRiesling\nweingut Reidysfreiberr von Ritter ou Broenefteyn\n58\nNC 5 2 "@deu;
-    gv:color [
-  gv:hex "d4c3a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "28.904927";
-  gv:coverage "5.36"
-], [
-  gv:hex "ad9b7c";
-  gv:red "173";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "14.832532";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "897855";
-  gv:red "137";
-  gv:blue "85";
-  gv:green "120";
-  gv:score "11.453778";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "b49c68";
-  gv:red "180";
-  gv:blue "104";
-  gv:green "156";
-  gv:score "9.3618333";
-  gv:coverage "1.18"
-], [
-  gv:hex "d1c5bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "7.9067342";
-  gv:coverage "14.793333"
-], [
-  gv:hex "8a7646";
-  gv:red "138";
-  gv:blue "70";
-  gv:green "118";
-  gv:score "6.2189337";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "e7d9c3";
-  gv:red "231";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "5.9140544";
-  gv:coverage "4.72"
-], [
-  gv:hex "e6dad1";
-  gv:red "230";
-  gv:blue "209";
-  gv:green "218";
-  gv:score "3.7081152";
-  gv:coverage "67.386669"
-], [
-  gv:hex "ceb682";
-  gv:red "206";
-  gv:blue "130";
-  gv:green "182";
-  gv:score "3.5707455";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "aa9e96";
-  gv:red "170";
-  gv:blue "150";
-  gv:green "158";
-  gv:score "3.3339533999999995";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.060691"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.149391"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.011038"
-];
-    w:bagOfWords "RHEINGAU\n1952 et\nbeimet Berg Rottlano\nRiesling\nweingut Reidysfreiberr von Ritter ou Broenefteyn\n58\nNC 5 2 "@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0582";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

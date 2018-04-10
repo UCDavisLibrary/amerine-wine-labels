@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3506";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "y 5- 43\nCine\ner Riesling\nPRODUCED & Bot LED BY\nF. ALMINA, & CO.ALcoHOL 12% BYvoLUME\nBONDEb WINERY No. ST. HELENA, NAPA CO., CALIFORNIA\n605 de 8.\n"@eng;
-    gv:color [
-  gv:hex "d4c1aa";
-  gv:red "212";
-  gv:blue "170";
-  gv:green "193";
-  gv:score "27.924663";
-  gv:coverage "10.766665999999999"
-], [
-  gv:hex "62533e";
-  gv:red "98";
-  gv:blue "62";
-  gv:green "83";
-  gv:score "9.6845441";
-  gv:coverage "1.38"
-], [
-  gv:hex "ae9c85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "14.253794000000001";
-  gv:coverage "3.08"
-], [
-  gv:hex "eeddca";
-  gv:red "238";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "14.063234999999999";
-  gv:coverage "14.153333000000002"
-], [
-  gv:hex "85745e";
-  gv:red "133";
-  gv:blue "94";
-  gv:green "116";
-  gv:score "8.2243912";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "3f311f";
-  gv:red "63";
-  gv:blue "31";
-  gv:green "49";
-  gv:score "5.8920275";
-  gv:coverage "0.64"
-], [
-  gv:hex "eee1d5";
-  gv:red "238";
-  gv:blue "213";
-  gv:green "225";
-  gv:score "3.7189357";
-  gv:coverage "63"
-], [
-  gv:hex "281909";
-  gv:red "40";
-  gv:blue "9";
-  gv:green "25";
-  gv:score "2.5152652";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "a49560";
-  gv:red "164";
-  gv:blue "96";
-  gv:green "149";
-  gv:score "2.2153376";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "150701";
-  gv:red "21";
-  gv:blue "1";
-  gv:green "7";
-  gv:score "2.0265763999999997";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.08921500000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.688379"
-];
-    w:bagOfWords "y 5- 43\nCine\ner Riesling\nPRODUCED & Bot LED BY\nF. ALMINA, & CO.ALcoHOL 12% BYvoLUME\nBONDEb WINERY No. ST. HELENA, NAPA CO., CALIFORNIA\n605 de 8.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3506";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

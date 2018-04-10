@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4099";
-    dct:type "image";
-    w:bagOfWords "RED BURGUNDY WINE\nMACO N\nNGE\nPRODU\nE OF\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE COTE D'OR\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "847470";
-  gv:red "132";
-  gv:blue "112";
-  gv:green "116";
-  gv:score "15.032824999999999";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "ae5b37";
-  gv:red "174";
-  gv:blue "55";
-  gv:green "91";
-  gv:score "2.1628041000000002";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "a89995";
-  gv:red "168";
-  gv:blue "149";
-  gv:green "153";
-  gv:score "14.867505";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "cec1bc";
-  gv:red "206";
-  gv:blue "188";
-  gv:green "193";
-  gv:score "12.722233";
-  gv:coverage "20.96"
-], [
-  gv:hex "655450";
-  gv:red "101";
-  gv:blue "80";
-  gv:green "84";
-  gv:score "8.784011";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "e4dad2";
-  gv:red "228";
-  gv:blue "210";
-  gv:green "218";
-  gv:score "4.4123709";
-  gv:coverage "64.946669"
-], [
-  gv:hex "84735e";
-  gv:red "132";
-  gv:blue "94";
-  gv:green "115";
-  gv:score "3.9878473";
-  gv:coverage "0.52"
-], [
-  gv:hex "d4c4b1";
-  gv:red "212";
-  gv:blue "177";
-  gv:green "196";
-  gv:score "3.4377395999999996";
-  gv:coverage "2.7"
-], [
-  gv:hex "886f6d";
-  gv:red "136";
-  gv:blue "109";
-  gv:green "111";
-  gv:score "3.0920970999999997";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "685943";
-  gv:red "104";
-  gv:blue "67";
-  gv:green "89";
-  gv:score "3.0103123";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.456549"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "52.994699999999995"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "52.218399999999995"
-];
-    w:bagOfWords "RED BURGUNDY WINE\nMACO N\nNGE\nPRODU\nE OF\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE COTE D'OR\nDE POSE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4099";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

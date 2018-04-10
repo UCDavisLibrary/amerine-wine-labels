@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0023";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "No 331\nCA REGIST\nO MARI\nMADEo MARISTANY\nBARCELONA\nARCELO\nTRADE MARK\nCasa fundada para elaborac zon venta\nde Zos productos de sus hacienda\n"@spa;
-    gv:color [
-  gv:hex "dbc0a3";
-  gv:red "219";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "59.900296";
-  gv:coverage "24.906667"
-], [
-  gv:hex "b29b80";
-  gv:red "178";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "6.5735132";
-  gv:coverage "2.68"
-], [
-  gv:hex "89745b";
-  gv:red "137";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "5.9470356";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "e4b89f";
-  gv:red "228";
-  gv:blue "159";
-  gv:green "184";
-  gv:score "5.389405";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "c2937b";
-  gv:red "194";
-  gv:blue "123";
-  gv:green "147";
-  gv:score "4.365712";
-  gv:coverage "1.08"
-], [
-  gv:hex "655139";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "4.3236761999999995";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "6d5123";
-  gv:red "109";
-  gv:blue "35";
-  gv:green "81";
-  gv:score "4.2152878";
-  gv:coverage "4.2333335"
-], [
-  gv:hex "46331a";
-  gv:red "70";
-  gv:blue "26";
-  gv:green "51";
-  gv:score "2.1225311000000002";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "efd8be";
-  gv:red "239";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "1.9253798";
-  gv:coverage "6.246666599999999"
-], [
-  gv:hex "714e21";
-  gv:red "113";
-  gv:blue "33";
-  gv:green "78";
-  gv:score "1.5091056";
-  gv:coverage "1.3666667000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.067153"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.058915"
-];
-    w:bagOfWords "No 331\nCA REGIST\nO MARI\nMADEo MARISTANY\nBARCELONA\nARCELO\nTRADE MARK\nCasa fundada para elaborac zon venta\nde Zos productos de sus hacienda\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0023";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

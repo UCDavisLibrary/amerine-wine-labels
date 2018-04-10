@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2399";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Bordeaux 1895-1907\nBruxelles 1910\nParis 1900\nGrand Diplome de Médaille d'Or\nCHATEAU LALANDE\nAppellation LISTRAC controlée\n1944\nDUBOSC, propriétaire\nLISTRAC M EDOC\n"@fra;
-    gv:color [
-  gv:hex "d7bea4";
-  gv:red "215";
-  gv:blue "164";
-  gv:green "190";
-  gv:score "35.722184";
-  gv:coverage "24.453333"
-], [
-  gv:hex "ae9984";
-  gv:red "174";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "22.331903999999998";
-  gv:coverage "5.8333334"
-], [
-  gv:hex "897461";
-  gv:red "137";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "18.512145999999998";
-  gv:coverage "3.7266668000000003"
-], [
-  gv:hex "675340";
-  gv:red "103";
-  gv:blue "64";
-  gv:green "83";
-  gv:score "11.605827";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "473523";
-  gv:red "71";
-  gv:blue "35";
-  gv:green "53";
-  gv:score "6.0305592";
-  gv:coverage "1.08"
-], [
-  gv:hex "ecd6c0";
-  gv:red "236";
-  gv:blue "192";
-  gv:green "214";
-  gv:score "1.6333632";
-  gv:coverage "6.886667"
-], [
-  gv:hex "d5b487";
-  gv:red "213";
-  gv:blue "135";
-  gv:green "180";
-  gv:score "0.60722902";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "dbb598";
-  gv:red "219";
-  gv:blue "152";
-  gv:green "181";
-  gv:score "0.5095681200000001";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "2d1b0a";
-  gv:red "45";
-  gv:blue "10";
-  gv:green "27";
-  gv:score "0.50951089";
-  gv:coverage "0.08"
-], [
-  gv:hex "472c1b";
-  gv:red "71";
-  gv:blue "27";
-  gv:green "44";
-  gv:score "0.47082831";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.853817"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.361773"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.705545"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.251422999999996"
-];
-    w:bagOfWords "Bordeaux 1895-1907\nBruxelles 1910\nParis 1900\nGrand Diplome de Médaille d'Or\nCHATEAU LALANDE\nAppellation LISTRAC controlée\n1944\nDUBOSC, propriétaire\nLISTRAC M EDOC\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2399";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4219";
-    dct:type "image";
-    w:bagOfWords "80 PROOF\n1 QUART\nFRANCE\nOF MADE BY\nCURACAo G.A.JOURDE\nBORDEAUX FRANCE\n"@fra;
-    gv:color [
-  gv:hex "f6b94a";
-  gv:red "246";
-  gv:blue "74";
-  gv:green "185";
-  gv:score "29.549709";
-  gv:coverage "11.12"
-], [
-  gv:hex "a11503";
-  gv:red "161";
-  gv:blue "3";
-  gv:green "21";
-  gv:score "5.3325046";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "f0c048";
-  gv:red "240";
-  gv:blue "72";
-  gv:green "192";
-  gv:score "12.972447";
-  gv:coverage "4.8533332"
-], [
-  gv:hex "f5b758";
-  gv:red "245";
-  gv:blue "88";
-  gv:green "183";
-  gv:score "12.436636";
-  gv:coverage "5.52"
-], [
-  gv:hex "eabf5b";
-  gv:red "234";
-  gv:blue "91";
-  gv:green "191";
-  gv:score "6.710729";
-  gv:coverage "3"
-], [
-  gv:hex "cc8f3a";
-  gv:red "204";
-  gv:blue "58";
-  gv:green "143";
-  gv:score "4.2312451";
-  gv:coverage "1.24"
-], [
-  gv:hex "bb0708";
-  gv:red "187";
-  gv:blue "8";
-  gv:green "7";
-  gv:score "2.7719408000000003";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "981412";
-  gv:red "152";
-  gv:blue "18";
-  gv:green "20";
-  gv:score "2.6730707";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "bf993e";
-  gv:red "191";
-  gv:blue "62";
-  gv:green "153";
-  gv:score "2.1930417";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "a36f1d";
-  gv:red "163";
-  gv:blue "29";
-  gv:green "111";
-  gv:score "2.0457355";
-  gv:coverage "0.6666666800000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.503631"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "80.972517"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.855021"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "80 PROOF\n1 QUART\nFRANCE\nOF MADE BY\nCURACAo G.A.JOURDE\nBORDEAUX FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4219";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

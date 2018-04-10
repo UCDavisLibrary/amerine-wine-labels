@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2546";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "abli60,\nDEUXIEME GRAND .CRU\nHenri PICQ-BENTAMIN\nProprié\nCHABLIS\n"@fra;
-    gv:color [
-  gv:hex "d8c1a4";
-  gv:red "216";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "31.898808000000002";
-  gv:coverage "15.453332999999999"
-], [
-  gv:hex "ab977f";
-  gv:red "171";
-  gv:blue "127";
-  gv:green "151";
-  gv:score "28.39677";
-  gv:coverage "4.1266665"
-], [
-  gv:hex "8b775e";
-  gv:red "139";
-  gv:blue "94";
-  gv:green "119";
-  gv:score "19.301675";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "eedcc5";
-  gv:red "238";
-  gv:blue "197";
-  gv:green "220";
-  gv:score "9.8935939";
-  gv:coverage "25.733334000000003"
-], [
-  gv:hex "dfbc8d";
-  gv:red "223";
-  gv:blue "141";
-  gv:green "188";
-  gv:score "6.4333096";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "68553f";
-  gv:red "104";
-  gv:blue "63";
-  gv:green "85";
-  gv:score "3.3582319";
-  gv:coverage "0.36"
-], [
-  gv:hex "45341d";
-  gv:red "69";
-  gv:blue "29";
-  gv:green "52";
-  gv:score "0.39955199999999996";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "2e1c05";
-  gv:red "46";
-  gv:blue "5";
-  gv:green "28";
-  gv:score "0.20518666";
-  gv:coverage "0.02"
-], [
-  gv:hex "c7c1b6";
-  gv:red "199";
-  gv:blue "182";
-  gv:green "193";
-  gv:score "0.033192759";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "e4ded3";
-  gv:red "228";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "0.021311977";
-  gv:coverage "50.233334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "76.040357"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.486534"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.259676"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.476805000000006"
-];
-    w:bagOfWords "abli60,\nDEUXIEME GRAND .CRU\nHenri PICQ-BENTAMIN\nProprié\nCHABLIS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2546";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

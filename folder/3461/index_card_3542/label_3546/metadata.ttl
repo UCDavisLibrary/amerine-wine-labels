@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3546";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "DS\nCOPYRIGHT 1930\nCON CANNON VINEYARDS\nLIVERMORE\nCALIF\nTaut Santerne\nNET CONTENTs, ONE-FIFTH oF A wINE GALLON\nALCOHOLIC CONTENT UNDER 14 PERCENT\n1925\nVINTAGE\n1925\n"@eng;
-    gv:color [
-  gv:hex "87745a";
-  gv:red "135";
-  gv:blue "90";
-  gv:green "116";
-  gv:score "17.193699000000002";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "645239";
-  gv:red "100";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "16.2458";
-  gv:coverage "3.2"
-], [
-  gv:hex "aa977c";
-  gv:red "170";
-  gv:blue "124";
-  gv:green "151";
-  gv:score "11.988182";
-  gv:coverage "3.7600000000000002"
-], [
-  gv:hex "907241";
-  gv:red "144";
-  gv:blue "65";
-  gv:green "114";
-  gv:score "11.094788999999999";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "b49460";
-  gv:red "180";
-  gv:blue "96";
-  gv:green "148";
-  gv:score "7.1883246";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "45341e";
-  gv:red "69";
-  gv:blue "30";
-  gv:green "52";
-  gv:score "6.7217237999999995";
-  gv:coverage "1.68"
-], [
-  gv:hex "d0bea5";
-  gv:red "208";
-  gv:blue "165";
-  gv:green "190";
-  gv:score "4.9584757999999995";
-  gv:coverage "6.746666900000001"
-], [
-  gv:hex "81776c";
-  gv:red "129";
-  gv:blue "108";
-  gv:green "119";
-  gv:score "4.259358";
-  gv:coverage "2.26"
-], [
-  gv:hex "705529";
-  gv:red "112";
-  gv:blue "41";
-  gv:green "85";
-  gv:score "3.7151828";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "a3988e";
-  gv:red "163";
-  gv:blue "142";
-  gv:green "152";
-  gv:score "3.4688048";
-  gv:coverage "2.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "62.026846"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.7685"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "57.544333"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "50.289607000000004"
-];
-    w:bagOfWords "DS\nCOPYRIGHT 1930\nCON CANNON VINEYARDS\nLIVERMORE\nCALIF\nTaut Santerne\nNET CONTENTs, ONE-FIFTH oF A wINE GALLON\nALCOHOLIC CONTENT UNDER 14 PERCENT\n1925\nVINTAGE\n1925\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3546";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

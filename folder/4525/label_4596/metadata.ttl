@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4596";
-    dct:type "image";
-    w:bagOfWords "FM08C2TEL\ny(D\n噼)\nPEREGRINO\nR, e,411\nAN\n+9\n4LAGb\nTA.\n"@spa;
-    gv:color [
-  gv:hex "b1985b";
-  gv:red "177";
-  gv:blue "91";
-  gv:green "152";
-  gv:score "7.0053577";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "dcc05f";
-  gv:red "220";
-  gv:blue "95";
-  gv:green "192";
-  gv:score "5.9654824";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "d1c0a2";
-  gv:red "209";
-  gv:blue "162";
-  gv:green "192";
-  gv:score "3.4742687";
-  gv:coverage "4.08"
-], [
-  gv:hex "d8ce42";
-  gv:red "216";
-  gv:blue "66";
-  gv:green "206";
-  gv:score "2.8554725";
-  gv:coverage "0.22"
-], [
-  gv:hex "86adad";
-  gv:red "134";
-  gv:blue "173";
-  gv:green "173";
-  gv:score "2.6085939";
-  gv:coverage "0.96"
-], [
-  gv:hex "6e4731";
-  gv:red "110";
-  gv:blue "49";
-  gv:green "71";
-  gv:score "2.4415407";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "8daabf";
-  gv:red "141";
-  gv:blue "191";
-  gv:green "170";
-  gv:score "2.2038594000000002";
-  gv:coverage "0.66"
-], [
-  gv:hex "ac2707";
-  gv:red "172";
-  gv:blue "7";
-  gv:green "39";
-  gv:score "1.8194318";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "0e100e";
-  gv:red "14";
-  gv:blue "14";
-  gv:green "16";
-  gv:score "0.35351263";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "363770";
-  gv:red "54";
-  gv:blue "112";
-  gv:green "55";
-  gv:score "0.22174206000000002";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "65.938038"
-], [
-  gv:mid <https://g.co/kg/m/080jpd1>;
-  gv:desc "coin purse";
-  gv:score "65.216386"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.371826"
-];
-    w:bagOfWords "FM08C2TEL\ny(D\n噼)\nPEREGRINO\nR, e,411\nAN\n+9\n4LAGb\nTA.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4596";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

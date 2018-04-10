@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2827";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "1923\nCHATEAU D'ARCHE-LAFAURIE\nGRAND CRU CLASSE\n(22 Hectares en Vignes Blanches)\nJ. LAFAURIE Propriétaire SAUTERNES\nEXPOSITION DE LIEGE 1905, DIPLOME D'HONNEUR pour mes vins 1893\n900. 19\nN DE SAINT-LOUIS (Etats-Unis). Com\nDépartemental, GRAND PRIX\n"@fra;
-    gv:color [
-  gv:hex "d0c2b9";
-  gv:red "208";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "22.846217";
-  gv:coverage "9.3866669"
-], [
-  gv:hex "a99987";
-  gv:red "169";
-  gv:blue "135";
-  gv:green "153";
-  gv:score "21.440189";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "8c7860";
-  gv:red "140";
-  gv:blue "96";
-  gv:green "120";
-  gv:score "18.420033";
-  gv:coverage "0.88"
-], [
-  gv:hex "15191f";
-  gv:red "21";
-  gv:blue "31";
-  gv:green "25";
-  gv:score "0.15405670000000002";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "aa9d94";
-  gv:red "170";
-  gv:blue "148";
-  gv:green "157";
-  gv:score "12.681192";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "cabcab";
-  gv:red "202";
-  gv:blue "171";
-  gv:green "188";
-  gv:score "10.64387";
-  gv:coverage "1.44"
-], [
-  gv:hex "eadcd2";
-  gv:red "234";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "9.542813899999999";
-  gv:coverage "78.60666499999999"
-], [
-  gv:hex "e8dac9";
-  gv:red "232";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "2.0968470999999997";
-  gv:coverage "5.8999999999999995"
-], [
-  gv:hex "897a71";
-  gv:red "137";
-  gv:blue "113";
-  gv:green "122";
-  gv:score "1.8517779";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "755f4a";
-  gv:red "117";
-  gv:blue "74";
-  gv:green "95";
-  gv:score "0.14790155";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.69135"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.972546"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.960935"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.260003999999995"
-];
-    w:bagOfWords "1923\nCHATEAU D'ARCHE-LAFAURIE\nGRAND CRU CLASSE\n(22 Hectares en Vignes Blanches)\nJ. LAFAURIE Propriétaire SAUTERNES\nEXPOSITION DE LIEGE 1905, DIPLOME D'HONNEUR pour mes vins 1893\n900. 19\nN DE SAINT-LOUIS (Etats-Unis). Com\nDépartemental, GRAND PRIX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2827";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

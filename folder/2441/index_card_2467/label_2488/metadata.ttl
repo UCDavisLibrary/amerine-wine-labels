@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2488";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "SAonrienaires grands crus eye\n"@fra;
-    gv:color [
-  gv:hex "cfc3b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "37.141197999999996";
-  gv:coverage "27.22"
-], [
-  gv:hex "a99d93";
-  gv:red "169";
-  gv:blue "147";
-  gv:green "157";
-  gv:score "21.438691000000002";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "cfc0ad";
-  gv:red "207";
-  gv:blue "173";
-  gv:green "192";
-  gv:score "15.555532";
-  gv:coverage "9.08"
-], [
-  gv:hex "e7dcd2";
-  gv:red "231";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "7.131012500000001";
-  gv:coverage "58.95333299999999"
-], [
-  gv:hex "a99b88";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "155";
-  gv:score "7.07463";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "897e74";
-  gv:red "137";
-  gv:blue "116";
-  gv:green "126";
-  gv:score "4.6982691";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "867762";
-  gv:red "134";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "2.8214477000000002";
-  gv:coverage "0.08"
-], [
-  gv:hex "e7dac3";
-  gv:red "231";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "1.6156061";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "615140";
-  gv:red "97";
-  gv:blue "64";
-  gv:green "81";
-  gv:score "0.9702604300000001";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "3f2f1c";
-  gv:red "63";
-  gv:blue "28";
-  gv:green "47";
-  gv:score "0.7643657300000001";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.284719"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.377013999999996"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.450861"
-];
-    w:bagOfWords "SAonrienaires grands crus eye\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2488";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

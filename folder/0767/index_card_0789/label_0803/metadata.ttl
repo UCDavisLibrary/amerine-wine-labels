@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0803";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "MUSCADET\nAPPELLATION MUSCADET\nDE SEVRE ET MAINE CONTROLEE\nKernéis Prone LE PALLET (LinF)\n"@fra;
-    gv:color [
-  gv:hex "d8c9b0";
-  gv:red "216";
-  gv:blue "176";
-  gv:green "201";
-  gv:score "24.194996";
-  gv:coverage "9.86"
-], [
-  gv:hex "10325c";
-  gv:red "16";
-  gv:blue "92";
-  gv:green "50";
-  gv:score "6.2003765";
-  gv:coverage "1.06"
-], [
-  gv:hex "838643";
-  gv:red "131";
-  gv:blue "67";
-  gv:green "134";
-  gv:score "0.70770681";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e6dac4";
-  gv:red "230";
-  gv:blue "196";
-  gv:green "218";
-  gv:score "11.391345";
-  gv:coverage "6.5"
-], [
-  gv:hex "e5dbd1";
-  gv:red "229";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "7.1437843";
-  gv:coverage "66.446668"
-], [
-  gv:hex "341c00";
-  gv:red "52";
-  gv:blue "undefined";
-  gv:green "28";
-  gv:score "0.067772769";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d2c9c1";
-  gv:red "210";
-  gv:blue "193";
-  gv:green "201";
-  gv:score "5.9834406";
-  gv:coverage "7.9066664"
-], [
-  gv:hex "183250";
-  gv:red "24";
-  gv:blue "80";
-  gv:green "50";
-  gv:score "5.5627827";
-  gv:coverage "1.02"
-], [
-  gv:hex "ae9f82";
-  gv:red "174";
-  gv:blue "130";
-  gv:green "159";
-  gv:score "4.2917166";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "142c5e";
-  gv:red "20";
-  gv:blue "94";
-  gv:green "44";
-  gv:score "3.6130063";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.40377699999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.14603700000001"
-];
-    w:bagOfWords "MUSCADET\nAPPELLATION MUSCADET\nDE SEVRE ET MAINE CONTROLEE\nKernéis Prone LE PALLET (LinF)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0803";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0324";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "ONNGAN A\nCONTANNO\nMIVELARI\nualifurnia Claret\nPRODUCED AND BOTTLED BY\nCONCAN NON VINEYARDS\nLIVE R MORE, CAL FORN I A\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\nLOUIS ROESCH Co.\n"@eng;
-    gv:color [
-  gv:hex "615235";
-  gv:red "97";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "29.240084";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "cfbba0";
-  gv:red "207";
-  gv:blue "160";
-  gv:green "187";
-  gv:score "21.620703";
-  gv:coverage "37.04"
-], [
-  gv:hex "837359";
-  gv:red "131";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "18.318146";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "ad9b81";
-  gv:red "173";
-  gv:blue "129";
-  gv:green "155";
-  gv:score "16.267079000000003";
-  gv:coverage "5.546666699999999"
-], [
-  gv:hex "443419";
-  gv:red "68";
-  gv:blue "25";
-  gv:green "52";
-  gv:score "10.512467000000001";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "c3a174";
-  gv:red "195";
-  gv:blue "116";
-  gv:green "161";
-  gv:score "1.6937194";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "d6b587";
-  gv:red "214";
-  gv:blue "135";
-  gv:green "181";
-  gv:score "1.1174871";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "2c1b04";
-  gv:red "44";
-  gv:blue "4";
-  gv:green "27";
-  gv:score "0.9477241900000001";
-  gv:coverage "0.08"
-], [
-  gv:hex "ead9c2";
-  gv:red "234";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "0.21774559";
-  gv:coverage "19.513333"
-], [
-  gv:hex "110000";
-  gv:red "17";
-  gv:blue "undefined";
-  gv:green "undefined";
-  gv:score "0.025137633000000003";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.538419999999995"
-];
-    w:bagOfWords "ONNGAN A\nCONTANNO\nMIVELARI\nualifurnia Claret\nPRODUCED AND BOTTLED BY\nCONCAN NON VINEYARDS\nLIVE R MORE, CAL FORN I A\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\nLOUIS ROESCH Co.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0324";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

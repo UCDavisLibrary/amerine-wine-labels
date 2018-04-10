@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0161/label_0171";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "OPRIETO\nBUNDs.\nSANTA MARIA\nCALIFORNIA BURGUNDY\nGUNDLACHBUNDSCHUWINE to\nJ. GUNDLACH & Co.\nSan Francisco, Cal.\n"@eng;
-    gv:color [
-  gv:hex "12110f";
-  gv:red "18";
-  gv:blue "15";
-  gv:green "17";
-  gv:score "47.651958";
-  gv:coverage "24.273333"
-], [
-  gv:hex "67533b";
-  gv:red "103";
-  gv:blue "59";
-  gv:green "83";
-  gv:score "24.411726";
-  gv:coverage "1.32"
-], [
-  gv:hex "eae2d9";
-  gv:red "234";
-  gv:blue "217";
-  gv:green "226";
-  gv:score "1.0753232";
-  gv:coverage "66.666669"
-], [
-  gv:hex "44341f";
-  gv:red "68";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "8.0475107";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "31302b";
-  gv:red "49";
-  gv:blue "43";
-  gv:green "48";
-  gv:score "6.3134149";
-  gv:coverage "2.18"
-], [
-  gv:hex "806b4f";
-  gv:red "128";
-  gv:blue "79";
-  gv:green "107";
-  gv:score "4.873063";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "56524b";
-  gv:red "86";
-  gv:blue "75";
-  gv:green "82";
-  gv:score "2.991689";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "241808";
-  gv:red "36";
-  gv:blue "8";
-  gv:green "24";
-  gv:score "2.3831218";
-  gv:coverage "0.22"
-], [
-  gv:hex "78726b";
-  gv:red "120";
-  gv:blue "107";
-  gv:green "114";
-  gv:score "0.60880859";
-  gv:coverage "0.64"
-], [
-  gv:hex "6b4d2d";
-  gv:red "107";
-  gv:blue "45";
-  gv:green "77";
-  gv:score "0.43850453";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.17909999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "OPRIETO\nBUNDs.\nSANTA MARIA\nCALIFORNIA BURGUNDY\nGUNDLACHBUNDSCHUWINE to\nJ. GUNDLACH & Co.\nSan Francisco, Cal.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0171";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

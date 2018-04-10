@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4309";
-    dct:type "image";
-    w:bagOfWords "P R O D U C E O F R A N C E\nB O U R G G N E\nPOUILLY FUISSE\nBottled by\nBRITISH TRANSPORT HOTEL SERVICES\nST. PANCRAS CHAMBERS, LONDON, N.W.I\n"@fra;
-    gv:color [
-  gv:hex "e3c966";
-  gv:red "227";
-  gv:blue "102";
-  gv:green "201";
-  gv:score "16.579553";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "8a775b";
-  gv:red "138";
-  gv:blue "91";
-  gv:green "119";
-  gv:score "11.77865";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "dec98a";
-  gv:red "222";
-  gv:blue "138";
-  gv:green "201";
-  gv:score "11.814027000000001";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "ac997c";
-  gv:red "172";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "8.618503800000001";
-  gv:coverage "3.8733333"
-], [
-  gv:hex "d4c2a4";
-  gv:red "212";
-  gv:blue "164";
-  gv:green "194";
-  gv:score "8.565230699999999";
-  gv:coverage "12.773333000000001"
-], [
-  gv:hex "ae9660";
-  gv:red "174";
-  gv:blue "96";
-  gv:green "150";
-  gv:score "8.1491537";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "e4cc4d";
-  gv:red "228";
-  gv:blue "77";
-  gv:green "204";
-  gv:score "7.664759999999999";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "917a41";
-  gv:red "145";
-  gv:blue "65";
-  gv:green "122";
-  gv:score "7.051976799999999";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "eeda9c";
-  gv:red "238";
-  gv:blue "156";
-  gv:green "218";
-  gv:score "6.0954730999999995";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "eadab9";
-  gv:red "234";
-  gv:blue "185";
-  gv:green "218";
-  gv:score "3.8814694";
-  gv:coverage "16.133333999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.612978"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "P R O D U C E O F R A N C E\nB O U R G G N E\nPOUILLY FUISSE\nBottled by\nBRITISH TRANSPORT HOTEL SERVICES\nST. PANCRAS CHAMBERS, LONDON, N.W.I\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4309";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

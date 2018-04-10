@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0970";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "CHO/X\nGARANTI PUR VIN VAUDOIS\na Ree e la Cote,\nFEDERATION DE\nCA VEs co o PER AT/VES DE PRODUC 7 EUR s\nDE 20/N s 22A UD o /S\n"@deu;
-    gv:color [
-  gv:hex "e2ba5f";
-  gv:red "226";
-  gv:blue "95";
-  gv:green "186";
-  gv:score "16.645662";
-  gv:coverage "4.4733334"
-], [
-  gv:hex "9f6b1c";
-  gv:red "159";
-  gv:blue "28";
-  gv:green "107";
-  gv:score "7.669904099999999";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "e6c286";
-  gv:red "230";
-  gv:blue "134";
-  gv:green "194";
-  gv:score "16.094787";
-  gv:coverage "7.453333600000001"
-], [
-  gv:hex "e9b937";
-  gv:red "233";
-  gv:blue "55";
-  gv:green "185";
-  gv:score "7.919048500000001";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "bf9741";
-  gv:red "191";
-  gv:blue "65";
-  gv:green "151";
-  gv:score "6.2444706000000005";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "97741d";
-  gv:red "151";
-  gv:blue "29";
-  gv:green "116";
-  gv:score "4.4764604";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "c7903d";
-  gv:red "199";
-  gv:blue "61";
-  gv:green "144";
-  gv:score "4.4347774";
-  gv:coverage "1.16"
-], [
-  gv:hex "7f5105";
-  gv:red "127";
-  gv:blue "5";
-  gv:green "81";
-  gv:score "3.8690262000000004";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "75470c";
-  gv:red "117";
-  gv:blue "12";
-  gv:green "71";
-  gv:score "3.6227912";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "d19816";
-  gv:red "209";
-  gv:blue "22";
-  gv:green "152";
-  gv:score "3.1814034999999996";
-  gv:coverage "0.8200000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.230826"
-], [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "84.582239"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.81584099999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.251761"
-];
-    w:bagOfWords "CHO/X\nGARANTI PUR VIN VAUDOIS\na Ree e la Cote,\nFEDERATION DE\nCA VEs co o PER AT/VES DE PRODUC 7 EUR s\nDE 20/N s 22A UD o /S\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0970";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

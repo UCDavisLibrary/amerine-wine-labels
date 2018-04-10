@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3848";
-    dct:type "image";
-    w:bagOfWords "ANDES-WI\nBAD KREUZNACH\nEINBAU-LEHRANSTALT ahe\nein\n19 530t\nRtellimadet Sitomenberg\n2iiegling\nnatttttein\nDriginalabfiillung Rab 5355\nR. 276\nKRUGMANN\n"@deu;
-    gv:color [
-  gv:hex "853539";
-  gv:red "133";
-  gv:blue "57";
-  gv:green "53";
-  gv:score "15.679751";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "907644";
-  gv:red "144";
-  gv:blue "68";
-  gv:green "118";
-  gv:score "8.9492254";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "54271b";
-  gv:red "84";
-  gv:blue "27";
-  gv:green "39";
-  gv:score "6.3612729";
-  gv:coverage "0.16"
-], [
-  gv:hex "ede1da";
-  gv:red "237";
-  gv:blue "218";
-  gv:green "225";
-  gv:score "3.6257993";
-  gv:coverage "72.89999999999999"
-], [
-  gv:hex "6b2227";
-  gv:red "107";
-  gv:blue "39";
-  gv:green "34";
-  gv:score "4.2868167";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ac5d5e";
-  gv:red "172";
-  gv:blue "94";
-  gv:green "93";
-  gv:score "4.0123377";
-  gv:coverage "0.08"
-], [
-  gv:hex "381107";
-  gv:red "56";
-  gv:blue "7";
-  gv:green "17";
-  gv:score "3.9821457";
-  gv:coverage "0.12"
-], [
-  gv:hex "764738";
-  gv:red "118";
-  gv:blue "56";
-  gv:green "71";
-  gv:score "3.9164282000000004";
-  gv:coverage "0.1"
-], [
-  gv:hex "8a7253";
-  gv:red "138";
-  gv:blue "83";
-  gv:green "114";
-  gv:score "3.75476";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "aa987e";
-  gv:red "170";
-  gv:blue "126";
-  gv:green "152";
-  gv:score "3.7424486";
-  gv:coverage "0.89333337"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.17524"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "ANDES-WI\nBAD KREUZNACH\nEINBAU-LEHRANSTALT ahe\nein\n19 530t\nRtellimadet Sitomenberg\n2iiegling\nnatttttein\nDriginalabfiillung Rab 5355\nR. 276\nKRUGMANN\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3848";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

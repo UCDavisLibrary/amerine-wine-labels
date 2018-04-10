@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1679";
-    dct:type "image";
-    w:bagOfWords "OLYMPUS\nPALE DRY\nSHERRY\nFULL STRENGTH\nP R O D U C E\nC Y P R U S\nCYPRUS WINE ASSOCIATION LTD.\nSuccessors to\nCRIST. HAGGIPAVLU & SONS LTD\nWINE INDUSTRY\nEST. 1844\nLIMASSOL\nCYPRUS\n"@eng;
-    gv:color [
-  gv:hex "e7bf47";
-  gv:red "231";
-  gv:blue "71";
-  gv:green "191";
-  gv:score "29.861593";
-  gv:coverage "9.2533335"
-], [
-  gv:hex "a36d1b";
-  gv:red "163";
-  gv:blue "27";
-  gv:green "109";
-  gv:score "5.1823229";
-  gv:coverage "1.44"
-], [
-  gv:hex "6a5019";
-  gv:red "106";
-  gv:blue "25";
-  gv:green "80";
-  gv:score "4.3699984";
-  gv:coverage "0.88"
-], [
-  gv:hex "100702";
-  gv:red "16";
-  gv:blue "2";
-  gv:green "7";
-  gv:score "2.4034636000000003";
-  gv:coverage "1.7066667"
-], [
-  gv:hex "efdbb6";
-  gv:red "239";
-  gv:blue "182";
-  gv:green "219";
-  gv:score "0.34260247";
-  gv:coverage "4.9466666"
-], [
-  gv:hex "e5bf59";
-  gv:red "229";
-  gv:blue "89";
-  gv:green "191";
-  gv:score "20.911779";
-  gv:coverage "7.506666300000001"
-], [
-  gv:hex "be9737";
-  gv:red "190";
-  gv:blue "55";
-  gv:green "151";
-  gv:score "5.8755059";
-  gv:coverage "3.0866666"
-], [
-  gv:hex "470c00";
-  gv:red "71";
-  gv:blue "undefined";
-  gv:green "12";
-  gv:score "0.051491056";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "c69039";
-  gv:red "198";
-  gv:blue "57";
-  gv:green "144";
-  gv:score "3.9790712";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "cc9f2b";
-  gv:red "204";
-  gv:blue "43";
-  gv:green "159";
-  gv:score "3.2051510999999997";
-  gv:coverage "1.1066667000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.480306999999996"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "54.23727"
-];
-    w:bagOfWords "OLYMPUS\nPALE DRY\nSHERRY\nFULL STRENGTH\nP R O D U C E\nC Y P R U S\nCYPRUS WINE ASSOCIATION LTD.\nSuccessors to\nCRIST. HAGGIPAVLU & SONS LTD\nWINE INDUSTRY\nEST. 1844\nLIMASSOL\nCYPRUS\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1679";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

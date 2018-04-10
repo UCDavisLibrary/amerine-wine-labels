@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0614";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATURWEIN\nCONTENTS 1 PINT 7 FLUID OUNCES\nVERSTEIGERER E. V\nunsere Mitglieder besitzen\nWINE\nR H I N E\nLagen von Weltruf\nGOLD MED\nKORKBRAND\nCHLOSS\nGES. GESCHUTZT\nST. LOU\n9O4.\nDieses Zeichen\n(Produced and bottled in Germany)\nin Verbindung mit dem\n1937\ner\nKorkbrand verbiirgt\nnaturreinen Wein\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEINGAU\nWEING UTE R.\nGraf Matuschka-Greiffenclau'sche Originalabfullung\n0,3 o 1 2 0\n"@deu;
-    gv:color [
-  gv:hex "cdc2b8";
-  gv:red "205";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "11.363168";
-  gv:coverage "16.306667"
-], [
-  gv:hex "89785e";
-  gv:red "137";
-  gv:blue "94";
-  gv:green "120";
-  gv:score "11.039200000000001";
-  gv:coverage "2.12"
-], [
-  gv:hex "6b1806";
-  gv:red "107";
-  gv:blue "6";
-  gv:green "24";
-  gv:score "4.4826958";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "1c0e07";
-  gv:red "28";
-  gv:blue "7";
-  gv:green "14";
-  gv:score "0.63378364";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "976a58";
-  gv:red "151";
-  gv:blue "88";
-  gv:green "106";
-  gv:score "9.5191345";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "cfbea6";
-  gv:red "207";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "8.359129";
-  gv:coverage "27.1"
-], [
-  gv:hex "aa9a80";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "8.2162872";
-  gv:coverage "3.42"
-], [
-  gv:hex "a79d93";
-  gv:red "167";
-  gv:blue "147";
-  gv:green "157";
-  gv:score "7.363487";
-  gv:coverage "3.8266666"
-], [
-  gv:hex "744b3b";
-  gv:red "116";
-  gv:blue "59";
-  gv:green "75";
-  gv:score "7.215423899999999";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "66523b";
-  gv:red "102";
-  gv:blue "59";
-  gv:green "82";
-  gv:score "3.5635068999999997";
-  gv:coverage "0.36"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.224485"
-];
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATURWEIN\nCONTENTS 1 PINT 7 FLUID OUNCES\nVERSTEIGERER E. V\nunsere Mitglieder besitzen\nWINE\nR H I N E\nLagen von Weltruf\nGOLD MED\nKORKBRAND\nCHLOSS\nGES. GESCHUTZT\nST. LOU\n9O4.\nDieses Zeichen\n(Produced and bottled in Germany)\nin Verbindung mit dem\n1937\ner\nKorkbrand verbiirgt\nnaturreinen Wein\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEINGAU\nWEING UTE R.\nGraf Matuschka-Greiffenclau'sche Originalabfullung\n0,3 o 1 2 0\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0614";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

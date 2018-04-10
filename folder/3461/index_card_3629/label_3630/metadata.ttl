@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3630";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "ALCOHOL 12 VE BY VOLU ME. NET CONTENTS\nI PIN TIO FLUI D 0 ZS.\nCALIFORNIA CHAM PAGNE\nPRODUCED AND BOTTLED AT THE WINERY BY\nALMADEN VINEYARDS WINES LTD., LOS GATOS, CALIF.\nDISTRIBUTED BY\nT. C. VAVILL DM AN\nSAN FRANCISCO, CALIFORNIA\n13\n"@eng;
-    gv:color [
-  gv:hex "d3c3ac";
-  gv:red "211";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "30.451341999999997";
-  gv:coverage "7.933333500000001"
-], [
-  gv:hex "16120c";
-  gv:red "22";
-  gv:blue "12";
-  gv:green "18";
-  gv:score "14.276168";
-  gv:coverage "4.8066668"
-], [
-  gv:hex "edddc6";
-  gv:red "237";
-  gv:blue "198";
-  gv:green "221";
-  gv:score "19.837244000000002";
-  gv:coverage "17.193334"
-], [
-  gv:hex "b0a08a";
-  gv:red "176";
-  gv:blue "138";
-  gv:green "160";
-  gv:score "9.23047";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "36322b";
-  gv:red "54";
-  gv:blue "43";
-  gv:green "50";
-  gv:score "6.814029100000001";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "83735c";
-  gv:red "131";
-  gv:blue "92";
-  gv:green "115";
-  gv:score "3.7033997";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "61523c";
-  gv:red "97";
-  gv:blue "60";
-  gv:green "82";
-  gv:score "3.5740439";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "eae1d6";
-  gv:red "234";
-  gv:blue "214";
-  gv:green "225";
-  gv:score "3.1414952000000005";
-  gv:coverage "61.926669000000004"
-], [
-  gv:hex "3b3020";
-  gv:red "59";
-  gv:blue "32";
-  gv:green "48";
-  gv:score "3.033236";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "565049";
-  gv:red "86";
-  gv:blue "73";
-  gv:green "80";
-  gv:score "2.6119635";
-  gv:coverage "0.62666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.04674700000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.943653"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.3228"
-];
-    w:bagOfWords "ALCOHOL 12 VE BY VOLU ME. NET CONTENTS\nI PIN TIO FLUI D 0 ZS.\nCALIFORNIA CHAM PAGNE\nPRODUCED AND BOTTLED AT THE WINERY BY\nALMADEN VINEYARDS WINES LTD., LOS GATOS, CALIF.\nDISTRIBUTED BY\nT. C. VAVILL DM AN\nSAN FRANCISCO, CALIFORNIA\n13\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3630";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

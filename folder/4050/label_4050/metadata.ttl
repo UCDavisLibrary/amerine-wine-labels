@@ -1,95 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4050/label_4050";
-    dct:type "image";
-    w:bagOfWords "O\n[WsuNOPARABWp\nNOPARABANWEZT\nDEZ\n'M\nM.\nR.\nONC\n"@spa;
-    gv:color [
-  gv:hex "d7c3aa";
-  gv:red "215";
-  gv:blue "170";
-  gv:green "195";
-  gv:score "66.259867";
-  gv:coverage "31.786664999999996"
-], [
-  gv:hex "b0997c";
-  gv:red "176";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "12.576912000000002";
-  gv:coverage "2.6133334"
-], [
-  gv:hex "c4937f";
-  gv:red "196";
-  gv:blue "127";
-  gv:green "147";
-  gv:score "6.40776";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "8e7759";
-  gv:red "142";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "5.082978300000001";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "e4b4a0";
-  gv:red "228";
-  gv:blue "160";
-  gv:green "180";
-  gv:score "4.9169604";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "ebd7bd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "215";
-  gv:score "1.4793855999999999";
-  gv:coverage "2.22"
-], [
-  gv:hex "ab7562";
-  gv:red "171";
-  gv:blue "98";
-  gv:green "117";
-  gv:score "0.9869447";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "735d3e";
-  gv:red "115";
-  gv:blue "62";
-  gv:green "93";
-  gv:score "0.50693247";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "d98d7d";
-  gv:red "217";
-  gv:blue "125";
-  gv:green "141";
-  gv:score "0.46433369";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "ad6553";
-  gv:red "173";
-  gv:blue "83";
-  gv:green "101";
-  gv:score "0.39975625000000004";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.31981999999999"
-];
-    w:bagOfWords "O\n[WsuNOPARABWp\nNOPARABANWEZT\nDEZ\n'M\nM.\nR.\nONC\n"@spa;
-    wdt:P219 "spa".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4050";
+    <schema.keywords> "South America Folder@en";
+    schema:inLanguage "es";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

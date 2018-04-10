@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2386";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "1947\nAPPELLATION ST-ESTEPHE CONTRO LEE\nH.GUVELIER & FILs\nNEGTS\na BORDEAUX & HAUBOURDIN\n"@fra;
-    gv:color [
-  gv:hex "dac19d";
-  gv:red "218";
-  gv:blue "157";
-  gv:green "193";
-  gv:score "22.771515";
-  gv:coverage "21.18"
-], [
-  gv:hex "8a7658";
-  gv:red "138";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "18.999197000000002";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "ab9679";
-  gv:red "171";
-  gv:blue "121";
-  gv:green "150";
-  gv:score "17.411711999999998";
-  gv:coverage "3.66"
-], [
-  gv:hex "daba88";
-  gv:red "218";
-  gv:blue "136";
-  gv:green "186";
-  gv:score "16.323669";
-  gv:coverage "3.02"
-], [
-  gv:hex "685539";
-  gv:red "104";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "7.154394699999999";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "bc9a65";
-  gv:red "188";
-  gv:blue "101";
-  gv:green "154";
-  gv:score "5.313733200000001";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "f1d9b6";
-  gv:red "241";
-  gv:blue "182";
-  gv:green "217";
-  gv:score "4.2797193";
-  gv:coverage "7.506666300000001"
-], [
-  gv:hex "48371b";
-  gv:red "72";
-  gv:blue "27";
-  gv:green "55";
-  gv:score "1.8756345";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "917242";
-  gv:red "145";
-  gv:blue "66";
-  gv:green "114";
-  gv:score "1.3572296";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "9b6e2f";
-  gv:red "155";
-  gv:blue "47";
-  gv:green "110";
-  gv:score "1.1227019";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.773133"
-];
-    w:bagOfWords "1947\nAPPELLATION ST-ESTEPHE CONTRO LEE\nH.GUVELIER & FILs\nNEGTS\na BORDEAUX & HAUBOURDIN\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2386";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

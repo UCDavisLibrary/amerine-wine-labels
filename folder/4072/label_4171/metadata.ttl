@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4171";
-    dct:type "image";
-    w:bagOfWords "KASAMNICOLA\nFAZI\nKVPRAMONTAN\nANKONA ITALIA\nOBLICEREz EN Nous.\nNo\nDIKAIO\nWOULD BE AA RELATED\n"@fra;
-    gv:color [
-  gv:hex "d5c2a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "194";
-  gv:score "32.931226";
-  gv:coverage "15.626666"
-], [
-  gv:hex "724f35";
-  gv:red "114";
-  gv:blue "53";
-  gv:green "79";
-  gv:score "10.624134999999999";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "ad9b7f";
-  gv:red "173";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "18.448241000000003";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "926c52";
-  gv:red "146";
-  gv:blue "82";
-  gv:green "108";
-  gv:score "8.88421";
-  gv:coverage "1.54"
-], [
-  gv:hex "8a765a";
-  gv:red "138";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "7.130096900000001";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "bd927a";
-  gv:red "189";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "5.9716523";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "e3b69d";
-  gv:red "227";
-  gv:blue "157";
-  gv:green "182";
-  gv:score "4.3873902";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "edd8bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "216";
-  gv:score "3.0760869";
-  gv:coverage "7.166666500000001"
-], [
-  gv:hex "655538";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "85";
-  gv:score "2.3904704";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "413819";
-  gv:red "65";
-  gv:blue "25";
-  gv:green "56";
-  gv:score "1.0440977";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.818454"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "62.741493999999996"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.901384"
-];
-    w:bagOfWords "KASAMNICOLA\nFAZI\nKVPRAMONTAN\nANKONA ITALIA\nOBLICEREz EN Nous.\nNo\nDIKAIO\nWOULD BE AA RELATED\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4171";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

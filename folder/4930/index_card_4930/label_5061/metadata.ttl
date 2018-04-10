@@ -1,95 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5061";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "m r\nOVITIATE Wines are manufactured unde\nthe supervisi\nJesuit Fathers of the Novitiate of Los Gatos, Californid\naranteed to be Natural Wines.\nPort is especially recommended as a high\ntote e or as a Tonic\nm b a r d i W in en C\nBottled for\nLOS ANGELES\nALCOHOL\nSY OLuk\nMETH RAWN FROM TAX PAID CONTAIN E\n"@undefined;
-    gv:color [
-  gv:hex "b59552";
-  gv:red "181";
-  gv:blue "82";
-  gv:green "149";
-  gv:score "15.266497000000001";
-  gv:coverage "5.74"
-], [
-  gv:hex "a2712d";
-  gv:red "162";
-  gv:blue "45";
-  gv:green "113";
-  gv:score "9.667306400000001";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "b79348";
-  gv:red "183";
-  gv:blue "72";
-  gv:green "147";
-  gv:score "14.276428999999998";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "987839";
-  gv:red "152";
-  gv:blue "57";
-  gv:green "120";
-  gv:score "10.333332";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "c49051";
-  gv:red "196";
-  gv:blue "81";
-  gv:green "144";
-  gv:score "8.995890600000001";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "a16f35";
-  gv:red "161";
-  gv:blue "53";
-  gv:green "111";
-  gv:score "8.4638849";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "c08f47";
-  gv:red "192";
-  gv:blue "71";
-  gv:green "143";
-  gv:score "6.962654";
-  gv:coverage "1.04"
-], [
-  gv:hex "9c7b31";
-  gv:red "156";
-  gv:blue "49";
-  gv:green "123";
-  gv:score "6.1687253";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "dbba77";
-  gv:red "219";
-  gv:blue "119";
-  gv:green "186";
-  gv:score "3.9263411999999995";
-  gv:coverage "3.52"
-], [
-  gv:hex "7b4b16";
-  gv:red "123";
-  gv:blue "22";
-  gv:green "75";
-  gv:score "3.6388677";
-  gv:coverage "1.1933333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "71.30065599999999"
-];
-    w:bagOfWords "m r\nOVITIATE Wines are manufactured unde\nthe supervisi\nJesuit Fathers of the Novitiate of Los Gatos, Californid\naranteed to be Natural Wines.\nPort is especially recommended as a high\ntote e or as a Tonic\nm b a r d i W in en C\nBottled for\nLOS ANGELES\nALCOHOL\nSY OLuk\nMETH RAWN FROM TAX PAID CONTAIN E\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5061";
+    <schema.keywords> "UC Reporters Notebook@en".
+

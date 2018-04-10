@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4152";
-    dct:type "image";
-    w:bagOfWords "PARIS\nUNIVERSELLE\nasiTION, MARGAUX VIEUX\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "16100a";
-  gv:red "22";
-  gv:blue "10";
-  gv:green "16";
-  gv:score "51.053035";
-  gv:coverage "15.6"
-], [
-  gv:hex "393220";
-  gv:red "57";
-  gv:blue "32";
-  gv:green "50";
-  gv:score "14.209582000000001";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "eae2dc";
-  gv:red "234";
-  gv:blue "220";
-  gv:green "226";
-  gv:score "0.77407095";
-  gv:coverage "68.20666800000001"
-], [
-  gv:hex "5e5541";
-  gv:red "94";
-  gv:blue "65";
-  gv:green "85";
-  gv:score "9.0433888";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "342f28";
-  gv:red "52";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "8.5393131";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "241c0c";
-  gv:red "36";
-  gv:blue "12";
-  gv:green "28";
-  gv:score "6.6088066";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "7d735e";
-  gv:red "125";
-  gv:blue "94";
-  gv:green "115";
-  gv:score "5.4606613";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "554f45";
-  gv:red "85";
-  gv:blue "69";
-  gv:green "79";
-  gv:score "1.9326083";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "7b746c";
-  gv:red "123";
-  gv:blue "108";
-  gv:green "116";
-  gv:score "1.5169827";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "9e958c";
-  gv:red "158";
-  gv:blue "140";
-  gv:green "149";
-  gv:score "0.44531435999999996";
-  gv:coverage "0.45999999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.28935399999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "53.670305"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.641893"
-];
-    w:bagOfWords "PARIS\nUNIVERSELLE\nasiTION, MARGAUX VIEUX\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4152";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

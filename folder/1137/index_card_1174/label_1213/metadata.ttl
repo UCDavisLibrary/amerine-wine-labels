@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1213";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BENT-NOT ROKEN\nFUNDADORES\nqueses de\n"@spa;
-    gv:color [
-  gv:hex "ab977d";
-  gv:red "171";
-  gv:blue "125";
-  gv:green "151";
-  gv:score "11.820934";
-  gv:coverage "0.88"
-], [
-  gv:hex "485269";
-  gv:red "72";
-  gv:blue "105";
-  gv:green "82";
-  gv:score "8.4171541";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "9d6b3d";
-  gv:red "157";
-  gv:blue "61";
-  gv:green "107";
-  gv:score "6.299435300000001";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "3e4676";
-  gv:red "62";
-  gv:blue "118";
-  gv:green "70";
-  gv:score "1.03";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "8b775d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "10.044973";
-  gv:coverage "0.52"
-], [
-  gv:hex "d4c2aa";
-  gv:red "212";
-  gv:blue "170";
-  gv:green "194";
-  gv:score "6.7568809";
-  gv:coverage "3.0866666"
-], [
-  gv:hex "9f9d9d";
-  gv:red "159";
-  gv:blue "157";
-  gv:green "157";
-  gv:score "6.4995833";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "c3beba";
-  gv:red "195";
-  gv:blue "186";
-  gv:green "190";
-  gv:score "6.134130799999999";
-  gv:coverage "7.22"
-], [
-  gv:hex "926a57";
-  gv:red "146";
-  gv:blue "87";
-  gv:green "106";
-  gv:score "4.3390423";
-  gv:coverage "0.16"
-], [
-  gv:hex "b7917b";
-  gv:red "183";
-  gv:blue "123";
-  gv:green "145";
-  gv:score "4.0900894";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.23156900000001"
-], [
-  gv:mid <https://g.co/kg/m/0h8nvk9>;
-  gv:desc "dishware";
-  gv:score "53.494233"
-];
-    w:bagOfWords "BENT-NOT ROKEN\nFUNDADORES\nqueses de\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1213";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2978";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "B RHIN\nEMILE KuGLER GERT WILLER\nFRANCE\nTRAMINER\nKUGLER\nALSACE\n"@fra;
-    gv:color [
-  gv:hex "605539";
-  gv:red "96";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "15.376845";
-  gv:coverage "4.26"
-], [
-  gv:hex "d5bca0";
-  gv:red "213";
-  gv:blue "160";
-  gv:green "188";
-  gv:score "12.683427";
-  gv:coverage "12.766667000000002"
-], [
-  gv:hex "7d4f2b";
-  gv:red "125";
-  gv:blue "43";
-  gv:green "79";
-  gv:score "6.1357543";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "827354";
-  gv:red "130";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "14.109769";
-  gv:coverage "5.84"
-], [
-  gv:hex "4f5c3c";
-  gv:red "79";
-  gv:blue "60";
-  gv:green "92";
-  gv:score "6.734895000000001";
-  gv:coverage "1.52"
-], [
-  gv:hex "ab997f";
-  gv:red "171";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "5.8409981";
-  gv:coverage "3.3533334999999997"
-], [
-  gv:hex "9a6741";
-  gv:red "154";
-  gv:blue "65";
-  gv:green "103";
-  gv:score "5.8223639";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "724f34";
-  gv:red "114";
-  gv:blue "52";
-  gv:green "79";
-  gv:score "4.931004";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "88774a";
-  gv:red "136";
-  gv:blue "74";
-  gv:green "119";
-  gv:score "4.7367685";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "dbb193";
-  gv:red "219";
-  gv:blue "147";
-  gv:green "177";
-  gv:score "4.3367892999999995";
-  gv:coverage "0.77333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.97753899999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.140505000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.186867"
-];
-    w:bagOfWords "B RHIN\nEMILE KuGLER GERT WILLER\nFRANCE\nTRAMINER\nKUGLER\nALSACE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2978";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

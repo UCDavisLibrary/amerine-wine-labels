@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3984/label_3984";
-    dct:type "image";
-    w:bagOfWords "W U R T T E M B E R G\nBeutelsbacher Haidle\nNr. 24307 DM 22\n00\n"@deu;
-    gv:color [
-  gv:hex "d0c49a";
-  gv:red "208";
-  gv:blue "154";
-  gv:green "196";
-  gv:score "31.757742";
-  gv:coverage "21.026666"
-], [
-  gv:hex "a79c72";
-  gv:red "167";
-  gv:blue "114";
-  gv:green "156";
-  gv:score "24.140796";
-  gv:coverage "6.4399999999999995"
-], [
-  gv:hex "80784e";
-  gv:red "128";
-  gv:blue "78";
-  gv:green "120";
-  gv:score "15.607192";
-  gv:coverage "3.2666668000000003"
-], [
-  gv:hex "a59a6a";
-  gv:red "165";
-  gv:blue "106";
-  gv:green "154";
-  gv:score "7.653110000000001";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "857b4d";
-  gv:red "133";
-  gv:blue "77";
-  gv:green "123";
-  gv:score "6.5044224";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "615a31";
-  gv:red "97";
-  gv:blue "49";
-  gv:green "90";
-  gv:score "5.4983724";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "e8dab4";
-  gv:red "232";
-  gv:blue "180";
-  gv:green "218";
-  gv:score "4.0693969";
-  gv:coverage "20.233333000000002"
-], [
-  gv:hex "c7bc8b";
-  gv:red "199";
-  gv:blue "139";
-  gv:green "188";
-  gv:score "2.8405853";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "5c5327";
-  gv:red "92";
-  gv:blue "39";
-  gv:green "83";
-  gv:score "1.1844703";
-  gv:coverage "0.22"
-], [
-  gv:hex "443c12";
-  gv:red "68";
-  gv:blue "18";
-  gv:green "60";
-  gv:score "0.48116790000000004";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.479932999999996"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "55.057508"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.457623"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.181618"
-];
-    w:bagOfWords "W U R T T E M B E R G\nBeutelsbacher Haidle\nNr. 24307 DM 22\n00\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3984";
+    <schema.keywords> "Germany Wurttemberg Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

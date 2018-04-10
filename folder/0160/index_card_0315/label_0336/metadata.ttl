@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0336";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "NTAC\n1910\nA DE M\nET CONTENTS 12 FLUID OUNCES\n"@eng;
-    gv:color [
-  gv:hex "d1b694";
-  gv:red "209";
-  gv:blue "148";
-  gv:green "182";
-  gv:score "24.134128";
-  gv:coverage "16.373333000000002"
-], [
-  gv:hex "9e6847";
-  gv:red "158";
-  gv:blue "71";
-  gv:green "104";
-  gv:score "6.2205732";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "b79b79";
-  gv:red "183";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "21.600870999999998";
-  gv:coverage "8.3933331"
-], [
-  gv:hex "927756";
-  gv:red "146";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "7.7964462";
-  gv:coverage "3.3666666999999997"
-], [
-  gv:hex "c49274";
-  gv:red "196";
-  gv:blue "116";
-  gv:green "146";
-  gv:score "6.9035307";
-  gv:coverage "1.22"
-], [
-  gv:hex "814c2c";
-  gv:red "129";
-  gv:blue "44";
-  gv:green "76";
-  gv:score "4.3846257";
-  gv:coverage "0.64"
-], [
-  gv:hex "a16e52";
-  gv:red "161";
-  gv:blue "82";
-  gv:green "110";
-  gv:score "4.1732866";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "bd9d72";
-  gv:red "189";
-  gv:blue "114";
-  gv:green "157";
-  gv:score "3.3566645999999998";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "bf946c";
-  gv:red "191";
-  gv:blue "108";
-  gv:green "148";
-  gv:score "3.3011746";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "dbae8f";
-  gv:red "219";
-  gv:blue "143";
-  gv:green "174";
-  gv:score "2.8823547";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.234165"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.073015"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.139238999999996"
-];
-    w:bagOfWords "NTAC\n1910\nA DE M\nET CONTENTS 12 FLUID OUNCES\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0336";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

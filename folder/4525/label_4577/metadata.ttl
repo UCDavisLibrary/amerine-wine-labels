@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4577";
-    dct:type "image";
-    w:bagOfWords "oduce of S\nPro\nOSGORD\nNo. 3\nAMONTILLADO\nEXTRA SEC\nPUERTO STA MARIA\nSPAIN\nSHOPPERS SINCE 0804\n25\nCONTENTS\n32\nUART.\nAlcohol 20% by Volume\nPRINTED NENGLAMD.\n"@spa;
-    gv:color [
-  gv:hex "0e0705";
-  gv:red "14";
-  gv:blue "5";
-  gv:green "7";
-  gv:score "13.931388";
-  gv:coverage "7.7133335"
-], [
-  gv:hex "d5c4a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "196";
-  gv:score "13.476773999999999";
-  gv:coverage "9.6133336"
-], [
-  gv:hex "857656";
-  gv:red "133";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "11.915518";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "661a0e";
-  gv:red "102";
-  gv:blue "14";
-  gv:green "26";
-  gv:score "1.7840054";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "a9997a";
-  gv:red "169";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "8.54291";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "edddbe";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "221";
-  gv:score "7.7873178";
-  gv:coverage "19.873333000000002"
-], [
-  gv:hex "655639";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "6.6653989";
-  gv:coverage "1.18"
-], [
-  gv:hex "744532";
-  gv:red "116";
-  gv:blue "50";
-  gv:green "69";
-  gv:score "3.8282192999999998";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "8b3f35";
-  gv:red "139";
-  gv:blue "53";
-  gv:green "63";
-  gv:score "3.3813454";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "572c18";
-  gv:red "87";
-  gv:blue "24";
-  gv:green "44";
-  gv:score "2.8320819";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.617891"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "oduce of S\nPro\nOSGORD\nNo. 3\nAMONTILLADO\nEXTRA SEC\nPUERTO STA MARIA\nSPAIN\nSHOPPERS SINCE 0804\n25\nCONTENTS\n32\nUART.\nAlcohol 20% by Volume\nPRINTED NENGLAMD.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4577";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

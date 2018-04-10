@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2111/label_2131";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "PORT WINE\nGebr., Jllert, G.m. b. H., Lith. Kunstanstalt, Kl. Auheim-Hanau (Allemagne).\nNo. 7554. Reichsm. 22.50 per 1000. Texte impression en plus.\nOLLERT\n"@undefined;
-    gv:color [
-  gv:hex "9a6d3a";
-  gv:red "154";
-  gv:blue "58";
-  gv:green "109";
-  gv:score "21.338341999999997";
-  gv:coverage "8.246666900000001"
-], [
-  gv:hex "321201";
-  gv:red "50";
-  gv:blue "1";
-  gv:green "18";
-  gv:score "2.2608401000000002";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "bf8e56";
-  gv:red "191";
-  gv:blue "86";
-  gv:green "142";
-  gv:score "11.74288";
-  gv:coverage "5.806666600000001"
-], [
-  gv:hex "8e6f3c";
-  gv:red "142";
-  gv:blue "60";
-  gv:green "111";
-  gv:score "11.633939999999999";
-  gv:coverage "3.8733333"
-], [
-  gv:hex "7d5224";
-  gv:red "125";
-  gv:blue "36";
-  gv:green "82";
-  gv:score "7.983353";
-  gv:coverage "2.7733333"
-], [
-  gv:hex "b8945b";
-  gv:red "184";
-  gv:blue "91";
-  gv:green "148";
-  gv:score "5.8942758";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "8a6f50";
-  gv:red "138";
-  gv:blue "80";
-  gv:green "111";
-  gv:score "3.1867731000000004";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "745828";
-  gv:red "116";
-  gv:blue "40";
-  gv:green "88";
-  gv:score "3.0363949000000003";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "913b1b";
-  gv:red "145";
-  gv:blue "27";
-  gv:green "59";
-  gv:score "2.8039284";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "512d07";
-  gv:red "81";
-  gv:blue "7";
-  gv:green "45";
-  gv:score "2.2456650000000002";
-  gv:coverage "0.49333335000000006"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.71909099999999"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "62.430781"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "60.480199999999996"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "58.371776"
-];
-    w:bagOfWords "PORT WINE\nGebr., Jllert, G.m. b. H., Lith. Kunstanstalt, Kl. Auheim-Hanau (Allemagne).\nNo. 7554. Reichsm. 22.50 per 1000. Texte impression en plus.\nOLLERT\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2131";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

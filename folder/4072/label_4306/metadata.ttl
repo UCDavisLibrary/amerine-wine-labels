@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4306";
-    dct:type "image";
-    w:bagOfWords "ouilly-Fumé\nAPPELLATION POUILLY FUME CONTROLEE\nDE LA DOUCETTE FRERES\nAU CHATEAU DU NOZET, POUILLY-SUR-LOIRE NIEvRE\nSOLE\nAGENTS\nNEW YORK\n1 N. Y.\nEMPIRE STATE BLDG\nALCOHOL 12\nBY VOLUME\nCONTENTS 1 PT 8 OL.\nPRODUCT OF FRANCE\nSTILL WHITE WINE\n"@fra;
-    gv:color [
-  gv:hex "cac2b7";
-  gv:red "202";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "29.336050000000004";
-  gv:coverage "15.160000000000002"
-], [
-  gv:hex "a69d92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "22.520734";
-  gv:coverage "4.0733334"
-], [
-  gv:hex "c8bfb0";
-  gv:red "200";
-  gv:blue "176";
-  gv:green "191";
-  gv:score "10.934749";
-  gv:coverage "7.7133335"
-], [
-  gv:hex "a79e8f";
-  gv:red "167";
-  gv:blue "143";
-  gv:green "158";
-  gv:score "10.351047";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "e3ddd0";
-  gv:red "227";
-  gv:blue "208";
-  gv:green "221";
-  gv:score "8.708205099999999";
-  gv:coverage "63.959999999999994"
-], [
-  gv:hex "857a6f";
-  gv:red "133";
-  gv:blue "111";
-  gv:green "122";
-  gv:score "5.4123253";
-  gv:coverage "0.86"
-], [
-  gv:hex "857c6c";
-  gv:red "133";
-  gv:blue "108";
-  gv:green "124";
-  gv:score "4.0495291";
-  gv:coverage "0.44"
-], [
-  gv:hex "b3c8b4";
-  gv:red "179";
-  gv:blue "180";
-  gv:green "200";
-  gv:score "1.8496736999999999";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "e3ddcb";
-  gv:red "227";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "1.6613593";
-  gv:coverage "3.8133334"
-], [
-  gv:hex "94a894";
-  gv:red "148";
-  gv:blue "148";
-  gv:green "168";
-  gv:score "1.4916591";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.954689"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "ouilly-Fumé\nAPPELLATION POUILLY FUME CONTROLEE\nDE LA DOUCETTE FRERES\nAU CHATEAU DU NOZET, POUILLY-SUR-LOIRE NIEvRE\nSOLE\nAGENTS\nNEW YORK\n1 N. Y.\nEMPIRE STATE BLDG\nALCOHOL 12\nBY VOLUME\nCONTENTS 1 PT 8 OL.\nPRODUCT OF FRANCE\nSTILL WHITE WINE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4306";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2756/label_2768";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "LES CAVES TAUCH-FITOU\nLANGUEDOC\nPRODUIT DE FRANCE\nbateau de\noupelles\nCaves Auguste FORT\nTUCHAN (Aude)\n"@fra;
-    gv:color [
-  gv:hex "aa150c";
-  gv:red "170";
-  gv:blue "12";
-  gv:green "21";
-  gv:score "18.149655";
-  gv:coverage "0.36"
-], [
-  gv:hex "ce4337";
-  gv:red "206";
-  gv:blue "55";
-  gv:green "67";
-  gv:score "12.962937";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "dec1a0";
-  gv:red "222";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "8.04306";
-  gv:coverage "32.966667"
-], [
-  gv:hex "492509";
-  gv:red "73";
-  gv:blue "9";
-  gv:green "37";
-  gv:score "6.044206399999999";
-  gv:coverage "1.32"
-], [
-  gv:hex "9f1d15";
-  gv:red "159";
-  gv:blue "21";
-  gv:green "29";
-  gv:score "12.017671";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "f1ba9f";
-  gv:red "241";
-  gv:blue "159";
-  gv:green "186";
-  gv:score "5.4156993";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "b59978";
-  gv:red "181";
-  gv:blue "120";
-  gv:green "153";
-  gv:score "3.6786488999999998";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "c19577";
-  gv:red "193";
-  gv:blue "119";
-  gv:green "149";
-  gv:score "3.4854863";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "532e0e";
-  gv:red "83";
-  gv:blue "14";
-  gv:green "46";
-  gv:score "2.7657678000000003";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "977052";
-  gv:red "151";
-  gv:blue "82";
-  gv:green "112";
-  gv:score "2.6291957";
-  gv:coverage "0.7799999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.972404"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.950924"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "LES CAVES TAUCH-FITOU\nLANGUEDOC\nPRODUIT DE FRANCE\nbateau de\noupelles\nCaves Auguste FORT\nTUCHAN (Aude)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2768";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

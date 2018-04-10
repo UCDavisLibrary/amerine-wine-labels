@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1584";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "Embotelladores\nN9 37.\nParis\nBurdeos\nMARK\nRADE\nCadiz\nMatanzas\nFLORIDO & Co\nMOSCATEL FINO\n"@spa;
-    gv:color [
-  gv:hex "d99b07";
-  gv:red "217";
-  gv:blue "7";
-  gv:green "155";
-  gv:score "43.836844";
-  gv:coverage "18.48"
-], [
-  gv:hex "a16e0a";
-  gv:red "161";
-  gv:blue "10";
-  gv:green "110";
-  gv:score "3.3747647";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "6e4615";
-  gv:red "110";
-  gv:blue "21";
-  gv:green "70";
-  gv:score "2.0683715";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "8a765d";
-  gv:red "138";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "0.6175992499999999";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ab3905";
-  gv:red "171";
-  gv:blue "5";
-  gv:green "57";
-  gv:score "0.18883663";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e6a80d";
-  gv:red "230";
-  gv:blue "13";
-  gv:green "168";
-  gv:score "16.820893";
-  gv:coverage "6.1"
-], [
-  gv:hex "cb9d0a";
-  gv:red "203";
-  gv:blue "10";
-  gv:green "157";
-  gv:score "8.329749999999999";
-  gv:coverage "3.06"
-], [
-  gv:hex "dfad0b";
-  gv:red "223";
-  gv:blue "11";
-  gv:green "173";
-  gv:score "6.1192028";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "b45803";
-  gv:red "180";
-  gv:blue "3";
-  gv:green "88";
-  gv:score "1.765498";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "583008";
-  gv:red "88";
-  gv:blue "8";
-  gv:green "48";
-  gv:score "1.6130047";
-  gv:coverage "0.57333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "84.676737"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.890832"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Embotelladores\nN9 37.\nParis\nBurdeos\nMARK\nRADE\nCadiz\nMatanzas\nFLORIDO & Co\nMOSCATEL FINO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1584";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

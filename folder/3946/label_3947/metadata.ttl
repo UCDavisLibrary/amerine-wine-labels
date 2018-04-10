@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3947";
-    dct:type "image";
-    w:bagOfWords "llierftein om hbein\nWeinguter in Mierftein-Oppenheim-Schmobsburg u Dienheim\nEraeugnisse unseres (Butee erhielten bisherfolgende Ausseichnungen\nDeutsche Condwirtschaftsgesellschaft 1928 bis 1053\nSiegerebrenpreis d. tricheuegierung stu. preuse. Staatsregirrung\nErsterpreis Hrichstaahrstond 34 bis 1957, 1058\nparis 1937: Orand prix und 0oldmedaille.\n1947 Niersteiner Schmitt vom Schmitt\nProduce of Germany\nLight White Rhine Wine\nAlcohol\nContents\n11% by volume\n1 pint 8 fl. ozs\nProduced and bottled by Georg Schmitt'sches Weingut\nWEINBAU\nNierstein am Rhein\nseit io18\nImported by: National Wine and Liqueur lmporting Co.\nSan Francisco, Calif\nGesetzlich geschutzt\n"@deu;
-    gv:color [
-  gv:hex "927649";
-  gv:red "146";
-  gv:blue "73";
-  gv:green "118";
-  gv:score "21.799399";
-  gv:coverage "9.0066664"
-], [
-  gv:hex "e9dbc4";
-  gv:red "233";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "0.39765891";
-  gv:coverage "9.2866667"
-], [
-  gv:hex "ab8d5e";
-  gv:red "171";
-  gv:blue "94";
-  gv:green "141";
-  gv:score "21.761309";
-  gv:coverage "9.1066666"
-], [
-  gv:hex "9d714a";
-  gv:red "157";
-  gv:blue "74";
-  gv:green "113";
-  gv:score "17.757428";
-  gv:coverage "3.5933333999999997"
-], [
-  gv:hex "6e552a";
-  gv:red "110";
-  gv:blue "42";
-  gv:green "85";
-  gv:score "7.5597174";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "8b7753";
-  gv:red "139";
-  gv:blue "83";
-  gv:green "119";
-  gv:score "6.2117469000000005";
-  gv:coverage "3.36"
-], [
-  gv:hex "635332";
-  gv:red "99";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "5.095229300000001";
-  gv:coverage "2.4133334"
-], [
-  gv:hex "a8906b";
-  gv:red "168";
-  gv:blue "107";
-  gv:green "144";
-  gv:score "4.952810700000001";
-  gv:coverage "3.5866667"
-], [
-  gv:hex "b0875e";
-  gv:red "176";
-  gv:blue "94";
-  gv:green "135";
-  gv:score "4.6873704";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "453516";
-  gv:red "69";
-  gv:blue "22";
-  gv:green "53";
-  gv:score "1.7685784";
-  gv:coverage "0.8"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.975532"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.013434000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.944829000000006"
-];
-    w:bagOfWords "llierftein om hbein\nWeinguter in Mierftein-Oppenheim-Schmobsburg u Dienheim\nEraeugnisse unseres (Butee erhielten bisherfolgende Ausseichnungen\nDeutsche Condwirtschaftsgesellschaft 1928 bis 1053\nSiegerebrenpreis d. tricheuegierung stu. preuse. Staatsregirrung\nErsterpreis Hrichstaahrstond 34 bis 1957, 1058\nparis 1937: Orand prix und 0oldmedaille.\n1947 Niersteiner Schmitt vom Schmitt\nProduce of Germany\nLight White Rhine Wine\nAlcohol\nContents\n11% by volume\n1 pint 8 fl. ozs\nProduced and bottled by Georg Schmitt'sches Weingut\nWEINBAU\nNierstein am Rhein\nseit io18\nImported by: National Wine and Liqueur lmporting Co.\nSan Francisco, Calif\nGesetzlich geschutzt\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3947";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

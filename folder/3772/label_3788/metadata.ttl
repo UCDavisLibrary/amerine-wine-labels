@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3788";
-    dct:type "image";
-    w:bagOfWords "B A D E N\nStaufener Finsterbach.\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 308 DM 22\n00\n"@deu;
-    gv:color [
-  gv:hex "d0c39a";
-  gv:red "208";
-  gv:blue "154";
-  gv:green "195";
-  gv:score "28.478765";
-  gv:coverage "21.046667"
-], [
-  gv:hex "807850";
-  gv:red "128";
-  gv:blue "80";
-  gv:green "120";
-  gv:score "25.883423999999998";
-  gv:coverage "5.28"
-], [
-  gv:hex "a59b72";
-  gv:red "165";
-  gv:blue "114";
-  gv:green "155";
-  gv:score "24.515243";
-  gv:coverage "6.18"
-], [
-  gv:hex "5e5831";
-  gv:red "94";
-  gv:blue "49";
-  gv:green "88";
-  gv:score "12.030725";
-  gv:coverage "2.26"
-], [
-  gv:hex "e9dab4";
-  gv:red "233";
-  gv:blue "180";
-  gv:green "218";
-  gv:score "3.8729768";
-  gv:coverage "21.8"
-], [
-  gv:hex "84784c";
-  gv:red "132";
-  gv:blue "76";
-  gv:green "120";
-  gv:score "1.8126258999999998";
-  gv:coverage "0.26"
-], [
-  gv:hex "453f19";
-  gv:red "69";
-  gv:blue "25";
-  gv:green "63";
-  gv:score "1.1823842";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "60562b";
-  gv:red "96";
-  gv:blue "43";
-  gv:green "86";
-  gv:score "1.1710371000000002";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "a6996b";
-  gv:red "166";
-  gv:blue "107";
-  gv:green "153";
-  gv:score "0.74167028";
-  gv:coverage "0.1"
-], [
-  gv:hex "463d13";
-  gv:red "70";
-  gv:blue "19";
-  gv:green "61";
-  gv:score "0.13847508";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "76.80968"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.521435999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.681011999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.950611"
-];
-    w:bagOfWords "B A D E N\nStaufener Finsterbach.\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 308 DM 22\n00\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3788";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

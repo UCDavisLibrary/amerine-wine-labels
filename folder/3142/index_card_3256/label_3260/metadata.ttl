@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3260";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "O\nで,2G心2\n2e 2llacne & .9で%.uneon\ne dillaine & J\nAN NEE 1926 olerapeoprietaice\nOeulo ptopt leaves\n"@fra;
-    gv:color [
-  gv:hex "cfc4bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "38.589427";
-  gv:coverage "14.38"
-], [
-  gv:hex "645749";
-  gv:red "100";
-  gv:blue "73";
-  gv:green "87";
-  gv:score "3.9368071";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "a89e95";
-  gv:red "168";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "19.906616";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "e6dbd3";
-  gv:red "230";
-  gv:blue "211";
-  gv:green "219";
-  gv:score "16.61794";
-  gv:coverage "25.506666"
-], [
-  gv:hex "d8c5b0";
-  gv:red "216";
-  gv:blue "176";
-  gv:green "197";
-  gv:score "9.66731";
-  gv:coverage "24.473333"
-], [
-  gv:hex "81776e";
-  gv:red "129";
-  gv:blue "110";
-  gv:green "119";
-  gv:score "6.200819500000001";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "64584f";
-  gv:red "100";
-  gv:blue "79";
-  gv:green "88";
-  gv:score "3.6956187000000003";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "ebdcca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "0.6623512100000001";
-  gv:coverage "30.393332"
-], [
-  gv:hex "776a5c";
-  gv:red "119";
-  gv:blue "92";
-  gv:green "106";
-  gv:score "0.37814907";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "aea092";
-  gv:red "174";
-  gv:blue "146";
-  gv:green "160";
-  gv:score "0.25370005";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.097308"
-];
-    w:bagOfWords "O\nで,2G心2\n2e 2llacne & .9で%.uneon\ne dillaine & J\nAN NEE 1926 olerapeoprietaice\nOeulo ptopt leaves\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3260";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

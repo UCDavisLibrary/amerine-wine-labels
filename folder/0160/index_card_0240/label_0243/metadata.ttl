@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0243";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "ALPINE\nC-A-L I F 0 RN 1 A\nA\nALPINE VINEYARDS\n8せ&G ーーーーー F. CALI, FO R Ntた\nH\n"@eng;
-    gv:color [
-  gv:hex "634b4a";
-  gv:red "99";
-  gv:blue "74";
-  gv:green "75";
-  gv:score "22.778855";
-  gv:coverage "6"
-], [
-  gv:hex "b3987a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "10.749759000000001";
-  gv:coverage "4.5866668"
-], [
-  gv:hex "4e3233";
-  gv:red "78";
-  gv:blue "51";
-  gv:green "50";
-  gv:score "15.631433";
-  gv:coverage "4.46"
-], [
-  gv:hex "685551";
-  gv:red "104";
-  gv:blue "81";
-  gv:green "85";
-  gv:score "15.540674";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "816e6a";
-  gv:red "129";
-  gv:blue "106";
-  gv:green "110";
-  gv:score "6.7083068";
-  gv:coverage "1.8066667"
-], [
-  gv:hex "4e2f21";
-  gv:red "78";
-  gv:blue "33";
-  gv:green "47";
-  gv:score "5.7843074";
-  gv:coverage "1.5"
-], [
-  gv:hex "8e745c";
-  gv:red "142";
-  gv:blue "92";
-  gv:green "116";
-  gv:score "3.9374709";
-  gv:coverage "1.32"
-], [
-  gv:hex "6a5445";
-  gv:red "106";
-  gv:blue "69";
-  gv:green "84";
-  gv:score "3.784686";
-  gv:coverage "1.02"
-], [
-  gv:hex "d0b698";
-  gv:red "208";
-  gv:blue "152";
-  gv:green "182";
-  gv:score "2.6087821";
-  gv:coverage "40.586664999999996"
-], [
-  gv:hex "826a6a";
-  gv:red "130";
-  gv:blue "106";
-  gv:green "106";
-  gv:score "2.2176479999999996";
-  gv:coverage "0.70666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "66.701895"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "66.188169"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.52292"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "50.611967"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.186657999999994"
-];
-    w:bagOfWords "ALPINE\nC-A-L I F 0 RN 1 A\nA\nALPINE VINEYARDS\n8せ&G ーーーーー F. CALI, FO R Ntた\nH\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0243";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

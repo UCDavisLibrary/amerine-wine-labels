@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2361/label_2371";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "INE\nHONNEUR\nFORTIT\nCHAU PONTET-CANET\n1928\nPRODUCE OF FRANCE\nBOTTLED BY\nBARTON & GUESTIER\nBORDEAUX\nNTS IN\nS. A\nSOL\nSCHEN\nK MPORT RATION\nOR\n"@fra;
-    gv:color [
-  gv:hex "d6c1a9";
-  gv:red "214";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "52.983838000000006";
-  gv:coverage "40.353334000000004"
-], [
-  gv:hex "953d21";
-  gv:red "149";
-  gv:blue "33";
-  gv:green "61";
-  gv:score "0.75327838";
-  gv:coverage "0.22"
-], [
-  gv:hex "b29a80";
-  gv:red "178";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "26.266426";
-  gv:coverage "6.38"
-], [
-  gv:hex "947a5f";
-  gv:red "148";
-  gv:blue "95";
-  gv:green "122";
-  gv:score "6.3822769";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "ecd7c0";
-  gv:red "236";
-  gv:blue "192";
-  gv:green "215";
-  gv:score "5.9103061";
-  gv:coverage "24.233334"
-], [
-  gv:hex "bb9377";
-  gv:red "187";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "1.3498181";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "a0755a";
-  gv:red "160";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "1.1308901";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "e7bba1";
-  gv:red "231";
-  gv:blue "161";
-  gv:green "187";
-  gv:score "1.0918946";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "b35a3b";
-  gv:red "179";
-  gv:blue "59";
-  gv:green "90";
-  gv:score "0.5479658000000001";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "cd906c";
-  gv:red "205";
-  gv:blue "108";
-  gv:green "144";
-  gv:score "0.5370569399999999";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.714426"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.109235"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.818187"
-];
-    w:bagOfWords "INE\nHONNEUR\nFORTIT\nCHAU PONTET-CANET\n1928\nPRODUCE OF FRANCE\nBOTTLED BY\nBARTON & GUESTIER\nBORDEAUX\nNTS IN\nS. A\nSOL\nSCHEN\nK MPORT RATION\nOR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2371";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

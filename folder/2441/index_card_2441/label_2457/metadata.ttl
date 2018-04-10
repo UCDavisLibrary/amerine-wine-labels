@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2441/label_2457";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CES\nALCOHOLIC STRENGTH BY\nE 13\ne/o\nGrands Vins\nde s\nMEURSAULT-CHARMES 1929\nCuvée Albert Grivault\nACQUEREUR\nBOTTLED IN FRANCE BY\nJ O S E P H\nD R O U HIN\nPropriétaire\nBEAU\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d4b692";
-  gv:red "212";
-  gv:blue "146";
-  gv:green "182";
-  gv:score "26.057085";
-  gv:coverage "13"
-], [
-  gv:hex "9b6f49";
-  gv:red "155";
-  gv:blue "73";
-  gv:green "111";
-  gv:score "4.4396985";
-  gv:coverage "1.16"
-], [
-  gv:hex "b99b79";
-  gv:red "185";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "16.693421";
-  gv:coverage "6.76"
-], [
-  gv:hex "8b7255";
-  gv:red "139";
-  gv:blue "85";
-  gv:green "114";
-  gv:score "12.251656";
-  gv:coverage "4.78"
-], [
-  gv:hex "695238";
-  gv:red "105";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "8.8025488";
-  gv:coverage "3.44"
-], [
-  gv:hex "d8b588";
-  gv:red "216";
-  gv:blue "136";
-  gv:green "181";
-  gv:score "5.9226852";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "c09775";
-  gv:red "192";
-  gv:blue "117";
-  gv:green "151";
-  gv:score "4.8415523";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "c0946c";
-  gv:red "192";
-  gv:blue "108";
-  gv:green "148";
-  gv:score "3.9463445999999998";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "c09f73";
-  gv:red "192";
-  gv:blue "115";
-  gv:green "159";
-  gv:score "3.4961857";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "ddb290";
-  gv:red "221";
-  gv:blue "144";
-  gv:green "178";
-  gv:score "3.4042480999999998";
-  gv:coverage "1.1400000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.22526599999999"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "77.453721"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "59.674746"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.395089"
-];
-    w:bagOfWords "CES\nALCOHOLIC STRENGTH BY\nE 13\ne/o\nGrands Vins\nde s\nMEURSAULT-CHARMES 1929\nCuvée Albert Grivault\nACQUEREUR\nBOTTLED IN FRANCE BY\nJ O S E P H\nD R O U HIN\nPropriétaire\nBEAU\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2457";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

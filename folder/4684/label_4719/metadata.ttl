@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4719";
-    dct:type "image";
-    w:bagOfWords "DE\nRCA.\nPIEDAD\nCREMA ANIS\nMARABU\nDESTILERI AS\nI. BERNALDO de OUIRos\nCA\n"@undefined;
-    gv:color [
-  gv:hex "d2c4ab";
-  gv:red "210";
-  gv:blue "171";
-  gv:green "196";
-  gv:score "29.495543";
-  gv:coverage "8.14"
-], [
-  gv:hex "c7c2b6";
-  gv:red "199";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "11.318623";
-  gv:coverage "5.6466665"
-], [
-  gv:hex "ecbcb1";
-  gv:red "236";
-  gv:blue "177";
-  gv:green "188";
-  gv:score "8.709116999999999";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "ae9c85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "6.0240984";
-  gv:coverage "1.46"
-], [
-  gv:hex "c19282";
-  gv:red "193";
-  gv:blue "130";
-  gv:green "146";
-  gv:score "4.9849074";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "ecd9c2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "4.3169621";
-  gv:coverage "5.74"
-], [
-  gv:hex "dbc88b";
-  gv:red "219";
-  gv:blue "139";
-  gv:green "200";
-  gv:score "4.0371191";
-  gv:coverage "0.4"
-], [
-  gv:hex "986b59";
-  gv:red "152";
-  gv:blue "89";
-  gv:green "107";
-  gv:score "3.9086841";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "897761";
-  gv:red "137";
-  gv:blue "97";
-  gv:green "119";
-  gv:score "3.4527726000000003";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "a89f95";
-  gv:red "168";
-  gv:blue "149";
-  gv:green "159";
-  gv:score "2.4405356";
-  gv:coverage "0.62666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "72.41285400000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.080033"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "64.56518799999999"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "59.19503"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "57.644385"
-];
-    w:bagOfWords "DE\nRCA.\nPIEDAD\nCREMA ANIS\nMARABU\nDESTILERI AS\nI. BERNALDO de OUIRos\nCA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4719";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

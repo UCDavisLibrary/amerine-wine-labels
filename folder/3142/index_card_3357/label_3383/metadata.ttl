@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3383";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Bercut-Vandervoort & Co, Inc., San Francisco, Cal.\nSOLE AGENTS FOR THE U. S A.\nCo\nONTE DE M.DE\nCONTE FDE\nCHO\nPOM MAR D\nRED BURGUNDY WINE\nAPPELLATION CONTROLEE\nNegociants a Nuits-Saint-Georges (Cote-d'Or France\nIMP G. PARIS a N ITS S: GSOR GES\nPRODUCE OF FRANCE\nAlcohol 12 o/o by volume\net contents\n1 Pint 8 Fluid Ounces\n"@fra;
-    gv:color [
-  gv:hex "dcbf9a";
-  gv:red "220";
-  gv:blue "154";
-  gv:green "191";
-  gv:score "23.89479";
-  gv:coverage "33.753332"
-], [
-  gv:hex "e6b48a";
-  gv:red "230";
-  gv:blue "138";
-  gv:green "180";
-  gv:score "10.723573";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "b59976";
-  gv:red "181";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "10.418962";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "dcbc8e";
-  gv:red "220";
-  gv:blue "142";
-  gv:green "188";
-  gv:score "8.6836047";
-  gv:coverage "2.9133333"
-], [
-  gv:hex "ca9469";
-  gv:red "202";
-  gv:blue "105";
-  gv:green "148";
-  gv:score "8.669760799999999";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "ecb998";
-  gv:red "236";
-  gv:blue "152";
-  gv:green "185";
-  gv:score "7.2462887";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "907654";
-  gv:red "144";
-  gv:blue "84";
-  gv:green "118";
-  gv:score "6.4863876000000005";
-  gv:coverage "1.9"
-], [
-  gv:hex "b8986c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "152";
-  gv:score "5.4077573";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "95774c";
-  gv:red "149";
-  gv:blue "76";
-  gv:green "119";
-  gv:score "2.5370512";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "a76f47";
-  gv:red "167";
-  gv:blue "71";
-  gv:green "111";
-  gv:score "2.1649633";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.534823"
-];
-    w:bagOfWords "Bercut-Vandervoort & Co, Inc., San Francisco, Cal.\nSOLE AGENTS FOR THE U. S A.\nCo\nONTE DE M.DE\nCONTE FDE\nCHO\nPOM MAR D\nRED BURGUNDY WINE\nAPPELLATION CONTROLEE\nNegociants a Nuits-Saint-Georges (Cote-d'Or France\nIMP G. PARIS a N ITS S: GSOR GES\nPRODUCE OF FRANCE\nAlcohol 12 o/o by volume\net contents\n1 Pint 8 Fluid Ounces\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3383";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

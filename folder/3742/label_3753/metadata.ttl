@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3753";
-    dct:type "image";
-    w:bagOfWords "Rose'\nPRODUIT ET MIS EN BOUTEILLES CHEZ\nLA\nA ISO\nVINICOLE\nGiovanni Cappelli\nPLAN ZANO\ni T A L\nI A\nFIRENZE\n"@ita;
-    gv:color [
-  gv:hex "1c1719";
-  gv:red "28";
-  gv:blue "25";
-  gv:green "23";
-  gv:score "20.149456";
-  gv:coverage "21.7"
-], [
-  gv:hex "cf4c3f";
-  gv:red "207";
-  gv:blue "63";
-  gv:green "76";
-  gv:score "12.687999999999999";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "8ca176";
-  gv:red "140";
-  gv:blue "118";
-  gv:green "161";
-  gv:score "2.0995615";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "601a17";
-  gv:red "96";
-  gv:blue "23";
-  gv:green "26";
-  gv:score "0.85953968";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "121f08";
-  gv:red "18";
-  gv:blue "8";
-  gv:green "31";
-  gv:score "0.71811918";
-  gv:coverage "0.16"
-], [
-  gv:hex "ebe1db";
-  gv:red "235";
-  gv:blue "219";
-  gv:green "225";
-  gv:score "0.38819385";
-  gv:coverage "50.286668999999996"
-], [
-  gv:hex "f26a5c";
-  gv:red "242";
-  gv:blue "92";
-  gv:green "106";
-  gv:score "11.001969";
-  gv:coverage "0.4"
-], [
-  gv:hex "ac3021";
-  gv:red "172";
-  gv:blue "33";
-  gv:green "48";
-  gv:score "3.5211895";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "b85943";
-  gv:red "184";
-  gv:blue "67";
-  gv:green "89";
-  gv:score "3.3798162";
-  gv:coverage "0.16"
-], [
-  gv:hex "d03e2b";
-  gv:red "208";
-  gv:blue "43";
-  gv:green "62";
-  gv:score "3.0716495999999998";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.776826"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.34004399999999"
-];
-    w:bagOfWords "Rose'\nPRODUIT ET MIS EN BOUTEILLES CHEZ\nLA\nA ISO\nVINICOLE\nGiovanni Cappelli\nPLAN ZANO\ni T A L\nI A\nFIRENZE\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3753";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

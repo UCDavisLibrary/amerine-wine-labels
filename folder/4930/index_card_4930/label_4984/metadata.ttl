@@ -1,99 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4984";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "PRODUCE OF FRANCE\n1929\nSpecially imported from France\nby ''VERDIER CELLARS\n517\nPERMIT Proprietaires\nMOU LIS (MEDOC)\n"@undefined;
-    gv:color [
-  gv:hex "d3bfa9";
-  gv:red "211";
-  gv:blue "169";
-  gv:green "191";
-  gv:score "41.461065000000005";
-  gv:coverage "28.373334"
-], [
-  gv:hex "b19c85";
-  gv:red "177";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "29.589009";
-  gv:coverage "6.873333500000001"
-], [
-  gv:hex "3f342b";
-  gv:red "63";
-  gv:blue "43";
-  gv:green "52";
-  gv:score "0.10359931";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "ebdbc7";
-  gv:red "235";
-  gv:blue "199";
-  gv:green "219";
-  gv:score "9.275832000000001";
-  gv:coverage "17.64"
-], [
-  gv:hex "8f785f";
-  gv:red "143";
-  gv:blue "95";
-  gv:green "120";
-  gv:score "8.0569647";
-  gv:coverage "2.4"
-], [
-  gv:hex "d2c4b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "3.14606";
-  gv:coverage "8.513333600000001"
-], [
-  gv:hex "ba9884";
-  gv:red "186";
-  gv:blue "132";
-  gv:green "152";
-  gv:score "2.1182878";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "debba8";
-  gv:red "222";
-  gv:blue "168";
-  gv:green "187";
-  gv:score "1.7163076999999998";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "6c543d";
-  gv:red "108";
-  gv:blue "61";
-  gv:green "84";
-  gv:score "1.2832908";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "e6dace";
-  gv:red "230";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "0.7994323";
-  gv:coverage "32.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "65.936589"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.41169"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\n1929\nSpecially imported from France\nby ''VERDIER CELLARS\n517\nPERMIT Proprietaires\nMOU LIS (MEDOC)\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4984";
+    <schema.keywords> "UC Reporters Notebook@en".
+

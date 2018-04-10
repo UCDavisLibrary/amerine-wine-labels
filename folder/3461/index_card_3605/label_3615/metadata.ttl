@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3615";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "TAX PAID BY STAMPS\n14 SUP ADM, DIST\nAFFIXED TO CASE\nCALIFORNIA\nGray & Franken\nvintage 1930\niesling\ntit\nled 6/14/40\nCAIUFORNIA\nDUCED\nBEAUALE\nVINEYARD RUTHE RI ORD CAL.\nBONDED\nWINERY No. 71\nALCOHOL 12% BY OLUME\nNET CONTENTS i PT 8 FLUID ozs\n"@eng;
-    gv:color [
-  gv:hex "dbba89";
-  gv:red "219";
-  gv:blue "137";
-  gv:green "186";
-  gv:score "24.957345";
-  gv:coverage "5.9466667"
-], [
-  gv:hex "dbc09b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "192";
-  gv:score "23.585273";
-  gv:coverage "23.44"
-], [
-  gv:hex "bd9c6a";
-  gv:red "189";
-  gv:blue "106";
-  gv:green "156";
-  gv:score "18.458869";
-  gv:coverage "3.5666667"
-], [
-  gv:hex "c3915f";
-  gv:red "195";
-  gv:blue "95";
-  gv:green "145";
-  gv:score "9.2385195";
-  gv:coverage "1.38"
-], [
-  gv:hex "b69d79";
-  gv:red "182";
-  gv:blue "121";
-  gv:green "157";
-  gv:score "4.6941496";
-  gv:coverage "1.46"
-], [
-  gv:hex "a57047";
-  gv:red "165";
-  gv:blue "71";
-  gv:green "112";
-  gv:score "4.085827999999999";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "dfb081";
-  gv:red "223";
-  gv:blue "129";
-  gv:green "176";
-  gv:score "2.3353437";
-  gv:coverage "0.38"
-], [
-  gv:hex "9a7a48";
-  gv:red "154";
-  gv:blue "72";
-  gv:green "122";
-  gv:score "2.2574370999999998";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "cb9478";
-  gv:red "203";
-  gv:blue "120";
-  gv:green "148";
-  gv:score "1.8943964";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "e7b898";
-  gv:red "231";
-  gv:blue "152";
-  gv:green "184";
-  gv:score "1.6960841";
-  gv:coverage "0.31333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.474148"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "59.135324"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.893777"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.516953"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "54.085642"
-];
-    w:bagOfWords "TAX PAID BY STAMPS\n14 SUP ADM, DIST\nAFFIXED TO CASE\nCALIFORNIA\nGray & Franken\nvintage 1930\niesling\ntit\nled 6/14/40\nCAIUFORNIA\nDUCED\nBEAUALE\nVINEYARD RUTHE RI ORD CAL.\nBONDED\nWINERY No. 71\nALCOHOL 12% BY OLUME\nNET CONTENTS i PT 8 FLUID ozs\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3615";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

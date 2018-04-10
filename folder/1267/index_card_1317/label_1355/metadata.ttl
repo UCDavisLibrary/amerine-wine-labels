@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1355";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "ugusto\norlioo\ninho de\nesa\nangalbos\n(Portugal)\nESTE VINHO DEVE BEBER-SE MUITO FRESCO\nEngarrafado e exportado directamente das grandes Adegas do\nViti-vinicultor Augusto Borlido\nSangalhos, a regiao dos melhores\nvinhos de Portugal\n"@por;
-    gv:color [
-  gv:hex "e1cbab";
-  gv:red "225";
-  gv:blue "171";
-  gv:green "203";
-  gv:score "33.617504999999994";
-  gv:coverage "16.773333"
-], [
-  gv:hex "9c673e";
-  gv:red "156";
-  gv:blue "62";
-  gv:green "103";
-  gv:score "7.0833825";
-  gv:coverage "4.0066667"
-], [
-  gv:hex "eed9bb";
-  gv:red "238";
-  gv:blue "187";
-  gv:green "217";
-  gv:score "9.2749387";
-  gv:coverage "5.546666699999999"
-], [
-  gv:hex "edbc9f";
-  gv:red "237";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "9.274919299999999";
-  gv:coverage "4.9"
-], [
-  gv:hex "864e27";
-  gv:red "134";
-  gv:blue "39";
-  gv:green "78";
-  gv:score "4.750755799999999";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "8c3a1e";
-  gv:red "140";
-  gv:blue "30";
-  gv:green "58";
-  gv:score "4.1917708";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "c59378";
-  gv:red "197";
-  gv:blue "120";
-  gv:green "147";
-  gv:score "3.9006687999999996";
-  gv:coverage "2.3"
-], [
-  gv:hex "c99368";
-  gv:red "201";
-  gv:blue "104";
-  gv:green "147";
-  gv:score "3.3677902000000004";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "dec08e";
-  gv:red "222";
-  gv:blue "142";
-  gv:green "192";
-  gv:score "2.9216563";
-  gv:coverage "1.78"
-], [
-  gv:hex "af9a7d";
-  gv:red "175";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "2.3429558";
-  gv:coverage "1.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.417671"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.227628"
-];
-    w:bagOfWords "ugusto\norlioo\ninho de\nesa\nangalbos\n(Portugal)\nESTE VINHO DEVE BEBER-SE MUITO FRESCO\nEngarrafado e exportado directamente das grandes Adegas do\nViti-vinicultor Augusto Borlido\nSangalhos, a regiao dos melhores\nvinhos de Portugal\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1355";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

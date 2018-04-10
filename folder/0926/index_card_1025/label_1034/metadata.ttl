@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1034";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "OJ\nGrillo\nTI lloIL\nEinikbucha\nuo\nher\nay一\nonal\n"@deu;
-    gv:color [
-  gv:hex "cc8e65";
-  gv:red "204";
-  gv:blue "101";
-  gv:green "142";
-  gv:score "14.548784000000001";
-  gv:coverage "1.82"
-], [
-  gv:hex "e4c5a1";
-  gv:red "228";
-  gv:blue "161";
-  gv:green "197";
-  gv:score "8.0667645";
-  gv:coverage "10.646667"
-], [
-  gv:hex "a26a46";
-  gv:red "162";
-  gv:blue "70";
-  gv:green "106";
-  gv:score "12.643847999999998";
-  gv:coverage "1.52"
-], [
-  gv:hex "7c4a27";
-  gv:red "124";
-  gv:blue "39";
-  gv:green "74";
-  gv:score "9.1917142";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "ecb38b";
-  gv:red "236";
-  gv:blue "139";
-  gv:green "179";
-  gv:score "7.0915118";
-  gv:coverage "2.3133334"
-], [
-  gv:hex "c29173";
-  gv:red "194";
-  gv:blue "115";
-  gv:green "145";
-  gv:score "5.4469932";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "9a6d51";
-  gv:red "154";
-  gv:blue "81";
-  gv:green "109";
-  gv:score "4.8541903";
-  gv:coverage "1"
-], [
-  gv:hex "f7dab8";
-  gv:red "247";
-  gv:blue "184";
-  gv:green "218";
-  gv:score "4.3328181";
-  gv:coverage "31.740000000000002"
-], [
-  gv:hex "724a30";
-  gv:red "114";
-  gv:blue "48";
-  gv:green "74";
-  gv:score "4.0216088";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "4c2b14";
-  gv:red "76";
-  gv:blue "20";
-  gv:green "43";
-  gv:score "3.4897804";
-  gv:coverage "0.9333332999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.872164000000005"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.5784"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.290015000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.0601"
-];
-    w:bagOfWords "OJ\nGrillo\nTI lloIL\nEinikbucha\nuo\nher\nay一\nonal\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1034";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

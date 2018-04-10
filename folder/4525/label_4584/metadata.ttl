@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4584";
-    dct:type "image";
-    w:bagOfWords "DE E\nNO\n2 35\nFINO SAN PATRICIO\n"@spa;
-    gv:color [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "27.972227";
-  gv:coverage "75.473332"
-], [
-  gv:hex "3d3329";
-  gv:red "61";
-  gv:blue "41";
-  gv:green "51";
-  gv:score "4.4972952";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "291f15";
-  gv:red "41";
-  gv:blue "21";
-  gv:green "31";
-  gv:score "0.64722844";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "d1c7bd";
-  gv:red "209";
-  gv:blue "189";
-  gv:green "199";
-  gv:score "27.651519";
-  gv:coverage "15.540000000000001"
-], [
-  gv:hex "a2988e";
-  gv:red "162";
-  gv:blue "142";
-  gv:green "152";
-  gv:score "19.704868";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "847a70";
-  gv:red "132";
-  gv:blue "112";
-  gv:green "122";
-  gv:score "14.825585";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "5c5249";
-  gv:red "92";
-  gv:blue "73";
-  gv:green "82";
-  gv:score "4.1607123";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "cdc4b5";
-  gv:red "205";
-  gv:blue "181";
-  gv:green "196";
-  gv:score "0.25596977";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "20160c";
-  gv:red "32";
-  gv:blue "12";
-  gv:green "22";
-  gv:score "0.22877555";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "e2d9c8";
-  gv:red "226";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "0.034141462000000004";
-  gv:coverage "1.8399999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.77527"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.868924"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.175883999999996"
-];
-    w:bagOfWords "DE E\nNO\n2 35\nFINO SAN PATRICIO\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4584";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

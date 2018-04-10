@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4283";
-    dct:type "image";
-    w:bagOfWords "VNDAS\nVNA\nCHATEAU\nKIRWAN GANTENAG\nME BORDEAUX\nN 70\nF. NOLASQUE FILS BORDEAUX\nDEPOSE\n"@fra;
-    gv:color [
-  gv:hex "cbbca7";
-  gv:red "203";
-  gv:blue "167";
-  gv:green "188";
-  gv:score "23.298817999999997";
-  gv:coverage "7.9066664"
-], [
-  gv:hex "724536";
-  gv:red "114";
-  gv:blue "54";
-  gv:green "69";
-  gv:score "3.7880205";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "832b15";
-  gv:red "131";
-  gv:blue "21";
-  gv:green "43";
-  gv:score "3.55585";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "2a3248";
-  gv:red "42";
-  gv:blue "72";
-  gv:green "50";
-  gv:score "1.9426541";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "af9f88";
-  gv:red "175";
-  gv:blue "136";
-  gv:green "159";
-  gv:score "21.583678";
-  gv:coverage "4.5133334"
-], [
-  gv:hex "ccc1b9";
-  gv:red "204";
-  gv:blue "185";
-  gv:green "193";
-  gv:score "10.847584000000001";
-  gv:coverage "16.74"
-], [
-  gv:hex "a59b96";
-  gv:red "165";
-  gv:blue "150";
-  gv:green "155";
-  gv:score "5.6056075";
-  gv:coverage "1.68"
-], [
-  gv:hex "e6ddd7";
-  gv:red "230";
-  gv:blue "215";
-  gv:green "221";
-  gv:score "3.8766794";
-  gv:coverage "64.286667"
-], [
-  gv:hex "833530";
-  gv:red "131";
-  gv:blue "48";
-  gv:green "53";
-  gv:score "3.4149565";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "847a76";
-  gv:red "132";
-  gv:blue "118";
-  gv:green "122";
-  gv:score "3.1048782";
-  gv:coverage "0.60666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.090138"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.654607"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.174980000000005"
-];
-    w:bagOfWords "VNDAS\nVNA\nCHATEAU\nKIRWAN GANTENAG\nME BORDEAUX\nN 70\nF. NOLASQUE FILS BORDEAUX\nDEPOSE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4283";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

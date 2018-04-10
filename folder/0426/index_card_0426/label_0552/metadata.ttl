@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0552";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "TURMBER\nGEBRODER ECHY,\nDE\n1953\nRHEINGAU\nOriginal Abfilung aus dem Weingut des\nD' R. Weil, Kiedrich (Rho insaw\n"@deu;
-    gv:color [
-  gv:hex "d1c1aa";
-  gv:red "209";
-  gv:blue "170";
-  gv:green "193";
-  gv:score "17.933503";
-  gv:coverage "9.2533335"
-], [
-  gv:hex "b45d36";
-  gv:red "180";
-  gv:blue "54";
-  gv:green "93";
-  gv:score "3.407561";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "c64522";
-  gv:red "198";
-  gv:blue "34";
-  gv:green "69";
-  gv:score "2.290228";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "aa9a84";
-  gv:red "170";
-  gv:blue "132";
-  gv:green "154";
-  gv:score "14.031619000000001";
-  gv:coverage "3.74"
-], [
-  gv:hex "cdc3b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "9.6629769";
-  gv:coverage "10.053334"
-], [
-  gv:hex "877763";
-  gv:red "135";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "8.202373999999999";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "e7ddd1";
-  gv:red "231";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "5.2213971";
-  gv:coverage "56.19333399999999"
-], [
-  gv:hex "b29259";
-  gv:red "178";
-  gv:blue "89";
-  gv:green "146";
-  gv:score "5.1857065";
-  gv:coverage "1.96"
-], [
-  gv:hex "a79e95";
-  gv:red "167";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "4.6328623";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "eddbc5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "4.4112876000000005";
-  gv:coverage "9.5533334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.536048"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.863541999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.579014"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.4364"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.505094"
-];
-    w:bagOfWords "TURMBER\nGEBRODER ECHY,\nDE\n1953\nRHEINGAU\nOriginal Abfilung aus dem Weingut des\nD' R. Weil, Kiedrich (Rho insaw\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0552";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1197";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "0\nCASA FONDA?\nFRANCESCO DRIOLI\nZARA\n"@spa;
-    gv:color [
-  gv:hex "16373a";
-  gv:red "22";
-  gv:blue "58";
-  gv:green "55";
-  gv:score "30.568752";
-  gv:coverage "10.946665999999999"
-], [
-  gv:hex "5f553b";
-  gv:red "95";
-  gv:blue "59";
-  gv:green "85";
-  gv:score "4.8342876";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "e8dcc6";
-  gv:red "232";
-  gv:blue "198";
-  gv:green "220";
-  gv:score "0.5797036";
-  gv:coverage "7.3866665"
-], [
-  gv:hex "6c4a22";
-  gv:red "108";
-  gv:blue "34";
-  gv:green "74";
-  gv:score "0.57459543";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "123842";
-  gv:red "18";
-  gv:blue "66";
-  gv:green "56";
-  gv:score "16.881453";
-  gv:coverage "6.2533334"
-], [
-  gv:hex "22373a";
-  gv:red "34";
-  gv:blue "58";
-  gv:green "55";
-  gv:score "8.837036";
-  gv:coverage "4.88"
-], [
-  gv:hex "13323f";
-  gv:red "19";
-  gv:blue "63";
-  gv:green "50";
-  gv:score "8.484923799999999";
-  gv:coverage "2.9266667"
-], [
-  gv:hex "817355";
-  gv:red "129";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "4.4414531";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "345355";
-  gv:red "52";
-  gv:blue "85";
-  gv:green "83";
-  gv:score "3.7900254";
-  gv:coverage "1.26"
-], [
-  gv:hex "455554";
-  gv:red "69";
-  gv:blue "84";
-  gv:green "85";
-  gv:score "2.8471641";
-  gv:coverage "1.6066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.205052"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "64.256769"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.102922"
-];
-    w:bagOfWords "0\nCASA FONDA?\nFRANCESCO DRIOLI\nZARA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1197";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

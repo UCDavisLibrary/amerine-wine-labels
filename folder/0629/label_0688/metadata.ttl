@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0688";
-    dct:type "image";
-    w:bagOfWords "RHEINGAU\n1937er Rladesheimer Berg peaty\nIDndygtum Peter Simon\n"@undefined;
-    gv:color [
-  gv:hex "ddbf85";
-  gv:red "221";
-  gv:blue "133";
-  gv:green "191";
-  gv:score "17.926911";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "b1997b";
-  gv:red "177";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "9.9870704";
-  gv:coverage "5.680000000000001"
-], [
-  gv:hex "e6bf3f";
-  gv:red "230";
-  gv:blue "63";
-  gv:green "191";
-  gv:score "6.1003719";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "a82306";
-  gv:red "168";
-  gv:blue "6";
-  gv:green "35";
-  gv:score "0.58668968";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "b69863";
-  gv:red "182";
-  gv:blue "99";
-  gv:green "152";
-  gv:score "9.916862799999999";
-  gv:coverage "2.9733334"
-], [
-  gv:hex "d4bb9d";
-  gv:red "212";
-  gv:blue "157";
-  gv:green "187";
-  gv:score "8.5717075";
-  gv:coverage "9.22"
-], [
-  gv:hex "e4c062";
-  gv:red "228";
-  gv:blue "98";
-  gv:green "192";
-  gv:score "5.877167";
-  gv:coverage "1.08"
-], [
-  gv:hex "927743";
-  gv:red "146";
-  gv:blue "67";
-  gv:green "119";
-  gv:score "5.0674886";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "f5da9a";
-  gv:red "245";
-  gv:blue "154";
-  gv:green "218";
-  gv:score "4.5814484";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "91795e";
-  gv:red "145";
-  gv:blue "94";
-  gv:green "121";
-  gv:score "3.6510777";
-  gv:coverage "2.0066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.06548899999999"
-];
-    w:bagOfWords "RHEINGAU\n1937er Rladesheimer Berg peaty\nIDndygtum Peter Simon\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0688";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

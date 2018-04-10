@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2028";
-    dct:type "image";
-    w:bagOfWords "UNGENKRONEUND\n1934er\nRMSE\nRELIEBFRAUENSTIFTSWEIN\nALCOHOL\n12% BY VOLuME\nCONTENTS PINT 7.5 FLUID OUNCES\nPRODuCE OF GERMANY\nHEN UND WORTMAB\nBELLOVANS COMPANY ENC.\nESTABLISHED 1830\nNEW YORK CITY\n"@undefined;
-    gv:color [
-  gv:hex "b1997e";
-  gv:red "177";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "28.123552";
-  gv:coverage "9.2733331"
-], [
-  gv:hex "d4bda5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "27.798718";
-  gv:coverage "22.38"
-], [
-  gv:hex "8f7760";
-  gv:red "143";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "17.388956";
-  gv:coverage "4.4533335"
-], [
-  gv:hex "bf987b";
-  gv:red "191";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "5.248129";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "d5c7bd";
-  gv:red "213";
-  gv:blue "189";
-  gv:green "199";
-  gv:score "4.3530647";
-  gv:coverage "28.886667"
-], [
-  gv:hex "9a7559";
-  gv:red "154";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "2.7057827999999997";
-  gv:coverage "0.4"
-], [
-  gv:hex "dbb59b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "181";
-  gv:score "2.195503";
-  gv:coverage "0.44"
-], [
-  gv:hex "b9976b";
-  gv:red "185";
-  gv:blue "107";
-  gv:green "151";
-  gv:score "2.0159483";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "6e5843";
-  gv:red "110";
-  gv:blue "67";
-  gv:green "88";
-  gv:score "2.0027852";
-  gv:coverage "0.52"
-], [
-  gv:hex "a89990";
-  gv:red "168";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "1.2426257";
-  gv:coverage "2.0466667000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.7328"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.635865"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.077775"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.557285"
-];
-    w:bagOfWords "UNGENKRONEUND\n1934er\nRMSE\nRELIEBFRAUENSTIFTSWEIN\nALCOHOL\n12% BY VOLuME\nCONTENTS PINT 7.5 FLUID OUNCES\nPRODuCE OF GERMANY\nHEN UND WORTMAB\nBELLOVANS COMPANY ENC.\nESTABLISHED 1830\nNEW YORK CITY\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2028";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4453";
-    dct:type "image";
-    w:bagOfWords "EGISTRO DE\nN997\ndoTELLADOR\nSEJO D\nYNINON\nMARCA CONCEDIDA\nSOCIEDAD DE Cos Ec HER os\nDE VIN\nFUNDADA EN\n890\n"@spa;
-    gv:color [
-  gv:hex "d8c1a3";
-  gv:red "216";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "46.729478";
-  gv:coverage "29.353333"
-], [
-  gv:hex "857043";
-  gv:red "133";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "10.160587999999999";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "af997a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "13.046941";
-  gv:coverage "5.1733334"
-], [
-  gv:hex "6b562b";
-  gv:red "107";
-  gv:blue "43";
-  gv:green "86";
-  gv:score "10.085768999999999";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "887454";
-  gv:red "136";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "8.1952721";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "685535";
-  gv:red "104";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "6.759786600000001";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "a79364";
-  gv:red "167";
-  gv:blue "100";
-  gv:green "147";
-  gv:score "1.7893502";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "ecd7ba";
-  gv:red "236";
-  gv:blue "186";
-  gv:green "215";
-  gv:score "1.7857702";
-  gv:coverage "4.7266666"
-], [
-  gv:hex "49381d";
-  gv:red "73";
-  gv:blue "29";
-  gv:green "56";
-  gv:score "0.66071907";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "503a11";
-  gv:red "80";
-  gv:blue "17";
-  gv:green "58";
-  gv:score "0.30373143999999996";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.534866"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "64.316761"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.79605300000001"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.534105000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.893865"
-];
-    w:bagOfWords "EGISTRO DE\nN997\ndoTELLADOR\nSEJO D\nYNINON\nMARCA CONCEDIDA\nSOCIEDAD DE Cos Ec HER os\nDE VIN\nFUNDADA EN\n890\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4453";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

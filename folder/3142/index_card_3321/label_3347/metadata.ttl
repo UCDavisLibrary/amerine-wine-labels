@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3347";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "O\nAluxeA]urfnn\nAPPELLHTIOn COMTROIere:\nJnrdee,\nen 1851\n3.1Girlut,64°\ntdult. 6\namarque 3aenociants a\"Beaut 1 te (Cate-d'Ov)\nPegaciants1Maumed\nDeposic\n"@fra;
-    gv:color [
-  gv:hex "ddbd99";
-  gv:red "221";
-  gv:blue "153";
-  gv:green "189";
-  gv:score "55.379844";
-  gv:coverage "27.126666999999998"
-], [
-  gv:hex "bc9a77";
-  gv:red "188";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "10.937328";
-  gv:coverage "3.0666666"
-], [
-  gv:hex "ba9272";
-  gv:red "186";
-  gv:blue "114";
-  gv:green "146";
-  gv:score "10.661749";
-  gv:coverage "2.76"
-], [
-  gv:hex "9b7353";
-  gv:red "155";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "8.5246712";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "dab392";
-  gv:red "218";
-  gv:blue "146";
-  gv:green "179";
-  gv:score "4.0449373";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "926c48";
-  gv:red "146";
-  gv:blue "72";
-  gv:green "108";
-  gv:score "2.0267806999999998";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "9d7c58";
-  gv:red "157";
-  gv:blue "88";
-  gv:green "124";
-  gv:score "1.6099906000000002";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "7c5335";
-  gv:red "124";
-  gv:blue "53";
-  gv:green "83";
-  gv:score "1.3407685";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "d8b589";
-  gv:red "216";
-  gv:blue "137";
-  gv:green "181";
-  gv:score "1.2977410999999999";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "77522f";
-  gv:red "119";
-  gv:blue "47";
-  gv:green "82";
-  gv:score "1.1963658";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.050703999999996"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.476777"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.45123600000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.037687999999996"
-];
-    w:bagOfWords "O\nAluxeA]urfnn\nAPPELLHTIOn COMTROIere:\nJnrdee,\nen 1851\n3.1Girlut,64°\ntdult. 6\namarque 3aenociants a\"Beaut 1 te (Cate-d'Ov)\nPegaciants1Maumed\nDeposic\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3347";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

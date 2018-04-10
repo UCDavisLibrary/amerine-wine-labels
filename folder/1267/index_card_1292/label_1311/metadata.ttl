@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1311";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "5/3/49\n1946\nEST.\n793\nWINTRENGER RIESLING\nVintage 1946\nSHIPPED BY\nAVERY S of BRISTOL\nLTD\nPark St.,\nBRISTOL\nProduce of Lure mbo\nbo\nr es en Y\n"@deu;
-    gv:color [
-  gv:hex "b19e83";
-  gv:red "177";
-  gv:blue "131";
-  gv:green "158";
-  gv:score "43.119991";
-  gv:coverage "1.32"
-], [
-  gv:hex "cfbea6";
-  gv:red "207";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "40.214565";
-  gv:coverage "60.693335999999995"
-], [
-  gv:hex "e6d8c3";
-  gv:red "230";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "6.272263799999999";
-  gv:coverage "17.673333"
-], [
-  gv:hex "d0b884";
-  gv:red "208";
-  gv:blue "132";
-  gv:green "184";
-  gv:score "3.2919422";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "8c7b67";
-  gv:red "140";
-  gv:blue "103";
-  gv:green "123";
-  gv:score "3.0047147";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "b49a67";
-  gv:red "180";
-  gv:blue "103";
-  gv:green "154";
-  gv:score "2.5044177000000003";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "d2c4b7";
-  gv:red "210";
-  gv:blue "183";
-  gv:green "196";
-  gv:score "0.90624969";
-  gv:coverage "9.64"
-], [
-  gv:hex "e8dacd";
-  gv:red "232";
-  gv:blue "205";
-  gv:green "218";
-  gv:score "0.44043497";
-  gv:coverage "10.133334"
-], [
-  gv:hex "5f503f";
-  gv:red "95";
-  gv:blue "63";
-  gv:green "80";
-  gv:score "0.24527565";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "a3a296";
-  gv:red "163";
-  gv:blue "150";
-  gv:green "162";
-  gv:score "0.00014361862";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "64.90277599999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.438126000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.01921599999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.53549600000001"
-];
-    w:bagOfWords "5/3/49\n1946\nEST.\n793\nWINTRENGER RIESLING\nVintage 1946\nSHIPPED BY\nAVERY S of BRISTOL\nLTD\nPark St.,\nBRISTOL\nProduce of Lure mbo\nbo\nr es en Y\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1311";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

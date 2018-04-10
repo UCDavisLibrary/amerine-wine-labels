@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3394/label_3396";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "VOLNAY\nC Los DES CHENES\nROPITEAU FRERES\nPROPRIETAIRES ET NEGocIANTs\nBou RGoGNE\nA M EUR SAULT\nu FRANCE\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "a79582";
-  gv:red "167";
-  gv:blue "130";
-  gv:green "149";
-  gv:score "42.09941";
-  gv:coverage "16.68"
-], [
-  gv:hex "651d06";
-  gv:red "101";
-  gv:blue "6";
-  gv:green "29";
-  gv:score "2.385604";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "7c5a0d";
-  gv:red "124";
-  gv:blue "13";
-  gv:green "90";
-  gv:score "0.36636118";
-  gv:coverage "0.02"
-], [
-  gv:hex "8a7764";
-  gv:red "138";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "11.883625";
-  gv:coverage "4.5666665"
-], [
-  gv:hex "b0955d";
-  gv:red "176";
-  gv:blue "93";
-  gv:green "149";
-  gv:score "8.8875338";
-  gv:coverage "3.5466667"
-], [
-  gv:hex "a4948b";
-  gv:red "164";
-  gv:blue "139";
-  gv:green "148";
-  gv:score "5.5661059999999996";
-  gv:coverage "2.88"
-], [
-  gv:hex "b4907f";
-  gv:red "180";
-  gv:blue "127";
-  gv:green "144";
-  gv:score "4.7942881";
-  gv:coverage "0.88"
-], [
-  gv:hex "695744";
-  gv:red "105";
-  gv:blue "68";
-  gv:green "87";
-  gv:score "3.1165134";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "724c3a";
-  gv:red "114";
-  gv:blue "58";
-  gv:green "76";
-  gv:score "2.6079806";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "936f5d";
-  gv:red "147";
-  gv:blue "93";
-  gv:green "111";
-  gv:score "2.4929866";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.541092"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "63.661736000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.225575000000006"
-];
-    w:bagOfWords "VOLNAY\nC Los DES CHENES\nROPITEAU FRERES\nPROPRIETAIRES ET NEGocIANTs\nBou RGoGNE\nA M EUR SAULT\nu FRANCE\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3396";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

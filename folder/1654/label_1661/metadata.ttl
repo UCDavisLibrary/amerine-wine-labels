@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1661";
-    dct:type "image";
-    w:bagOfWords "SOS\nREGD.\nADE\nOLD\nPRODUCED AND BOTTLED BY\nCYPRUS WINE ASSOCIATION\nSUCCESSORS TO\nCRIST. HAGGIPAVLU & SONS LTD,\nWINE INDUSTRY\nCYPRUS\nLIMASSOL\nEST\n844\n"@eng;
-    gv:color [
-  gv:hex "e6ba5d";
-  gv:red "230";
-  gv:blue "93";
-  gv:green "186";
-  gv:score "25.111073";
-  gv:coverage "7.3266670000000005"
-], [
-  gv:hex "100703";
-  gv:red "16";
-  gv:blue "3";
-  gv:green "7";
-  gv:score "3.6460549";
-  gv:coverage "4.0733334"
-], [
-  gv:hex "661406";
-  gv:red "102";
-  gv:blue "6";
-  gv:green "20";
-  gv:score "2.2099709";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "3f3019";
-  gv:red "63";
-  gv:blue "25";
-  gv:green "48";
-  gv:score "1.4756268";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "951f19";
-  gv:red "149";
-  gv:blue "25";
-  gv:green "31";
-  gv:score "0.78521054";
-  gv:coverage "0.12"
-], [
-  gv:hex "edb55c";
-  gv:red "237";
-  gv:blue "92";
-  gv:green "181";
-  gv:score "11.655638";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "c8913e";
-  gv:red "200";
-  gv:blue "62";
-  gv:green "145";
-  gv:score "6.4222313";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "c29a45";
-  gv:red "194";
-  gv:blue "69";
-  gv:green "154";
-  gv:score "5.5340089";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "debb7a";
-  gv:red "222";
-  gv:blue "122";
-  gv:green "187";
-  gv:score "3.94016";
-  gv:coverage "2.32"
-], [
-  gv:hex "bb995b";
-  gv:red "187";
-  gv:blue "91";
-  gv:green "153";
-  gv:score "3.6189839";
-  gv:coverage "1.1266666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.909296"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.13203800000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "58.533871000000005"
-];
-    w:bagOfWords "SOS\nREGD.\nADE\nOLD\nPRODUCED AND BOTTLED BY\nCYPRUS WINE ASSOCIATION\nSUCCESSORS TO\nCRIST. HAGGIPAVLU & SONS LTD,\nWINE INDUSTRY\nCYPRUS\nLIMASSOL\nEST\n844\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1661";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

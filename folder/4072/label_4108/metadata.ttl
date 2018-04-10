@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4108";
-    dct:type "image";
-    w:bagOfWords "Product\nAppellation\nof France\nlée\nONDEE E\nCHABLIS VAILLON\nWHITE BURGUNDY WINE\nRESERVE DES CAVES DE J.MOREAU GUENIER A CHABLIS\n"@fra;
-    gv:color [
-  gv:hex "e7dfd6";
-  gv:red "231";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "73.027271";
-  gv:coverage "50.72"
-], [
-  gv:hex "685034";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "80";
-  gv:score "1.0629792";
-  gv:coverage "1.24"
-], [
-  gv:hex "dbd2c8";
-  gv:red "219";
-  gv:blue "200";
-  gv:green "210";
-  gv:score "10.044733";
-  gv:coverage "7.6533332"
-], [
-  gv:hex "e7d9c7";
-  gv:red "231";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "5.8606379";
-  gv:coverage "4.78"
-], [
-  gv:hex "dcccb8";
-  gv:red "220";
-  gv:blue "184";
-  gv:green "204";
-  gv:score "5.7120118";
-  gv:coverage "5.3066667"
-], [
-  gv:hex "c0a383";
-  gv:red "192";
-  gv:blue "131";
-  gv:green "163";
-  gv:score "1.0147141";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "866c4f";
-  gv:red "134";
-  gv:blue "79";
-  gv:green "108";
-  gv:score "0.49029677";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "6a4c31";
-  gv:red "106";
-  gv:blue "49";
-  gv:green "76";
-  gv:score "0.45017935000000003";
-  gv:coverage "1.22"
-], [
-  gv:hex "704c25";
-  gv:red "112";
-  gv:blue "37";
-  gv:green "76";
-  gv:score "0.4484247";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "52341a";
-  gv:red "82";
-  gv:blue "26";
-  gv:green "52";
-  gv:score "0.27176251";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.26960799999999"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "62.490553000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.004357000000006"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "54.6"
-];
-    w:bagOfWords "Product\nAppellation\nof France\nlée\nONDEE E\nCHABLIS VAILLON\nWHITE BURGUNDY WINE\nRESERVE DES CAVES DE J.MOREAU GUENIER A CHABLIS\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4108";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

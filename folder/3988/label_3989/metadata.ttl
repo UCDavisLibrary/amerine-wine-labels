@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_3989";
-    dct:type "image";
-    w:bagOfWords "FINES\nJAMAICA)\nRUM\nOLD\nTD\nKON GST N\nMAICA "@eng;
-    gv:color [
-  gv:hex "d6bf9c";
-  gv:red "214";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "29.737008";
-  gv:coverage "10.76"
-], [
-  gv:hex "160600";
-  gv:red "22";
-  gv:blue "undefined";
-  gv:green "6";
-  gv:score "1.3224529";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "b09a7a";
-  gv:red "176";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "21.970876";
-  gv:coverage "5.6466665"
-], [
-  gv:hex "877457";
-  gv:red "135";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "17.424583";
-  gv:coverage "4.0666666"
-], [
-  gv:hex "665337";
-  gv:red "102";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "13.59916";
-  gv:coverage "3.2533332999999995"
-], [
-  gv:hex "46341b";
-  gv:red "70";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "5.9787828";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "edd9ba";
-  gv:red "237";
-  gv:blue "186";
-  gv:green "217";
-  gv:score "2.4128838";
-  gv:coverage "4.2333335"
-], [
-  gv:hex "b2986c";
-  gv:red "178";
-  gv:blue "108";
-  gv:green "152";
-  gv:score "1.6836396999999999";
-  gv:coverage "0.42"
-], [
-  gv:hex "d7bd90";
-  gv:red "215";
-  gv:blue "144";
-  gv:green "189";
-  gv:score "1.5256083";
-  gv:coverage "0.38"
-], [
-  gv:hex "291a08";
-  gv:red "41";
-  gv:blue "8";
-  gv:green "26";
-  gv:score "1.2801742";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.13327"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "66.999567"
-], [
-  gv:mid <https://g.co/kg/m/03cny9>;
-  gv:desc "badge";
-  gv:score "53.654486"
-], [
-  gv:mid <https://g.co/kg/m/02w3hl>;
-  gv:desc "award";
-  gv:score "52.48169299999999"
-];
-    w:bagOfWords "FINES\nJAMAICA)\nRUM\nOLD\nTD\nKON GST N\nMAICA "@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3989";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

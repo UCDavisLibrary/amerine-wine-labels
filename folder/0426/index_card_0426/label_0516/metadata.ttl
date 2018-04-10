@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0516";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "RHEINGAU\nOriginalabfiiflung aus dem Heimamfe der\nZAHLEN\n"@deu;
-    gv:color [
-  gv:hex "d5c1a6";
-  gv:red "213";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "18.304257";
-  gv:coverage "7.779999999999999"
-], [
-  gv:hex "cb3d14";
-  gv:red "203";
-  gv:blue "20";
-  gv:green "61";
-  gv:score "11.760169";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "976b33";
-  gv:red "151";
-  gv:blue "51";
-  gv:green "107";
-  gv:score "5.0954916";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "e23204";
-  gv:red "226";
-  gv:blue "4";
-  gv:green "50";
-  gv:score "1.3991682";
-  gv:coverage "0.02"
-], [
-  gv:hex "ae9c81";
-  gv:red "174";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "11.740568";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "eddac1";
-  gv:red "237";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "8.5252784";
-  gv:coverage "7.2533332"
-], [
-  gv:hex "b2330a";
-  gv:red "178";
-  gv:blue "10";
-  gv:green "51";
-  gv:score "4.6209663";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "cdc3b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "4.3026287000000005";
-  gv:coverage "11.266667"
-], [
-  gv:hex "91723c";
-  gv:red "145";
-  gv:blue "60";
-  gv:green "114";
-  gv:score "3.0056167";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "ba5c3e";
-  gv:red "186";
-  gv:blue "62";
-  gv:green "92";
-  gv:score "2.6079809";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.55318"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.619959"
-];
-    w:bagOfWords "RHEINGAU\nOriginalabfiiflung aus dem Heimamfe der\nZAHLEN\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0516";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2334/label_2340";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-ESTEPHE\nME DOC\nMis\nRécolte\nen Bouteille\n1947\nau Chateau\nAppellation Saint-Estephe controlée\nDEPOsE IMP. wETTERWALD FRERES\nBORDEALux.\n"@fra;
-    gv:color [
-  gv:hex "ddc3a2";
-  gv:red "221";
-  gv:blue "162";
-  gv:green "195";
-  gv:score "39.349431";
-  gv:coverage "18.946667"
-], [
-  gv:hex "625039";
-  gv:red "98";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "13.201192";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "e8b99b";
-  gv:red "232";
-  gv:blue "155";
-  gv:green "185";
-  gv:score "9.987619500000001";
-  gv:coverage "3.0933334"
-], [
-  gv:hex "b49c7c";
-  gv:red "180";
-  gv:blue "124";
-  gv:green "156";
-  gv:score "8.4638022";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "867157";
-  gv:red "134";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "8.038134900000001";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "46331d";
-  gv:red "70";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "7.8796268000000005";
-  gv:coverage "1.32"
-], [
-  gv:hex "c49476";
-  gv:red "196";
-  gv:blue "118";
-  gv:green "148";
-  gv:score "5.0920568";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "f0d7b8";
-  gv:red "240";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "2.6139818";
-  gv:coverage "3.88"
-], [
-  gv:hex "a47154";
-  gv:red "164";
-  gv:blue "84";
-  gv:green "113";
-  gv:score "2.127615";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "9b6546";
-  gv:red "155";
-  gv:blue "70";
-  gv:green "101";
-  gv:score "0.65575722";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.90255"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.269884999999995"
-];
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-ESTEPHE\nME DOC\nMis\nRécolte\nen Bouteille\n1947\nau Chateau\nAppellation Saint-Estephe controlée\nDEPOsE IMP. wETTERWALD FRERES\nBORDEALux.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2340";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

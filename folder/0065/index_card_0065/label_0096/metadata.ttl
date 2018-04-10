@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0096";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "CAPRI\nPINO Via GNN\nAPP\n54\nF 41- dei TELE Mille,43\n"@ita;
-    gv:color [
-  gv:hex "e9e0d7";
-  gv:red "233";
-  gv:blue "215";
-  gv:green "224";
-  gv:score "59.64101000000001";
-  gv:coverage "49.106666"
-], [
-  gv:hex "d8c8b1";
-  gv:red "216";
-  gv:blue "177";
-  gv:green "200";
-  gv:score "9.2854679";
-  gv:coverage "9.2"
-], [
-  gv:hex "a52022";
-  gv:red "165";
-  gv:blue "34";
-  gv:green "32";
-  gv:score "6.1544765";
-  gv:coverage "1.3"
-], [
-  gv:hex "731d0c";
-  gv:red "115";
-  gv:blue "12";
-  gv:green "29";
-  gv:score "0.67515015";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "dad2c8";
-  gv:red "218";
-  gv:blue "200";
-  gv:green "210";
-  gv:score "6.8276457";
-  gv:coverage "6.5"
-], [
-  gv:hex "343022";
-  gv:red "52";
-  gv:blue "34";
-  gv:green "48";
-  gv:score "0.066945248";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e5dac8";
-  gv:red "229";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "6.4811908";
-  gv:coverage "6.2"
-], [
-  gv:hex "e6bca7";
-  gv:red "230";
-  gv:blue "167";
-  gv:green "188";
-  gv:score "1.414474";
-  gv:coverage "6.0133334"
-], [
-  gv:hex "c53c39";
-  gv:red "197";
-  gv:blue "57";
-  gv:green "60";
-  gv:score "1.0473932";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "c84f54";
-  gv:red "200";
-  gv:blue "84";
-  gv:green "79";
-  gv:score "0.90191327";
-  gv:coverage "0.35333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.727926"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.556951"
-];
-    w:bagOfWords "CAPRI\nPINO Via GNN\nAPP\n54\nF 41- dei TELE Mille,43\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0096";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

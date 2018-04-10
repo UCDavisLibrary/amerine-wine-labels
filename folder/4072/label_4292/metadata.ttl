@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4292";
-    dct:type "image";
-    w:bagOfWords "VIN BLANC\nVIEUX\nNo 191\nDE POSE\nWEITERWALD BORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "48556e";
-  gv:red "72";
-  gv:blue "110";
-  gv:green "85";
-  gv:score "24.59379";
-  gv:coverage "4.7733333"
-], [
-  gv:hex "e3e0e0";
-  gv:red "227";
-  gv:blue "224";
-  gv:green "224";
-  gv:score "6.41087";
-  gv:coverage "59.646666"
-], [
-  gv:hex "27344e";
-  gv:red "39";
-  gv:blue "78";
-  gv:green "52";
-  gv:score "21.413511";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "67738c";
-  gv:red "103";
-  gv:blue "140";
-  gv:green "115";
-  gv:score "14.443332";
-  gv:coverage "2.64"
-], [
-  gv:hex "cec7c1";
-  gv:red "206";
-  gv:blue "193";
-  gv:green "199";
-  gv:score "5.637262";
-  gv:coverage "14.686666"
-], [
-  gv:hex "0f1b32";
-  gv:red "15";
-  gv:blue "50";
-  gv:green "27";
-  gv:score "5.1283658";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "797878";
-  gv:red "121";
-  gv:blue "120";
-  gv:green "120";
-  gv:score "4.5088172";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "a19b97";
-  gv:red "161";
-  gv:blue "151";
-  gv:green "155";
-  gv:score "4.1995052";
-  gv:coverage "1.44"
-], [
-  gv:hex "585555";
-  gv:red "88";
-  gv:blue "85";
-  gv:green "85";
-  gv:score "3.4366849999999998";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "272d54";
-  gv:red "39";
-  gv:blue "84";
-  gv:green "45";
-  gv:score "1.7677339";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.90055000000001"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "66.535789"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "53.021914"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.620036999999996"
-], [
-  gv:mid <https://g.co/kg/m/0h8nvk9>;
-  gv:desc "dishware";
-  gv:score "50.370461"
-];
-    w:bagOfWords "VIN BLANC\nVIEUX\nNo 191\nDE POSE\nWEITERWALD BORDEAUX\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4292";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

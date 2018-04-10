@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0053";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "PINORD\nREVNAL\nSOCIEDAD ANONIMA PINORD VINOS ESPUMOSOS NATURALES\nSAN SADURNI DE NOYA. CORNELLA DE LLOBREGAT\nNe EMB SOLICITADO\n"@spa;
-    gv:color [
-  gv:hex "cdc0a6";
-  gv:red "205";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "38.158294999999995";
-  gv:coverage "47.773334"
-], [
-  gv:hex "8c6e3d";
-  gv:red "140";
-  gv:blue "61";
-  gv:green "110";
-  gv:score "14.59455";
-  gv:coverage "0.88"
-], [
-  gv:hex "afa084";
-  gv:red "175";
-  gv:blue "132";
-  gv:green "160";
-  gv:score "10.952451";
-  gv:coverage "3.3733333999999995"
-], [
-  gv:hex "6b4f21";
-  gv:red "107";
-  gv:blue "33";
-  gv:green "79";
-  gv:score "7.2213650000000005";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "8a7554";
-  gv:red "138";
-  gv:blue "84";
-  gv:green "117";
-  gv:score "5.7593293";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "eed8b9";
-  gv:red "238";
-  gv:blue "185";
-  gv:green "216";
-  gv:score "3.6695145";
-  gv:coverage "29.286668"
-], [
-  gv:hex "b19262";
-  gv:red "177";
-  gv:blue "98";
-  gv:green "146";
-  gv:score "3.5823263";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "936c34";
-  gv:red "147";
-  gv:blue "52";
-  gv:green "108";
-  gv:score "2.6583204";
-  gv:coverage "0.12"
-], [
-  gv:hex "6f4b16";
-  gv:red "111";
-  gv:blue "22";
-  gv:green "75";
-  gv:score "2.6504502";
-  gv:coverage "0.12"
-], [
-  gv:hex "d9bb8d";
-  gv:red "217";
-  gv:blue "141";
-  gv:green "187";
-  gv:score "2.4491912";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.781128"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PINORD\nREVNAL\nSOCIEDAD ANONIMA PINORD VINOS ESPUMOSOS NATURALES\nSAN SADURNI DE NOYA. CORNELLA DE LLOBREGAT\nNe EMB SOLICITADO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0053";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

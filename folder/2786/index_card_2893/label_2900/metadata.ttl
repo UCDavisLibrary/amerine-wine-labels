@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2900";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "1934\nFRENCH RHINE WINE FROM ALSACE\nCONTENTS 1 Pint 8 Fl. Ozs\nBRAND\nE. KLIPFEL\nBARR\nPROPRIETAIRE\nPRODUCE OF FRANCE\nBAS- RHIN\n"@fra;
-    gv:color [
-  gv:hex "986e35";
-  gv:red "152";
-  gv:blue "53";
-  gv:green "110";
-  gv:score "11.768043";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "e1bf81";
-  gv:red "225";
-  gv:blue "129";
-  gv:green "191";
-  gv:score "11.173717";
-  gv:coverage "7.9399999999999995"
-], [
-  gv:hex "311600";
-  gv:red "49";
-  gv:blue "undefined";
-  gv:green "22";
-  gv:score "0.2305795";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "e3ba60";
-  gv:red "227";
-  gv:blue "96";
-  gv:green "186";
-  gv:score "10.768442";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "957339";
-  gv:red "149";
-  gv:blue "57";
-  gv:green "115";
-  gv:score "8.7506548";
-  gv:coverage "4.24"
-], [
-  gv:hex "b89558";
-  gv:red "184";
-  gv:blue "88";
-  gv:green "149";
-  gv:score "7.49345";
-  gv:coverage "5.12"
-], [
-  gv:hex "c19942";
-  gv:red "193";
-  gv:blue "66";
-  gv:green "153";
-  gv:score "6.4211674";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "9e7020";
-  gv:red "158";
-  gv:blue "32";
-  gv:green "112";
-  gv:score "5.4981939";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "785018";
-  gv:red "120";
-  gv:blue "24";
-  gv:green "80";
-  gv:score "4.7927618";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "c5923b";
-  gv:red "197";
-  gv:blue "59";
-  gv:green "146";
-  gv:score "4.3242261";
-  gv:coverage "1.5333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.61874"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "1934\nFRENCH RHINE WINE FROM ALSACE\nCONTENTS 1 Pint 8 Fl. Ozs\nBRAND\nE. KLIPFEL\nBARR\nPROPRIETAIRE\nPRODUCE OF FRANCE\nBAS- RHIN\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2900";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

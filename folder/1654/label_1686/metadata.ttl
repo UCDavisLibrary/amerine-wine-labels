@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1686";
-    dct:type "image";
-    w:bagOfWords "ΣOΔAΠ\nEHMA\nKATATEOEN\nPEA\nTYΠOY ΠOPT\nNEY KOOΣ「NYKYΣ\nINEPTATIKOE OPTANIEMOΣ ΔIAOEZEQI AMNEAOYPFIKΩN ΠPoloNTON ATA.\n"@eng;
-    gv:color [
-  gv:hex "f0b145";
-  gv:red "240";
-  gv:blue "69";
-  gv:green "177";
-  gv:score "26.820043";
-  gv:coverage "8.686666899999999"
-], [
-  gv:hex "bc0905";
-  gv:red "188";
-  gv:blue "5";
-  gv:green "9";
-  gv:score "6.605806899999999";
-  gv:coverage "2.54"
-], [
-  gv:hex "810305";
-  gv:red "129";
-  gv:blue "5";
-  gv:green "3";
-  gv:score "1.514392";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "0a0505";
-  gv:red "10";
-  gv:blue "5";
-  gv:green "5";
-  gv:score "1.0246695";
-  gv:coverage "1.08"
-], [
-  gv:hex "460101";
-  gv:red "70";
-  gv:blue "1";
-  gv:green "1";
-  gv:score "0.77259145";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "e4c9a4";
-  gv:red "228";
-  gv:blue "164";
-  gv:green "201";
-  gv:score "0.43286108";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e9dfd6";
-  gv:red "233";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "0.30719005";
-  gv:coverage "59.06666499999999"
-], [
-  gv:hex "eeb04e";
-  gv:red "238";
-  gv:blue "78";
-  gv:green "176";
-  gv:score "22.91626";
-  gv:coverage "7.5133331"
-], [
-  gv:hex "a71505";
-  gv:red "167";
-  gv:blue "5";
-  gv:green "21";
-  gv:score "5.1229011";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "e6b853";
-  gv:red "230";
-  gv:blue "83";
-  gv:green "184";
-  gv:score "5.0693609";
-  gv:coverage "1.7866666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.05200000000001"
-];
-    w:bagOfWords "ΣOΔAΠ\nEHMA\nKATATEOEN\nPEA\nTYΠOY ΠOPT\nNEY KOOΣ「NYKYΣ\nINEPTATIKOE OPTANIEMOΣ ΔIAOEZEQI AMNEAOYPFIKΩN ΠPoloNTON ATA.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1686";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

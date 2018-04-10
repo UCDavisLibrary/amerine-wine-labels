@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4026/label_4045";
-    dct:type "image";
-    w:bagOfWords "BELLOWS & COMPANY\nESTABLISHED 1830\nTAWNY PORT?\nMAGNIFICENT DOURO WINE\noF GREAT RARITY RGU\npectally heserved dybottled by\nPortal O., London Bigland.\nEXCLUSIVELY FOR\nBellows & Company\nInc\nNEW YORK CITY\nIMPORTERS\n1PINT 9FLD OZS. ALCOHOL 20.5% BY VOL\nPRODUCE OF PORTUGAL\nPRINTED IN CREAT BRITAIN\n"@por;
-    gv:color [
-  gv:hex "d9bda4";
-  gv:red "217";
-  gv:blue "164";
-  gv:green "189";
-  gv:score "46.790316999999995";
-  gv:coverage "18.866667"
-], [
-  gv:hex "b4987f";
-  gv:red "180";
-  gv:blue "127";
-  gv:green "152";
-  gv:score "27.935794";
-  gv:coverage "12.166667"
-], [
-  gv:hex "90745b";
-  gv:red "144";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "16.001072999999998";
-  gv:coverage "5.7133332"
-], [
-  gv:hex "70543a";
-  gv:red "112";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "4.1658162999999995";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "66482d";
-  gv:red "102";
-  gv:blue "45";
-  gv:green "72";
-  gv:score "2.9758437";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "f0d6bf";
-  gv:red "240";
-  gv:blue "191";
-  gv:green "214";
-  gv:score "1.6180838";
-  gv:coverage "2.44"
-], [
-  gv:hex "55381e";
-  gv:red "85";
-  gv:blue "30";
-  gv:green "56";
-  gv:score "0.30527702";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "a6866f";
-  gv:red "166";
-  gv:blue "111";
-  gv:green "134";
-  gv:score "0.065747404";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "917159";
-  gv:red "145";
-  gv:blue "89";
-  gv:green "113";
-  gv:score "0.050036283";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "52381d";
-  gv:red "82";
-  gv:blue "29";
-  gv:green "56";
-  gv:score "0.032849266";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.411707"
-];
-    w:bagOfWords "BELLOWS & COMPANY\nESTABLISHED 1830\nTAWNY PORT?\nMAGNIFICENT DOURO WINE\noF GREAT RARITY RGU\npectally heserved dybottled by\nPortal O., London Bigland.\nEXCLUSIVELY FOR\nBellows & Company\nInc\nNEW YORK CITY\nIMPORTERS\n1PINT 9FLD OZS. ALCOHOL 20.5% BY VOL\nPRODUCE OF PORTUGAL\nPRINTED IN CREAT BRITAIN\n"@por;
-    wdt:P219 "por";
-    wdt:P298 "PRT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4045";
+    <schema.keywords> "Portugal Folder@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "PT".
+

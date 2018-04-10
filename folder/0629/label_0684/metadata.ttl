@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0684";
-    dct:type "image";
-    w:bagOfWords "rank\nRheing\n1946\ner\nRudesheimer\nRing mauer\nRIESLING SPAT LESE\nKellerabfullurig aus der Gutskellerei\nGr af v o n Fra n c k e n Sie r s t o r p f\nf\nvorm. Freiherrn von Stumm-Halberg\nRudesheim im Rheingau\n"@undefined;
-    gv:color [
-  gv:hex "d3bfa5";
-  gv:red "211";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "21.040888";
-  gv:coverage "15.72"
-], [
-  gv:hex "ae9a80";
-  gv:red "174";
-  gv:blue "128";
-  gv:green "154";
-  gv:score "19.962853";
-  gv:coverage "3.2666668000000003"
-], [
-  gv:hex "8a775e";
-  gv:red "138";
-  gv:blue "94";
-  gv:green "119";
-  gv:score "11.046893";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "b69d6a";
-  gv:red "182";
-  gv:blue "106";
-  gv:green "157";
-  gv:score "9.087690700000001";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "ccba83";
-  gv:red "204";
-  gv:blue "131";
-  gv:green "186";
-  gv:score "8.0693118";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "efddc2";
-  gv:red "239";
-  gv:blue "194";
-  gv:green "221";
-  gv:score "4.6403352";
-  gv:coverage "5.2933332"
-], [
-  gv:hex "1f0500";
-  gv:red "31";
-  gv:blue "undefined";
-  gv:green "5";
-  gv:score "0.045016757000000004";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "cdc0b6";
-  gv:red "205";
-  gv:blue "182";
-  gv:green "192";
-  gv:score "3.4964892999999995";
-  gv:coverage "14.78"
-], [
-  gv:hex "665339";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "2.8457044000000002";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "987054";
-  gv:red "152";
-  gv:blue "84";
-  gv:green "112";
-  gv:score "2.5498943";
-  gv:coverage "0.24"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.39996000000001"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.413512"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.331128"
-];
-    w:bagOfWords "rank\nRheing\n1946\ner\nRudesheimer\nRing mauer\nRIESLING SPAT LESE\nKellerabfullurig aus der Gutskellerei\nGr af v o n Fra n c k e n Sie r s t o r p f\nf\nvorm. Freiherrn von Stumm-Halberg\nRudesheim im Rheingau\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0684";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

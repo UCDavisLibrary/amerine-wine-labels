@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4534";
-    dct:type "image";
-    w:bagOfWords "J a r a n a\nfino\nVINEYARDS AND C\nPM\nded 1896\nFoun\nCADIZ\nMEDITERRANEAN\nEmilio Austan\nJEREZ DE LA FRONTERA Num. Emb.\nen T6n.n\nSPAIN\n"@spa;
-    gv:color [
-  gv:hex "c7c2a5";
-  gv:red "199";
-  gv:blue "165";
-  gv:green "194";
-  gv:score "68.013352";
-  gv:coverage "36.26"
-], [
-  gv:hex "5f5137";
-  gv:red "95";
-  gv:blue "55";
-  gv:green "81";
-  gv:score "3.9806895";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "1f150c";
-  gv:red "31";
-  gv:blue "12";
-  gv:green "21";
-  gv:score "0.90408754";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "a9a186";
-  gv:red "169";
-  gv:blue "134";
-  gv:green "161";
-  gv:score "13.670964999999999";
-  gv:coverage "5.3133335"
-], [
-  gv:hex "84785e";
-  gv:red "132";
-  gv:blue "94";
-  gv:green "120";
-  gv:score "3.6271668999999997";
-  gv:coverage "1.76"
-], [
-  gv:hex "40341c";
-  gv:red "64";
-  gv:blue "28";
-  gv:green "52";
-  gv:score "3.5442866000000004";
-  gv:coverage "2.36"
-], [
-  gv:hex "9a6f5b";
-  gv:red "154";
-  gv:blue "91";
-  gv:green "111";
-  gv:score "0.8372348700000001";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "be927e";
-  gv:red "190";
-  gv:blue "126";
-  gv:green "146";
-  gv:score "0.8167909500000001";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "bcc7a2";
-  gv:red "188";
-  gv:blue "162";
-  gv:green "199";
-  gv:score "0.71631907";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "e3b2a1";
-  gv:red "227";
-  gv:blue "161";
-  gv:green "178";
-  gv:score "0.5708714";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.892633"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.18937"
-];
-    w:bagOfWords "J a r a n a\nfino\nVINEYARDS AND C\nPM\nded 1896\nFoun\nCADIZ\nMEDITERRANEAN\nEmilio Austan\nJEREZ DE LA FRONTERA Num. Emb.\nen T6n.n\nSPAIN\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4534";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

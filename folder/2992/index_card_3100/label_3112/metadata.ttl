@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3100/label_3112";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "19 43\nCHATEAU LA POINTE\n0102 era\nAPPELLATION CONT ROLE E\nPau\nDELAH OUTRE\nPropriétaire\n"@fra;
-    gv:color [
-  gv:hex "82746b";
-  gv:red "130";
-  gv:blue "107";
-  gv:green "116";
-  gv:score "22.325349";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "a6988f";
-  gv:red "166";
-  gv:blue "143";
-  gv:green "152";
-  gv:score "21.233912999999998";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "cabbb2";
-  gv:red "202";
-  gv:blue "178";
-  gv:green "187";
-  gv:score "10.850046";
-  gv:coverage "15.766667000000002"
-], [
-  gv:hex "d8c4a8";
-  gv:red "216";
-  gv:blue "168";
-  gv:green "196";
-  gv:score "9.440545";
-  gv:coverage "7.1333334"
-], [
-  gv:hex "63564d";
-  gv:red "99";
-  gv:blue "77";
-  gv:green "86";
-  gv:score "9.0248115";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "e4b5ac";
-  gv:red "228";
-  gv:blue "172";
-  gv:green "181";
-  gv:score "4.771912100000001";
-  gv:coverage "0.88"
-], [
-  gv:hex "c5948a";
-  gv:red "197";
-  gv:blue "138";
-  gv:green "148";
-  gv:score "4.4660456";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "e8d7cf";
-  gv:red "232";
-  gv:blue "207";
-  gv:green "215";
-  gv:score "2.5732148";
-  gv:coverage "64.52666500000001"
-], [
-  gv:hex "a99787";
-  gv:red "169";
-  gv:blue "135";
-  gv:green "151";
-  gv:score "2.3617588";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "867669";
-  gv:red "134";
-  gv:blue "105";
-  gv:green "118";
-  gv:score "2.1080196";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.778892"
-];
-    w:bagOfWords "19 43\nCHATEAU LA POINTE\n0102 era\nAPPELLATION CONT ROLE E\nPau\nDELAH OUTRE\nPropriétaire\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3112";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

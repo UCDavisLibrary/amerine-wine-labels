@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1758";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "MOSEL SAAR\nRUWER\nAlcohol 9,5 by Volume\nContents 1 Pint 8 F1. Oz.\nGraben\n1949 Cabinet Spatlese\nMoselle W in e\nProduced and bottled in Germany\nOriginal-Kelle rabzug\nUESSTZLICH GESCHUTZT\nER\n"@deu;
-    gv:color [
-  gv:hex "d2bf9c";
-  gv:red "210";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "16.966414";
-  gv:coverage "16.986667"
-], [
-  gv:hex "c18d3c";
-  gv:red "193";
-  gv:blue "60";
-  gv:green "141";
-  gv:score "0.46533178999999997";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "ad9a78";
-  gv:red "173";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "16.491278";
-  gv:coverage "5.7933334"
-], [
-  gv:hex "8a7656";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "14.218859";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "b09965";
-  gv:red "176";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "10.476641";
-  gv:coverage "2.76"
-], [
-  gv:hex "8e7844";
-  gv:red "142";
-  gv:blue "68";
-  gv:green "120";
-  gv:score "10.050772";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "675333";
-  gv:red "103";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "6.9731794";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "d5bc84";
-  gv:red "213";
-  gv:blue "132";
-  gv:green "188";
-  gv:score "6.1772671";
-  gv:coverage "1.6"
-], [
-  gv:hex "eeddbf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "221";
-  gv:score "4.9480154999999995";
-  gv:coverage "22.6"
-], [
-  gv:hex "675325";
-  gv:red "103";
-  gv:blue "37";
-  gv:green "83";
-  gv:score "4.5416497";
-  gv:coverage "0.98"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.421721999999995"
-];
-    w:bagOfWords "MOSEL SAAR\nRUWER\nAlcohol 9,5 by Volume\nContents 1 Pint 8 F1. Oz.\nGraben\n1949 Cabinet Spatlese\nMoselle W in e\nProduced and bottled in Germany\nOriginal-Kelle rabzug\nUESSTZLICH GESCHUTZT\nER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1758";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

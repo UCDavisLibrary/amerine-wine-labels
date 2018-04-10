@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0296";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "ALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nB. M. Martini Grape Products\nKINGS BURG, CALIFORNIA\nNET CONTENTS 1 PL 8 FL. 0Z.\n"@eng;
-    gv:color [
-  gv:hex "cebfa9";
-  gv:red "206";
-  gv:blue "169";
-  gv:green "191";
-  gv:score "22.469891999999998";
-  gv:coverage "12.733333"
-], [
-  gv:hex "665641";
-  gv:red "102";
-  gv:blue "65";
-  gv:green "86";
-  gv:score "6.2654912";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "85321f";
-  gv:red "133";
-  gv:blue "31";
-  gv:green "50";
-  gv:score "5.379392999999999";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "ad9e86";
-  gv:red "173";
-  gv:blue "134";
-  gv:green "158";
-  gv:score "9.6734039";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "efe1ce";
-  gv:red "239";
-  gv:blue "206";
-  gv:green "225";
-  gv:score "7.162489";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "7b4d33";
-  gv:red "123";
-  gv:blue "51";
-  gv:green "77";
-  gv:score "6.0580365";
-  gv:coverage "0.22"
-], [
-  gv:hex "c79687";
-  gv:red "199";
-  gv:blue "135";
-  gv:green "150";
-  gv:score "5.7642758";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "82765f";
-  gv:red "130";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "4.9752083";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "e0b5a6";
-  gv:red "224";
-  gv:blue "166";
-  gv:green "181";
-  gv:score "4.8629973";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "6d220f";
-  gv:red "109";
-  gv:blue "15";
-  gv:green "34";
-  gv:score "3.6829919";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.026883"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "62.392168999999996"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "55.270922"
-], [
-  gv:mid <https://g.co/kg/m/081qc>;
-  gv:desc "wine";
-  gv:score "52.296704000000005"
-];
-    w:bagOfWords "ALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nB. M. Martini Grape Products\nKINGS BURG, CALIFORNIA\nNET CONTENTS 1 PL 8 FL. 0Z.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0296";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

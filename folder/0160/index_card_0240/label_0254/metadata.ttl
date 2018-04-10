@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0254";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "Worte Ral Wine\nVrndg2L /944\n及mtlecee4/Lent. An-Yen/al\n948\nl't\n"@eng;
-    gv:color [
-  gv:hex "a7998a";
-  gv:red "167";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "22.892526";
-  gv:coverage "2.8000000000000003"
-], [
-  gv:hex "d0c2b5";
-  gv:red "208";
-  gv:blue "181";
-  gv:green "194";
-  gv:score "17.872502";
-  gv:coverage "39.053333"
-], [
-  gv:hex "d0c2b2";
-  gv:red "208";
-  gv:blue "178";
-  gv:green "194";
-  gv:score "17.554554";
-  gv:coverage "7.6133333"
-], [
-  gv:hex "867869";
-  gv:red "134";
-  gv:blue "105";
-  gv:green "120";
-  gv:score "15.309589";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "e8dbce";
-  gv:red "232";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "6.8076596";
-  gv:coverage "46.193334"
-], [
-  gv:hex "5f5243";
-  gv:red "95";
-  gv:blue "67";
-  gv:green "82";
-  gv:score "4.575452599999999";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "e7daca";
-  gv:red "231";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "3.0727051";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "b0a397";
-  gv:red "176";
-  gv:blue "151";
-  gv:green "163";
-  gv:score "2.9917542";
-  gv:coverage "0.62"
-], [
-  gv:hex "807469";
-  gv:red "128";
-  gv:blue "105";
-  gv:green "116";
-  gv:score "2.8174607000000003";
-  gv:coverage "0.26"
-], [
-  gv:hex "5f544a";
-  gv:red "95";
-  gv:blue "74";
-  gv:green "84";
-  gv:score "2.4096256";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "73.5219"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.377407999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.450372"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.395755"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "51.470393"
-];
-    w:bagOfWords "Worte Ral Wine\nVrndg2L /944\n及mtlecee4/Lent. An-Yen/al\n948\nl't\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0254";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

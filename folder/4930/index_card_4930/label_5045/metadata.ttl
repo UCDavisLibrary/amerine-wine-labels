@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5045";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "California\nWINE\nottled an\nackaged Gnecially\nor\nCity of Paris\nS An FRA n CISCO\nTAx PAID BY STA\nS AFF\nTO CASE\nAND CANCELLED\n"@undefined;
-    gv:color [
-  gv:hex "d1c2ab";
-  gv:red "209";
-  gv:blue "171";
-  gv:green "194";
-  gv:score "33.671993";
-  gv:coverage "36.866668000000004"
-], [
-  gv:hex "b99e63";
-  gv:red "185";
-  gv:blue "99";
-  gv:green "158";
-  gv:score "21.956377";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "d3b879";
-  gv:red "211";
-  gv:blue "121";
-  gv:green "184";
-  gv:score "16.197604";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "ae9e87";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "158";
-  gv:score "8.5808009";
-  gv:coverage "3.6933333"
-], [
-  gv:hex "cec4b9";
-  gv:red "206";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "5.33629";
-  gv:coverage "14.706667000000001"
-], [
-  gv:hex "d6b664";
-  gv:red "214";
-  gv:blue "100";
-  gv:green "182";
-  gv:score "2.8818389";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "877a60";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "122";
-  gv:score "2.8681245";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "e7dac0";
-  gv:red "231";
-  gv:blue "192";
-  gv:green "218";
-  gv:score "2.324713";
-  gv:coverage "8.2666665"
-], [
-  gv:hex "a79f94";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "159";
-  gv:score "1.3661617";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "c2a252";
-  gv:red "194";
-  gv:blue "82";
-  gv:green "162";
-  gv:score "1.2767232";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.822371"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "60.523731000000005"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.221852999999996"
-];
-    w:bagOfWords "California\nWINE\nottled an\nackaged Gnecially\nor\nCity of Paris\nS An FRA n CISCO\nTAx PAID BY STA\nS AFF\nTO CASE\nAND CANCELLED\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5045";
+    <schema.keywords> "UC Reporters Notebook@en".
+

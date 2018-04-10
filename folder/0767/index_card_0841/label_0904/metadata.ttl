@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0904";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CHAMPAGNE\nEXTRA DRY\nPRODUCE OF FRANCE\nIMPORTED BY VERDIER CELLARS\nSAN FRANCISCO CAL\nCONTENTS 1 PINT 11 OZS\nPERMIT\n517\nALCOHOL 12 BY VOLUME\n"@fra;
-    gv:color [
-  gv:hex "957441";
-  gv:red "149";
-  gv:blue "65";
-  gv:green "116";
-  gv:score "19.465284";
-  gv:coverage "0.32"
-], [
-  gv:hex "d1bea2";
-  gv:red "209";
-  gv:blue "162";
-  gv:green "190";
-  gv:score "12.101729";
-  gv:coverage "25.446665000000003"
-], [
-  gv:hex "b39461";
-  gv:red "179";
-  gv:blue "97";
-  gv:green "148";
-  gv:score "11.953195";
-  gv:coverage "0.24"
-], [
-  gv:hex "b19b7b";
-  gv:red "177";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "10.416644";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "cfc4b9";
-  gv:red "207";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "8.0557562";
-  gv:coverage "11.086667"
-], [
-  gv:hex "dbba88";
-  gv:red "219";
-  gv:blue "136";
-  gv:green "186";
-  gv:score "7.0010938";
-  gv:coverage "0.18"
-], [
-  gv:hex "966f37";
-  gv:red "150";
-  gv:blue "55";
-  gv:green "111";
-  gv:score "6.6642329";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "ebe1d7";
-  gv:red "235";
-  gv:blue "215";
-  gv:green "225";
-  gv:score "6.4967999999999995";
-  gv:coverage "39.906666"
-], [
-  gv:hex "a49990";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "4.1208066";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "ecdcc7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "220";
-  gv:score "3.3377226";
-  gv:coverage "18.493333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.330344"
-];
-    w:bagOfWords "CHAMPAGNE\nEXTRA DRY\nPRODUCE OF FRANCE\nIMPORTED BY VERDIER CELLARS\nSAN FRANCISCO CAL\nCONTENTS 1 PINT 11 OZS\nPERMIT\n517\nALCOHOL 12 BY VOLUME\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0904";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0151";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "Traminer\nAROMATICO\nVINI FINI TRENTINI ED ALTO ATESINI\nMEZZOCORONA (VAL D'A DIGE)\n"@ita;
-    gv:color [
-  gv:hex "d4c5af";
-  gv:red "212";
-  gv:blue "175";
-  gv:green "197";
-  gv:score "25.667906000000002";
-  gv:coverage "12.139999999999999"
-], [
-  gv:hex "35865e";
-  gv:red "53";
-  gv:blue "94";
-  gv:green "134";
-  gv:score "6.5529138";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "a89a86";
-  gv:red "168";
-  gv:blue "134";
-  gv:green "154";
-  gv:score "15.822301999999999";
-  gv:coverage "4.5066666"
-], [
-  gv:hex "847868";
-  gv:red "132";
-  gv:blue "104";
-  gv:green "120";
-  gv:score "9.925379600000001";
-  gv:coverage "3.3933334000000004"
-], [
-  gv:hex "d4c8bd";
-  gv:red "212";
-  gv:blue "189";
-  gv:green "200";
-  gv:score "5.8544021";
-  gv:coverage "20.293333"
-], [
-  gv:hex "e8d9c4";
-  gv:red "232";
-  gv:blue "196";
-  gv:green "217";
-  gv:score "4.5806196";
-  gv:coverage "3.32"
-], [
-  gv:hex "7e7469";
-  gv:red "126";
-  gv:blue "105";
-  gv:green "116";
-  gv:score "4.4459580999999995";
-  gv:coverage "1.38"
-], [
-  gv:hex "e3d9ce";
-  gv:red "227";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "4.2981692";
-  gv:coverage "41.56"
-], [
-  gv:hex "58a57d";
-  gv:red "88";
-  gv:blue "125";
-  gv:green "165";
-  gv:score "4.2154767";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "605748";
-  gv:red "96";
-  gv:blue "72";
-  gv:green "87";
-  gv:score "3.6964644";
-  gv:coverage "1.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.165542"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.960455"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.738829"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.7076"
-];
-    w:bagOfWords "Traminer\nAROMATICO\nVINI FINI TRENTINI ED ALTO ATESINI\nMEZZOCORONA (VAL D'A DIGE)\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0151";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

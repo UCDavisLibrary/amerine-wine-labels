@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1694";
-    dct:type "image";
-    w:bagOfWords "REG p\nS\nTRADE\nMAP\nK\nKEO\nCYPRUS\nVERMOUTH\nDRY FRENCH TYPE\nproduced & bottled by\nCYPRUS WINE & SPIRITS Co ITD\nLIMASSOL CYPRUS\n"@eng;
-    gv:color [
-  gv:hex "dab877";
-  gv:red "218";
-  gv:blue "119";
-  gv:green "184";
-  gv:score "21.786680999999998";
-  gv:coverage "8.506666899999999"
-], [
-  gv:hex "b89957";
-  gv:red "184";
-  gv:blue "87";
-  gv:green "153";
-  gv:score "21.033178";
-  gv:coverage "9.166666900000001"
-], [
-  gv:hex "e3b170";
-  gv:red "227";
-  gv:blue "112";
-  gv:green "177";
-  gv:score "11.425541";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "917734";
-  gv:red "145";
-  gv:blue "52";
-  gv:green "119";
-  gv:score "9.3543284";
-  gv:coverage "3.5733335"
-], [
-  gv:hex "67510c";
-  gv:red "103";
-  gv:blue "12";
-  gv:green "81";
-  gv:score "6.180724499999999";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "927429";
-  gv:red "146";
-  gv:blue "41";
-  gv:green "116";
-  gv:score "5.9723581999999995";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "ba974b";
-  gv:red "186";
-  gv:blue "75";
-  gv:green "151";
-  gv:score "5.8627959";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "e0ad63";
-  gv:red "224";
-  gv:blue "99";
-  gv:green "173";
-  gv:score "4.9857453000000005";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "dbb366";
-  gv:red "219";
-  gv:blue "102";
-  gv:green "179";
-  gv:score "2.7785785";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "cf9a50";
-  gv:red "207";
-  gv:blue "80";
-  gv:green "154";
-  gv:score "2.6706789";
-  gv:coverage "0.62666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.923818000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.1006"
-];
-    w:bagOfWords "REG p\nS\nTRADE\nMAP\nK\nKEO\nCYPRUS\nVERMOUTH\nDRY FRENCH TYPE\nproduced & bottled by\nCYPRUS WINE & SPIRITS Co ITD\nLIMASSOL CYPRUS\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1694";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

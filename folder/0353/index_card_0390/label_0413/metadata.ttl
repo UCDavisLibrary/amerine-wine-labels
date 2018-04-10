@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0413";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "BY APPOINTMENT\nTO HM THE KING\nBERRY BROS .& Co\nESTABLISHED IN THE XVII CENTURY\n3 ST JAMES'S ST LONDON.\nTRUE KUMMEL\nSpecially distilled for\nBERRY BROS & CO\nProduce of\n25/32 Quart.\nLONDON\nthe Netherlands\n82 0\nProof\nPRINTED IN CREAT BRITAIN\n"@undefined;
-    gv:color [
-  gv:hex "d5bf9e";
-  gv:red "213";
-  gv:blue "158";
-  gv:green "191";
-  gv:score "33.560452000000005";
-  gv:coverage "46"
-], [
-  gv:hex "dab982";
-  gv:red "218";
-  gv:blue "130";
-  gv:green "185";
-  gv:score "26.384829999999997";
-  gv:coverage "4.7733333"
-], [
-  gv:hex "ad997a";
-  gv:red "173";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "13.973171";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "88765a";
-  gv:red "136";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "9.4540857";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "bfa16d";
-  gv:red "191";
-  gv:blue "109";
-  gv:green "161";
-  gv:score "5.8921244";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "645337";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "4.4934217";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "edd9be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "1.3085445";
-  gv:coverage "25.946668"
-], [
-  gv:hex "8d764a";
-  gv:red "141";
-  gv:blue "74";
-  gv:green "118";
-  gv:score "1.2866798000000002";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "48381c";
-  gv:red "72";
-  gv:blue "28";
-  gv:green "56";
-  gv:score "1.1101593";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "bc8e52";
-  gv:red "188";
-  gv:blue "82";
-  gv:green "142";
-  gv:score "0.99432645";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.402361"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.345185"
-];
-    w:bagOfWords "BY APPOINTMENT\nTO HM THE KING\nBERRY BROS .& Co\nESTABLISHED IN THE XVII CENTURY\n3 ST JAMES'S ST LONDON.\nTRUE KUMMEL\nSpecially distilled for\nBERRY BROS & CO\nProduce of\n25/32 Quart.\nLONDON\nthe Netherlands\n82 0\nProof\nPRINTED IN CREAT BRITAIN\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0413";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2277";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU\nMARG 1, y\nVIN\nR GRAND CRU CL\nFRANCE\nAPPELLATION HAUT-MEDOC CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "d5bb9a";
-  gv:red "213";
-  gv:blue "154";
-  gv:green "187";
-  gv:score "34.930652";
-  gv:coverage "57.706666"
-], [
-  gv:hex "ba9a6a";
-  gv:red "186";
-  gv:blue "106";
-  gv:green "154";
-  gv:score "23.915623";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "b99e7c";
-  gv:red "185";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "14.558223";
-  gv:coverage "4.2466667"
-], [
-  gv:hex "d3b384";
-  gv:red "211";
-  gv:blue "132";
-  gv:green "179";
-  gv:score "9.050438600000001";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "bd9263";
-  gv:red "189";
-  gv:blue "99";
-  gv:green "146";
-  gv:score "6.37143";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "a27745";
-  gv:red "162";
-  gv:blue "69";
-  gv:green "119";
-  gv:score "3.7254509";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "9d7d4e";
-  gv:red "157";
-  gv:blue "78";
-  gv:green "125";
-  gv:score "2.4908338";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "dcb085";
-  gv:red "220";
-  gv:blue "133";
-  gv:green "176";
-  gv:score "1.5560914000000001";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "bd9774";
-  gv:red "189";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "1.5316016";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "dfb692";
-  gv:red "223";
-  gv:blue "146";
-  gv:green "182";
-  gv:score "1.1021508";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.23009099999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.852059"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.340878000000004"
-];
-    w:bagOfWords "CHATEAU\nMARG 1, y\nVIN\nR GRAND CRU CL\nFRANCE\nAPPELLATION HAUT-MEDOC CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2277";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

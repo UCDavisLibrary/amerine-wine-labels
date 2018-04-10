@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0306";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "Z I N F A N DE L\nCALIFORNIA\nNAPA\nPSO\nTRADE MARK\nREGISTERED\nINTERNAL\nNOT OVER\nAMOROSO\n14% ALCOHOL\nREVENUE\nTAX PAID\nBY VOLUME\n(ZINFANDEL)\nTYPE\nCALIFORNE\nEXPOSITION\nS\nBORDEAUX FRANCE 1895. CALINTERNATI\n189+\nNET CONTENTS\nCALSTATE EXPOSITION 18\nST. LOUIS 1904\nPARIS, FRANCE,\n1900\nBUFFALO, 1901. A Repsold Co\nPORTLAND,ORE.1905.\nProducers\nSEATTLE, WASH. 1909.\nSAN FRANCISCO CAL1915.\nSAN FRANCISCO\nCALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "877354";
-  gv:red "135";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "27.172967999999997";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "ac9b80";
-  gv:red "172";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "19.425309";
-  gv:coverage "2.98"
-], [
-  gv:hex "886e3e";
-  gv:red "136";
-  gv:blue "62";
-  gv:green "110";
-  gv:score "17.291038";
-  gv:coverage "0.76"
-], [
-  gv:hex "ccbba3";
-  gv:red "204";
-  gv:blue "163";
-  gv:green "187";
-  gv:score "14.344773";
-  gv:coverage "60.546666"
-], [
-  gv:hex "695737";
-  gv:red "105";
-  gv:blue "55";
-  gv:green "87";
-  gv:score "12.082268000000001";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "735b2f";
-  gv:red "115";
-  gv:blue "47";
-  gv:green "91";
-  gv:score "5.5551550999999995";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "cfc6bb";
-  gv:red "207";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "1.1891486999999998";
-  gv:coverage "11.673333"
-], [
-  gv:hex "ead9c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "0.7297901";
-  gv:coverage "7.4399999999999995"
-], [
-  gv:hex "a69d92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "157";
-  gv:score "0.7073695799999999";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "47361b";
-  gv:red "71";
-  gv:blue "27";
-  gv:green "54";
-  gv:score "0.37084487";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.89525599999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.302963"
-];
-    w:bagOfWords "Z I N F A N DE L\nCALIFORNIA\nNAPA\nPSO\nTRADE MARK\nREGISTERED\nINTERNAL\nNOT OVER\nAMOROSO\n14% ALCOHOL\nREVENUE\nTAX PAID\nBY VOLUME\n(ZINFANDEL)\nTYPE\nCALIFORNE\nEXPOSITION\nS\nBORDEAUX FRANCE 1895. CALINTERNATI\n189+\nNET CONTENTS\nCALSTATE EXPOSITION 18\nST. LOUIS 1904\nPARIS, FRANCE,\n1900\nBUFFALO, 1901. A Repsold Co\nPORTLAND,ORE.1905.\nProducers\nSEATTLE, WASH. 1909.\nSAN FRANCISCO CAL1915.\nSAN FRANCISCO\nCALIFORNIA\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0306";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

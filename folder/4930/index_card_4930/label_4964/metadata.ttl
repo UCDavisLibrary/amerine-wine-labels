@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4964";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "鯊TRY?KAN\nAlcoholic Strength by Volume : 13.6 o/o\nAlcoholic Strength by Weight: 10.9\nBottled by J. FA IVELEY & Co\nof NUITS March 1926\n1923\nSole importers\nfor the United Sta\nLABOURDETTE\nBr Company,In\n350, Fifth Avenue\nNEwr YORK-PAE\nd!\n69\n13 10 26\n30\nPRODUCE OF FRANCE\nPRODUCE OF FRANCE\netE\nE 19\nTRADE\nMARK\nby by A M\nD CHAMBERTIN all\nth th FS\nttJU\nSS , N\nJ. FAIVELEY\nCly\nbf\nPROPRIETAIRE & NEGOCIANT A NUTS (COTE-DOR)\neUA\nCONTENTS: 1 PIN\nE636\n"@undefined;
-    gv:color [
-  gv:hex "efd9bc";
-  gv:red "239";
-  gv:blue "188";
-  gv:green "217";
-  gv:score "37.535369";
-  gv:coverage "33.686668"
-], [
-  gv:hex "ddc7aa";
-  gv:red "221";
-  gv:blue "170";
-  gv:green "199";
-  gv:score "35.938606";
-  gv:coverage "20.946666999999998"
-], [
-  gv:hex "784624";
-  gv:red "120";
-  gv:blue "36";
-  gv:green "70";
-  gv:score "0.34191667000000003";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "b39d7e";
-  gv:red "179";
-  gv:blue "126";
-  gv:green "157";
-  gv:score "15.590376000000001";
-  gv:coverage "6.38"
-], [
-  gv:hex "937c5b";
-  gv:red "147";
-  gv:blue "91";
-  gv:green "124";
-  gv:score "3.0190095";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "e9bc9c";
-  gv:red "233";
-  gv:blue "156";
-  gv:green "188";
-  gv:score "2.8668592";
-  gv:coverage "1.28"
-], [
-  gv:hex "c59777";
-  gv:red "197";
-  gv:blue "119";
-  gv:green "151";
-  gv:score "1.3605893";
-  gv:coverage "0.6"
-], [
-  gv:hex "fdd4b3";
-  gv:red "253";
-  gv:blue "179";
-  gv:green "212";
-  gv:score "1.3494007000000001";
-  gv:coverage "0.48"
-], [
-  gv:hex "c69470";
-  gv:red "198";
-  gv:blue "112";
-  gv:green "148";
-  gv:score "0.46373848";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "3a3026";
-  gv:red "58";
-  gv:blue "38";
-  gv:green "48";
-  gv:score "0.0039701543";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.342822000000005"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.344179999999994"
-];
-    w:bagOfWords "鯊TRY?KAN\nAlcoholic Strength by Volume : 13.6 o/o\nAlcoholic Strength by Weight: 10.9\nBottled by J. FA IVELEY & Co\nof NUITS March 1926\n1923\nSole importers\nfor the United Sta\nLABOURDETTE\nBr Company,In\n350, Fifth Avenue\nNEwr YORK-PAE\nd!\n69\n13 10 26\n30\nPRODUCE OF FRANCE\nPRODUCE OF FRANCE\netE\nE 19\nTRADE\nMARK\nby by A M\nD CHAMBERTIN all\nth th FS\nttJU\nSS , N\nJ. FAIVELEY\nCly\nbf\nPROPRIETAIRE & NEGOCIANT A NUTS (COTE-DOR)\neUA\nCONTENTS: 1 PIN\nE636\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4964";
+    <schema.keywords> "UC Reporters Notebook@en".
+

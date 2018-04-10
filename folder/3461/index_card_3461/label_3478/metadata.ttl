@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3478";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Cine\nYineb\nNET CONTENTS 3/4 QUART\nPRODUCED & BOTTLED BY F SALMINA & CO. ALcoHOL 12% BYvo\nBONDED WINERY No. 605\nST. HELENA, NAPA co CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "dac7b0";
-  gv:red "218";
-  gv:blue "176";
-  gv:green "199";
-  gv:score "34.006253";
-  gv:coverage "15.033332999999999"
-], [
-  gv:hex "ecdac6";
-  gv:red "236";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "27.401945";
-  gv:coverage "16.220000000000002"
-], [
-  gv:hex "ae9c84";
-  gv:red "174";
-  gv:blue "132";
-  gv:green "156";
-  gv:score "11.267719";
-  gv:coverage "2.9666666"
-], [
-  gv:hex "87755e";
-  gv:red "135";
-  gv:blue "94";
-  gv:green "117";
-  gv:score "7.9121627";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "62513c";
-  gv:red "98";
-  gv:blue "60";
-  gv:green "81";
-  gv:score "6.5534688999999995";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "42321e";
-  gv:red "66";
-  gv:blue "30";
-  gv:green "50";
-  gv:score "5.3577147";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "e8ded5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "3.3045609";
-  gv:coverage "59.106666"
-], [
-  gv:hex "271805";
-  gv:red "39";
-  gv:blue "5";
-  gv:green "24";
-  gv:score "1.6198555";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "b89e6f";
-  gv:red "184";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "1.0401295";
-  gv:coverage "0.24"
-], [
-  gv:hex "180800";
-  gv:red "24";
-  gv:blue "undefined";
-  gv:green "8";
-  gv:score "0.63527077";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.528187"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "60.499316"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Cine\nYineb\nNET CONTENTS 3/4 QUART\nPRODUCED & BOTTLED BY F SALMINA & CO. ALcoHOL 12% BYvo\nBONDED WINERY No. 605\nST. HELENA, NAPA co CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3478";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

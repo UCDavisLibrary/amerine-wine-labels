@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4268";
-    dct:type "image";
-    w:bagOfWords "HAR\nTRADE\nORT\nPRODUCE OF PORTUGAL\nDouro port\nonqueror\nCawny\nProduced. Bottled & Fhynfed\nChorley\nPRINTED IN ENGt AND\n25/32 QUART. ALCOHOL\n20.5\nBY VOLUME\n"@fra;
-    gv:color [
-  gv:hex "1d1715";
-  gv:red "29";
-  gv:blue "21";
-  gv:green "23";
-  gv:score "34.6571";
-  gv:coverage "17.173333"
-], [
-  gv:hex "7c4c39";
-  gv:red "124";
-  gv:blue "57";
-  gv:green "76";
-  gv:score "5.781167";
-  gv:coverage "0.44"
-], [
-  gv:hex "c8c1bb";
-  gv:red "200";
-  gv:blue "187";
-  gv:green "193";
-  gv:score "3.8531575";
-  gv:coverage "8.273333300000001"
-], [
-  gv:hex "342d2a";
-  gv:red "52";
-  gv:blue "42";
-  gv:green "45";
-  gv:score "8.3435215";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "58504d";
-  gv:red "88";
-  gv:blue "77";
-  gv:green "80";
-  gv:score "6.2886275000000005";
-  gv:coverage "2.7"
-], [
-  gv:hex "7c7571";
-  gv:red "124";
-  gv:blue "113";
-  gv:green "117";
-  gv:score "5.5218678";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "8d4538";
-  gv:red "141";
-  gv:blue "56";
-  gv:green "69";
-  gv:score "4.2082287";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "9c6653";
-  gv:red "156";
-  gv:blue "83";
-  gv:green "102";
-  gv:score "3.80937";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "a29a97";
-  gv:red "162";
-  gv:blue "151";
-  gv:green "154";
-  gv:score "3.5032909";
-  gv:coverage "1.7066667"
-], [
-  gv:hex "b26459";
-  gv:red "178";
-  gv:blue "89";
-  gv:green "100";
-  gv:score "3.4581956";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.38428"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "63.205968999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "51.723772000000004"
-];
-    w:bagOfWords "HAR\nTRADE\nORT\nPRODUCE OF PORTUGAL\nDouro port\nonqueror\nCawny\nProduced. Bottled & Fhynfed\nChorley\nPRINTED IN ENGt AND\n25/32 QUART. ALCOHOL\n20.5\nBY VOLUME\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4268";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

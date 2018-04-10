@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0330";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "California\nCLARET\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nFruit Industries, tad.\nB. W. No. 52, 14th DIST., CALIF.\nSAN FRANCISCO, CALIF.\nTAX PAID BY STAM PS AFFIXED TO CASE\n"@eng;
-    gv:color [
-  gv:hex "dac6a6";
-  gv:red "218";
-  gv:blue "166";
-  gv:green "198";
-  gv:score "25.408605";
-  gv:coverage "19.2"
-], [
-  gv:hex "a20b04";
-  gv:red "162";
-  gv:blue "4";
-  gv:green "11";
-  gv:score "17.499998";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "c79167";
-  gv:red "199";
-  gv:blue "103";
-  gv:green "145";
-  gv:score "2.9557279999999997";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "62543b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "0.65497123";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "b70506";
-  gv:red "183";
-  gv:blue "6";
-  gv:green "5";
-  gv:score "14.374764";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "9a2011";
-  gv:red "154";
-  gv:blue "17";
-  gv:green "32";
-  gv:score "6.5308742";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "dabc8c";
-  gv:red "218";
-  gv:blue "140";
-  gv:green "188";
-  gv:score "3.4283333";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "c44033";
-  gv:red "196";
-  gv:blue "51";
-  gv:green "64";
-  gv:score "2.9807011";
-  gv:coverage "0.2"
-], [
-  gv:hex "a86f47";
-  gv:red "168";
-  gv:blue "71";
-  gv:green "111";
-  gv:score "2.6844219999999996";
-  gv:coverage "1.58"
-], [
-  gv:hex "820a00";
-  gv:red "130";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "2.392981";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.35266399999999"
-];
-    w:bagOfWords "California\nCLARET\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nFruit Industries, tad.\nB. W. No. 52, 14th DIST., CALIF.\nSAN FRANCISCO, CALIF.\nTAX PAID BY STAM PS AFFIXED TO CASE\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0330";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

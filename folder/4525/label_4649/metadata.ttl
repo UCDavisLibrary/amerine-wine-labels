@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4649";
-    dct:type "image";
-    w:bagOfWords "FROM ESTATE OF HENRY HALL WARD\n23 BOND STREET, NEW YORK\nWHO DIES 1872\nMARCH & BENSON MADEIRA\nGROWTH 826\nMPORTED\n1832\nBOTTLED\n834\nEXAMINED AND REBOTTLED MARCH, 19O5\nC. A. VAN RENSSELAER & Co.\n"@spa;
-    gv:color [
-  gv:hex "b1977c";
-  gv:red "177";
-  gv:blue "124";
-  gv:green "151";
-  gv:score "49.550982999999995";
-  gv:coverage "18.533333"
-], [
-  gv:hex "8e765b";
-  gv:red "142";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "27.699810000000003";
-  gv:coverage "6.3466668"
-], [
-  gv:hex "6b543a";
-  gv:red "107";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "10.991316";
-  gv:coverage "2.52"
-], [
-  gv:hex "ceb59a";
-  gv:red "206";
-  gv:blue "154";
-  gv:green "181";
-  gv:score "10.135136";
-  gv:coverage "12.280000000000001"
-], [
-  gv:hex "503920";
-  gv:red "80";
-  gv:blue "32";
-  gv:green "57";
-  gv:score "0.79616569";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "624733";
-  gv:red "98";
-  gv:blue "51";
-  gv:green "71";
-  gv:score "0.36860432";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "23190f";
-  gv:red "35";
-  gv:blue "15";
-  gv:green "25";
-  gv:score "0.0022271794";
-  gv:coverage "0.02"
-], [
-  gv:hex "50351f";
-  gv:red "80";
-  gv:blue "31";
-  gv:green "53";
-  gv:score "0.21204073";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e8d6c1";
-  gv:red "232";
-  gv:blue "193";
-  gv:green "214";
-  gv:score "0.14603038999999998";
-  gv:coverage "5.74"
-], [
-  gv:hex "dad0c4";
-  gv:red "218";
-  gv:blue "196";
-  gv:green "208";
-  gv:score "0.036384584000000005";
-  gv:coverage "4.8933335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.98663499999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "66.591245"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.739000000000004"
-];
-    w:bagOfWords "FROM ESTATE OF HENRY HALL WARD\n23 BOND STREET, NEW YORK\nWHO DIES 1872\nMARCH & BENSON MADEIRA\nGROWTH 826\nMPORTED\n1832\nBOTTLED\n834\nEXAMINED AND REBOTTLED MARCH, 19O5\nC. A. VAN RENSSELAER & Co.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4649";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

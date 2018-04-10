@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1322";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "AZEITAO\nVINHO TINTO VIRGEM\nMARCA REGISTADA\nSETUBAL\nRTUGAL\n"@por;
-    gv:color [
-  gv:hex "0f0d0b";
-  gv:red "15";
-  gv:blue "11";
-  gv:green "13";
-  gv:score "23.788454";
-  gv:coverage "19.759999999999998"
-], [
-  gv:hex "dd281e";
-  gv:red "221";
-  gv:blue "30";
-  gv:green "40";
-  gv:score "23.525418000000002";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "611618";
-  gv:red "97";
-  gv:blue "24";
-  gv:green "22";
-  gv:score "5.4366093";
-  gv:coverage "0.76"
-], [
-  gv:hex "a32321";
-  gv:red "163";
-  gv:blue "33";
-  gv:green "35";
-  gv:score "5.3395286";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "dfc4a6";
-  gv:red "223";
-  gv:blue "166";
-  gv:green "196";
-  gv:score "1.2846665";
-  gv:coverage "9.7333334"
-], [
-  gv:hex "7b746c";
-  gv:red "123";
-  gv:blue "108";
-  gv:green "116";
-  gv:score "1.1671326";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "cd3c1f";
-  gv:red "205";
-  gv:blue "31";
-  gv:green "60";
-  gv:score "4.006901";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "26090e";
-  gv:red "38";
-  gv:blue "14";
-  gv:green "9";
-  gv:score "3.2257203";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "6f1a0d";
-  gv:red "111";
-  gv:blue "13";
-  gv:green "26";
-  gv:score "2.9312121";
-  gv:coverage "0.32"
-], [
-  gv:hex "34302c";
-  gv:red "52";
-  gv:blue "44";
-  gv:green "48";
-  gv:score "2.746452";
-  gv:coverage "2.4333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.796388"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "AZEITAO\nVINHO TINTO VIRGEM\nMARCA REGISTADA\nSETUBAL\nRTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1322";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2537";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "C H A B L I S\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "a49d98";
-  gv:red "164";
-  gv:blue "152";
-  gv:green "157";
-  gv:score "72.909325";
-  gv:coverage "13.013333"
-], [
-  gv:hex "bfb9b3";
-  gv:red "191";
-  gv:blue "179";
-  gv:green "185";
-  gv:score "21.552567";
-  gv:coverage "12.293334"
-], [
-  gv:hex "cec1ae";
-  gv:red "206";
-  gv:blue "174";
-  gv:green "193";
-  gv:score "3.3331769999999996";
-  gv:coverage "45.266667"
-], [
-  gv:hex "8d857e";
-  gv:red "141";
-  gv:blue "126";
-  gv:green "133";
-  gv:score "1.2476682";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "aa9e8d";
-  gv:red "170";
-  gv:blue "141";
-  gv:green "158";
-  gv:score "0.71046785";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "8e8274";
-  gv:red "142";
-  gv:blue "116";
-  gv:green "130";
-  gv:score "0.21041848000000002";
-  gv:coverage "0.06"
-], [
-  gv:hex "eadaca";
-  gv:red "234";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "0.015137676";
-  gv:coverage "22.073333"
-], [
-  gv:hex "dbd6d3";
-  gv:red "219";
-  gv:blue "211";
-  gv:green "214";
-  gv:score "0.014568126";
-  gv:coverage "6.686666600000001"
-], [
-  gv:hex "665541";
-  gv:red "102";
-  gv:blue "65";
-  gv:green "85";
-  gv:score "0.0066731263";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "422f1f";
-  gv:red "66";
-  gv:blue "31";
-  gv:green "47";
-  gv:score "2.6305449000000002e-9";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "62.440515"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.5793"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "55.218089000000006"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.678793"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.685537000000004"
-];
-    w:bagOfWords "C H A B L I S\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2537";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

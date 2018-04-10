@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0508";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Slieriteim am 2R6ein\neingeOstellereien\n1953 Johannisberger Erntebringer\nRiesling Spatlest\nLight White Rhine Wine\nProduce of Germany\nContents 1 pint 8 fl. ozs.\nAlcohol 10-13% by volume\nProduced and bottled by Georg u. Karl Ludwig Schmitt'sches Weingut\nNierstein am Rhein\nburg unD\neingufer in (1er fein.\n"@deu;
-    gv:color [
-  gv:hex "e1c38d";
-  gv:red "225";
-  gv:blue "141";
-  gv:green "195";
-  gv:score "34.128350000000005";
-  gv:coverage "15.866667000000001"
-], [
-  gv:hex "724d23";
-  gv:red "114";
-  gv:blue "35";
-  gv:green "77";
-  gv:score "2.9657951";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "b89b67";
-  gv:red "184";
-  gv:blue "103";
-  gv:green "155";
-  gv:score "13.085163";
-  gv:coverage "5.26"
-], [
-  gv:hex "917544";
-  gv:red "145";
-  gv:blue "68";
-  gv:green "117";
-  gv:score "6.421648";
-  gv:coverage "2.8666666"
-], [
-  gv:hex "8a7251";
-  gv:red "138";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "5.4603126";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "f4d7a2";
-  gv:red "244";
-  gv:blue "162";
-  gv:green "215";
-  gv:score "5.0488684";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "685232";
-  gv:red "104";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "4.589877700000001";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "c69866";
-  gv:red "198";
-  gv:blue "102";
-  gv:green "152";
-  gv:score "4.509551500000001";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "e7b782";
-  gv:red "231";
-  gv:blue "130";
-  gv:green "183";
-  gv:score "4.436278300000001";
-  gv:coverage "1.6"
-], [
-  gv:hex "d9c29d";
-  gv:red "217";
-  gv:blue "157";
-  gv:green "194";
-  gv:score "3.9796166";
-  gv:coverage "3.9066665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.088651"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.031681000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.391887999999994"
-];
-    w:bagOfWords "Slieriteim am 2R6ein\neingeOstellereien\n1953 Johannisberger Erntebringer\nRiesling Spatlest\nLight White Rhine Wine\nProduce of Germany\nContents 1 pint 8 fl. ozs.\nAlcohol 10-13% by volume\nProduced and bottled by Georg u. Karl Ludwig Schmitt'sches Weingut\nNierstein am Rhein\nburg unD\neingufer in (1er fein.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0508";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

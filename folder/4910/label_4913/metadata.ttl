@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4910/label_4913";
-    dct:type "image";
-    w:bagOfWords "Imported from RPG San Francisco\nohol by pol?\npint 8 NICHOLAS & CO. INC.\nIMPORTERS NEW YORK\nFRANCE\nNet Contents\nAlcohol by volume\n25/34 Quart\n10\nARs\nBottled\nAlcohol by proof\nVE RD LE\nDecember 1931\n20\nImporter CITY OF PARIS IRRY EOODS C\nCal. PermitNumber A. B\n517\nPRODUCE OF FRANCE\nRed Bordeaux Still VV ine\nimported by VER DIER CELLARS\nSAN FRANCISCO\nALCOHOL BY VOLUME 1105 CONTENTS\nA OUART\nare -Francisco\ntere\nDipt 8 fl. Re 13\n"@undefined;
-    gv:color [
-  gv:hex "d0c0ae";
-  gv:red "208";
-  gv:blue "174";
-  gv:green "192";
-  gv:score "30.636552000000002";
-  gv:coverage "15.013333000000001"
-], [
-  gv:hex "af9f8c";
-  gv:red "175";
-  gv:blue "140";
-  gv:green "159";
-  gv:score "18.878754999999998";
-  gv:coverage "3.4066666000000003"
-], [
-  gv:hex "d0c4b9";
-  gv:red "208";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "15.553844";
-  gv:coverage "14.326666"
-], [
-  gv:hex "a69b91";
-  gv:red "166";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "14.614030999999999";
-  gv:coverage "1.6"
-], [
-  gv:hex "84796f";
-  gv:red "132";
-  gv:blue "111";
-  gv:green "121";
-  gv:score "9.662329999999999";
-  gv:coverage "0.84"
-], [
-  gv:hex "8d7e6e";
-  gv:red "141";
-  gv:blue "110";
-  gv:green "126";
-  gv:score "3.9853971";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "e7d8c6";
-  gv:red "231";
-  gv:blue "198";
-  gv:green "216";
-  gv:score "2.8729022";
-  gv:coverage "5.3733334"
-], [
-  gv:hex "e4d9ce";
-  gv:red "228";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "2.1674281";
-  gv:coverage "58.9"
-], [
-  gv:hex "60564c";
-  gv:red "96";
-  gv:blue "76";
-  gv:green "86";
-  gv:score "1.3507809000000002";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "69594b";
-  gv:red "105";
-  gv:blue "75";
-  gv:green "89";
-  gv:score "0.16353996";
-  gv:coverage "0.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.253347"
-], [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "70.649844"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.201819"
-];
-    w:bagOfWords "Imported from RPG San Francisco\nohol by pol?\npint 8 NICHOLAS & CO. INC.\nIMPORTERS NEW YORK\nFRANCE\nNet Contents\nAlcohol by volume\n25/34 Quart\n10\nARs\nBottled\nAlcohol by proof\nVE RD LE\nDecember 1931\n20\nImporter CITY OF PARIS IRRY EOODS C\nCal. PermitNumber A. B\n517\nPRODUCE OF FRANCE\nRed Bordeaux Still VV ine\nimported by VER DIER CELLARS\nSAN FRANCISCO\nALCOHOL BY VOLUME 1105 CONTENTS\nA OUART\nare -Francisco\ntere\nDipt 8 fl. Re 13\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4913";
+    <schema.keywords> "Misc Neck Labels Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

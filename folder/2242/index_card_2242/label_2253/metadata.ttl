@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2253";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LA TOUR\n1917\nMARQUE\nPOS EE\nMIS EN BOUT EILLES\nAU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "c2945c";
-  gv:red "194";
-  gv:blue "92";
-  gv:green "148";
-  gv:score "25.020593";
-  gv:coverage "5.3266667"
-], [
-  gv:hex "d7bb9b";
-  gv:red "215";
-  gv:blue "155";
-  gv:green "187";
-  gv:score "14.901455";
-  gv:coverage "20.866667"
-], [
-  gv:hex "c09b66";
-  gv:red "192";
-  gv:blue "102";
-  gv:green "155";
-  gv:score "13.620420999999999";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "d8b380";
-  gv:red "216";
-  gv:blue "128";
-  gv:green "179";
-  gv:score "10.111853";
-  gv:coverage "2.8133333"
-], [
-  gv:hex "c08a43";
-  gv:red "192";
-  gv:blue "67";
-  gv:green "138";
-  gv:score "7.6300249";
-  gv:coverage "0.96"
-], [
-  gv:hex "a17541";
-  gv:red "161";
-  gv:blue "65";
-  gv:green "117";
-  gv:score "5.8696415";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "b99b7a";
-  gv:red "185";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "5.808856";
-  gv:coverage "2.9133333"
-], [
-  gv:hex "dcaf7b";
-  gv:red "220";
-  gv:blue "123";
-  gv:green "175";
-  gv:score "5.4918952";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "ae762d";
-  gv:red "174";
-  gv:blue "45";
-  gv:green "118";
-  gv:score "4.1130349";
-  gv:coverage "0.48"
-], [
-  gv:hex "937756";
-  gv:red "147";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "1.6186565";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.215474"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "56.6443"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.348489"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "50.997543"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.993347"
-];
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LA TOUR\n1917\nMARQUE\nPOS EE\nMIS EN BOUT EILLES\nAU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2253";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1454";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "CHARLES FOURNIER\nBRUT\nPRIVATE CUVEE''\nNEW YORK STATE CHAMPAGNE\nPRODUCED AND BOTTLED BY. RAINA PROWBATLY, INC, URBANA, HAMMONDSPORT, N. Y.\nCONTENTS\nALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "dfc491";
-  gv:red "223";
-  gv:blue "145";
-  gv:green "196";
-  gv:score "58.552426000000004";
-  gv:coverage "18.226667"
-], [
-  gv:hex "283510";
-  gv:red "40";
-  gv:blue "16";
-  gv:green "53";
-  gv:score "1.0197098";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "6c4832";
-  gv:red "108";
-  gv:blue "50";
-  gv:green "72";
-  gv:score "0.63456227";
-  gv:coverage "0.16"
-], [
-  gv:hex "b69d6a";
-  gv:red "182";
-  gv:blue "106";
-  gv:green "157";
-  gv:score "17.187117";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "8a7545";
-  gv:red "138";
-  gv:blue "69";
-  gv:green "117";
-  gv:score "5.7804473000000005";
-  gv:coverage "1.04"
-], [
-  gv:hex "d9c59b";
-  gv:red "217";
-  gv:blue "155";
-  gv:green "197";
-  gv:score "5.0108060000000005";
-  gv:coverage "3.3933334000000004"
-], [
-  gv:hex "675627";
-  gv:red "103";
-  gv:blue "39";
-  gv:green "86";
-  gv:score "3.440287";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "f0d7a5";
-  gv:red "240";
-  gv:blue "165";
-  gv:green "215";
-  gv:score "1.8820215";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "e8ddba";
-  gv:red "232";
-  gv:blue "186";
-  gv:green "221";
-  gv:score "1.1447387999999998";
-  gv:coverage "4.4333335"
-], [
-  gv:hex "423b0e";
-  gv:red "66";
-  gv:blue "14";
-  gv:green "59";
-  gv:score "0.8215520000000001";
-  gv:coverage "0.43333330999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.927762"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.256513999999996"
-];
-    w:bagOfWords "CHARLES FOURNIER\nBRUT\nPRIVATE CUVEE''\nNEW YORK STATE CHAMPAGNE\nPRODUCED AND BOTTLED BY. RAINA PROWBATLY, INC, URBANA, HAMMONDSPORT, N. Y.\nCONTENTS\nALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1454";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

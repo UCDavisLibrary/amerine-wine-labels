@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0520";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1920\nSchloss Johannisengst\nOriginal Abildung den\nuirstlich von Melternichschen\nDomane\nDer Furstliche Domane-Rentmeister:\nFurs\non Metternich\nhuro\nWinne\nhe in\n"@deu;
-    gv:color [
-  gv:hex "b9947f";
-  gv:red "185";
-  gv:blue "127";
-  gv:green "148";
-  gv:score "19.882058";
-  gv:coverage "7.6"
-], [
-  gv:hex "8d3721";
-  gv:red "141";
-  gv:blue "33";
-  gv:green "55";
-  gv:score "4.3767426";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "96705c";
-  gv:red "150";
-  gv:blue "92";
-  gv:green "112";
-  gv:score "14.101395";
-  gv:coverage "4.4066668"
-], [
-  gv:hex "b39982";
-  gv:red "179";
-  gv:blue "130";
-  gv:green "153";
-  gv:score "11.380253";
-  gv:coverage "5.5133332"
-], [
-  gv:hex "764c3a";
-  gv:red "118";
-  gv:blue "58";
-  gv:green "76";
-  gv:score "8.863499";
-  gv:coverage "2.0933334"
-], [
-  gv:hex "8c745b";
-  gv:red "140";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "6.3320316000000005";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "d1baa1";
-  gv:red "209";
-  gv:blue "161";
-  gv:green "186";
-  gv:score "4.8456673";
-  gv:coverage "8.86"
-], [
-  gv:hex "d8af98";
-  gv:red "216";
-  gv:blue "152";
-  gv:green "175";
-  gv:score "4.2085029";
-  gv:coverage "2.26"
-], [
-  gv:hex "542d1b";
-  gv:red "84";
-  gv:blue "27";
-  gv:green "45";
-  gv:score "3.7091068999999997";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "af975f";
-  gv:red "175";
-  gv:blue "95";
-  gv:green "151";
-  gv:score "3.0230757";
-  gv:coverage "1.0066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.823738"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.787003"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.40923"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.969044999999994"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.794200000000004"
-];
-    w:bagOfWords "1920\nSchloss Johannisengst\nOriginal Abildung den\nuirstlich von Melternichschen\nDomane\nDer Furstliche Domane-Rentmeister:\nFurs\non Metternich\nhuro\nWinne\nhe in\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0520";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

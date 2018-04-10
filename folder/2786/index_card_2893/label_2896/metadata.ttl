@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2896";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "Vin d'Alsace\nZOTZED BERG\nE.BOECKEL,néGT SY2IZZELBERGhEIS2 (ALSACE)\n-A\n"@fra;
-    gv:color [
-  gv:hex "e2ac59";
-  gv:red "226";
-  gv:blue "89";
-  gv:green "172";
-  gv:score "17.034441";
-  gv:coverage "4.3866667999999995"
-], [
-  gv:hex "b99a5e";
-  gv:red "185";
-  gv:blue "94";
-  gv:green "154";
-  gv:score "9.87811";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "714b18";
-  gv:red "113";
-  gv:blue "24";
-  gv:green "75";
-  gv:score "4.5614623";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "d19848";
-  gv:red "209";
-  gv:blue "72";
-  gv:green "152";
-  gv:score "13.808671";
-  gv:coverage "3.0466666"
-], [
-  gv:hex "ddb05c";
-  gv:red "221";
-  gv:blue "92";
-  gv:green "176";
-  gv:score "9.224911800000001";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "c79f4c";
-  gv:red "199";
-  gv:blue "76";
-  gv:green "159";
-  gv:score "5.5067208";
-  gv:coverage "1.28"
-], [
-  gv:hex "91753d";
-  gv:red "145";
-  gv:blue "61";
-  gv:green "117";
-  gv:score "5.0764151";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "d8b274";
-  gv:red "216";
-  gv:blue "116";
-  gv:green "178";
-  gv:score "4.4307698";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "6a501b";
-  gv:red "106";
-  gv:blue "27";
-  gv:green "80";
-  gv:score "4.296660800000001";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "a26c25";
-  gv:red "162";
-  gv:blue "37";
-  gv:green "108";
-  gv:score "4.0821996";
-  gv:coverage "1.2466666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.912629"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.843889"
-];
-    w:bagOfWords "Vin d'Alsace\nZOTZED BERG\nE.BOECKEL,néGT SY2IZZELBERGhEIS2 (ALSACE)\n-A\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2896";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

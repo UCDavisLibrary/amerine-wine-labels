@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4805";
-    dct:type "image";
-    w:bagOfWords "VIN DE BOURGOGNE PRODUCE OF FRN\nPOMMARD EPENOTS\n1959\nESTATE\nBOTTLED\nMise en Bouteilles au Domaine\nA. LOUBET, Pro\nChateau\ndes Citeaux\nMEURSAULT\nAPPELLATION DORIGINE CONTROLEE\n"@eng;
-    gv:color [
-  gv:hex "d2c3ac";
-  gv:red "210";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "46.291491";
-  gv:coverage "9.46"
-], [
-  gv:hex "ab9d85";
-  gv:red "171";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "20.563442000000002";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "eadcc4";
-  gv:red "234";
-  gv:blue "196";
-  gv:green "220";
-  gv:score "14.397757";
-  gv:coverage "11.219999999999999"
-], [
-  gv:hex "85765f";
-  gv:red "133";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "11.378005";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "655840";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "88";
-  gv:score "7.115349999999999";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "1f1509";
-  gv:red "31";
-  gv:blue "9";
-  gv:green "21";
-  gv:score "0.0023944445";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "3a2c19";
-  gv:red "58";
-  gv:blue "25";
-  gv:green "44";
-  gv:score "0.14356645999999998";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "e4dad0";
-  gv:red "228";
-  gv:blue "208";
-  gv:green "218";
-  gv:score "0.036540319";
-  gv:coverage "69.973332"
-], [
-  gv:hex "d4c9bf";
-  gv:red "212";
-  gv:blue "191";
-  gv:green "201";
-  gv:score "0.033426128";
-  gv:coverage "4.733333399999999"
-], [
-  gv:hex "857b70";
-  gv:red "133";
-  gv:blue "112";
-  gv:green "123";
-  gv:score "0.027170820999999998";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.74578699999999"
-];
-    w:bagOfWords "VIN DE BOURGOGNE PRODUCE OF FRN\nPOMMARD EPENOTS\n1959\nESTATE\nBOTTLED\nMise en Bouteilles au Domaine\nA. LOUBET, Pro\nChateau\ndes Citeaux\nMEURSAULT\nAPPELLATION DORIGINE CONTROLEE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4805";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1949/label_1961";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "JEREZ PALIDO\nf DE\nTAOLAURRUCHI\nSAN LUCARDE BARRAMEDA\n23\nLIT MIGUEL SAaDA JEREZ\n"@spa;
-    gv:color [
-  gv:hex "d7bfa2";
-  gv:red "215";
-  gv:blue "162";
-  gv:green "191";
-  gv:score "23.611403";
-  gv:coverage "46.96"
-], [
-  gv:hex "8d7356";
-  gv:red "141";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "18.407464";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "7d4920";
-  gv:red "125";
-  gv:blue "32";
-  gv:green "73";
-  gv:score "2.3546016";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "6b220d";
-  gv:red "107";
-  gv:blue "13";
-  gv:green "34";
-  gv:score "1.4449937";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "b2987b";
-  gv:red "178";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "14.822304";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "6f5639";
-  gv:red "111";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "9.0891734";
-  gv:coverage "0.86"
-], [
-  gv:hex "ba9d5e";
-  gv:red "186";
-  gv:blue "94";
-  gv:green "157";
-  gv:score "4.927846000000001";
-  gv:coverage "0.26"
-], [
-  gv:hex "d5b87c";
-  gv:red "213";
-  gv:blue "124";
-  gv:green "184";
-  gv:score "4.6157822";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "9c6a3c";
-  gv:red "156";
-  gv:blue "60";
-  gv:green "106";
-  gv:score "2.1026749000000002";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "d4c3bc";
-  gv:red "212";
-  gv:blue "188";
-  gv:green "195";
-  gv:score "1.9970240000000001";
-  gv:coverage "2.46"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.772355"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "JEREZ PALIDO\nf DE\nTAOLAURRUCHI\nSAN LUCARDE BARRAMEDA\n23\nLIT MIGUEL SAaDA JEREZ\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1961";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

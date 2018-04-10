@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2529";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CHABLIS 1ER CRU\nPRODUCE OF FRANCE\nImported by\nCLEVELAND Wine Company LTD\n72, St Jame's Street\nLONDON S.W\nA. R. CHOPPIN Négociant BEAUNE (Cote-d'Or\n"@fra;
-    gv:color [
-  gv:hex "c28c44";
-  gv:red "194";
-  gv:blue "68";
-  gv:green "140";
-  gv:score "52.00574999999999";
-  gv:coverage "14.433333000000001"
-], [
-  gv:hex "be8c4f";
-  gv:red "190";
-  gv:blue "79";
-  gv:green "140";
-  gv:score "18.083858";
-  gv:coverage "6.1866667"
-], [
-  gv:hex "a27238";
-  gv:red "162";
-  gv:blue "56";
-  gv:green "114";
-  gv:score "11.298584";
-  gv:coverage "3.2"
-], [
-  gv:hex "a9732e";
-  gv:red "169";
-  gv:blue "46";
-  gv:green "115";
-  gv:score "8.7361336";
-  gv:coverage "2.08"
-], [
-  gv:hex "794b14";
-  gv:red "121";
-  gv:blue "20";
-  gv:green "75";
-  gv:score "3.5932619";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "592f03";
-  gv:red "89";
-  gv:blue "3";
-  gv:green "47";
-  gv:score "1.7490100000000002";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "b79257";
-  gv:red "183";
-  gv:blue "87";
-  gv:green "146";
-  gv:score "1.2307632000000002";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "834f0c";
-  gv:red "131";
-  gv:blue "12";
-  gv:green "79";
-  gv:score "0.68875318";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "ba9248";
-  gv:red "186";
-  gv:blue "72";
-  gv:green "146";
-  gv:score "0.38927635000000005";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "451e03";
-  gv:red "69";
-  gv:blue "3";
-  gv:green "30";
-  gv:score "0.35429727";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.839597"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.079840999999995"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.657208999999995"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.0365"
-];
-    w:bagOfWords "CHABLIS 1ER CRU\nPRODUCE OF FRANCE\nImported by\nCLEVELAND Wine Company LTD\n72, St Jame's Street\nLONDON S.W\nA. R. CHOPPIN Négociant BEAUNE (Cote-d'Or\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2529";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

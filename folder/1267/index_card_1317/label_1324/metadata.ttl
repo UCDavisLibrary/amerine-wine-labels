@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1324";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "TINTO\nBORLIDO\nELHOR\nDE M\nAUGUSTO BORLIDO SANGALHos\nPORTUGAL)\n"@por;
-    gv:color [
-  gv:hex "bf0707";
-  gv:red "191";
-  gv:blue "7";
-  gv:green "7";
-  gv:score "21.725267000000002";
-  gv:coverage "4.306666600000001"
-], [
-  gv:hex "0f0908";
-  gv:red "15";
-  gv:blue "8";
-  gv:green "9";
-  gv:score "12.780971999999998";
-  gv:coverage "9.2466667"
-], [
-  gv:hex "af955d";
-  gv:red "175";
-  gv:blue "93";
-  gv:green "149";
-  gv:score "3.8704902";
-  gv:coverage "3.3333334999999997"
-], [
-  gv:hex "5e0b0f";
-  gv:red "94";
-  gv:blue "15";
-  gv:green "11";
-  gv:score "1.3556356";
-  gv:coverage "0.24"
-], [
-  gv:hex "d61717";
-  gv:red "214";
-  gv:blue "23";
-  gv:green "23";
-  gv:score "10.958026";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "aa1208";
-  gv:red "170";
-  gv:blue "8";
-  gv:green "18";
-  gv:score "5.4286882";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "8c7645";
-  gv:red "140";
-  gv:blue "69";
-  gv:green "118";
-  gv:score "3.8515117";
-  gv:coverage "2.62"
-], [
-  gv:hex "a61c1d";
-  gv:red "166";
-  gv:blue "29";
-  gv:green "28";
-  gv:score "3.6419921";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "857153";
-  gv:red "133";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "3.1948488";
-  gv:coverage "2.1733332"
-], [
-  gv:hex "24080e";
-  gv:red "36";
-  gv:blue "14";
-  gv:green "8";
-  gv:score "2.3761198";
-  gv:coverage "0.9266667100000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.755004"
-];
-    w:bagOfWords "TINTO\nBORLIDO\nELHOR\nDE M\nAUGUSTO BORLIDO SANGALHos\nPORTUGAL)\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1324";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

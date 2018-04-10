@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0154";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "YALPOLICELLA\nCandemant\nNEGRAR (VERONA)\n"@ita;
-    gv:color [
-  gv:hex "d6c0a5";
-  gv:red "214";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "22.230567";
-  gv:coverage "12.666667"
-], [
-  gv:hex "a16a42";
-  gv:red "161";
-  gv:blue "66";
-  gv:green "106";
-  gv:score "3.9406694";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "cf4e2b";
-  gv:red "207";
-  gv:blue "43";
-  gv:green "78";
-  gv:score "0.61002797";
-  gv:coverage "0.04"
-], [
-  gv:hex "af997f";
-  gv:red "175";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "17.415255";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "8a755c";
-  gv:red "138";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "11.551924";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "67523a";
-  gv:red "103";
-  gv:blue "58";
-  gv:green "82";
-  gv:score "8.1835061";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "ae9665";
-  gv:red "174";
-  gv:blue "101";
-  gv:green "150";
-  gv:score "5.3679869";
-  gv:coverage "1.34"
-], [
-  gv:hex "d9be8e";
-  gv:red "217";
-  gv:blue "142";
-  gv:green "190";
-  gv:score "3.4955725";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "937b4c";
-  gv:red "147";
-  gv:blue "76";
-  gv:green "123";
-  gv:score "3.3617869000000002";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "844e29";
-  gv:red "132";
-  gv:blue "41";
-  gv:green "78";
-  gv:score "2.4534341";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.59927499999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "YALPOLICELLA\nCandemant\nNEGRAR (VERONA)\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0154";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

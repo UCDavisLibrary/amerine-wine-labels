@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4627";
-    dct:type "image";
-    w:bagOfWords "H.HIDALGOYce\n3ANLUCA1g I\nJEREZ SOLERA\n(ESPANA) N020\n"@spa;
-    gv:color [
-  gv:hex "a69c93";
-  gv:red "166";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "37.501398";
-  gv:coverage "4.1133333"
-], [
-  gv:hex "ccc3b9";
-  gv:red "204";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "32.236877";
-  gv:coverage "22.473334"
-], [
-  gv:hex "80776e";
-  gv:red "128";
-  gv:blue "110";
-  gv:green "119";
-  gv:score "14.741050999999999";
-  gv:coverage "1.32"
-], [
-  gv:hex "e4dad1";
-  gv:red "228";
-  gv:blue "209";
-  gv:green "218";
-  gv:score "10.632555";
-  gv:coverage "64.2"
-], [
-  gv:hex "cec4b5";
-  gv:red "206";
-  gv:blue "181";
-  gv:green "196";
-  gv:score "3.4815263";
-  gv:coverage "5.6666669"
-], [
-  gv:hex "3c3327";
-  gv:red "60";
-  gv:blue "39";
-  gv:green "51";
-  gv:score "0.018536598";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e8daca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "0.69021718";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "696057";
-  gv:red "105";
-  gv:blue "87";
-  gv:green "96";
-  gv:score "0.57929265";
-  gv:coverage "0.1"
-], [
-  gv:hex "b0a295";
-  gv:red "176";
-  gv:blue "149";
-  gv:green "162";
-  gv:score "0.11348663";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "433b30";
-  gv:red "67";
-  gv:blue "48";
-  gv:green "59";
-  gv:score "0.0050600436";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.3484"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.59131000000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.480495999999995"
-];
-    w:bagOfWords "H.HIDALGOYce\n3ANLUCA1g I\nJEREZ SOLERA\n(ESPANA) N020\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4627";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

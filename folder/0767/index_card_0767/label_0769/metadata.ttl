@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0767/label_0769";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "1949\nrbo15 D wpullun\nAPPELLATION ARBOIS CONTROLEE\nOttis (Cartier\nnégociant poligny et Hrbois (Jura)\n"@fra;
-    gv:color [
-  gv:hex "dac8ab";
-  gv:red "218";
-  gv:blue "171";
-  gv:green "200";
-  gv:score "47.82626";
-  gv:coverage "19.673334"
-], [
-  gv:hex "ba403f";
-  gv:red "186";
-  gv:blue "63";
-  gv:green "64";
-  gv:score "0.40443931";
-  gv:coverage "0.04"
-], [
-  gv:hex "eadabf";
-  gv:red "234";
-  gv:blue "191";
-  gv:green "218";
-  gv:score "8.7784737";
-  gv:coverage "8.02"
-], [
-  gv:hex "b29c80";
-  gv:red "178";
-  gv:blue "128";
-  gv:green "156";
-  gv:score "5.5976074";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "8a7256";
-  gv:red "138";
-  gv:blue "86";
-  gv:green "114";
-  gv:score "4.4659965";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "685034";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "80";
-  gv:score "4.3497112";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "6f4832";
-  gv:red "111";
-  gv:blue "50";
-  gv:green "72";
-  gv:score "4.1679431000000005";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "502b15";
-  gv:red "80";
-  gv:blue "21";
-  gv:green "43";
-  gv:score "3.3752017000000003";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "873932";
-  gv:red "135";
-  gv:blue "50";
-  gv:green "57";
-  gv:score "3.0974081";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "601b12";
-  gv:red "96";
-  gv:blue "18";
-  gv:green "27";
-  gv:score "2.7140515";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.386213"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/080hkjn>;
-  gv:desc "handbag";
-  gv:score "53.080451"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.727259000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.193566000000004"
-];
-    w:bagOfWords "1949\nrbo15 D wpullun\nAPPELLATION ARBOIS CONTROLEE\nOttis (Cartier\nnégociant poligny et Hrbois (Jura)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0769";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

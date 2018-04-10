@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1502";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "82\nMAN ANILLA\nFIN A\nPAS A D A\nANTONIO BARBADILLO, S. L.\nSonlu car de Barrameda\n(ANDA LUCIA)\n"@spa;
-    gv:color [
-  gv:hex "c2cbcc";
-  gv:red "194";
-  gv:blue "204";
-  gv:green "203";
-  gv:score "16.580373";
-  gv:coverage "13.593334000000002"
-], [
-  gv:hex "06174d";
-  gv:red "6";
-  gv:blue "77";
-  gv:green "23";
-  gv:score "12.530296";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "ce4b19";
-  gv:red "206";
-  gv:blue "25";
-  gv:green "75";
-  gv:score "5.7110008";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "f43b02";
-  gv:red "244";
-  gv:blue "2";
-  gv:green "59";
-  gv:score "5.0973933";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b35b3a";
-  gv:red "179";
-  gv:blue "58";
-  gv:green "91";
-  gv:score "1.8369620999999998";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "a99e7c";
-  gv:red "169";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "1.5465090000000001";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "203350";
-  gv:red "32";
-  gv:blue "80";
-  gv:green "51";
-  gv:score "1.4121884";
-  gv:coverage "0.26"
-], [
-  gv:hex "d08c65";
-  gv:red "208";
-  gv:blue "101";
-  gv:green "140";
-  gv:score "0.8955502900000001";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "03115e";
-  gv:red "3";
-  gv:blue "94";
-  gv:green "17";
-  gv:score "0.749344";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "776398";
-  gv:red "119";
-  gv:blue "152";
-  gv:green "99";
-  gv:score "0.14823661";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.306741"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "56.118612999999996"
-];
-    w:bagOfWords "82\nMAN ANILLA\nFIN A\nPAS A D A\nANTONIO BARBADILLO, S. L.\nSonlu car de Barrameda\n(ANDA LUCIA)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1502";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

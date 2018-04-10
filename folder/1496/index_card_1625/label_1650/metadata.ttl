@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1650";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MARCA DE\nLA CASA\nANLUCAR DE B\nn o 23\nARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "d3c6ba";
-  gv:red "211";
-  gv:blue "186";
-  gv:green "198";
-  gv:score "39.984667";
-  gv:coverage "15.473333"
-], [
-  gv:hex "1b1007";
-  gv:red "27";
-  gv:blue "7";
-  gv:green "16";
-  gv:score "3.0476842";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "3c2f22";
-  gv:red "60";
-  gv:blue "34";
-  gv:green "47";
-  gv:score "2.4331547";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "e7dbd0";
-  gv:red "231";
-  gv:blue "208";
-  gv:green "219";
-  gv:score "17.254296";
-  gv:coverage "23.193334"
-], [
-  gv:hex "d1c4b5";
-  gv:red "209";
-  gv:blue "181";
-  gv:green "196";
-  gv:score "8.4460557";
-  gv:coverage "19.613333"
-], [
-  gv:hex "a99b8e";
-  gv:red "169";
-  gv:blue "142";
-  gv:green "155";
-  gv:score "8.3280638";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "ab9f94";
-  gv:red "171";
-  gv:blue "148";
-  gv:green "159";
-  gv:score "7.322461199999999";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "887a6d";
-  gv:red "136";
-  gv:blue "109";
-  gv:green "122";
-  gv:score "4.5541231";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "85786e";
-  gv:red "133";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "2.5659248";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "605246";
-  gv:red "96";
-  gv:blue "70";
-  gv:green "82";
-  gv:score "2.2176502";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.569007"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.277626"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.256764"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.63815699999999"
-];
-    w:bagOfWords "MARCA DE\nLA CASA\nANLUCAR DE B\nn o 23\nARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1650";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

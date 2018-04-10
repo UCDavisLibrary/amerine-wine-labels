@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3844";
-    dct:type "image";
-    w:bagOfWords "MOSEL SAAR RUWER\n1953 er\nlinge\nWachstum von Apollinar Joseph Koch\nOriginal-Kellerabzug.\nN.D.COAT,\n"@deu;
-    gv:color [
-  gv:hex "897454";
-  gv:red "137";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "14.815956";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "ad997d";
-  gv:red "173";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "14.552957";
-  gv:coverage "3.1133333"
-], [
-  gv:hex "d3c0a6";
-  gv:red "211";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "11.67191";
-  gv:coverage "9.6666664"
-], [
-  gv:hex "8c7646";
-  gv:red "140";
-  gv:blue "70";
-  gv:green "118";
-  gv:score "7.1702361";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "eeddc4";
-  gv:red "238";
-  gv:blue "196";
-  gv:green "221";
-  gv:score "6.5980241";
-  gv:coverage "11.846667"
-], [
-  gv:hex "6c583a";
-  gv:red "108";
-  gv:blue "58";
-  gv:green "88";
-  gv:score "6.08164";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "b09963";
-  gv:red "176";
-  gv:blue "99";
-  gv:green "153";
-  gv:score "4.975551";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "ebdfd6";
-  gv:red "235";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "4.401315";
-  gv:coverage "52.959999999999994"
-], [
-  gv:hex "e1b6a2";
-  gv:red "225";
-  gv:blue "162";
-  gv:green "182";
-  gv:score "3.70127";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "cdc2ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "194";
-  gv:score "3.6573957999999998";
-  gv:coverage "10.946665999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.20636400000001"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.5333"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "62.432951"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.877293"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.213218000000005"
-];
-    w:bagOfWords "MOSEL SAAR RUWER\n1953 er\nlinge\nWachstum von Apollinar Joseph Koch\nOriginal-Kellerabzug.\nN.D.COAT,\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3844";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

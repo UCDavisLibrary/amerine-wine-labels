@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2400";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CAS\nLEONETA\nA ISOLA\nChateau Larose Blanche\nGRA D VI r2.\nSaint-Laurent-du-Médoc\nAPPELLATION BORDEAUX CONTROLEE\nP. D u bern.\nRécolte 1937\nPropriétaire\n"@fra;
-    gv:color [
-  gv:hex "d2bda5";
-  gv:red "210";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "37.467545";
-  gv:coverage "55.806667"
-], [
-  gv:hex "b09b83";
-  gv:red "176";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "35.335505";
-  gv:coverage "4.1266665"
-], [
-  gv:hex "8b7861";
-  gv:red "139";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "11.874522";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "ba927c";
-  gv:red "186";
-  gv:blue "124";
-  gv:green "146";
-  gv:score "3.9697733";
-  gv:coverage "0.52"
-], [
-  gv:hex "a17260";
-  gv:red "161";
-  gv:blue "96";
-  gv:green "114";
-  gv:score "3.3437375";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "b89268";
-  gv:red "184";
-  gv:blue "104";
-  gv:green "146";
-  gv:score "1.7195068";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ba996e";
-  gv:red "186";
-  gv:blue "110";
-  gv:green "153";
-  gv:score "1.6186059";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "d9b39a";
-  gv:red "217";
-  gv:blue "154";
-  gv:green "179";
-  gv:score "1.4392285";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "eed8bf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "1.2498712";
-  gv:coverage "27.593332999999998"
-], [
-  gv:hex "dbb98c";
-  gv:red "219";
-  gv:blue "140";
-  gv:green "185";
-  gv:score "0.91506494";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.254922"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.856100000000005"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.725061000000004"
-];
-    w:bagOfWords "CAS\nLEONETA\nA ISOLA\nChateau Larose Blanche\nGRA D VI r2.\nSaint-Laurent-du-Médoc\nAPPELLATION BORDEAUX CONTROLEE\nP. D u bern.\nRécolte 1937\nPropriétaire\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2400";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

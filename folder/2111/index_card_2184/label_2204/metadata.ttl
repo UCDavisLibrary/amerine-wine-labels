@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2204";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "SEVEN STAR\nDUMAS\nangelina Mine\nALCOHOL 20% BY VOLUME\nPRODUCED AND BOTTLED BY\nPACIFIC WINES, INC\nBONDED WINERY No, 1318 14th DIST\nLOS ANGELES, CALIFORNIA\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    gv:color [
-  gv:hex "ddc2a1";
-  gv:red "221";
-  gv:blue "161";
-  gv:green "194";
-  gv:score "31.388178";
-  gv:coverage "12.066667"
-], [
-  gv:hex "96150c";
-  gv:red "150";
-  gv:blue "12";
-  gv:green "21";
-  gv:score "5.8583196";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "b25b40";
-  gv:red "178";
-  gv:blue "64";
-  gv:green "91";
-  gv:score "2.6571175";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "270202";
-  gv:red "39";
-  gv:blue "2";
-  gv:green "2";
-  gv:score "0.28559424";
-  gv:coverage "1.38"
-], [
-  gv:hex "b49a78";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "10.405607999999999";
-  gv:coverage "3.44"
-], [
-  gv:hex "f0d8b9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "216";
-  gv:score "5.9290532";
-  gv:coverage "11.700000000000001"
-], [
-  gv:hex "9e0504";
-  gv:red "158";
-  gv:blue "4";
-  gv:green "5";
-  gv:score "5.6392796";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "ecb89b";
-  gv:red "236";
-  gv:blue "155";
-  gv:green "184";
-  gv:score "4.5654561000000005";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "8f7656";
-  gv:red "143";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "3.6445193000000002";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "ba9a66";
-  gv:red "186";
-  gv:blue "102";
-  gv:green "154";
-  gv:score "3.420724";
-  gv:coverage "1.1400000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.56653800000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.12612299999999"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.687225"
-];
-    w:bagOfWords "SEVEN STAR\nDUMAS\nangelina Mine\nALCOHOL 20% BY VOLUME\nPRODUCED AND BOTTLED BY\nPACIFIC WINES, INC\nBONDED WINERY No, 1318 14th DIST\nLOS ANGELES, CALIFORNIA\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2204";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

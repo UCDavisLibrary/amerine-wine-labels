@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2291";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "DES VINS\nLE VIN.\nD. CORDIER\nBORDEAUX\nPropriétaire\nDEPOSE\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d4c0a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "71.012384";
-  gv:coverage "29.046667"
-], [
-  gv:hex "b49f83";
-  gv:red "180";
-  gv:blue "131";
-  gv:green "159";
-  gv:score "21.925636";
-  gv:coverage "6.2266666"
-], [
-  gv:hex "dccabf";
-  gv:red "220";
-  gv:blue "191";
-  gv:green "202";
-  gv:score "3.6853722999999996";
-  gv:coverage "6.0533334000000005"
-], [
-  gv:hex "ebdac4";
-  gv:red "235";
-  gv:blue "196";
-  gv:green "218";
-  gv:score "2.508118";
-  gv:coverage "7.9133332"
-], [
-  gv:hex "948060";
-  gv:red "148";
-  gv:blue "96";
-  gv:green "128";
-  gv:score "0.69635278";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "5f594d";
-  gv:red "95";
-  gv:blue "77";
-  gv:green "89";
-  gv:score "0.0027324113000000002";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "e6d9ce";
-  gv:red "230";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "0.15582134";
-  gv:coverage "50.173336"
-], [
-  gv:hex "b7a79c";
-  gv:red "183";
-  gv:blue "156";
-  gv:green "167";
-  gv:score "0.011016701";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "8b8479";
-  gv:red "139";
-  gv:blue "121";
-  gv:green "132";
-  gv:score "0.0025660951";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "3b362b";
-  gv:red "59";
-  gv:blue "43";
-  gv:green "54";
-  gv:score "7.391523200000001e-10";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "58.51157299999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.408196000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.849885"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.620563000000004"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.9705"
-];
-    w:bagOfWords "DES VINS\nLE VIN.\nD. CORDIER\nBORDEAUX\nPropriétaire\nDEPOSE\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2291";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

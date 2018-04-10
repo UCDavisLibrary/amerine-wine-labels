@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3591";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "DISTRIBUTED BY\nFRANK\nPGBOONMAKER & Co., INC\nNEW YORK CHICAGO DETROIT SAN FRANCISCO\nPioneer Vineyards in Livermore Valley\nBOTTLED AT THE WINERY\nLIVER MORE\nDRY SE MILL ON\nA LIGHT WINE OF ON GRAPES\nPRODUCED AND BOTTLED BY\nWWW ENTER BR\nALCOHOL 12 BY vOLUME LIVERMORE, CALIFORNIA cONTENTs 34 PINT\n"@eng;
-    gv:color [
-  gv:hex "c9bea8";
-  gv:red "201";
-  gv:blue "168";
-  gv:green "190";
-  gv:score "28.727566999999997";
-  gv:coverage "24.473333"
-], [
-  gv:hex "3c3029";
-  gv:red "60";
-  gv:blue "41";
-  gv:green "48";
-  gv:score "1.5311356";
-  gv:coverage "0.38"
-], [
-  gv:hex "ddb083";
-  gv:red "221";
-  gv:blue "131";
-  gv:green "176";
-  gv:score "0.9643903";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "a39e88";
-  gv:red "163";
-  gv:blue "136";
-  gv:green "158";
-  gv:score "26.133105";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "7c7862";
-  gv:red "124";
-  gv:blue "98";
-  gv:green "120";
-  gv:score "16.849817";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "5a5742";
-  gv:red "90";
-  gv:blue "66";
-  gv:green "87";
-  gv:score "9.9734962";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "d0c3b8";
-  gv:red "208";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "2.6016567";
-  gv:coverage "3.7933334999999997"
-], [
-  gv:hex "e6dbca";
-  gv:red "230";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "2.1418961";
-  gv:coverage "39.519999999999996"
-], [
-  gv:hex "82766d";
-  gv:red "130";
-  gv:blue "109";
-  gv:green "118";
-  gv:score "1.9036489";
-  gv:coverage "0.62"
-], [
-  gv:hex "ebddd2";
-  gv:red "235";
-  gv:blue "210";
-  gv:green "221";
-  gv:score "1.8316479";
-  gv:coverage "21.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.854979"
-];
-    w:bagOfWords "DISTRIBUTED BY\nFRANK\nPGBOONMAKER & Co., INC\nNEW YORK CHICAGO DETROIT SAN FRANCISCO\nPioneer Vineyards in Livermore Valley\nBOTTLED AT THE WINERY\nLIVER MORE\nDRY SE MILL ON\nA LIGHT WINE OF ON GRAPES\nPRODUCED AND BOTTLED BY\nWWW ENTER BR\nALCOHOL 12 BY vOLUME LIVERMORE, CALIFORNIA cONTENTs 34 PINT\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3591";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

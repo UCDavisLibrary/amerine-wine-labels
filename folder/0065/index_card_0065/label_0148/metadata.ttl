@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0148";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "SOAVE GRAN SPUMANTE\nBOLLA\nFRATELLI BOLL A SOAME VERONA\nSoc. AN LONGO 70PPELLI TREVISO\n"@ita;
-    gv:color [
-  gv:hex "d5c2a8";
-  gv:red "213";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "14.763034999999999";
-  gv:coverage "7.6733336"
-], [
-  gv:hex "624f33";
-  gv:red "98";
-  gv:blue "51";
-  gv:green "79";
-  gv:score "10.131041999999999";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "bf9d66";
-  gv:red "191";
-  gv:blue "102";
-  gv:green "157";
-  gv:score "9.856455799999999";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "425675";
-  gv:red "66";
-  gv:blue "117";
-  gv:green "86";
-  gv:score "3.4172135999999997";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "aa762f";
-  gv:red "170";
-  gv:blue "47";
-  gv:green "118";
-  gv:score "0.76540192";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "644f24";
-  gv:red "100";
-  gv:blue "36";
-  gv:green "79";
-  gv:score "5.5981975";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "44341b";
-  gv:red "68";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "4.9271856000000005";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "d4b47c";
-  gv:red "212";
-  gv:blue "124";
-  gv:green "180";
-  gv:score "4.771601";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "b19d81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "157";
-  gv:score "4.5332577";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "ebdbc3";
-  gv:red "235";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "4.3205563";
-  gv:coverage "3.8933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.168828"
-];
-    w:bagOfWords "SOAVE GRAN SPUMANTE\nBOLLA\nFRATELLI BOLL A SOAME VERONA\nSoc. AN LONGO 70PPELLI TREVISO\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0148";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

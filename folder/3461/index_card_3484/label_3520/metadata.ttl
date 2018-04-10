@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3520";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "ALCOHOL 12%\nBY VOLUME\nJOHANNISBERG-RIESLING\nCALIFORNIA WINE\nPRODUCED & BOTTLED BY\nSan Benito Winery\nBW 4143 l TH\nSUP ADM. DI ST. CAL\nHOLLISTER, CALIF.\nTAX PAID BY STAMPS AFFIXED TO ORIGINAL CASE\nCROCKER UNION. s. F\n"@eng;
-    gv:color [
-  gv:hex "cfc2b2";
-  gv:red "207";
-  gv:blue "178";
-  gv:green "194";
-  gv:score "47.227037";
-  gv:coverage "10.92"
-], [
-  gv:hex "ab9e8e";
-  gv:red "171";
-  gv:blue "142";
-  gv:green "158";
-  gv:score "29.362378";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "e8dbcb";
-  gv:red "232";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "7.453843200000001";
-  gv:coverage "12.08"
-], [
-  gv:hex "d2c5b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "197";
-  gv:score "5.1819149";
-  gv:coverage "3.44"
-], [
-  gv:hex "877a6b";
-  gv:red "135";
-  gv:blue "107";
-  gv:green "122";
-  gv:score "3.9876386999999998";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "ede0d3";
-  gv:red "237";
-  gv:blue "211";
-  gv:green "224";
-  gv:score "2.6131168";
-  gv:coverage "71.17999999999999"
-], [
-  gv:hex "5e5141";
-  gv:red "94";
-  gv:blue "65";
-  gv:green "81";
-  gv:score "2.5965992";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "413424";
-  gv:red "65";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "1.0210098";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "291c0c";
-  gv:red "41";
-  gv:blue "12";
-  gv:green "28";
-  gv:score "0.22892337000000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "baac9f";
-  gv:red "186";
-  gv:blue "159";
-  gv:green "172";
-  gv:score "0.19209252000000002";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.25700599999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.672231999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.26058"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.02623200000001"
-];
-    w:bagOfWords "ALCOHOL 12%\nBY VOLUME\nJOHANNISBERG-RIESLING\nCALIFORNIA WINE\nPRODUCED & BOTTLED BY\nSan Benito Winery\nBW 4143 l TH\nSUP ADM. DI ST. CAL\nHOLLISTER, CALIF.\nTAX PAID BY STAMPS AFFIXED TO ORIGINAL CASE\nCROCKER UNION. s. F\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3520";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

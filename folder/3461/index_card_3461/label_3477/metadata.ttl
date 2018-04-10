@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3477";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Special geserne\nPLO M\nOLD MED\nSITION.\nER NATION\nukmead\nCHABLIS\nCO O\nVA FA\nSTATE\nA STATE\nFA\nA STATE\nPRODUCED & BOTTLED BY\nB. W., NO. 605- ST. HELENA, NAPA CO., CALIF.-ALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "907545";
-  gv:red "144";
-  gv:blue "69";
-  gv:green "117";
-  gv:score "17.522296";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "d1c0a9";
-  gv:red "209";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "7.9933941";
-  gv:coverage "4.62"
-], [
-  gv:hex "ede2d7";
-  gv:red "237";
-  gv:blue "215";
-  gv:green "226";
-  gv:score "5.96553";
-  gv:coverage "68.086666"
-], [
-  gv:hex "784a33";
-  gv:red "120";
-  gv:blue "51";
-  gv:green "74";
-  gv:score "3.9032731000000003";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "140a02";
-  gv:red "20";
-  gv:blue "2";
-  gv:green "10";
-  gv:score "2.0321961";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "5a1806";
-  gv:red "90";
-  gv:blue "6";
-  gv:green "24";
-  gv:score "1.0524197000000002";
-  gv:coverage "0.04"
-], [
-  gv:hex "897454";
-  gv:red "137";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "14.187588000000002";
-  gv:coverage "2.0733334"
-], [
-  gv:hex "ab987b";
-  gv:red "171";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "7.033584299999999";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "be9087";
-  gv:red "190";
-  gv:blue "135";
-  gv:green "144";
-  gv:score "4.400675";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "66553c";
-  gv:red "102";
-  gv:blue "60";
-  gv:green "85";
-  gv:score "3.437316";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "68.634456"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "64.06357299999999"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "55.822503999999995"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "55.737156"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "55.335063"
-];
-    w:bagOfWords "Special geserne\nPLO M\nOLD MED\nSITION.\nER NATION\nukmead\nCHABLIS\nCO O\nVA FA\nSTATE\nA STATE\nFA\nA STATE\nPRODUCED & BOTTLED BY\nB. W., NO. 605- ST. HELENA, NAPA CO., CALIF.-ALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3477";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

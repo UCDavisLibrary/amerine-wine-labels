@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3052";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "APPELLATION CONTROLEE\nier des Grands Crus\nropriétaire\n"@fra;
-    gv:color [
-  gv:hex "907355";
-  gv:red "144";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "18.215907";
-  gv:coverage "7.199999999999999"
-], [
-  gv:hex "794d26";
-  gv:red "121";
-  gv:blue "38";
-  gv:green "77";
-  gv:score "14.244651999999999";
-  gv:coverage "3.0266667000000003"
-], [
-  gv:hex "724f32";
-  gv:red "114";
-  gv:blue "50";
-  gv:green "79";
-  gv:score "13.321875";
-  gv:coverage "4.3666668"
-], [
-  gv:hex "8f6c4e";
-  gv:red "143";
-  gv:blue "78";
-  gv:green "108";
-  gv:score "11.944272";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "96683e";
-  gv:red "150";
-  gv:blue "62";
-  gv:green "104";
-  gv:score "10.978133";
-  gv:coverage "2.36"
-], [
-  gv:hex "ac906f";
-  gv:red "172";
-  gv:blue "111";
-  gv:green "144";
-  gv:score "6.4587973000000005";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "532f15";
-  gv:red "83";
-  gv:blue "21";
-  gv:green "47";
-  gv:score "4.9508281";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "6e5538";
-  gv:red "110";
-  gv:blue "56";
-  gv:green "85";
-  gv:score "4.8819676";
-  gv:coverage "3.1733334"
-], [
-  gv:hex "592f0b";
-  gv:red "89";
-  gv:blue "11";
-  gv:green "47";
-  gv:score "3.7415851";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "bf9163";
-  gv:red "191";
-  gv:blue "99";
-  gv:green "145";
-  gv:score "2.924509";
-  gv:coverage "0.81333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "62.153130999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "58.86007"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.598046"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.092259"
-];
-    w:bagOfWords "APPELLATION CONTROLEE\nier des Grands Crus\nropriétaire\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3052";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

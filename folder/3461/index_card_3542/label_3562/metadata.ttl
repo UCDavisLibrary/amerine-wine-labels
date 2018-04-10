@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3562";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "MORRIS-BURG\nVINTAGE\nRARE OLD\nSAUTERNE\n"@eng;
-    gv:color [
-  gv:hex "9a7948";
-  gv:red "154";
-  gv:blue "72";
-  gv:green "121";
-  gv:score "25.345266";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "a07643";
-  gv:red "160";
-  gv:blue "67";
-  gv:green "118";
-  gv:score "15.794957000000002";
-  gv:coverage "0.58"
-], [
-  gv:hex "b19261";
-  gv:red "177";
-  gv:blue "97";
-  gv:green "146";
-  gv:score "15.098339";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "b19876";
-  gv:red "177";
-  gv:blue "118";
-  gv:green "152";
-  gv:score "11.566165";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "d4bd9c";
-  gv:red "212";
-  gv:blue "156";
-  gv:green "189";
-  gv:score "8.5472204";
-  gv:coverage "29.606666999999998"
-], [
-  gv:hex "907856";
-  gv:red "144";
-  gv:blue "86";
-  gv:green "120";
-  gv:score "5.7085954";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "dab989";
-  gv:red "218";
-  gv:blue "137";
-  gv:green "185";
-  gv:score "4.2364713";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "f1dcbe";
-  gv:red "241";
-  gv:blue "190";
-  gv:green "220";
-  gv:score "3.7920639";
-  gv:coverage "23.033333"
-], [
-  gv:hex "c9c3b7";
-  gv:red "201";
-  gv:blue "183";
-  gv:green "195";
-  gv:score "2.0564944";
-  gv:coverage "4.5266665999999995"
-], [
-  gv:hex "bb9061";
-  gv:red "187";
-  gv:blue "97";
-  gv:green "144";
-  gv:score "1.8209126";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "72.985345"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.898389"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.066266999999996"
-];
-    w:bagOfWords "MORRIS-BURG\nVINTAGE\nRARE OLD\nSAUTERNE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3562";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

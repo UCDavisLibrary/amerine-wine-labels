@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1138";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "BROS\nVERY OLD\nLIQUEUR PRODUCE OF FRANCE\n"@undefined;
-    gv:color [
-  gv:hex "847460";
-  gv:red "132";
-  gv:blue "96";
-  gv:green "116";
-  gv:score "15.106034";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "1b1007";
-  gv:red "27";
-  gv:blue "7";
-  gv:green "16";
-  gv:score "5.127515600000001";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "e7dbcf";
-  gv:red "231";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "2.555877";
-  gv:coverage "55.913335"
-], [
-  gv:hex "605340";
-  gv:red "96";
-  gv:blue "64";
-  gv:green "83";
-  gv:score "12.471343";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "ab9a81";
-  gv:red "171";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "11.844951";
-  gv:coverage "1"
-], [
-  gv:hex "3e3321";
-  gv:red "62";
-  gv:blue "33";
-  gv:green "51";
-  gv:score "10.909030999999999";
-  gv:coverage "0.98"
-], [
-  gv:hex "cebea5";
-  gv:red "206";
-  gv:blue "165";
-  gv:green "190";
-  gv:score "9.4255865";
-  gv:coverage "5.8266666"
-], [
-  gv:hex "7f746a";
-  gv:red "127";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "4.489802200000001";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "5e5149";
-  gv:red "94";
-  gv:blue "73";
-  gv:green "81";
-  gv:score "4.3117672";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "bb9964";
-  gv:red "187";
-  gv:blue "100";
-  gv:green "153";
-  gv:score "3.8845620999999997";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "63.547605"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "63.544232"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.239861"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BROS\nVERY OLD\nLIQUEUR PRODUCE OF FRANCE\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1138";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1723/label_1736";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "VERBAND DEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V\nUnsere Mitglieder besitzen\nLagen von Weltruf\nMOSEL-SAAR RUWER\n1949 er\nDieses Zeichen\nin Verbindung mit dem\nSchanzhofberger u.Scharzberger\nKorkbrand verburgt\nnaturreinen Wein.\nfeinste Auslese\nTRIERER VEREIN VON\nWACHSTUM:\nWEINGUTSBESITZERN\nDER MOSEL, SAAR\nOTTO VAN VOLXEM, OBEREMMELISAAR\nUND RUWER.\nORIGINAL KELLER A BFULLUNG\nDACA WEILER d Co. TRI\n"@deu;
-    gv:color [
-  gv:hex "af9b80";
-  gv:red "175";
-  gv:blue "128";
-  gv:green "155";
-  gv:score "23.530638";
-  gv:coverage "6.0466666"
-], [
-  gv:hex "784c3b";
-  gv:red "120";
-  gv:blue "59";
-  gv:green "76";
-  gv:score "5.035226000000001";
-  gv:coverage "0.32"
-], [
-  gv:hex "c04844";
-  gv:red "192";
-  gv:blue "68";
-  gv:green "72";
-  gv:score "2.1276493";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "d6c2a9";
-  gv:red "214";
-  gv:blue "169";
-  gv:green "194";
-  gv:score "19.089128";
-  gv:coverage "31.7"
-], [
-  gv:hex "b29a66";
-  gv:red "178";
-  gv:blue "102";
-  gv:green "154";
-  gv:score "7.150138200000001";
-  gv:coverage "1.92"
-], [
-  gv:hex "8b7861";
-  gv:red "139";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "4.310187699999999";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "9b6b57";
-  gv:red "155";
-  gv:blue "87";
-  gv:green "107";
-  gv:score "4.3007888";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "947d4f";
-  gv:red "148";
-  gv:blue "79";
-  gv:green "125";
-  gv:score "3.8572092000000002";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "edd9c2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "3.3474456999999997";
-  gv:coverage "8.1933334"
-], [
-  gv:hex "ac594f";
-  gv:red "172";
-  gv:blue "79";
-  gv:green "89";
-  gv:score "2.9197827";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.880423"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.193924"
-];
-    w:bagOfWords "VERBAND DEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V\nUnsere Mitglieder besitzen\nLagen von Weltruf\nMOSEL-SAAR RUWER\n1949 er\nDieses Zeichen\nin Verbindung mit dem\nSchanzhofberger u.Scharzberger\nKorkbrand verburgt\nnaturreinen Wein.\nfeinste Auslese\nTRIERER VEREIN VON\nWACHSTUM:\nWEINGUTSBESITZERN\nDER MOSEL, SAAR\nOTTO VAN VOLXEM, OBEREMMELISAAR\nUND RUWER.\nORIGINAL KELLER A BFULLUNG\nDACA WEILER d Co. TRI\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1736";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

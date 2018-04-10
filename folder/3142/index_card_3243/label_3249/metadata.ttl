@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3243/label_3249";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\nGrands-Echézeaux Appellation Controlée\nOne laine\nANNE 1949\nuopriétaires\n"@fra;
-    gv:color [
-  gv:hex "a99a8c";
-  gv:red "169";
-  gv:blue "140";
-  gv:green "154";
-  gv:score "21.859147";
-  gv:coverage "3.7666667"
-], [
-  gv:hex "d3c4b8";
-  gv:red "211";
-  gv:blue "184";
-  gv:green "196";
-  gv:score "20.854518";
-  gv:coverage "23.126666"
-], [
-  gv:hex "cdbdaf";
-  gv:red "205";
-  gv:blue "175";
-  gv:green "189";
-  gv:score "15.807125";
-  gv:coverage "8.68"
-], [
-  gv:hex "ebdcd0";
-  gv:red "235";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "14.449931999999999";
-  gv:coverage "57.733332999999995"
-], [
-  gv:hex "857568";
-  gv:red "133";
-  gv:blue "104";
-  gv:green "117";
-  gv:score "11.823483";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "625346";
-  gv:red "98";
-  gv:blue "70";
-  gv:green "83";
-  gv:score "5.945107699999999";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "e8d8c8";
-  gv:red "232";
-  gv:blue "200";
-  gv:green "216";
-  gv:score "4.9314007";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "433427";
-  gv:red "67";
-  gv:blue "39";
-  gv:green "52";
-  gv:score "2.1963879";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "b6a99c";
-  gv:red "182";
-  gv:blue "156";
-  gv:green "169";
-  gv:score "1.4049595";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "27170b";
-  gv:red "39";
-  gv:blue "11";
-  gv:green "23";
-  gv:score "0.45855986";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.842128"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.082463"
-];
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\nGrands-Echézeaux Appellation Controlée\nOne laine\nANNE 1949\nuopriétaires\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3249";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

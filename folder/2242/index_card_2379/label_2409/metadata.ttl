@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2409";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "EILLE Au C\nCHATEAU MouTON ROTHsCHILD ET CHATEAU MouTON DARMAILHAce\nNE FORMAIENT A LORIGINE QU UN SEUL DOMAINE DU NOM DE MOUTON\nSous Louis XV\nL FUT DIVISE EN DEux VIGNOB LES DISTINCTS.\nDEPUIS CETTE EPOQUE CES DEux GRANDs cRus ,BIEN QUE VoISINS,\nONT UNE PRODUCTION s EPAREE MAIS cONSTITUENT UN ENSEM BLE\nUNIQUE, CHE F. D'CE uvRE DES VIGNES DE FRANCE\nMEDOC\nPAUILLAC\nAPPELLATION PAUILLAC CONTRO LE E\n"@fra;
-    gv:color [
-  gv:hex "d4bda1";
-  gv:red "212";
-  gv:blue "161";
-  gv:green "189";
-  gv:score "49.734262";
-  gv:coverage "27.586665999999997"
-], [
-  gv:hex "b6a086";
-  gv:red "182";
-  gv:blue "134";
-  gv:green "160";
-  gv:score "11.088885";
-  gv:coverage "3.6533333"
-], [
-  gv:hex "d5b684";
-  gv:red "213";
-  gv:blue "132";
-  gv:green "182";
-  gv:score "8.8804416";
-  gv:coverage "1.06"
-], [
-  gv:hex "bc9d6a";
-  gv:red "188";
-  gv:blue "106";
-  gv:green "157";
-  gv:score "7.0486732";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "89693b";
-  gv:red "137";
-  gv:blue "59";
-  gv:green "105";
-  gv:score "5.804520500000001";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "755829";
-  gv:red "117";
-  gv:blue "41";
-  gv:green "88";
-  gv:score "3.9977673";
-  gv:coverage "0.24"
-], [
-  gv:hex "785528";
-  gv:red "120";
-  gv:blue "40";
-  gv:green "85";
-  gv:score "2.6140309999999998";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "ebd9c5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "217";
-  gv:score "2.2521054";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "8e693b";
-  gv:red "142";
-  gv:blue "59";
-  gv:green "105";
-  gv:score "2.1990305";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "907859";
-  gv:red "144";
-  gv:blue "89";
-  gv:green "120";
-  gv:score "1.4497205000000002";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "73.586869"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.21774799999999"
-];
-    w:bagOfWords "EILLE Au C\nCHATEAU MouTON ROTHsCHILD ET CHATEAU MouTON DARMAILHAce\nNE FORMAIENT A LORIGINE QU UN SEUL DOMAINE DU NOM DE MOUTON\nSous Louis XV\nL FUT DIVISE EN DEux VIGNOB LES DISTINCTS.\nDEPUIS CETTE EPOQUE CES DEux GRANDs cRus ,BIEN QUE VoISINS,\nONT UNE PRODUCTION s EPAREE MAIS cONSTITUENT UN ENSEM BLE\nUNIQUE, CHE F. D'CE uvRE DES VIGNES DE FRANCE\nMEDOC\nPAUILLAC\nAPPELLATION PAUILLAC CONTRO LE E\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2409";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

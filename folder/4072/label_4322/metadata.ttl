@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4322";
-    dct:type "image";
-    w:bagOfWords "Le Rh One Rose\nAPPELLATION\nCOTES DU RHONE\nCONTROLEE\nJABOULET VERCHERRE\nNEGOCIANT A TAIN L'HERMITAGE-DROME FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d1c3b0";
-  gv:red "209";
-  gv:blue "176";
-  gv:green "195";
-  gv:score "43.272305";
-  gv:coverage "16.253333"
-], [
-  gv:hex "ab9e8e";
-  gv:red "171";
-  gv:blue "142";
-  gv:green "158";
-  gv:score "14.657193";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "cfc3b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "9.925703700000001";
-  gv:coverage "13.633333"
-], [
-  gv:hex "a49a8f";
-  gv:red "164";
-  gv:blue "143";
-  gv:green "154";
-  gv:score "7.441806";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "e7ddd0";
-  gv:red "231";
-  gv:blue "208";
-  gv:green "221";
-  gv:score "6.4795434";
-  gv:coverage "58.9"
-], [
-  gv:hex "e6d9c8";
-  gv:red "230";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "4.582433";
-  gv:coverage "5.0133333"
-], [
-  gv:hex "837768";
-  gv:red "131";
-  gv:blue "104";
-  gv:green "119";
-  gv:score "4.5226991000000005";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "82796e";
-  gv:red "130";
-  gv:blue "110";
-  gv:green "121";
-  gv:score "4.1254606";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "5f574c";
-  gv:red "95";
-  gv:blue "76";
-  gv:green "87";
-  gv:score "1.9546709999999998";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "5f5445";
-  gv:red "95";
-  gv:blue "69";
-  gv:green "84";
-  gv:score "1.6909798999999999";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.296257"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.78253000000001"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.803982000000005"
-];
-    w:bagOfWords "Le Rh One Rose\nAPPELLATION\nCOTES DU RHONE\nCONTROLEE\nJABOULET VERCHERRE\nNEGOCIANT A TAIN L'HERMITAGE-DROME FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4322";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

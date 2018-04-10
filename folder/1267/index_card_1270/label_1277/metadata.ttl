@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1277";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GumpoldsRirchner\nOriginal-Abfullung des ,,Alten Hofkellers\"\n5 Y\n"@deu;
-    gv:color [
-  gv:hex "dcc9b4";
-  gv:red "220";
-  gv:blue "180";
-  gv:green "201";
-  gv:score "44.093177";
-  gv:coverage "23.3"
-], [
-  gv:hex "867256";
-  gv:red "134";
-  gv:blue "86";
-  gv:green "114";
-  gv:score "9.695103";
-  gv:coverage "3.38"
-], [
-  gv:hex "1c1108";
-  gv:red "28";
-  gv:blue "8";
-  gv:green "17";
-  gv:score "1.984225";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "e9d8c3";
-  gv:red "233";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "8.6624317";
-  gv:coverage "8.3066665"
-], [
-  gv:hex "69553e";
-  gv:red "105";
-  gv:blue "62";
-  gv:green "85";
-  gv:score "6.01156";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "ad987f";
-  gv:red "173";
-  gv:blue "127";
-  gv:green "152";
-  gv:score "5.5233192";
-  gv:coverage "2.4733333"
-], [
-  gv:hex "dacbc0";
-  gv:red "218";
-  gv:blue "192";
-  gv:green "203";
-  gv:score "4.2184893";
-  gv:coverage "8.913333"
-], [
-  gv:hex "8b7044";
-  gv:red "139";
-  gv:blue "68";
-  gv:green "112";
-  gv:score "3.3251866999999997";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "e4dacf";
-  gv:red "228";
-  gv:blue "207";
-  gv:green "218";
-  gv:score "2.8311951";
-  gv:coverage "46.306667000000004"
-], [
-  gv:hex "403222";
-  gv:red "64";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "2.3651263";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.45971"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.501193"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.32834"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.842606999999994"
-];
-    w:bagOfWords "GumpoldsRirchner\nOriginal-Abfullung des ,,Alten Hofkellers\"\n5 Y\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1277";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

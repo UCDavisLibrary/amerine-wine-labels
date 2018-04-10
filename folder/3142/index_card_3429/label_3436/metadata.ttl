@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3429/label_3436";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "1000\nurgoyne\nARQUE\nDERUSEE\nMoreill'cu\nrcurell\nle.CHRI RICS, PROPRIS36H IRG E, NaGOCIFine\na SFIRGC1293/pre s,Benana (co teed Or )\n"@fra;
-    gv:color [
-  gv:hex "9a7147";
-  gv:red "154";
-  gv:blue "71";
-  gv:green "113";
-  gv:score "20.724286";
-  gv:coverage "5.5333334999999995"
-], [
-  gv:hex "b69367";
-  gv:red "182";
-  gv:blue "103";
-  gv:green "147";
-  gv:score "20.034233";
-  gv:coverage "7.7333331"
-], [
-  gv:hex "b88f63";
-  gv:red "184";
-  gv:blue "99";
-  gv:green "143";
-  gv:score "14.174235";
-  gv:coverage "6.18"
-], [
-  gv:hex "96764c";
-  gv:red "150";
-  gv:blue "76";
-  gv:green "118";
-  gv:score "12.003908000000001";
-  gv:coverage "3.16"
-], [
-  gv:hex "784b26";
-  gv:red "120";
-  gv:blue "38";
-  gv:green "75";
-  gv:score "7.5020425";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "b4946f";
-  gv:red "180";
-  gv:blue "111";
-  gv:green "148";
-  gv:score "5.0550647";
-  gv:coverage "3.6066665999999996"
-], [
-  gv:hex "5a2c0c";
-  gv:red "90";
-  gv:blue "12";
-  gv:green "44";
-  gv:score "3.4110300000000002";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "957754";
-  gv:red "149";
-  gv:blue "84";
-  gv:green "119";
-  gv:score "3.2215849";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "997051";
-  gv:red "153";
-  gv:blue "81";
-  gv:green "112";
-  gv:score "2.6678046";
-  gv:coverage "0.74"
-], [
-  gv:hex "b68d6b";
-  gv:red "182";
-  gv:blue "107";
-  gv:green "141";
-  gv:score "1.9941411999999998";
-  gv:coverage "1.0133334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.260539"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.761860000000006"
-];
-    w:bagOfWords "1000\nurgoyne\nARQUE\nDERUSEE\nMoreill'cu\nrcurell\nle.CHRI RICS, PROPRIS36H IRG E, NaGOCIFine\na SFIRGC1293/pre s,Benana (co teed Or )\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3436";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

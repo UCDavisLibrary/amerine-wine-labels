@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0864";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "1937\nO REIMS\nOTrépail\no Bouzy\nHenri\nHoutvillers O Vin originaire\nOAy\nde la Chom pogne\nGrevin\na M\nan\nEE Viticole\nE PER NA\nOEPERNAY\nO Cromant\nOAvize\nLIGHT\nA SERVIR TRES, FRA\nSTILL FROM THE CHAMPAGNE DISTRICT\nO le Mesnil\nRANCE\nDE POSE\nBIan C\nde B arm cs\n"@fra;
-    gv:color [
-  gv:hex "d5c49f";
-  gv:red "213";
-  gv:blue "159";
-  gv:green "196";
-  gv:score "23.343141";
-  gv:coverage "9.6133336"
-], [
-  gv:hex "4f564b";
-  gv:red "79";
-  gv:blue "75";
-  gv:green "86";
-  gv:score "1.0304239";
-  gv:coverage "1.78"
-], [
-  gv:hex "d6bd84";
-  gv:red "214";
-  gv:blue "132";
-  gv:green "189";
-  gv:score "22.24565";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "b29f63";
-  gv:red "178";
-  gv:blue "99";
-  gv:green "159";
-  gv:score "18.316714";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "efdbb9";
-  gv:red "239";
-  gv:blue "185";
-  gv:green "219";
-  gv:score "5.664222700000001";
-  gv:coverage "16.18"
-], [
-  gv:hex "8c7945";
-  gv:red "140";
-  gv:blue "69";
-  gv:green "121";
-  gv:score "4.6485856";
-  gv:coverage "0.4"
-], [
-  gv:hex "aea07b";
-  gv:red "174";
-  gv:blue "123";
-  gv:green "160";
-  gv:score "3.9935424999999998";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "cf9866";
-  gv:red "207";
-  gv:blue "102";
-  gv:green "152";
-  gv:score "2.6591066";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "ebb482";
-  gv:red "235";
-  gv:blue "130";
-  gv:green "180";
-  gv:score "2.4584057";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "f4d8a6";
-  gv:red "244";
-  gv:blue "166";
-  gv:green "216";
-  gv:score "2.1342548999999997";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.607917"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.893282"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.850618"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.260169000000005"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.31511"
-];
-    w:bagOfWords "1937\nO REIMS\nOTrépail\no Bouzy\nHenri\nHoutvillers O Vin originaire\nOAy\nde la Chom pogne\nGrevin\na M\nan\nEE Viticole\nE PER NA\nOEPERNAY\nO Cromant\nOAvize\nLIGHT\nA SERVIR TRES, FRA\nSTILL FROM THE CHAMPAGNE DISTRICT\nO le Mesnil\nRANCE\nDE POSE\nBIan C\nde B arm cs\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0864";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

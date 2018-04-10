@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0673";
-    dct:type "image";
-    w:bagOfWords "los Out\nbateau\nboins Ch Bonvin fils\naropriétaires\nsion Suisse ,vvv\nmise en bouteilles la Propriété A\nDEPOSE\n"@undefined;
-    gv:color [
-  gv:hex "dac3a8";
-  gv:red "218";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "22.512096";
-  gv:coverage "11.453333"
-], [
-  gv:hex "8c3c20";
-  gv:red "140";
-  gv:blue "32";
-  gv:green "60";
-  gv:score "4.4519488";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "b19a81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "10.188767";
-  gv:coverage "4.3933332"
-], [
-  gv:hex "efbda3";
-  gv:red "239";
-  gv:blue "163";
-  gv:green "189";
-  gv:score "8.8815711";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "f0dac1";
-  gv:red "240";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "7.7791154";
-  gv:coverage "4.9866665"
-], [
-  gv:hex "8b765d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "5.5027951";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "c6957b";
-  gv:red "198";
-  gv:blue "123";
-  gv:green "149";
-  gv:score "4.985444599999999";
-  gv:coverage "1"
-], [
-  gv:hex "65513a";
-  gv:red "101";
-  gv:blue "58";
-  gv:green "81";
-  gv:score "4.6110533";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "6c1f09";
-  gv:red "108";
-  gv:blue "9";
-  gv:green "31";
-  gv:score "2.9323213";
-  gv:coverage "0.18"
-], [
-  gv:hex "43321c";
-  gv:red "67";
-  gv:blue "28";
-  gv:green "50";
-  gv:score "2.9283835000000003";
-  gv:coverage "1.0466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.38729599999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.304700000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.523174000000004"
-];
-    w:bagOfWords "los Out\nbateau\nboins Ch Bonvin fils\naropriétaires\nsion Suisse ,vvv\nmise en bouteilles la Propriété A\nDEPOSE\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0673";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5010";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "U Z\nIT IS NOT UNUSUAL\nFOR SHERRY LIKE FOR\nMOST GENUINE STILL\nWINES TO THROW A DEPOSIT\nESPECIALLY WHEN THEY HAVE BEEN\nIN ANY LENGTH OF TIME IN THE BOTTLE\nORDER TO ENSURE PERFECT CONDITION,\nTHE BOTTLE SHOULD STAND UP FOR SOME\nTIME BEFORE USING AND\nIF NECESSARY,\nTHE WINE SHOULD BE DECANTED TO LEAVE\nTHE DEPOSIT IN THE ORIGINAL BOTTLE\nDE LA DE\nTHIS IS A GENUINE SHERRY, bottled\nin Jerez under the supervision of the\nOFFICIAL CONTROL BOARD of the\nJEREZ XERES SHERRY ZONE.\nHERES\nANDEZY\n"@undefined;
-    gv:color [
-  gv:hex "110f0f";
-  gv:red "17";
-  gv:blue "15";
-  gv:green "15";
-  gv:score "41.322848";
-  gv:coverage "16.546667"
-], [
-  gv:hex "d6bda0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "17.17336";
-  gv:coverage "13.906667"
-], [
-  gv:hex "9c6f44";
-  gv:red "156";
-  gv:blue "68";
-  gv:green "111";
-  gv:score "1.7977173999999998";
-  gv:coverage "0.44"
-], [
-  gv:hex "b59b7c";
-  gv:red "181";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "15.015523";
-  gv:coverage "4.06"
-], [
-  gv:hex "332f2d";
-  gv:red "51";
-  gv:blue "45";
-  gv:green "47";
-  gv:score "4.4921581";
-  gv:coverage "3.1533334"
-], [
-  gv:hex "57534f";
-  gv:red "87";
-  gv:blue "79";
-  gv:green "83";
-  gv:score "3.0636402";
-  gv:coverage "2.8000000000000003"
-], [
-  gv:hex "f0dbc2";
-  gv:red "240";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "2.4077108";
-  gv:coverage "14.193333999999998"
-], [
-  gv:hex "cbc5bd";
-  gv:red "203";
-  gv:blue "189";
-  gv:green "197";
-  gv:score "2.3306947";
-  gv:coverage "5.82"
-], [
-  gv:hex "7a7671";
-  gv:red "122";
-  gv:blue "113";
-  gv:green "118";
-  gv:score "2.0326763000000003";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "a09b94";
-  gv:red "160";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "1.7859957999999998";
-  gv:coverage "2.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.79025899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "57.16655899999999"
-];
-    w:bagOfWords "U Z\nIT IS NOT UNUSUAL\nFOR SHERRY LIKE FOR\nMOST GENUINE STILL\nWINES TO THROW A DEPOSIT\nESPECIALLY WHEN THEY HAVE BEEN\nIN ANY LENGTH OF TIME IN THE BOTTLE\nORDER TO ENSURE PERFECT CONDITION,\nTHE BOTTLE SHOULD STAND UP FOR SOME\nTIME BEFORE USING AND\nIF NECESSARY,\nTHE WINE SHOULD BE DECANTED TO LEAVE\nTHE DEPOSIT IN THE ORIGINAL BOTTLE\nDE LA DE\nTHIS IS A GENUINE SHERRY, bottled\nin Jerez under the supervision of the\nOFFICIAL CONTROL BOARD of the\nJEREZ XERES SHERRY ZONE.\nHERES\nANDEZY\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5010";
+    <schema.keywords> "UC Reporters Notebook@en".
+

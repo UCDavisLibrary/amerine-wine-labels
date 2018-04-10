@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2203";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "NET CONTENTS ONE QUART\nMATTE VISTA\nCALIFORNIA\nANGELICA\nALCOHOLIC CONTENT 20% BY VOLUME\nTAX PAID BY STAMPS AFFIXED TO CASE\nPRODUCED AND BOTTLED BY\nA. MATTE\nEST 1892\nBONDED\nDISTRI\nCALIFORNIA\nWINERY\nFRESNO\nNo. 66\n"@eng;
-    gv:color [
-  gv:hex "d6c883";
-  gv:red "214";
-  gv:blue "131";
-  gv:green "200";
-  gv:score "17.307347";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "87763a";
-  gv:red "135";
-  gv:blue "58";
-  gv:green "118";
-  gv:score "9.8079018";
-  gv:coverage "4.279999999999999"
-], [
-  gv:hex "d3c469";
-  gv:red "211";
-  gv:blue "105";
-  gv:green "196";
-  gv:score "11.051248";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "ac9d5b";
-  gv:red "172";
-  gv:blue "91";
-  gv:green "157";
-  gv:score "8.8366739";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "ad9d40";
-  gv:red "173";
-  gv:blue "64";
-  gv:green "157";
-  gv:score "7.855960700000001";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "d0c1a6";
-  gv:red "208";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "5.7371631";
-  gv:coverage "10.046667"
-], [
-  gv:hex "d4c95e";
-  gv:red "212";
-  gv:blue "94";
-  gv:green "201";
-  gv:score "5.5623781";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "83765d";
-  gv:red "131";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "5.207571";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "a8997d";
-  gv:red "168";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "4.6878252";
-  gv:coverage "2.54"
-], [
-  gv:hex "645517";
-  gv:red "100";
-  gv:blue "23";
-  gv:green "85";
-  gv:score "4.6197277";
-  gv:coverage "2.2800000000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.39700500000001"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.567668000000005"
-];
-    w:bagOfWords "NET CONTENTS ONE QUART\nMATTE VISTA\nCALIFORNIA\nANGELICA\nALCOHOLIC CONTENT 20% BY VOLUME\nTAX PAID BY STAMPS AFFIXED TO CASE\nPRODUCED AND BOTTLED BY\nA. MATTE\nEST 1892\nBONDED\nDISTRI\nCALIFORNIA\nWINERY\nFRESNO\nNo. 66\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2203";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0522";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "on Furste\nMetternich\nWinne\nContents of bottle\nAlcohol contents\n1 pint 7 fluid ounces\n1929\ner\nby volume\nor 22 proof\nSchloss er.\nOriginal Abfullung der\nFurstlich von Metternich schen\nDomane.\nDer Furstliche Domane-Rentmeister:\nProduced in Germany\n"@deu;
-    gv:color [
-  gv:hex "eae3da";
-  gv:red "234";
-  gv:blue "218";
-  gv:green "227";
-  gv:score "68.059653";
-  gv:coverage "57.913333"
-], [
-  gv:hex "614d35";
-  gv:red "97";
-  gv:blue "53";
-  gv:green "77";
-  gv:score "1.7586859";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "9f291b";
-  gv:red "159";
-  gv:blue "27";
-  gv:green "41";
-  gv:score "1.4570035000000001";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "311300";
-  gv:red "49";
-  gv:blue "undefined";
-  gv:green "19";
-  gv:score "1.0504277";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "6a1206";
-  gv:red "106";
-  gv:blue "6";
-  gv:green "18";
-  gv:score "0.8077283399999999";
-  gv:coverage "0.38"
-], [
-  gv:hex "e6dec9";
-  gv:red "230";
-  gv:blue "201";
-  gv:green "222";
-  gv:score "6.8354942";
-  gv:coverage "4.6933334"
-], [
-  gv:hex "d8c9b2";
-  gv:red "216";
-  gv:blue "178";
-  gv:green "201";
-  gv:score "3.7939306";
-  gv:coverage "3.1533334"
-], [
-  gv:hex "ad9b7e";
-  gv:red "173";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "2.1162093";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "bc9b5a";
-  gv:red "188";
-  gv:blue "90";
-  gv:green "155";
-  gv:score "1.6439484";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "907038";
-  gv:red "144";
-  gv:blue "56";
-  gv:green "112";
-  gv:score "1.4831985";
-  gv:coverage "0.8200000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "80.272472"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "64.625877"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.057937"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.709227000000006"
-];
-    w:bagOfWords "on Furste\nMetternich\nWinne\nContents of bottle\nAlcohol contents\n1 pint 7 fluid ounces\n1929\ner\nby volume\nor 22 proof\nSchloss er.\nOriginal Abfullung der\nFurstlich von Metternich schen\nDomane.\nDer Furstliche Domane-Rentmeister:\nProduced in Germany\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0522";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

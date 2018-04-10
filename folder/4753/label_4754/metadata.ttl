@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4754";
-    dct:type "image";
-    w:bagOfWords "PALENCIA\nBRAND\nMEDIUM\nDRY\nALCOHOL 19'a\nBY VOLUME\nalifornia\nSHERRY\nPRODUCED AND BOTTLED BY\nBEAR CREEK VINEyARD ASSN\nBONDED\nWINERY\nNO. 386 5\nLO D\nCA LI FOR NIA\nBOTTLED AT THE WINERY\nVINTAGE 1934\n"@eng;
-    gv:color [
-  gv:hex "cdc2b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "13.528967";
-  gv:coverage "9.4466664"
-], [
-  gv:hex "60523a";
-  gv:red "96";
-  gv:blue "58";
-  gv:green "82";
-  gv:score "10.923418";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "cbc0ac";
-  gv:red "203";
-  gv:blue "172";
-  gv:green "192";
-  gv:score "11.646087";
-  gv:coverage "5.74"
-], [
-  gv:hex "aa9e8b";
-  gv:red "170";
-  gv:blue "139";
-  gv:green "158";
-  gv:score "10.536811";
-  gv:coverage "3"
-], [
-  gv:hex "e9dfd6";
-  gv:red "233";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "10.067844";
-  gv:coverage "65.973336"
-], [
-  gv:hex "a79b92";
-  gv:red "167";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "7.0881687";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "80746b";
-  gv:red "128";
-  gv:blue "107";
-  gv:green "116";
-  gv:score "6.5146893";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "827460";
-  gv:red "130";
-  gv:blue "96";
-  gv:green "116";
-  gv:score "6.463809299999999";
-  gv:coverage "1.46"
-], [
-  gv:hex "403421";
-  gv:red "64";
-  gv:blue "33";
-  gv:green "52";
-  gv:score "4.8567962";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "60554c";
-  gv:red "96";
-  gv:blue "76";
-  gv:green "85";
-  gv:score "4.3070640000000004";
-  gv:coverage "1.1199999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.2472"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "51.614362"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.368243"
-];
-    w:bagOfWords "PALENCIA\nBRAND\nMEDIUM\nDRY\nALCOHOL 19'a\nBY VOLUME\nalifornia\nSHERRY\nPRODUCED AND BOTTLED BY\nBEAR CREEK VINEyARD ASSN\nBONDED\nWINERY\nNO. 386 5\nLO D\nCA LI FOR NIA\nBOTTLED AT THE WINERY\nVINTAGE 1934\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4754";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

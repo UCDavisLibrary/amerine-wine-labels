@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1666";
-    dct:type "image";
-    w:bagOfWords "REG\nTABLE WINE\nMARK\nTRADE\nARSINOE\nWHITE DRY\nTHE VINE PRODUCTS\nCO-OPERATIVE MARKETING\nUNION LTD\nCYPRUS\nLIMASSOL\n"@eng;
-    gv:color [
-  gv:hex "d7c5a9";
-  gv:red "215";
-  gv:blue "169";
-  gv:green "197";
-  gv:score "48.184985000000005";
-  gv:coverage "16.919999999999998"
-], [
-  gv:hex "5d553e";
-  gv:red "93";
-  gv:blue "62";
-  gv:green "85";
-  gv:score "7.1102262";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "110c08";
-  gv:red "17";
-  gv:blue "8";
-  gv:green "12";
-  gv:score "4.8103413999999995";
-  gv:coverage "7.16"
-], [
-  gv:hex "a99f84";
-  gv:red "169";
-  gv:blue "132";
-  gv:green "159";
-  gv:score "8.1773452";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "817760";
-  gv:red "129";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "6.9667466";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "3c341e";
-  gv:red "60";
-  gv:blue "30";
-  gv:green "52";
-  gv:score "5.2741542";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "ebdac1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "4.8157677";
-  gv:coverage "4.1866668"
-], [
-  gv:hex "ab9a65";
-  gv:red "171";
-  gv:blue "101";
-  gv:green "154";
-  gv:score "2.3514599";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "221b07";
-  gv:red "34";
-  gv:blue "7";
-  gv:green "27";
-  gv:score "1.9256314";
-  gv:coverage "0.6"
-], [
-  gv:hex "e5c0a7";
-  gv:red "229";
-  gv:blue "167";
-  gv:green "192";
-  gv:score "1.4216176";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.856832"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REG\nTABLE WINE\nMARK\nTRADE\nARSINOE\nWHITE DRY\nTHE VINE PRODUCTS\nCO-OPERATIVE MARKETING\nUNION LTD\nCYPRUS\nLIMASSOL\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1666";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

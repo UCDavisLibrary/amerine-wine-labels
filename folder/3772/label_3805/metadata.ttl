@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3805";
-    dct:type "image";
-    w:bagOfWords "MOSEL-SAAR-RuWER\n1937\nBerntalteler Riesling Matut\nStill Wine\nContains pint 8 fluid ounces produced in Oermany Imported by\nRheinwein Imports Thc 817 Boylston Street Boston (Mass) I-922\n"@deu;
-    gv:color [
-  gv:hex "d1b591";
-  gv:red "209";
-  gv:blue "145";
-  gv:green "181";
-  gv:score "11.687453";
-  gv:coverage "10.72"
-], [
-  gv:hex "8e7246";
-  gv:red "142";
-  gv:blue "70";
-  gv:green "114";
-  gv:score "10.622335";
-  gv:coverage "3.74"
-], [
-  gv:hex "8c7350";
-  gv:red "140";
-  gv:blue "80";
-  gv:green "115";
-  gv:score "9.6782669";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "b49975";
-  gv:red "180";
-  gv:blue "117";
-  gv:green "153";
-  gv:score "9.6737161";
-  gv:coverage "4.1933332"
-], [
-  gv:hex "b59969";
-  gv:red "181";
-  gv:blue "105";
-  gv:green "153";
-  gv:score "8.980906800000001";
-  gv:coverage "3.38"
-], [
-  gv:hex "675232";
-  gv:red "103";
-  gv:blue "50";
-  gv:green "82";
-  gv:score "7.851992500000001";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "c69266";
-  gv:red "198";
-  gv:blue "102";
-  gv:green "146";
-  gv:score "7.2561271";
-  gv:coverage "3.38"
-], [
-  gv:hex "6c5328";
-  gv:red "108";
-  gv:blue "40";
-  gv:green "83";
-  gv:score "6.6305742";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "d1b786";
-  gv:red "209";
-  gv:blue "134";
-  gv:green "183";
-  gv:score "3.948497";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "a06e44";
-  gv:red "160";
-  gv:blue "68";
-  gv:green "110";
-  gv:score "3.7331913";
-  gv:coverage "1.4466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.471791"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "58.244747"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.374918"
-];
-    w:bagOfWords "MOSEL-SAAR-RuWER\n1937\nBerntalteler Riesling Matut\nStill Wine\nContains pint 8 fluid ounces produced in Oermany Imported by\nRheinwein Imports Thc 817 Boylston Street Boston (Mass) I-922\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3805";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

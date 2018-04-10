@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4941";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Cabine Wein\n1921\nmnigberg\n"@undefined;
-    gv:color [
-  gv:hex "87723e";
-  gv:red "135";
-  gv:blue "62";
-  gv:green "114";
-  gv:score "16.66355";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "6b5522";
-  gv:red "107";
-  gv:blue "34";
-  gv:green "85";
-  gv:score "14.671308";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "86745b";
-  gv:red "134";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "13.835412";
-  gv:coverage "4.4333335"
-], [
-  gv:hex "aa977d";
-  gv:red "170";
-  gv:blue "125";
-  gv:green "151";
-  gv:score "9.2634261";
-  gv:coverage "8.3"
-], [
-  gv:hex "685640";
-  gv:red "104";
-  gv:blue "64";
-  gv:green "86";
-  gv:score "8.1512168";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "a2705a";
-  gv:red "162";
-  gv:blue "90";
-  gv:green "112";
-  gv:score "3.8755354";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "c18c75";
-  gv:red "193";
-  gv:blue "117";
-  gv:green "140";
-  gv:score "3.8366325";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "a89662";
-  gv:red "168";
-  gv:blue "98";
-  gv:green "150";
-  gv:score "3.213042";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "d0bea6";
-  gv:red "208";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "3.1669471";
-  gv:coverage "14.940000000000001"
-], [
-  gv:hex "754f24";
-  gv:red "117";
-  gv:blue "36";
-  gv:green "79";
-  gv:score "2.7854363";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "65.659475"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.149567999999995"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "59.154928"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.585015000000006"
-];
-    w:bagOfWords "Cabine Wein\n1921\nmnigberg\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4941";
+    <schema.keywords> "UC Reporters Notebook@en".
+

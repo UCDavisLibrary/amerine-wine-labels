@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3486";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "TEMPORARY LABEL\nRUTHERFORD, NAPA\nCOUNTY, CALIF.\nTHIS WINE IS MADE OF JOHANINISBERGER\nRIESLING GRAPES GATHERED DURING THE\ny VINTAGE SEASON 1939 N THE VINEYARDS\nOF BEAULIEU, AT RUTHER FORD, NAPA.\nCOUNTY\nPICKED AT THE DESIRED RATIO OF SUGAR\nAND ACIDITY, THE GRAPES WERE FER-\nMENTED IN CLOSED TANKS OF 1000-\nGALLON CAPACITY. WOOD AGING WAS\nLIMITED TO 18 MONTHS IN .300 GALLON\nCASKS. THE WINE WAS BOTTLED RELA\nTIVELY YOUNG AND BINNED DURING A\nLONG PERIOD TO ASSURE FULL DEVELOP.\nMENT IN THE BOTTLE.\nTHIS WINE WILL BE READY FOR MARKET-\nING NEXT FALL\nALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "e0be8e";
-  gv:red "224";
-  gv:blue "142";
-  gv:green "190";
-  gv:score "38.274011";
-  gv:coverage "12.526667"
-], [
-  gv:hex "dfc099";
-  gv:red "223";
-  gv:blue "153";
-  gv:green "192";
-  gv:score "23.576503";
-  gv:coverage "12.68"
-], [
-  gv:hex "b9996b";
-  gv:red "185";
-  gv:blue "107";
-  gv:green "153";
-  gv:score "17.259893";
-  gv:coverage "4.1933332"
-], [
-  gv:hex "b89a74";
-  gv:red "184";
-  gv:blue "116";
-  gv:green "154";
-  gv:score "7.946138799999999";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "e2b582";
-  gv:red "226";
-  gv:blue "130";
-  gv:green "181";
-  gv:score "3.0867226000000003";
-  gv:coverage "1.5"
-], [
-  gv:hex "9a7b4f";
-  gv:red "154";
-  gv:blue "79";
-  gv:green "123";
-  gv:score "2.4400484000000002";
-  gv:coverage "0.58"
-], [
-  gv:hex "c39560";
-  gv:red "195";
-  gv:blue "96";
-  gv:green "149";
-  gv:score "2.3011053";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "f1d7b3";
-  gv:red "241";
-  gv:blue "179";
-  gv:green "215";
-  gv:score "1.5461957";
-  gv:coverage "7.66"
-], [
-  gv:hex "9a7d58";
-  gv:red "154";
-  gv:blue "88";
-  gv:green "125";
-  gv:score "1.0431602";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "a07640";
-  gv:red "160";
-  gv:blue "64";
-  gv:green "118";
-  gv:score "0.8192455399999999";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.446016"
-], [
-  gv:mid <https://g.co/kg/m/0gkxy13>;
-  gv:desc "handwriting";
-  gv:score "79.09071399999999"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "75.703782"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.602715"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.533056"
-];
-    w:bagOfWords "TEMPORARY LABEL\nRUTHERFORD, NAPA\nCOUNTY, CALIF.\nTHIS WINE IS MADE OF JOHANINISBERGER\nRIESLING GRAPES GATHERED DURING THE\ny VINTAGE SEASON 1939 N THE VINEYARDS\nOF BEAULIEU, AT RUTHER FORD, NAPA.\nCOUNTY\nPICKED AT THE DESIRED RATIO OF SUGAR\nAND ACIDITY, THE GRAPES WERE FER-\nMENTED IN CLOSED TANKS OF 1000-\nGALLON CAPACITY. WOOD AGING WAS\nLIMITED TO 18 MONTHS IN .300 GALLON\nCASKS. THE WINE WAS BOTTLED RELA\nTIVELY YOUNG AND BINNED DURING A\nLONG PERIOD TO ASSURE FULL DEVELOP.\nMENT IN THE BOTTLE.\nTHIS WINE WILL BE READY FOR MARKET-\nING NEXT FALL\nALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3486";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

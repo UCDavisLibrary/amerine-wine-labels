@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1474";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "S OF FINE WINES\nTRADE MAAN\nWIDMER'S\nDUTCHESS WINE\nMADE FROM DUTCHESS GRAPE S\nPRODUCED AND BOTTLED BY\nmena Fine\nALCOHOL 12.5% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "d7c5b2";
-  gv:red "215";
-  gv:blue "178";
-  gv:green "197";
-  gv:score "18.867879000000002";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "1e130a";
-  gv:red "30";
-  gv:blue "10";
-  gv:green "19";
-  gv:score "1.6258253";
-  gv:coverage "0.24"
-], [
-  gv:hex "d3c5bb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "17.953989";
-  gv:coverage "13.100000000000001"
-], [
-  gv:hex "ebddd2";
-  gv:red "235";
-  gv:blue "210";
-  gv:green "221";
-  gv:score "9.9497706";
-  gv:coverage "75.466669"
-], [
-  gv:hex "ad9a87";
-  gv:red "173";
-  gv:blue "135";
-  gv:green "154";
-  gv:score "9.7536363";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "87735d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "115";
-  gv:score "8.03711";
-  gv:coverage "0.84"
-], [
-  gv:hex "eedbca";
-  gv:red "238";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "7.396006600000001";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "685137";
-  gv:red "104";
-  gv:blue "55";
-  gv:green "81";
-  gv:score "5.6230742";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "a99b92";
-  gv:red "169";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "5.5335134";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "725033";
-  gv:red "114";
-  gv:blue "51";
-  gv:green "80";
-  gv:score "2.8971575";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.716466"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "64.653569"
-];
-    w:bagOfWords "S OF FINE WINES\nTRADE MAAN\nWIDMER'S\nDUTCHESS WINE\nMADE FROM DUTCHESS GRAPE S\nPRODUCED AND BOTTLED BY\nmena Fine\nALCOHOL 12.5% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1474";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5029";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "MARQUE\n& Co\nSE LE CTED\nRUBY PORT\nO PORT o\nPRODUCE OF PORTUGAL\nIMPORTED FOR\nTERMINAL LIQUORS, LTD.\nSAN FRANCISCO\nCALIFORNIA\nCONTENTS 25132 OF ONE QUART\nOHOL BY VOLUME 2O 8 PER CENT\nport dime naturally deposits a large\n1mounf of sediment. To hane if in a perfect\nondition for drinking, the boffle musf be\nal omed fo stand on boffom in a fairly marm\nroom for a day at least, and fien carefully\nDecan fed. porf Mine shoul0 nof be exposed\nfo cold as if mill become cloudy.\n"@undefined;
-    gv:color [
-  gv:hex "522d15";
-  gv:red "82";
-  gv:blue "21";
-  gv:green "45";
-  gv:score "43.895015";
-  gv:coverage "10.573334"
-], [
-  gv:hex "dac4ae";
-  gv:red "218";
-  gv:blue "174";
-  gv:green "196";
-  gv:score "1.5742019";
-  gv:coverage "10.96"
-], [
-  gv:hex "5b3012";
-  gv:red "91";
-  gv:blue "18";
-  gv:green "48";
-  gv:score "20.60481";
-  gv:coverage "3.3866666"
-], [
-  gv:hex "6d452c";
-  gv:red "109";
-  gv:blue "44";
-  gv:green "69";
-  gv:score "13.766812999999999";
-  gv:coverage "8.006666599999999"
-], [
-  gv:hex "976e53";
-  gv:red "151";
-  gv:blue "83";
-  gv:green "110";
-  gv:score "5.599065100000001";
-  gv:coverage "5.6133334"
-], [
-  gv:hex "6a3e20";
-  gv:red "106";
-  gv:blue "32";
-  gv:green "62";
-  gv:score "5.3011149";
-  gv:coverage "1.18"
-], [
-  gv:hex "b79075";
-  gv:red "183";
-  gv:blue "117";
-  gv:green "144";
-  gv:score "2.3277635";
-  gv:coverage "3.2933332"
-], [
-  gv:hex "371702";
-  gv:red "55";
-  gv:blue "2";
-  gv:green "23";
-  gv:score "2.1485351";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "b19881";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "152";
-  gv:score "1.2715654";
-  gv:coverage "2.9266667"
-], [
-  gv:hex "cbc2b8";
-  gv:red "203";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "0.58534215";
-  gv:coverage "7.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.230355"
-], [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "62.098515"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MARQUE\n& Co\nSE LE CTED\nRUBY PORT\nO PORT o\nPRODUCE OF PORTUGAL\nIMPORTED FOR\nTERMINAL LIQUORS, LTD.\nSAN FRANCISCO\nCALIFORNIA\nCONTENTS 25132 OF ONE QUART\nOHOL BY VOLUME 2O 8 PER CENT\nport dime naturally deposits a large\n1mounf of sediment. To hane if in a perfect\nondition for drinking, the boffle musf be\nal omed fo stand on boffom in a fairly marm\nroom for a day at least, and fien carefully\nDecan fed. porf Mine shoul0 nof be exposed\nfo cold as if mill become cloudy.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5029";
+    <schema.keywords> "UC Reporters Notebook@en".
+

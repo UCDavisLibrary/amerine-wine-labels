@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0565";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E N G A U\nRabinottuu Qin\n1949er\nRauenthalor\nGeierftein\nNATUR REIN\nDerwaltung der Staatsuoeingutet\nEltoille\nEigener Rellerab3ug uno Rothbranb\n"@deu;
-    gv:color [
-  gv:hex "d5c0a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "69.2615";
-  gv:coverage "17.326666"
-], [
-  gv:hex "877559";
-  gv:red "135";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "9.1834053";
-  gv:coverage "3.8"
-], [
-  gv:hex "ae9a7f";
-  gv:red "174";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "9.0903372";
-  gv:coverage "3.5133332000000004"
-], [
-  gv:hex "65543b";
-  gv:red "101";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "6.198315699999999";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "43331d";
-  gv:red "67";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "3.3977348";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "e7d9c4";
-  gv:red "231";
-  gv:blue "196";
-  gv:green "217";
-  gv:score "0.9230210000000001";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "281a06";
-  gv:red "40";
-  gv:blue "6";
-  gv:green "26";
-  gv:score "0.76515889";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "806c3f";
-  gv:red "128";
-  gv:blue "63";
-  gv:green "108";
-  gv:score "0.42695161";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ba977d";
-  gv:red "186";
-  gv:blue "125";
-  gv:green "151";
-  gv:score "0.25778632";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e7ddd1";
-  gv:red "231";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "0.22017415999999998";
-  gv:coverage "66.846669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.867776"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "R H E N G A U\nRabinottuu Qin\n1949er\nRauenthalor\nGeierftein\nNATUR REIN\nDerwaltung der Staatsuoeingutet\nEltoille\nEigener Rellerab3ug uno Rothbranb\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0565";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

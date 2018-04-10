@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0873";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "SOLE AGENT FOR THE UNITED STATES\nCHAMPAGNE\nExtra Quality\nCONTENTS 1 PINT & 10FLUID OUNCES\nSHAW\nTHE HIGHEST STANDARD OF QUALITY\nMAISON FON DEE EN 176O\nMENT\n(FRANCE)\nVintage 1926\nALCOHOLIC STRENGTH BY VOLUME 13 PERCENT\n"@fra;
-    gv:color [
-  gv:hex "d0c4b8";
-  gv:red "208";
-  gv:blue "184";
-  gv:green "196";
-  gv:score "34.568858000000006";
-  gv:coverage "13.033332999999999"
-], [
-  gv:hex "e9ded2";
-  gv:red "233";
-  gv:blue "210";
-  gv:green "222";
-  gv:score "26.72604";
-  gv:coverage "71.893334"
-], [
-  gv:hex "a49a8f";
-  gv:red "164";
-  gv:blue "143";
-  gv:green "154";
-  gv:score "11.926390000000001";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "81766c";
-  gv:red "129";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "9.7899042";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "cfc4b5";
-  gv:red "207";
-  gv:blue "181";
-  gv:green "196";
-  gv:score "4.6552829";
-  gv:coverage "4.58"
-], [
-  gv:hex "a89b8d";
-  gv:red "168";
-  gv:blue "141";
-  gv:green "155";
-  gv:score "4.6472192";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "5d5349";
-  gv:red "93";
-  gv:blue "73";
-  gv:green "83";
-  gv:score "3.8762908";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "847669";
-  gv:red "132";
-  gv:blue "105";
-  gv:green "118";
-  gv:score "2.1166995";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "473c32";
-  gv:red "71";
-  gv:blue "50";
-  gv:green "60";
-  gv:score "0.75457711";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "e8daca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "0.58439192";
-  gv:coverage "5.786666599999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.009338"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.137595"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.2252"
-];
-    w:bagOfWords "SOLE AGENT FOR THE UNITED STATES\nCHAMPAGNE\nExtra Quality\nCONTENTS 1 PINT & 10FLUID OUNCES\nSHAW\nTHE HIGHEST STANDARD OF QUALITY\nMAISON FON DEE EN 176O\nMENT\n(FRANCE)\nVintage 1926\nALCOHOLIC STRENGTH BY VOLUME 13 PERCENT\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0873";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4888";
-    dct:type "image";
-    w:bagOfWords "1 9 8 7\nCABALLERO DE LA CEPA\nMENDOZA\nCABERNET SAUVIGNON\nVINO FINOTINTO RED WINE\nESTATE BOTTLED\nCONTENTS 750 ml. PRODUCED AND\nELABORADOYEMBOTELLADO POR FINCA\nFLICHMAN S. A. BODEGA A 70916 D.I.834\nBOTTLED BY FINCA FLICHMAN-PRODUCT\nCARRIL BARRANCASSIN MAIPU\nPROCEDENCIA: MENDOZA\n-ro\nOF ARGENTINA ALO. 13.0% BY VOL\nINDUSTRIA ARGENTINA\nCONT\nNETO\nUlliU\n"@undefined;
-    gv:color [
-  gv:hex "efe1aa";
-  gv:red "239";
-  gv:blue "170";
-  gv:green "225";
-  gv:score "40.001446";
-  gv:coverage "7.8866668"
-], [
-  gv:hex "380903";
-  gv:red "56";
-  gv:blue "3";
-  gv:green "9";
-  gv:score "4.3933377";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "8f6a68";
-  gv:red "143";
-  gv:blue "104";
-  gv:green "106";
-  gv:score "0.4080662";
-  gv:coverage "0.38"
-], [
-  gv:hex "d4c590";
-  gv:red "212";
-  gv:blue "144";
-  gv:green "197";
-  gv:score "14.658468999999998";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "af9e6b";
-  gv:red "175";
-  gv:blue "107";
-  gv:green "158";
-  gv:score "10.089745";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "eee3b5";
-  gv:red "238";
-  gv:blue "181";
-  gv:green "227";
-  gv:score "5.4409279999999995";
-  gv:coverage "3.74"
-], [
-  gv:hex "d5c39a";
-  gv:red "213";
-  gv:blue "154";
-  gv:green "195";
-  gv:score "4.7924675";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "430402";
-  gv:red "67";
-  gv:blue "2";
-  gv:green "4";
-  gv:score "3.6984246";
-  gv:coverage "2.9466666"
-], [
-  gv:hex "897948";
-  gv:red "137";
-  gv:blue "72";
-  gv:green "121";
-  gv:score "2.972264";
-  gv:coverage "0.48"
-], [
-  gv:hex "ae9c75";
-  gv:red "174";
-  gv:blue "117";
-  gv:green "156";
-  gv:score "2.4248241999999998";
-  gv:coverage "0.6799999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.63314899999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.537271000000004"
-];
-    w:bagOfWords "1 9 8 7\nCABALLERO DE LA CEPA\nMENDOZA\nCABERNET SAUVIGNON\nVINO FINOTINTO RED WINE\nESTATE BOTTLED\nCONTENTS 750 ml. PRODUCED AND\nELABORADOYEMBOTELLADO POR FINCA\nFLICHMAN S. A. BODEGA A 70916 D.I.834\nBOTTLED BY FINCA FLICHMAN-PRODUCT\nCARRIL BARRANCASSIN MAIPU\nPROCEDENCIA: MENDOZA\n-ro\nOF ARGENTINA ALO. 13.0% BY VOL\nINDUSTRIA ARGENTINA\nCONT\nNETO\nUlliU\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4888";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

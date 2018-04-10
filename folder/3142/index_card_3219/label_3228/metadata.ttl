@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3228";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF\nTRADE\nS ALCOHOL BY VOLUME\n3,2\no/o\n1 PINT 8 FL. oz.\nRIETAIRE & IANT\nA NUITs coTE D'OR)\n"@fra;
-    gv:color [
-  gv:hex "dfc3a0";
-  gv:red "223";
-  gv:blue "160";
-  gv:green "195";
-  gv:score "39.544573";
-  gv:coverage "15.133332999999999"
-], [
-  gv:hex "b39977";
-  gv:red "179";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "18.460257";
-  gv:coverage "5.9666667"
-], [
-  gv:hex "f3d7b6";
-  gv:red "243";
-  gv:blue "182";
-  gv:green "215";
-  gv:score "6.1759517";
-  gv:coverage "13.813333"
-], [
-  gv:hex "917858";
-  gv:red "145";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "5.9350524";
-  gv:coverage "1.92"
-], [
-  gv:hex "e7bb9b";
-  gv:red "231";
-  gv:blue "155";
-  gv:green "187";
-  gv:score "5.3252413999999995";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "c29578";
-  gv:red "194";
-  gv:blue "120";
-  gv:green "149";
-  gv:score "4.3610945";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "b49668";
-  gv:red "180";
-  gv:blue "104";
-  gv:green "150";
-  gv:score "3.6228623";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "977a4e";
-  gv:red "151";
-  gv:blue "78";
-  gv:green "122";
-  gv:score "3.0675974000000004";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "dbbc8f";
-  gv:red "219";
-  gv:blue "143";
-  gv:green "188";
-  gv:score "3.0203333";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "c29069";
-  gv:red "194";
-  gv:blue "105";
-  gv:green "144";
-  gv:score "2.4246901000000003";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.846058"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.67068400000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF\nTRADE\nS ALCOHOL BY VOLUME\n3,2\no/o\n1 PINT 8 FL. oz.\nRIETAIRE & IANT\nA NUITs coTE D'OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3228";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2296";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "ROIS\nLE VIN.\nDES Roi DES WNS\nPROPRIETAIRE\nA SAINT JULIEN HAUTMEDOC)\nAPPELLATION CONTROLEE SAINT JU\nM i s EN BOUTEHA Fs AU CHATEAU\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "d3bca4";
-  gv:red "211";
-  gv:blue "164";
-  gv:green "188";
-  gv:score "29.912934000000003";
-  gv:coverage "16.926667000000002"
-], [
-  gv:hex "b49a7f";
-  gv:red "180";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "24.343418";
-  gv:coverage "6.353333599999999"
-], [
-  gv:hex "b79176";
-  gv:red "183";
-  gv:blue "118";
-  gv:green "145";
-  gv:score "13.485861";
-  gv:coverage "4.04"
-], [
-  gv:hex "9b7558";
-  gv:red "155";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "8.1588954";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "93785b";
-  gv:red "147";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "6.8831749";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "966e47";
-  gv:red "150";
-  gv:blue "71";
-  gv:green "110";
-  gv:score "3.2729967999999996";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "734b25";
-  gv:red "115";
-  gv:blue "37";
-  gv:green "75";
-  gv:score "2.595832";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "d8b39f";
-  gv:red "216";
-  gv:blue "159";
-  gv:green "179";
-  gv:score "2.5924305000000003";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "ecd8c2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "1.8024585999999998";
-  gv:coverage "11.066666999999999"
-], [
-  gv:hex "d5c0b6";
-  gv:red "213";
-  gv:blue "182";
-  gv:green "192";
-  gv:score "1.4405400000000002";
-  gv:coverage "4.4066668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "65.602744"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.630534"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.293084"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.866054"
-];
-    w:bagOfWords "ROIS\nLE VIN.\nDES Roi DES WNS\nPROPRIETAIRE\nA SAINT JULIEN HAUTMEDOC)\nAPPELLATION CONTROLEE SAINT JU\nM i s EN BOUTEHA Fs AU CHATEAU\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2296";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

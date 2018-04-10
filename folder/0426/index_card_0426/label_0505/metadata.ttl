@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0505";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "HOCHHEIMER\nBIE BRICH\nWIESBADEN\nRHINE\nHENKEL, L& Co\nContents: 1 Pint 8 oy ilee Alcohol: under 12%\nProduct of Germany\n"@deu;
-    gv:color [
-  gv:hex "e0be7e";
-  gv:red "224";
-  gv:blue "126";
-  gv:green "190";
-  gv:score "28.374791";
-  gv:coverage "6.4866669"
-], [
-  gv:hex "9b6e37";
-  gv:red "155";
-  gv:blue "55";
-  gv:green "110";
-  gv:score "5.2342184";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "183b1e";
-  gv:red "24";
-  gv:blue "30";
-  gv:green "59";
-  gv:score "2.2064865";
-  gv:coverage "0.8"
-], [
-  gv:hex "c74917";
-  gv:red "199";
-  gv:blue "23";
-  gv:green "73";
-  gv:score "2.0486137";
-  gv:coverage "0.1"
-], [
-  gv:hex "e97e42";
-  gv:red "233";
-  gv:blue "66";
-  gv:green "126";
-  gv:score "1.5387866";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "cec4a2";
-  gv:red "206";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "16.637427";
-  gv:coverage "30.166668"
-], [
-  gv:hex "be9c60";
-  gv:red "190";
-  gv:blue "96";
-  gv:green "156";
-  gv:score "9.459091";
-  gv:coverage "1.8066667"
-], [
-  gv:hex "3f1300";
-  gv:red "63";
-  gv:blue "undefined";
-  gv:green "19";
-  gv:score "0.065558474";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "c3935a";
-  gv:red "195";
-  gv:blue "90";
-  gv:green "147";
-  gv:score "5.1346187";
-  gv:coverage "0.66"
-], [
-  gv:hex "bacaa3";
-  gv:red "186";
-  gv:blue "163";
-  gv:green "202";
-  gv:score "4.4590294";
-  gv:coverage "2.5733333000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.507315999999996"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.270694000000006"
-];
-    w:bagOfWords "HOCHHEIMER\nBIE BRICH\nWIESBADEN\nRHINE\nHENKEL, L& Co\nContents: 1 Pint 8 oy ilee Alcohol: under 12%\nProduct of Germany\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0505";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

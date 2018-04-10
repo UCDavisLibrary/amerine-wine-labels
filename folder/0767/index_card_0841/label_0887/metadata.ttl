@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0887";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "in\nveuve Laurent Perrier\n"@fra;
-    gv:color [
-  gv:hex "615330";
-  gv:red "97";
-  gv:blue "48";
-  gv:green "83";
-  gv:score "25.333947000000002";
-  gv:coverage "9.22"
-], [
-  gv:hex "d5c0a3";
-  gv:red "213";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "21.362607";
-  gv:coverage "13.586667"
-], [
-  gv:hex "837350";
-  gv:red "131";
-  gv:blue "80";
-  gv:green "115";
-  gv:score "16.588712";
-  gv:coverage "5.779999999999999"
-], [
-  gv:hex "af9a7c";
-  gv:red "175";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "11.562604";
-  gv:coverage "4.3933332"
-], [
-  gv:hex "413513";
-  gv:red "65";
-  gv:blue "19";
-  gv:green "53";
-  gv:score "10.48184";
-  gv:coverage "3.7666667"
-], [
-  gv:hex "625227";
-  gv:red "98";
-  gv:blue "39";
-  gv:green "82";
-  gv:score "3.2062820999999997";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "ecd8bd";
-  gv:red "236";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "2.1072172";
-  gv:coverage "5.5533335"
-], [
-  gv:hex "8b7445";
-  gv:red "139";
-  gv:blue "69";
-  gv:green "116";
-  gv:score "2.0703599";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "473910";
-  gv:red "71";
-  gv:blue "16";
-  gv:green "57";
-  gv:score "2.0083828";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "b29564";
-  gv:red "178";
-  gv:blue "100";
-  gv:green "149";
-  gv:score "1.1663843";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.222134"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.538309"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.406894"
-];
-    w:bagOfWords "in\nveuve Laurent Perrier\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0887";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

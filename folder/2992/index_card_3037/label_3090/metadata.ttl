@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3090";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "GRAND VIN\nCHATEAU YON-FIGEAC\nAPPELLATION CONTROL, EE\nMichel FAUVARQUE & Cie\nR. C. Bruxelles 6110 Cont\n68-70 c\nCLASQU\nBORD\nDépi\nNo 405\nImprimé en France\n"@fra;
-    gv:color [
-  gv:hex "d3c2a1";
-  gv:red "211";
-  gv:blue "161";
-  gv:green "194";
-  gv:score "31.139985";
-  gv:coverage "15.86"
-], [
-  gv:hex "aa9a7a";
-  gv:red "170";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "15.98687";
-  gv:coverage "4.1933332"
-], [
-  gv:hex "847755";
-  gv:red "132";
-  gv:blue "85";
-  gv:green "119";
-  gv:score "15.785189999999998";
-  gv:coverage "4.8666667"
-], [
-  gv:hex "ecdbbb";
-  gv:red "236";
-  gv:blue "187";
-  gv:green "219";
-  gv:score "9.7923696";
-  gv:coverage "21.02"
-], [
-  gv:hex "867446";
-  gv:red "134";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "7.3479764";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "625637";
-  gv:red "98";
-  gv:blue "55";
-  gv:green "86";
-  gv:score "7.1512654";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "67572a";
-  gv:red "103";
-  gv:blue "42";
-  gv:green "87";
-  gv:score "4.689484800000001";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "b19868";
-  gv:red "177";
-  gv:blue "104";
-  gv:green "152";
-  gv:score "3.2184";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "dec493";
-  gv:red "222";
-  gv:blue "147";
-  gv:green "196";
-  gv:score "2.4998831999999997";
-  gv:coverage "0.2"
-], [
-  gv:hex "423720";
-  gv:red "66";
-  gv:blue "32";
-  gv:green "55";
-  gv:score "1.3974916";
-  gv:coverage "0.81333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "83.265936"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.273951"
-];
-    w:bagOfWords "GRAND VIN\nCHATEAU YON-FIGEAC\nAPPELLATION CONTROL, EE\nMichel FAUVARQUE & Cie\nR. C. Bruxelles 6110 Cont\n68-70 c\nCLASQU\nBORD\nDépi\nNo 405\nImprimé en France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3090";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

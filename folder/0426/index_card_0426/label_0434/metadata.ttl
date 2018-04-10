@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0434";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1949er\nmannshauser Hinterkirch Spatburgunder\nA u s e s e\ni', i genes G e w dh s\nR H E N G A U\na30 S. HUFNAGEL KRONENKELLEREI, ASSMANNSHAUSEN A. RHEIN\n"@deu;
-    gv:color [
-  gv:hex "ae997c";
-  gv:red "174";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "22.820316";
-  gv:coverage "5.8466665"
-], [
-  gv:hex "877356";
-  gv:red "135";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "19.064212";
-  gv:coverage "3.9866667000000002"
-], [
-  gv:hex "d1bca0";
-  gv:red "209";
-  gv:blue "160";
-  gv:green "188";
-  gv:score "19.051610999999998";
-  gv:coverage "10.186667"
-], [
-  gv:hex "655438";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "15.077922999999998";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "90784a";
-  gv:red "144";
-  gv:blue "74";
-  gv:green "120";
-  gv:score "5.8080457";
-  gv:coverage "1.6066667"
-], [
-  gv:hex "47361b";
-  gv:red "71";
-  gv:blue "27";
-  gv:green "54";
-  gv:score "4.9590755";
-  gv:coverage "0.86"
-], [
-  gv:hex "b19766";
-  gv:red "177";
-  gv:blue "102";
-  gv:green "151";
-  gv:score "4.1000724";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "cfc2b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "2.6169293";
-  gv:coverage "9.9933334"
-], [
-  gv:hex "d0ba7f";
-  gv:red "208";
-  gv:blue "127";
-  gv:green "186";
-  gv:score "0.98956544";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "a29a91";
-  gv:red "162";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "0.9752782999999999";
-  gv:coverage "0.90666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.008819"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.333881"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.198746"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.02909999999999"
-];
-    w:bagOfWords "1949er\nmannshauser Hinterkirch Spatburgunder\nA u s e s e\ni', i genes G e w dh s\nR H E N G A U\na30 S. HUFNAGEL KRONENKELLEREI, ASSMANNSHAUSEN A. RHEIN\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0434";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

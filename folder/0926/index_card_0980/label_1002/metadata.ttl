@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_1002";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "47\nP R O D U C T\n0 F\nS W\n1 T Z E R\nL A N D\nCONTENTS\nALCOHOL\nSUPERIEUR DE\n1 PT. 8 BY VOL.12\nVALLEE DU\nRHoNE\nDOLE\nSTILL RED WINE\nD O M A I N E\nCLOS ST. RE M Y\nSION\nVALAIS\nQUE N N 0 Z & E S C H E R. P R O P R\nI E T A I R E S\nE X P O R T\nA G E N T S\nJ. WER THE I MER & CO., ZURICH S WITZERLAND\nM P O R T E D\nB Y\nBELL 0 W S & CO M P A N Y\nN C., NEW Y OR K N. Y\n2. 1. 41\nSwitzer\nE A\n"@deu;
-    gv:color [
-  gv:hex "d3bfa2";
-  gv:red "211";
-  gv:blue "162";
-  gv:green "191";
-  gv:score "33.374286";
-  gv:coverage "14.360000000000001"
-], [
-  gv:hex "b19d7f";
-  gv:red "177";
-  gv:blue "127";
-  gv:green "157";
-  gv:score "11.948813";
-  gv:coverage "2.78"
-], [
-  gv:hex "efdcc2";
-  gv:red "239";
-  gv:blue "194";
-  gv:green "220";
-  gv:score "9.8998263";
-  gv:coverage "17.346667"
-], [
-  gv:hex "847458";
-  gv:red "132";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "6.6469282000000005";
-  gv:coverage "0.5"
-], [
-  gv:hex "68583d";
-  gv:red "104";
-  gv:blue "61";
-  gv:green "88";
-  gv:score "6.559366";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "e5b8a3";
-  gv:red "229";
-  gv:blue "163";
-  gv:green "184";
-  gv:score "5.4228779";
-  gv:coverage "0.86"
-], [
-  gv:hex "c2927b";
-  gv:red "194";
-  gv:blue "123";
-  gv:green "146";
-  gv:score "5.3392105";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "704b37";
-  gv:red "112";
-  gv:blue "55";
-  gv:green "75";
-  gv:score "3.8965140000000003";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "d2c3b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "2.8776415";
-  gv:coverage "3.46"
-], [
-  gv:hex "887648";
-  gv:red "136";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "2.6931997";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.857039"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.801086"
-];
-    w:bagOfWords "47\nP R O D U C T\n0 F\nS W\n1 T Z E R\nL A N D\nCONTENTS\nALCOHOL\nSUPERIEUR DE\n1 PT. 8 BY VOL.12\nVALLEE DU\nRHoNE\nDOLE\nSTILL RED WINE\nD O M A I N E\nCLOS ST. RE M Y\nSION\nVALAIS\nQUE N N 0 Z & E S C H E R. P R O P R\nI E T A I R E S\nE X P O R T\nA G E N T S\nJ. WER THE I MER & CO., ZURICH S WITZERLAND\nM P O R T E D\nB Y\nBELL 0 W S & CO M P A N Y\nN C., NEW Y OR K N. Y\n2. 1. 41\nSwitzer\nE A\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1002";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

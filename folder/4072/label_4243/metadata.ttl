@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4243";
-    dct:type "image";
-    w:bagOfWords "Haut-Sauternes\nBORDEAUX\nDEPOSE\nN° 146\nWETTERWALD-BORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "863a36";
-  gv:red "134";
-  gv:blue "54";
-  gv:green "58";
-  gv:score "20.053189";
-  gv:coverage "0.18"
-], [
-  gv:hex "373337";
-  gv:red "55";
-  gv:blue "55";
-  gv:green "51";
-  gv:score "7.63378";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "ccc2bc";
-  gv:red "204";
-  gv:blue "188";
-  gv:green "194";
-  gv:score "5.7259582";
-  gv:coverage "26.3"
-], [
-  gv:hex "774235";
-  gv:red "119";
-  gv:blue "53";
-  gv:green "66";
-  gv:score "14.374635";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "502d1b";
-  gv:red "80";
-  gv:blue "27";
-  gv:green "45";
-  gv:score "7.2766416";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "6e494e";
-  gv:red "110";
-  gv:blue "78";
-  gv:green "73";
-  gv:score "5.0631341";
-  gv:coverage "0.1"
-], [
-  gv:hex "5b5250";
-  gv:red "91";
-  gv:blue "80";
-  gv:green "82";
-  gv:score "4.4093404000000005";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "e7ded7";
-  gv:red "231";
-  gv:blue "215";
-  gv:green "222";
-  gv:score "3.7770361";
-  gv:coverage "65.60000000000001"
-], [
-  gv:hex "2d3848";
-  gv:red "45";
-  gv:blue "72";
-  gv:green "56";
-  gv:score "3.7371434000000003";
-  gv:coverage "0.12"
-], [
-  gv:hex "a49b94";
-  gv:red "164";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "3.4406930000000004";
-  gv:coverage "0.90666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.058045"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.175551"
-];
-    w:bagOfWords "Haut-Sauternes\nBORDEAUX\nDEPOSE\nN° 146\nWETTERWALD-BORDEAUX\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4243";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

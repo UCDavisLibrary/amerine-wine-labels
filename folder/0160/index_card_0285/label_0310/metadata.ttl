@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0310";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "CALIFORNIA\nZinfandel\nALCOHOL\n12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOLANO WINERY, INC.\nCORDELIA, CAL FORN IA\n(ESTABLISHED IN 893)\nBONDED WINERY No. 42 TAX PAID BY STAMPS\nAFFIXED TO CASE\n1 4TH SUPER DISTRICT\nREG. U. S. PAT. OFF.\n"@eng;
-    gv:color [
-  gv:hex "917541";
-  gv:red "145";
-  gv:blue "65";
-  gv:green "117";
-  gv:score "42.344156";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "d6c2a7";
-  gv:red "214";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "15.539488000000002";
-  gv:coverage "59.440000000000005"
-], [
-  gv:hex "877453";
-  gv:red "135";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "10.350976000000001";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "ab9879";
-  gv:red "171";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "8.3198495";
-  gv:coverage "2.62"
-], [
-  gv:hex "665435";
-  gv:red "102";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "6.5717131";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "aa925f";
-  gv:red "170";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "3.6837215999999997";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "6b5427";
-  gv:red "107";
-  gv:blue "39";
-  gv:green "84";
-  gv:score "3.3145758999999995";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "977140";
-  gv:red "151";
-  gv:blue "64";
-  gv:green "113";
-  gv:score "2.4576485";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "ead8bd";
-  gv:red "234";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "1.7990593";
-  gv:coverage "10.573334"
-], [
-  gv:hex "bd9789";
-  gv:red "189";
-  gv:blue "137";
-  gv:green "151";
-  gv:score "1.5217956";
-  gv:coverage "0.5599999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.516484"
-];
-    w:bagOfWords "CALIFORNIA\nZinfandel\nALCOHOL\n12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSOLANO WINERY, INC.\nCORDELIA, CAL FORN IA\n(ESTABLISHED IN 893)\nBONDED WINERY No. 42 TAX PAID BY STAMPS\nAFFIXED TO CASE\n1 4TH SUPER DISTRICT\nREG. U. S. PAT. OFF.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0310";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

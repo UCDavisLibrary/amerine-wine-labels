@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0872";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "GREAT BRITAIN\n212\nKRUG\n937\nEXTRA SEC\n30.01\n"@fra;
-    gv:color [
-  gv:hex "d4bfa5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "42.382297";
-  gv:coverage "10.786667"
-], [
-  gv:hex "af9b82";
-  gv:red "175";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "23.551074999999997";
-  gv:coverage "4.4866665999999995"
-], [
-  gv:hex "88755e";
-  gv:red "136";
-  gv:blue "94";
-  gv:green "117";
-  gv:score "14.495099";
-  gv:coverage "2.92"
-], [
-  gv:hex "64533c";
-  gv:red "100";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "7.657185900000001";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "44331d";
-  gv:red "68";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "4.2586509";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "ecd9c3";
-  gv:red "236";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "3.3877338999999997";
-  gv:coverage "3.3266667"
-], [
-  gv:hex "bb937d";
-  gv:red "187";
-  gv:blue "125";
-  gv:green "147";
-  gv:score "1.1504544";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "281807";
-  gv:red "40";
-  gv:blue "7";
-  gv:green "24";
-  gv:score "1.0228653";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "ddb49f";
-  gv:red "221";
-  gv:blue "159";
-  gv:green "180";
-  gv:score "0.438319";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "d9cbbf";
-  gv:red "217";
-  gv:blue "191";
-  gv:green "203";
-  gv:score "0.40316437000000005";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.5104"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.400332"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "52.2945"
-];
-    w:bagOfWords "GREAT BRITAIN\n212\nKRUG\n937\nEXTRA SEC\n30.01\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0872";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3763";
-    dct:type "image";
-    w:bagOfWords "BERSANO\nDEL PIE MONTE\nVIN\nPREGIATI\n1090\nNEBBIOLATO\nDr. ARTURO BERSANO\nNIZZA MONFERRATO\n(Asti-italia)\n"@ita;
-    gv:color [
-  gv:hex "0e4ba1";
-  gv:red "14";
-  gv:blue "161";
-  gv:green "75";
-  gv:score "20.834842000000002";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "22528b";
-  gv:red "34";
-  gv:blue "139";
-  gv:green "82";
-  gv:score "6.811858699999999";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "cbc6c0";
-  gv:red "203";
-  gv:blue "192";
-  gv:green "198";
-  gv:score "3.1912029";
-  gv:coverage "5.0133333"
-], [
-  gv:hex "0542b4";
-  gv:red "5";
-  gv:blue "180";
-  gv:green "66";
-  gv:score "2.9883882";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "c2654a";
-  gv:red "194";
-  gv:blue "74";
-  gv:green "101";
-  gv:score "1.0372772000000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "a9371e";
-  gv:red "169";
-  gv:blue "30";
-  gv:green "55";
-  gv:score "0.8781534599999999";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "fe2e12";
-  gv:red "254";
-  gv:blue "18";
-  gv:green "46";
-  gv:score "0.67873006";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d64d29";
-  gv:red "214";
-  gv:blue "41";
-  gv:green "77";
-  gv:score "0.49941312";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "78334b";
-  gv:red "120";
-  gv:blue "75";
-  gv:green "51";
-  gv:score "0.49520045999999995";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "073484";
-  gv:red "7";
-  gv:blue "132";
-  gv:green "52";
-  gv:score "8.905734899999999";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.56396"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.988552"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "50.404537000000005"
-];
-    w:bagOfWords "BERSANO\nDEL PIE MONTE\nVIN\nPREGIATI\n1090\nNEBBIOLATO\nDr. ARTURO BERSANO\nNIZZA MONFERRATO\n(Asti-italia)\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3763";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

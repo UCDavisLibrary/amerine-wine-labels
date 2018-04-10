@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0198/label_0219";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "MAGE\n1941\nGINAL\nHOTEL MONTE 188o\nDEL HOTEL DEL MONTE\nSELECTION\nS O N O MMA\nCABERNET\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST. 876\nHEALDSBURG, SONOMA CO., CALIF\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\n001941 P & co.\n"@eng;
-    gv:color [
-  gv:hex "d5bc9a";
-  gv:red "213";
-  gv:blue "154";
-  gv:green "188";
-  gv:score "49.674156";
-  gv:coverage "63.233334"
-], [
-  gv:hex "823b23";
-  gv:red "130";
-  gv:blue "35";
-  gv:green "59";
-  gv:score "0.6670459200000001";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "b29c7c";
-  gv:red "178";
-  gv:blue "124";
-  gv:green "156";
-  gv:score "13.133286";
-  gv:coverage "4.74"
-], [
-  gv:hex "e6b397";
-  gv:red "230";
-  gv:blue "151";
-  gv:green "179";
-  gv:score "10.194141";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "c69377";
-  gv:red "198";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "7.2347157";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "8a7659";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "6.438265";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "a26b51";
-  gv:red "162";
-  gv:blue "81";
-  gv:green "107";
-  gv:score "3.2214381";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "675439";
-  gv:red "103";
-  gv:blue "57";
-  gv:green "84";
-  gv:score "2.8019702";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "9b6645";
-  gv:red "155";
-  gv:blue "69";
-  gv:green "102";
-  gv:score "1.0780785";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "4b391e";
-  gv:red "75";
-  gv:blue "30";
-  gv:green "57";
-  gv:score "0.8713863800000001";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.52536500000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MAGE\n1941\nGINAL\nHOTEL MONTE 188o\nDEL HOTEL DEL MONTE\nSELECTION\nS O N O MMA\nCABERNET\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nSIMI WINERIES\nEST. 876\nHEALDSBURG, SONOMA CO., CALIF\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\n001941 P & co.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0219";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

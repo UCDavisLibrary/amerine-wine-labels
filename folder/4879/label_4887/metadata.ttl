@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4887";
-    dct:type "image";
-    w:bagOfWords "1 9 9 2\nCABALLERO DE LA CEPA\nMENDOZA\nCHARDONNAY\nVINO FINO BLANCO WHITE WINE\nESTATE BOTTLED\nCONTENTS 750 ml. .PRODUCED AND\nELABORADOYEMBOTELLADOPORFINCA\nFLICHMAN S. A. BODEGA A 70916 D.I. 834\nBOTTLED BY FINCA FLICHMAN-PRODUCT\nCARRILBARRANCAS S/N-MAIPU\nOF ARGENTINA ALC. 13.0% PROCEDENCIA MENDOZA\nBY VOL\nsmi NDUSTRIA ARGENTINA\nCONT\nNETO\n"@undefined;
-    gv:color [
-  gv:hex "cdc19b";
-  gv:red "205";
-  gv:blue "155";
-  gv:green "193";
-  gv:score "27.325273";
-  gv:coverage "4.8933335"
-], [
-  gv:hex "0a1202";
-  gv:red "10";
-  gv:blue "2";
-  gv:green "18";
-  gv:score "9.4172135";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "36341b";
-  gv:red "54";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "5.7899989";
-  gv:coverage "1.52"
-], [
-  gv:hex "131e08";
-  gv:red "19";
-  gv:blue "8";
-  gv:green "30";
-  gv:score "4.790877200000001";
-  gv:coverage "1.78"
-], [
-  gv:hex "aa9f79";
-  gv:red "170";
-  gv:blue "121";
-  gv:green "159";
-  gv:score "15.931347";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "ede2ba";
-  gv:red "237";
-  gv:blue "186";
-  gv:green "226";
-  gv:score "15.764682999999998";
-  gv:coverage "16.48"
-], [
-  gv:hex "867b57";
-  gv:red "134";
-  gv:blue "87";
-  gv:green "123";
-  gv:score "5.630859399999999";
-  gv:coverage "1.02"
-], [
-  gv:hex "595234";
-  gv:red "89";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "3.8465116";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "171d08";
-  gv:red "23";
-  gv:blue "8";
-  gv:green "29";
-  gv:score "3.2031309";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "2c371d";
-  gv:red "44";
-  gv:blue "29";
-  gv:green "55";
-  gv:score "2.71923";
-  gv:coverage "0.86"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.09652899999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "58.20657"
-];
-    w:bagOfWords "1 9 9 2\nCABALLERO DE LA CEPA\nMENDOZA\nCHARDONNAY\nVINO FINO BLANCO WHITE WINE\nESTATE BOTTLED\nCONTENTS 750 ml. .PRODUCED AND\nELABORADOYEMBOTELLADOPORFINCA\nFLICHMAN S. A. BODEGA A 70916 D.I. 834\nBOTTLED BY FINCA FLICHMAN-PRODUCT\nCARRILBARRANCAS S/N-MAIPU\nOF ARGENTINA ALC. 13.0% PROCEDENCIA MENDOZA\nBY VOL\nsmi NDUSTRIA ARGENTINA\nCONT\nNETO\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4887";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

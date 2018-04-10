@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0779/label_0787";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "OSGELLERIEEDV\nOIEVX: PEROGES:\nleg Orig Régionaux\nirieu\nen 15ugey\nblance Chateau d'urfe\nIMP. GOUGENHEIM FR. LYON\n"@fra;
-    gv:color [
-  gv:hex "ddc39f";
-  gv:red "221";
-  gv:blue "159";
-  gv:green "195";
-  gv:score "58.862435999999995";
-  gv:coverage "23.453334"
-], [
-  gv:hex "dab98c";
-  gv:red "218";
-  gv:blue "140";
-  gv:green "185";
-  gv:score "9.7227149";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "bd9c71";
-  gv:red "189";
-  gv:blue "113";
-  gv:green "156";
-  gv:score "8.849711000000001";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "b79d7b";
-  gv:red "183";
-  gv:blue "123";
-  gv:green "157";
-  gv:score "8.5316367";
-  gv:coverage "2.1733332"
-], [
-  gv:hex "efd8b7";
-  gv:red "239";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "5.3056866000000005";
-  gv:coverage "4.54"
-], [
-  gv:hex "8b7354";
-  gv:red "139";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "3.0245803";
-  gv:coverage "0.74"
-], [
-  gv:hex "685236";
-  gv:red "104";
-  gv:blue "54";
-  gv:green "82";
-  gv:score "1.5679663";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "412e12";
-  gv:red "65";
-  gv:blue "18";
-  gv:green "46";
-  gv:score "1.0591158999999999";
-  gv:coverage "0.22"
-], [
-  gv:hex "9c7c51";
-  gv:red "156";
-  gv:blue "81";
-  gv:green "124";
-  gv:score "0.75261877";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "2b1902";
-  gv:red "43";
-  gv:blue "2";
-  gv:green "25";
-  gv:score "0.6280181499999999";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.52589400000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.95228"
-];
-    w:bagOfWords "OSGELLERIEEDV\nOIEVX: PEROGES:\nleg Orig Régionaux\nirieu\nen 15ugey\nblance Chateau d'urfe\nIMP. GOUGENHEIM FR. LYON\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0787";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1843";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "SPARKLING HOCK\n, DEINHARD&L9C0BLENZYRHINE &MOSELLE.ial\nDE IN HARD&Co COBLENZ9ReilNE&MOSELLd4\nGermany.\n0\n"@deu;
-    gv:color [
-  gv:hex "d5c0a3";
-  gv:red "213";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "60.660708";
-  gv:coverage "17.28"
-], [
-  gv:hex "b39d7f";
-  gv:red "179";
-  gv:blue "127";
-  gv:green "157";
-  gv:score "14.656791";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "877357";
-  gv:red "135";
-  gv:blue "87";
-  gv:green "115";
-  gv:score "7.184858600000001";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "644f30";
-  gv:red "100";
-  gv:blue "48";
-  gv:green "79";
-  gv:score "5.611502799999999";
-  gv:coverage "0.66"
-], [
-  gv:hex "ead9c1";
-  gv:red "234";
-  gv:blue "193";
-  gv:green "217";
-  gv:score "3.10918";
-  gv:coverage "5.779999999999999"
-], [
-  gv:hex "c09f6d";
-  gv:red "192";
-  gv:blue "109";
-  gv:green "159";
-  gv:score "3.0434931";
-  gv:coverage "0.44"
-], [
-  gv:hex "d5b486";
-  gv:red "213";
-  gv:blue "134";
-  gv:green "180";
-  gv:score "2.1587063";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "4c381a";
-  gv:red "76";
-  gv:blue "26";
-  gv:green "56";
-  gv:score "1.3510104";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "513915";
-  gv:red "81";
-  gv:blue "21";
-  gv:green "57";
-  gv:score "0.7615803299999999";
-  gv:coverage "0.06"
-], [
-  gv:hex "d9cabf";
-  gv:red "217";
-  gv:blue "191";
-  gv:green "202";
-  gv:score "0.59603238";
-  gv:coverage "1.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.979151"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.488411"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.180952999999995"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.83259999999999"
-];
-    w:bagOfWords "SPARKLING HOCK\n, DEINHARD&L9C0BLENZYRHINE &MOSELLE.ial\nDE IN HARD&Co COBLENZ9ReilNE&MOSELLd4\nGermany.\n0\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1843";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4051/label_4052";
-    dct:type "image";
-    w:bagOfWords "en1906, exclusivamente por cosecheros elle(la\ndata Prov, de Barcelona\n"@spa;
-    gv:color [
-  gv:hex "402e19";
-  gv:red "64";
-  gv:blue "25";
-  gv:green "46";
-  gv:score "33.980596";
-  gv:coverage "11.453333"
-], [
-  gv:hex "ebded4";
-  gv:red "235";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "0.38300491999999997";
-  gv:coverage "58.94666899999999"
-], [
-  gv:hex "645036";
-  gv:red "100";
-  gv:blue "54";
-  gv:green "80";
-  gv:score "25.109008";
-  gv:coverage "7.4266665"
-], [
-  gv:hex "2b1a09";
-  gv:red "43";
-  gv:blue "9";
-  gv:green "26";
-  gv:score "17.124316";
-  gv:coverage "6.2933333"
-], [
-  gv:hex "816c4d";
-  gv:red "129";
-  gv:blue "77";
-  gv:green "108";
-  gv:score "5.341332";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "1d0e05";
-  gv:red "29";
-  gv:blue "5";
-  gv:green "14";
-  gv:score "4.2972244";
-  gv:coverage "2.18"
-], [
-  gv:hex "6a532b";
-  gv:red "106";
-  gv:blue "43";
-  gv:green "83";
-  gv:score "3.3222977";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "412817";
-  gv:red "65";
-  gv:blue "23";
-  gv:green "40";
-  gv:score "3.2225765";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "2e1707";
-  gv:red "46";
-  gv:blue "7";
-  gv:green "23";
-  gv:score "2.9627342";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "4d3610";
-  gv:red "77";
-  gv:blue "16";
-  gv:green "54";
-  gv:score "1.244407";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "73.535532"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.92044899999999"
-];
-    w:bagOfWords "en1906, exclusivamente por cosecheros elle(la\ndata Prov, de Barcelona\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4052";
+    <schema.keywords> "Spain - Catalonia Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

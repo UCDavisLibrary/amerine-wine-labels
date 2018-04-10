@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0402";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "CAO\nAPLESEC\nLE FROID TROUBLE\nCETTE LIQUEUR\nL SUFFIT DE\nPLONGER LE FLACON DANS\nL'EAU TIEDE POUR LA RAMENE\nA SON. ETAT NORMAL\nREG COM. BRUX 2473\n"@undefined;
-    gv:color [
-  gv:hex "c89160";
-  gv:red "200";
-  gv:blue "96";
-  gv:green "145";
-  gv:score "21.504773";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "ba9a63";
-  gv:red "186";
-  gv:blue "99";
-  gv:green "154";
-  gv:score "18.395981";
-  gv:coverage "5.24"
-], [
-  gv:hex "a8713e";
-  gv:red "168";
-  gv:blue "62";
-  gv:green "113";
-  gv:score "13.948399";
-  gv:coverage "2.0866666"
-], [
-  gv:hex "97773f";
-  gv:red "151";
-  gv:blue "63";
-  gv:green "119";
-  gv:score "9.4681472";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "b39e7c";
-  gv:red "179";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "5.4278363";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "e0ac7c";
-  gv:red "224";
-  gv:blue "124";
-  gv:green "172";
-  gv:score "5.211075";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "d2b17d";
-  gv:red "210";
-  gv:blue "125";
-  gv:green "177";
-  gv:score "4.8566032";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "cdb592";
-  gv:red "205";
-  gv:blue "146";
-  gv:green "181";
-  gv:score "3.1514738";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "8a7655";
-  gv:red "138";
-  gv:blue "85";
-  gv:green "118";
-  gv:score "2.8352013";
-  gv:coverage "0.74"
-], [
-  gv:hex "675436";
-  gv:red "103";
-  gv:blue "54";
-  gv:green "84";
-  gv:score "2.1583932";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.780843999999995"
-];
-    w:bagOfWords "CAO\nAPLESEC\nLE FROID TROUBLE\nCETTE LIQUEUR\nL SUFFIT DE\nPLONGER LE FLACON DANS\nL'EAU TIEDE POUR LA RAMENE\nA SON. ETAT NORMAL\nREG COM. BRUX 2473\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0402";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

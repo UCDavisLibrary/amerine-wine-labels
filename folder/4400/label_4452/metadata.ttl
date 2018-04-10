@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4452";
-    dct:type "image";
-    w:bagOfWords "TRA\nGIS?\nm N 44\n49 A NO\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nBILBAO\nHARO\n"@spa;
-    gv:color [
-  gv:hex "d0c3b3";
-  gv:red "208";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "26.245974999999998";
-  gv:coverage "14.62"
-], [
-  gv:hex "9a1a04";
-  gv:red "154";
-  gv:blue "4";
-  gv:green "26";
-  gv:score "1.7323544";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "7c1a04";
-  gv:red "124";
-  gv:blue "4";
-  gv:green "26";
-  gv:score "0.9567673299999999";
-  gv:coverage "0.02"
-], [
-  gv:hex "ba7939";
-  gv:red "186";
-  gv:blue "57";
-  gv:green "121";
-  gv:score "0.81146481";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "4b4314";
-  gv:red "75";
-  gv:blue "20";
-  gv:green "67";
-  gv:score "0.29730487";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "cdc3b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "25.271183000000004";
-  gv:coverage "20.74"
-], [
-  gv:hex "a8a199";
-  gv:red "168";
-  gv:blue "153";
-  gv:green "161";
-  gv:score "10.878490000000001";
-  gv:coverage "2.16"
-], [
-  gv:hex "af9f8a";
-  gv:red "175";
-  gv:blue "138";
-  gv:green "159";
-  gv:score "5.5899598";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "e3dace";
-  gv:red "227";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "4.6612255";
-  gv:coverage "55.646664"
-], [
-  gv:hex "e8d9c2";
-  gv:red "232";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "2.8405568";
-  gv:coverage "4.1933332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.06744199999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.262345999999994"
-];
-    w:bagOfWords "TRA\nGIS?\nm N 44\n49 A NO\nCOMPANIA VINICOLA DEL NORTE DE ESPANA\nBILBAO\nHARO\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4452";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

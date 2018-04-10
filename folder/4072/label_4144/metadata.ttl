@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4144";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN D'ORIGINE\nBERGERAC\nAPPELLATION BERGERAC CONTROLEE\nETABLISSEMENTs VALETTE.NEGOCIANTs.STouEN\n"@fra;
-    gv:color [
-  gv:hex "d5bf9e";
-  gv:red "213";
-  gv:blue "158";
-  gv:green "191";
-  gv:score "46.081924";
-  gv:coverage "26.346666000000003"
-], [
-  gv:hex "b39d7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "157";
-  gv:score "22.011867";
-  gv:coverage "6.959999999999999"
-], [
-  gv:hex "897453";
-  gv:red "137";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "12.462755";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "665434";
-  gv:red "102";
-  gv:blue "52";
-  gv:green "84";
-  gv:score "7.0457890999999995";
-  gv:coverage "1.28"
-], [
-  gv:hex "66532a";
-  gv:red "102";
-  gv:blue "42";
-  gv:green "83";
-  gv:score "2.3133755";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "8b7248";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "2.2448307";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "443217";
-  gv:red "68";
-  gv:blue "23";
-  gv:green "50";
-  gv:score "1.92051";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "edd9bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "217";
-  gv:score "1.2035580000000001";
-  gv:coverage "4.18"
-], [
-  gv:hex "b29a6e";
-  gv:red "178";
-  gv:blue "110";
-  gv:green "154";
-  gv:score "1.1824019";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "4b3c14";
-  gv:red "75";
-  gv:blue "20";
-  gv:green "60";
-  gv:score "1.1401780000000001";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "61.646831"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.392623"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.019384"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.925853000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.861706"
-];
-    w:bagOfWords "GRAND VIN D'ORIGINE\nBERGERAC\nAPPELLATION BERGERAC CONTROLEE\nETABLISSEMENTs VALETTE.NEGOCIANTs.STouEN\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4144";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

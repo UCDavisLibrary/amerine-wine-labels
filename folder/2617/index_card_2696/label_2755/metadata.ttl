@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2755";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "FERIMPORTED AND BOTTLED BY BERCUT VANDERVOOT Hacs\n-San Francisco.\nCalif. Sole Agents for the d States\nPRODUCE Of fRANCE wINE\nALCOHOL 13 BY VOL\nGaston BRUNEL, Négociant CHATEAUNEUF-DU-PAPE (France)\n"@fra;
-    gv:color [
-  gv:hex "eeab28";
-  gv:red "238";
-  gv:blue "40";
-  gv:green "171";
-  gv:score "10.365386";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "ab6a17";
-  gv:red "171";
-  gv:blue "23";
-  gv:green "106";
-  gv:score "10.265765";
-  gv:coverage "3.6933333"
-], [
-  gv:hex "e9b57f";
-  gv:red "233";
-  gv:blue "127";
-  gv:green "181";
-  gv:score "5.5990756";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "a72304";
-  gv:red "167";
-  gv:blue "4";
-  gv:green "35";
-  gv:score "3.725227";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "ce8b37";
-  gv:red "206";
-  gv:blue "55";
-  gv:green "139";
-  gv:score "8.4849983";
-  gv:coverage "3.3866666"
-], [
-  gv:hex "d9941b";
-  gv:red "217";
-  gv:blue "27";
-  gv:green "148";
-  gv:score "7.5202352999999995";
-  gv:coverage "1.44"
-], [
-  gv:hex "b55d0e";
-  gv:red "181";
-  gv:blue "14";
-  gv:green "93";
-  gv:score "4.6648961";
-  gv:coverage "1.28"
-], [
-  gv:hex "e3b32f";
-  gv:red "227";
-  gv:blue "47";
-  gv:green "179";
-  gv:score "3.7178796";
-  gv:coverage "0.48"
-], [
-  gv:hex "edb058";
-  gv:red "237";
-  gv:blue "88";
-  gv:green "176";
-  gv:score "3.60617";
-  gv:coverage "1.46"
-], [
-  gv:hex "dcb980";
-  gv:red "220";
-  gv:blue "128";
-  gv:green "185";
-  gv:score "3.5379663";
-  gv:coverage "2.6466666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.922062"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "60.027945"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "52.813637"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "52.174485000000004"
-];
-    w:bagOfWords "FERIMPORTED AND BOTTLED BY BERCUT VANDERVOOT Hacs\n-San Francisco.\nCalif. Sole Agents for the d States\nPRODUCE Of fRANCE wINE\nALCOHOL 13 BY VOL\nGaston BRUNEL, Négociant CHATEAUNEUF-DU-PAPE (France)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2755";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

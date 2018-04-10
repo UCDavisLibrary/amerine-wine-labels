@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1235";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "brandy.\nN 25\nLI J. M. BARROSO. JEREZ.\nDE\nPEDRO ROMERO\nSANLUCAR DE BARRA MEDA\nCANDALUCIA-ESPANA)\n"@spa;
-    gv:color [
-  gv:hex "e7c28a";
-  gv:red "231";
-  gv:blue "138";
-  gv:green "194";
-  gv:score "35.363123";
-  gv:coverage "21.873334"
-], [
-  gv:hex "8d3914";
-  gv:red "141";
-  gv:blue "20";
-  gv:green "57";
-  gv:score "5.8791462";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "f0ba86";
-  gv:red "240";
-  gv:blue "134";
-  gv:green "186";
-  gv:score "21.997079";
-  gv:coverage "9.1466665"
-], [
-  gv:hex "ca8e5d";
-  gv:red "202";
-  gv:blue "93";
-  gv:green "142";
-  gv:score "7.013373100000001";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "a76c3b";
-  gv:red "167";
-  gv:blue "59";
-  gv:green "108";
-  gv:score "5.8965519";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "b9603a";
-  gv:red "185";
-  gv:blue "58";
-  gv:green "96";
-  gv:score "3.9700367";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "e0845e";
-  gv:red "224";
-  gv:blue "94";
-  gv:green "132";
-  gv:score "3.0303706999999998";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "bb9862";
-  gv:red "187";
-  gv:blue "98";
-  gv:green "152";
-  gv:score "2.3655679";
-  gv:coverage "1.28"
-], [
-  gv:hex "814c1d";
-  gv:red "129";
-  gv:blue "29";
-  gv:green "76";
-  gv:score "2.0932185999999997";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "732103";
-  gv:red "115";
-  gv:blue "3";
-  gv:green "33";
-  gv:score "1.5841391";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.78981999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.094832000000004"
-];
-    w:bagOfWords "brandy.\nN 25\nLI J. M. BARROSO. JEREZ.\nDE\nPEDRO ROMERO\nSANLUCAR DE BARRA MEDA\nCANDALUCIA-ESPANA)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1235";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

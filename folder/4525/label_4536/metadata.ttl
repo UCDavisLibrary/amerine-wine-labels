@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4536";
-    dct:type "image";
-    w:bagOfWords "Marca registada\nNo 22\nHEREDERA DE LAS SOLERAS Y DE LA MARCA\nRJAI INTER A PEREZ MI JARIN\n"@spa;
-    gv:color [
-  gv:hex "cec3b8";
-  gv:red "206";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "53.671800000000005";
-  gv:coverage "38.06"
-], [
-  gv:hex "a89e94";
-  gv:red "168";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "21.929993";
-  gv:coverage "2.52"
-], [
-  gv:hex "e5dad0";
-  gv:red "229";
-  gv:blue "208";
-  gv:green "218";
-  gv:score "7.8260250000000005";
-  gv:coverage "48.22"
-], [
-  gv:hex "84796f";
-  gv:red "132";
-  gv:blue "111";
-  gv:green "121";
-  gv:score "5.4239757";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "aa9b8d";
-  gv:red "170";
-  gv:blue "141";
-  gv:green "155";
-  gv:score "4.940307499999999";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "cfc0b1";
-  gv:red "207";
-  gv:blue "177";
-  gv:green "192";
-  gv:score "3.9854771999999996";
-  gv:coverage "8.1666663"
-], [
-  gv:hex "382f22";
-  gv:red "56";
-  gv:blue "34";
-  gv:green "47";
-  gv:score "0.024272902";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "8d7d6e";
-  gv:red "141";
-  gv:blue "110";
-  gv:green "125";
-  gv:score "0.95773535";
-  gv:coverage "0.08"
-], [
-  gv:hex "685d54";
-  gv:red "104";
-  gv:blue "84";
-  gv:green "93";
-  gv:score "0.65655257";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "eadaca";
-  gv:red "234";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "0.57440787";
-  gv:coverage "1.6933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "73.776275"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.63623"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.89795"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.4519"
-];
-    w:bagOfWords "Marca registada\nNo 22\nHEREDERA DE LAS SOLERAS Y DE LA MARCA\nRJAI INTER A PEREZ MI JARIN\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4536";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

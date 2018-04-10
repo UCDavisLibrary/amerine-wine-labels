@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2477";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "EN\n878\nFON DE E\nBOIS\nAUA- TIVANT\nNEGOCIANT A BE NE.\nET MEUR SANGES (COTE D'OR)\nChassagne. Mon rachel\nAPPELLATION cONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "dbbe8d";
-  gv:red "219";
-  gv:blue "141";
-  gv:green "190";
-  gv:score "23.328716999999997";
-  gv:coverage "8.0533333"
-], [
-  gv:hex "211d08";
-  gv:red "33";
-  gv:blue "8";
-  gv:green "29";
-  gv:score "7.693985100000001";
-  gv:coverage "1.72"
-], [
-  gv:hex "893b13";
-  gv:red "137";
-  gv:blue "19";
-  gv:green "59";
-  gv:score "1.5947916999999998";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "e47c55";
-  gv:red "228";
-  gv:blue "85";
-  gv:green "124";
-  gv:score "0.64617037";
-  gv:coverage "0.04"
-], [
-  gv:hex "b39c68";
-  gv:red "179";
-  gv:blue "104";
-  gv:green "156";
-  gv:score "12.399309";
-  gv:coverage "5.04"
-], [
-  gv:hex "dbc19b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "193";
-  gv:score "12.262322000000001";
-  gv:coverage "11.306667"
-], [
-  gv:hex "38321b";
-  gv:red "56";
-  gv:blue "27";
-  gv:green "50";
-  gv:score "6.8867564";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "af9b75";
-  gv:red "175";
-  gv:blue "117";
-  gv:green "155";
-  gv:score "6.512026499999999";
-  gv:coverage "3.06"
-], [
-  gv:hex "19170f";
-  gv:red "25";
-  gv:blue "15";
-  gv:green "23";
-  gv:score "4.8354577";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "5f5237";
-  gv:red "95";
-  gv:blue "55";
-  gv:green "82";
-  gv:score "4.4217445";
-  gv:coverage "1.1533333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.554186"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.863767"
-];
-    w:bagOfWords "EN\n878\nFON DE E\nBOIS\nAUA- TIVANT\nNEGOCIANT A BE NE.\nET MEUR SANGES (COTE D'OR)\nChassagne. Mon rachel\nAPPELLATION cONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2477";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

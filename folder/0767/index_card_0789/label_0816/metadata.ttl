@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0816";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "VOUVRAY\nAPPELLATION. CONTROLEE\nClos Gue d'amants\nVAVASSEUR & BERNARDET\nVOUVRAY (INDRE a LoIRE FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d5c3a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "195";
-  gv:score "44.391781";
-  gv:coverage "10.866667000000001"
-], [
-  gv:hex "e4dbd2";
-  gv:red "228";
-  gv:blue "210";
-  gv:green "219";
-  gv:score "9.070805499999999";
-  gv:coverage "64.373332"
-], [
-  gv:hex "d2c9be";
-  gv:red "210";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "8.2196541";
-  gv:coverage "13.320000000000002"
-], [
-  gv:hex "aaa184";
-  gv:red "170";
-  gv:blue "132";
-  gv:green "161";
-  gv:score "6.217276699999999";
-  gv:coverage "1.46"
-], [
-  gv:hex "e4dbc2";
-  gv:red "228";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "5.5639517";
-  gv:coverage "4.02"
-], [
-  gv:hex "777556";
-  gv:red "119";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "4.7141234999999995";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "6d7d50";
-  gv:red "109";
-  gv:blue "80";
-  gv:green "125";
-  gv:score "4.3677486000000005";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "6e7c43";
-  gv:red "110";
-  gv:blue "67";
-  gv:green "124";
-  gv:score "2.3285883";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "a89f95";
-  gv:red "168";
-  gv:blue "149";
-  gv:green "159";
-  gv:score "2.2707615";
-  gv:coverage "0.64"
-], [
-  gv:hex "5d5c3e";
-  gv:red "93";
-  gv:blue "62";
-  gv:green "92";
-  gv:score "1.6980926";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/038hg>;
-  gv:desc "green";
-  gv:score "86.292529"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.207717"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "VOUVRAY\nAPPELLATION. CONTROLEE\nClos Gue d'amants\nVAVASSEUR & BERNARDET\nVOUVRAY (INDRE a LoIRE FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0816";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

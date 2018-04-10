@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0680";
-    dct:type "image";
-    w:bagOfWords "FENDANTPETILLANT\nLES MVRETTES\nR.GILLIARD\nSION\nET, S/ON\nTH FTORINA\n"@undefined;
-    gv:color [
-  gv:hex "f6b409";
-  gv:red "246";
-  gv:blue "9";
-  gv:green "180";
-  gv:score "14.173694000000001";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "8c7657";
-  gv:red "140";
-  gv:blue "87";
-  gv:green "118";
-  gv:score "13.761098999999998";
-  gv:coverage "5.5533335"
-], [
-  gv:hex "e4b525";
-  gv:red "228";
-  gv:blue "37";
-  gv:green "181";
-  gv:score "9.5326096";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "ac9676";
-  gv:red "172";
-  gv:blue "118";
-  gv:green "150";
-  gv:score "12.702544";
-  gv:coverage "5.6666669"
-], [
-  gv:hex "f0bd0c";
-  gv:red "240";
-  gv:blue "12";
-  gv:green "189";
-  gv:score "7.066620899999999";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "d5be9f";
-  gv:red "213";
-  gv:blue "159";
-  gv:green "190";
-  gv:score "5.3075284";
-  gv:coverage "12.293334"
-], [
-  gv:hex "ecae1d";
-  gv:red "236";
-  gv:blue "29";
-  gv:green "174";
-  gv:score "4.414206";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "8f7646";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "118";
-  gv:score "4.2654209";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "af9560";
-  gv:red "175";
-  gv:blue "96";
-  gv:green "149";
-  gv:score "4.0707279";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "bb953b";
-  gv:red "187";
-  gv:blue "59";
-  gv:green "149";
-  gv:score "3.4843493000000003";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.165831"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FENDANTPETILLANT\nLES MVRETTES\nR.GILLIARD\nSION\nET, S/ON\nTH FTORINA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0680";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

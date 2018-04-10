@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3741";
-    dct:type "image";
-    w:bagOfWords "ut CANTIN SA MADRID BARCELONA\nMARCAREGISTRADA\nNS 43\nodegas Franco- 5paitolas\n"@spa;
-    gv:color [
-  gv:hex "deb763";
-  gv:red "222";
-  gv:blue "99";
-  gv:green "183";
-  gv:score "51.054806";
-  gv:coverage "20.386666"
-], [
-  gv:hex "65521d";
-  gv:red "101";
-  gv:blue "29";
-  gv:green "82";
-  gv:score "1.4021219999999999";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "c39c48";
-  gv:red "195";
-  gv:blue "72";
-  gv:green "156";
-  gv:score "15.84776";
-  gv:coverage "4.3266665"
-], [
-  gv:hex "d7b974";
-  gv:red "215";
-  gv:blue "116";
-  gv:green "185";
-  gv:score "6.7319006";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "c79544";
-  gv:red "199";
-  gv:blue "68";
-  gv:green "149";
-  gv:score "6.0936395";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "b99d5b";
-  gv:red "185";
-  gv:blue "91";
-  gv:green "157";
-  gv:score "5.1076297";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "99782b";
-  gv:red "153";
-  gv:blue "43";
-  gv:green "120";
-  gv:score "3.6716338";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "e1ad5c";
-  gv:red "225";
-  gv:blue "92";
-  gv:green "173";
-  gv:score "1.7456656000000002";
-  gv:coverage "0.38"
-], [
-  gv:hex "a7772a";
-  gv:red "167";
-  gv:blue "42";
-  gv:green "119";
-  gv:score "1.1297977000000001";
-  gv:coverage "0.22"
-], [
-  gv:hex "8e7534";
-  gv:red "142";
-  gv:blue "52";
-  gv:green "117";
-  gv:score "1.0890578";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.236574"
-];
-    w:bagOfWords "ut CANTIN SA MADRID BARCELONA\nMARCAREGISTRADA\nNS 43\nodegas Franco- 5paitolas\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3741";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

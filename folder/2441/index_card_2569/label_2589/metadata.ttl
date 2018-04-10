@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2589";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF FRANCE\nMARK\nTRADE\nALCOHOL BY VOLUME\nCONTENTS\n1 PINT 8\nL. oz.\nPOUILLY-FU ISSE\nJ. FAIVELEY\nPROPRIETAIRE & NEGOCIANT A NUITS (COTE-D'OR\n"@fra;
-    gv:color [
-  gv:hex "dac4ad";
-  gv:red "218";
-  gv:blue "173";
-  gv:green "196";
-  gv:score "39.795035";
-  gv:coverage "16.793333"
-], [
-  gv:hex "ae9980";
-  gv:red "174";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "25.670967";
-  gv:coverage "6.7666665"
-], [
-  gv:hex "eed8c1";
-  gv:red "238";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "9.0723895";
-  gv:coverage "16.02"
-], [
-  gv:hex "e4bda7";
-  gv:red "228";
-  gv:blue "167";
-  gv:green "189";
-  gv:score "6.729710799999999";
-  gv:coverage "1.16"
-], [
-  gv:hex "be927a";
-  gv:red "190";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "6.1978873";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "8f7b62";
-  gv:red "143";
-  gv:blue "98";
-  gv:green "123";
-  gv:score "4.5868129";
-  gv:coverage "1.2"
-], [
-  gv:hex "a47359";
-  gv:red "164";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "1.869004";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "f7d3bd";
-  gv:red "247";
-  gv:blue "189";
-  gv:green "211";
-  gv:score "1.6849108000000002";
-  gv:coverage "0.3"
-], [
-  gv:hex "9d6b49";
-  gv:red "157";
-  gv:blue "73";
-  gv:green "107";
-  gv:score "1.5395456";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "784625";
-  gv:red "120";
-  gv:blue "37";
-  gv:green "70";
-  gv:score "1.3070151";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.680939"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.271963"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nPRODUCE OF FRANCE\nMARK\nTRADE\nALCOHOL BY VOLUME\nCONTENTS\n1 PINT 8\nL. oz.\nPOUILLY-FU ISSE\nJ. FAIVELEY\nPROPRIETAIRE & NEGOCIANT A NUITS (COTE-D'OR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2589";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

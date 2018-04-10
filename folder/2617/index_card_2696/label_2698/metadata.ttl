@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2698";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "CIHATEAUNEUF-DU-PAPE\nCHATEAU-FORTIA\nIER GRAND CRU DE CHATEAU NEUF DU- PAPE\nPRIETE DE M. LE ARON LE ROY DE BoISEAUMARIé\n"@fra;
-    gv:color [
-  gv:hex "e6b786";
-  gv:red "230";
-  gv:blue "134";
-  gv:green "183";
-  gv:score "24.585976000000002";
-  gv:coverage "10.54"
-], [
-  gv:hex "a36c41";
-  gv:red "163";
-  gv:blue "65";
-  gv:green "108";
-  gv:score "20.458572";
-  gv:coverage "3.4466665"
-], [
-  gv:hex "e6c190";
-  gv:red "230";
-  gv:blue "144";
-  gv:green "193";
-  gv:score "21.924365";
-  gv:coverage "10.706667"
-], [
-  gv:hex "c59162";
-  gv:red "197";
-  gv:blue "98";
-  gv:green "145";
-  gv:score "18.601297";
-  gv:coverage "5.4466669"
-], [
-  gv:hex "814e22";
-  gv:red "129";
-  gv:blue "34";
-  gv:green "78";
-  gv:score "4.9549221999999995";
-  gv:coverage "0.98"
-], [
-  gv:hex "e1c39e";
-  gv:red "225";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "2.7713561";
-  gv:coverage "15.620000000000001"
-], [
-  gv:hex "bf9c6a";
-  gv:red "191";
-  gv:blue "106";
-  gv:green "156";
-  gv:score "2.1914864";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "562901";
-  gv:red "86";
-  gv:blue "1";
-  gv:green "41";
-  gv:score "1.2469915999999999";
-  gv:coverage "0.32"
-], [
-  gv:hex "ca9248";
-  gv:red "202";
-  gv:blue "72";
-  gv:green "146";
-  gv:score "0.9943614700000001";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "e5b168";
-  gv:red "229";
-  gv:blue "104";
-  gv:green "177";
-  gv:score "0.520743";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.553357"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "62.436575000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.574875999999996"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.740685"
-];
-    w:bagOfWords "CIHATEAUNEUF-DU-PAPE\nCHATEAU-FORTIA\nIER GRAND CRU DE CHATEAU NEUF DU- PAPE\nPRIETE DE M. LE ARON LE ROY DE BoISEAUMARIé\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2698";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

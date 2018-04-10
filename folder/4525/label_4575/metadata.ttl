@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4575";
-    dct:type "image";
-    w:bagOfWords "ROM ATE\nN. 282\nFINO\nMARISMENO\nMARCA REGISTRADA\n"@spa;
-    gv:color [
-  gv:hex "d7c5af";
-  gv:red "215";
-  gv:blue "175";
-  gv:green "197";
-  gv:score "49.866936";
-  gv:coverage "29.513332"
-], [
-  gv:hex "b09b83";
-  gv:red "176";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "16.345069000000002";
-  gv:coverage "4.6"
-], [
-  gv:hex "847663";
-  gv:red "132";
-  gv:blue "99";
-  gv:green "118";
-  gv:score "7.1523257000000005";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "ead8c5";
-  gv:red "234";
-  gv:blue "197";
-  gv:green "216";
-  gv:score "4.5266278";
-  gv:coverage "6.126666800000001"
-], [
-  gv:hex "655745";
-  gv:red "101";
-  gv:blue "69";
-  gv:green "87";
-  gv:score "3.2541334999999996";
-  gv:coverage "1.06"
-], [
-  gv:hex "784939";
-  gv:red "120";
-  gv:blue "57";
-  gv:green "73";
-  gv:score "2.7354917";
-  gv:coverage "0.3"
-], [
-  gv:hex "d3c6ba";
-  gv:red "211";
-  gv:blue "186";
-  gv:green "198";
-  gv:score "1.5187183";
-  gv:coverage "6.2933333"
-], [
-  gv:hex "9b6c55";
-  gv:red "155";
-  gv:blue "85";
-  gv:green "108";
-  gv:score "1.2905534";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "7e4927";
-  gv:red "126";
-  gv:blue "39";
-  gv:green "73";
-  gv:score "1.198954";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "8b4135";
-  gv:red "139";
-  gv:blue "53";
-  gv:green "65";
-  gv:score "1.1575073";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.745497"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "50.956714000000005"
-];
-    w:bagOfWords "ROM ATE\nN. 282\nFINO\nMARISMENO\nMARCA REGISTRADA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4575";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

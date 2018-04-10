@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4985";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nEXPOSITION\nSAN FRANCISCO\nImported by VERDER CELLARS With ACQUIT REGIONAL JAUNE D'OR AND CERTIFICATE\nRegion of France from\nOF AGE issued by the\nthe Cognac.\nis\nGrape\nBrandy was\ndistilled in that it e produced in\nthat district and OLD\nTEN YEARS Ancie Caves del\nDoree\nProof\n4/5 Quart\nMEDAILLE D'OR, BRUXELLES 1910\nMEDAILLE D'OR, PARIS 1927\nGRAND PRIX, ST LOUIS, U.S.A. 19O4\nFRANCE\nIne\nOF PRODUCE QUART\nRed FRANCISCO\n3/4 imported by\nSAN 11 BY in\nALCOHOL 1929\n"@undefined;
-    gv:color [
-  gv:hex "5a5046";
-  gv:red "90";
-  gv:blue "70";
-  gv:green "80";
-  gv:score "34.711777999999995";
-  gv:coverage "1.9"
-], [
-  gv:hex "ccbfb5";
-  gv:red "204";
-  gv:blue "181";
-  gv:green "191";
-  gv:score "6.906303799999999";
-  gv:coverage "15.379999999999999"
-], [
-  gv:hex "ac9e8b";
-  gv:red "172";
-  gv:blue "139";
-  gv:green "158";
-  gv:score "5.1642570999999995";
-  gv:coverage "3.9533332"
-], [
-  gv:hex "41372e";
-  gv:red "65";
-  gv:blue "46";
-  gv:green "55";
-  gv:score "23.636818";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "786e65";
-  gv:red "120";
-  gv:blue "101";
-  gv:green "110";
-  gv:score "7.4390851";
-  gv:coverage "0.84"
-], [
-  gv:hex "a49990";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "4.786099500000001";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "d0c2b0";
-  gv:red "208";
-  gv:blue "176";
-  gv:green "194";
-  gv:score "4.6917241";
-  gv:coverage "19.6"
-], [
-  gv:hex "5d5042";
-  gv:red "93";
-  gv:blue "66";
-  gv:green "80";
-  gv:score "4.346917599999999";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "847662";
-  gv:red "132";
-  gv:blue "98";
-  gv:green "118";
-  gv:score "3.5764381";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "e9dbc7";
-  gv:red "233";
-  gv:blue "199";
-  gv:green "219";
-  gv:score "2.1185616";
-  gv:coverage "11.633334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.473434999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.586257"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.115942000000004"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nEXPOSITION\nSAN FRANCISCO\nImported by VERDER CELLARS With ACQUIT REGIONAL JAUNE D'OR AND CERTIFICATE\nRegion of France from\nOF AGE issued by the\nthe Cognac.\nis\nGrape\nBrandy was\ndistilled in that it e produced in\nthat district and OLD\nTEN YEARS Ancie Caves del\nDoree\nProof\n4/5 Quart\nMEDAILLE D'OR, BRUXELLES 1910\nMEDAILLE D'OR, PARIS 1927\nGRAND PRIX, ST LOUIS, U.S.A. 19O4\nFRANCE\nIne\nOF PRODUCE QUART\nRed FRANCISCO\n3/4 imported by\nSAN 11 BY in\nALCOHOL 1929\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4985";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1477";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "FINE WINES\nof SINC\nADE MARK\nWIDMER'S\nISABELLA WINE\nMADE FROM ISABELLA GRAPES\nPRODUCED AND BOTTLED BY\nALCOHOL\n2.5 BY YOLUME\n"@eng;
-    gv:color [
-  gv:hex "d4c1b0";
-  gv:red "212";
-  gv:blue "176";
-  gv:green "193";
-  gv:score "18.452594";
-  gv:coverage "4.6333332"
-], [
-  gv:hex "150c04";
-  gv:red "21";
-  gv:blue "4";
-  gv:green "12";
-  gv:score "1.1772367000000001";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "d2c4b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "9.7051062";
-  gv:coverage "10.606667"
-], [
-  gv:hex "ae9b8b";
-  gv:red "174";
-  gv:blue "139";
-  gv:green "155";
-  gv:score "9.0751633";
-  gv:coverage "1.72"
-], [
-  gv:hex "87735d";
-  gv:red "135";
-  gv:blue "93";
-  gv:green "115";
-  gv:score "7.771831799999999";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "ecdaca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "6.681603899999999";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "996e61";
-  gv:red "153";
-  gv:blue "97";
-  gv:green "110";
-  gv:score "6.1671518";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "644f37";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "79";
-  gv:score "5.6874722";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "be9087";
-  gv:red "190";
-  gv:blue "135";
-  gv:green "144";
-  gv:score "5.4520436";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "e6b6b0";
-  gv:red "230";
-  gv:blue "176";
-  gv:green "182";
-  gv:score "4.8329871";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.740057"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.215714999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FINE WINES\nof SINC\nADE MARK\nWIDMER'S\nISABELLA WINE\nMADE FROM ISABELLA GRAPES\nPRODUCED AND BOTTLED BY\nALCOHOL\n2.5 BY YOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1477";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

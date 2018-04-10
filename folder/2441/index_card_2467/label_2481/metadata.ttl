@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2481";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "GREEN\nS E A L\nCHASSAGNE- MONTRACHET\nVIN DE BCURGOGNE\nWINE GROWERS & SHIPPERS\nVINTAGE 1934\nBEAUNE, FRANCE\nProduced and Bottled in France\nALCOHOL 12% BY VOLUME\nNET CONTENTS t. PINT 8 FL. oz.\n"@fra;
-    gv:color [
-  gv:hex "c2be71";
-  gv:red "194";
-  gv:blue "113";
-  gv:green "190";
-  gv:score "37.132108";
-  gv:coverage "9.7733334"
-], [
-  gv:hex "a59f5a";
-  gv:red "165";
-  gv:blue "90";
-  gv:green "159";
-  gv:score "10.169306";
-  gv:coverage "2.32"
-], [
-  gv:hex "5a5c14";
-  gv:red "90";
-  gv:blue "20";
-  gv:green "92";
-  gv:score "4.3671023";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "e8e4bf";
-  gv:red "232";
-  gv:blue "191";
-  gv:green "228";
-  gv:score "0.68638134";
-  gv:coverage "19.34"
-], [
-  gv:hex "281d01";
-  gv:red "40";
-  gv:blue "1";
-  gv:green "29";
-  gv:score "0.10305856999999999";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "a9a55a";
-  gv:red "169";
-  gv:blue "90";
-  gv:green "165";
-  gv:score "9.63161";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "c5be7a";
-  gv:red "197";
-  gv:blue "122";
-  gv:green "190";
-  gv:score "8.954269400000001";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "807a37";
-  gv:red "128";
-  gv:blue "55";
-  gv:green "122";
-  gv:score "8.3737165";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "bebc63";
-  gv:red "190";
-  gv:blue "99";
-  gv:green "188";
-  gv:score "7.464385";
-  gv:coverage "1.78"
-], [
-  gv:hex "5e5818";
-  gv:red "94";
-  gv:blue "24";
-  gv:green "88";
-  gv:score "4.3584537";
-  gv:coverage "1.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.063552"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.813224999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.1571"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.087804000000006"
-];
-    w:bagOfWords "GREEN\nS E A L\nCHASSAGNE- MONTRACHET\nVIN DE BCURGOGNE\nWINE GROWERS & SHIPPERS\nVINTAGE 1934\nBEAUNE, FRANCE\nProduced and Bottled in France\nALCOHOL 12% BY VOLUME\nNET CONTENTS t. PINT 8 FL. oz.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2481";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

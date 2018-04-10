@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3299";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "V O S N E R O M A N E E\nLes Grands Suchots\nVintage 1943\nEdverys of JBristol Ito. Bristol\nBurgundy, Produce of France\n"@fra;
-    gv:color [
-  gv:hex "e3dcd4";
-  gv:red "227";
-  gv:blue "212";
-  gv:green "220";
-  gv:score "64.09744";
-  gv:coverage "46.286666"
-], [
-  gv:hex "dbd1c8";
-  gv:red "219";
-  gv:blue "200";
-  gv:green "209";
-  gv:score "22.519758";
-  gv:coverage "16.486667"
-], [
-  gv:hex "8e7254";
-  gv:red "142";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "0.19095757";
-  gv:coverage "0.4"
-], [
-  gv:hex "dbc8b5";
-  gv:red "219";
-  gv:blue "181";
-  gv:green "200";
-  gv:score "11.375015";
-  gv:coverage "9.1266669"
-], [
-  gv:hex "5d5752";
-  gv:red "93";
-  gv:blue "82";
-  gv:green "87";
-  gv:score "0.10407738999999999";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "6b4c30";
-  gv:red "107";
-  gv:blue "48";
-  gv:green "76";
-  gv:score "0.081755593";
-  gv:coverage "0.18"
-], [
-  gv:hex "e7d7c5";
-  gv:red "231";
-  gv:blue "197";
-  gv:green "215";
-  gv:score "0.9672699499999999";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "af9273";
-  gv:red "175";
-  gv:blue "115";
-  gv:green "146";
-  gv:score "0.17521014";
-  gv:coverage "0.66"
-], [
-  gv:hex "a29c98";
-  gv:red "162";
-  gv:blue "152";
-  gv:green "156";
-  gv:score "0.079705368";
-  gv:coverage "0.06"
-], [
-  gv:hex "3a3531";
-  gv:red "58";
-  gv:blue "49";
-  gv:green "53";
-  gv:score "0.075033726";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.56013399999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.18773899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.371224"
-];
-    w:bagOfWords "V O S N E R O M A N E E\nLes Grands Suchots\nVintage 1943\nEdverys of JBristol Ito. Bristol\nBurgundy, Produce of France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3299";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

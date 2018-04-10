@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2532";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "CAVES\nDE LA MAISON PRU NIER\nCHABLIS\nGRENOUILLES 1943\nPARIS\nLONDRES\n9, Rue Duphot\n72, S James's Street\n16, Avenue Victor Hugo\n"@fra;
-    gv:color [
-  gv:hex "d9c0a1";
-  gv:red "217";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "35.284876999999994";
-  gv:coverage "28.246668000000003"
-], [
-  gv:hex "ab6d4c";
-  gv:red "171";
-  gv:blue "76";
-  gv:green "109";
-  gv:score "9.440459299999999";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "b09b7f";
-  gv:red "176";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "14.764103";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "eab99a";
-  gv:red "234";
-  gv:blue "154";
-  gv:green "185";
-  gv:score "7.7374548";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "8f785e";
-  gv:red "143";
-  gv:blue "94";
-  gv:green "120";
-  gv:score "7.456323500000001";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "ab7158";
-  gv:red "171";
-  gv:blue "88";
-  gv:green "113";
-  gv:score "6.2553495";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "c29071";
-  gv:red "194";
-  gv:blue "113";
-  gv:green "144";
-  gv:score "5.9675924";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "f2b793";
-  gv:red "242";
-  gv:blue "147";
-  gv:green "183";
-  gv:score "4.8163164";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "f2d7b9";
-  gv:red "242";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "4.4373337";
-  gv:coverage "2.74"
-], [
-  gv:hex "c5906d";
-  gv:red "197";
-  gv:blue "109";
-  gv:green "144";
-  gv:score "1.9402761000000002";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.13692999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.7427"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.517239"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.455259"
-];
-    w:bagOfWords "CAVES\nDE LA MAISON PRU NIER\nCHABLIS\nGRENOUILLES 1943\nPARIS\nLONDRES\n9, Rue Duphot\n72, S James's Street\n16, Avenue Victor Hugo\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2532";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

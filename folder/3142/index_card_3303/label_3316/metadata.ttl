@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3303/label_3316";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "RCHAUVENE\nFRANCE\nN FON DE\nNUITS SAINT-GEORGES\nAPPELLATION CONTRO LEE\nF. Chauvenet\nNEGOCIANTA NUITS (COTE D'OR)\nMis. BOUTEILLES DANS MES CHA\nA N ITS\n"@fra;
-    gv:color [
-  gv:hex "3e321e";
-  gv:red "62";
-  gv:blue "30";
-  gv:green "50";
-  gv:score "11.761504";
-  gv:coverage "3.06"
-], [
-  gv:hex "1d1714";
-  gv:red "29";
-  gv:blue "20";
-  gv:green "23";
-  gv:score "11.216196";
-  gv:coverage "5.0133333"
-], [
-  gv:hex "c01011";
-  gv:red "192";
-  gv:blue "17";
-  gv:green "16";
-  gv:score "9.661504599999999";
-  gv:coverage "1.8066667"
-], [
-  gv:hex "a71f1c";
-  gv:red "167";
-  gv:blue "28";
-  gv:green "31";
-  gv:score "8.270306099999999";
-  gv:coverage "1.9"
-], [
-  gv:hex "bd5f43";
-  gv:red "189";
-  gv:blue "67";
-  gv:green "95";
-  gv:score "2.8038591000000004";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "e8dcd1";
-  gv:red "232";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "1.3951648";
-  gv:coverage "60.74"
-], [
-  gv:hex "5e4e37";
-  gv:red "94";
-  gv:blue "55";
-  gv:green "78";
-  gv:score "7.510598";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "aa140a";
-  gv:red "170";
-  gv:blue "10";
-  gv:green "20";
-  gv:score "6.585089099999999";
-  gv:coverage "1.34"
-], [
-  gv:hex "251d0c";
-  gv:red "37";
-  gv:blue "12";
-  gv:green "29";
-  gv:score "5.1035542000000005";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "d01c1e";
-  gv:red "208";
-  gv:blue "30";
-  gv:green "28";
-  gv:score "4.6988245";
-  gv:coverage "0.81333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.55028999999999"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "50.335962"
-];
-    w:bagOfWords "RCHAUVENE\nFRANCE\nN FON DE\nNUITS SAINT-GEORGES\nAPPELLATION CONTRO LEE\nF. Chauvenet\nNEGOCIANTA NUITS (COTE D'OR)\nMis. BOUTEILLES DANS MES CHA\nA N ITS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3316";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

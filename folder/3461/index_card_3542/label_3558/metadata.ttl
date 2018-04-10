@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3558";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BUNDS\nRHINE FARM\nSONOMA\nVYNE\nDS\nBACCHUS\nSAUTERNE\nALIFORNIA\nGRA\nYQUEM TYPE\nSAN MNESCOINC\nFRANCISCO\nLO MEDALS AND HIGHEST AwARDS\nCOME RER AT ALLA ADING EXPOSITION\n"@eng;
-    gv:color [
-  gv:hex "120f0c";
-  gv:red "18";
-  gv:blue "12";
-  gv:green "15";
-  gv:score "39.703977";
-  gv:coverage "18.459999999999997"
-], [
-  gv:hex "896a3a";
-  gv:red "137";
-  gv:blue "58";
-  gv:green "106";
-  gv:score "8.3972193";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "665337";
-  gv:red "102";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "8.3862484";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "d7cdc4";
-  gv:red "215";
-  gv:blue "196";
-  gv:green "205";
-  gv:score "0.48058418999999997";
-  gv:coverage "1.02"
-], [
-  gv:hex "332f29";
-  gv:red "51";
-  gv:blue "41";
-  gv:green "47";
-  gv:score "8.746841499999999";
-  gv:coverage "2.58"
-], [
-  gv:hex "3f311c";
-  gv:red "63";
-  gv:blue "28";
-  gv:green "49";
-  gv:score "8.2384951";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "725628";
-  gv:red "114";
-  gv:blue "40";
-  gv:green "86";
-  gv:score "6.0115747";
-  gv:coverage "0.74"
-], [
-  gv:hex "836d4d";
-  gv:red "131";
-  gv:blue "77";
-  gv:green "109";
-  gv:score "5.4348618";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "775222";
-  gv:red "119";
-  gv:blue "34";
-  gv:green "82";
-  gv:score "3.9795804999999995";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "8b6532";
-  gv:red "139";
-  gv:blue "50";
-  gv:green "101";
-  gv:score "3.7119523";
-  gv:coverage "0.45999999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "69.751406"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.342942"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BUNDS\nRHINE FARM\nSONOMA\nVYNE\nDS\nBACCHUS\nSAUTERNE\nALIFORNIA\nGRA\nYQUEM TYPE\nSAN MNESCOINC\nFRANCISCO\nLO MEDALS AND HIGHEST AwARDS\nCOME RER AT ALLA ADING EXPOSITION\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3558";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

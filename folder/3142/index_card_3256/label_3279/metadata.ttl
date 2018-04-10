@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3279";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nRICHE BOURG\nVIGNE ORIGINELLE FRANCAISE NON RECONSTITUEE\nRICHEBOURG Vigne Originele Francaise non Reconstituée Appellation Controlée\nhanbon\ne laine de e\nANNEE 1934\nContents quart product of France Alcohol i4 ola by volume\nP\n"@fra;
-    gv:color [
-  gv:hex "ddb77d";
-  gv:red "221";
-  gv:blue "125";
-  gv:green "183";
-  gv:score "21.396476";
-  gv:coverage "5.800000000000001"
-], [
-  gv:hex "341501";
-  gv:red "52";
-  gv:blue "1";
-  gv:green "21";
-  gv:score "0.52780872";
-  gv:coverage "0.16"
-], [
-  gv:hex "bc9960";
-  gv:red "188";
-  gv:blue "96";
-  gv:green "153";
-  gv:score "14.862803999999999";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "c3955a";
-  gv:red "195";
-  gv:blue "90";
-  gv:green "149";
-  gv:score "9.2555881";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "996f38";
-  gv:red "153";
-  gv:blue "56";
-  gv:green "111";
-  gv:score "7.2827145";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "dcc1a1";
-  gv:red "220";
-  gv:blue "161";
-  gv:green "193";
-  gv:score "6.6934042";
-  gv:coverage "7.9266667"
-], [
-  gv:hex "95753f";
-  gv:red "149";
-  gv:blue "63";
-  gv:green "117";
-  gv:score "5.934222";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "e1b175";
-  gv:red "225";
-  gv:blue "117";
-  gv:green "177";
-  gv:score "4.8986588";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "cb984d";
-  gv:red "203";
-  gv:blue "77";
-  gv:green "152";
-  gv:score "4.0166184000000005";
-  gv:coverage "0.74"
-], [
-  gv:hex "744c17";
-  gv:red "116";
-  gv:blue "23";
-  gv:green "76";
-  gv:score "3.7601639";
-  gv:coverage "0.76"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.859907"
-];
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nRICHE BOURG\nVIGNE ORIGINELLE FRANCAISE NON RECONSTITUEE\nRICHEBOURG Vigne Originele Francaise non Reconstituée Appellation Controlée\nhanbon\ne laine de e\nANNEE 1934\nContents quart product of France Alcohol i4 ola by volume\nP\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3279";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2657";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "1928\nMOULIN A VENT\nNUITs St-GEORGES (cate d'or)\nFRANCE\ndr\n"@fra;
-    gv:color [
-  gv:hex "d2b595";
-  gv:red "210";
-  gv:blue "149";
-  gv:green "181";
-  gv:score "48.647904";
-  gv:coverage "19.693333"
-], [
-  gv:hex "4e291a";
-  gv:red "78";
-  gv:blue "26";
-  gv:green "41";
-  gv:score "4.8489965";
-  gv:coverage "0.52"
-], [
-  gv:hex "bda07f";
-  gv:red "189";
-  gv:blue "127";
-  gv:green "160";
-  gv:score "23.340879";
-  gv:coverage "9.973333"
-], [
-  gv:hex "8d7254";
-  gv:red "141";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "5.3588852";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "6d5435";
-  gv:red "109";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "4.7216449";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "443521";
-  gv:red "68";
-  gv:blue "33";
-  gv:green "53";
-  gv:score "1.8181959";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "6d4734";
-  gv:red "109";
-  gv:blue "52";
-  gv:green "71";
-  gv:score "1.81282";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "d9ad94";
-  gv:red "217";
-  gv:blue "148";
-  gv:green "173";
-  gv:score "1.7323462";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "946a56";
-  gv:red "148";
-  gv:blue "86";
-  gv:green "106";
-  gv:score "1.268222";
-  gv:coverage "0.44"
-], [
-  gv:hex "c49b83";
-  gv:red "196";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "0.9448660500000001";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.987807"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "1928\nMOULIN A VENT\nNUITs St-GEORGES (cate d'or)\nFRANCE\ndr\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2657";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

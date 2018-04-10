@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3706";
-    dct:type "image";
-    w:bagOfWords "REGIBTRADA\nRCA CORONA\nBLANCO ESPANOL SEMISECO\nGIST\nN 44\nHARO-BILBAO\nTELLA\n"@spa;
-    gv:color [
-  gv:hex "d8c2a8";
-  gv:red "216";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "35.417372";
-  gv:coverage "25.746667000000002"
-], [
-  gv:hex "9e2820";
-  gv:red "158";
-  gv:blue "32";
-  gv:green "40";
-  gv:score "3.7102111";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "71271e";
-  gv:red "113";
-  gv:blue "30";
-  gv:green "39";
-  gv:score "0.40055416";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "b1987c";
-  gv:red "177";
-  gv:blue "124";
-  gv:green "152";
-  gv:score "22.405113";
-  gv:coverage "3.9066665"
-], [
-  gv:hex "8f7759";
-  gv:red "143";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "8.9182064";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "eed8bf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "5.4363992";
-  gv:coverage "13.693332999999999"
-], [
-  gv:hex "be947a";
-  gv:red "190";
-  gv:blue "122";
-  gv:green "148";
-  gv:score "4.0574342";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "9e7058";
-  gv:red "158";
-  gv:blue "88";
-  gv:green "112";
-  gv:score "3.9638004999999996";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "882f1e";
-  gv:red "136";
-  gv:blue "30";
-  gv:green "47";
-  gv:score "3.5292991000000002";
-  gv:coverage "0.1"
-], [
-  gv:hex "e5b49d";
-  gv:red "229";
-  gv:blue "157";
-  gv:green "180";
-  gv:score "2.9465707";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.714414"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REGIBTRADA\nRCA CORONA\nBLANCO ESPANOL SEMISECO\nGIST\nN 44\nHARO-BILBAO\nTELLA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3706";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

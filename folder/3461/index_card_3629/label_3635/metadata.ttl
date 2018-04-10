@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3635";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "FOUNTAIN GROVE\nxtra Cunee\nCALIFORNIA\nNATURALLY FERMENTED\nCHAMPAGNE\nIN THE BOTTLE\nPRODUCED AND BOTTLED BY FOUNTAIN GROVE VINEYARD SANTA ROSA, soNOMA co., CALIF.\nSOLE DISTRIBUTORS FOR UNITED STATES\nWINE SHIPPERS M PORT CORPORATION\n40 EAST 49TH STREET, NEW YORK, N. Y\nL. I. 49\nALCOHOL 12% BY VOLUME\nNET CONTENTS 1 PINT 10 FL. OZ.\n"@eng;
-    gv:color [
-  gv:hex "d1c1af";
-  gv:red "209";
-  gv:blue "175";
-  gv:green "193";
-  gv:score "28.805688";
-  gv:coverage "13.473333000000002"
-], [
-  gv:hex "ac9c8a";
-  gv:red "172";
-  gv:blue "138";
-  gv:green "156";
-  gv:score "26.474514999999997";
-  gv:coverage "3.3266667"
-], [
-  gv:hex "867766";
-  gv:red "134";
-  gv:blue "102";
-  gv:green "119";
-  gv:score "11.518713";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "ebdcca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "7.493983999999999";
-  gv:coverage "22.64"
-], [
-  gv:hex "615344";
-  gv:red "97";
-  gv:blue "68";
-  gv:green "83";
-  gv:score "5.1428832";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "3f3224";
-  gv:red "63";
-  gv:blue "36";
-  gv:green "50";
-  gv:score "4.1502666";
-  gv:coverage "0.36"
-], [
-  gv:hex "f0e3d7";
-  gv:red "240";
-  gv:blue "215";
-  gv:green "227";
-  gv:score "2.6383314";
-  gv:coverage "56.766665"
-], [
-  gv:hex "b7947e";
-  gv:red "183";
-  gv:blue "126";
-  gv:green "148";
-  gv:score "2.6287802";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "d3c5b8";
-  gv:red "211";
-  gv:blue "184";
-  gv:green "197";
-  gv:score "2.4043164999999997";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "93715a";
-  gv:red "147";
-  gv:blue "90";
-  gv:green "113";
-  gv:score "2.1976722";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.981516"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.713069999999995"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.197320000000005"
-];
-    w:bagOfWords "FOUNTAIN GROVE\nxtra Cunee\nCALIFORNIA\nNATURALLY FERMENTED\nCHAMPAGNE\nIN THE BOTTLE\nPRODUCED AND BOTTLED BY FOUNTAIN GROVE VINEYARD SANTA ROSA, soNOMA co., CALIF.\nSOLE DISTRIBUTORS FOR UNITED STATES\nWINE SHIPPERS M PORT CORPORATION\n40 EAST 49TH STREET, NEW YORK, N. Y\nL. I. 49\nALCOHOL 12% BY VOLUME\nNET CONTENTS 1 PINT 10 FL. OZ.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3635";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

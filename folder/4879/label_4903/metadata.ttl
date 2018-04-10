@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4903";
-    dct:type "image";
-    w:bagOfWords "TRAP I CHE\nCABERNET SAU VI G NO N\n0 A K C ASK RESERVE\nPRODUCT OF ARGENTINA\nM PORTED BY\nVINOS ARGENTINOS IMPORTS U. S. A. INC., NEW YORK, N. Y\n12.5% ALC. BY V OL. 7 50 ML\nTRAP CHE\nCABERNET SAU VIGNO N\n0 A K C ASK RESERVE\nThe Trapiche estates are situated in Mendoza province. Their\nunique position,at a height of 3,000 feet at the base of the majestic\nsnow-capped Argentine Andes provides a perfect micro-climate\nthat enables Trapiche to extract the very best out of classic varie-\ntals, notably, Cabernet Sauvignon and Chardonnay.The excellent\nMalbec also thrives in these conditions.\nThe vintage is harvested in February and the wines are matured in\nnew French oak barriques for several months, followed by further\nageing in bottle. This combination of prime site, excellent fruit and\nclassic production methods ensures that Trapiche's oak aged wines\nare of the highest quality\nCONTAINS SULFITES\nGOVERNMENT WARNING\n(1) ACCORDING TO THE SUR\nGEON GENERAL, WOMENSHOULD NOT DRINK ALCOHOLIC\nBEVERAGES DURING PREGNANCY BECAUSE OF THE RISK\nOF BIRTHDEFECTS. (2)CONSUMPTIONOFALCOHOLICBEV\nERAGES IMPAIRS YOUR ABILITY TO DRIVE A CAR OR OP\nERATE MACHINERY, AND MAY CAUSE HEALTHPROBLEMS 0 34156 09090 5\nU.S.A. 750 ml\n"@undefined;
-    gv:color [
-  gv:hex "c8c0b8";
-  gv:red "200";
-  gv:blue "184";
-  gv:green "192";
-  gv:score "37.68031";
-  gv:coverage "21.82"
-], [
-  gv:hex "a59f95";
-  gv:red "165";
-  gv:blue "149";
-  gv:green "159";
-  gv:score "29.171729000000003";
-  gv:coverage "6.0066666"
-], [
-  gv:hex "a4a08e";
-  gv:red "164";
-  gv:blue "142";
-  gv:green "160";
-  gv:score "12.254938";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "e7e0d8";
-  gv:red "231";
-  gv:blue "216";
-  gv:green "224";
-  gv:score "7.8917034";
-  gv:coverage "62.839999999999996"
-], [
-  gv:hex "c5bfae";
-  gv:red "197";
-  gv:blue "174";
-  gv:green "191";
-  gv:score "5.3025685000000005";
-  gv:coverage "2.1333333"
-], [
-  gv:hex "867f76";
-  gv:red "134";
-  gv:blue "118";
-  gv:green "127";
-  gv:score "3.2514136";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "7d7767";
-  gv:red "125";
-  gv:blue "103";
-  gv:green "119";
-  gv:score "1.5991271";
-  gv:coverage "0.32"
-], [
-  gv:hex "e2dccc";
-  gv:red "226";
-  gv:blue "204";
-  gv:green "220";
-  gv:score "0.86337738";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "565040";
-  gv:red "86";
-  gv:blue "64";
-  gv:green "80";
-  gv:score "0.7827498";
-  gv:coverage "0.16"
-], [
-  gv:hex "3a3425";
-  gv:red "58";
-  gv:blue "37";
-  gv:green "52";
-  gv:score "0.56038829";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.984352"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.047864999999994"
-];
-    w:bagOfWords "TRAP I CHE\nCABERNET SAU VI G NO N\n0 A K C ASK RESERVE\nPRODUCT OF ARGENTINA\nM PORTED BY\nVINOS ARGENTINOS IMPORTS U. S. A. INC., NEW YORK, N. Y\n12.5% ALC. BY V OL. 7 50 ML\nTRAP CHE\nCABERNET SAU VIGNO N\n0 A K C ASK RESERVE\nThe Trapiche estates are situated in Mendoza province. Their\nunique position,at a height of 3,000 feet at the base of the majestic\nsnow-capped Argentine Andes provides a perfect micro-climate\nthat enables Trapiche to extract the very best out of classic varie-\ntals, notably, Cabernet Sauvignon and Chardonnay.The excellent\nMalbec also thrives in these conditions.\nThe vintage is harvested in February and the wines are matured in\nnew French oak barriques for several months, followed by further\nageing in bottle. This combination of prime site, excellent fruit and\nclassic production methods ensures that Trapiche's oak aged wines\nare of the highest quality\nCONTAINS SULFITES\nGOVERNMENT WARNING\n(1) ACCORDING TO THE SUR\nGEON GENERAL, WOMENSHOULD NOT DRINK ALCOHOLIC\nBEVERAGES DURING PREGNANCY BECAUSE OF THE RISK\nOF BIRTHDEFECTS. (2)CONSUMPTIONOFALCOHOLICBEV\nERAGES IMPAIRS YOUR ABILITY TO DRIVE A CAR OR OP\nERATE MACHINERY, AND MAY CAUSE HEALTHPROBLEMS 0 34156 09090 5\nU.S.A. 750 ml\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4903";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

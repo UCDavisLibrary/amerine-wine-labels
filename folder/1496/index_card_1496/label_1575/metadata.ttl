@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1575";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "da\nla Cave\nfipo Crispin\nA MONTI LLADO\nMBRE\nBARRAMEDA\nRegistro of loial de Embotelladores, "@spa;
-    gv:color [
-  gv:hex "78501b";
-  gv:red "120";
-  gv:blue "27";
-  gv:green "80";
-  gv:score "28.125328";
-  gv:coverage "5.2"
-], [
-  gv:hex "bb9763";
-  gv:red "187";
-  gv:blue "99";
-  gv:green "151";
-  gv:score "5.990253";
-  gv:coverage "2.5133334"
-], [
-  gv:hex "ddc1a2";
-  gv:red "221";
-  gv:blue "162";
-  gv:green "193";
-  gv:score "5.4280072";
-  gv:coverage "25.606668"
-], [
-  gv:hex "966a33";
-  gv:red "150";
-  gv:blue "51";
-  gv:green "106";
-  gv:score "17.392205";
-  gv:coverage "5.6000000000000005"
-], [
-  gv:hex "9e6b25";
-  gv:red "158";
-  gv:blue "37";
-  gv:green "107";
-  gv:score "11.976697";
-  gv:coverage "3.7666667"
-], [
-  gv:hex "947240";
-  gv:red "148";
-  gv:blue "64";
-  gv:green "114";
-  gv:score "4.699238800000001";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "bc8e59";
-  gv:red "188";
-  gv:blue "89";
-  gv:green "142";
-  gv:score "4.0369402999999995";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "e6bba1";
-  gv:red "230";
-  gv:blue "161";
-  gv:green "187";
-  gv:score "2.6826695000000003";
-  gv:coverage "0.98"
-], [
-  gv:hex "dcb884";
-  gv:red "220";
-  gv:blue "132";
-  gv:green "184";
-  gv:score "2.4265036";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "b89b79";
-  gv:red "184";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "2.2976560999999998";
-  gv:coverage "0.88"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.873324"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "62.955016"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "54.974276"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.185305"
-];
-    w:bagOfWords "da\nla Cave\nfipo Crispin\nA MONTI LLADO\nMBRE\nBARRAMEDA\nRegistro of loial de Embotelladores, "@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1575";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

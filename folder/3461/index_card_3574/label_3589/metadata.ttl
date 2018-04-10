@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3589";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "GEM OF WINES\nCALIFORNIA\nSEMILLON\nEDALS CALIFORNIA RUBY\nSTATE FA\nNES\nHILL\nALCOHOL 13%o BY VOLUME\nPRODUCED AND BOTTLED BY\nRUBY HILL VINE YARD CO\nERNEST FERRARIO, PROP. LIVERMORE VALLEY, PLEASANTON, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "ae9a81";
-  gv:red "174";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "27.950226999999998";
-  gv:coverage "5.5333334999999995"
-], [
-  gv:hex "e2b285";
-  gv:red "226";
-  gv:blue "133";
-  gv:green "178";
-  gv:score "7.1307324";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "592d08";
-  gv:red "89";
-  gv:blue "8";
-  gv:green "45";
-  gv:score "0.33812856";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "cebba2";
-  gv:red "206";
-  gv:blue "162";
-  gv:green "187";
-  gv:score "15.45804";
-  gv:coverage "26.173332"
-], [
-  gv:hex "8b775e";
-  gv:red "139";
-  gv:blue "94";
-  gv:green "119";
-  gv:score "9.948162700000001";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "c69666";
-  gv:red "198";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "3.9535622999999998";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "e2b29c";
-  gv:red "226";
-  gv:blue "156";
-  gv:green "178";
-  gv:score "3.8711347";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "c29886";
-  gv:red "194";
-  gv:blue "134";
-  gv:green "152";
-  gv:score "3.7701368";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "956d5f";
-  gv:red "149";
-  gv:blue "95";
-  gv:green "109";
-  gv:score "3.046743";
-  gv:coverage "0.64"
-], [
-  gv:hex "cdc1b9";
-  gv:red "205";
-  gv:blue "185";
-  gv:green "193";
-  gv:score "2.8524320999999997";
-  gv:coverage "4.1933332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "80.98675"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "78.440034"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.84810999999999"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "58.77337500000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.242412"
-];
-    w:bagOfWords "GEM OF WINES\nCALIFORNIA\nSEMILLON\nEDALS CALIFORNIA RUBY\nSTATE FA\nNES\nHILL\nALCOHOL 13%o BY VOLUME\nPRODUCED AND BOTTLED BY\nRUBY HILL VINE YARD CO\nERNEST FERRARIO, PROP. LIVERMORE VALLEY, PLEASANTON, CALIF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3589";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

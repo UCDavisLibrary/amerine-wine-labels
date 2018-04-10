@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2381";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "MEDAILLE D'OR, BRUXELLES 1910\nMEDAILLE D'OR, PARIS 1927\nGRAND PRIX, ST LOUIS, U.S.A. 19O4\nGrand\n1929\n"@fra;
-    gv:color [
-  gv:hex "5b5147";
-  gv:red "91";
-  gv:blue "71";
-  gv:green "81";
-  gv:score "36.404827";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "d1c6bb";
-  gv:red "209";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "7.546939";
-  gv:coverage "9.62"
-], [
-  gv:hex "40362d";
-  gv:red "64";
-  gv:blue "45";
-  gv:green "54";
-  gv:score "24.556383";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "7c7268";
-  gv:red "124";
-  gv:blue "104";
-  gv:green "114";
-  gv:score "9.5214576";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "5c5042";
-  gv:red "92";
-  gv:blue "66";
-  gv:green "80";
-  gv:score "4.30112";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "e8dcd1";
-  gv:red "232";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "3.7189551";
-  gv:coverage "20.893334"
-], [
-  gv:hex "a49990";
-  gv:red "164";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "3.6669441";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "d0c1b1";
-  gv:red "208";
-  gv:blue "177";
-  gv:green "193";
-  gv:score "2.6512187";
-  gv:coverage "21.793333"
-], [
-  gv:hex "44372b";
-  gv:red "68";
-  gv:blue "43";
-  gv:green "55";
-  gv:score "2.4937088";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "a89889";
-  gv:red "168";
-  gv:blue "137";
-  gv:green "152";
-  gv:score "1.8023307";
-  gv:coverage "1.5266667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.009971"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "50.472617"
-];
-    w:bagOfWords "MEDAILLE D'OR, BRUXELLES 1910\nMEDAILLE D'OR, PARIS 1927\nGRAND PRIX, ST LOUIS, U.S.A. 19O4\nGrand\n1929\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2381";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

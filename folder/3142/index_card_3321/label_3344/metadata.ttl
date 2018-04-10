@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3344";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Grand premier cru de Bourgogne\nChateau\n1749\nCorton Grancey\nTirage du Chateau\n1934\nRegistered\nFRANCE\nDéposé\n"@fra;
-    gv:color [
-  gv:hex "dfc09d";
-  gv:red "223";
-  gv:blue "157";
-  gv:green "192";
-  gv:score "73.55271599999999";
-  gv:coverage "26.833335"
-], [
-  gv:hex "b79774";
-  gv:red "183";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "16.08128";
-  gv:coverage "4.74"
-], [
-  gv:hex "9a7a58";
-  gv:red "154";
-  gv:blue "88";
-  gv:green "122";
-  gv:score "4.3209672";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "f4d5b4";
-  gv:red "244";
-  gv:blue "180";
-  gv:green "213";
-  gv:score "1.6827563";
-  gv:coverage "17.153333"
-], [
-  gv:hex "8b6a48";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "106";
-  gv:score "0.74965521";
-  gv:coverage "0.16"
-], [
-  gv:hex "93734d";
-  gv:red "147";
-  gv:blue "77";
-  gv:green "115";
-  gv:score "0.6502444900000001";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "b79373";
-  gv:red "183";
-  gv:blue "115";
-  gv:green "147";
-  gv:score "0.53868629";
-  gv:coverage "0.2"
-], [
-  gv:hex "704f2e";
-  gv:red "112";
-  gv:blue "46";
-  gv:green "79";
-  gv:score "0.48190802";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "dcb794";
-  gv:red "220";
-  gv:blue "148";
-  gv:green "183";
-  gv:score "0.458855";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "6e4c29";
-  gv:red "110";
-  gv:blue "41";
-  gv:green "76";
-  gv:score "0.42282179999999997";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.74159399999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.951408"
-];
-    w:bagOfWords "Grand premier cru de Bourgogne\nChateau\n1749\nCorton Grancey\nTirage du Chateau\n1934\nRegistered\nFRANCE\nDéposé\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3344";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

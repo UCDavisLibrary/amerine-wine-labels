@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3780";
-    dct:type "image";
-    w:bagOfWords "NIER STEINER FREHBACH\nRIE SLI N.G\nRHINE WINE\nAlcohol by Volume 10-12%\nContents 1 Pint 8 Fluid Ounces\nProduced and bottled in Germany by\nG. B. BOHM, NIERSTEIN o RHINE\nEstablished 1868\nO MAUBACH & Co. MAINZ\n"@deu;
-    gv:color [
-  gv:hex "d9c0a1";
-  gv:red "217";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "62.347364000000006";
-  gv:coverage "33.786666"
-], [
-  gv:hex "4f2d13";
-  gv:red "79";
-  gv:blue "19";
-  gv:green "45";
-  gv:score "1.9603834";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "b39a7c";
-  gv:red "179";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "16.530867";
-  gv:coverage "6.0066666"
-], [
-  gv:hex "90795b";
-  gv:red "144";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "5.214408000000001";
-  gv:coverage "1.58"
-], [
-  gv:hex "6e492e";
-  gv:red "110";
-  gv:blue "46";
-  gv:green "73";
-  gv:score "1.9174282";
-  gv:coverage "0.18"
-], [
-  gv:hex "645037";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "80";
-  gv:score "1.7151585";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "edd6bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "214";
-  gv:score "1.3740752";
-  gv:coverage "10.413333"
-], [
-  gv:hex "c0967b";
-  gv:red "192";
-  gv:blue "123";
-  gv:green "150";
-  gv:score "1.2914184";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "997055";
-  gv:red "153";
-  gv:blue "85";
-  gv:green "112";
-  gv:score "1.2795676";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "734825";
-  gv:red "115";
-  gv:blue "37";
-  gv:green "72";
-  gv:score "1.1796778";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.468328"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.364643"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "51.380742"
-];
-    w:bagOfWords "NIER STEINER FREHBACH\nRIE SLI N.G\nRHINE WINE\nAlcohol by Volume 10-12%\nContents 1 Pint 8 Fluid Ounces\nProduced and bottled in Germany by\nG. B. BOHM, NIERSTEIN o RHINE\nEstablished 1868\nO MAUBACH & Co. MAINZ\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3780";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1449";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "NATURAL FER M ENT A T O N N THE BOTTLE\nCOOKS\nA M E R I C A N\nparking Burgundy\nCONTENTS\nI PT. IO FL. OZS ALCOHOL 12% BY VOLUME\nMANUFACTURE D & BOTTLED BY\nAMERICAN. W INE CO ESTAGL. I 8.59 ST. LOUIS U. S. A.\n1942. A. w. co., LITHo IN u, s. A.\nTRADU MARK REG. U. S, PAT, OFF.\n"@eng;
-    gv:color [
-  gv:hex "0f0905";
-  gv:red "15";
-  gv:blue "5";
-  gv:green "9";
-  gv:score "44.770782999999994";
-  gv:coverage "25"
-], [
-  gv:hex "d0bf9c";
-  gv:red "208";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "10.972194";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "827559";
-  gv:red "130";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "6.4549439";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "aa9b7b";
-  gv:red "170";
-  gv:blue "123";
-  gv:green "155";
-  gv:score "6.3888244";
-  gv:coverage "0.62"
-], [
-  gv:hex "38322c";
-  gv:red "56";
-  gv:blue "44";
-  gv:green "50";
-  gv:score "5.5341624";
-  gv:coverage "2.6133334"
-], [
-  gv:hex "39301c";
-  gv:red "57";
-  gv:blue "28";
-  gv:green "48";
-  gv:score "4.6843689";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "5f5238";
-  gv:red "95";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "4.5789529";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "241a06";
-  gv:red "36";
-  gv:blue "6";
-  gv:green "26";
-  gv:score "4.475359999999999";
-  gv:coverage "1"
-], [
-  gv:hex "5a534c";
-  gv:red "90";
-  gv:blue "76";
-  gv:green "83";
-  gv:score "3.0506413";
-  gv:coverage "1.44"
-], [
-  gv:hex "645027";
-  gv:red "100";
-  gv:blue "39";
-  gv:green "80";
-  gv:score "2.0279776";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.407646"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "61.59713300000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.691768999999994"
-];
-    w:bagOfWords "NATURAL FER M ENT A T O N N THE BOTTLE\nCOOKS\nA M E R I C A N\nparking Burgundy\nCONTENTS\nI PT. IO FL. OZS ALCOHOL 12% BY VOLUME\nMANUFACTURE D & BOTTLED BY\nAMERICAN. W INE CO ESTAGL. I 8.59 ST. LOUIS U. S. A.\n1942. A. w. co., LITHo IN u, s. A.\nTRADU MARK REG. U. S, PAT, OFF.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1449";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

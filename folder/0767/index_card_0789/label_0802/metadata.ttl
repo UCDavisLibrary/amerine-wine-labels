@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0802";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "Appellation contr\nRESTAURANT MARC ANNI BAL DE COCONNAS\nS.A.R.L DE LA PLACE ROYALE\n2 bis, PLACE DES VOSGES PARIS\n"@fra;
-    gv:color [
-  gv:hex "d3c1a5";
-  gv:red "211";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "62.6181";
-  gv:coverage "10.853333"
-], [
-  gv:hex "d2c5bb";
-  gv:red "210";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "8.007067399999999";
-  gv:coverage "25.480000000000004"
-], [
-  gv:hex "cdb485";
-  gv:red "205";
-  gv:blue "133";
-  gv:green "180";
-  gv:score "6.05305";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "e7dbc7";
-  gv:red "231";
-  gv:blue "199";
-  gv:green "219";
-  gv:score "5.724626";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "b2a48d";
-  gv:red "178";
-  gv:blue "141";
-  gv:green "164";
-  gv:score "5.6606937";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "e6dace";
-  gv:red "230";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "4.6546768";
-  gv:coverage "58.98"
-], [
-  gv:hex "bfa374";
-  gv:red "191";
-  gv:blue "116";
-  gv:green "163";
-  gv:score "2.8495053";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "ab9c92";
-  gv:red "171";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "2.0994356";
-  gv:coverage "0.22"
-], [
-  gv:hex "897d6c";
-  gv:red "137";
-  gv:blue "108";
-  gv:green "125";
-  gv:score "1.9405369";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "86796f";
-  gv:red "134";
-  gv:blue "111";
-  gv:green "121";
-  gv:score "0.36511582";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.313819"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.130085"
-];
-    w:bagOfWords "Appellation contr\nRESTAURANT MARC ANNI BAL DE COCONNAS\nS.A.R.L DE LA PLACE ROYALE\n2 bis, PLACE DES VOSGES PARIS\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0802";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

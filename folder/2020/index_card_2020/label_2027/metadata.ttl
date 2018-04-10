@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2027";
-    dct:type "image";
-    w:bagOfWords "60\nGesetzl geschutzt\nSCHULZ & WAGNER\n1935 Laubenheimer Rhine Wine\nRhein\nessen\n"@undefined;
-    gv:color [
-  gv:hex "d4b28d";
-  gv:red "212";
-  gv:blue "141";
-  gv:green "178";
-  gv:score "20.432081999999998";
-  gv:coverage "7.9399999999999995"
-], [
-  gv:hex "c09e7a";
-  gv:red "192";
-  gv:blue "122";
-  gv:green "158";
-  gv:score "15.421408";
-  gv:coverage "4.7866665"
-], [
-  gv:hex "be9776";
-  gv:red "190";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "14.950447";
-  gv:coverage "4.3866667999999995"
-], [
-  gv:hex "957254";
-  gv:red "149";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "12.112924999999999";
-  gv:coverage "4.733333399999999"
-], [
-  gv:hex "d5ae8c";
-  gv:red "213";
-  gv:blue "140";
-  gv:green "174";
-  gv:score "7.4856855";
-  gv:coverage "2.04"
-], [
-  gv:hex "735136";
-  gv:red "115";
-  gv:blue "54";
-  gv:green "81";
-  gv:score "5.8495931";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "ebb98d";
-  gv:red "235";
-  gv:blue "141";
-  gv:green "185";
-  gv:score "5.1729746";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "c6976d";
-  gv:red "198";
-  gv:blue "109";
-  gv:green "151";
-  gv:score "4.351598";
-  gv:coverage "1.58"
-], [
-  gv:hex "937557";
-  gv:red "147";
-  gv:blue "87";
-  gv:green "117";
-  gv:score "3.7420623";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "c19e74";
-  gv:red "193";
-  gv:blue "116";
-  gv:green "158";
-  gv:score "2.3232214";
-  gv:coverage "0.77333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.865566"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "62.55160600000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.542287"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.309178"
-];
-    w:bagOfWords "60\nGesetzl geschutzt\nSCHULZ & WAGNER\n1935 Laubenheimer Rhine Wine\nRhein\nessen\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2027";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

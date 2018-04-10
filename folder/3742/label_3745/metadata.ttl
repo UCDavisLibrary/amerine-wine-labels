@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3745";
-    dct:type "image";
-    w:bagOfWords "Chianti\noggio Reale\nConte Cesare\nSPALLETTI\nRufina\n"@ita;
-    gv:color [
-  gv:hex "d5bd98";
-  gv:red "213";
-  gv:blue "152";
-  gv:green "189";
-  gv:score "48.269621";
-  gv:coverage "26.073334"
-], [
-  gv:hex "d2b889";
-  gv:red "210";
-  gv:blue "137";
-  gv:green "184";
-  gv:score "18.216693";
-  gv:coverage "5.2866668"
-], [
-  gv:hex "b79d79";
-  gv:red "183";
-  gv:blue "121";
-  gv:green "157";
-  gv:score "13.019665999999999";
-  gv:coverage "3.5733335"
-], [
-  gv:hex "bda274";
-  gv:red "189";
-  gv:blue "116";
-  gv:green "162";
-  gv:score "4.504220200000001";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "907453";
-  gv:red "144";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "3.1906723999999995";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "6a502e";
-  gv:red "106";
-  gv:blue "46";
-  gv:green "80";
-  gv:score "1.9643681";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "b69176";
-  gv:red "182";
-  gv:blue "118";
-  gv:green "145";
-  gv:score "1.326584";
-  gv:coverage "0.24"
-], [
-  gv:hex "8c7248";
-  gv:red "140";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "1.3123367000000001";
-  gv:coverage "0.22"
-], [
-  gv:hex "6e4c30";
-  gv:red "110";
-  gv:blue "48";
-  gv:green "76";
-  gv:score "1.273487";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "936f54";
-  gv:red "147";
-  gv:blue "84";
-  gv:green "111";
-  gv:score "1.2574366";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.969794"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.884788"
-];
-    w:bagOfWords "Chianti\noggio Reale\nConte Cesare\nSPALLETTI\nRufina\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3745";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

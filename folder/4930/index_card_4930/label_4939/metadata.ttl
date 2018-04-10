@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4939";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "EIN\nCOBLENZ AM RHEIN\n1794\nob\nRhein\nHARD& C\nRD&CO DEINHARD CO\nZELTINGER\nD & CO\nNHARD & CO\nCo\n& HARD & C\nRD D & CO\nSTILL WINE\nNHARD Be\nNHARD & CO\nPRODUCT OF GERMANY CONTENTs:1 FLUID OUNCES L: 3 PERCENT BY VOLUME\n1plNT6% "@undefined;
-    gv:color [
-  gv:hex "907457";
-  gv:red "144";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "19.679114000000002";
-  gv:coverage "1.72"
-], [
-  gv:hex "d9ac5e";
-  gv:red "217";
-  gv:blue "94";
-  gv:green "172";
-  gv:score "0.56679496";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "8f6c52";
-  gv:red "143";
-  gv:blue "82";
-  gv:green "108";
-  gv:score "16.904701";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "b19579";
-  gv:red "177";
-  gv:blue "121";
-  gv:green "149";
-  gv:score "13.339868";
-  gv:coverage "3.7933334999999997"
-], [
-  gv:hex "755338";
-  gv:red "117";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "12.531825999999999";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "d7bea4";
-  gv:red "215";
-  gv:blue "164";
-  gv:green "190";
-  gv:score "10.029067";
-  gv:coverage "10.6"
-], [
-  gv:hex "ebdbc6";
-  gv:red "235";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "6.5847754";
-  gv:coverage "42.5"
-], [
-  gv:hex "b59175";
-  gv:red "181";
-  gv:blue "117";
-  gv:green "145";
-  gv:score "4.4503041";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "70593f";
-  gv:red "112";
-  gv:blue "63";
-  gv:green "89";
-  gv:score "3.8159343999999997";
-  gv:coverage "0.52"
-], [
-  gv:hex "c19256";
-  gv:red "193";
-  gv:blue "86";
-  gv:green "146";
-  gv:score "1.4133654";
-  gv:coverage "1.4866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "62.96917199999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.492062999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.854445000000005"
-];
-    w:bagOfWords "EIN\nCOBLENZ AM RHEIN\n1794\nob\nRhein\nHARD& C\nRD&CO DEINHARD CO\nZELTINGER\nD & CO\nNHARD & CO\nCo\n& HARD & C\nRD D & CO\nSTILL WINE\nNHARD Be\nNHARD & CO\nPRODUCT OF GERMANY CONTENTs:1 FLUID OUNCES L: 3 PERCENT BY VOLUME\n1plNT6% "@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4939";
+    <schema.keywords> "UC Reporters Notebook@en".
+

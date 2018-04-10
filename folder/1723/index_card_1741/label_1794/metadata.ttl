@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1794";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Alcohol 8 olo\nContents\nM O S E L S A A R R U W E R\n1 Pint 8 Fl. Oz.\nby volume\n1943\nKaseler Hitzlay Spatlese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nWEILE\nER\n"@deu;
-    gv:color [
-  gv:hex "d3c0aa";
-  gv:red "211";
-  gv:blue "170";
-  gv:green "192";
-  gv:score "26.575100000000003";
-  gv:coverage "18.866667"
-], [
-  gv:hex "66563b";
-  gv:red "102";
-  gv:blue "59";
-  gv:green "86";
-  gv:score "7.87987";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "ac9c86";
-  gv:red "172";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "12.580383000000001";
-  gv:coverage "3.04"
-], [
-  gv:hex "c7c1b7";
-  gv:red "199";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "9.9121176";
-  gv:coverage "25.466666"
-], [
-  gv:hex "6c4a38";
-  gv:red "108";
-  gv:blue "56";
-  gv:green "74";
-  gv:score "6.9500484";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "837259";
-  gv:red "131";
-  gv:blue "89";
-  gv:green "114";
-  gv:score "6.754911700000001";
-  gv:coverage "0.5"
-], [
-  gv:hex "512e1c";
-  gv:red "81";
-  gv:blue "28";
-  gv:green "46";
-  gv:score "4.6817936";
-  gv:coverage "0.18"
-], [
-  gv:hex "a9a298";
-  gv:red "169";
-  gv:blue "152";
-  gv:green "162";
-  gv:score "4.5471512";
-  gv:coverage "1.28"
-], [
-  gv:hex "916e5e";
-  gv:red "145";
-  gv:blue "94";
-  gv:green "110";
-  gv:score "4.4916287";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "c29689";
-  gv:red "194";
-  gv:blue "137";
-  gv:green "150";
-  gv:score "4.3116577000000005";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.166193"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.860381"
-];
-    w:bagOfWords "Alcohol 8 olo\nContents\nM O S E L S A A R R U W E R\n1 Pint 8 Fl. Oz.\nby volume\n1943\nKaseler Hitzlay Spatlese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nWEILE\nER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1794";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

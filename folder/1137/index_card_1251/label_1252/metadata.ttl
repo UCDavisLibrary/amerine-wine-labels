@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1251/label_1252";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "CAZAU BON\nIAZAUBON\nGRAND CRU RESERVE\n"@undefined;
-    gv:color [
-  gv:hex "85775d";
-  gv:red "133";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "34.134212000000005";
-  gv:coverage "8.86"
-], [
-  gv:hex "a3957e";
-  gv:red "163";
-  gv:blue "126";
-  gv:green "149";
-  gv:score "23.163776";
-  gv:coverage "7.9533331"
-], [
-  gv:hex "62543a";
-  gv:red "98";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "18.889689";
-  gv:coverage "5.2333333"
-], [
-  gv:hex "d0c1af";
-  gv:red "208";
-  gv:blue "175";
-  gv:green "193";
-  gv:score "9.8578453";
-  gv:coverage "9.0066664"
-], [
-  gv:hex "45381f";
-  gv:red "69";
-  gv:blue "31";
-  gv:green "56";
-  gv:score "4.4373441";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "d2c2b7";
-  gv:red "210";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "3.3907976";
-  gv:coverage "8.3266668"
-], [
-  gv:hex "ab9a91";
-  gv:red "171";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "2.0707836";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "eadcc7";
-  gv:red "234";
-  gv:blue "199";
-  gv:green "220";
-  gv:score "1.5002355";
-  gv:coverage "2.0933334"
-], [
-  gv:hex "87776d";
-  gv:red "135";
-  gv:blue "109";
-  gv:green "119";
-  gv:score "1.1777204";
-  gv:coverage "0.48"
-], [
-  gv:hex "e7d8cd";
-  gv:red "231";
-  gv:blue "205";
-  gv:green "216";
-  gv:score "0.6209851700000001";
-  gv:coverage "55.526668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.704063"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.360156"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "55.718756"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.107814"
-];
-    w:bagOfWords "CAZAU BON\nIAZAUBON\nGRAND CRU RESERVE\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1252";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

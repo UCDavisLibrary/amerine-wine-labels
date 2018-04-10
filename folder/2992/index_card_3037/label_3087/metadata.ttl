@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3087";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "B\nNo. 509P\n1921\nGHau TROPLONG-MONDOT\nSAINT-EMILION\nJ. CAL VET & CIE\nBORDEAUX\nDE POSM\n"@fra;
-    gv:color [
-  gv:hex "d4bfa7";
-  gv:red "212";
-  gv:blue "167";
-  gv:green "191";
-  gv:score "50.511174999999994";
-  gv:coverage "19.586666"
-], [
-  gv:hex "ad9a83";
-  gv:red "173";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "16.620552999999997";
-  gv:coverage "5.3666666"
-], [
-  gv:hex "877560";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "14.26461";
-  gv:coverage "4.78"
-], [
-  gv:hex "645542";
-  gv:red "100";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "7.4368484";
-  gv:coverage "2.9000000000000004"
-], [
-  gv:hex "423526";
-  gv:red "66";
-  gv:blue "38";
-  gv:green "53";
-  gv:score "2.7458014";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e1b39e";
-  gv:red "225";
-  gv:blue "158";
-  gv:green "179";
-  gv:score "2.7102128";
-  gv:coverage "0.36"
-], [
-  gv:hex "c0917c";
-  gv:red "192";
-  gv:blue "124";
-  gv:green "145";
-  gv:score "2.6342794";
-  gv:coverage "0.3"
-], [
-  gv:hex "ebd6be";
-  gv:red "235";
-  gv:blue "190";
-  gv:green "214";
-  gv:score "0.60281837";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "3f352c";
-  gv:red "63";
-  gv:blue "44";
-  gv:green "53";
-  gv:score "0.53517562";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "5b5046";
-  gv:red "91";
-  gv:blue "70";
-  gv:green "80";
-  gv:score "0.47981692";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.553073"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.503893999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.5591"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.59439999999999"
-];
-    w:bagOfWords "B\nNo. 509P\n1921\nGHau TROPLONG-MONDOT\nSAINT-EMILION\nJ. CAL VET & CIE\nBORDEAUX\nDE POSM\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3087";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

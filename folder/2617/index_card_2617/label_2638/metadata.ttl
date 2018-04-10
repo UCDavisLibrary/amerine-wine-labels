@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2638";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "KIN\nJULIENAS\nBEAUJOLAIS\nBOURGOGNE ROUGE\nPRODUCE OF FRANCE\nSTREET PicCADILLY\n32 SACKVILLE\nWINE MERCHANTS\nBY APPOINTMENT TO\nMER MAIESTV ouSEN MA\nHAN KEY BANNISTER a co\nNAA-74\n"@fra;
-    gv:color [
-  gv:hex "55251b";
-  gv:red "85";
-  gv:blue "27";
-  gv:green "37";
-  gv:score "22.005716";
-  gv:coverage "11.200000000000001"
-], [
-  gv:hex "ceb9a2";
-  gv:red "206";
-  gv:blue "162";
-  gv:green "185";
-  gv:score "17.130375";
-  gv:coverage "5.5066667"
-], [
-  gv:hex "ae9a85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "154";
-  gv:score "15.429242000000002";
-  gv:coverage "3.9533332"
-], [
-  gv:hex "63241d";
-  gv:red "99";
-  gv:blue "29";
-  gv:green "36";
-  gv:score "12.838133";
-  gv:coverage "6.893333"
-], [
-  gv:hex "887764";
-  gv:red "136";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "9.522528900000001";
-  gv:coverage "2.7133333"
-], [
-  gv:hex "625241";
-  gv:red "98";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "6.5513141";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "35140b";
-  gv:red "53";
-  gv:blue "11";
-  gv:green "20";
-  gv:score "4.5237038";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "6f3f2e";
-  gv:red "111";
-  gv:blue "46";
-  gv:green "63";
-  gv:score "4.2952262";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "453626";
-  gv:red "69";
-  gv:blue "38";
-  gv:green "54";
-  gv:score "3.0738804";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "73322b";
-  gv:red "115";
-  gv:blue "43";
-  gv:green "50";
-  gv:score "0.55303052";
-  gv:coverage "0.42666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.967731"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "53.241247"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "52.86043299999999"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.086652"
-];
-    w:bagOfWords "KIN\nJULIENAS\nBEAUJOLAIS\nBOURGOGNE ROUGE\nPRODUCE OF FRANCE\nSTREET PicCADILLY\n32 SACKVILLE\nWINE MERCHANTS\nBY APPOINTMENT TO\nMER MAIESTV ouSEN MA\nHAN KEY BANNISTER a co\nNAA-74\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2638";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

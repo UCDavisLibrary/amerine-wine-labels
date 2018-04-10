@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0946";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "LES\nLONNAISES\norux viticulteur\n"@deu;
-    gv:color [
-  gv:hex "d8c19c";
-  gv:red "216";
-  gv:blue "156";
-  gv:green "193";
-  gv:score "45.273176";
-  gv:coverage "21.26"
-], [
-  gv:hex "8a7247";
-  gv:red "138";
-  gv:blue "71";
-  gv:green "114";
-  gv:score "9.2490226";
-  gv:coverage "2.08"
-], [
-  gv:hex "4e582c";
-  gv:red "78";
-  gv:blue "44";
-  gv:green "88";
-  gv:score "3.9982803";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "b09c75";
-  gv:red "176";
-  gv:blue "117";
-  gv:green "156";
-  gv:score "12.298779999999999";
-  gv:coverage "5.6466665"
-], [
-  gv:hex "8c7752";
-  gv:red "140";
-  gv:blue "82";
-  gv:green "119";
-  gv:score "6.519589600000001";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "af9c6e";
-  gv:red "175";
-  gv:blue "110";
-  gv:green "156";
-  gv:score "4.5453716";
-  gv:coverage "2.9000000000000004"
-], [
-  gv:hex "5e542f";
-  gv:red "94";
-  gv:blue "47";
-  gv:green "84";
-  gv:score "3.7978821000000003";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "6a552a";
-  gv:red "106";
-  gv:blue "42";
-  gv:green "85";
-  gv:score "3.7463642999999998";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "4c5726";
-  gv:red "76";
-  gv:blue "38";
-  gv:green "87";
-  gv:score "3.0897278";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "cab788";
-  gv:red "202";
-  gv:blue "136";
-  gv:green "183";
-  gv:score "2.7616851000000002";
-  gv:coverage "2.3466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.460874"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.87983"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.538137"
-];
-    w:bagOfWords "LES\nLONNAISES\norux viticulteur\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0946";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

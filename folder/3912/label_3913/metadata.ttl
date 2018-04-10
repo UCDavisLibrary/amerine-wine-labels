@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3912/label_3913";
-    dct:type "image";
-    w:bagOfWords "xVX/ u RTTEMBERG1SCH€ LAND4.\n0\ni \\ R T S C H A FT LI CHE\nWE\nGENOS\nmaturrein-unoergoren.\nevefuthl , gahithettrinkero\nCagen\nMINDESTINHALT 240 CCM\n\"RAI FFEISEN-EG-NA-BH: STuTT\nG-M-B-H. STUTTGART.\n"@deu;
-    gv:color [
-  gv:hex "937a41";
-  gv:red "147";
-  gv:blue "65";
-  gv:green "122";
-  gv:score "36.671853";
-  gv:coverage "3.2"
-], [
-  gv:hex "d9c19f";
-  gv:red "217";
-  gv:blue "159";
-  gv:green "193";
-  gv:score "6.3151136";
-  gv:coverage "13.36"
-], [
-  gv:hex "3f5c38";
-  gv:red "63";
-  gv:blue "56";
-  gv:green "92";
-  gv:score "4.6012721999999995";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "301600";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "22";
-  gv:score "0.38330676";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "ad935c";
-  gv:red "173";
-  gv:blue "92";
-  gv:green "147";
-  gv:score "21.935889";
-  gv:coverage "2.3533333"
-], [
-  gv:hex "0b2215";
-  gv:red "11";
-  gv:blue "21";
-  gv:green "34";
-  gv:score "0.094015792";
-  gv:coverage "0.02"
-], [
-  gv:hex "6f5521";
-  gv:red "111";
-  gv:blue "33";
-  gv:green "85";
-  gv:score "8.353515699999999";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "607c58";
-  gv:red "96";
-  gv:blue "88";
-  gv:green "124";
-  gv:score "3.2497346000000005";
-  gv:coverage "0.36"
-], [
-  gv:hex "4a350b";
-  gv:red "74";
-  gv:blue "11";
-  gv:green "53";
-  gv:score "2.039925";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "d1b685";
-  gv:red "209";
-  gv:blue "133";
-  gv:green "182";
-  gv:score "2.0259177";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "81.293589"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.632186"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "62.595707"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.70623199999999"
-];
-    w:bagOfWords "xVX/ u RTTEMBERG1SCH€ LAND4.\n0\ni \\ R T S C H A FT LI CHE\nWE\nGENOS\nmaturrein-unoergoren.\nevefuthl , gahithettrinkero\nCagen\nMINDESTINHALT 240 CCM\n\"RAI FFEISEN-EG-NA-BH: STuTT\nG-M-B-H. STUTTGART.\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3913";
+    <schema.keywords> "Germany Naturrein-Unvergoren Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

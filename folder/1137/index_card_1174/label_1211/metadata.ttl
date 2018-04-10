@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1211";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "CONAC\nAN LUCAR DE\nBARRAMEDA\nESPANA\nLIT, S DURA, VALENCIA\n"@spa;
-    gv:color [
-  gv:hex "ecdcca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "34.892142";
-  gv:coverage "36.74"
-], [
-  gv:hex "360b05";
-  gv:red "54";
-  gv:blue "5";
-  gv:green "11";
-  gv:score "1.3292521";
-  gv:coverage "0.6"
-], [
-  gv:hex "120d0c";
-  gv:red "18";
-  gv:blue "12";
-  gv:green "13";
-  gv:score "1.1462009";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "dac8ac";
-  gv:red "218";
-  gv:blue "172";
-  gv:green "200";
-  gv:score "20.99337";
-  gv:coverage "20.053333000000002"
-], [
-  gv:hex "dec491";
-  gv:red "222";
-  gv:blue "145";
-  gv:green "196";
-  gv:score "11.676469";
-  gv:coverage "9.886666400000001"
-], [
-  gv:hex "eae2da";
-  gv:red "234";
-  gv:blue "218";
-  gv:green "226";
-  gv:score "11.360956999999999";
-  gv:coverage "14.326666"
-], [
-  gv:hex "b09e80";
-  gv:red "176";
-  gv:blue "128";
-  gv:green "158";
-  gv:score "3.2468036";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "b29866";
-  gv:red "178";
-  gv:blue "102";
-  gv:green "152";
-  gv:score "3.0673452";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "d7cdc1";
-  gv:red "215";
-  gv:blue "193";
-  gv:green "205";
-  gv:score "1.7125856";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "260304";
-  gv:red "38";
-  gv:blue "4";
-  gv:green "3";
-  gv:score "1.140906";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "52.646184"
-];
-    w:bagOfWords "CONAC\nAN LUCAR DE\nBARRAMEDA\nESPANA\nLIT, S DURA, VALENCIA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1211";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

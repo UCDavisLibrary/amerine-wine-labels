@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4581";
-    dct:type "image";
-    w:bagOfWords "NO 220\ntih Jerez Industria.\n"@spa;
-    gv:color [
-  gv:hex "ccc2b8";
-  gv:red "204";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "35.350505";
-  gv:coverage "26.179999999999996"
-], [
-  gv:hex "aba197";
-  gv:red "171";
-  gv:blue "151";
-  gv:green "161";
-  gv:score "22.013277000000002";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "13.315036999999998";
-  gv:coverage "59.540000000000006"
-], [
-  gv:hex "cbc2b3";
-  gv:red "203";
-  gv:blue "179";
-  gv:green "194";
-  gv:score "7.1640015";
-  gv:coverage "7.3066667"
-], [
-  gv:hex "a69b8c";
-  gv:red "166";
-  gv:blue "140";
-  gv:green "155";
-  gv:score "6.0625162";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "7e746a";
-  gv:red "126";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "5.4092064";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "5d5349";
-  gv:red "93";
-  gv:blue "73";
-  gv:green "83";
-  gv:score "4.7641538";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "3f352b";
-  gv:red "63";
-  gv:blue "43";
-  gv:green "53";
-  gv:score "2.2409827";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "827768";
-  gv:red "130";
-  gv:blue "104";
-  gv:green "119";
-  gv:score "2.1911226";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "635748";
-  gv:red "99";
-  gv:blue "72";
-  gv:green "87";
-  gv:score "1.4484177";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.353708"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.017452"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "53.70452999999999"
-];
-    w:bagOfWords "NO 220\ntih Jerez Industria.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4581";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

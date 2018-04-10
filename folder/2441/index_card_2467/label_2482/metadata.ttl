@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2482";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Chassagne\nLes Grandes Ruchottea\n1934\nAPPELLATION CONTRO LEE\nMis es du D\nm ain ex\nClaude Ramonet Propriétaire-Récoltant d Chassagne\nMontrachet\nC O T E D'OR)\nproduet of tance.\nContents Quart\nSELECTED\nAND\nIMPORTED BY\nFrank sehoonmaker & Company, dne\n17\nEAST\n42 ND STREET\nNEVV-YORK\nolleohol 18 by Uolume Vin de Bourgogne\nBasie permit\n1-30\n"@fra;
-    gv:color [
-  gv:hex "dec4a2";
-  gv:red "222";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "51.67188";
-  gv:coverage "28.026667"
-], [
-  gv:hex "dbb987";
-  gv:red "219";
-  gv:blue "135";
-  gv:green "185";
-  gv:score "19.874088";
-  gv:coverage "3.4799999999999995"
-], [
-  gv:hex "b59a79";
-  gv:red "181";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "8.1395827";
-  gv:coverage "3.04"
-], [
-  gv:hex "be9c6a";
-  gv:red "190";
-  gv:blue "106";
-  gv:green "156";
-  gv:score "7.5732619";
-  gv:coverage "1.02"
-], [
-  gv:hex "efd7b9";
-  gv:red "239";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "4.084263";
-  gv:coverage "22.606666"
-], [
-  gv:hex "c29764";
-  gv:red "194";
-  gv:blue "100";
-  gv:green "151";
-  gv:score "2.8815171";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "907858";
-  gv:red "144";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "2.1059003";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "d9ae7d";
-  gv:red "217";
-  gv:blue "125";
-  gv:green "174";
-  gv:score "1.4994993";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "9f7441";
-  gv:red "159";
-  gv:blue "65";
-  gv:green "116";
-  gv:score "0.73455311";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "9f7d4f";
-  gv:red "159";
-  gv:blue "79";
-  gv:green "125";
-  gv:score "0.72674057";
-  gv:coverage "0.10666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.176878"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.874977"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.890867"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.197707"
-];
-    w:bagOfWords "Chassagne\nLes Grandes Ruchottea\n1934\nAPPELLATION CONTRO LEE\nMis es du D\nm ain ex\nClaude Ramonet Propriétaire-Récoltant d Chassagne\nMontrachet\nC O T E D'OR)\nproduet of tance.\nContents Quart\nSELECTED\nAND\nIMPORTED BY\nFrank sehoonmaker & Company, dne\n17\nEAST\n42 ND STREET\nNEVV-YORK\nolleohol 18 by Uolume Vin de Bourgogne\nBasie permit\n1-30\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2482";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

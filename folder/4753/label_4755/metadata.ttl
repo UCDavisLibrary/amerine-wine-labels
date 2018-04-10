@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4755";
-    dct:type "image";
-    w:bagOfWords "INGLENO0K\nORD NA\nTRADE M\nREGISTERED\nARK\nALCOHOL 121.2%\nBy VOLuME\nNAPA VALLEY\nPINOT NOIR\nPRODUCED & BOTTLED BY\nINGLE NOOK VINEYARD CO.\nBONDED WINERY No. 69\nESTABLISHED 1879\n14th DIST., CAL.\nRUTHERFORD, NAPA COUNTY, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "d1c1b0";
-  gv:red "209";
-  gv:blue "176";
-  gv:green "193";
-  gv:score "19.925523000000002";
-  gv:coverage "13.293332999999999"
-], [
-  gv:hex "847462";
-  gv:red "132";
-  gv:blue "98";
-  gv:green "116";
-  gv:score "18.257172";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "3f2f1e";
-  gv:red "63";
-  gv:blue "30";
-  gv:green "47";
-  gv:score "16.662252";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "61513f";
-  gv:red "97";
-  gv:blue "63";
-  gv:green "81";
-  gv:score "15.983455999999999";
-  gv:coverage "1.68"
-], [
-  gv:hex "a89886";
-  gv:red "168";
-  gv:blue "134";
-  gv:green "152";
-  gv:score "13.947184000000002";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "281907";
-  gv:red "40";
-  gv:blue "7";
-  gv:green "25";
-  gv:score "8.1420891";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "e9dac9";
-  gv:red "233";
-  gv:blue "201";
-  gv:green "218";
-  gv:score "2.8938431000000002";
-  gv:coverage "10.96"
-], [
-  gv:hex "ccbeb2";
-  gv:red "204";
-  gv:blue "178";
-  gv:green "190";
-  gv:score "1.4985478";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "1a0a00";
-  gv:red "26";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "1.1995398000000002";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "85776c";
-  gv:red "133";
-  gv:blue "108";
-  gv:green "119";
-  gv:score "0.52416874";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.5591"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.077515"
-];
-    w:bagOfWords "INGLENO0K\nORD NA\nTRADE M\nREGISTERED\nARK\nALCOHOL 121.2%\nBy VOLuME\nNAPA VALLEY\nPINOT NOIR\nPRODUCED & BOTTLED BY\nINGLE NOOK VINEYARD CO.\nBONDED WINERY No. 69\nESTABLISHED 1879\n14th DIST., CAL.\nRUTHERFORD, NAPA COUNTY, CALIF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4755";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

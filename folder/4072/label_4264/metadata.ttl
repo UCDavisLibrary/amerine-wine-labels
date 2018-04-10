@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4264";
-    dct:type "image";
-    w:bagOfWords "JOURDI\nKREMEDEPRUNELLE\nMADE BY\nPRODUCT OF FRANCE\n4/5 QUART\n56 PROOF\n"@fra;
-    gv:color [
-  gv:hex "6e1507";
-  gv:red "110";
-  gv:blue "7";
-  gv:green "21";
-  gv:score "8.9613073";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "961914";
-  gv:red "150";
-  gv:blue "20";
-  gv:green "25";
-  gv:score "8.683848399999999";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "e5b181";
-  gv:red "229";
-  gv:blue "129";
-  gv:green "177";
-  gv:score "4.3407108999999995";
-  gv:coverage "2.7133333"
-], [
-  gv:hex "60551b";
-  gv:red "96";
-  gv:blue "27";
-  gv:green "85";
-  gv:score "3.5036813";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "373215";
-  gv:red "55";
-  gv:blue "21";
-  gv:green "50";
-  gv:score "2.7754726";
-  gv:coverage "0.66"
-], [
-  gv:hex "150f05";
-  gv:red "21";
-  gv:blue "5";
-  gv:green "15";
-  gv:score "1.3365888";
-  gv:coverage "0.72"
-], [
-  gv:hex "800807";
-  gv:red "128";
-  gv:blue "7";
-  gv:green "8";
-  gv:score "6.3453458000000005";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "9e0603";
-  gv:red "158";
-  gv:blue "3";
-  gv:green "6";
-  gv:score "6.3177294999999996";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "85763b";
-  gv:red "133";
-  gv:blue "59";
-  gv:green "118";
-  gv:score "3.4915410000000002";
-  gv:coverage "0.74"
-], [
-  gv:hex "dbbb84";
-  gv:red "219";
-  gv:blue "132";
-  gv:green "187";
-  gv:score "3.4410077999999995";
-  gv:coverage "2.8066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "69.510615"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.30852"
-], [
-  gv:mid <https://g.co/kg/m/036qh8>;
-  gv:desc "produce";
-  gv:score "63.242555"
-];
-    w:bagOfWords "JOURDI\nKREMEDEPRUNELLE\nMADE BY\nPRODUCT OF FRANCE\n4/5 QUART\n56 PROOF\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4264";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

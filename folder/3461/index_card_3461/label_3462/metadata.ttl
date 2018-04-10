@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3462";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "MAT VALLEY\ns ND T. M. REG. U. S. PAT. OFF.\nALCOHOL 12% BY VOLUME\nUIT\nINDUSTRIES LTD. B. W. No. 2, 14, TH\nD\n"@eng;
-    gv:color [
-  gv:hex "cdc1ac";
-  gv:red "205";
-  gv:blue "172";
-  gv:green "193";
-  gv:score "40.197762999999995";
-  gv:coverage "22.073333"
-], [
-  gv:hex "a59c88";
-  gv:red "165";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "31.630707";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "827b69";
-  gv:red "130";
-  gv:blue "105";
-  gv:green "123";
-  gv:score "8.9599073";
-  gv:coverage "0.72"
-], [
-  gv:hex "130c00";
-  gv:red "19";
-  gv:blue "undefined";
-  gv:green "12";
-  gv:score "0.07081051000000001";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e9dac5";
-  gv:red "233";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "5.6123126";
-  gv:coverage "7.893333600000001"
-], [
-  gv:hex "d0c3b6";
-  gv:red "208";
-  gv:blue "182";
-  gv:green "195";
-  gv:score "5.5911329";
-  gv:coverage "14.666666000000001"
-], [
-  gv:hex "5e5947";
-  gv:red "94";
-  gv:blue "71";
-  gv:green "89";
-  gv:score "2.9066272";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "a2978b";
-  gv:red "162";
-  gv:blue "139";
-  gv:green "151";
-  gv:score "1.301995";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "3c3624";
-  gv:red "60";
-  gv:blue "36";
-  gv:green "54";
-  gv:score "1.2979798";
-  gv:coverage "0.16"
-], [
-  gv:hex "e8dbce";
-  gv:red "232";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "1.0877105";
-  gv:coverage "50.306666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.293704"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.24680000000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.890994"
-];
-    w:bagOfWords "MAT VALLEY\ns ND T. M. REG. U. S. PAT. OFF.\nALCOHOL 12% BY VOLUME\nUIT\nINDUSTRIES LTD. B. W. No. 2, 14, TH\nD\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3462";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

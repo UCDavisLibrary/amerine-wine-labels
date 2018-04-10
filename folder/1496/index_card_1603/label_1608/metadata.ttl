@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1608";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "Embotelladores\nNo 37\nParis\nBur de o\ns\nCadiz\nMatanzas\nFLO RID O & Co\nAanluran de .Barrameda\nPEDRO XIMENEZ VIEJISIMO \"S. I.''\nNUEVA LIT. JKAE ZANA JKR r Z.\n"@spa;
-    gv:color [
-  gv:hex "e19706";
-  gv:red "225";
-  gv:blue "6";
-  gv:green "151";
-  gv:score "30.908974999999998";
-  gv:coverage "15.1"
-], [
-  gv:hex "a0690d";
-  gv:red "160";
-  gv:blue "13";
-  gv:green "105";
-  gv:score "3.6876045000000004";
-  gv:coverage "1.58"
-], [
-  gv:hex "8c6f33";
-  gv:red "140";
-  gv:blue "51";
-  gv:green "111";
-  gv:score "1.5487976";
-  gv:coverage "0.76"
-], [
-  gv:hex "a22602";
-  gv:red "162";
-  gv:blue "2";
-  gv:green "38";
-  gv:score "1.0449511";
-  gv:coverage "0.24"
-], [
-  gv:hex "efa409";
-  gv:red "239";
-  gv:blue "9";
-  gv:green "164";
-  gv:score "29.189747999999998";
-  gv:coverage "9.54"
-], [
-  gv:hex "dfccaa";
-  gv:red "223";
-  gv:blue "170";
-  gv:green "204";
-  gv:score "0.13878765";
-  gv:coverage "13.04"
-], [
-  gv:hex "f5a904";
-  gv:red "245";
-  gv:blue "4";
-  gv:green "169";
-  gv:score "13.74521";
-  gv:coverage "3.9800000000000004"
-], [
-  gv:hex "e6850d";
-  gv:red "230";
-  gv:blue "13";
-  gv:green "133";
-  gv:score "4.2191468";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "845103";
-  gv:red "132";
-  gv:blue "3";
-  gv:green "81";
-  gv:score "1.5501871";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "92721c";
-  gv:red "146";
-  gv:blue "28";
-  gv:green "114";
-  gv:score "1.5251425";
-  gv:coverage "0.62"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "82.197487"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.266257"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Embotelladores\nNo 37\nParis\nBur de o\ns\nCadiz\nMatanzas\nFLO RID O & Co\nAanluran de .Barrameda\nPEDRO XIMENEZ VIEJISIMO \"S. I.''\nNUEVA LIT. JKAE ZANA JKR r Z.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1608";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

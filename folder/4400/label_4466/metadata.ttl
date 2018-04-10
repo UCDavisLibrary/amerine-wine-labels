@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4466";
-    dct:type "image";
-    w:bagOfWords "AS Rro\nREG IST\nCERO\nODEGAS RIOJANAS\nAS\nVINA ALBIN A\nVIEJA RESERVA\nCEEDICERO (RIOUA)\n1937\nEMBOTELLADOR\nEmbotellado en nuestr is\nBodegas de Cenicero\non\n123\neresindustri\n"@spa;
-    gv:color [
-  gv:hex "826b49";
-  gv:red "130";
-  gv:blue "73";
-  gv:green "107";
-  gv:score "28.546654999999998";
-  gv:coverage "10.473333"
-], [
-  gv:hex "685435";
-  gv:red "104";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "27.185377";
-  gv:coverage "9.78"
-], [
-  gv:hex "876e43";
-  gv:red "135";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "22.154012";
-  gv:coverage "6.260000000000001"
-], [
-  gv:hex "463318";
-  gv:red "70";
-  gv:blue "24";
-  gv:green "51";
-  gv:score "15.420762";
-  gv:coverage "5.3266667"
-], [
-  gv:hex "6e572e";
-  gv:red "110";
-  gv:blue "46";
-  gv:green "87";
-  gv:score "3.7888567999999996";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "2e1b03";
-  gv:red "46";
-  gv:blue "3";
-  gv:green "27";
-  gv:score "1.0631807";
-  gv:coverage "0.42"
-], [
-  gv:hex "a79172";
-  gv:red "167";
-  gv:blue "114";
-  gv:green "145";
-  gv:score "0.53804084";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "503914";
-  gv:red "80";
-  gv:blue "20";
-  gv:green "57";
-  gv:score "0.31678565";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "2d1601";
-  gv:red "45";
-  gv:blue "1";
-  gv:green "22";
-  gv:score "0.24652303999999997";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "a8885b";
-  gv:red "168";
-  gv:blue "91";
-  gv:green "136";
-  gv:score "0.17897909";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "91.745144"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "90.183628"
-], [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "84.55530999999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.101107"
-], [
-  gv:mid <https://g.co/kg/m/04lbp>;
-  gv:desc "leather";
-  gv:score "54.90722099999999"
-];
-    w:bagOfWords "AS Rro\nREG IST\nCERO\nODEGAS RIOJANAS\nAS\nVINA ALBIN A\nVIEJA RESERVA\nCEEDICERO (RIOUA)\n1937\nEMBOTELLADOR\nEmbotellado en nuestr is\nBodegas de Cenicero\non\n123\neresindustri\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4466";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

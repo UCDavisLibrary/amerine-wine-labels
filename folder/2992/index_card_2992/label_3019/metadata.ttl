@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3019";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHATEAU HAUT BRION\n1948\nAPPELLATION GRAVES CONTROLEE\nPESS A C CGIRON DE\nOTCio en outeilles au Chateau\nOMARMOL\nPOS\n"@fra;
-    gv:color [
-  gv:hex "b09776";
-  gv:red "176";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "36.546609000000004";
-  gv:coverage "8.1466667"
-], [
-  gv:hex "d4bda0";
-  gv:red "212";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "26.26704";
-  gv:coverage "22.12"
-], [
-  gv:hex "b59567";
-  gv:red "181";
-  gv:blue "103";
-  gv:green "149";
-  gv:score "12.762955000000002";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "967c5c";
-  gv:red "150";
-  gv:blue "92";
-  gv:green "124";
-  gv:score "11.051905";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "997c4f";
-  gv:red "153";
-  gv:blue "79";
-  gv:green "124";
-  gv:score "5.2914205999999995";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "d6b485";
-  gv:red "214";
-  gv:blue "133";
-  gv:green "180";
-  gv:score "4.21567";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "bb8f58";
-  gv:red "187";
-  gv:blue "88";
-  gv:green "143";
-  gv:score "1.2799536";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "e9d7c1";
-  gv:red "233";
-  gv:blue "193";
-  gv:green "215";
-  gv:score "0.76695671";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "a17845";
-  gv:red "161";
-  gv:blue "69";
-  gv:green "120";
-  gv:score "0.76591643";
-  gv:coverage "0.26"
-], [
-  gv:hex "dacbc1";
-  gv:red "218";
-  gv:blue "193";
-  gv:green "203";
-  gv:score "0.33659297";
-  gv:coverage "17.846666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "77.60271399999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.076977"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.765812000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.937042999999996"
-];
-    w:bagOfWords "CHATEAU HAUT BRION\n1948\nAPPELLATION GRAVES CONTROLEE\nPESS A C CGIRON DE\nOTCio en outeilles au Chateau\nOMARMOL\nPOS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3019";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

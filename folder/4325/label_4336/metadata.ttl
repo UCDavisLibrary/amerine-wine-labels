@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4336";
-    dct:type "image";
-    w:bagOfWords "PRODUIT DE YOU GOS LA VIE\nCDalmatinski opolo\nVIN NOI RE DE DAL MATIE\nVI N O P R O M E T\nZAGREB\n"@undefined;
-    gv:color [
-  gv:hex "d7c1ad";
-  gv:red "215";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "48.631600000000006";
-  gv:coverage "24.013333"
-], [
-  gv:hex "b69d81";
-  gv:red "182";
-  gv:blue "129";
-  gv:green "157";
-  gv:score "23.515749";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "b6986c";
-  gv:red "182";
-  gv:blue "108";
-  gv:green "152";
-  gv:score "8.0604114";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "ecd6c7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "214";
-  gv:score "5.1134489";
-  gv:coverage "9.8333336"
-], [
-  gv:hex "d3c0b7";
-  gv:red "211";
-  gv:blue "183";
-  gv:green "192";
-  gv:score "2.9912554";
-  gv:coverage "16.16"
-], [
-  gv:hex "d9ba8e";
-  gv:red "217";
-  gv:blue "142";
-  gv:green "186";
-  gv:score "2.7781206999999997";
-  gv:coverage "0.04"
-], [
-  gv:hex "d3b4aa";
-  gv:red "211";
-  gv:blue "170";
-  gv:green "180";
-  gv:score "2.7528821";
-  gv:coverage "0.18"
-], [
-  gv:hex "352c20";
-  gv:red "53";
-  gv:blue "32";
-  gv:green "44";
-  gv:score "0.02556387";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "bc9e92";
-  gv:red "188";
-  gv:blue "146";
-  gv:green "158";
-  gv:score "1.7675010000000002";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "977d5b";
-  gv:red "151";
-  gv:blue "91";
-  gv:green "125";
-  gv:score "1.1721479";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.680661"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.583717"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.219965"
-];
-    w:bagOfWords "PRODUIT DE YOU GOS LA VIE\nCDalmatinski opolo\nVIN NOI RE DE DAL MATIE\nVI N O P R O M E T\nZAGREB\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4336";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

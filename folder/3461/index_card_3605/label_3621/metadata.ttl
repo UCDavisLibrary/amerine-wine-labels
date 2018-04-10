@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3621";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "LOKOVA\nNapa County\nWhite table wine t\nALCOHOL 12 BY VOLUME\nSELECTED AND BOTTLED BY\nMayacamas\nVineyards\nNAPA, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d7c2a9";
-  gv:red "215";
-  gv:blue "169";
-  gv:green "194";
-  gv:score "51.046400000000006";
-  gv:coverage "27.573332"
-], [
-  gv:hex "ad9984";
-  gv:red "173";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "15.460528000000002";
-  gv:coverage "1.96"
-], [
-  gv:hex "74522c";
-  gv:red "116";
-  gv:blue "44";
-  gv:green "82";
-  gv:score "0.11201781";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "eedcc7";
-  gv:red "238";
-  gv:blue "199";
-  gv:green "220";
-  gv:score "10.871984";
-  gv:coverage "18.773334"
-], [
-  gv:hex "8a7763";
-  gv:red "138";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "7.9834506";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "645039";
-  gv:red "100";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "5.0232053";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "45321d";
-  gv:red "69";
-  gv:blue "29";
-  gv:green "50";
-  gv:score "2.5093386";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "d4c4b8";
-  gv:red "212";
-  gv:blue "184";
-  gv:green "196";
-  gv:score "2.1788634";
-  gv:coverage "3.0933334"
-], [
-  gv:hex "c19d72";
-  gv:red "193";
-  gv:blue "114";
-  gv:green "157";
-  gv:score "1.5357433999999999";
-  gv:coverage "0.12"
-], [
-  gv:hex "eadbd0";
-  gv:red "234";
-  gv:blue "208";
-  gv:green "219";
-  gv:score "1.1475914";
-  gv:coverage "46.846667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.35037700000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.319449"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.040853999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.818559"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.274925"
-];
-    w:bagOfWords "LOKOVA\nNapa County\nWhite table wine t\nALCOHOL 12 BY VOLUME\nSELECTED AND BOTTLED BY\nMayacamas\nVineyards\nNAPA, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3621";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3825/label_3825";
-    dct:type "image";
-    w:bagOfWords "Geiletin\nau, 20einha\nemEht:Wollmnn\nenswertes go\nrni/ches fene\nInhanoelgoGne\nla\nb\n7310分\n"@deu;
-    gv:color [
-  gv:hex "9a121b";
-  gv:red "154";
-  gv:blue "27";
-  gv:green "18";
-  gv:score "7.1018659";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "8a3434";
-  gv:red "138";
-  gv:blue "52";
-  gv:green "52";
-  gv:score "6.921635600000001";
-  gv:coverage "0.26"
-], [
-  gv:hex "cdc3bb";
-  gv:red "205";
-  gv:blue "187";
-  gv:green "195";
-  gv:score "5.9817243";
-  gv:coverage "7.82"
-], [
-  gv:hex "9d6b60";
-  gv:red "157";
-  gv:blue "96";
-  gv:green "107";
-  gv:score "3.3569634";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "57534e";
-  gv:red "87";
-  gv:blue "78";
-  gv:green "83";
-  gv:score "3.0625604";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "da8381";
-  gv:red "218";
-  gv:blue "129";
-  gv:green "131";
-  gv:score "2.307814";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "6c1d1e";
-  gv:red "108";
-  gv:blue "30";
-  gv:green "29";
-  gv:score "6.7779712000000005";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "eae0d8";
-  gv:red "234";
-  gv:blue "216";
-  gv:green "224";
-  gv:score "4.649077";
-  gv:coverage "74.53999999999999"
-], [
-  gv:hex "92222f";
-  gv:red "146";
-  gv:blue "47";
-  gv:green "34";
-  gv:score "4.2052325";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "a59c94";
-  gv:red "165";
-  gv:blue "148";
-  gv:green "156";
-  gv:score "3.5208154";
-  gv:coverage "1.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.167767000000005"
-], [
-  gv:mid <https://g.co/kg/m/03bt1gh>;
-  gv:desc "games";
-  gv:score "50.285029"
-];
-    w:bagOfWords "Geiletin\nau, 20einha\nemEht:Wollmnn\nenswertes go\nrni/ches fene\nInhanoelgoGne\nla\nb\n7310分\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3825";
+    <schema.keywords> "Germany Frankenwein Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

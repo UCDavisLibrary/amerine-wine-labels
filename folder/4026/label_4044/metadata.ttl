@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4026/label_4044";
-    dct:type "image";
-    w:bagOfWords "Tom Fernando\nEM 1877\nFUNDADA\nREGIS\nCA VINHO DO PORTO\nS.V P. CONSTANTIN O, LTD\nPORTO\n"@por;
-    gv:color [
-  gv:hex "610a20";
-  gv:red "97";
-  gv:blue "32";
-  gv:green "10";
-  gv:score "61.100739000000004";
-  gv:coverage "10.413333"
-], [
-  gv:hex "eec4b8";
-  gv:red "238";
-  gv:blue "184";
-  gv:green "196";
-  gv:score "0.9171986999999999";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "a56e6c";
-  gv:red "165";
-  gv:blue "108";
-  gv:green "110";
-  gv:score "0.5426681600000001";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "65152c";
-  gv:red "101";
-  gv:blue "44";
-  gv:green "21";
-  gv:score "17.756841";
-  gv:coverage "3.1466666999999995"
-], [
-  gv:hex "863a4e";
-  gv:red "134";
-  gv:blue "78";
-  gv:green "58";
-  gv:score "6.3834287000000005";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "4a0111";
-  gv:red "74";
-  gv:blue "17";
-  gv:green "1";
-  gv:score "3.6709756000000002";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "aa5f73";
-  gv:red "170";
-  gv:blue "115";
-  gv:green "95";
-  gv:score "2.9111497";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "cb8394";
-  gv:red "203";
-  gv:blue "148";
-  gv:green "131";
-  gv:score "1.4673078000000002";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "730d2b";
-  gv:red "115";
-  gv:blue "43";
-  gv:green "13";
-  gv:score "1.0348896";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "e9b8bb";
-  gv:red "233";
-  gv:blue "187";
-  gv:green "184";
-  gv:score "0.66330857";
-  gv:coverage "0.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.674073"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "52.481848"
-];
-    w:bagOfWords "Tom Fernando\nEM 1877\nFUNDADA\nREGIS\nCA VINHO DO PORTO\nS.V P. CONSTANTIN O, LTD\nPORTO\n"@por;
-    wdt:P219 "por";
-    wdt:P298 "PRT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4044";
+    <schema.keywords> "Portugal Folder@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "PT".
+

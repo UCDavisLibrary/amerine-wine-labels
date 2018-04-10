@@ -1,99 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4934";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Contents 1 P\nd 7 Fl. OZ.\nWeingut a EFERANTEN\nWEIN GUT SBU ESITZ E\nAlcoholic content:\n10% by volume\nMARKE\nSCHUTZ\nContent\nFROMM GMBH\nAN WEINGROSSKELLEREIEN\np fl. oz.\nan,\n382\nRiesling\nGEGR\nRH\nRUDES\nProduct of German On\n16\nER\nJ. 38533\n"@undefined;
-    gv:color [
-  gv:hex "d8c6ae";
-  gv:red "216";
-  gv:blue "174";
-  gv:green "198";
-  gv:score "31.758692999999997";
-  gv:coverage "23.919999999999998"
-], [
-  gv:hex "60523f";
-  gv:red "96";
-  gv:blue "63";
-  gv:green "82";
-  gv:score "7.7118091";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "c8c1bd";
-  gv:red "200";
-  gv:blue "189";
-  gv:green "193";
-  gv:score "8.7050468";
-  gv:coverage "10.773333000000001"
-], [
-  gv:hex "413522";
-  gv:red "65";
-  gv:blue "34";
-  gv:green "53";
-  gv:score "7.3659442";
-  gv:coverage "0.64"
-], [
-  gv:hex "ac9c87";
-  gv:red "172";
-  gv:blue "135";
-  gv:green "156";
-  gv:score "7.3653585999999995";
-  gv:coverage "4.306666600000001"
-], [
-  gv:hex "ebdac3";
-  gv:red "235";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "6.9939844";
-  gv:coverage "15.546666"
-], [
-  gv:hex "585352";
-  gv:red "88";
-  gv:blue "82";
-  gv:green "83";
-  gv:score "5.9862617";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "867762";
-  gv:red "134";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "5.4632951";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "a19b98";
-  gv:red "161";
-  gv:blue "152";
-  gv:green "155";
-  gv:score "4.3631632";
-  gv:coverage "2.86"
-], [
-  gv:hex "7b7574";
-  gv:red "123";
-  gv:blue "116";
-  gv:green "117";
-  gv:score "3.7520945";
-  gv:coverage "1.48"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.242151"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Contents 1 P\nd 7 Fl. OZ.\nWeingut a EFERANTEN\nWEIN GUT SBU ESITZ E\nAlcoholic content:\n10% by volume\nMARKE\nSCHUTZ\nContent\nFROMM GMBH\nAN WEINGROSSKELLEREIEN\np fl. oz.\nan,\n382\nRiesling\nGEGR\nRH\nRUDES\nProduct of German On\n16\nER\nJ. 38533\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4934";
+    <schema.keywords> "UC Reporters Notebook@en".
+

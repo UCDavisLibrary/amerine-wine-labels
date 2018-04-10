@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3492";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Content Quar\nCONN GAN\nCONGANNON\nVINEYARDS\nualifmrnia Rienling\nPRODUCED AND BOTTLED BY\nCONCAN NON VINEYARDS\nLIVER MORE, CA LIF ORNIA\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\nLouis ROESCH co.\n"@eng;
-    gv:color [
-  gv:hex "d8bd9e";
-  gv:red "216";
-  gv:blue "158";
-  gv:green "189";
-  gv:score "33.412603000000004";
-  gv:coverage "25.213334"
-], [
-  gv:hex "877052";
-  gv:red "135";
-  gv:blue "82";
-  gv:green "112";
-  gv:score "15.865181";
-  gv:coverage "2.56"
-], [
-  gv:hex "685234";
-  gv:red "104";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "15.409558";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "b49a7c";
-  gv:red "180";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "13.4812";
-  gv:coverage "5.18"
-], [
-  gv:hex "dbb889";
-  gv:red "219";
-  gv:blue "137";
-  gv:green "184";
-  gv:score "3.9817642";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "4c3619";
-  gv:red "76";
-  gv:blue "25";
-  gv:green "54";
-  gv:score "3.0912302";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "634f27";
-  gv:red "99";
-  gv:blue "39";
-  gv:green "79";
-  gv:score "3.0105619";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "c09c6d";
-  gv:red "192";
-  gv:blue "109";
-  gv:green "156";
-  gv:score "2.9514911";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "c39664";
-  gv:red "195";
-  gv:blue "100";
-  gv:green "150";
-  gv:score "2.3340359";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "976f3f";
-  gv:red "151";
-  gv:blue "63";
-  gv:green "111";
-  gv:score "1.5358917";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.616258"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.224059"
-];
-    w:bagOfWords "Content Quar\nCONN GAN\nCONGANNON\nVINEYARDS\nualifmrnia Rienling\nPRODUCED AND BOTTLED BY\nCONCAN NON VINEYARDS\nLIVER MORE, CA LIF ORNIA\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY\nLouis ROESCH co.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3492";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

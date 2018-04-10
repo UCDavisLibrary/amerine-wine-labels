@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2427";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CAVES DE L HOTEL CALI FOR NIA\nPARIS\nRICHARD &C\nParis\n"@fra;
-    gv:color [
-  gv:hex "e3caaa";
-  gv:red "227";
-  gv:blue "170";
-  gv:green "202";
-  gv:score "71.233678";
-  gv:coverage "21.58"
-], [
-  gv:hex "745129";
-  gv:red "116";
-  gv:blue "41";
-  gv:green "81";
-  gv:score "0.20722721";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "eed7b9";
-  gv:red "238";
-  gv:blue "185";
-  gv:green "215";
-  gv:score "9.248846";
-  gv:coverage "7.16"
-], [
-  gv:hex "b59b7a";
-  gv:red "181";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "8.9162089";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "e3c291";
-  gv:red "227";
-  gv:blue "145";
-  gv:green "194";
-  gv:score "5.1801633";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "92795b";
-  gv:red "146";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "3.3340547";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "230d00";
-  gv:red "35";
-  gv:blue "undefined";
-  gv:green "13";
-  gv:score "0.018346388";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "654e33";
-  gv:red "101";
-  gv:blue "51";
-  gv:green "78";
-  gv:score "0.45578781999999995";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "8e724a";
-  gv:red "142";
-  gv:blue "74";
-  gv:green "114";
-  gv:score "0.36090438";
-  gv:coverage "0.22"
-], [
-  gv:hex "b4956a";
-  gv:red "180";
-  gv:blue "106";
-  gv:green "149";
-  gv:score "0.33233108";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "51.617354000000006"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.487339"
-];
-    w:bagOfWords "CAVES DE L HOTEL CALI FOR NIA\nPARIS\nRICHARD &C\nParis\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2427";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0665";
-    dct:type "image";
-    w:bagOfWords "ER\nCRU\nON\nFONDEEEN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE\nCOTE D'OR FRANCE\nAPPELLATION CONTROLEE\nDE POSE\n"@undefined;
-    gv:color [
-  gv:hex "dacab6";
-  gv:red "218";
-  gv:blue "182";
-  gv:green "202";
-  gv:score "44.222286";
-  gv:coverage "17.966667"
-], [
-  gv:hex "64533e";
-  gv:red "100";
-  gv:blue "62";
-  gv:green "83";
-  gv:score "4.9142536";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "e9d9c6";
-  gv:red "233";
-  gv:blue "198";
-  gv:green "217";
-  gv:score "26.284152";
-  gv:coverage "11.746666999999999"
-], [
-  gv:hex "082528";
-  gv:red "8";
-  gv:blue "40";
-  gv:green "37";
-  gv:score "0.072264147";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "e5d9ce";
-  gv:red "229";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "6.713572900000001";
-  gv:coverage "59.3"
-], [
-  gv:hex "ad9b86";
-  gv:red "173";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "6.415559399999999";
-  gv:coverage "1.44"
-], [
-  gv:hex "84735e";
-  gv:red "132";
-  gv:blue "94";
-  gv:green "115";
-  gv:score "4.8360009";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "20424c";
-  gv:red "32";
-  gv:blue "76";
-  gv:green "66";
-  gv:score "0.033641307";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "54757e";
-  gv:red "84";
-  gv:blue "126";
-  gv:green "117";
-  gv:score "0.031445239";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ddcfc4";
-  gv:red "221";
-  gv:blue "196";
-  gv:green "207";
-  gv:score "1.4762661";
-  gv:coverage "6.36"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.529374000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.48583299999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.5779"
-];
-    w:bagOfWords "ER\nCRU\nON\nFONDEEEN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE\nCOTE D'OR FRANCE\nAPPELLATION CONTROLEE\nDE POSE\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0665";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1853";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "186\nSKA.\nBRut\n80\nLONaON 86\nST. LOUIS 19 EAPIs 19cc\nSCHUTZ\nARKE\n1949er\nQBalporgheimer Domlan\nber Opateje\nOriginal flillung\nR\nAHRWEILER\n"@deu;
-    gv:color [
-  gv:hex "dac2a2";
-  gv:red "218";
-  gv:blue "162";
-  gv:green "194";
-  gv:score "35.259894";
-  gv:coverage "22.773333"
-], [
-  gv:hex "734a10";
-  gv:red "115";
-  gv:blue "16";
-  gv:green "74";
-  gv:score "6.382448999999999";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "ddbf8b";
-  gv:red "221";
-  gv:blue "139";
-  gv:green "191";
-  gv:score "16.223461999999998";
-  gv:coverage "4.9266666"
-], [
-  gv:hex "b29a7b";
-  gv:red "178";
-  gv:blue "123";
-  gv:green "154";
-  gv:score "7.425291100000001";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "bd9b64";
-  gv:red "189";
-  gv:blue "100";
-  gv:green "155";
-  gv:score "7.0779085";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "c39261";
-  gv:red "195";
-  gv:blue "97";
-  gv:green "146";
-  gv:score "4.377064900000001";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "966b32";
-  gv:red "150";
-  gv:blue "50";
-  gv:green "107";
-  gv:score "3.4906122999999996";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "7e5006";
-  gv:red "126";
-  gv:blue "6";
-  gv:green "80";
-  gv:score "3.3436563";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "986b21";
-  gv:red "152";
-  gv:blue "33";
-  gv:green "107";
-  gv:score "2.9786784";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "93733a";
-  gv:red "147";
-  gv:blue "58";
-  gv:green "115";
-  gv:score "2.69334";
-  gv:coverage "0.5666666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.866266"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.376833"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.345468000000004"
-];
-    w:bagOfWords "186\nSKA.\nBRut\n80\nLONaON 86\nST. LOUIS 19 EAPIs 19cc\nSCHUTZ\nARKE\n1949er\nQBalporgheimer Domlan\nber Opateje\nOriginal flillung\nR\nAHRWEILER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1853";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

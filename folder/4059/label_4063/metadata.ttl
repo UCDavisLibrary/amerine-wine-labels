@@ -1,100 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4059/label_4063";
-    dct:type "image";
-    w:bagOfWords "CHATEAU LA TOUR DE PE\nAPPELLATION SAINT-ESTEPHE CONTROLEE\n1949\nTRADE\nMARK\nMAISON FONDEE EN 8 76\nA. LAHON & CIE\nNEGOCIANTS BORDEAUX (GIRONDE)\nMA-A\n"@fra;
-    gv:color [
-  gv:hex "d7c1a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "16.946075999999998";
-  gv:coverage "27.146667"
-], [
-  gv:hex "7d4e1a";
-  gv:red "125";
-  gv:blue "26";
-  gv:green "78";
-  gv:score "12.996448999999998";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "9c6737";
-  gv:red "156";
-  gv:blue "55";
-  gv:green "103";
-  gv:score "9.001565";
-  gv:coverage "0.96"
-], [
-  gv:hex "9c6b21";
-  gv:red "156";
-  gv:blue "33";
-  gv:green "107";
-  gv:score "7.7673718";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "b5603c";
-  gv:red "181";
-  gv:blue "60";
-  gv:green "96";
-  gv:score "7.118701199999999";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "8e7039";
-  gv:red "142";
-  gv:blue "57";
-  gv:green "112";
-  gv:score "5.915783";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "943d19";
-  gv:red "148";
-  gv:blue "25";
-  gv:green "61";
-  gv:score "4.6312723";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "c39168";
-  gv:red "195";
-  gv:blue "104";
-  gv:green "145";
-  gv:score "3.1641312";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "e3b69b";
-  gv:red "227";
-  gv:blue "155";
-  gv:green "182";
-  gv:score "3.1476273999999997";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "b49c7c";
-  gv:red "180";
-  gv:blue "124";
-  gv:green "156";
-  gv:score "3.1427007";
-  gv:coverage "2.0133332999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.990108"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.362378"
-];
-    w:bagOfWords "CHATEAU LA TOUR DE PE\nAPPELLATION SAINT-ESTEPHE CONTROLEE\n1949\nTRADE\nMARK\nMAISON FONDEE EN 8 76\nA. LAHON & CIE\nNEGOCIANTS BORDEAUX (GIRONDE)\nMA-A\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4063";
+    <schema.keywords> "Red Bordeaux (for book) folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
+    w:WineColor w:Red.
+

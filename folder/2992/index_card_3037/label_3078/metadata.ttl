@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3078";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "LDAND VIN DE BORDEAU\n1934\nCHATEAU MALINEAU\nSaint-Emilion.\nAppellation Saint-Emilion controlée\nG FORTIN-DupIN &fiLs\nLI BOURNE\nGironde\nDE POSE\nWETTERWALD\n"@fra;
-    gv:color [
-  gv:hex "d4c3b0";
-  gv:red "212";
-  gv:blue "176";
-  gv:green "195";
-  gv:score "45.358077";
-  gv:coverage "14.406666000000001"
-], [
-  gv:hex "765325";
-  gv:red "118";
-  gv:blue "37";
-  gv:green "83";
-  gv:score "1.802724";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "ac9a87";
-  gv:red "172";
-  gv:blue "135";
-  gv:green "154";
-  gv:score "14.906143";
-  gv:coverage "3.42"
-], [
-  gv:hex "d0c2b8";
-  gv:red "208";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "9.611692300000001";
-  gv:coverage "6.1933335"
-], [
-  gv:hex "aa9c92";
-  gv:red "170";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "7.9162851000000005";
-  gv:coverage "1.68"
-], [
-  gv:hex "8a7762";
-  gv:red "138";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "4.3665159000000004";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "887970";
-  gv:red "136";
-  gv:blue "112";
-  gv:green "121";
-  gv:score "2.654678";
-  gv:coverage "0.54"
-], [
-  gv:hex "685540";
-  gv:red "104";
-  gv:blue "64";
-  gv:green "85";
-  gv:score "2.443571";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "e7dad0";
-  gv:red "231";
-  gv:blue "208";
-  gv:green "218";
-  gv:score "2.3215517";
-  gv:coverage "65.98"
-], [
-  gv:hex "8c6b40";
-  gv:red "140";
-  gv:blue "64";
-  gv:green "107";
-  gv:score "2.3002977000000002";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.353689"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "53.765315"
-];
-    w:bagOfWords "LDAND VIN DE BORDEAU\n1934\nCHATEAU MALINEAU\nSaint-Emilion.\nAppellation Saint-Emilion controlée\nG FORTIN-DupIN &fiLs\nLI BOURNE\nGironde\nDE POSE\nWETTERWALD\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3078";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

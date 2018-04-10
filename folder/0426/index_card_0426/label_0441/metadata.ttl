@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0441";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1950er Eltoilee Gonnenberg\nRiesling\n"@deu;
-    gv:color [
-  gv:hex "7d4c21";
-  gv:red "125";
-  gv:blue "33";
-  gv:green "76";
-  gv:score "14.214231";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "887457";
-  gv:red "136";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "6.655388299999999";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "d4c3ac";
-  gv:red "212";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "5.5317394";
-  gv:coverage "4.96"
-], [
-  gv:hex "c04d29";
-  gv:red "192";
-  gv:blue "41";
-  gv:green "77";
-  gv:score "1.3798411";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "9d663b";
-  gv:red "157";
-  gv:blue "59";
-  gv:green "102";
-  gv:score "11.417581";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "220100";
-  gv:red "34";
-  gv:blue "undefined";
-  gv:green "1";
-  gv:score "0.10340041000000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ae582f";
-  gv:red "174";
-  gv:blue "47";
-  gv:green "88";
-  gv:score "9.177446400000001";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "695335";
-  gv:red "105";
-  gv:blue "53";
-  gv:green "83";
-  gv:score "5.9310552";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "ad997b";
-  gv:red "173";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "5.0881613";
-  gv:coverage "2.48"
-], [
-  gv:hex "744b31";
-  gv:red "116";
-  gv:blue "49";
-  gv:green "75";
-  gv:score "4.1411739";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.808004"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.115932"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.324470999999996"
-];
-    w:bagOfWords "1950er Eltoilee Gonnenberg\nRiesling\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0441";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

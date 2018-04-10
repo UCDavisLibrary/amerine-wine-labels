@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3191/label_3203";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "MUSIGNY\nPRQDUC\nOF\nABB YG\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEA UNE (COTE D'OR)\n"@fra;
-    gv:color [
-  gv:hex "d3c1ad";
-  gv:red "211";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "20.707234999999997";
-  gv:coverage "14.806667000000001"
-], [
-  gv:hex "72220d";
-  gv:red "114";
-  gv:blue "13";
-  gv:green "34";
-  gv:score "1.8476903";
-  gv:coverage "0.12"
-], [
-  gv:hex "ae9887";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "152";
-  gv:score "17.397106";
-  gv:coverage "2.06"
-], [
-  gv:hex "88735f";
-  gv:red "136";
-  gv:blue "95";
-  gv:green "115";
-  gv:score "15.176756999999998";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "956e61";
-  gv:red "149";
-  gv:blue "97";
-  gv:green "110";
-  gv:score "7.5316474";
-  gv:coverage "0.6"
-], [
-  gv:hex "695542";
-  gv:red "105";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "4.8952855";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "bd9286";
-  gv:red "189";
-  gv:blue "134";
-  gv:green "146";
-  gv:score "4.8620187";
-  gv:coverage "0.4"
-], [
-  gv:hex "d2c3b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "4.5091167";
-  gv:coverage "4.8933335"
-], [
-  gv:hex "ebdbc5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "4.2606011";
-  gv:coverage "11.513333000000001"
-], [
-  gv:hex "6b4d40";
-  gv:red "107";
-  gv:blue "64";
-  gv:green "77";
-  gv:score "4.149384400000001";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.720256"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MUSIGNY\nPRQDUC\nOF\nABB YG\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEA UNE (COTE D'OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3203";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1360";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "a\nNO V\nMARCA REGISTADA\nM. D'OR PARIS -1900\nHORS CONCOURS\nMEMBRE DU JURY\nCHARLEROI 9 (06\nGRAND PRIX\nS. Louis 1904\nGRAND PRIX\nRIO DE JANEIRO 1908\nGRAND PRIX\nPANAMA\n915\nGRAND PRIX\nRIO DE JANEIRO 1923\n1929\nGRAND PRIX\nSEVILHA\nGRAND PRIX\nANVERS 1930\nLISBOA Rua do Alecrim, 47\n"@por;
-    gv:color [
-  gv:hex "d6bfa0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "191";
-  gv:score "42.112773999999995";
-  gv:coverage "30.193334999999998"
-], [
-  gv:hex "153e3a";
-  gv:red "21";
-  gv:blue "58";
-  gv:green "62";
-  gv:score "0.98290024";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "15394e";
-  gv:red "21";
-  gv:blue "78";
-  gv:green "57";
-  gv:score "0.98233148";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "68220f";
-  gv:red "104";
-  gv:blue "15";
-  gv:green "34";
-  gv:score "0.51681898";
-  gv:coverage "0.02"
-], [
-  gv:hex "b19b7f";
-  gv:red "177";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "16.169734";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "8a7559";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "6.5647304";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "d7b78a";
-  gv:red "215";
-  gv:blue "138";
-  gv:green "183";
-  gv:score "5.2305508";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "ebdbc4";
-  gv:red "235";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "4.3807313";
-  gv:coverage "3.8"
-], [
-  gv:hex "b99669";
-  gv:red "185";
-  gv:blue "105";
-  gv:green "150";
-  gv:score "2.9748045000000003";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "604d35";
-  gv:red "96";
-  gv:blue "53";
-  gv:green "77";
-  gv:score "2.9102089";
-  gv:coverage "0.37333333999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.49140700000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.654638"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.487548000000004"
-];
-    w:bagOfWords "a\nNO V\nMARCA REGISTADA\nM. D'OR PARIS -1900\nHORS CONCOURS\nMEMBRE DU JURY\nCHARLEROI 9 (06\nGRAND PRIX\nS. Louis 1904\nGRAND PRIX\nRIO DE JANEIRO 1908\nGRAND PRIX\nPANAMA\n915\nGRAND PRIX\nRIO DE JANEIRO 1923\n1929\nGRAND PRIX\nSEVILHA\nGRAND PRIX\nANVERS 1930\nLISBOA Rua do Alecrim, 47\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1360";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

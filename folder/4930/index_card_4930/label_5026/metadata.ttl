@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5026";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "SUPREME COURT\nPRODUCE ON\nOF MADEIRA\nTHE ISLAND\nAlcoholic Strength\nNot contents\n19 o by volume\n1 pt. 9 ft. oz.\nNCHA\n(PORTUGAL)\nFINE MADEIRA WINE\nOLD RESERVE VINTAGE 1904\nBOTTLED & EXPORTED BY\nUNIAo VINICOLA (FUNCHAL LDA.\nORIGIN ISLAND OF MADEIRA\ne RAND PRIX and GOLD MEDAL8 (awarded)\nPANAMA PACIFIC INTERNATIONAL ExPOSITION -SAN FRANCISCO 1016\n1030\nEXPOSITION UNIVERSELLE DE PARIS 188s-EXPOSITION INTERNATIONALE oANVERS "@undefined;
-    gv:color [
-  gv:hex "171b1d";
-  gv:red "23";
-  gv:blue "29";
-  gv:green "27";
-  gv:score "43.581115999999994";
-  gv:coverage "15.079999999999998"
-], [
-  gv:hex "dbc35f";
-  gv:red "219";
-  gv:blue "95";
-  gv:green "195";
-  gv:score "2.1959273";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "77a2b5";
-  gv:red "119";
-  gv:blue "181";
-  gv:green "162";
-  gv:score "0.8621944100000001";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "667b54";
-  gv:red "102";
-  gv:blue "84";
-  gv:green "123";
-  gv:score "0.7914966000000001";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "4d3807";
-  gv:red "77";
-  gv:blue "7";
-  gv:green "56";
-  gv:score "0.42645278999999997";
-  gv:coverage "0.04"
-], [
-  gv:hex "2c2f31";
-  gv:red "44";
-  gv:blue "49";
-  gv:green "47";
-  gv:score "15.384389";
-  gv:coverage "10.513333"
-], [
-  gv:hex "515456";
-  gv:red "81";
-  gv:blue "86";
-  gv:green "84";
-  gv:score "6.8842977";
-  gv:coverage "4.4066668"
-], [
-  gv:hex "747677";
-  gv:red "116";
-  gv:blue "119";
-  gv:green "118";
-  gv:score "6.1669447";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "989999";
-  gv:red "152";
-  gv:blue "153";
-  gv:green "153";
-  gv:score "5.0906178";
-  gv:coverage "5.2066665"
-], [
-  gv:hex "c7c3bf";
-  gv:red "199";
-  gv:blue "191";
-  gv:green "195";
-  gv:score "1.8613264";
-  gv:coverage "9.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/011s0>;
-  gv:desc "advertising";
-  gv:score "81.107306"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.090122"
-];
-    w:bagOfWords "SUPREME COURT\nPRODUCE ON\nOF MADEIRA\nTHE ISLAND\nAlcoholic Strength\nNot contents\n19 o by volume\n1 pt. 9 ft. oz.\nNCHA\n(PORTUGAL)\nFINE MADEIRA WINE\nOLD RESERVE VINTAGE 1904\nBOTTLED & EXPORTED BY\nUNIAo VINICOLA (FUNCHAL LDA.\nORIGIN ISLAND OF MADEIRA\ne RAND PRIX and GOLD MEDAL8 (awarded)\nPANAMA PACIFIC INTERNATIONAL ExPOSITION -SAN FRANCISCO 1016\n1030\nEXPOSITION UNIVERSELLE DE PARIS 188s-EXPOSITION INTERNATIONALE oANVERS "@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5026";
+    <schema.keywords> "UC Reporters Notebook@en".
+

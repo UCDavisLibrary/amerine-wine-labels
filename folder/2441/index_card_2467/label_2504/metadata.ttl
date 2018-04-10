@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2504";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "t. Alcoholic Contert 13.2 o/o by volume\nProduce of France\nNet Contents 1 Pint 8 Fl. Oz.\nLEON GRIVELET-Cuss ET\nPROPRIETAIRE NEGOCIANT\nA NU ITS SAINT GEORGES\nd'O\nDEPOS\nIMP. PARIS Nurs.\n"@fra;
-    gv:color [
-  gv:hex "d8c0a3";
-  gv:red "216";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "21.420924";
-  gv:coverage "61.446667"
-], [
-  gv:hex "9c6b57";
-  gv:red "156";
-  gv:blue "87";
-  gv:green "107";
-  gv:score "7.2665088";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "6e1b12";
-  gv:red "110";
-  gv:blue "18";
-  gv:green "27";
-  gv:score "2.3348983";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "b19a7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "11.316616";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "e5b8a0";
-  gv:red "229";
-  gv:blue "160";
-  gv:green "184";
-  gv:score "8.80696";
-  gv:coverage "1.94"
-], [
-  gv:hex "bf8e79";
-  gv:red "191";
-  gv:blue "121";
-  gv:green "142";
-  gv:score "7.2023764";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "897457";
-  gv:red "137";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "7.1103886";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "7d4b39";
-  gv:red "125";
-  gv:blue "57";
-  gv:green "75";
-  gv:score "6.8373241";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "8a3e34";
-  gv:red "138";
-  gv:blue "52";
-  gv:green "62";
-  gv:score "4.6702314000000005";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "665237";
-  gv:red "102";
-  gv:blue "55";
-  gv:green "82";
-  gv:score "3.941375";
-  gv:coverage "0.43333330999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.403396"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "59.323943"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.194660000000006"
-];
-    w:bagOfWords "t. Alcoholic Contert 13.2 o/o by volume\nProduce of France\nNet Contents 1 Pint 8 Fl. Oz.\nLEON GRIVELET-Cuss ET\nPROPRIETAIRE NEGOCIANT\nA NU ITS SAINT GEORGES\nd'O\nDEPOS\nIMP. PARIS Nurs.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2504";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

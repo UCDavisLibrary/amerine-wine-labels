@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3598";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "INGLE NOOK VINEYARD CO.\nRUTHERFORD, NAPA COUNTY, CALIFORNIA\nTRAMINER 1937\n"@eng;
-    gv:color [
-  gv:hex "e1c3a0";
-  gv:red "225";
-  gv:blue "160";
-  gv:green "195";
-  gv:score "55.894834";
-  gv:coverage "11.373334"
-], [
-  gv:hex "e6ba9a";
-  gv:red "230";
-  gv:blue "154";
-  gv:green "186";
-  gv:score "11.397989";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "bc9172";
-  gv:red "188";
-  gv:blue "114";
-  gv:green "145";
-  gv:score "11.111435";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "b99976";
-  gv:red "185";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "6.8177417";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "e1c193";
-  gv:red "225";
-  gv:blue "147";
-  gv:green "193";
-  gv:score "4.9611241";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "a3795a";
-  gv:red "163";
-  gv:blue "90";
-  gv:green "121";
-  gv:score "2.4463559";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "9d724d";
-  gv:red "157";
-  gv:blue "77";
-  gv:green "114";
-  gv:score "1.7775506";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "c2a175";
-  gv:red "194";
-  gv:blue "117";
-  gv:green "161";
-  gv:score "1.7230296999999999";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "9c7b5a";
-  gv:red "156";
-  gv:blue "90";
-  gv:green "123";
-  gv:score "1.644752";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "edd7bc";
-  gv:red "237";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "1.0407382";
-  gv:coverage "10.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.349664"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.4981"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.141071000000004"
-];
-    w:bagOfWords "INGLE NOOK VINEYARD CO.\nRUTHERFORD, NAPA COUNTY, CALIFORNIA\nTRAMINER 1937\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3598";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0509";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1953er JOHANNISBERGER\nA ERNTENBRINGER Fao No. 5301\nRHEINGAU\nORIGINAL-ABFULLUNG AUS DER\nG. H. v. MUMM'SCHEN KELLEREI JOHANNISBERG\n"@deu;
-    gv:color [
-  gv:hex "ddc68e";
-  gv:red "221";
-  gv:blue "142";
-  gv:green "198";
-  gv:score "25.385383";
-  gv:coverage "7.2466664"
-], [
-  gv:hex "b7573c";
-  gv:red "183";
-  gv:blue "60";
-  gv:green "87";
-  gv:score "0.96500516";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "6c7b90";
-  gv:red "108";
-  gv:blue "144";
-  gv:green "123";
-  gv:score "0.52040252";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "d0c19d";
-  gv:red "208";
-  gv:blue "157";
-  gv:green "193";
-  gv:score "13.973758";
-  gv:coverage "7.9799999999999995"
-], [
-  gv:hex "b29c67";
-  gv:red "178";
-  gv:blue "103";
-  gv:green "156";
-  gv:score "7.467173000000001";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "f1d99f";
-  gv:red "241";
-  gv:blue "159";
-  gv:green "217";
-  gv:score "7.2488695000000005";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "a39f82";
-  gv:red "163";
-  gv:blue "130";
-  gv:green "159";
-  gv:score "5.739459";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "7a7a5d";
-  gv:red "122";
-  gv:blue "93";
-  gv:green "122";
-  gv:score "4.0411867";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "8d9c7b";
-  gv:red "141";
-  gv:blue "123";
-  gv:green "156";
-  gv:score "3.5083268";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "717e5e";
-  gv:red "113";
-  gv:blue "94";
-  gv:green "126";
-  gv:score "3.2415897";
-  gv:coverage "0.54"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.875494"
-];
-    w:bagOfWords "1953er JOHANNISBERGER\nA ERNTENBRINGER Fao No. 5301\nRHEINGAU\nORIGINAL-ABFULLUNG AUS DER\nG. H. v. MUMM'SCHEN KELLEREI JOHANNISBERG\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0509";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

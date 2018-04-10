@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2865";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "SAUTERNES\nAppellation Controlée\nMARQUE\nDEPOSEE\nLOUIS, ESCHENAUER\nNEGOCIANT A BORDEAUX\nFRANCE\nMAX SIOAINE\n"@fra;
-    gv:color [
-  gv:hex "9a1d1c";
-  gv:red "154";
-  gv:blue "28";
-  gv:green "29";
-  gv:score "22.251655";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "d6c2af";
-  gv:red "214";
-  gv:blue "175";
-  gv:green "194";
-  gv:score "7.1914867";
-  gv:coverage "17.366667"
-], [
-  gv:hex "1d314a";
-  gv:red "29";
-  gv:blue "74";
-  gv:green "49";
-  gv:score "5.4710869";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "8a3633";
-  gv:red "138";
-  gv:blue "51";
-  gv:green "54";
-  gv:score "5.2402873";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "711b0b";
-  gv:red "113";
-  gv:blue "11";
-  gv:green "27";
-  gv:score "4.1750744";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "091b48";
-  gv:red "9";
-  gv:blue "72";
-  gv:green "27";
-  gv:score "1.1633886";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "e9baae";
-  gv:red "233";
-  gv:blue "174";
-  gv:green "186";
-  gv:score "5.4713975999999995";
-  gv:coverage "2.18"
-], [
-  gv:hex "820e0b";
-  gv:red "130";
-  gv:blue "11";
-  gv:green "14";
-  gv:score "3.9995953";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "0a1d36";
-  gv:red "10";
-  gv:blue "54";
-  gv:green "29";
-  gv:score "3.9360177000000003";
-  gv:coverage "0.42"
-], [
-  gv:hex "6b1f1a";
-  gv:red "107";
-  gv:blue "26";
-  gv:green "31";
-  gv:score "3.4724671";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.831097"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.322506999999995"
-];
-    w:bagOfWords "SAUTERNES\nAppellation Controlée\nMARQUE\nDEPOSEE\nLOUIS, ESCHENAUER\nNEGOCIANT A BORDEAUX\nFRANCE\nMAX SIOAINE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2865";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

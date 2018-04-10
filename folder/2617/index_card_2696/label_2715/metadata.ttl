@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2715";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nCONTENTS I PT. 8 FL. OZ.\nALCOHOL 13. 5o BY VOL.\nAS PURVEYED TO\nTHE HOLY SEE\n1937\nCHATEAUNEUF DU PAPE\nAPPELLATION CONTRO LEE\nSAINT PATRICE\nA VERY FINE RED WINE, FULL BODIED AND FRAGRANT\nESTATE BOTTLED AND SHIPPED BY THE PROPRIETOR:\nANTONIN ESTABLET, A CHATEAUNEUF-DU-PAPE FRANCE\n"@fra;
-    gv:color [
-  gv:hex "dbc39b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "195";
-  gv:score "47.486442000000004";
-  gv:coverage "19.206667"
-], [
-  gv:hex "8f764c";
-  gv:red "143";
-  gv:blue "76";
-  gv:green "118";
-  gv:score "4.5295432";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "b79c74";
-  gv:red "183";
-  gv:blue "116";
-  gv:green "156";
-  gv:score "15.981977";
-  gv:coverage "2.6133334"
-], [
-  gv:hex "f1d8b1";
-  gv:red "241";
-  gv:blue "177";
-  gv:green "216";
-  gv:score "15.2439";
-  gv:coverage "15.986666"
-], [
-  gv:hex "a99b6c";
-  gv:red "169";
-  gv:blue "108";
-  gv:green "155";
-  gv:score "2.9589394";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "997e58";
-  gv:red "153";
-  gv:blue "88";
-  gv:green "126";
-  gv:score "2.6874287";
-  gv:coverage "0.32"
-], [
-  gv:hex "d1c391";
-  gv:red "209";
-  gv:blue "145";
-  gv:green "195";
-  gv:score "2.5334815";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "9b9f68";
-  gv:red "155";
-  gv:blue "104";
-  gv:green "159";
-  gv:score "1.4503186";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "99a06e";
-  gv:red "153";
-  gv:blue "110";
-  gv:green "160";
-  gv:score "1.0436931";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "be9773";
-  gv:red "190";
-  gv:blue "115";
-  gv:green "151";
-  gv:score "0.8749389999999999";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.212429"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nCONTENTS I PT. 8 FL. OZ.\nALCOHOL 13. 5o BY VOL.\nAS PURVEYED TO\nTHE HOLY SEE\n1937\nCHATEAUNEUF DU PAPE\nAPPELLATION CONTRO LEE\nSAINT PATRICE\nA VERY FINE RED WINE, FULL BODIED AND FRAGRANT\nESTATE BOTTLED AND SHIPPED BY THE PROPRIETOR:\nANTONIN ESTABLET, A CHATEAUNEUF-DU-PAPE FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2715";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

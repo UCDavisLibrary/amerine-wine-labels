@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3611";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BONDED WINERY NO, 46-1\nESTABLISHED 1876\nPRODUCED AND\n-14TH SUP. ADM. DIST. CALIF\nBOTTLED BY\nINGER BROS, IN\nBERUNGE\nAWARDS\nAWARDS\nCHICAGO 1893\nS 1. KANCISCO 1887-1915\nPARIS 1889-1900\nDUBLIN 1892\nCALIFORNIA STATE FAIR\nCALIFORNIA\n934-1935\nMOSEL\nALCOHOL 12% TO 14 BY VOLUME\nNET CONTENTS 1 PINT 8 FLUID ozs.\nTAX PAID BY STAMPS AFFIXED TO CASE\nRord,CH co., SAN FRANCISCO,\n"@eng;
-    gv:color [
-  gv:hex "d2c2ae";
-  gv:red "210";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "26.769224";
-  gv:coverage "13.013333"
-], [
-  gv:hex "a99988";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "153";
-  gv:score "18.266618";
-  gv:coverage "3.7466668000000003"
-], [
-  gv:hex "847565";
-  gv:red "132";
-  gv:blue "101";
-  gv:green "117";
-  gv:score "14.115247";
-  gv:coverage "1.82"
-], [
-  gv:hex "615442";
-  gv:red "97";
-  gv:blue "66";
-  gv:green "84";
-  gv:score "12.492698";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "413622";
-  gv:red "65";
-  gv:blue "34";
-  gv:green "54";
-  gv:score "10.14896";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "ebdbc9";
-  gv:red "235";
-  gv:blue "201";
-  gv:green "219";
-  gv:score "9.397988";
-  gv:coverage "24.46"
-], [
-  gv:hex "837971";
-  gv:red "131";
-  gv:blue "113";
-  gv:green "121";
-  gv:score "3.9140683000000003";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "9c938c";
-  gv:red "156";
-  gv:blue "140";
-  gv:green "147";
-  gv:score "2.1901371";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "d3c4b9";
-  gv:red "211";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "1.1009262";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "5f554d";
-  gv:red "95";
-  gv:blue "77";
-  gv:green "85";
-  gv:score "1.0047709";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.545207"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "50.977015"
-];
-    w:bagOfWords "BONDED WINERY NO, 46-1\nESTABLISHED 1876\nPRODUCED AND\n-14TH SUP. ADM. DIST. CALIF\nBOTTLED BY\nINGER BROS, IN\nBERUNGE\nAWARDS\nAWARDS\nCHICAGO 1893\nS 1. KANCISCO 1887-1915\nPARIS 1889-1900\nDUBLIN 1892\nCALIFORNIA STATE FAIR\nCALIFORNIA\n934-1935\nMOSEL\nALCOHOL 12% TO 14 BY VOLUME\nNET CONTENTS 1 PINT 8 FLUID ozs.\nTAX PAID BY STAMPS AFFIXED TO CASE\nRord,CH co., SAN FRANCISCO,\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3611";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

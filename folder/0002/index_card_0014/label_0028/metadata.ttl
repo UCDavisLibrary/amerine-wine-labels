@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0028";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "ARCA REG\nTRADA\nR. E. No 43\nBodegas Franco Espanolas\nL o CR o No\n"@spa;
-    gv:color [
-  gv:hex "d6bda1";
-  gv:red "214";
-  gv:blue "161";
-  gv:green "189";
-  gv:score "29.952514";
-  gv:coverage "54.806668"
-], [
-  gv:hex "635540";
-  gv:red "99";
-  gv:blue "64";
-  gv:green "85";
-  gv:score "8.566114299999999";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "522b20";
-  gv:red "82";
-  gv:blue "32";
-  gv:green "43";
-  gv:score "2.8675806";
-  gv:coverage "0.12"
-], [
-  gv:hex "455b49";
-  gv:red "69";
-  gv:blue "73";
-  gv:green "91";
-  gv:score "1.7193892999999998";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "e3b8a2";
-  gv:red "227";
-  gv:blue "162";
-  gv:green "184";
-  gv:score "14.918892";
-  gv:coverage "2.0133332999999998"
-], [
-  gv:hex "c39680";
-  gv:red "195";
-  gv:blue "128";
-  gv:green "150";
-  gv:score "8.6716987";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "85735d";
-  gv:red "133";
-  gv:blue "93";
-  gv:green "115";
-  gv:score "8.3359271";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "b29b83";
-  gv:red "178";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "7.559698099999999";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "a0715e";
-  gv:red "160";
-  gv:blue "94";
-  gv:green "113";
-  gv:score "3.6297545";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "f1d9c3";
-  gv:red "241";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "3.0551570999999997";
-  gv:coverage "25.646666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.86302400000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.178449"
-];
-    w:bagOfWords "ARCA REG\nTRADA\nR. E. No 43\nBodegas Franco Espanolas\nL o CR o No\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0028";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

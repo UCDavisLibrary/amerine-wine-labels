@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4361";
-    dct:type "image";
-    w:bagOfWords "OKOUS\nSORINO VIN\n1953\n2.15 12.86\nVINARSKA ZADRUGA MARIBOR\nCHZ 1987, 10. junija 1954\n"@undefined;
-    gv:color [
-  gv:hex "977a47";
-  gv:red "151";
-  gv:blue "71";
-  gv:green "122";
-  gv:score "31.6266";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "ab8e58";
-  gv:red "171";
-  gv:blue "88";
-  gv:green "142";
-  gv:score "19.152279";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "ad987a";
-  gv:red "173";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "16.169101";
-  gv:coverage "2.7533334"
-], [
-  gv:hex "d5c2a8";
-  gv:red "213";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "14.676516000000001";
-  gv:coverage "21.153333999999997"
-], [
-  gv:hex "8f795a";
-  gv:red "143";
-  gv:blue "90";
-  gv:green "121";
-  gv:score "9.5162958";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "eddac2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "4.233072";
-  gv:coverage "11.219999999999999"
-], [
-  gv:hex "c59477";
-  gv:red "197";
-  gv:blue "119";
-  gv:green "148";
-  gv:score "1.1657941";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "735628";
-  gv:red "115";
-  gv:blue "40";
-  gv:green "86";
-  gv:score "0.5989573899999999";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "645748";
-  gv:red "100";
-  gv:blue "72";
-  gv:green "87";
-  gv:score "0.40084114";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "d8c8bd";
-  gv:red "216";
-  gv:blue "189";
-  gv:green "200";
-  gv:score "0.35289635";
-  gv:coverage "9.6933335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.733478"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.847756000000004"
-];
-    w:bagOfWords "OKOUS\nSORINO VIN\n1953\n2.15 12.86\nVINARSKA ZADRUGA MARIBOR\nCHZ 1987, 10. junija 1954\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4361";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0616";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATURWEIN\nVERSTEIGERER E. V\nUnsere Mitglieder besitzen\nLagen von Weltruf\nl\nGOLD MED.\nKORKBRAND\nCHLOSS\nST. LOUIS 19Q4\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1945 er A US LESE\nKork brand verbirgt\nnaturreinen Wein\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEINGAU\nWEINGUTER\nGraf Matuschka-Greiffenclau'sche Originalabfullung\n3 0 1 20\nE. V\n"@deu;
-    gv:color [
-  gv:hex "d2bfab";
-  gv:red "210";
-  gv:blue "171";
-  gv:green "191";
-  gv:score "13.315080000000002";
-  gv:coverage "34.466666000000004"
-], [
-  gv:hex "744a39";
-  gv:red "116";
-  gv:blue "57";
-  gv:green "74";
-  gv:score "11.808579";
-  gv:coverage "0.6"
-], [
-  gv:hex "aa9984";
-  gv:red "170";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "11.452802";
-  gv:coverage "4.6133332"
-], [
-  gv:hex "88765f";
-  gv:red "136";
-  gv:blue "95";
-  gv:green "118";
-  gv:score "9.0305366";
-  gv:coverage "3.1199999999999997"
-], [
-  gv:hex "552c1c";
-  gv:red "85";
-  gv:blue "28";
-  gv:green "44";
-  gv:score "7.337062799999999";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "936c5b";
-  gv:red "147";
-  gv:blue "91";
-  gv:green "108";
-  gv:score "5.298689";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "621f15";
-  gv:red "98";
-  gv:blue "21";
-  gv:green "31";
-  gv:score "4.5029707000000005";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "665541";
-  gv:red "102";
-  gv:blue "65";
-  gv:green "85";
-  gv:score "4.17722";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "d0c2b8";
-  gv:red "208";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "3.9152123";
-  gv:coverage "7.5933329999999994"
-], [
-  gv:hex "827141";
-  gv:red "130";
-  gv:blue "65";
-  gv:green "113";
-  gv:score "3.0374347999999998";
-  gv:coverage "0.78666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.690966"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.040836999999996"
-];
-    w:bagOfWords "VERBAND\nRHEINGAU\nDEUTSCHER\nNATURWEIN\nVERSTEIGERER E. V\nUnsere Mitglieder besitzen\nLagen von Weltruf\nl\nGOLD MED.\nKORKBRAND\nCHLOSS\nST. LOUIS 19Q4\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1945 er A US LESE\nKork brand verbirgt\nnaturreinen Wein\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEINGAU\nWEINGUTER\nGraf Matuschka-Greiffenclau'sche Originalabfullung\n3 0 1 20\nE. V\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0616";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

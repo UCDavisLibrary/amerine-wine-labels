@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0351";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "A SCHOON MAKER SELECTION\nA LIGHT RED WINE PRODUCED IN THE LIVER MORE VALLEY\nPRODUCED AND BOTTLED AT THE WIN ERY BY\nWENTE BROS\nLIVER MORE, CALIFORNIA\nSELECTED BY\nFRANK SCHOONMAKER & Co., INC.\nW O NI E M E R C H A N T S\nNEW YORK, N. Y\nContents 34 Pt. 12 1/2\nAlcohol by Vol.\n"@eng;
-    gv:color [
-  gv:hex "e4c596";
-  gv:red "228";
-  gv:blue "150";
-  gv:green "197";
-  gv:score "32.202327";
-  gv:coverage "16.54"
-], [
-  gv:hex "c2906a";
-  gv:red "194";
-  gv:blue "106";
-  gv:green "144";
-  gv:score "11.717939";
-  gv:coverage "2.3"
-], [
-  gv:hex "853820";
-  gv:red "133";
-  gv:blue "32";
-  gv:green "56";
-  gv:score "7.0490487";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "a16d47";
-  gv:red "161";
-  gv:blue "71";
-  gv:green "109";
-  gv:score "10.978206";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "e8ba91";
-  gv:red "232";
-  gv:blue "145";
-  gv:green "186";
-  gv:score "7.9316832";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "6c230a";
-  gv:red "108";
-  gv:blue "10";
-  gv:green "35";
-  gv:score "6.3390568";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "7d4a24";
-  gv:red "125";
-  gv:blue "36";
-  gv:green "74";
-  gv:score "6.2754191";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "dfc7a3";
-  gv:red "223";
-  gv:blue "163";
-  gv:green "199";
-  gv:score "4.3775938";
-  gv:coverage "47.646665999999996"
-], [
-  gv:hex "be9c6e";
-  gv:red "190";
-  gv:blue "110";
-  gv:green "156";
-  gv:score "3.4104843000000002";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "622b0a";
-  gv:red "98";
-  gv:blue "10";
-  gv:green "43";
-  gv:score "2.6018288";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.97878299999999"
-];
-    w:bagOfWords "A SCHOON MAKER SELECTION\nA LIGHT RED WINE PRODUCED IN THE LIVER MORE VALLEY\nPRODUCED AND BOTTLED AT THE WIN ERY BY\nWENTE BROS\nLIVER MORE, CALIFORNIA\nSELECTED BY\nFRANK SCHOONMAKER & Co., INC.\nW O NI E M E R C H A N T S\nNEW YORK, N. Y\nContents 34 Pt. 12 1/2\nAlcohol by Vol.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0351";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

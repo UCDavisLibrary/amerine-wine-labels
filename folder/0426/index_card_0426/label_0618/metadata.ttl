@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0618";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Content 1.pt. 8 fl. oz. Alcoholic content: 12% by volume\nVERBAND\nRHEINGAU\nDEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V\nunsere Mitglieder besitzen\nLagen von Weltruf\nGOLD MED\nKORK BRAND\nST. LOUIS 1904\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1947er KABINETT\nKorkbrand verburgt\nnaturreinen Wein I\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEING\nWE N GUT ER\nGraf Matuschka-Greiffenclau'sche O\nalabfullung\nE. V\n2.3 0 1 2 0\n"@deu;
-    gv:color [
-  gv:hex "cfbea7";
-  gv:red "207";
-  gv:blue "167";
-  gv:green "190";
-  gv:score "20.736505";
-  gv:coverage "37.2"
-], [
-  gv:hex "754b3e";
-  gv:red "117";
-  gv:blue "62";
-  gv:green "75";
-  gv:score "6.8699785";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "641d19";
-  gv:red "100";
-  gv:blue "25";
-  gv:green "29";
-  gv:score "5.8281206";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "ab9b83";
-  gv:red "171";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "14.900364999999999";
-  gv:coverage "5.7933334"
-], [
-  gv:hex "86755d";
-  gv:red "134";
-  gv:blue "93";
-  gv:green "117";
-  gv:score "9.794916200000001";
-  gv:coverage "3.82"
-], [
-  gv:hex "cbc2b6";
-  gv:red "203";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "5.3447925";
-  gv:coverage "7.7"
-], [
-  gv:hex "645440";
-  gv:red "100";
-  gv:blue "64";
-  gv:green "84";
-  gv:score "4.8160896";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "542d1f";
-  gv:red "84";
-  gv:blue "31";
-  gv:green "45";
-  gv:score "4.5930013";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "956d5f";
-  gv:red "149";
-  gv:blue "95";
-  gv:green "109";
-  gv:score "3.9001916";
-  gv:coverage "0.32"
-], [
-  gv:hex "803733";
-  gv:red "128";
-  gv:blue "51";
-  gv:green "55";
-  gv:score "3.6938928000000004";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.270906"
-];
-    w:bagOfWords "Content 1.pt. 8 fl. oz. Alcoholic content: 12% by volume\nVERBAND\nRHEINGAU\nDEUTSCHER\nNATUR WEIN\nVERSTEIGERER E. V\nunsere Mitglieder besitzen\nLagen von Weltruf\nGOLD MED\nKORK BRAND\nST. LOUIS 1904\nGES. GESCHUTZT\nDieses Zeichen\nin Verbindung mit dem\n1947er KABINETT\nKorkbrand verburgt\nnaturreinen Wein I\nVEREINIGUNG\nSCHLOSS VOLLRADS\nRHEINGAUER\nWINKEL IM RHEING\nWE N GUT ER\nGraf Matuschka-Greiffenclau'sche O\nalabfullung\nE. V\n2.3 0 1 2 0\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0618";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

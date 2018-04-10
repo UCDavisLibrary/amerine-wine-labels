@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3569";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "VINEYARD\n188O\nHOTEL DEL MONTE\nHOTEL DEL MONTE\nSELECTION\nCALIFORNIA\nDRY SAUTERNE\nALCOHOL 12% BY vOLUME\nBOTTLED BY\nSIMI WINERIES\nEST. 876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\n1941 P & Co.\n"@eng;
-    gv:color [
-  gv:hex "d8c7b0";
-  gv:red "216";
-  gv:blue "176";
-  gv:green "199";
-  gv:score "37.198150000000005";
-  gv:coverage "21.026666"
-], [
-  gv:hex "eadac4";
-  gv:red "234";
-  gv:blue "196";
-  gv:green "218";
-  gv:score "19.084622";
-  gv:coverage "14.613333"
-], [
-  gv:hex "ab9b85";
-  gv:red "171";
-  gv:blue "133";
-  gv:green "155";
-  gv:score "18.924434";
-  gv:coverage "4.733333399999999"
-], [
-  gv:hex "857560";
-  gv:red "133";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "12.793581000000001";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "655440";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "84";
-  gv:score "5.6153394";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "e9dfd1";
-  gv:red "233";
-  gv:blue "209";
-  gv:green "223";
-  gv:score "4.7498133";
-  gv:coverage "54.48"
-], [
-  gv:hex "473523";
-  gv:red "71";
-  gv:blue "35";
-  gv:green "53";
-  gv:score "1.2117141999999999";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "cfc4b9";
-  gv:red "207";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "0.23318124";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "7a6b60";
-  gv:red "122";
-  gv:blue "96";
-  gv:green "107";
-  gv:score "0.086177472";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "312014";
-  gv:red "49";
-  gv:blue "20";
-  gv:green "32";
-  gv:score "0.059578044000000004";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.785244"
-];
-    w:bagOfWords "VINEYARD\n188O\nHOTEL DEL MONTE\nHOTEL DEL MONTE\nSELECTION\nCALIFORNIA\nDRY SAUTERNE\nALCOHOL 12% BY vOLUME\nBOTTLED BY\nSIMI WINERIES\nEST. 876\nHEALDSBURG, SONOMA CO., CALIF.\nB. W. No. 2332\nSOLE UNITED STATES DISTRIBUTOR\nPARROTT & CO\nSAN FRANCISCO, CALIFORNIA\n1941 P & Co.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3569";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

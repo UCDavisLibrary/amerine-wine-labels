@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1902/label_1917";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "DE\nN. 28\nTIM RE\nMETALICo\n"@spa;
-    gv:color [
-  gv:hex "d2c5bd";
-  gv:red "210";
-  gv:blue "189";
-  gv:green "197";
-  gv:score "19.945051";
-  gv:coverage "10.313334000000001"
-], [
-  gv:hex "0e0d13";
-  gv:red "14";
-  gv:blue "19";
-  gv:green "13";
-  gv:score "11.496188";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "ecdfd7";
-  gv:red "236";
-  gv:blue "215";
-  gv:green "223";
-  gv:score "16.893366";
-  gv:coverage "31.166666999999997"
-], [
-  gv:hex "0a1226";
-  gv:red "10";
-  gv:blue "38";
-  gv:green "18";
-  gv:score "9.8486066";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "a69b95";
-  gv:red "166";
-  gv:blue "149";
-  gv:green "155";
-  gv:score "7.1412273";
-  gv:coverage "1.28"
-], [
-  gv:hex "20324f";
-  gv:red "32";
-  gv:blue "79";
-  gv:green "50";
-  gv:score "7.0440479";
-  gv:coverage "0.32"
-], [
-  gv:hex "827975";
-  gv:red "130";
-  gv:blue "117";
-  gv:green "121";
-  gv:score "4.6249416000000005";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "5a524e";
-  gv:red "90";
-  gv:blue "78";
-  gv:green "82";
-  gv:score "4.1640017";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "383435";
-  gv:red "56";
-  gv:blue "53";
-  gv:green "52";
-  gv:score "3.1337447";
-  gv:coverage "0.42"
-], [
-  gv:hex "889cb7";
-  gv:red "136";
-  gv:blue "183";
-  gv:green "156";
-  gv:score "2.693845";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.157397"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "DE\nN. 28\nTIM RE\nMETALICo\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1917";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

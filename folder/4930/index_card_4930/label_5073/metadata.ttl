@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5073";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "㎐8E.ON Wooaaa0is aョa Noa\nNET CONTENTS ONE QUART\nMATTEVIST b\nMUSCAT\nCALIFORNIA GROWN\nGUARANTEED,dhe eetNeoLORED\nNATURALWINE AGEDAD BOTTLED BY\nA.MATTEI\nFRESNO\nCALIFORNIA\n10\nCEN/TS\nn\n\"4\nGAMSEVISTAVINTAGES\nTwo\nOF 'HONOR\n' TWELVE GE1915\n\"Wi ,MATTEVISTA\nTHE ORIGINAL CONTENTS OF\nTHIS PACKAGE GUARANTEED\nTO BE PURE GED, BOTTLE-\nRIPE WINE.\nMATURED\nMATURED AT THE VINEYARD.\nOUR OWN BOTTLING a.Mhshee\n"@undefined;
-    gv:color [
-  gv:hex "d4c5a4";
-  gv:red "212";
-  gv:blue "164";
-  gv:green "197";
-  gv:score "22.120318";
-  gv:coverage "23.533334"
-], [
-  gv:hex "87723f";
-  gv:red "135";
-  gv:blue "63";
-  gv:green "114";
-  gv:score "10.182708";
-  gv:coverage "2.32"
-], [
-  gv:hex "ac9b7c";
-  gv:red "172";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "10.962857";
-  gv:coverage "8.526666500000001"
-], [
-  gv:hex "ebdec0";
-  gv:red "235";
-  gv:blue "192";
-  gv:green "222";
-  gv:score "10.795274000000001";
-  gv:coverage "12.233333"
-], [
-  gv:hex "817555";
-  gv:red "129";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "9.3938164";
-  gv:coverage "6.2"
-], [
-  gv:hex "6f5826";
-  gv:red "111";
-  gv:blue "38";
-  gv:green "88";
-  gv:score "8.803577";
-  gv:coverage "1.38"
-], [
-  gv:hex "ad9b65";
-  gv:red "173";
-  gv:blue "101";
-  gv:green "155";
-  gv:score "8.1527516";
-  gv:coverage "3.1199999999999997"
-], [
-  gv:hex "cfc08b";
-  gv:red "207";
-  gv:blue "139";
-  gv:green "192";
-  gv:score "7.298034400000001";
-  gv:coverage "3.6133334"
-], [
-  gv:hex "615635";
-  gv:red "97";
-  gv:blue "53";
-  gv:green "86";
-  gv:score "5.5992212";
-  gv:coverage "2.8066667"
-], [
-  gv:hex "d2c3b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "1.2838794";
-  gv:coverage "5.806666600000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.174137"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.592314"
-];
-    w:bagOfWords "㎐8E.ON Wooaaa0is aョa Noa\nNET CONTENTS ONE QUART\nMATTEVIST b\nMUSCAT\nCALIFORNIA GROWN\nGUARANTEED,dhe eetNeoLORED\nNATURALWINE AGEDAD BOTTLED BY\nA.MATTEI\nFRESNO\nCALIFORNIA\n10\nCEN/TS\nn\n\"4\nGAMSEVISTAVINTAGES\nTwo\nOF 'HONOR\n' TWELVE GE1915\n\"Wi ,MATTEVISTA\nTHE ORIGINAL CONTENTS OF\nTHIS PACKAGE GUARANTEED\nTO BE PURE GED, BOTTLE-\nRIPE WINE.\nMATURED\nMATURED AT THE VINEYARD.\nOUR OWN BOTTLING a.Mhshee\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5073";
+    <schema.keywords> "UC Reporters Notebook@en".
+

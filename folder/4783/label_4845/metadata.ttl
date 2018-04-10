@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4845";
-    dct:type "image";
-    w:bagOfWords "ESTB.\n1837\nEWELL\nHAMILTON'S\nGrown and Bottled by\nHAMILTON'S EWELL VINEYARDS LTD.\nGLENELG, SOUTH AUSTRALIA\nA V E R A G E\nNET\nC O N T E N T S\n2 6\nF L U\nI D O U N C E S\n"@eng;
-    gv:color [
-  gv:hex "d7c19f";
-  gv:red "215";
-  gv:blue "159";
-  gv:green "193";
-  gv:score "27.886549";
-  gv:coverage "16.866666"
-], [
-  gv:hex "681f0d";
-  gv:red "104";
-  gv:blue "13";
-  gv:green "31";
-  gv:score "1.6771346";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "f1dbba";
-  gv:red "241";
-  gv:blue "186";
-  gv:green "219";
-  gv:score "19.471608";
-  gv:coverage "17.233333000000002"
-], [
-  gv:hex "b59e7c";
-  gv:red "181";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "10.801616";
-  gv:coverage "5.0333332"
-], [
-  gv:hex "c09377";
-  gv:red "192";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "8.6842589";
-  gv:coverage "2.4866667"
-], [
-  gv:hex "9c6e55";
-  gv:red "156";
-  gv:blue "85";
-  gv:green "110";
-  gv:score "6.888262200000001";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "764831";
-  gv:red "118";
-  gv:blue "49";
-  gv:green "72";
-  gv:score "5.4241136";
-  gv:coverage "1.58"
-], [
-  gv:hex "e1b598";
-  gv:red "225";
-  gv:blue "152";
-  gv:green "181";
-  gv:score "5.3431608";
-  gv:coverage "2.02"
-], [
-  gv:hex "562a14";
-  gv:red "86";
-  gv:blue "20";
-  gv:green "42";
-  gv:score "3.8206175";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "8f7756";
-  gv:red "143";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "2.7457434999999997";
-  gv:coverage "1.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.107133999999995"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.482826"
-];
-    w:bagOfWords "ESTB.\n1837\nEWELL\nHAMILTON'S\nGrown and Bottled by\nHAMILTON'S EWELL VINEYARDS LTD.\nGLENELG, SOUTH AUSTRALIA\nA V E R A G E\nNET\nC O N T E N T S\n2 6\nF L U\nI D O U N C E S\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4845";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

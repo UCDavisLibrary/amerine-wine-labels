@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3839";
-    dct:type "image";
-    w:bagOfWords "MOSEL -SAAR-RUWER\n1950\ner\nbera\nHarke/\ninger. Bischofliches 1840\nWACHSTUM BISGHOfLIGHES KONVIKT, TRIER D\nORIGINAL- KELLERABZUG\nDACKWEILER TRIER\n"@deu;
-    gv:color [
-  gv:hex "dac6af";
-  gv:red "218";
-  gv:blue "175";
-  gv:green "198";
-  gv:score "29.235604";
-  gv:coverage "25.873333"
-], [
-  gv:hex "d0421f";
-  gv:red "208";
-  gv:blue "31";
-  gv:green "66";
-  gv:score "7.3227458";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "675321";
-  gv:red "103";
-  gv:blue "33";
-  gv:green "83";
-  gv:score "3.6874849000000003";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "963e1f";
-  gv:red "150";
-  gv:blue "31";
-  gv:green "62";
-  gv:score "3.2975404999999998";
-  gv:coverage "0.2"
-], [
-  gv:hex "af9b81";
-  gv:red "175";
-  gv:blue "129";
-  gv:green "155";
-  gv:score "8.635596900000001";
-  gv:coverage "2.4"
-], [
-  gv:hex "ead8c2";
-  gv:red "234";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "7.0696913";
-  gv:coverage "13.74"
-], [
-  gv:hex "df3417";
-  gv:red "223";
-  gv:blue "23";
-  gv:green "52";
-  gv:score "5.5990849";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "e7baa2";
-  gv:red "231";
-  gv:blue "162";
-  gv:green "186";
-  gv:score "3.6678649";
-  gv:coverage "1.26"
-], [
-  gv:hex "b55d3c";
-  gv:red "181";
-  gv:blue "60";
-  gv:green "93";
-  gv:score "3.0464862";
-  gv:coverage "0.22"
-], [
-  gv:hex "89765b";
-  gv:red "137";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "2.9826662";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.36504099999999"
-];
-    w:bagOfWords "MOSEL -SAAR-RUWER\n1950\ner\nbera\nHarke/\ninger. Bischofliches 1840\nWACHSTUM BISGHOfLIGHES KONVIKT, TRIER D\nORIGINAL- KELLERABZUG\nDACKWEILER TRIER\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3839";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2603/label_2616";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "IMPORTED FROM FRAN CE\nALCOHOL 12\nBY VOLUME\nCONTENTS 3/4 PT\nPAUL ROSSIGNEUX\nMARQUE DE PosEE\n1945\nPINOT CHAR DONNKY\nAPPELLATION (OGNE CONTROLEE\n(WHITE BURGUNDY WINE MADE FROM PVNo\nON NAY GRAPES)\nSHIPPED B\nA ROSSI G NEUX\nFIL\nS\nNEGOCIANTS A N UITS-ST-GEORG ES CC OTE D'ORD FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d7c0ab";
-  gv:red "215";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "22.635286";
-  gv:coverage "13.133334"
-], [
-  gv:hex "e4b9ab";
-  gv:red "228";
-  gv:blue "171";
-  gv:green "185";
-  gv:score "15.653220000000001";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "b19b86";
-  gv:red "177";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "10.98832";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "c29687";
-  gv:red "194";
-  gv:blue "135";
-  gv:green "150";
-  gv:score "9.1195919";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "9a6c5e";
-  gv:red "154";
-  gv:blue "94";
-  gv:green "108";
-  gv:score "6.1017931";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "eedac8";
-  gv:red "238";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "5.5282719";
-  gv:coverage "29.993334"
-], [
-  gv:hex "794b3e";
-  gv:red "121";
-  gv:blue "62";
-  gv:green "75";
-  gv:score "5.0379738";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "8a7660";
-  gv:red "138";
-  gv:blue "96";
-  gv:green "118";
-  gv:score "4.1214895";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "883a38";
-  gv:red "136";
-  gv:blue "56";
-  gv:green "58";
-  gv:score "2.744629";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "fdd4c3";
-  gv:red "253";
-  gv:blue "195";
-  gv:green "212";
-  gv:score "2.0766061";
-  gv:coverage "0.57333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.853487"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.305682"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "51.465731999999996"
-];
-    w:bagOfWords "IMPORTED FROM FRAN CE\nALCOHOL 12\nBY VOLUME\nCONTENTS 3/4 PT\nPAUL ROSSIGNEUX\nMARQUE DE PosEE\n1945\nPINOT CHAR DONNKY\nAPPELLATION (OGNE CONTROLEE\n(WHITE BURGUNDY WINE MADE FROM PVNo\nON NAY GRAPES)\nSHIPPED B\nA ROSSI G NEUX\nFIL\nS\nNEGOCIANTS A N UITS-ST-GEORG ES CC OTE D'ORD FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2616";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

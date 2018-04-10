@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1500";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MANZANILLA\nSANTA ANA\nARGUES0\nMANUEL DEARGUES0\nelanticara.\nEmbotellador num. 34.\n"@spa;
-    gv:color [
-  gv:hex "dfbf8c";
-  gv:red "223";
-  gv:blue "140";
-  gv:green "191";
-  gv:score "49.310553";
-  gv:coverage "16.2"
-], [
-  gv:hex "301600";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "22";
-  gv:score "0.40300162999999994";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "e5b686";
-  gv:red "229";
-  gv:blue "134";
-  gv:green "182";
-  gv:score "7.9886667";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "c49262";
-  gv:red "196";
-  gv:blue "98";
-  gv:green "146";
-  gv:score "7.8044288";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "bb9a68";
-  gv:red "187";
-  gv:blue "104";
-  gv:green "154";
-  gv:score "6.6714279";
-  gv:coverage "2.4"
-], [
-  gv:hex "d9be98";
-  gv:red "217";
-  gv:blue "152";
-  gv:green "190";
-  gv:score "6.093443199999999";
-  gv:coverage "21.98"
-], [
-  gv:hex "b39974";
-  gv:red "179";
-  gv:blue "116";
-  gv:green "153";
-  gv:score "5.4623626000000005";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "a27341";
-  gv:red "162";
-  gv:blue "65";
-  gv:green "115";
-  gv:score "4.1166779";
-  gv:coverage "0.86"
-], [
-  gv:hex "907244";
-  gv:red "144";
-  gv:blue "68";
-  gv:green "114";
-  gv:score "3.99995";
-  gv:coverage "1.48"
-], [
-  gv:hex "907652";
-  gv:red "144";
-  gv:blue "82";
-  gv:green "118";
-  gv:score "2.0562802000000002";
-  gv:coverage "0.74666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.63927299999999"
-];
-    w:bagOfWords "MANZANILLA\nSANTA ANA\nARGUES0\nMANUEL DEARGUES0\nelanticara.\nEmbotellador num. 34.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1500";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

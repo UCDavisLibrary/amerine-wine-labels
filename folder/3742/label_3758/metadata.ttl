@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3758";
-    dct:type "image";
-    w:bagOfWords "UN\nANTINOR\nVLA D SANTO R O\nFIRENZE\nMARCHESI L. E P NTINORI\n"@ita;
-    gv:color [
-  gv:hex "362f2b";
-  gv:red "54";
-  gv:blue "43";
-  gv:green "47";
-  gv:score "34.548429000000006";
-  gv:coverage "10.546666"
-], [
-  gv:hex "1d1815";
-  gv:red "29";
-  gv:blue "21";
-  gv:green "24";
-  gv:score "33.516597999999995";
-  gv:coverage "12.466667"
-], [
-  gv:hex "58514b";
-  gv:red "88";
-  gv:blue "75";
-  gv:green "81";
-  gv:score "14.856638";
-  gv:coverage "3.9"
-], [
-  gv:hex "7c746d";
-  gv:red "124";
-  gv:blue "109";
-  gv:green "116";
-  gv:score "7.397008700000001";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "a09891";
-  gv:red "160";
-  gv:blue "145";
-  gv:green "152";
-  gv:score "4.6351455";
-  gv:coverage "1.58"
-], [
-  gv:hex "cdc3ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "2.2787163";
-  gv:coverage "2.62"
-], [
-  gv:hex "eae1d9";
-  gv:red "234";
-  gv:blue "217";
-  gv:green "225";
-  gv:score "1.4276042";
-  gv:coverage "58.02"
-], [
-  gv:hex "625549";
-  gv:red "98";
-  gv:blue "73";
-  gv:green "85";
-  gv:score "0.37147466";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "271e14";
-  gv:red "39";
-  gv:blue "20";
-  gv:green "30";
-  gv:score "0.33187237999999997";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "857769";
-  gv:red "133";
-  gv:blue "105";
-  gv:green "119";
-  gv:score "0.24987713";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.221828"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "51.589942"
-];
-    w:bagOfWords "UN\nANTINOR\nVLA D SANTO R O\nFIRENZE\nMARCHESI L. E P NTINORI\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3758";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

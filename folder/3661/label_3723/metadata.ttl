@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3723";
-    dct:type "image";
-    w:bagOfWords "Federico Pateinina\nBORGONA\nEN SU 6.0 ANO\nRIOJA\nR. E. 329\nVINA VIAL\n"@spa;
-    gv:color [
-  gv:hex "ad2d07";
-  gv:red "173";
-  gv:blue "7";
-  gv:green "45";
-  gv:score "26.899257";
-  gv:coverage "2.12"
-], [
-  gv:hex "8f3616";
-  gv:red "143";
-  gv:blue "22";
-  gv:green "54";
-  gv:score "6.1232835";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "cd9264";
-  gv:red "205";
-  gv:blue "100";
-  gv:green "146";
-  gv:score "4.1296776";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "d9c6aa";
-  gv:red "217";
-  gv:blue "170";
-  gv:green "198";
-  gv:score "3.7130073";
-  gv:coverage "13.506667"
-], [
-  gv:hex "271b0e";
-  gv:red "39";
-  gv:blue "14";
-  gv:green "27";
-  gv:score "0.5294387700000001";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "c6360e";
-  gv:red "198";
-  gv:blue "14";
-  gv:green "54";
-  gv:score "21.493249";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "d02d0a";
-  gv:red "208";
-  gv:blue "10";
-  gv:green "45";
-  gv:score "6.1479729";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "9a370c";
-  gv:red "154";
-  gv:blue "12";
-  gv:green "55";
-  gv:score "3.6742169";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "9b2811";
-  gv:red "155";
-  gv:blue "17";
-  gv:green "40";
-  gv:score "3.1426138999999997";
-  gv:coverage "0.38"
-], [
-  gv:hex "6b1301";
-  gv:red "107";
-  gv:blue "1";
-  gv:green "19";
-  gv:score "2.6518486";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.304324"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Federico Pateinina\nBORGONA\nEN SU 6.0 ANO\nRIOJA\nR. E. 329\nVINA VIAL\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3723";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

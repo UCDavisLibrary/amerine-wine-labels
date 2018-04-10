@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3846";
-    dct:type "image";
-    w:bagOfWords "WLAND\nMOSEL SAAR RUWER\n1953 er\nOdifener Heppenftein\nAug lefe\nFuder Nr. 57\nEigener Kellerabzug uno\nKorkbrano\n"@deu;
-    gv:color [
-  gv:hex "d3c3ae";
-  gv:red "211";
-  gv:blue "174";
-  gv:green "195";
-  gv:score "15.934028";
-  gv:coverage "9.54"
-], [
-  gv:hex "645238";
-  gv:red "100";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "10.669059";
-  gv:coverage "4.5666665"
-], [
-  gv:hex "b1583f";
-  gv:red "177";
-  gv:blue "63";
-  gv:green "88";
-  gv:score "2.7270826";
-  gv:coverage "0.08"
-], [
-  gv:hex "440b00";
-  gv:red "68";
-  gv:blue "undefined";
-  gv:green "11";
-  gv:score "0.15088376";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "edddca";
-  gv:red "237";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "14.361811999999999";
-  gv:coverage "16.12"
-], [
-  gv:hex "ebdcd2";
-  gv:red "235";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "9.1952741";
-  gv:coverage "51.586664000000006"
-], [
-  gv:hex "847158";
-  gv:red "132";
-  gv:blue "88";
-  gv:green "113";
-  gv:score "6.1251096";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "d5c6bc";
-  gv:red "213";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "6.0799606";
-  gv:coverage "6.7333333"
-], [
-  gv:hex "45351e";
-  gv:red "69";
-  gv:blue "30";
-  gv:green "53";
-  gv:score "5.8236741";
-  gv:coverage "2.1399999999999997"
-], [
-  gv:hex "ae9d87";
-  gv:red "174";
-  gv:blue "135";
-  gv:green "157";
-  gv:score "5.4999";
-  gv:coverage "2.3133334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.064481"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.136266000000006"
-];
-    w:bagOfWords "WLAND\nMOSEL SAAR RUWER\n1953 er\nOdifener Heppenftein\nAug lefe\nFuder Nr. 57\nEigener Kellerabzug uno\nKorkbrano\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3846";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

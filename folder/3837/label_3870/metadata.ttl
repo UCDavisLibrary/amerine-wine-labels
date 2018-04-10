@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3870";
-    dct:type "image";
-    w:bagOfWords "Rbepot (R HLD.)\nNr. 24250 DM 20.\n00\nSchleife 24251 DM 8. 100\nMOSEL-SAAR RUWER\nerbener Treppdoen\n"@deu;
-    gv:color [
-  gv:hex "dec49d";
-  gv:red "222";
-  gv:blue "157";
-  gv:green "196";
-  gv:score "29.437735999999997";
-  gv:coverage "16.486667"
-], [
-  gv:hex "8a7645";
-  gv:red "138";
-  gv:blue "69";
-  gv:green "118";
-  gv:score "14.352246";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "dac292";
-  gv:red "218";
-  gv:blue "146";
-  gv:green "194";
-  gv:score "18.656027";
-  gv:coverage "7.0066668"
-], [
-  gv:hex "ae9967";
-  gv:red "174";
-  gv:blue "103";
-  gv:green "153";
-  gv:score "13.592124";
-  gv:coverage "4.14"
-], [
-  gv:hex "b39975";
-  gv:red "179";
-  gv:blue "117";
-  gv:green "153";
-  gv:score "4.9956959";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "8e7353";
-  gv:red "142";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "3.3305448";
-  gv:coverage "1.06"
-], [
-  gv:hex "695826";
-  gv:red "105";
-  gv:blue "38";
-  gv:green "88";
-  gv:score "3.045154";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "f0d8b3";
-  gv:red "240";
-  gv:blue "179";
-  gv:green "216";
-  gv:score "2.70316";
-  gv:coverage "12.32"
-], [
-  gv:hex "4b591d";
-  gv:red "75";
-  gv:blue "29";
-  gv:green "89";
-  gv:score "2.0174989";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "6b5233";
-  gv:red "107";
-  gv:blue "51";
-  gv:green "82";
-  gv:score "1.8684618";
-  gv:coverage "0.66"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.36781"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.967527000000004"
-];
-    w:bagOfWords "Rbepot (R HLD.)\nNr. 24250 DM 20.\n00\nSchleife 24251 DM 8. 100\nMOSEL-SAAR RUWER\nerbener Treppdoen\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3870";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

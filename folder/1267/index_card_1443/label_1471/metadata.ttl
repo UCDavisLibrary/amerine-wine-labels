@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1471";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "CONTENTS 4 5 QUART ALCOHOL BY VOLUME\nA S C H 00 N M A KER SEL ECT DON\nLAKE E R E\nA LIGHT WHITE WINE MADE FROM DE LA WARE GRAPES\nBOTTLED AT THE WINERY BY\nTHE ENGELS & KRUDWIG WINE CO\nSANDUSKY, LAKE ERIE ISLANDS DISTRICT, OHIO\nSELECTED BY\nFRANK & Co., INC.\nW N E M E R C H A N T S\nNEW YORK\n"@eng;
-    gv:color [
-  gv:hex "a59c7b";
-  gv:red "165";
-  gv:blue "123";
-  gv:green "156";
-  gv:score "35.825533";
-  gv:coverage "8.58"
-], [
-  gv:hex "c8c09e";
-  gv:red "200";
-  gv:blue "158";
-  gv:green "192";
-  gv:score "32.745484000000005";
-  gv:coverage "19.66"
-], [
-  gv:hex "817a5b";
-  gv:red "129";
-  gv:blue "91";
-  gv:green "122";
-  gv:score "20.952355999999998";
-  gv:coverage "3.42"
-], [
-  gv:hex "5e593b";
-  gv:red "94";
-  gv:blue "59";
-  gv:green "89";
-  gv:score "4.4874564";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "ebd8c1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "1.7453743000000002";
-  gv:coverage "6.8533331"
-], [
-  gv:hex "c5bb87";
-  gv:red "197";
-  gv:blue "135";
-  gv:green "187";
-  gv:score "1.0033005";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "d4c7bb";
-  gv:red "212";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "0.93621239";
-  gv:coverage "10.733333"
-], [
-  gv:hex "3e391c";
-  gv:red "62";
-  gv:blue "28";
-  gv:green "57";
-  gv:score "0.78829024";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "ada571";
-  gv:red "173";
-  gv:blue "113";
-  gv:green "165";
-  gv:score "0.58733015";
-  gv:coverage "0.16"
-], [
-  gv:hex "e8dbcf";
-  gv:red "232";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "0.43015908";
-  gv:coverage "48.28"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.595923"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.077467000000006"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.1695"
-];
-    w:bagOfWords "CONTENTS 4 5 QUART ALCOHOL BY VOLUME\nA S C H 00 N M A KER SEL ECT DON\nLAKE E R E\nA LIGHT WHITE WINE MADE FROM DE LA WARE GRAPES\nBOTTLED AT THE WINERY BY\nTHE ENGELS & KRUDWIG WINE CO\nSANDUSKY, LAKE ERIE ISLANDS DISTRICT, OHIO\nSELECTED BY\nFRANK & Co., INC.\nW N E M E R C H A N T S\nNEW YORK\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1471";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

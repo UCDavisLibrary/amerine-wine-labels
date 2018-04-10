@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1979";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "Embotelladores\nN 37\nParis\nBurdeos\nRR\nMA Cadiz\nMatanzas\nFLORIDO & Co\nGianlucan de an ramada\nJEREZ RAYA ANEJA SUPERIOR\nLIT M. ARNA BARNA\n"@spa;
-    gv:color [
-  gv:hex "d9c2a0";
-  gv:red "217";
-  gv:blue "160";
-  gv:green "194";
-  gv:score "33.411789";
-  gv:coverage "47.286665"
-], [
-  gv:hex "2a1300";
-  gv:red "42";
-  gv:blue "undefined";
-  gv:green "19";
-  gv:score "0.9180693";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "ae9879";
-  gv:red "174";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "23.979823";
-  gv:coverage "4.4266667"
-], [
-  gv:hex "897456";
-  gv:red "137";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "19.605992999999998";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "675235";
-  gv:red "103";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "10.334322";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "483316";
-  gv:red "72";
-  gv:blue "22";
-  gv:green "51";
-  gv:score "4.3843564";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "f0dab9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "218";
-  gv:score "3.678919";
-  gv:coverage "26.493335000000002"
-], [
-  gv:hex "d7bb8c";
-  gv:red "215";
-  gv:blue "140";
-  gv:green "187";
-  gv:score "1.2305967";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "ba9b6b";
-  gv:red "186";
-  gv:blue "107";
-  gv:green "155";
-  gv:score "0.60932147";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "2d1a01";
-  gv:red "45";
-  gv:blue "1";
-  gv:green "26";
-  gv:score "0.58758473";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.13501"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.68635400000001"
-];
-    w:bagOfWords "Embotelladores\nN 37\nParis\nBurdeos\nRR\nMA Cadiz\nMatanzas\nFLORIDO & Co\nGianlucan de an ramada\nJEREZ RAYA ANEJA SUPERIOR\nLIT M. ARNA BARNA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1979";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

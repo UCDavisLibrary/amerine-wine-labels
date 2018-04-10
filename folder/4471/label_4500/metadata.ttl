@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4500";
-    dct:type "image";
-    w:bagOfWords "war car\naeoistro embotelladores s20\n1900\nRegistrada\nacort\n3laro\n"@spa;
-    gv:color [
-  gv:hex "d29638";
-  gv:red "210";
-  gv:blue "56";
-  gv:green "150";
-  gv:score "29.40163";
-  gv:coverage "15.24"
-], [
-  gv:hex "b65c1c";
-  gv:red "182";
-  gv:blue "28";
-  gv:green "92";
-  gv:score "4.0643807999999995";
-  gv:coverage "1.48"
-], [
-  gv:hex "744916";
-  gv:red "116";
-  gv:blue "22";
-  gv:green "73";
-  gv:score "0.9409039299999999";
-  gv:coverage "0.76"
-], [
-  gv:hex "361200";
-  gv:red "54";
-  gv:blue "undefined";
-  gv:green "18";
-  gv:score "0.41045834999999997";
-  gv:coverage "0.76"
-], [
-  gv:hex "d19629";
-  gv:red "209";
-  gv:blue "41";
-  gv:green "150";
-  gv:score "26.123839999999998";
-  gv:coverage "8.48"
-], [
-  gv:hex "e3a948";
-  gv:red "227";
-  gv:blue "72";
-  gv:green "169";
-  gv:score "8.017242";
-  gv:coverage "5.8466665"
-], [
-  gv:hex "e3a93c";
-  gv:red "227";
-  gv:blue "60";
-  gv:green "169";
-  gv:score "5.0640695";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "c79b3e";
-  gv:red "199";
-  gv:blue "62";
-  gv:green "155";
-  gv:score "4.798077";
-  gv:coverage "4.1133333"
-], [
-  gv:hex "ab7219";
-  gv:red "171";
-  gv:blue "25";
-  gv:green "114";
-  gv:score "3.2594655";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "df8543";
-  gv:red "223";
-  gv:blue "67";
-  gv:green "133";
-  gv:score "2.5077552";
-  gv:coverage "1.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "83.113563"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.814969"
-];
-    w:bagOfWords "war car\naeoistro embotelladores s20\n1900\nRegistrada\nacort\n3laro\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4500";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

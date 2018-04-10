@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3380";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DOMAINE LEJEUNE\nPOMARD\nCCEUR DES DAMES\nANNE E 4439\nMAA-NG-\n"@fra;
-    gv:color [
-  gv:hex "d6c2a7";
-  gv:red "214";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "60.826933000000004";
-  gv:coverage "33.093333"
-], [
-  gv:hex "ad9b82";
-  gv:red "173";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "10.453604";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "88775f";
-  gv:red "136";
-  gv:blue "95";
-  gv:green "119";
-  gv:score "7.4100345";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "ecdbc6";
-  gv:red "236";
-  gv:blue "198";
-  gv:green "219";
-  gv:score "3.3451669";
-  gv:coverage "26.213333"
-], [
-  gv:hex "c6a170";
-  gv:red "198";
-  gv:blue "112";
-  gv:green "161";
-  gv:score "3.2605503000000002";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "685740";
-  gv:red "104";
-  gv:blue "64";
-  gv:green "87";
-  gv:score "2.7111536";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "d6b587";
-  gv:red "214";
-  gv:blue "135";
-  gv:green "181";
-  gv:score "2.6524004";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "e5b39e";
-  gv:red "229";
-  gv:blue "158";
-  gv:green "179";
-  gv:score "2.6063876";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "cb937e";
-  gv:red "203";
-  gv:blue "126";
-  gv:green "147";
-  gv:score "2.4694879";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "d58577";
-  gv:red "213";
-  gv:blue "119";
-  gv:green "133";
-  gv:score "1.1814922";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.91971600000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.814604"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.026925000000006"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.056329999999996"
-];
-    w:bagOfWords "DOMAINE LEJEUNE\nPOMARD\nCCEUR DES DAMES\nANNE E 4439\nMAA-NG-\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3380";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

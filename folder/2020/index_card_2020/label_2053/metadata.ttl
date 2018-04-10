@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2053";
-    dct:type "image";
-    w:bagOfWords "1760\nGesetzl geschutzt\nCHULZ & WAGNER\nRhine Wine\n1934 Liebfraumilch, White Seal\n"@undefined;
-    gv:color [
-  gv:hex "d5b491";
-  gv:red "213";
-  gv:blue "145";
-  gv:green "180";
-  gv:score "27.878111999999998";
-  gv:coverage "25.96"
-], [
-  gv:hex "bf9e7c";
-  gv:red "191";
-  gv:blue "124";
-  gv:green "158";
-  gv:score "18.984887";
-  gv:coverage "6.2"
-], [
-  gv:hex "bc9574";
-  gv:red "188";
-  gv:blue "116";
-  gv:green "149";
-  gv:score "12.153875";
-  gv:coverage "3.88"
-], [
-  gv:hex "947153";
-  gv:red "148";
-  gv:blue "83";
-  gv:green "113";
-  gv:score "9.8040521";
-  gv:coverage "4.3999999999999995"
-], [
-  gv:hex "917355";
-  gv:red "145";
-  gv:blue "85";
-  gv:green "115";
-  gv:score "7.0420958";
-  gv:coverage "3.66"
-], [
-  gv:hex "755337";
-  gv:red "117";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "5.3001";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "d9b08d";
-  gv:red "217";
-  gv:blue "141";
-  gv:green "176";
-  gv:score "5.0562903";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "edb68c";
-  gv:red "237";
-  gv:blue "140";
-  gv:green "182";
-  gv:score "3.4441654";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "ca936c";
-  gv:red "202";
-  gv:blue "108";
-  gv:green "147";
-  gv:score "3.2836284";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "e6c294";
-  gv:red "230";
-  gv:blue "148";
-  gv:green "194";
-  gv:score "1.9645438000000002";
-  gv:coverage "0.8666666199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.505662"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.95623499999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.696413"
-];
-    w:bagOfWords "1760\nGesetzl geschutzt\nCHULZ & WAGNER\nRhine Wine\n1934 Liebfraumilch, White Seal\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2053";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

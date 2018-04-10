@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3725";
-    dct:type "image";
-    w:bagOfWords "DE BoBA\nST LOUIS 1904\nGUATEMALA 1897\nBRANDY BOBADILLA\nVIEJ ISI MO\nLTRANA\nARCA GISTRADA\nDESDE EL ANO\nBobadilla y Cia\nPerez\nBODEGAS DE\nMANUEL FERNANDEZ Y CIA., s. L.\nJEREZ\nmol.\n"@spa;
-    gv:color [
-  gv:hex "9d111c";
-  gv:red "157";
-  gv:blue "28";
-  gv:green "17";
-  gv:score "44.7134";
-  gv:coverage "2.7533334"
-], [
-  gv:hex "d2bda6";
-  gv:red "210";
-  gv:blue "166";
-  gv:green "189";
-  gv:score "5.3378668";
-  gv:coverage "24.453333"
-], [
-  gv:hex "b4605b";
-  gv:red "180";
-  gv:blue "91";
-  gv:green "96";
-  gv:score "3.3119991";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "6c5126";
-  gv:red "108";
-  gv:blue "38";
-  gv:green "81";
-  gv:score "1.4025285";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "820a10";
-  gv:red "130";
-  gv:blue "16";
-  gv:green "10";
-  gv:score "5.8463607";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "e8b6a6";
-  gv:red "232";
-  gv:blue "166";
-  gv:green "182";
-  gv:score "5.2976776";
-  gv:coverage "2.2666667"
-], [
-  gv:hex "ac9980";
-  gv:red "172";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "4.9640756";
-  gv:coverage "2.96"
-], [
-  gv:hex "c4907d";
-  gv:red "196";
-  gv:blue "125";
-  gv:green "144";
-  gv:score "4.5184102";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "b60e23";
-  gv:red "182";
-  gv:blue "35";
-  gv:green "14";
-  gv:score "3.4071523999999997";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "8e795f";
-  gv:red "142";
-  gv:blue "95";
-  gv:green "121";
-  gv:score "2.8166525";
-  gv:coverage "1.3733333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.173759"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "51.229614"
-];
-    w:bagOfWords "DE BoBA\nST LOUIS 1904\nGUATEMALA 1897\nBRANDY BOBADILLA\nVIEJ ISI MO\nLTRANA\nARCA GISTRADA\nDESDE EL ANO\nBobadilla y Cia\nPerez\nBODEGAS DE\nMANUEL FERNANDEZ Y CIA., s. L.\nJEREZ\nmol.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3725";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2136/label_2143";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "DE L'ILE\nOLD\nOU\nOPORTO LONDON\nle\n"@undefined;
-    gv:color [
-  gv:hex "201915";
-  gv:red "32";
-  gv:blue "21";
-  gv:green "25";
-  gv:score "24.212432";
-  gv:coverage "14.686666"
-], [
-  gv:hex "d54f48";
-  gv:red "213";
-  gv:blue "72";
-  gv:green "79";
-  gv:score "6.264655299999999";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "b15752";
-  gv:red "177";
-  gv:blue "82";
-  gv:green "87";
-  gv:score "2.5978683";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e8ded4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "1.3710678";
-  gv:coverage "64.28"
-], [
-  gv:hex "df3a2f";
-  gv:red "223";
-  gv:blue "47";
-  gv:green "58";
-  gv:score "0.96767619";
-  gv:coverage "0.02"
-], [
-  gv:hex "312a24";
-  gv:red "49";
-  gv:blue "36";
-  gv:green "42";
-  gv:score "12.948277999999998";
-  gv:coverage "7.113332999999999"
-], [
-  gv:hex "2a0f0f";
-  gv:red "42";
-  gv:blue "15";
-  gv:green "15";
-  gv:score "6.816881199999999";
-  gv:coverage "0.96"
-], [
-  gv:hex "37100a";
-  gv:red "55";
-  gv:blue "10";
-  gv:green "16";
-  gv:score "4.1508149";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "4d251e";
-  gv:red "77";
-  gv:blue "30";
-  gv:green "37";
-  gv:score "2.9873652";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "f16358";
-  gv:red "241";
-  gv:blue "88";
-  gv:green "99";
-  gv:score "2.7808709";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.76006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "DE L'ILE\nOLD\nOU\nOPORTO LONDON\nle\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2143";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

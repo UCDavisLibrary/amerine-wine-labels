@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3148";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "REGISTERED\nTRADE MARK\nBOUCHARD PERE FILS\nNEGOCIANTS A BEA UN E (COTE-D OR)\nGEVREY CHAMBERTIN\nAPPELLATION CONTROLEE\nROUALET- EAUNE\nMise en bouteille dans nos caves d Beaune\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "d4c0a3";
-  gv:red "212";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "29.008061";
-  gv:coverage "22.853333"
-], [
-  gv:hex "a26a3f";
-  gv:red "162";
-  gv:blue "63";
-  gv:green "106";
-  gv:score "6.4265877";
-  gv:coverage "0.24"
-], [
-  gv:hex "873911";
-  gv:red "135";
-  gv:blue "17";
-  gv:green "57";
-  gv:score "5.84896";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "af9a7e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "19.316708";
-  gv:coverage "3.16"
-], [
-  gv:hex "8b785e";
-  gv:red "139";
-  gv:blue "94";
-  gv:green "120";
-  gv:score "7.8056082";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "c38f64";
-  gv:red "195";
-  gv:blue "100";
-  gv:green "143";
-  gv:score "5.3439576";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "83491c";
-  gv:red "131";
-  gv:blue "28";
-  gv:green "73";
-  gv:score "3.338968";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "b59b6c";
-  gv:red "181";
-  gv:blue "108";
-  gv:green "155";
-  gv:score "3.199381";
-  gv:coverage "0.26"
-], [
-  gv:hex "ebdac1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "2.9491720999999997";
-  gv:coverage "25.573334"
-], [
-  gv:hex "695225";
-  gv:red "105";
-  gv:blue "37";
-  gv:green "82";
-  gv:score "2.6034679";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.560719"
-];
-    w:bagOfWords "REGISTERED\nTRADE MARK\nBOUCHARD PERE FILS\nNEGOCIANTS A BEA UN E (COTE-D OR)\nGEVREY CHAMBERTIN\nAPPELLATION CONTROLEE\nROUALET- EAUNE\nMise en bouteille dans nos caves d Beaune\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3148";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4725/label_4737";
-    dct:type "image";
-    w:bagOfWords "PRODUCE OF SCOTLAND\nOUTHARD\nATH\nTRADE\nM ARK.\nAND\nSS\nV. O. LIQUEUR\nSCOTCH WHISKY\nSC\nSOUTHARD & C9 TO\n2 St Dunstan's Hill,\nT D\nLONDON.\n"@undefined;
-    gv:color [
-  gv:hex "867555";
-  gv:red "134";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "25.724164";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "eedfbf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "223";
-  gv:score "23.852389";
-  gv:coverage "28.566667000000002"
-], [
-  gv:hex "d7c7a7";
-  gv:red "215";
-  gv:blue "167";
-  gv:green "199";
-  gv:score "22.920115";
-  gv:coverage "8.3533332"
-], [
-  gv:hex "a89878";
-  gv:red "168";
-  gv:blue "120";
-  gv:green "152";
-  gv:score "16.003840999999998";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "685838";
-  gv:red "104";
-  gv:blue "56";
-  gv:green "88";
-  gv:score "7.7839032";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "433417";
-  gv:red "67";
-  gv:blue "23";
-  gv:green "52";
-  gv:score "2.2422092";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "271d08";
-  gv:red "39";
-  gv:blue "8";
-  gv:green "29";
-  gv:score "0.44063226999999994";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "110903";
-  gv:red "17";
-  gv:blue "3";
-  gv:green "9";
-  gv:score "0.40831510000000004";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "948358";
-  gv:red "148";
-  gv:blue "88";
-  gv:green "131";
-  gv:score "0.16569461000000002";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "57554b";
-  gv:red "87";
-  gv:blue "75";
-  gv:green "85";
-  gv:score "0.16400399999999998";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.873951"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCE OF SCOTLAND\nOUTHARD\nATH\nTRADE\nM ARK.\nAND\nSS\nV. O. LIQUEUR\nSCOTCH WHISKY\nSC\nSOUTHARD & C9 TO\n2 St Dunstan's Hill,\nT D\nLONDON.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4737";
+    <schema.keywords> "Fortified Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

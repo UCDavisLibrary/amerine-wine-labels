@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1603/label_1605";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "Zr) PEDRO XIMENEZ\nMUY VIEJO\nFICIAL DE EMBof\nA\nN% 24\nETAL\nHIJOS DE\nS. L.)\n"@spa;
-    gv:color [
-  gv:hex "d5bfaa";
-  gv:red "213";
-  gv:blue "170";
-  gv:green "191";
-  gv:score "22.659439";
-  gv:coverage "42.493334"
-], [
-  gv:hex "ab9886";
-  gv:red "171";
-  gv:blue "134";
-  gv:green "152";
-  gv:score "19.795360000000002";
-  gv:coverage "4.3733332"
-], [
-  gv:hex "8b7764";
-  gv:red "139";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "14.609013000000001";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "eab8a1";
-  gv:red "234";
-  gv:blue "161";
-  gv:green "184";
-  gv:score "10.717466";
-  gv:coverage "1.38"
-], [
-  gv:hex "c5937c";
-  gv:red "197";
-  gv:blue "124";
-  gv:green "147";
-  gv:score "5.5515815";
-  gv:coverage "0.52"
-], [
-  gv:hex "9d6f57";
-  gv:red "157";
-  gv:blue "87";
-  gv:green "111";
-  gv:score "3.8116022999999997";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "edd8c5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "216";
-  gv:score "3.5234895";
-  gv:coverage "31.406668"
-], [
-  gv:hex "af6252";
-  gv:red "175";
-  gv:blue "82";
-  gv:green "98";
-  gv:score "3.224143";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "d38675";
-  gv:red "211";
-  gv:blue "117";
-  gv:green "134";
-  gv:score "2.332473";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "d4c2b6";
-  gv:red "212";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "1.6639555000000001";
-  gv:coverage "4.279999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.90656899999999"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "64.563638"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "52.535236"
-];
-    w:bagOfWords "Zr) PEDRO XIMENEZ\nMUY VIEJO\nFICIAL DE EMBof\nA\nN% 24\nETAL\nHIJOS DE\nS. L.)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1605";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

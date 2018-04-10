@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3170";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "44 ~ 2ーーー\nEE\nCONTROL\neharmesteE.mberlin\nEN B\nBOU7\nARMAND ROUSSEAU\nPropri étaire\nfoPRIES\nGEV REY-CHAMBERTIN\nCOTE-D,OR\nILLES\n"@fra;
-    gv:color [
-  gv:hex "e2c59e";
-  gv:red "226";
-  gv:blue "158";
-  gv:green "197";
-  gv:score "45.033753";
-  gv:coverage "26.613334"
-], [
-  gv:hex "8e3816";
-  gv:red "142";
-  gv:blue "22";
-  gv:green "56";
-  gv:score "5.2947994";
-  gv:coverage "0.32"
-], [
-  gv:hex "9a6e43";
-  gv:red "154";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "3.4110956";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "6b5131";
-  gv:red "107";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "2.2521609000000002";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "dfbf91";
-  gv:red "223";
-  gv:blue "145";
-  gv:green "191";
-  gv:score "10.692328";
-  gv:coverage "3.9600000000000004"
-], [
-  gv:hex "b89a6c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "154";
-  gv:score "5.6131516";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "b59a76";
-  gv:red "181";
-  gv:blue "118";
-  gv:green "154";
-  gv:score "4.9838144";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "f3d7b2";
-  gv:red "243";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "3.40842";
-  gv:coverage "13.506667"
-], [
-  gv:hex "917247";
-  gv:red "145";
-  gv:blue "71";
-  gv:green "114";
-  gv:score "3.1856812999999997";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "c39067";
-  gv:red "195";
-  gv:blue "103";
-  gv:green "144";
-  gv:score "2.5867639000000002";
-  gv:coverage "0.60666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.08672"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.496445"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.314187"
-];
-    w:bagOfWords "44 ~ 2ーーー\nEE\nCONTROL\neharmesteE.mberlin\nEN B\nBOU7\nARMAND ROUSSEAU\nPropri étaire\nfoPRIES\nGEV REY-CHAMBERTIN\nCOTE-D,OR\nILLES\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3170";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2629";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "DOMAINE DE LA GRAND COUR\nAppellation controlée\nRESTAURANT MARC ANNI BAL DE COCONNAS\nS.A.R.L DE LA PLACE OYALE\n2 bis, PLACE DES VOSGES PARIS\n"@fra;
-    gv:color [
-  gv:hex "d7c2a6";
-  gv:red "215";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "57.076752";
-  gv:coverage "27.82"
-], [
-  gv:hex "debc8b";
-  gv:red "222";
-  gv:blue "139";
-  gv:green "188";
-  gv:score "21.857779999999998";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "e9d9c5";
-  gv:red "233";
-  gv:blue "197";
-  gv:green "217";
-  gv:score "9.02284";
-  gv:coverage "36.913332"
-], [
-  gv:hex "b09d84";
-  gv:red "176";
-  gv:blue "132";
-  gv:green "157";
-  gv:score "7.9667984999999994";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "e1b683";
-  gv:red "225";
-  gv:blue "131";
-  gv:green "182";
-  gv:score "1.4168945";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "c1a171";
-  gv:red "193";
-  gv:blue "113";
-  gv:green "161";
-  gv:score "1.0444934";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "8f7b62";
-  gv:red "143";
-  gv:blue "98";
-  gv:green "123";
-  gv:score "0.91697155";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "eadbce";
-  gv:red "234";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "0.36568136";
-  gv:coverage "30.646667"
-], [
-  gv:hex "6a5c49";
-  gv:red "106";
-  gv:blue "73";
-  gv:green "92";
-  gv:score "0.28433176";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "3f3424";
-  gv:red "63";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "0.033528035";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.049595"
-];
-    w:bagOfWords "DOMAINE DE LA GRAND COUR\nAppellation controlée\nRESTAURANT MARC ANNI BAL DE COCONNAS\nS.A.R.L DE LA PLACE OYALE\n2 bis, PLACE DES VOSGES PARIS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2629";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

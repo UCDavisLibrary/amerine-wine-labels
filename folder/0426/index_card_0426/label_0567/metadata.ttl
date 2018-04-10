@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0567";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Gott mit uns\n193 4 er\nStauenthaler\nYRagenfebr\n11 e\nSIt ville am e i n\nRhein g\n"@deu;
-    gv:color [
-  gv:hex "b09983";
-  gv:red "176";
-  gv:blue "131";
-  gv:green "153";
-  gv:score "17.088486";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "a49a91";
-  gv:red "164";
-  gv:blue "145";
-  gv:green "154";
-  gv:score "16.320397";
-  gv:coverage "4.2933334"
-], [
-  gv:hex "d0b9a3";
-  gv:red "208";
-  gv:blue "163";
-  gv:green "185";
-  gv:score "15.177293";
-  gv:coverage "3.2"
-], [
-  gv:hex "cdc4ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "14.332558";
-  gv:coverage "20.32"
-], [
-  gv:hex "847b71";
-  gv:red "132";
-  gv:blue "113";
-  gv:green "123";
-  gv:score "9.607232400000001";
-  gv:coverage "2.0866666"
-], [
-  gv:hex "5c534a";
-  gv:red "92";
-  gv:blue "74";
-  gv:green "83";
-  gv:score "6.6577978";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "937c67";
-  gv:red "147";
-  gv:blue "103";
-  gv:green "124";
-  gv:score "5.1037042999999995";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "3b3229";
-  gv:red "59";
-  gv:blue "41";
-  gv:green "50";
-  gv:score "4.885773";
-  gv:coverage "0.52"
-], [
-  gv:hex "b89478";
-  gv:red "184";
-  gv:blue "120";
-  gv:green "148";
-  gv:score "3.1684883";
-  gv:coverage "0.12"
-], [
-  gv:hex "9b785c";
-  gv:red "155";
-  gv:blue "92";
-  gv:green "120";
-  gv:score "2.4879287999999997";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.67003"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "57.850105"
-];
-    w:bagOfWords "Gott mit uns\n193 4 er\nStauenthaler\nYRagenfebr\n11 e\nSIt ville am e i n\nRhein g\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0567";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

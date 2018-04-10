@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4480";
-    dct:type "image";
-    w:bagOfWords "OVID\nodegas Riojanas\nCEDICERO\nESP AN A\nEMBOTELLADO EN NUESTRAS\nEMBOTELLADOR 123\nBODEGAS DE CE NICERO\n"@spa;
-    gv:color [
-  gv:hex "e8dfd6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "56.642956";
-  gv:coverage "52.94"
-], [
-  gv:hex "847454";
-  gv:red "132";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "4.0136866";
-  gv:coverage "1.9733334000000002"
-], [
-  gv:hex "853114";
-  gv:red "133";
-  gv:blue "20";
-  gv:green "49";
-  gv:score "1.9512938";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "223932";
-  gv:red "34";
-  gv:blue "50";
-  gv:green "57";
-  gv:score "0.5968364399999999";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "dbd1c6";
-  gv:red "219";
-  gv:blue "198";
-  gv:green "209";
-  gv:score "5.2029036";
-  gv:coverage "5.3933333999999995"
-], [
-  gv:hex "e7dbc8";
-  gv:red "231";
-  gv:blue "200";
-  gv:green "219";
-  gv:score "4.3505836";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "d9cbb5";
-  gv:red "217";
-  gv:blue "181";
-  gv:green "203";
-  gv:score "3.7314951";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "605234";
-  gv:red "96";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "2.8712014";
-  gv:coverage "1.26"
-], [
-  gv:hex "3f3318";
-  gv:red "63";
-  gv:blue "24";
-  gv:green "51";
-  gv:score "2.1056782";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "655124";
-  gv:red "101";
-  gv:blue "36";
-  gv:green "81";
-  gv:score "1.8107621";
-  gv:coverage "0.69333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.643753"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.223116999999995"
-];
-    w:bagOfWords "OVID\nodegas Riojanas\nCEDICERO\nESP AN A\nEMBOTELLADO EN NUESTRAS\nEMBOTELLADOR 123\nBODEGAS DE CE NICERO\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4480";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

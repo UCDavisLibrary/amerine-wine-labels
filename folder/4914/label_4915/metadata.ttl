@@ -1,106 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4914/label_4915";
-    dct:type "image";
-    w:bagOfWords "TIDTO\n"@undefined;
-    gv:color [
-  gv:hex "92383e";
-  gv:red "146";
-  gv:blue "62";
-  gv:green "56";
-  gv:score "10.242125";
-  gv:coverage "2.3800000000000003"
-], [
-  gv:hex "ecb9b2";
-  gv:red "236";
-  gv:blue "178";
-  gv:green "185";
-  gv:score "9.964589";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "d6c2b3";
-  gv:red "214";
-  gv:blue "179";
-  gv:green "194";
-  gv:score "9.2467822";
-  gv:coverage "7.086666699999999"
-], [
-  gv:hex "c49088";
-  gv:red "196";
-  gv:blue "136";
-  gv:green "144";
-  gv:score "9.1928959";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "ac988a";
-  gv:red "172";
-  gv:blue "138";
-  gv:green "152";
-  gv:score "8.5481383";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "ce7d81";
-  gv:red "206";
-  gv:blue "129";
-  gv:green "125";
-  gv:score "8.27264";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "922736";
-  gv:red "146";
-  gv:blue "54";
-  gv:green "39";
-  gv:score "7.5764507";
-  gv:coverage "2.64"
-], [
-  gv:hex "731e27";
-  gv:red "115";
-  gv:blue "39";
-  gv:green "30";
-  gv:score "6.992818400000001";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "8e7a6c";
-  gv:red "142";
-  gv:blue "108";
-  gv:green "122";
-  gv:score "4.740046700000001";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "ecd9ca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "217";
-  gv:score "4.3196699999999995";
-  gv:coverage "14.626667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01fklc>;
-  gv:desc "pink";
-  gv:score "90.560126"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.654127"
-], [
-  gv:mid <https://g.co/kg/m/0ckc5>;
-  gv:desc "magenta";
-  gv:score "61.834537999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "TIDTO\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4915";
+    <schema.keywords> "Removed from UC Reporters Notebook folder@en".
+

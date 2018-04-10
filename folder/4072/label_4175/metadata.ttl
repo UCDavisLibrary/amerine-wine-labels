@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4175";
-    dct:type "image";
-    w:bagOfWords "ニー\n頭萬神婦筋常馳酒士\nEn雇頁連女氣飮名採译\n為諸誠經味之足取馬\n叡君乃前優提久純頭\n庶請滋產菠神性粹標\n不認養後常健和葡盒\n致罇補飲飲體味篘字\n憐炽酒之强旺甘汁\n傍聖奏身血老釀温\n馬品劲凡舒锄房文補\n理,代総亜來慕\n司公遮有诖士!\nProduce of Portugal\n註冊1馳名a/久性和味甘老劭1至\n常飲之提神健體旺血\n参商標1神逮誠乃滋養補酒聖品運公1 1\n一恵顧\nーーー21\n"@fra;
-    gv:color [
-  gv:hex "130a04";
-  gv:red "19";
-  gv:blue "4";
-  gv:green "10";
-  gv:score "23.931490999999998";
-  gv:coverage "16.606666"
-], [
-  gv:hex "3c331e";
-  gv:red "60";
-  gv:blue "30";
-  gv:green "51";
-  gv:score "23.350607";
-  gv:coverage "4.6066668"
-], [
-  gv:hex "5d533c";
-  gv:red "93";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "20.537207";
-  gv:coverage "3.2133333"
-], [
-  gv:hex "7c7359";
-  gv:red "124";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "12.003055999999999";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "241b0a";
-  gv:red "36";
-  gv:blue "10";
-  gv:green "27";
-  gv:score "9.8280855";
-  gv:coverage "2.1333333"
-], [
-  gv:hex "382f28";
-  gv:red "56";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "4.389017399999999";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "9c9476";
-  gv:red "156";
-  gv:blue "118";
-  gv:green "148";
-  gv:score "2.1350961";
-  gv:coverage "0.24"
-], [
-  gv:hex "594f47";
-  gv:red "89";
-  gv:blue "71";
-  gv:green "79";
-  gv:score "1.9702879999999998";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "7b7369";
-  gv:red "123";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "1.00565";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "9e9790";
-  gv:red "158";
-  gv:blue "144";
-  gv:green "151";
-  gv:score "0.41699581999999996";
-  gv:coverage "0.35333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "64.389622"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.920841"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "54.474073999999995"
-], [
-  gv:mid <https://g.co/kg/m/0121tl>;
-  gv:desc "electronic instrument";
-  gv:score "51.6053"
-];
-    w:bagOfWords "ニー\n頭萬神婦筋常馳酒士\nEn雇頁連女氣飮名採译\n為諸誠經味之足取馬\n叡君乃前優提久純頭\n庶請滋產菠神性粹標\n不認養後常健和葡盒\n致罇補飲飲體味篘字\n憐炽酒之强旺甘汁\n傍聖奏身血老釀温\n馬品劲凡舒锄房文補\n理,代総亜來慕\n司公遮有诖士!\nProduce of Portugal\n註冊1馳名a/久性和味甘老劭1至\n常飲之提神健體旺血\n参商標1神逮誠乃滋養補酒聖品運公1 1\n一恵顧\nーーー21\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4175";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

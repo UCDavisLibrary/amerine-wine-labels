@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3924/label_3925";
-    dct:type "image";
-    w:bagOfWords "HENKEL\nTROCKEN\nStNR\n184\nDRY\nFR MA\nHENKELL Co. WIESBADEN BIE BRICH\nGERMAN S PARK LING WINE, SHIPPED BY HENKELL & Co., wIESBADEN (RHINE)\nIMPORTED BY SILVER HILL PRODUCTS INC., NEW YORK, N. Y.\nCONTENTS\n1 PT 10 FL OZS, PRODUCE OF GERMANY, ALCOHOL BY VOLUME 12\n"@deu;
-    gv:color [
-  gv:hex "b99a61";
-  gv:red "185";
-  gv:blue "97";
-  gv:green "154";
-  gv:score "60.495405999999996";
-  gv:coverage "13.513333"
-], [
-  gv:hex "3d3114";
-  gv:red "61";
-  gv:blue "20";
-  gv:green "49";
-  gv:score "1.4568039";
-  gv:coverage "0.44"
-], [
-  gv:hex "120d0a";
-  gv:red "18";
-  gv:blue "10";
-  gv:green "13";
-  gv:score "1.1247932";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "301400";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.888755";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "ebd9ba";
-  gv:red "235";
-  gv:blue "186";
-  gv:green "217";
-  gv:score "0.40538227";
-  gv:coverage "11.606666"
-], [
-  gv:hex "d1b276";
-  gv:red "209";
-  gv:blue "118";
-  gv:green "178";
-  gv:score "13.291609";
-  gv:coverage "4.1733332"
-], [
-  gv:hex "917642";
-  gv:red "145";
-  gv:blue "66";
-  gv:green "118";
-  gv:score "6.447467199999999";
-  gv:coverage "1.34"
-], [
-  gv:hex "6d5321";
-  gv:red "109";
-  gv:blue "33";
-  gv:green "83";
-  gv:score "3.9129745000000002";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "b19872";
-  gv:red "177";
-  gv:blue "114";
-  gv:green "152";
-  gv:score "1.8877042";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "877652";
-  gv:red "135";
-  gv:blue "82";
-  gv:green "118";
-  gv:score "1.5499417";
-  gv:coverage "0.41333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.700492"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.072185999999995"
-];
-    w:bagOfWords "HENKEL\nTROCKEN\nStNR\n184\nDRY\nFR MA\nHENKELL Co. WIESBADEN BIE BRICH\nGERMAN S PARK LING WINE, SHIPPED BY HENKELL & Co., wIESBADEN (RHINE)\nIMPORTED BY SILVER HILL PRODUCTS INC., NEW YORK, N. Y.\nCONTENTS\n1 PT 10 FL OZS, PRODUCE OF GERMANY, ALCOHOL BY VOLUME 12\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3925";
+    <schema.keywords> "Germany Sparkling Wine Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "DE".
+

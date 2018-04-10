@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2082";
-    dct:type "image";
-    w:bagOfWords "Contents\nAlcohol by Volume 11,5%\n2 Pint 8 Fluid Ounces\nProduce of Germany\nRHINE WINE\n1949\nOPPENHEIMER GROSSE STEIG\nSPATLESE\nProduced and bottled byWeingutLouis Guntrum,Nierstein o Rhine, Germany\nWachstum und Original Abfullung\nWeingut Louis untrum\nNierstein\nRHEIN\nHESSEN\nWILH.GERSTUNG. OFFENBACH AIM\nGESCHOTZT\n"@undefined;
-    gv:color [
-  gv:hex "d4c2aa";
-  gv:red "212";
-  gv:blue "170";
-  gv:green "194";
-  gv:score "15.823659000000001";
-  gv:coverage "13.873332999999999"
-], [
-  gv:hex "a79984";
-  gv:red "167";
-  gv:blue "132";
-  gv:green "153";
-  gv:score "14.516129";
-  gv:coverage "3.5933333999999997"
-], [
-  gv:hex "81765c";
-  gv:red "129";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "13.08843";
-  gv:coverage "3.5133332000000004"
-], [
-  gv:hex "5f563d";
-  gv:red "95";
-  gv:blue "61";
-  gv:green "86";
-  gv:score "10.15283";
-  gv:coverage "2.5666667"
-], [
-  gv:hex "ecdec8";
-  gv:red "236";
-  gv:blue "200";
-  gv:green "222";
-  gv:score "7.0252858";
-  gv:coverage "7.6066665"
-], [
-  gv:hex "3d361c";
-  gv:red "61";
-  gv:blue "28";
-  gv:green "54";
-  gv:score "4.15052";
-  gv:coverage "1"
-], [
-  gv:hex "deb97e";
-  gv:red "222";
-  gv:blue "126";
-  gv:green "185";
-  gv:score "3.9712696999999997";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "cdc2b6";
-  gv:red "205";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "3.8750354000000002";
-  gv:coverage "13.726667"
-], [
-  gv:hex "56594d";
-  gv:red "86";
-  gv:blue "77";
-  gv:green "89";
-  gv:score "3.619352";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "76796c";
-  gv:red "118";
-  gv:blue "108";
-  gv:green "121";
-  gv:score "2.8133621";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.55489"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "65.44582199999999"
-];
-    w:bagOfWords "Contents\nAlcohol by Volume 11,5%\n2 Pint 8 Fluid Ounces\nProduce of Germany\nRHINE WINE\n1949\nOPPENHEIMER GROSSE STEIG\nSPATLESE\nProduced and bottled byWeingutLouis Guntrum,Nierstein o Rhine, Germany\nWachstum und Original Abfullung\nWeingut Louis untrum\nNierstein\nRHEIN\nHESSEN\nWILH.GERSTUNG. OFFENBACH AIM\nGESCHOTZT\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2082";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

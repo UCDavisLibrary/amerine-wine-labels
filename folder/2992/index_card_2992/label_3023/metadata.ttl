@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3023";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHAT\nKRE\nLA TOVR MARTILLAC\nCEPTIONNEL\nCRU\nGRAVES\n"@fra;
-    gv:color [
-  gv:hex "654d2f";
-  gv:red "101";
-  gv:blue "47";
-  gv:green "77";
-  gv:score "25.285864000000004";
-  gv:coverage "5.4266665"
-], [
-  gv:hex "e2c8a1";
-  gv:red "226";
-  gv:blue "161";
-  gv:green "200";
-  gv:score "12.91437";
-  gv:coverage "6.22"
-], [
-  gv:hex "15110e";
-  gv:red "21";
-  gv:blue "14";
-  gv:green "17";
-  gv:score "8.1793547";
-  gv:coverage "7.359999999999999"
-], [
-  gv:hex "6c5028";
-  gv:red "108";
-  gv:blue "40";
-  gv:green "80";
-  gv:score "9.5148869";
-  gv:coverage "2.1"
-], [
-  gv:hex "6c4b24";
-  gv:red "108";
-  gv:blue "36";
-  gv:green "75";
-  gv:score "7.3553175";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "674829";
-  gv:red "103";
-  gv:blue "41";
-  gv:green "72";
-  gv:score "6.9723666";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "48341b";
-  gv:red "72";
-  gv:blue "27";
-  gv:green "52";
-  gv:score "6.401804799999999";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "e2c494";
-  gv:red "226";
-  gv:blue "148";
-  gv:green "196";
-  gv:score "3.9903082";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "efd8b3";
-  gv:red "239";
-  gv:blue "179";
-  gv:green "216";
-  gv:score "3.5648350000000004";
-  gv:coverage "10.059999999999999"
-], [
-  gv:hex "867052";
-  gv:red "134";
-  gv:blue "82";
-  gv:green "112";
-  gv:score "2.2058647000000002";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.518982"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.2981"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.513149"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.396286999999994"
-];
-    w:bagOfWords "CHAT\nKRE\nLA TOVR MARTILLAC\nCEPTIONNEL\nCRU\nGRAVES\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3023";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

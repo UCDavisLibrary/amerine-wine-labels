@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1051";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "pétillant\nMI SE EN B OUT EILLE S\nA LA. PRO PRI E T E PAR\nJ K UNG & Co\n"@deu;
-    gv:color [
-  gv:hex "89735a";
-  gv:red "137";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "18.471695";
-  gv:coverage "4.3266665"
-], [
-  gv:hex "dcc4a3";
-  gv:red "220";
-  gv:blue "163";
-  gv:green "196";
-  gv:score "18.351041000000002";
-  gv:coverage "15.786666999999998"
-], [
-  gv:hex "635039";
-  gv:red "99";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "16.512105";
-  gv:coverage "3.3133332"
-], [
-  gv:hex "ac977a";
-  gv:red "172";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "15.112129999999999";
-  gv:coverage "4.273333399999999"
-], [
-  gv:hex "46331d";
-  gv:red "70";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "10.361409";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "eed8b8";
-  gv:red "238";
-  gv:blue "184";
-  gv:green "216";
-  gv:score "3.4134373000000005";
-  gv:coverage "31.240000000000002"
-], [
-  gv:hex "727f51";
-  gv:red "114";
-  gv:blue "81";
-  gv:green "127";
-  gv:score "2.6864250999999997";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "939e6f";
-  gv:red "147";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "2.2685733";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "4a2f17";
-  gv:red "74";
-  gv:blue "23";
-  gv:green "47";
-  gv:score "1.9230936";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "2d1b07";
-  gv:red "45";
-  gv:blue "7";
-  gv:green "27";
-  gv:score "1.5583107";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.659879000000004"
-];
-    w:bagOfWords "pétillant\nMI SE EN B OUT EILLE S\nA LA. PRO PRI E T E PAR\nJ K UNG & Co\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1051";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

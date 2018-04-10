@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3238";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "2 60\nDE MAR\nCLOS VOUGEOT\nGUICHARD-POTHERET & FILS\nChalon-sur-SaOne\n"@fra;
-    gv:color [
-  gv:hex "d7c2a9";
-  gv:red "215";
-  gv:blue "169";
-  gv:green "194";
-  gv:score "44.804657";
-  gv:coverage "15.82"
-], [
-  gv:hex "ae9a83";
-  gv:red "174";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "26.543318999999997";
-  gv:coverage "2.9000000000000004"
-], [
-  gv:hex "edd9c2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "15.747481999999998";
-  gv:coverage "13.74"
-], [
-  gv:hex "8b7966";
-  gv:red "139";
-  gv:blue "102";
-  gv:green "121";
-  gv:score "10.931443999999999";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "6d5d4e";
-  gv:red "109";
-  gv:blue "78";
-  gv:green "93";
-  gv:score "1.3461187";
-  gv:coverage "0.12"
-], [
-  gv:hex "d4c6ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "198";
-  gv:score "0.34882061";
-  gv:coverage "8.3066665"
-], [
-  gv:hex "443523";
-  gv:red "68";
-  gv:blue "35";
-  gv:green "53";
-  gv:score "0.19606096";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e5dcd3";
-  gv:red "229";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "0.046353016";
-  gv:coverage "57.64"
-], [
-  gv:hex "766d63";
-  gv:red "118";
-  gv:blue "99";
-  gv:green "109";
-  gv:score "0.013280746000000001";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "a79e95";
-  gv:red "167";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "0.0085730477";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.395273"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "2 60\nDE MAR\nCLOS VOUGEOT\nGUICHARD-POTHERET & FILS\nChalon-sur-SaOne\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3238";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

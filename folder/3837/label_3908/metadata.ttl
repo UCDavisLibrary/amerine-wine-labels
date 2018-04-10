@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3908";
-    dct:type "image";
-    w:bagOfWords "gegr\n1812\n1939\nEnkircher Edelberg\nLight Moselle Wine\nAlcohol by volume 12,5\n%A\n"@deu;
-    gv:color [
-  gv:hex "d0bda4";
-  gv:red "208";
-  gv:blue "164";
-  gv:green "189";
-  gv:score "25.192314";
-  gv:coverage "15.113333"
-], [
-  gv:hex "b59565";
-  gv:red "181";
-  gv:blue "101";
-  gv:green "149";
-  gv:score "18.970424";
-  gv:coverage "2.88"
-], [
-  gv:hex "28643f";
-  gv:red "40";
-  gv:blue "63";
-  gv:green "100";
-  gv:score "1.3308492";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "b39979";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "16.850337";
-  gv:coverage "4.1933332"
-], [
-  gv:hex "967849";
-  gv:red "150";
-  gv:blue "73";
-  gv:green "120";
-  gv:score "6.3325554";
-  gv:coverage "1.06"
-], [
-  gv:hex "d1c3b9";
-  gv:red "209";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "5.696330000000001";
-  gv:coverage "8.1066668"
-], [
-  gv:hex "d9b888";
-  gv:red "217";
-  gv:blue "136";
-  gv:green "184";
-  gv:score "3.336769";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "ba9061";
-  gv:red "186";
-  gv:blue "97";
-  gv:green "144";
-  gv:score "2.3892997";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "947a5b";
-  gv:red "148";
-  gv:blue "91";
-  gv:green "122";
-  gv:score "1.9290688999999999";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "a7c9a9";
-  gv:red "167";
-  gv:blue "169";
-  gv:green "201";
-  gv:score "1.8780451";
-  gv:coverage "0.35333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.43507199999999"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.082038000000004"
-];
-    w:bagOfWords "gegr\n1812\n1939\nEnkircher Edelberg\nLight Moselle Wine\nAlcohol by volume 12,5\n%A\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3908";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

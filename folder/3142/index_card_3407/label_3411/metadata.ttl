@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3411";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "AISON FONDEE\nTRADE MARK\nEN 89\nPROPRIETAIRE ET NEGOCIANTE\nA BEAU NE CCOTE DORI\n"@fra;
-    gv:color [
-  gv:hex "936c4e";
-  gv:red "147";
-  gv:blue "78";
-  gv:green "108";
-  gv:score "17.832683";
-  gv:coverage "4.1666668"
-], [
-  gv:hex "be9269";
-  gv:red "190";
-  gv:blue "105";
-  gv:green "146";
-  gv:score "6.063159199999999";
-  gv:coverage "2.8533334"
-], [
-  gv:hex "744e32";
-  gv:red "116";
-  gv:blue "50";
-  gv:green "78";
-  gv:score "16.163011";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "8e7151";
-  gv:red "142";
-  gv:blue "81";
-  gv:green "113";
-  gv:score "12.781735";
-  gv:coverage "3.6999999999999997"
-], [
-  gv:hex "b79773";
-  gv:red "183";
-  gv:blue "115";
-  gv:green "151";
-  gv:score "8.813235899999999";
-  gv:coverage "3.9266667999999996"
-], [
-  gv:hex "6f5536";
-  gv:red "111";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "6.1430246";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "774527";
-  gv:red "119";
-  gv:blue "39";
-  gv:green "69";
-  gv:score "5.8407024000000005";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "b88f6d";
-  gv:red "184";
-  gv:blue "109";
-  gv:green "143";
-  gv:score "5.5844683";
-  gv:coverage "1.8733334000000001"
-], [
-  gv:hex "9d6e4a";
-  gv:red "157";
-  gv:blue "74";
-  gv:green "110";
-  gv:score "3.6192561999999997";
-  gv:coverage "1"
-], [
-  gv:hex "bc996f";
-  gv:red "188";
-  gv:blue "111";
-  gv:green "153";
-  gv:score "3.4643997000000004";
-  gv:coverage "1.6133332999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.11344"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.747172000000006"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.577920999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.146978999999995"
-];
-    w:bagOfWords "AISON FONDEE\nTRADE MARK\nEN 89\nPROPRIETAIRE ET NEGOCIANTE\nA BEAU NE CCOTE DORI\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3411";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

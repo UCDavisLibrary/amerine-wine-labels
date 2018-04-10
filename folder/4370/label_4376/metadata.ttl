@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4370/label_4376";
-    dct:type "image";
-    w:bagOfWords "0\nで\nJ\nus fat\nがlgereAuti esteheMetudysaultntttin/inxfblrut interbou\nスloterneuburg\n"@deu;
-    gv:color [
-  gv:hex "ac9e7b";
-  gv:red "172";
-  gv:blue "123";
-  gv:green "158";
-  gv:score "12.181477000000001";
-  gv:coverage "3.4799999999999995"
-], [
-  gv:hex "bb5f4c";
-  gv:red "187";
-  gv:blue "76";
-  gv:green "95";
-  gv:score "2.1668529";
-  gv:coverage "0.16"
-], [
-  gv:hex "cfc09f";
-  gv:red "207";
-  gv:blue "159";
-  gv:green "192";
-  gv:score "10.566729";
-  gv:coverage "10.113332999999999"
-], [
-  gv:hex "d7bf83";
-  gv:red "215";
-  gv:blue "131";
-  gv:green "191";
-  gv:score "9.780395799999999";
-  gv:coverage "2.1466667"
-], [
-  gv:hex "b19d67";
-  gv:red "177";
-  gv:blue "103";
-  gv:green "157";
-  gv:score "9.7306505";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "e6c567";
-  gv:red "230";
-  gv:blue "103";
-  gv:green "197";
-  gv:score "9.3370639";
-  gv:coverage "2.0066667"
-], [
-  gv:hex "857756";
-  gv:red "133";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "8.5235879";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "605535";
-  gv:red "96";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "6.264415399999999";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "3e3214";
-  gv:red "62";
-  gv:blue "20";
-  gv:green "50";
-  gv:score "3.4526367000000002";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "8d7a48";
-  gv:red "141";
-  gv:blue "72";
-  gv:green "122";
-  gv:score "2.9105077";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.977409"
-];
-    w:bagOfWords "0\nで\nJ\nus fat\nがlgereAuti esteheMetudysaultntttin/inxfblrut interbou\nスloterneuburg\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "AUT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4376";
+    <schema.keywords> "Austria Folder@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "AT".
+

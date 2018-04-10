@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0681";
-    dct:type "image";
-    w:bagOfWords "1948\nREB\nBER\nNER\nGUT\nDER\nKELLER\nSTADT\nIN NEUEN\nSTADT\nBERN\nSCHAFFISER.\nCHAVAN NES\nBRUGGER VON TO BEL & CIE., BERN\n"@undefined;
-    gv:color [
-  gv:hex "c0983c";
-  gv:red "192";
-  gv:blue "60";
-  gv:green "152";
-  gv:score "9.111467";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "dac2a5";
-  gv:red "218";
-  gv:blue "165";
-  gv:green "194";
-  gv:score "8.861421";
-  gv:coverage "15.633332999999999"
-], [
-  gv:hex "774719";
-  gv:red "119";
-  gv:blue "25";
-  gv:green "71";
-  gv:score "6.0191870000000005";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "a26f1e";
-  gv:red "162";
-  gv:blue "30";
-  gv:green "111";
-  gv:score "4.744729";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "6f2106";
-  gv:red "111";
-  gv:blue "6";
-  gv:green "33";
-  gv:score "4.0756768999999995";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "92763d";
-  gv:red "146";
-  gv:blue "61";
-  gv:green "118";
-  gv:score "3.9398987000000005";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "c89340";
-  gv:red "200";
-  gv:blue "64";
-  gv:green "147";
-  gv:score "4.4049222";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "843415";
-  gv:red "132";
-  gv:blue "21";
-  gv:green "52";
-  gv:score "4.0547166";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "5c2e06";
-  gv:red "92";
-  gv:blue "6";
-  gv:green "46";
-  gv:score "3.6569837";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "9d6b3c";
-  gv:red "157";
-  gv:blue "60";
-  gv:green "107";
-  gv:score "3.5373449";
-  gv:coverage "0.8999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.365483"
-];
-    w:bagOfWords "1948\nREB\nBER\nNER\nGUT\nDER\nKELLER\nSTADT\nIN NEUEN\nSTADT\nBERN\nSCHAFFISER.\nCHAVAN NES\nBRUGGER VON TO BEL & CIE., BERN\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0681";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

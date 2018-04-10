@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0316";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "NET CONTENTS\nONE GALLO\nWINE\nClaret\nNOT OVER 1496 ALCOHOL BY VOLUME\nPRODUCED & BOTTLED BY\nA DE LA TO WINERY\nADELANTO, CALIF.\nBONDED WINERY No. 3920\nBOTTLED FOR SALE IN\nCALIFORNIA ONLY\n"@eng;
-    gv:color [
-  gv:hex "d4c7b1";
-  gv:red "212";
-  gv:blue "177";
-  gv:green "199";
-  gv:score "20.57889";
-  gv:coverage "11.200000000000001"
-], [
-  gv:hex "88713b";
-  gv:red "136";
-  gv:blue "59";
-  gv:green "113";
-  gv:score "11.9458";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "5c553a";
-  gv:red "92";
-  gv:blue "58";
-  gv:green "85";
-  gv:score "5.3094804";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "c9c4bb";
-  gv:red "201";
-  gv:blue "187";
-  gv:green "196";
-  gv:score "9.9097058";
-  gv:coverage "8.1866667"
-], [
-  gv:hex "ac9c85";
-  gv:red "172";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "5.238688";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "7f7458";
-  gv:red "127";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "4.7472965";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "39361d";
-  gv:red "57";
-  gv:blue "29";
-  gv:green "54";
-  gv:score "3.9940732999999997";
-  gv:coverage "1.22"
-], [
-  gv:hex "675822";
-  gv:red "103";
-  gv:blue "34";
-  gv:green "88";
-  gv:score "3.9725624";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "a39c97";
-  gv:red "163";
-  gv:blue "151";
-  gv:green "156";
-  gv:score "3.9177074999999997";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "e7d9c4";
-  gv:red "231";
-  gv:blue "196";
-  gv:green "217";
-  gv:score "3.4020316000000004";
-  gv:coverage "7.7533334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.783918"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.610421"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.531482"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.573641"
-];
-    w:bagOfWords "NET CONTENTS\nONE GALLO\nWINE\nClaret\nNOT OVER 1496 ALCOHOL BY VOLUME\nPRODUCED & BOTTLED BY\nA DE LA TO WINERY\nADELANTO, CALIF.\nBONDED WINERY No. 3920\nBOTTLED FOR SALE IN\nCALIFORNIA ONLY\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0316";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

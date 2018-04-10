@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2756/label_2764";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "onen\nQUOS\nArbois\nAPPELLATION CONTROLEE\nMid en bouteille\npar la\nFRUITIERE VINICOLE D'ARBols (JURA)\nSRundee en 1900\nMP MOD. J. GUINCHARD ARROIS\n"@fra;
-    gv:color [
-  gv:hex "dbbd9b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "189";
-  gv:score "27.286770999999998";
-  gv:coverage "18.966667"
-], [
-  gv:hex "c9946e";
-  gv:red "201";
-  gv:blue "110";
-  gv:green "148";
-  gv:score "7.2987907000000005";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "8e371b";
-  gv:red "142";
-  gv:blue "27";
-  gv:green "55";
-  gv:score "6.3850135";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "b69979";
-  gv:red "182";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "11.376311999999999";
-  gv:coverage "5.6466665"
-], [
-  gv:hex "e7b999";
-  gv:red "231";
-  gv:blue "153";
-  gv:green "185";
-  gv:score "9.666014500000001";
-  gv:coverage "2.8000000000000003"
-], [
-  gv:hex "e9b58c";
-  gv:red "233";
-  gv:blue "140";
-  gv:green "181";
-  gv:score "6.7763746";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "917757";
-  gv:red "145";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "5.3161748";
-  gv:coverage "2.02"
-], [
-  gv:hex "bf9575";
-  gv:red "191";
-  gv:blue "117";
-  gv:green "149";
-  gv:score "5.2886143";
-  gv:coverage "2.34"
-], [
-  gv:hex "dab88a";
-  gv:red "218";
-  gv:blue "138";
-  gv:green "184";
-  gv:score "3.8351241000000003";
-  gv:coverage "1.2733334"
-], [
-  gv:hex "a76f49";
-  gv:red "167";
-  gv:blue "73";
-  gv:green "111";
-  gv:score "2.6575215";
-  gv:coverage "0.5666666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.79533500000001"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.41633100000001"
-];
-    w:bagOfWords "onen\nQUOS\nArbois\nAPPELLATION CONTROLEE\nMid en bouteille\npar la\nFRUITIERE VINICOLE D'ARBols (JURA)\nSRundee en 1900\nMP MOD. J. GUINCHARD ARROIS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2764";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

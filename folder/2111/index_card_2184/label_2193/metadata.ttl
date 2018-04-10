@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2193";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "NET CONTENTS ONE QUART\nMATTE VISTA\nPORT\nCALIFORNIA GROWN\nGUARANTEED TOBE UNCOLORED\nNATURAL WINE AGED BY\nA. MATTE I\nFRESNO\nCALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d0c48b";
-  gv:red "208";
-  gv:blue "139";
-  gv:green "196";
-  gv:score "18.073255999999997";
-  gv:coverage "3.94"
-], [
-  gv:hex "87763f";
-  gv:red "135";
-  gv:blue "63";
-  gv:green "118";
-  gv:score "12.372733";
-  gv:coverage "4.2933334"
-], [
-  gv:hex "d4c6a5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "15.241946";
-  gv:coverage "13.186665999999999"
-], [
-  gv:hex "ab9c62";
-  gv:red "171";
-  gv:blue "98";
-  gv:green "156";
-  gv:score "9.26255";
-  gv:coverage "2.9266667"
-], [
-  gv:hex "aa997b";
-  gv:red "170";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "8.734350000000001";
-  gv:coverage "3.5533335"
-], [
-  gv:hex "867659";
-  gv:red "134";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "7.8767814000000005";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "685927";
-  gv:red "104";
-  gv:blue "39";
-  gv:green "89";
-  gv:score "5.4829765";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "64563d";
-  gv:red "100";
-  gv:blue "61";
-  gv:green "86";
-  gv:score "4.7952179";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "eadcbc";
-  gv:red "234";
-  gv:blue "188";
-  gv:green "220";
-  gv:score "4.6343155";
-  gv:coverage "7.5266667"
-], [
-  gv:hex "e6dca4";
-  gv:red "230";
-  gv:blue "164";
-  gv:green "220";
-  gv:score "1.8295499";
-  gv:coverage "0.33333334000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.600471"
-];
-    w:bagOfWords "NET CONTENTS ONE QUART\nMATTE VISTA\nPORT\nCALIFORNIA GROWN\nGUARANTEED TOBE UNCOLORED\nNATURAL WINE AGED BY\nA. MATTE I\nFRESNO\nCALIFORNIA\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2193";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

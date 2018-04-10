@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2361/label_2362";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "MENS AC\nIIA TUT M EDOC\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d7c4ae";
-  gv:red "215";
-  gv:blue "174";
-  gv:green "196";
-  gv:score "48.864502";
-  gv:coverage "33.886668"
-], [
-  gv:hex "ad9b87";
-  gv:red "173";
-  gv:blue "135";
-  gv:green "155";
-  gv:score "11.465028";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "e6d6c5";
-  gv:red "230";
-  gv:blue "197";
-  gv:green "214";
-  gv:score "7.6543443";
-  gv:coverage "31.726667"
-], [
-  gv:hex "857564";
-  gv:red "133";
-  gv:blue "100";
-  gv:green "117";
-  gv:score "7.505680000000001";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "d5c6bb";
-  gv:red "213";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "6.3322492";
-  gv:coverage "8.3866663"
-], [
-  gv:hex "635342";
-  gv:red "99";
-  gv:blue "66";
-  gv:green "83";
-  gv:score "6.0203847";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "a6978f";
-  gv:red "166";
-  gv:blue "143";
-  gv:green "151";
-  gv:score "2.5053918";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "84756c";
-  gv:red "132";
-  gv:blue "108";
-  gv:green "117";
-  gv:score "2.2887172000000002";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "443525";
-  gv:red "68";
-  gv:blue "37";
-  gv:green "53";
-  gv:score "1.9150024";
-  gv:coverage "0.26"
-], [
-  gv:hex "e7d8cd";
-  gv:red "231";
-  gv:blue "205";
-  gv:green "216";
-  gv:score "1.6553992";
-  gv:coverage "20.053333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.45454"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MENS AC\nIIA TUT M EDOC\nMIS EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2362";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

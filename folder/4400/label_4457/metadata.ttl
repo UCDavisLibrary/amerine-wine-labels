@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4457";
-    dct:type "image";
-    w:bagOfWords "CONSEJO DE\nOMNIWON30\nRIO J A\nPRECIO del contenido\nen origen PTAS. 7,50\naturt\nEMBOTELLADO POR FEDERICO PA TERN IN A, S. A.\nRegistro embotelladores num. 329\n"@spa;
-    gv:color [
-  gv:hex "e8b9ad";
-  gv:red "232";
-  gv:blue "173";
-  gv:green "185";
-  gv:score "23.816246999999997";
-  gv:coverage "1.54"
-], [
-  gv:hex "81493d";
-  gv:red "129";
-  gv:blue "61";
-  gv:green "73";
-  gv:score "6.9512151";
-  gv:coverage "0.24"
-], [
-  gv:hex "bf9087";
-  gv:red "191";
-  gv:blue "135";
-  gv:green "144";
-  gv:score "13.284184";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "d3c4b4";
-  gv:red "211";
-  gv:blue "180";
-  gv:green "196";
-  gv:score "12.539676";
-  gv:coverage "23.68"
-], [
-  gv:hex "cfc1b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "193";
-  gv:score "11.687405";
-  gv:coverage "21.78"
-], [
-  gv:hex "9d6d62";
-  gv:red "157";
-  gv:blue "98";
-  gv:green "109";
-  gv:score "6.6849671";
-  gv:coverage "0.44"
-], [
-  gv:hex "a29d99";
-  gv:red "162";
-  gv:blue "153";
-  gv:green "157";
-  gv:score "4.930184";
-  gv:coverage "1.66"
-], [
-  gv:hex "a99a8b";
-  gv:red "169";
-  gv:blue "139";
-  gv:green "154";
-  gv:score "4.8421394";
-  gv:coverage "1.44"
-], [
-  gv:hex "fad0c5";
-  gv:red "250";
-  gv:blue "197";
-  gv:green "208";
-  gv:score "2.69872";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "7f7b76";
-  gv:red "127";
-  gv:blue "118";
-  gv:green "123";
-  gv:score "1.7973796";
-  gv:coverage "0.52666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.44632999999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.647745"
-];
-    w:bagOfWords "CONSEJO DE\nOMNIWON30\nRIO J A\nPRECIO del contenido\nen origen PTAS. 7,50\naturt\nEMBOTELLADO POR FEDERICO PA TERN IN A, S. A.\nRegistro embotelladores num. 329\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4457";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3525/label_3532";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "1939\nPioneer Vineyards in Livermore Valley\nBOTTLED AT THE WIN ER Y\nLIVE R. M O R E\nPIN O T B L A N C\nA LIGHT WINE OF PINOT BLANC GRA PE S\nPRODUCED AND BOTTLED BY\nENTE D D\nALCOHOL 12% BY VOLUME LIVERMORE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "a79d83";
-  gv:red "167";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "36.811066";
-  gv:coverage "7.1333334"
-], [
-  gv:hex "c8bca4";
-  gv:red "200";
-  gv:blue "164";
-  gv:green "188";
-  gv:score "33.517918";
-  gv:coverage "17.473333999999998"
-], [
-  gv:hex "817960";
-  gv:red "129";
-  gv:blue "96";
-  gv:green "121";
-  gv:score "18.839037";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "60583f";
-  gv:red "96";
-  gv:blue "63";
-  gv:green "88";
-  gv:score "7.5291619";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "413822";
-  gv:red "65";
-  gv:blue "34";
-  gv:green "56";
-  gv:score "1.4764966";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "e9dbc9";
-  gv:red "233";
-  gv:blue "201";
-  gv:green "219";
-  gv:score "1.3458028";
-  gv:coverage "12.22"
-], [
-  gv:hex "261a08";
-  gv:red "38";
-  gv:blue "8";
-  gv:green "26";
-  gv:score "0.16425411";
-  gv:coverage "0.06"
-], [
-  gv:hex "d4c5ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "0.12762399000000002";
-  gv:coverage "2.7866667"
-], [
-  gv:hex "ecdfd4";
-  gv:red "236";
-  gv:blue "212";
-  gv:green "223";
-  gv:score "0.12004066";
-  gv:coverage "54.413331"
-], [
-  gv:hex "67584e";
-  gv:red "103";
-  gv:blue "78";
-  gv:green "88";
-  gv:score "0.020814342";
-  gv:coverage "0.033333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.603147"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.504156"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.615416"
-];
-    w:bagOfWords "1939\nPioneer Vineyards in Livermore Valley\nBOTTLED AT THE WIN ER Y\nLIVE R. M O R E\nPIN O T B L A N C\nA LIGHT WINE OF PINOT BLANC GRA PE S\nPRODUCED AND BOTTLED BY\nENTE D D\nALCOHOL 12% BY VOLUME LIVERMORE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3532";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

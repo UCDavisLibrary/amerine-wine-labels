@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1158";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "54\nPRODUCE\nCOGNAC\nOF FRANCE\nReg. U. S.\nPat. Off\nDISTILLED AND BOTTLED BY\nT. H INTE Ce\nESTABLISH ED 1 763\nCOGNAC FRANCE\n4/5 Quart\n84 Proof\nIMPORTED BY\n21 BRANDS, INC\nTwenty three west Fifty-second Street\nNEW YORK\nPRINTED IN FRANCE\n"@undefined;
-    gv:color [
-  gv:hex "dec5a7";
-  gv:red "222";
-  gv:blue "167";
-  gv:green "197";
-  gv:score "60.817605";
-  gv:coverage "30.626667"
-], [
-  gv:hex "644f37";
-  gv:red "100";
-  gv:blue "55";
-  gv:green "79";
-  gv:score "5.2770525";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "ecd6bd";
-  gv:red "236";
-  gv:blue "189";
-  gv:green "214";
-  gv:score "11.264426";
-  gv:coverage "7.4333332"
-], [
-  gv:hex "b39b7e";
-  gv:red "179";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "10.58194";
-  gv:coverage "4.6266668"
-], [
-  gv:hex "8a7459";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "116";
-  gv:score "4.5612618000000005";
-  gv:coverage "1.38"
-], [
-  gv:hex "49341d";
-  gv:red "73";
-  gv:blue "29";
-  gv:green "52";
-  gv:score "2.9753873";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "2a1a08";
-  gv:red "42";
-  gv:blue "8";
-  gv:green "26";
-  gv:score "0.9915419999999999";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "d6cbc0";
-  gv:red "214";
-  gv:blue "192";
-  gv:green "203";
-  gv:score "0.9489549300000001";
-  gv:coverage "8.2333334"
-], [
-  gv:hex "1b0d04";
-  gv:red "27";
-  gv:blue "4";
-  gv:green "13";
-  gv:score "0.67555248";
-  gv:coverage "0.54"
-], [
-  gv:hex "dfbc8f";
-  gv:red "223";
-  gv:blue "143";
-  gv:green "188";
-  gv:score "0.46437541000000004";
-  gv:coverage "0.85333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "74.85745"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.74715200000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.424234999999996"
-];
-    w:bagOfWords "54\nPRODUCE\nCOGNAC\nOF FRANCE\nReg. U. S.\nPat. Off\nDISTILLED AND BOTTLED BY\nT. H INTE Ce\nESTABLISH ED 1 763\nCOGNAC FRANCE\n4/5 Quart\n84 Proof\nIMPORTED BY\n21 BRANDS, INC\nTwenty three west Fifty-second Street\nNEW YORK\nPRINTED IN FRANCE\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1158";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

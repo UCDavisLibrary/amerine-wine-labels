@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4203";
-    dct:type "image";
-    w:bagOfWords "COTE\nla Cave Cooperative\ndans selection des meilleurs\ngarantit lauthenticité\ncrias des cote de Bes\nV. D.Q.S\nSERVIR FRA is\nV. D. Q 3. 119\nA B 108\nMAA-74\n"@fra;
-    gv:color [
-  gv:hex "d8c0a1";
-  gv:red "216";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "7.7207781";
-  gv:coverage "8.4066667"
-], [
-  gv:hex "a8180a";
-  gv:red "168";
-  gv:blue "10";
-  gv:green "24";
-  gv:score "6.3444607";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "a36e48";
-  gv:red "163";
-  gv:blue "72";
-  gv:green "110";
-  gv:score "4.6677745999999996";
-  gv:coverage "0.5"
-], [
-  gv:hex "8b381c";
-  gv:red "139";
-  gv:blue "28";
-  gv:green "56";
-  gv:score "4.5515738";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "774931";
-  gv:red "119";
-  gv:blue "49";
-  gv:green "73";
-  gv:score "3.3762719";
-  gv:coverage "0.52"
-], [
-  gv:hex "190d05";
-  gv:red "25";
-  gv:blue "5";
-  gv:green "13";
-  gv:score "0.65343757";
-  gv:coverage "0.36"
-], [
-  gv:hex "af9676";
-  gv:red "175";
-  gv:blue "118";
-  gv:green "150";
-  gv:score "7.5827166";
-  gv:coverage "3.2199999999999998"
-], [
-  gv:hex "8b7454";
-  gv:red "139";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "7.048869100000001";
-  gv:coverage "2.62"
-], [
-  gv:hex "c69378";
-  gv:red "198";
-  gv:blue "120";
-  gv:green "147";
-  gv:score "5.6732789";
-  gv:coverage "1.78"
-], [
-  gv:hex "e8b59b";
-  gv:red "232";
-  gv:blue "155";
-  gv:green "181";
-  gv:score "5.5918951";
-  gv:coverage "2.3133334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.50895299999999"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.431778"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.11627"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "54.749417"
-];
-    w:bagOfWords "COTE\nla Cave Cooperative\ndans selection des meilleurs\ngarantit lauthenticité\ncrias des cote de Bes\nV. D.Q.S\nSERVIR FRA is\nV. D. Q 3. 119\nA B 108\nMAA-74\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4203";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2933";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "D' ALSACE\nVIN FIN\nDOMAIN ES DOPFF\nRESERVE\nRIESLING\nDoMAINES DOPFF, cios du Moulin, RIQUEWIHR (Alsace)\n"@fra;
-    gv:color [
-  gv:hex "f5800c";
-  gv:red "245";
-  gv:blue "12";
-  gv:green "128";
-  gv:score "39.688721";
-  gv:coverage "11.933333"
-], [
-  gv:hex "b85907";
-  gv:red "184";
-  gv:blue "7";
-  gv:green "89";
-  gv:score "5.4897077";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "f77505";
-  gv:red "247";
-  gv:blue "5";
-  gv:green "117";
-  gv:score "37.234887";
-  gv:coverage "10.293333"
-], [
-  gv:hex "e0ba83";
-  gv:red "224";
-  gv:blue "131";
-  gv:green "186";
-  gv:score "0.08671153899999999";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "db5700";
-  gv:red "219";
-  gv:blue "undefined";
-  gv:green "87";
-  gv:score "3.8772687";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "9a3c00";
-  gv:red "154";
-  gv:blue "undefined";
-  gv:green "60";
-  gv:score "3.128982";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "cf6503";
-  gv:red "207";
-  gv:blue "3";
-  gv:green "101";
-  gv:score "2.8538942";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "c44000";
-  gv:red "196";
-  gv:blue "undefined";
-  gv:green "64";
-  gv:score "1.9869624";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "a52f00";
-  gv:red "165";
-  gv:blue "undefined";
-  gv:green "47";
-  gv:score "1.6717494";
-  gv:coverage "0.38"
-], [
-  gv:hex "aa6a1e";
-  gv:red "170";
-  gv:blue "30";
-  gv:green "106";
-  gv:score "1.2063876";
-  gv:coverage "1.1933333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.398954"
-];
-    w:bagOfWords "D' ALSACE\nVIN FIN\nDOMAIN ES DOPFF\nRESERVE\nRIESLING\nDoMAINES DOPFF, cios du Moulin, RIQUEWIHR (Alsace)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2933";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

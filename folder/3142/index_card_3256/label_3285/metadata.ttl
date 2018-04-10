@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3285";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "RED BURGUNDY WINE\nRICH EBOURG\nPR\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEA UNE COTE D'OR\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "d6c4b1";
-  gv:red "214";
-  gv:blue "177";
-  gv:green "196";
-  gv:score "18.059316";
-  gv:coverage "8.14"
-], [
-  gv:hex "90401f";
-  gv:red "144";
-  gv:blue "31";
-  gv:green "64";
-  gv:score "2.311305";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "da8155";
-  gv:red "218";
-  gv:blue "85";
-  gv:green "129";
-  gv:score "0.50890171";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "ac9985";
-  gv:red "172";
-  gv:blue "133";
-  gv:green "153";
-  gv:score "17.413001";
-  gv:coverage "2.64"
-], [
-  gv:hex "887461";
-  gv:red "136";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "13.738154";
-  gv:coverage "1.82"
-], [
-  gv:hex "ebdac5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "8.6339481";
-  gv:coverage "12.713334000000001"
-], [
-  gv:hex "8f6e62";
-  gv:red "143";
-  gv:blue "98";
-  gv:green "110";
-  gv:score "7.01717";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "6d4e43";
-  gv:red "109";
-  gv:blue "67";
-  gv:green "78";
-  gv:score "5.7466593";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "6a5745";
-  gv:red "106";
-  gv:blue "69";
-  gv:green "87";
-  gv:score "5.5655781";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "b99385";
-  gv:red "185";
-  gv:blue "133";
-  gv:green "147";
-  gv:score "4.72008";
-  gv:coverage "0.5666666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.748863"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.57334"
-];
-    w:bagOfWords "RED BURGUNDY WINE\nRICH EBOURG\nPR\nPIERRE PONNELLE\nPROPRIETAIRE & NEGOCIANT\nA BEA UNE COTE D'OR\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3285";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

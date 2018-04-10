@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3601";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Pioneer Vineyards in Livermore Valley\nBOTTLED AT THE WIN ERY\nLIVER MORE\nUGNI BLA N C.\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nTWEN TE EBRO S\nALCOHOL 12% BY vOLUME LIVERMORE, CALIFORNIA cONTENTs 3i QUART\n"@eng;
-    gv:color [
-  gv:hex "cabfa7";
-  gv:red "202";
-  gv:blue "167";
-  gv:green "191";
-  gv:score "39.05549";
-  gv:coverage "15.146666999999999"
-], [
-  gv:hex "a79d85";
-  gv:red "167";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "32.29093";
-  gv:coverage "5.9799999999999995"
-], [
-  gv:hex "837962";
-  gv:red "131";
-  gv:blue "98";
-  gv:green "121";
-  gv:score "18.487515";
-  gv:coverage "3.0266667000000003"
-], [
-  gv:hex "625942";
-  gv:red "98";
-  gv:blue "66";
-  gv:green "89";
-  gv:score "4.674805";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "d3c6b9";
-  gv:red "211";
-  gv:blue "185";
-  gv:green "198";
-  gv:score "2.0098884";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "e9dbca";
-  gv:red "233";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "1.446778";
-  gv:coverage "10.973334"
-], [
-  gv:hex "ecded1";
-  gv:red "236";
-  gv:blue "209";
-  gv:green "222";
-  gv:score "0.93494812";
-  gv:coverage "61.193335000000005"
-], [
-  gv:hex "3f3221";
-  gv:red "63";
-  gv:blue "33";
-  gv:green "50";
-  gv:score "0.84481919";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "281a0c";
-  gv:red "40";
-  gv:blue "12";
-  gv:green "26";
-  gv:score "0.20386614";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "7d746a";
-  gv:red "125";
-  gv:blue "106";
-  gv:green "116";
-  gv:score "0.019197939";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.018121"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.318485"
-];
-    w:bagOfWords "Pioneer Vineyards in Livermore Valley\nBOTTLED AT THE WIN ERY\nLIVER MORE\nUGNI BLA N C.\nA LIGHT WINE OF UGNI BLANC GRAPES\nPRODUCED AND BOTTLED BY\nTWEN TE EBRO S\nALCOHOL 12% BY vOLUME LIVERMORE, CALIFORNIA cONTENTs 3i QUART\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3601";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

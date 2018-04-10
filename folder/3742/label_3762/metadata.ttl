@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3762";
-    dct:type "image";
-    w:bagOfWords "CO\nScuola G.)iticoitura\ne ai onof\nCONEGLIANO\nVeneto\n"@ita;
-    gv:color [
-  gv:hex "d0c1ba";
-  gv:red "208";
-  gv:blue "186";
-  gv:green "193";
-  gv:score "17.379765";
-  gv:coverage "9.1"
-], [
-  gv:hex "95705c";
-  gv:red "149";
-  gv:blue "92";
-  gv:green "112";
-  gv:score "16.906470000000002";
-  gv:coverage "0.26"
-], [
-  gv:hex "edded7";
-  gv:red "237";
-  gv:blue "215";
-  gv:green "222";
-  gv:score "14.529443";
-  gv:coverage "73.35333200000001"
-], [
-  gv:hex "b7917e";
-  gv:red "183";
-  gv:blue "126";
-  gv:green "145";
-  gv:score "13.452233";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "ad9e96";
-  gv:red "173";
-  gv:blue "150";
-  gv:green "158";
-  gv:score "8.705115300000001";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "271f11";
-  gv:red "39";
-  gv:blue "17";
-  gv:green "31";
-  gv:score "0.061757461";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "755441";
-  gv:red "117";
-  gv:blue "65";
-  gv:green "84";
-  gv:score "5.948165400000001";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "8c715c";
-  gv:red "140";
-  gv:blue "92";
-  gv:green "113";
-  gv:score "4.585239700000001";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "ae9586";
-  gv:red "174";
-  gv:blue "134";
-  gv:green "149";
-  gv:score "4.031180999999999";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "d7beae";
-  gv:red "215";
-  gv:blue "174";
-  gv:green "190";
-  gv:score "3.9549388";
-  gv:coverage "5.993333499999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.669677"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.502371000000004"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "51.421034"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.344758999999996"
-];
-    w:bagOfWords "CO\nScuola G.)iticoitura\ne ai onof\nCONEGLIANO\nVeneto\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3762";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3024";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "HAUTBRION LA MISSION\n1 8 9 6\nMis en Bouteilles au Chateau\nB O R E AUX\nFRANCE\nDEPO SEE\n"@fra;
-    gv:color [
-  gv:hex "cfb9a2";
-  gv:red "207";
-  gv:blue "162";
-  gv:green "185";
-  gv:score "32.878259";
-  gv:coverage "31.426665"
-], [
-  gv:hex "ac9781";
-  gv:red "172";
-  gv:blue "129";
-  gv:green "151";
-  gv:score "32.864839";
-  gv:coverage "8.513333600000001"
-], [
-  gv:hex "8c7761";
-  gv:red "140";
-  gv:blue "97";
-  gv:green "119";
-  gv:score "27.23684";
-  gv:coverage "5.6733332999999995"
-], [
-  gv:hex "6a5642";
-  gv:red "106";
-  gv:blue "66";
-  gv:green "86";
-  gv:score "5.7191443";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "2c1601";
-  gv:red "44";
-  gv:blue "1";
-  gv:green "22";
-  gv:score "0.036452229999999995";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "4c3924";
-  gv:red "76";
-  gv:blue "36";
-  gv:green "57";
-  gv:score "0.4568093";
-  gv:coverage "0.1"
-], [
-  gv:hex "ba9784";
-  gv:red "186";
-  gv:blue "132";
-  gv:green "151";
-  gv:score "0.32475395";
-  gv:coverage "0.22"
-], [
-  gv:hex "d7b4a1";
-  gv:red "215";
-  gv:blue "161";
-  gv:green "180";
-  gv:score "0.17242697999999998";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "d7cabd";
-  gv:red "215";
-  gv:blue "189";
-  gv:green "202";
-  gv:score "0.092193612";
-  gv:coverage "9.4866663"
-], [
-  gv:hex "e8d7c4";
-  gv:red "232";
-  gv:blue "196";
-  gv:green "215";
-  gv:score "0.0639105";
-  gv:coverage "8.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.528688"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.842046"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.906353"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.108336"
-];
-    w:bagOfWords "HAUTBRION LA MISSION\n1 8 9 6\nMis en Bouteilles au Chateau\nB O R E AUX\nFRANCE\nDEPO SEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3024";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

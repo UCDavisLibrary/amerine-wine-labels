@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4010/label_4022";
-    dct:type "image";
-    w:bagOfWords "Kebir-Rose\nOlablasemen lis\nKE BIR\nMis en Bouteille\nMarque Déposée\npar\nmportateur\n"@undefined;
-    gv:color [
-  gv:hex "d0c5bc";
-  gv:red "208";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "19.609182";
-  gv:coverage "11.393333"
-], [
-  gv:hex "8b7741";
-  gv:red "139";
-  gv:blue "65";
-  gv:green "119";
-  gv:score "16.755640999999997";
-  gv:coverage "1.94"
-], [
-  gv:hex "1d1410";
-  gv:red "29";
-  gv:blue "16";
-  gv:green "20";
-  gv:score "0.72735692";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "d4c3ac";
-  gv:red "212";
-  gv:blue "172";
-  gv:green "195";
-  gv:score "15.763687000000001";
-  gv:coverage "5.4333333"
-], [
-  gv:hex "a9977c";
-  gv:red "169";
-  gv:blue "124";
-  gv:green "151";
-  gv:score "10.390615";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "a79c94";
-  gv:red "167";
-  gv:blue "148";
-  gv:green "156";
-  gv:score "7.4420206";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "e6dbd2";
-  gv:red "230";
-  gv:blue "210";
-  gv:green "219";
-  gv:score "6.8404265";
-  gv:coverage "68.56"
-], [
-  gv:hex "877354";
-  gv:red "135";
-  gv:blue "84";
-  gv:green "115";
-  gv:score "6.050057";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "ebdbc5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "5.8136158";
-  gv:coverage "5.800000000000001"
-], [
-  gv:hex "827770";
-  gv:red "130";
-  gv:blue "112";
-  gv:green "119";
-  gv:score "3.0757509";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.084055"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Kebir-Rose\nOlablasemen lis\nKE BIR\nMis en Bouteille\nMarque Déposée\npar\nmportateur\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4022";
+    <schema.keywords> "North Africa Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

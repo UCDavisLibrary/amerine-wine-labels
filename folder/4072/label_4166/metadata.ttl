@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4166";
-    dct:type "image";
-    w:bagOfWords "RIBA R\nSantcucecuyucun Calley\nSALI FOR nMA\nGrignolino Rose\nALCOHOL 12.5% BY VOLUME\nA DELICIOUS VIN ROSE SERVE COLD\nBOTTLE D BY B. C RIBA RI S O N S\nPRODUCED BY B. CRI BARI & SONS\nF R E S N O\nC A L\nF O N I A\nS A N\nJ O SE, C A L\nF O R N\nI A\nQuality CWrnes fum three Generatiums\n"@fra;
-    gv:color [
-  gv:hex "e17f78";
-  gv:red "225";
-  gv:blue "120";
-  gv:green "127";
-  gv:score "50.22255799999999";
-  gv:coverage "14.053333000000002"
-], [
-  gv:hex "d2bda5";
-  gv:red "210";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "1.7401639";
-  gv:coverage "2.7133333"
-], [
-  gv:hex "67180c";
-  gv:red "103";
-  gv:blue "12";
-  gv:green "24";
-  gv:score "1.1844169999999998";
-  gv:coverage "0.24"
-], [
-  gv:hex "ea7775";
-  gv:red "234";
-  gv:blue "117";
-  gv:green "119";
-  gv:score "11.298701999999999";
-  gv:coverage "3.18"
-], [
-  gv:hex "bc6059";
-  gv:red "188";
-  gv:blue "89";
-  gv:green "96";
-  gv:score "9.2932731";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "cb8f7f";
-  gv:red "203";
-  gv:blue "127";
-  gv:green "143";
-  gv:score "3.6306996000000002";
-  gv:coverage "1.1866666"
-], [
-  gv:hex "8f4037";
-  gv:red "143";
-  gv:blue "55";
-  gv:green "64";
-  gv:score "3.3641959999999997";
-  gv:coverage "0.64"
-], [
-  gv:hex "c95958";
-  gv:red "201";
-  gv:blue "88";
-  gv:green "89";
-  gv:score "3.3392049";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "a36c5d";
-  gv:red "163";
-  gv:blue "93";
-  gv:green "108";
-  gv:score "1.569055";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "e6786c";
-  gv:red "230";
-  gv:blue "108";
-  gv:green "120";
-  gv:score "1.5018973";
-  gv:coverage "0.45999999999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.3157"
-];
-    w:bagOfWords "RIBA R\nSantcucecuyucun Calley\nSALI FOR nMA\nGrignolino Rose\nALCOHOL 12.5% BY VOLUME\nA DELICIOUS VIN ROSE SERVE COLD\nBOTTLE D BY B. C RIBA RI S O N S\nPRODUCED BY B. CRI BARI & SONS\nF R E S N O\nC A L\nF O N I A\nS A N\nJ O SE, C A L\nF O R N\nI A\nQuality CWrnes fum three Generatiums\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4166";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

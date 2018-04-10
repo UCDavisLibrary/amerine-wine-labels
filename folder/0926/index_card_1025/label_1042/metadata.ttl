@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1042";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "0\npRovins\nALAis\nJ0 LANNISBERG\nrand/\n"@deu;
-    gv:color [
-  gv:hex "e3bb6b";
-  gv:red "227";
-  gv:blue "107";
-  gv:green "187";
-  gv:score "27.753826999999998";
-  gv:coverage "7.166666500000001"
-], [
-  gv:hex "7c4a1a";
-  gv:red "124";
-  gv:blue "26";
-  gv:green "74";
-  gv:score "2.584579";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "19120d";
-  gv:red "25";
-  gv:blue "13";
-  gv:green "18";
-  gv:score "0.27986271";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "ddbb7a";
-  gv:red "221";
-  gv:blue "122";
-  gv:green "187";
-  gv:score "23.024331";
-  gv:coverage "8.1866667"
-], [
-  gv:hex "bb9c5f";
-  gv:red "187";
-  gv:blue "95";
-  gv:green "156";
-  gv:score "6.271649999999999";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "e6b478";
-  gv:red "230";
-  gv:blue "120";
-  gv:green "180";
-  gv:score "5.0347786";
-  gv:coverage "1.22"
-], [
-  gv:hex "e7b466";
-  gv:red "231";
-  gv:blue "102";
-  gv:green "180";
-  gv:score "3.1599686";
-  gv:coverage "0.86"
-], [
-  gv:hex "c79361";
-  gv:red "199";
-  gv:blue "97";
-  gv:green "147";
-  gv:score "2.8513469";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "a06e3d";
-  gv:red "160";
-  gv:blue "61";
-  gv:green "110";
-  gv:score "2.3478115";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "8c391f";
-  gv:red "140";
-  gv:blue "31";
-  gv:green "57";
-  gv:score "2.229123";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.620485"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "0\npRovins\nALAis\nJ0 LANNISBERG\nrand/\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1042";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

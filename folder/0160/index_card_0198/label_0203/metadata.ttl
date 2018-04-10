@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0198/label_0203";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "42.\nBONDED WINERY 7\nPERMIT\nTH PERMISSIVE DIST\nCALIF. A, i\nPURE CALIFORNIA NE\nBottled 5/17/38\nVintage 1934\nCABERNET\nNET CONTENTS 24 FLUID OUNCES ALCOHOLIC CONTENT 12%\nTAX PAID BY STAMPS AFFIXBD TO CASE\n"@eng;
-    gv:color [
-  gv:hex "d4bea3";
-  gv:red "212";
-  gv:blue "163";
-  gv:green "190";
-  gv:score "35.089666";
-  gv:coverage "41.073334"
-], [
-  gv:hex "af9a7f";
-  gv:red "175";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "23.274344";
-  gv:coverage "5.140000000000001"
-], [
-  gv:hex "ba9965";
-  gv:red "186";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "10.132765000000001";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "8c795f";
-  gv:red "140";
-  gv:blue "95";
-  gv:green "121";
-  gv:score "10.037578";
-  gv:coverage "1.76"
-], [
-  gv:hex "977743";
-  gv:red "151";
-  gv:blue "67";
-  gv:green "119";
-  gv:score "4.6117574";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "d9b784";
-  gv:red "217";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "4.3794613";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "685438";
-  gv:red "104";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "2.6570937";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "c09561";
-  gv:red "192";
-  gv:blue "97";
-  gv:green "149";
-  gv:score "2.2102598";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ecd8bf";
-  gv:red "236";
-  gv:blue "191";
-  gv:green "216";
-  gv:score "1.8079514";
-  gv:coverage "10.093334"
-], [
-  gv:hex "9c733f";
-  gv:red "156";
-  gv:blue "63";
-  gv:green "115";
-  gv:score "1.6582880000000002";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.246505"
-];
-    w:bagOfWords "42.\nBONDED WINERY 7\nPERMIT\nTH PERMISSIVE DIST\nCALIF. A, i\nPURE CALIFORNIA NE\nBottled 5/17/38\nVintage 1934\nCABERNET\nNET CONTENTS 24 FLUID OUNCES ALCOHOLIC CONTENT 12%\nTAX PAID BY STAMPS AFFIXBD TO CASE\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0203";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

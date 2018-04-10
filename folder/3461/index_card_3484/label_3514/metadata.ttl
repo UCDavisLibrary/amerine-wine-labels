@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3484/label_3514";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "NET CONTENTS 24 FLUID OUNCES\nFILLED FROM TAX PAID PACKAGE\n"@eng;
-    gv:color [
-  gv:hex "bf6243";
-  gv:red "191";
-  gv:blue "67";
-  gv:green "98";
-  gv:score "13.34907";
-  gv:coverage "0.2"
-], [
-  gv:hex "cec0b0";
-  gv:red "206";
-  gv:blue "176";
-  gv:green "192";
-  gv:score "7.6219410000000005";
-  gv:coverage "5.1266667"
-], [
-  gv:hex "9a6e5d";
-  gv:red "154";
-  gv:blue "93";
-  gv:green "110";
-  gv:score "4.8429176";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "a02f0c";
-  gv:red "160";
-  gv:blue "12";
-  gv:green "47";
-  gv:score "2.8755968";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "93361d";
-  gv:red "147";
-  gv:blue "29";
-  gv:green "54";
-  gv:score "8.8724963";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "dc7b58";
-  gv:red "220";
-  gv:blue "88";
-  gv:green "123";
-  gv:score "8.6598918";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "cb533b";
-  gv:red "203";
-  gv:blue "59";
-  gv:green "83";
-  gv:score "7.6657265";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "ac9d8c";
-  gv:red "172";
-  gv:blue "140";
-  gv:green "157";
-  gv:score "5.6198381";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "ebdece";
-  gv:red "235";
-  gv:blue "206";
-  gv:green "222";
-  gv:score "5.2301634";
-  gv:coverage "25.533333000000002"
-], [
-  gv:hex "c39282";
-  gv:red "195";
-  gv:blue "130";
-  gv:green "146";
-  gv:score "4.6881493";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.686842"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.285522"
-];
-    w:bagOfWords "NET CONTENTS 24 FLUID OUNCES\nFILLED FROM TAX PAID PACKAGE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3514";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

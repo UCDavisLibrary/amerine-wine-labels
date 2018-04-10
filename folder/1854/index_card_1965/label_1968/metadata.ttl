@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1968";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "AT\nMur VIEJo 1821) MUY FIN O\nPRINCIPE\"\nVINA DE BALBAINA ALTA JEREz\nSherry\nN. 32\nANTONIO BAR BADILLo S. L\nSanlucar de B da ANDALUCIA- ESPANA\nLir Jeres Indust..ia!\n"@spa;
-    gv:color [
-  gv:hex "f1cb3f";
-  gv:red "241";
-  gv:blue "63";
-  gv:green "203";
-  gv:score "55.627024000000006";
-  gv:coverage "22.193334"
-], [
-  gv:hex "b79735";
-  gv:red "183";
-  gv:blue "53";
-  gv:green "151";
-  gv:score "3.9905537";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "665013";
-  gv:red "102";
-  gv:blue "19";
-  gv:green "80";
-  gv:score "0.90977727";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "4a2914";
-  gv:red "74";
-  gv:blue "20";
-  gv:green "41";
-  gv:score "0.34132265";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "0e0707";
-  gv:red "14";
-  gv:blue "7";
-  gv:green "7";
-  gv:score "0.25402298";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "fcd849";
-  gv:red "252";
-  gv:blue "73";
-  gv:green "216";
-  gv:score "13.174237";
-  gv:coverage "4.74"
-], [
-  gv:hex "f1ce23";
-  gv:red "241";
-  gv:blue "35";
-  gv:green "206";
-  gv:score "5.0591398000000005";
-  gv:coverage "1.24"
-], [
-  gv:hex "bd9b1e";
-  gv:red "189";
-  gv:blue "30";
-  gv:green "155";
-  gv:score "3.9888359999999996";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "95781a";
-  gv:red "149";
-  gv:blue "26";
-  gv:green "120";
-  gv:score "3.5878316";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "fbda2f";
-  gv:red "251";
-  gv:blue "47";
-  gv:green "218";
-  gv:score "2.8347347";
-  gv:coverage "0.7266666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "80.598807"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.432277"
-];
-    w:bagOfWords "AT\nMur VIEJo 1821) MUY FIN O\nPRINCIPE\"\nVINA DE BALBAINA ALTA JEREz\nSherry\nN. 32\nANTONIO BAR BADILLo S. L\nSanlucar de B da ANDALUCIA- ESPANA\nLir Jeres Indust..ia!\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1968";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

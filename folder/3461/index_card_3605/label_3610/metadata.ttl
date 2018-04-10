@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3610";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "HM DT\nO. CO. S\nF\nCALIFORNIA\n34 QUART\nDock\nALCOHOL 12% BY VOLuME\nBOTTLED BY\nDARROW WINE CO\nB. W. No. 3898\n14th DIST., CALIF\nMISSION SAN JOSE, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\nO. CO\nF.\n"@eng;
-    gv:color [
-  gv:hex "635239";
-  gv:red "99";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "22.070059";
-  gv:coverage "3.1"
-], [
-  gv:hex "93443c";
-  gv:red "147";
-  gv:blue "60";
-  gv:green "68";
-  gv:score "1.3199260000000002";
-  gv:coverage "0.1"
-], [
-  gv:hex "83735b";
-  gv:red "131";
-  gv:blue "91";
-  gv:green "115";
-  gv:score "17.568384000000002";
-  gv:coverage "2.5533333"
-], [
-  gv:hex "a99a84";
-  gv:red "169";
-  gv:blue "132";
-  gv:green "154";
-  gv:score "13.075408";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "782117";
-  gv:red "120";
-  gv:blue "23";
-  gv:green "33";
-  gv:score "0.11957347";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ccbca6";
-  gv:red "204";
-  gv:blue "166";
-  gv:green "188";
-  gv:score "8.099433000000001";
-  gv:coverage "6.5600000000000005"
-], [
-  gv:hex "c38e81";
-  gv:red "195";
-  gv:blue "129";
-  gv:green "142";
-  gv:score "4.3205995";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "a89c92";
-  gv:red "168";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "4.1983616";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "463620";
-  gv:red "70";
-  gv:blue "32";
-  gv:green "54";
-  gv:score "4.1923776";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "c9bdb2";
-  gv:red "201";
-  gv:blue "178";
-  gv:green "189";
-  gv:score "3.7374023";
-  gv:coverage "4.5866668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.187794"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.098056"
-];
-    w:bagOfWords "HM DT\nO. CO. S\nF\nCALIFORNIA\n34 QUART\nDock\nALCOHOL 12% BY VOLuME\nBOTTLED BY\nDARROW WINE CO\nB. W. No. 3898\n14th DIST., CALIF\nMISSION SAN JOSE, CALIFORNIA\nWITHDRAWN FROM TAX PAID CONTAINER\nO. CO\nF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3610";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

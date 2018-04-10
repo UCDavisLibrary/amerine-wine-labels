@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2647";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "VI\nDE BOURGOGNE\nGRAND VENT\nMOULIN\nM. FAUvARQUE & Co\nImprimé en France\nR. C. Bruxelles 6110\nIMP. NOLASpUE\nDEPO No 59\n"@fra;
-    gv:color [
-  gv:hex "dac2a7";
-  gv:red "218";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "8.7256588";
-  gv:coverage "6.1666667"
-], [
-  gv:hex "8d7343";
-  gv:red "141";
-  gv:blue "67";
-  gv:green "115";
-  gv:score "5.8863137000000005";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "724a34";
-  gv:red "114";
-  gv:blue "52";
-  gv:green "74";
-  gv:score "5.3098";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "c79460";
-  gv:red "199";
-  gv:blue "96";
-  gv:green "148";
-  gv:score "5.282712";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "af605d";
-  gv:red "175";
-  gv:blue "93";
-  gv:green "96";
-  gv:score "4.286914299999999";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "eabaab";
-  gv:red "234";
-  gv:blue "171";
-  gv:green "186";
-  gv:score "6.2063042";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "efd9c2";
-  gv:red "239";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "4.9422096";
-  gv:coverage "24.246667"
-], [
-  gv:hex "c38f81";
-  gv:red "195";
-  gv:blue "129";
-  gv:green "143";
-  gv:score "4.3740831";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "b39b7c";
-  gv:red "179";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "4.3289233000000005";
-  gv:coverage "1.94"
-], [
-  gv:hex "784c25";
-  gv:red "120";
-  gv:blue "37";
-  gv:green "76";
-  gv:score "4.2182781";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.520237"
-];
-    w:bagOfWords "VI\nDE BOURGOGNE\nGRAND VENT\nMOULIN\nM. FAUvARQUE & Co\nImprimé en France\nR. C. Bruxelles 6110\nIMP. NOLASpUE\nDEPO No 59\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2647";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

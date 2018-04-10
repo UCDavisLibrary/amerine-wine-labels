@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4201";
-    dct:type "image";
-    w:bagOfWords "CHABLIS GRAND CRU\nLES CLOS\nAPPELLATION D'ORIGINE CONTROLEE\nMARCEL DROIN-MARY\nPropriétaire-viticulteur chablis, Yonne, France\n"@fra;
-    gv:color [
-  gv:hex "dcc29c";
-  gv:red "220";
-  gv:blue "156";
-  gv:green "194";
-  gv:score "54.861838";
-  gv:coverage "25.88"
-], [
-  gv:hex "23344c";
-  gv:red "35";
-  gv:blue "76";
-  gv:green "52";
-  gv:score "0.85025737";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "784624";
-  gv:red "120";
-  gv:blue "36";
-  gv:green "70";
-  gv:score "0.83043631";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "d9bd8d";
-  gv:red "217";
-  gv:blue "141";
-  gv:green "189";
-  gv:score "16.271935000000003";
-  gv:coverage "3.3733333999999995"
-], [
-  gv:hex "b39a77";
-  gv:red "179";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "11.5693";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "ba9e6f";
-  gv:red "186";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "4.1503920999999995";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "917857";
-  gv:red "145";
-  gv:blue "87";
-  gv:green "120";
-  gv:score "3.8478959";
-  gv:coverage "0.74"
-], [
-  gv:hex "eed7b4";
-  gv:red "238";
-  gv:blue "180";
-  gv:green "215";
-  gv:score "1.815029";
-  gv:coverage "14.113334"
-], [
-  gv:hex "94774c";
-  gv:red "148";
-  gv:blue "76";
-  gv:green "119";
-  gv:score "1.4867137000000001";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "724b33";
-  gv:red "114";
-  gv:blue "51";
-  gv:green "75";
-  gv:score "0.73218942";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.604459"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHABLIS GRAND CRU\nLES CLOS\nAPPELLATION D'ORIGINE CONTROLEE\nMARCEL DROIN-MARY\nPropriétaire-viticulteur chablis, Yonne, France\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4201";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

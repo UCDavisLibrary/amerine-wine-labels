@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4194";
-    dct:type "image";
-    w:bagOfWords "glus va droh\non on en\nQUOS\nArbois\nAPPELLATION CONTROLEE\nbouteille\npar la\nFRUITIERE VINICOLE D'ARBOl (JURA)\nspondee en 1900\n"@fra;
-    gv:color [
-  gv:hex "c0956a";
-  gv:red "192";
-  gv:blue "106";
-  gv:green "149";
-  gv:score "19.626404";
-  gv:coverage "4.6533335000000005"
-], [
-  gv:hex "bc986b";
-  gv:red "188";
-  gv:blue "107";
-  gv:green "152";
-  gv:score "15.953945";
-  gv:coverage "4.9399999999999995"
-], [
-  gv:hex "996f47";
-  gv:red "153";
-  gv:blue "71";
-  gv:green "111";
-  gv:score "11.743395";
-  gv:coverage "3.0333333000000002"
-], [
-  gv:hex "b29370";
-  gv:red "178";
-  gv:blue "112";
-  gv:green "147";
-  gv:score "6.596271700000001";
-  gv:coverage "3.7600000000000002"
-], [
-  gv:hex "917453";
-  gv:red "145";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "6.377767800000001";
-  gv:coverage "3.2866668000000003"
-], [
-  gv:hex "be9371";
-  gv:red "190";
-  gv:blue "113";
-  gv:green "147";
-  gv:score "6.364090699999999";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "774f28";
-  gv:red "119";
-  gv:blue "40";
-  gv:green "79";
-  gv:score "4.7785606000000005";
-  gv:coverage "1.18"
-], [
-  gv:hex "582908";
-  gv:red "88";
-  gv:blue "8";
-  gv:green "41";
-  gv:score "4.0940478";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "987152";
-  gv:red "152";
-  gv:blue "82";
-  gv:green "113";
-  gv:score "3.5931479000000004";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "96764c";
-  gv:red "150";
-  gv:blue "76";
-  gv:green "118";
-  gv:score "3.5469465";
-  gv:coverage "1.2933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.89044899999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.937281999999996"
-];
-    w:bagOfWords "glus va droh\non on en\nQUOS\nArbois\nAPPELLATION CONTROLEE\nbouteille\npar la\nFRUITIERE VINICOLE D'ARBOl (JURA)\nspondee en 1900\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4194";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

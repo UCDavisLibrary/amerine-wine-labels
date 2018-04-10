@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0965";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "Los\nDe ChILLOn\niAssociation inicole\n"@deu;
-    gv:color [
-  gv:hex "d7bc9f";
-  gv:red "215";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "36.660555";
-  gv:coverage "20.846666"
-], [
-  gv:hex "3f3216";
-  gv:red "63";
-  gv:blue "22";
-  gv:green "50";
-  gv:score "14.56079";
-  gv:coverage "2.64"
-], [
-  gv:hex "615131";
-  gv:red "97";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "12.932226";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "877353";
-  gv:red "135";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "10.125468";
-  gv:coverage "2.6266666"
-], [
-  gv:hex "b29a7a";
-  gv:red "178";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "8.8004813";
-  gv:coverage "3.7466668000000003"
-], [
-  gv:hex "251c06";
-  gv:red "37";
-  gv:blue "6";
-  gv:green "28";
-  gv:score "4.7933176";
-  gv:coverage "0.98"
-], [
-  gv:hex "e4b79c";
-  gv:red "228";
-  gv:blue "156";
-  gv:green "183";
-  gv:score "2.6459964";
-  gv:coverage "1.34"
-], [
-  gv:hex "bb9176";
-  gv:red "187";
-  gv:blue "118";
-  gv:green "145";
-  gv:score "1.7015730999999998";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "987055";
-  gv:red "152";
-  gv:blue "85";
-  gv:green "112";
-  gv:score "1.5216908";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "4b2d12";
-  gv:red "75";
-  gv:blue "18";
-  gv:green "45";
-  gv:score "1.0870396";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.956216000000005"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.907157999999995"
-];
-    w:bagOfWords "Los\nDe ChILLOn\niAssociation inicole\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0965";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0047";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "11\nFederico Paternina\nCOSECHA 1939\nRIO JA\nREGISTRO BOTE\nDORES 320\nCEPA RHIN\n"@spa;
-    gv:color [
-  gv:hex "ccb8a7";
-  gv:red "204";
-  gv:blue "167";
-  gv:green "184";
-  gv:score "55.59656";
-  gv:coverage "46.22"
-], [
-  gv:hex "774633";
-  gv:red "119";
-  gv:blue "51";
-  gv:green "70";
-  gv:score "2.8136732";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "b29a83";
-  gv:red "178";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "15.865904";
-  gv:coverage "4.760000000000001"
-], [
-  gv:hex "8f765c";
-  gv:red "143";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "8.109346";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "917046";
-  gv:red "145";
-  gv:blue "70";
-  gv:green "112";
-  gv:score "2.8559437";
-  gv:coverage "0.48"
-], [
-  gv:hex "645140";
-  gv:red "100";
-  gv:blue "64";
-  gv:green "81";
-  gv:score "2.5824257999999998";
-  gv:coverage "0.62"
-], [
-  gv:hex "996b55";
-  gv:red "153";
-  gv:blue "85";
-  gv:green "107";
-  gv:score "1.6433623000000002";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "5f2a1a";
-  gv:red "95";
-  gv:blue "26";
-  gv:green "42";
-  gv:score "1.2936626";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "483425";
-  gv:red "72";
-  gv:blue "37";
-  gv:green "52";
-  gv:score "1.2640986";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "632515";
-  gv:red "99";
-  gv:blue "21";
-  gv:green "37";
-  gv:score "1.1460922";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.709908"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "11\nFederico Paternina\nCOSECHA 1939\nRIO JA\nREGISTRO BOTE\nDORES 320\nCEPA RHIN\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0047";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

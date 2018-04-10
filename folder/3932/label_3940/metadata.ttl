@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3932/label_3940";
-    dct:type "image";
-    w:bagOfWords "RHE IN CAU\n1943\ner\nSchloss Vollrads\nOrigin a la b fii l un\nGRAF MATUSCHKA-GREIFFENCLATU'SCHE KELLEREI\nAlcohol 9,71% by Volume\n"@deu;
-    gv:color [
-  gv:hex "a79585";
-  gv:red "167";
-  gv:blue "133";
-  gv:green "149";
-  gv:score "19.168124";
-  gv:coverage "2.8666666"
-], [
-  gv:hex "c4968a";
-  gv:red "196";
-  gv:blue "138";
-  gv:green "150";
-  gv:score "17.855674";
-  gv:coverage "2.58"
-], [
-  gv:hex "d4c3b3";
-  gv:red "212";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "17.676149";
-  gv:coverage "12"
-], [
-  gv:hex "897668";
-  gv:red "137";
-  gv:blue "104";
-  gv:green "118";
-  gv:score "17.327876";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "645345";
-  gv:red "100";
-  gv:blue "69";
-  gv:green "83";
-  gv:score "9.752180000000001";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "817369";
-  gv:red "129";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "3.3809945";
-  gv:coverage "0.36"
-], [
-  gv:hex "efdbcb";
-  gv:red "239";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "2.8634617";
-  gv:coverage "12.620000000000001"
-], [
-  gv:hex "aa7a6d";
-  gv:red "170";
-  gv:blue "109";
-  gv:green "122";
-  gv:score "2.6920764";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "d8c9bd";
-  gv:red "216";
-  gv:blue "189";
-  gv:green "201";
-  gv:score "2.5346098";
-  gv:coverage "11.88"
-], [
-  gv:hex "a4968c";
-  gv:red "164";
-  gv:blue "140";
-  gv:green "150";
-  gv:score "1.7912213";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.140892"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "55.667542999999995"
-];
-    w:bagOfWords "RHE IN CAU\n1943\ner\nSchloss Vollrads\nOrigin a la b fii l un\nGRAF MATUSCHKA-GREIFFENCLATU'SCHE KELLEREI\nAlcohol 9,71% by Volume\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3940";
+    <schema.keywords> "Germany Rheingau Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4321";
-    dct:type "image";
-    w:bagOfWords "MADE IN FRANCE\nnry\néserve\nAPPELLATION POUILLY-FUISSE CONTROLEE\nBOUCHARD AINE & FILS, NEGOCIANTS A BEAUNS uOT\nROUALET BE A UNE\nE POSE\n"@fra;
-    gv:color [
-  gv:hex "dcc3a3";
-  gv:red "220";
-  gv:blue "163";
-  gv:green "195";
-  gv:score "34.323397";
-  gv:coverage "20.880000000000003"
-], [
-  gv:hex "92422d";
-  gv:red "146";
-  gv:blue "45";
-  gv:green "66";
-  gv:score "2.0808274";
-  gv:coverage "0.1"
-], [
-  gv:hex "eab799";
-  gv:red "234";
-  gv:blue "153";
-  gv:green "183";
-  gv:score "14.854603";
-  gv:coverage "1.7333332"
-], [
-  gv:hex "b0997b";
-  gv:red "176";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "12.801336";
-  gv:coverage "2.1"
-], [
-  gv:hex "c19075";
-  gv:red "193";
-  gv:blue "117";
-  gv:green "144";
-  gv:score "10.364543";
-  gv:coverage "0.84"
-], [
-  gv:hex "8b7659";
-  gv:red "139";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "7.422899500000001";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "9c7159";
-  gv:red "156";
-  gv:blue "89";
-  gv:green "113";
-  gv:score "4.716447";
-  gv:coverage "0.44"
-], [
-  gv:hex "efd6b5";
-  gv:red "239";
-  gv:blue "181";
-  gv:green "214";
-  gv:score "2.5229661";
-  gv:coverage "7.1733332999999995"
-], [
-  gv:hex "685236";
-  gv:red "104";
-  gv:blue "54";
-  gv:green "82";
-  gv:score "2.4827268";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "b8604c";
-  gv:red "184";
-  gv:blue "76";
-  gv:green "96";
-  gv:score "1.8549558000000002";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.05669999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MADE IN FRANCE\nnry\néserve\nAPPELLATION POUILLY-FUISSE CONTROLEE\nBOUCHARD AINE & FILS, NEGOCIANTS A BEAUNS uOT\nROUALET BE A UNE\nE POSE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4321";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2974";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "i BERGHEIM ET SON VIGNOBL\n312\nGemi turstraminer\nReserpe\nMAA\n"@fra;
-    gv:color [
-  gv:hex "62531c";
-  gv:red "98";
-  gv:blue "28";
-  gv:green "83";
-  gv:score "9.079474999999999";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "b49b5e";
-  gv:red "180";
-  gv:blue "94";
-  gv:green "155";
-  gv:score "8.540003";
-  gv:coverage "2.7733333"
-], [
-  gv:hex "c98d40";
-  gv:red "201";
-  gv:blue "64";
-  gv:green "141";
-  gv:score "3.6538236";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "4c2813";
-  gv:red "76";
-  gv:blue "19";
-  gv:green "40";
-  gv:score "2.0675974";
-  gv:coverage "2.2800000000000002"
-], [
-  gv:hex "dcbc82";
-  gv:red "220";
-  gv:blue "130";
-  gv:green "188";
-  gv:score "7.7922120999999995";
-  gv:coverage "4.78"
-], [
-  gv:hex "4a5820";
-  gv:red "74";
-  gv:blue "32";
-  gv:green "88";
-  gv:score "5.8780186";
-  gv:coverage "1.34"
-], [
-  gv:hex "8c763e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "118";
-  gv:score "5.6764845";
-  gv:coverage "2.04"
-], [
-  gv:hex "e3bb69";
-  gv:red "227";
-  gv:blue "105";
-  gv:green "187";
-  gv:score "5.2692477";
-  gv:coverage "1.26"
-], [
-  gv:hex "794a19";
-  gv:red "121";
-  gv:blue "25";
-  gv:green "74";
-  gv:score "3.9383985000000004";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "5f5535";
-  gv:red "95";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "3.4720417";
-  gv:coverage "2.0866666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.943414"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.782174000000005"
-];
-    w:bagOfWords "i BERGHEIM ET SON VIGNOBL\n312\nGemi turstraminer\nReserpe\nMAA\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2974";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

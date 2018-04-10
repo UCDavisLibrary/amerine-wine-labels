@@ -1,99 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5036";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "Finest Old Reserve\n22 YEARS OLD\nSan Frattrinrm, ualifurnia\nBottled by\nGOLDBERG, BOWEN & Co.,\n14th District of California\nMAY 11 1926\nfrom tax paid container received from\nMRS. J. GOLDBERG,\n14th District of California.\nNet Contents 4/5 Quart.\nAlcohol not over 21% by volume.\n"@undefined;
-    gv:color [
-  gv:hex "d5c0a5";
-  gv:red "213";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "25.084191999999998";
-  gv:coverage "26.68"
-], [
-  gv:hex "8c7146";
-  gv:red "140";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "10.710835000000001";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "dc7859";
-  gv:red "220";
-  gv:blue "89";
-  gv:green "120";
-  gv:score "4.6907283";
-  gv:coverage "0.3"
-], [
-  gv:hex "54350c";
-  gv:red "84";
-  gv:blue "12";
-  gv:green "53";
-  gv:score "0.29388305000000003";
-  gv:coverage "0.04"
-], [
-  gv:hex "e2c393";
-  gv:red "226";
-  gv:blue "147";
-  gv:green "195";
-  gv:score "15.151155";
-  gv:coverage "9.54"
-], [
-  gv:hex "b29d80";
-  gv:red "178";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "13.747266";
-  gv:coverage "3.1866666"
-], [
-  gv:hex "b69a6e";
-  gv:red "182";
-  gv:blue "110";
-  gv:green "154";
-  gv:score "9.4626695";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "f0d9b8";
-  gv:red "240";
-  gv:blue "184";
-  gv:green "217";
-  gv:score "4.1337937";
-  gv:coverage "17.846666"
-], [
-  gv:hex "70552c";
-  gv:red "112";
-  gv:blue "44";
-  gv:green "85";
-  gv:score "3.2048910999999998";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "bf5f3f";
-  gv:red "191";
-  gv:blue "63";
-  gv:green "95";
-  gv:score "3.1680390000000003";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "55.610329"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "51.47267599999999"
-];
-    w:bagOfWords "Finest Old Reserve\n22 YEARS OLD\nSan Frattrinrm, ualifurnia\nBottled by\nGOLDBERG, BOWEN & Co.,\n14th District of California\nMAY 11 1926\nfrom tax paid container received from\nMRS. J. GOLDBERG,\n14th District of California.\nNet Contents 4/5 Quart.\nAlcohol not over 21% by volume.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5036";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0606";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1934er Winkeler Hasensprung\nRHEINGAU\n0riginalabfullung der\nvon Bren\nSchen Guts\nWinkel im Rheingau\nSEB WOLFELTVILLE\n"@deu;
-    gv:color [
-  gv:hex "d1c0a9";
-  gv:red "209";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "23.238704";
-  gv:coverage "11.226666999999999"
-], [
-  gv:hex "af9c83";
-  gv:red "175";
-  gv:blue "131";
-  gv:green "156";
-  gv:score "20.846424";
-  gv:coverage "5.48"
-], [
-  gv:hex "cabfb6";
-  gv:red "202";
-  gv:blue "182";
-  gv:green "191";
-  gv:score "16.147412";
-  gv:coverage "12.666667"
-], [
-  gv:hex "a49b91";
-  gv:red "164";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "11.620004";
-  gv:coverage "2.7266665999999997"
-], [
-  gv:hex "7f766d";
-  gv:red "127";
-  gv:blue "109";
-  gv:green "118";
-  gv:score "8.468613";
-  gv:coverage "1.66"
-], [
-  gv:hex "5c5249";
-  gv:red "92";
-  gv:blue "73";
-  gv:green "82";
-  gv:score "6.7782842";
-  gv:coverage "1.18"
-], [
-  gv:hex "907c62";
-  gv:red "144";
-  gv:blue "98";
-  gv:green "124";
-  gv:score "5.630951700000001";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "3f362d";
-  gv:red "63";
-  gv:blue "45";
-  gv:green "54";
-  gv:score "2.9653138";
-  gv:coverage "0.48"
-], [
-  gv:hex "e8d8c2";
-  gv:red "232";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "1.2504107";
-  gv:coverage "8.48"
-], [
-  gv:hex "e4dbd1";
-  gv:red "228";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "1.2456028";
-  gv:coverage "54.746669999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.5861"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.262899999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.523108"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "55.637121"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.581254"
-];
-    w:bagOfWords "1934er Winkeler Hasensprung\nRHEINGAU\n0riginalabfullung der\nvon Bren\nSchen Guts\nWinkel im Rheingau\nSEB WOLFELTVILLE\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0606";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

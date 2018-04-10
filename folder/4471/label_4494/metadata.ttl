@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4494";
-    dct:type "image";
-    w:bagOfWords "ARCA REGIS\nIMPERIAL\nGRAN RESERVA\ndel horde de\nN 44\nHARO\nBILBAO\nCO SEC. HA\n1935\n"@spa;
-    gv:color [
-  gv:hex "d0c3ab";
-  gv:red "208";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "24.114332";
-  gv:coverage "5.6133334"
-], [
-  gv:hex "0b0f26";
-  gv:red "11";
-  gv:blue "38";
-  gv:green "15";
-  gv:score "4.6849663999999995";
-  gv:coverage "3.3466666999999997"
-], [
-  gv:hex "764924";
-  gv:red "118";
-  gv:blue "36";
-  gv:green "73";
-  gv:score "1.6280792999999998";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "ea9d8b";
-  gv:red "234";
-  gv:blue "139";
-  gv:green "157";
-  gv:score "0.19887902";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "aa9d80";
-  gv:red "170";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "15.602098";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "e9ddc7";
-  gv:red "233";
-  gv:blue "199";
-  gv:green "221";
-  gv:score "15.334791000000001";
-  gv:coverage "11.24"
-], [
-  gv:hex "87785c";
-  gv:red "135";
-  gv:blue "92";
-  gv:green "120";
-  gv:score "9.1347963";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "d2c7be";
-  gv:red "210";
-  gv:blue "190";
-  gv:green "199";
-  gv:score "5.0420407";
-  gv:coverage "5.3666666"
-], [
-  gv:hex "e9ded6";
-  gv:red "233";
-  gv:blue "214";
-  gv:green "222";
-  gv:score "4.9618668999999995";
-  gv:coverage "63.62"
-], [
-  gv:hex "a79b95";
-  gv:red "167";
-  gv:blue "149";
-  gv:green "155";
-  gv:score "2.4025593";
-  gv:coverage "1.0333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.64287200000001"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.043678"
-];
-    w:bagOfWords "ARCA REGIS\nIMPERIAL\nGRAN RESERVA\ndel horde de\nN 44\nHARO\nBILBAO\nCO SEC. HA\n1935\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4494";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

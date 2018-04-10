@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4506";
-    dct:type "image";
-    w:bagOfWords "Rioja\nEMBOTELLADon\nTIMBRE\n4 METALIC\nAN O\ns Rio,\nCE NICE\nRIOJA ESPANA\nCERO\nREGISTRADP\nAce\nVINA ALBIN A\nOTRAS MARCAS SELECTAS\n3iLonte Real\nZARAGOZA\n"@spa;
-    gv:color [
-  gv:hex "d5c4ac";
-  gv:red "213";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "39.591321";
-  gv:coverage "26.226667"
-], [
-  gv:hex "ab9a7e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "19.886522";
-  gv:coverage "6.0466666"
-], [
-  gv:hex "85785b";
-  gv:red "133";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "8.9294761";
-  gv:coverage "3.5733335"
-], [
-  gv:hex "b09768";
-  gv:red "176";
-  gv:blue "104";
-  gv:green "151";
-  gv:score "6.9045596";
-  gv:coverage "1.38"
-], [
-  gv:hex "c6c4b9";
-  gv:red "198";
-  gv:blue "185";
-  gv:green "196";
-  gv:score "6.139423";
-  gv:coverage "6.886667"
-], [
-  gv:hex "a0a096";
-  gv:red "160";
-  gv:blue "150";
-  gv:green "160";
-  gv:score "4.010271299999999";
-  gv:coverage "1.44"
-], [
-  gv:hex "e8d9c3";
-  gv:red "232";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "2.9622834";
-  gv:coverage "6.686666600000001"
-], [
-  gv:hex "947e4f";
-  gv:red "148";
-  gv:blue "79";
-  gv:green "126";
-  gv:score "2.3854349";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "cebb8a";
-  gv:red "206";
-  gv:blue "138";
-  gv:green "187";
-  gv:score "2.3272956000000002";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "e2bba7";
-  gv:red "226";
-  gv:blue "167";
-  gv:green "187";
-  gv:score "1.9868888";
-  gv:coverage "0.47333334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.78116899999999"
-];
-    w:bagOfWords "Rioja\nEMBOTELLADon\nTIMBRE\n4 METALIC\nAN O\ns Rio,\nCE NICE\nRIOJA ESPANA\nCERO\nREGISTRADP\nAce\nVINA ALBIN A\nOTRAS MARCAS SELECTAS\n3iLonte Real\nZARAGOZA\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4506";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

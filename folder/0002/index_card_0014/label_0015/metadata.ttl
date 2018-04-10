@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0015";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "REGISTRADA\nMARCA\nBACH\nCOSECHA PRO PIA\nBODEGAS Y CAVAS EN SAN ESTEBAN DE SASROVIRAS\n(BARCELONA)\nHACIENDAS\n\"MASIA BACH\nS. A.\n59 A NO\nR. E. Nr 9 854\nPara que este VINO conserve todas sus propiedades\nSE RECOMIENDA TOMMARLO MUTY FRESCO\n"@spa;
-    gv:color [
-  gv:hex "d7c1a8";
-  gv:red "215";
-  gv:blue "168";
-  gv:green "193";
-  gv:score "39.82943";
-  gv:coverage "28.246668000000003"
-], [
-  gv:hex "c1634f";
-  gv:red "193";
-  gv:blue "79";
-  gv:green "99";
-  gv:score "9.040105299999999";
-  gv:coverage "0.18"
-], [
-  gv:hex "efd9c1";
-  gv:red "239";
-  gv:blue "193";
-  gv:green "217";
-  gv:score "8.9981996";
-  gv:coverage "24.986666"
-], [
-  gv:hex "e17a66";
-  gv:red "225";
-  gv:blue "102";
-  gv:green "122";
-  gv:score "8.5508347";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b19c81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "8.1462957";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "cb8e7a";
-  gv:red "203";
-  gv:blue "122";
-  gv:green "142";
-  gv:score "4.8570808";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "d38470";
-  gv:red "211";
-  gv:blue "112";
-  gv:green "132";
-  gv:score "4.7853157";
-  gv:coverage "0.12"
-], [
-  gv:hex "887257";
-  gv:red "136";
-  gv:blue "87";
-  gv:green "114";
-  gv:score "2.8697353";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "aa6b56";
-  gv:red "170";
-  gv:blue "86";
-  gv:green "107";
-  gv:score "2.6958575";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "eec0ab";
-  gv:red "238";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "2.5975857";
-  gv:coverage "1.2666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.760817"
-];
-    w:bagOfWords "REGISTRADA\nMARCA\nBACH\nCOSECHA PRO PIA\nBODEGAS Y CAVAS EN SAN ESTEBAN DE SASROVIRAS\n(BARCELONA)\nHACIENDAS\n\"MASIA BACH\nS. A.\n59 A NO\nR. E. Nr 9 854\nPara que este VINO conserve todas sus propiedades\nSE RECOMIENDA TOMMARLO MUTY FRESCO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0015";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

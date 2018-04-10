@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2136/label_2151";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "Net contents\nAlcoholic Strength\n1 pt. 9 fl. oz\n21 o by volume\nNCHA\nPRODUCE OF THE ISLAND OF MADEIRA (PORTUGAL)\nFINE MADEIRA WINE\nKain mater\nVINTAGE\nVINTAGE\n1920\nI 920\nBOTTLED & EXPORTED BY\nUNIAo VI NICOLA (FUNCHAL) LDA.\nORIGIN 186O\nISLAND OF MADEIRA\nGRAND PRIX and GOLD MEDALS awarded\nPANAMA PACIYIC INTERNATIONAL EXPOSITION SAN FRANCISCO 1915\nEXPOSITION UNIVERSELLE DE PARIS 1 & 89-ExPOSITION INTERNATIONALE D'ANVERS 1950\n"@undefined;
-    gv:color [
-  gv:hex "e6c092";
-  gv:red "230";
-  gv:blue "146";
-  gv:green "192";
-  gv:score "32.095709";
-  gv:coverage "17.026667"
-], [
-  gv:hex "9c7147";
-  gv:red "156";
-  gv:blue "71";
-  gv:green "113";
-  gv:score "9.3849994";
-  gv:coverage "3.9133333"
-], [
-  gv:hex "a0260b";
-  gv:red "160";
-  gv:blue "11";
-  gv:green "38";
-  gv:score "1.1530288";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "eaba8e";
-  gv:red "234";
-  gv:blue "142";
-  gv:green "186";
-  gv:score "20.754275";
-  gv:coverage "12.566666000000001"
-], [
-  gv:hex "bf9166";
-  gv:red "191";
-  gv:blue "102";
-  gv:green "145";
-  gv:score "8.318904";
-  gv:coverage "4.4466667"
-], [
-  gv:hex "774c25";
-  gv:red "119";
-  gv:blue "37";
-  gv:green "76";
-  gv:score "5.071217900000001";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e7bb97";
-  gv:red "231";
-  gv:blue "151";
-  gv:green "187";
-  gv:score "2.1701131";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "e58562";
-  gv:red "229";
-  gv:blue "98";
-  gv:green "133";
-  gv:score "2.0585425";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "bf9a6d";
-  gv:red "191";
-  gv:blue "109";
-  gv:green "154";
-  gv:score "1.9872144";
-  gv:coverage "1"
-], [
-  gv:hex "bb5f3c";
-  gv:red "187";
-  gv:blue "60";
-  gv:green "95";
-  gv:score "1.7265632999999998";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.679081"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.787145"
-];
-    w:bagOfWords "Net contents\nAlcoholic Strength\n1 pt. 9 fl. oz\n21 o by volume\nNCHA\nPRODUCE OF THE ISLAND OF MADEIRA (PORTUGAL)\nFINE MADEIRA WINE\nKain mater\nVINTAGE\nVINTAGE\n1920\nI 920\nBOTTLED & EXPORTED BY\nUNIAo VI NICOLA (FUNCHAL) LDA.\nORIGIN 186O\nISLAND OF MADEIRA\nGRAND PRIX and GOLD MEDALS awarded\nPANAMA PACIYIC INTERNATIONAL EXPOSITION SAN FRANCISCO 1915\nEXPOSITION UNIVERSELLE DE PARIS 1 & 89-ExPOSITION INTERNATIONALE D'ANVERS 1950\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2151";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

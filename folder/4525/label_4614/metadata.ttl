@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4614";
-    dct:type "image";
-    w:bagOfWords "MANZARILLA\nCA\nY\nDAL\nM SUCESORES\nSCHOTT A.G RHEYD T. 6265 E\n"@spa;
-    gv:color [
-  gv:hex "d7cb8d";
-  gv:red "215";
-  gv:blue "141";
-  gv:green "203";
-  gv:score "47.097841";
-  gv:coverage "10.706667"
-], [
-  gv:hex "c59282";
-  gv:red "197";
-  gv:blue "130";
-  gv:green "146";
-  gv:score "5.3195558";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "b09e65";
-  gv:red "176";
-  gv:blue "101";
-  gv:green "158";
-  gv:score "9.347311399999999";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "51544a";
-  gv:red "81";
-  gv:blue "74";
-  gv:green "84";
-  gv:score "0.0828231";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "d7c8a2";
-  gv:red "215";
-  gv:blue "162";
-  gv:green "200";
-  gv:score "6.3440919";
-  gv:coverage "4.0533334"
-], [
-  gv:hex "a36d5e";
-  gv:red "163";
-  gv:blue "94";
-  gv:green "109";
-  gv:score "3.3763923";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "f0ddc2";
-  gv:red "240";
-  gv:blue "194";
-  gv:green "221";
-  gv:score "3.3238079";
-  gv:coverage "6.773333300000001"
-], [
-  gv:hex "e6da9d";
-  gv:red "230";
-  gv:blue "157";
-  gv:green "218";
-  gv:score "3.2439586";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "af9c79";
-  gv:red "175";
-  gv:blue "121";
-  gv:green "156";
-  gv:score "3.1696174";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "e8b5a4";
-  gv:red "232";
-  gv:blue "164";
-  gv:green "181";
-  gv:score "3.0910344999999997";
-  gv:coverage "0.86"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.133362"
-];
-    w:bagOfWords "MANZARILLA\nCA\nY\nDAL\nM SUCESORES\nSCHOTT A.G RHEYD T. 6265 E\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4614";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

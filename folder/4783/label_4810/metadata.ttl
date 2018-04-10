@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4810";
-    dct:type "image";
-    w:bagOfWords "NAPA VALLEY\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nAT RUTHERFORD, NAPA COUNTY. CALIFORNIA\nALCOHOL 12.5% BY VoLUME\nSole Distributors\nPARK & TIL FORD DISTILLER S COR P.\nNEW YORK, N\nY.\n"@eng;
-    gv:color [
-  gv:hex "d1c0ab";
-  gv:red "209";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "26.427096";
-  gv:coverage "6.16"
-], [
-  gv:hex "d18584";
-  gv:red "209";
-  gv:blue "132";
-  gv:green "133";
-  gv:score "9.7047284";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "ae9d86";
-  gv:red "174";
-  gv:blue "134";
-  gv:green "157";
-  gv:score "9.8210543";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "efdec9";
-  gv:red "239";
-  gv:blue "201";
-  gv:green "222";
-  gv:score "8.2764924";
-  gv:coverage "5.64"
-], [
-  gv:hex "e5b4ab";
-  gv:red "229";
-  gv:blue "171";
-  gv:green "180";
-  gv:score "5.7977777";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ae6362";
-  gv:red "174";
-  gv:blue "98";
-  gv:green "99";
-  gv:score "5.4916762";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "c8938c";
-  gv:red "200";
-  gv:blue "140";
-  gv:green "147";
-  gv:score "5.1614434000000005";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "87755a";
-  gv:red "135";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "4.7420843999999995";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "dab7b3";
-  gv:red "218";
-  gv:blue "179";
-  gv:green "183";
-  gv:score "4.3678485";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "bc9894";
-  gv:red "188";
-  gv:blue "148";
-  gv:green "152";
-  gv:score "3.8616031000000004";
-  gv:coverage "0.8666666199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.361628"
-];
-    w:bagOfWords "NAPA VALLEY\nPRODUCED & BOTTLED BY BEAULIEU VINEYARD\nAT RUTHERFORD, NAPA COUNTY. CALIFORNIA\nALCOHOL 12.5% BY VoLUME\nSole Distributors\nPARK & TIL FORD DISTILLER S COR P.\nNEW YORK, N\nY.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4810";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

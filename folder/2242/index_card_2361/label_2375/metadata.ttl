@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2361/label_2375";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU PONTET CANET\nAppellation Pauillac controlée\n19 33\nBOR DE A UX\nMP, WETTERWALD FRERES, eORDEAUX.\n"@fra;
-    gv:color [
-  gv:hex "cec1b7";
-  gv:red "206";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "22.158623";
-  gv:coverage "19.793333"
-], [
-  gv:hex "5f534a";
-  gv:red "95";
-  gv:blue "74";
-  gv:green "83";
-  gv:score "16.788414";
-  gv:coverage "1.66"
-], [
-  gv:hex "3f342c";
-  gv:red "63";
-  gv:blue "44";
-  gv:green "52";
-  gv:score "14.113349999999999";
-  gv:coverage "1.72"
-], [
-  gv:hex "7f7369";
-  gv:red "127";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "12.092531";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "a99b92";
-  gv:red "169";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "9.198395900000001";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "d5c0b2";
-  gv:red "213";
-  gv:blue "178";
-  gv:green "192";
-  gv:score "6.7292556";
-  gv:coverage "7.9466663"
-], [
-  gv:hex "ad9b8d";
-  gv:red "173";
-  gv:blue "141";
-  gv:green "155";
-  gv:score "4.8321888";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "b49489";
-  gv:red "180";
-  gv:blue "137";
-  gv:green "148";
-  gv:score "3.5707533";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "d9b9ae";
-  gv:red "217";
-  gv:blue "174";
-  gv:green "185";
-  gv:score "2.4625182";
-  gv:coverage "0.3"
-], [
-  gv:hex "eaded4";
-  gv:red "234";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "2.1604471";
-  gv:coverage "59.88"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.0893"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "75.33842899999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.28548"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.023782"
-];
-    w:bagOfWords "CHATEAU PONTET CANET\nAppellation Pauillac controlée\n19 33\nBOR DE A UX\nMP, WETTERWALD FRERES, eORDEAUX.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2375";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

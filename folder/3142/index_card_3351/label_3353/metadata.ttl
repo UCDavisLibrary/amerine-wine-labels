@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3351/label_3353";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "ARTHUR BAROLET & FILs\nPROPRIETAIRES & NEGOCIANTs\nA BEAUNE (COTE D'OR\nFRANCE\nSAVIGNY-LAVIERES 1949\nAPPELLATION SAVIGNY-LES-BEAUNE CONTROLEE\n"@fra;
-    gv:color [
-  gv:hex "cfbba3";
-  gv:red "207";
-  gv:blue "163";
-  gv:green "187";
-  gv:score "48.611140000000006";
-  gv:coverage "24.426667"
-], [
-  gv:hex "b19c81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "19.018857";
-  gv:coverage "6.433333500000001"
-], [
-  gv:hex "8a765d";
-  gv:red "138";
-  gv:blue "93";
-  gv:green "118";
-  gv:score "9.9391244";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "655138";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "81";
-  gv:score "5.0119884";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "c0967f";
-  gv:red "192";
-  gv:blue "127";
-  gv:green "150";
-  gv:score "4.3555241";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "ddb59f";
-  gv:red "221";
-  gv:blue "159";
-  gv:green "181";
-  gv:score "3.0999992";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "9f735c";
-  gv:red "159";
-  gv:blue "92";
-  gv:green "115";
-  gv:score "1.4160107";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "48361b";
-  gv:red "72";
-  gv:blue "27";
-  gv:green "54";
-  gv:score "1.3857441";
-  gv:coverage "0.2"
-], [
-  gv:hex "b89a6d";
-  gv:red "184";
-  gv:blue "109";
-  gv:green "154";
-  gv:score "1.1616223";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "4e5450";
-  gv:red "78";
-  gv:blue "80";
-  gv:green "84";
-  gv:score "0.88387216";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.77666"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "61.993545000000005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.520719"
-];
-    w:bagOfWords "ARTHUR BAROLET & FILs\nPROPRIETAIRES & NEGOCIANTs\nA BEAUNE (COTE D'OR\nFRANCE\nSAVIGNY-LAVIERES 1949\nAPPELLATION SAVIGNY-LES-BEAUNE CONTROLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3353";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

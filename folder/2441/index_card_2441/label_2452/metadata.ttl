@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2441/label_2452";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "NET CONTENTS\nALCOHOLIC CONTENTS\n1 PINT 8 NFL. OZ.\n120 BY VOLUME\nospices de Beaune\neursault 2uvée 30uudublot\ncappellation. eursault Control\nWHITE BURGUNDY WINE\nBottled and Shipped By\nAlbERT PONNELLE\nNEGOCIANT A BEA UNE\nCOTE D'OR\nPROT CSE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d3c3b2";
-  gv:red "211";
-  gv:blue "178";
-  gv:green "195";
-  gv:score "38.001987";
-  gv:coverage "13.866666"
-], [
-  gv:hex "ebdbca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "22.22583";
-  gv:coverage "14.553334000000001"
-], [
-  gv:hex "ad9e8e";
-  gv:red "173";
-  gv:blue "142";
-  gv:green "158";
-  gv:score "19.921625000000002";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "877768";
-  gv:red "135";
-  gv:blue "104";
-  gv:green "119";
-  gv:score "8.389876000000001";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "625343";
-  gv:red "98";
-  gv:blue "67";
-  gv:green "83";
-  gv:score "4.253360300000001";
-  gv:coverage "0.4"
-], [
-  gv:hex "423224";
-  gv:red "66";
-  gv:blue "36";
-  gv:green "50";
-  gv:score "3.0964414";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "ecddd1";
-  gv:red "236";
-  gv:blue "209";
-  gv:green "221";
-  gv:score "1.4923568999999999";
-  gv:coverage "61.760000000000005"
-], [
-  gv:hex "d7c8bd";
-  gv:red "215";
-  gv:blue "189";
-  gv:green "200";
-  gv:score "1.0229677";
-  gv:coverage "4.733333399999999"
-], [
-  gv:hex "28190a";
-  gv:red "40";
-  gv:blue "10";
-  gv:green "25";
-  gv:score "0.71602548";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "81736a";
-  gv:red "129";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "0.36176594";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.81397"
-];
-    w:bagOfWords "NET CONTENTS\nALCOHOLIC CONTENTS\n1 PINT 8 NFL. OZ.\n120 BY VOLUME\nospices de Beaune\neursault 2uvée 30uudublot\ncappellation. eursault Control\nWHITE BURGUNDY WINE\nBottled and Shipped By\nAlbERT PONNELLE\nNEGOCIANT A BEA UNE\nCOTE D'OR\nPROT CSE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2452";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2212";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "NET CONTENTS\nALCOHOL 20%\nONE QUART\nBY VOLUME\nST LOUIS\nEXPOSITION\nMEDA-SAW\n1904\nTO ST GEORCA\nCALIFORNIA MUSCATEL\nPRODUCED AND BUTTLED BY\nST, GEORGE WIN ERH\nFRESNO,\nCALIFORNIA\nESTABLISHED 1876\nB. W. No 43 i 4TH DIST CALIF\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
-    gv:color [
-  gv:hex "d6c1a4";
-  gv:red "214";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "21.032774";
-  gv:coverage "19.78"
-], [
-  gv:hex "8d6e34";
-  gv:red "141";
-  gv:blue "52";
-  gv:green "110";
-  gv:score "9.2780977";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "ce4a20";
-  gv:red "206";
-  gv:blue "32";
-  gv:green "74";
-  gv:score "2.3773421999999997";
-  gv:coverage "0.2"
-], [
-  gv:hex "3f2d16";
-  gv:red "63";
-  gv:blue "22";
-  gv:green "45";
-  gv:score "0.71706721";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "997526";
-  gv:red "153";
-  gv:blue "38";
-  gv:green "117";
-  gv:score "9.01335";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "bc9646";
-  gv:red "188";
-  gv:blue "70";
-  gv:green "150";
-  gv:score "7.3637381";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "b49f80";
-  gv:red "180";
-  gv:blue "128";
-  gv:green "159";
-  gv:score "6.0339272";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "f0dbc3";
-  gv:red "240";
-  gv:blue "195";
-  gv:green "219";
-  gv:score "5.734700699999999";
-  gv:coverage "12.5"
-], [
-  gv:hex "b8985d";
-  gv:red "184";
-  gv:blue "93";
-  gv:green "152";
-  gv:score "5.5643313";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "c8927b";
-  gv:red "200";
-  gv:blue "123";
-  gv:green "146";
-  gv:score "4.5315705";
-  gv:coverage "0.5333333299999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.310904"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "NET CONTENTS\nALCOHOL 20%\nONE QUART\nBY VOLUME\nST LOUIS\nEXPOSITION\nMEDA-SAW\n1904\nTO ST GEORCA\nCALIFORNIA MUSCATEL\nPRODUCED AND BUTTLED BY\nST, GEORGE WIN ERH\nFRESNO,\nCALIFORNIA\nESTABLISHED 1876\nB. W. No 43 i 4TH DIST CALIF\nWITHDRAWN FROM TAX PAID CONTAINER\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2212";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

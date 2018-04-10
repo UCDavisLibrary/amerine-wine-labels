@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1966";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "MARCA\nREGISTRADA\nMANZANILLA\nLA GITANA\nGYPSY GIRL\nSHIPPERS\nBOTTLERS SUCESORES DE\nDA\nE. HIDALGO\nDE SANLUCAR DE BARRAMEDA\n2O\n(Product of Spain)\n"@spa;
-    gv:color [
-  gv:hex "d3bfa9";
-  gv:red "211";
-  gv:blue "169";
-  gv:green "191";
-  gv:score "42.800155000000004";
-  gv:coverage "22.24"
-], [
-  gv:hex "9f6b55";
-  gv:red "159";
-  gv:blue "85";
-  gv:green "107";
-  gv:score "8.1166849";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "b4a088";
-  gv:red "180";
-  gv:blue "136";
-  gv:green "160";
-  gv:score "17.754354";
-  gv:coverage "3.3066668"
-], [
-  gv:hex "bf9380";
-  gv:red "191";
-  gv:blue "128";
-  gv:green "147";
-  gv:score "6.470583400000001";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "7b4b3a";
-  gv:red "123";
-  gv:blue "58";
-  gv:green "75";
-  gv:score "4.6054829";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "e3bbb0";
-  gv:red "227";
-  gv:blue "176";
-  gv:green "187";
-  gv:score "3.7741157999999997";
-  gv:coverage "1.32"
-], [
-  gv:hex "ecd7c6";
-  gv:red "236";
-  gv:blue "198";
-  gv:green "215";
-  gv:score "3.3437691999999997";
-  gv:coverage "3.8466666"
-], [
-  gv:hex "a36a49";
-  gv:red "163";
-  gv:blue "73";
-  gv:green "106";
-  gv:score "2.5763506";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "ba5f4b";
-  gv:red "186";
-  gv:blue "75";
-  gv:green "95";
-  gv:score "1.8979441";
-  gv:coverage "0.1"
-], [
-  gv:hex "cbc2b6";
-  gv:red "203";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "1.7184663999999998";
-  gv:coverage "9.8466665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.968568"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.01675900000001"
-];
-    w:bagOfWords "MARCA\nREGISTRADA\nMANZANILLA\nLA GITANA\nGYPSY GIRL\nSHIPPERS\nBOTTLERS SUCESORES DE\nDA\nE. HIDALGO\nDE SANLUCAR DE BARRAMEDA\n2O\n(Product of Spain)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1966";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

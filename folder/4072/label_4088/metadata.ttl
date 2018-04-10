@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4088";
-    dct:type "image";
-    w:bagOfWords "BOTTLED FOR\nAMERICAN SPIRITS INC.\nEW YORK, N\nONTENTS 4/5 QUAR\n60 PROOF\n"@fra;
-    gv:color [
-  gv:hex "bc0405";
-  gv:red "188";
-  gv:blue "5";
-  gv:green "4";
-  gv:score "19.709304";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "105987";
-  gv:red "16";
-  gv:blue "135";
-  gv:green "89";
-  gv:score "8.46157";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "d0c2a6";
-  gv:red "208";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "5.2622192";
-  gv:coverage "3.1333334999999995"
-], [
-  gv:hex "7f0403";
-  gv:red "127";
-  gv:blue "3";
-  gv:green "4";
-  gv:score "4.2681731";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "957c4b";
-  gv:red "149";
-  gv:blue "75";
-  gv:green "124";
-  gv:score "3.8665014999999996";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "b75939";
-  gv:red "183";
-  gv:blue "57";
-  gv:green "89";
-  gv:score "3.0638114";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "d1796c";
-  gv:red "209";
-  gv:blue "108";
-  gv:green "121";
-  gv:score "0.43212543";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "480000";
-  gv:red "72";
-  gv:blue "undefined";
-  gv:green "undefined";
-  gv:score "0.41043757999999997";
-  gv:coverage "0.02"
-], [
-  gv:hex "e73f58";
-  gv:red "231";
-  gv:blue "88";
-  gv:green "63";
-  gv:score "0.22044233000000002";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "a51105";
-  gv:red "165";
-  gv:blue "5";
-  gv:green "17";
-  gv:score "12.940994";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.058371"
-];
-    w:bagOfWords "BOTTLED FOR\nAMERICAN SPIRITS INC.\nEW YORK, N\nONTENTS 4/5 QUAR\n60 PROOF\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4088";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

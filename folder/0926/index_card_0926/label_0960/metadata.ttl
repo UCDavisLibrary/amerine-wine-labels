@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0926/label_0960";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "CHARDONNE\nyfootsttler &Co\nlost ettler &C's\nern.\nCH 藝\n"@deu;
-    gv:color [
-  gv:hex "d4c39f";
-  gv:red "212";
-  gv:blue "159";
-  gv:green "195";
-  gv:score "22.386492999999998";
-  gv:coverage "10.94"
-], [
-  gv:hex "b19a66";
-  gv:red "177";
-  gv:blue "102";
-  gv:green "154";
-  gv:score "18.453391";
-  gv:coverage "1.9"
-], [
-  gv:hex "8d7542";
-  gv:red "141";
-  gv:blue "66";
-  gv:green "117";
-  gv:score "13.648997";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "d3bc89";
-  gv:red "211";
-  gv:blue "137";
-  gv:green "188";
-  gv:score "12.313796";
-  gv:coverage "1.76"
-], [
-  gv:hex "ad9b77";
-  gv:red "173";
-  gv:blue "119";
-  gv:green "155";
-  gv:score "9.4801448";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "6a5525";
-  gv:red "106";
-  gv:blue "37";
-  gv:green "85";
-  gv:score "7.5635046";
-  gv:coverage "0.76"
-], [
-  gv:hex "edddbd";
-  gv:red "237";
-  gv:blue "189";
-  gv:green "221";
-  gv:score "6.7954451";
-  gv:coverage "25.66"
-], [
-  gv:hex "897756";
-  gv:red "137";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "4.6185184";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "695636";
-  gv:red "105";
-  gv:blue "54";
-  gv:green "86";
-  gv:score "2.4243116";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "f3dca9";
-  gv:red "243";
-  gv:blue "169";
-  gv:green "220";
-  gv:score "0.80488361";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.358233"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "50.29549"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.193369"
-];
-    w:bagOfWords "CHARDONNE\nyfootsttler &Co\nlost ettler &C's\nern.\nCH 藝\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0960";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

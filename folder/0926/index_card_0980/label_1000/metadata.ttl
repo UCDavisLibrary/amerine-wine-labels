@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_1000";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "Médaille de Vermeil Medaille dor\nBerne 1918\nLausanne 1910\nCHAMOSON\nJ. CARRUPT, propri\n"@deu;
-    gv:color [
-  gv:hex "e5bd7c";
-  gv:red "229";
-  gv:blue "124";
-  gv:green "189";
-  gv:score "30.518531999999997";
-  gv:coverage "5.4866668"
-], [
-  gv:hex "c4945c";
-  gv:red "196";
-  gv:blue "92";
-  gv:green "148";
-  gv:score "12.591393";
-  gv:coverage "3.5533335"
-], [
-  gv:hex "9d2406";
-  gv:red "157";
-  gv:blue "6";
-  gv:green "36";
-  gv:score "0.5422208900000001";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "e6b67c";
-  gv:red "230";
-  gv:blue "124";
-  gv:green "182";
-  gv:score "9.91177";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "c29b5e";
-  gv:red "194";
-  gv:blue "94";
-  gv:green "155";
-  gv:score "6.3870311";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "9f713d";
-  gv:red "159";
-  gv:blue "61";
-  gv:green "113";
-  gv:score "6.0043279";
-  gv:coverage "2.02"
-], [
-  gv:hex "e6bc70";
-  gv:red "230";
-  gv:blue "112";
-  gv:green "188";
-  gv:score "5.3901415";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "754c1e";
-  gv:red "117";
-  gv:blue "30";
-  gv:green "76";
-  gv:score "4.4257388";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "552d06";
-  gv:red "85";
-  gv:blue "6";
-  gv:green "45";
-  gv:score "3.2437593000000002";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "c8924a";
-  gv:red "200";
-  gv:blue "74";
-  gv:green "146";
-  gv:score "2.1638053";
-  gv:coverage "0.37333333999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.582114"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.48891"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.81205500000001"
-];
-    w:bagOfWords "Médaille de Vermeil Medaille dor\nBerne 1918\nLausanne 1910\nCHAMOSON\nJ. CARRUPT, propri\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1000";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

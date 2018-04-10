@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1068";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "IES TAL\nvorm. AU chwo\nreiswerk e Cie.\n"@deu;
-    gv:color [
-  gv:hex "a06b3b";
-  gv:red "160";
-  gv:blue "59";
-  gv:green "107";
-  gv:score "13.137285000000002";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "c4925d";
-  gv:red "196";
-  gv:blue "93";
-  gv:green "146";
-  gv:score "11.341391000000002";
-  gv:coverage "1.72"
-], [
-  gv:hex "b99864";
-  gv:red "185";
-  gv:blue "100";
-  gv:green "152";
-  gv:score "10.786735";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "8f7443";
-  gv:red "143";
-  gv:blue "67";
-  gv:green "116";
-  gv:score "10.045995000000001";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "7a491d";
-  gv:red "122";
-  gv:blue "29";
-  gv:green "73";
-  gv:score "7.8482211";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "d8b784";
-  gv:red "216";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "6.3492194";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "b75f3b";
-  gv:red "183";
-  gv:blue "59";
-  gv:green "95";
-  gv:score "5.1362768";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "e1b07c";
-  gv:red "225";
-  gv:blue "124";
-  gv:green "176";
-  gv:score "4.6861943";
-  gv:coverage "0.5"
-], [
-  gv:hex "dac09f";
-  gv:red "218";
-  gv:blue "159";
-  gv:green "192";
-  gv:score "4.1941643";
-  gv:coverage "9.753333"
-], [
-  gv:hex "6f5424";
-  gv:red "111";
-  gv:blue "36";
-  gv:green "84";
-  gv:score "3.2753650000000003";
-  gv:coverage "0.61333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.94756399999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.816733"
-];
-    w:bagOfWords "IES TAL\nvorm. AU chwo\nreiswerk e Cie.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1068";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

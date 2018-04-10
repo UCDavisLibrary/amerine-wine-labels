@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4884";
-    dct:type "image";
-    w:bagOfWords "VINO FINO\nTINTO ELABORADO Y PU ESTO EN BOTEL S POR\nBODEGAS Y VINE DOS SANTA ANA S.A. A. 7 10\nD.I. N\" 125\nROCA SIN VILLA NUEVA DE GUAYMALLEN MENDOZA ENVASADO EN ORIGEN\nPROCEDENCIA MENDOZA\nSTRIA ARGENTINA CONTENIDO NETO\n"@undefined;
-    gv:color [
-  gv:hex "430203";
-  gv:red "67";
-  gv:blue "3";
-  gv:green "2";
-  gv:score "36.805594";
-  gv:coverage "13.246667"
-], [
-  gv:hex "dcbf60";
-  gv:red "220";
-  gv:blue "96";
-  gv:green "191";
-  gv:score "5.7583276";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "c99242";
-  gv:red "201";
-  gv:blue "66";
-  gv:green "146";
-  gv:score "2.3847749";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "7d451e";
-  gv:red "125";
-  gv:blue "30";
-  gv:green "69";
-  gv:score "1.9532949000000002";
-  gv:coverage "0.76"
-], [
-  gv:hex "c53f31";
-  gv:red "197";
-  gv:blue "49";
-  gv:green "63";
-  gv:score "1.5366361";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "8c9bb1";
-  gv:red "140";
-  gv:blue "177";
-  gv:green "155";
-  gv:score "0.54887906";
-  gv:coverage "0.2"
-], [
-  gv:hex "46be8c";
-  gv:red "70";
-  gv:blue "140";
-  gv:green "190";
-  gv:score "0.13342132";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "591b19";
-  gv:red "89";
-  gv:blue "25";
-  gv:green "27";
-  gv:score "7.2534941";
-  gv:coverage "3.06"
-], [
-  gv:hex "d3c284";
-  gv:red "211";
-  gv:blue "132";
-  gv:green "194";
-  gv:score "4.6735369";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "360702";
-  gv:red "54";
-  gv:blue "2";
-  gv:green "7";
-  gv:score "4.0751655";
-  gv:coverage "1.2466666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.705816"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.158115"
-];
-    w:bagOfWords "VINO FINO\nTINTO ELABORADO Y PU ESTO EN BOTEL S POR\nBODEGAS Y VINE DOS SANTA ANA S.A. A. 7 10\nD.I. N\" 125\nROCA SIN VILLA NUEVA DE GUAYMALLEN MENDOZA ENVASADO EN ORIGEN\nPROCEDENCIA MENDOZA\nSTRIA ARGENTINA CONTENIDO NETO\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4884";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

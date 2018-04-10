@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1279";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "ERSTKLASSIGER OESTERREICHISCHER SEKT\nNARKEGESETZLICH GESCHUTZT\nHOCHRIEGL\nTrocken\nJOHANN KATT US. WIEN\nSekt kellereien.\n"@deu;
-    gv:color [
-  gv:hex "e2cda4";
-  gv:red "226";
-  gv:blue "164";
-  gv:green "205";
-  gv:score "36.039534";
-  gv:coverage "13.059999999999999"
-], [
-  gv:hex "ba621c";
-  gv:red "186";
-  gv:blue "28";
-  gv:green "98";
-  gv:score "8.0681846";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "c7833d";
-  gv:red "199";
-  gv:blue "61";
-  gv:green "131";
-  gv:score "6.464579";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "e1c592";
-  gv:red "225";
-  gv:blue "146";
-  gv:green "197";
-  gv:score "23.049612";
-  gv:coverage "6.6666669999999995"
-], [
-  gv:hex "af732c";
-  gv:red "175";
-  gv:blue "44";
-  gv:green "115";
-  gv:score "5.3858906";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "c6935b";
-  gv:red "198";
-  gv:blue "91";
-  gv:green "147";
-  gv:score "5.1373526";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "e6b27a";
-  gv:red "230";
-  gv:blue "122";
-  gv:green "178";
-  gv:score "3.4908350999999995";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "ebd7b2";
-  gv:red "235";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "3.1159965";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "c29e6a";
-  gv:red "194";
-  gv:blue "106";
-  gv:green "158";
-  gv:score "2.1575313";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "f5d5a2";
-  gv:red "245";
-  gv:blue "162";
-  gv:green "213";
-  gv:score "1.8043632";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "75.04856"
-], [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "74.349546"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.063306"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "53.808391"
-];
-    w:bagOfWords "ERSTKLASSIGER OESTERREICHISCHER SEKT\nNARKEGESETZLICH GESCHUTZT\nHOCHRIEGL\nTrocken\nJOHANN KATT US. WIEN\nSekt kellereien.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1279";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

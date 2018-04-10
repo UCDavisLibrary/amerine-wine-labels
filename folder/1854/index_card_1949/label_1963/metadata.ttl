@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1949/label_1963";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "BLISHED\nP 8 V\nPRODUCE OF SPAIN\nBOTTLED IN JEREZ, SPAIN\nCONTENTS\n1 PINT 8 FLUID OZS\n18 ALCOHOL BY VOLUME\nDE MAR\nPALOMINO\nVERY PALE EXTRA DRY\nSHERRY\nand shined\nla Frontera, Train\nIMPORTED BY\nSOMERSET IMPORTERS LIMITED\n4 44 MADISON AVE NUE\nNEW YORK CITY\nLit Jeres dus\nal\n"@spa;
-    gv:color [
-  gv:hex "e6c238";
-  gv:red "230";
-  gv:blue "56";
-  gv:green "194";
-  gv:score "55.297607000000006";
-  gv:coverage "26.073334"
-], [
-  gv:hex "9a7616";
-  gv:red "154";
-  gv:blue "22";
-  gv:green "118";
-  gv:score "4.5986094";
-  gv:coverage "1.96"
-], [
-  gv:hex "a16e3c";
-  gv:red "161";
-  gv:blue "60";
-  gv:green "110";
-  gv:score "1.428637";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "96180c";
-  gv:red "150";
-  gv:blue "12";
-  gv:green "24";
-  gv:score "0.85138995";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "533000";
-  gv:red "83";
-  gv:blue "undefined";
-  gv:green "48";
-  gv:score "0.59190849";
-  gv:coverage "0.2"
-], [
-  gv:hex "c19d19";
-  gv:red "193";
-  gv:blue "25";
-  gv:green "157";
-  gv:score "14.396334999999999";
-  gv:coverage "6.72"
-], [
-  gv:hex "381800";
-  gv:red "56";
-  gv:blue "undefined";
-  gv:green "24";
-  gv:score "0.077758142";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "f6d4af";
-  gv:red "246";
-  gv:blue "175";
-  gv:green "212";
-  gv:score "0.05860346699999999";
-  gv:coverage "31.64"
-], [
-  gv:hex "ebc91e";
-  gv:red "235";
-  gv:blue "30";
-  gv:green "201";
-  gv:score "4.0244807";
-  gv:coverage "1.46"
-], [
-  gv:hex "b99333";
-  gv:red "185";
-  gv:blue "51";
-  gv:green "147";
-  gv:score "3.1188909000000002";
-  gv:coverage "1.4266667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "79.09979200000001"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "76.486844"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.928549999999994"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "54.777265"
-];
-    w:bagOfWords "BLISHED\nP 8 V\nPRODUCE OF SPAIN\nBOTTLED IN JEREZ, SPAIN\nCONTENTS\n1 PINT 8 FLUID OZS\n18 ALCOHOL BY VOLUME\nDE MAR\nPALOMINO\nVERY PALE EXTRA DRY\nSHERRY\nand shined\nla Frontera, Train\nIMPORTED BY\nSOMERSET IMPORTERS LIMITED\n4 44 MADISON AVE NUE\nNEW YORK CITY\nLit Jeres dus\nal\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1963";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

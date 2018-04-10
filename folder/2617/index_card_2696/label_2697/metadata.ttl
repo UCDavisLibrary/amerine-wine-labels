@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2697";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "M A R K\nTRADE\nCHATEAU\nryU.PAPE\nRVE\nNEGOCIANTS A BEAUNE (COTE-D'OR)\nMARINE SIDAINE\n"@fra;
-    gv:color [
-  gv:hex "d3bca0";
-  gv:red "211";
-  gv:blue "160";
-  gv:green "188";
-  gv:score "56.3006";
-  gv:coverage "40.033333999999996"
-], [
-  gv:hex "b19b81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "155";
-  gv:score "19.897833000000002";
-  gv:coverage "3.56"
-], [
-  gv:hex "8d775f";
-  gv:red "141";
-  gv:blue "95";
-  gv:green "119";
-  gv:score "8.0155119";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "200700";
-  gv:red "32";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "0.062009465";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "685542";
-  gv:red "104";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "3.1043096";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "d1b47c";
-  gv:red "209";
-  gv:blue "124";
-  gv:green "180";
-  gv:score "2.8355693";
-  gv:coverage "0.44"
-], [
-  gv:hex "967645";
-  gv:red "150";
-  gv:blue "69";
-  gv:green "118";
-  gv:score "2.3650164";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "9c7139";
-  gv:red "156";
-  gv:blue "57";
-  gv:green "113";
-  gv:score "2.0477178";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "b39363";
-  gv:red "179";
-  gv:blue "99";
-  gv:green "147";
-  gv:score "1.3814691000000001";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "493724";
-  gv:red "73";
-  gv:blue "36";
-  gv:green "55";
-  gv:score "0.6883679";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.935023"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "M A R K\nTRADE\nCHATEAU\nryU.PAPE\nRVE\nNEGOCIANTS A BEAUNE (COTE-D'OR)\nMARINE SIDAINE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2697";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1851";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "DEUTSCHE R SEKT\nSPARKLING SAAR WINE\nSER RIGER WURTZBERG\nGELFULLT A US E GEN EN GEWACHSEN DER SA AR\n"@deu;
-    gv:color [
-  gv:hex "d8bfa1";
-  gv:red "216";
-  gv:blue "161";
-  gv:green "191";
-  gv:score "33.305639";
-  gv:coverage "19.6"
-], [
-  gv:hex "c69561";
-  gv:red "198";
-  gv:blue "97";
-  gv:green "149";
-  gv:score "8.7130629";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "943a2a";
-  gv:red "148";
-  gv:blue "42";
-  gv:green "58";
-  gv:score "1.9803032000000003";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "dab888";
-  gv:red "218";
-  gv:blue "136";
-  gv:green "184";
-  gv:score "10.728305";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "b49d81";
-  gv:red "180";
-  gv:blue "129";
-  gv:green "157";
-  gv:score "7.8572005";
-  gv:coverage "2.44"
-], [
-  gv:hex "eedac1";
-  gv:red "238";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "4.8231839999999995";
-  gv:coverage "21.573333"
-], [
-  gv:hex "dfb280";
-  gv:red "223";
-  gv:blue "128";
-  gv:green "178";
-  gv:score "3.7382600000000004";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "bf9c6c";
-  gv:red "191";
-  gv:blue "108";
-  gv:green "156";
-  gv:score "3.2492012";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "8a755c";
-  gv:red "138";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "3.2172028";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "e3baa1";
-  gv:red "227";
-  gv:blue "161";
-  gv:green "186";
-  gv:score "2.7899215";
-  gv:coverage "0.76"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.567571"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.895357000000004"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.034279000000005"
-];
-    w:bagOfWords "DEUTSCHE R SEKT\nSPARKLING SAAR WINE\nSER RIGER WURTZBERG\nGELFULLT A US E GEN EN GEWACHSEN DER SA AR\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1851";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4325/label_4364";
-    dct:type "image";
-    w:bagOfWords "O O\nZELENI\nSILVANEC\nZADRUZNo\nTRGOVSKO IN ZVOZNOKPODJETIE\nNSKE GO RICE\nSLO\nPTUJ\nPolnjenje odobreno\nCHz Ljubljana.\nO O\nO O\n"@undefined;
-    gv:color [
-  gv:hex "d4c6b2";
-  gv:red "212";
-  gv:blue "178";
-  gv:green "198";
-  gv:score "27.821076";
-  gv:coverage "14.246666"
-], [
-  gv:hex "1e2028";
-  gv:red "30";
-  gv:blue "40";
-  gv:green "32";
-  gv:score "2.5846876";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "cbc3ba";
-  gv:red "203";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "18.885218000000002";
-  gv:coverage "6.2266666"
-], [
-  gv:hex "e7dbc5";
-  gv:red "231";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "13.731138000000001";
-  gv:coverage "8.98"
-], [
-  gv:hex "a99c88";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "12.743568";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "a29c94";
-  gv:red "162";
-  gv:blue "148";
-  gv:green "156";
-  gv:score "9.1853641";
-  gv:coverage "4.1466668"
-], [
-  gv:hex "e7ded1";
-  gv:red "231";
-  gv:blue "209";
-  gv:green "222";
-  gv:score "5.0508432";
-  gv:coverage "60.760000000000005"
-], [
-  gv:hex "77726d";
-  gv:red "119";
-  gv:blue "109";
-  gv:green "114";
-  gv:score "3.8558517";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "5a5557";
-  gv:red "90";
-  gv:blue "87";
-  gv:green "85";
-  gv:score "3.3181059999999998";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "837866";
-  gv:red "131";
-  gv:blue "102";
-  gv:green "120";
-  gv:score "1.8235007";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.626581"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.303126000000006"
-];
-    w:bagOfWords "O O\nZELENI\nSILVANEC\nZADRUZNo\nTRGOVSKO IN ZVOZNOKPODJETIE\nNSKE GO RICE\nSLO\nPTUJ\nPolnjenje odobreno\nCHz Ljubljana.\nO O\nO O\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4364";
+    <schema.keywords> "Balkans Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

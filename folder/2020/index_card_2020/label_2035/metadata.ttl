@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2035";
-    dct:type "image";
-    w:bagOfWords "GE\nOF\n1934\nF R A U M\nBLUE NUN LABEL\nBottled & shipped by\nRHINE WINE\nLONDON\nH. SICHEL SONS LTD., Proprietors\nH. SICHEL SOHN E\nSole\nBRAND\n"@undefined;
-    gv:color [
-  gv:hex "69541b";
-  gv:red "105";
-  gv:blue "27";
-  gv:green "84";
-  gv:score "8.8892333";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "ac9b79";
-  gv:red "172";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "8.6921021";
-  gv:coverage "4.96"
-], [
-  gv:hex "4d2914";
-  gv:red "77";
-  gv:blue "20";
-  gv:green "41";
-  gv:score "2.4809525999999997";
-  gv:coverage "0.6"
-], [
-  gv:hex "89743a";
-  gv:red "137";
-  gv:blue "58";
-  gv:green "116";
-  gv:score "8.854117200000001";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "907721";
-  gv:red "144";
-  gv:blue "33";
-  gv:green "119";
-  gv:score "8.247711500000001";
-  gv:coverage "0.74"
-], [
-  gv:hex "867656";
-  gv:red "134";
-  gv:blue "86";
-  gv:green "118";
-  gv:score "6.9820195";
-  gv:coverage "3.1399999999999997"
-], [
-  gv:hex "b19a5d";
-  gv:red "177";
-  gv:blue "93";
-  gv:green "154";
-  gv:score "5.8572888";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "b0973b";
-  gv:red "176";
-  gv:blue "59";
-  gv:green "151";
-  gv:score "5.7461295";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "9e6c38";
-  gv:red "158";
-  gv:blue "56";
-  gv:green "108";
-  gv:score "4.0163491";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "764917";
-  gv:red "118";
-  gv:blue "23";
-  gv:green "73";
-  gv:score "3.6566220000000005";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "70.606571"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.0675"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "52.303481"
-];
-    w:bagOfWords "GE\nOF\n1934\nF R A U M\nBLUE NUN LABEL\nBottled & shipped by\nRHINE WINE\nLONDON\nH. SICHEL SONS LTD., Proprietors\nH. SICHEL SOHN E\nSole\nBRAND\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2035";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

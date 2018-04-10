@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4861";
-    dct:type "image";
-    w:bagOfWords "R H E N H E S S E N\nPRODUCT OF GERMANY\nRHINE-WINE\nD JOSEF WEBER\nSELECT QUALITY\niebfraumilc\nContents: 1 Pint 7 Fl. Oz. Alcohol 11% by Volume\nBottled and shipped by Wilhelm Friedrich, Weinexport, Schweich/Germany\nImported by GOLDEN BEAR NE CO., San Francisco, Calif.\nEVER MAINZ\n"@eng;
-    gv:color [
-  gv:hex "dfc1a0";
-  gv:red "223";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "17.647366";
-  gv:coverage "7.2733335"
-], [
-  gv:hex "4b2810";
-  gv:red "75";
-  gv:blue "16";
-  gv:green "40";
-  gv:score "2.2176677";
-  gv:coverage "0.62"
-], [
-  gv:hex "a12a06";
-  gv:red "161";
-  gv:blue "6";
-  gv:green "42";
-  gv:score "1.7087999999999999";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "1d140d";
-  gv:red "29";
-  gv:blue "13";
-  gv:green "20";
-  gv:score "0.59375307";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "daba8a";
-  gv:red "218";
-  gv:blue "138";
-  gv:green "186";
-  gv:score "7.8909062";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "ba9b6c";
-  gv:red "186";
-  gv:blue "108";
-  gv:green "155";
-  gv:score "7.4091978";
-  gv:coverage "2.96"
-], [
-  gv:hex "c19063";
-  gv:red "193";
-  gv:blue "99";
-  gv:green "144";
-  gv:score "7.018373899999999";
-  gv:coverage "2.76"
-], [
-  gv:hex "b49876";
-  gv:red "180";
-  gv:blue "118";
-  gv:green "152";
-  gv:score "6.2127504";
-  gv:coverage "2.76"
-], [
-  gv:hex "9d6b41";
-  gv:red "157";
-  gv:blue "65";
-  gv:green "107";
-  gv:score "6.0563851";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "7b4b23";
-  gv:red "123";
-  gv:blue "35";
-  gv:green "75";
-  gv:score "5.3455628";
-  gv:coverage "2.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "75.619608"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.034904"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.137286"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.59821"
-];
-    w:bagOfWords "R H E N H E S S E N\nPRODUCT OF GERMANY\nRHINE-WINE\nD JOSEF WEBER\nSELECT QUALITY\niebfraumilc\nContents: 1 Pint 7 Fl. Oz. Alcohol 11% by Volume\nBottled and shipped by Wilhelm Friedrich, Weinexport, Schweich/Germany\nImported by GOLDEN BEAR NE CO., San Francisco, Calif.\nEVER MAINZ\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4861";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

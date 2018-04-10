@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3000";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "GRANDVIN DE BORDEAUX\nGE.\nalso er\nGRAND CRU DE GRAVES\nIS E. U\n-Appellation Graves contr 1ée\nA ILL\nAILLE\nGRAND PRIX\nANVERS 1930\nVICTOR PLA\nCE\nPROPRIETAIRE\nLE BOUSCAUT- CADAUJAC, pres BORDEAUx\nEn 1904\nMédaille d'Or Saint-Louis E. U. Am\nEn 1905\nMédaille d'Or Liége.\nEn 1921 Premier Prix de la Société d'Agriculture.\nEn 1926 Vignoble ayant obtenu la plus haute récompense au Concours de\nla PRIME\nD HONNEUR du Ministere d\nAGRICULTURE\nEn 1930 Rappel de 1\" Prix 1921. Médaille de Vermeil du e de l'Agriculture\nEn 193O Grand Prix\nAnvers.\n"@fra;
-    gv:color [
-  gv:hex "837568";
-  gv:red "131";
-  gv:blue "104";
-  gv:green "117";
-  gv:score "21.889974000000002";
-  gv:coverage "2.8333334000000003"
-], [
-  gv:hex "cec1b5";
-  gv:red "206";
-  gv:blue "181";
-  gv:green "193";
-  gv:score "18.132712";
-  gv:coverage "17.213333"
-], [
-  gv:hex "a69789";
-  gv:red "166";
-  gv:blue "137";
-  gv:green "151";
-  gv:score "21.865138";
-  gv:coverage "3.4466665"
-], [
-  gv:hex "d1c2b1";
-  gv:red "209";
-  gv:blue "177";
-  gv:green "194";
-  gv:score "8.8372454";
-  gv:coverage "13.333333999999999"
-], [
-  gv:hex "a99b91";
-  gv:red "169";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "8.015694499999999";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "645649";
-  gv:red "100";
-  gv:blue "73";
-  gv:green "86";
-  gv:score "6.5341264";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "e9dbd0";
-  gv:red "233";
-  gv:blue "208";
-  gv:green "219";
-  gv:score "6.0785975";
-  gv:coverage "24.546666000000002"
-], [
-  gv:hex "84766c";
-  gv:red "132";
-  gv:blue "108";
-  gv:green "118";
-  gv:score "5.4806441";
-  gv:coverage "1.18"
-], [
-  gv:hex "eadbcb";
-  gv:red "234";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "1.5932702";
-  gv:coverage "33.6"
-], [
-  gv:hex "685a50";
-  gv:red "104";
-  gv:blue "80";
-  gv:green "90";
-  gv:score "0.9323952700000001";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.605849"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.750065000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.671034000000006"
-];
-    w:bagOfWords "GRANDVIN DE BORDEAUX\nGE.\nalso er\nGRAND CRU DE GRAVES\nIS E. U\n-Appellation Graves contr 1ée\nA ILL\nAILLE\nGRAND PRIX\nANVERS 1930\nVICTOR PLA\nCE\nPROPRIETAIRE\nLE BOUSCAUT- CADAUJAC, pres BORDEAUx\nEn 1904\nMédaille d'Or Saint-Louis E. U. Am\nEn 1905\nMédaille d'Or Liége.\nEn 1921 Premier Prix de la Société d'Agriculture.\nEn 1926 Vignoble ayant obtenu la plus haute récompense au Concours de\nla PRIME\nD HONNEUR du Ministere d\nAGRICULTURE\nEn 1930 Rappel de 1\" Prix 1921. Médaille de Vermeil du e de l'Agriculture\nEn 193O Grand Prix\nAnvers.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3000";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

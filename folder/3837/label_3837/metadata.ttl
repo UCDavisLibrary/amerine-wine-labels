@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3837";
-    dct:type "image";
-    w:bagOfWords "MOSEL-SAAR-RUWER\n1948er\nAuetsbadber\nfammerfein\nNATURREIN\nStaatliche Dom anen-Weinbauperwaltung\ntiet\nEigener Rellerabyug uno Rotkbrano\nJ.LINTZ.K.G. TRIER\n"@deu;
-    gv:color [
-  gv:hex "a79889";
-  gv:red "167";
-  gv:blue "137";
-  gv:green "152";
-  gv:score "19.495279";
-  gv:coverage "2.8933332999999997"
-], [
-  gv:hex "eadbce";
-  gv:red "234";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "10.133282000000001";
-  gv:coverage "58.46666700000001"
-], [
-  gv:hex "d2bfb0";
-  gv:red "210";
-  gv:blue "176";
-  gv:green "191";
-  gv:score "12.555140000000002";
-  gv:coverage "9.6533336"
-], [
-  gv:hex "847567";
-  gv:red "132";
-  gv:blue "103";
-  gv:green "117";
-  gv:score "12.212747";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "625245";
-  gv:red "98";
-  gv:blue "69";
-  gv:green "82";
-  gv:score "9.5620468";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "d4c5b9";
-  gv:red "212";
-  gv:blue "185";
-  gv:green "197";
-  gv:score "8.707054";
-  gv:coverage "11.006667"
-], [
-  gv:hex "463729";
-  gv:red "70";
-  gv:blue "41";
-  gv:green "55";
-  gv:score "8.134605";
-  gv:coverage "0.5"
-], [
-  gv:hex "ecdccd";
-  gv:red "236";
-  gv:blue "205";
-  gv:green "220";
-  gv:score "5.8595594";
-  gv:coverage "13.493334"
-], [
-  gv:hex "5f5149";
-  gv:red "95";
-  gv:blue "73";
-  gv:green "81";
-  gv:score "4.1528583";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "aea095";
-  gv:red "174";
-  gv:blue "149";
-  gv:green "160";
-  gv:score "3.7041858";
-  gv:coverage "0.73333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.85292999999999"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.572618999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.727785000000004"
-];
-    w:bagOfWords "MOSEL-SAAR-RUWER\n1948er\nAuetsbadber\nfammerfein\nNATURREIN\nStaatliche Dom anen-Weinbauperwaltung\ntiet\nEigener Rellerabyug uno Rotkbrano\nJ.LINTZ.K.G. TRIER\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3837";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

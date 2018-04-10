@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3289";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DOMAINE DE LA ROMANEE CONTI\nLA TAC HE\nLA TACHE Appellation Controlée\nde dillaune\nojemuls proprietavaes\nCoritents 3TQuart. Proiucf of France Alcohol 4 olo by volume\n"@fra;
-    gv:color [
-  gv:hex "cbc2b9";
-  gv:red "203";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "38.156918";
-  gv:coverage "16.973333"
-], [
-  gv:hex "5a5148";
-  gv:red "90";
-  gv:blue "72";
-  gv:green "81";
-  gv:score "8.2166851";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "a59c93";
-  gv:red "165";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "22.756301";
-  gv:coverage "3.6066665999999996"
-], [
-  gv:hex "e6dcd2";
-  gv:red "230";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "14.690733999999999";
-  gv:coverage "64.13333399999999"
-], [
-  gv:hex "857c73";
-  gv:red "133";
-  gv:blue "115";
-  gv:green "124";
-  gv:score "6.7217924";
-  gv:coverage "1.22"
-], [
-  gv:hex "ccc4b3";
-  gv:red "204";
-  gv:blue "179";
-  gv:green "196";
-  gv:score "3.478932";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "a49c8c";
-  gv:red "164";
-  gv:blue "140";
-  gv:green "156";
-  gv:score "2.1146478";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "3e372d";
-  gv:red "62";
-  gv:blue "45";
-  gv:green "55";
-  gv:score "1.3447925";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "857c6d";
-  gv:red "133";
-  gv:blue "109";
-  gv:green "124";
-  gv:score "1.06814";
-  gv:coverage "0.1"
-], [
-  gv:hex "373124";
-  gv:red "55";
-  gv:blue "36";
-  gv:green "49";
-  gv:score "0.5564933200000001";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.7744"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.446375999999994"
-];
-    w:bagOfWords "DOMAINE DE LA ROMANEE CONTI\nLA TAC HE\nLA TACHE Appellation Controlée\nde dillaune\nojemuls proprietavaes\nCoritents 3TQuart. Proiucf of France Alcohol 4 olo by volume\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3289";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

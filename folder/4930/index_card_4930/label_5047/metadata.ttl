@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5047";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "GUASTI\nT. M. REG. U. S. PAT. OFF\nBLIS\nNET CONTENTS 34 PINT\nALCOHOLIC CONTENT 20% BY VOLUME\nB. W. No. 52\n14th DISI\nTAX PAID BY STAMPS AFFIXED TO CASE\n8 B\nPRODUCED AND BOTTLED BY\nFRUIT inDuSTRIES, LTD\nSAN FRANCISCO, CA LIF n DNI U. S. A.\nTax Paid by Stamps Affixed to Case\nCOLONIAL GRAPE PRODUCTS CO\nBonded Winery 3651-14th Perm. Dist. Cal.\nF 72\nCally Denia\nBONDED WINERY N9 2240 IIT\" PERM. DIST CALIFORNIA.\nCONTENTS 12 FL. oz. (1 10 GALLON)\nALCOHOL 20 PER CENT\n"@undefined;
-    gv:color [
-  gv:hex "d9c5ab";
-  gv:red "217";
-  gv:blue "171";
-  gv:green "197";
-  gv:score "24.764481";
-  gv:coverage "23.72"
-], [
-  gv:hex "917442";
-  gv:red "145";
-  gv:blue "66";
-  gv:green "116";
-  gv:score "6.9040187";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "9a201a";
-  gv:red "154";
-  gv:blue "26";
-  gv:green "32";
-  gv:score "5.336329699999999";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "6c1306";
-  gv:red "108";
-  gv:blue "6";
-  gv:green "19";
-  gv:score "3.5351377000000004";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "161108";
-  gv:red "22";
-  gv:blue "8";
-  gv:green "17";
-  gv:score "0.23600485000000002";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "ecdac2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "16.196789";
-  gv:coverage "19.773333"
-], [
-  gv:hex "b09b7f";
-  gv:red "176";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "7.3028356";
-  gv:coverage "5.2"
-], [
-  gv:hex "b49661";
-  gv:red "180";
-  gv:blue "97";
-  gv:green "150";
-  gv:score "5.8950529000000005";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "d8bb87";
-  gv:red "216";
-  gv:blue "135";
-  gv:green "187";
-  gv:score "5.3353816";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "7d0707";
-  gv:red "125";
-  gv:blue "7";
-  gv:green "7";
-  gv:score "3.3833876";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "57.874256"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.864467000000005"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "52.149707"
-];
-    w:bagOfWords "GUASTI\nT. M. REG. U. S. PAT. OFF\nBLIS\nNET CONTENTS 34 PINT\nALCOHOLIC CONTENT 20% BY VOLUME\nB. W. No. 52\n14th DISI\nTAX PAID BY STAMPS AFFIXED TO CASE\n8 B\nPRODUCED AND BOTTLED BY\nFRUIT inDuSTRIES, LTD\nSAN FRANCISCO, CA LIF n DNI U. S. A.\nTax Paid by Stamps Affixed to Case\nCOLONIAL GRAPE PRODUCTS CO\nBonded Winery 3651-14th Perm. Dist. Cal.\nF 72\nCally Denia\nBONDED WINERY N9 2240 IIT\" PERM. DIST CALIFORNIA.\nCONTENTS 12 FL. oz. (1 10 GALLON)\nALCOHOL 20 PER CENT\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5047";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0818";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "PETILLANT\nSUPERIEUR\nChateau Morconto\nVOUVRAY\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "b79c59";
-  gv:red "183";
-  gv:blue "89";
-  gv:green "156";
-  gv:score "47.087517";
-  gv:coverage "11.593333999999999"
-], [
-  gv:hex "b69a49";
-  gv:red "182";
-  gv:blue "73";
-  gv:green "154";
-  gv:score "21.866409";
-  gv:coverage "4.08"
-], [
-  gv:hex "d0b471";
-  gv:red "208";
-  gv:blue "113";
-  gv:green "180";
-  gv:score "9.27892";
-  gv:coverage "3.54"
-], [
-  gv:hex "d2b663";
-  gv:red "210";
-  gv:blue "99";
-  gv:green "182";
-  gv:score "5.904378400000001";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "aa9979";
-  gv:red "170";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "3.589369";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "8a765b";
-  gv:red "138";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "2.7187103";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "917b47";
-  gv:red "145";
-  gv:blue "71";
-  gv:green "123";
-  gv:score "2.5665695";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "655339";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "1.485269";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "d2c19c";
-  gv:red "210";
-  gv:blue "156";
-  gv:green "193";
-  gv:score "0.9162267700000001";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "a18232";
-  gv:red "161";
-  gv:blue "50";
-  gv:green "130";
-  gv:score "0.79510761";
-  gv:coverage "0.1"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.06546999999999"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "77.199489"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.20414099999999"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.6057"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PETILLANT\nSUPERIEUR\nChateau Morconto\nVOUVRAY\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0818";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

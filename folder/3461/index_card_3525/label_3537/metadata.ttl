@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3525/label_3537";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BOTTLED AT THE WINER\nVINTAGE\n1938\nWENTE BROS\nABLISHED 1883\nVALLE de ORO\nLIVERMORE VALLEY\nllinnt Charimunau\nPRODUCED AND BaTTLED BY\nB. W\n14TH DIST.\nWENTE BROS\nNo. 893\nCALIF\nLIVERMORE, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d3bfa6";
-  gv:red "211";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "28.023263999999998";
-  gv:coverage "24.653333"
-], [
-  gv:hex "af9b7c";
-  gv:red "175";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "20.945992999999998";
-  gv:coverage "4.4066668"
-], [
-  gv:hex "887557";
-  gv:red "136";
-  gv:blue "87";
-  gv:green "117";
-  gv:score "17.200254";
-  gv:coverage "2.08"
-], [
-  gv:hex "655339";
-  gv:red "101";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "7.768881299999999";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "eddac4";
-  gv:red "237";
-  gv:blue "196";
-  gv:green "218";
-  gv:score "4.9885817";
-  gv:coverage "27.560000000000002"
-], [
-  gv:hex "443219";
-  gv:red "68";
-  gv:blue "25";
-  gv:green "50";
-  gv:score "4.1519646";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "93784d";
-  gv:red "147";
-  gv:blue "77";
-  gv:green "120";
-  gv:score "4.1180718999999995";
-  gv:coverage "0.26"
-], [
-  gv:hex "b19569";
-  gv:red "177";
-  gv:blue "105";
-  gv:green "149";
-  gv:score "2.7844384";
-  gv:coverage "0.24"
-], [
-  gv:hex "ba9284";
-  gv:red "186";
-  gv:blue "132";
-  gv:green "146";
-  gv:score "1.9706404";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "2c1902";
-  gv:red "44";
-  gv:blue "2";
-  gv:green "25";
-  gv:score "1.9484154999999999";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.723266"
-];
-    w:bagOfWords "BOTTLED AT THE WINER\nVINTAGE\n1938\nWENTE BROS\nABLISHED 1883\nVALLE de ORO\nLIVERMORE VALLEY\nllinnt Charimunau\nPRODUCED AND BaTTLED BY\nB. W\n14TH DIST.\nWENTE BROS\nNo. 893\nCALIF\nLIVERMORE, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3537";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

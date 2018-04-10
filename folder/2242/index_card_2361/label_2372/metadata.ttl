@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2361/label_2372";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "0\n5履民m R-ada-c\n南/wwww e^\nー1B l!目頁ーEl-\nGRAND VIN\nDE\n1928\nT3\n"@fra;
-    gv:color [
-  gv:hex "d0c6bf";
-  gv:red "208";
-  gv:blue "191";
-  gv:green "198";
-  gv:score "28.796354";
-  gv:coverage "20.200000000000003"
-], [
-  gv:hex "7f766f";
-  gv:red "127";
-  gv:blue "111";
-  gv:green "118";
-  gv:score "18.825778";
-  gv:coverage "2.42"
-], [
-  gv:hex "e4dbd3";
-  gv:red "228";
-  gv:blue "211";
-  gv:green "219";
-  gv:score "17.879656999999998";
-  gv:coverage "67.873335"
-], [
-  gv:hex "a39a93";
-  gv:red "163";
-  gv:blue "147";
-  gv:green "154";
-  gv:score "17.636839000000002";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "5e554e";
-  gv:red "94";
-  gv:blue "78";
-  gv:green "85";
-  gv:score "10.232659";
-  gv:coverage "1.32"
-], [
-  gv:hex "413831";
-  gv:red "65";
-  gv:blue "49";
-  gv:green "56";
-  gv:score "2.6469389";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "d3c7b5";
-  gv:red "211";
-  gv:blue "181";
-  gv:green "199";
-  gv:score "2.0904637999999998";
-  gv:coverage "2.1933333999999998"
-], [
-  gv:hex "e4d9c6";
-  gv:red "228";
-  gv:blue "198";
-  gv:green "217";
-  gv:score "1.7210888";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "baab95";
-  gv:red "186";
-  gv:blue "149";
-  gv:green "171";
-  gv:score "0.15700135";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "1f1b13";
-  gv:red "31";
-  gv:blue "19";
-  gv:green "27";
-  gv:score "0.013220648000000002";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.43483"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.388661"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "58.902884"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.17967900000001"
-];
-    w:bagOfWords "0\n5履民m R-ada-c\n南/wwww e^\nー1B l!目頁ーEl-\nGRAND VIN\nDE\n1928\nT3\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2372";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

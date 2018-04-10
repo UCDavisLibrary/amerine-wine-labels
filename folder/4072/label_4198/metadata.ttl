@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4198";
-    dct:type "image";
-    w:bagOfWords "la PRODUCE OF\nFRANCE\nNOJOTTU\nWINE\nS H I P P E D BY\nE. BLANCHARD & ILS\nPROPRIETAIRES NEGOCIANTS\nSAINT-LAMBERT-DU-LATTAY (MAINE ET LOIRE)\nROSE\nAPPELLATION ANJOU CONTROLEE\nNET CONTENTS 24 OZ\nALC. STR. BY VOLUME\nImported by Monsieur Henri WINES Ltd,\nN. Y. Importer's Permit\n480 NEW YORK N. Y.\nPRINTED\nIN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "dec19e";
-  gv:red "222";
-  gv:blue "158";
-  gv:green "193";
-  gv:score "38.502404";
-  gv:coverage "23.433334"
-], [
-  gv:hex "c7966b";
-  gv:red "199";
-  gv:blue "107";
-  gv:green "150";
-  gv:score "7.365108300000001";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "c23d13";
-  gv:red "194";
-  gv:blue "19";
-  gv:green "61";
-  gv:score "2.4498906000000003";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "dbb88a";
-  gv:red "219";
-  gv:blue "138";
-  gv:green "184";
-  gv:score "8.7560892";
-  gv:coverage "2.76"
-], [
-  gv:hex "b69975";
-  gv:red "182";
-  gv:blue "117";
-  gv:green "153";
-  gv:score "8.2743682";
-  gv:coverage "3.52"
-], [
-  gv:hex "e3b187";
-  gv:red "227";
-  gv:blue "135";
-  gv:green "177";
-  gv:score "6.50574";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "e6ba98";
-  gv:red "230";
-  gv:blue "152";
-  gv:green "186";
-  gv:score "4.574859099999999";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "bd9b6f";
-  gv:red "189";
-  gv:blue "111";
-  gv:green "155";
-  gv:score "4.0107779";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "9f6d43";
-  gv:red "159";
-  gv:blue "67";
-  gv:green "109";
-  gv:score "3.0537486";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "957956";
-  gv:red "149";
-  gv:blue "86";
-  gv:green "121";
-  gv:score "2.7613597";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.260393"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.977241"
-];
-    w:bagOfWords "la PRODUCE OF\nFRANCE\nNOJOTTU\nWINE\nS H I P P E D BY\nE. BLANCHARD & ILS\nPROPRIETAIRES NEGOCIANTS\nSAINT-LAMBERT-DU-LATTAY (MAINE ET LOIRE)\nROSE\nAPPELLATION ANJOU CONTROLEE\nNET CONTENTS 24 OZ\nALC. STR. BY VOLUME\nImported by Monsieur Henri WINES Ltd,\nN. Y. Importer's Permit\n480 NEW YORK N. Y.\nPRINTED\nIN FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4198";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3819";
-    dct:type "image";
-    w:bagOfWords "Produce of Germany\nZEPPELIN WEINBRAND\nThe Noble Spirit for All\n23/32 nds Quart 76 proof\nade in 1933, Bottled April 10, 1934\nImported by ALPHA IMPORTING COMPANY\n1900 Van Ness Avenue\nSAN FRANCISCO California\nImport Permit ABI 462\nMade end bottled by\nSteigerwald A. G\nHeilbronn-on-Neckar (Germany)\nDER N 53.56\n"@deu;
-    gv:color [
-  gv:hex "cb9a60";
-  gv:red "203";
-  gv:blue "96";
-  gv:green "154";
-  gv:score "33.08391";
-  gv:coverage "8.4933333"
-], [
-  gv:hex "4a2813";
-  gv:red "74";
-  gv:blue "19";
-  gv:green "40";
-  gv:score "1.0344697";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "dfae72";
-  gv:red "223";
-  gv:blue "114";
-  gv:green "174";
-  gv:score "18.461049";
-  gv:coverage "5.1866665"
-], [
-  gv:hex "9b6d39";
-  gv:red "155";
-  gv:blue "57";
-  gv:green "109";
-  gv:score "10.518547";
-  gv:coverage "3.1133333"
-], [
-  gv:hex "dcb57a";
-  gv:red "220";
-  gv:blue "122";
-  gv:green "181";
-  gv:score "8.135634699999999";
-  gv:coverage "2.7199999999999998"
-], [
-  gv:hex "c39d65";
-  gv:red "195";
-  gv:blue "101";
-  gv:green "157";
-  gv:score "6.0622685";
-  gv:coverage "1.96"
-], [
-  gv:hex "7c501f";
-  gv:red "124";
-  gv:blue "31";
-  gv:green "80";
-  gv:score "3.4256883";
-  gv:coverage "1.32"
-], [
-  gv:hex "d19c56";
-  gv:red "209";
-  gv:blue "86";
-  gv:green "156";
-  gv:score "3.1062931";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "e1ad63";
-  gv:red "225";
-  gv:blue "99";
-  gv:green "173";
-  gv:score "2.63174";
-  gv:coverage "0.54"
-], [
-  gv:hex "947340";
-  gv:red "148";
-  gv:blue "64";
-  gv:green "115";
-  gv:score "1.5831130999999998";
-  gv:coverage "0.75333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.050126"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Produce of Germany\nZEPPELIN WEINBRAND\nThe Noble Spirit for All\n23/32 nds Quart 76 proof\nade in 1933, Bottled April 10, 1934\nImported by ALPHA IMPORTING COMPANY\n1900 Van Ness Avenue\nSAN FRANCISCO California\nImport Permit ABI 462\nMade end bottled by\nSteigerwald A. G\nHeilbronn-on-Neckar (Germany)\nDER N 53.56\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3819";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

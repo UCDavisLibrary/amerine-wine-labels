@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2830";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "VINdeSAUTERNES de MeleMarquis de\nCHATEAU FILHOT\n1929\nMES EN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "b09674";
-  gv:red "176";
-  gv:blue "116";
-  gv:green "150";
-  gv:score "34.010701999999995";
-  gv:coverage "7.3933333"
-], [
-  gv:hex "d6bd9f";
-  gv:red "214";
-  gv:blue "159";
-  gv:green "189";
-  gv:score "21.023583000000002";
-  gv:coverage "10.459999999999999"
-], [
-  gv:hex "ba9868";
-  gv:red "186";
-  gv:blue "104";
-  gv:green "152";
-  gv:score "12.720066";
-  gv:coverage "2.54"
-], [
-  gv:hex "967b5a";
-  gv:red "150";
-  gv:blue "90";
-  gv:green "123";
-  gv:score "9.66226";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "d7b585";
-  gv:red "215";
-  gv:blue "133";
-  gv:green "181";
-  gv:score "5.5985454";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "95764b";
-  gv:red "149";
-  gv:blue "75";
-  gv:green "118";
-  gv:score "5.286916";
-  gv:coverage "1"
-], [
-  gv:hex "be925e";
-  gv:red "190";
-  gv:blue "94";
-  gv:green "146";
-  gv:score "3.6587037000000002";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "9c7342";
-  gv:red "156";
-  gv:blue "66";
-  gv:green "115";
-  gv:score "2.4857039000000003";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "ae742e";
-  gv:red "174";
-  gv:blue "46";
-  gv:green "116";
-  gv:score "1.4428395";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "dbae79";
-  gv:red "219";
-  gv:blue "121";
-  gv:green "174";
-  gv:score "0.96660927";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.225588"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.844752"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "55.1859"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.929379"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.558667"
-];
-    w:bagOfWords "VINdeSAUTERNES de MeleMarquis de\nCHATEAU FILHOT\n1929\nMES EN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2830";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

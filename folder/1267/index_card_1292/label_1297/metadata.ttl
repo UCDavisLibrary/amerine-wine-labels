@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1297";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "Goldberger\n3. p. Sdrons Kirpadr, Stadtbredimus (Lux.).\n"@deu;
-    gv:color [
-  gv:hex "d7c0a3";
-  gv:red "215";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "15.43013";
-  gv:coverage "10.879999999999999"
-], [
-  gv:hex "8e7243";
-  gv:red "142";
-  gv:blue "67";
-  gv:green "114";
-  gv:score "14.661511999999998";
-  gv:coverage "3.52"
-], [
-  gv:hex "311700";
-  gv:red "49";
-  gv:blue "undefined";
-  gv:green "23";
-  gv:score "0.6528460899999999";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "6b5125";
-  gv:red "107";
-  gv:blue "37";
-  gv:green "81";
-  gv:score "14.090224000000001";
-  gv:coverage "3.1133333"
-], [
-  gv:hex "b69665";
-  gv:red "182";
-  gv:blue "101";
-  gv:green "150";
-  gv:score "9.6251868";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "af997b";
-  gv:red "175";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "7.748801299999999";
-  gv:coverage "2.9000000000000004"
-], [
-  gv:hex "704a1b";
-  gv:red "112";
-  gv:blue "27";
-  gv:green "74";
-  gv:score "5.3566948000000005";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "8a7352";
-  gv:red "138";
-  gv:blue "82";
-  gv:green "115";
-  gv:score "5.2118439";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "675131";
-  gv:red "103";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "4.573619";
-  gv:coverage "1.44"
-], [
-  gv:hex "9b713e";
-  gv:red "155";
-  gv:blue "62";
-  gv:green "113";
-  gv:score "3.8763452";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "79.083449"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.206410000000005"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.663236"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.857449"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.691"
-];
-    w:bagOfWords "Goldberger\n3. p. Sdrons Kirpadr, Stadtbredimus (Lux.).\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1297";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

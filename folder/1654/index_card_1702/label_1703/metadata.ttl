@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/index_card_1702/label_1703";
-    dct:type "image";
-    dc:subject "Spanish Table Wines Italy (Cypress and Greece)@en";
-    w:bagOfWords "0%TATMA OLNO\nΠAΛAION\nc/72を692MAM! CM2W2W2U,\n\"ANAPEAE fl. KAMnAE”\n,\"ANΔpEAΣ ri.KAMΠAΣ\nAOHNAI\n"@grc;
-    gv:color [
-  gv:hex "89713f";
-  gv:red "137";
-  gv:blue "63";
-  gv:green "113";
-  gv:score "17.369640999999998";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "d8c3aa";
-  gv:red "216";
-  gv:blue "170";
-  gv:green "195";
-  gv:score "11.631338";
-  gv:coverage "28.826666"
-], [
-  gv:hex "b85f3f";
-  gv:red "184";
-  gv:blue "63";
-  gv:green "95";
-  gv:score "6.702596700000001";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "6c5424";
-  gv:red "108";
-  gv:blue "36";
-  gv:green "84";
-  gv:score "10.078057999999999";
-  gv:coverage "0.54"
-], [
-  gv:hex "ae9981";
-  gv:red "174";
-  gv:blue "129";
-  gv:green "153";
-  gv:score "8.483540000000001";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "c2917f";
-  gv:red "194";
-  gv:blue "127";
-  gv:green "145";
-  gv:score "7.2023012";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "88321a";
-  gv:red "136";
-  gv:blue "26";
-  gv:green "50";
-  gv:score "4.9815714";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "e6bba8";
-  gv:red "230";
-  gv:blue "168";
-  gv:green "187";
-  gv:score "4.4709068";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "857358";
-  gv:red "133";
-  gv:blue "88";
-  gv:green "115";
-  gv:score "4.2143054";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "ab6f45";
-  gv:red "171";
-  gv:blue "69";
-  gv:green "111";
-  gv:score "3.0459946";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.05945299999999"
-];
-    w:bagOfWords "0%TATMA OLNO\nΠAΛAION\nc/72を692MAM! CM2W2W2U,\n\"ANAPEAE fl. KAMnAE”\n,\"ANΔpEAΣ ri.KAMΠAΣ\nAOHNAI\n"@grc;
-    wdt:P219 "grc";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1703";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "el-GR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "GRC".
+    wdt:P297 "GR".
+

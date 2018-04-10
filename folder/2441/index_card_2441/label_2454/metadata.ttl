@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2441/label_2454";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "7 12/ 43\n1998\n2.50\nMMA\nOF FRANCE\nPROD U CF\nOGRANDO\nCOGNE\nS DE BO\nComte d'Orthez\nBECAUNE\nALCOHOL BY VOLUME\nCONTENTS 1 PINT 8 fLUID 07.\na\n"@fra;
-    gv:color [
-  gv:hex "dfc1a0";
-  gv:red "223";
-  gv:blue "160";
-  gv:green "193";
-  gv:score "43.742684";
-  gv:coverage "22.613333"
-], [
-  gv:hex "dfbb8e";
-  gv:red "223";
-  gv:blue "142";
-  gv:green "187";
-  gv:score "13.25997";
-  gv:coverage "4.8133332"
-], [
-  gv:hex "e0b384";
-  gv:red "224";
-  gv:blue "132";
-  gv:green "179";
-  gv:score "8.8705629";
-  gv:coverage "3.1533334"
-], [
-  gv:hex "c49667";
-  gv:red "196";
-  gv:blue "103";
-  gv:green "150";
-  gv:score "7.87822";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "9b7144";
-  gv:red "155";
-  gv:blue "68";
-  gv:green "113";
-  gv:score "6.216000800000001";
-  gv:coverage "0.96"
-], [
-  gv:hex "b99a77";
-  gv:red "185";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "5.2157287";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "bd9b6f";
-  gv:red "189";
-  gv:blue "111";
-  gv:green "155";
-  gv:score "2.9484423";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "f3d6b6";
-  gv:red "243";
-  gv:blue "182";
-  gv:green "214";
-  gv:score "2.6654763000000004";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "997a58";
-  gv:red "153";
-  gv:blue "88";
-  gv:green "122";
-  gv:score "1.7840445";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "7a5023";
-  gv:red "122";
-  gv:blue "35";
-  gv:green "80";
-  gv:score "1.6011951";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.488529"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.01616799999999"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.897245000000005"
-];
-    w:bagOfWords "7 12/ 43\n1998\n2.50\nMMA\nOF FRANCE\nPROD U CF\nOGRANDO\nCOGNE\nS DE BO\nComte d'Orthez\nBECAUNE\nALCOHOL BY VOLUME\nCONTENTS 1 PINT 8 fLUID 07.\na\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2454";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

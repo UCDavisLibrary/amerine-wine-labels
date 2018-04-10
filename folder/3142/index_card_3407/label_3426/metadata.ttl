@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3426";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "PRODUCE OF FRAN C E\nBEAUTE\nonnte d' SOrthez,\nBECAURE\nContents\nPint and 8 Fluid ounces\nAlcohol by volume 12 5\n"@fra;
-    gv:color [
-  gv:hex "e0c7a6";
-  gv:red "224";
-  gv:blue "166";
-  gv:green "199";
-  gv:score "46.140647";
-  gv:coverage "18.446666"
-], [
-  gv:hex "a1201d";
-  gv:red "161";
-  gv:blue "29";
-  gv:green "32";
-  gv:score "1.9895713999999998";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "f0d8b9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "216";
-  gv:score "11.626971999999999";
-  gv:coverage "11.913333"
-], [
-  gv:hex "b1997a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "10.971459";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "fa9684";
-  gv:red "250";
-  gv:blue "132";
-  gv:green "150";
-  gv:score "0.0801375";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "8d7658";
-  gv:red "141";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "7.4848309";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "ecbca1";
-  gv:red "236";
-  gv:blue "161";
-  gv:green "188";
-  gv:score "3.8106013";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "675236";
-  gv:red "103";
-  gv:blue "54";
-  gv:green "82";
-  gv:score "3.6281413999999996";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "c29278";
-  gv:red "194";
-  gv:blue "120";
-  gv:green "146";
-  gv:score "2.5487186";
-  gv:coverage "0.54"
-], [
-  gv:hex "a16f57";
-  gv:red "161";
-  gv:blue "87";
-  gv:green "111";
-  gv:score "1.7441091999999998";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.666764"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.476687999999996"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "52.641760999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.954859"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.540023000000005"
-];
-    w:bagOfWords "PRODUCE OF FRAN C E\nBEAUTE\nonnte d' SOrthez,\nBECAURE\nContents\nPint and 8 Fluid ounces\nAlcohol by volume 12 5\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3426";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

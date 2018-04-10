@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0415";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "D'ALSACE\nSYNDICAT DES GRAnDS VIns D'ALSACE COLMAR\nANS\n"@undefined;
-    gv:color [
-  gv:hex "b79a64";
-  gv:red "183";
-  gv:blue "100";
-  gv:green "154";
-  gv:score "15.207966";
-  gv:coverage "2.9133333"
-], [
-  gv:hex "b39979";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "12.472119";
-  gv:coverage "5.16"
-], [
-  gv:hex "8b7457";
-  gv:red "139";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "9.3352117";
-  gv:coverage "4.6933334"
-], [
-  gv:hex "927645";
-  gv:red "146";
-  gv:blue "69";
-  gv:green "118";
-  gv:score "6.6790186";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "d2b89b";
-  gv:red "210";
-  gv:blue "155";
-  gv:green "184";
-  gv:score "6.4455509";
-  gv:coverage "7.9533331"
-], [
-  gv:hex "695339";
-  gv:red "105";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "6.1820485000000005";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "6f4d37";
-  gv:red "111";
-  gv:blue "55";
-  gv:green "77";
-  gv:score "5.8899302";
-  gv:coverage "2.56"
-], [
-  gv:hex "906c56";
-  gv:red "144";
-  gv:blue "86";
-  gv:green "108";
-  gv:score "4.935755599999999";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "d1b27a";
-  gv:red "209";
-  gv:blue "122";
-  gv:green "178";
-  gv:score "3.7640449";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "4d2b17";
-  gv:red "77";
-  gv:blue "23";
-  gv:green "43";
-  gv:score "3.6160159999999997";
-  gv:coverage "1.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.3631"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "55.512260999999995"
-];
-    w:bagOfWords "D'ALSACE\nSYNDICAT DES GRAnDS VIns D'ALSACE COLMAR\nANS\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0415";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

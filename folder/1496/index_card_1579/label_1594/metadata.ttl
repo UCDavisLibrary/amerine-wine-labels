@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1594";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "2ebl\nJUAN pEDROLUQUE\nMOS CATEZ\nFRUTA\n"@spa;
-    gv:color [
-  gv:hex "0c7688";
-  gv:red "12";
-  gv:blue "136";
-  gv:green "118";
-  gv:score "51.166064";
-  gv:coverage "21.946667"
-], [
-  gv:hex "187c73";
-  gv:red "24";
-  gv:blue "115";
-  gv:green "124";
-  gv:score "4.3746442000000005";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "0c6a7d";
-  gv:red "12";
-  gv:blue "125";
-  gv:green "106";
-  gv:score "28.2173";
-  gv:coverage "11.673333"
-], [
-  gv:hex "b3c2bc";
-  gv:red "179";
-  gv:blue "188";
-  gv:green "194";
-  gv:score "0.13028415000000002";
-  gv:coverage "4.1133333"
-], [
-  gv:hex "3d7873";
-  gv:red "61";
-  gv:blue "115";
-  gv:green "120";
-  gv:score "2.6944665";
-  gv:coverage "1.76"
-], [
-  gv:hex "296966";
-  gv:red "41";
-  gv:blue "102";
-  gv:green "105";
-  gv:score "2.2537885";
-  gv:coverage "1.04"
-], [
-  gv:hex "0a749a";
-  gv:red "10";
-  gv:blue "154";
-  gv:green "116";
-  gv:score "2.2338064";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "ed9d7a";
-  gv:red "237";
-  gv:blue "122";
-  gv:green "157";
-  gv:score "0.021746455999999997";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "067e83";
-  gv:red "6";
-  gv:blue "131";
-  gv:green "126";
-  gv:score "1.9725025";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "0a688d";
-  gv:red "10";
-  gv:blue "141";
-  gv:green "104";
-  gv:score "1.3563805";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.025558999999994"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.647448"
-];
-    w:bagOfWords "2ebl\nJUAN pEDROLUQUE\nMOS CATEZ\nFRUTA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1594";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0479";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "QREIN SEI DER WEINIo\nR HEIN G A U\nHattenheimer\nMehrholzchen.\nIteingutsbenber Heinhellerei\nPattenbeim Rheingau\n"@deu;
-    gv:color [
-  gv:hex "cfc5a7";
-  gv:red "207";
-  gv:blue "167";
-  gv:green "197";
-  gv:score "12.303935000000001";
-  gv:coverage "17.413333"
-], [
-  gv:hex "963e22";
-  gv:red "150";
-  gv:blue "34";
-  gv:green "62";
-  gv:score "2.3898058";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "1d6072";
-  gv:red "29";
-  gv:blue "114";
-  gv:green "96";
-  gv:score "1.4005039000000001";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "1a6090";
-  gv:red "26";
-  gv:blue "144";
-  gv:green "96";
-  gv:score "1.2576125";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "542f03";
-  gv:red "84";
-  gv:blue "3";
-  gv:green "47";
-  gv:score "0.71848035";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "d4c58a";
-  gv:red "212";
-  gv:blue "138";
-  gv:green "197";
-  gv:score "9.3638085";
-  gv:coverage "4.5933332"
-], [
-  gv:hex "a49b7e";
-  gv:red "164";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "9.228795";
-  gv:coverage "3.5266668"
-], [
-  gv:hex "e6dec2";
-  gv:red "230";
-  gv:blue "194";
-  gv:green "222";
-  gv:score "5.8646481";
-  gv:coverage "13.8"
-], [
-  gv:hex "ad9b60";
-  gv:red "173";
-  gv:blue "96";
-  gv:green "155";
-  gv:score "5.704629";
-  gv:coverage "1.76"
-], [
-  gv:hex "8c753e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "117";
-  gv:score "5.204182100000001";
-  gv:coverage "0.8"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.362829"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.021955"
-];
-    w:bagOfWords "QREIN SEI DER WEINIo\nR HEIN G A U\nHattenheimer\nMehrholzchen.\nIteingutsbenber Heinhellerei\nPattenbeim Rheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0479";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

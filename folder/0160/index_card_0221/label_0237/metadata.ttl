@@ -1,94 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0221/label_0237";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "A FRANK, SCHOONMAKER SELECTION\nA CABERNET from the Santa Cruz Mountain Foothills\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nALMADEN-MADRONE VINEYARDS\nMADRONE, SANTA CLARA COUNTY, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York N. Y.\n"@eng;
-    gv:color [
-  gv:hex "d67856";
-  gv:red "214";
-  gv:blue "86";
-  gv:green "120";
-  gv:score "17.770925000000002";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "572a19";
-  gv:red "87";
-  gv:blue "25";
-  gv:green "42";
-  gv:score "8.318492800000001";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "d9c2a3";
-  gv:red "217";
-  gv:blue "163";
-  gv:green "194";
-  gv:score "7.9066463";
-  gv:coverage "19.693333"
-], [
-  gv:hex "bc6443";
-  gv:red "188";
-  gv:blue "67";
-  gv:green "100";
-  gv:score "16.236998";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "774230";
-  gv:red "119";
-  gv:blue "48";
-  gv:green "66";
-  gv:score "8.1196442";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "8a3d21";
-  gv:red "138";
-  gv:blue "33";
-  gv:green "61";
-  gv:score "7.3173217";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "af9979";
-  gv:red "175";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "4.1072328";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "652109";
-  gv:red "101";
-  gv:blue "9";
-  gv:green "33";
-  gv:score "3.1214869";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "a06652";
-  gv:red "160";
-  gv:blue "82";
-  gv:green "102";
-  gv:score "2.8658934";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "824627";
-  gv:red "130";
-  gv:blue "39";
-  gv:green "70";
-  gv:score "2.8475786999999997";
-  gv:coverage "0.33333334000000003"
-];
-    w:bagOfWords "A FRANK, SCHOONMAKER SELECTION\nA CABERNET from the Santa Cruz Mountain Foothills\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nALMADEN-MADRONE VINEYARDS\nMADRONE, SANTA CLARA COUNTY, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York N. Y.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0237";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

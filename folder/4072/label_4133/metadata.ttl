@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4133";
-    dct:type "image";
-    w:bagOfWords "CH\nn BORIT\nChapelle martin\nGours et Ruiner\ndu Vieux Chateau féodal\népoque Romane (XIegiecle)\nV. D.0.S.\ne Garantiea\n3 O\ndelaouvelles\nChateau Auguste FORT propriétaire TUCHAN (Aude)\n"@fra;
-    gv:color [
-  gv:hex "e3b95b";
-  gv:red "227";
-  gv:blue "91";
-  gv:green "185";
-  gv:score "15.378791";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "9f211d";
-  gv:red "159";
-  gv:blue "29";
-  gv:green "33";
-  gv:score "3.2958467";
-  gv:coverage "0.86"
-], [
-  gv:hex "621a19";
-  gv:red "98";
-  gv:blue "25";
-  gv:green "26";
-  gv:score "2.6402067000000002";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "e03022";
-  gv:red "224";
-  gv:blue "34";
-  gv:green "48";
-  gv:score "1.0153425";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "160f0c";
-  gv:red "22";
-  gv:blue "12";
-  gv:green "15";
-  gv:score "0.99645546";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "2a5f90";
-  gv:red "42";
-  gv:blue "144";
-  gv:green "95";
-  gv:score "0.77084894";
-  gv:coverage "0.36"
-], [
-  gv:hex "c59d4a";
-  gv:red "197";
-  gv:blue "74";
-  gv:green "157";
-  gv:score "8.3004624";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "ebb35c";
-  gv:red "235";
-  gv:blue "92";
-  gv:green "179";
-  gv:score "7.3133767";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "33430c";
-  gv:red "51";
-  gv:blue "12";
-  gv:green "67";
-  gv:score "0.061729707999999994";
-  gv:coverage "0.02"
-], [
-  gv:hex "e1c182";
-  gv:red "225";
-  gv:blue "130";
-  gv:green "193";
-  gv:score "5.46436";
-  gv:coverage "1.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.525051999999995"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "53.080785"
-];
-    w:bagOfWords "CH\nn BORIT\nChapelle martin\nGours et Ruiner\ndu Vieux Chateau féodal\népoque Romane (XIegiecle)\nV. D.0.S.\ne Garantiea\n3 O\ndelaouvelles\nChateau Auguste FORT propriétaire TUCHAN (Aude)\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4133";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

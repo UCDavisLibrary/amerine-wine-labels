@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0544";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Nino VERTAa\nIn\nG. J. 974a\nR H E I N G A U\nGOOD\nNATUR WEIN\nHRO\n1953\nSteinftud'\nRiesling\noriginal Abfuuung meingut Anton Eler\n"@deu;
-    gv:color [
-  gv:hex "d4bd82";
-  gv:red "212";
-  gv:blue "130";
-  gv:green "189";
-  gv:score "37.103966";
-  gv:coverage "10.726666"
-], [
-  gv:hex "867457";
-  gv:red "134";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "8.8243268";
-  gv:coverage "3.3000000000000003"
-], [
-  gv:hex "d2c099";
-  gv:red "210";
-  gv:blue "153";
-  gv:green "192";
-  gv:score "8.9799911";
-  gv:coverage "4.4866665999999995"
-], [
-  gv:hex "b69f63";
-  gv:red "182";
-  gv:blue "99";
-  gv:green "159";
-  gv:score "8.6121924";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "aa987a";
-  gv:red "170";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "6.8250641000000005";
-  gv:coverage "2.4866667"
-], [
-  gv:hex "8b743e";
-  gv:red "139";
-  gv:blue "62";
-  gv:green "116";
-  gv:score "5.945994000000001";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "c09e48";
-  gv:red "192";
-  gv:blue "72";
-  gv:green "158";
-  gv:score "5.8816942999999995";
-  gv:coverage "2.5533333"
-], [
-  gv:hex "64563b";
-  gv:red "100";
-  gv:blue "59";
-  gv:green "86";
-  gv:score "3.9959575999999997";
-  gv:coverage "1.46"
-], [
-  gv:hex "d2b460";
-  gv:red "210";
-  gv:blue "96";
-  gv:green "180";
-  gv:score "3.8255673";
-  gv:coverage "1.3"
-], [
-  gv:hex "6a5520";
-  gv:red "106";
-  gv:blue "32";
-  gv:green "85";
-  gv:score "3.8066372";
-  gv:coverage "1.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.224239999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.56915300000001"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.506855"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.726516999999994"
-];
-    w:bagOfWords "Nino VERTAa\nIn\nG. J. 974a\nR H E I N G A U\nGOOD\nNATUR WEIN\nHRO\n1953\nSteinftud'\nRiesling\noriginal Abfuuung meingut Anton Eler\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0544";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

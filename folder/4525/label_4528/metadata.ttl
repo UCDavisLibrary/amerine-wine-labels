@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4528";
-    dct:type "image";
-    w:bagOfWords "LA CAS PEDRO DOMECQ TIENE POR NORMA DESDE SU\nFUNDACION EN 1730, NO CONCURRIR CON Sus PRODUCTOS\nANINGUNA EXPOSICION NACIONAL NI EXTRANJERA\nJEREZ\nSECO\nN9202\nD\nARNU\nPROPIEDAD Do RIO VIEJO\nGMACHARNUDO ALTO)\nCasa a\nen 1730\nJEREZ DE LA FRONTERA\nJeres\nIndustrial\n"@spa;
-    gv:color [
-  gv:hex "655340";
-  gv:red "101";
-  gv:blue "64";
-  gv:green "83";
-  gv:score "11.506492999999999";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "d0c1b0";
-  gv:red "208";
-  gv:blue "176";
-  gv:green "193";
-  gv:score "10.538051";
-  gv:coverage "10.826666999999999"
-], [
-  gv:hex "85383d";
-  gv:red "133";
-  gv:blue "61";
-  gv:green "56";
-  gv:score "6.4576507";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "83725f";
-  gv:red "131";
-  gv:blue "95";
-  gv:green "114";
-  gv:score "8.36824";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "d2c6bb";
-  gv:red "210";
-  gv:blue "187";
-  gv:green "198";
-  gv:score "6.6322505000000005";
-  gv:coverage "19.96"
-], [
-  gv:hex "e6b5b1";
-  gv:red "230";
-  gv:blue "177";
-  gv:green "181";
-  gv:score "6.252796200000001";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "a69683";
-  gv:red "166";
-  gv:blue "131";
-  gv:green "150";
-  gv:score "6.2248215";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "f0bdbc";
-  gv:red "240";
-  gv:blue "188";
-  gv:green "189";
-  gv:score "5.3321354";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "c48e8c";
-  gv:red "196";
-  gv:blue "140";
-  gv:green "142";
-  gv:score "4.3391533";
-  gv:coverage "0.6"
-], [
-  gv:hex "6e1f24";
-  gv:red "110";
-  gv:blue "36";
-  gv:green "31";
-  gv:score "4.03498";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.826063"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.153762"
-];
-    w:bagOfWords "LA CAS PEDRO DOMECQ TIENE POR NORMA DESDE SU\nFUNDACION EN 1730, NO CONCURRIR CON Sus PRODUCTOS\nANINGUNA EXPOSICION NACIONAL NI EXTRANJERA\nJEREZ\nSECO\nN9202\nD\nARNU\nPROPIEDAD Do RIO VIEJO\nGMACHARNUDO ALTO)\nCasa a\nen 1730\nJEREZ DE LA FRONTERA\nJeres\nIndustrial\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4528";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

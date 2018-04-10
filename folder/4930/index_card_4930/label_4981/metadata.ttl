@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_4981";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "BERT\nll l\nLANC\nJR\nBOURGEO\nCR\n19\nSE EN\nBOU, E\nAMP, AG, Er, Proprit titi\nLILLE,\nPOUILLY FUISSE\nCuvée de Réserve\nF. WOLTNER\n"@undefined;
-    gv:color [
-  gv:hex "d9c6b1";
-  gv:red "217";
-  gv:blue "177";
-  gv:green "198";
-  gv:score "60.094046999999996";
-  gv:coverage "32.4"
-], [
-  gv:hex "e9d8c5";
-  gv:red "233";
-  gv:blue "197";
-  gv:green "216";
-  gv:score "19.208574";
-  gv:coverage "21.6"
-], [
-  gv:hex "b59e86";
-  gv:red "181";
-  gv:blue "134";
-  gv:green "158";
-  gv:score "8.1094474";
-  gv:coverage "4.8333332"
-], [
-  gv:hex "e7dacf";
-  gv:red "231";
-  gv:blue "207";
-  gv:green "218";
-  gv:score "5.6767497";
-  gv:coverage "30.333334"
-], [
-  gv:hex "dbccc0";
-  gv:red "219";
-  gv:blue "192";
-  gv:green "204";
-  gv:score "4.7975175000000005";
-  gv:coverage "7.7466667000000005"
-], [
-  gv:hex "8d7861";
-  gv:red "141";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "1.3373428";
-  gv:coverage "0.9733333300000001"
-], [
-  gv:hex "635443";
-  gv:red "99";
-  gv:blue "67";
-  gv:green "84";
-  gv:score "0.53793346";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "0e0602";
-  gv:red "14";
-  gv:blue "2";
-  gv:green "6";
-  gv:score "0.0043521006000000004";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "a49d96";
-  gv:red "164";
-  gv:blue "150";
-  gv:green "157";
-  gv:score "0.15366513";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "7c736a";
-  gv:red "124";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "0.039411639";
-  gv:coverage "0.44666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.021542"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.994422"
-];
-    w:bagOfWords "BERT\nll l\nLANC\nJR\nBOURGEO\nCR\n19\nSE EN\nBOU, E\nAMP, AG, Er, Proprit titi\nLILLE,\nPOUILLY FUISSE\nCuvée de Réserve\nF. WOLTNER\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4981";
+    <schema.keywords> "UC Reporters Notebook@en".
+

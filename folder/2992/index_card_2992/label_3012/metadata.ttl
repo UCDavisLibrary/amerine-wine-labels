@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3012";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CHATEAU HAUT BRION\n1924\nPREMIER GRAND CRU CLASSE\nFRANCE\n1st Cru Pessd\nC Gra ves\n"@fra;
-    gv:color [
-  gv:hex "8c755a";
-  gv:red "140";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "29.266393";
-  gv:coverage "6.0600000000000005"
-], [
-  gv:hex "d0bba5";
-  gv:red "208";
-  gv:blue "165";
-  gv:green "187";
-  gv:score "29.046431000000002";
-  gv:coverage "11.08"
-], [
-  gv:hex "af9880";
-  gv:red "175";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "27.000779";
-  gv:coverage "8.253333"
-], [
-  gv:hex "6b543a";
-  gv:red "107";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "7.9779781";
-  gv:coverage "2.0866666"
-], [
-  gv:hex "d0beb5";
-  gv:red "208";
-  gv:blue "181";
-  gv:green "190";
-  gv:score "2.4084242";
-  gv:coverage "6.273333"
-], [
-  gv:hex "4f3a20";
-  gv:red "79";
-  gv:blue "32";
-  gv:green "58";
-  gv:score "1.7194310000000002";
-  gv:coverage "0.76"
-], [
-  gv:hex "eedac7";
-  gv:red "238";
-  gv:blue "199";
-  gv:green "218";
-  gv:score "1.0001752";
-  gv:coverage "5.5133332"
-], [
-  gv:hex "77583e";
-  gv:red "119";
-  gv:blue "62";
-  gv:green "88";
-  gv:score "0.77655781";
-  gv:coverage "0.1"
-], [
-  gv:hex "8b6b50";
-  gv:red "139";
-  gv:blue "80";
-  gv:green "107";
-  gv:score "0.38305316";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "b4a197";
-  gv:red "180";
-  gv:blue "151";
-  gv:green "161";
-  gv:score "0.14654951";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.16863000000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "54.271936"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.929627999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.624846000000005"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.937884000000004"
-];
-    w:bagOfWords "CHATEAU HAUT BRION\n1924\nPREMIER GRAND CRU CLASSE\nFRANCE\n1st Cru Pessd\nC Gra ves\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3012";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

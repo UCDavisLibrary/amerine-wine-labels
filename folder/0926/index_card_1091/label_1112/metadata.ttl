@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1091/label_1112";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "REB\nBER\nGSE\nCUT\nDER\nKELLER\nSTADT\nIN NEUEN\nBERN\nSTADT\nSCHAFFISER\nLITHARMBRUSTER AG BERN.\n"@deu;
-    gv:color [
-  gv:hex "d4c0a5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "192";
-  gv:score "8.7597609";
-  gv:coverage "12.546666"
-], [
-  gv:hex "8e7338";
-  gv:red "142";
-  gv:blue "56";
-  gv:green "115";
-  gv:score "8.5000038";
-  gv:coverage "1.28"
-], [
-  gv:hex "562b07";
-  gv:red "86";
-  gv:blue "7";
-  gv:green "43";
-  gv:score "6.7387827";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "b2933e";
-  gv:red "178";
-  gv:blue "62";
-  gv:green "147";
-  gv:score "5.2360702";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "150b04";
-  gv:red "21";
-  gv:blue "4";
-  gv:green "11";
-  gv:score "1.0176358";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "6a531e";
-  gv:red "106";
-  gv:blue "30";
-  gv:green "83";
-  gv:score "6.6954039000000005";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "4f2711";
-  gv:red "79";
-  gv:blue "17";
-  gv:green "39";
-  gv:score "6.5276846";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "691d07";
-  gv:red "105";
-  gv:blue "7";
-  gv:green "29";
-  gv:score "6.3786841999999995";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "ad9a81";
-  gv:red "173";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "5.90057";
-  gv:coverage "2.86"
-], [
-  gv:hex "714a34";
-  gv:red "113";
-  gv:blue "52";
-  gv:green "74";
-  gv:score "4.3008678";
-  gv:coverage "1.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.29251699999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.73309"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.868176"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.159882"
-];
-    w:bagOfWords "REB\nBER\nGSE\nCUT\nDER\nKELLER\nSTADT\nIN NEUEN\nBERN\nSTADT\nSCHAFFISER\nLITHARMBRUSTER AG BERN.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1112";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

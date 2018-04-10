@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0085";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "REVETT\nILRE DITALIA\nMaiocco Secondo\n"@ita;
-    gv:color [
-  gv:hex "e9e1d8";
-  gv:red "233";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "71.93904500000001";
-  gv:coverage "52.873331"
-], [
-  gv:hex "dbc3a8";
-  gv:red "219";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "13.922241";
-  gv:coverage "17.126666"
-], [
-  gv:hex "eadcc8";
-  gv:red "234";
-  gv:blue "200";
-  gv:green "220";
-  gv:score "7.499871399999999";
-  gv:coverage "6.819999999999999"
-], [
-  gv:hex "d5cdc1";
-  gv:red "213";
-  gv:blue "193";
-  gv:green "205";
-  gv:score "1.7434957";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "b49b7f";
-  gv:red "180";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "1.6423982";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "887157";
-  gv:red "136";
-  gv:blue "87";
-  gv:green "113";
-  gv:score "0.69776564";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "664f36";
-  gv:red "102";
-  gv:blue "54";
-  gv:green "79";
-  gv:score "0.68661929";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "dcbf91";
-  gv:red "220";
-  gv:blue "145";
-  gv:green "191";
-  gv:score "0.24813097";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "4b361e";
-  gv:red "75";
-  gv:blue "30";
-  gv:green "54";
-  gv:score "0.24800065000000002";
-  gv:coverage "0.12"
-], [
-  gv:hex "4e2f16";
-  gv:red "78";
-  gv:blue "22";
-  gv:green "47";
-  gv:score "0.17301395";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.18115900000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.679614"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "67.035043"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.356664"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REVETT\nILRE DITALIA\nMaiocco Secondo\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0085";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

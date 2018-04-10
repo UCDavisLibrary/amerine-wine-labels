@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4085";
-    dct:type "image";
-    w:bagOfWords "4/5 Quart\nVACHARENTAISA\nMARK\nTRADE\nDISTILLED BY\nGNA C\nPRODUCE OF FRANCE\nShe\nCharente\n84 Proof\nin the\nenyis Certilicate\n"@fra;
-    gv:color [
-  gv:hex "d3c1ac";
-  gv:red "211";
-  gv:blue "172";
-  gv:green "193";
-  gv:score "6.7002773";
-  gv:coverage "7.4266665"
-], [
-  gv:hex "512b15";
-  gv:red "81";
-  gv:blue "21";
-  gv:green "43";
-  gv:score "5.0188031";
-  gv:coverage "0.2"
-], [
-  gv:hex "8a3821";
-  gv:red "138";
-  gv:blue "33";
-  gv:green "56";
-  gv:score "3.7197161";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ba6355";
-  gv:red "186";
-  gv:blue "85";
-  gv:green "99";
-  gv:score "3.7043820999999997";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "6c5124";
-  gv:red "108";
-  gv:blue "36";
-  gv:green "81";
-  gv:score "3.6120683000000002";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "ea6f63";
-  gv:red "234";
-  gv:blue "99";
-  gv:green "111";
-  gv:score "2.4786908";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "aa9781";
-  gv:red "170";
-  gv:blue "129";
-  gv:green "151";
-  gv:score "6.0741432";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "e0b8ab";
-  gv:red "224";
-  gv:blue "171";
-  gv:green "184";
-  gv:score "5.29709";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "d3c5bb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "4.9443081";
-  gv:coverage "24.373333"
-], [
-  gv:hex "897762";
-  gv:red "137";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "4.4620063000000005";
-  gv:coverage "0.88666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.450388"
-];
-    w:bagOfWords "4/5 Quart\nVACHARENTAISA\nMARK\nTRADE\nDISTILLED BY\nGNA C\nPRODUCE OF FRANCE\nShe\nCharente\n84 Proof\nin the\nenyis Certilicate\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4085";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

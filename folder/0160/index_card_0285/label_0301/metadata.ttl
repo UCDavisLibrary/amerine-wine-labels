@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0301";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "12 ALCOHOL\nBY VOLUME\nCALIFORNIA\nMOUNTAIN ZINFANDEL\nShed Hine made from .Genoma\nLOUIS MARTINI\nBRAND\nP r o d u c e d a n d Bott l e d at the Win e r y b v\nST. HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "cebc9d";
-  gv:red "206";
-  gv:blue "157";
-  gv:green "188";
-  gv:score "20.573449";
-  gv:coverage "5.5"
-], [
-  gv:hex "592b19";
-  gv:red "89";
-  gv:blue "25";
-  gv:green "43";
-  gv:score "1.0063090000000001";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "87453a";
-  gv:red "135";
-  gv:blue "58";
-  gv:green "69";
-  gv:score "0.73227622";
-  gv:coverage "0.04"
-], [
-  gv:hex "af9d7b";
-  gv:red "175";
-  gv:blue "123";
-  gv:green "157";
-  gv:score "16.577628";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "cec3ba";
-  gv:red "206";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "8.0327079";
-  gv:coverage "32.453334"
-], [
-  gv:hex "d2b886";
-  gv:red "210";
-  gv:blue "134";
-  gv:green "184";
-  gv:score "6.4310744";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "baa170";
-  gv:red "186";
-  gv:blue "112";
-  gv:green "161";
-  gv:score "6.2870316";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "c69176";
-  gv:red "198";
-  gv:blue "118";
-  gv:green "145";
-  gv:score "5.1033769";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "867958";
-  gv:red "134";
-  gv:blue "88";
-  gv:green "121";
-  gv:score "4.786421";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "a69c93";
-  gv:red "166";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "4.249905";
-  gv:coverage "2.4866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.515806"
-];
-    w:bagOfWords "12 ALCOHOL\nBY VOLUME\nCALIFORNIA\nMOUNTAIN ZINFANDEL\nShed Hine made from .Genoma\nLOUIS MARTINI\nBRAND\nP r o d u c e d a n d Bott l e d at the Win e r y b v\nST. HELENA, NAPA COUNTY, CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0301";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

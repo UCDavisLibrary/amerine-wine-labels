@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3710";
-    dct:type "image";
-    w:bagOfWords "No 97\nOTELLADO\nMARCA\nCONCEDIDA\nSOCIEDAD DE COSECHEROS DE VINO\nFUNDADA EN 189O\nRIOJA CLARETE\nEMBOTELLADO EN SU 6. Ano\n"@spa;
-    gv:color [
-  gv:hex "d2c4b7";
-  gv:red "210";
-  gv:blue "183";
-  gv:green "196";
-  gv:score "14.454998";
-  gv:coverage "9.6"
-], [
-  gv:hex "d11c17";
-  gv:red "209";
-  gv:blue "23";
-  gv:green "28";
-  gv:score "13.818544";
-  gv:coverage "2.82"
-], [
-  gv:hex "86786a";
-  gv:red "134";
-  gv:blue "106";
-  gv:green "120";
-  gv:score "11.973497";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "ac221e";
-  gv:red "172";
-  gv:blue "30";
-  gv:green "34";
-  gv:score "3.9617329999999997";
-  gv:coverage "1.22"
-], [
-  gv:hex "ffa296";
-  gv:red "255";
-  gv:blue "150";
-  gv:green "162";
-  gv:score "1.4240814";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "a59788";
-  gv:red "165";
-  gv:blue "136";
-  gv:green "151";
-  gv:score "11.969633";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "eadcd0";
-  gv:red "234";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "10.299328000000001";
-  gv:coverage "55.833334"
-], [
-  gv:hex "c2130d";
-  gv:red "194";
-  gv:blue "13";
-  gv:green "19";
-  gv:score "7.4804246";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "d2c4b3";
-  gv:red "210";
-  gv:blue "179";
-  gv:green "196";
-  gv:score "5.3266641";
-  gv:coverage "7.5733334"
-], [
-  gv:hex "645647";
-  gv:red "100";
-  gv:blue "71";
-  gv:green "86";
-  gv:score "3.6899812999999995";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.2633"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "No 97\nOTELLADO\nMARCA\nCONCEDIDA\nSOCIEDAD DE COSECHEROS DE VINO\nFUNDADA EN 189O\nRIOJA CLARETE\nEMBOTELLADO EN SU 6. Ano\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3710";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

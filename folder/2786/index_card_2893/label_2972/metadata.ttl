@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2972";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nVIN FIN\nD'ALSACE\n\"CLOS DU MAOUISARD\nNER\nTRAN\nPRO PRI E TE DE\nDOPFF & IRION\nAU\n(CHATEAU DE RIQUEWI HR\n549\nRIQUE WIH R\nCHAUT-RHIN\n"@fra;
-    gv:color [
-  gv:hex "d2c3b0";
-  gv:red "210";
-  gv:blue "176";
-  gv:green "195";
-  gv:score "22.728662";
-  gv:coverage "15.926667"
-], [
-  gv:hex "8e703a";
-  gv:red "142";
-  gv:blue "58";
-  gv:green "112";
-  gv:score "9.348014000000001";
-  gv:coverage "0.24"
-], [
-  gv:hex "ad5f55";
-  gv:red "173";
-  gv:blue "85";
-  gv:green "95";
-  gv:score "4.1733548";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "aa9c8a";
-  gv:red "170";
-  gv:blue "138";
-  gv:green "156";
-  gv:score "10.249756";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "ecdcc8";
-  gv:red "236";
-  gv:blue "200";
-  gv:green "220";
-  gv:score "7.683374";
-  gv:coverage "7.8266665"
-], [
-  gv:hex "f1bcab";
-  gv:red "241";
-  gv:blue "171";
-  gv:green "188";
-  gv:score "7.2234981000000005";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "88755b";
-  gv:red "136";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "5.2568074";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "c38d7f";
-  gv:red "195";
-  gv:blue "127";
-  gv:green "141";
-  gv:score "4.1241381";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "8c4237";
-  gv:red "140";
-  gv:blue "55";
-  gv:green "66";
-  gv:score "3.4765046";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "9f6c5c";
-  gv:red "159";
-  gv:blue "92";
-  gv:green "108";
-  gv:score "3.251233";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "72.55336"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.546988"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.807303"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.629936"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nVIN FIN\nD'ALSACE\n\"CLOS DU MAOUISARD\nNER\nTRAN\nPRO PRI E TE DE\nDOPFF & IRION\nAU\n(CHATEAU DE RIQUEWI HR\n549\nRIQUE WIH R\nCHAUT-RHIN\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2972";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0537";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "en\non inneburg\nMetternich-Win\n1945er Rosalack\nSchloss 0hannisengen\nOriginal Abfullung der\nFirst von Metternich schen\nDomane.\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "f1b485";
-  gv:red "241";
-  gv:blue "133";
-  gv:green "180";
-  gv:score "32.084109999999995";
-  gv:coverage "11.506667"
-], [
-  gv:hex "ca3e1a";
-  gv:red "202";
-  gv:blue "26";
-  gv:green "62";
-  gv:score "4.7402505";
-  gv:coverage "0.52"
-], [
-  gv:hex "d0bfa3";
-  gv:red "208";
-  gv:blue "163";
-  gv:green "191";
-  gv:score "1.6124113999999998";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "dbbb21";
-  gv:red "219";
-  gv:blue "33";
-  gv:green "187";
-  gv:score "1.3651496";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "271313";
-  gv:red "39";
-  gv:blue "19";
-  gv:green "19";
-  gv:score "0.25762299";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "116176";
-  gv:red "17";
-  gv:blue "118";
-  gv:green "97";
-  gv:score "0.10945254";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "c99265";
-  gv:red "201";
-  gv:blue "101";
-  gv:green "146";
-  gv:score "9.6379109";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "404981";
-  gv:red "64";
-  gv:blue "129";
-  gv:green "73";
-  gv:score "0.070073";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "118775";
-  gv:red "17";
-  gv:blue "117";
-  gv:green "135";
-  gv:score "0.065316295";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "31064b";
-  gv:red "49";
-  gv:blue "75";
-  gv:green "6";
-  gv:score "0.052835158";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.598191"
-];
-    w:bagOfWords "en\non inneburg\nMetternich-Win\n1945er Rosalack\nSchloss 0hannisengen\nOriginal Abfullung der\nFirst von Metternich schen\nDomane.\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0537";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1223";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "ODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVINA\nTORRE BREVA\nSA\nM\nU I S I M O\nB R A N D\nAND A LUCIA\n(ES PANA)\nSAN LUCA R\nArtes Graf\nS. A. Gjon\n"@spa;
-    gv:color [
-  gv:hex "c49d48";
-  gv:red "196";
-  gv:blue "72";
-  gv:green "157";
-  gv:score "10.634897";
-  gv:coverage "4.306666600000001"
-], [
-  gv:hex "794814";
-  gv:red "121";
-  gv:blue "20";
-  gv:green "72";
-  gv:score "5.7132322";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "c49559";
-  gv:red "196";
-  gv:blue "89";
-  gv:green "149";
-  gv:score "5.111718600000001";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "6a1b09";
-  gv:red "106";
-  gv:blue "9";
-  gv:green "27";
-  gv:score "3.2241479";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "abaa1f";
-  gv:red "171";
-  gv:blue "31";
-  gv:green "170";
-  gv:score "1.3446776";
-  gv:coverage "0.3"
-], [
-  gv:hex "1e295c";
-  gv:red "30";
-  gv:blue "92";
-  gv:green "41";
-  gv:score "0.65846443";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "0c1d35";
-  gv:red "12";
-  gv:blue "53";
-  gv:green "29";
-  gv:score "0.5689261";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "91b3a9";
-  gv:red "145";
-  gv:blue "169";
-  gv:green "179";
-  gv:score "0.53010844";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "dbb360";
-  gv:red "219";
-  gv:blue "96";
-  gv:green "179";
-  gv:score "6.9513074999999995";
-  gv:coverage "3.6866665"
-], [
-  gv:hex "deb776";
-  gv:red "222";
-  gv:blue "118";
-  gv:green "183";
-  gv:score "6.7655243";
-  gv:coverage "4.6866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.19869"
-];
-    w:bagOfWords "ODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVINA\nTORRE BREVA\nSA\nM\nU I S I M O\nB R A N D\nAND A LUCIA\n(ES PANA)\nSAN LUCA R\nArtes Graf\nS. A. Gjon\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1223";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

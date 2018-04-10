@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3027";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "LA MISSION ILAUT BRION\nin\nGrand Premier Cru\nMIS EN BoUTEILLES AU CHATEAU\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "dabb99";
-  gv:red "218";
-  gv:blue "153";
-  gv:green "187";
-  gv:score "40.851629";
-  gv:coverage "29.013333000000003"
-], [
-  gv:hex "b69a79";
-  gv:red "182";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "12.861362000000002";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "8a7258";
-  gv:red "138";
-  gv:blue "88";
-  gv:green "114";
-  gv:score "11.498472";
-  gv:coverage "3.2733331999999997"
-], [
-  gv:hex "665139";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "10.67886";
-  gv:coverage "2.76"
-], [
-  gv:hex "d9b68a";
-  gv:red "217";
-  gv:blue "138";
-  gv:green "182";
-  gv:score "7.8742772";
-  gv:coverage "2.58"
-], [
-  gv:hex "49351e";
-  gv:red "73";
-  gv:blue "30";
-  gv:green "53";
-  gv:score "4.0684305";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "c19e72";
-  gv:red "193";
-  gv:blue "114";
-  gv:green "158";
-  gv:score "3.6093667000000003";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "c49b6f";
-  gv:red "196";
-  gv:blue "111";
-  gv:green "155";
-  gv:score "2.4767485999999996";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "dab085";
-  gv:red "218";
-  gv:blue "133";
-  gv:green "176";
-  gv:score "1.3405998000000001";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "93734b";
-  gv:red "147";
-  gv:blue "75";
-  gv:green "115";
-  gv:score "1.0342099";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.488607"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.526446"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.450928"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.180437000000005"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.325905000000006"
-];
-    w:bagOfWords "LA MISSION ILAUT BRION\nin\nGrand Premier Cru\nMIS EN BoUTEILLES AU CHATEAU\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3027";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0639";
-    dct:type "image";
-    w:bagOfWords "D'ALSACE\nVIN Tkaeferkspl\nVIN D ALSACE KUEH N Negociants viticulteurs\nAM MER SCHWIHR (HTRH IN\nA\n"@undefined;
-    gv:color [
-  gv:hex "e0c7a0";
-  gv:red "224";
-  gv:blue "160";
-  gv:green "199";
-  gv:score "55.712616000000004";
-  gv:coverage "24.233334"
-], [
-  gv:hex "8b7248";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "4.4688411";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "69280a";
-  gv:red "105";
-  gv:blue "10";
-  gv:green "40";
-  gv:score "0.25264191999999996";
-  gv:coverage "0.02"
-], [
-  gv:hex "b49a74";
-  gv:red "180";
-  gv:blue "116";
-  gv:green "154";
-  gv:score "10.613386";
-  gv:coverage "2.46"
-], [
-  gv:hex "f0d7b2";
-  gv:red "240";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "7.0325159";
-  gv:coverage "5.5666666"
-], [
-  gv:hex "987c55";
-  gv:red "152";
-  gv:blue "85";
-  gv:green "124";
-  gv:score "3.9110243000000002";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "e7bc99";
-  gv:red "231";
-  gv:blue "153";
-  gv:green "188";
-  gv:score "3.4674361";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "e0c296";
-  gv:red "224";
-  gv:blue "150";
-  gv:green "194";
-  gv:score "2.436447";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "c39775";
-  gv:red "195";
-  gv:blue "117";
-  gv:green "151";
-  gv:score "1.808808";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "976946";
-  gv:red "151";
-  gv:blue "70";
-  gv:green "105";
-  gv:score "1.5533062";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.943383"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.234300000000005"
-];
-    w:bagOfWords "D'ALSACE\nVIN Tkaeferkspl\nVIN D ALSACE KUEH N Negociants viticulteurs\nAM MER SCHWIHR (HTRH IN\nA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0639";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

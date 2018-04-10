@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1796";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Contents\nisicohol 10\nM O SEL S A A R R U W E R\n1 Pint 8 Fl. Oz\nby Volume\n1937 er\nJosephshofer Auslese\nOrigin\nWACHSTUM REICHSGRAF VON KESSELSTATT, TRIER\nDACHWEILER,sci MARA ER\n"@deu;
-    gv:color [
-  gv:hex "d0c0ad";
-  gv:red "208";
-  gv:blue "173";
-  gv:green "192";
-  gv:score "17.929354";
-  gv:coverage "11.666667"
-], [
-  gv:hex "837353";
-  gv:red "131";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "17.707828";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "c9c2b8";
-  gv:red "201";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "14.307160999999999";
-  gv:coverage "17.886667"
-], [
-  gv:hex "aa997f";
-  gv:red "170";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "10.342279";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "645436";
-  gv:red "100";
-  gv:blue "54";
-  gv:green "84";
-  gv:score "7.9601482";
-  gv:coverage "0.3"
-], [
-  gv:hex "a89f96";
-  gv:red "168";
-  gv:blue "150";
-  gv:green "159";
-  gv:score "5.6182276";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "bd9586";
-  gv:red "189";
-  gv:blue "134";
-  gv:green "149";
-  gv:score "5.2019611";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "916b59";
-  gv:red "145";
-  gv:blue "89";
-  gv:green "107";
-  gv:score "3.3310421";
-  gv:coverage "0.12"
-], [
-  gv:hex "86796f";
-  gv:red "134";
-  gv:blue "111";
-  gv:green "121";
-  gv:score "2.4756888";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "784f3f";
-  gv:red "120";
-  gv:blue "63";
-  gv:green "79";
-  gv:score "2.3921585";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.569135"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.90452799999999"
-];
-    w:bagOfWords "Contents\nisicohol 10\nM O SEL S A A R R U W E R\n1 Pint 8 Fl. Oz\nby Volume\n1937 er\nJosephshofer Auslese\nOrigin\nWACHSTUM REICHSGRAF VON KESSELSTATT, TRIER\nDACHWEILER,sci MARA ER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1796";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

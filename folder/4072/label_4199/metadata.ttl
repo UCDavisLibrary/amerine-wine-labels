@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4199";
-    dct:type "image";
-    w:bagOfWords "CHATEAU DE LECHARDERIE\nCOTEAUX DULATON\nA COURTILLIE PROYNET\nPROPRIETAIRE\nPREMIER GRAND cRu AN JOU LAYON\nROCHE FORT SUR LOIRE\nAppellation Controlee\nMAINE ET LOIRE\nMA A\n"@fra;
-    gv:color [
-  gv:hex "d4b492";
-  gv:red "212";
-  gv:blue "146";
-  gv:green "180";
-  gv:score "32.950965";
-  gv:coverage "20.266666999999998"
-], [
-  gv:hex "bf9f7d";
-  gv:red "191";
-  gv:blue "125";
-  gv:green "159";
-  gv:score "26.286167";
-  gv:coverage "7.66"
-], [
-  gv:hex "c4a074";
-  gv:red "196";
-  gv:blue "116";
-  gv:green "160";
-  gv:score "10.099053";
-  gv:coverage "1.96"
-], [
-  gv:hex "d5af83";
-  gv:red "213";
-  gv:blue "131";
-  gv:green "175";
-  gv:score "9.12323";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "c39a6d";
-  gv:red "195";
-  gv:blue "109";
-  gv:green "154";
-  gv:score "5.6634519";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "987858";
-  gv:red "152";
-  gv:blue "88";
-  gv:green "120";
-  gv:score "4.308544100000001";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "dab084";
-  gv:red "218";
-  gv:blue "132";
-  gv:green "176";
-  gv:score "3.6510404000000003";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "deb691";
-  gv:red "222";
-  gv:blue "145";
-  gv:green "182";
-  gv:score "1.9063197";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "8c6b4b";
-  gv:red "140";
-  gv:blue "75";
-  gv:green "107";
-  gv:score "1.3704149";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "715130";
-  gv:red "113";
-  gv:blue "48";
-  gv:green "81";
-  gv:score "1.2545688";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.314453"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.802876"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.36886"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.936858"
-];
-    w:bagOfWords "CHATEAU DE LECHARDERIE\nCOTEAUX DULATON\nA COURTILLIE PROYNET\nPROPRIETAIRE\nPREMIER GRAND cRu AN JOU LAYON\nROCHE FORT SUR LOIRE\nAppellation Controlee\nMAINE ET LOIRE\nMA A\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4199";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0743";
-    dct:type "image";
-    w:bagOfWords "Pare\nAR BIA\nCASA VINICOLA\nBARONE RICA SOLI\nFIRE NZE\nIMBOTTIGL, LA TO ALL ORIGIVE\nDRIOLI\nMARASCHINo\n2 FRANCESCO DRIOL\n"@undefined;
-    gv:color [
-  gv:hex "e9e2db";
-  gv:red "233";
-  gv:blue "219";
-  gv:green "226";
-  gv:score "83.268219";
-  gv:coverage "58.166664999999995"
-], [
-  gv:hex "903b17";
-  gv:red "144";
-  gv:blue "23";
-  gv:green "59";
-  gv:score "0.20858955";
-  gv:coverage "0.16"
-], [
-  gv:hex "d2ccc3";
-  gv:red "210";
-  gv:blue "195";
-  gv:green "204";
-  gv:score "6.0048506";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "ebe0ca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "224";
-  gv:score "4.1589808";
-  gv:coverage "4.413333199999999"
-], [
-  gv:hex "a49c92";
-  gv:red "164";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "1.3589577";
-  gv:coverage "0.72"
-], [
-  gv:hex "decdb0";
-  gv:red "222";
-  gv:blue "176";
-  gv:green "205";
-  gv:score "1.2121781";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "e1c891";
-  gv:red "225";
-  gv:blue "145";
-  gv:green "200";
-  gv:score "1.0732983999999999";
-  gv:coverage "9.22"
-], [
-  gv:hex "837b71";
-  gv:red "131";
-  gv:blue "113";
-  gv:green "123";
-  gv:score "0.64702351";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "e4c06c";
-  gv:red "228";
-  gv:blue "108";
-  gv:green "192";
-  gv:score "0.53380737";
-  gv:coverage "0.42"
-], [
-  gv:hex "b99e71";
-  gv:red "185";
-  gv:blue "113";
-  gv:green "158";
-  gv:score "0.23232018999999998";
-  gv:coverage "0.6666666800000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.906915"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "59.582555000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.906"
-];
-    w:bagOfWords "Pare\nAR BIA\nCASA VINICOLA\nBARONE RICA SOLI\nFIRE NZE\nIMBOTTIGL, LA TO ALL ORIGIVE\nDRIOLI\nMARASCHINo\n2 FRANCESCO DRIOL\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0743";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

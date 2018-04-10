@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3909";
-    dct:type "image";
-    w:bagOfWords "M O S E L\nS A A R\nR U W E R\nBernkaffelu. Obraady\nmit folgenben Lagen\nBernkaffeler\nTube, Ian\nsrpmanem, Rnfenberg,\n1949er\ncher Bernfajteler Babitube\nAbfrberg, Biafirm,\nRirdyla\nathstum: Bad). Bergmeiler-priim QErben, Bernkaltel\nBfablan, pimmelreiry\nErbhire rangiska pauln Bergmeiler unb Ratharina Berghueiler\nPriginal-Rellerabyug\n"@deu;
-    gv:color [
-  gv:hex "ddb97f";
-  gv:red "221";
-  gv:blue "127";
-  gv:green "185";
-  gv:score "27.567684999999997";
-  gv:coverage "7.7133335"
-], [
-  gv:hex "675336";
-  gv:red "103";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "9.028173200000001";
-  gv:coverage "3.2933332"
-], [
-  gv:hex "ba9b69";
-  gv:red "186";
-  gv:blue "105";
-  gv:green "155";
-  gv:score "11.783603";
-  gv:coverage "3.3066668"
-], [
-  gv:hex "b19979";
-  gv:red "177";
-  gv:blue "121";
-  gv:green "153";
-  gv:score "8.9820519";
-  gv:coverage "5.680000000000001"
-], [
-  gv:hex "887254";
-  gv:red "136";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "8.651261";
-  gv:coverage "5.2333333"
-], [
-  gv:hex "d9bfa3";
-  gv:red "217";
-  gv:blue "163";
-  gv:green "191";
-  gv:score "8.352793799999999";
-  gv:coverage "15.446667"
-], [
-  gv:hex "927444";
-  gv:red "146";
-  gv:blue "68";
-  gv:green "116";
-  gv:score "6.2234413";
-  gv:coverage "1.46"
-], [
-  gv:hex "433116";
-  gv:red "67";
-  gv:blue "22";
-  gv:green "49";
-  gv:score "5.2219965";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "e7b477";
-  gv:red "231";
-  gv:blue "119";
-  gv:green "180";
-  gv:score "3.4849297000000004";
-  gv:coverage "1.34"
-], [
-  gv:hex "cc9759";
-  gv:red "204";
-  gv:blue "89";
-  gv:green "151";
-  gv:score "2.7545929";
-  gv:coverage "0.98"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.068532"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.873070999999996"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.246394"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.087452000000006"
-];
-    w:bagOfWords "M O S E L\nS A A R\nR U W E R\nBernkaffelu. Obraady\nmit folgenben Lagen\nBernkaffeler\nTube, Ian\nsrpmanem, Rnfenberg,\n1949er\ncher Bernfajteler Babitube\nAbfrberg, Biafirm,\nRirdyla\nathstum: Bad). Bergmeiler-priim QErben, Bernkaltel\nBfablan, pimmelreiry\nErbhire rangiska pauln Bergmeiler unb Ratharina Berghueiler\nPriginal-Rellerabyug\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3909";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

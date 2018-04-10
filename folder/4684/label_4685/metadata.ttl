@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4685";
-    dct:type "image";
-    w:bagOfWords "AMMAL\nBammal hin Aquavit\nAktiebolaget\nTinHSprituentralen\n"@undefined;
-    gv:color [
-  gv:hex "d9c09e";
-  gv:red "217";
-  gv:blue "158";
-  gv:green "192";
-  gv:score "12.711236000000001";
-  gv:coverage "13.686667"
-], [
-  gv:hex "7a4a1f";
-  gv:red "122";
-  gv:blue "31";
-  gv:green "74";
-  gv:score "11.557454";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "c94017";
-  gv:red "201";
-  gv:blue "23";
-  gv:green "64";
-  gv:score "2.9547049";
-  gv:coverage "0.22"
-], [
-  gv:hex "943d21";
-  gv:red "148";
-  gv:blue "33";
-  gv:green "61";
-  gv:score "9.7966813";
-  gv:coverage "0.96"
-], [
-  gv:hex "99683e";
-  gv:red "153";
-  gv:blue "62";
-  gv:green "104";
-  gv:score "8.1091277";
-  gv:coverage "1.48"
-], [
-  gv:hex "b19a7a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "154";
-  gv:score "7.5182185";
-  gv:coverage "3.7800000000000002"
-], [
-  gv:hex "8f7244";
-  gv:red "143";
-  gv:blue "68";
-  gv:green "114";
-  gv:score "5.9182622";
-  gv:coverage "1.9333333000000001"
-], [
-  gv:hex "b35a3c";
-  gv:red "179";
-  gv:blue "60";
-  gv:green "90";
-  gv:score "4.0214065";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "eab79c";
-  gv:red "234";
-  gv:blue "156";
-  gv:green "183";
-  gv:score "3.4056112";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "8d7658";
-  gv:red "141";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "3.3016797";
-  gv:coverage "1.94"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.103015"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "60.73650000000001"
-], [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "53.917718"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "50.785422000000004"
-];
-    w:bagOfWords "AMMAL\nBammal hin Aquavit\nAktiebolaget\nTinHSprituentralen\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4685";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

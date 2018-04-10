@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1723/label_1732";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Derrenberg\nelterabtma der C. von chubert'schen vormals\nFreiherrlich von Stumm- Halberg 'schen\nCHLOSSK ELLEREI\nD. CO.,T\nTMO SEL\nSAAR\nRu VVER\n"@deu;
-    gv:color [
-  gv:hex "857558";
-  gv:red "133";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "17.649218";
-  gv:coverage "5.58"
-], [
-  gv:hex "aa997d";
-  gv:red "170";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "14.896714999999999";
-  gv:coverage "6.5600000000000005"
-], [
-  gv:hex "d1c0a6";
-  gv:red "209";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "14.582695000000001";
-  gv:coverage "12.186667"
-], [
-  gv:hex "625536";
-  gv:red "98";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "11.508394";
-  gv:coverage "3.2933332"
-], [
-  gv:hex "5b5525";
-  gv:red "91";
-  gv:blue "37";
-  gv:green "85";
-  gv:score "5.7647806";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "3d3515";
-  gv:red "61";
-  gv:blue "21";
-  gv:green "53";
-  gv:score "5.015149";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "7e7544";
-  gv:red "126";
-  gv:blue "68";
-  gv:green "117";
-  gv:score "4.055922499999999";
-  gv:coverage "0.76"
-], [
-  gv:hex "99705a";
-  gv:red "153";
-  gv:blue "90";
-  gv:green "112";
-  gv:score "3.6068764000000004";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "eddbc2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "3.1820849";
-  gv:coverage "8.3333336"
-], [
-  gv:hex "774d39";
-  gv:red "119";
-  gv:blue "57";
-  gv:green "77";
-  gv:score "3.0578164";
-  gv:coverage "0.55333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "69.35012900000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.489129999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.027481"
-];
-    w:bagOfWords "Derrenberg\nelterabtma der C. von chubert'schen vormals\nFreiherrlich von Stumm- Halberg 'schen\nCHLOSSK ELLEREI\nD. CO.,T\nTMO SEL\nSAAR\nRu VVER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1732";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

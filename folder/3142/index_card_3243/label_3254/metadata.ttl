@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3243/label_3254";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\nGRANDSECHEZEAUX Appellation Controlée\ntaires\nANNEE 1937\nContents 3/4 Quart-Product of France-Alcohol l 4 by Volume\nPre\n"@fra;
-    gv:color [
-  gv:hex "d3c4b0";
-  gv:red "211";
-  gv:blue "176";
-  gv:green "196";
-  gv:score "31.715992";
-  gv:coverage "46.653333"
-], [
-  gv:hex "aa9a88";
-  gv:red "170";
-  gv:blue "136";
-  gv:green "154";
-  gv:score "25.680092";
-  gv:coverage "4.9799999999999995"
-], [
-  gv:hex "ecdcca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "17.552979";
-  gv:coverage "29.446666999999998"
-], [
-  gv:hex "877766";
-  gv:red "135";
-  gv:blue "102";
-  gv:green "119";
-  gv:score "13.824052";
-  gv:coverage "2.36"
-], [
-  gv:hex "665645";
-  gv:red "102";
-  gv:blue "69";
-  gv:green "86";
-  gv:score "6.0541183";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "433323";
-  gv:red "67";
-  gv:blue "35";
-  gv:green "51";
-  gv:score "2.2326894";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "cdbeb3";
-  gv:red "205";
-  gv:blue "179";
-  gv:green "190";
-  gv:score "0.6984826599999999";
-  gv:coverage "2.12"
-], [
-  gv:hex "7f7267";
-  gv:red "127";
-  gv:blue "103";
-  gv:green "114";
-  gv:score "0.64019887";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "ac9e92";
-  gv:red "172";
-  gv:blue "146";
-  gv:green "158";
-  gv:score "0.5596553";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "2a1a0a";
-  gv:red "42";
-  gv:blue "10";
-  gv:green "26";
-  gv:score "0.40212641";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.0097"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.411766"
-];
-    w:bagOfWords "DOMAINE DE LA ROMANEE-CONTI\nGRANDS ECHEZEAUX\nGRANDSECHEZEAUX Appellation Controlée\ntaires\nANNEE 1937\nContents 3/4 Quart-Product of France-Alcohol l 4 by Volume\nPre\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3254";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

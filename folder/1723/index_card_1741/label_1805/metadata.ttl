@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1805";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Alcohol 10%\nby Volume\nM O SEL SAAR R\nNE R 1 Pint\nOz\n1937\nPiesporter Goldtropfchen Auslese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nAAR a DA THE\nRIER\n"@deu;
-    gv:color [
-  gv:hex "cdbba7";
-  gv:red "205";
-  gv:blue "167";
-  gv:green "187";
-  gv:score "27.978977999999998";
-  gv:coverage "12.806667"
-], [
-  gv:hex "64543b";
-  gv:red "100";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "7.088251399999999";
-  gv:coverage "0.62"
-], [
-  gv:hex "261b16";
-  gv:red "38";
-  gv:blue "22";
-  gv:green "27";
-  gv:score "0.19714242999999998";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "b09e87";
-  gv:red "176";
-  gv:blue "135";
-  gv:green "158";
-  gv:score "19.583045";
-  gv:coverage "4.2533334"
-], [
-  gv:hex "d0c6bd";
-  gv:red "208";
-  gv:blue "189";
-  gv:green "198";
-  gv:score "15.994053";
-  gv:coverage "31.426665"
-], [
-  gv:hex "85735b";
-  gv:red "133";
-  gv:blue "91";
-  gv:green "115";
-  gv:score "6.2112615";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "a39e94";
-  gv:red "163";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "6.0092866";
-  gv:coverage "2.4066666"
-], [
-  gv:hex "bd9686";
-  gv:red "189";
-  gv:blue "134";
-  gv:green "150";
-  gv:score "2.7043946";
-  gv:coverage "0.72"
-], [
-  gv:hex "82776c";
-  gv:red "130";
-  gv:blue "108";
-  gv:green "119";
-  gv:score "2.1406014";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "e3d8ce";
-  gv:red "227";
-  gv:blue "206";
-  gv:green "216";
-  gv:score "1.6906827999999998";
-  gv:coverage "44.28"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.458032"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.279218"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.79722099999999"
-];
-    w:bagOfWords "Alcohol 10%\nby Volume\nM O SEL SAAR R\nNE R 1 Pint\nOz\n1937\nPiesporter Goldtropfchen Auslese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT TRIER\nAAR a DA THE\nRIER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1805";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

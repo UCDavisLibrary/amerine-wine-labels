@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2195";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "Novitiate\nPRODUCED AND BOTTLED BY\nMovitiate of Los Fatos\nBONDED WINERY NO. 107\n4 TH DISTRICT CALIF.\nLOS GATOS. CALIFORNIA\nFOUNDED 1888\nALCOHOL 20% BY VOLUME\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    gv:color [
-  gv:hex "873620";
-  gv:red "135";
-  gv:blue "32";
-  gv:green "54";
-  gv:score "9.3158886";
-  gv:coverage "0.24"
-], [
-  gv:hex "d8c6b4";
-  gv:red "216";
-  gv:blue "180";
-  gv:green "198";
-  gv:score "8.274688600000001";
-  gv:coverage "11.893333"
-], [
-  gv:hex "4f2316";
-  gv:red "79";
-  gv:blue "22";
-  gv:green "35";
-  gv:score "6.6521652";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "270202";
-  gv:red "39";
-  gv:blue "2";
-  gv:green "2";
-  gv:score "4.5138881";
-  gv:coverage "1.2666667"
-], [
-  gv:hex "6e1d0a";
-  gv:red "110";
-  gv:blue "10";
-  gv:green "29";
-  gv:score "8.4345289";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "784735";
-  gv:red "120";
-  gv:blue "53";
-  gv:green "71";
-  gv:score "5.8303120999999996";
-  gv:coverage "0.8"
-], [
-  gv:hex "931f18";
-  gv:red "147";
-  gv:blue "24";
-  gv:green "31";
-  gv:score "5.6921549";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "9b6754";
-  gv:red "155";
-  gv:blue "84";
-  gv:green "103";
-  gv:score "5.4956209";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "ecdbca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "4.7053851";
-  gv:coverage "15.366666"
-], [
-  gv:hex "ac9986";
-  gv:red "172";
-  gv:blue "134";
-  gv:green "153";
-  gv:score "4.3349355";
-  gv:coverage "2.0133332999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.01756900000001"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "51.476513999999995"
-];
-    w:bagOfWords "Novitiate\nPRODUCED AND BOTTLED BY\nMovitiate of Los Fatos\nBONDED WINERY NO. 107\n4 TH DISTRICT CALIF.\nLOS GATOS. CALIFORNIA\nFOUNDED 1888\nALCOHOL 20% BY VOLUME\nTAX PAID BY STAMPS AFFIXED TO CASE\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2195";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

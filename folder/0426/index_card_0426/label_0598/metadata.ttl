@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0598";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Rheingau\nlllllKllllll¥llllllMllllllxllllikallllll-llⅢEllllll* illllK2Ill-lllll llll\nBACH\n1934er\nLANGEN BACH\nRUDESHEIMER\nALCOHOL 12010-BY/NOLuME\nCONTENTS 12 FLUID OuNCES\nPRODUCEOF GERMANY\nllllll Illlll★llllllRIllll|치llll llllllHDKllllll※Illlll*IllIll llllll★llllll宪llllll*\nREMⅢIRIITE\nHIRII IIHILIIHITHERIHIE\nill-alllll*illll 11lll!★__ ill llllll*\n"@deu;
-    gv:color [
-  gv:hex "b09a7e";
-  gv:red "176";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "28.978243";
-  gv:coverage "6.8066664"
-], [
-  gv:hex "d3bb9e";
-  gv:red "211";
-  gv:blue "158";
-  gv:green "187";
-  gv:score "27.85089";
-  gv:coverage "49.526668"
-], [
-  gv:hex "8a7760";
-  gv:red "138";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "16.787282";
-  gv:coverage "2.8666666"
-], [
-  gv:hex "695845";
-  gv:red "105";
-  gv:blue "69";
-  gv:green "88";
-  gv:score "3.4171078";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "b79d6f";
-  gv:red "183";
-  gv:blue "111";
-  gv:green "157";
-  gv:score "2.9431365";
-  gv:coverage "0.6"
-], [
-  gv:hex "eed8c1";
-  gv:red "238";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "2.9233941999999997";
-  gv:coverage "16.506666"
-], [
-  gv:hex "a6978f";
-  gv:red "166";
-  gv:blue "143";
-  gv:green "151";
-  gv:score "2.9026069000000003";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "84766d";
-  gv:red "132";
-  gv:blue "109";
-  gv:green "118";
-  gv:score "2.5012063";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "977255";
-  gv:red "151";
-  gv:blue "85";
-  gv:green "114";
-  gv:score "1.850798";
-  gv:coverage "0.18"
-], [
-  gv:hex "d0c1b7";
-  gv:red "208";
-  gv:blue "183";
-  gv:green "193";
-  gv:score "1.7960714";
-  gv:coverage "5.0466668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.956453"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.226825"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.087404"
-];
-    w:bagOfWords "Rheingau\nlllllKllllll¥llllllMllllllxllllikallllll-llⅢEllllll* illllK2Ill-lllll llll\nBACH\n1934er\nLANGEN BACH\nRUDESHEIMER\nALCOHOL 12010-BY/NOLuME\nCONTENTS 12 FLUID OuNCES\nPRODUCEOF GERMANY\nllllll Illlll★llllllRIllll|치llll llllllHDKllllll※Illlll*IllIll llllll★llllll宪llllll*\nREMⅢIRIITE\nHIRII IIHILIIHITHERIHIE\nill-alllll*illll 11lll!★__ ill llllll*\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0598";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0881";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CONTENTS 1 PIA T 10 FLUID OUNCES\n9 33 62\nsoCHTE VINICOLE\nDE CHAMPAGNE\nSUCCESS EUR\nREIMS\nFRANCE\nSHAMPAGNE TRES SEC\nTRA DE MARK REGISTERED IN U.Se Ar ENT OFFICE\nPRODUCE OF FRAN\nBY VOLUME 13 olo\nALCOHOLIC ST\n"@fra;
-    gv:color [
-  gv:hex "c74014";
-  gv:red "199";
-  gv:blue "20";
-  gv:green "64";
-  gv:score "21.861422";
-  gv:coverage "2.5"
-], [
-  gv:hex "d4bf9f";
-  gv:red "212";
-  gv:blue "159";
-  gv:green "191";
-  gv:score "6.5351278";
-  gv:coverage "17.086667"
-], [
-  gv:hex "bd9c66";
-  gv:red "189";
-  gv:blue "102";
-  gv:green "156";
-  gv:score "4.6494689";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "af3108";
-  gv:red "175";
-  gv:blue "8";
-  gv:green "49";
-  gv:score "19.965124";
-  gv:coverage "1.94"
-], [
-  gv:hex "bf5820";
-  gv:red "191";
-  gv:blue "32";
-  gv:green "88";
-  gv:score "6.850936300000001";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "a23e08";
-  gv:red "162";
-  gv:blue "8";
-  gv:green "62";
-  gv:score "6.2313665";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "d32b09";
-  gv:red "211";
-  gv:blue "9";
-  gv:green "43";
-  gv:score "6.0398977";
-  gv:coverage "0.74"
-], [
-  gv:hex "c78f5f";
-  gv:red "199";
-  gv:blue "95";
-  gv:green "143";
-  gv:score "3.9688803000000004";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "b29d7c";
-  gv:red "178";
-  gv:blue "124";
-  gv:green "157";
-  gv:score "3.0786797";
-  gv:coverage "2.6599999999999997"
-], [
-  gv:hex "e83206";
-  gv:red "232";
-  gv:blue "6";
-  gv:green "50";
-  gv:score "2.4736738000000003";
-  gv:coverage "0.42666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "74.12852"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.629344"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.404604"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.639599999999994"
-];
-    w:bagOfWords "CONTENTS 1 PIA T 10 FLUID OUNCES\n9 33 62\nsoCHTE VINICOLE\nDE CHAMPAGNE\nSUCCESS EUR\nREIMS\nFRANCE\nSHAMPAGNE TRES SEC\nTRA DE MARK REGISTERED IN U.Se Ar ENT OFFICE\nPRODUCE OF FRAN\nBY VOLUME 13 olo\nALCOHOLIC ST\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0881";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

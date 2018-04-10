@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3711";
-    dct:type "image";
-    w:bagOfWords "dade B. Rodriguez la Cave\nMANZANILLA SELECTA\nMARCA REGIST\nSANLUCAR DE\nBARRAMEDA\nEmbotellador No 26\nTP. JEREz INousTRIAL\n"@spa;
-    gv:color [
-  gv:hex "9d221e";
-  gv:red "157";
-  gv:blue "30";
-  gv:green "34";
-  gv:score "15.425926";
-  gv:coverage "0.54"
-], [
-  gv:hex "d6c2ae";
-  gv:red "214";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "8.8087022";
-  gv:coverage "30.686668"
-], [
-  gv:hex "e0857b";
-  gv:red "224";
-  gv:blue "123";
-  gv:green "133";
-  gv:score "7.2705746";
-  gv:coverage "0.42"
-], [
-  gv:hex "ebb7a4";
-  gv:red "235";
-  gv:blue "164";
-  gv:green "183";
-  gv:score "7.1473569";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "8a3222";
-  gv:red "138";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "6.3014455";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "8d3c33";
-  gv:red "141";
-  gv:blue "51";
-  gv:green "60";
-  gv:score "6.1616734";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "b05b50";
-  gv:red "176";
-  gv:blue "80";
-  gv:green "91";
-  gv:score "6.1494924";
-  gv:coverage "0.4"
-], [
-  gv:hex "c6927e";
-  gv:red "198";
-  gv:blue "126";
-  gv:green "146";
-  gv:score "5.5442177";
-  gv:coverage "0.84"
-], [
-  gv:hex "c84b44";
-  gv:red "200";
-  gv:blue "68";
-  gv:green "75";
-  gv:score "4.45015";
-  gv:coverage "0.16"
-], [
-  gv:hex "9e6b58";
-  gv:red "158";
-  gv:blue "88";
-  gv:green "107";
-  gv:score "3.8745402999999996";
-  gv:coverage "0.39333333000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.94933300000001"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "64.376706"
-];
-    w:bagOfWords "dade B. Rodriguez la Cave\nMANZANILLA SELECTA\nMARCA REGIST\nSANLUCAR DE\nBARRAMEDA\nEmbotellador No 26\nTP. JEREz INousTRIAL\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3711";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

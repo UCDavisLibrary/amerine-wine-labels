@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0597";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "PRODUCE OF GERMANY\nCONTENTS 1 PINT 7 FL. OZ\n1933\nRiidesheimer Rosengarten-Nahe\nStillwine\nBottled by:\nBapt, am ein\nWEIN GUTS B E S I T Z E R\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "87745b";
-  gv:red "135";
-  gv:blue "91";
-  gv:green "116";
-  gv:score "22.598122";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "ab9880";
-  gv:red "171";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "19.831142";
-  gv:coverage "4.34"
-], [
-  gv:hex "cfbda6";
-  gv:red "207";
-  gv:blue "166";
-  gv:green "189";
-  gv:score "17.369565";
-  gv:coverage "22.18"
-], [
-  gv:hex "685337";
-  gv:red "104";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "17.115763";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "43321a";
-  gv:red "67";
-  gv:blue "26";
-  gv:green "50";
-  gv:score "6.611110000000001";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "8e6f44";
-  gv:red "142";
-  gv:blue "68";
-  gv:green "111";
-  gv:score "4.0951";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "271907";
-  gv:red "39";
-  gv:blue "7";
-  gv:green "25";
-  gv:score "3.6515154";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "6e5229";
-  gv:red "110";
-  gv:blue "41";
-  gv:green "82";
-  gv:score "3.6256582";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "ebdac4";
-  gv:red "235";
-  gv:blue "196";
-  gv:green "218";
-  gv:score "1.6022405";
-  gv:coverage "12.013333"
-], [
-  gv:hex "190a00";
-  gv:red "25";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "1.4482878";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.779528"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.716578"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.118869000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "57.0873"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "54.231936000000005"
-];
-    w:bagOfWords "PRODUCE OF GERMANY\nCONTENTS 1 PINT 7 FL. OZ\n1933\nRiidesheimer Rosengarten-Nahe\nStillwine\nBottled by:\nBapt, am ein\nWEIN GUTS B E S I T Z E R\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0597";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

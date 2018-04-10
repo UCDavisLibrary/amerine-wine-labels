@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4778";
-    dct:type "image";
-    w:bagOfWords "BERINGER\nTRADE MARK\nREGISTERED\nAWARDED HIGH HONORS IN INTERNATIONAL WINE JUDGING\nNAPA VALLEY\nCHABLIS\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER BROS. INC\nBONDED WINERY NO. 46-1\nLOS HERMANOS VINEYARDS ST. HELENA, CALIFORNIA\nESTABLISHED 1876\n"@eng;
-    gv:color [
-  gv:hex "cac1b6";
-  gv:red "202";
-  gv:blue "182";
-  gv:green "193";
-  gv:score "35.468796000000005";
-  gv:coverage "12.486666"
-], [
-  gv:hex "e7ddd2";
-  gv:red "231";
-  gv:blue "210";
-  gv:green "221";
-  gv:score "16.758567";
-  gv:coverage "78.46"
-], [
-  gv:hex "a89e94";
-  gv:red "168";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "13.424149";
-  gv:coverage "2.0066667"
-], [
-  gv:hex "a0cabd";
-  gv:red "160";
-  gv:blue "189";
-  gv:green "202";
-  gv:score "11.367652";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "82786d";
-  gv:red "130";
-  gv:blue "109";
-  gv:green "120";
-  gv:score "3.6095556";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "574e44";
-  gv:red "87";
-  gv:blue "68";
-  gv:green "78";
-  gv:score "3.4772143";
-  gv:coverage "0.32"
-], [
-  gv:hex "615347";
-  gv:red "97";
-  gv:blue "71";
-  gv:green "83";
-  gv:score "3.4327417999999996";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "3e362c";
-  gv:red "62";
-  gv:blue "44";
-  gv:green "54";
-  gv:score "2.2672478";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "7d6f62";
-  gv:red "125";
-  gv:blue "98";
-  gv:green "111";
-  gv:score "1.8047502";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "160f06";
-  gv:red "22";
-  gv:blue "6";
-  gv:green "15";
-  gv:score "1.7980576000000001";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.600137"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.596993999999995"
-];
-    w:bagOfWords "BERINGER\nTRADE MARK\nREGISTERED\nAWARDED HIGH HONORS IN INTERNATIONAL WINE JUDGING\nNAPA VALLEY\nCHABLIS\nALCOHOL 12% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER BROS. INC\nBONDED WINERY NO. 46-1\nLOS HERMANOS VINEYARDS ST. HELENA, CALIFORNIA\nESTABLISHED 1876\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4778";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

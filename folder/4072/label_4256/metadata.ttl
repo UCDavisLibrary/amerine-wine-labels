@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4256";
-    dct:type "image";
-    w:bagOfWords "CORDIAL MEDOC\nOF FRANCE\nPRODU\n4/5 QUART\n88 PROOF\nBY\nG, A URDE\nBORDEAUX FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d1c5bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "28.146389";
-  gv:coverage "25.72"
-], [
-  gv:hex "a4988f";
-  gv:red "164";
-  gv:blue "143";
-  gv:green "152";
-  gv:score "25.940797";
-  gv:coverage "3.1933334"
-], [
-  gv:hex "e7dcd3";
-  gv:red "231";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "19.497465";
-  gv:coverage "61.38"
-], [
-  gv:hex "84776f";
-  gv:red "132";
-  gv:blue "111";
-  gv:green "119";
-  gv:score "12.301663999999999";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "60554d";
-  gv:red "96";
-  gv:blue "77";
-  gv:green "85";
-  gv:score "4.7142692";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "b2938e";
-  gv:red "178";
-  gv:blue "142";
-  gv:green "147";
-  gv:score "2.3930136";
-  gv:coverage "0.12"
-], [
-  gv:hex "443a31";
-  gv:red "68";
-  gv:blue "49";
-  gv:green "58";
-  gv:score "2.0528439";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "d9b9b4";
-  gv:red "217";
-  gv:blue "180";
-  gv:green "185";
-  gv:score "1.5082496";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "705450";
-  gv:red "112";
-  gv:blue "80";
-  gv:green "84";
-  gv:score "0.633142";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "a8988b";
-  gv:red "168";
-  gv:blue "139";
-  gv:green "152";
-  gv:score "0.62387069";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.172781"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "53.486711"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "53.055178999999995"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "51.125056"
-];
-    w:bagOfWords "CORDIAL MEDOC\nOF FRANCE\nPRODU\n4/5 QUART\n88 PROOF\nBY\nG, A URDE\nBORDEAUX FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4256";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

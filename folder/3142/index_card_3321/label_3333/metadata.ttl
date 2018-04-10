@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3333";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "PARIS\nMED. D'OR\nMED. D.OR\nRED BURGUNDY WINE\nCORTON CLOS DU ROI\nPRODUCED & BOTTLED BY\nF. H ASE NK LEVER\nPROPRIETAIRE-NEGOCIANTANUITS St-GEORGES ICOTE-D'OR)\nPRINTED IN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "645235";
-  gv:red "100";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "29.66679";
-  gv:coverage "5.319999999999999"
-], [
-  gv:hex "d7c5ac";
-  gv:red "215";
-  gv:blue "172";
-  gv:green "197";
-  gv:score "10.996557";
-  gv:coverage "5.3266667"
-], [
-  gv:hex "837151";
-  gv:red "131";
-  gv:blue "81";
-  gv:green "113";
-  gv:score "17.993052000000002";
-  gv:coverage "4.0266667"
-], [
-  gv:hex "47351b";
-  gv:red "71";
-  gv:blue "27";
-  gv:green "53";
-  gv:score "14.633662";
-  gv:coverage "2.4333334"
-], [
-  gv:hex "ab997e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "7.625527699999999";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "ecdac1";
-  gv:red "236";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "6.5097734";
-  gv:coverage "16.24"
-], [
-  gv:hex "625027";
-  gv:red "98";
-  gv:blue "39";
-  gv:green "80";
-  gv:score "2.1764658";
-  gv:coverage "0.48"
-], [
-  gv:hex "d0c3bc";
-  gv:red "208";
-  gv:blue "188";
-  gv:green "195";
-  gv:score "1.8110986999999998";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "3e302d";
-  gv:red "62";
-  gv:blue "45";
-  gv:green "48";
-  gv:score "1.5117083999999998";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "1e1110";
-  gv:red "30";
-  gv:blue "16";
-  gv:green "17";
-  gv:score "1.4005882";
-  gv:coverage "0.58"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "78.47057600000001"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "78.0942"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.31349999999999"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "54.018354"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "50.348169"
-];
-    w:bagOfWords "PARIS\nMED. D'OR\nMED. D.OR\nRED BURGUNDY WINE\nCORTON CLOS DU ROI\nPRODUCED & BOTTLED BY\nF. H ASE NK LEVER\nPROPRIETAIRE-NEGOCIANTANUITS St-GEORGES ICOTE-D'OR)\nPRINTED IN FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3333";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

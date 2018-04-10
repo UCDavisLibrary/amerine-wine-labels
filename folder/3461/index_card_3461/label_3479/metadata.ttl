@@ -1,98 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3479";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "BRAND\nTAX PAID\nALCOHOL\n13%\nBY STAMPS\nSOLANO COUNTY\nAFFIXED TO CASE\nBY VOLUME\nPRODUCED & BOTTLED BY\nSOLANO WINERY INC. CORDELIA, CALIFORNIA\nBONDED WINERY NO. 42 14th SUPER. DISTRICT\nCOPYRIGHT 1937 BY SOLANO WUNERY INc.\n"@eng;
-    gv:color [
-  gv:hex "d2bfaa";
-  gv:red "210";
-  gv:blue "170";
-  gv:green "191";
-  gv:score "21.774247";
-  gv:coverage "10.526667"
-], [
-  gv:hex "ae9b86";
-  gv:red "174";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "14.300904000000001";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "877664";
-  gv:red "135";
-  gv:blue "100";
-  gv:green "118";
-  gv:score "8.645230499999998";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "d1c2b8";
-  gv:red "209";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "8.4637791";
-  gv:coverage "8.76"
-], [
-  gv:hex "635342";
-  gv:red "99";
-  gv:blue "66";
-  gv:green "83";
-  gv:score "7.2424628";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "80736b";
-  gv:red "128";
-  gv:blue "107";
-  gv:green "115";
-  gv:score "6.810268799999999";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "a69990";
-  gv:red "166";
-  gv:blue "144";
-  gv:green "153";
-  gv:score "6.4927190999999995";
-  gv:coverage "1.4066666"
-], [
-  gv:hex "60544c";
-  gv:red "96";
-  gv:blue "76";
-  gv:green "84";
-  gv:score "5.3278368";
-  gv:coverage "0.74"
-], [
-  gv:hex "3f3020";
-  gv:red "63";
-  gv:blue "32";
-  gv:green "48";
-  gv:score "4.3489553";
-  gv:coverage "0.74"
-], [
-  gv:hex "dcb9b3";
-  gv:red "220";
-  gv:blue "179";
-  gv:green "185";
-  gv:score "3.5596371";
-  gv:coverage "0.8666666199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.733732"
-];
-    w:bagOfWords "BRAND\nTAX PAID\nALCOHOL\n13%\nBY STAMPS\nSOLANO COUNTY\nAFFIXED TO CASE\nBY VOLUME\nPRODUCED & BOTTLED BY\nSOLANO WINERY INC. CORDELIA, CALIFORNIA\nBONDED WINERY NO. 42 14th SUPER. DISTRICT\nCOPYRIGHT 1937 BY SOLANO WUNERY INc.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3479";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

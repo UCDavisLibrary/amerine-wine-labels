@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0820";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "uce of. France\nNATURE 19 48\nVINTAGE 19aa\nChateau Moncontour\ny hite Vouvray Wine\nProduced & bottled by\nSTE D' EXPLOITATION\nSTILL\nCHATEAU MONCONTOUR\nVOUVRAY\nAPH LLATION CONTROLEE\nVOUVRAY FRANCE)\nAlcohol by vo\nI l 5\nContents\npint 10 fl. oz.\n"@fra;
-    gv:color [
-  gv:hex "dac4a0";
-  gv:red "218";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "61.119794999999996";
-  gv:coverage "18.72"
-], [
-  gv:hex "443112";
-  gv:red "68";
-  gv:blue "18";
-  gv:green "49";
-  gv:score "3.187022";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "dabf8e";
-  gv:red "218";
-  gv:blue "142";
-  gv:green "191";
-  gv:score "11.409549";
-  gv:coverage "3.0733334"
-], [
-  gv:hex "b09c7a";
-  gv:red "176";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "8.3386645";
-  gv:coverage "2.3800000000000003"
-], [
-  gv:hex "8c7756";
-  gv:red "140";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "4.2347174";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "edd9ba";
-  gv:red "237";
-  gv:blue "186";
-  gv:green "217";
-  gv:score "3.8106792";
-  gv:coverage "4.24"
-], [
-  gv:hex "62502f";
-  gv:red "98";
-  gv:blue "47";
-  gv:green "80";
-  gv:score "2.6948741";
-  gv:coverage "0.5"
-], [
-  gv:hex "bea06e";
-  gv:red "190";
-  gv:blue "110";
-  gv:green "160";
-  gv:score "1.6142493";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "e5dbd0";
-  gv:red "229";
-  gv:blue "208";
-  gv:green "219";
-  gv:score "1.4652560000000001";
-  gv:coverage "65.25999999999999"
-], [
-  gv:hex "2d1b00";
-  gv:red "45";
-  gv:blue "undefined";
-  gv:green "27";
-  gv:score "0.59216921";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.818794"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.394940999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.042421"
-];
-    w:bagOfWords "uce of. France\nNATURE 19 48\nVINTAGE 19aa\nChateau Moncontour\ny hite Vouvray Wine\nProduced & bottled by\nSTE D' EXPLOITATION\nSTILL\nCHATEAU MONCONTOUR\nVOUVRAY\nAPH LLATION CONTROLEE\nVOUVRAY FRANCE)\nAlcohol by vo\nI l 5\nContents\npint 10 fl. oz.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0820";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

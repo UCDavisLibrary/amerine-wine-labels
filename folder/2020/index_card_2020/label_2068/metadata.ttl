@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2068";
-    dct:type "image";
-    w:bagOfWords "Beam\n9tierfteiner lberg Barte\nBadstum Seinridg 9ted)\nRhein Hesse\n"@undefined;
-    gv:color [
-  gv:hex "eeb68c";
-  gv:red "238";
-  gv:blue "140";
-  gv:green "182";
-  gv:score "23.963676";
-  gv:coverage "6.126666800000001"
-], [
-  gv:hex "cb9267";
-  gv:red "203";
-  gv:blue "103";
-  gv:green "146";
-  gv:score "16.527738";
-  gv:coverage "4.5533333"
-], [
-  gv:hex "996f42";
-  gv:red "153";
-  gv:blue "66";
-  gv:green "111";
-  gv:score "12.658675";
-  gv:coverage "4.3733332"
-], [
-  gv:hex "a6341a";
-  gv:red "166";
-  gv:blue "26";
-  gv:green "52";
-  gv:score "0.079748064";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "957444";
-  gv:red "149";
-  gv:blue "68";
-  gv:green "116";
-  gv:score "7.5252153";
-  gv:coverage "3.26"
-], [
-  gv:hex "775028";
-  gv:red "119";
-  gv:blue "40";
-  gv:green "80";
-  gv:score "5.1384587";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "ba9665";
-  gv:red "186";
-  gv:blue "101";
-  gv:green "150";
-  gv:score "4.8310928";
-  gv:coverage "2.1"
-], [
-  gv:hex "ddb989";
-  gv:red "221";
-  gv:blue "137";
-  gv:green "185";
-  gv:score "4.24212";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "dcba96";
-  gv:red "220";
-  gv:blue "150";
-  gv:green "186";
-  gv:score "3.2769057999999998";
-  gv:coverage "20.333333"
-], [
-  gv:hex "b99874";
-  gv:red "185";
-  gv:blue "116";
-  gv:green "152";
-  gv:score "3.2741341999999998";
-  gv:coverage "1.24"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.054422"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.477569"
-];
-    w:bagOfWords "Beam\n9tierfteiner lberg Barte\nBadstum Seinridg 9ted)\nRhein Hesse\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2068";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

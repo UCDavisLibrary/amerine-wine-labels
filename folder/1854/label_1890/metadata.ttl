@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1890";
-    dct:type "image";
-    w:bagOfWords "BODEGAS\nDE LOS\nINPANTES\nORLEANS\nBORBON\nVINA\nTORRE BREVA\nJEREZ AMONT SILLA DO\nSAN LU CAR\nANDALUCIA ESPANA)\nArtes Grofrcos S. A. Gijon\n"@spa;
-    gv:color [
-  gv:hex "dbbfa0";
-  gv:red "219";
-  gv:blue "160";
-  gv:green "191";
-  gv:score "12.253675";
-  gv:coverage "14.08"
-], [
-  gv:hex "c18f58";
-  gv:red "193";
-  gv:blue "88";
-  gv:green "143";
-  gv:score "8.2463861";
-  gv:coverage "2.68"
-], [
-  gv:hex "a16d1d";
-  gv:red "161";
-  gv:blue "29";
-  gv:green "109";
-  gv:score "4.4646736";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "754916";
-  gv:red "117";
-  gv:blue "22";
-  gv:green "73";
-  gv:score "4.2714607";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "a39c11";
-  gv:red "163";
-  gv:blue "17";
-  gv:green "156";
-  gv:score "2.2160776";
-  gv:coverage "0.32"
-], [
-  gv:hex "101c33";
-  gv:red "16";
-  gv:blue "51";
-  gv:green "28";
-  gv:score "0.5526565";
-  gv:coverage "0.16"
-], [
-  gv:hex "192758";
-  gv:red "25";
-  gv:blue "88";
-  gv:green "39";
-  gv:score "0.52802693";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "101567";
-  gv:red "16";
-  gv:blue "103";
-  gv:green "21";
-  gv:score "0.0806046";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d8b784";
-  gv:red "216";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "7.7674612000000005";
-  gv:coverage "4.760000000000001"
-], [
-  gv:hex "b99961";
-  gv:red "185";
-  gv:blue "97";
-  gv:green "153";
-  gv:score "6.905980400000001";
-  gv:coverage "2.8066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.228575"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.388706000000006"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.63237"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.101096999999996"
-];
-    w:bagOfWords "BODEGAS\nDE LOS\nINPANTES\nORLEANS\nBORBON\nVINA\nTORRE BREVA\nJEREZ AMONT SILLA DO\nSAN LU CAR\nANDALUCIA ESPANA)\nArtes Grofrcos S. A. Gijon\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1890";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1656";
-    dct:type "image";
-    w:bagOfWords "TRADE\nMARK\nGRAM\nPRODUCE OF CYPRUS\neno a ned from the dalys\nrusa acro.\nCYPRUS WINE ASSOCIATION ITD\nLIMASSOL- CYPRUS\nSUCCESSORS TO CRIST. HAGGIPAVLU & SONS LId.\nWINE INDUSTRY\nEST. 18.44\n"@eng;
-    gv:color [
-  gv:hex "dec5a1";
-  gv:red "222";
-  gv:blue "161";
-  gv:green "197";
-  gv:score "10.524622";
-  gv:coverage "8.3866663"
-], [
-  gv:hex "9e2619";
-  gv:red "158";
-  gv:blue "25";
-  gv:green "38";
-  gv:score "9.41007";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "b95b45";
-  gv:red "185";
-  gv:blue "69";
-  gv:green "91";
-  gv:score "5.1015116";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "dfc28e";
-  gv:red "223";
-  gv:blue "142";
-  gv:green "194";
-  gv:score "8.282943099999999";
-  gv:coverage "3.0866666"
-], [
-  gv:hex "f4baa0";
-  gv:red "244";
-  gv:blue "160";
-  gv:green "186";
-  gv:score "5.4246947";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "f0d9b9";
-  gv:red "240";
-  gv:blue "185";
-  gv:green "217";
-  gv:score "5.156451799999999";
-  gv:coverage "10.773333000000001"
-], [
-  gv:hex "90351e";
-  gv:red "144";
-  gv:blue "30";
-  gv:green "53";
-  gv:score "4.1190688";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "c64b40";
-  gv:red "198";
-  gv:blue "64";
-  gv:green "75";
-  gv:score "3.7633042999999997";
-  gv:coverage "0.36"
-], [
-  gv:hex "c29175";
-  gv:red "194";
-  gv:blue "117";
-  gv:green "145";
-  gv:score "3.5870761";
-  gv:coverage "1.22"
-], [
-  gv:hex "b69a77";
-  gv:red "182";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "3.4273323";
-  gv:coverage "2.0866666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.110991999999996"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.180696000000005"
-];
-    w:bagOfWords "TRADE\nMARK\nGRAM\nPRODUCE OF CYPRUS\neno a ned from the dalys\nrusa acro.\nCYPRUS WINE ASSOCIATION ITD\nLIMASSOL- CYPRUS\nSUCCESSORS TO CRIST. HAGGIPAVLU & SONS LId.\nWINE INDUSTRY\nEST. 18.44\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1656";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

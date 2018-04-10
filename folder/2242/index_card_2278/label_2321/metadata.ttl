@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2321";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "M OUT O N\n920\nBARON HENRI DE ROTHSCHILD\nPROPRIETAIRE\nMARQUE\nDEPOSE\nSa cant\nARNAUD CHARTAONS\n"@fra;
-    gv:color [
-  gv:hex "d1c2b2";
-  gv:red "209";
-  gv:blue "178";
-  gv:green "194";
-  gv:score "43.845537";
-  gv:coverage "14.680000000000001"
-], [
-  gv:hex "ae9f8e";
-  gv:red "174";
-  gv:blue "142";
-  gv:green "159";
-  gv:score "22.00702";
-  gv:coverage "0.66"
-], [
-  gv:hex "d2c5ba";
-  gv:red "210";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "20.583883";
-  gv:coverage "61.58"
-], [
-  gv:hex "e9dac8";
-  gv:red "233";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "8.3396144";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "e5d8ce";
-  gv:red "229";
-  gv:blue "206";
-  gv:green "216";
-  gv:score "3.1828441";
-  gv:coverage "21.693334"
-], [
-  gv:hex "ab9f96";
-  gv:red "171";
-  gv:blue "150";
-  gv:green "159";
-  gv:score "1.8009804";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "85796b";
-  gv:red "133";
-  gv:blue "107";
-  gv:green "121";
-  gv:score "0.20894570999999998";
-  gv:coverage "0.04"
-], [
-  gv:hex "7e756e";
-  gv:red "126";
-  gv:blue "110";
-  gv:green "117";
-  gv:score "0.021790604";
-  gv:coverage "0.06"
-], [
-  gv:hex "6b625b";
-  gv:red "107";
-  gv:blue "91";
-  gv:green "98";
-  gv:score "0.0093867231";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "372e27";
-  gv:red "55";
-  gv:blue "39";
-  gv:green "46";
-  gv:score "1.5150674e-8";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.803605"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.244276"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.205873000000004"
-];
-    w:bagOfWords "M OUT O N\n920\nBARON HENRI DE ROTHSCHILD\nPROPRIETAIRE\nMARQUE\nDEPOSE\nSa cant\nARNAUD CHARTAONS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2321";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

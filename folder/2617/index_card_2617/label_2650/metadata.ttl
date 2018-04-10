@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2650";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nDES\nHospices\nAPPELLATION\nCONTROLEE\nAuthentique mis en\nBouteilles sous le\nControle de la Commission administrative\ndes hospices\nLe président Ford eteur\ni e Concessionna Are Cénéral\nContents 1 Pint 9 fluid OZS\n"@fra;
-    gv:color [
-  gv:hex "c39462";
-  gv:red "195";
-  gv:blue "98";
-  gv:green "148";
-  gv:score "25.310132000000003";
-  gv:coverage "9.3266666"
-], [
-  gv:hex "9f6f3c";
-  gv:red "159";
-  gv:blue "60";
-  gv:green "111";
-  gv:score "19.511081";
-  gv:coverage "5.3133335"
-], [
-  gv:hex "ddaf7e";
-  gv:red "221";
-  gv:blue "126";
-  gv:green "175";
-  gv:score "10.950796";
-  gv:coverage "4.8333332"
-], [
-  gv:hex "dbb784";
-  gv:red "219";
-  gv:blue "132";
-  gv:green "183";
-  gv:score "8.6834289";
-  gv:coverage "3.2266665"
-], [
-  gv:hex "bc9964";
-  gv:red "188";
-  gv:blue "100";
-  gv:green "153";
-  gv:score "5.8848582";
-  gv:coverage "2"
-], [
-  gv:hex "7e4f1e";
-  gv:red "126";
-  gv:blue "30";
-  gv:green "79";
-  gv:score "5.0643031";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "d7ba96";
-  gv:red "215";
-  gv:blue "150";
-  gv:green "186";
-  gv:score "4.3851685";
-  gv:coverage "29.066667000000002"
-], [
-  gv:hex "b49878";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "152";
-  gv:score "3.4455989";
-  gv:coverage "1.76"
-], [
-  gv:hex "8e7455";
-  gv:red "142";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "2.2183668";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "967542";
-  gv:red "150";
-  gv:blue "66";
-  gv:green "117";
-  gv:score "2.1116542";
-  gv:coverage "0.5599999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.687764"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.164756999999994"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nDES\nHospices\nAPPELLATION\nCONTROLEE\nAuthentique mis en\nBouteilles sous le\nControle de la Commission administrative\ndes hospices\nLe président Ford eteur\ni e Concessionna Are Cénéral\nContents 1 Pint 9 fluid OZS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2650";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

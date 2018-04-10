@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2048";
-    dct:type "image";
-    w:bagOfWords "Imported by\nContents\nEsquin Imports\"\n1 pt. 8 fl. OZ.\nSan Francisco, Calif.\nAlcoholic contents\n10% by volume\n710\n1949er\nLangguth's Liebfraumilch\nproduced and bottled by\nFranz Langguth Traben-Trarbach a. d. Mosel\nGeg\n1810\nProduce of Germany\nRhine-Wine\nL HORST\n22740\n"@undefined;
-    gv:color [
-  gv:hex "d6c085";
-  gv:red "214";
-  gv:blue "133";
-  gv:green "192";
-  gv:score "20.052162000000003";
-  gv:coverage "6.4066662999999995"
-], [
-  gv:hex "c78f34";
-  gv:red "199";
-  gv:blue "52";
-  gv:green "143";
-  gv:score "1.9297935";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "b2985d";
-  gv:red "178";
-  gv:blue "93";
-  gv:green "152";
-  gv:score "16.328885";
-  gv:coverage "6.833333499999999"
-], [
-  gv:hex "8d753f";
-  gv:red "141";
-  gv:blue "63";
-  gv:green "117";
-  gv:score "14.481328";
-  gv:coverage "5.7066668"
-], [
-  gv:hex "6a5220";
-  gv:red "106";
-  gv:blue "32";
-  gv:green "82";
-  gv:score "8.5747704";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "d7c49d";
-  gv:red "215";
-  gv:blue "157";
-  gv:green "196";
-  gv:score "6.2240966";
-  gv:coverage "4.7466666"
-], [
-  gv:hex "665131";
-  gv:red "102";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "3.7292048";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "887251";
-  gv:red "136";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "3.2410110999999997";
-  gv:coverage "1.06"
-], [
-  gv:hex "4d3709";
-  gv:red "77";
-  gv:blue "9";
-  gv:green "55";
-  gv:score "3.0300664";
-  gv:coverage "0.6"
-], [
-  gv:hex "ad9875";
-  gv:red "173";
-  gv:blue "117";
-  gv:green "152";
-  gv:score "2.7857515999999998";
-  gv:coverage "1.6466666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "75.09650599999999"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.797337"
-];
-    w:bagOfWords "Imported by\nContents\nEsquin Imports\"\n1 pt. 8 fl. OZ.\nSan Francisco, Calif.\nAlcoholic contents\n10% by volume\n710\n1949er\nLangguth's Liebfraumilch\nproduced and bottled by\nFranz Langguth Traben-Trarbach a. d. Mosel\nGeg\n1810\nProduce of Germany\nRhine-Wine\nL HORST\n22740\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2048";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

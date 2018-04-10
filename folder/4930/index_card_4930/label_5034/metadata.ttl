@@ -1,103 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5034";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "NET CONTENTS\nALCOHOL 13%\n4/5 QUART\nBY VOLUME\nLAKE ERIE ISLAND\nHAUT SAUTERNES WINE\nPRODUCED AND BOTTLED BY\nGEO. F. LONZ\nBonded Winery No. 48\nMIDDLE BASS ISLE, OHIO\nIN THE LAKE ERIE ISLANDS\nFederal Tax Paid By Stamps Affixed to Case.\n"@undefined;
-    gv:color [
-  gv:hex "dfc9ad";
-  gv:red "223";
-  gv:blue "173";
-  gv:green "201";
-  gv:score "27.288762";
-  gv:coverage "32.746667"
-], [
-  gv:hex "992132";
-  gv:red "153";
-  gv:blue "50";
-  gv:green "33";
-  gv:score "6.3627511";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "774939";
-  gv:red "119";
-  gv:blue "57";
-  gv:green "73";
-  gv:score "6.1267924";
-  gv:coverage "0.5"
-], [
-  gv:hex "6b191c";
-  gv:red "107";
-  gv:blue "28";
-  gv:green "25";
-  gv:score "5.4628897";
-  gv:coverage "0.16"
-], [
-  gv:hex "976b5a";
-  gv:red "151";
-  gv:blue "90";
-  gv:green "107";
-  gv:score "5.3842300000000005";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "d4b282";
-  gv:red "212";
-  gv:blue "130";
-  gv:green "178";
-  gv:score "4.608269";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "9f0f26";
-  gv:red "159";
-  gv:blue "38";
-  gv:green "15";
-  gv:score "4.2595163";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "853037";
-  gv:red "133";
-  gv:blue "55";
-  gv:green "48";
-  gv:score "4.152083";
-  gv:coverage "0.1"
-], [
-  gv:hex "cfc5bb";
-  gv:red "207";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "3.9403196";
-  gv:coverage "5.8333334"
-], [
-  gv:hex "ebd9c3";
-  gv:red "235";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "3.4765091";
-  gv:coverage "12.713334000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "64.811736"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.31850000000001"
-], [
-  gv:mid <https://g.co/kg/m/036qh8>;
-  gv:desc "produce";
-  gv:score "54.244322"
-];
-    w:bagOfWords "NET CONTENTS\nALCOHOL 13%\n4/5 QUART\nBY VOLUME\nLAKE ERIE ISLAND\nHAUT SAUTERNES WINE\nPRODUCED AND BOTTLED BY\nGEO. F. LONZ\nBonded Winery No. 48\nMIDDLE BASS ISLE, OHIO\nIN THE LAKE ERIE ISLANDS\nFederal Tax Paid By Stamps Affixed to Case.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5034";
+    <schema.keywords> "UC Reporters Notebook@en".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3390";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "GRANDS ViNS DE BOURGOGNE\nPOM MARD\n1938\nAPPELLATION CONTROLEE\nV ve RIEUSSET BIDOT\nPropriétaire Pommard\n"@fra;
-    gv:color [
-  gv:hex "e2c395";
-  gv:red "226";
-  gv:blue "149";
-  gv:green "195";
-  gv:score "35.220578";
-  gv:coverage "12.213334000000001"
-], [
-  gv:hex "996c4f";
-  gv:red "153";
-  gv:blue "79";
-  gv:green "108";
-  gv:score "3.6713094";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "764f2a";
-  gv:red "118";
-  gv:blue "42";
-  gv:green "79";
-  gv:score "2.3887152";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "e2c49d";
-  gv:red "226";
-  gv:blue "157";
-  gv:green "196";
-  gv:score "34.918192";
-  gv:coverage "15.02"
-], [
-  gv:hex "b8976c";
-  gv:red "184";
-  gv:blue "108";
-  gv:green "151";
-  gv:score "7.9560012";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "b99872";
-  gv:red "185";
-  gv:blue "114";
-  gv:green "152";
-  gv:score "2.9814353";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "98774e";
-  gv:red "152";
-  gv:blue "78";
-  gv:green "119";
-  gv:score "2.6574128999999997";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "f4d6b0";
-  gv:red "244";
-  gv:blue "176";
-  gv:green "214";
-  gv:score "2.5216615";
-  gv:coverage "5.5533335"
-], [
-  gv:hex "7f4f35";
-  gv:red "127";
-  gv:blue "53";
-  gv:green "79";
-  gv:score "2.0310713000000002";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "bc9171";
-  gv:red "188";
-  gv:blue "113";
-  gv:green "145";
-  gv:score "1.9534219";
-  gv:coverage "0.57333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.07522900000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.06495099999999"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.916626"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.497243000000005"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.126317"
-];
-    w:bagOfWords "GRANDS ViNS DE BOURGOGNE\nPOM MARD\n1938\nAPPELLATION CONTROLEE\nV ve RIEUSSET BIDOT\nPropriétaire Pommard\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3390";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

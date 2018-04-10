@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3722";
-    dct:type "image";
-    w:bagOfWords "CONSEJO D\nFederico Paternina\nPRECIO del contenido en origen pts. 575\nRIOU\nR. E. 329\nSCE PA RHIN\n"@spa;
-    gv:color [
-  gv:hex "dac5ac";
-  gv:red "218";
-  gv:blue "172";
-  gv:green "197";
-  gv:score "33.510217";
-  gv:coverage "21.086666"
-], [
-  gv:hex "764520";
-  gv:red "118";
-  gv:blue "32";
-  gv:green "69";
-  gv:score "6.7271531";
-  gv:coverage "0.26"
-], [
-  gv:hex "3a0400";
-  gv:red "58";
-  gv:blue "undefined";
-  gv:green "4";
-  gv:score "0.17411625";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ae9b85";
-  gv:red "174";
-  gv:blue "133";
-  gv:green "155";
-  gv:score "8.2064323";
-  gv:coverage "1.6"
-], [
-  gv:hex "b4925b";
-  gv:red "180";
-  gv:blue "91";
-  gv:green "146";
-  gv:score "8.161442";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "dfbd87";
-  gv:red "223";
-  gv:blue "135";
-  gv:green "189";
-  gv:score "6.340670599999999";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "887661";
-  gv:red "136";
-  gv:blue "97";
-  gv:green "118";
-  gv:score "5.5919643";
-  gv:coverage "1.04"
-], [
-  gv:hex "ecd8c2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "5.0765246";
-  gv:coverage "15.02"
-], [
-  gv:hex "9b6c42";
-  gv:red "155";
-  gv:blue "66";
-  gv:green "108";
-  gv:score "4.2811841";
-  gv:coverage "0.22"
-], [
-  gv:hex "967542";
-  gv:red "150";
-  gv:blue "66";
-  gv:green "117";
-  gv:score "3.9956199999999997";
-  gv:coverage "0.62"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.631448"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CONSEJO D\nFederico Paternina\nPRECIO del contenido en origen pts. 575\nRIOU\nR. E. 329\nSCE PA RHIN\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3722";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

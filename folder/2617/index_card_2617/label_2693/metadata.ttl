@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2693";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "ALCOHOL STRENGTH\nNET CONTENTS\nBY VOLUM\nPINT 9 FL OZ\nM A CON\nPRODUCT OF FER ANOE\nETABLISSEMENTS VINICOLES DE BARSAC\négociants Nuits-Saint-Georges (Cote-d'Or)\nDE PO SEE No 95\nIMP. NOLA SOUE BK\n"@fra;
-    gv:color [
-  gv:hex "e9b15b";
-  gv:red "233";
-  gv:blue "91";
-  gv:green "177";
-  gv:score "39.183797999999996";
-  gv:coverage "5.9266668000000005"
-], [
-  gv:hex "e3bc84";
-  gv:red "227";
-  gv:blue "132";
-  gv:green "188";
-  gv:score "14.72396";
-  gv:coverage "8.88"
-], [
-  gv:hex "65553c";
-  gv:red "101";
-  gv:blue "60";
-  gv:green "85";
-  gv:score "2.1256054";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "682a00";
-  gv:red "104";
-  gv:blue "undefined";
-  gv:green "42";
-  gv:score "0.1681066";
-  gv:coverage "0.02"
-], [
-  gv:hex "d29645";
-  gv:red "210";
-  gv:blue "69";
-  gv:green "150";
-  gv:score "10.98899";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "e6b763";
-  gv:red "230";
-  gv:blue "99";
-  gv:green "183";
-  gv:score "7.36653";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "e6b479";
-  gv:red "230";
-  gv:blue "121";
-  gv:green "180";
-  gv:score "6.949348";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "c8955c";
-  gv:red "200";
-  gv:blue "92";
-  gv:green "149";
-  gv:score "4.8706159";
-  gv:coverage "1.46"
-], [
-  gv:hex "dbbf9b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "191";
-  gv:score "2.5598766";
-  gv:coverage "6.1533332000000005"
-], [
-  gv:hex "ab6f25";
-  gv:red "171";
-  gv:blue "37";
-  gv:green "111";
-  gv:score "2.463826";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.721793"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.84949999999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.318264"
-];
-    w:bagOfWords "ALCOHOL STRENGTH\nNET CONTENTS\nBY VOLUM\nPINT 9 FL OZ\nM A CON\nPRODUCT OF FER ANOE\nETABLISSEMENTS VINICOLES DE BARSAC\négociants Nuits-Saint-Georges (Cote-d'Or)\nDE PO SEE No 95\nIMP. NOLA SOUE BK\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2693";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

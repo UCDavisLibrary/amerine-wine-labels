@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_4005";
-    dct:type "image";
-    w:bagOfWords "RUM MARTINIQUE\nU SIN E SAINTE\nMARIE\nCOMPAGNIE RHUMIERE MARTINIQUE\n"@eng;
-    gv:color [
-  gv:hex "d9bfa9";
-  gv:red "217";
-  gv:blue "169";
-  gv:green "191";
-  gv:score "18.779366";
-  gv:coverage "9.94"
-], [
-  gv:hex "462a1b";
-  gv:red "70";
-  gv:blue "27";
-  gv:green "42";
-  gv:score "16.557191";
-  gv:coverage "4.4266667"
-], [
-  gv:hex "b39885";
-  gv:red "179";
-  gv:blue "133";
-  gv:green "152";
-  gv:score "13.672597999999999";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "301607";
-  gv:red "48";
-  gv:blue "7";
-  gv:green "22";
-  gv:score "11.66423";
-  gv:coverage "3.9933335"
-], [
-  gv:hex "684b3a";
-  gv:red "104";
-  gv:blue "58";
-  gv:green "75";
-  gv:score "9.594994";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "8e735f";
-  gv:red "142";
-  gv:blue "95";
-  gv:green "115";
-  gv:score "8.562059";
-  gv:coverage "2.5133334"
-], [
-  gv:hex "f3dac6";
-  gv:red "243";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "6.371436299999999";
-  gv:coverage "6.76"
-], [
-  gv:hex "8b6e5d";
-  gv:red "139";
-  gv:blue "93";
-  gv:green "110";
-  gv:score "4.8201088";
-  gv:coverage "1.18"
-], [
-  gv:hex "6c533f";
-  gv:red "108";
-  gv:blue "63";
-  gv:green "83";
-  gv:score "4.6971392000000005";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "220700";
-  gv:red "34";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "1.8289005";
-  gv:coverage "0.68666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.2595"
-];
-    w:bagOfWords "RUM MARTINIQUE\nU SIN E SAINTE\nMARIE\nCOMPAGNIE RHUMIERE MARTINIQUE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4005";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

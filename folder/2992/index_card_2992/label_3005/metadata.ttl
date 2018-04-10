@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3005";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "LA COTE HAUT BRION\n1929\nGRAND VIN\nacr\nMISE EN BOUTEILLES DU CHATEAU\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "645039";
-  gv:red "100";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "18.312782";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "81776d";
-  gv:red "129";
-  gv:blue "109";
-  gv:green "119";
-  gv:score "14.692364999999999";
-  gv:coverage "2.44"
-], [
-  gv:hex "d3c2ae";
-  gv:red "211";
-  gv:blue "174";
-  gv:green "194";
-  gv:score "11.591791";
-  gv:coverage "9.9266663"
-], [
-  gv:hex "86745f";
-  gv:red "134";
-  gv:blue "95";
-  gv:green "116";
-  gv:score "13.705163";
-  gv:coverage "1.96"
-], [
-  gv:hex "a89784";
-  gv:red "168";
-  gv:blue "132";
-  gv:green "151";
-  gv:score "10.714895";
-  gv:coverage "2.5"
-], [
-  gv:hex "a0968d";
-  gv:red "160";
-  gv:blue "141";
-  gv:green "150";
-  gv:score "7.9467364";
-  gv:coverage "1.76"
-], [
-  gv:hex "60564d";
-  gv:red "96";
-  gv:blue "77";
-  gv:green "86";
-  gv:score "6.365573400000001";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "4c3921";
-  gv:red "76";
-  gv:blue "33";
-  gv:green "57";
-  gv:score "5.3705934";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "edddcb";
-  gv:red "237";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "3.8957644";
-  gv:coverage "26.5"
-], [
-  gv:hex "cbc0b6";
-  gv:red "203";
-  gv:blue "182";
-  gv:green "192";
-  gv:score "3.8865045";
-  gv:coverage "7.8733332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "61.198038"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.48183"
-];
-    w:bagOfWords "LA COTE HAUT BRION\n1929\nGRAND VIN\nacr\nMISE EN BOUTEILLES DU CHATEAU\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3005";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

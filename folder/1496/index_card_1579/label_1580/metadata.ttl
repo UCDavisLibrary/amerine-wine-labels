@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1580";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "TJEREZ INDUS EPIA\nMoscatel Para EVORA''\nANTONIO BARBADILLO S.L.\nSAN LU CAR DE BARRA MEDA\nTIMBRE A METAL CO\nEMBOTELLADORES N e 32\n"@spa;
-    gv:color [
-  gv:hex "b59a0d";
-  gv:red "181";
-  gv:blue "13";
-  gv:green "154";
-  gv:score "16.870426";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "917710";
-  gv:red "145";
-  gv:blue "16";
-  gv:green "119";
-  gv:score "5.24521";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "cd9261";
-  gv:red "205";
-  gv:blue "97";
-  gv:green "146";
-  gv:score "4.7460895";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "d6c8a0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "200";
-  gv:score "4.0557019";
-  gv:coverage "11.153334"
-], [
-  gv:hex "7e471b";
-  gv:red "126";
-  gv:blue "27";
-  gv:green "71";
-  gv:score "2.6969165999999998";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "041447";
-  gv:red "4";
-  gv:blue "71";
-  gv:green "20";
-  gv:score "0.91374135";
-  gv:coverage "1.96"
-], [
-  gv:hex "dd8486";
-  gv:red "221";
-  gv:blue "134";
-  gv:green "132";
-  gv:score "0.55460446";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "052c59";
-  gv:red "5";
-  gv:blue "89";
-  gv:green "44";
-  gv:score "0.16391947";
-  gv:coverage "0.5"
-], [
-  gv:hex "ada509";
-  gv:red "173";
-  gv:blue "9";
-  gv:green "165";
-  gv:score "7.249638399999999";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "8a92a8";
-  gv:red "138";
-  gv:blue "168";
-  gv:green "146";
-  gv:score "0.068384525";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "82.005835"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "81.8421"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.412461"
-];
-    w:bagOfWords "TJEREZ INDUS EPIA\nMoscatel Para EVORA''\nANTONIO BARBADILLO S.L.\nSAN LU CAR DE BARRA MEDA\nTIMBRE A METAL CO\nEMBOTELLADORES N e 32\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1580";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

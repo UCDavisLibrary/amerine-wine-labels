@@ -1,107 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4930/index_card_4930/label_5054";
-    dct:type "image";
-    dc:subject "UC Reporters Notebook@en";
-    w:bagOfWords "CONTENTS Etaaz\nEsra\nADE\nMEIER\nWINE\nPRODUCED AND BOTTLED BY\nHeiers Coline oellars\nSILVERTON, OHIO\nB. W 45\nOHIO A.Ba 8TH DIST.\nMEIERS\nWINE CELLARS\nNCINNAT\n"@undefined;
-    gv:color [
-  gv:hex "866e4e";
-  gv:red "134";
-  gv:blue "78";
-  gv:green "110";
-  gv:score "28.415823";
-  gv:coverage "3.9800000000000004"
-], [
-  gv:hex "231225";
-  gv:red "35";
-  gv:blue "37";
-  gv:green "18";
-  gv:score "0.24413944";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "6d5435";
-  gv:red "109";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "22.335756";
-  gv:coverage "2.0666666"
-], [
-  gv:hex "8a6f43";
-  gv:red "138";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "15.547667";
-  gv:coverage "1.9"
-], [
-  gv:hex "6f572d";
-  gv:red "111";
-  gv:blue "45";
-  gv:green "87";
-  gv:score "6.15562";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "ac9574";
-  gv:red "172";
-  gv:blue "116";
-  gv:green "149";
-  gv:score "5.9687641";
-  gv:coverage "3.56"
-], [
-  gv:hex "d7c1a5";
-  gv:red "215";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "3.516176";
-  gv:coverage "20.4"
-], [
-  gv:hex "473114";
-  gv:red "71";
-  gv:blue "20";
-  gv:green "49";
-  gv:score "2.8100066";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "916c42";
-  gv:red "145";
-  gv:blue "66";
-  gv:green "108";
-  gv:score "1.8200053";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "8d6c4e";
-  gv:red "141";
-  gv:blue "78";
-  gv:green "108";
-  gv:score "1.5598727";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "61.23479"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "53.938711"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "53.720695"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.2482"
-];
-    w:bagOfWords "CONTENTS Etaaz\nEsra\nADE\nMEIER\nWINE\nPRODUCED AND BOTTLED BY\nHeiers Coline oellars\nSILVERTON, OHIO\nB. W 45\nOHIO A.Ba 8TH DIST.\nMEIERS\nWINE CELLARS\nNCINNAT\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_5054";
+    <schema.keywords> "UC Reporters Notebook@en".
+

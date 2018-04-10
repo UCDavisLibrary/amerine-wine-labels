@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0535";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "MAA\nBIN 575\nVon sten\nMetternich\nWinnebu\n1950 er\nSchloss ohannisbener\nOriginal Ablullung der\nrst von Metternich schen\nDomane\nRheingau\n"@deu;
-    gv:color [
-  gv:hex "e9dfd7";
-  gv:red "233";
-  gv:blue "215";
-  gv:green "223";
-  gv:score "57.331067000000004";
-  gv:coverage "52.233332"
-], [
-  gv:hex "c7a34f";
-  gv:red "199";
-  gv:blue "79";
-  gv:green "163";
-  gv:score "2.3716491";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "664b07";
-  gv:red "102";
-  gv:blue "7";
-  gv:green "75";
-  gv:score "0.84948326";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "413112";
-  gv:red "65";
-  gv:blue "18";
-  gv:green "49";
-  gv:score "0.83393045";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "311601";
-  gv:red "49";
-  gv:blue "1";
-  gv:green "22";
-  gv:score "0.81559187";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "8a3518";
-  gv:red "138";
-  gv:blue "24";
-  gv:green "53";
-  gv:score "0.44925925";
-  gv:coverage "0.58"
-], [
-  gv:hex "dbcfc5";
-  gv:red "219";
-  gv:blue "197";
-  gv:green "207";
-  gv:score "13.105617";
-  gv:coverage "13.366665999999999"
-], [
-  gv:hex "dcccb8";
-  gv:red "220";
-  gv:blue "184";
-  gv:green "204";
-  gv:score "10.270546999999999";
-  gv:coverage "12"
-], [
-  gv:hex "ae3518";
-  gv:red "174";
-  gv:blue "24";
-  gv:green "53";
-  gv:score "0.046010374";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "bd472e";
-  gv:red "189";
-  gv:blue "46";
-  gv:green "71";
-  gv:score "0.040765433000000004";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.16015"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.049267"
-];
-    w:bagOfWords "MAA\nBIN 575\nVon sten\nMetternich\nWinnebu\n1950 er\nSchloss ohannisbener\nOriginal Ablullung der\nrst von Metternich schen\nDomane\nRheingau\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0535";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_1023";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "VERBAND OSTSCHWEI2 LANOWIRTSCHAFTLICHER\nGENOSSENSCHAFTEN (V O L G) WINTERTHUR\n"@deu;
-    gv:color [
-  gv:hex "897357";
-  gv:red "137";
-  gv:blue "87";
-  gv:green "115";
-  gv:score "22.6694";
-  gv:coverage "5.4133333"
-], [
-  gv:hex "b09b7c";
-  gv:red "176";
-  gv:blue "124";
-  gv:green "155";
-  gv:score "22.084305";
-  gv:coverage "7.126666600000001"
-], [
-  gv:hex "ccba95";
-  gv:red "204";
-  gv:blue "149";
-  gv:green "186";
-  gv:score "21.735908000000002";
-  gv:coverage "14.246666"
-], [
-  gv:hex "69553a";
-  gv:red "105";
-  gv:blue "58";
-  gv:green "85";
-  gv:score "12.263227";
-  gv:coverage "3"
-], [
-  gv:hex "ba957b";
-  gv:red "186";
-  gv:blue "123";
-  gv:green "149";
-  gv:score "5.4975666";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "947058";
-  gv:red "148";
-  gv:blue "88";
-  gv:green "112";
-  gv:score "4.2000875";
-  gv:coverage "0.86"
-], [
-  gv:hex "4a361b";
-  gv:red "74";
-  gv:blue "27";
-  gv:green "54";
-  gv:score "2.9011393";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "6e4d36";
-  gv:red "110";
-  gv:blue "54";
-  gv:green "77";
-  gv:score "2.7885372";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "4e2f1a";
-  gv:red "78";
-  gv:blue "26";
-  gv:green "47";
-  gv:score "1.7316602";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "c8b988";
-  gv:red "200";
-  gv:blue "136";
-  gv:green "185";
-  gv:score "1.473699";
-  gv:coverage "1.0133334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "58.61553000000001"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.518659"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.577239"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.46324"
-];
-    w:bagOfWords "VERBAND OSTSCHWEI2 LANOWIRTSCHAFTLICHER\nGENOSSENSCHAFTEN (V O L G) WINTERTHUR\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1023";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

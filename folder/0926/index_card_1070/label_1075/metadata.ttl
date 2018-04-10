@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1070/label_1075";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "PAUL C\nOLIN. s.A. NEucH AT EL\nSwitzerland\n"@deu;
-    gv:color [
-  gv:hex "cebc9d";
-  gv:red "206";
-  gv:blue "157";
-  gv:green "188";
-  gv:score "49.124411";
-  gv:coverage "23.14"
-], [
-  gv:hex "efaf58";
-  gv:red "239";
-  gv:blue "88";
-  gv:green "175";
-  gv:score "1.9835775999999998";
-  gv:coverage "0.08"
-], [
-  gv:hex "dcb12c";
-  gv:red "220";
-  gv:blue "44";
-  gv:green "177";
-  gv:score "1.4641233";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "b19e81";
-  gv:red "177";
-  gv:blue "129";
-  gv:green "158";
-  gv:score "11.551312";
-  gv:coverage "4.1066665"
-], [
-  gv:hex "897559";
-  gv:red "137";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "5.1117651";
-  gv:coverage "1.7066667"
-], [
-  gv:hex "665438";
-  gv:red "102";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "3.3606868";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "94705a";
-  gv:red "148";
-  gv:blue "90";
-  gv:green "112";
-  gv:score "2.3865939999999997";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "d6ba83";
-  gv:red "214";
-  gv:blue "131";
-  gv:green "186";
-  gv:score "2.1820951";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "e3b69a";
-  gv:red "227";
-  gv:blue "154";
-  gv:green "182";
-  gv:score "2.1145206";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "c1947b";
-  gv:red "193";
-  gv:blue "123";
-  gv:green "148";
-  gv:score "1.9023899";
-  gv:coverage "0.65333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.079125999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PAUL C\nOLIN. s.A. NEucH AT EL\nSwitzerland\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1075";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

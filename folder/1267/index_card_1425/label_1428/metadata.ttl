@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1425/label_1428";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "TIPO\nMOSELLE\nREG\nS. S. A. 16854 A\nBODEGAS DE SANTO TO MAS, S\nDE R.L\nENSENADA, B. C\n"@undefined;
-    gv:color [
-  gv:hex "d1bfa6";
-  gv:red "209";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "27.119148";
-  gv:coverage "17.48"
-], [
-  gv:hex "ad9a7c";
-  gv:red "173";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "25.434034999999998";
-  gv:coverage "7.28"
-], [
-  gv:hex "120401";
-  gv:red "18";
-  gv:blue "1";
-  gv:green "4";
-  gv:score "0.17786141";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "897658";
-  gv:red "137";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "14.6916";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "675638";
-  gv:red "103";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "8.870415399999999";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "897448";
-  gv:red "137";
-  gv:blue "72";
-  gv:green "116";
-  gv:score "5.7510391";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "d0c3b8";
-  gv:red "208";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "4.3493673";
-  gv:coverage "15.633332999999999"
-], [
-  gv:hex "a89366";
-  gv:red "168";
-  gv:blue "102";
-  gv:green "147";
-  gv:score "3.2246061";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "6b582e";
-  gv:red "107";
-  gv:blue "46";
-  gv:green "88";
-  gv:score "2.345405";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "a89c91";
-  gv:red "168";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "1.8812474";
-  gv:coverage "0.77333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "73.145527"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.0663"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.057831"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.853300000000004"
-];
-    w:bagOfWords "TIPO\nMOSELLE\nREG\nS. S. A. 16854 A\nBODEGAS DE SANTO TO MAS, S\nDE R.L\nENSENADA, B. C\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1428";
+    <schema.keywords> "Misc Table Wines@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

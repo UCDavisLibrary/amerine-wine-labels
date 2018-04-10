@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3256/label_3263";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "VIGNE ORIGINELLE FRANCAISE NON RECONSTITUEE\nROMANEE CONTI vigne originelle Francaise non Reconstituée Appellation Controlée\nDe dillaune\nANNEE 1935\neseues\npropriétaires\n"@fra;
-    gv:color [
-  gv:hex "d7c4ab";
-  gv:red "215";
-  gv:blue "171";
-  gv:green "196";
-  gv:score "54.079986000000005";
-  gv:coverage "15.006667000000002"
-], [
-  gv:hex "ac9b83";
-  gv:red "172";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "19.002013";
-  gv:coverage "3.54"
-], [
-  gv:hex "ecdbc4";
-  gv:red "236";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "12.552548999999999";
-  gv:coverage "23.246667"
-], [
-  gv:hex "887760";
-  gv:red "136";
-  gv:blue "96";
-  gv:green "119";
-  gv:score "7.512562000000001";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "65523c";
-  gv:red "101";
-  gv:blue "60";
-  gv:green "82";
-  gv:score "3.2681055";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "d0b686";
-  gv:red "208";
-  gv:blue "134";
-  gv:green "182";
-  gv:score "0.9395639399999999";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "4a3720";
-  gv:red "74";
-  gv:blue "32";
-  gv:green "55";
-  gv:score "0.66247769";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "bfa474";
-  gv:red "191";
-  gv:blue "116";
-  gv:green "164";
-  gv:score "0.61294767";
-  gv:coverage "0.08"
-], [
-  gv:hex "61452d";
-  gv:red "97";
-  gv:blue "45";
-  gv:green "69";
-  gv:score "0.34693647";
-  gv:coverage "0.06"
-], [
-  gv:hex "dbcdc2";
-  gv:red "219";
-  gv:blue "194";
-  gv:green "205";
-  gv:score "0.27096972";
-  gv:coverage "0.80666663"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.931893"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.469533000000006"
-];
-    w:bagOfWords "VIGNE ORIGINELLE FRANCAISE NON RECONSTITUEE\nROMANEE CONTI vigne originelle Francaise non Reconstituée Appellation Controlée\nDe dillaune\nANNEE 1935\neseues\npropriétaires\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3263";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

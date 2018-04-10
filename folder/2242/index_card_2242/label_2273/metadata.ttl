@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2273";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU\nARGAgx\n了/2 7/4/7\nGRANDVI N\nHA\n,Pメ\nヲ\nPREyiERC\nEN\nCRU CLASSE\n1933\nIER GRAND CR\nRAND\nFRANCE\nノナ\n"@fra;
-    gv:color [
-  gv:hex "d5bea2";
-  gv:red "213";
-  gv:blue "162";
-  gv:green "190";
-  gv:score "49.985909";
-  gv:coverage "23.186667"
-], [
-  gv:hex "b19879";
-  gv:red "177";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "29.748255";
-  gv:coverage "6.1933335"
-], [
-  gv:hex "93795a";
-  gv:red "147";
-  gv:blue "90";
-  gv:green "121";
-  gv:score "14.390768000000001";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "8a6e46";
-  gv:red "138";
-  gv:blue "70";
-  gv:green "110";
-  gv:score "1.8835153";
-  gv:coverage "0.16"
-], [
-  gv:hex "906e4f";
-  gv:red "144";
-  gv:blue "79";
-  gv:green "110";
-  gv:score "0.9406520999999999";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "6f5536";
-  gv:red "111";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "0.7960823400000001";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "ebd5bb";
-  gv:red "235";
-  gv:blue "187";
-  gv:green "213";
-  gv:score "0.78674154";
-  gv:coverage "6.0333334"
-], [
-  gv:hex "735435";
-  gv:red "115";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "0.5276580799999999";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "b28d71";
-  gv:red "178";
-  gv:blue "113";
-  gv:green "141";
-  gv:score "0.34992944000000004";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "d9b397";
-  gv:red "217";
-  gv:blue "151";
-  gv:green "179";
-  gv:score "0.25475053";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.840715"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.04894"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.264274"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.978877999999995"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "53.109187000000006"
-];
-    w:bagOfWords "CHATEAU\nARGAgx\n了/2 7/4/7\nGRANDVI N\nHA\n,Pメ\nヲ\nPREyiERC\nEN\nCRU CLASSE\n1933\nIER GRAND CR\nRAND\nFRANCE\nノナ\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2273";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

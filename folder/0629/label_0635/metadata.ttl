@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0635";
-    dct:type "image";
-    w:bagOfWords "BLACK LABEL\nEXTRA QUALITY\nCHAMPAGNE\nnerede\nFRANCE\nMaison Fondée en 1760\n"@undefined;
-    gv:color [
-  gv:hex "1c1416";
-  gv:red "28";
-  gv:blue "22";
-  gv:green "20";
-  gv:score "46.012554";
-  gv:coverage "15.299999999999999"
-], [
-  gv:hex "907943";
-  gv:red "144";
-  gv:blue "67";
-  gv:green "121";
-  gv:score "4.4458091";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "cdbca2";
-  gv:red "205";
-  gv:blue "162";
-  gv:green "188";
-  gv:score "1.0502715";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "372e2d";
-  gv:red "55";
-  gv:blue "45";
-  gv:green "46";
-  gv:score "10.688453";
-  gv:coverage "3.7866667"
-], [
-  gv:hex "44321e";
-  gv:red "68";
-  gv:blue "30";
-  gv:green "50";
-  gv:score "6.3291445";
-  gv:coverage "1.54"
-], [
-  gv:hex "5a504f";
-  gv:red "90";
-  gv:blue "79";
-  gv:green "80";
-  gv:score "3.7930969";
-  gv:coverage "1.3"
-], [
-  gv:hex "b0945c";
-  gv:red "176";
-  gv:blue "92";
-  gv:green "148";
-  gv:score "3.5097424000000004";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "26161e";
-  gv:red "38";
-  gv:blue "30";
-  gv:green "22";
-  gv:score "3.1218851";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "877253";
-  gv:red "135";
-  gv:blue "83";
-  gv:green "114";
-  gv:score "2.9313445000000002";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "624f35";
-  gv:red "98";
-  gv:blue "53";
-  gv:green "79";
-  gv:score "2.8563226";
-  gv:coverage "0.68666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.386226"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.71104"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "59.535688"
-], [
-  gv:mid <https://g.co/kg/m/081rb>;
-  gv:desc "writing";
-  gv:score "55.908364"
-];
-    w:bagOfWords "BLACK LABEL\nEXTRA QUALITY\nCHAMPAGNE\nnerede\nFRANCE\nMaison Fondée en 1760\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0635";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4623";
-    dct:type "image";
-    w:bagOfWords "JEREZ ORO\n(ESPANA)\nNo 2, O\n"@spa;
-    gv:color [
-  gv:hex "cbc2b9";
-  gv:red "203";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "32.419399999999996";
-  gv:coverage "20.9"
-], [
-  gv:hex "a29991";
-  gv:red "162";
-  gv:blue "145";
-  gv:green "153";
-  gv:score "30.481702";
-  gv:coverage "3.3133332"
-], [
-  gv:hex "80776f";
-  gv:red "128";
-  gv:blue "111";
-  gv:green "119";
-  gv:score "18.788646";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "e5dcd3";
-  gv:red "229";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "15.449312";
-  gv:coverage "67.853332"
-], [
-  gv:hex "665d55";
-  gv:red "102";
-  gv:blue "85";
-  gv:green "93";
-  gv:score "2.0779463000000002";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "ccc3b4";
-  gv:red "204";
-  gv:blue "180";
-  gv:green "195";
-  gv:score "0.63535888";
-  gv:coverage "4.8"
-], [
-  gv:hex "aea596";
-  gv:red "174";
-  gv:blue "150";
-  gv:green "165";
-  gv:score "0.11303698000000001";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "3b3328";
-  gv:red "59";
-  gv:blue "40";
-  gv:green "51";
-  gv:score "0.01925089";
-  gv:coverage "0.02"
-], [
-  gv:hex "dfd6c5";
-  gv:red "223";
-  gv:blue "197";
-  gv:green "214";
-  gv:score "0.015344835";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "2f281c";
-  gv:red "47";
-  gv:blue "28";
-  gv:green "40";
-  gv:score "1.2193815999999999e-9";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.077784"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "55.906445000000005"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "51.671189"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "50.055921000000005"
-];
-    w:bagOfWords "JEREZ ORO\n(ESPANA)\nNo 2, O\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4623";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

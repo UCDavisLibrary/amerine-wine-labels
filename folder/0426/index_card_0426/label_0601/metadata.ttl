@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0601";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "f PRODUCT OF GERMANY\nCONTENTS\nALCOHOL\nBY VOL\nFL.OZS\nRU DES HEIM\nSPECIALLY SELECTED\nRHINE WINE\nRhein\nShipped by\n"@deu;
-    gv:color [
-  gv:hex "d3bfa7";
-  gv:red "211";
-  gv:blue "167";
-  gv:green "191";
-  gv:score "30.165786";
-  gv:coverage "46.02"
-], [
-  gv:hex "ad9b82";
-  gv:red "173";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "25.388371999999997";
-  gv:coverage "4.1000000000000005"
-], [
-  gv:hex "897559";
-  gv:red "137";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "9.9009141";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "695639";
-  gv:red "105";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "7.0141025";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "68532a";
-  gv:red "104";
-  gv:blue "42";
-  gv:green "83";
-  gv:score "5.495184999999999";
-  gv:coverage "0.64"
-], [
-  gv:hex "eddac6";
-  gv:red "237";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "4.7577858";
-  gv:coverage "18.553333"
-], [
-  gv:hex "917062";
-  gv:red "145";
-  gv:blue "98";
-  gv:green "112";
-  gv:score "3.580419";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "d1c3b8";
-  gv:red "209";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "3.12741";
-  gv:coverage "7.86"
-], [
-  gv:hex "b79588";
-  gv:red "183";
-  gv:blue "136";
-  gv:green "149";
-  gv:score "2.9463077";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "6e4c40";
-  gv:red "110";
-  gv:blue "64";
-  gv:green "76";
-  gv:score "2.4124111999999998";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.255231"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.150859000000004"
-];
-    w:bagOfWords "f PRODUCT OF GERMANY\nCONTENTS\nALCOHOL\nBY VOL\nFL.OZS\nRU DES HEIM\nSPECIALLY SELECTED\nRHINE WINE\nRhein\nShipped by\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0601";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

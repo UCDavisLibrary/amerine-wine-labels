@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0020";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "REG. EMB. N\n1\nBODEGAS\nBILBAINAS\nCEPA DE ORO\nRIOJA SPANISH\nVA INE\nCos ECHA 1931\nHARO RIOJA\nEmbotellado en la Bodega\nUNION ORAFICA a L. Ton.osA\n(red)\n"@spa;
-    gv:color [
-  gv:hex "d8c3a5";
-  gv:red "216";
-  gv:blue "165";
-  gv:green "195";
-  gv:score "20.7228";
-  gv:coverage "27.24"
-], [
-  gv:hex "817260";
-  gv:red "129";
-  gv:blue "96";
-  gv:green "114";
-  gv:score "18.534133999999998";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "ae955e";
-  gv:red "174";
-  gv:blue "94";
-  gv:green "149";
-  gv:score "14.723305";
-  gv:coverage "3.6333334"
-], [
-  gv:hex "ab997e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "13.301425";
-  gv:coverage "2.5733333000000003"
-], [
-  gv:hex "655644";
-  gv:red "101";
-  gv:blue "68";
-  gv:green "86";
-  gv:score "13.253734";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "977d4a";
-  gv:red "151";
-  gv:blue "74";
-  gv:green "125";
-  gv:score "6.808207199999999";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "ecd9be";
-  gv:red "236";
-  gv:blue "190";
-  gv:green "217";
-  gv:score "4.9701273";
-  gv:coverage "9.0666667"
-], [
-  gv:hex "d6bd8b";
-  gv:red "214";
-  gv:blue "139";
-  gv:green "189";
-  gv:score "4.2681552";
-  gv:coverage "1.3"
-], [
-  gv:hex "473826";
-  gv:red "71";
-  gv:blue "38";
-  gv:green "56";
-  gv:score "1.5437562999999999";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "cac3b8";
-  gv:red "202";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "0.69476748";
-  gv:coverage "18.526667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.106057"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "REG. EMB. N\n1\nBODEGAS\nBILBAINAS\nCEPA DE ORO\nRIOJA SPANISH\nVA INE\nCos ECHA 1931\nHARO RIOJA\nEmbotellado en la Bodega\nUNION ORAFICA a L. Ton.osA\n(red)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0020";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

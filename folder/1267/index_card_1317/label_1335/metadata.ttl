@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1335";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "os VINICULTO\nRACAO EDE VINHO TINTO\nREGIAO DE MAR CADA\nDE VIN HOS DE MESA\n"@por;
-    gv:color [
-  gv:hex "e0bc7f";
-  gv:red "224";
-  gv:blue "127";
-  gv:green "188";
-  gv:score "43.866080000000004";
-  gv:coverage "9.866666799999999"
-], [
-  gv:hex "be0906";
-  gv:red "190";
-  gv:blue "6";
-  gv:green "9";
-  gv:score "4.6936892";
-  gv:coverage "1.44"
-], [
-  gv:hex "08172e";
-  gv:red "8";
-  gv:blue "46";
-  gv:green "23";
-  gv:score "1.7604578";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "cc423c";
-  gv:red "204";
-  gv:blue "60";
-  gv:green "66";
-  gv:score "1.3544152999999999";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "091142";
-  gv:red "9";
-  gv:blue "66";
-  gv:green "17";
-  gv:score "0.52509573";
-  gv:coverage "0.06"
-], [
-  gv:hex "011e6c";
-  gv:red "1";
-  gv:blue "108";
-  gv:green "30";
-  gv:score "0.10884843999999999";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "e6b279";
-  gv:red "230";
-  gv:blue "121";
-  gv:green "178";
-  gv:score "9.8784775";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "dbc39f";
-  gv:red "219";
-  gv:blue "159";
-  gv:green "195";
-  gv:score "6.7717783";
-  gv:coverage "6.5"
-], [
-  gv:hex "53538f";
-  gv:red "83";
-  gv:blue "143";
-  gv:green "83";
-  gv:score "0.06272525100000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d2955e";
-  gv:red "210";
-  gv:blue "94";
-  gv:green "149";
-  gv:score "5.3067967000000005";
-  gv:coverage "1.4666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.76146800000001"
-];
-    w:bagOfWords "os VINICULTO\nRACAO EDE VINHO TINTO\nREGIAO DE MAR CADA\nDE VIN HOS DE MESA\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1335";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

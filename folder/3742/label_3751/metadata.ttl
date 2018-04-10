@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3742/label_3751";
-    dct:type "image";
-    w:bagOfWords "PROPRIETAFRESCOBALDI\nCantina degli Albizi\nVINI DELLE FATTORIE\ndel Marchese FRESCOB ALDI\nFirenze-Borgo degli Albizi N\nTel 20291\n"@ita;
-    gv:color [
-  gv:hex "d1b793";
-  gv:red "209";
-  gv:blue "147";
-  gv:green "183";
-  gv:score "36.013165";
-  gv:coverage "21.08"
-], [
-  gv:hex "645139";
-  gv:red "100";
-  gv:blue "57";
-  gv:green "81";
-  gv:score "16.943794";
-  gv:coverage "3.3000000000000003"
-], [
-  gv:hex "b39b79";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "15.310827";
-  gv:coverage "6.5266669"
-], [
-  gv:hex "887256";
-  gv:red "136";
-  gv:blue "86";
-  gv:green "114";
-  gv:score "11.687301";
-  gv:coverage "2.9533334"
-], [
-  gv:hex "44331d";
-  gv:red "68";
-  gv:blue "29";
-  gv:green "51";
-  gv:score "8.57706";
-  gv:coverage "1.5"
-], [
-  gv:hex "2a1a06";
-  gv:red "42";
-  gv:blue "6";
-  gv:green "26";
-  gv:score "2.3250014";
-  gv:coverage "0.42"
-], [
-  gv:hex "cfb588";
-  gv:red "207";
-  gv:blue "136";
-  gv:green "181";
-  gv:score "1.7803916999999998";
-  gv:coverage "1.06"
-], [
-  gv:hex "160600";
-  gv:red "22";
-  gv:blue "undefined";
-  gv:green "6";
-  gv:score "1.4240508";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "bca276";
-  gv:red "188";
-  gv:blue "118";
-  gv:green "162";
-  gv:score "1.1860768000000002";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "6a5129";
-  gv:red "106";
-  gv:blue "41";
-  gv:green "81";
-  gv:score "1.1202571";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.586265"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.68768299999999"
-];
-    w:bagOfWords "PROPRIETAFRESCOBALDI\nCantina degli Albizi\nVINI DELLE FATTORIE\ndel Marchese FRESCOB ALDI\nFirenze-Borgo degli Albizi N\nTel 20291\n"@ita;
-    wdt:P219 "ita";
-    wdt:P298 "ITA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3751";
+    <schema.keywords> "Italy Folder@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "IT".
+

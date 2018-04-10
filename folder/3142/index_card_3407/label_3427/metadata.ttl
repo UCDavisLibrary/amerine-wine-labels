@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3427";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "GARNIER\nJULES\nBE A UN E\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "a09ea0";
-  gv:red "160";
-  gv:blue "160";
-  gv:green "158";
-  gv:score "53.234333";
-  gv:coverage "12.646666000000002"
-], [
-  gv:hex "0e080a";
-  gv:red "14";
-  gv:blue "10";
-  gv:green "8";
-  gv:score "9.8069176";
-  gv:coverage "7.340000000000001"
-], [
-  gv:hex "e7dbc8";
-  gv:red "231";
-  gv:blue "200";
-  gv:green "219";
-  gv:score "1.8426240999999999";
-  gv:coverage "28.006667"
-], [
-  gv:hex "79777a";
-  gv:red "121";
-  gv:blue "122";
-  gv:green "119";
-  gv:score "16.005115";
-  gv:coverage "4.52"
-], [
-  gv:hex "bebbbb";
-  gv:red "190";
-  gv:blue "187";
-  gv:green "187";
-  gv:score "9.574969999999999";
-  gv:coverage "3.8266666"
-], [
-  gv:hex "58565a";
-  gv:red "88";
-  gv:blue "90";
-  gv:green "86";
-  gv:score "6.1446808";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "daceba";
-  gv:red "218";
-  gv:blue "186";
-  gv:green "206";
-  gv:score "1.4133045";
-  gv:coverage "1.7000000000000002"
-], [
-  gv:hex "3c3635";
-  gv:red "60";
-  gv:blue "53";
-  gv:green "54";
-  gv:score "1.3064684";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "e2dad2";
-  gv:red "226";
-  gv:blue "210";
-  gv:green "218";
-  gv:score "0.58283987";
-  gv:coverage "38.98"
-], [
-  gv:hex "a5988a";
-  gv:red "165";
-  gv:blue "138";
-  gv:green "152";
-  gv:score "0.039220968";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.276023"
-], [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.921563"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.680538"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.908086000000004"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "55.29598"
-];
-    w:bagOfWords "GARNIER\nJULES\nBE A UN E\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3427";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

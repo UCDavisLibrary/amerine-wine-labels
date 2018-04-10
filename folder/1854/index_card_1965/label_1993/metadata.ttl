@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1993";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "DIPLOMATIC CO\nFRANCISCO GARCIA D VELASCO\nLIT MIGUEL SALIDO UEREZ\n"@spa;
-    gv:color [
-  gv:hex "eccf9f";
-  gv:red "236";
-  gv:blue "159";
-  gv:green "207";
-  gv:score "59.976518";
-  gv:coverage "19.826667"
-], [
-  gv:hex "50320d";
-  gv:red "80";
-  gv:blue "13";
-  gv:green "50";
-  gv:score "0.37347855999999996";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "301500";
-  gv:red "48";
-  gv:blue "undefined";
-  gv:green "21";
-  gv:score "0.30786630000000004";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "f1d5a4";
-  gv:red "241";
-  gv:blue "164";
-  gv:green "213";
-  gv:score "19.29736";
-  gv:coverage "7.739999999999999"
-], [
-  gv:hex "e7cda5";
-  gv:red "231";
-  gv:blue "165";
-  gv:green "205";
-  gv:score "8.8567279";
-  gv:coverage "21.22"
-], [
-  gv:hex "f3d9b3";
-  gv:red "243";
-  gv:blue "179";
-  gv:green "217";
-  gv:score "4.1776616";
-  gv:coverage "29.799999999999997"
-], [
-  gv:hex "b5986a";
-  gv:red "181";
-  gv:blue "106";
-  gv:green "152";
-  gv:score "1.6205984999999998";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "b29774";
-  gv:red "178";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "1.5611982";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "8f7448";
-  gv:red "143";
-  gv:blue "72";
-  gv:green "116";
-  gv:score "0.93100211";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "8d7454";
-  gv:red "141";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "0.7210766399999999";
-  gv:coverage "0.31333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.993312"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.124038"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.898900000000005"
-];
-    w:bagOfWords "DIPLOMATIC CO\nFRANCISCO GARCIA D VELASCO\nLIT MIGUEL SALIDO UEREZ\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1993";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2083";
-    dct:type "image";
-    w:bagOfWords "193 er\nopenheimer telle\nnatur\npatlese, Orig ofbf Sade Oppenheim\nean\nSrish, einketleret,\nOppenheim am Rhein\n"@undefined;
-    gv:color [
-  gv:hex "d4c2a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "46.490767999999996";
-  gv:coverage "44.213333999999996"
-], [
-  gv:hex "b19f83";
-  gv:red "177";
-  gv:blue "131";
-  gv:green "159";
-  gv:score "22.949417999999998";
-  gv:coverage "4.4066668"
-], [
-  gv:hex "eadac1";
-  gv:red "234";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "11.571565";
-  gv:coverage "30.973332999999997"
-], [
-  gv:hex "837151";
-  gv:red "131";
-  gv:blue "81";
-  gv:green "113";
-  gv:score "11.369948";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "6e5b3d";
-  gv:red "110";
-  gv:blue "61";
-  gv:green "91";
-  gv:score "4.531715800000001";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "a79062";
-  gv:red "167";
-  gv:blue "98";
-  gv:green "144";
-  gv:score "2.2841515";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "998155";
-  gv:red "153";
-  gv:blue "85";
-  gv:green "129";
-  gv:score "0.641527";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "e7d7cb";
-  gv:red "231";
-  gv:blue "203";
-  gv:green "215";
-  gv:score "0.088145054";
-  gv:coverage "10.8"
-], [
-  gv:hex "e3d0c8";
-  gv:red "227";
-  gv:blue "200";
-  gv:green "208";
-  gv:score "0.044946518";
-  gv:coverage "5.8866667999999995"
-], [
-  gv:hex "413424";
-  gv:red "65";
-  gv:blue "36";
-  gv:green "52";
-  gv:score "0.019941122";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.985878"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.294175"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "50.835919"
-];
-    w:bagOfWords "193 er\nopenheimer telle\nnatur\npatlese, Orig ofbf Sade Oppenheim\nean\nSrish, einketleret,\nOppenheim am Rhein\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2083";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4370/label_4370";
-    dct:type "image";
-    w:bagOfWords "KREMSERSANDGRUBE\nGRUNER VELTLINER\nSPAT LE SE\nWEINGUT u. KELLER EIEN\nubolf Rutlchera 8, ohne\nKREMS a D. WIEN\n"@deu;
-    gv:color [
-  gv:hex "b29c69";
-  gv:red "178";
-  gv:blue "105";
-  gv:green "156";
-  gv:score "23.855828000000002";
-  gv:coverage "9.0733334"
-], [
-  gv:hex "38574e";
-  gv:red "56";
-  gv:blue "78";
-  gv:green "87";
-  gv:score "0.9255580600000001";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "cdbb87";
-  gv:red "205";
-  gv:blue "135";
-  gv:green "187";
-  gv:score "20.908356";
-  gv:coverage "6.833333499999999"
-], [
-  gv:hex "cac196";
-  gv:red "202";
-  gv:blue "150";
-  gv:green "193";
-  gv:score "15.25647";
-  gv:coverage "11.52"
-], [
-  gv:hex "927a4b";
-  gv:red "146";
-  gv:blue "75";
-  gv:green "122";
-  gv:score "7.7659018";
-  gv:coverage "3.8533334000000004"
-], [
-  gv:hex "aa9f76";
-  gv:red "170";
-  gv:blue "118";
-  gv:green "159";
-  gv:score "7.044309999999999";
-  gv:coverage "2.98"
-], [
-  gv:hex "817652";
-  gv:red "129";
-  gv:blue "82";
-  gv:green "118";
-  gv:score "3.831606";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "5c5433";
-  gv:red "92";
-  gv:blue "51";
-  gv:green "84";
-  gv:score "3.1153247";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "635529";
-  gv:red "99";
-  gv:blue "41";
-  gv:green "85";
-  gv:score "2.1351150999999997";
-  gv:coverage "0.54"
-], [
-  gv:hex "7a4424";
-  gv:red "122";
-  gv:blue "36";
-  gv:green "68";
-  gv:score "2.0983404";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.533376"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.65769699999999"
-];
-    w:bagOfWords "KREMSERSANDGRUBE\nGRUNER VELTLINER\nSPAT LE SE\nWEINGUT u. KELLER EIEN\nubolf Rutlchera 8, ohne\nKREMS a D. WIEN\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "AUT".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4370";
+    <schema.keywords> "Austria Folder@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "AT".
+

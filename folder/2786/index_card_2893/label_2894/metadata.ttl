@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2894";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "NTENANCE\ndes BOUTEILLES\nClos de l'Abbaye\nGRAND VIN D'ALSACE\nMise en bouteilles\nHunawihi (Ht -Rh France\n(Haut-Rhin France\nCaves THEO. ZESSEL succ. F. JAECK\nHUNAwlHR LITH A JESS COLMAR\n"@fra;
-    gv:color [
-  gv:hex "0e1b1e";
-  gv:red "14";
-  gv:blue "30";
-  gv:green "27";
-  gv:score "13.990150000000002";
-  gv:coverage "4.14"
-], [
-  gv:hex "8e9f9f";
-  gv:red "142";
-  gv:blue "159";
-  gv:green "159";
-  gv:score "5.406132";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "d4c0a6";
-  gv:red "212";
-  gv:blue "166";
-  gv:green "192";
-  gv:score "3.5160821";
-  gv:coverage "9.3733333"
-], [
-  gv:hex "ae9c5e";
-  gv:red "174";
-  gv:blue "94";
-  gv:green "156";
-  gv:score "2.9285677";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "a16615";
-  gv:red "161";
-  gv:blue "21";
-  gv:green "102";
-  gv:score "1.2343279";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "213437";
-  gv:red "33";
-  gv:blue "55";
-  gv:green "52";
-  gv:score "9.281139099999999";
-  gv:coverage "3.3533334999999997"
-], [
-  gv:hex "455659";
-  gv:red "69";
-  gv:blue "89";
-  gv:green "86";
-  gv:score "5.5468414";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "0b1c29";
-  gv:red "11";
-  gv:blue "41";
-  gv:green "28";
-  gv:score "5.4231767";
-  gv:coverage "1.02"
-], [
-  gv:hex "6a7b7d";
-  gv:red "106";
-  gv:blue "125";
-  gv:green "123";
-  gv:score "5.0038319";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "1b3738";
-  gv:red "27";
-  gv:blue "56";
-  gv:green "55";
-  gv:score "3.8545646000000002";
-  gv:coverage "0.9933332899999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.0874"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "70.225096"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.68107499999999"
-];
-    w:bagOfWords "NTENANCE\ndes BOUTEILLES\nClos de l'Abbaye\nGRAND VIN D'ALSACE\nMise en bouteilles\nHunawihi (Ht -Rh France\n(Haut-Rhin France\nCaves THEO. ZESSEL succ. F. JAECK\nHUNAwlHR LITH A JESS COLMAR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2894";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

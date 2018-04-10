@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2732";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "DES\nONE\nGARANTIE\nORIGIN E\n190CA\nPARIS MEDAILLE\net mitaye\nHERMITAGE APPELLATION CONTROL EE\nE.VERII HAG\nM A A-7 S\n"@fra;
-    gv:color [
-  gv:hex "dab481";
-  gv:red "218";
-  gv:blue "129";
-  gv:green "180";
-  gv:score "29.3536";
-  gv:coverage "13.533333"
-], [
-  gv:hex "ca9a69";
-  gv:red "202";
-  gv:blue "105";
-  gv:green "154";
-  gv:score "16.880558";
-  gv:coverage "5.1933333"
-], [
-  gv:hex "351600";
-  gv:red "53";
-  gv:blue "undefined";
-  gv:green "22";
-  gv:score "0.4893356";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "dcae7b";
-  gv:red "220";
-  gv:blue "123";
-  gv:green "174";
-  gv:score "14.867453";
-  gv:coverage "5.82"
-], [
-  gv:hex "c29e6d";
-  gv:red "194";
-  gv:blue "109";
-  gv:green "158";
-  gv:score "11.171743000000001";
-  gv:coverage "4.02"
-], [
-  gv:hex "9d6f43";
-  gv:red "157";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "5.2967694000000005";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "754923";
-  gv:red "117";
-  gv:blue "35";
-  gv:green "73";
-  gv:score "3.843341";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "927247";
-  gv:red "146";
-  gv:blue "71";
-  gv:green "114";
-  gv:score "3.2642335";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "592d0c";
-  gv:red "89";
-  gv:blue "12";
-  gv:green "45";
-  gv:score "2.2057079";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "b59771";
-  gv:red "181";
-  gv:blue "113";
-  gv:green "151";
-  gv:score "2.1306183";
-  gv:coverage "0.67333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.216318"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.868581000000006"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.932067999999994"
-];
-    w:bagOfWords "DES\nONE\nGARANTIE\nORIGIN E\n190CA\nPARIS MEDAILLE\net mitaye\nHERMITAGE APPELLATION CONTROL EE\nE.VERII HAG\nM A A-7 S\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2732";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

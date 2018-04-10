@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0245";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "CALIFORNIA\nPINOT NOIR\nPREPARED AND BOTTLED BY\nBUENAVISTAVINEYARDs\nS O N O M A C A L\nI F O R N\nI A\nAL co HOL 1 21%% BY vo LUME\n"@eng;
-    gv:color [
-  gv:hex "d9b765";
-  gv:red "217";
-  gv:blue "101";
-  gv:green "183";
-  gv:score "33.867458";
-  gv:coverage "10.013333000000001"
-], [
-  gv:hex "e4d9cf";
-  gv:red "228";
-  gv:blue "207";
-  gv:green "217";
-  gv:score "0.36410913";
-  gv:coverage "39.26"
-], [
-  gv:hex "2e1400";
-  gv:red "46";
-  gv:blue "undefined";
-  gv:green "20";
-  gv:score "0.34766565";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "d8b771";
-  gv:red "216";
-  gv:blue "113";
-  gv:green "183";
-  gv:score "33.177519";
-  gv:coverage "10.793334"
-], [
-  gv:hex "bd9d5c";
-  gv:red "189";
-  gv:blue "92";
-  gv:green "157";
-  gv:score "13.858487";
-  gv:coverage "6.3333333000000005"
-], [
-  gv:hex "c5a153";
-  gv:red "197";
-  gv:blue "83";
-  gv:green "161";
-  gv:score "6.478558500000001";
-  gv:coverage "3.2333333"
-], [
-  gv:hex "8f733b";
-  gv:red "143";
-  gv:blue "59";
-  gv:green "115";
-  gv:score "4.5381341";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "6e5423";
-  gv:red "110";
-  gv:blue "35";
-  gv:green "84";
-  gv:score "3.110265";
-  gv:coverage "0.8200000000000001"
-], [
-  gv:hex "dcc8a7";
-  gv:red "220";
-  gv:blue "167";
-  gv:green "200";
-  gv:score "1.3356413";
-  gv:coverage "8.973333199999999"
-], [
-  gv:hex "9b7c30";
-  gv:red "155";
-  gv:blue "48";
-  gv:green "124";
-  gv:score "0.48221825";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.706627"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.8222"
-];
-    w:bagOfWords "CALIFORNIA\nPINOT NOIR\nPREPARED AND BOTTLED BY\nBUENAVISTAVINEYARDs\nS O N O M A C A L\nI F O R N\nI A\nAL co HOL 1 21%% BY vo LUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0245";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

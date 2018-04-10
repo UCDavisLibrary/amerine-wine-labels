@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2425";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "13 77\nCONTENTS 1 PINT 8 FLUID OUM CEC\nST-JULIEN\nFRANCE\nSt. Julien\nD ist Irin\n"@fra;
-    gv:color [
-  gv:hex "b4987b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "152";
-  gv:score "25.061055999999997";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "997144";
-  gv:red "153";
-  gv:blue "68";
-  gv:green "113";
-  gv:score "9.2141494";
-  gv:coverage "0.52"
-], [
-  gv:hex "d4bba1";
-  gv:red "212";
-  gv:blue "161";
-  gv:green "187";
-  gv:score "19.097131";
-  gv:coverage "6.4066662999999995"
-], [
-  gv:hex "8f7555";
-  gv:red "143";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "13.619031000000001";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "94744a";
-  gv:red "148";
-  gv:blue "74";
-  gv:green "116";
-  gv:score "7.0968889";
-  gv:coverage "0.4"
-], [
-  gv:hex "d3c5bb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "3.6035337";
-  gv:coverage "21.026666"
-], [
-  gv:hex "73572b";
-  gv:red "115";
-  gv:blue "43";
-  gv:green "87";
-  gv:score "3.0354550000000002";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b29063";
-  gv:red "178";
-  gv:blue "99";
-  gv:green "144";
-  gv:score "3.0229282";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "987353";
-  gv:red "152";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "3.0061552";
-  gv:coverage "0.18"
-], [
-  gv:hex "bc9675";
-  gv:red "188";
-  gv:blue "117";
-  gv:green "150";
-  gv:score "2.9899666";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.55581199999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.699085999999994"
-];
-    w:bagOfWords "13 77\nCONTENTS 1 PINT 8 FLUID OUM CEC\nST-JULIEN\nFRANCE\nSt. Julien\nD ist Irin\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2425";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

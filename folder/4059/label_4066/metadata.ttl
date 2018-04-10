@@ -1,100 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4059/label_4066";
-    dct:type "image";
-    w:bagOfWords "1. Gewachs Saint Emilion\nBORDEAUX\nFRANKREICH\nJ. H. B a c h man n B re men\nGEG R. 1775\nMA A 7 L\n"@fra;
-    gv:color [
-  gv:hex "d5bfa4";
-  gv:red "213";
-  gv:blue "164";
-  gv:green "191";
-  gv:score "51.006746";
-  gv:coverage "33.613333"
-], [
-  gv:hex "b09a7e";
-  gv:red "176";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "15.170695";
-  gv:coverage "4.22"
-], [
-  gv:hex "89785e";
-  gv:red "137";
-  gv:blue "94";
-  gv:green "120";
-  gv:score "7.5262435000000005";
-  gv:coverage "1.6666668"
-], [
-  gv:hex "d3b283";
-  gv:red "211";
-  gv:blue "131";
-  gv:green "178";
-  gv:score "5.3843603";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "c19e6f";
-  gv:red "193";
-  gv:blue "111";
-  gv:green "158";
-  gv:score "4.79123";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "ebd9c4";
-  gv:red "235";
-  gv:blue "196";
-  gv:green "217";
-  gv:score "2.8563928";
-  gv:coverage "6.5266669"
-], [
-  gv:hex "c19a7e";
-  gv:red "193";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "1.9667397999999998";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "68573f";
-  gv:red "104";
-  gv:blue "63";
-  gv:green "87";
-  gv:score "1.8899549000000002";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "dab499";
-  gv:red "218";
-  gv:blue "153";
-  gv:green "180";
-  gv:score "1.8687977000000002";
-  gv:coverage "0.5"
-], [
-  gv:hex "c09666";
-  gv:red "192";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "1.6022608";
-  gv:coverage "0.21333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.195971"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.793659"
-];
-    w:bagOfWords "1. Gewachs Saint Emilion\nBORDEAUX\nFRANKREICH\nJ. H. B a c h man n B re men\nGEG R. 1775\nMA A 7 L\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4066";
+    <schema.keywords> "Red Bordeaux (for book) folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
+    w:WineColor w:Red.
+

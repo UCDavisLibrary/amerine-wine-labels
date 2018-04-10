@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4149";
-    dct:type "image";
-    w:bagOfWords "Alcoholic Strength by volume 13 o/o\nContents 1 pint 8 fluid OUnces\nbrand Join\nCON FONDEE\nde 2Bourgogue\nEN CHABLIS GRAND CRU\nppellation Controle\nTRADE MARK\nEN 188O\nPROPRIETAIRE ET NEGOCIANT\nA BE A UNE (COTE D'OR\nBottled in France\nProduce of France\n"@fra;
-    gv:color [
-  gv:hex "d8c3a6";
-  gv:red "216";
-  gv:blue "166";
-  gv:green "195";
-  gv:score "30.500057";
-  gv:coverage "22.720000000000002"
-], [
-  gv:hex "aa3938";
-  gv:red "170";
-  gv:blue "56";
-  gv:green "57";
-  gv:score "0.29450697";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "ad9a7d";
-  gv:red "173";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "12.159236";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "eab99f";
-  gv:red "234";
-  gv:blue "159";
-  gv:green "185";
-  gv:score "11.373619999999999";
-  gv:coverage "2.7199999999999998"
-], [
-  gv:hex "c7937b";
-  gv:red "199";
-  gv:blue "123";
-  gv:green "147";
-  gv:score "9.1774948";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "a56e58";
-  gv:red "165";
-  gv:blue "88";
-  gv:green "110";
-  gv:score "6.596096599999999";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "8a775b";
-  gv:red "138";
-  gv:blue "91";
-  gv:green "119";
-  gv:score "6.1504327";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "b15e51";
-  gv:red "177";
-  gv:blue "81";
-  gv:green "94";
-  gv:score "5.7754934";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "d78173";
-  gv:red "215";
-  gv:blue "115";
-  gv:green "129";
-  gv:score "4.1532754999999995";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "eed9bd";
-  gv:red "238";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "3.9303909999999997";
-  gv:coverage "7.5200000000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.942443"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "51.443708"
-];
-    w:bagOfWords "Alcoholic Strength by volume 13 o/o\nContents 1 pint 8 fluid OUnces\nbrand Join\nCON FONDEE\nde 2Bourgogue\nEN CHABLIS GRAND CRU\nppellation Controle\nTRADE MARK\nEN 188O\nPROPRIETAIRE ET NEGOCIANT\nA BE A UNE (COTE D'OR\nBottled in France\nProduce of France\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4149";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

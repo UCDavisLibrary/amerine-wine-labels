@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1701";
-    dct:type "image";
-    w:bagOfWords "OVERTHREE 3 UNDER COVT SUPERVISION\nIPE\nKIE O\nBRANDY\nCYPRUS WINE 8 SPIRITS 0 ITD\nLIMASSOL CYPRUS\nPRINTED IN CYPRUS\n"@eng;
-    gv:color [
-  gv:hex "c5935d";
-  gv:red "197";
-  gv:blue "93";
-  gv:green "147";
-  gv:score "15.393902";
-  gv:coverage "4.22"
-], [
-  gv:hex "a51607";
-  gv:red "165";
-  gv:blue "7";
-  gv:green "22";
-  gv:score "5.3427212";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "d04737";
-  gv:red "208";
-  gv:blue "55";
-  gv:green "71";
-  gv:score "1.8966726999999999";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "6c1d0c";
-  gv:red "108";
-  gv:blue "12";
-  gv:green "29";
-  gv:score "1.6669923";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "9a6f3c";
-  gv:red "154";
-  gv:blue "60";
-  gv:green "111";
-  gv:score "13.244481";
-  gv:coverage "4.273333399999999"
-], [
-  gv:hex "bb9765";
-  gv:red "187";
-  gv:blue "101";
-  gv:green "151";
-  gv:score "9.3199477";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "dab582";
-  gv:red "218";
-  gv:blue "130";
-  gv:green "181";
-  gv:score "9.133295700000001";
-  gv:coverage "2.6"
-], [
-  gv:hex "774e1d";
-  gv:red "119";
-  gv:blue "29";
-  gv:green "78";
-  gv:score "7.8364685000000005";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "dabd99";
-  gv:red "218";
-  gv:blue "153";
-  gv:green "189";
-  gv:score "6.4798377";
-  gv:coverage "9.02"
-], [
-  gv:hex "e0b17b";
-  gv:red "224";
-  gv:blue "123";
-  gv:green "177";
-  gv:score "5.9288371";
-  gv:coverage "1.6066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.038029"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "OVERTHREE 3 UNDER COVT SUPERVISION\nIPE\nKIE O\nBRANDY\nCYPRUS WINE 8 SPIRITS 0 ITD\nLIMASSOL CYPRUS\nPRINTED IN CYPRUS\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1701";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

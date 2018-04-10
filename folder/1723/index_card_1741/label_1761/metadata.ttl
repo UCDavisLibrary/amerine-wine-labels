@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1761";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Bernkasteler Rosenberg\nN a t u r w e i n\nL I G H T\nWHITE MO SELLE WINE\nContents 1 pint 7.5 fl. ozs\nAlcohol 12% by volume\nP r o d u c e d, b ottled a n d s h i pped b y:\nRA BEEN TRARBACHAMOSEL\nJULIUS KAYSER ECO\n"@deu;
-    gv:color [
-  gv:hex "897456";
-  gv:red "137";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "19.375263";
-  gv:coverage "6.4266667"
-], [
-  gv:hex "c39258";
-  gv:red "195";
-  gv:blue "88";
-  gv:green "146";
-  gv:score "5.871086200000001";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "645135";
-  gv:red "100";
-  gv:blue "53";
-  gv:green "81";
-  gv:score "16.072226";
-  gv:coverage "5.06"
-], [
-  gv:hex "ab9576";
-  gv:red "171";
-  gv:blue "118";
-  gv:green "149";
-  gv:score "9.629505100000001";
-  gv:coverage "3.5466667"
-], [
-  gv:hex "8e7144";
-  gv:red "142";
-  gv:blue "68";
-  gv:green "113";
-  gv:score "7.261102599999999";
-  gv:coverage "2.54"
-], [
-  gv:hex "48361a";
-  gv:red "72";
-  gv:blue "26";
-  gv:green "54";
-  gv:score "6.2407069";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "b89766";
-  gv:red "184";
-  gv:blue "102";
-  gv:green "151";
-  gv:score "5.800974";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "cd954a";
-  gv:red "205";
-  gv:blue "74";
-  gv:green "149";
-  gv:score "3.9325971";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "6f5328";
-  gv:red "111";
-  gv:blue "40";
-  gv:green "83";
-  gv:score "3.7637331000000005";
-  gv:coverage "1.32"
-], [
-  gv:hex "734c1a";
-  gv:red "115";
-  gv:blue "26";
-  gv:green "76";
-  gv:score "3.6477238";
-  gv:coverage "1.0466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "74.085736"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.7029"
-], [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "59.581012"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.324443"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.618182999999995"
-];
-    w:bagOfWords "Bernkasteler Rosenberg\nN a t u r w e i n\nL I G H T\nWHITE MO SELLE WINE\nContents 1 pint 7.5 fl. ozs\nAlcohol 12% by volume\nP r o d u c e d, b ottled a n d s h i pped b y:\nRA BEEN TRARBACHAMOSEL\nJULIUS KAYSER ECO\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1761";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

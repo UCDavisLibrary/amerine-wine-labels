@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3729";
-    dct:type "image";
-    w:bagOfWords "CLARE TE\nCARIN ENA\nEmbotellado en orlgon\n\"BODEGA LAS CAMPANAS\nCASA FUN DADA EN 1880\nLAS CAMPANAS\nNAVA RRA)\nN9111 del Regtro Of al de Embotelladores\nGRANDESBODEGAS EN\nBIUR RUN CAMPANAS\nCORELLA Y PITILLASINAMARRAD CARINENA(zARAGOZA)\nY VILLA CANAS (TOLEDO\nVINOS DE MESA QUE ELABORA\nFINO TINTO CAMPANAS\nTINTO CARIN ENA\nFINO BLANCO\nCLARETE CARINENA\nCEPA NAVA RRA TIPO OPORTO\nRESERVA CASTILLO DE TIEBAS\n"@spa;
-    gv:color [
-  gv:hex "893222";
-  gv:red "137";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "19.588691";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "d5c3b3";
-  gv:red "213";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "12.401878";
-  gv:coverage "21.973333"
-], [
-  gv:hex "88362f";
-  gv:red "136";
-  gv:blue "47";
-  gv:green "54";
-  gv:score "12.795936";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "764538";
-  gv:red "118";
-  gv:blue "56";
-  gv:green "69";
-  gv:score "6.9926455999999995";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "772314";
-  gv:red "119";
-  gv:blue "20";
-  gv:green "35";
-  gv:score "5.1850434";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "992a23";
-  gv:red "153";
-  gv:blue "35";
-  gv:green "42";
-  gv:score "5.1456578";
-  gv:coverage "0.06"
-], [
-  gv:hex "ad9c8c";
-  gv:red "173";
-  gv:blue "140";
-  gv:green "156";
-  gv:score "5.0009221";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "956b5f";
-  gv:red "149";
-  gv:blue "95";
-  gv:green "107";
-  gv:score "3.8119796999999997";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "672119";
-  gv:red "103";
-  gv:blue "25";
-  gv:green "33";
-  gv:score "3.3521641";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "cebfb7";
-  gv:red "206";
-  gv:blue "183";
-  gv:green "191";
-  gv:score "2.8300563";
-  gv:coverage "5.779999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.85795999999999"
-];
-    w:bagOfWords "CLARE TE\nCARIN ENA\nEmbotellado en orlgon\n\"BODEGA LAS CAMPANAS\nCASA FUN DADA EN 1880\nLAS CAMPANAS\nNAVA RRA)\nN9111 del Regtro Of al de Embotelladores\nGRANDESBODEGAS EN\nBIUR RUN CAMPANAS\nCORELLA Y PITILLASINAMARRAD CARINENA(zARAGOZA)\nY VILLA CANAS (TOLEDO\nVINOS DE MESA QUE ELABORA\nFINO TINTO CAMPANAS\nTINTO CARIN ENA\nFINO BLANCO\nCLARETE CARINENA\nCEPA NAVA RRA TIPO OPORTO\nRESERVA CASTILLO DE TIEBAS\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3729";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

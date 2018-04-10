@@ -1,105 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0461";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "RHEINGAU\n16 2 T\nANNO\n1951 et\nNATURGEWACHS UND ORIGINAL ABFULLUNG\n"@deu;
-    gv:color [
-  gv:hex "d6c38a";
-  gv:red "214";
-  gv:blue "138";
-  gv:green "195";
-  gv:score "36.69976";
-  gv:coverage "11.193334"
-], [
-  gv:hex "675524";
-  gv:red "103";
-  gv:blue "36";
-  gv:green "85";
-  gv:score "6.1825257";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "36586e";
-  gv:red "54";
-  gv:blue "110";
-  gv:green "88";
-  gv:score "0.88443542";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "d8c8a3";
-  gv:red "216";
-  gv:blue "163";
-  gv:green "200";
-  gv:score "23.309377";
-  gv:coverage "13.26"
-], [
-  gv:hex "aa9b7a";
-  gv:red "170";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "5.5685438";
-  gv:coverage "3.9133333"
-], [
-  gv:hex "887643";
-  gv:red "136";
-  gv:blue "67";
-  gv:green "118";
-  gv:score "5.0989207";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "847757";
-  gv:red "132";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "4.9268294";
-  gv:coverage "2.06"
-], [
-  gv:hex "b09d65";
-  gv:red "176";
-  gv:blue "101";
-  gv:green "157";
-  gv:score "4.3743063";
-  gv:coverage "2.0066667"
-], [
-  gv:hex "605739";
-  gv:red "96";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "2.6875602";
-  gv:coverage "0.5"
-], [
-  gv:hex "ebdab9";
-  gv:red "235";
-  gv:blue "185";
-  gv:green "218";
-  gv:score "2.6134865";
-  gv:coverage "6.619999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.39554700000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.567277000000004"
-];
-    w:bagOfWords "RHEINGAU\n16 2 T\nANNO\n1951 et\nNATURGEWACHS UND ORIGINAL ABFULLUNG\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0461";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

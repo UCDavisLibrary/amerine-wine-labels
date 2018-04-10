@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1797";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Beinbaugebiet\nPRODUCT OF GERMANY\nAlcohol 10\nContents\nby Volume\n1 Pint 8 Fl. Oz.\nM O S E L W I N E\n1950er\nieferer Mieserberg essen\nER d Co.TRIER\n"@deu;
-    gv:color [
-  gv:hex "d3c2ad";
-  gv:red "211";
-  gv:blue "173";
-  gv:green "194";
-  gv:score "13.307589";
-  gv:coverage "27.506667"
-], [
-  gv:hex "a52e23";
-  gv:red "165";
-  gv:blue "35";
-  gv:green "46";
-  gv:score "9.40513";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "425e4d";
-  gv:red "66";
-  gv:blue "77";
-  gv:green "94";
-  gv:score "0.171671";
-  gv:coverage "0.02"
-], [
-  gv:hex "ab9b86";
-  gv:red "171";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "9.531978500000001";
-  gv:coverage "2.42"
-], [
-  gv:hex "c44938";
-  gv:red "196";
-  gv:blue "56";
-  gv:green "73";
-  gv:score "5.9286181000000004";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "903823";
-  gv:red "144";
-  gv:blue "35";
-  gv:green "56";
-  gv:score "5.6747157";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "ebdbc5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "5.5114567";
-  gv:coverage "23.626667"
-], [
-  gv:hex "c2907d";
-  gv:red "194";
-  gv:blue "125";
-  gv:green "144";
-  gv:score "4.545952000000001";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "9f705f";
-  gv:red "159";
-  gv:blue "95";
-  gv:green "112";
-  gv:score "4.1976143";
-  gv:coverage "0.38"
-], [
-  gv:hex "b7563c";
-  gv:red "183";
-  gv:blue "60";
-  gv:green "86";
-  gv:score "4.0338017";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.41232"
-];
-    w:bagOfWords "Beinbaugebiet\nPRODUCT OF GERMANY\nAlcohol 10\nContents\nby Volume\n1 Pint 8 Fl. Oz.\nM O S E L W I N E\n1950er\nieferer Mieserberg essen\nER d Co.TRIER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1797";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

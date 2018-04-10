@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3351/label_3355";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Appellation Contro\nSAVIGNY-LES-BEAUNE\nLOUIS, LANGERON BOURSOT\nPropriétaire\n1934\nMISE\nDU DOMAINE\n"@fra;
-    gv:color [
-  gv:hex "dfb986";
-  gv:red "223";
-  gv:blue "134";
-  gv:green "185";
-  gv:score "51.635467999999996";
-  gv:coverage "16.766666999999998"
-], [
-  gv:hex "e0b27b";
-  gv:red "224";
-  gv:blue "123";
-  gv:green "178";
-  gv:score "16.962953";
-  gv:coverage "4.7666664999999995"
-], [
-  gv:hex "c09c6b";
-  gv:red "192";
-  gv:blue "107";
-  gv:green "156";
-  gv:score "8.2736023";
-  gv:coverage "1.72"
-], [
-  gv:hex "c89761";
-  gv:red "200";
-  gv:blue "97";
-  gv:green "151";
-  gv:score "7.28162";
-  gv:coverage "1.32"
-], [
-  gv:hex "ddbe98";
-  gv:red "221";
-  gv:blue "152";
-  gv:green "190";
-  gv:score "6.523294";
-  gv:coverage "7.9399999999999995"
-], [
-  gv:hex "9e7443";
-  gv:red "158";
-  gv:blue "67";
-  gv:green "116";
-  gv:score "4.252233400000001";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "382202";
-  gv:red "56";
-  gv:blue "2";
-  gv:green "34";
-  gv:score "0.028678172000000002";
-  gv:coverage "0.02"
-], [
-  gv:hex "714d21";
-  gv:red "113";
-  gv:blue "33";
-  gv:green "77";
-  gv:score "1.3938298999999998";
-  gv:coverage "0.24"
-], [
-  gv:hex "987647";
-  gv:red "152";
-  gv:blue "71";
-  gv:green "118";
-  gv:score "1.3357508";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "bc9c76";
-  gv:red "188";
-  gv:blue "118";
-  gv:green "156";
-  gv:score "0.53698649";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.252265"
-], [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "75.285596"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.746519"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.62806199999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Appellation Contro\nSAVIGNY-LES-BEAUNE\nLOUIS, LANGERON BOURSOT\nPropriétaire\n1934\nMISE\nDU DOMAINE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3355";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

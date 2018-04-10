@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1832";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "Produce of Germany\nVintage 1949\nRanders ackerer Sonnenstuhl\nOriginal Bottling\nShipped by:\nAdolph Huesgen, Traben-Trarbach Moselle\nCHER WEIN\nGUTSBESITZER\nKITZINGEN\n"@deu;
-    gv:color [
-  gv:hex "b59b3e";
-  gv:red "181";
-  gv:blue "62";
-  gv:green "155";
-  gv:score "8.810655";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "d8c8ac";
-  gv:red "216";
-  gv:blue "172";
-  gv:green "200";
-  gv:score "4.7855873";
-  gv:coverage "8.5333332"
-], [
-  gv:hex "877439";
-  gv:red "135";
-  gv:blue "57";
-  gv:green "116";
-  gv:score "4.2317767";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "a0191c";
-  gv:red "160";
-  gv:blue "28";
-  gv:green "25";
-  gv:score "2.7133634";
-  gv:coverage "0.18"
-], [
-  gv:hex "d6111c";
-  gv:red "214";
-  gv:blue "28";
-  gv:green "17";
-  gv:score "2.1219308999999997";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "681c1b";
-  gv:red "104";
-  gv:blue "27";
-  gv:green "28";
-  gv:score "1.7478341000000002";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "3e3118";
-  gv:red "62";
-  gv:blue "24";
-  gv:green "49";
-  gv:score "1.6396705";
-  gv:coverage "0.4"
-], [
-  gv:hex "110b08";
-  gv:red "17";
-  gv:blue "8";
-  gv:green "11";
-  gv:score "0.40136208";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "dcc25e";
-  gv:red "220";
-  gv:blue "94";
-  gv:green "194";
-  gv:score "8.7542705";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "dec343";
-  gv:red "222";
-  gv:blue "67";
-  gv:green "195";
-  gv:score "3.7978016000000006";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.85969"
-];
-    w:bagOfWords "Produce of Germany\nVintage 1949\nRanders ackerer Sonnenstuhl\nOriginal Bottling\nShipped by:\nAdolph Huesgen, Traben-Trarbach Moselle\nCHER WEIN\nGUTSBESITZER\nKITZINGEN\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1832";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

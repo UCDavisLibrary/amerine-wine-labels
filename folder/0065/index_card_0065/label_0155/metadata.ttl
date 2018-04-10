@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0155";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "VALPOLICELLA VALPANTENA\nSECCO BERTANI\nCAV, Gio. BATTA BERTANI\nVERONA (ITALIA)\n"@ita;
-    gv:color [
-  gv:hex "0c0704";
-  gv:red "12";
-  gv:blue "4";
-  gv:green "7";
-  gv:score "52.239275";
-  gv:coverage "26.493335000000002"
-], [
-  gv:hex "5e503b";
-  gv:red "94";
-  gv:blue "59";
-  gv:green "80";
-  gv:score "13.38411";
-  gv:coverage "2.26"
-], [
-  gv:hex "ece2d9";
-  gv:red "236";
-  gv:blue "217";
-  gv:green "226";
-  gv:score "0.70581976";
-  gv:coverage "58.673334"
-], [
-  gv:hex "403320";
-  gv:red "64";
-  gv:blue "32";
-  gv:green "51";
-  gv:score "13.234085";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "3c352d";
-  gv:red "60";
-  gv:blue "45";
-  gv:green "53";
-  gv:score "5.2042682";
-  gv:coverage "1.34"
-], [
-  gv:hex "271c0a";
-  gv:red "39";
-  gv:blue "10";
-  gv:green "28";
-  gv:score "4.9495276";
-  gv:coverage "0.74"
-], [
-  gv:hex "544d46";
-  gv:red "84";
-  gv:blue "70";
-  gv:green "77";
-  gv:score "4.066727299999999";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "7c6e58";
-  gv:red "124";
-  gv:blue "88";
-  gv:green "110";
-  gv:score "3.629699";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "777067";
-  gv:red "119";
-  gv:blue "103";
-  gv:green "112";
-  gv:score "0.78095603";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "c3bdb5";
-  gv:red "195";
-  gv:blue "181";
-  gv:green "189";
-  gv:score "0.33626456";
-  gv:coverage "1.0666666999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.882873"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "69.890922"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "VALPOLICELLA VALPANTENA\nSECCO BERTANI\nCAV, Gio. BATTA BERTANI\nVERONA (ITALIA)\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0155";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

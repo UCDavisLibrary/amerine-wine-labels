@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0495";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E N G A U\n1951er.\nSteinberger\nDerwaltung der Staatsuoeinguter\nElt pille\nEigener Rellerab3ug uno Rorhbrano\n"@deu;
-    gv:color [
-  gv:hex "d5c0a7";
-  gv:red "213";
-  gv:blue "167";
-  gv:green "192";
-  gv:score "75.13318100000001";
-  gv:coverage "18.726666"
-], [
-  gv:hex "e6dbce";
-  gv:red "230";
-  gv:blue "206";
-  gv:green "219";
-  gv:score "0.67792507";
-  gv:coverage "65.433335"
-], [
-  gv:hex "b29d86";
-  gv:red "178";
-  gv:blue "134";
-  gv:green "157";
-  gv:score "10.604694";
-  gv:coverage "5.96"
-], [
-  gv:hex "89755e";
-  gv:red "137";
-  gv:blue "94";
-  gv:green "117";
-  gv:score "3.1281821";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "62513f";
-  gv:red "98";
-  gv:blue "63";
-  gv:green "81";
-  gv:score "2.2875289";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "dbb59a";
-  gv:red "219";
-  gv:blue "154";
-  gv:green "181";
-  gv:score "1.5897471";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "bf997d";
-  gv:red "191";
-  gv:blue "125";
-  gv:green "153";
-  gv:score "1.4283018";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "5d524c";
-  gv:red "93";
-  gv:blue "76";
-  gv:green "82";
-  gv:score "1.065868";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "443223";
-  gv:red "68";
-  gv:blue "35";
-  gv:green "50";
-  gv:score "0.86852033";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "7e736d";
-  gv:red "126";
-  gv:blue "109";
-  gv:green "115";
-  gv:score "0.63796774";
-  gv:coverage "0.32666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.692418"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.696681999999996"
-];
-    w:bagOfWords "R H E N G A U\n1951er.\nSteinberger\nDerwaltung der Staatsuoeinguter\nElt pille\nEigener Rellerab3ug uno Rorhbrano\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0495";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

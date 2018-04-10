@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2070";
-    dct:type "image";
-    w:bagOfWords "WEINBAU\nliierftein am hhein\nWeinguter in Wieritein-Oppenheim -9chmabsburg u.Dienbeim\nAlcohol contents\nContents of bottle\nJ929er\n12 olo by volume\ni pint 7 fluid ounces\nor 24 proof\nmierfteiner lfiehbadonmunoelpfao\nAuslele\nProduced in Germany\nprumitiert Don der Deutfoten Sanomirtffaftsgefellffaft\n"@undefined;
-    gv:color [
-  gv:hex "bc9c6d";
-  gv:red "188";
-  gv:blue "109";
-  gv:green "156";
-  gv:score "38.08161";
-  gv:coverage "15.393333"
-], [
-  gv:hex "655130";
-  gv:red "101";
-  gv:blue "48";
-  gv:green "81";
-  gv:score "4.314751599999999";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "c39669";
-  gv:red "195";
-  gv:blue "105";
-  gv:green "150";
-  gv:score "8.1958182";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "927548";
-  gv:red "146";
-  gv:blue "72";
-  gv:green "117";
-  gv:score "8.146794100000001";
-  gv:coverage "2.7466666"
-], [
-  gv:hex "9c6e43";
-  gv:red "156";
-  gv:blue "67";
-  gv:green "110";
-  gv:score "6.5665409";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "b49a74";
-  gv:red "180";
-  gv:blue "116";
-  gv:green "154";
-  gv:score "4.9629696";
-  gv:coverage "3.2533332999999995"
-], [
-  gv:hex "734b23";
-  gv:red "115";
-  gv:blue "35";
-  gv:green "75";
-  gv:score "4.9605515";
-  gv:coverage "1.4933334"
-], [
-  gv:hex "6a5026";
-  gv:red "106";
-  gv:blue "38";
-  gv:green "80";
-  gv:score "3.8412411";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "8a7451";
-  gv:red "138";
-  gv:blue "81";
-  gv:green "116";
-  gv:score "3.2562524";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "cdae7f";
-  gv:red "205";
-  gv:blue "127";
-  gv:green "174";
-  gv:score "2.4927562";
-  gv:coverage "0.86"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.628652"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.588497000000004"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.126126"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.816117"
-];
-    w:bagOfWords "WEINBAU\nliierftein am hhein\nWeinguter in Wieritein-Oppenheim -9chmabsburg u.Dienbeim\nAlcohol contents\nContents of bottle\nJ929er\n12 olo by volume\ni pint 7 fluid ounces\nor 24 proof\nmierfteiner lfiehbadonmunoelpfao\nAuslele\nProduced in Germany\nprumitiert Don der Deutfoten Sanomirtffaftsgefellffaft\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2070";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

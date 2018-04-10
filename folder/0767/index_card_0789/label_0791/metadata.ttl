@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0791";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "934\nCHATEAU DE BELLEVUE\nST AUBIN DE LUIGNE\nANJOU\nBARON R. DE LUZE\nSTHILAIRE-ST FLORENT\nFRANCE\nMAINE ET LOIRE\n"@fra;
-    gv:color [
-  gv:hex "d8c5a2";
-  gv:red "216";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "34.823876999999996";
-  gv:coverage "14.186667"
-], [
-  gv:hex "3a3012";
-  gv:red "58";
-  gv:blue "18";
-  gv:green "48";
-  gv:score "6.00278";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "dabc87";
-  gv:red "218";
-  gv:blue "135";
-  gv:green "188";
-  gv:score "25.289345";
-  gv:coverage "4.279999999999999"
-], [
-  gv:hex "ae9f7d";
-  gv:red "174";
-  gv:blue "125";
-  gv:green "159";
-  gv:score "7.6779328";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "bd9e66";
-  gv:red "189";
-  gv:blue "102";
-  gv:green "158";
-  gv:score "6.7119919";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "ecd8b6";
-  gv:red "236";
-  gv:blue "182";
-  gv:green "216";
-  gv:score "5.0023876000000005";
-  gv:coverage "23.286666"
-], [
-  gv:hex "817758";
-  gv:red "129";
-  gv:blue "88";
-  gv:green "119";
-  gv:score "2.7289316";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "5b5233";
-  gv:red "91";
-  gv:blue "51";
-  gv:green "82";
-  gv:score "2.6213575";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "2a1e02";
-  gv:red "42";
-  gv:blue "2";
-  gv:green "30";
-  gv:score "2.0278921";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "947844";
-  gv:red "148";
-  gv:blue "68";
-  gv:green "120";
-  gv:score "1.3324677999999999";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.44255299999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.465816000000004"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.311679999999996"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.38948"
-];
-    w:bagOfWords "934\nCHATEAU DE BELLEVUE\nST AUBIN DE LUIGNE\nANJOU\nBARON R. DE LUZE\nSTHILAIRE-ST FLORENT\nFRANCE\nMAINE ET LOIRE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0791";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

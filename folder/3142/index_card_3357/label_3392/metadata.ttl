@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3392";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "I9YJ\n/21148\n/5\nR\nommaro\nAppellation : Controled\nThorin\npégoeiantenwps Fins a PoDtapevau(isLL) Bourgowc\negenant en Vips lips alatap oaux SAL, Bourgog1)\n"@fra;
-    gv:color [
-  gv:hex "e6ded4";
-  gv:red "230";
-  gv:blue "212";
-  gv:green "222";
-  gv:score "63.844745999999994";
-  gv:coverage "45.826668"
-], [
-  gv:hex "817552";
-  gv:red "129";
-  gv:blue "82";
-  gv:green "117";
-  gv:score "2.9056722";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "e6dbca";
-  gv:red "230";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "9.401652200000001";
-  gv:coverage "8.4"
-], [
-  gv:hex "d7cec4";
-  gv:red "215";
-  gv:blue "196";
-  gv:green "206";
-  gv:score "8.6036906";
-  gv:coverage "6.746666900000001"
-], [
-  gv:hex "f99d76";
-  gv:red "249";
-  gv:blue "118";
-  gv:green "157";
-  gv:score "0.039781447";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "dbcab2";
-  gv:red "219";
-  gv:blue "178";
-  gv:green "202";
-  gv:score "3.638538";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "5d5535";
-  gv:red "93";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "2.3979317";
-  gv:coverage "0.76"
-], [
-  gv:hex "a99974";
-  gv:red "169";
-  gv:blue "116";
-  gv:green "153";
-  gv:score "1.8292833000000002";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "3a1a00";
-  gv:red "58";
-  gv:blue "undefined";
-  gv:green "26";
-  gv:score "0.017671156";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "8d7446";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "1.4774022";
-  gv:coverage "0.88"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.377787"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.619577"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.736646"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "62.225032"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "I9YJ\n/21148\n/5\nR\nommaro\nAppellation : Controled\nThorin\npégoeiantenwps Fins a PoDtapevau(isLL) Bourgowc\negenant en Vips lips alatap oaux SAL, Bourgog1)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3392";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

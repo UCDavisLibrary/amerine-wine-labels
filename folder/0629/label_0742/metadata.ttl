@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0742";
-    dct:type "image";
-    w:bagOfWords "BOLLA\nA Ex CASA\nVALPOLICELLA\nCASA VINICOLA FRATELLI BOLLA\nVERONA\n"@undefined;
-    gv:color [
-  gv:hex "16130d";
-  gv:red "22";
-  gv:blue "13";
-  gv:green "19";
-  gv:score "29.106780999999998";
-  gv:coverage "12.973334"
-], [
-  gv:hex "b7523b";
-  gv:red "183";
-  gv:blue "59";
-  gv:green "82";
-  gv:score "5.4563027";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "440100";
-  gv:red "68";
-  gv:blue "undefined";
-  gv:green "1";
-  gv:score "4.7425617";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "e7e0d7";
-  gv:red "231";
-  gv:blue "215";
-  gv:green "224";
-  gv:score "1.4479252999999999";
-  gv:coverage "74.16"
-], [
-  gv:hex "cdc1ad";
-  gv:red "205";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "1.3123307";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "332f28";
-  gv:red "51";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "7.9737261";
-  gv:coverage "3.7199999999999998"
-], [
-  gv:hex "954028";
-  gv:red "149";
-  gv:blue "40";
-  gv:green "64";
-  gv:score "5.3253192";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "630d02";
-  gv:red "99";
-  gv:blue "2";
-  gv:green "13";
-  gv:score "3.8354829";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "3a301e";
-  gv:red "58";
-  gv:blue "30";
-  gv:green "48";
-  gv:score "3.4353993999999997";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "320d03";
-  gv:red "50";
-  gv:blue "3";
-  gv:green "13";
-  gv:score "3.2225423";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.93704199999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BOLLA\nA Ex CASA\nVALPOLICELLA\nCASA VINICOLA FRATELLI BOLLA\nVERONA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0742";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

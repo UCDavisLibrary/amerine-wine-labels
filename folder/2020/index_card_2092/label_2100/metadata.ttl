@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2092/label_2100";
-    dct:type "image";
-    w:bagOfWords "ALCOHOL:\nPRODUCE OF GERMANY\nCONTENTS:\n9%. TO oh BY VOL\nI PINT 8 FL. OZS.\nR h i n e\nd Wine\nI 9 2 I\nFORSTER JESUITENGARTEN\nFEINSTE BEE REN A US LESE\nShipped by\nH.SICHEL SONNE MAINZ a Rhein\nG. 38278\n"@undefined;
-    gv:color [
-  gv:hex "d5c2a8";
-  gv:red "213";
-  gv:blue "168";
-  gv:green "194";
-  gv:score "41.277805";
-  gv:coverage "12.113332999999999"
-], [
-  gv:hex "b79c67";
-  gv:red "183";
-  gv:blue "103";
-  gv:green "156";
-  gv:score "17.747067";
-  gv:coverage "3.06"
-], [
-  gv:hex "b49e80";
-  gv:red "180";
-  gv:blue "128";
-  gv:green "158";
-  gv:score "9.48019";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "d6bb88";
-  gv:red "214";
-  gv:blue "136";
-  gv:green "187";
-  gv:score "8.3568953";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "d8c7bc";
-  gv:red "216";
-  gv:blue "188";
-  gv:green "199";
-  gv:score "6.1155211000000005";
-  gv:coverage "3.2266665"
-], [
-  gv:hex "9a7d4b";
-  gv:red "154";
-  gv:blue "75";
-  gv:green "125";
-  gv:score "3.7502188";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "ead9bf";
-  gv:red "234";
-  gv:blue "191";
-  gv:green "217";
-  gv:score "3.3760786";
-  gv:coverage "7.8733332"
-], [
-  gv:hex "887763";
-  gv:red "136";
-  gv:blue "99";
-  gv:green "119";
-  gv:score "1.367287";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "615445";
-  gv:red "97";
-  gv:blue "69";
-  gv:green "84";
-  gv:score "1.2869225";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "c4a251";
-  gv:red "196";
-  gv:blue "81";
-  gv:green "162";
-  gv:score "1.1586925";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.70198599999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "ALCOHOL:\nPRODUCE OF GERMANY\nCONTENTS:\n9%. TO oh BY VOL\nI PINT 8 FL. OZS.\nR h i n e\nd Wine\nI 9 2 I\nFORSTER JESUITENGARTEN\nFEINSTE BEE REN A US LESE\nShipped by\nH.SICHEL SONNE MAINZ a Rhein\nG. 38278\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2100";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

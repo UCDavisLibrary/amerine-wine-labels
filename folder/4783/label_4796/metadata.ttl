@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4796";
-    dct:type "image";
-    w:bagOfWords "J.THORIN\nBURGUNDY WINE PRODUCED\nALCOHOL 13 BY VOLUME\nOR BOTTLED AND SHIPPED BY\nCONTENTS\n1 Pt. 8 Fl. oz.\nPONTANEVAUX (S. & L.) FRANCE\nSTUART IMPORTS\nPRODUCE OF FRANCE\nLtd. SAN FRANCISCO\nIMPORTED BY\nCALIFORNIA\nSOLE AGENTS WESTERN U.S.A.\n"@eng;
-    gv:color [
-  gv:hex "191b11";
-  gv:red "25";
-  gv:blue "17";
-  gv:green "27";
-  gv:score "23.069906";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "e5dfd3";
-  gv:red "229";
-  gv:blue "211";
-  gv:green "223";
-  gv:score "6.5370767999999995";
-  gv:coverage "84.36"
-], [
-  gv:hex "303328";
-  gv:red "48";
-  gv:blue "40";
-  gv:green "51";
-  gv:score "22.578414";
-  gv:coverage "2.3333333"
-], [
-  gv:hex "515448";
-  gv:red "81";
-  gv:blue "72";
-  gv:green "84";
-  gv:score "18.33448";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "74766a";
-  gv:red "116";
-  gv:blue "106";
-  gv:green "118";
-  gv:score "9.6844383";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "999b8f";
-  gv:red "153";
-  gv:blue "143";
-  gv:green "155";
-  gv:score "8.3355837";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "bfbfb3";
-  gv:red "191";
-  gv:blue "179";
-  gv:green "191";
-  gv:score "4.885511800000001";
-  gv:coverage "2.42"
-], [
-  gv:hex "312f21";
-  gv:red "49";
-  gv:blue "33";
-  gv:green "47";
-  gv:score "3.3973525999999996";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "222114";
-  gv:red "34";
-  gv:blue "20";
-  gv:green "33";
-  gv:score "2.5471909";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "e4d9c8";
-  gv:red "228";
-  gv:blue "200";
-  gv:green "217";
-  gv:score "0.293551";
-  gv:coverage "3.4733332999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.42821099999999"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "55.407410999999996"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "55.034685"
-];
-    w:bagOfWords "J.THORIN\nBURGUNDY WINE PRODUCED\nALCOHOL 13 BY VOLUME\nOR BOTTLED AND SHIPPED BY\nCONTENTS\n1 Pt. 8 Fl. oz.\nPONTANEVAUX (S. & L.) FRANCE\nSTUART IMPORTS\nPRODUCE OF FRANCE\nLtd. SAN FRANCISCO\nIMPORTED BY\nCALIFORNIA\nSOLE AGENTS WESTERN U.S.A.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4796";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

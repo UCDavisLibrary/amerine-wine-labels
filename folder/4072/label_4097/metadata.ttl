@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4097";
-    dct:type "image";
-    w:bagOfWords "PRODUCT OF FRANCE\nSAUBERNES\nE 1953\nBottled and Shipped by\nETABLISSEMENTS VINI COLES\nDE BAR SAC\nNEGOCIANTS\nBARSAC BORDEAUX\nALC. STRENGTH 13 BY VOLUME\nNET CONTENTS 12 1/2 Fl.\n"@fra;
-    gv:color [
-  gv:hex "cbc1bc";
-  gv:red "203";
-  gv:blue "188";
-  gv:green "193";
-  gv:score "10.903414";
-  gv:coverage "28.373334"
-], [
-  gv:hex "f3b7ac";
-  gv:red "243";
-  gv:blue "172";
-  gv:green "183";
-  gv:score "10.884807";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "a0695e";
-  gv:red "160";
-  gv:blue "94";
-  gv:green "105";
-  gv:score "9.0902917";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "b15f57";
-  gv:red "177";
-  gv:blue "87";
-  gv:green "95";
-  gv:score "8.2718745";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "a69b96";
-  gv:red "166";
-  gv:blue "150";
-  gv:green "155";
-  gv:score "7.155278299999999";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "d6857d";
-  gv:red "214";
-  gv:blue "125";
-  gv:green "133";
-  gv:score "5.4969326";
-  gv:coverage "0.1"
-], [
-  gv:hex "d5c0ad";
-  gv:red "213";
-  gv:blue "173";
-  gv:green "192";
-  gv:score "5.1544964";
-  gv:coverage "3.4266666"
-], [
-  gv:hex "cb8d81";
-  gv:red "203";
-  gv:blue "129";
-  gv:green "141";
-  gv:score "5.1279525999999995";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "e6dcd6";
-  gv:red "230";
-  gv:blue "214";
-  gv:green "220";
-  gv:score "4.6027098";
-  gv:coverage "61.019999999999996"
-], [
-  gv:hex "88735b";
-  gv:red "136";
-  gv:blue "91";
-  gv:green "115";
-  gv:score "4.0828913";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.304673"
-];
-    w:bagOfWords "PRODUCT OF FRANCE\nSAUBERNES\nE 1953\nBottled and Shipped by\nETABLISSEMENTS VINI COLES\nDE BAR SAC\nNEGOCIANTS\nBARSAC BORDEAUX\nALC. STRENGTH 13 BY VOLUME\nNET CONTENTS 12 1/2 Fl.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4097";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

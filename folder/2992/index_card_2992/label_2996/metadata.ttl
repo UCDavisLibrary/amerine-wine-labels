@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_2996";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "GE\n15\nAILLE\n19400\nUISE\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVEs CONTROLEE\nAILLE\nVICTOR PLACE\nR E\nCA DAUJAC PRES BORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    gv:color [
-  gv:hex "ddbe9b";
-  gv:red "221";
-  gv:blue "155";
-  gv:green "190";
-  gv:score "49.016693000000004";
-  gv:coverage "16.913334"
-], [
-  gv:hex "8a7155";
-  gv:red "138";
-  gv:blue "85";
-  gv:green "113";
-  gv:score "13.27617";
-  gv:coverage "3.38"
-], [
-  gv:hex "b6997a";
-  gv:red "182";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "11.546665";
-  gv:coverage "3.2800000000000002"
-], [
-  gv:hex "6b543b";
-  gv:red "107";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "9.601051400000001";
-  gv:coverage "2.5"
-], [
-  gv:hex "ddbb8e";
-  gv:red "221";
-  gv:blue "142";
-  gv:green "187";
-  gv:score "5.310889700000001";
-  gv:coverage "2.5933333"
-], [
-  gv:hex "6e4f36";
-  gv:red "110";
-  gv:blue "54";
-  gv:green "79";
-  gv:score "2.3805939";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "ddb286";
-  gv:red "221";
-  gv:blue "134";
-  gv:green "178";
-  gv:score "1.6930152";
-  gv:coverage "1.46"
-], [
-  gv:hex "8a6a51";
-  gv:red "138";
-  gv:blue "81";
-  gv:green "106";
-  gv:score "1.2392599";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "4d361e";
-  gv:red "77";
-  gv:blue "30";
-  gv:green "54";
-  gv:score "0.99101607";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "bf9d72";
-  gv:red "191";
-  gv:blue "114";
-  gv:green "157";
-  gv:score "0.8710553899999999";
-  gv:coverage "0.55333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.57347"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.843877"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.837322"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.096878000000004"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.090381"
-];
-    w:bagOfWords "GE\n15\nAILLE\n19400\nUISE\n1er GRAND CRU DE GRAVES\nAPPELLATION GRAVEs CONTROLEE\nAILLE\nVICTOR PLACE\nR E\nCA DAUJAC PRES BORDEAUX\nMis en Bouteilles au Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2996";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

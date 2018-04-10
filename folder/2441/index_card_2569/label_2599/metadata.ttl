@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2599";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "MARO UE ーーー\nDEPO SEE\nPOUILLY-FUISSE\nAPPELLATION CONTROLEE\nQ.), Oho-run).\nP O NTANEVAUX\n(SAONE & LOIRE)\n"@fra;
-    gv:color [
-  gv:hex "d5c0aa";
-  gv:red "213";
-  gv:blue "170";
-  gv:green "192";
-  gv:score "39.594087";
-  gv:coverage "28.586668"
-], [
-  gv:hex "98453e";
-  gv:red "152";
-  gv:blue "62";
-  gv:green "69";
-  gv:score "2.5795208";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "741a13";
-  gv:red "116";
-  gv:blue "19";
-  gv:green "26";
-  gv:score "1.5446832000000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "b49e86";
-  gv:red "180";
-  gv:blue "134";
-  gv:green "158";
-  gv:score "23.752087";
-  gv:coverage "2.5133334"
-], [
-  gv:hex "877460";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "116";
-  gv:score "6.303210600000001";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "ebdbca";
-  gv:red "235";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "5.8043789";
-  gv:coverage "4.0266667"
-], [
-  gv:hex "60503f";
-  gv:red "96";
-  gv:blue "63";
-  gv:green "80";
-  gv:score "3.6284231";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "b79464";
-  gv:red "183";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "2.4124328";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "f0b9b2";
-  gv:red "240";
-  gv:blue "178";
-  gv:green "185";
-  gv:score "2.1347557999999998";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "9b6f61";
-  gv:red "155";
-  gv:blue "97";
-  gv:green "111";
-  gv:score "1.9209232";
-  gv:coverage "0.08"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.002616"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.41719"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.225744"
-];
-    w:bagOfWords "MARO UE ーーー\nDEPO SEE\nPOUILLY-FUISSE\nAPPELLATION CONTROLEE\nQ.), Oho-run).\nP O NTANEVAUX\n(SAONE & LOIRE)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2599";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

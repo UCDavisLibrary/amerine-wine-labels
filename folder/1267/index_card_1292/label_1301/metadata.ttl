@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1301";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GRAND VIN DE MOS ELLE MOU S SEUX\nExtra Quality\nCUVEE SUPERIEURE\nROCHE\nMAISON FONDEE 1898\nEEN "@deu;
-    gv:color [
-  gv:hex "cfc6bd";
-  gv:red "207";
-  gv:blue "189";
-  gv:green "198";
-  gv:score "32.139874";
-  gv:coverage "7.7266663"
-], [
-  gv:hex "16100a";
-  gv:red "22";
-  gv:blue "10";
-  gv:green "16";
-  gv:score "5.1396526";
-  gv:coverage "1.32"
-], [
-  gv:hex "e9e0d7";
-  gv:red "233";
-  gv:blue "215";
-  gv:green "224";
-  gv:score "25.042938999999997";
-  gv:coverage "84.76"
-], [
-  gv:hex "a39a92";
-  gv:red "163";
-  gv:blue "146";
-  gv:green "154";
-  gv:score "21.878454";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "817870";
-  gv:red "129";
-  gv:blue "112";
-  gv:green "120";
-  gv:score "10.704055";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "5b534d";
-  gv:red "91";
-  gv:blue "77";
-  gv:green "83";
-  gv:score "3.2925854999999995";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "3a332e";
-  gv:red "58";
-  gv:blue "46";
-  gv:green "51";
-  gv:score "1.3978928";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "d3cabb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "202";
-  gv:score "0.30051146";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "888172";
-  gv:red "136";
-  gv:blue "114";
-  gv:green "129";
-  gv:score "0.07978038";
-  gv:coverage "0.04"
-], [
-  gv:hex "4c493a";
-  gv:red "76";
-  gv:blue "58";
-  gv:green "73";
-  gv:score "0.012659772";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "91.383511"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "75.0371"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.980748999999996"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.638016"
-];
-    w:bagOfWords "GRAND VIN DE MOS ELLE MOU S SEUX\nExtra Quality\nCUVEE SUPERIEURE\nROCHE\nMAISON FONDEE 1898\nEEN "@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1301";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

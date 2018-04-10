@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4553";
-    dct:type "image";
-    w:bagOfWords "N. 232\nROMa\nCHEZ\nMARCA REGISTRADA\nATE\nFINO\nMARISMENU\n"@spa;
-    gv:color [
-  gv:hex "d7bc9c";
-  gv:red "215";
-  gv:blue "156";
-  gv:green "188";
-  gv:score "25.775576";
-  gv:coverage "22.413332999999998"
-], [
-  gv:hex "c2976d";
-  gv:red "194";
-  gv:blue "109";
-  gv:green "151";
-  gv:score "16.912176000000002";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "b89c7b";
-  gv:red "184";
-  gv:blue "123";
-  gv:green "156";
-  gv:score "11.161092";
-  gv:coverage "5.0733331999999995"
-], [
-  gv:hex "be9c70";
-  gv:red "190";
-  gv:blue "112";
-  gv:green "156";
-  gv:score "6.901500400000001";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "d6b287";
-  gv:red "214";
-  gv:blue "135";
-  gv:green "178";
-  gv:score "5.8960422999999995";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "966f45";
-  gv:red "150";
-  gv:blue "69";
-  gv:green "111";
-  gv:score "5.3343378";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "8e775a";
-  gv:red "142";
-  gv:blue "90";
-  gv:green "119";
-  gv:score "3.6344606";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "754a25";
-  gv:red "117";
-  gv:blue "37";
-  gv:green "74";
-  gv:score "3.1605661";
-  gv:coverage "0.6"
-], [
-  gv:hex "bf9575";
-  gv:red "191";
-  gv:blue "117";
-  gv:green "149";
-  gv:score "3.0001339";
-  gv:coverage "1.18"
-], [
-  gv:hex "d9ae84";
-  gv:red "217";
-  gv:blue "132";
-  gv:green "174";
-  gv:score "2.5163047";
-  gv:coverage "0.48666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.92503099999999"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.882288"
-];
-    w:bagOfWords "N. 232\nROMa\nCHEZ\nMARCA REGISTRADA\nATE\nFINO\nMARISMENU\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4553";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

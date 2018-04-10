@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3717";
-    dct:type "image";
-    w:bagOfWords "No 22\nHEREDERA DE LAS SOLERAS Y DE LA MAR CA\nR.AA IN ER. A P ERE Z MI JARIN\n"@spa;
-    gv:color [
-  gv:hex "daccbf";
-  gv:red "218";
-  gv:blue "191";
-  gv:green "204";
-  gv:score "56.84092";
-  gv:coverage "29.726666"
-], [
-  gv:hex "e8dbcf";
-  gv:red "232";
-  gv:blue "207";
-  gv:green "219";
-  gv:score "23.782967";
-  gv:coverage "50.913334"
-], [
-  gv:hex "d4c6b7";
-  gv:red "212";
-  gv:blue "183";
-  gv:green "198";
-  gv:score "9.9515751";
-  gv:coverage "10.426667"
-], [
-  gv:hex "ac9d90";
-  gv:red "172";
-  gv:blue "144";
-  gv:green "157";
-  gv:score "5.0738316";
-  gv:coverage "2.2666667"
-], [
-  gv:hex "e6d9c9";
-  gv:red "230";
-  gv:blue "201";
-  gv:green "217";
-  gv:score "2.0007960000000002";
-  gv:coverage "5.4733332"
-], [
-  gv:hex "857669";
-  gv:red "133";
-  gv:blue "105";
-  gv:green "118";
-  gv:score "1.1993958";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "b8aa9d";
-  gv:red "184";
-  gv:blue "157";
-  gv:green "170";
-  gv:score "0.8982870000000001";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "695a4d";
-  gv:red "105";
-  gv:blue "77";
-  gv:green "90";
-  gv:score "0.14292138";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "443629";
-  gv:red "68";
-  gv:blue "41";
-  gv:green "54";
-  gv:score "0.10559600000000001";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "857d71";
-  gv:red "133";
-  gv:blue "113";
-  gv:green "125";
-  gv:score "0.0024045668";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "72.4294"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "54.669583"
-];
-    w:bagOfWords "No 22\nHEREDERA DE LAS SOLERAS Y DE LA MAR CA\nR.AA IN ER. A P ERE Z MI JARIN\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3717";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0198/label_0217";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "VINEYARDS OWNED AND OPERATED BY THE\nNOVITIATE OF THE CHRISTIAN BROTHERS\nAT MONT LA SALLE\nNAPA\nCALIFORNIA\nLA\nSS\nEYAR\nCALIFORNIA\nGabernet\nNET CONTENTS 34 QUART\nALCOHOLIC CONTENT\n11-13% BY VOL.\nTax Paid By Stamps Affixed to Case and Cancelled\nMONT LA SALLE VINE YARDS\nN APA, CALIFORNIA\nBonded Winery No. 1721\n14th District Calif.\n"@eng;
-    gv:color [
-  gv:hex "d2baa0";
-  gv:red "210";
-  gv:blue "160";
-  gv:green "186";
-  gv:score "47.836563";
-  gv:coverage "29.9"
-], [
-  gv:hex "452d32";
-  gv:red "69";
-  gv:blue "50";
-  gv:green "45";
-  gv:score "3.3409845000000002";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "b69d83";
-  gv:red "182";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "20.876373";
-  gv:coverage "9.2066668"
-], [
-  gv:hex "8f775e";
-  gv:red "143";
-  gv:blue "94";
-  gv:green "119";
-  gv:score "3.2512132";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "684e52";
-  gv:red "104";
-  gv:blue "82";
-  gv:green "78";
-  gv:score "2.61844";
-  gv:coverage "0.42"
-], [
-  gv:hex "886e73";
-  gv:red "136";
-  gv:blue "115";
-  gv:green "110";
-  gv:score "2.5149124";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "665039";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "80";
-  gv:score "2.0070661";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "2c161d";
-  gv:red "44";
-  gv:blue "29";
-  gv:green "22";
-  gv:score "1.9885515999999999";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "ae9294";
-  gv:red "174";
-  gv:blue "148";
-  gv:green "146";
-  gv:score "1.5369017";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "4a3620";
-  gv:red "74";
-  gv:blue "32";
-  gv:green "54";
-  gv:score "1.5108302";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.62208100000001"
-];
-    w:bagOfWords "VINEYARDS OWNED AND OPERATED BY THE\nNOVITIATE OF THE CHRISTIAN BROTHERS\nAT MONT LA SALLE\nNAPA\nCALIFORNIA\nLA\nSS\nEYAR\nCALIFORNIA\nGabernet\nNET CONTENTS 34 QUART\nALCOHOLIC CONTENT\n11-13% BY VOL.\nTax Paid By Stamps Affixed to Case and Cancelled\nMONT LA SALLE VINE YARDS\nN APA, CALIFORNIA\nBonded Winery No. 1721\n14th District Calif.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0217";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

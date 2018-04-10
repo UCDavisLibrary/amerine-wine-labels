@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2583";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "1952\njouilly-suissi\nAPPELLATION CONTROLEE\nCORSHN J.\nMise en Bouteilles\nPROPRIETAIRE\nla Propriété\nPOUILLY-Fr UIS SE (S. & L.)\nM A A Y\n"@fra;
-    gv:color [
-  gv:hex "e0c5a2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "197";
-  gv:score "72.204924";
-  gv:coverage "30.9"
-], [
-  gv:hex "8c7353";
-  gv:red "140";
-  gv:blue "83";
-  gv:green "115";
-  gv:score "5.0110158";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "ddbb8e";
-  gv:red "221";
-  gv:blue "142";
-  gv:green "187";
-  gv:score "6.823157500000001";
-  gv:coverage "2.3066666"
-], [
-  gv:hex "b39977";
-  gv:red "179";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "4.5977611000000005";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "e7bd9c";
-  gv:red "231";
-  gv:blue "156";
-  gv:green "189";
-  gv:score "1.9596711";
-  gv:coverage "0.32"
-], [
-  gv:hex "eed6b8";
-  gv:red "238";
-  gv:blue "184";
-  gv:green "214";
-  gv:score "1.8720135";
-  gv:coverage "18.246667"
-], [
-  gv:hex "6e5635";
-  gv:red "110";
-  gv:blue "53";
-  gv:green "86";
-  gv:score "1.6973539999999998";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "c19e71";
-  gv:red "193";
-  gv:blue "113";
-  gv:green "158";
-  gv:score "1.293506";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "e0b587";
-  gv:red "224";
-  gv:blue "135";
-  gv:green "181";
-  gv:score "1.2828013";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "c3986a";
-  gv:red "195";
-  gv:blue "106";
-  gv:green "152";
-  gv:score "1.2281391";
-  gv:coverage "0.26666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.879075"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.362925"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.653118"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.190919"
-];
-    w:bagOfWords "1952\njouilly-suissi\nAPPELLATION CONTROLEE\nCORSHN J.\nMise en Bouteilles\nPROPRIETAIRE\nla Propriété\nPOUILLY-Fr UIS SE (S. & L.)\nM A A Y\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2583";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

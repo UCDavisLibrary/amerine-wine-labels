@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0631";
-    dct:type "image";
-    w:bagOfWords "CLOS LE MONT\nPREMIERE TETE\nVOUVRAY\nFRANCE\nPROPRIETAIRES\nAPPELLATION VOUVRAY CONTROLEE\nMAISON ACKERMAN LAURANCE\nST HILAIRE-STFLORENT\nPRODUCE OF FRANCE\nMAINE-ET- LOIRE)\n"@undefined;
-    gv:color [
-  gv:hex "d5c1a3";
-  gv:red "213";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "20.75813";
-  gv:coverage "9.1266669"
-], [
-  gv:hex "171c13";
-  gv:red "23";
-  gv:blue "19";
-  gv:green "28";
-  gv:score "6.2354237";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "aa9d83";
-  gv:red "170";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "11.447754";
-  gv:coverage "1.58"
-], [
-  gv:hex "d6b584";
-  gv:red "214";
-  gv:blue "132";
-  gv:green "181";
-  gv:score "8.18653";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "9f9e93";
-  gv:red "159";
-  gv:blue "147";
-  gv:green "158";
-  gv:score "7.86939";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "cec6bc";
-  gv:red "206";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "5.616545299999999";
-  gv:coverage "9.2333332"
-], [
-  gv:hex "2c3127";
-  gv:red "44";
-  gv:blue "39";
-  gv:green "49";
-  gv:score "4.7365762";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "75786e";
-  gv:red "117";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "4.6192918";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "bfa16d";
-  gv:red "191";
-  gv:blue "109";
-  gv:green "161";
-  gv:score "4.3754518";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "31301d";
-  gv:red "49";
-  gv:blue "29";
-  gv:green "48";
-  gv:score "4.3636173";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.395851"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.596731"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.19958999999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.950628"
-];
-    w:bagOfWords "CLOS LE MONT\nPREMIERE TETE\nVOUVRAY\nFRANCE\nPROPRIETAIRES\nAPPELLATION VOUVRAY CONTROLEE\nMAISON ACKERMAN LAURANCE\nST HILAIRE-STFLORENT\nPRODUCE OF FRANCE\nMAINE-ET- LOIRE)\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0631";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

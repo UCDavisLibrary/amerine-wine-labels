@@ -1,96 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0410";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "uscb usa\nBottled ano shipped egyp\n) JhinneO Ba3ntraco Ct0.\ncoco\nPRODUCT-OF-S-Nat\nSWITZERLAND\n0\n"@undefined;
-    gv:color [
-  gv:hex "d2c3a0";
-  gv:red "210";
-  gv:blue "160";
-  gv:green "195";
-  gv:score "11.903165";
-  gv:coverage "9.2533335"
-], [
-  gv:hex "a7a73f";
-  gv:red "167";
-  gv:blue "63";
-  gv:green "167";
-  gv:score "7.7050112";
-  gv:coverage "0.38"
-], [
-  gv:hex "8c381c";
-  gv:red "140";
-  gv:blue "28";
-  gv:green "56";
-  gv:score "1.9722808";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "c10d04";
-  gv:red "193";
-  gv:blue "4";
-  gv:green "13";
-  gv:score "0.9218768199999999";
-  gv:coverage "0.04"
-], [
-  gv:hex "d1bf87";
-  gv:red "209";
-  gv:blue "135";
-  gv:green "191";
-  gv:score "6.548959999999999";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "939f5c";
-  gv:red "147";
-  gv:blue "92";
-  gv:green "159";
-  gv:score "6.4671651";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "6b7f3f";
-  gv:red "107";
-  gv:blue "63";
-  gv:green "127";
-  gv:score "6.3912705";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "a59e7e";
-  gv:red "165";
-  gv:blue "126";
-  gv:green "158";
-  gv:score "6.3204944";
-  gv:coverage "2.8866666999999997"
-], [
-  gv:hex "667e53";
-  gv:red "102";
-  gv:blue "83";
-  gv:green "126";
-  gv:score "4.2023178";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "807759";
-  gv:red "128";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "4.0258281";
-  gv:coverage "1.6333334000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.79290999999999"
-];
-    w:bagOfWords "uscb usa\nBottled ano shipped egyp\n) JhinneO Ba3ntraco Ct0.\ncoco\nPRODUCT-OF-S-Nat\nSWITZERLAND\n0\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0410";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

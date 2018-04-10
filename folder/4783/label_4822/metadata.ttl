@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4822";
-    dct:type "image";
-    w:bagOfWords "36\nCLEAN\nSELECT\nCALIFORNIA CLARET\nBottled by\nL. D. McLEAN CO\nSan Francisco\nAlcohol 12% by Volume\nContents One Fifth Gallon\nWithdrawn from Tax Paid Container\nSerial No.\n"@eng;
-    gv:color [
-  gv:hex "877356";
-  gv:red "135";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "21.09165";
-  gv:coverage "4.2466667"
-], [
-  gv:hex "d1c6bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "9.9892616";
-  gv:coverage "11.393333"
-], [
-  gv:hex "8e7642";
-  gv:red "142";
-  gv:blue "66";
-  gv:green "118";
-  gv:score "15.078159999999999";
-  gv:coverage "2.6666667"
-], [
-  gv:hex "6a563b";
-  gv:red "106";
-  gv:blue "59";
-  gv:green "86";
-  gv:score "10.88533";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "ab977a";
-  gv:red "171";
-  gv:blue "122";
-  gv:green "151";
-  gv:score "8.075942099999999";
-  gv:coverage "2.36"
-], [
-  gv:hex "d2c0a7";
-  gv:red "210";
-  gv:blue "167";
-  gv:green "192";
-  gv:score "7.9352081000000005";
-  gv:coverage "6.08"
-], [
-  gv:hex "e7dcd2";
-  gv:red "231";
-  gv:blue "210";
-  gv:green "220";
-  gv:score "6.1104015";
-  gv:coverage "57.713336000000005"
-], [
-  gv:hex "b49862";
-  gv:red "180";
-  gv:blue "98";
-  gv:green "152";
-  gv:score "4.3868523";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "efdcc6";
-  gv:red "239";
-  gv:blue "198";
-  gv:green "220";
-  gv:score "4.2095378000000006";
-  gv:coverage "8.08"
-], [
-  gv:hex "aa9e95";
-  gv:red "170";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "4.1324139";
-  gv:coverage "1.4866667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "83.856022"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.777961"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.410506"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "53.45158599999999"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.876617"
-];
-    w:bagOfWords "36\nCLEAN\nSELECT\nCALIFORNIA CLARET\nBottled by\nL. D. McLEAN CO\nSan Francisco\nAlcohol 12% by Volume\nContents One Fifth Gallon\nWithdrawn from Tax Paid Container\nSerial No.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4822";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

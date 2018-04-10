@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2318";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "SHIPPED BY\nSCHEL&FILS FRERES\nFAITZ\n1937\nAU\nPICHON-\nLONGUEVILLE\nPAUILLAC, CRU CLASSE\nBORDEAUX WINE\nCONTENTS\n1 PINT 7 FLUID OZS\nALCOHOL\n11.5% BY VOLUME\nBORDEAUX\nPRODUCED IN FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d4bfa5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "30.693689000000003";
-  gv:coverage "16.526666000000002"
-], [
-  gv:hex "5a2917";
-  gv:red "90";
-  gv:blue "23";
-  gv:green "41";
-  gv:score "4.3335788";
-  gv:coverage "0.3"
-], [
-  gv:hex "b59f84";
-  gv:red "181";
-  gv:blue "132";
-  gv:green "159";
-  gv:score "11.85341";
-  gv:coverage "4.0133335"
-], [
-  gv:hex "ebd8c2";
-  gv:red "235";
-  gv:blue "194";
-  gv:green "216";
-  gv:score "6.2513157999999995";
-  gv:coverage "4.0333334"
-], [
-  gv:hex "8e7456";
-  gv:red "142";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "5.6490611";
-  gv:coverage "1.6866666999999997"
-], [
-  gv:hex "c09079";
-  gv:red "192";
-  gv:blue "121";
-  gv:green "144";
-  gv:score "5.5555186999999995";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e9b6a2";
-  gv:red "233";
-  gv:blue "162";
-  gv:green "182";
-  gv:score "4.9051229";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "a2705a";
-  gv:red "162";
-  gv:blue "90";
-  gv:green "112";
-  gv:score "4.0002171";
-  gv:coverage "0.73333331"
-], [
-  gv:hex "e4d8ce";
-  gv:red "228";
-  gv:blue "206";
-  gv:green "216";
-  gv:score "3.1562764";
-  gv:coverage "57.066667"
-], [
-  gv:hex "89713e";
-  gv:red "137";
-  gv:blue "62";
-  gv:green "113";
-  gv:score "2.9047439";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "64.45739999999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.281707"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "57.816088"
-], [
-  gv:mid <https://g.co/kg/m/04qgp>;
-  gv:desc "liqueur";
-  gv:score "54.36945600000001"
-];
-    w:bagOfWords "SHIPPED BY\nSCHEL&FILS FRERES\nFAITZ\n1937\nAU\nPICHON-\nLONGUEVILLE\nPAUILLAC, CRU CLASSE\nBORDEAUX WINE\nCONTENTS\n1 PINT 7 FLUID OZS\nALCOHOL\n11.5% BY VOLUME\nBORDEAUX\nPRODUCED IN FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2318";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

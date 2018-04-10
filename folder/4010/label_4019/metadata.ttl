@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4010/label_4019";
-    dct:type "image";
-    w:bagOfWords "CUVEE RESERVEE\nSA.DES DOMAINES CHAUosoLEIL SIDIsLIKANE NARoc\nET CAVES DES ROCHES. NOIRES\nCASABLANCA\n"@undefined;
-    gv:color [
-  gv:hex "ddc7a7";
-  gv:red "221";
-  gv:blue "167";
-  gv:green "199";
-  gv:score "40.83443";
-  gv:coverage "17.466667"
-], [
-  gv:hex "402f18";
-  gv:red "64";
-  gv:blue "24";
-  gv:green "47";
-  gv:score "4.1677557";
-  gv:coverage "0.52"
-], [
-  gv:hex "6f4935";
-  gv:red "111";
-  gv:blue "53";
-  gv:green "73";
-  gv:score "4.0492106";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "b25635";
-  gv:red "178";
-  gv:blue "53";
-  gv:green "86";
-  gv:score "2.7068242";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "ac3114";
-  gv:red "172";
-  gv:blue "20";
-  gv:green "49";
-  gv:score "0.4631456";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "af9a7e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "8.033990900000001";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "87755b";
-  gv:red "135";
-  gv:blue "91";
-  gv:green "117";
-  gv:score "5.7463162";
-  gv:coverage "0.9933332899999999"
-], [
-  gv:hex "eed7b8";
-  gv:red "238";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "4.6835385";
-  gv:coverage "7.6333337"
-], [
-  gv:hex "55321d";
-  gv:red "85";
-  gv:blue "29";
-  gv:green "50";
-  gv:score "3.4512814";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "615037";
-  gv:red "97";
-  gv:blue "55";
-  gv:green "80";
-  gv:score "3.0679146";
-  gv:coverage "0.4"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.214911"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CUVEE RESERVEE\nSA.DES DOMAINES CHAUosoLEIL SIDIsLIKANE NARoc\nET CAVES DES ROCHES. NOIRES\nCASABLANCA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4019";
+    <schema.keywords> "North Africa Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

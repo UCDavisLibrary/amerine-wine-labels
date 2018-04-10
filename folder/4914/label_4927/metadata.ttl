@@ -1,110 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4914/label_4927";
-    dct:type "image";
-    w:bagOfWords "REGISTRADA\nMAAR CA\nESPUMYOSO\nMASI A BACH, S. A\nHACIENDAS BODEG As Y CAVAS EN SAN ESTEBAN DE SASROVIRAS\nBARCELONA\n"@undefined;
-    gv:color [
-  gv:hex "372d28";
-  gv:red "55";
-  gv:blue "40";
-  gv:green "45";
-  gv:score "18.826537";
-  gv:coverage "15.886667"
-], [
-  gv:hex "d82c18";
-  gv:red "216";
-  gv:blue "24";
-  gv:green "44";
-  gv:score "12.792835";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "b01e08";
-  gv:red "176";
-  gv:blue "8";
-  gv:green "30";
-  gv:score "10.58849";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "b39562";
-  gv:red "179";
-  gv:blue "98";
-  gv:green "149";
-  gv:score "2.7709814";
-  gv:coverage "2.46"
-], [
-  gv:hex "4f2618";
-  gv:red "79";
-  gv:blue "24";
-  gv:green "38";
-  gv:score "2.040999";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "6c180d";
-  gv:red "108";
-  gv:blue "13";
-  gv:green "24";
-  gv:score "1.6874765999999999";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "ff9277";
-  gv:red "255";
-  gv:blue "119";
-  gv:green "146";
-  gv:score "0.11957389000000002";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "d24024";
-  gv:red "210";
-  gv:blue "36";
-  gv:green "64";
-  gv:score "10.444269";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "a62e23";
-  gv:red "166";
-  gv:blue "35";
-  gv:green "46";
-  gv:score "3.71674";
-  gv:coverage "0.18"
-], [
-  gv:hex "251c16";
-  gv:red "37";
-  gv:blue "22";
-  gv:green "28";
-  gv:score "3.4022509999999997";
-  gv:coverage "2.3466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.369009"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.31491200000001"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "52.094644"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "50.601292"
-];
-    w:bagOfWords "REGISTRADA\nMAAR CA\nESPUMYOSO\nMASI A BACH, S. A\nHACIENDAS BODEG As Y CAVAS EN SAN ESTEBAN DE SASROVIRAS\nBARCELONA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4927";
+    <schema.keywords> "Removed from UC Reporters Notebook folder@en".
+

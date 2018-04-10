@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3351/label_3356";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "1929\nAVIGNY\nPRODUCE OF FRANCE\nPIERRE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE DOR)\nDE POSE\n"@fra;
-    gv:color [
-  gv:hex "dbbf9f";
-  gv:red "219";
-  gv:blue "159";
-  gv:green "191";
-  gv:score "14.913997000000002";
-  gv:coverage "23.366667"
-], [
-  gv:hex "c49461";
-  gv:red "196";
-  gv:blue "97";
-  gv:green "148";
-  gv:score "13.180555";
-  gv:coverage "2.42"
-], [
-  gv:hex "774b22";
-  gv:red "119";
-  gv:blue "34";
-  gv:green "75";
-  gv:score "10.175741";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "9c6f43";
-  gv:red "156";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "9.4901256";
-  gv:coverage "1.34"
-], [
-  gv:hex "dbb682";
-  gv:red "219";
-  gv:blue "130";
-  gv:green "182";
-  gv:score "8.7762184";
-  gv:coverage "2.4266666"
-], [
-  gv:hex "c19c69";
-  gv:red "193";
-  gv:blue "105";
-  gv:green "156";
-  gv:score "6.2519558";
-  gv:coverage "1.52"
-], [
-  gv:hex "b79a79";
-  gv:red "183";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "6.0610946";
-  gv:coverage "2.96"
-], [
-  gv:hex "724d32";
-  gv:red "114";
-  gv:blue "50";
-  gv:green "77";
-  gv:score "4.3474637";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "dfb07b";
-  gv:red "223";
-  gv:blue "123";
-  gv:green "176";
-  gv:score "4.283513500000001";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "967053";
-  gv:red "150";
-  gv:blue "83";
-  gv:green "112";
-  gv:score "3.9242111000000004";
-  gv:coverage "0.7000000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.15247199999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "52.481753"
-];
-    w:bagOfWords "1929\nAVIGNY\nPRODUCE OF FRANCE\nPIERRE\nPROPRIETAIRE & NEGOCIANT\nA BEAU NE (COTE DOR)\nDE POSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3356";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

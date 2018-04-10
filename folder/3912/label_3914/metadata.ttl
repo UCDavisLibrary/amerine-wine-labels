@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3912/label_3914";
-    dct:type "image";
-    w:bagOfWords "AUS BESTEM MALZ\nMIN\nUNDEDELSTEM HOPFEN\n16 89\nSpKial Export\nORIGINALABFULLUNG DER KONIGSBACHER BRAUEREI AG KOBLENZ\n"@deu;
-    gv:color [
-  gv:hex "d9c0a1";
-  gv:red "217";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "49.204904";
-  gv:coverage "21.44"
-], [
-  gv:hex "804d2a";
-  gv:red "128";
-  gv:blue "42";
-  gv:green "77";
-  gv:score "2.5911076";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "b19a7c";
-  gv:red "177";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "15.993181";
-  gv:coverage "4.3133333"
-], [
-  gv:hex "8a7659";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "9.197280600000001";
-  gv:coverage "1.9933334"
-], [
-  gv:hex "665339";
-  gv:red "102";
-  gv:blue "57";
-  gv:green "83";
-  gv:score "4.9979287999999995";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "e0b899";
-  gv:red "224";
-  gv:blue "153";
-  gv:green "184";
-  gv:score "2.9039845";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "c4987a";
-  gv:red "196";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "2.8877949";
-  gv:coverage "0.6"
-], [
-  gv:hex "44321c";
-  gv:red "68";
-  gv:blue "28";
-  gv:green "50";
-  gv:score "2.0002458";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "f0d7bb";
-  gv:red "240";
-  gv:blue "187";
-  gv:green "215";
-  gv:score "1.9414221999999999";
-  gv:coverage "15.673333"
-], [
-  gv:hex "946440";
-  gv:red "148";
-  gv:blue "64";
-  gv:green "100";
-  gv:score "1.432522";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.86637999999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "AUS BESTEM MALZ\nMIN\nUNDEDELSTEM HOPFEN\n16 89\nSpKial Export\nORIGINALABFULLUNG DER KONIGSBACHER BRAUEREI AG KOBLENZ\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3914";
+    <schema.keywords> "Germany Naturrein-Unvergoren Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

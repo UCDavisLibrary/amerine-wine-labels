@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4414";
-    dct:type "image";
-    w:bagOfWords "ALLA DE\nN DE\no ENCES\nTIQUE\n1865\nAMR 3\nHEREDEROS DEL\nORDEAU\nMARQUES DE RISCAL\nALLA DE p\nCION DE\nELCIEGO (ALAVA)\nARAGEMENT\n1943\nMARQUIS\nDE RISCAL B\nELCIEGO\nPARIS, 1672\nMARCA CONCEDIDA. MARQUE DEPOSEE TRADE MARK SCHUTZ MARKE\n"@spa;
-    gv:color [
-  gv:hex "cebfa7";
-  gv:red "206";
-  gv:blue "167";
-  gv:green "191";
-  gv:score "57.452571";
-  gv:coverage "20.026666000000002"
-], [
-  gv:hex "af9f82";
-  gv:red "175";
-  gv:blue "130";
-  gv:green "159";
-  gv:score "32.478791";
-  gv:coverage "6.7333333"
-], [
-  gv:hex "8b7c5b";
-  gv:red "139";
-  gv:blue "91";
-  gv:green "124";
-  gv:score "4.7571402";
-  gv:coverage "1.52"
-], [
-  gv:hex "e7d8c0";
-  gv:red "231";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "3.1541067999999997";
-  gv:coverage "5.1866665"
-], [
-  gv:hex "d7c8bc";
-  gv:red "215";
-  gv:blue "188";
-  gv:green "200";
-  gv:score "1.2707463";
-  gv:coverage "8.6"
-], [
-  gv:hex "6b5e3f";
-  gv:red "107";
-  gv:blue "63";
-  gv:green "94";
-  gv:score "0.43726545";
-  gv:coverage "0.12"
-], [
-  gv:hex "e7d8cc";
-  gv:red "231";
-  gv:blue "204";
-  gv:green "216";
-  gv:score "0.31605507";
-  gv:coverage "57.56"
-], [
-  gv:hex "8d7a50";
-  gv:red "141";
-  gv:blue "80";
-  gv:green "122";
-  gv:score "0.10446733";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "7d7469";
-  gv:red "125";
-  gv:blue "105";
-  gv:green "116";
-  gv:score "0.010917123";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "a69c92";
-  gv:red "166";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "0.0071078241";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.696072"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "57.04697399999999"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "56.194025"
-], [
-  gv:mid <https://g.co/kg/m/025sf8x>;
-  gv:desc "silver";
-  gv:score "54.50359"
-], [
-  gv:mid <https://g.co/kg/m/0h8nvk9>;
-  gv:desc "dishware";
-  gv:score "53.848386000000005"
-];
-    w:bagOfWords "ALLA DE\nN DE\no ENCES\nTIQUE\n1865\nAMR 3\nHEREDEROS DEL\nORDEAU\nMARQUES DE RISCAL\nALLA DE p\nCION DE\nELCIEGO (ALAVA)\nARAGEMENT\n1943\nMARQUIS\nDE RISCAL B\nELCIEGO\nPARIS, 1672\nMARCA CONCEDIDA. MARQUE DEPOSEE TRADE MARK SCHUTZ MARKE\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4414";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2591";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "WHITE BURGUNDY TABLE WINE\nPOUILLY FUISSE\nPRODUCED AND\nBOTTLED BY\nLOUIS JADOT\nPROPRIETAIRE & NEGOCIANT A BEAUNE FRANCE\nMise en Bouteilles dans nos caves\nCONTENTS 3/4 QUART\nPRODUCE OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "dabe9e";
-  gv:red "218";
-  gv:blue "158";
-  gv:green "190";
-  gv:score "56.989384";
-  gv:coverage "20.086667"
-], [
-  gv:hex "b39879";
-  gv:red "179";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "20.438401";
-  gv:coverage "6.5066665"
-], [
-  gv:hex "8f7558";
-  gv:red "143";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "14.740759";
-  gv:coverage "5.2733332"
-], [
-  gv:hex "6c5338";
-  gv:red "108";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "3.8571686";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "efd8be";
-  gv:red "239";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "2.0205986";
-  gv:coverage "5.5866666"
-], [
-  gv:hex "4a3218";
-  gv:red "74";
-  gv:blue "24";
-  gv:green "50";
-  gv:score "0.64585186";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "8b6a4b";
-  gv:red "139";
-  gv:blue "75";
-  gv:green "106";
-  gv:score "0.49819374";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "b18d6a";
-  gv:red "177";
-  gv:blue "106";
-  gv:green "141";
-  gv:score "0.25379462";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "775739";
-  gv:red "119";
-  gv:blue "57";
-  gv:green "87";
-  gv:score "0.12287957";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "bd9770";
-  gv:red "189";
-  gv:blue "112";
-  gv:green "151";
-  gv:score "0.11797724999999999";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.855834"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.474808"
-];
-    w:bagOfWords "WHITE BURGUNDY TABLE WINE\nPOUILLY FUISSE\nPRODUCED AND\nBOTTLED BY\nLOUIS JADOT\nPROPRIETAIRE & NEGOCIANT A BEAUNE FRANCE\nMise en Bouteilles dans nos caves\nCONTENTS 3/4 QUART\nPRODUCE OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2591";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

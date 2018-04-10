@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4488";
-    dct:type "image";
-    w:bagOfWords "CAREGISTR\nMARCA REGIS.\nN 44\nRESERVA ESPECIAL\nCOMPANIA VINicOLA DEL NORTE DE ESPANA\nBILBAO\nEMBOTELLADO EN BODEGA\nHAR O\nCOSECHA 1928\n"@spa;
-    gv:color [
-  gv:hex "d1c3af";
-  gv:red "209";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "17.72493";
-  gv:coverage "7.373333"
-], [
-  gv:hex "873923";
-  gv:red "135";
-  gv:blue "35";
-  gv:green "57";
-  gv:score "3.1343963";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "1b1418";
-  gv:red "27";
-  gv:blue "24";
-  gv:green "20";
-  gv:score "2.9246276";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "7c4738";
-  gv:red "124";
-  gv:blue "56";
-  gv:green "71";
-  gv:score "2.015809";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "ad9c85";
-  gv:red "173";
-  gv:blue "133";
-  gv:green "156";
-  gv:score "11.337626";
-  gv:coverage "1.5066667"
-], [
-  gv:hex "d1c3bd";
-  gv:red "209";
-  gv:blue "189";
-  gv:green "195";
-  gv:score "11.20382";
-  gv:coverage "9.986666600000001"
-], [
-  gv:hex "eaddcb";
-  gv:red "234";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "8.855205";
-  gv:coverage "9.22"
-], [
-  gv:hex "eaddd5";
-  gv:red "234";
-  gv:blue "213";
-  gv:green "221";
-  gv:score "8.771707099999999";
-  gv:coverage "61.53999999999999"
-], [
-  gv:hex "a59a97";
-  gv:red "165";
-  gv:blue "151";
-  gv:green "154";
-  gv:score "5.8293484";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "807675";
-  gv:red "128";
-  gv:blue "117";
-  gv:green "118";
-  gv:score "4.9269684";
-  gv:coverage "1.8800000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.46788099999999"
-];
-    w:bagOfWords "CAREGISTR\nMARCA REGIS.\nN 44\nRESERVA ESPECIAL\nCOMPANIA VINicOLA DEL NORTE DE ESPANA\nBILBAO\nEMBOTELLADO EN BODEGA\nHAR O\nCOSECHA 1928\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4488";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

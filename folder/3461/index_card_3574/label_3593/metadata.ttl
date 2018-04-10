@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3574/label_3593";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "Special geserne\no M\nA\nOLD MED\nEXPOSITI\nER NATION\nSYLVANER RIESLING\nCO\nO\n7\nA STATE\nA STATE\nA STATE\nPRODUCED & BOTTLED BY\nB. W. NO. 605-ST. HELENA, NAPA CO., CALIF.-ALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "8d7342";
-  gv:red "141";
-  gv:blue "66";
-  gv:green "115";
-  gv:score "19.488329";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "d3c1ab";
-  gv:red "211";
-  gv:blue "171";
-  gv:green "193";
-  gv:score "9.3989067";
-  gv:coverage "7.2333336"
-], [
-  gv:hex "1a110a";
-  gv:red "26";
-  gv:blue "10";
-  gv:green "17";
-  gv:score "2.0277648999999998";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "632009";
-  gv:red "99";
-  gv:blue "9";
-  gv:green "32";
-  gv:score "1.8347068000000002";
-  gv:coverage "0.06"
-], [
-  gv:hex "877252";
-  gv:red "135";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "10.840217";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "ab987e";
-  gv:red "171";
-  gv:blue "126";
-  gv:green "152";
-  gv:score "5.7571203";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "d0c4bb";
-  gv:red "208";
-  gv:blue "187";
-  gv:green "196";
-  gv:score "5.3819685999999995";
-  gv:coverage "6.2666669"
-], [
-  gv:hex "6a5639";
-  gv:red "106";
-  gv:blue "57";
-  gv:green "86";
-  gv:score "5.09562";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "ede1d8";
-  gv:red "237";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "4.9283851";
-  gv:coverage "57.806665"
-], [
-  gv:hex "b79085";
-  gv:red "183";
-  gv:blue "133";
-  gv:green "144";
-  gv:score "3.4304205";
-  gv:coverage "0.88666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02wbm>;
-  gv:desc "food";
-  gv:score "69.35226300000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.407264999999995"
-], [
-  gv:mid <https://g.co/kg/m/036qh8>;
-  gv:desc "produce";
-  gv:score "57.009333"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "52.469379"
-];
-    w:bagOfWords "Special geserne\no M\nA\nOLD MED\nEXPOSITI\nER NATION\nSYLVANER RIESLING\nCO\nO\n7\nA STATE\nA STATE\nA STATE\nPRODUCED & BOTTLED BY\nB. W. NO. 605-ST. HELENA, NAPA CO., CALIF.-ALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3593";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3350";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "LES VERCOTS\nAPPELLATION CONTROLEE\nMAISON FON DEE EN 797\nNEGOCIANT A BEAUNE (COTE -D'OR)\nROUALET BEAUNE\n"@fra;
-    gv:color [
-  gv:hex "d6bea9";
-  gv:red "214";
-  gv:blue "169";
-  gv:green "190";
-  gv:score "68.928522";
-  gv:coverage "26.979999999999997"
-], [
-  gv:hex "b89f85";
-  gv:red "184";
-  gv:blue "133";
-  gv:green "159";
-  gv:score "11.008207";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "d5c2b8";
-  gv:red "213";
-  gv:blue "184";
-  gv:green "194";
-  gv:score "4.4604800000000004";
-  gv:coverage "4.2066667"
-], [
-  gv:hex "d9b399";
-  gv:red "217";
-  gv:blue "153";
-  gv:green "179";
-  gv:score "2.7504597";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "c09e6e";
-  gv:red "192";
-  gv:blue "110";
-  gv:green "158";
-  gv:score "2.7036997";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "8b7560";
-  gv:red "139";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "2.5579717";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "c49666";
-  gv:red "196";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "1.9454171999999998";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "ebd8c5";
-  gv:red "235";
-  gv:blue "197";
-  gv:green "216";
-  gv:score "1.1028432";
-  gv:coverage "22.48"
-], [
-  gv:hex "bd967c";
-  gv:red "189";
-  gv:blue "124";
-  gv:green "150";
-  gv:score "1.0297987";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "d3b082";
-  gv:red "211";
-  gv:blue "130";
-  gv:green "176";
-  gv:score "0.92633236";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.77412"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.773320000000005"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.061933"
-];
-    w:bagOfWords "LES VERCOTS\nAPPELLATION CONTROLEE\nMAISON FON DEE EN 797\nNEGOCIANT A BEAUNE (COTE -D'OR)\nROUALET BEAUNE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3350";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

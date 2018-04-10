@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1168";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "FINE CHAMPAGNE COGNAC\n4/5 Quart\nFRANCE\nOF UCE 80 Proof\nREG. U. S\nPAT. OFF\nCOGNAC\nEstablished in 1724\nDISTILLED AND BOTTLED BY E. REMY MARTIN & Co COGNAC FRANCE\nIMPORTED BY\nJ C SEP H H. REIN FELD, INC.\n461-467 FRELINGHUYSEN AVE. NEWARK. N. J.\nPRINTED IN FRANCE\n"@undefined;
-    gv:color [
-  gv:hex "dac09b";
-  gv:red "218";
-  gv:blue "155";
-  gv:green "192";
-  gv:score "60.368192";
-  gv:coverage "18.686667"
-], [
-  gv:hex "c2976f";
-  gv:red "194";
-  gv:blue "111";
-  gv:green "151";
-  gv:score "2.1779295";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "b59c78";
-  gv:red "181";
-  gv:blue "120";
-  gv:green "156";
-  gv:score "9.287472099999999";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "dcbd90";
-  gv:red "220";
-  gv:blue "144";
-  gv:green "189";
-  gv:score "5.4046378";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "8d7452";
-  gv:red "141";
-  gv:blue "82";
-  gv:green "116";
-  gv:score "5.402489800000001";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "dfb593";
-  gv:red "223";
-  gv:blue "147";
-  gv:green "181";
-  gv:score "2.9596331";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "6a5332";
-  gv:red "106";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "2.0851107";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "b9996e";
-  gv:red "185";
-  gv:blue "110";
-  gv:green "153";
-  gv:score "2.0130198";
-  gv:coverage "0.36"
-], [
-  gv:hex "8c7248";
-  gv:red "140";
-  gv:blue "72";
-  gv:green "114";
-  gv:score "1.9737113000000002";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "eed7b6";
-  gv:red "238";
-  gv:blue "182";
-  gv:green "215";
-  gv:score "1.7886296";
-  gv:coverage "4.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.770727"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.55937"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.945926"
-];
-    w:bagOfWords "FINE CHAMPAGNE COGNAC\n4/5 Quart\nFRANCE\nOF UCE 80 Proof\nREG. U. S\nPAT. OFF\nCOGNAC\nEstablished in 1724\nDISTILLED AND BOTTLED BY E. REMY MARTIN & Co COGNAC FRANCE\nIMPORTED BY\nJ C SEP H H. REIN FELD, INC.\n461-467 FRELINGHUYSEN AVE. NEWARK. N. J.\nPRINTED IN FRANCE\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1168";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

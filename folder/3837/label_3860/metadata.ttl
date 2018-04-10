@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3860";
-    dct:type "image";
-    w:bagOfWords "VP\nIN VINO\n1953\nMOSEL-SAAR-RUWER\nBernhartel Aueret Aarbinalsberg\nWadatum: Ben. Zimmermann Kues\nreiner Naturmein\npfaloer meinftuben Artur Rolldyr Berlin-sriedenau\nBundes Allee 98 Telefon 83 33 83\nD. 71 222\n"@deu;
-    gv:color [
-  gv:hex "cbc386";
-  gv:red "203";
-  gv:blue "134";
-  gv:green "195";
-  gv:score "38.967228";
-  gv:coverage "11.506667"
-], [
-  gv:hex "aba367";
-  gv:red "171";
-  gv:blue "103";
-  gv:green "163";
-  gv:score "24.082829";
-  gv:coverage "7.7066667"
-], [
-  gv:hex "261f00";
-  gv:red "38";
-  gv:blue "undefined";
-  gv:green "31";
-  gv:score "0.16855048";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "817843";
-  gv:red "129";
-  gv:blue "67";
-  gv:green "120";
-  gv:score "7.361960400000001";
-  gv:coverage "2.56"
-], [
-  gv:hex "c5c27c";
-  gv:red "197";
-  gv:blue "124";
-  gv:green "194";
-  gv:score "7.00269";
-  gv:coverage "1.5"
-], [
-  gv:hex "cec49b";
-  gv:red "206";
-  gv:blue "155";
-  gv:green "196";
-  gv:score "5.1421616000000006";
-  gv:coverage "7.5"
-], [
-  gv:hex "a9a176";
-  gv:red "169";
-  gv:blue "118";
-  gv:green "161";
-  gv:score "4.66563";
-  gv:coverage "2"
-], [
-  gv:hex "3b5164";
-  gv:red "59";
-  gv:blue "100";
-  gv:green "81";
-  gv:score "0.037154739000000006";
-  gv:coverage "0.02"
-], [
-  gv:hex "a7a664";
-  gv:red "167";
-  gv:blue "100";
-  gv:green "166";
-  gv:score "2.9759";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "625b27";
-  gv:red "98";
-  gv:blue "39";
-  gv:green "91";
-  gv:score "2.6643455";
-  gv:coverage "0.76666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.441025"
-];
-    w:bagOfWords "VP\nIN VINO\n1953\nMOSEL-SAAR-RUWER\nBernhartel Aueret Aarbinalsberg\nWadatum: Ben. Zimmermann Kues\nreiner Naturmein\npfaloer meinftuben Artur Rolldyr Berlin-sriedenau\nBundes Allee 98 Telefon 83 33 83\nD. 71 222\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3860";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

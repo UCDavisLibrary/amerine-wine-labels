@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2313";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "VIN DE PICHON LONGUEVILLE\n192\nHITESSE\nDE LA LANDE\nPA UIL LAC\nMIS EN BOUTEILLES AU CHATEAU\nDEPOSE\n"@fra;
-    gv:color [
-  gv:hex "d5c1a4";
-  gv:red "213";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "56.572359999999996";
-  gv:coverage "24.04"
-], [
-  gv:hex "b09b7d";
-  gv:red "176";
-  gv:blue "125";
-  gv:green "155";
-  gv:score "23.900616";
-  gv:coverage "3.42"
-], [
-  gv:hex "8b7754";
-  gv:red "139";
-  gv:blue "84";
-  gv:green "119";
-  gv:score "9.252445400000001";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "8b7443";
-  gv:red "139";
-  gv:blue "67";
-  gv:green "116";
-  gv:score "2.6910339";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "d4be8b";
-  gv:red "212";
-  gv:blue "139";
-  gv:green "190";
-  gv:score "2.6411694";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "ead8c1";
-  gv:red "234";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "2.1471141";
-  gv:coverage "3.9733332000000003"
-], [
-  gv:hex "6c5638";
-  gv:red "108";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "1.0429203";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "b59e6d";
-  gv:red "181";
-  gv:blue "109";
-  gv:green "158";
-  gv:score "0.76383287";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "664e20";
-  gv:red "102";
-  gv:blue "32";
-  gv:green "78";
-  gv:score "0.5295058699999999";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "d9c9be";
-  gv:red "217";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "0.17438367";
-  gv:coverage "5.56"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.518164"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.607805"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.693659999999994"
-];
-    w:bagOfWords "VIN DE PICHON LONGUEVILLE\n192\nHITESSE\nDE LA LANDE\nPA UIL LAC\nMIS EN BOUTEILLES AU CHATEAU\nDEPOSE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2313";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

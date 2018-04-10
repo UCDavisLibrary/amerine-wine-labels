@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4423";
-    dct:type "image";
-    w:bagOfWords "VIN OSF INOS DE MESA\nmbotellaoco en su 59 ano.\nVILLA BUENA\nRIOJA AL AVE SA\nR. E. T RAT ON\n"@spa;
-    gv:color [
-  gv:hex "dbc19b";
-  gv:red "219";
-  gv:blue "155";
-  gv:green "193";
-  gv:score "69.954526";
-  gv:coverage "24.586667000000002"
-], [
-  gv:hex "ddbe91";
-  gv:red "221";
-  gv:blue "145";
-  gv:green "190";
-  gv:score "12.596084";
-  gv:coverage "5.1866665"
-], [
-  gv:hex "b19b78";
-  gv:red "177";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "6.9558822000000005";
-  gv:coverage "3.4066666000000003"
-], [
-  gv:hex "8a7757";
-  gv:red "138";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "2.1919919";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "bb996a";
-  gv:red "187";
-  gv:blue "106";
-  gv:green "153";
-  gv:score "1.737624";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "927448";
-  gv:red "146";
-  gv:blue "72";
-  gv:green "116";
-  gv:score "1.2759120000000002";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "ecd9bb";
-  gv:red "236";
-  gv:blue "187";
-  gv:green "217";
-  gv:score "1.2740540999999999";
-  gv:coverage "4.8266668"
-], [
-  gv:hex "655536";
-  gv:red "101";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "1.0810956";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "403518";
-  gv:red "64";
-  gv:blue "24";
-  gv:green "53";
-  gv:score "0.53134831";
-  gv:coverage "0.16"
-], [
-  gv:hex "4a5753";
-  gv:red "74";
-  gv:blue "83";
-  gv:green "87";
-  gv:score "0.23343919000000002";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.54083800000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "VIN OSF INOS DE MESA\nmbotellaoco en su 59 ano.\nVILLA BUENA\nRIOJA AL AVE SA\nR. E. T RAT ON\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4423";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,109 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0560";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "1953er\nDeltricher rendher\nfeinfte Beerenoualele\nR HEIN GAU\nOriginalzflbfullung franj Minhel\nFRANZ WINKEL WEINGUTSBESITZER U. WEINHANDLUNGIOESTRICH RHEINGAU\n"@deu;
-    gv:color [
-  gv:hex "cdc6a6";
-  gv:red "205";
-  gv:blue "166";
-  gv:green "198";
-  gv:score "15.633166000000001";
-  gv:coverage "6.713333"
-], [
-  gv:hex "8a753e";
-  gv:red "138";
-  gv:blue "62";
-  gv:green "117";
-  gv:score "7.3619492";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "ca4211";
-  gv:red "202";
-  gv:blue "17";
-  gv:green "66";
-  gv:score "1.7192546";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "08859b";
-  gv:red "8";
-  gv:blue "155";
-  gv:green "133";
-  gv:score "1.3465789000000001";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "e93907";
-  gv:red "233";
-  gv:blue "7";
-  gv:green "57";
-  gv:score "1.2164556";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "6c1d04";
-  gv:red "108";
-  gv:blue "4";
-  gv:green "29";
-  gv:score "0.43926028999999994";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "750b17";
-  gv:red "117";
-  gv:blue "23";
-  gv:green "11";
-  gv:score "0.09003707100000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "af9b5e";
-  gv:red "175";
-  gv:blue "94";
-  gv:green "155";
-  gv:score "6.508220000000001";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "a79d7e";
-  gv:red "167";
-  gv:blue "126";
-  gv:green "157";
-  gv:score "5.1953752";
-  gv:coverage "1.7466666"
-], [
-  gv:hex "d1c085";
-  gv:red "209";
-  gv:blue "133";
-  gv:green "192";
-  gv:score "4.9905933";
-  gv:coverage "0.79333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.326928"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.535949"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.256733999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.3544"
-];
-    w:bagOfWords "1953er\nDeltricher rendher\nfeinfte Beerenoualele\nR HEIN GAU\nOriginalzflbfullung franj Minhel\nFRANZ WINKEL WEINGUTSBESITZER U. WEINHANDLUNGIOESTRICH RHEINGAU\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0560";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

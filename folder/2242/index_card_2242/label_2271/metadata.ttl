@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2271";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "CHATEAU\nVIN\nPREMIER G\nRAND CRU CLAS\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "d4bc9c";
-  gv:red "212";
-  gv:blue "156";
-  gv:green "188";
-  gv:score "39.555421";
-  gv:coverage "44.846666"
-], [
-  gv:hex "b59a79";
-  gv:red "181";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "21.813767000000002";
-  gv:coverage "5.5666666"
-], [
-  gv:hex "bb9b6a";
-  gv:red "187";
-  gv:blue "106";
-  gv:green "155";
-  gv:score "10.793352";
-  gv:coverage "2.92"
-], [
-  gv:hex "d6b585";
-  gv:red "214";
-  gv:blue "133";
-  gv:green "181";
-  gv:score "7.2058327";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "957957";
-  gv:red "149";
-  gv:blue "87";
-  gv:green "121";
-  gv:score "6.8184026";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "937442";
-  gv:red "147";
-  gv:blue "66";
-  gv:green "116";
-  gv:score "4.1691862";
-  gv:coverage "0.74666669"
-], [
-  gv:hex "bb905e";
-  gv:red "187";
-  gv:blue "94";
-  gv:green "144";
-  gv:score "2.9561127";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "9a7140";
-  gv:red "154";
-  gv:blue "64";
-  gv:green "113";
-  gv:score "2.3814281";
-  gv:coverage "0.5"
-], [
-  gv:hex "b89372";
-  gv:red "184";
-  gv:blue "114";
-  gv:green "147";
-  gv:score "1.2342138";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "967251";
-  gv:red "150";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "1.2017194";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.8861"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.356696"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.675078"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.493875"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "53.087585999999995"
-];
-    w:bagOfWords "CHATEAU\nVIN\nPREMIER G\nRAND CRU CLAS\nFRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2271";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

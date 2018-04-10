@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1514";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "PRODUCE OF SPAIN\nMANZANILLA\nS U P E R I O R\nEXTREMELY DRY DINNER WINE\nBOTTLED AND SHIPPED BY\nMANUEL CORTINA\nJEREZ DE LA FRONTERA\nContents 1 Pint 9 fluid ounces\nAlcohol 20 by Volume\nIMPORTED BY\nES UTI N I M PORTS\nSan Francisco 3\nCALIFORNIA\nPermit: 14\nI-710\n"@spa;
-    gv:color [
-  gv:hex "953d28";
-  gv:red "149";
-  gv:blue "40";
-  gv:green "61";
-  gv:score "16.634418";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "9a6a50";
-  gv:red "154";
-  gv:blue "80";
-  gv:green "106";
-  gv:score "8.7745";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "7a4f34";
-  gv:red "122";
-  gv:blue "52";
-  gv:green "79";
-  gv:score "8.2931489";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "a32f28";
-  gv:red "163";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "7.253958300000001";
-  gv:coverage "0.1"
-], [
-  gv:hex "ad5943";
-  gv:red "173";
-  gv:blue "67";
-  gv:green "89";
-  gv:score "6.8137273";
-  gv:coverage "0.12"
-], [
-  gv:hex "85715b";
-  gv:red "133";
-  gv:blue "91";
-  gv:green "113";
-  gv:score "6.537536500000001";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "aa9a88";
-  gv:red "170";
-  gv:blue "136";
-  gv:green "154";
-  gv:score "5.763704";
-  gv:coverage "3.38"
-], [
-  gv:hex "665542";
-  gv:red "102";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "5.1802281";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "d1c1ad";
-  gv:red "209";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "4.2412844";
-  gv:coverage "12.2"
-], [
-  gv:hex "d3c5b8";
-  gv:red "211";
-  gv:blue "184";
-  gv:green "197";
-  gv:score "4.0934116";
-  gv:coverage "16.28"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.432916000000006"
-];
-    w:bagOfWords "PRODUCE OF SPAIN\nMANZANILLA\nS U P E R I O R\nEXTREMELY DRY DINNER WINE\nBOTTLED AND SHIPPED BY\nMANUEL CORTINA\nJEREZ DE LA FRONTERA\nContents 1 Pint 9 fluid ounces\nAlcohol 20 by Volume\nIMPORTED BY\nES UTI N I M PORTS\nSan Francisco 3\nCALIFORNIA\nPermit: 14\nI-710\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1514";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

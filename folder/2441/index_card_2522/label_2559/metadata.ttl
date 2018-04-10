@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2559";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "GRAND CRU\nCHA BLIS\nAPPELLATION\nCONTROLEE\nGRENOUILLE\nVINTAGE 1929\nTropriolairos, a Chablis, France\nCONTENTS\nPRODUCT\nPINT 8 FLUID OUNCES\nOF FRANCE\nIMPORTED BY\nLEHMANN IMPORTS, INC\nPHILADELPHIA PA\nI PERMIT 161\nARNAUD LYON\n"@fra;
-    gv:color [
-  gv:hex "dec4a2";
-  gv:red "222";
-  gv:blue "162";
-  gv:green "196";
-  gv:score "46.771783";
-  gv:coverage "18.326667"
-], [
-  gv:hex "b3997a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "19.7945";
-  gv:coverage "6.5133333"
-], [
-  gv:hex "dfbc8d";
-  gv:red "223";
-  gv:blue "141";
-  gv:green "188";
-  gv:score "12.894547000000001";
-  gv:coverage "2.7199999999999998"
-], [
-  gv:hex "f0d7b8";
-  gv:red "240";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "5.8767393000000006";
-  gv:coverage "17.48"
-], [
-  gv:hex "93795b";
-  gv:red "147";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "4.8355877";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "ba986a";
-  gv:red "186";
-  gv:blue "106";
-  gv:green "152";
-  gv:score "4.2578638";
-  gv:coverage "1.04"
-], [
-  gv:hex "947448";
-  gv:red "148";
-  gv:blue "72";
-  gv:green "116";
-  gv:score "2.4439467";
-  gv:coverage "0.84"
-], [
-  gv:hex "c79d6c";
-  gv:red "199";
-  gv:blue "108";
-  gv:green "157";
-  gv:score "0.7284379599999999";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "d9af7e";
-  gv:red "217";
-  gv:blue "126";
-  gv:green "175";
-  gv:score "0.5584213";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "6f593d";
-  gv:red "111";
-  gv:blue "61";
-  gv:green "89";
-  gv:score "0.51703067";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.898343"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "54.64536"
-];
-    w:bagOfWords "GRAND CRU\nCHA BLIS\nAPPELLATION\nCONTROLEE\nGRENOUILLE\nVINTAGE 1929\nTropriolairos, a Chablis, France\nCONTENTS\nPRODUCT\nPINT 8 FLUID OUNCES\nOF FRANCE\nIMPORTED BY\nLEHMANN IMPORTS, INC\nPHILADELPHIA PA\nI PERMIT 161\nARNAUD LYON\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2559";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

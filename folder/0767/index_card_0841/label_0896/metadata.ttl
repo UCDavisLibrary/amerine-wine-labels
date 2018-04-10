@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0896";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CHAMN G NE\nBRUT 1934\nRESERVE\nPPLINTMENT\nBY B R U T 1 934\nN. M. 3.636.212\n"@fra;
-    gv:color [
-  gv:hex "684c20";
-  gv:red "104";
-  gv:blue "32";
-  gv:green "76";
-  gv:score "18.949479";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "d1c0a9";
-  gv:red "209";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "14.303719000000001";
-  gv:coverage "14.979999999999999"
-], [
-  gv:hex "553608";
-  gv:red "85";
-  gv:blue "8";
-  gv:green "54";
-  gv:score "8.0480732";
-  gv:coverage "0.12"
-], [
-  gv:hex "ae9b7f";
-  gv:red "174";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "12.168597";
-  gv:coverage "1.82"
-], [
-  gv:hex "8a765b";
-  gv:red "138";
-  gv:blue "91";
-  gv:green "118";
-  gv:score "8.6053021";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "644414";
-  gv:red "100";
-  gv:blue "20";
-  gv:green "68";
-  gv:score "7.6541476";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "695336";
-  gv:red "105";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "6.6828154";
-  gv:coverage "0.48"
-], [
-  gv:hex "8a6d42";
-  gv:red "138";
-  gv:blue "66";
-  gv:green "109";
-  gv:score "5.1320285";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "563b0f";
-  gv:red "86";
-  gv:blue "15";
-  gv:green "59";
-  gv:score "3.8370594000000002";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "d2c4b8";
-  gv:red "210";
-  gv:blue "184";
-  gv:green "196";
-  gv:score "3.4387494999999997";
-  gv:coverage "11.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.515171"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "60.714966000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.72712800000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.793296000000005"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "50.367182"
-];
-    w:bagOfWords "CHAMN G NE\nBRUT 1934\nRESERVE\nPPLINTMENT\nBY B R U T 1 934\nN. M. 3.636.212\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0896";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0221/label_0233";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "Gold Medal Awarded P. P. I. E., San Franeiseo, 1915\nSilver Medal, Lewis & Clark Centennial ExpoNitte\nPortland, Ore., 1905\nNet Contents 73/100 of a pint\nMARK.\nTRADE\nFRANCIS\nWOODSIDE, SAN MATEO COUNTY\nCALIFORNIA.\nBottled by E. H. RIXFORD, 1st Dist. of Cal.\nTax due under Actw September 8, 1916 and Oct. 3, 13017\nPaid hy stamps affixed t\ncase.\n"@eng;
-    gv:color [
-  gv:hex "d3bea5";
-  gv:red "211";
-  gv:blue "165";
-  gv:green "190";
-  gv:score "15.865433000000001";
-  gv:coverage "41.613334"
-], [
-  gv:hex "b45b46";
-  gv:red "180";
-  gv:blue "70";
-  gv:green "91";
-  gv:score "15.282119999999999";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "b36051";
-  gv:red "179";
-  gv:blue "81";
-  gv:green "96";
-  gv:score "9.8807931";
-  gv:coverage "0.44"
-], [
-  gv:hex "edbaa6";
-  gv:red "237";
-  gv:blue "166";
-  gv:green "186";
-  gv:score "9.545730800000001";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "97412d";
-  gv:red "151";
-  gv:blue "45";
-  gv:green "65";
-  gv:score "6.716737200000001";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "bc483f";
-  gv:red "188";
-  gv:blue "63";
-  gv:green "72";
-  gv:score "6.695636400000001";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "dc8272";
-  gv:red "220";
-  gv:blue "114";
-  gv:green "130";
-  gv:score "6.0849659";
-  gv:coverage "0.3"
-], [
-  gv:hex "b19d85";
-  gv:red "177";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "5.245677";
-  gv:coverage "2.98"
-], [
-  gv:hex "ca907b";
-  gv:red "202";
-  gv:blue "123";
-  gv:green "144";
-  gv:score "4.9018502";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "a76b57";
-  gv:red "167";
-  gv:blue "87";
-  gv:green "107";
-  gv:score "2.6560808000000002";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.529149999999994"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.134142"
-];
-    w:bagOfWords "Gold Medal Awarded P. P. I. E., San Franeiseo, 1915\nSilver Medal, Lewis & Clark Centennial ExpoNitte\nPortland, Ore., 1905\nNet Contents 73/100 of a pint\nMARK.\nTRADE\nFRANCIS\nWOODSIDE, SAN MATEO COUNTY\nCALIFORNIA.\nBottled by E. H. RIXFORD, 1st Dist. of Cal.\nTax due under Actw September 8, 1916 and Oct. 3, 13017\nPaid hy stamps affixed t\ncase.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0233";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

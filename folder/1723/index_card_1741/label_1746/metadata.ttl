@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1746";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "PRODUCE OF GERMANY S\nDOLP\nHUESGEN TRABEN-TRARBACH L\n8 14:\n1694\n39\nSIX GENERATIONS\nCONTENTS\nALCOHOL:\nMOS ELLE WINE\nOF BOTTLE\n10 0\nBY\nVINTAGE 1949\nVOLUME\n1 PT 7,5 FL. OZS\nBerncasteler Braunes\nShipped by:\nADOLPH HUESGEN, TRABEN TRARBACH\n"@deu;
-    gv:color [
-  gv:hex "ece1d8";
-  gv:red "236";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "33.215371";
-  gv:coverage "42.766666"
-], [
-  gv:hex "dac387";
-  gv:red "218";
-  gv:blue "135";
-  gv:green "195";
-  gv:score "16.493516";
-  gv:coverage "12.126666"
-], [
-  gv:hex "5f5231";
-  gv:red "95";
-  gv:blue "49";
-  gv:green "82";
-  gv:score "4.3114650999999995";
-  gv:coverage "2.6533333999999997"
-], [
-  gv:hex "eadcc8";
-  gv:red "234";
-  gv:blue "200";
-  gv:green "220";
-  gv:score "7.6191783";
-  gv:coverage "9.68"
-], [
-  gv:hex "b09b60";
-  gv:red "176";
-  gv:blue "96";
-  gv:green "155";
-  gv:score "6.552383300000001";
-  gv:coverage "5.6533333"
-], [
-  gv:hex "3f3315";
-  gv:red "63";
-  gv:blue "21";
-  gv:green "51";
-  gv:score "4.0304277";
-  gv:coverage "2.2333333"
-], [
-  gv:hex "837653";
-  gv:red "131";
-  gv:blue "83";
-  gv:green "118";
-  gv:score "3.9639808";
-  gv:coverage "2.8866666999999997"
-], [
-  gv:hex "e0ccaf";
-  gv:red "224";
-  gv:blue "175";
-  gv:green "204";
-  gv:score "3.8772725";
-  gv:coverage "4.7533332999999995"
-], [
-  gv:hex "867743";
-  gv:red "134";
-  gv:blue "67";
-  gv:green "119";
-  gv:score "3.7189372";
-  gv:coverage "3.1399999999999997"
-], [
-  gv:hex "dfd1c7";
-  gv:red "223";
-  gv:blue "199";
-  gv:green "209";
-  gv:score "3.1194756";
-  gv:coverage "4.2666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.058218"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "65.36786"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "51.01482899999999"
-];
-    w:bagOfWords "PRODUCE OF GERMANY S\nDOLP\nHUESGEN TRABEN-TRARBACH L\n8 14:\n1694\n39\nSIX GENERATIONS\nCONTENTS\nALCOHOL:\nMOS ELLE WINE\nOF BOTTLE\n10 0\nBY\nVINTAGE 1949\nVOLUME\n1 PT 7,5 FL. OZS\nBerncasteler Braunes\nShipped by:\nADOLPH HUESGEN, TRABEN TRARBACH\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1746";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2876";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "CHATEAU COUTET BARSAC\nler GRAND CRU DE SAUTERNES\n1947\nMIS EN BOUTEILLES AU CHATEAU\nAPPELLATION CONTROLEE BARSAC\n"@fra;
-    gv:color [
-  gv:hex "d9b681";
-  gv:red "217";
-  gv:blue "129";
-  gv:green "182";
-  gv:score "32.660329";
-  gv:coverage "3.08"
-], [
-  gv:hex "d8bfa0";
-  gv:red "216";
-  gv:blue "160";
-  gv:green "191";
-  gv:score "22.581397";
-  gv:coverage "26.053333000000002"
-], [
-  gv:hex "c4a06a";
-  gv:red "196";
-  gv:blue "106";
-  gv:green "160";
-  gv:score "19.246031";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "c6995f";
-  gv:red "198";
-  gv:blue "95";
-  gv:green "153";
-  gv:score "8.1699945";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "ddaf78";
-  gv:red "221";
-  gv:blue "120";
-  gv:green "175";
-  gv:score "5.646123";
-  gv:coverage "0.42"
-], [
-  gv:hex "bfa480";
-  gv:red "191";
-  gv:blue "128";
-  gv:green "164";
-  gv:score "2.9725319";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "be964b";
-  gv:red "190";
-  gv:blue "75";
-  gv:green "150";
-  gv:score "2.4935178";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "edd7be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "215";
-  gv:score "1.7467089000000002";
-  gv:coverage "13.553333"
-], [
-  gv:hex "c59145";
-  gv:red "197";
-  gv:blue "69";
-  gv:green "145";
-  gv:score "0.96942773";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "9e7337";
-  gv:red "158";
-  gv:blue "55";
-  gv:green "115";
-  gv:score "0.9515523";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.259935"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.083246"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "51.700521"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.548289999999994"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "50.956928999999995"
-];
-    w:bagOfWords "CHATEAU COUTET BARSAC\nler GRAND CRU DE SAUTERNES\n1947\nMIS EN BOUTEILLES AU CHATEAU\nAPPELLATION CONTROLEE BARSAC\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2876";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

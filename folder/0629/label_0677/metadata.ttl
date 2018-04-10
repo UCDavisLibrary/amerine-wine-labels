@@ -1,98 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0677";
-    dct:type "image";
-    w:bagOfWords "INS Du VALns\nNOMBREUSES MEDAILLES D ARGENT\nD'OR ET DE VERMEIL\nET\nDIPLOMES DHONNEUR\nCLOS DU MONT\nDOLE\nROBERT GILLIARD\nProp\nMAISON FON DE E EN 1885\n"@undefined;
-    gv:color [
-  gv:hex "0f0c0d";
-  gv:red "15";
-  gv:blue "13";
-  gv:green "12";
-  gv:score "72.757155";
-  gv:coverage "24.413334"
-], [
-  gv:hex "eae4dd";
-  gv:red "234";
-  gv:blue "221";
-  gv:green "228";
-  gv:score "1.4664494000000001";
-  gv:coverage "65.093333"
-], [
-  gv:hex "36302d";
-  gv:red "54";
-  gv:blue "45";
-  gv:green "48";
-  gv:score "10.229436";
-  gv:coverage "2.3466667"
-], [
-  gv:hex "564f49";
-  gv:red "86";
-  gv:blue "73";
-  gv:green "79";
-  gv:score "5.7572529";
-  gv:coverage "1.46"
-], [
-  gv:hex "5a5241";
-  gv:red "90";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "3.7611383999999997";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "3a3222";
-  gv:red "58";
-  gv:blue "34";
-  gv:green "50";
-  gv:score "2.4677277";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "231c0d";
-  gv:red "35";
-  gv:blue "13";
-  gv:green "28";
-  gv:score "1.3763854";
-  gv:coverage "0.16"
-], [
-  gv:hex "726c66";
-  gv:red "114";
-  gv:blue "102";
-  gv:green "108";
-  gv:score "1.0019546000000001";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "78705d";
-  gv:red "120";
-  gv:blue "93";
-  gv:green "112";
-  gv:score "0.74084462";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "cec7bf";
-  gv:red "206";
-  gv:blue "191";
-  gv:green "199";
-  gv:score "0.16458186";
-  gv:coverage "4.2466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.20576399999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "INS Du VALns\nNOMBREUSES MEDAILLES D ARGENT\nD'OR ET DE VERMEIL\nET\nDIPLOMES DHONNEUR\nCLOS DU MONT\nDOLE\nROBERT GILLIARD\nProp\nMAISON FON DE E EN 1885\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0677";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

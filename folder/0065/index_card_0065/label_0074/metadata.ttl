@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0074";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "R GLO\nRATTO\nGIUSEPPE CONTRATTO CANELLL\nETICHETTA DEPO\n"@ita;
-    gv:color [
-  gv:hex "d9c19e";
-  gv:red "217";
-  gv:blue "158";
-  gv:green "193";
-  gv:score "23.579693";
-  gv:coverage "12.666667"
-], [
-  gv:hex "8a3b36";
-  gv:red "138";
-  gv:blue "54";
-  gv:green "59";
-  gv:score "10.091767";
-  gv:coverage "2.2066665999999997"
-], [
-  gv:hex "c69464";
-  gv:red "198";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "4.1468892";
-  gv:coverage "1.54"
-], [
-  gv:hex "d7b987";
-  gv:red "215";
-  gv:blue "135";
-  gv:green "185";
-  gv:score "9.7798824";
-  gv:coverage "2.7666667"
-], [
-  gv:hex "8d3628";
-  gv:red "141";
-  gv:blue "40";
-  gv:green "54";
-  gv:score "5.6945179";
-  gv:coverage "1.18"
-], [
-  gv:hex "e7b79c";
-  gv:red "231";
-  gv:blue "156";
-  gv:green "183";
-  gv:score "5.6769211";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "b4a07d";
-  gv:red "180";
-  gv:blue "125";
-  gv:green "160";
-  gv:score "4.0885374";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "bd9d6a";
-  gv:red "189";
-  gv:blue "106";
-  gv:green "157";
-  gv:score "3.7502144";
-  gv:coverage "1.2466666"
-], [
-  gv:hex "c59181";
-  gv:red "197";
-  gv:blue "129";
-  gv:green "145";
-  gv:score "3.4456715";
-  gv:coverage "1.06"
-], [
-  gv:hex "76463b";
-  gv:red "118";
-  gv:blue "59";
-  gv:green "70";
-  gv:score "2.6976199999999997";
-  gv:coverage "0.84666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.10500499999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.243013999999995"
-];
-    w:bagOfWords "R GLO\nRATTO\nGIUSEPPE CONTRATTO CANELLL\nETICHETTA DEPO\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0074";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

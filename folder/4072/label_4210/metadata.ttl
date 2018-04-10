@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4210";
-    dct:type "image";
-    w:bagOfWords "CHAMPAGNE\nCarte d'Or\nIRROY\nBRUT\nNEST MARK\nTRADE\nFRANCE\n"@fra;
-    gv:color [
-  gv:hex "907b43";
-  gv:red "144";
-  gv:blue "67";
-  gv:green "123";
-  gv:score "29.858664";
-  gv:coverage "3.2399999999999998"
-], [
-  gv:hex "0d0805";
-  gv:red "13";
-  gv:blue "5";
-  gv:green "8";
-  gv:score "20.480249999999998";
-  gv:coverage "16.013333"
-], [
-  gv:hex "3b3019";
-  gv:red "59";
-  gv:blue "25";
-  gv:green "48";
-  gv:score "4.4278163";
-  gv:coverage "1.26"
-], [
-  gv:hex "e5dbd1";
-  gv:red "229";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "0.23333244";
-  gv:coverage "62.973332000000006"
-], [
-  gv:hex "a69054";
-  gv:red "166";
-  gv:blue "84";
-  gv:green "144";
-  gv:score "19.302894000000002";
-  gv:coverage "2.4933332999999998"
-], [
-  gv:hex "6a5420";
-  gv:red "106";
-  gv:blue "32";
-  gv:green "84";
-  gv:score "4.9451832";
-  gv:coverage "0.44"
-], [
-  gv:hex "493504";
-  gv:red "73";
-  gv:blue "4";
-  gv:green "53";
-  gv:score "3.4837853";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "271b06";
-  gv:red "39";
-  gv:blue "6";
-  gv:green "27";
-  gv:score "2.9538533";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "867653";
-  gv:red "134";
-  gv:blue "83";
-  gv:green "118";
-  gv:score "2.6542896";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "5d5238";
-  gv:red "93";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "2.6105508";
-  gv:coverage "0.83333338"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.54187300000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "CHAMPAGNE\nCarte d'Or\nIRROY\nBRUT\nNEST MARK\nTRADE\nFRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4210";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3033";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "ER\nHATEAU PAPE CIEMENT.\n1 9 2 9\nM Is EN BOUTEILLES Au CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d3bc9f";
-  gv:red "211";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "39.996981999999996";
-  gv:coverage "40.526666999999996"
-], [
-  gv:hex "9a6b57";
-  gv:red "154";
-  gv:blue "87";
-  gv:green "107";
-  gv:score "1.3056793";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "d5b37d";
-  gv:red "213";
-  gv:blue "125";
-  gv:green "179";
-  gv:score "14.495754";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "b39d83";
-  gv:red "179";
-  gv:blue "131";
-  gv:green "157";
-  gv:score "11.896557000000001";
-  gv:coverage "3.9333332"
-], [
-  gv:hex "c4a16a";
-  gv:red "196";
-  gv:blue "106";
-  gv:green "161";
-  gv:score "11.780682";
-  gv:coverage "1.1333332999999999"
-], [
-  gv:hex "c6975f";
-  gv:red "198";
-  gv:blue "95";
-  gv:green "151";
-  gv:score "9.06696";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "ddad77";
-  gv:red "221";
-  gv:blue "119";
-  gv:green "173";
-  gv:score "2.1795237";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "cb994f";
-  gv:red "203";
-  gv:blue "79";
-  gv:green "153";
-  gv:score "1.8938651000000002";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "c99f54";
-  gv:red "201";
-  gv:blue "84";
-  gv:green "159";
-  gv:score "1.2575174999999998";
-  gv:coverage "0.08"
-], [
-  gv:hex "ba9178";
-  gv:red "186";
-  gv:blue "120";
-  gv:green "145";
-  gv:score "1.2368381";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.180732"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.42839"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.378221"
-];
-    w:bagOfWords "ER\nHATEAU PAPE CIEMENT.\n1 9 2 9\nM Is EN BOUTEILLES Au CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3033";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

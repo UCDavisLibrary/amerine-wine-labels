@@ -1,5 +1,4 @@
-Somehow, back in November, I got stopped midway through working on these wine
-labels, and I left NO notes on what I was doing.
+* Amerine Wine Lables
 
 I seem to have been doing two things.  First, I went through and identified
 every image that is simply a card label, and not a wine label. I cleverly called
@@ -11,7 +10,7 @@ and I'd rename the metadata.json file to label.json.  Then, I'd remove the
 metadata.ttl data.  Then, I would often copy the metadata from the next label
 and rewrite the label info.  That's probably to get the metdata for the upcoming labels.
 
-#+BEGIN_SRC
+#+BEGIN_SRC bash
 l=3629; cd ../a$l; mv metadata.json label.json; rm metadata.ttl; cat label.json
  cp ../a3630/metadata.json label.json; cat label.json
 #+END_SRC
@@ -177,3 +176,18 @@ We can go through the data, and see where all the changes in metadata occur.
 | folder/3462/index_card_3629/metadata.json       |
 | folder/3462/index_card_3659/metadata.json       |
 | folder/3660/index_card_3660-a3661/metadata.json |
+
+
+** Processing Examples
+
+Once I had the json files, I sometimes needed to go back and create versions,
+since I changed things.  For example, when switching to schema.org, I needed to
+change the language designation, since they use a [[http://tools.ietf.org/html/bcp47][IETF Standard]].  `jq` is your
+friend in this case.  For example, here's that change.
+
+#+BEGIN_SRC bash
+for i in $(find folder -name metadata.json | xargs grep -l language_id ) ; do
+ mv $i $i.bak;
+ jq '. |= . + {inLanguage: (.language_id+(if has("country_id") then "-"+.country_id else "" end)),country:.country_id} | del(.language_id, .country_id) ' $i.bak > $i;
+done
+#+END_SRC

@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2111/label_2112";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "PORTO\nDOURO\nDEPO 662\n"@undefined;
-    gv:color [
-  gv:hex "661a0b";
-  gv:red "102";
-  gv:blue "11";
-  gv:green "26";
-  gv:score "19.530457000000002";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "1a130d";
-  gv:red "26";
-  gv:blue "13";
-  gv:green "19";
-  gv:score "13.290286000000002";
-  gv:coverage "14.953332999999999"
-], [
-  gv:hex "8a6f42";
-  gv:red "138";
-  gv:blue "66";
-  gv:green "111";
-  gv:score "2.7283447";
-  gv:coverage "2.12"
-], [
-  gv:hex "cec2b9";
-  gv:red "206";
-  gv:blue "185";
-  gv:green "194";
-  gv:score "0.33571682999999997";
-  gv:coverage "8.8266663"
-], [
-  gv:hex "eddcc5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "220";
-  gv:score "0.29629515";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "5b190f";
-  gv:red "91";
-  gv:blue "15";
-  gv:green "25";
-  gv:score "15.870811000000002";
-  gv:coverage "1.18"
-], [
-  gv:hex "502111";
-  gv:red "80";
-  gv:blue "17";
-  gv:green "33";
-  gv:score "8.810809299999999";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "381104";
-  gv:red "56";
-  gv:blue "4";
-  gv:green "17";
-  gv:score "6.3742645";
-  gv:coverage "1.28"
-], [
-  gv:hex "83382d";
-  gv:red "131";
-  gv:blue "45";
-  gv:green "56";
-  gv:score "4.2931508";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "832f1e";
-  gv:red "131";
-  gv:blue "30";
-  gv:green "47";
-  gv:score "4.1967176";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.03322899999999"
-], [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "56.033277999999996"
-], [
-  gv:mid <https://g.co/kg/m/04lbp>;
-  gv:desc "leather";
-  gv:score "54.973179"
-];
-    w:bagOfWords "PORTO\nDOURO\nDEPO 662\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2112";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

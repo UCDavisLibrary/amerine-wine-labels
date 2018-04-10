@@ -1,0 +1,18 @@
+@prefix : <http://schema.org/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ldp:  <http://www.w3.org/ns/ldp#> .
+@prefix fast: <http://id.worldcat.org/fast/> .
+@prefix lcna: <http://id.loc.gov/authorities/names/> .
+
+<>
+  a ldp:BasicContainer, :Collection;
+  :name "Amerine Wine Label Collection";
+  :publisher <lcna:no2008108707> , "University of California, Davis. General Library. Dept. of Special Collections" ;
+  :keywords "Wine", "Wine Labels";
+  :subject fast:XXXXXX ;
+  :license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+  :creator lcna:no00000xxxx ;
+  :creator "Maynard Amerine";
+  :datePublished "2018" ;
+  :keywords "1895/1980","California, Northern";
+  :description "Amerine Wine Labels".

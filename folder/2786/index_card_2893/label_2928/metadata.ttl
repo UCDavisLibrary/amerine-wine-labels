@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2928";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "GRAND VIN DALSACE\nRIESLING\nJ. BEC KER\nPROPRIETAIREA ZELLENBERG\nHA U T R H I N\n"@fra;
-    gv:color [
-  gv:hex "e2bb5f";
-  gv:red "226";
-  gv:blue "95";
-  gv:green "187";
-  gv:score "10.274763";
-  gv:coverage "1.24"
-], [
-  gv:hex "d2c1a4";
-  gv:red "210";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "7.9478689000000005";
-  gv:coverage "9.98"
-], [
-  gv:hex "697e66";
-  gv:red "105";
-  gv:blue "102";
-  gv:green "126";
-  gv:score "3.099825";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "a99e80";
-  gv:red "169";
-  gv:blue "128";
-  gv:green "158";
-  gv:score "5.5328198";
-  gv:coverage "3.2"
-], [
-  gv:hex "e9bb43";
-  gv:red "233";
-  gv:blue "67";
-  gv:green "187";
-  gv:score "5.1101502";
-  gv:coverage "0.5133333200000001"
-], [
-  gv:hex "e1be85";
-  gv:red "225";
-  gv:blue "133";
-  gv:green "190";
-  gv:score "4.88239";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "edb45d";
-  gv:red "237";
-  gv:blue "93";
-  gv:green "180";
-  gv:score "3.9242264";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "b89862";
-  gv:red "184";
-  gv:blue "98";
-  gv:green "152";
-  gv:score "3.3888657";
-  gv:coverage "2"
-], [
-  gv:hex "e7b67f";
-  gv:red "231";
-  gv:blue "127";
-  gv:green "182";
-  gv:score "2.9626656000000002";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "d29743";
-  gv:red "210";
-  gv:blue "67";
-  gv:green "151";
-  gv:score "2.9461771000000003";
-  gv:coverage "0.73333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.694792"
-];
-    w:bagOfWords "GRAND VIN DALSACE\nRIESLING\nJ. BEC KER\nPROPRIETAIREA ZELLENBERG\nHA U T R H I N\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2928";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

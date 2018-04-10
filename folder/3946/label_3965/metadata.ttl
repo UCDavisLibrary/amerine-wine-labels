@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3965";
-    dct:type "image";
-    w:bagOfWords "AND\nRH BIN HESSEN\n1959 er\nOppenheimer Krotenbrunnen\nLeino\nS po atlefe\nNATUR REIN\nEigener Kellerabzug uno\nKorkbrano\n"@deu;
-    gv:color [
-  gv:hex "d5c3ad";
-  gv:red "213";
-  gv:blue "173";
-  gv:green "195";
-  gv:score "21.899959";
-  gv:coverage "14.973333"
-], [
-  gv:hex "943d2e";
-  gv:red "148";
-  gv:blue "46";
-  gv:green "61";
-  gv:score "2.9829135";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "b2423e";
-  gv:red "178";
-  gv:blue "62";
-  gv:green "66";
-  gv:score "0.33925369";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ab9a83";
-  gv:red "171";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "13.306206000000001";
-  gv:coverage "4.0266667"
-], [
-  gv:hex "877458";
-  gv:red "135";
-  gv:blue "88";
-  gv:green "116";
-  gv:score "11.559884";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "665338";
-  gv:red "102";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "8.44515";
-  gv:coverage "2.54"
-], [
-  gv:hex "eddbc5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "219";
-  gv:score "7.497936500000001";
-  gv:coverage "16.193333"
-], [
-  gv:hex "d4c5ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "4.3464463";
-  gv:coverage "8.2866669"
-], [
-  gv:hex "49361c";
-  gv:red "73";
-  gv:blue "28";
-  gv:green "54";
-  gv:score "4.2377379";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "887245";
-  gv:red "136";
-  gv:blue "69";
-  gv:green "114";
-  gv:score "2.8209551999999998";
-  gv:coverage "0.5933333199999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.678976"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.018923"
-];
-    w:bagOfWords "AND\nRH BIN HESSEN\n1959 er\nOppenheimer Krotenbrunnen\nLeino\nS po atlefe\nNATUR REIN\nEigener Kellerabzug uno\nKorkbrano\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3965";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

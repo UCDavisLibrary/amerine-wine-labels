@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0608";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "RHEINGAU\n1952er\nWinkeler Klauserberg\nRiesling Natur Spatlese\nPFARRGUT WINKE LIA RHEINGAU\nG. J. 41949\n"@deu;
-    gv:color [
-  gv:hex "e2c284";
-  gv:red "226";
-  gv:blue "132";
-  gv:green "194";
-  gv:score "51.512229";
-  gv:coverage "19.866666"
-], [
-  gv:hex "4f3106";
-  gv:red "79";
-  gv:blue "6";
-  gv:green "49";
-  gv:score "2.1743748";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "bb9b60";
-  gv:red "187";
-  gv:blue "96";
-  gv:green "155";
-  gv:score "20.254827";
-  gv:coverage "6.98"
-], [
-  gv:hex "927442";
-  gv:red "146";
-  gv:blue "66";
-  gv:green "116";
-  gv:score "9.91329";
-  gv:coverage "3.18"
-], [
-  gv:hex "715325";
-  gv:red "113";
-  gv:blue "37";
-  gv:green "83";
-  gv:score "4.5033723";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "f5d799";
-  gv:red "245";
-  gv:blue "153";
-  gv:green "215";
-  gv:score "3.2287315";
-  gv:coverage "1.32"
-], [
-  gv:hex "cda060";
-  gv:red "205";
-  gv:blue "96";
-  gv:green "160";
-  gv:score "2.9137304";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "674618";
-  gv:red "103";
-  gv:blue "24";
-  gv:green "70";
-  gv:score "1.4225151999999999";
-  gv:coverage "0.24"
-], [
-  gv:hex "ae9771";
-  gv:red "174";
-  gv:blue "113";
-  gv:green "151";
-  gv:score "0.69190892";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "d7a96a";
-  gv:red "215";
-  gv:blue "106";
-  gv:green "169";
-  gv:score "0.66238339";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.692233"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.24907400000001"
-];
-    w:bagOfWords "RHEINGAU\n1952er\nWinkeler Klauserberg\nRiesling Natur Spatlese\nPFARRGUT WINKE LIA RHEINGAU\nG. J. 41949\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0608";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

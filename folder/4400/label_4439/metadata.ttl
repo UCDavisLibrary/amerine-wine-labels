@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4439";
-    dct:type "image";
-    w:bagOfWords "BO RI\nGAS RIO\nEMBOTELLADOR\n1223 G7\nREGISTRADA\nRo-Rios\nCLARET E 59\nANO\nELABORADO POR\nodegas2Riojanas\nC E NIC ER\nRIOJA ESPANA\nEmbotellado en nuestras Bodegas de Cenicero\n"@spa;
-    gv:color [
-  gv:hex "debd8b";
-  gv:red "222";
-  gv:blue "139";
-  gv:green "189";
-  gv:score "29.431972000000002";
-  gv:coverage "12.633332999999999"
-], [
-  gv:hex "a21726";
-  gv:red "162";
-  gv:blue "38";
-  gv:green "23";
-  gv:score "6.499020799999999";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "695536";
-  gv:red "105";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "2.5963929";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "e28580";
-  gv:red "226";
-  gv:blue "128";
-  gv:green "133";
-  gv:score "2.2020265";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "e5b689";
-  gv:red "229";
-  gv:blue "137";
-  gv:green "182";
-  gv:score "13.138399";
-  gv:coverage "4.3733332"
-], [
-  gv:hex "dcc29c";
-  gv:red "220";
-  gv:blue "156";
-  gv:green "194";
-  gv:score "6.3481614";
-  gv:coverage "10.86"
-], [
-  gv:hex "c59369";
-  gv:red "197";
-  gv:blue "105";
-  gv:green "147";
-  gv:score "4.83926";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "b69a69";
-  gv:red "182";
-  gv:blue "105";
-  gv:green "154";
-  gv:score "4.1746192";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "bb132d";
-  gv:red "187";
-  gv:blue "45";
-  gv:green "19";
-  gv:score "3.7905589";
-  gv:coverage "1.04"
-], [
-  gv:hex "ebb69e";
-  gv:red "235";
-  gv:blue "158";
-  gv:green "182";
-  gv:score "3.4331486";
-  gv:coverage "2.5333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.558956"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.29218100000001"
-];
-    w:bagOfWords "BO RI\nGAS RIO\nEMBOTELLADOR\n1223 G7\nREGISTRADA\nRo-Rios\nCLARET E 59\nANO\nELABORADO POR\nodegas2Riojanas\nC E NIC ER\nRIOJA ESPANA\nEmbotellado en nuestras Bodegas de Cenicero\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4439";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2568";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "rano vin De Bourgogne\nhablis Vaudésir\nG. Verlinden & Zn\nBois le Duc\n"@fra;
-    gv:color [
-  gv:hex "dec39e";
-  gv:red "222";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "54.445785";
-  gv:coverage "42.853335"
-], [
-  gv:hex "b75e3f";
-  gv:red "183";
-  gv:blue "63";
-  gv:green "94";
-  gv:score "4.3772958";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "440400";
-  gv:red "68";
-  gv:blue "undefined";
-  gv:green "4";
-  gv:score "0.19999819";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "e7b998";
-  gv:red "231";
-  gv:blue "152";
-  gv:green "185";
-  gv:score "7.2886035";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "b69d7a";
-  gv:red "182";
-  gv:blue "122";
-  gv:green "157";
-  gv:score "6.0359135";
-  gv:coverage "2.5"
-], [
-  gv:hex "debf92";
-  gv:red "222";
-  gv:blue "146";
-  gv:green "191";
-  gv:score "2.7774767999999996";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "8c7556";
-  gv:red "140";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "2.6751062";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "ebb58e";
-  gv:red "235";
-  gv:blue "142";
-  gv:green "181";
-  gv:score "2.6024776";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "c48f6a";
-  gv:red "196";
-  gv:blue "106";
-  gv:green "143";
-  gv:score "2.4780836";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "c29576";
-  gv:red "194";
-  gv:blue "118";
-  gv:green "149";
-  gv:score "2.4644079";
-  gv:coverage "0.78666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "80.28120399999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "59.556264000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.852459"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.592542"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.457043"
-];
-    w:bagOfWords "rano vin De Bourgogne\nhablis Vaudésir\nG. Verlinden & Zn\nBois le Duc\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2568";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

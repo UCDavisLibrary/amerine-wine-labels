@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2471";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "BATA D-MONTRACHET\nFOND\nENI\nMAISON TRADE\nMARK\nGH.DRAPIER & FILs\nNEGOCIANTS A EBEAUNE (FRANCE)\nIMP. JOUFFROY BEAUNE\n"@fra;
-    gv:color [
-  gv:hex "dbc8b3";
-  gv:red "219";
-  gv:blue "179";
-  gv:green "200";
-  gv:score "36.75952";
-  gv:coverage "16.88"
-], [
-  gv:hex "867032";
-  gv:red "134";
-  gv:blue "50";
-  gv:green "112";
-  gv:score "11.961959";
-  gv:coverage "1.9"
-], [
-  gv:hex "aa967f";
-  gv:red "170";
-  gv:blue "127";
-  gv:green "150";
-  gv:score "13.079958999999999";
-  gv:coverage "2.6333334"
-], [
-  gv:hex "ead8c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "6.0867514";
-  gv:coverage "5.9866667"
-], [
-  gv:hex "897762";
-  gv:red "137";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "6.0000241";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "e6b7a7";
-  gv:red "230";
-  gv:blue "167";
-  gv:green "183";
-  gv:score "5.3539094";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "c39283";
-  gv:red "195";
-  gv:blue "131";
-  gv:green "146";
-  gv:score "5.0187669999999995";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "af9257";
-  gv:red "175";
-  gv:blue "87";
-  gv:green "146";
-  gv:score "4.8657235";
-  gv:coverage "1.08"
-], [
-  gv:hex "e4d9ce";
-  gv:red "228";
-  gv:blue "206";
-  gv:green "217";
-  gv:score "4.142186";
-  gv:coverage "61.486667"
-], [
-  gv:hex "685744";
-  gv:red "104";
-  gv:blue "68";
-  gv:green "87";
-  gv:score "2.6295870999999997";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.990955"
-];
-    w:bagOfWords "BATA D-MONTRACHET\nFOND\nENI\nMAISON TRADE\nMARK\nGH.DRAPIER & FILs\nNEGOCIANTS A EBEAUNE (FRANCE)\nIMP. JOUFFROY BEAUNE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2471";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

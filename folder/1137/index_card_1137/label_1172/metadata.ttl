@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1172";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "MAISON DOREE\nVERDIER\nGrande Filme Champagne\nCOGNAC\n4/5 QUART PRODUCE OF FRANCE 8 O PROOF\nDEBAR PARIS\n"@undefined;
-    gv:color [
-  gv:hex "dbb885";
-  gv:red "219";
-  gv:blue "133";
-  gv:green "184";
-  gv:score "27.771968";
-  gv:coverage "6.3866667"
-], [
-  gv:hex "472813";
-  gv:red "71";
-  gv:blue "19";
-  gv:green "40";
-  gv:score "1.3187702000000001";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "bc9a69";
-  gv:red "188";
-  gv:blue "105";
-  gv:green "154";
-  gv:score "23.727801";
-  gv:coverage "5.9733335"
-], [
-  gv:hex "957549";
-  gv:red "149";
-  gv:blue "73";
-  gv:green "117";
-  gv:score "9.2038393";
-  gv:coverage "2.6866667"
-], [
-  gv:hex "d9bd99";
-  gv:red "217";
-  gv:blue "153";
-  gv:green "189";
-  gv:score "5.8578998";
-  gv:coverage "31.126665999999997"
-], [
-  gv:hex "c1965f";
-  gv:red "193";
-  gv:blue "95";
-  gv:green "150";
-  gv:score "5.7106618";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "b39772";
-  gv:red "179";
-  gv:blue "114";
-  gv:green "151";
-  gv:score "5.1703266999999995";
-  gv:coverage "1.7066667"
-], [
-  gv:hex "917553";
-  gv:red "145";
-  gv:blue "83";
-  gv:green "117";
-  gv:score "4.7499113";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "997242";
-  gv:red "153";
-  gv:blue "66";
-  gv:green "114";
-  gv:score "3.2364912";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "70532b";
-  gv:red "112";
-  gv:blue "43";
-  gv:green "83";
-  gv:score "2.7440558999999998";
-  gv:coverage "0.85333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.997972000000004"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "54.244673"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.591516000000006"
-];
-    w:bagOfWords "MAISON DOREE\nVERDIER\nGrande Filme Champagne\nCOGNAC\n4/5 QUART PRODUCE OF FRANCE 8 O PROOF\nDEBAR PARIS\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1172";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3100/label_3104";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CONSEILLANT\n1943\nAppellation Pomerol control ée\n,a\nIS EN BOUTEINSE AU CHATE\nBOUTELLES AU CHA\nAU\n"@fra;
-    gv:color [
-  gv:hex "ad9881";
-  gv:red "173";
-  gv:blue "129";
-  gv:green "152";
-  gv:score "16.798151999999998";
-  gv:coverage "4.2666666"
-], [
-  gv:hex "9d723f";
-  gv:red "157";
-  gv:blue "63";
-  gv:green "114";
-  gv:score "7.192396400000001";
-  gv:coverage "1.04"
-], [
-  gv:hex "d3bda5";
-  gv:red "211";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "13.463327";
-  gv:coverage "15.393333"
-], [
-  gv:hex "8c7762";
-  gv:red "140";
-  gv:blue "98";
-  gv:green "119";
-  gv:score "9.8080575";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "bb9865";
-  gv:red "187";
-  gv:blue "101";
-  gv:green "152";
-  gv:score "9.1780148";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "a0948b";
-  gv:red "160";
-  gv:blue "139";
-  gv:green "148";
-  gv:score "6.405379999999999";
-  gv:coverage "2.44"
-], [
-  gv:hex "847a71";
-  gv:red "132";
-  gv:blue "113";
-  gv:green "122";
-  gv:score "6.2058173000000005";
-  gv:coverage "3.3466666999999997"
-], [
-  gv:hex "ba8e58";
-  gv:red "186";
-  gv:blue "88";
-  gv:green "142";
-  gv:score "6.0048282";
-  gv:coverage "0.74"
-], [
-  gv:hex "754d1e";
-  gv:red "117";
-  gv:blue "30";
-  gv:green "77";
-  gv:score "3.2166517999999997";
-  gv:coverage "0.54"
-], [
-  gv:hex "665440";
-  gv:red "102";
-  gv:blue "64";
-  gv:green "84";
-  gv:score "2.9449439";
-  gv:coverage "0.6"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.504373"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.368725999999995"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "56.912"
-];
-    w:bagOfWords "CONSEILLANT\n1943\nAppellation Pomerol control ée\n,a\nIS EN BOUTEINSE AU CHATE\nBOUTELLES AU CHA\nAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3104";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

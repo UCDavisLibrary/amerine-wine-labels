@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0454";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Rhein g\nSchloss Reinhartshaus\nORIGINAL\n1940er Erbacher Markobrunn\n"@deu;
-    gv:color [
-  gv:hex "497fb0";
-  gv:red "73";
-  gv:blue "176";
-  gv:green "127";
-  gv:score "51.439804";
-  gv:coverage "12.3"
-], [
-  gv:hex "3c5775";
-  gv:red "60";
-  gv:blue "117";
-  gv:green "87";
-  gv:score "11.499424";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "5d93c4";
-  gv:red "93";
-  gv:blue "196";
-  gv:green "147";
-  gv:score "11.98255";
-  gv:coverage "4.1533332"
-], [
-  gv:hex "56799b";
-  gv:red "86";
-  gv:blue "155";
-  gv:green "121";
-  gv:score "10.547055";
-  gv:coverage "3.1933334"
-], [
-  gv:hex "305e8a";
-  gv:red "48";
-  gv:blue "138";
-  gv:green "94";
-  gv:score "6.481894100000001";
-  gv:coverage "1.08"
-], [
-  gv:hex "263d57";
-  gv:red "38";
-  gv:blue "87";
-  gv:green "61";
-  gv:score "2.5325466000000003";
-  gv:coverage "0.62"
-], [
-  gv:hex "7998b7";
-  gv:red "121";
-  gv:blue "183";
-  gv:green "152";
-  gv:score "1.2765151000000001";
-  gv:coverage "1.5"
-], [
-  gv:hex "797b7d";
-  gv:red "121";
-  gv:blue "125";
-  gv:green "123";
-  gv:score "0.70376783";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "113b63";
-  gv:red "17";
-  gv:blue "99";
-  gv:green "59";
-  gv:score "0.66196551";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "999ea3";
-  gv:red "153";
-  gv:blue "163";
-  gv:green "158";
-  gv:score "0.5564414400000001";
-  gv:coverage "1.7066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.369732"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "52.090906999999994"
-];
-    w:bagOfWords "Rhein g\nSchloss Reinhartshaus\nORIGINAL\n1940er Erbacher Markobrunn\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0454";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

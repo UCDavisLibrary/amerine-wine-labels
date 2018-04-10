@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4650";
-    dct:type "image";
-    w:bagOfWords "hab ished 300\nFINEST OLD\nBUAL\nMADEIRA\n1840'\nBLEND\nREBOTTLED 1916\nProduce of Portugal.\n"@spa;
-    gv:color [
-  gv:hex "81746b";
-  gv:red "129";
-  gv:blue "107";
-  gv:green "116";
-  gv:score "16.454183999999998";
-  gv:coverage "3.82"
-], [
-  gv:hex "857668";
-  gv:red "133";
-  gv:blue "104";
-  gv:green "118";
-  gv:score "16.405222";
-  gv:coverage "5.36"
-], [
-  gv:hex "a89889";
-  gv:red "168";
-  gv:blue "137";
-  gv:green "152";
-  gv:score "15.045664";
-  gv:coverage "7.6333337"
-], [
-  gv:hex "5e5249";
-  gv:red "94";
-  gv:blue "73";
-  gv:green "82";
-  gv:score "12.787825999999999";
-  gv:coverage "2.56"
-], [
-  gv:hex "5f5244";
-  gv:red "95";
-  gv:blue "68";
-  gv:green "82";
-  gv:score "9.3609288";
-  gv:coverage "2.68"
-], [
-  gv:hex "3f342b";
-  gv:red "63";
-  gv:blue "43";
-  gv:green "52";
-  gv:score "7.6853044";
-  gv:coverage "1.4733333"
-], [
-  gv:hex "c9b8a8";
-  gv:red "201";
-  gv:blue "168";
-  gv:green "184";
-  gv:score "6.770429";
-  gv:coverage "6.4866669"
-], [
-  gv:hex "403326";
-  gv:red "64";
-  gv:blue "38";
-  gv:green "51";
-  gv:score "5.5146071999999995";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "9e9086";
-  gv:red "158";
-  gv:blue "134";
-  gv:green "144";
-  gv:score "3.2725111";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "d0c2b5";
-  gv:red "208";
-  gv:blue "181";
-  gv:green "194";
-  gv:score "3.0575871";
-  gv:coverage "4.760000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/013y0j>;
-  gv:desc "organ";
-  gv:score "65.55893999999999"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "64.21749"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "63.050216000000006"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.001806"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.6504"
-];
-    w:bagOfWords "hab ished 300\nFINEST OLD\nBUAL\nMADEIRA\n1840'\nBLEND\nREBOTTLED 1916\nProduce of Portugal.\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4650";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

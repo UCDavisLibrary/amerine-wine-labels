@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0152";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "e ci Gnologia\nCONEGLIANO\nVeneto\n"@ita;
-    gv:color [
-  gv:hex "d5c0a3";
-  gv:red "213";
-  gv:blue "163";
-  gv:green "192";
-  gv:score "39.171824";
-  gv:coverage "9.98"
-], [
-  gv:hex "7b4b23";
-  gv:red "123";
-  gv:blue "35";
-  gv:green "75";
-  gv:score "6.4509258";
-  gv:coverage "0.26"
-], [
-  gv:hex "d1c6bc";
-  gv:red "209";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "12.269933";
-  gv:coverage "31.693333000000003"
-], [
-  gv:hex "d5b582";
-  gv:red "213";
-  gv:blue "130";
-  gv:green "181";
-  gv:score "6.7583755";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "b49d80";
-  gv:red "180";
-  gv:blue "128";
-  gv:green "157";
-  gv:score "5.200354";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "e8ded5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "222";
-  gv:score "5.058445000000001";
-  gv:coverage "52.306664000000005"
-], [
-  gv:hex "97663d";
-  gv:red "151";
-  gv:blue "61";
-  gv:green "102";
-  gv:score "4.6640374";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "aa9f96";
-  gv:red "170";
-  gv:blue "150";
-  gv:green "159";
-  gv:score "3.8738791000000004";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "82786f";
-  gv:red "130";
-  gv:blue "111";
-  gv:green "120";
-  gv:score "2.5270982";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "ba9d6d";
-  gv:red "186";
-  gv:blue "109";
-  gv:green "157";
-  gv:score "1.6367821";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.210983"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.210100000000004"
-];
-    w:bagOfWords "e ci Gnologia\nCONEGLIANO\nVeneto\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0152";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

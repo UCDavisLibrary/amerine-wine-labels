@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3903";
-    dct:type "image";
-    w:bagOfWords "M O SEL S A A R R U WER\n1954 er\nLeller Schwarze katz e\nHERMANN SCHOTT A.-G., RHEYDT\nNr. 24 228 DM 30. 0/00 Schleife Nr. 24 456 DM 9. 0/00\n"@deu;
-    gv:color [
-  gv:hex "ac9859";
-  gv:red "172";
-  gv:blue "89";
-  gv:green "152";
-  gv:score "27.311927000000004";
-  gv:coverage "4.5066666"
-], [
-  gv:hex "8c773e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "119";
-  gv:score "25.282353";
-  gv:coverage "4.24"
-], [
-  gv:hex "331800";
-  gv:red "51";
-  gv:blue "undefined";
-  gv:green "24";
-  gv:score "0.19041304";
-  gv:coverage "0.08"
-], [
-  gv:hex "877756";
-  gv:red "135";
-  gv:blue "86";
-  gv:green "119";
-  gv:score "8.8980235";
-  gv:coverage "3.36"
-], [
-  gv:hex "a69776";
-  gv:red "166";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "7.429335300000001";
-  gv:coverage "4.6333332"
-], [
-  gv:hex "6d5623";
-  gv:red "109";
-  gv:blue "35";
-  gv:green "86";
-  gv:score "6.8816476";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "a89444";
-  gv:red "168";
-  gv:blue "68";
-  gv:green "148";
-  gv:score "4.2354513";
-  gv:coverage "0.48"
-], [
-  gv:hex "917c2e";
-  gv:red "145";
-  gv:blue "46";
-  gv:green "124";
-  gv:score "4.1040927";
-  gv:coverage "0.38"
-], [
-  gv:hex "cec0a1";
-  gv:red "206";
-  gv:blue "161";
-  gv:green "192";
-  gv:score "4.0740095";
-  gv:coverage "11.379999999999999"
-], [
-  gv:hex "cfb87f";
-  gv:red "207";
-  gv:blue "127";
-  gv:green "184";
-  gv:score "3.329853";
-  gv:coverage "1.3133333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.55125199999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.177327000000005"
-];
-    w:bagOfWords "M O SEL S A A R R U WER\n1954 er\nLeller Schwarze katz e\nHERMANN SCHOTT A.-G., RHEYDT\nNr. 24 228 DM 30. 0/00 Schleife Nr. 24 456 DM 9. 0/00\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3903";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

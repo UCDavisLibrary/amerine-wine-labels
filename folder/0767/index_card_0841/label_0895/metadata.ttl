@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0895";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "CHAMPAGNE\nBY APPOINTMENT\nTO HIS MAJESTY THE KING\nBRUT SPECIAL 1996\nCONTENTS: ONE PINT AND 10 FL.OZ\nFRANCE\nALCOHOLIC STRENGTH BY VOLUME 12\nImporter\nHENRY FR A THE MACH ER\nNew-York City, NEW YORK\nha .5.5.\n"@fra;
-    gv:color [
-  gv:hex "debe84";
-  gv:red "222";
-  gv:blue "132";
-  gv:green "190";
-  gv:score "38.951117";
-  gv:coverage "7.553332999999999"
-], [
-  gv:hex "754d0f";
-  gv:red "117";
-  gv:blue "15";
-  gv:green "77";
-  gv:score "2.2084754";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "dbc5a3";
-  gv:red "219";
-  gv:blue "163";
-  gv:green "197";
-  gv:score "16.41724";
-  gv:coverage "20.526667"
-], [
-  gv:hex "bc9b61";
-  gv:red "188";
-  gv:blue "97";
-  gv:green "155";
-  gv:score "10.380184";
-  gv:coverage "1.5599999999999998"
-], [
-  gv:hex "ddb766";
-  gv:red "221";
-  gv:blue "102";
-  gv:green "183";
-  gv:score "5.3155597";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "b29d7d";
-  gv:red "178";
-  gv:blue "125";
-  gv:green "157";
-  gv:score "4.0291283";
-  gv:coverage "2.1333333"
-], [
-  gv:hex "92743b";
-  gv:red "146";
-  gv:blue "59";
-  gv:green "116";
-  gv:score "3.9975774";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "efdab9";
-  gv:red "239";
-  gv:blue "185";
-  gv:green "218";
-  gv:score "3.8127076000000004";
-  gv:coverage "17.886667"
-], [
-  gv:hex "c6a04e";
-  gv:red "198";
-  gv:blue "78";
-  gv:green "160";
-  gv:score "2.5173584";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "c39558";
-  gv:red "195";
-  gv:blue "88";
-  gv:green "149";
-  gv:score "2.091478";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "79.516691"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.714033"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.346017999999994"
-];
-    w:bagOfWords "CHAMPAGNE\nBY APPOINTMENT\nTO HIS MAJESTY THE KING\nBRUT SPECIAL 1996\nCONTENTS: ONE PINT AND 10 FL.OZ\nFRANCE\nALCOHOLIC STRENGTH BY VOLUME 12\nImporter\nHENRY FR A THE MACH ER\nNew-York City, NEW YORK\nha .5.5.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0895";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

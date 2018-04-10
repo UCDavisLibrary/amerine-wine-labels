@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3804";
-    dct:type "image";
-    w:bagOfWords "DEP 1153 EMM M.\nOppen be imer\nKonigl. hoflieferanten\n"@deu;
-    gv:color [
-  gv:hex "62533e";
-  gv:red "98";
-  gv:blue "62";
-  gv:green "83";
-  gv:score "11.573449";
-  gv:coverage "4.14"
-], [
-  gv:hex "991a1e";
-  gv:red "153";
-  gv:blue "30";
-  gv:green "26";
-  gv:score "2.2980750000000003";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "3e311d";
-  gv:red "62";
-  gv:blue "29";
-  gv:green "49";
-  gv:score "9.4302274";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "84745d";
-  gv:red "132";
-  gv:blue "93";
-  gv:green "116";
-  gv:score "7.9755373";
-  gv:coverage "2.8666666"
-], [
-  gv:hex "ac9981";
-  gv:red "172";
-  gv:blue "129";
-  gv:green "153";
-  gv:score "6.3010655";
-  gv:coverage "2.3800000000000003"
-], [
-  gv:hex "d5c3ad";
-  gv:red "213";
-  gv:blue "173";
-  gv:green "195";
-  gv:score "5.3014312";
-  gv:coverage "8.9466669"
-], [
-  gv:hex "4f2718";
-  gv:red "79";
-  gv:blue "24";
-  gv:green "39";
-  gv:score "4.8902906";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "641b1c";
-  gv:red "100";
-  gv:blue "28";
-  gv:green "27";
-  gv:score "4.1219674";
-  gv:coverage "0.5"
-], [
-  gv:hex "744b3c";
-  gv:red "116";
-  gv:blue "60";
-  gv:green "75";
-  gv:score "3.791805";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "784a1e";
-  gv:red "120";
-  gv:blue "30";
-  gv:green "74";
-  gv:score "3.6696807";
-  gv:coverage "0.52666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.17379700000001"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "64.388651"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.608025000000005"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "50.595373"
-];
-    w:bagOfWords "DEP 1153 EMM M.\nOppen be imer\nKonigl. hoflieferanten\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3804";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

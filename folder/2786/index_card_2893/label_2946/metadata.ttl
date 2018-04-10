@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2946";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "UNION VINICOLE MITTELBERGHEIM\nProduct of France\nMITTELBERGHEIM RIESLING\n"@fra;
-    gv:color [
-  gv:hex "af955d";
-  gv:red "175";
-  gv:blue "93";
-  gv:green "149";
-  gv:score "15.008168";
-  gv:coverage "2.98"
-], [
-  gv:hex "171818";
-  gv:red "23";
-  gv:blue "24";
-  gv:green "24";
-  gv:score "7.0355453";
-  gv:coverage "5.56"
-], [
-  gv:hex "8c7740";
-  gv:red "140";
-  gv:blue "64";
-  gv:green "119";
-  gv:score "14.092754";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "867555";
-  gv:red "134";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "8.1639938";
-  gv:coverage "3.02"
-], [
-  gv:hex "ad9776";
-  gv:red "173";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "7.7367663";
-  gv:coverage "3.5266668"
-], [
-  gv:hex "5f5336";
-  gv:red "95";
-  gv:blue "54";
-  gv:green "83";
-  gv:score "6.3533477000000005";
-  gv:coverage "2.58"
-], [
-  gv:hex "695422";
-  gv:red "105";
-  gv:blue "34";
-  gv:green "84";
-  gv:score "5.9978053000000005";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "d4bb9d";
-  gv:red "212";
-  gv:blue "157";
-  gv:green "187";
-  gv:score "4.5287937";
-  gv:coverage "11.66"
-], [
-  gv:hex "3a3119";
-  gv:red "58";
-  gv:blue "25";
-  gv:green "49";
-  gv:score "4.075972";
-  gv:coverage "2.1"
-], [
-  gv:hex "d7b787";
-  gv:red "215";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "2.4416156";
-  gv:coverage "0.73333331"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "67.91775799999999"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.13275"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.551986"
-];
-    w:bagOfWords "UNION VINICOLE MITTELBERGHEIM\nProduct of France\nMITTELBERGHEIM RIESLING\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2946";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

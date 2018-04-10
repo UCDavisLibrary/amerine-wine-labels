@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/label_0004";
-    dct:type "image";
-    w:bagOfWords "agegitim0\ndelo .30degauooper attua-Atellathnicota\nf in a de 1905, us ent pore 5 cher somfella\nCataluna Trout belyareiona -Espana\nTrou toe Sarcetona:\nand\n"@spa;
-    gv:color [
-  gv:hex "463017";
-  gv:red "70";
-  gv:blue "23";
-  gv:green "48";
-  gv:score "29.827294";
-  gv:coverage "10.433333000000001"
-], [
-  gv:hex "e2c4a6";
-  gv:red "226";
-  gv:blue "166";
-  gv:green "196";
-  gv:score "4.9734816";
-  gv:coverage "21.98"
-], [
-  gv:hex "664d30";
-  gv:red "102";
-  gv:blue "48";
-  gv:green "77";
-  gv:score "24.013537";
-  gv:coverage "6.8466663"
-], [
-  gv:hex "482c14";
-  gv:red "72";
-  gv:blue "20";
-  gv:green "44";
-  gv:score "14.242956000000001";
-  gv:coverage "4.4466667"
-], [
-  gv:hex "6d5127";
-  gv:red "109";
-  gv:blue "39";
-  gv:green "81";
-  gv:score "7.091839599999999";
-  gv:coverage "1.54"
-], [
-  gv:hex "64462b";
-  gv:red "100";
-  gv:blue "43";
-  gv:green "70";
-  gv:score "3.1248428";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "2e1b06";
-  gv:red "46";
-  gv:blue "6";
-  gv:green "27";
-  gv:score "2.9274280999999998";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "311903";
-  gv:red "49";
-  gv:blue "3";
-  gv:green "25";
-  gv:score "2.5399175";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "80674a";
-  gv:red "128";
-  gv:blue "74";
-  gv:green "103";
-  gv:score "2.2772547";
-  gv:coverage "1.0466667"
-], [
-  gv:hex "856838";
-  gv:red "133";
-  gv:blue "56";
-  gv:green "104";
-  gv:score "1.7992154";
-  gv:coverage "0.45333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "69.767421"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.355696"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.168541999999995"
-];
-    w:bagOfWords "agegitim0\ndelo .30degauooper attua-Atellathnicota\nf in a de 1905, us ent pore 5 cher somfella\nCataluna Trout belyareiona -Espana\nTrou toe Sarcetona:\nand\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0004";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

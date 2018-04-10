@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1391/label_1410";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "M. R\nVALDIVIESO\nEXTRA DRY\nCHILEAN CHAMPAGNE\nPRODUCTO CHILE NO\nALBERTO VALDIVIESO\nSANTIAGO (CHILE)\nSANTA ELENA\n"@spa;
-    gv:color [
-  gv:hex "dec8a8";
-  gv:red "222";
-  gv:blue "168";
-  gv:green "200";
-  gv:score "78.660852";
-  gv:coverage "21.333334"
-], [
-  gv:hex "635234";
-  gv:red "99";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "3.7144363";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "853123";
-  gv:red "133";
-  gv:blue "35";
-  gv:green "49";
-  gv:score "0.59499592";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "191107";
-  gv:red "25";
-  gv:blue "7";
-  gv:green "17";
-  gv:score "0.44859530999999997";
-  gv:coverage "1.04"
-], [
-  gv:hex "ad997c";
-  gv:red "173";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "4.0291578";
-  gv:coverage "1.1466667"
-], [
-  gv:hex "ecd9bd";
-  gv:red "236";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "3.5253037000000003";
-  gv:coverage "6.2866665"
-], [
-  gv:hex "887558";
-  gv:red "136";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "3.2935087000000003";
-  gv:coverage "0.8"
-], [
-  gv:hex "edbda4";
-  gv:red "237";
-  gv:blue "164";
-  gv:green "189";
-  gv:score "1.2606563";
-  gv:coverage "0.2"
-], [
-  gv:hex "433319";
-  gv:red "67";
-  gv:blue "25";
-  gv:green "51";
-  gv:score "1.2271438000000001";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "6d2312";
-  gv:red "109";
-  gv:blue "18";
-  gv:green "35";
-  gv:score "0.5014712";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.081396"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.26537999999999"
-];
-    w:bagOfWords "M. R\nVALDIVIESO\nEXTRA DRY\nCHILEAN CHAMPAGNE\nPRODUCTO CHILE NO\nALBERTO VALDIVIESO\nSANTIAGO (CHILE)\nSANTA ELENA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1410";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-CL";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHL".
+    wdt:P297 "CL".
+

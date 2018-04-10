@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1501";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "EVA E\nMANZANILLA MUY FINA\nMAAR CA R E G I S T\nR A D A\nANTONIO BARBADILLO, S. L.\n32\nSAN LUCA R DE BARRA MED A\nLIT SA DURA -VALENCIA\n"@spa;
-    gv:color [
-  gv:hex "8b351c";
-  gv:red "139";
-  gv:blue "28";
-  gv:green "53";
-  gv:score "11.716408000000001";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "484e67";
-  gv:red "72";
-  gv:blue "103";
-  gv:green "78";
-  gv:score "9.6727766";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "c8c0b9";
-  gv:red "200";
-  gv:blue "185";
-  gv:green "192";
-  gv:score "6.386639199999999";
-  gv:coverage "10.993333"
-], [
-  gv:hex "6d5425";
-  gv:red "109";
-  gv:blue "37";
-  gv:green "84";
-  gv:score "4.2756822";
-  gv:coverage "0.12"
-], [
-  gv:hex "303b51";
-  gv:red "48";
-  gv:blue "81";
-  gv:green "59";
-  gv:score "6.2274572";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "d2c4ac";
-  gv:red "210";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "6.0436133000000005";
-  gv:coverage "18.92"
-], [
-  gv:hex "a59e9b";
-  gv:red "165";
-  gv:blue "155";
-  gv:green "158";
-  gv:score "4.8099212";
-  gv:coverage "1.1400000000000001"
-], [
-  gv:hex "525153";
-  gv:red "82";
-  gv:blue "83";
-  gv:green "81";
-  gv:score "4.3673325";
-  gv:coverage "0.36666666000000003"
-], [
-  gv:hex "9f301c";
-  gv:red "159";
-  gv:blue "28";
-  gv:green "48";
-  gv:score "4.2547498";
-  gv:coverage "0.04"
-], [
-  gv:hex "77441e";
-  gv:red "119";
-  gv:blue "30";
-  gv:green "68";
-  gv:score "3.8959604000000003";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.680189000000006"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "56.905407"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "54.564345"
-];
-    w:bagOfWords "EVA E\nMANZANILLA MUY FINA\nMAAR CA R E G I S T\nR A D A\nANTONIO BARBADILLO, S. L.\n32\nSAN LUCA R DE BARRA MED A\nLIT SA DURA -VALENCIA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1501";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

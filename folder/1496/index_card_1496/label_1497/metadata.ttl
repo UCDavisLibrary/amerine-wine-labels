@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1497";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "HEREDEROS\nMANZANILLA ESPECIAL\nONOS\nLEON\nMARCA REGISTRADA\nCASA FUNDADA\nEN 182 2\nHEREDEROS DE ARGUEso s.A\nSANLUCAR DE BDA\nNo 132\nKIT, J. M. BARA osa-JEREZ.\n"@spa;
-    gv:color [
-  gv:hex "d3c5b2";
-  gv:red "211";
-  gv:blue "178";
-  gv:green "197";
-  gv:score "33.783063";
-  gv:coverage "29.14"
-], [
-  gv:hex "a99b88";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "155";
-  gv:score "19.578001";
-  gv:coverage "1.82"
-], [
-  gv:hex "e9dbc8";
-  gv:red "233";
-  gv:blue "200";
-  gv:green "219";
-  gv:score "13.938269";
-  gv:coverage "37.733334"
-], [
-  gv:hex "cfc3b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "6.921538000000001";
-  gv:coverage "4.3666668"
-], [
-  gv:hex "877968";
-  gv:red "135";
-  gv:blue "104";
-  gv:green "121";
-  gv:score "6.49133";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "ebdfd3";
-  gv:red "235";
-  gv:blue "211";
-  gv:green "223";
-  gv:score "6.253466";
-  gv:coverage "24.706666"
-], [
-  gv:hex "605241";
-  gv:red "96";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "3.642058";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "a79c91";
-  gv:red "167";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "3.5862274";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "443626";
-  gv:red "68";
-  gv:blue "38";
-  gv:green "54";
-  gv:score "2.2942750000000003";
-  gv:coverage "0.18"
-], [
-  gv:hex "83786d";
-  gv:red "131";
-  gv:blue "109";
-  gv:green "120";
-  gv:score "1.4194557";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.017841"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "HEREDEROS\nMANZANILLA ESPECIAL\nONOS\nLEON\nMARCA REGISTRADA\nCASA FUNDADA\nEN 182 2\nHEREDEROS DE ARGUEso s.A\nSANLUCAR DE BDA\nNo 132\nKIT, J. M. BARA osa-JEREZ.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1497";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

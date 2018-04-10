@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3865";
-    dct:type "image";
-    w:bagOfWords "R U W E R\nM O S E L S A A R\n1953 er\nBrauneberger Juffer\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 234 DM 30\n0/co Schleife Nr. 24.456 DM 9. 0/o0\n"@deu;
-    gv:color [
-  gv:hex "95783f";
-  gv:red "149";
-  gv:blue "63";
-  gv:green "120";
-  gv:score "44.816424999999995";
-  gv:coverage "8.0466665"
-], [
-  gv:hex "ccc1a5";
-  gv:red "204";
-  gv:blue "165";
-  gv:green "193";
-  gv:score "2.8549856";
-  gv:coverage "11.306667"
-], [
-  gv:hex "aa8e51";
-  gv:red "170";
-  gv:blue "81";
-  gv:green "142";
-  gv:score "19.993556";
-  gv:coverage "3.6733333"
-], [
-  gv:hex "6a521f";
-  gv:red "106";
-  gv:blue "31";
-  gv:green "82";
-  gv:score "11.034851";
-  gv:coverage "2.8533334"
-], [
-  gv:hex "9d7540";
-  gv:red "157";
-  gv:blue "64";
-  gv:green "117";
-  gv:score "3.2622516";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "4d3808";
-  gv:red "77";
-  gv:blue "8";
-  gv:green "56";
-  gv:score "2.4792123999999998";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "6d4a21";
-  gv:red "109";
-  gv:blue "33";
-  gv:green "74";
-  gv:score "2.2870507";
-  gv:coverage "0.5"
-], [
-  gv:hex "ac9c7b";
-  gv:red "172";
-  gv:blue "123";
-  gv:green "156";
-  gv:score "2.1838889";
-  gv:coverage "3.5000000000000004"
-], [
-  gv:hex "605235";
-  gv:red "96";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "2.1372195";
-  gv:coverage "1.82"
-], [
-  gv:hex "513108";
-  gv:red "81";
-  gv:blue "8";
-  gv:green "49";
-  gv:score "1.4344452";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.897396"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "68.132555"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.3692"
-];
-    w:bagOfWords "R U W E R\nM O S E L S A A R\n1953 er\nBrauneberger Juffer\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 234 DM 30\n0/co Schleife Nr. 24.456 DM 9. 0/o0\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3865";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

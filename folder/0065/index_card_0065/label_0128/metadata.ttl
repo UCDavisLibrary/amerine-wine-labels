@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0128";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "TRICE or\nRNITA\nPRODUCT OF ITA\nMARTINI& ROSSI\nPROPRIETARI DELLA ANTICA CASA VINICOLA\nCAV, A. LA BOREL MEL\nASSIME\nCASA\nOUCA DAOS\nCONTENTS B.CA\nFLUID 1 OUNCES\nALCOHOL BY\nVOLUME 12,5\nRTO AND\nGINA M\nVINO SOLE AGENTS FOR USA WATAYLORECo.\nNEW YORK\n"@ita;
-    gv:color [
-  gv:hex "af987a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "152";
-  gv:score "19.519104000000002";
-  gv:coverage "2.26"
-], [
-  gv:hex "8a7558";
-  gv:red "138";
-  gv:blue "88";
-  gv:green "117";
-  gv:score "15.201563000000002";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "d5bea0";
-  gv:red "213";
-  gv:blue "160";
-  gv:green "190";
-  gv:score "14.487665999999999";
-  gv:coverage "7.0133336"
-], [
-  gv:hex "b79867";
-  gv:red "183";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "10.708039";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "685338";
-  gv:red "104";
-  gv:blue "56";
-  gv:green "83";
-  gv:score "7.5340904";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "d6b787";
-  gv:red "214";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "6.2649593";
-  gv:coverage "0.32"
-], [
-  gv:hex "8f7246";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "114";
-  gv:score "4.6824221";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "b99478";
-  gv:red "185";
-  gv:blue "120";
-  gv:green "148";
-  gv:score "3.2572392";
-  gv:coverage "0.22"
-], [
-  gv:hex "6d5126";
-  gv:red "109";
-  gv:blue "38";
-  gv:green "81";
-  gv:score "2.7985696";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "ecd9c2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "2.1252055";
-  gv:coverage "11.746666999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "76.784569"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.251515"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "56.667703"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.149147"
-];
-    w:bagOfWords "TRICE or\nRNITA\nPRODUCT OF ITA\nMARTINI& ROSSI\nPROPRIETARI DELLA ANTICA CASA VINICOLA\nCAV, A. LA BOREL MEL\nASSIME\nCASA\nOUCA DAOS\nCONTENTS B.CA\nFLUID 1 OUNCES\nALCOHOL BY\nVOLUME 12,5\nRTO AND\nGINA M\nVINO SOLE AGENTS FOR USA WATAYLORECo.\nNEW YORK\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0128";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4387/label_4388";
-    dct:type "image";
-    w:bagOfWords "MARCA, DEPOSIT ADA\nDIANA\nMOSCATEL DORADO\nMALAGA\nEmbdor. n. 407\n"@spa;
-    gv:color [
-  gv:hex "d4bfa6";
-  gv:red "212";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "20.322703";
-  gv:coverage "25.533333000000002"
-], [
-  gv:hex "8c6d3e";
-  gv:red "140";
-  gv:blue "62";
-  gv:green "109";
-  gv:score "17.612031";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "5a2f18";
-  gv:red "90";
-  gv:blue "24";
-  gv:green "47";
-  gv:score "9.111011";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "af997f";
-  gv:red "175";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "10.221715000000001";
-  gv:coverage "2.42"
-], [
-  gv:hex "70472f";
-  gv:red "112";
-  gv:blue "47";
-  gv:green "71";
-  gv:score "7.4607491";
-  gv:coverage "0.44"
-], [
-  gv:hex "8e7559";
-  gv:red "142";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "7.439477699999999";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "926c51";
-  gv:red "146";
-  gv:blue "81";
-  gv:green "108";
-  gv:score "5.6606933";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "77592d";
-  gv:red "119";
-  gv:blue "45";
-  gv:green "89";
-  gv:score "4.9652769999999995";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "6c553b";
-  gv:red "108";
-  gv:blue "59";
-  gv:green "85";
-  gv:score "4.3210447";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "755128";
-  gv:red "117";
-  gv:blue "40";
-  gv:green "81";
-  gv:score "3.1703903999999996";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.24633700000001"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.01475"
-];
-    w:bagOfWords "MARCA, DEPOSIT ADA\nDIANA\nMOSCATEL DORADO\nMALAGA\nEmbdor. n. 407\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4388";
+    <schema.keywords> "Spain Malaga Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

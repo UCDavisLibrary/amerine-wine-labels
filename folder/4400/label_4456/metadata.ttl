@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4456";
-    dct:type "image";
-    w:bagOfWords "MARCA\nREGISTRADA\nBODEGAS\nELL, SA.\nR. E. 27\nCOSECHERO\nLOG RON O\n"@spa;
-    gv:color [
-  gv:hex "d2c2b0";
-  gv:red "210";
-  gv:blue "176";
-  gv:green "194";
-  gv:score "26.708469";
-  gv:coverage "16.173333"
-], [
-  gv:hex "c19184";
-  gv:red "193";
-  gv:blue "132";
-  gv:green "145";
-  gv:score "13.988964000000001";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "e4b7a9";
-  gv:red "228";
-  gv:blue "169";
-  gv:green "183";
-  gv:score "11.718491";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "a99b8c";
-  gv:red "169";
-  gv:blue "140";
-  gv:green "155";
-  gv:score "11.346734999999999";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "d6c7bb";
-  gv:red "214";
-  gv:blue "187";
-  gv:green "199";
-  gv:score "8.4073588";
-  gv:coverage "13.146667"
-], [
-  gv:hex "847769";
-  gv:red "132";
-  gv:blue "105";
-  gv:green "119";
-  gv:score "7.6299890999999995";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "615444";
-  gv:red "97";
-  gv:blue "68";
-  gv:green "84";
-  gv:score "4.584812";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "ead9c6";
-  gv:red "234";
-  gv:blue "198";
-  gv:green "217";
-  gv:score "4.535685099999999";
-  gv:coverage "9.64"
-], [
-  gv:hex "e6d8cb";
-  gv:red "230";
-  gv:blue "203";
-  gv:green "216";
-  gv:score "4.1159503";
-  gv:coverage "56.279999999999994"
-], [
-  gv:hex "423426";
-  gv:red "66";
-  gv:blue "38";
-  gv:green "52";
-  gv:score "2.0543948";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.001393"
-];
-    w:bagOfWords "MARCA\nREGISTRADA\nBODEGAS\nELL, SA.\nR. E. 27\nCOSECHERO\nLOG RON O\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4456";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4879/label_4900";
-    dct:type "image";
-    w:bagOfWords "TRAPI CHD\nl 9 8 6\nRESERVE\nPRODUCT OF ARGENTINA\nIMPORTED BY\nWINOS ARGENTINOS lMPORTS U.S.A. INC., MIAMI, FLORIDA\n12.5% ALC. BY VOL. 7 50 ML\nTRAPICHE\nRESERVE\nThe 14 vineyards of the TRAPICHE Estates total more than 4,000 acres,\neach with its own distinct micro-climate. These rich vineyards are at\nthe base of the majestic Argentine Andes in the province of Mendoza.\nAt our Vistalba Vineyard, we have the ideal ambiance for this difficult\nvariety; high altitude, cold winters, cool nights and a pebbled sub-soil\nwith excellent drainage. We vinify in early March, \"cooling the must\"\nduring fermentation. The result a fruity, low tannin, light bodied wine\nwith an identifiable Pinot Noir character.\nCONTAINS SULFITES\nGOVERNMENT WARNING\n(1) ACCORDING TO THE SUR\nGEON GENERAL, WOMEN SHOULD NOT DRINK ALCOHOLIC\nBEVERAGES DURING PREGNANCY BECAUSE OF THE RISK\nOF BIRTHDEFECTS. (2) CONSUMPTIONOFALCOHOLICBEV\nERAGES IMPAIRS YOUR ABILITY TO DRIVE A CAR OR OP\nERATE MACHINERY AND MAY CAUSE HEATHPROBLEMS\no 34 156 08040\n750\n"@undefined;
-    gv:color [
-  gv:hex "ccc3b9";
-  gv:red "204";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "31.835982";
-  gv:coverage "15.939999999999998"
-], [
-  gv:hex "a69e8b";
-  gv:red "166";
-  gv:blue "139";
-  gv:green "158";
-  gv:score "22.193389999999997";
-  gv:coverage "3.52"
-], [
-  gv:hex "a89f95";
-  gv:red "168";
-  gv:blue "149";
-  gv:green "159";
-  gv:score "14.852858999999999";
-  gv:coverage "3.4866668000000005"
-], [
-  gv:hex "c4bcaa";
-  gv:red "196";
-  gv:blue "170";
-  gv:green "188";
-  gv:score "13.052449999999999";
-  gv:coverage "3.3733333999999995"
-], [
-  gv:hex "e8dfd5";
-  gv:red "232";
-  gv:blue "213";
-  gv:green "223";
-  gv:score "9.2096247";
-  gv:coverage "68.78"
-], [
-  gv:hex "827a68";
-  gv:red "130";
-  gv:blue "104";
-  gv:green "122";
-  gv:score "4.3472823";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "837a6f";
-  gv:red "131";
-  gv:blue "111";
-  gv:green "122";
-  gv:score "1.6726603999999998";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "5a5341";
-  gv:red "90";
-  gv:blue "65";
-  gv:green "83";
-  gv:score "1.5918246";
-  gv:coverage "0.24"
-], [
-  gv:hex "e5ddcd";
-  gv:red "229";
-  gv:blue "205";
-  gv:green "221";
-  gv:score "0.63383034";
-  gv:coverage "3.2266665"
-], [
-  gv:hex "423a28";
-  gv:red "66";
-  gv:blue "40";
-  gv:green "58";
-  gv:score "0.33298752";
-  gv:coverage "0.11333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "73.48801499999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.519295"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "TRAPI CHD\nl 9 8 6\nRESERVE\nPRODUCT OF ARGENTINA\nIMPORTED BY\nWINOS ARGENTINOS lMPORTS U.S.A. INC., MIAMI, FLORIDA\n12.5% ALC. BY VOL. 7 50 ML\nTRAPICHE\nRESERVE\nThe 14 vineyards of the TRAPICHE Estates total more than 4,000 acres,\neach with its own distinct micro-climate. These rich vineyards are at\nthe base of the majestic Argentine Andes in the province of Mendoza.\nAt our Vistalba Vineyard, we have the ideal ambiance for this difficult\nvariety; high altitude, cold winters, cool nights and a pebbled sub-soil\nwith excellent drainage. We vinify in early March, \"cooling the must\"\nduring fermentation. The result a fruity, low tannin, light bodied wine\nwith an identifiable Pinot Noir character.\nCONTAINS SULFITES\nGOVERNMENT WARNING\n(1) ACCORDING TO THE SUR\nGEON GENERAL, WOMEN SHOULD NOT DRINK ALCOHOLIC\nBEVERAGES DURING PREGNANCY BECAUSE OF THE RISK\nOF BIRTHDEFECTS. (2) CONSUMPTIONOFALCOHOLICBEV\nERAGES IMPAIRS YOUR ABILITY TO DRIVE A CAR OR OP\nERATE MACHINERY AND MAY CAUSE HEATHPROBLEMS\no 34 156 08040\n750\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4900";
+    <schema.keywords> "Additions Various Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

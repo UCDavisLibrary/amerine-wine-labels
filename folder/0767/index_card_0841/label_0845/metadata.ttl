@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0845";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "BLACK\nSTAR\nCHAMPAGNE\nBESSERAT DE BELLEFON\nAY- CHAM PAGNE\nFRANCE\nN. Mo 2.427 422\n"@fra;
-    gv:color [
-  gv:hex "af9458";
-  gv:red "175";
-  gv:blue "88";
-  gv:green "148";
-  gv:score "47.276776999999996";
-  gv:coverage "11.786667000000001"
-], [
-  gv:hex "1a1310";
-  gv:red "26";
-  gv:blue "16";
-  gv:green "19";
-  gv:score "3.3809147999999998";
-  gv:coverage "1.4333333"
-], [
-  gv:hex "ebd8be";
-  gv:red "235";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "2.5895461";
-  gv:coverage "42.5"
-], [
-  gv:hex "5e5538";
-  gv:red "94";
-  gv:blue "56";
-  gv:green "85";
-  gv:score "1.5486045";
-  gv:coverage "0.4"
-], [
-  gv:hex "957c44";
-  gv:red "149";
-  gv:blue "68";
-  gv:green "124";
-  gv:score "19.355696000000002";
-  gv:coverage "4.4799999999999995"
-], [
-  gv:hex "d4b777";
-  gv:red "212";
-  gv:blue "119";
-  gv:green "183";
-  gv:score "13.049150000000001";
-  gv:coverage "4.7133334"
-], [
-  gv:hex "a8946f";
-  gv:red "168";
-  gv:blue "111";
-  gv:green "148";
-  gv:score "2.4119332";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "dfc9a9";
-  gv:red "223";
-  gv:blue "169";
-  gv:green "201";
-  gv:score "2.146068";
-  gv:coverage "9.8133333"
-], [
-  gv:hex "241b06";
-  gv:red "36";
-  gv:blue "6";
-  gv:green "27";
-  gv:score "1.977911";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "6e5623";
-  gv:red "110";
-  gv:blue "35";
-  gv:green "86";
-  gv:score "1.5428849999999998";
-  gv:coverage "0.33999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.832194"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BLACK\nSTAR\nCHAMPAGNE\nBESSERAT DE BELLEFON\nAY- CHAM PAGNE\nFRANCE\nN. Mo 2.427 422\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0845";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

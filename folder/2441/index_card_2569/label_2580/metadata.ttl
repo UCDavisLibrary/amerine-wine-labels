@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2580";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "ON FONDEE\nS AUTOUE\nTRADE MARK\nENV 88O\nGrand TJin\nBourgogne\nonilin-fnissé\nAppellation Controlée\nclose DH DR ouHin\nNEGOCIANT A BEAUNE (COTE .D'OR)\n"@fra;
-    gv:color [
-  gv:hex "ddc4a0";
-  gv:red "221";
-  gv:blue "160";
-  gv:green "196";
-  gv:score "33.707544";
-  gv:coverage "20.599999999999998"
-], [
-  gv:hex "eeb48c";
-  gv:red "238";
-  gv:blue "140";
-  gv:green "180";
-  gv:score "6.963030000000001";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "953d21";
-  gv:red "149";
-  gv:blue "33";
-  gv:green "61";
-  gv:score "5.1233035000000005";
-  gv:coverage "0.38"
-], [
-  gv:hex "b39c7a";
-  gv:red "179";
-  gv:blue "122";
-  gv:green "156";
-  gv:score "8.4567063";
-  gv:coverage "2.46"
-], [
-  gv:hex "cc9068";
-  gv:red "204";
-  gv:blue "104";
-  gv:green "144";
-  gv:score "5.7672691";
-  gv:coverage "0.66"
-], [
-  gv:hex "f0d8b6";
-  gv:red "240";
-  gv:blue "182";
-  gv:green "216";
-  gv:score "5.290873";
-  gv:coverage "6.0333334"
-], [
-  gv:hex "debc8e";
-  gv:red "222";
-  gv:blue "142";
-  gv:green "188";
-  gv:score "5.046213799999999";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "eebd9e";
-  gv:red "238";
-  gv:blue "158";
-  gv:green "189";
-  gv:score "4.6172451";
-  gv:coverage "1.2133333"
-], [
-  gv:hex "b55b3c";
-  gv:red "181";
-  gv:blue "60";
-  gv:green "91";
-  gv:score "4.1660003";
-  gv:coverage "0.32"
-], [
-  gv:hex "897453";
-  gv:red "137";
-  gv:blue "83";
-  gv:green "116";
-  gv:score "3.4677792";
-  gv:coverage "0.81333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "77.768719"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.543193"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "61.534995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.471741"
-];
-    w:bagOfWords "ON FONDEE\nS AUTOUE\nTRADE MARK\nENV 88O\nGrand TJin\nBourgogne\nonilin-fnissé\nAppellation Controlée\nclose DH DR ouHin\nNEGOCIANT A BEAUNE (COTE .D'OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2580";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

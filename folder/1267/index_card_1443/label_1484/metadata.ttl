@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1484";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nRHINE\nVVIN E.\nMade from Varietal Grapes\nPRODUCED ANO BOTTLED BY\nURBANA WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y.\nALCOHOL 12% BY VOLUME\nESTABLISHED 1865\n"@eng;
-    gv:color [
-  gv:hex "5d4c2e";
-  gv:red "93";
-  gv:blue "46";
-  gv:green "76";
-  gv:score "28.23157";
-  gv:coverage "1.46"
-], [
-  gv:hex "ecdeca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "222";
-  gv:score "4.8446368";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "d0c5bd";
-  gv:red "208";
-  gv:blue "189";
-  gv:green "197";
-  gv:score "4.2040977999999996";
-  gv:coverage "3.0133333"
-], [
-  gv:hex "150c05";
-  gv:red "21";
-  gv:blue "5";
-  gv:green "12";
-  gv:score "2.6914963";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "47361a";
-  gv:red "71";
-  gv:blue "26";
-  gv:green "54";
-  gv:score "25.282398";
-  gv:coverage "1.26"
-], [
-  gv:hex "837254";
-  gv:red "131";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "9.5185809";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "ece1d8";
-  gv:red "236";
-  gv:blue "216";
-  gv:green "225";
-  gv:score "4.0260565";
-  gv:coverage "79.946667"
-], [
-  gv:hex "a99880";
-  gv:red "169";
-  gv:blue "128";
-  gv:green "152";
-  gv:score "3.7518583000000003";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "5a471e";
-  gv:red "90";
-  gv:blue "30";
-  gv:green "71";
-  gv:score "3.6560878";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "d4c6b2";
-  gv:red "212";
-  gv:blue "178";
-  gv:green "198";
-  gv:score "3.2883439";
-  gv:coverage "1.2333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.1147"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nRHINE\nVVIN E.\nMade from Varietal Grapes\nPRODUCED ANO BOTTLED BY\nURBANA WINE COMPANY, INC.\nURBANA, HAMMONDSPORT, N. Y.\nALCOHOL 12% BY VOLUME\nESTABLISHED 1865\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1484";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

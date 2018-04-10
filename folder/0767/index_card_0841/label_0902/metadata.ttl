@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0902";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "EXTRA QUALITY\nCHAMPAGNE\nVINTAGE 1928\nEXTRA DRY\n"@fra;
-    gv:color [
-  gv:hex "d3c1a7";
-  gv:red "211";
-  gv:blue "167";
-  gv:green "193";
-  gv:score "41.770998";
-  gv:coverage "23.96"
-], [
-  gv:hex "ae9b81";
-  gv:red "174";
-  gv:blue "129";
-  gv:green "155";
-  gv:score "18.507937";
-  gv:coverage "1.5666666999999999"
-], [
-  gv:hex "c0a26f";
-  gv:red "192";
-  gv:blue "111";
-  gv:green "162";
-  gv:score "10.564711";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "d6b882";
-  gv:red "214";
-  gv:blue "130";
-  gv:green "184";
-  gv:score "8.1035286";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "87755c";
-  gv:red "135";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "6.1225176";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "eeddc6";
-  gv:red "238";
-  gv:blue "198";
-  gv:green "221";
-  gv:score "5.7987034";
-  gv:coverage "4"
-], [
-  gv:hex "685843";
-  gv:red "104";
-  gv:blue "67";
-  gv:green "88";
-  gv:score "3.2896210000000004";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "967746";
-  gv:red "150";
-  gv:blue "70";
-  gv:green "119";
-  gv:score "2.4516083";
-  gv:coverage "0.04"
-], [
-  gv:hex "d6c9be";
-  gv:red "214";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "1.1835781";
-  gv:coverage "37.613332"
-], [
-  gv:hex "f4e4d8";
-  gv:red "244";
-  gv:blue "216";
-  gv:green "228";
-  gv:score "0.931246";
-  gv:coverage "30.886668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.669878"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.073311000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.809245999999995"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.134891"
-];
-    w:bagOfWords "EXTRA QUALITY\nCHAMPAGNE\nVINTAGE 1928\nEXTRA DRY\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0902";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

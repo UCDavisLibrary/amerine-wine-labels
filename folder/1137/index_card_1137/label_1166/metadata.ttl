@@ -1,112 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1166";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "PTRU NT ERR.\n4/5 RT\nvieille\n84 PROOF\nHostelleriu\nNDY\nD B\nrunier\na S\nRODUCE OF FRANCE\no and\n"@undefined;
-    gv:color [
-  gv:hex "bd9a68";
-  gv:red "189";
-  gv:blue "104";
-  gv:green "154";
-  gv:score "16.327576";
-  gv:coverage "5.4133333"
-], [
-  gv:hex "946e41";
-  gv:red "148";
-  gv:blue "65";
-  gv:green "110";
-  gv:score "11.377239";
-  gv:coverage "2.9466666"
-], [
-  gv:hex "4a2c13";
-  gv:red "74";
-  gv:blue "19";
-  gv:green "44";
-  gv:score "6.0797792";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "d7b27e";
-  gv:red "215";
-  gv:blue "126";
-  gv:green "178";
-  gv:score "10.048941";
-  gv:coverage "3.4733332999999997"
-], [
-  gv:hex "714e23";
-  gv:red "113";
-  gv:blue "35";
-  gv:green "78";
-  gv:score "8.9060113";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "957345";
-  gv:red "149";
-  gv:blue "69";
-  gv:green "115";
-  gv:score "8.855325";
-  gv:coverage "2.1866666"
-], [
-  gv:hex "bc9365";
-  gv:red "188";
-  gv:blue "101";
-  gv:green "147";
-  gv:score "5.5431016";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "6c4c30";
-  gv:red "108";
-  gv:blue "48";
-  gv:green "76";
-  gv:score "4.8780598";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "53310b";
-  gv:red "83";
-  gv:blue "11";
-  gv:green "49";
-  gv:score "3.9857074999999997";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "8f7251";
-  gv:red "143";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "3.8530192999999997";
-  gv:coverage "1.1866666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.92416"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "76.182145"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "58.448887000000006"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "57.529849"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.544017999999994"
-];
-    w:bagOfWords "PTRU NT ERR.\n4/5 RT\nvieille\n84 PROOF\nHostelleriu\nNDY\nD B\nrunier\na S\nRODUCE OF FRANCE\no and\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1166";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

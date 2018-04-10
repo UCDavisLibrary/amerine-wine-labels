@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1091/label_1094";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "t tear vigneron\n1245\n"@deu;
-    gv:color [
-  gv:hex "d6c0a0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "192";
-  gv:score "31.763315";
-  gv:coverage "32.16"
-], [
-  gv:hex "ae997a";
-  gv:red "174";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "25.138571999999996";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "8a7757";
-  gv:red "138";
-  gv:blue "87";
-  gv:green "119";
-  gv:score "17.210914";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "c2957b";
-  gv:red "194";
-  gv:blue "123";
-  gv:green "149";
-  gv:score "6.0547284999999995";
-  gv:coverage "0.6"
-], [
-  gv:hex "695536";
-  gv:red "105";
-  gv:blue "54";
-  gv:green "85";
-  gv:score "5.7373788";
-  gv:coverage "0.36"
-], [
-  gv:hex "9d6f56";
-  gv:red "157";
-  gv:blue "86";
-  gv:green "111";
-  gv:score "3.7179618999999997";
-  gv:coverage "0.22"
-], [
-  gv:hex "e1b69a";
-  gv:red "225";
-  gv:blue "154";
-  gv:green "182";
-  gv:score "3.2646913";
-  gv:coverage "0.66"
-], [
-  gv:hex "7c4a32";
-  gv:red "124";
-  gv:blue "50";
-  gv:green "74";
-  gv:score "2.6501126999999998";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "eed8bb";
-  gv:red "238";
-  gv:blue "187";
-  gv:green "216";
-  gv:score "1.8334823";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "4d3b1b";
-  gv:red "77";
-  gv:blue "27";
-  gv:green "59";
-  gv:score "0.89129871";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.441546"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "61.693065999999995"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "60.042763"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "56.638944"
-];
-    w:bagOfWords "t tear vigneron\n1245\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1094";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0863";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "PRIVILEGE\nPRODUCE\nOF FRANCE\nson fondée\nen\nPER NAY\nCHAMPAGNE\nPRINTED IN FRANCE\nCONTENTS 1 PINT 10 FLUID 02. ALCOHOLIC STRENGTH 12 BY VOLUME\n"@fra;
-    gv:color [
-  gv:hex "d1c2b1";
-  gv:red "209";
-  gv:blue "177";
-  gv:green "194";
-  gv:score "30.38471";
-  gv:coverage "10.68"
-], [
-  gv:hex "160a00";
-  gv:red "22";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "0.63463282";
-  gv:coverage "0.04"
-], [
-  gv:hex "aa9c8b";
-  gv:red "170";
-  gv:blue "139";
-  gv:green "156";
-  gv:score "22.0224";
-  gv:coverage "1.7666666000000002"
-], [
-  gv:hex "847767";
-  gv:red "132";
-  gv:blue "103";
-  gv:green "119";
-  gv:score "16.310601";
-  gv:coverage "1"
-], [
-  gv:hex "d0c3b7";
-  gv:red "208";
-  gv:blue "183";
-  gv:green "195";
-  gv:score "10.130231";
-  gv:coverage "6.419999999999999"
-], [
-  gv:hex "e9dcd0";
-  gv:red "233";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "5.6296013";
-  gv:coverage "66.28"
-], [
-  gv:hex "635645";
-  gv:red "99";
-  gv:blue "69";
-  gv:green "86";
-  gv:score "5.5351976";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "e9dac8";
-  gv:red "233";
-  gv:blue "200";
-  gv:green "218";
-  gv:score "4.3481588";
-  gv:coverage "12.513334"
-], [
-  gv:hex "423323";
-  gv:red "66";
-  gv:blue "35";
-  gv:green "51";
-  gv:score "2.1295136";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "aba095";
-  gv:red "171";
-  gv:blue "149";
-  gv:green "160";
-  gv:score "1.7485431999999999";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.811026"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.793068"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.671414999999996"
-];
-    w:bagOfWords "PRIVILEGE\nPRODUCE\nOF FRANCE\nson fondée\nen\nPER NAY\nCHAMPAGNE\nPRINTED IN FRANCE\nCONTENTS 1 PINT 10 FLUID 02. ALCOHOLIC STRENGTH 12 BY VOLUME\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0863";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

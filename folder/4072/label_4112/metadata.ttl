@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4112";
-    dct:type "image";
-    w:bagOfWords "OTA, R. D\nPRODUCE OF FRANCE\nG\ner Class\n1795\nESTAB\nBOTTLED BY\n84 PROOF\n4/5 QUART\nN REGISTERED\nBOTTLED AT\nCHATEAU DE COGNAC\nGEN... Ua.S. .LMPORTERS\nVAN MUNCHING IMPORTS, INC.\nNEW YORK 36 N.\n"@fra;
-    gv:color [
-  gv:hex "d3c7bd";
-  gv:red "211";
-  gv:blue "189";
-  gv:green "199";
-  gv:score "21.318911";
-  gv:coverage "18.413334"
-], [
-  gv:hex "1b140c";
-  gv:red "27";
-  gv:blue "12";
-  gv:green "20";
-  gv:score "1.0874547";
-  gv:coverage "0.42"
-], [
-  gv:hex "e5dad0";
-  gv:red "229";
-  gv:blue "208";
-  gv:green "218";
-  gv:score "15.039308000000002";
-  gv:coverage "55.466664"
-], [
-  gv:hex "d1bfa3";
-  gv:red "209";
-  gv:blue "163";
-  gv:green "191";
-  gv:score "13.938449";
-  gv:coverage "6.813333200000001"
-], [
-  gv:hex "ad9a83";
-  gv:red "173";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "10.440996";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "a89c92";
-  gv:red "168";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "8.4486924";
-  gv:coverage "3.52"
-], [
-  gv:hex "87735a";
-  gv:red "135";
-  gv:blue "90";
-  gv:green "115";
-  gv:score "6.753207";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "655436";
-  gv:red "101";
-  gv:blue "54";
-  gv:green "84";
-  gv:score "5.8287852";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "83786e";
-  gv:red "131";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "4.9425583";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "8d6e3c";
-  gv:red "141";
-  gv:blue "60";
-  gv:green "110";
-  gv:score "3.5958960999999996";
-  gv:coverage "0.80666663"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.966441"
-];
-    w:bagOfWords "OTA, R. D\nPRODUCE OF FRANCE\nG\ner Class\n1795\nESTAB\nBOTTLED BY\n84 PROOF\n4/5 QUART\nN REGISTERED\nBOTTLED AT\nCHATEAU DE COGNAC\nGEN... Ua.S. .LMPORTERS\nVAN MUNCHING IMPORTS, INC.\nNEW YORK 36 N.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4112";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

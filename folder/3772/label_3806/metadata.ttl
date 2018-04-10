@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3806";
-    dct:type "image";
-    w:bagOfWords "Alte rhein.\nRadon\nGold lack\nOhne\n"@deu;
-    gv:color [
-  gv:hex "dec493";
-  gv:red "222";
-  gv:blue "147";
-  gv:green "196";
-  gv:score "19.813125";
-  gv:coverage "6.5866664"
-], [
-  gv:hex "482914";
-  gv:red "72";
-  gv:blue "20";
-  gv:green "41";
-  gv:score "1.7426496";
-  gv:coverage "0.88"
-], [
-  gv:hex "f3d9a7";
-  gv:red "243";
-  gv:blue "167";
-  gv:green "217";
-  gv:score "16.933602";
-  gv:coverage "6.0266666"
-], [
-  gv:hex "b59968";
-  gv:red "181";
-  gv:blue "104";
-  gv:green "153";
-  gv:score "13.102631";
-  gv:coverage "4.279999999999999"
-], [
-  gv:hex "8f7345";
-  gv:red "143";
-  gv:blue "69";
-  gv:green "115";
-  gv:score "6.1970748";
-  gv:coverage "1.9666666"
-], [
-  gv:hex "d9c099";
-  gv:red "217";
-  gv:blue "153";
-  gv:green "192";
-  gv:score "6.02882";
-  gv:coverage "5.7733335"
-], [
-  gv:hex "b29a73";
-  gv:red "178";
-  gv:blue "115";
-  gv:green "154";
-  gv:score "4.6423748";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "a46f46";
-  gv:red "164";
-  gv:blue "70";
-  gv:green "111";
-  gv:score "3.8711436000000004";
-  gv:coverage "1.3"
-], [
-  gv:hex "be8b61";
-  gv:red "190";
-  gv:blue "97";
-  gv:green "139";
-  gv:score "3.8297318";
-  gv:coverage "1.6199999999999999"
-], [
-  gv:hex "6b5127";
-  gv:red "107";
-  gv:blue "39";
-  gv:green "81";
-  gv:score "3.3060412999999995";
-  gv:coverage "0.8999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.11668800000001"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.343164"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "56.67828299999999"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.011117"
-];
-    w:bagOfWords "Alte rhein.\nRadon\nGold lack\nOhne\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3806";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2603/label_2608";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "GRAND VIN BLANC 1947 DE BOURGOGNE\nAncien Domaine des Comtes de Grancey\nMis en bouteilles a la propriete\nLOUIS LATOUR A BEAUNE FRANCE\nAPPELLATION CONTRtyLEE\n"@fra;
-    gv:color [
-  gv:hex "d4c3ab";
-  gv:red "212";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "63.204855";
-  gv:coverage "36.766666"
-], [
-  gv:hex "af9e85";
-  gv:red "175";
-  gv:blue "133";
-  gv:green "158";
-  gv:score "23.468491";
-  gv:coverage "3"
-], [
-  gv:hex "e8d8c1";
-  gv:red "232";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "9.5523044";
-  gv:coverage "14.006667"
-], [
-  gv:hex "8c795b";
-  gv:red "140";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "2.6936559";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "dfcfc3";
-  gv:red "223";
-  gv:blue "195";
-  gv:green "207";
-  gv:score "0.57847728";
-  gv:coverage "11.459999999999999"
-], [
-  gv:hex "968459";
-  gv:red "150";
-  gv:blue "89";
-  gv:green "132";
-  gv:score "0.25877736";
-  gv:coverage "0.02"
-], [
-  gv:hex "baa87a";
-  gv:red "186";
-  gv:blue "122";
-  gv:green "168";
-  gv:score "0.081910758";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "68543b";
-  gv:red "104";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "0.080572144";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "e7dad1";
-  gv:red "231";
-  gv:blue "209";
-  gv:green "218";
-  gv:score "0.022517602999999997";
-  gv:coverage "34.166667000000004"
-], [
-  gv:hex "a79b91";
-  gv:red "167";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "0.022087798999999998";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.889384"
-];
-    w:bagOfWords "GRAND VIN BLANC 1947 DE BOURGOGNE\nAncien Domaine des Comtes de Grancey\nMis en bouteilles a la propriete\nLOUIS LATOUR A BEAUNE FRANCE\nAPPELLATION CONTRtyLEE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2608";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2867";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "45\n1896\nison fondée en4856\nHAUT SAUTERNES\nARISTE U ONT 8\nde la Charen\nBORDEAU\n(FRANCEg\n"@fra;
-    gv:color [
-  gv:hex "542b18";
-  gv:red "84";
-  gv:blue "24";
-  gv:green "43";
-  gv:score "57.868075";
-  gv:coverage "17.153333"
-], [
-  gv:hex "cfbca8";
-  gv:red "207";
-  gv:blue "168";
-  gv:green "188";
-  gv:score "0.48342766000000004";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "6b4329";
-  gv:red "107";
-  gv:blue "41";
-  gv:green "67";
-  gv:score "24.734367";
-  gv:coverage "8.74"
-], [
-  gv:hex "6f4624";
-  gv:red "111";
-  gv:blue "36";
-  gv:green "70";
-  gv:score "5.0109528";
-  gv:coverage "1.8800000000000001"
-], [
-  gv:hex "3f1006";
-  gv:red "63";
-  gv:blue "6";
-  gv:green "16";
-  gv:score "3.6928967";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "521614";
-  gv:red "82";
-  gv:blue "20";
-  gv:green "22";
-  gv:score "2.8565627";
-  gv:coverage "1.66"
-], [
-  gv:hex "5b3213";
-  gv:red "91";
-  gv:blue "19";
-  gv:green "50";
-  gv:score "1.8791737";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "440b07";
-  gv:red "68";
-  gv:blue "7";
-  gv:green "11";
-  gv:score "0.97756078";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "624829";
-  gv:red "98";
-  gv:blue "41";
-  gv:green "72";
-  gv:score "0.8498516899999999";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "8d654b";
-  gv:red "141";
-  gv:blue "75";
-  gv:green "101";
-  gv:score "0.38051168";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.830122"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "69.526851"
-], [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.812916"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "61.875594"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.600615000000005"
-];
-    w:bagOfWords "45\n1896\nison fondée en4856\nHAUT SAUTERNES\nARISTE U ONT 8\nde la Charen\nBORDEAU\n(FRANCEg\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2867";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

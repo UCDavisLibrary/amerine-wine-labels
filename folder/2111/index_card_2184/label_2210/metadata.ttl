@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2210";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "THE WINERY IN\nCALI Fo\nGALLO\nCALI F O. R NI A\nMUSCATEL\nSo, ALCOHOL 20% BY VOLUME\nYORK\nA212.\nWINERY ED E. GALLO BY & "@eng;
-    gv:color [
-  gv:hex "d7bfa2";
-  gv:red "215";
-  gv:blue "162";
-  gv:green "191";
-  gv:score "22.261466";
-  gv:coverage "28.34"
-], [
-  gv:hex "af997e";
-  gv:red "175";
-  gv:blue "126";
-  gv:green "153";
-  gv:score "11.002704000000001";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "8c7659";
-  gv:red "140";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "10.012122";
-  gv:coverage "1.6266665999999999"
-], [
-  gv:hex "8e7245";
-  gv:red "142";
-  gv:blue "69";
-  gv:green "114";
-  gv:score "8.734747800000001";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "624f37";
-  gv:red "98";
-  gv:blue "55";
-  gv:green "79";
-  gv:score "8.2435712";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "42301a";
-  gv:red "66";
-  gv:blue "26";
-  gv:green "48";
-  gv:score "6.4429738";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "e6b7a1";
-  gv:red "230";
-  gv:blue "161";
-  gv:green "183";
-  gv:score "5.8425434";
-  gv:coverage "1.0999999999999999"
-], [
-  gv:hex "261704";
-  gv:red "38";
-  gv:blue "4";
-  gv:green "23";
-  gv:score "5.2335896";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "180700";
-  gv:red "24";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "4.9490929";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "c6927d";
-  gv:red "198";
-  gv:blue "125";
-  gv:green "146";
-  gv:score "3.6349788000000003";
-  gv:coverage "0.47333334000000005"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.520786"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "54.61098"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "51.76751000000001"
-];
-    w:bagOfWords "THE WINERY IN\nCALI Fo\nGALLO\nCALI F O. R NI A\nMUSCATEL\nSo, ALCOHOL 20% BY VOLUME\nYORK\nA212.\nWINERY ED E. GALLO BY & "@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2210";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_2004";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "ETAMA\nTRAB\nPARA ENFERMOS\nNe 33\nSANLUCAR\n"@spa;
-    gv:color [
-  gv:hex "a3717e";
-  gv:red "163";
-  gv:blue "126";
-  gv:green "113";
-  gv:score "27.553368";
-  gv:coverage "12.353333"
-], [
-  gv:hex "5c1913";
-  gv:red "92";
-  gv:blue "19";
-  gv:green "25";
-  gv:score "7.5682178";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "b48092";
-  gv:red "180";
-  gv:blue "146";
-  gv:green "128";
-  gv:score "19.164963";
-  gv:coverage "7.46"
-], [
-  gv:hex "ac6a7d";
-  gv:red "172";
-  gv:blue "125";
-  gv:green "106";
-  gv:score "17.385772";
-  gv:coverage "5.92"
-], [
-  gv:hex "f0d9d4";
-  gv:red "240";
-  gv:blue "212";
-  gv:green "217";
-  gv:score "0.10015798";
-  gv:coverage "18.52"
-], [
-  gv:hex "b97b91";
-  gv:red "185";
-  gv:blue "145";
-  gv:green "123";
-  gv:score "5.2927982";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "774d52";
-  gv:red "119";
-  gv:blue "82";
-  gv:green "77";
-  gv:score "4.9053237";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "7a4944";
-  gv:red "122";
-  gv:blue "68";
-  gv:green "73";
-  gv:score "3.3093233";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "611007";
-  gv:red "97";
-  gv:blue "7";
-  gv:green "16";
-  gv:score "2.7285058";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "9a6762";
-  gv:red "154";
-  gv:blue "98";
-  gv:green "103";
-  gv:score "2.5548629";
-  gv:coverage "0.85333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01fklc>;
-  gv:desc "pink";
-  gv:score "84.849542"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.585988"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "ETAMA\nTRAB\nPARA ENFERMOS\nNe 33\nSANLUCAR\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2004";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0682";
-    dct:type "image";
-    w:bagOfWords "CLOS DU\nAD SS\nOBRIST &Cie SA. VEVEY\nKLAUS FELDER SA, VEVEY\n"@undefined;
-    gv:color [
-  gv:hex "3c361a";
-  gv:red "60";
-  gv:blue "26";
-  gv:green "54";
-  gv:score "7.523964299999999";
-  gv:coverage "1.4200000000000002"
-], [
-  gv:hex "73a29f";
-  gv:red "115";
-  gv:blue "159";
-  gv:green "162";
-  gv:score "7.2087117";
-  gv:coverage "2.0533333000000002"
-], [
-  gv:hex "b59c5e";
-  gv:red "181";
-  gv:blue "94";
-  gv:green "156";
-  gv:score "2.3675667000000002";
-  gv:coverage "0.54"
-], [
-  gv:hex "d5c0a9";
-  gv:red "213";
-  gv:blue "169";
-  gv:green "192";
-  gv:score "2.3440043";
-  gv:coverage "6.9933333"
-], [
-  gv:hex "5b5537";
-  gv:red "91";
-  gv:blue "55";
-  gv:green "85";
-  gv:score "6.4918548000000005";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "542822";
-  gv:red "84";
-  gv:blue "34";
-  gv:green "40";
-  gv:score "5.1785871";
-  gv:coverage "0.58"
-], [
-  gv:hex "72473d";
-  gv:red "114";
-  gv:blue "61";
-  gv:green "71";
-  gv:score "3.9096273";
-  gv:coverage "0.52"
-], [
-  gv:hex "817659";
-  gv:red "129";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "3.5965119";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "622021";
-  gv:red "98";
-  gv:blue "33";
-  gv:green "32";
-  gv:score "3.2022387";
-  gv:coverage "0.22"
-], [
-  gv:hex "60531d";
-  gv:red "96";
-  gv:blue "29";
-  gv:green "83";
-  gv:score "2.9148997999999997";
-  gv:coverage "0.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.737839"
-];
-    w:bagOfWords "CLOS DU\nAD SS\nOBRIST &Cie SA. VEVEY\nKLAUS FELDER SA, VEVEY\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0682";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

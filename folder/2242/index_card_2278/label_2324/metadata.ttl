@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2324";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "19 yo\nPru4. a\",\n,Go\nC.ZJy\nsen\neau/\noh steall\nellouton-fedhchild\noulone) bo\n"@fra;
-    gv:color [
-  gv:hex "d6c1a6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "193";
-  gv:score "72.93579";
-  gv:coverage "38.893333000000005"
-], [
-  gv:hex "bd9367";
-  gv:red "189";
-  gv:blue "103";
-  gv:green "147";
-  gv:score "0.51888041";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "b19b7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "155";
-  gv:score "16.812734";
-  gv:coverage "4.5066666"
-], [
-  gv:hex "8f7859";
-  gv:red "143";
-  gv:blue "89";
-  gv:green "120";
-  gv:score "6.2491521";
-  gv:coverage "1.18"
-], [
-  gv:hex "ebd7bc";
-  gv:red "235";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "1.2979725";
-  gv:coverage "13.713333"
-], [
-  gv:hex "6e5736";
-  gv:red "110";
-  gv:blue "54";
-  gv:green "87";
-  gv:score "0.73567876";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "d0c2b7";
-  gv:red "208";
-  gv:blue "183";
-  gv:green "194";
-  gv:score "0.37880316";
-  gv:coverage "6.2066666999999995"
-], [
-  gv:hex "ebded2";
-  gv:red "235";
-  gv:blue "210";
-  gv:green "222";
-  gv:score "0.32656926";
-  gv:coverage "34.566668"
-], [
-  gv:hex "996f45";
-  gv:red "153";
-  gv:blue "69";
-  gv:green "111";
-  gv:score "0.21079644";
-  gv:coverage "0.06"
-], [
-  gv:hex "856b43";
-  gv:red "133";
-  gv:blue "67";
-  gv:green "107";
-  gv:score "0.17895814000000002";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.409339"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.536618"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.103888999999995"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "55.40728"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.425692999999995"
-];
-    w:bagOfWords "19 yo\nPru4. a\",\n,Go\nC.ZJy\nsen\neau/\noh steall\nellouton-fedhchild\noulone) bo\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2324";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

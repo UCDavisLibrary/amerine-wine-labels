@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2593";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "DE POSE E\nMARQUE\nouillu uisse\nAPPELLATION CONTROLEE\nLEJAY MAGCOUTE DIJON\n,RIETAIRE AU CLOS VOUGEOT\nPRC "@fra;
-    gv:color [
-  gv:hex "dfc2a1";
-  gv:red "223";
-  gv:blue "161";
-  gv:green "194";
-  gv:score "27.061816999999998";
-  gv:coverage "24.740000000000002"
-], [
-  gv:hex "ebbba0";
-  gv:red "235";
-  gv:blue "160";
-  gv:green "187";
-  gv:score "19.435247999999998";
-  gv:coverage "2.68"
-], [
-  gv:hex "c09277";
-  gv:red "192";
-  gv:blue "119";
-  gv:green "146";
-  gv:score "17.265937";
-  gv:coverage "1.58"
-], [
-  gv:hex "986e54";
-  gv:red "152";
-  gv:blue "84";
-  gv:green "110";
-  gv:score "8.6896129";
-  gv:coverage "0.6"
-], [
-  gv:hex "ba9d7f";
-  gv:red "186";
-  gv:blue "127";
-  gv:green "157";
-  gv:score "5.2721802";
-  gv:coverage "1.06"
-], [
-  gv:hex "f5d7b8";
-  gv:red "245";
-  gv:blue "184";
-  gv:green "215";
-  gv:score "5.1185612";
-  gv:coverage "6.4"
-], [
-  gv:hex "754f36";
-  gv:red "117";
-  gv:blue "54";
-  gv:green "79";
-  gv:score "4.4953197";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "fed3b9";
-  gv:red "254";
-  gv:blue "185";
-  gv:green "211";
-  gv:score "4.0625226";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "907457";
-  gv:red "144";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "2.076314";
-  gv:coverage "0.36"
-], [
-  gv:hex "e5c699";
-  gv:red "229";
-  gv:blue "153";
-  gv:green "198";
-  gv:score "1.5283107";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.191884"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.17479"
-];
-    w:bagOfWords "DE POSE E\nMARQUE\nouillu uisse\nAPPELLATION CONTROLEE\nLEJAY MAGCOUTE DIJON\n,RIETAIRE AU CLOS VOUGEOT\nPRC "@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2593";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

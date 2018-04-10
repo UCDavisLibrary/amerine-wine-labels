@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4156";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1937\nMARQUE\nDE Pros EE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d5c9be";
-  gv:red "213";
-  gv:blue "190";
-  gv:green "201";
-  gv:score "45.357361000000004";
-  gv:coverage "34.106666000000004"
-], [
-  gv:hex "d4c3b3";
-  gv:red "212";
-  gv:blue "179";
-  gv:green "195";
-  gv:score "21.152103";
-  gv:coverage "12.959999999999999"
-], [
-  gv:hex "e4d8cd";
-  gv:red "228";
-  gv:blue "205";
-  gv:green "216";
-  gv:score "10.723372000000001";
-  gv:coverage "45.893332"
-], [
-  gv:hex "ae9c8c";
-  gv:red "174";
-  gv:blue "140";
-  gv:green "156";
-  gv:score "9.9415049";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "8d7867";
-  gv:red "141";
-  gv:blue "103";
-  gv:green "120";
-  gv:score "3.4882884";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "ada096";
-  gv:red "173";
-  gv:blue "150";
-  gv:green "160";
-  gv:score "3.4302838";
-  gv:coverage "1.02"
-], [
-  gv:hex "e9d9c9";
-  gv:red "233";
-  gv:blue "201";
-  gv:green "217";
-  gv:score "3.272336";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "bd918c";
-  gv:red "189";
-  gv:blue "140";
-  gv:green "145";
-  gv:score "0.72828839";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "e0b7b0";
-  gv:red "224";
-  gv:blue "176";
-  gv:green "183";
-  gv:score "0.597171";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "dfbdb6";
-  gv:red "223";
-  gv:blue "182";
-  gv:green "189";
-  gv:score "0.35949918";
-  gv:coverage "0.18666666999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.10368"
-];
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\n1937\nMARQUE\nDE Pros EE\nMIS EN BOUTEILLES\nAU CHATEAU\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4156";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

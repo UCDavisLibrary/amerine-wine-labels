@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2868";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "1919\nHAUT SAUTERNES\nED. KRESS MANN & Co\nBORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "d4bc9d";
-  gv:red "212";
-  gv:blue "157";
-  gv:green "188";
-  gv:score "39.711317";
-  gv:coverage "28.426668"
-], [
-  gv:hex "b29774";
-  gv:red "178";
-  gv:blue "116";
-  gv:green "151";
-  gv:score "31.896845000000003";
-  gv:coverage "2.9533334"
-], [
-  gv:hex "b19267";
-  gv:red "177";
-  gv:blue "103";
-  gv:green "146";
-  gv:score "15.875874000000001";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "997a4f";
-  gv:red "153";
-  gv:blue "79";
-  gv:green "122";
-  gv:score "6.904541";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "997e5b";
-  gv:red "153";
-  gv:blue "91";
-  gv:green "126";
-  gv:score "4.1079799999999995";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "d4b88a";
-  gv:red "212";
-  gv:blue "138";
-  gv:green "184";
-  gv:score "0.99117812";
-  gv:coverage "0.06"
-], [
-  gv:hex "423a2d";
-  gv:red "66";
-  gv:blue "45";
-  gv:green "58";
-  gv:score "0.0093181116";
-  gv:coverage "0.06"
-], [
-  gv:hex "86643f";
-  gv:red "134";
-  gv:blue "63";
-  gv:green "100";
-  gv:score "0.14019251000000002";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "eed2b4";
-  gv:red "238";
-  gv:blue "180";
-  gv:green "210";
-  gv:score "0.0866973";
-  gv:coverage "5.0266668"
-], [
-  gv:hex "7c5b32";
-  gv:red "124";
-  gv:blue "50";
-  gv:green "91";
-  gv:score "0.0793103";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.74054"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "50.490080999999996"
-];
-    w:bagOfWords "1919\nHAUT SAUTERNES\nED. KRESS MANN & Co\nBORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2868";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2194";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "Y F R U I T I N\nT T L E D\nMORROW'S\nNo 1\nCalifornia\nNT 20 BY VOL U ME\nL 00\nAX PA\nBY STAMPS AFFIXED TO CASE\n5 2\nSAN FRANCISCO, CA L\nDI S\n"@eng;
-    gv:color [
-  gv:hex "e8c581";
-  gv:red "232";
-  gv:blue "129";
-  gv:green "197";
-  gv:score "19.938163";
-  gv:coverage "5.786666599999999"
-], [
-  gv:hex "a61a04";
-  gv:red "166";
-  gv:blue "4";
-  gv:green "26";
-  gv:score "7.3974624";
-  gv:coverage "3.4533332999999997"
-], [
-  gv:hex "340f00";
-  gv:red "52";
-  gv:blue "undefined";
-  gv:green "15";
-  gv:score "0.23483331";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "f6ba7f";
-  gv:red "246";
-  gv:blue "127";
-  gv:green "186";
-  gv:score "14.579938";
-  gv:coverage "4.1866668"
-], [
-  gv:hex "e7c371";
-  gv:red "231";
-  gv:blue "113";
-  gv:green "195";
-  gv:score "9.3428031";
-  gv:coverage "2.8933332999999997"
-], [
-  gv:hex "cd915b";
-  gv:red "205";
-  gv:blue "91";
-  gv:green "145";
-  gv:score "4.427423";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "913805";
-  gv:red "145";
-  gv:blue "5";
-  gv:green "56";
-  gv:score "3.7435029";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "a76e3f";
-  gv:red "167";
-  gv:blue "63";
-  gv:green "110";
-  gv:score "3.4682448999999997";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "bf0e05";
-  gv:red "191";
-  gv:blue "5";
-  gv:green "14";
-  gv:score "3.3194814000000004";
-  gv:coverage "1.8066667"
-], [
-  gv:hex "b99b5f";
-  gv:red "185";
-  gv:blue "95";
-  gv:green "155";
-  gv:score "2.9369678";
-  gv:coverage "1.1733334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.701571"
-];
-    w:bagOfWords "Y F R U I T I N\nT T L E D\nMORROW'S\nNo 1\nCalifornia\nNT 20 BY VOL U ME\nL 00\nAX PA\nBY STAMPS AFFIXED TO CASE\n5 2\nSAN FRANCISCO, CA L\nDI S\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2194";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

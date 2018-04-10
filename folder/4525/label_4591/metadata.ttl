@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4591";
-    dct:type "image";
-    w:bagOfWords "A NATURAL BRUT SHERRY\nPAN DO\nGROWN AND SHIPPED BY\nH E\n0 WILLIAMS & HUMBERT LTD.\nJEREZ.\nPRODUCE OF SPAIN\nRGTO, EMB. NT 206\n"@spa;
-    gv:color [
-  gv:hex "e4dacf";
-  gv:red "228";
-  gv:blue "207";
-  gv:green "218";
-  gv:score "47.451684";
-  gv:coverage "68.16"
-], [
-  gv:hex "d9cdc2";
-  gv:red "217";
-  gv:blue "194";
-  gv:green "205";
-  gv:score "31.079993";
-  gv:coverage "22.36"
-], [
-  gv:hex "d7cabb";
-  gv:red "215";
-  gv:blue "187";
-  gv:green "202";
-  gv:score "11.277254000000001";
-  gv:coverage "5.786666599999999"
-], [
-  gv:hex "e4d7c7";
-  gv:red "228";
-  gv:blue "199";
-  gv:green "215";
-  gv:score "2.3764931";
-  gv:coverage "1.8866668"
-], [
-  gv:hex "dabaae";
-  gv:red "218";
-  gv:blue "174";
-  gv:green "186";
-  gv:score "2.0054905";
-  gv:coverage "0.36"
-], [
-  gv:hex "bb9c91";
-  gv:red "187";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "1.4723574";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "aca096";
-  gv:red "172";
-  gv:blue "150";
-  gv:green "160";
-  gv:score "1.2375273";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "b09e90";
-  gv:red "176";
-  gv:blue "144";
-  gv:green "158";
-  gv:score "0.7797339999999999";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "98776b";
-  gv:red "152";
-  gv:blue "107";
-  gv:green "119";
-  gv:score "0.75083124";
-  gv:coverage "0.12"
-], [
-  gv:hex "e0c3bb";
-  gv:red "224";
-  gv:blue "187";
-  gv:green "195";
-  gv:score "0.6620809400000001";
-  gv:coverage "0.13999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "68.867797"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.622784"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "57.490253"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "56.282270000000004"
-];
-    w:bagOfWords "A NATURAL BRUT SHERRY\nPAN DO\nGROWN AND SHIPPED BY\nH E\n0 WILLIAMS & HUMBERT LTD.\nJEREZ.\nPRODUCE OF SPAIN\nRGTO, EMB. NT 206\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4591";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

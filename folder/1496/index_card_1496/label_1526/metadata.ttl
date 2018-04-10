@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1526";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "REGISTRADA\nM ARCA\nMANZANILLA PASADA\nLA GITANA\nM BR\nA\nSUCESORES\nETA\nM. HIDALGO Y CA\nDP BOTTLERS & SHIPPERS\nSANLUCAR DE BAR RAM EDA.\n2O\nProduct of Spain)\n"@spa;
-    gv:color [
-  gv:hex "d8c3a7";
-  gv:red "216";
-  gv:blue "167";
-  gv:green "195";
-  gv:score "45.477602";
-  gv:coverage "26.22"
-], [
-  gv:hex "7f471e";
-  gv:red "127";
-  gv:blue "30";
-  gv:green "71";
-  gv:score "2.8234288";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "50260f";
-  gv:red "80";
-  gv:blue "15";
-  gv:green "38";
-  gv:score "1.2212054";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "b19b7a";
-  gv:red "177";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "17.067368";
-  gv:coverage "5.2533332"
-], [
-  gv:hex "ecd8be";
-  gv:red "236";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "7.9037048";
-  gv:coverage "17.633334"
-], [
-  gv:hex "8d7856";
-  gv:red "141";
-  gv:blue "86";
-  gv:green "120";
-  gv:score "4.660950199999999";
-  gv:coverage "1.0133334"
-], [
-  gv:hex "9f653a";
-  gv:red "159";
-  gv:blue "58";
-  gv:green "101";
-  gv:score "2.2305204";
-  gv:coverage "0.22"
-], [
-  gv:hex "be947a";
-  gv:red "190";
-  gv:blue "122";
-  gv:green "148";
-  gv:score "2.0483045";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "e0b7a2";
-  gv:red "224";
-  gv:blue "162";
-  gv:green "183";
-  gv:score "1.9977095999999999";
-  gv:coverage "0.74"
-], [
-  gv:hex "8e3e27";
-  gv:red "142";
-  gv:blue "39";
-  gv:green "62";
-  gv:score "1.9717531";
-  gv:coverage "0.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "65.872192"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.854021"
-];
-    w:bagOfWords "REGISTRADA\nM ARCA\nMANZANILLA PASADA\nLA GITANA\nM BR\nA\nSUCESORES\nETA\nM. HIDALGO Y CA\nDP BOTTLERS & SHIPPERS\nSANLUCAR DE BAR RAM EDA.\n2O\nProduct of Spain)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1526";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

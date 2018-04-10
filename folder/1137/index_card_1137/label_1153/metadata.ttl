@@ -1,108 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1153";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "it\nSromu 30 ans\nTRADE\nMARK\nrom\nFROM ROGEE&C\n30 AN\nCOGNAC.\nEN FUT\n"@undefined;
-    gv:color [
-  gv:hex "bc9c76";
-  gv:red "188";
-  gv:blue "118";
-  gv:green "156";
-  gv:score "29.426177999999997";
-  gv:coverage "9.28"
-], [
-  gv:hex "4e2f14";
-  gv:red "78";
-  gv:blue "20";
-  gv:green "47";
-  gv:score "0.6779725200000001";
-  gv:coverage "0.24"
-], [
-  gv:hex "d2b28c";
-  gv:red "210";
-  gv:blue "140";
-  gv:green "178";
-  gv:score "20.073956000000003";
-  gv:coverage "34.333332999999996"
-], [
-  gv:hex "c19e74";
-  gv:red "193";
-  gv:blue "116";
-  gv:green "158";
-  gv:score "19.741246";
-  gv:coverage "5.9066668"
-], [
-  gv:hex "92724b";
-  gv:red "146";
-  gv:blue "75";
-  gv:green "114";
-  gv:score "5.985428000000001";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "d1b084";
-  gv:red "209";
-  gv:blue "132";
-  gv:green "176";
-  gv:score "4.903255799999999";
-  gv:coverage "1.96"
-], [
-  gv:hex "c79d75";
-  gv:red "199";
-  gv:blue "117";
-  gv:green "157";
-  gv:score "3.703111";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "977855";
-  gv:red "151";
-  gv:blue "85";
-  gv:green "120";
-  gv:score "3.3828270000000003";
-  gv:coverage "1.0666666999999999"
-], [
-  gv:hex "bf9674";
-  gv:red "191";
-  gv:blue "116";
-  gv:green "150";
-  gv:score "2.5282614";
-  gv:coverage "0.9533333600000001"
-], [
-  gv:hex "d6af8b";
-  gv:red "214";
-  gv:blue "139";
-  gv:green "175";
-  gv:score "1.7828";
-  gv:coverage "0.64"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.150005"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.70347700000001"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.380013000000005"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.814563"
-];
-    w:bagOfWords "it\nSromu 30 ans\nTRADE\nMARK\nrom\nFROM ROGEE&C\n30 AN\nCOGNAC.\nEN FUT\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1153";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

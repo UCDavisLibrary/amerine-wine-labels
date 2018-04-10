@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2617/label_2694";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "IMP- PARIS A NUITS\nTRADE\nMARK\nAPPELLATIOR CORT ROLEC\n"@fra;
-    gv:color [
-  gv:hex "dac1a4";
-  gv:red "218";
-  gv:blue "164";
-  gv:green "193";
-  gv:score "20.171671999999997";
-  gv:coverage "31.353334"
-], [
-  gv:hex "8f3821";
-  gv:red "143";
-  gv:blue "33";
-  gv:green "56";
-  gv:score "13.574354";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "ecbca1";
-  gv:red "236";
-  gv:blue "161";
-  gv:green "188";
-  gv:score "10.103173";
-  gv:coverage "1.5533333999999999"
-], [
-  gv:hex "b19a7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "9.574800699999999";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "c39277";
-  gv:red "195";
-  gv:blue "119";
-  gv:green "146";
-  gv:score "7.204629999999999";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "8c765a";
-  gv:red "140";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "5.2775547";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "f1dcc1";
-  gv:red "241";
-  gv:blue "193";
-  gv:green "220";
-  gv:score "4.7301035";
-  gv:coverage "27.066666"
-], [
-  gv:hex "6f2110";
-  gv:red "111";
-  gv:blue "16";
-  gv:green "33";
-  gv:score "4.4602986";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "ad563e";
-  gv:red "173";
-  gv:blue "62";
-  gv:green "86";
-  gv:score "4.341524799999999";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "a37158";
-  gv:red "163";
-  gv:blue "88";
-  gv:green "113";
-  gv:score "3.6385558999999996";
-  gv:coverage "0.29333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.202297"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "IMP- PARIS A NUITS\nTRADE\nMARK\nAPPELLATIOR CORT ROLEC\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2694";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

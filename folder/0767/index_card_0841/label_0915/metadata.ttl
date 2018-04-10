@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0915";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "Ue Pineau Des Charentes\na Jappellation Uontrolée\nQu Chateau de Beaulom\nSaint-Dirant-au-G5ua.\nCharente-maritime\n"@fra;
-    gv:color [
-  gv:hex "ddc9b2";
-  gv:red "221";
-  gv:blue "178";
-  gv:green "201";
-  gv:score "47.9176";
-  gv:coverage "37.533334"
-], [
-  gv:hex "967259";
-  gv:red "150";
-  gv:blue "89";
-  gv:green "114";
-  gv:score "6.921451500000001";
-  gv:coverage "0.54"
-], [
-  gv:hex "b6b9ad";
-  gv:red "182";
-  gv:blue "173";
-  gv:green "185";
-  gv:score "12.171145";
-  gv:coverage "5.3533334"
-], [
-  gv:hex "ecd6bd";
-  gv:red "236";
-  gv:blue "189";
-  gv:green "214";
-  gv:score "7.3905081";
-  gv:coverage "37.146667"
-], [
-  gv:hex "b29c86";
-  gv:red "178";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "4.8207946";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "8b7560";
-  gv:red "139";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "4.7425956";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "a7a79d";
-  gv:red "167";
-  gv:blue "157";
-  gv:green "167";
-  gv:score "4.212154399999999";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "debaa2";
-  gv:red "222";
-  gv:blue "162";
-  gv:green "186";
-  gv:score "4.0194295";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "b6927a";
-  gv:red "182";
-  gv:blue "122";
-  gv:green "146";
-  gv:score "3.7649635";
-  gv:coverage "0.36"
-], [
-  gv:hex "80756a";
-  gv:red "128";
-  gv:blue "106";
-  gv:green "117";
-  gv:score "1.5158156";
-  gv:coverage "0.23333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.33408299999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "60.492855"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.56346"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.004761"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.140809"
-];
-    w:bagOfWords "Ue Pineau Des Charentes\na Jappellation Uontrolée\nQu Chateau de Beaulom\nSaint-Dirant-au-G5ua.\nCharente-maritime\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0915";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

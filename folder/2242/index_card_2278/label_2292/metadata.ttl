@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2292";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "GRAND\nVIN\n1928\nROIS\nDES LEVIN\nROI DES VINS\nD. CORDER\nBORDEAUX\nPropriétaire\nDE POSE\nMIS EN BOUT EILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "d7bf9c";
-  gv:red "215";
-  gv:blue "156";
-  gv:green "191";
-  gv:score "53.451949";
-  gv:coverage "24.68"
-], [
-  gv:hex "b79f7b";
-  gv:red "183";
-  gv:blue "123";
-  gv:green "159";
-  gv:score "18.3963";
-  gv:coverage "4.34"
-], [
-  gv:hex "d7b988";
-  gv:red "215";
-  gv:blue "136";
-  gv:green "185";
-  gv:score "14.486604999999999";
-  gv:coverage "2.3866666000000003"
-], [
-  gv:hex "b89c6d";
-  gv:red "184";
-  gv:blue "109";
-  gv:green "156";
-  gv:score "8.7807186";
-  gv:coverage "1.54"
-], [
-  gv:hex "957b4f";
-  gv:red "149";
-  gv:blue "79";
-  gv:green "123";
-  gv:score "1.8199159";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "edd7b7";
-  gv:red "237";
-  gv:blue "183";
-  gv:green "215";
-  gv:score "1.3004371000000001";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "97805b";
-  gv:red "151";
-  gv:blue "91";
-  gv:green "128";
-  gv:score "1.0132286000000001";
-  gv:coverage "0.32"
-], [
-  gv:hex "5a5148";
-  gv:red "90";
-  gv:blue "72";
-  gv:green "81";
-  gv:score "0.0081865772";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "d0c4bb";
-  gv:red "208";
-  gv:blue "187";
-  gv:green "196";
-  gv:score "0.28715706";
-  gv:coverage "30.413332999999998"
-], [
-  gv:hex "261e12";
-  gv:red "38";
-  gv:blue "18";
-  gv:green "30";
-  gv:score "0.0024038918";
-  gv:coverage "0.02"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.116479999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.957319000000005"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.526964"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.476687"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "51.307517000000004"
-];
-    w:bagOfWords "GRAND\nVIN\n1928\nROIS\nDES LEVIN\nROI DES VINS\nD. CORDER\nBORDEAUX\nPropriétaire\nDE POSE\nMIS EN BOUT EILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2292";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

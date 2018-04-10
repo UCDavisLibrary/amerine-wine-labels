@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0414";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "CORDIAL.\nMEDOC\netdap\nsalutaurei\ndes liqueurs\nDistillée avec des produits Superieurs,\nalliée des fruits\nexquis et des eaux\nspécialem\nchoisies pour\nleur fin\nle\narome &a &a&a\nG. JOURDE\nFRANCE\nBORDEAUX\n"@undefined;
-    gv:color [
-  gv:hex "9c6f43";
-  gv:red "156";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "41.576882999999995";
-  gv:coverage "9.139999999999999"
-], [
-  gv:hex "d7b795";
-  gv:red "215";
-  gv:blue "149";
-  gv:green "183";
-  gv:score "0.7249516";
-  gv:coverage "45.440000000000005"
-], [
-  gv:hex "ba8d5d";
-  gv:red "186";
-  gv:blue "93";
-  gv:green "141";
-  gv:score "32.027659";
-  gv:coverage "6.64"
-], [
-  gv:hex "7b4f24";
-  gv:red "123";
-  gv:blue "36";
-  gv:green "79";
-  gv:score "18.998049";
-  gv:coverage "3.5999999999999996"
-], [
-  gv:hex "5a2f07";
-  gv:red "90";
-  gv:blue "7";
-  gv:green "47";
-  gv:score "2.0409355000000002";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "b99568";
-  gv:red "185";
-  gv:blue "104";
-  gv:green "149";
-  gv:score "1.7153604";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "96754b";
-  gv:red "150";
-  gv:blue "75";
-  gv:green "117";
-  gv:score "0.7102506700000001";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "b79674";
-  gv:red "183";
-  gv:blue "116";
-  gv:green "150";
-  gv:score "0.67389528";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "b98c6b";
-  gv:red "185";
-  gv:blue "107";
-  gv:green "140";
-  gv:score "0.57338648";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "a47a58";
-  gv:red "164";
-  gv:blue "88";
-  gv:green "122";
-  gv:score "0.21283939";
-  gv:coverage "0.066666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.987759"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.238656000000006"
-];
-    w:bagOfWords "CORDIAL.\nMEDOC\netdap\nsalutaurei\ndes liqueurs\nDistillée avec des produits Superieurs,\nalliée des fruits\nexquis et des eaux\nspécialem\nchoisies pour\nleur fin\nle\narome &a &a&a\nG. JOURDE\nFRANCE\nBORDEAUX\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0414";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2545";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "our\nvan\nPRODUCe OR FRADCA\nCHABLIS\nWHITE BURGUNDY WINE\nAPPELLATION CONTROLEE\no\nRESERVE\nComte d'OPthez\nREGOCIARTHBEAZIRE (COTE D'OR)\nAlcohol 13.6 by volume\nContents 1 Pint 8 Fl. Oz.\n"@fra;
-    gv:color [
-  gv:hex "ddc19c";
-  gv:red "221";
-  gv:blue "156";
-  gv:green "193";
-  gv:score "24.073568";
-  gv:coverage "30.993333"
-], [
-  gv:hex "c78f6a";
-  gv:red "199";
-  gv:blue "106";
-  gv:green "143";
-  gv:score "5.7366576";
-  gv:coverage "0.76"
-], [
-  gv:hex "a42e19";
-  gv:red "164";
-  gv:blue "25";
-  gv:green "46";
-  gv:score "2.0271799";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "c5271e";
-  gv:red "197";
-  gv:blue "30";
-  gv:green "39";
-  gv:score "0.14851432";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "b29875";
-  gv:red "178";
-  gv:blue "117";
-  gv:green "152";
-  gv:score "13.711813000000001";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "8d7454";
-  gv:red "141";
-  gv:blue "84";
-  gv:green "116";
-  gv:score "12.346418";
-  gv:coverage "2.08"
-], [
-  gv:hex "e2c294";
-  gv:red "226";
-  gv:blue "148";
-  gv:green "194";
-  gv:score "7.3046818";
-  gv:coverage "2.34"
-], [
-  gv:hex "6b5435";
-  gv:red "107";
-  gv:blue "53";
-  gv:green "84";
-  gv:score "5.836023";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "ebba98";
-  gv:red "235";
-  gv:blue "152";
-  gv:green "186";
-  gv:score "4.480414499999999";
-  gv:coverage "1.4133333"
-], [
-  gv:hex "edb891";
-  gv:red "237";
-  gv:blue "145";
-  gv:green "184";
-  gv:score "4.3323569";
-  gv:coverage "1.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.792807"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "our\nvan\nPRODUCe OR FRADCA\nCHABLIS\nWHITE BURGUNDY WINE\nAPPELLATION CONTROLEE\no\nRESERVE\nComte d'OPthez\nREGOCIARTHBEAZIRE (COTE D'OR)\nAlcohol 13.6 by volume\nContents 1 Pint 8 Fl. Oz.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2545";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

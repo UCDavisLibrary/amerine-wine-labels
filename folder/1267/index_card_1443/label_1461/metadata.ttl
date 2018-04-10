@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1443/label_1461";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nCHAMPAGNE\nSPECIAL DRY\nM E D\nD R Y\nFER M EN T E D N THE BOTTLE\nPRODUCED AND BOTTLED BY URBANA WINE COMPANY, INC. URBANA HAMMONDSPORT, N.Y\nCONTENTS QUART ESTABLISHED 1865\nALCOHOL 12% BY VOLUME\n"@eng;
-    gv:color [
-  gv:hex "d5c3af";
-  gv:red "213";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "34.040409";
-  gv:coverage "9.26"
-], [
-  gv:hex "160e07";
-  gv:red "22";
-  gv:blue "7";
-  gv:green "14";
-  gv:score "5.8627177";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "eeddca";
-  gv:red "238";
-  gv:blue "202";
-  gv:green "221";
-  gv:score "18.860053";
-  gv:coverage "14.093333"
-], [
-  gv:hex "ae9b88";
-  gv:red "174";
-  gv:blue "136";
-  gv:green "155";
-  gv:score "15.772384";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "85745f";
-  gv:red "133";
-  gv:blue "95";
-  gv:green "116";
-  gv:score "7.232458899999999";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "62533e";
-  gv:red "98";
-  gv:blue "62";
-  gv:green "83";
-  gv:score "6.2662818";
-  gv:coverage "0.86"
-], [
-  gv:hex "3f311e";
-  gv:red "63";
-  gv:blue "30";
-  gv:green "49";
-  gv:score "4.2975515";
-  gv:coverage "0.62"
-], [
-  gv:hex "281a08";
-  gv:red "40";
-  gv:blue "8";
-  gv:green "26";
-  gv:score "3.3067702999999997";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "372d26";
-  gv:red "55";
-  gv:blue "38";
-  gv:green "45";
-  gv:score "1.3865083999999999";
-  gv:coverage "0.78666667"
-], [
-  gv:hex "d7cdc5";
-  gv:red "215";
-  gv:blue "197";
-  gv:green "205";
-  gv:score "1.1148794";
-  gv:coverage "1.9466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "73.23606000000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.21449"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "56.25915500000001"
-];
-    w:bagOfWords "GOLD SEAL\nNEW YORK STATE\nCHAMPAGNE\nSPECIAL DRY\nM E D\nD R Y\nFER M EN T E D N THE BOTTLE\nPRODUCED AND BOTTLED BY URBANA WINE COMPANY, INC. URBANA HAMMONDSPORT, N.Y\nCONTENTS QUART ESTABLISHED 1865\nALCOHOL 12% BY VOLUME\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1461";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

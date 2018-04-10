@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4725/label_4736";
-    dct:type "image";
-    w:bagOfWords "PRODUCE OF SCOTLAND\nown\nARD &Co\nESTP\n814\nAND\nFINE OLD BLENDED\nSCOTCH WHISKY\nHEAD OFFICE\nSOUTHARD & Co ITD\n2,St Dunstans Hill,\nLONDON.\n"@undefined;
-    gv:color [
-  gv:hex "dbc7a7";
-  gv:red "219";
-  gv:blue "167";
-  gv:green "199";
-  gv:score "24.289452";
-  gv:coverage "14.946666"
-], [
-  gv:hex "eedbbc";
-  gv:red "238";
-  gv:blue "188";
-  gv:green "219";
-  gv:score "12.643512000000001";
-  gv:coverage "16.386667"
-], [
-  gv:hex "af997a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "12.567955";
-  gv:coverage "3.26"
-], [
-  gv:hex "8c7655";
-  gv:red "140";
-  gv:blue "85";
-  gv:green "118";
-  gv:score "11.820826";
-  gv:coverage "2.36"
-], [
-  gv:hex "af9660";
-  gv:red "175";
-  gv:blue "96";
-  gv:green "150";
-  gv:score "8.373678499999999";
-  gv:coverage "3.2800000000000002"
-], [
-  gv:hex "917946";
-  gv:red "145";
-  gv:blue "70";
-  gv:green "121";
-  gv:score "8.1169933";
-  gv:coverage "2.62"
-], [
-  gv:hex "685131";
-  gv:red "104";
-  gv:blue "49";
-  gv:green "81";
-  gv:score "4.3936223000000005";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "684e23";
-  gv:red "104";
-  gv:blue "35";
-  gv:green "78";
-  gv:score "4.216362500000001";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "cfb77f";
-  gv:red "207";
-  gv:blue "127";
-  gv:green "183";
-  gv:score "3.0212807";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "6c4a2d";
-  gv:red "108";
-  gv:blue "45";
-  gv:green "74";
-  gv:score "1.6221154000000002";
-  gv:coverage "0.25333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.841234"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02w08>;
-  gv:desc "flavor";
-  gv:score "50.633985"
-];
-    w:bagOfWords "PRODUCE OF SCOTLAND\nown\nARD &Co\nESTP\n814\nAND\nFINE OLD BLENDED\nSCOTCH WHISKY\nHEAD OFFICE\nSOUTHARD & Co ITD\n2,St Dunstans Hill,\nLONDON.\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4736";
+    <schema.keywords> "Fortified Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1033";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "ropri vigneron\nrandva\n"@deu;
-    gv:color [
-  gv:hex "e2c8a1";
-  gv:red "226";
-  gv:blue "161";
-  gv:green "200";
-  gv:score "29.610546999999997";
-  gv:coverage "14.506666"
-], [
-  gv:hex "764724";
-  gv:red "118";
-  gv:blue "36";
-  gv:green "71";
-  gv:score "4.6916567";
-  gv:coverage "0.64"
-], [
-  gv:hex "d7c18f";
-  gv:red "215";
-  gv:blue "143";
-  gv:green "193";
-  gv:score "21.695871999999998";
-  gv:coverage "7.7"
-], [
-  gv:hex "251b00";
-  gv:red "37";
-  gv:blue "undefined";
-  gv:green "27";
-  gv:score "0.12030972000000001";
-  gv:coverage "0.04"
-], [
-  gv:hex "ad9c67";
-  gv:red "173";
-  gv:blue "103";
-  gv:green "156";
-  gv:score "10.586511";
-  gv:coverage "3.7733335"
-], [
-  gv:hex "877745";
-  gv:red "135";
-  gv:blue "69";
-  gv:green "119";
-  gv:score "6.536652900000001";
-  gv:coverage "1.7533334"
-], [
-  gv:hex "f0d6b2";
-  gv:red "240";
-  gv:blue "178";
-  gv:green "214";
-  gv:score "6.3823099999999995";
-  gv:coverage "27.666667"
-], [
-  gv:hex "655425";
-  gv:red "101";
-  gv:blue "37";
-  gv:green "84";
-  gv:score "2.3280619";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "9d6c48";
-  gv:red "157";
-  gv:blue "72";
-  gv:green "108";
-  gv:score "2.2602158";
-  gv:coverage "0.58666668"
-], [
-  gv:hex "b69c76";
-  gv:red "182";
-  gv:blue "118";
-  gv:green "156";
-  gv:score "2.2057867";
-  gv:coverage "0.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.09991"
-];
-    w:bagOfWords "ropri vigneron\nrandva\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1033";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0342";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "OUBLIEB\nCuper Santa Clara Co. California\n"@eng;
-    gv:color [
-  gv:hex "c09159";
-  gv:red "192";
-  gv:blue "89";
-  gv:green "145";
-  gv:score "24.894734";
-  gv:coverage "4.9399999999999995"
-], [
-  gv:hex "d7bd9d";
-  gv:red "215";
-  gv:blue "157";
-  gv:green "189";
-  gv:score "13.635357";
-  gv:coverage "42.3"
-], [
-  gv:hex "bc9867";
-  gv:red "188";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "16.048461";
-  gv:coverage "3.5466667"
-], [
-  gv:hex "a0733c";
-  gv:red "160";
-  gv:blue "60";
-  gv:green "115";
-  gv:score "13.901517";
-  gv:coverage "2.58"
-], [
-  gv:hex "d8b484";
-  gv:red "216";
-  gv:blue "132";
-  gv:green "180";
-  gv:score "8.2259439";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "a8712d";
-  gv:red "168";
-  gv:blue "45";
-  gv:green "113";
-  gv:score "5.5246341999999995";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "947444";
-  gv:red "148";
-  gv:blue "68";
-  gv:green "116";
-  gv:score "5.500165";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "b89c79";
-  gv:red "184";
-  gv:blue "121";
-  gv:green "156";
-  gv:score "4.1090973";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "c08642";
-  gv:red "192";
-  gv:blue "66";
-  gv:green "134";
-  gv:score "2.5050253000000002";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "dbaf7c";
-  gv:red "219";
-  gv:blue "124";
-  gv:green "175";
-  gv:score "1.8440362";
-  gv:coverage "0.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.298342999999996"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.740891000000005"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "56.142735"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.389533"
-];
-    w:bagOfWords "OUBLIEB\nCuper Santa Clara Co. California\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0342";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

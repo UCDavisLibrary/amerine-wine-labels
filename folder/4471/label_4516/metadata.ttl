@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4471/label_4516";
-    dct:type "image";
-    w:bagOfWords "MARQUES DE MURRIETA\n(LOG RON O\nMARCAREGISTRADA\nEMBOTELLADOR N% 53.\nCARTA BLANCA\nCOSECHA 1948\n"@spa;
-    gv:color [
-  gv:hex "dbc6ac";
-  gv:red "219";
-  gv:blue "172";
-  gv:green "198";
-  gv:score "40.010025999999996";
-  gv:coverage "23.826666"
-], [
-  gv:hex "552b1c";
-  gv:red "85";
-  gv:blue "28";
-  gv:green "43";
-  gv:score "1.1855178";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "ebd9c2";
-  gv:red "235";
-  gv:blue "194";
-  gv:green "217";
-  gv:score "18.321122000000003";
-  gv:coverage "17.213333"
-], [
-  gv:hex "b49978";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "153";
-  gv:score "14.606167000000001";
-  gv:coverage "3.4799999999999995"
-], [
-  gv:hex "e4d9cd";
-  gv:red "228";
-  gv:blue "205";
-  gv:green "217";
-  gv:score "4.8379712";
-  gv:coverage "48.613334"
-], [
-  gv:hex "bc996f";
-  gv:red "188";
-  gv:blue "111";
-  gv:green "153";
-  gv:score "3.6496133";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "dbb68a";
-  gv:red "219";
-  gv:blue "138";
-  gv:green "182";
-  gv:score "2.9882454999999997";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "92795a";
-  gv:red "146";
-  gv:blue "90";
-  gv:green "121";
-  gv:score "2.5974324";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "dcd0c4";
-  gv:red "220";
-  gv:blue "196";
-  gv:green "208";
-  gv:score "2.3480194";
-  gv:coverage "3.8133334"
-], [
-  gv:hex "98784f";
-  gv:red "152";
-  gv:blue "79";
-  gv:green "120";
-  gv:score "2.0894855";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.382582"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MARQUES DE MURRIETA\n(LOG RON O\nMARCAREGISTRADA\nEMBOTELLADOR N% 53.\nCARTA BLANCA\nCOSECHA 1948\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4516";
+    <schema.keywords> "Spain Rioja Rest to Check 2 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

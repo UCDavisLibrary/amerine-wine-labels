@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3115/label_3117";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "CAFE DE PARIS\nRESTAURANT FOUQUET\nPAVILLON D'ARMENONVILLE\nLE PRE CATELAN\nSaint-Julien\nAPPELLATION CONTROLEE\nee E\n"@fra;
-    gv:color [
-  gv:hex "d8c2a6";
-  gv:red "216";
-  gv:blue "166";
-  gv:green "194";
-  gv:score "46.490243";
-  gv:coverage "24.46"
-], [
-  gv:hex "b39c81";
-  gv:red "179";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "38.650828999999995";
-  gv:coverage "7.6066665"
-], [
-  gv:hex "917a5e";
-  gv:red "145";
-  gv:blue "94";
-  gv:green "122";
-  gv:score "7.1941853";
-  gv:coverage "1.2533333"
-], [
-  gv:hex "ebd8bd";
-  gv:red "235";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "6.0516976";
-  gv:coverage "4.7"
-], [
-  gv:hex "68543c";
-  gv:red "104";
-  gv:blue "60";
-  gv:green "84";
-  gv:score "1.1454739999999999";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "44301b";
-  gv:red "68";
-  gv:blue "27";
-  gv:green "48";
-  gv:score "0.17810368";
-  gv:coverage "0.04"
-], [
-  gv:hex "d0b588";
-  gv:red "208";
-  gv:blue "136";
-  gv:green "181";
-  gv:score "0.12279628000000001";
-  gv:coverage "0.02"
-], [
-  gv:hex "ba9e74";
-  gv:red "186";
-  gv:blue "116";
-  gv:green "158";
-  gv:score "0.08255287";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "8c734b";
-  gv:red "140";
-  gv:blue "75";
-  gv:green "115";
-  gv:score "0.035376474";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "ccc4ba";
-  gv:red "204";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "0.014185890999999999";
-  gv:coverage "11.733333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "82.960612"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.871825"
-];
-    w:bagOfWords "CAFE DE PARIS\nRESTAURANT FOUQUET\nPAVILLON D'ARMENONVILLE\nLE PRE CATELAN\nSaint-Julien\nAPPELLATION CONTROLEE\nee E\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3117";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

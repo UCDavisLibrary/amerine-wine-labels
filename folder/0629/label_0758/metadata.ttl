@@ -1,106 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0758";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN DU BEAUJOLAIS\nAPPELLATION CONTROLEE\nAND CRU CLASS E\nIERRE DU PON Do\nNEGOCIANT A VILLEFRANCHE SUR-SAONE RHONE\n"@undefined;
-    gv:color [
-  gv:hex "d9bfa4";
-  gv:red "217";
-  gv:blue "164";
-  gv:green "191";
-  gv:score "61.666411";
-  gv:coverage "20.426667000000002"
-], [
-  gv:hex "b2997f";
-  gv:red "178";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "25.191354999999998";
-  gv:coverage "7.933333500000001"
-], [
-  gv:hex "90785d";
-  gv:red "144";
-  gv:blue "93";
-  gv:green "120";
-  gv:score "7.3999837";
-  gv:coverage "2.26"
-], [
-  gv:hex "eed7bf";
-  gv:red "238";
-  gv:blue "191";
-  gv:green "215";
-  gv:score "2.6881676";
-  gv:coverage "3.1733334"
-], [
-  gv:hex "695239";
-  gv:red "105";
-  gv:blue "57";
-  gv:green "82";
-  gv:score "1.5815545";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "d4c4ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "0.337323";
-  gv:coverage "8.8466667"
-], [
-  gv:hex "4a371e";
-  gv:red "74";
-  gv:blue "30";
-  gv:green "55";
-  gv:score "0.25153485999999997";
-  gv:coverage "0.1"
-], [
-  gv:hex "927566";
-  gv:red "146";
-  gv:blue "102";
-  gv:green "117";
-  gv:score "0.15565568";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "e9e0d6";
-  gv:red "233";
-  gv:blue "214";
-  gv:green "224";
-  gv:score "0.12897155";
-  gv:coverage "56.366664"
-], [
-  gv:hex "4d3117";
-  gv:red "77";
-  gv:blue "23";
-  gv:green "49";
-  gv:score "0.11074288";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.876289"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.5465"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "51.741468999999995"
-];
-    w:bagOfWords "GRAND VIN DU BEAUJOLAIS\nAPPELLATION CONTROLEE\nAND CRU CLASS E\nIERRE DU PON Do\nNEGOCIANT A VILLEFRANCHE SUR-SAONE RHONE\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0758";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

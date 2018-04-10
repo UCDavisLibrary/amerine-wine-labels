@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0285/label_0314";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "3/30\nCALIFORNIA\nIN FAN DEL\n"@eng;
-    gv:color [
-  gv:hex "d8c09e";
-  gv:red "216";
-  gv:blue "158";
-  gv:green "192";
-  gv:score "9.1303609";
-  gv:coverage "43.059999999999995"
-], [
-  gv:hex "675235";
-  gv:red "103";
-  gv:blue "53";
-  gv:green "82";
-  gv:score "7.8919955";
-  gv:coverage "1.2266667"
-], [
-  gv:hex "d58172";
-  gv:red "213";
-  gv:blue "114";
-  gv:green "129";
-  gv:score "6.3034751";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "ae9677";
-  gv:red "174";
-  gv:blue "119";
-  gv:green "150";
-  gv:score "8.4613368";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "8b7456";
-  gv:red "139";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "7.757299400000001";
-  gv:coverage "1.32"
-], [
-  gv:hex "d7b785";
-  gv:red "215";
-  gv:blue "133";
-  gv:green "183";
-  gv:score "6.8286321999999995";
-  gv:coverage "1.76"
-], [
-  gv:hex "724a35";
-  gv:red "114";
-  gv:blue "53";
-  gv:green "74";
-  gv:score "4.4583466000000005";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "c78f7a";
-  gv:red "199";
-  gv:blue "122";
-  gv:green "143";
-  gv:score "4.3888122";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "ca9061";
-  gv:red "202";
-  gv:blue "97";
-  gv:green "144";
-  gv:score "4.3847047";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "be9e6d";
-  gv:red "190";
-  gv:blue "109";
-  gv:green "158";
-  gv:score "4.0160585";
-  gv:coverage "0.72"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.964173"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.856116"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.92275600000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.157361"
-];
-    w:bagOfWords "3/30\nCALIFORNIA\nIN FAN DEL\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0314";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

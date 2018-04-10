@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3321/label_3341";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Clos de la Vigne au Saint\nLOXE\nCORTON\nc Mis en bouteilles la Propriefe\nFRANCE\nREGISTERED\nDEPOSE\nC te de Be un c\nAlox e- Co to\n"@fra;
-    gv:color [
-  gv:hex "ab9b87";
-  gv:red "171";
-  gv:blue "135";
-  gv:green "155";
-  gv:score "35.979769";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "857663";
-  gv:red "133";
-  gv:blue "99";
-  gv:green "118";
-  gv:score "26.978052";
-  gv:coverage "1.9"
-], [
-  gv:hex "cdbda8";
-  gv:red "205";
-  gv:blue "168";
-  gv:green "189";
-  gv:score "23.552968";
-  gv:coverage "32.993335"
-], [
-  gv:hex "655542";
-  gv:red "101";
-  gv:blue "66";
-  gv:green "85";
-  gv:score "9.829063";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "453523";
-  gv:red "69";
-  gv:blue "35";
-  gv:green "53";
-  gv:score "1.7158581";
-  gv:coverage "0.12"
-], [
-  gv:hex "e8d8c4";
-  gv:red "232";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "1.6365140999999999";
-  gv:coverage "1.5466667"
-], [
-  gv:hex "2a1907";
-  gv:red "42";
-  gv:blue "7";
-  gv:green "25";
-  gv:score "0.11021099999999999";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "cbc0b8";
-  gv:red "203";
-  gv:blue "184";
-  gv:green "192";
-  gv:score "0.07175825899999999";
-  gv:coverage "23.24"
-], [
-  gv:hex "61564d";
-  gv:red "97";
-  gv:blue "77";
-  gv:green "86";
-  gv:score "0.056905374999999994";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "7e736a";
-  gv:red "126";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "0.023301214";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.669251"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.265719000000004"
-];
-    w:bagOfWords "Clos de la Vigne au Saint\nLOXE\nCORTON\nc Mis en bouteilles la Propriefe\nFRANCE\nREGISTERED\nDEPOSE\nC te de Be un c\nAlox e- Co to\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3341";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

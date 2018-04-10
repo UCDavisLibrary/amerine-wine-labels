@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3142/label_3175";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "19\nEstb\n1793\nGevrey-Chambertin\nAvery & Geo\nBristol.\n"@fra;
-    gv:color [
-  gv:hex "e9dfd5";
-  gv:red "233";
-  gv:blue "213";
-  gv:green "223";
-  gv:score "64.416784";
-  gv:coverage "38.966668"
-], [
-  gv:hex "8a360d";
-  gv:red "138";
-  gv:blue "13";
-  gv:green "54";
-  gv:score "0.95324107";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "e8dbcb";
-  gv:red "232";
-  gv:blue "203";
-  gv:green "219";
-  gv:score "14.73189";
-  gv:coverage "11.926667"
-], [
-  gv:hex "d6cabf";
-  gv:red "214";
-  gv:blue "191";
-  gv:green "202";
-  gv:score "8.287222700000001";
-  gv:coverage "5.24"
-], [
-  gv:hex "dbccba";
-  gv:red "219";
-  gv:blue "186";
-  gv:green "204";
-  gv:score "6.40222";
-  gv:coverage "13.08"
-], [
-  gv:hex "aea197";
-  gv:red "174";
-  gv:blue "151";
-  gv:green "161";
-  gv:score "1.7563255999999998";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "aca091";
-  gv:red "172";
-  gv:blue "145";
-  gv:green "160";
-  gv:score "1.0297749";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "b56139";
-  gv:red "181";
-  gv:blue "57";
-  gv:green "97";
-  gv:score "0.34773782999999997";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "8a7e74";
-  gv:red "138";
-  gv:blue "116";
-  gv:green "126";
-  gv:score "0.31915493";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "76471e";
-  gv:red "118";
-  gv:blue "30";
-  gv:green "71";
-  gv:score "0.29301348";
-  gv:coverage "1.1866666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.863782"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.878495"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "63.304579000000004"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.255524"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.549215"
-];
-    w:bagOfWords "19\nEstb\n1793\nGevrey-Chambertin\nAvery & Geo\nBristol.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3175";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4725/label_4729";
-    dct:type "image";
-    w:bagOfWords "owe scOTCH 4/5\nKIEs\n86 WHISKY IS 6 YEARS\nPROOF THIS\nOLD QUART\nSPECIAL\nLIQUEUR\nA BLENDED\nSCOTCH WHISKY\nBLENDED AND BOTTLED BY\nSouTHARD & Co, LTD.\nGLASGOW\nSCOTLAND\nESTABLISHED\n1814\nIMPORTED BY\nTRADERS DISTRIBUTING CO.\nSAN FRANCISCO, CALIF.\nODU\nPRINTAD IN ENGLAND\n"@undefined;
-    gv:color [
-  gv:hex "d4c4b2";
-  gv:red "212";
-  gv:blue "178";
-  gv:green "196";
-  gv:score "26.165399999999998";
-  gv:coverage "13.36"
-], [
-  gv:hex "a2261e";
-  gv:red "162";
-  gv:blue "30";
-  gv:green "38";
-  gv:score "1.3779153";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "d62d1e";
-  gv:red "214";
-  gv:blue "30";
-  gv:green "45";
-  gv:score "0.50975634";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "8e4136";
-  gv:red "142";
-  gv:blue "54";
-  gv:green "65";
-  gv:score "0.49998122";
-  gv:coverage "0.08"
-], [
-  gv:hex "aa9c8b";
-  gv:red "170";
-  gv:blue "139";
-  gv:green "156";
-  gv:score "14.28808";
-  gv:coverage "3.4533332999999997"
-], [
-  gv:hex "edddcb";
-  gv:red "237";
-  gv:blue "203";
-  gv:green "221";
-  gv:score "12.567478000000001";
-  gv:coverage "13.713333"
-], [
-  gv:hex "e3b7a8";
-  gv:red "227";
-  gv:blue "168";
-  gv:green "183";
-  gv:score "8.1872076";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "c49687";
-  gv:red "196";
-  gv:blue "135";
-  gv:green "150";
-  gv:score "6.0097232";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "837666";
-  gv:red "131";
-  gv:blue "102";
-  gv:green "118";
-  gv:score "5.8116358";
-  gv:coverage "1.26"
-], [
-  gv:hex "5d5142";
-  gv:red "93";
-  gv:blue "66";
-  gv:green "81";
-  gv:score "4.9722861";
-  gv:coverage "0.82666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.712003"
-];
-    w:bagOfWords "owe scOTCH 4/5\nKIEs\n86 WHISKY IS 6 YEARS\nPROOF THIS\nOLD QUART\nSPECIAL\nLIQUEUR\nA BLENDED\nSCOTCH WHISKY\nBLENDED AND BOTTLED BY\nSouTHARD & Co, LTD.\nGLASGOW\nSCOTLAND\nESTABLISHED\n1814\nIMPORTED BY\nTRADERS DISTRIBUTING CO.\nSAN FRANCISCO, CALIF.\nODU\nPRINTAD IN ENGLAND\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4729";
+    <schema.keywords> "Fortified Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

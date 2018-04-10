@@ -1,108 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3772";
-    dct:type "image";
-    w:bagOfWords "LANDES WEINBAU-LEHRANSTALT BAD KREUZNACH\nNAHE\nWEIN\n1949et\nRiesling rodenbeetenauslere\nnaturrein\nOriginal 2lbfiillung Sag 49o45\nBester Nahewein bei der Weinpramiierung der schaftskammer Rheinland-Nassau 1950\nauBer Konkurrenz\n"@deu;
-    gv:color [
-  gv:hex "532a16";
-  gv:red "83";
-  gv:blue "22";
-  gv:green "42";
-  gv:score "12.02886";
-  gv:coverage "0.26"
-], [
-  gv:hex "d2c1ac";
-  gv:red "210";
-  gv:blue "172";
-  gv:green "193";
-  gv:score "8.3885349";
-  gv:coverage "8.8266663"
-], [
-  gv:hex "180a03";
-  gv:red "24";
-  gv:blue "3";
-  gv:green "10";
-  gv:score "2.5304101";
-  gv:coverage "0.16"
-], [
-  gv:hex "734835";
-  gv:red "115";
-  gv:blue "53";
-  gv:green "72";
-  gv:score "10.246639";
-  gv:coverage "0.3"
-], [
-  gv:hex "d0c3ba";
-  gv:red "208";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "8.0311634";
-  gv:coverage "7.9399999999999995"
-], [
-  gv:hex "aa9c93";
-  gv:red "170";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "6.3676387000000005";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "e9dcd3";
-  gv:red "233";
-  gv:blue "211";
-  gv:green "220";
-  gv:score "6.275856500000001";
-  gv:coverage "61.413335999999994"
-], [
-  gv:hex "a7937f";
-  gv:red "167";
-  gv:blue "127";
-  gv:green "147";
-  gv:score "6.270662000000001";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "9c6d5a";
-  gv:red "156";
-  gv:blue "90";
-  gv:green "109";
-  gv:score "6.1868075000000005";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "341201";
-  gv:red "52";
-  gv:blue "1";
-  gv:green "18";
-  gv:score "4.4176016";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.4962"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "55.166185"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.225106"
-];
-    w:bagOfWords "LANDES WEINBAU-LEHRANSTALT BAD KREUZNACH\nNAHE\nWEIN\n1949et\nRiesling rodenbeetenauslere\nnaturrein\nOriginal 2lbfiillung Sag 49o45\nBester Nahewein bei der Weinpramiierung der schaftskammer Rheinland-Nassau 1950\nauBer Konkurrenz\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3772";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

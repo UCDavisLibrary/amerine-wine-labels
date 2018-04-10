@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3772/label_3777";
-    dct:type "image";
-    w:bagOfWords "1951 er\nWalporzheimer Domberg\nSpatburgunder\nWachsium winzerverein\nWeinkellerei der Preuss isch-Rhein ischen\nDampfschiffahrt gesellschaft Kijin\n"@deu;
-    gv:color [
-  gv:hex "c11405";
-  gv:red "193";
-  gv:blue "5";
-  gv:green "20";
-  gv:score "42.928644999999996";
-  gv:coverage "10.726666"
-], [
-  gv:hex "6b1608";
-  gv:red "107";
-  gv:blue "8";
-  gv:green "22";
-  gv:score "3.8718822999999998";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "4b2715";
-  gv:red "75";
-  gv:blue "21";
-  gv:green "39";
-  gv:score "2.785762";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "ae1c08";
-  gv:red "174";
-  gv:blue "8";
-  gv:green "28";
-  gv:score "18.382181";
-  gv:coverage "6.0533334000000005"
-], [
-  gv:hex "cf1a0b";
-  gv:red "207";
-  gv:blue "11";
-  gv:green "26";
-  gv:score "15.533506999999998";
-  gv:coverage "4.3"
-], [
-  gv:hex "dcb29e";
-  gv:red "220";
-  gv:blue "158";
-  gv:green "178";
-  gv:score "0.14341919";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "981a10";
-  gv:red "152";
-  gv:blue "16";
-  gv:green "26";
-  gv:score "5.8053742999999995";
-  gv:coverage "2.08"
-], [
-  gv:hex "ecdac7";
-  gv:red "236";
-  gv:blue "199";
-  gv:green "218";
-  gv:score "0.036374264";
-  gv:coverage "9.5933333"
-], [
-  gv:hex "44351d";
-  gv:red "68";
-  gv:blue "29";
-  gv:green "53";
-  gv:score "2.4087731000000003";
-  gv:coverage "3.7866667"
-], [
-  gv:hex "7e0f06";
-  gv:red "126";
-  gv:blue "6";
-  gv:green "15";
-  gv:score "1.9798164999999999";
-  gv:coverage "0.42"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "93.176663"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.207460999999995"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.248626"
-];
-    w:bagOfWords "1951 er\nWalporzheimer Domberg\nSpatburgunder\nWachsium winzerverein\nWeinkellerei der Preuss isch-Rhein ischen\nDampfschiffahrt gesellschaft Kijin\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3777";
+    <schema.keywords> "Germany Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1965/label_1996";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "do\nno 238\nCA REGISTRA\nJEREZ DE LA FRONTERA\nPREFERIDO\n"@spa;
-    gv:color [
-  gv:hex "d1bea8";
-  gv:red "209";
-  gv:blue "168";
-  gv:green "190";
-  gv:score "54.556942";
-  gv:coverage "17.553334"
-], [
-  gv:hex "ad9c88";
-  gv:red "173";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "25.566211";
-  gv:coverage "1.9133333"
-], [
-  gv:hex "887765";
-  gv:red "136";
-  gv:blue "101";
-  gv:green "119";
-  gv:score "10.496062";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "d9c7bc";
-  gv:red "217";
-  gv:blue "188";
-  gv:green "199";
-  gv:score "5.5149976";
-  gv:coverage "23.799999999999997"
-], [
-  gv:hex "e8d8c6";
-  gv:red "232";
-  gv:blue "198";
-  gv:green "216";
-  gv:score "1.774022";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "6b5b49";
-  gv:red "107";
-  gv:blue "73";
-  gv:green "91";
-  gv:score "1.5103161";
-  gv:coverage "0.08"
-], [
-  gv:hex "e7d6cb";
-  gv:red "231";
-  gv:blue "203";
-  gv:green "214";
-  gv:score "0.32903892";
-  gv:coverage "54.393333"
-], [
-  gv:hex "33220e";
-  gv:red "51";
-  gv:blue "14";
-  gv:green "34";
-  gv:score "0.23364356999999997";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "948e8a";
-  gv:red "148";
-  gv:blue "138";
-  gv:green "142";
-  gv:score "0.0082533465";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "37322e";
-  gv:red "55";
-  gv:blue "46";
-  gv:green "50";
-  gv:score "0.0040481144";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.270115"
-], [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.276213000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.528981"
-];
-    w:bagOfWords "do\nno 238\nCA REGISTRA\nJEREZ DE LA FRONTERA\nPREFERIDO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1996";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

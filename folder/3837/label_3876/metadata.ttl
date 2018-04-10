@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3876";
-    dct:type "image";
-    w:bagOfWords "M O SEL S A A R R U WER\n1953 er\nKrover Steffensberg\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 233 DM 30. 00 Schleife Nr. 24 456 DM 9. 0/00\n"@deu;
-    gv:color [
-  gv:hex "b1a367";
-  gv:red "177";
-  gv:blue "103";
-  gv:green "163";
-  gv:score "37.395209";
-  gv:coverage "6.5266669"
-], [
-  gv:hex "c3b578";
-  gv:red "195";
-  gv:blue "120";
-  gv:green "181";
-  gv:score "13.608429";
-  gv:coverage "2.58"
-], [
-  gv:hex "a79878";
-  gv:red "167";
-  gv:blue "120";
-  gv:green "152";
-  gv:score "12.778969000000002";
-  gv:coverage "6.78"
-], [
-  gv:hex "8c7744";
-  gv:red "140";
-  gv:blue "68";
-  gv:green "119";
-  gv:score "8.774381100000001";
-  gv:coverage "2.48"
-], [
-  gv:hex "877957";
-  gv:red "135";
-  gv:blue "87";
-  gv:green "121";
-  gv:score "8.4999047";
-  gv:coverage "4.6133332"
-], [
-  gv:hex "d1c4a3";
-  gv:red "209";
-  gv:blue "163";
-  gv:green "196";
-  gv:score "5.6747567";
-  gv:coverage "12.006667"
-], [
-  gv:hex "695426";
-  gv:red "105";
-  gv:blue "38";
-  gv:green "84";
-  gv:score "3.4470032999999995";
-  gv:coverage "1.28"
-], [
-  gv:hex "615535";
-  gv:red "97";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "3.4221586";
-  gv:coverage "1.8933333"
-], [
-  gv:hex "e7dcbf";
-  gv:red "231";
-  gv:blue "191";
-  gv:green "220";
-  gv:score "2.5753964000000003";
-  gv:coverage "13.106667"
-], [
-  gv:hex "a2a060";
-  gv:red "162";
-  gv:blue "96";
-  gv:green "160";
-  gv:score "0.48886444";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "72.030371"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.873453"
-];
-    w:bagOfWords "M O SEL S A A R R U WER\n1953 er\nKrover Steffensberg\nHERMANN SCHOTT A. G., RHEYDT\nNr. 24 233 DM 30. 00 Schleife Nr. 24 456 DM 9. 0/00\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3876";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3030";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "LA MISSION HAUT BRION\nGrand Premier Cru\n103\nMIS EN BOUTEILLES AU CHATEAU\nRBORDTEATUX\nFJERANCE\n"@fra;
-    gv:color [
-  gv:hex "d7bc9c";
-  gv:red "215";
-  gv:blue "156";
-  gv:green "188";
-  gv:score "37.81082";
-  gv:coverage "57.879999999999995"
-], [
-  gv:hex "89755c";
-  gv:red "137";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "21.247692";
-  gv:coverage "3.7333331999999997"
-], [
-  gv:hex "af987c";
-  gv:red "175";
-  gv:blue "124";
-  gv:green "152";
-  gv:score "20.099567";
-  gv:coverage "4.1866668"
-], [
-  gv:hex "65523b";
-  gv:red "101";
-  gv:blue "59";
-  gv:green "82";
-  gv:score "14.776933";
-  gv:coverage "2.2933334"
-], [
-  gv:hex "46341d";
-  gv:red "70";
-  gv:blue "29";
-  gv:green "52";
-  gv:score "4.2196721";
-  gv:coverage "0.64"
-], [
-  gv:hex "daba8d";
-  gv:red "218";
-  gv:blue "141";
-  gv:green "186";
-  gv:score "0.48164213";
-  gv:coverage "0.12"
-], [
-  gv:hex "efd6b7";
-  gv:red "239";
-  gv:blue "183";
-  gv:green "214";
-  gv:score "0.38886946";
-  gv:coverage "17.193334"
-], [
-  gv:hex "2c1b05";
-  gv:red "44";
-  gv:blue "5";
-  gv:green "27";
-  gv:score "0.32721506";
-  gv:coverage "0.06"
-], [
-  gv:hex "654933";
-  gv:red "101";
-  gv:blue "51";
-  gv:green "73";
-  gv:score "0.26310799";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "715530";
-  gv:red "113";
-  gv:blue "48";
-  gv:green "85";
-  gv:score "0.14942858";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.655324"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.610923"
-];
-    w:bagOfWords "LA MISSION HAUT BRION\nGrand Premier Cru\n103\nMIS EN BOUTEILLES AU CHATEAU\nRBORDTEATUX\nFJERANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3030";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

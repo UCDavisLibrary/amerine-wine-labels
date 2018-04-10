@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0501";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E I N G A U\nHERMANN SCHOTT A.-G., RHEYDT\nNr. 24450 DM 22,- 0/00\n"@deu;
-    gv:color [
-  gv:hex "e0c49d";
-  gv:red "224";
-  gv:blue "157";
-  gv:green "196";
-  gv:score "18.557055";
-  gv:coverage "15.353333999999998"
-], [
-  gv:hex "bc936a";
-  gv:red "188";
-  gv:blue "106";
-  gv:green "147";
-  gv:score "12.048352";
-  gv:coverage "2.6"
-], [
-  gv:hex "debb8d";
-  gv:red "222";
-  gv:blue "141";
-  gv:green "187";
-  gv:score "18.030351";
-  gv:coverage "5.38"
-], [
-  gv:hex "977047";
-  gv:red "151";
-  gv:blue "71";
-  gv:green "112";
-  gv:score "11.758061";
-  gv:coverage "2.42"
-], [
-  gv:hex "be9b6e";
-  gv:red "190";
-  gv:blue "110";
-  gv:green "155";
-  gv:score "7.146896399999999";
-  gv:coverage "1.94"
-], [
-  gv:hex "754f27";
-  gv:red "117";
-  gv:blue "39";
-  gv:green "79";
-  gv:score "6.9325358";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "efd8b4";
-  gv:red "239";
-  gv:blue "180";
-  gv:green "216";
-  gv:score "5.13684";
-  gv:coverage "12.120000000000001"
-], [
-  gv:hex "dbb184";
-  gv:red "219";
-  gv:blue "132";
-  gv:green "177";
-  gv:score "3.6490265";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "b69973";
-  gv:red "182";
-  gv:blue "115";
-  gv:green "153";
-  gv:score "3.5513340999999996";
-  gv:coverage "1.6"
-], [
-  gv:hex "55310e";
-  gv:red "85";
-  gv:blue "14";
-  gv:green "49";
-  gv:score "2.5455137999999997";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "70.958376"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.841282"
-];
-    w:bagOfWords "R H E I N G A U\nHERMANN SCHOTT A.-G., RHEYDT\nNr. 24450 DM 22,- 0/00\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0501";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

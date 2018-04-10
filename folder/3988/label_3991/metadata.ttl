@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3988/label_3991";
-    dct:type "image";
-    w:bagOfWords "enaerara\nThe RUM COMPANY LTD\nBAS LE KINGSTON\n"@eng;
-    gv:color [
-  gv:hex "cb8515";
-  gv:red "203";
-  gv:blue "21";
-  gv:green "133";
-  gv:score "15.900394";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "e4bf8a";
-  gv:red "228";
-  gv:blue "138";
-  gv:green "191";
-  gv:score "9.774429399999999";
-  gv:coverage "8.7"
-], [
-  gv:hex "734914";
-  gv:red "115";
-  gv:blue "20";
-  gv:green "73";
-  gv:score "9.3368076";
-  gv:coverage "2.32"
-], [
-  gv:hex "361200";
-  gv:red "54";
-  gv:blue "undefined";
-  gv:green "18";
-  gv:score "2.7846051";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "c98c35";
-  gv:red "201";
-  gv:blue "53";
-  gv:green "140";
-  gv:score "9.516935799999999";
-  gv:coverage "2.2866666"
-], [
-  gv:hex "a96f1b";
-  gv:red "169";
-  gv:blue "27";
-  gv:green "111";
-  gv:score "8.69767";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "572e03";
-  gv:red "87";
-  gv:blue "3";
-  gv:green "46";
-  gv:score "6.672886";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "986b36";
-  gv:red "152";
-  gv:blue "54";
-  gv:green "107";
-  gv:score "4.072909999999999";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "824f06";
-  gv:red "130";
-  gv:blue "6";
-  gv:green "79";
-  gv:score "3.6161858999999996";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "e8b987";
-  gv:red "232";
-  gv:blue "135";
-  gv:green "185";
-  gv:score "3.4300055000000005";
-  gv:coverage "3.74"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.248239999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.861577000000004"
-];
-    w:bagOfWords "enaerara\nThe RUM COMPANY LTD\nBAS LE KINGSTON\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "JAM".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3991";
+    <schema.keywords> "Jamaica Rum Folder@en";
+    schema:inLanguage "en-JM";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit;
+    wdt:P297 "JM".
+

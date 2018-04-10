@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1044/label_1059";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "ollontajRollee\n▲ 1946\nS\n109\nU\n"@deu;
-    gv:color [
-  gv:hex "e8b783";
-  gv:red "232";
-  gv:blue "131";
-  gv:green "183";
-  gv:score "14.040287000000001";
-  gv:coverage "5.6866668"
-], [
-  gv:hex "cd9241";
-  gv:red "205";
-  gv:blue "65";
-  gv:green "146";
-  gv:score "8.029525";
-  gv:coverage "1.9800000000000002"
-], [
-  gv:hex "ab2707";
-  gv:red "171";
-  gv:blue "7";
-  gv:green "39";
-  gv:score "6.025888";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "784613";
-  gv:red "120";
-  gv:blue "19";
-  gv:green "70";
-  gv:score "4.819028100000001";
-  gv:coverage "1.18"
-], [
-  gv:hex "3b1000";
-  gv:red "59";
-  gv:blue "undefined";
-  gv:green "16";
-  gv:score "1.1994786";
-  gv:coverage "0.44"
-], [
-  gv:hex "e4c08e";
-  gv:red "228";
-  gv:blue "142";
-  gv:green "192";
-  gv:score "12.57934";
-  gv:coverage "6.0066666"
-], [
-  gv:hex "e2c39e";
-  gv:red "226";
-  gv:blue "158";
-  gv:green "195";
-  gv:score "7.5427644";
-  gv:coverage "27.060000000000002"
-], [
-  gv:hex "a96e1c";
-  gv:red "169";
-  gv:blue "28";
-  gv:green "110";
-  gv:score "6.9778487";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "ca975f";
-  gv:red "202";
-  gv:blue "95";
-  gv:green "151";
-  gv:score "5.7349969000000005";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "e8ae60";
-  gv:red "232";
-  gv:blue "96";
-  gv:green "174";
-  gv:score "4.0475129999999995";
-  gv:coverage "0.96"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.341531"
-], [
-  gv:mid <https://g.co/kg/m/01kr8f>;
-  gv:desc "illustration";
-  gv:score "55.24419"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.241353000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.63015"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.25384199999999"
-];
-    w:bagOfWords "ollontajRollee\n▲ 1946\nS\n109\nU\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1059";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

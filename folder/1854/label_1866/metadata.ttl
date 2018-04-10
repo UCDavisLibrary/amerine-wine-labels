@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1866";
-    dct:type "image";
-    w:bagOfWords "GROWN 8 SHIPPED BY\nHUEL REZ SAA\nRoy ALAMONTILLADO\nSHERRY\nPermit Nomber I-919\nGeeting & Fromm Inc.\ny volume. PRODUCE of SP\nP\ne\n"@spa;
-    gv:color [
-  gv:hex "c5945d";
-  gv:red "197";
-  gv:blue "93";
-  gv:green "148";
-  gv:score "16.307811";
-  gv:coverage "3.3933334000000004"
-], [
-  gv:hex "701704";
-  gv:red "112";
-  gv:blue "4";
-  gv:green "23";
-  gv:score "6.1881091";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "e48275";
-  gv:red "228";
-  gv:blue "117";
-  gv:green "130";
-  gv:score "3.0331753";
-  gv:coverage "0.32"
-], [
-  gv:hex "c09c63";
-  gv:red "192";
-  gv:blue "99";
-  gv:green "156";
-  gv:score "11.404175";
-  gv:coverage "2.9066667"
-], [
-  gv:hex "9f6d3a";
-  gv:red "159";
-  gv:blue "58";
-  gv:green "109";
-  gv:score "9.0806372";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "d8b47a";
-  gv:red "216";
-  gv:blue "122";
-  gv:green "180";
-  gv:score "9.007927";
-  gv:coverage "2.2399999999999998"
-], [
-  gv:hex "8e371f";
-  gv:red "142";
-  gv:blue "31";
-  gv:green "55";
-  gv:score "6.171200000000001";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "962117";
-  gv:red "150";
-  gv:blue "23";
-  gv:green "33";
-  gv:score "5.7746693";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "7f0a03";
-  gv:red "127";
-  gv:blue "3";
-  gv:green "10";
-  gv:score "5.6206021";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "774a1b";
-  gv:red "119";
-  gv:blue "27";
-  gv:green "74";
-  gv:score "5.1604208";
-  gv:coverage "0.9533333600000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.31319"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GROWN 8 SHIPPED BY\nHUEL REZ SAA\nRoy ALAMONTILLADO\nSHERRY\nPermit Nomber I-919\nGeeting & Fromm Inc.\ny volume. PRODUCE of SP\nP\ne\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1866";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

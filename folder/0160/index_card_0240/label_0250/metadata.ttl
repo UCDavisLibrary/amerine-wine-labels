@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0240/label_0250";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "1943\nNGLENO0K\nNAPA.\nALCOHOL 1212%\nBY VOLUME\nNAPA VALLEY\nPINOT NOIR\nPRODUCED & BOTTLED BY\nINGLENOOK VINEYARD CO.\n14th DIST., CAL.\nBONDED WINERY No. 69\nESTABLISHED 1879\nRUTHERFORD, NAPA COUNTY, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "d0c2ab";
-  gv:red "208";
-  gv:blue "171";
-  gv:green "194";
-  gv:score "27.296179999999996";
-  gv:coverage "22.766666"
-], [
-  gv:hex "3e301a";
-  gv:red "62";
-  gv:blue "26";
-  gv:green "48";
-  gv:score "10.481861";
-  gv:coverage "1.28"
-], [
-  gv:hex "987045";
-  gv:red "152";
-  gv:blue "69";
-  gv:green "112";
-  gv:score "0.78325318";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "aa9b83";
-  gv:red "170";
-  gv:blue "131";
-  gv:green "155";
-  gv:score "19.504853999999998";
-  gv:coverage "4.3333333000000005"
-], [
-  gv:hex "867861";
-  gv:red "134";
-  gv:blue "97";
-  gv:green "120";
-  gv:score "17.25602";
-  gv:coverage "2.2666667"
-], [
-  gv:hex "61533c";
-  gv:red "97";
-  gv:blue "60";
-  gv:green "83";
-  gv:score "9.6279152";
-  gv:coverage "1.24"
-], [
-  gv:hex "281904";
-  gv:red "40";
-  gv:blue "4";
-  gv:green "25";
-  gv:score "4.9270842";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "e7dac6";
-  gv:red "231";
-  gv:blue "198";
-  gv:green "218";
-  gv:score "1.8926542000000002";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "190a00";
-  gv:red "25";
-  gv:blue "undefined";
-  gv:green "10";
-  gv:score "1.7422762";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "c2c2b3";
-  gv:red "194";
-  gv:blue "179";
-  gv:green "194";
-  gv:score "1.2175101000000002";
-  gv:coverage "33.28"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.463782"
-];
-    w:bagOfWords "1943\nNGLENO0K\nNAPA.\nALCOHOL 1212%\nBY VOLUME\nNAPA VALLEY\nPINOT NOIR\nPRODUCED & BOTTLED BY\nINGLENOOK VINEYARD CO.\n14th DIST., CAL.\nBONDED WINERY No. 69\nESTABLISHED 1879\nRUTHERFORD, NAPA COUNTY, CALIF.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0250";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

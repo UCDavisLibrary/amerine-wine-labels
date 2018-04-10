@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1589";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "FLORIDO HERMANOS\nCADIZ\nBURDEOS\nPARIS\nCHICAGO\nMARCA\nREGISTRADA\nMOSEATEL EXTRA\nSANLUCARDEBARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "8b7356";
-  gv:red "139";
-  gv:blue "86";
-  gv:green "115";
-  gv:score "12.610815";
-  gv:coverage "1.58"
-], [
-  gv:hex "d4bea5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "190";
-  gv:score "12.295101";
-  gv:coverage "9.180000000000001"
-], [
-  gv:hex "9a703f";
-  gv:red "154";
-  gv:blue "63";
-  gv:green "112";
-  gv:score "8.1458069";
-  gv:coverage "0.6"
-], [
-  gv:hex "0d192c";
-  gv:red "13";
-  gv:blue "44";
-  gv:green "25";
-  gv:score "1.9724142";
-  gv:coverage "1.92"
-], [
-  gv:hex "ae987e";
-  gv:red "174";
-  gv:blue "126";
-  gv:green "152";
-  gv:score "11.548302000000001";
-  gv:coverage "1.82"
-], [
-  gv:hex "09153d";
-  gv:red "9";
-  gv:blue "61";
-  gv:green "21";
-  gv:score "0.077775907";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "947446";
-  gv:red "148";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "7.7614561";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "9d6a5a";
-  gv:red "157";
-  gv:blue "90";
-  gv:green "106";
-  gv:score "7.588233799999999";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "f2dbc4";
-  gv:red "242";
-  gv:blue "196";
-  gv:green "219";
-  gv:score "4.3251164";
-  gv:coverage "26.246667000000002"
-], [
-  gv:hex "eabaaa";
-  gv:red "234";
-  gv:blue "170";
-  gv:green "186";
-  gv:score "4.2972431";
-  gv:coverage "1.5599999999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.800154"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "FLORIDO HERMANOS\nCADIZ\nBURDEOS\nPARIS\nCHICAGO\nMARCA\nREGISTRADA\nMOSEATEL EXTRA\nSANLUCARDEBARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1589";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1274";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "M.C.J\n1943 er\n(Sumpoldskirchner\ne r\noder mit jedem beliebigen Eindru\nEindrudkorten gelonder\nEtikett M. C. J. 5436 L.\nliefert\nMario Carini, Luftenau Vlbg. Olterr.\n5436 L\n"@deu;
-    gv:color [
-  gv:hex "d9b57e";
-  gv:red "217";
-  gv:blue "126";
-  gv:green "181";
-  gv:score "40.542376000000004";
-  gv:coverage "15.333334"
-], [
-  gv:hex "655037";
-  gv:red "101";
-  gv:blue "55";
-  gv:green "80";
-  gv:score "4.4365007";
-  gv:coverage "1.18"
-], [
-  gv:hex "492b13";
-  gv:red "73";
-  gv:blue "19";
-  gv:green "43";
-  gv:score "3.3838714999999997";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "bf9e6a";
-  gv:red "191";
-  gv:blue "106";
-  gv:green "158";
-  gv:score "18.019040999999998";
-  gv:coverage "8.2266666"
-], [
-  gv:hex "927241";
-  gv:red "146";
-  gv:blue "65";
-  gv:green "114";
-  gv:score "4.8302818";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "6f5327";
-  gv:red "111";
-  gv:blue "39";
-  gv:green "83";
-  gv:score "4.3247681";
-  gv:coverage "0.9266667100000001"
-], [
-  gv:hex "704e23";
-  gv:red "112";
-  gv:blue "35";
-  gv:green "78";
-  gv:score "3.5788770999999997";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "b29b7e";
-  gv:red "178";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "3.3768408";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "d5be9e";
-  gv:red "213";
-  gv:blue "158";
-  gv:green "190";
-  gv:score "3.2637704";
-  gv:coverage "23.413333"
-], [
-  gv:hex "877158";
-  gv:red "135";
-  gv:blue "88";
-  gv:green "113";
-  gv:score "2.8420221";
-  gv:coverage "0.86"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.321476"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.999114000000006"
-];
-    w:bagOfWords "M.C.J\n1943 er\n(Sumpoldskirchner\ne r\noder mit jedem beliebigen Eindru\nEindrudkorten gelonder\nEtikett M. C. J. 5436 L.\nliefert\nMario Carini, Luftenau Vlbg. Olterr.\n5436 L\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1274";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

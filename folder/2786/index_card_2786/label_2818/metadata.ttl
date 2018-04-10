@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2818";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "CONTENTS\nALCOHOLIC\n12% BY VOLUME\nMERIN\nMARQUE COMMERCIALE DEPOSEE\nDechenauerar\nVIN DE GRAVES 1929\nr.\n01aeatar.\nPRODUCED & BOTTLED IN FRANCE\nServe well chilled\nMAA, SIDAINE\n"@fra;
-    gv:color [
-  gv:hex "d3c2ad";
-  gv:red "211";
-  gv:blue "173";
-  gv:green "194";
-  gv:score "15.786175";
-  gv:coverage "13.306667"
-], [
-  gv:hex "7c746b";
-  gv:red "124";
-  gv:blue "107";
-  gv:green "116";
-  gv:score "13.623828";
-  gv:coverage "2.9866667"
-], [
-  gv:hex "5e554b";
-  gv:red "94";
-  gv:blue "75";
-  gv:green "85";
-  gv:score "11.174401";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "aa9b86";
-  gv:red "170";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "10.859562";
-  gv:coverage "3.2466665"
-], [
-  gv:hex "847764";
-  gv:red "132";
-  gv:blue "100";
-  gv:green "119";
-  gv:score "7.434444900000001";
-  gv:coverage "1.32"
-], [
-  gv:hex "a1988e";
-  gv:red "161";
-  gv:blue "142";
-  gv:green "152";
-  gv:score "6.7202248";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "cfc3b9";
-  gv:red "207";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "5.000291";
-  gv:coverage "5.680000000000001"
-], [
-  gv:hex "625646";
-  gv:red "98";
-  gv:blue "70";
-  gv:green "86";
-  gv:score "3.8029838000000002";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "3d342d";
-  gv:red "61";
-  gv:blue "45";
-  gv:green "52";
-  gv:score "3.3409930999999995";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "96725e";
-  gv:red "150";
-  gv:blue "94";
-  gv:green "114";
-  gv:score "3.0699434";
-  gv:coverage "0.32666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.04092"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "54.808241"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "51.119012"
-];
-    w:bagOfWords "CONTENTS\nALCOHOLIC\n12% BY VOLUME\nMERIN\nMARQUE COMMERCIALE DEPOSEE\nDechenauerar\nVIN DE GRAVES 1929\nr.\n01aeatar.\nPRODUCED & BOTTLED IN FRANCE\nServe well chilled\nMAA, SIDAINE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2818";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

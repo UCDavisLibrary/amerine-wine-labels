@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1579/label_1586";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "Embotelladores\nN 9 37\nParis\nBurdeos\nRADE\nMA\nCadiz\nMatanzas\nFLOR I Do &\nCo\nSanlucar de Famameda\nMoscATEL VIEUISIMo S. I.\nLIT J. M. ARNAU .BARNA\n"@spa;
-    gv:color [
-  gv:hex "f4ae06";
-  gv:red "244";
-  gv:blue "6";
-  gv:green "174";
-  gv:score "28.208434999999998";
-  gv:coverage "9.2533335"
-], [
-  gv:hex "db9708";
-  gv:red "219";
-  gv:blue "8";
-  gv:green "151";
-  gv:score "20.794499";
-  gv:coverage "10.753334"
-], [
-  gv:hex "a26e15";
-  gv:red "162";
-  gv:blue "21";
-  gv:green "110";
-  gv:score "5.1083688";
-  gv:coverage "1.96"
-], [
-  gv:hex "a22803";
-  gv:red "162";
-  gv:blue "3";
-  gv:green "40";
-  gv:score "1.0985099999999999";
-  gv:coverage "0.2"
-], [
-  gv:hex "eda60d";
-  gv:red "237";
-  gv:blue "13";
-  gv:green "166";
-  gv:score "19.614957";
-  gv:coverage "7.6466665"
-], [
-  gv:hex "e2dbc2";
-  gv:red "226";
-  gv:blue "194";
-  gv:green "219";
-  gv:score "0.046801713";
-  gv:coverage "32.646668"
-], [
-  gv:hex "eeb906";
-  gv:red "238";
-  gv:blue "6";
-  gv:green "185";
-  gv:score "2.5354037";
-  gv:coverage "0.8"
-], [
-  gv:hex "977624";
-  gv:red "151";
-  gv:blue "36";
-  gv:green "118";
-  gv:score "2.3823372999999997";
-  gv:coverage "0.76"
-], [
-  gv:hex "e4820e";
-  gv:red "228";
-  gv:blue "14";
-  gv:green "130";
-  gv:score "2.0623472";
-  gv:coverage "0.6"
-], [
-  gv:hex "9a6d35";
-  gv:red "154";
-  gv:blue "53";
-  gv:green "109";
-  gv:score "1.9064635";
-  gv:coverage "0.67333332"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/088fh>;
-  gv:desc "yellow";
-  gv:score "87.28494"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.641271"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Embotelladores\nN 9 37\nParis\nBurdeos\nRADE\nMA\nCadiz\nMatanzas\nFLOR I Do &\nCo\nSanlucar de Famameda\nMoscATEL VIEUISIMo S. I.\nLIT J. M. ARNAU .BARNA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1586";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4282";
-    dct:type "image";
-    w:bagOfWords "PRODUCT OF FRANCE\nPAUILLAC\n19 5 5\nBottled and Shipped by\nETABLISSEMENTS VINI COLES\nDE BARR SAC\nNEGOCIANTS\nBARS AC BORDEAUX\nALC. STRENGTH BY VOL.\nNET CONTENTS1 PINT 9FL. 02.\n"@fra;
-    gv:color [
-  gv:hex "cfc4bc";
-  gv:red "207";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "14.067291";
-  gv:coverage "19.626667"
-], [
-  gv:hex "63533f";
-  gv:red "99";
-  gv:blue "63";
-  gv:green "83";
-  gv:score "8.8556446";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "c3938c";
-  gv:red "195";
-  gv:blue "140";
-  gv:green "147";
-  gv:score "5.21447";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "a49b94";
-  gv:red "164";
-  gv:blue "148";
-  gv:green "155";
-  gv:score "11.484829000000001";
-  gv:coverage "1.72"
-], [
-  gv:hex "82725e";
-  gv:red "130";
-  gv:blue "94";
-  gv:green "114";
-  gv:score "8.618737";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "e8dbd4";
-  gv:red "232";
-  gv:blue "212";
-  gv:green "219";
-  gv:score "7.615153500000001";
-  gv:coverage "68.78"
-], [
-  gv:hex "7e776e";
-  gv:red "126";
-  gv:blue "110";
-  gv:green "119";
-  gv:score "6.924521899999999";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "9d6b63";
-  gv:red "157";
-  gv:blue "99";
-  gv:green "107";
-  gv:score "5.141430300000001";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "d1c1af";
-  gv:red "209";
-  gv:blue "175";
-  gv:green "193";
-  gv:score "4.81794";
-  gv:coverage "3.34"
-], [
-  gv:hex "aa9b86";
-  gv:red "170";
-  gv:blue "134";
-  gv:green "155";
-  gv:score "4.4403587";
-  gv:coverage "0.2"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.38974300000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "PRODUCT OF FRANCE\nPAUILLAC\n19 5 5\nBottled and Shipped by\nETABLISSEMENTS VINI COLES\nDE BARR SAC\nNEGOCIANTS\nBARS AC BORDEAUX\nALC. STRENGTH BY VOL.\nNET CONTENTS1 PINT 9FL. 02.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4282";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

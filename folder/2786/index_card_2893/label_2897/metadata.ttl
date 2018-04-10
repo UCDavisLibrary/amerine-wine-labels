@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2893/label_2897";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "BOTT FRERES\nVins d'Alsace\nRIBEAUVILLE\n(Haut-Rhin)\nRIBEAUVILLE\n"@fra;
-    gv:color [
-  gv:hex "031c4f";
-  gv:red "3";
-  gv:blue "79";
-  gv:green "28";
-  gv:score "24.362966";
-  gv:coverage "2.4"
-], [
-  gv:hex "d7b781";
-  gv:red "215";
-  gv:blue "129";
-  gv:green "183";
-  gv:score "7.2032951";
-  gv:coverage "2.02"
-], [
-  gv:hex "020c58";
-  gv:red "2";
-  gv:blue "88";
-  gv:green "12";
-  gv:score "0.25737672";
-  gv:coverage "0.02"
-], [
-  gv:hex "07265d";
-  gv:red "7";
-  gv:blue "93";
-  gv:green "38";
-  gv:score "18.355176";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "0f2d58";
-  gv:red "15";
-  gv:blue "88";
-  gv:green "45";
-  gv:score "7.592845";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "1d314c";
-  gv:red "29";
-  gv:blue "76";
-  gv:green "49";
-  gv:score "6.742184599999999";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "d6c0a0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "192";
-  gv:score "5.7635523";
-  gv:coverage "8.1666663"
-], [
-  gv:hex "091b37";
-  gv:red "9";
-  gv:blue "55";
-  gv:green "27";
-  gv:score "4.1321594";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "031f47";
-  gv:red "3";
-  gv:blue "71";
-  gv:green "31";
-  gv:score "2.924444";
-  gv:coverage "0.4"
-], [
-  gv:hex "41546c";
-  gv:red "65";
-  gv:blue "108";
-  gv:green "84";
-  gv:score "2.6559584000000003";
-  gv:coverage "0.9266667100000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.57804099999999"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.496524"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.679469"
-];
-    w:bagOfWords "BOTT FRERES\nVins d'Alsace\nRIBEAUVILLE\n(Haut-Rhin)\nRIBEAUVILLE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2897";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

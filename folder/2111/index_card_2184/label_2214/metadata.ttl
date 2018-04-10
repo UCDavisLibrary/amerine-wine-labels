@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2184/label_2214";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "8 o\nN GAN AN\nVINEYARDS\nCalifmrnia Unkau\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 20% BY VOLUME\nLOUIS ROESCH CO\n"@eng;
-    gv:color [
-  gv:hex "d4c1a9";
-  gv:red "212";
-  gv:blue "169";
-  gv:green "193";
-  gv:score "25.115948999999997";
-  gv:coverage "22.113334000000002"
-], [
-  gv:hex "615137";
-  gv:red "97";
-  gv:blue "55";
-  gv:green "81";
-  gv:score "21.270020000000002";
-  gv:coverage "2.8733334"
-], [
-  gv:hex "85745d";
-  gv:red "133";
-  gv:blue "93";
-  gv:green "116";
-  gv:score "17.502261999999998";
-  gv:coverage "3.1533334"
-], [
-  gv:hex "ac9a82";
-  gv:red "172";
-  gv:blue "130";
-  gv:green "154";
-  gv:score "16.242181";
-  gv:coverage "5.3933333999999995"
-], [
-  gv:hex "45351d";
-  gv:red "69";
-  gv:blue "29";
-  gv:green "53";
-  gv:score "10.673585";
-  gv:coverage "1.38"
-], [
-  gv:hex "e9d8c3";
-  gv:red "233";
-  gv:blue "195";
-  gv:green "216";
-  gv:score "5.2628439";
-  gv:coverage "22.313334"
-], [
-  gv:hex "291906";
-  gv:red "41";
-  gv:blue "6";
-  gv:green "25";
-  gv:score "1.8480867";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "180700";
-  gv:red "24";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "1.0100648";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "e8dace";
-  gv:red "232";
-  gv:blue "206";
-  gv:green "218";
-  gv:score "0.84592";
-  gv:coverage "39.833334"
-], [
-  gv:hex "d6c9bc";
-  gv:red "214";
-  gv:blue "188";
-  gv:green "201";
-  gv:score "0.15178121";
-  gv:coverage "2.16"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.773517"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "53.693897"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.481533"
-];
-    w:bagOfWords "8 o\nN GAN AN\nVINEYARDS\nCalifmrnia Unkau\nPRODUCED AND BOTTLED AT WINERY BY\nCONCANNON VINEYARDS LIVERMORE, CALIFORNIA\nALCOHOL 20% BY VOLUME\nLOUIS ROESCH CO\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2214";
+    <schema.keywords> "Misc Fortified@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "USA".
+    wdt:P297 "US".
+

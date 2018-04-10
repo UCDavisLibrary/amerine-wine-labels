@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2603/label_2615";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "SPARKLING BURGUNDY\nVV HITE\nMACON\nFRANCE\nMAISON FONDEEEN 1821\nODE CE TANI PEN OISE\n"@fra;
-    gv:color [
-  gv:hex "dac3ab";
-  gv:red "218";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "37.846828";
-  gv:coverage "17.026667"
-], [
-  gv:hex "96753f";
-  gv:red "150";
-  gv:blue "63";
-  gv:green "117";
-  gv:score "14.742757000000001";
-  gv:coverage "2.7666667"
-], [
-  gv:hex "ae9884";
-  gv:red "174";
-  gv:blue "132";
-  gv:green "152";
-  gv:score "9.6218333";
-  gv:coverage "2.2133334000000002"
-], [
-  gv:hex "9a723e";
-  gv:red "154";
-  gv:blue "62";
-  gv:green "114";
-  gv:score "9.035816800000001";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "b9965e";
-  gv:red "185";
-  gv:blue "94";
-  gv:green "150";
-  gv:score "7.9921715";
-  gv:coverage "2.0333333"
-], [
-  gv:hex "53392a";
-  gv:red "83";
-  gv:blue "42";
-  gv:green "57";
-  gv:score "0.0519265";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "8d7864";
-  gv:red "141";
-  gv:blue "100";
-  gv:green "120";
-  gv:score "3.3356909";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "eed9c7";
-  gv:red "238";
-  gv:blue "199";
-  gv:green "217";
-  gv:score "3.1339522";
-  gv:coverage "3.9933335"
-], [
-  gv:hex "c09355";
-  gv:red "192";
-  gv:blue "85";
-  gv:green "147";
-  gv:score "2.3623945";
-  gv:coverage "0.5"
-], [
-  gv:hex "c69d51";
-  gv:red "198";
-  gv:blue "81";
-  gv:green "157";
-  gv:score "2.1119054000000004";
-  gv:coverage "0.44"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.742159"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.161122999999996"
-];
-    w:bagOfWords "SPARKLING BURGUNDY\nVV HITE\nMACON\nFRANCE\nMAISON FONDEEEN 1821\nODE CE TANI PEN OISE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2615";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

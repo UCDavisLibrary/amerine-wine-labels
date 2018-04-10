@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4621";
-    dct:type "image";
-    w:bagOfWords "Moscatel Superior\n(ESPANA)\nN 2 O\n"@spa;
-    gv:color [
-  gv:hex "cdc3ba";
-  gv:red "205";
-  gv:blue "186";
-  gv:green "195";
-  gv:score "38.426337";
-  gv:coverage "25.713333"
-], [
-  gv:hex "a49b92";
-  gv:red "164";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "29.318359";
-  gv:coverage "3.2199999999999998"
-], [
-  gv:hex "837a71";
-  gv:red "131";
-  gv:blue "113";
-  gv:green "122";
-  gv:score "16.847442";
-  gv:coverage "1.3333334000000001"
-], [
-  gv:hex "e4dbd1";
-  gv:red "228";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "13.958134";
-  gv:coverage "63.75999999999999"
-], [
-  gv:hex "393023";
-  gv:red "57";
-  gv:blue "35";
-  gv:green "48";
-  gv:score "0.017083345";
-  gv:coverage "0.02"
-], [
-  gv:hex "d3c9b9";
-  gv:red "211";
-  gv:blue "185";
-  gv:green "201";
-  gv:score "0.96003227";
-  gv:coverage "4.4866665999999995"
-], [
-  gv:hex "645b52";
-  gv:red "100";
-  gv:blue "82";
-  gv:green "91";
-  gv:score "0.33507519";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "afa697";
-  gv:red "175";
-  gv:blue "151";
-  gv:green "166";
-  gv:score "0.11912539000000001";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "dfd6c5";
-  gv:red "223";
-  gv:blue "197";
-  gv:green "214";
-  gv:score "0.014863014999999999";
-  gv:coverage "1.2866667"
-], [
-  gv:hex "3c3429";
-  gv:red "60";
-  gv:blue "41";
-  gv:green "52";
-  gv:score "0.0035492994";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.319975"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "54.270136"
-];
-    w:bagOfWords "Moscatel Superior\n(ESPANA)\nN 2 O\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4621";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

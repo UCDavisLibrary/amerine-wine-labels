@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0395";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "sA BODEGAS DE LOS ORLEANS BORBON\nSAN LUCAR DE BARRAMEDA\n30\n"@undefined;
-    gv:color [
-  gv:hex "dcbb88";
-  gv:red "220";
-  gv:blue "136";
-  gv:green "187";
-  gv:score "9.9606931";
-  gv:coverage "3.1066667"
-], [
-  gv:hex "6c1308";
-  gv:red "108";
-  gv:blue "8";
-  gv:green "19";
-  gv:score "7.32517";
-  gv:coverage "2.86"
-], [
-  gv:hex "917617";
-  gv:red "145";
-  gv:blue "23";
-  gv:green "118";
-  gv:score "4.2657912";
-  gv:coverage "0.66"
-], [
-  gv:hex "78491c";
-  gv:red "120";
-  gv:blue "28";
-  gv:green "73";
-  gv:score "3.2831132";
-  gv:coverage "0.75333333"
-], [
-  gv:hex "b79712";
-  gv:red "183";
-  gv:blue "18";
-  gv:green "151";
-  gv:score "2.9346794";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "113281";
-  gv:red "17";
-  gv:blue "129";
-  gv:green "50";
-  gv:score "1.1787877";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "093a6b";
-  gv:red "9";
-  gv:blue "107";
-  gv:green "58";
-  gv:score "0.64388174";
-  gv:coverage "0.1"
-], [
-  gv:hex "d9cb0a";
-  gv:red "217";
-  gv:blue "10";
-  gv:green "203";
-  gv:score "0.38909256000000003";
-  gv:coverage "0.04"
-], [
-  gv:hex "0c586c";
-  gv:red "12";
-  gv:blue "108";
-  gv:green "88";
-  gv:score "0.23010382000000001";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "0d2fa1";
-  gv:red "13";
-  gv:blue "161";
-  gv:green "47";
-  gv:score "0.17101612";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.924499999999995"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "59.606141"
-];
-    w:bagOfWords "sA BODEGAS DE LOS ORLEANS BORBON\nSAN LUCAR DE BARRAMEDA\n30\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0395";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3407/label_3421";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "B E A U N E\nPAUL GERMAIN\nPropriétaire de Vignobles\nBEA UNE (France)\nROUALET BEAUNE DEPOSE.\n"@fra;
-    gv:color [
-  gv:hex "e1c9b0";
-  gv:red "225";
-  gv:blue "176";
-  gv:green "201";
-  gv:score "47.482824";
-  gv:coverage "18.060000000000002"
-], [
-  gv:hex "532d19";
-  gv:red "83";
-  gv:blue "25";
-  gv:green "45";
-  gv:score "4.0764078";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "a9382b";
-  gv:red "169";
-  gv:blue "43";
-  gv:green "56";
-  gv:score "3.1254169";
-  gv:coverage "1.3533333"
-], [
-  gv:hex "b15540";
-  gv:red "177";
-  gv:blue "64";
-  gv:green "85";
-  gv:score "2.2976531000000002";
-  gv:coverage "1.1066667000000001"
-], [
-  gv:hex "ecbda6";
-  gv:red "236";
-  gv:blue "166";
-  gv:green "189";
-  gv:score "12.730257";
-  gv:coverage "4.4799999999999995"
-], [
-  gv:hex "c5947e";
-  gv:red "197";
-  gv:blue "126";
-  gv:green "148";
-  gv:score "4.159661";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "edd8be";
-  gv:red "237";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "4.0583868";
-  gv:coverage "10.933334"
-], [
-  gv:hex "704734";
-  gv:red "112";
-  gv:blue "52";
-  gv:green "71";
-  gv:score "3.2160113999999997";
-  gv:coverage "0.4"
-], [
-  gv:hex "b39b82";
-  gv:red "179";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "2.7488371000000003";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "655036";
-  gv:red "101";
-  gv:blue "54";
-  gv:green "80";
-  gv:score "2.2203977999999998";
-  gv:coverage "0.34666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.885533"
-];
-    w:bagOfWords "B E A U N E\nPAUL GERMAIN\nPropriétaire de Vignobles\nBEA UNE (France)\nROUALET BEAUNE DEPOSE.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3421";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

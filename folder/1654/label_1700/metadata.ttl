@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1700";
-    dct:type "image";
-    w:bagOfWords "METEr\nVERY OLD RESERVE BRANDY\n"@eng;
-    gv:color [
-  gv:hex "927442";
-  gv:red "146";
-  gv:blue "66";
-  gv:green "116";
-  gv:score "28.127619999999997";
-  gv:coverage "3.88"
-], [
-  gv:hex "dabc9a";
-  gv:red "218";
-  gv:blue "154";
-  gv:green "188";
-  gv:score "18.301943";
-  gv:coverage "21.193333"
-], [
-  gv:hex "b59666";
-  gv:red "181";
-  gv:blue "102";
-  gv:green "150";
-  gv:score "8.9756534";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "986d41";
-  gv:red "152";
-  gv:blue "65";
-  gv:green "109";
-  gv:score "8.023359600000001";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "b69a75";
-  gv:red "182";
-  gv:blue "117";
-  gv:green "154";
-  gv:score "6.780801";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "734d22";
-  gv:red "115";
-  gv:blue "34";
-  gv:green "77";
-  gv:score "4.9237188000000005";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "d8b889";
-  gv:red "216";
-  gv:blue "137";
-  gv:green "184";
-  gv:score "4.9025089";
-  gv:coverage "0.76"
-], [
-  gv:hex "bf9464";
-  gv:red "191";
-  gv:blue "100";
-  gv:green "148";
-  gv:score "4.1188721";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "ba9375";
-  gv:red "186";
-  gv:blue "117";
-  gv:green "147";
-  gv:score "2.5523361";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "937956";
-  gv:red "147";
-  gv:blue "86";
-  gv:green "121";
-  gv:score "1.8044237";
-  gv:coverage "0.54666665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.13550000000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "51.23223099999999"
-];
-    w:bagOfWords "METEr\nVERY OLD RESERVE BRANDY\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1700";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

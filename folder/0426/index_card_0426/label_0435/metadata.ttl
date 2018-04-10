@@ -1,97 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0435";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R H E I N G A U\n1937er\nAAmannshauler\npollenberg\npat b u g u n 0\nNATUR REIN\nEltoille\nEigener Relletab3ug uno Roth bran\n"@deu;
-    gv:color [
-  gv:hex "5d4f38";
-  gv:red "93";
-  gv:blue "56";
-  gv:green "79";
-  gv:score "22.057495";
-  gv:coverage "2.86"
-], [
-  gv:hex "cdc4bc";
-  gv:red "205";
-  gv:blue "188";
-  gv:green "196";
-  gv:score "12.679999";
-  gv:coverage "12.613334000000002"
-], [
-  gv:hex "43341f";
-  gv:red "67";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "19.266872";
-  gv:coverage "2.1999999999999997"
-], [
-  gv:hex "dccdb4";
-  gv:red "220";
-  gv:blue "180";
-  gv:green "205";
-  gv:score "9.591370000000001";
-  gv:coverage "11.653333"
-], [
-  gv:hex "80725a";
-  gv:red "128";
-  gv:blue "90";
-  gv:green "114";
-  gv:score "9.395147099999999";
-  gv:coverage "1.68"
-], [
-  gv:hex "e5ddd4";
-  gv:red "229";
-  gv:blue "212";
-  gv:green "221";
-  gv:score "6.0714684";
-  gv:coverage "35.92"
-], [
-  gv:hex "7c766e";
-  gv:red "124";
-  gv:blue "110";
-  gv:green "118";
-  gv:score "4.7500022";
-  gv:coverage "1.0533334"
-], [
-  gv:hex "a19a92";
-  gv:red "161";
-  gv:blue "146";
-  gv:green "154";
-  gv:score "3.9690942";
-  gv:coverage "1.2066667"
-], [
-  gv:hex "e5d9c1";
-  gv:red "229";
-  gv:blue "193";
-  gv:green "217";
-  gv:score "3.8316455";
-  gv:coverage "29.433334"
-], [
-  gv:hex "a99b82";
-  gv:red "169";
-  gv:blue "130";
-  gv:green "155";
-  gv:score "3.8171176";
-  gv:coverage "0.63333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.460762"
-];
-    w:bagOfWords "R H E I N G A U\n1937er\nAAmannshauler\npollenberg\npat b u g u n 0\nNATUR REIN\nEltoille\nEigener Relletab3ug uno Roth bran\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0435";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

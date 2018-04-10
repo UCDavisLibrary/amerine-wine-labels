@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2071";
-    dct:type "image";
-    w:bagOfWords "Contents\nAlcohol by volume 11%\n1 Pint 8 Fluid Ounces\nProduc of Germany\nRHINE WINE\n1948\nNIERSTEINER WEISSENBERG\nProduced and bottled by Weingut Louis Guntrum,Nierstein o/Rhine, Germany\nWachstum und Original Abful lung\neingul Louis@untrumu ppenheim u.Nierstein S\nRHEIN\nHESSEN\nGESCHOTZT\nWI H. GERSTUNG, OFFENBACH AIM\n"@undefined;
-    gv:color [
-  gv:hex "d5c3a8";
-  gv:red "213";
-  gv:blue "168";
-  gv:green "195";
-  gv:score "17.948434";
-  gv:coverage "9.8466665"
-], [
-  gv:hex "80765c";
-  gv:red "128";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "11.683826999999999";
-  gv:coverage "2.92"
-], [
-  gv:hex "a99a82";
-  gv:red "169";
-  gv:blue "130";
-  gv:green "154";
-  gv:score "11.003262";
-  gv:coverage "2.94"
-], [
-  gv:hex "5b553b";
-  gv:red "91";
-  gv:blue "59";
-  gv:green "85";
-  gv:score "10.222038999999999";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "dcbd87";
-  gv:red "220";
-  gv:blue "135";
-  gv:green "189";
-  gv:score "7.4325345";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "ecdbc1";
-  gv:red "236";
-  gv:blue "193";
-  gv:green "219";
-  gv:score "6.014601900000001";
-  gv:coverage "6.619999999999999"
-], [
-  gv:hex "cfc3b8";
-  gv:red "207";
-  gv:blue "184";
-  gv:green "195";
-  gv:score "4.9700543";
-  gv:coverage "16.446666"
-], [
-  gv:hex "3d3921";
-  gv:red "61";
-  gv:blue "33";
-  gv:green "57";
-  gv:score "4.7389491999999995";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "4f564d";
-  gv:red "79";
-  gv:blue "77";
-  gv:green "86";
-  gv:score "3.6119618";
-  gv:coverage "0.7266666700000001"
-], [
-  gv:hex "e9ded3";
-  gv:red "233";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "3.5722386000000004";
-  gv:coverage "52.186668000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.5399"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "67.552364"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.965967000000006"
-];
-    w:bagOfWords "Contents\nAlcohol by volume 11%\n1 Pint 8 Fluid Ounces\nProduc of Germany\nRHINE WINE\n1948\nNIERSTEINER WEISSENBERG\nProduced and bottled by Weingut Louis Guntrum,Nierstein o/Rhine, Germany\nWachstum und Original Abful lung\neingul Louis@untrumu ppenheim u.Nierstein S\nRHEIN\nHESSEN\nGESCHOTZT\nWI H. GERSTUNG, OFFENBACH AIM\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2071";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1569";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MANZANILLA OLOROSA MLADURA\nTRADA)\nREGIS MARCA ANGEL DEL RIO\nN o 27\nSAMLECAR DE BARRAMEDA\n"@spa;
-    gv:color [
-  gv:hex "d4c6bc";
-  gv:red "212";
-  gv:blue "188";
-  gv:green "198";
-  gv:score "27.613828";
-  gv:coverage "14.093333"
-], [
-  gv:hex "867768";
-  gv:red "134";
-  gv:blue "104";
-  gv:green "119";
-  gv:score "11.549846";
-  gv:coverage "0.86"
-], [
-  gv:hex "e8dbd1";
-  gv:red "232";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "11.365282";
-  gv:coverage "24.32"
-], [
-  gv:hex "a79888";
-  gv:red "167";
-  gv:blue "136";
-  gv:green "152";
-  gv:score "10.121165999999999";
-  gv:coverage "0.98"
-], [
-  gv:hex "d1c3b2";
-  gv:red "209";
-  gv:blue "178";
-  gv:green "195";
-  gv:score "8.765570799999999";
-  gv:coverage "25.593334000000002"
-], [
-  gv:hex "a99c91";
-  gv:red "169";
-  gv:blue "145";
-  gv:green "156";
-  gv:score "8.6334348";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "625345";
-  gv:red "98";
-  gv:blue "69";
-  gv:green "83";
-  gv:score "7.9693138999999995";
-  gv:coverage "0.50666668"
-], [
-  gv:hex "85786e";
-  gv:red "133";
-  gv:blue "110";
-  gv:green "120";
-  gv:score "6.1312903";
-  gv:coverage "0.42"
-], [
-  gv:hex "63574e";
-  gv:red "99";
-  gv:blue "78";
-  gv:green "87";
-  gv:score "3.1690493";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "3a3027";
-  gv:red "58";
-  gv:blue "39";
-  gv:green "48";
-  gv:score "1.939116";
-  gv:coverage "0.17333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.517296"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MANZANILLA OLOROSA MLADURA\nTRADA)\nREGIS MARCA ANGEL DEL RIO\nN o 27\nSAMLECAR DE BARRAMEDA\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1569";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

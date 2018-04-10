@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2786/label_2807";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "TRADE\nM A R K\n1 9 39\nGRAVES\nAppellation Graves Controlée\nMARQUE DU CASQUE\nAUDIN ET & BUHAN\nMAISON FONDE EEN 8 8\nNEGOCIANTS A B OR DE AUX (GIRONDE)\n"@fra;
-    gv:color [
-  gv:hex "d5c2a9";
-  gv:red "213";
-  gv:blue "169";
-  gv:green "194";
-  gv:score "22.08982";
-  gv:coverage "19.413332999999998"
-], [
-  gv:hex "9b1e16";
-  gv:red "155";
-  gv:blue "22";
-  gv:green "30";
-  gv:score "15.787928";
-  gv:coverage "0.3"
-], [
-  gv:hex "270400";
-  gv:red "39";
-  gv:blue "undefined";
-  gv:green "4";
-  gv:score "0.1366904";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "7e0602";
-  gv:red "126";
-  gv:blue "2";
-  gv:green "6";
-  gv:score "7.5091854";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "721608";
-  gv:red "114";
-  gv:blue "8";
-  gv:green "22";
-  gv:score "5.2823566";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "e8baa9";
-  gv:red "232";
-  gv:blue "169";
-  gv:green "186";
-  gv:score "5.1080674";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "d4c5ba";
-  gv:red "212";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "4.9519926";
-  gv:coverage "6.0466666"
-], [
-  gv:hex "ad9b85";
-  gv:red "173";
-  gv:blue "133";
-  gv:green "155";
-  gv:score "4.4729359";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "c39188";
-  gv:red "195";
-  gv:blue "136";
-  gv:green "145";
-  gv:score "3.9843954";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "ecdcd1";
-  gv:red "236";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "3.2447431";
-  gv:coverage "55.226666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.662474"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.761111"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.244018999999994"
-];
-    w:bagOfWords "TRADE\nM A R K\n1 9 39\nGRAVES\nAppellation Graves Controlée\nMARQUE DU CASQUE\nAUDIN ET & BUHAN\nMAISON FONDE EEN 8 8\nNEGOCIANTS A B OR DE AUX (GIRONDE)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2807";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

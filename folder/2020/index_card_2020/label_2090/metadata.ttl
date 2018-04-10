@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2090";
-    dct:type "image";
-    w:bagOfWords "BAU UND WEINKELLEREIEN\n1950er\n1700\nmno\nnierstein a Rh\n1700\nOppenheimer\nS a c k t r a g e r\nSpatlese\nGERHARDT WEINE SIND\nMEHRFACH MIT GOLDMEDAILLEN\nPRAMIIERT, ZULETZT AUF DER\nINTERN\nAUSSTELLUNG 1937\nR HEIN HESS EN\nIN PARIS\n"@undefined;
-    gv:color [
-  gv:hex "ccbca6";
-  gv:red "204";
-  gv:blue "166";
-  gv:green "188";
-  gv:score "33.269182";
-  gv:coverage "27.946665999999997"
-], [
-  gv:hex "a66946";
-  gv:red "166";
-  gv:blue "70";
-  gv:green "105";
-  gv:score "3.2092784";
-  gv:coverage "0.44"
-], [
-  gv:hex "b09e88";
-  gv:red "176";
-  gv:blue "136";
-  gv:green "158";
-  gv:score "18.092145000000002";
-  gv:coverage "8.1866667"
-], [
-  gv:hex "867661";
-  gv:red "134";
-  gv:blue "97";
-  gv:green "118";
-  gv:score "9.9932626";
-  gv:coverage "3.1399999999999997"
-], [
-  gv:hex "61533f";
-  gv:red "97";
-  gv:blue "63";
-  gv:green "83";
-  gv:score "6.2210806";
-  gv:coverage "1.7399999999999998"
-], [
-  gv:hex "af6142";
-  gv:red "175";
-  gv:blue "66";
-  gv:green "97";
-  gv:score "3.0129237";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "996a52";
-  gv:red "153";
-  gv:blue "82";
-  gv:green "106";
-  gv:score "2.9920468";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "413421";
-  gv:red "65";
-  gv:blue "33";
-  gv:green "52";
-  gv:score "2.7520068";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "c09279";
-  gv:red "192";
-  gv:blue "121";
-  gv:green "146";
-  gv:score "2.6756551";
-  gv:coverage "0.80666663"
-], [
-  gv:hex "c58460";
-  gv:red "197";
-  gv:blue "96";
-  gv:green "132";
-  gv:score "1.7330104";
-  gv:coverage "0.24"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.034529"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "BAU UND WEINKELLEREIEN\n1950er\n1700\nmno\nnierstein a Rh\n1700\nOppenheimer\nS a c k t r a g e r\nSpatlese\nGERHARDT WEINE SIND\nMEHRFACH MIT GOLDMEDAILLEN\nPRAMIIERT, ZULETZT AUF DER\nINTERN\nAUSSTELLUNG 1937\nR HEIN HESS EN\nIN PARIS\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2090";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

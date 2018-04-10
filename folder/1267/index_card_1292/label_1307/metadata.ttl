@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1292/label_1307";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "BECH-KLEINMACHER WELLENSTEIN /Mos ELLE\n1946\nRUULAN DER\n"@deu;
-    gv:color [
-  gv:hex "e1bb7a";
-  gv:red "225";
-  gv:blue "122";
-  gv:green "187";
-  gv:score "23.997242999999997";
-  gv:coverage "13.66"
-], [
-  gv:hex "976c41";
-  gv:red "151";
-  gv:blue "65";
-  gv:green "108";
-  gv:score "23.083772";
-  gv:coverage "5.82"
-], [
-  gv:hex "7b5126";
-  gv:red "123";
-  gv:blue "38";
-  gv:green "81";
-  gv:score "11.391313";
-  gv:coverage "2.88"
-], [
-  gv:hex "c0935d";
-  gv:red "192";
-  gv:blue "93";
-  gv:green "147";
-  gv:score "11.076313";
-  gv:coverage "3.4133334"
-], [
-  gv:hex "c19c60";
-  gv:red "193";
-  gv:blue "96";
-  gv:green "156";
-  gv:score "8.871367600000001";
-  gv:coverage "3.7933334999999997"
-], [
-  gv:hex "e6b679";
-  gv:red "230";
-  gv:blue "121";
-  gv:green "182";
-  gv:score "7.3793128";
-  gv:coverage "2.86"
-], [
-  gv:hex "e3b96d";
-  gv:red "227";
-  gv:blue "109";
-  gv:green "185";
-  gv:score "4.291411500000001";
-  gv:coverage "2.8866666999999997"
-], [
-  gv:hex "96753e";
-  gv:red "150";
-  gv:blue "62";
-  gv:green "117";
-  gv:score "1.8626804000000001";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "c5924d";
-  gv:red "197";
-  gv:blue "77";
-  gv:green "146";
-  gv:score "1.5244453";
-  gv:coverage "0.62"
-], [
-  gv:hex "c0984c";
-  gv:red "192";
-  gv:blue "76";
-  gv:green "152";
-  gv:score "1.5207329";
-  gv:coverage "0.84"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "63.962281"
-], [
-  gv:mid <https://g.co/kg/m/083vt>;
-  gv:desc "wood";
-  gv:score "63.766503"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.89409500000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "58.147269"
-];
-    w:bagOfWords "BECH-KLEINMACHER WELLENSTEIN /Mos ELLE\n1946\nRUULAN DER\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1307";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-LU";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "LUX".
+    wdt:P297 "LU".
+

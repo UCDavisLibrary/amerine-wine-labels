@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3243/label_3245";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Berry Bros. & Co\na\n3 St. James's Street\nLondon, S.W.I\nO TUA\nde B\nI\no\no-Z\nC O\n1919\nGRANDS ECHEZEAUX\nAG\nof France\nroduce\nCote de Nuits\nFlagey\nE chez eguX\nTete de Cuvee\n"@fra;
-    gv:color [
-  gv:hex "d2bfa8";
-  gv:red "210";
-  gv:blue "168";
-  gv:green "191";
-  gv:score "44.488755000000005";
-  gv:coverage "27.3"
-], [
-  gv:hex "b09e87";
-  gv:red "176";
-  gv:blue "135";
-  gv:green "158";
-  gv:score "31.822854";
-  gv:coverage "5.9733335"
-], [
-  gv:hex "eddac2";
-  gv:red "237";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "9.094049";
-  gv:coverage "20.866667"
-], [
-  gv:hex "c29177";
-  gv:red "194";
-  gv:blue "119";
-  gv:green "145";
-  gv:score "4.5159616";
-  gv:coverage "0.96"
-], [
-  gv:hex "e7b99f";
-  gv:red "231";
-  gv:blue "159";
-  gv:green "185";
-  gv:score "4.0498026";
-  gv:coverage "1.3933334"
-], [
-  gv:hex "907e67";
-  gv:red "144";
-  gv:blue "103";
-  gv:green "126";
-  gv:score "3.1059805";
-  gv:coverage "0.62"
-], [
-  gv:hex "9f725a";
-  gv:red "159";
-  gv:blue "90";
-  gv:green "114";
-  gv:score "1.6357049";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "3d392d";
-  gv:red "61";
-  gv:blue "45";
-  gv:green "57";
-  gv:score "0.010373946";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "fcd1b7";
-  gv:red "252";
-  gv:blue "183";
-  gv:green "209";
-  gv:score "0.77212127";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "6e432d";
-  gv:red "110";
-  gv:blue "45";
-  gv:green "67";
-  gv:score "0.20205257";
-  gv:coverage "0.013333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "92.0993"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "80.023855"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "60.859984"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.130174999999994"
-];
-    w:bagOfWords "Berry Bros. & Co\na\n3 St. James's Street\nLondon, S.W.I\nO TUA\nde B\nI\no\no-Z\nC O\n1919\nGRANDS ECHEZEAUX\nAG\nof France\nroduce\nCote de Nuits\nFlagey\nE chez eguX\nTete de Cuvee\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3245";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

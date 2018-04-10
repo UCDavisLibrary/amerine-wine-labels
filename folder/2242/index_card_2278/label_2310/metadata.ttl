@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2310";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "hallillac Medoc\nBORDEAUX\nMISS EN BOUTEILLE AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "c09377";
-  gv:red "192";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "39.4387";
-  gv:coverage "8.2933336"
-], [
-  gv:hex "dfb399";
-  gv:red "223";
-  gv:blue "153";
-  gv:green "179";
-  gv:score "15.680394";
-  gv:coverage "4.0066667"
-], [
-  gv:hex "d8bca5";
-  gv:red "216";
-  gv:blue "165";
-  gv:green "188";
-  gv:score "15.394411999999999";
-  gv:coverage "11.826666"
-], [
-  gv:hex "a17359";
-  gv:red "161";
-  gv:blue "89";
-  gv:green "115";
-  gv:score "12.181599";
-  gv:coverage "2.34"
-], [
-  gv:hex "b99c81";
-  gv:red "185";
-  gv:blue "129";
-  gv:green "156";
-  gv:score "5.9195478";
-  gv:coverage "2.5066666"
-], [
-  gv:hex "c28f6b";
-  gv:red "194";
-  gv:blue "107";
-  gv:green "143";
-  gv:score "3.311513";
-  gv:coverage "0.4"
-], [
-  gv:hex "a67250";
-  gv:red "166";
-  gv:blue "80";
-  gv:green "114";
-  gv:score "3.1076131";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "7e5237";
-  gv:red "126";
-  gv:blue "55";
-  gv:green "82";
-  gv:score "1.3946444";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "efd7c2";
-  gv:red "239";
-  gv:blue "194";
-  gv:green "215";
-  gv:score "0.7925645400000001";
-  gv:coverage "3.3000000000000003"
-], [
-  gv:hex "977a5e";
-  gv:red "151";
-  gv:blue "94";
-  gv:green "122";
-  gv:score "0.64053237";
-  gv:coverage "0.20666666999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "68.880612"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "66.228741"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "65.82033"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.287283"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.03537600000001"
-];
-    w:bagOfWords "hallillac Medoc\nBORDEAUX\nMISS EN BOUTEILLE AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2310";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2334/label_2336";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-E STEPHE\nME DO C\nRécolte\nen Bouteille\n1936\nau Chateau\nAppellation Saint-Estephe controlée\nDEPOS\nMP VVA\nPRERES\n"@fra;
-    gv:color [
-  gv:hex "625443";
-  gv:red "98";
-  gv:blue "67";
-  gv:green "84";
-  gv:score "27.943769000000003";
-  gv:coverage "2.3133334"
-], [
-  gv:hex "d4c0a8";
-  gv:red "212";
-  gv:blue "168";
-  gv:green "192";
-  gv:score "15.786271";
-  gv:coverage "40.086666"
-], [
-  gv:hex "807160";
-  gv:red "128";
-  gv:blue "96";
-  gv:green "113";
-  gv:score "23.633931999999998";
-  gv:coverage "2.18"
-], [
-  gv:hex "aa9a84";
-  gv:red "170";
-  gv:blue "132";
-  gv:green "154";
-  gv:score "11.655788000000001";
-  gv:coverage "2.7933333"
-], [
-  gv:hex "463727";
-  gv:red "70";
-  gv:blue "39";
-  gv:green "55";
-  gv:score "6.308715800000001";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "e3bba5";
-  gv:red "227";
-  gv:blue "165";
-  gv:green "187";
-  gv:score "4.8402164";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "bc947d";
-  gv:red "188";
-  gv:blue "125";
-  gv:green "148";
-  gv:score "3.2369285999999997";
-  gv:coverage "1.02"
-], [
-  gv:hex "977059";
-  gv:red "151";
-  gv:blue "89";
-  gv:green "112";
-  gv:score "1.8485519999999998";
-  gv:coverage "0.26"
-], [
-  gv:hex "eedac2";
-  gv:red "238";
-  gv:blue "194";
-  gv:green "218";
-  gv:score "1.7184928";
-  gv:coverage "34.146667"
-], [
-  gv:hex "62514a";
-  gv:red "98";
-  gv:blue "74";
-  gv:green "81";
-  gv:score "1.4618612";
-  gv:coverage "0.14666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.366245"
-];
-    w:bagOfWords "Grand Cru Classe\nCHATEAU\nCalon-Segur\nPREMIER CRU DE\nSAINT-E STEPHE\nME DO C\nRécolte\nen Bouteille\n1936\nau Chateau\nAppellation Saint-Estephe controlée\nDEPOS\nMP VVA\nPRERES\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2336";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

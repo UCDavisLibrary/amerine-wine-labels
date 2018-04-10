@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0721";
-    dct:type "image";
-    w:bagOfWords "IMP GE\n-LYON\nAKAANR\nommara\nAPPe LLATIOIO COIQTROLaG\nG. Ne 8\n"@undefined;
-    gv:color [
-  gv:hex "d5bba0";
-  gv:red "213";
-  gv:blue "160";
-  gv:green "187";
-  gv:score "27.957389";
-  gv:coverage "12.213334000000001"
-], [
-  gv:hex "c7966a";
-  gv:red "199";
-  gv:blue "106";
-  gv:green "150";
-  gv:score "6.22827";
-  gv:coverage "3.2066666"
-], [
-  gv:hex "977159";
-  gv:red "151";
-  gv:blue "89";
-  gv:green "113";
-  gv:score "5.6980167";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "847371";
-  gv:red "132";
-  gv:blue "113";
-  gv:green "115";
-  gv:score "5.2754354";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "5d1c01";
-  gv:red "93";
-  gv:blue "1";
-  gv:green "28";
-  gv:score "0.16329158";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "b39a83";
-  gv:red "179";
-  gv:blue "131";
-  gv:green "154";
-  gv:score "12.072483";
-  gv:coverage "3.9066665"
-], [
-  gv:hex "bb9479";
-  gv:red "187";
-  gv:blue "121";
-  gv:green "148";
-  gv:score "5.5626251";
-  gv:coverage "2.6"
-], [
-  gv:hex "8b7360";
-  gv:red "139";
-  gv:blue "96";
-  gv:green "115";
-  gv:score "5.0140742000000005";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "dcb496";
-  gv:red "220";
-  gv:blue "150";
-  gv:green "180";
-  gv:score "4.9872749";
-  gv:coverage "1.96"
-], [
-  gv:hex "714c39";
-  gv:red "113";
-  gv:blue "57";
-  gv:green "76";
-  gv:score "3.6088362";
-  gv:coverage "0.9933332899999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.849044"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.571261"
-];
-    w:bagOfWords "IMP GE\n-LYON\nAKAANR\nommara\nAPPe LLATIOIO COIQTROLaG\nG. Ne 8\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0721";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2696/label_2720";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "ALEXANDRE ROCHETTE C\"\nTAIN HERMITAGE\nPROPRIETAIRESNEGOCIANTs\nDROME\nt TAP, RE NARD C? -VALENCE\n"@fra;
-    gv:color [
-  gv:hex "d5c4ad";
-  gv:red "213";
-  gv:blue "173";
-  gv:green "196";
-  gv:score "51.043832";
-  gv:coverage "31.533334000000004"
-], [
-  gv:hex "923c25";
-  gv:red "146";
-  gv:blue "37";
-  gv:green "60";
-  gv:score "10.63852";
-  gv:coverage "0.30666667"
-], [
-  gv:hex "ae9c86";
-  gv:red "174";
-  gv:blue "134";
-  gv:green "156";
-  gv:score "10.441785000000001";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "e3b69e";
-  gv:red "227";
-  gv:blue "158";
-  gv:green "182";
-  gv:score "4.115827400000001";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "877660";
-  gv:red "135";
-  gv:blue "96";
-  gv:green "118";
-  gv:score "4.0575109";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "c39077";
-  gv:red "195";
-  gv:blue "119";
-  gv:green "144";
-  gv:score "3.8476958999999997";
-  gv:coverage "0.24666667"
-], [
-  gv:hex "a46b56";
-  gv:red "164";
-  gv:blue "86";
-  gv:green "107";
-  gv:score "2.7180867";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "ead9c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "2.6079582";
-  gv:coverage "7.6533332"
-], [
-  gv:hex "8f4034";
-  gv:red "143";
-  gv:blue "52";
-  gv:green "64";
-  gv:score "2.0359093";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "b15840";
-  gv:red "177";
-  gv:blue "64";
-  gv:green "88";
-  gv:score "1.7633062000000002";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "60.184842"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.246632"
-];
-    w:bagOfWords "ALEXANDRE ROCHETTE C\"\nTAIN HERMITAGE\nPROPRIETAIRESNEGOCIANTs\nDROME\nt TAP, RE NARD C? -VALENCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2720";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

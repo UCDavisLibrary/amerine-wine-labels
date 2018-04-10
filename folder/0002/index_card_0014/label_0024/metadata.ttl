@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/index_card_0014/label_0024";
-    dct:type "image";
-    dc:subject "Spain@en";
-    w:bagOfWords "RESERVA\nGRA\nCE PA\nBODEGAS BOSCH GUELL\nS. A\nVILLAFRANCA DEL PANADES\n(ESPANA)\nREGISTRO DE EMBOTELLADORES.ro\nIG SEK 6 BARRAL HNOS SA BARCELONA.\n"@spa;
-    gv:color [
-  gv:hex "d4b89c";
-  gv:red "212";
-  gv:blue "156";
-  gv:green "184";
-  gv:score "33.288431";
-  gv:coverage "48.5"
-], [
-  gv:hex "a82b20";
-  gv:red "168";
-  gv:blue "32";
-  gv:green "43";
-  gv:score "6.3597783";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "b49a7f";
-  gv:red "180";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "21.75888";
-  gv:coverage "3.2933332"
-], [
-  gv:hex "8d755c";
-  gv:red "141";
-  gv:blue "92";
-  gv:green "117";
-  gv:score "13.382794";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "913720";
-  gv:red "145";
-  gv:blue "32";
-  gv:green "55";
-  gv:score "3.9451852";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "c04235";
-  gv:red "192";
-  gv:blue "53";
-  gv:green "66";
-  gv:score "3.6947742";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "aa2110";
-  gv:red "170";
-  gv:blue "16";
-  gv:green "33";
-  gv:score "3.0407025";
-  gv:coverage "0.06"
-], [
-  gv:hex "705941";
-  gv:red "112";
-  gv:blue "65";
-  gv:green "89";
-  gv:score "1.8409361999999998";
-  gv:coverage "0.24"
-], [
-  gv:hex "b5543a";
-  gv:red "181";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "1.5025766";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "ebb89c";
-  gv:red "235";
-  gv:blue "156";
-  gv:green "184";
-  gv:score "1.4926732";
-  gv:coverage "0.27333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.040613"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.314134"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "52.197903000000004"
-];
-    w:bagOfWords "RESERVA\nGRA\nCE PA\nBODEGAS BOSCH GUELL\nS. A\nVILLAFRANCA DEL PANADES\n(ESPANA)\nREGISTRO DE EMBOTELLADORES.ro\nIG SEK 6 BARRAL HNOS SA BARCELONA.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0024";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

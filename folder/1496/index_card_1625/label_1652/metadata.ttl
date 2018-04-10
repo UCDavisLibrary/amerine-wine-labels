@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1625/label_1652";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "TRAB\nVINO DE\nPLATANO\nGARCIA MONGE\nNo 33\nSANLUCAR\nroficasAndaluzas Puerto Sta Maria\n"@spa;
-    gv:color [
-  gv:hex "edb003";
-  gv:red "237";
-  gv:blue "3";
-  gv:green "176";
-  gv:score "20.290595";
-  gv:coverage "6.693333399999999"
-], [
-  gv:hex "947613";
-  gv:red "148";
-  gv:blue "19";
-  gv:green "118";
-  gv:score "4.7654416";
-  gv:coverage "1.46"
-], [
-  gv:hex "671204";
-  gv:red "103";
-  gv:blue "4";
-  gv:green "18";
-  gv:score "2.5111701";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "e6a907";
-  gv:red "230";
-  gv:blue "7";
-  gv:green "169";
-  gv:score "14.834793";
-  gv:coverage "4.7866665"
-], [
-  gv:hex "e5cdb0";
-  gv:red "229";
-  gv:blue "176";
-  gv:green "205";
-  gv:score "0.11840645";
-  gv:coverage "17.206667"
-], [
-  gv:hex "d89e08";
-  gv:red "216";
-  gv:blue "8";
-  gv:green "158";
-  gv:score "10.036781";
-  gv:coverage "3.02"
-], [
-  gv:hex "c19a0c";
-  gv:red "193";
-  gv:blue "12";
-  gv:green "154";
-  gv:score "9.9108778";
-  gv:coverage "2.68"
-], [
-  gv:hex "dfaf11";
-  gv:red "223";
-  gv:blue "17";
-  gv:green "175";
-  gv:score "9.8842561";
-  gv:coverage "4.06"
-], [
-  gv:hex "e9b704";
-  gv:red "233";
-  gv:blue "4";
-  gv:green "183";
-  gv:score "8.16172";
-  gv:coverage "3.04"
-], [
-  gv:hex "9f6b13";
-  gv:red "159";
-  gv:blue "19";
-  gv:green "107";
-  gv:score "3.3316147";
-  gv:coverage "1.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.30147"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "TRAB\nVINO DE\nPLATANO\nGARCIA MONGE\nNo 33\nSANLUCAR\nroficasAndaluzas Puerto Sta Maria\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1652";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

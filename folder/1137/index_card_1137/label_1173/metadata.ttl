@@ -1,104 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1137/label_1173";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nUNIVERSE LLE\nPOSITION\nAnciennes Caves de MaisonDorée\nVERDIER\n9O PROOF\n45 QUART\n"@undefined;
-    gv:color [
-  gv:hex "d6c1a3";
-  gv:red "214";
-  gv:blue "163";
-  gv:green "193";
-  gv:score "47.24156";
-  gv:coverage "21.8"
-], [
-  gv:hex "8e7140";
-  gv:red "142";
-  gv:blue "64";
-  gv:green "113";
-  gv:score "10.748564";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "b09b7e";
-  gv:red "176";
-  gv:blue "126";
-  gv:green "155";
-  gv:score "17.728195";
-  gv:coverage "2.7333334000000002"
-], [
-  gv:hex "b79969";
-  gv:red "183";
-  gv:blue "105";
-  gv:green "153";
-  gv:score "5.8124255";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "8e795c";
-  gv:red "142";
-  gv:blue "92";
-  gv:green "121";
-  gv:score "5.7146307";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "d7b787";
-  gv:red "215";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "4.2039763";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "ebd8be";
-  gv:red "235";
-  gv:blue "190";
-  gv:green "216";
-  gv:score "2.7690232";
-  gv:coverage "5.9333332"
-], [
-  gv:hex "72592a";
-  gv:red "114";
-  gv:blue "42";
-  gv:green "89";
-  gv:score "2.6303988";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "665134";
-  gv:red "102";
-  gv:blue "52";
-  gv:green "81";
-  gv:score "1.8731045000000002";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "cb9f6d";
-  gv:red "203";
-  gv:blue "109";
-  gv:green "159";
-  gv:score "0.53161983";
-  gv:coverage "0.093333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.438648"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.170013000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.895131000000006"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nUNIVERSE LLE\nPOSITION\nAnciennes Caves de MaisonDorée\nVERDIER\n9O PROOF\n45 QUART\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1173";
+    <schema.keywords> "Brandy@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

@@ -1,102 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0629/label_0759";
-    dct:type "image";
-    w:bagOfWords "1950\nAPPELLATION CONTROLEE\nNAIGEON-CHAUVEAU NEGoCIANT A GEvREY-CHAMBERTIN (COTE D'OR)\n"@undefined;
-    gv:color [
-  gv:hex "dec9a6";
-  gv:red "222";
-  gv:blue "166";
-  gv:green "201";
-  gv:score "42.86772";
-  gv:coverage "17.793333999999998"
-], [
-  gv:hex "c68e65";
-  gv:red "198";
-  gv:blue "101";
-  gv:green "142";
-  gv:score "1.7862132";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "edd8b7";
-  gv:red "237";
-  gv:blue "183";
-  gv:green "216";
-  gv:score "19.855059999999998";
-  gv:coverage "9.906666699999999"
-], [
-  gv:hex "b29b79";
-  gv:red "178";
-  gv:blue "121";
-  gv:green "155";
-  gv:score "9.639103";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "8d7655";
-  gv:red "141";
-  gv:blue "85";
-  gv:green "118";
-  gv:score "5.6692578000000005";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "695332";
-  gv:red "105";
-  gv:blue "50";
-  gv:green "83";
-  gv:score "3.6029603";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "7a4b33";
-  gv:red "122";
-  gv:blue "51";
-  gv:green "75";
-  gv:score "2.5472185";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "e8ba99";
-  gv:red "232";
-  gv:blue "153";
-  gv:green "186";
-  gv:score "1.8855501000000001";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "92644a";
-  gv:red "146";
-  gv:blue "74";
-  gv:green "100";
-  gv:score "1.442254";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "654e26";
-  gv:red "101";
-  gv:blue "38";
-  gv:green "78";
-  gv:score "1.3342144999999999";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.21678"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.919916"
-];
-    w:bagOfWords "1950\nAPPELLATION CONTROLEE\nNAIGEON-CHAUVEAU NEGoCIANT A GEvREY-CHAMBERTIN (COTE D'OR)\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0759";
+    <schema.keywords> "European Trip 1950-1952@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still.
+

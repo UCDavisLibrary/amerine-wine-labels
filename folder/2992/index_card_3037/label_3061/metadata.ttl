@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3061";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "74\nCHATEAU Caneva,\n934\nmilion\nPARIS 878\nLONDRES 1862\nMEDAILLE D OR\nMt DAILLE DE BRONZE\nFOUR CAUD LAUS SAC\nP R O PRI ETA RE\nFRANCE\nMis en\nbouteille au Chateau\nEERTHON.LIBOURNE\n"@fra;
-    gv:color [
-  gv:hex "d1c0ab";
-  gv:red "209";
-  gv:blue "171";
-  gv:green "192";
-  gv:score "37.337172";
-  gv:coverage "20.773333"
-], [
-  gv:hex "ab9980";
-  gv:red "171";
-  gv:blue "128";
-  gv:green "153";
-  gv:score "31.099286999999997";
-  gv:coverage "3.44"
-], [
-  gv:hex "8c795f";
-  gv:red "140";
-  gv:blue "95";
-  gv:green "121";
-  gv:score "23.311222";
-  gv:coverage "2.3666666999999997"
-], [
-  gv:hex "eadac5";
-  gv:red "234";
-  gv:blue "197";
-  gv:green "218";
-  gv:score "4.0540899999999995";
-  gv:coverage "10.346667"
-], [
-  gv:hex "69573e";
-  gv:red "105";
-  gv:blue "62";
-  gv:green "87";
-  gv:score "3.3327069000000002";
-  gv:coverage "0.32"
-], [
-  gv:hex "e5e2d8";
-  gv:red "229";
-  gv:blue "216";
-  gv:green "226";
-  gv:score "0.318168";
-  gv:coverage "57.940000000000005"
-], [
-  gv:hex "cac7bd";
-  gv:red "202";
-  gv:blue "189";
-  gv:green "199";
-  gv:score "0.25765686000000004";
-  gv:coverage "4.2066667"
-], [
-  gv:hex "4f4028";
-  gv:red "79";
-  gv:blue "40";
-  gv:green "64";
-  gv:score "0.1494754";
-  gv:coverage "0.02"
-], [
-  gv:hex "a1a097";
-  gv:red "161";
-  gv:blue "151";
-  gv:green "160";
-  gv:score "0.082163571";
-  gv:coverage "0.38"
-], [
-  gv:hex "595247";
-  gv:red "89";
-  gv:blue "71";
-  gv:green "82";
-  gv:score "0.025168523999999998";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.329343"
-], [
-  gv:mid <https://g.co/kg/m/0fd6q>;
-  gv:desc "cash";
-  gv:score "59.948778000000004"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "57.273357999999995"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "55.847305000000006"
-];
-    w:bagOfWords "74\nCHATEAU Caneva,\n934\nmilion\nPARIS 878\nLONDRES 1862\nMEDAILLE D OR\nMt DAILLE DE BRONZE\nFOUR CAUD LAUS SAC\nP R O PRI ETA RE\nFRANCE\nMis en\nbouteille au Chateau\nEERTHON.LIBOURNE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3061";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

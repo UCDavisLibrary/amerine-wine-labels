@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2278/label_2316";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "Mo ost Dinner\nCercle de n\nVIN DE PICHON LONGU\nTRESSE DE LA LAND\nUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "dbc4a4";
-  gv:red "219";
-  gv:blue "164";
-  gv:green "196";
-  gv:score "30.406949";
-  gv:coverage "13.826667"
-], [
-  gv:hex "d9b883";
-  gv:red "217";
-  gv:blue "131";
-  gv:green "184";
-  gv:score "20.580071";
-  gv:coverage "5.3"
-], [
-  gv:hex "bf9c64";
-  gv:red "191";
-  gv:blue "100";
-  gv:green "156";
-  gv:score "18.457107";
-  gv:coverage "5.12"
-], [
-  gv:hex "b29b7a";
-  gv:red "178";
-  gv:blue "122";
-  gv:green "155";
-  gv:score "6.1300281";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "c3965c";
-  gv:red "195";
-  gv:blue "92";
-  gv:green "150";
-  gv:score "5.1448751";
-  gv:coverage "1.5733332999999998"
-], [
-  gv:hex "c79347";
-  gv:red "199";
-  gv:blue "71";
-  gv:green "147";
-  gv:score "4.7311634";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "987844";
-  gv:red "152";
-  gv:blue "68";
-  gv:green "120";
-  gv:score "2.9683074";
-  gv:coverage "0.8666666199999999"
-], [
-  gv:hex "ebd7bc";
-  gv:red "235";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "2.6333492";
-  gv:coverage "5.6933332000000005"
-], [
-  gv:hex "9d7238";
-  gv:red "157";
-  gv:blue "56";
-  gv:green "114";
-  gv:score "1.9920874000000002";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "dfb27d";
-  gv:red "223";
-  gv:blue "125";
-  gv:green "178";
-  gv:score "1.802895";
-  gv:coverage "0.48"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.167767"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.945186"
-];
-    w:bagOfWords "Mo ost Dinner\nCercle de n\nVIN DE PICHON LONGU\nTRESSE DE LA LAND\nUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2316";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

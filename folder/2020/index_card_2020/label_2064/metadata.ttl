@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2064";
-    dct:type "image";
-    w:bagOfWords "Contents Pt and TEL QZ\nRAND DEUTSCHER\nURWE IN\nVERST\nERER E.V\nMitgl\nbes\nen\nT.\nvnn.\nele,\n1 93 24 er\nDieses Ze\niersteiner Holle\nin Verbindung mit dem\nKork brand verbiirgt\neinen Wein\nSpatlese\nVEREIN DER NATURA\nWEINVERSTEIGERER\nORIGINALARFULLUNG DES WEINGuTES\nGUSTAN SENFTERNIERSTEIN ARHEIN\nIN HESSEN\nGTOWfl an\nd bof fred in Germann\nGERSTUNG\n"@undefined;
-    gv:color [
-  gv:hex "d7c4ac";
-  gv:red "215";
-  gv:blue "172";
-  gv:green "196";
-  gv:score "21.795467";
-  gv:coverage "9.8"
-], [
-  gv:hex "807455";
-  gv:red "128";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "11.619348";
-  gv:coverage "2.3933332000000003"
-], [
-  gv:hex "aa9c83";
-  gv:red "170";
-  gv:blue "131";
-  gv:green "156";
-  gv:score "9.736597499999998";
-  gv:coverage "5.006666500000001"
-], [
-  gv:hex "5f5539";
-  gv:red "95";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "7.925263";
-  gv:coverage "1.22"
-], [
-  gv:hex "3c341d";
-  gv:red "60";
-  gv:blue "29";
-  gv:green "52";
-  gv:score "6.2157888";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "eddac3";
-  gv:red "237";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "6.2032692";
-  gv:coverage "8.2666665"
-], [
-  gv:hex "837747";
-  gv:red "131";
-  gv:blue "71";
-  gv:green "119";
-  gv:score "5.0576884";
-  gv:coverage "0.72"
-], [
-  gv:hex "e5b9a7";
-  gv:red "229";
-  gv:blue "167";
-  gv:green "185";
-  gv:score "4.1869469";
-  gv:coverage "1.06"
-], [
-  gv:hex "231c07";
-  gv:red "35";
-  gv:blue "7";
-  gv:green "28";
-  gv:score "3.9291918000000003";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "d2c4ba";
-  gv:red "210";
-  gv:blue "186";
-  gv:green "196";
-  gv:score "3.6329135";
-  gv:coverage "4.3266665"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "63.357472"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.778153999999994"
-];
-    w:bagOfWords "Contents Pt and TEL QZ\nRAND DEUTSCHER\nURWE IN\nVERST\nERER E.V\nMitgl\nbes\nen\nT.\nvnn.\nele,\n1 93 24 er\nDieses Ze\niersteiner Holle\nin Verbindung mit dem\nKork brand verbiirgt\neinen Wein\nSpatlese\nVEREIN DER NATURA\nWEINVERSTEIGERER\nORIGINALARFULLUNG DES WEINGuTES\nGUSTAN SENFTERNIERSTEIN ARHEIN\nIN HESSEN\nGTOWfl an\nd bof fred in Germann\nGERSTUNG\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2064";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

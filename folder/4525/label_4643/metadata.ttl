@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4525/label_4643";
-    dct:type "image";
-    w:bagOfWords "RT\nA Mis\nPARA DISTINGUIR\nEMBOTELLADORES No 22\nLit Jere Industrial\n"@spa;
-    gv:color [
-  gv:hex "d5c3a9";
-  gv:red "213";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "36.011279";
-  gv:coverage "16.42"
-], [
-  gv:hex "8c7455";
-  gv:red "140";
-  gv:blue "85";
-  gv:green "116";
-  gv:score "15.446787";
-  gv:coverage "1.34"
-], [
-  gv:hex "8b7043";
-  gv:red "139";
-  gv:blue "67";
-  gv:green "112";
-  gv:score "15.324672";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "ad997f";
-  gv:red "173";
-  gv:blue "127";
-  gv:green "153";
-  gv:score "13.849844000000001";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "ead9c3";
-  gv:red "234";
-  gv:blue "195";
-  gv:green "217";
-  gv:score "3.8143143";
-  gv:coverage "6.126666800000001"
-], [
-  gv:hex "d3c5bb";
-  gv:red "211";
-  gv:blue "187";
-  gv:green "197";
-  gv:score "3.5736855";
-  gv:coverage "21.279999999999998"
-], [
-  gv:hex "7f736a";
-  gv:red "127";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "2.7049026";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "6c583b";
-  gv:red "108";
-  gv:blue "59";
-  gv:green "88";
-  gv:score "2.2971677";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "a79b91";
-  gv:red "167";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "1.7234553";
-  gv:coverage "1.1733334"
-], [
-  gv:hex "63584e";
-  gv:red "99";
-  gv:blue "78";
-  gv:green "88";
-  gv:score "1.7053831";
-  gv:coverage "0.9466666699999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.973085"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.181579"
-];
-    w:bagOfWords "RT\nA Mis\nPARA DISTINGUIR\nEMBOTELLADORES No 22\nLit Jere Industrial\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4643";
+    <schema.keywords> "Spain Sherry Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

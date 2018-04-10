@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1353";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "UITA\nA. So\nAZEITAO SETUBAL\nFUNDADA EM1834\nPORTUGAL\n"@por;
-    gv:color [
-  gv:hex "e4ddd6";
-  gv:red "228";
-  gv:blue "214";
-  gv:green "221";
-  gv:score "50.417387000000005";
-  gv:coverage "41.04"
-], [
-  gv:hex "d7cec4";
-  gv:red "215";
-  gv:blue "196";
-  gv:green "206";
-  gv:score "21.36912";
-  gv:coverage "17.386666"
-], [
-  gv:hex "dcc9b1";
-  gv:red "220";
-  gv:blue "177";
-  gv:green "201";
-  gv:score "19.323678";
-  gv:coverage "24.92"
-], [
-  gv:hex "af997a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "1.9874638";
-  gv:coverage "1.0933333"
-], [
-  gv:hex "8a7555";
-  gv:red "138";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "1.8826597999999999";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "ecd8bd";
-  gv:red "236";
-  gv:blue "189";
-  gv:green "216";
-  gv:score "1.4568819";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "685236";
-  gv:red "104";
-  gv:blue "54";
-  gv:green "82";
-  gv:score "1.3726408";
-  gv:coverage "0.6666666800000001"
-], [
-  gv:hex "4b3519";
-  gv:red "75";
-  gv:blue "25";
-  gv:green "53";
-  gv:score "0.54428582";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "42260f";
-  gv:red "66";
-  gv:blue "15";
-  gv:green "38";
-  gv:score "0.31557023";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "eaca9e";
-  gv:red "234";
-  gv:blue "158";
-  gv:green "202";
-  gv:score "0.24768054";
-  gv:coverage "0.89333337"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.852679"
-];
-    w:bagOfWords "UITA\nA. So\nAZEITAO SETUBAL\nFUNDADA EM1834\nPORTUGAL\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1353";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

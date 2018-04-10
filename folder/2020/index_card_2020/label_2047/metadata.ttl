@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2020/index_card_2020/label_2047";
-    dct:type "image";
-    w:bagOfWords "193A\nBegriinDet 1864\nBegtfinbet 1864\nauemarke\nN FROM B TN GEN\nRHEIN\nMM. Contents 1 Pt, and 7 F1. oz.\nGrown and bottled in Germany\nRhein h\ne S se ta\n"@undefined;
-    gv:color [
-  gv:hex "dabe9e";
-  gv:red "218";
-  gv:blue "158";
-  gv:green "190";
-  gv:score "26.80701";
-  gv:coverage "16.586667"
-], [
-  gv:hex "926a43";
-  gv:red "146";
-  gv:blue "67";
-  gv:green "106";
-  gv:score "13.304332999999998";
-  gv:coverage "3.8466666"
-], [
-  gv:hex "b79a79";
-  gv:red "183";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "11.282227";
-  gv:coverage "5.1933333"
-], [
-  gv:hex "917554";
-  gv:red "145";
-  gv:blue "84";
-  gv:green "117";
-  gv:score "8.4091656";
-  gv:coverage "3.8600000000000003"
-], [
-  gv:hex "917146";
-  gv:red "145";
-  gv:blue "70";
-  gv:green "113";
-  gv:score "7.3412195";
-  gv:coverage "2.1733332"
-], [
-  gv:hex "916e4e";
-  gv:red "145";
-  gv:blue "78";
-  gv:green "110";
-  gv:score "7.1800143";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "77512c";
-  gv:red "119";
-  gv:blue "44";
-  gv:green "81";
-  gv:score "6.7978382";
-  gv:coverage "2.0466667000000003"
-], [
-  gv:hex "f0dabe";
-  gv:red "240";
-  gv:blue "190";
-  gv:green "218";
-  gv:score "3.2496671999999998";
-  gv:coverage "12.193333"
-], [
-  gv:hex "725031";
-  gv:red "114";
-  gv:blue "49";
-  gv:green "80";
-  gv:score "2.8787706";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "6a5234";
-  gv:red "106";
-  gv:blue "52";
-  gv:green "82";
-  gv:score "2.8657142";
-  gv:coverage "1.2933333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "74.000138"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "193A\nBegriinDet 1864\nBegtfinbet 1864\nauemarke\nN FROM B TN GEN\nRHEIN\nMM. Contents 1 Pt, and 7 F1. oz.\nGrown and bottled in Germany\nRhein h\ne S se ta\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2047";
+    <schema.keywords> "Rhein Hessen Rheinfalz@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

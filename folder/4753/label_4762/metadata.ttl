@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4753/label_4762";
-    dct:type "image";
-    w:bagOfWords "DUMONT\nAMMERICAN\n84 PROOF\nPRODUCED, BLENDED & BOTTLED EXCLUSIVELY FOR\n"@eng;
-    gv:color [
-  gv:hex "dec6a6";
-  gv:red "222";
-  gv:blue "166";
-  gv:green "198";
-  gv:score "16.732454";
-  gv:coverage "7.7066667"
-], [
-  gv:hex "77471b";
-  gv:red "119";
-  gv:blue "27";
-  gv:green "71";
-  gv:score "3.1135382";
-  gv:coverage "0.2"
-], [
-  gv:hex "e9c38a";
-  gv:red "233";
-  gv:blue "138";
-  gv:green "195";
-  gv:score "16.496578";
-  gv:coverage "1.8466666"
-], [
-  gv:hex "b5945e";
-  gv:red "181";
-  gv:blue "94";
-  gv:green "148";
-  gv:score "15.359501999999999";
-  gv:coverage "1.8599999999999999"
-], [
-  gv:hex "8a4937";
-  gv:red "138";
-  gv:blue "55";
-  gv:green "73";
-  gv:score "0.11286223000000001";
-  gv:coverage "0.006666666700000001"
-], [
-  gv:hex "f1dab9";
-  gv:red "241";
-  gv:blue "185";
-  gv:green "218";
-  gv:score "11.03208";
-  gv:coverage "17.853333"
-], [
-  gv:hex "c1945a";
-  gv:red "193";
-  gv:blue "90";
-  gv:green "148";
-  gv:score "7.580667000000001";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "af997a";
-  gv:red "175";
-  gv:blue "122";
-  gv:green "153";
-  gv:score "6.32571";
-  gv:coverage "1.9266667000000002"
-], [
-  gv:hex "f7daa9";
-  gv:red "247";
-  gv:blue "169";
-  gv:green "218";
-  gv:score "3.5880152";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "8c7556";
-  gv:red "140";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "3.3964625999999996";
-  gv:coverage "0.7000000000000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.889886"
-];
-    w:bagOfWords "DUMONT\nAMMERICAN\n84 PROOF\nPRODUCED, BLENDED & BOTTLED EXCLUSIVELY FOR\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4762";
+    <schema.keywords> "U.S. California Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

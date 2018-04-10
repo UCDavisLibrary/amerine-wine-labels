@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1654/label_1659";
-    dct:type "image";
-    w:bagOfWords "IEI\nKAI\nAphrodite\nCYPRUS\nTABLE WINE\nPROPUCED AND BOTTLED BY\nKE0 Ltd\nLI MAS SOL CYPRUS\n"@eng;
-    gv:color [
-  gv:hex "dfc5a6";
-  gv:red "223";
-  gv:blue "166";
-  gv:green "197";
-  gv:score "30.571505";
-  gv:coverage "10.693332999999999"
-], [
-  gv:hex "b89460";
-  gv:red "184";
-  gv:blue "96";
-  gv:green "148";
-  gv:score "9.3275562";
-  gv:coverage "6.76"
-], [
-  gv:hex "120401";
-  gv:red "18";
-  gv:blue "1";
-  gv:green "4";
-  gv:score "4.655101200000001";
-  gv:coverage "2.1266667"
-], [
-  gv:hex "b35943";
-  gv:red "179";
-  gv:blue "67";
-  gv:green "89";
-  gv:score "1.5577119000000001";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "eebc9f";
-  gv:red "238";
-  gv:blue "159";
-  gv:green "188";
-  gv:score "6.780608000000001";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "e0be8f";
-  gv:red "224";
-  gv:blue "143";
-  gv:green "190";
-  gv:score "6.1099619";
-  gv:coverage "2.54"
-], [
-  gv:hex "efd9bd";
-  gv:red "239";
-  gv:blue "189";
-  gv:green "217";
-  gv:score "5.5195056";
-  gv:coverage "4.306666600000001"
-], [
-  gv:hex "af997c";
-  gv:red "175";
-  gv:blue "124";
-  gv:green "153";
-  gv:score "4.908184";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "bc8f5f";
-  gv:red "188";
-  gv:blue "95";
-  gv:green "143";
-  gv:score "4.4892557";
-  gv:coverage "3.0066667"
-], [
-  gv:hex "87765c";
-  gv:red "135";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "3.0631842";
-  gv:coverage "0.79333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.345619"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "IEI\nKAI\nAphrodite\nCYPRUS\nTABLE WINE\nPROPUCED AND BOTTLED BY\nKE0 Ltd\nLI MAS SOL CYPRUS\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "CYP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1659";
+    <schema.keywords> "Spanish Table Wines Italy (Cypress and Greece)@en";
+    schema:inLanguage "en-CY";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "CY".
+

@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3429/label_3450";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "ROUGE\nBOURGOGNE\nPERE\nLOUIS\nAppellation Controlée\neReserve de\nl'auberge\nere Touis\n"@fra;
-    gv:color [
-  gv:hex "d7bda1";
-  gv:red "215";
-  gv:blue "161";
-  gv:green "189";
-  gv:score "34.844663999999995";
-  gv:coverage "22.38"
-], [
-  gv:hex "c79363";
-  gv:red "199";
-  gv:blue "99";
-  gv:green "147";
-  gv:score "7.5511365999999995";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "b39a7f";
-  gv:red "179";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "18.331707";
-  gv:coverage "3.38"
-], [
-  gv:hex "8f765c";
-  gv:red "143";
-  gv:blue "92";
-  gv:green "118";
-  gv:score "10.767981";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "947055";
-  gv:red "148";
-  gv:blue "85";
-  gv:green "112";
-  gv:score "5.1781461";
-  gv:coverage "0.77333334"
-], [
-  gv:hex "b99276";
-  gv:red "185";
-  gv:blue "118";
-  gv:green "146";
-  gv:score "5.119579300000001";
-  gv:coverage "0.85333334"
-], [
-  gv:hex "9e6c41";
-  gv:red "158";
-  gv:blue "65";
-  gv:green "108";
-  gv:score "3.8817185999999997";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "e1b285";
-  gv:red "225";
-  gv:blue "133";
-  gv:green "178";
-  gv:score "3.3093333000000005";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "eedac3";
-  gv:red "238";
-  gv:blue "195";
-  gv:green "218";
-  gv:score "2.4222316";
-  gv:coverage "5.1733334"
-], [
-  gv:hex "724f34";
-  gv:red "114";
-  gv:blue "52";
-  gv:green "79";
-  gv:score "2.3677429";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/019sc6>;
-  gv:desc "lighting";
-  gv:score "63.271213"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.110524"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.239236999999996"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.655065"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.54005900000001"
-];
-    w:bagOfWords "ROUGE\nBOURGOGNE\nPERE\nLOUIS\nAppellation Controlée\neReserve de\nl'auberge\nere Touis\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3450";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

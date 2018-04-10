@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1137/index_card_1174/label_1234";
-    dct:type "image";
-    dc:subject "Brandy@en";
-    w:bagOfWords "TRES ALAMOS\nBRANDY\nSELECTO\nEste BRANDY es un producto natural de vin\no recolectado y\ndestilado en la zona de JEREZ\nNo 25\n"@spa;
-    gv:color [
-  gv:hex "9c9ca1";
-  gv:red "156";
-  gv:blue "161";
-  gv:green "156";
-  gv:score "36.334872000000004";
-  gv:coverage "14.006667"
-], [
-  gv:hex "51586e";
-  gv:red "81";
-  gv:blue "110";
-  gv:green "88";
-  gv:score "8.263264600000001";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "bfbdbf";
-  gv:red "191";
-  gv:blue "191";
-  gv:green "189";
-  gv:score "16.231322000000002";
-  gv:coverage "16.793333"
-], [
-  gv:hex "797b83";
-  gv:red "121";
-  gv:blue "131";
-  gv:green "123";
-  gv:score "14.416409";
-  gv:coverage "4.3266665"
-], [
-  gv:hex "6e758b";
-  gv:red "110";
-  gv:blue "139";
-  gv:green "117";
-  gv:score "4.8731523999999995";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "31364b";
-  gv:red "49";
-  gv:blue "75";
-  gv:green "54";
-  gv:score "4.8558921";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "525560";
-  gv:red "82";
-  gv:blue "96";
-  gv:green "85";
-  gv:score "3.4154925";
-  gv:coverage "0.66"
-], [
-  gv:hex "9499ad";
-  gv:red "148";
-  gv:blue "173";
-  gv:green "153";
-  gv:score "2.7618779";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "11172a";
-  gv:red "17";
-  gv:blue "42";
-  gv:green "23";
-  gv:score "2.3646956";
-  gv:coverage "0.24"
-], [
-  gv:hex "dfdbda";
-  gv:red "223";
-  gv:blue "218";
-  gv:green "219";
-  gv:score "1.8296326";
-  gv:coverage "14.086667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.997505"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "53.443807"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "52.8583"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "52.149928"
-];
-    w:bagOfWords "TRES ALAMOS\nBRANDY\nSELECTO\nEste BRANDY es un producto natural de vin\no recolectado y\ndestilado en la zona de JEREZ\nNo 25\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1234";
+    <schema.keywords> "Brandy@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

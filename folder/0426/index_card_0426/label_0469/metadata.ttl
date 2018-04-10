@@ -1,101 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0469";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "R HEIN GAU\n1950et\nKReifenheimet Obetet Sudjsberg\ngling natut\nOriginal-Abfullung Karl Glock Rudesheim am Rhein\nAESA\n"@deu;
-    gv:color [
-  gv:hex "debc8d";
-  gv:red "222";
-  gv:blue "141";
-  gv:green "188";
-  gv:score "19.509254000000002";
-  gv:coverage "10.066666"
-], [
-  gv:hex "c99261";
-  gv:red "201";
-  gv:blue "97";
-  gv:green "146";
-  gv:score "13.932611";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "a2360e";
-  gv:red "162";
-  gv:blue "14";
-  gv:green "54";
-  gv:score "0.37577243";
-  gv:coverage "0.02"
-], [
-  gv:hex "dfc19b";
-  gv:red "223";
-  gv:blue "155";
-  gv:green "193";
-  gv:score "13.447957999999998";
-  gv:coverage "7.7866666"
-], [
-  gv:hex "a76d3e";
-  gv:red "167";
-  gv:blue "62";
-  gv:green "109";
-  gv:score "10.760757";
-  gv:coverage "1.2933333"
-], [
-  gv:hex "be9c69";
-  gv:red "190";
-  gv:blue "105";
-  gv:green "156";
-  gv:score "6.549751";
-  gv:coverage "3.6266666"
-], [
-  gv:hex "e1b183";
-  gv:red "225";
-  gv:blue "131";
-  gv:green "177";
-  gv:score "5.6676585";
-  gv:coverage "2"
-], [
-  gv:hex "7f491e";
-  gv:red "127";
-  gv:blue "30";
-  gv:green "73";
-  gv:score "4.8784051";
-  gv:coverage "0.62"
-], [
-  gv:hex "8a3a14";
-  gv:red "138";
-  gv:blue "20";
-  gv:green "58";
-  gv:score "3.5406839000000003";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "b35d35";
-  gv:red "179";
-  gv:blue "53";
-  gv:green "93";
-  gv:score "2.9738795";
-  gv:coverage "0.22666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.73401199999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.641967"
-];
-    w:bagOfWords "R HEIN GAU\n1950et\nKReifenheimet Obetet Sudjsberg\ngling natut\nOriginal-Abfullung Karl Glock Rudesheim am Rhein\nAESA\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0469";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

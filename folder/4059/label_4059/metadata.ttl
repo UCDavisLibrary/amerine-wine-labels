@@ -1,112 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4059/label_4059";
-    dct:type "image";
-    w:bagOfWords "now\nand\nin Pelure\nSELLIER LEBLANC BOURG-LA-REINE\n"@fra;
-    gv:color [
-  gv:hex "dcc09f";
-  gv:red "220";
-  gv:blue "159";
-  gv:green "192";
-  gv:score "15.271071";
-  gv:coverage "16.04"
-], [
-  gv:hex "c39561";
-  gv:red "195";
-  gv:blue "97";
-  gv:green "149";
-  gv:score "13.602123999999998";
-  gv:coverage "2.4666666999999998"
-], [
-  gv:hex "bf9b6b";
-  gv:red "191";
-  gv:blue "107";
-  gv:green "155";
-  gv:score "10.096028";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "dab586";
-  gv:red "218";
-  gv:blue "134";
-  gv:green "181";
-  gv:score "9.1668367";
-  gv:coverage "1.9466667"
-], [
-  gv:hex "9a7042";
-  gv:red "154";
-  gv:blue "66";
-  gv:green "112";
-  gv:score "7.7914521";
-  gv:coverage "1.8399999999999999"
-], [
-  gv:hex "b79978";
-  gv:red "183";
-  gv:blue "120";
-  gv:green "153";
-  gv:score "6.999665500000001";
-  gv:coverage "3.16"
-], [
-  gv:hex "734d23";
-  gv:red "115";
-  gv:blue "35";
-  gv:green "77";
-  gv:score "6.4781375";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "dfb280";
-  gv:red "223";
-  gv:blue "128";
-  gv:green "178";
-  gv:score "5.5160053";
-  gv:coverage "1.04"
-], [
-  gv:hex "927555";
-  gv:red "146";
-  gv:blue "85";
-  gv:green "117";
-  gv:score "3.6129355000000003";
-  gv:coverage "1.72"
-], [
-  gv:hex "957448";
-  gv:red "149";
-  gv:blue "72";
-  gv:green "116";
-  gv:score "3.4175877";
-  gv:coverage "1.0466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "65.4838"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "61.61015"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.607931"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.455653"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.913734000000005"
-];
-    w:bagOfWords "now\nand\nin Pelure\nSELLIER LEBLANC BOURG-LA-REINE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4059";
+    <schema.keywords> "Red Bordeaux (for book) folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
+    w:WineColor w:Red.
+

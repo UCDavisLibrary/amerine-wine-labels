@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1070/label_1080";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "MAISON FONDEE EN 1850\nVIN DE NEUCHATEL\nCAVES DU PALAIS\nH. SCHELLING & CIE S. A. PROpRIETAIRES ENCAVEURS\nNEUCHATEL\nRECOLTE\n1937\n"@deu;
-    gv:color [
-  gv:hex "d3c2a7";
-  gv:red "211";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "26.548553000000002";
-  gv:coverage "56.286669"
-], [
-  gv:hex "203937";
-  gv:red "32";
-  gv:blue "55";
-  gv:green "57";
-  gv:score "2.3039642999999996";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "472802";
-  gv:red "71";
-  gv:blue "2";
-  gv:green "40";
-  gv:score "0.32772119";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "aa997b";
-  gv:red "170";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "18.805136";
-  gv:coverage "2.0133332999999998"
-], [
-  gv:hex "867658";
-  gv:red "134";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "15.73099";
-  gv:coverage "1.16"
-], [
-  gv:hex "635439";
-  gv:red "99";
-  gv:blue "57";
-  gv:green "84";
-  gv:score "8.9062907";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "877144";
-  gv:red "135";
-  gv:blue "68";
-  gv:green "113";
-  gv:score "6.603948";
-  gv:coverage "0.22"
-], [
-  gv:hex "ecdac1";
-  gv:red "236";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "5.8410086";
-  gv:coverage "26.293334"
-], [
-  gv:hex "443319";
-  gv:red "68";
-  gv:blue "25";
-  gv:green "51";
-  gv:score "2.6932288";
-  gv:coverage "0.26"
-], [
-  gv:hex "6f582e";
-  gv:red "111";
-  gv:blue "46";
-  gv:green "88";
-  gv:score "2.6902998";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.38035500000001"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.384807"
-];
-    w:bagOfWords "MAISON FONDEE EN 1850\nVIN DE NEUCHATEL\nCAVES DU PALAIS\nH. SCHELLING & CIE S. A. PROpRIETAIRES ENCAVEURS\nNEUCHATEL\nRECOLTE\n1937\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1080";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

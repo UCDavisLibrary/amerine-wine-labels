@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3542/label_3544";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "AWARDS\nAWARDS\nSAN FRANCISCC 1887-1915-1939\nCALIFORNIA\nDUBLIN\n892\nSTATE FAIR\nCHICAGO 1893\n1934-1935-1936-1937\nPARIS 1889-1900-1938\n1938-1939-1940-1941\nESTABLISHED\n1876\nCALIFORNIA\nSAUTERNE\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER\nBROS INC\nBONDED WINERY NO. 46-1\nLOS HER MANOS VINEYARDS ST HELENA. CALIFORNIA\n"@eng;
-    gv:color [
-  gv:hex "d6bea0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "190";
-  gv:score "49.842389999999995";
-  gv:coverage "18.246667"
-], [
-  gv:hex "b59c7e";
-  gv:red "181";
-  gv:blue "126";
-  gv:green "156";
-  gv:score "30.262631000000003";
-  gv:coverage "3.5066668"
-], [
-  gv:hex "f2dabd";
-  gv:red "242";
-  gv:blue "189";
-  gv:green "218";
-  gv:score "4.517400299999999";
-  gv:coverage "12.706667"
-], [
-  gv:hex "8b745a";
-  gv:red "139";
-  gv:blue "90";
-  gv:green "116";
-  gv:score "3.9029941";
-  gv:coverage "0.32"
-], [
-  gv:hex "b89478";
-  gv:red "184";
-  gv:blue "120";
-  gv:green "148";
-  gv:score "3.2656942";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "5b4f3b";
-  gv:red "91";
-  gv:blue "59";
-  gv:green "79";
-  gv:score "2.1033062";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "ddb79b";
-  gv:red "221";
-  gv:blue "155";
-  gv:green "183";
-  gv:score "1.7935712";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "987457";
-  gv:red "152";
-  gv:blue "87";
-  gv:green "116";
-  gv:score "0.9712064600000001";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "b39a6e";
-  gv:red "179";
-  gv:blue "110";
-  gv:green "154";
-  gv:score "0.82486095";
-  gv:coverage "0.08"
-], [
-  gv:hex "bc9169";
-  gv:red "188";
-  gv:blue "105";
-  gv:green "145";
-  gv:score "0.63608792";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.723884"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.60465299999999"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.145948000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "53.791076000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.189958000000004"
-];
-    w:bagOfWords "AWARDS\nAWARDS\nSAN FRANCISCC 1887-1915-1939\nCALIFORNIA\nDUBLIN\n892\nSTATE FAIR\nCHICAGO 1893\n1934-1935-1936-1937\nPARIS 1889-1900-1938\n1938-1939-1940-1941\nESTABLISHED\n1876\nCALIFORNIA\nSAUTERNE\nALCOHOL 13% BY VOLUME\nPRODUCED AND BOTTLED BY\nBERINGER\nBROS INC\nBONDED WINERY NO. 46-1\nLOS HER MANOS VINEYARDS ST HELENA. CALIFORNIA\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3544";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

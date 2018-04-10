@@ -1,94 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4725/label_4725";
-    dct:type "image";
-    w:bagOfWords "SCOTCH WHISKIES\n4/5\n86\nPROOF\nALL OVER 10 YEARS OLD\nQUART\nSPECIAL\nLIQUEUR\nBLENDED\nSCOTCH WHISKY\nBLENDED AND BOTTLED BY\nSandeman Sons Ltd\nEDINBURGH, SCOTLAND.\nESTABLISHED 1760\nIMPORTED BY\nTRADERS DISTRIBUTING CO.\nSAN FRANCISCO, CALIF.\nODU\n"@undefined;
-    gv:color [
-  gv:hex "d2c1ae";
-  gv:red "210";
-  gv:blue "174";
-  gv:green "193";
-  gv:score "19.16966";
-  gv:coverage "11.673333"
-], [
-  gv:hex "3e3023";
-  gv:red "62";
-  gv:blue "35";
-  gv:green "48";
-  gv:score "3.1753976";
-  gv:coverage "0.45333332"
-], [
-  gv:hex "8e3920";
-  gv:red "142";
-  gv:blue "32";
-  gv:green "57";
-  gv:score "1.7381882000000002";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "1c1107";
-  gv:red "28";
-  gv:blue "7";
-  gv:green "17";
-  gv:score "1.6448391999999998";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "c83c1d";
-  gv:red "200";
-  gv:blue "29";
-  gv:green "60";
-  gv:score "1.2465595";
-  gv:coverage "0.12"
-], [
-  gv:hex "aa9d8c";
-  gv:red "170";
-  gv:blue "140";
-  gv:green "157";
-  gv:score "9.966265400000001";
-  gv:coverage "2.22"
-], [
-  gv:hex "c8937f";
-  gv:red "200";
-  gv:blue "127";
-  gv:green "147";
-  gv:score "9.6434243";
-  gv:coverage "0.9400000000000001"
-], [
-  gv:hex "ccbdb3";
-  gv:red "204";
-  gv:blue "179";
-  gv:green "189";
-  gv:score "9.0800546";
-  gv:coverage "4.859999999999999"
-], [
-  gv:hex "aa9b91";
-  gv:red "170";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "7.7435887999999995";
-  gv:coverage "1.1666667"
-], [
-  gv:hex "ecdcca";
-  gv:red "236";
-  gv:blue "202";
-  gv:green "220";
-  gv:score "7.5628325";
-  gv:coverage "12.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.960347"
-];
-    w:bagOfWords "SCOTCH WHISKIES\n4/5\n86\nPROOF\nALL OVER 10 YEARS OLD\nQUART\nSPECIAL\nLIQUEUR\nBLENDED\nSCOTCH WHISKY\nBLENDED AND BOTTLED BY\nSandeman Sons Ltd\nEDINBURGH, SCOTLAND.\nESTABLISHED 1760\nIMPORTED BY\nTRADERS DISTRIBUTING CO.\nSAN FRANCISCO, CALIF.\nODU\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4725";
+    <schema.keywords> "Fortified Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified.
+

@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2581";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "1934\nBEATING\nB凰愿UN凰(COTE DOR)\nMAISON FON DEE EN 1797\n"@fra;
-    gv:color [
-  gv:hex "d1c3b1";
-  gv:red "209";
-  gv:blue "177";
-  gv:green "195";
-  gv:score "47.227168000000006";
-  gv:coverage "23.686667"
-], [
-  gv:hex "ad9f8c";
-  gv:red "173";
-  gv:blue "140";
-  gv:green "159";
-  gv:score "21.008973";
-  gv:coverage "1.2333333"
-], [
-  gv:hex "eadcc9";
-  gv:red "234";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "15.407072";
-  gv:coverage "11.766667"
-], [
-  gv:hex "837562";
-  gv:red "131";
-  gv:blue "98";
-  gv:green "117";
-  gv:score "10.455163";
-  gv:coverage "0.5"
-], [
-  gv:hex "362d23";
-  gv:red "54";
-  gv:blue "35";
-  gv:green "45";
-  gv:score "0.045939532";
-  gv:coverage "0.046666668"
-], [
-  gv:hex "635844";
-  gv:red "99";
-  gv:blue "68";
-  gv:green "88";
-  gv:score "2.5909323";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "e1bba9";
-  gv:red "225";
-  gv:blue "169";
-  gv:green "187";
-  gv:score "1.5047504";
-  gv:coverage "0.093333336"
-], [
-  gv:hex "bd9886";
-  gv:red "189";
-  gv:blue "134";
-  gv:green "152";
-  gv:score "1.1498233";
-  gv:coverage "0.06"
-], [
-  gv:hex "f1e8da";
-  gv:red "241";
-  gv:blue "218";
-  gv:green "232";
-  gv:score "0.35673738";
-  gv:coverage "56.513332999999996"
-], [
-  gv:hex "cbc3b9";
-  gv:red "203";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "0.06995715699999999";
-  gv:coverage "5.7466667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.664805"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "51.387322000000005"
-];
-    w:bagOfWords "1934\nBEATING\nB凰愿UN凰(COTE DOR)\nMAISON FON DEE EN 1797\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2581";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

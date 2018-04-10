@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0315/label_0350";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "SONOMA\nRED WINE\nSONOMA VALLEY\nNTA\nlith of Briton & Co S P\n"@eng;
-    gv:color [
-  gv:hex "d1bda0";
-  gv:red "209";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "16.654292";
-  gv:coverage "11.566667"
-], [
-  gv:hex "ae9a7c";
-  gv:red "174";
-  gv:blue "124";
-  gv:green "154";
-  gv:score "14.887658";
-  gv:coverage "4.6666667"
-], [
-  gv:hex "87755a";
-  gv:red "135";
-  gv:blue "90";
-  gv:green "117";
-  gv:score "14.274930999999999";
-  gv:coverage "3.6666665000000003"
-], [
-  gv:hex "63523a";
-  gv:red "99";
-  gv:blue "58";
-  gv:green "82";
-  gv:score "11.178239";
-  gv:coverage "2.7333334000000002"
-], [
-  gv:hex "42321c";
-  gv:red "66";
-  gv:blue "28";
-  gv:green "50";
-  gv:score "7.3345691";
-  gv:coverage "1.6933333"
-], [
-  gv:hex "8d7446";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "6.4995058";
-  gv:coverage "1.4666666"
-], [
-  gv:hex "6b5429";
-  gv:red "107";
-  gv:blue "41";
-  gv:green "84";
-  gv:score "5.3448603";
-  gv:coverage "1.0866666"
-], [
-  gv:hex "b39867";
-  gv:red "179";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "5.2073736";
-  gv:coverage "1.6333334000000002"
-], [
-  gv:hex "5e534a";
-  gv:red "94";
-  gv:blue "74";
-  gv:green "83";
-  gv:score "3.2752272";
-  gv:coverage "0.84"
-], [
-  gv:hex "80756b";
-  gv:red "128";
-  gv:blue "107";
-  gv:green "117";
-  gv:score "2.6402837";
-  gv:coverage "0.74"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "66.232264"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.817076"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "58.496547"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.186189"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "53.6354"
-];
-    w:bagOfWords "SONOMA\nRED WINE\nSONOMA VALLEY\nNTA\nlith of Briton & Co S P\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0350";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3666";
-    dct:type "image";
-    w:bagOfWords "VINO FIN O\nMARCA\nVEGA SICILIA\nNICO\"\nCOSECHA 1920\nMedalla de Oro y Gran Diploma de Honor\nFeria de Navidad de Madrid de 1927\nMedalla rie Oro y Gran Diploma de Honor\nExposition Hotelera\narcelona de 1927\nGran Premio de Honor\nExposicion Internacional de Barcelona 1929 30\n"@spa;
-    gv:color [
-  gv:hex "ccc0b6";
-  gv:red "204";
-  gv:blue "182";
-  gv:green "192";
-  gv:score "48.528537";
-  gv:coverage "26.6"
-], [
-  gv:hex "a89c93";
-  gv:red "168";
-  gv:blue "147";
-  gv:green "156";
-  gv:score "31.221539";
-  gv:coverage "2.7733333"
-], [
-  gv:hex "483b2e";
-  gv:red "72";
-  gv:blue "46";
-  gv:green "59";
-  gv:score "0.19695295";
-  gv:coverage "0.04"
-], [
-  gv:hex "a5998a";
-  gv:red "165";
-  gv:blue "138";
-  gv:green "153";
-  gv:score "6.2818266";
-  gv:coverage "0.64"
-], [
-  gv:hex "e7dad1";
-  gv:red "231";
-  gv:blue "209";
-  gv:green "218";
-  gv:score "6.1742466";
-  gv:coverage "54.473335"
-], [
-  gv:hex "8b8076";
-  gv:red "139";
-  gv:blue "118";
-  gv:green "128";
-  gv:score "3.5258200000000004";
-  gv:coverage "0.32"
-], [
-  gv:hex "cbbeaf";
-  gv:red "203";
-  gv:blue "175";
-  gv:green "190";
-  gv:score "3.2228567";
-  gv:coverage "8.6"
-], [
-  gv:hex "887a6a";
-  gv:red "136";
-  gv:blue "106";
-  gv:green "122";
-  gv:score "0.57722023";
-  gv:coverage "0.08"
-], [
-  gv:hex "59493a";
-  gv:red "89";
-  gv:blue "58";
-  gv:green "73";
-  gv:score "0.19351202";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "645a50";
-  gv:red "100";
-  gv:blue "80";
-  gv:green "90";
-  gv:score "0.06259703700000001";
-  gv:coverage "0.06"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.322192"
-];
-    w:bagOfWords "VINO FIN O\nMARCA\nVEGA SICILIA\nNICO\"\nCOSECHA 1920\nMedalla de Oro y Gran Diploma de Honor\nFeria de Navidad de Madrid de 1927\nMedalla rie Oro y Gran Diploma de Honor\nExposition Hotelera\narcelona de 1927\nGran Premio de Honor\nExposicion Internacional de Barcelona 1929 30\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3666";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1317/label_1336";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "DO\nOCIEDADE VIN\nA\nLUA\nVISEU POR TU GA L\nVINHOS DE MESA\n"@por;
-    gv:color [
-  gv:hex "7f0506";
-  gv:red "127";
-  gv:blue "6";
-  gv:green "5";
-  gv:score "41.985366";
-  gv:coverage "9.66"
-], [
-  gv:hex "f0b59f";
-  gv:red "240";
-  gv:blue "159";
-  gv:green "181";
-  gv:score "4.187068699999999";
-  gv:coverage "3.1266667"
-], [
-  gv:hex "b45c50";
-  gv:red "180";
-  gv:blue "80";
-  gv:green "92";
-  gv:score "2.0569873999999997";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "d39364";
-  gv:red "211";
-  gv:blue "100";
-  gv:green "147";
-  gv:score "1.6803788";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "951416";
-  gv:red "149";
-  gv:blue "22";
-  gv:green "20";
-  gv:score "23.8462";
-  gv:coverage "5.4933332"
-], [
-  gv:hex "6d0c04";
-  gv:red "109";
-  gv:blue "4";
-  gv:green "12";
-  gv:score "7.583528";
-  gv:coverage "2.54"
-], [
-  gv:hex "903423";
-  gv:red "144";
-  gv:blue "35";
-  gv:green "52";
-  gv:score "3.3679295";
-  gv:coverage "1.4266667"
-], [
-  gv:hex "df8275";
-  gv:red "223";
-  gv:blue "117";
-  gv:green "130";
-  gv:score "2.0010289";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "b65d45";
-  gv:red "182";
-  gv:blue "69";
-  gv:green "93";
-  gv:score "1.7488587999999998";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "c65152";
-  gv:red "198";
-  gv:blue "82";
-  gv:green "81";
-  gv:score "1.7250720000000002";
-  gv:coverage "0.5"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06fvc>;
-  gv:desc "red";
-  gv:score "88.744581"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.547095"
-];
-    w:bagOfWords "DO\nOCIEDADE VIN\nA\nLUA\nVISEU POR TU GA L\nVINHOS DE MESA\n"@por;
-    wdt:P219 "por";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1336";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "pt-PT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "PRT".
+    wdt:P297 "PT".
+

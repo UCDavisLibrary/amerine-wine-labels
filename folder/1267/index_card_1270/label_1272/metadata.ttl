@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1272";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "Alter Hanner\nGryIraner\nEtikett M. C. J. 9000 L. bratm grun\nmit jedem beliebigen Eindruck liefert\nMario Carini, Luitenau Vibg. ofterr.\nEindruckkorten gelondert!\n"@deu;
-    gv:color [
-  gv:hex "c2c2a9";
-  gv:red "194";
-  gv:blue "169";
-  gv:green "194";
-  gv:score "44.389853";
-  gv:coverage "45.58"
-], [
-  gv:hex "9fa284";
-  gv:red "159";
-  gv:blue "132";
-  gv:green "162";
-  gv:score "20.835086999999998";
-  gv:coverage "7.580000000000001"
-], [
-  gv:hex "969e75";
-  gv:red "150";
-  gv:blue "117";
-  gv:green "158";
-  gv:score "18.3319";
-  gv:coverage "5.6866668"
-], [
-  gv:hex "7d855c";
-  gv:red "125";
-  gv:blue "92";
-  gv:green "133";
-  gv:score "5.565339";
-  gv:coverage "1.4000000000000001"
-], [
-  gv:hex "7e8066";
-  gv:red "126";
-  gv:blue "102";
-  gv:green "128";
-  gv:score "4.1239083";
-  gv:coverage "1.3733333"
-], [
-  gv:hex "b5bd94";
-  gv:red "181";
-  gv:blue "148";
-  gv:green "189";
-  gv:score "4.1148726";
-  gv:coverage "1.38"
-], [
-  gv:hex "c2c3b4";
-  gv:red "194";
-  gv:blue "180";
-  gv:green "195";
-  gv:score "1.6294487";
-  gv:coverage "5.0533332"
-], [
-  gv:hex "e3d8c4";
-  gv:red "227";
-  gv:blue "196";
-  gv:green "216";
-  gv:score "0.40921014999999994";
-  gv:coverage "21.053334"
-], [
-  gv:hex "9b9b8c";
-  gv:red "155";
-  gv:blue "140";
-  gv:green "155";
-  gv:score "0.35777227";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "2b1c09";
-  gv:red "43";
-  gv:blue "9";
-  gv:green "28";
-  gv:score "0.0031835497999999998";
-  gv:coverage "0.026666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.651739000000006"
-], [
-  gv:mid <https://g.co/kg/m/0c9ph5>;
-  gv:desc "flower";
-  gv:score "56.736726000000004"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.097654999999996"
-];
-    w:bagOfWords "Alter Hanner\nGryIraner\nEtikett M. C. J. 9000 L. bratm grun\nmit jedem beliebigen Eindruck liefert\nMario Carini, Luitenau Vibg. ofterr.\nEindruckkorten gelondert!\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1272";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

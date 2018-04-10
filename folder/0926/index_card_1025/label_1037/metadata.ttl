@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_1025/label_1037";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "19213\nValmis\nPeri\nCully\nPlus hautes récompenses aux principales expositions\nLurHosi. A MARSeres LAUSANNE\n"@deu;
-    gv:color [
-  gv:hex "e2c6a5";
-  gv:red "226";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "31.24994";
-  gv:coverage "14.360000000000001"
-], [
-  gv:hex "8d3822";
-  gv:red "141";
-  gv:blue "34";
-  gv:green "56";
-  gv:score "1.5040755";
-  gv:coverage "0.26"
-], [
-  gv:hex "ecbc9e";
-  gv:red "236";
-  gv:blue "158";
-  gv:green "188";
-  gv:score "10.469465";
-  gv:coverage "2.9333333"
-], [
-  gv:hex "f3d9b9";
-  gv:red "243";
-  gv:blue "185";
-  gv:green "217";
-  gv:score "9.6149564";
-  gv:coverage "11.133332999999999"
-], [
-  gv:hex "c19377";
-  gv:red "193";
-  gv:blue "119";
-  gv:green "147";
-  gv:score "7.9763822";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "b49879";
-  gv:red "180";
-  gv:blue "121";
-  gv:green "152";
-  gv:score "7.4215733";
-  gv:coverage "3.9466668000000005"
-], [
-  gv:hex "8f7456";
-  gv:red "143";
-  gv:blue "86";
-  gv:green "116";
-  gv:score "6.370186799999999";
-  gv:coverage "3.9266667999999996"
-], [
-  gv:hex "996f55";
-  gv:red "153";
-  gv:blue "85";
-  gv:green "111";
-  gv:score "5.8428183";
-  gv:coverage "2.18"
-], [
-  gv:hex "450b00";
-  gv:red "69";
-  gv:blue "undefined";
-  gv:green "11";
-  gv:score "0.043667792000000004";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "754d33";
-  gv:red "117";
-  gv:blue "51";
-  gv:green "77";
-  gv:score "2.8505657";
-  gv:coverage "1.04"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.14850399999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.301465"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.193042000000005"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.339651999999994"
-];
-    w:bagOfWords "19213\nValmis\nPeri\nCully\nPlus hautes récompenses aux principales expositions\nLurHosi. A MARSeres LAUSANNE\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1037";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

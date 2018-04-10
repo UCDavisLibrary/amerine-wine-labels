@@ -1,103 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2509";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "MIS\nEN BOUTEILLES\nDANS\nNOS CAVES\nVINTAGE\n1929\nFON DEE\nEN\n849\naEM S\nPDS MARCILLY RES\nPROPRIETAIRES DE VIGNOBLES\nNEGOCIANTs EN VINS A BEAUNE (coTE-D'OR)\nBOURGOGNE\nMONTRACHET\nSOLE U. S. AGENTS MUNSON G. SHAW & Co., INC. NEW-YORK\nCONTENT\n1 PINT 7,6 FLUID OZ.\nALCOHOL 14 olo BY VOLUME\nPRODUCE OF FRANCE\nIMP. ROUALET-BEAUNE.\n"@fra;
-    gv:color [
-  gv:hex "dbc29f";
-  gv:red "219";
-  gv:blue "159";
-  gv:green "194";
-  gv:score "37.681463";
-  gv:coverage "52.993333"
-], [
-  gv:hex "b39b78";
-  gv:red "179";
-  gv:blue "120";
-  gv:green "155";
-  gv:score "21.879756";
-  gv:coverage "4.58"
-], [
-  gv:hex "8a7351";
-  gv:red "138";
-  gv:blue "81";
-  gv:green "115";
-  gv:score "11.955931999999999";
-  gv:coverage "1.52"
-], [
-  gv:hex "f0d8b6";
-  gv:red "240";
-  gv:blue "182";
-  gv:green "216";
-  gv:score "8.5384324";
-  gv:coverage "25.713333"
-], [
-  gv:hex "665535";
-  gv:red "102";
-  gv:blue "53";
-  gv:green "85";
-  gv:score "6.740482200000001";
-  gv:coverage "0.60666665"
-], [
-  gv:hex "6c532c";
-  gv:red "108";
-  gv:blue "44";
-  gv:green "83";
-  gv:score "4.8450793999999995";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "3d3719";
-  gv:red "61";
-  gv:blue "25";
-  gv:green "55";
-  gv:score "3.3683433999999997";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "886f46";
-  gv:red "136";
-  gv:blue "70";
-  gv:green "111";
-  gv:score "2.4164665";
-  gv:coverage "0.12"
-], [
-  gv:hex "303b20";
-  gv:red "48";
-  gv:blue "32";
-  gv:green "59";
-  gv:score "1.3366479";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "412709";
-  gv:red "65";
-  gv:blue "9";
-  gv:green "39";
-  gv:score "0.37443026";
-  gv:coverage "0.053333334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.25196"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "MIS\nEN BOUTEILLES\nDANS\nNOS CAVES\nVINTAGE\n1929\nFON DEE\nEN\n849\naEM S\nPDS MARCILLY RES\nPROPRIETAIRES DE VIGNOBLES\nNEGOCIANTs EN VINS A BEAUNE (coTE-D'OR)\nBOURGOGNE\nMONTRACHET\nSOLE U. S. AGENTS MUNSON G. SHAW & Co., INC. NEW-YORK\nCONTENT\n1 PINT 7,6 FLUID OZ.\nALCOHOL 14 olo BY VOLUME\nPRODUCE OF FRANCE\nIMP. ROUALET-BEAUNE.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2509";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4313";
-    dct:type "image";
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\nPREMIER GRAND CRU CLASS\nPAU ILLA C-MEDOC\n1948\nMIS EN BOUTEILLES AU CHATEAU\nEPOSEE\nSOCIETE CIVILE DU VIGNoBLE DE CHATEAU LATOUR\nPROPRIETAIRE A PAU ILLAC GIRONDE\n"@fra;
-    gv:color [
-  gv:hex "cdbfb4";
-  gv:red "205";
-  gv:blue "180";
-  gv:green "191";
-  gv:score "23.086651";
-  gv:coverage "24.86"
-], [
-  gv:hex "ad9b8b";
-  gv:red "173";
-  gv:blue "139";
-  gv:green "155";
-  gv:score "19.163992";
-  gv:coverage "2.16"
-], [
-  gv:hex "d1bfb0";
-  gv:red "209";
-  gv:blue "176";
-  gv:green "191";
-  gv:score "18.392119";
-  gv:coverage "11.126667"
-], [
-  gv:hex "8a7561";
-  gv:red "138";
-  gv:blue "97";
-  gv:green "117";
-  gv:score "9.5839448";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "ae9e95";
-  gv:red "174";
-  gv:blue "149";
-  gv:green "158";
-  gv:score "6.8444088";
-  gv:coverage "1.3066667"
-], [
-  gv:hex "ebdacb";
-  gv:red "235";
-  gv:blue "203";
-  gv:green "218";
-  gv:score "6.252995899999999";
-  gv:coverage "4.7466666"
-], [
-  gv:hex "eadbd1";
-  gv:red "234";
-  gv:blue "209";
-  gv:green "219";
-  gv:score "5.4346632";
-  gv:coverage "53.566663999999996"
-], [
-  gv:hex "695644";
-  gv:red "105";
-  gv:blue "68";
-  gv:green "86";
-  gv:score "2.9392278000000003";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "debcb2";
-  gv:red "222";
-  gv:blue "178";
-  gv:green "188";
-  gv:score "2.7932392";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "6b4d32";
-  gv:red "107";
-  gv:blue "50";
-  gv:green "77";
-  gv:score "1.9407989";
-  gv:coverage "0.046666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.92515800000001"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "52.749168999999995"
-];
-    w:bagOfWords "GRAND VIN\nDE\nCHATEAU LATOUR\nPREMIER GRAND CRU CLASS\nPAU ILLA C-MEDOC\n1948\nMIS EN BOUTEILLES AU CHATEAU\nEPOSEE\nSOCIETE CIVILE DU VIGNoBLE DE CHATEAU LATOUR\nPROPRIETAIRE A PAU ILLAC GIRONDE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4313";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

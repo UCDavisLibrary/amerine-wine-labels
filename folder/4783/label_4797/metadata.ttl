@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4797";
-    dct:type "image";
-    w:bagOfWords "CONTENTS\nI PT 9 FL. OZS.\nPRODUCT\nOF FRANCE\nFREDERICK.\nWILD MAN\nSAN SDNS\nNEW YORK\nSTILL\nLOIRE\nTABLE\nWINE\n"@eng;
-    gv:color [
-  gv:hex "c8c5ac";
-  gv:red "200";
-  gv:blue "172";
-  gv:green "197";
-  gv:score "59.777373";
-  gv:coverage "4.0866666"
-], [
-  gv:hex "a19d85";
-  gv:red "161";
-  gv:blue "133";
-  gv:green "157";
-  gv:score "18.727204";
-  gv:coverage "1.38"
-], [
-  gv:hex "e2dec7";
-  gv:red "226";
-  gv:blue "199";
-  gv:green "222";
-  gv:score "17.689434000000002";
-  gv:coverage "6.3933335"
-], [
-  gv:hex "e4dcd0";
-  gv:red "228";
-  gv:blue "208";
-  gv:green "220";
-  gv:score "2.1841180000000002";
-  gv:coverage "86.026669"
-], [
-  gv:hex "847f66";
-  gv:red "132";
-  gv:blue "102";
-  gv:green "127";
-  gv:score "1.4449026";
-  gv:coverage "0.073333335"
-], [
-  gv:hex "363226";
-  gv:red "54";
-  gv:blue "38";
-  gv:green "50";
-  gv:score "0.014441479";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "dad1c5";
-  gv:red "218";
-  gv:blue "197";
-  gv:green "209";
-  gv:score "0.12813142";
-  gv:coverage "1.8066667"
-], [
-  gv:hex "847f74";
-  gv:red "132";
-  gv:blue "116";
-  gv:green "127";
-  gv:score "0.020540037";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "a49e94";
-  gv:red "164";
-  gv:blue "148";
-  gv:green "158";
-  gv:score "0.0094450479";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "534f43";
-  gv:red "83";
-  gv:blue "67";
-  gv:green "79";
-  gv:score "0.0044106306";
-  gv:coverage "0.073333335"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.235108"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.603849000000004"
-];
-    w:bagOfWords "CONTENTS\nI PT 9 FL. OZS.\nPRODUCT\nOF FRANCE\nFREDERICK.\nWILD MAN\nSAN SDNS\nNEW YORK\nSTILL\nLOIRE\nTABLE\nWINE\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4797";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

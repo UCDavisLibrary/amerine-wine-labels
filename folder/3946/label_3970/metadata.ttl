@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3970";
-    dct:type "image";
-    w:bagOfWords "DEUTSCHER WEIN BRAND\n5tharlathberg\nnbrenneret 5charlachbero\nBingen am Rhein.\n"@deu;
-    gv:color [
-  gv:hex "e9b160";
-  gv:red "233";
-  gv:blue "96";
-  gv:green "177";
-  gv:score "11.557887000000001";
-  gv:coverage "0.96"
-], [
-  gv:hex "c49255";
-  gv:red "196";
-  gv:blue "85";
-  gv:green "146";
-  gv:score "9.42287";
-  gv:coverage "0.84666666"
-], [
-  gv:hex "7c4610";
-  gv:red "124";
-  gv:blue "16";
-  gv:green "70";
-  gv:score "6.698351399999999";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "ca9347";
-  gv:red "202";
-  gv:blue "71";
-  gv:green "147";
-  gv:score "8.583313200000001";
-  gv:coverage "0.69333334"
-], [
-  gv:hex "b9975d";
-  gv:red "185";
-  gv:blue "93";
-  gv:green "151";
-  gv:score "6.2783666";
-  gv:coverage "0.88666668"
-], [
-  gv:hex "a36925";
-  gv:red "163";
-  gv:blue "37";
-  gv:green "105";
-  gv:score "5.873747900000001";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "b25b1c";
-  gv:red "178";
-  gv:blue "28";
-  gv:green "91";
-  gv:score "5.7177167";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "a16c33";
-  gv:red "161";
-  gv:blue "51";
-  gv:green "108";
-  gv:score "4.5804068000000004";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "853a0e";
-  gv:red "133";
-  gv:blue "14";
-  gv:green "58";
-  gv:score "4.3199003";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "e0b460";
-  gv:red "224";
-  gv:blue "96";
-  gv:green "180";
-  gv:score "3.8648974000000003";
-  gv:coverage "0.36666666000000003"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "79.092008"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.417488"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "57.2168"
-];
-    w:bagOfWords "DEUTSCHER WEIN BRAND\n5tharlathberg\nnbrenneret 5charlachbero\nBingen am Rhein.\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3970";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

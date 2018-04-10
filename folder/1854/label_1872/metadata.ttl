@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/label_1872";
-    dct:type "image";
-    w:bagOfWords "O\nMONTI\nILLADO FIN0\nPICO-PLATA\nFLORI DO.H ERMANOS\nSANLUCAR DE BARRA\nRRAMEDA\n(ESPANA)\n"@spa;
-    gv:color [
-  gv:hex "d9be9f";
-  gv:red "217";
-  gv:blue "159";
-  gv:green "190";
-  gv:score "14.763178";
-  gv:coverage "35.146665999999996"
-], [
-  gv:hex "c29265";
-  gv:red "194";
-  gv:blue "101";
-  gv:green "146";
-  gv:score "7.0130661";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "903927";
-  gv:red "144";
-  gv:blue "39";
-  gv:green "57";
-  gv:score "5.5816811";
-  gv:coverage "0.48"
-], [
-  gv:hex "af5f55";
-  gv:red "175";
-  gv:blue "85";
-  gv:green "95";
-  gv:score "5.1358733";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "e7b7a0";
-  gv:red "231";
-  gv:blue "160";
-  gv:green "183";
-  gv:score "14.163417";
-  gv:coverage "4.9799999999999995"
-], [
-  gv:hex "c7927c";
-  gv:red "199";
-  gv:blue "124";
-  gv:green "146";
-  gv:score "5.796887399999999";
-  gv:coverage "1.8266667"
-], [
-  gv:hex "bb9967";
-  gv:red "187";
-  gv:blue "103";
-  gv:green "153";
-  gv:score "5.7357784";
-  gv:coverage "2.7066667"
-], [
-  gv:hex "b89c79";
-  gv:red "184";
-  gv:blue "121";
-  gv:green "156";
-  gv:score "4.8015542";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "9d6f43";
-  gv:red "157";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "4.2724088";
-  gv:coverage "1.9"
-], [
-  gv:hex "d7b582";
-  gv:red "215";
-  gv:blue "130";
-  gv:green "181";
-  gv:score "4.2267437999999995";
-  gv:coverage "1.9066667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.248426"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "60.05457"
-];
-    w:bagOfWords "O\nMONTI\nILLADO FIN0\nPICO-PLATA\nFLORI DO.H ERMANOS\nSANLUCAR DE BARRA\nRRAMEDA\n(ESPANA)\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1872";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Fortified;
+    wdt:P297 "ES".
+

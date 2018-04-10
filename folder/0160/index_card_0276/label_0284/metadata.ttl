@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0276/label_0284";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "VALLE de ORO\nALCOHOL 12% BY VOLUME\nBROS\nESTABLISHED\nIBB3\nCALIFORNIA\nA LIGHT TABLE WINE\nOF MOURESTEL GRAPES.\nPRODUCED AND BOTTLED BY\nWENTE BROS. B. w. No. 893, LIVERMORE, CAL.\n"@eng;
-    gv:color [
-  gv:hex "9d1e19";
-  gv:red "157";
-  gv:blue "25";
-  gv:green "30";
-  gv:score "14.283593999999999";
-  gv:coverage "1"
-], [
-  gv:hex "d2c1ad";
-  gv:red "210";
-  gv:blue "173";
-  gv:green "193";
-  gv:score "10.395043";
-  gv:coverage "19.066665999999998"
-], [
-  gv:hex "64543b";
-  gv:red "100";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "8.846533299999999";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "ac9c87";
-  gv:red "172";
-  gv:blue "135";
-  gv:green "156";
-  gv:score "7.7116362999999994";
-  gv:coverage "3.46"
-], [
-  gv:hex "edbaa9";
-  gv:red "237";
-  gv:blue "169";
-  gv:green "186";
-  gv:score "7.2765574";
-  gv:coverage "1.6400000000000001"
-], [
-  gv:hex "86735b";
-  gv:red "134";
-  gv:blue "91";
-  gv:green "115";
-  gv:score "7.0824288";
-  gv:coverage "1.6533334"
-], [
-  gv:hex "cf453e";
-  gv:red "207";
-  gv:blue "62";
-  gv:green "69";
-  gv:score "4.5872696";
-  gv:coverage "0.31333333"
-], [
-  gv:hex "3f301b";
-  gv:red "63";
-  gv:blue "27";
-  gv:green "48";
-  gv:score "3.6551628000000003";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "774e3b";
-  gv:red "119";
-  gv:blue "59";
-  gv:green "78";
-  gv:score "3.2715071";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "c19282";
-  gv:red "193";
-  gv:blue "130";
-  gv:green "146";
-  gv:score "3.1058585";
-  gv:coverage "0.65333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.719032999999996"
-];
-    w:bagOfWords "VALLE de ORO\nALCOHOL 12% BY VOLUME\nBROS\nESTABLISHED\nIBB3\nCALIFORNIA\nA LIGHT TABLE WINE\nOF MOURESTEL GRAPES.\nPRODUCED AND BOTTLED BY\nWENTE BROS. B. w. No. 893, LIVERMORE, CAL.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0284";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

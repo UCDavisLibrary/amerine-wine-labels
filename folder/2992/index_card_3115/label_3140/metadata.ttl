@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3115/label_3140";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "St-Séverin-Monopole\nVIN ROUGE DE BORDEAUX\nCuvée sélectionnée\n"@fra;
-    gv:color [
-  gv:hex "d4b590";
-  gv:red "212";
-  gv:blue "144";
-  gv:green "181";
-  gv:score "51.722789000000006";
-  gv:coverage "18.873334"
-], [
-  gv:hex "9a6e53";
-  gv:red "154";
-  gv:blue "83";
-  gv:green "110";
-  gv:score "9.8385282";
-  gv:coverage "1.48"
-], [
-  gv:hex "bd9d79";
-  gv:red "189";
-  gv:blue "121";
-  gv:green "157";
-  gv:score "12.609063";
-  gv:coverage "4.4466667"
-], [
-  gv:hex "ba9273";
-  gv:red "186";
-  gv:blue "115";
-  gv:green "146";
-  gv:score "6.2876768";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "7c4c34";
-  gv:red "124";
-  gv:blue "52";
-  gv:green "76";
-  gv:score "4.6457525";
-  gv:coverage "0.62"
-], [
-  gv:hex "d1b185";
-  gv:red "209";
-  gv:blue "133";
-  gv:green "177";
-  gv:score "3.4608997";
-  gv:coverage "2.5266666"
-], [
-  gv:hex "d8b090";
-  gv:red "216";
-  gv:blue "144";
-  gv:green "176";
-  gv:score "2.4751287";
-  gv:coverage "0.52"
-], [
-  gv:hex "997956";
-  gv:red "153";
-  gv:blue "86";
-  gv:green "121";
-  gv:score "1.9335719";
-  gv:coverage "0.5"
-], [
-  gv:hex "8f6b46";
-  gv:red "143";
-  gv:blue "70";
-  gv:green "107";
-  gv:score "1.8501101";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "c09e73";
-  gv:red "192";
-  gv:blue "115";
-  gv:green "158";
-  gv:score "1.7724605";
-  gv:coverage "1.9800000000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.677367000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.9287"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "56.891859"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.793845"
-];
-    w:bagOfWords "St-Séverin-Monopole\nVIN ROUGE DE BORDEAUX\nCuvée sélectionnée\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3140";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

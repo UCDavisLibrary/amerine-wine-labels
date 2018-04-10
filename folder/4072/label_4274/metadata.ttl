@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4274";
-    dct:type "image";
-    w:bagOfWords "AR\nDIJON\nis 1889\nMIERCUREY\nIMP B ARNAUD LYON PARIS\n"@fra;
-    gv:color [
-  gv:hex "dfc9ac";
-  gv:red "223";
-  gv:blue "172";
-  gv:green "201";
-  gv:score "45.682263";
-  gv:coverage "21.646667"
-], [
-  gv:hex "ecd8bb";
-  gv:red "236";
-  gv:blue "187";
-  gv:green "216";
-  gv:score "18.770225";
-  gv:coverage "11.72"
-], [
-  gv:hex "b09977";
-  gv:red "176";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "10.892332";
-  gv:coverage "2.9933332999999998"
-], [
-  gv:hex "897352";
-  gv:red "137";
-  gv:blue "82";
-  gv:green "115";
-  gv:score "7.7017090999999995";
-  gv:coverage "1.16"
-], [
-  gv:hex "6a5333";
-  gv:red "106";
-  gv:blue "51";
-  gv:green "83";
-  gv:score "7.1238309";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "b09867";
-  gv:red "176";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "2.5373207";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "ceba81";
-  gv:red "206";
-  gv:blue "129";
-  gv:green "186";
-  gv:score "2.2803563999999996";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "493315";
-  gv:red "73";
-  gv:blue "21";
-  gv:green "51";
-  gv:score "1.823085";
-  gv:coverage "0.27333333"
-], [
-  gv:hex "e2d7cc";
-  gv:red "226";
-  gv:blue "204";
-  gv:green "215";
-  gv:score "1.258707";
-  gv:coverage "52.14"
-], [
-  gv:hex "9c8459";
-  gv:red "156";
-  gv:blue "89";
-  gv:green "132";
-  gv:score "0.46748589";
-  gv:coverage "0.12"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.967071"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "54.99386200000001"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "51.30319599999999"
-];
-    w:bagOfWords "AR\nDIJON\nis 1889\nMIERCUREY\nIMP B ARNAUD LYON PARIS\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4274";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

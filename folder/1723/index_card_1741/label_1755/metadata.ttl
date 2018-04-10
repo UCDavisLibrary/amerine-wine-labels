@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1741/label_1755";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "GEGRO\nNDET\nBERNOASTELER DOCTOR\nHARD CO\nEINRARD&CO\nNHARD\nNHA BD & CO\nDEINHARD 8\nare\n1794\nAN RHEIN\nA COBLENZ\n& MOSEL\nLILAC SEAL\nMiddle Moselle\n"@deu;
-    gv:color [
-  gv:hex "d6bfa6";
-  gv:red "214";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "27.683038";
-  gv:coverage "21.759999999999998"
-], [
-  gv:hex "ae9a7f";
-  gv:red "174";
-  gv:blue "127";
-  gv:green "154";
-  gv:score "19.693857";
-  gv:coverage "7.42"
-], [
-  gv:hex "8a7759";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "119";
-  gv:score "17.48942";
-  gv:coverage "3.52"
-], [
-  gv:hex "62523d";
-  gv:red "98";
-  gv:blue "61";
-  gv:green "82";
-  gv:score "11.911996";
-  gv:coverage "1.66"
-], [
-  gv:hex "423323";
-  gv:red "66";
-  gv:blue "35";
-  gv:green "51";
-  gv:score "5.111682399999999";
-  gv:coverage "0.9333332999999999"
-], [
-  gv:hex "5f524a";
-  gv:red "95";
-  gv:blue "74";
-  gv:green "82";
-  gv:score "3.3259332";
-  gv:coverage "0.66"
-], [
-  gv:hex "ebd8c1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "216";
-  gv:score "2.7963538";
-  gv:coverage "11.813334000000001"
-], [
-  gv:hex "7f7269";
-  gv:red "127";
-  gv:blue "105";
-  gv:green "114";
-  gv:score "2.0988969";
-  gv:coverage "0.64666667"
-], [
-  gv:hex "e2b8a6";
-  gv:red "226";
-  gv:blue "166";
-  gv:green "184";
-  gv:score "1.75857";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "3b3028";
-  gv:red "59";
-  gv:blue "40";
-  gv:green "48";
-  gv:score "1.4455789";
-  gv:coverage "0.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/04_x4>;
-  gv:desc "money";
-  gv:score "75.827265"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "75.289261"
-], [
-  gv:mid <https://g.co/kg/m/01q7l>;
-  gv:desc "currency";
-  gv:score "73.17937"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "GEGRO\nNDET\nBERNOASTELER DOCTOR\nHARD CO\nEINRARD&CO\nNHARD\nNHA BD & CO\nDEINHARD 8\nare\n1794\nAN RHEIN\nA COBLENZ\n& MOSEL\nLILAC SEAL\nMiddle Moselle\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1755";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

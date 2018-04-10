@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3656";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "'s\nO\nL VAπe\".. A.\nSOLLDAD\n가\nフ -LLC-u-e -1\nCALI C-RNIA\nCHAMPAGNE\nPREPARELirMuBOTTLED BY O.J.GCt_i ET VINEYARDS, LOS GATOS, CALIFORNIA\nNET CONTENTS 415 QUART\n04g?\n03 W n 1 0 > A8 %YiCl 10\nH007\n"@eng;
-    gv:color [
-  gv:hex "8ca767";
-  gv:red "140";
-  gv:blue "103";
-  gv:green "167";
-  gv:score "30.993998";
-  gv:coverage "6.533333700000001"
-], [
-  gv:hex "abc381";
-  gv:red "171";
-  gv:blue "129";
-  gv:green "195";
-  gv:score "18.486737";
-  gv:coverage "4.7466666"
-], [
-  gv:hex "678344";
-  gv:red "103";
-  gv:blue "68";
-  gv:green "131";
-  gv:score "13.330373000000002";
-  gv:coverage "2.32"
-], [
-  gv:hex "bac797";
-  gv:red "186";
-  gv:blue "151";
-  gv:green "199";
-  gv:score "10.192473";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "98a778";
-  gv:red "152";
-  gv:blue "120";
-  gv:green "167";
-  gv:score "4.8832107";
-  gv:coverage "1.7866666999999998"
-], [
-  gv:hex "cac7a8";
-  gv:red "202";
-  gv:blue "168";
-  gv:green "199";
-  gv:score "4.7007252";
-  gv:coverage "9.986666600000001"
-], [
-  gv:hex "466325";
-  gv:red "70";
-  gv:blue "37";
-  gv:green "99";
-  gv:score "3.3547152";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "e1dfc3";
-  gv:red "225";
-  gv:blue "195";
-  gv:green "223";
-  gv:score "2.0209346";
-  gv:coverage "8.34"
-], [
-  gv:hex "87ad5b";
-  gv:red "135";
-  gv:blue "91";
-  gv:green "173";
-  gv:score "1.5757463999999999";
-  gv:coverage "0.40666666"
-], [
-  gv:hex "6c7f52";
-  gv:red "108";
-  gv:blue "82";
-  gv:green "127";
-  gv:score "1.3908478";
-  gv:coverage "0.65333336"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/038hg>;
-  gv:desc "green";
-  gv:score "85.48434400000001"
-], [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "73.737144"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.190089"
-];
-    w:bagOfWords "'s\nO\nL VAπe\".. A.\nSOLLDAD\n가\nフ -LLC-u-e -1\nCALI C-RNIA\nCHAMPAGNE\nPREPARELirMuBOTTLED BY O.J.GCt_i ET VINEYARDS, LOS GATOS, CALIFORNIA\nNET CONTENTS 415 QUART\n04g?\n03 W n 1 0 > A8 %YiCl 10\nH007\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3656";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

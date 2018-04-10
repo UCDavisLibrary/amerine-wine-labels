@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1391/label_1405";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "PRECIO\nDEZ\nDE VENTA\nC. MAXIMO\nSIN ENVASE\nGRAN VINO BANQUETE\nPRODUCTO OHILENO\n"@spa;
-    gv:color [
-  gv:hex "d6bda0";
-  gv:red "214";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "67.263293";
-  gv:coverage "52.513330999999994"
-], [
-  gv:hex "b89f7f";
-  gv:red "184";
-  gv:blue "127";
-  gv:green "159";
-  gv:score "17.176893";
-  gv:coverage "4.279999999999999"
-], [
-  gv:hex "b39767";
-  gv:red "179";
-  gv:blue "103";
-  gv:green "151";
-  gv:score "4.9884934";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "927749";
-  gv:red "146";
-  gv:blue "73";
-  gv:green "119";
-  gv:score "4.0526174";
-  gv:coverage "0.43333330999999997"
-], [
-  gv:hex "d4b787";
-  gv:red "212";
-  gv:blue "135";
-  gv:green "183";
-  gv:score "2.7713278";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "947d5e";
-  gv:red "148";
-  gv:blue "94";
-  gv:green "125";
-  gv:score "1.7389132000000003";
-  gv:coverage "0.52"
-], [
-  gv:hex "e9d6be";
-  gv:red "233";
-  gv:blue "190";
-  gv:green "214";
-  gv:score "1.2864951";
-  gv:coverage "27.093333"
-], [
-  gv:hex "9f988d";
-  gv:red "159";
-  gv:blue "141";
-  gv:green "152";
-  gv:score "0.13480345000000002";
-  gv:coverage "0.08"
-], [
-  gv:hex "69563e";
-  gv:red "105";
-  gv:blue "62";
-  gv:green "86";
-  gv:score "0.1327312";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "cac2b6";
-  gv:red "202";
-  gv:blue "182";
-  gv:green "194";
-  gv:score "0.11460725999999999";
-  gv:coverage "4.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.061809"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "56.839794"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "56.830096"
-];
-    w:bagOfWords "PRECIO\nDEZ\nDE VENTA\nC. MAXIMO\nSIN ENVASE\nGRAN VINO BANQUETE\nPRODUCTO OHILENO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1405";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-CL";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHL".
+    wdt:P297 "CL".
+

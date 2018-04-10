@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2242/label_2243";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "ESrabushed 500 years\nBERRY BROS. Co\n3 ESSST LONDON\n1896\nCHATEAU LA FITE.\nGRAND VIN.\nBottled in En\nduce of France\n"@fra;
-    gv:color [
-  gv:hex "af9981";
-  gv:red "175";
-  gv:blue "129";
-  gv:green "153";
-  gv:score "28.975487";
-  gv:coverage "7.02"
-], [
-  gv:hex "754c14";
-  gv:red "117";
-  gv:blue "20";
-  gv:green "76";
-  gv:score "0.9668698499999999";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "8c775d";
-  gv:red "140";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "20.18223";
-  gv:coverage "3.8066667"
-], [
-  gv:hex "ccb69e";
-  gv:red "204";
-  gv:blue "158";
-  gv:green "182";
-  gv:score "13.960035000000001";
-  gv:coverage "5.3333335"
-], [
-  gv:hex "65513c";
-  gv:red "101";
-  gv:blue "60";
-  gv:green "81";
-  gv:score "8.7031379";
-  gv:coverage "1.5933333"
-], [
-  gv:hex "bc9964";
-  gv:red "188";
-  gv:blue "100";
-  gv:green "153";
-  gv:score "5.021966600000001";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "907347";
-  gv:red "144";
-  gv:blue "71";
-  gv:green "115";
-  gv:score "4.4529825";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "c5965a";
-  gv:red "197";
-  gv:blue "90";
-  gv:green "150";
-  gv:score "3.5336188999999996";
-  gv:coverage "0.4"
-], [
-  gv:hex "827369";
-  gv:red "130";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "2.263942";
-  gv:coverage "0.5599999999999999"
-], [
-  gv:hex "483520";
-  gv:red "72";
-  gv:blue "32";
-  gv:green "53";
-  gv:score "2.2298642";
-  gv:coverage "0.43333330999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.02051300000001"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "62.160712"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "57.115257"
-], [
-  gv:mid <https://g.co/kg/m/02mrp>;
-  gv:desc "electronics";
-  gv:score "53.104037000000005"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.716947000000005"
-];
-    w:bagOfWords "ESrabushed 500 years\nBERRY BROS. Co\n3 ESSST LONDON\n1896\nCHATEAU LA FITE.\nGRAND VIN.\nBottled in En\nduce of France\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2243";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

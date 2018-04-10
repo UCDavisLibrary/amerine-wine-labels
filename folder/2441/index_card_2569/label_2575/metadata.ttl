@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2569/label_2575";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "1998 WHITE\nINE\nBURG!\nhateau de lingelles\nSAONE\n& LOIRE\nVicomte de Dormy\nroprietaire\nPRODUCE OF FRANCE\nORIGINAL CHATEAU BOTTLING\n"@fra;
-    gv:color [
-  gv:hex "e1c49f";
-  gv:red "225";
-  gv:blue "159";
-  gv:green "196";
-  gv:score "42.612851";
-  gv:coverage "31.893334"
-], [
-  gv:hex "b49977";
-  gv:red "180";
-  gv:blue "119";
-  gv:green "153";
-  gv:score "11.810844";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "8a7254";
-  gv:red "138";
-  gv:blue "84";
-  gv:green "114";
-  gv:score "10.421859999999999";
-  gv:coverage "2.5666667"
-], [
-  gv:hex "675238";
-  gv:red "103";
-  gv:blue "56";
-  gv:green "82";
-  gv:score "8.790116000000001";
-  gv:coverage "1.7733334"
-], [
-  gv:hex "f3d7b2";
-  gv:red "243";
-  gv:blue "178";
-  gv:green "215";
-  gv:score "5.4496761";
-  gv:coverage "5.5066667"
-], [
-  gv:hex "e6c498";
-  gv:red "230";
-  gv:blue "152";
-  gv:green "196";
-  gv:score "3.4512047";
-  gv:coverage "1.9533332"
-], [
-  gv:hex "e0b694";
-  gv:red "224";
-  gv:blue "148";
-  gv:green "182";
-  gv:score "2.7786896";
-  gv:coverage "0.6799999999999999"
-], [
-  gv:hex "4a361f";
-  gv:red "74";
-  gv:blue "31";
-  gv:green "54";
-  gv:score "2.6689076999999997";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "c29878";
-  gv:red "194";
-  gv:blue "120";
-  gv:green "152";
-  gv:score "2.5321485";
-  gv:coverage "0.5"
-], [
-  gv:hex "e4b78e";
-  gv:red "228";
-  gv:blue "142";
-  gv:green "183";
-  gv:score "2.3716915000000003";
-  gv:coverage "0.98"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.20767199999999"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.235447"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.52357599999999"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.316052"
-];
-    w:bagOfWords "1998 WHITE\nINE\nBURG!\nhateau de lingelles\nSAONE\n& LOIRE\nVicomte de Dormy\nroprietaire\nPRODUCE OF FRANCE\nORIGINAL CHATEAU BOTTLING\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2575";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

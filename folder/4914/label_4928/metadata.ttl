@@ -1,98 +1,11 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4914/label_4928";
-    dct:type "image";
-    w:bagOfWords "Contents\n2 FL. OZS\nAlcohol: 12% by vol\nUSCADE\nPIERRES\nME\nOR\nI L L E\nGOLD ME\nNANTES 195O\nAPPELLATION MUSCADET CONTROLEE\nMIS EN BOUTEILLE A LA PROPRIETE\nDEBAR, RS Ms. DEPOs\n"@undefined;
-    gv:color [
-  gv:hex "a99c80";
-  gv:red "169";
-  gv:blue "128";
-  gv:green "156";
-  gv:score "24.992695";
-  gv:coverage "5.2666668"
-], [
-  gv:hex "cbbfa6";
-  gv:red "203";
-  gv:blue "166";
-  gv:green "191";
-  gv:score "20.445642";
-  gv:coverage "8.526666500000001"
-], [
-  gv:hex "85785b";
-  gv:red "133";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "13.977015000000002";
-  gv:coverage "2.2533333"
-], [
-  gv:hex "615337";
-  gv:red "97";
-  gv:blue "55";
-  gv:green "83";
-  gv:score "11.501465";
-  gv:coverage "1.4866667"
-], [
-  gv:hex "eddec5";
-  gv:red "237";
-  gv:blue "197";
-  gv:green "222";
-  gv:score "8.356767900000001";
-  gv:coverage "12.033334"
-], [
-  gv:hex "423418";
-  gv:red "66";
-  gv:blue "24";
-  gv:green "52";
-  gv:score "6.8204969";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "cbc3b7";
-  gv:red "203";
-  gv:blue "183";
-  gv:green "195";
-  gv:score "3.2190282";
-  gv:coverage "4.3999999999999995"
-], [
-  gv:hex "9f9e90";
-  gv:red "159";
-  gv:blue "144";
-  gv:green "158";
-  gv:score "3.0144417999999997";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "271a02";
-  gv:red "39";
-  gv:blue "2";
-  gv:green "26";
-  gv:score "2.3581488";
-  gv:coverage "0.26"
-], [
-  gv:hex "7b7c6f";
-  gv:red "123";
-  gv:blue "111";
-  gv:green "124";
-  gv:score "1.2491296";
-  gv:coverage "0.3"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.40984"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "50.95216"
-];
-    w:bagOfWords "Contents\n2 FL. OZS\nAlcohol: 12% by vol\nUSCADE\nPIERRES\nME\nOR\nI L L E\nGOLD ME\nNANTES 195O\nAPPELLATION MUSCADET CONTROLEE\nMIS EN BOUTEILLE A LA PROPRIETE\nDEBAR, RS Ms. DEPOs\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4928";
+    <schema.keywords> "Removed from UC Reporters Notebook folder@en".
+

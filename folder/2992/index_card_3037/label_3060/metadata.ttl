@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3037/label_3060";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "RE\nCAT\nCHATEAU\nCHEVAL BLANC.\nETAMPE\n1933\nSAINT EMILION\nShipped by\nAVERY'S OF BRISTOL\nAND CARDIFF\nEstablished 1793.\n"@fra;
-    gv:color [
-  gv:hex "a59b91";
-  gv:red "165";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "19.156359000000002";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "cbc0b5";
-  gv:red "203";
-  gv:blue "181";
-  gv:green "192";
-  gv:score "18.29302";
-  gv:coverage "9.84"
-], [
-  gv:hex "7f756c";
-  gv:red "127";
-  gv:blue "108";
-  gv:green "117";
-  gv:score "13.224515";
-  gv:coverage "1.3133333"
-], [
-  gv:hex "d1c2b1";
-  gv:red "209";
-  gv:blue "177";
-  gv:green "194";
-  gv:score "10.478448";
-  gv:coverage "12.966667000000001"
-], [
-  gv:hex "e9ded3";
-  gv:red "233";
-  gv:blue "211";
-  gv:green "222";
-  gv:score "6.9306209999999995";
-  gv:coverage "37"
-], [
-  gv:hex "a99b8c";
-  gv:red "169";
-  gv:blue "140";
-  gv:green "155";
-  gv:score "6.2124144";
-  gv:coverage "2.46"
-], [
-  gv:hex "5f544b";
-  gv:red "95";
-  gv:blue "75";
-  gv:green "84";
-  gv:score "5.9562437";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "ecddcc";
-  gv:red "236";
-  gv:blue "204";
-  gv:green "221";
-  gv:score "5.4121818";
-  gv:coverage "31.180000000000003"
-], [
-  gv:hex "dcb7aa";
-  gv:red "220";
-  gv:blue "170";
-  gv:green "183";
-  gv:score "5.2891735";
-  gv:coverage "0.8"
-], [
-  gv:hex "3d3329";
-  gv:red "61";
-  gv:blue "41";
-  gv:green "51";
-  gv:score "2.551887";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "77.329212"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.502931000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.210820000000005"
-];
-    w:bagOfWords "RE\nCAT\nCHATEAU\nCHEVAL BLANC.\nETAMPE\n1933\nSAINT EMILION\nShipped by\nAVERY'S OF BRISTOL\nAND CARDIFF\nEstablished 1793.\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3060";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

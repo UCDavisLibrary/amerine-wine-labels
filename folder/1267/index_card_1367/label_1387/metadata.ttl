@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1367/label_1387";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "CONTENTS 1 PT. 6 FL. 02\nNTENIDO NETO 670\ncm\nNO BLANCO NISIM\nINDUSTRIA ARGENTINA VINEDOS\nHATE Wh\nBy VOLUM\nALCOHOL ALO\n"@spa;
-    gv:color [
-  gv:hex "6b5228";
-  gv:red "107";
-  gv:blue "40";
-  gv:green "82";
-  gv:score "33.462256000000004";
-  gv:coverage "6.533333700000001"
-], [
-  gv:hex "846a3c";
-  gv:red "132";
-  gv:blue "60";
-  gv:green "106";
-  gv:score "23.192048";
-  gv:coverage "7.380000000000001"
-], [
-  gv:hex "66522f";
-  gv:red "102";
-  gv:blue "47";
-  gv:green "82";
-  gv:score "12.968054";
-  gv:coverage "3.5933333999999997"
-], [
-  gv:hex "806b47";
-  gv:red "128";
-  gv:blue "71";
-  gv:green "107";
-  gv:score "6.266292900000001";
-  gv:coverage "2.74"
-], [
-  gv:hex "403413";
-  gv:red "64";
-  gv:blue "19";
-  gv:green "52";
-  gv:score "6.0822409";
-  gv:coverage "1.46"
-], [
-  gv:hex "503912";
-  gv:red "80";
-  gv:blue "18";
-  gv:green "57";
-  gv:score "5.4326575";
-  gv:coverage "0.7799999999999999"
-], [
-  gv:hex "694922";
-  gv:red "105";
-  gv:blue "34";
-  gv:green "73";
-  gv:score "3.4114432";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "6a4929";
-  gv:red "106";
-  gv:blue "41";
-  gv:green "73";
-  gv:score "2.1221970999999997";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "2e3714";
-  gv:red "46";
-  gv:blue "20";
-  gv:green "55";
-  gv:score "1.7805047";
-  gv:coverage "0.5333333299999999"
-], [
-  gv:hex "252001";
-  gv:red "37";
-  gv:blue "1";
-  gv:green "32";
-  gv:score "0.77408664";
-  gv:coverage "0.26"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.486314"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.202357000000006"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.746212"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "52.310926"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "51.394558"
-];
-    w:bagOfWords "CONTENTS 1 PT. 6 FL. 02\nNTENIDO NETO 670\ncm\nNO BLANCO NISIM\nINDUSTRIA ARGENTINA VINEDOS\nHATE Wh\nBy VOLUM\nALCOHOL ALO\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1387";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "es-AR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ARG".
+    wdt:P297 "AR".
+

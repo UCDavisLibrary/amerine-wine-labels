@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0002/label_0011";
-    dct:type "image";
-    w:bagOfWords "O\n-NON-PLUS-r\nN-PLUS, ULTRA,\nGRAN VINO DE RESERVA\nRAVEmosCODORNIU\nisg0DORmiu\nVENTOS\nBRUT\nS.SADURNI DE NOYA\nEMB: 375\n375\n"@spa;
-    gv:color [
-  gv:hex "d8bb9d";
-  gv:red "216";
-  gv:blue "157";
-  gv:green "187";
-  gv:score "34.38524";
-  gv:coverage "36.633334"
-], [
-  gv:hex "b49776";
-  gv:red "180";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "13.395351";
-  gv:coverage "2.7666667"
-], [
-  gv:hex "c09575";
-  gv:red "192";
-  gv:blue "117";
-  gv:green "149";
-  gv:score "11.517887";
-  gv:coverage "2.42"
-], [
-  gv:hex "8e7351";
-  gv:red "142";
-  gv:blue "81";
-  gv:green "115";
-  gv:score "7.428012000000001";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "c39067";
-  gv:red "195";
-  gv:blue "103";
-  gv:green "144";
-  gv:score "7.0615679";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "8b7148";
-  gv:red "139";
-  gv:blue "72";
-  gv:green "113";
-  gv:score "5.2244354";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "70552d";
-  gv:red "112";
-  gv:blue "45";
-  gv:green "85";
-  gv:score "4.349880300000001";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "dbb293";
-  gv:red "219";
-  gv:blue "147";
-  gv:green "178";
-  gv:score "3.882622";
-  gv:coverage "1.1133334"
-], [
-  gv:hex "6c5231";
-  gv:red "108";
-  gv:blue "49";
-  gv:green "82";
-  gv:score "3.6372109999999997";
-  gv:coverage "0.61333333"
-], [
-  gv:hex "a3724b";
-  gv:red "163";
-  gv:blue "75";
-  gv:green "114";
-  gv:score "2.3662221";
-  gv:coverage "0.38"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.83768500000001"
-];
-    w:bagOfWords "O\n-NON-PLUS-r\nN-PLUS, ULTRA,\nGRAN VINO DE RESERVA\nRAVEmosCODORNIU\nisg0DORmiu\nVENTOS\nBRUT\nS.SADURNI DE NOYA\nEMB: 375\n375\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0011";
+    <schema.keywords> "Spain@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

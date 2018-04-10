@@ -1,102 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3605/label_3614";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "A FRANK SCHOONMAKER SELECTION\nA California \"CHABLIS\" from Santa Clara County\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nCHARLES LE FRANCE VINEYARDS\nLOS GATO S, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York N. Y\n"@eng;
-    gv:color [
-  gv:hex "d1c1a7";
-  gv:red "209";
-  gv:blue "167";
-  gv:green "193";
-  gv:score "33.967670999999996";
-  gv:coverage "20.413333"
-], [
-  gv:hex "ad9e86";
-  gv:red "173";
-  gv:blue "134";
-  gv:green "158";
-  gv:score "16.616873";
-  gv:coverage "3.4466665"
-], [
-  gv:hex "837560";
-  gv:red "131";
-  gv:blue "96";
-  gv:green "117";
-  gv:score "11.305992";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "60513d";
-  gv:red "96";
-  gv:blue "61";
-  gv:green "81";
-  gv:score "10.82061";
-  gv:coverage "1.54"
-], [
-  gv:hex "3f311f";
-  gv:red "63";
-  gv:blue "31";
-  gv:green "49";
-  gv:score "6.41113";
-  gv:coverage "1"
-], [
-  gv:hex "ebdac1";
-  gv:red "235";
-  gv:blue "193";
-  gv:green "218";
-  gv:score "6.149558";
-  gv:coverage "9.266666299999999"
-], [
-  gv:hex "575045";
-  gv:red "87";
-  gv:blue "69";
-  gv:green "80";
-  gv:score "2.7543062";
-  gv:coverage "0.5"
-], [
-  gv:hex "9f988b";
-  gv:red "159";
-  gv:blue "139";
-  gv:green "152";
-  gv:score "2.5434114";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "3d342b";
-  gv:red "61";
-  gv:blue "43";
-  gv:green "52";
-  gv:score "1.8215852000000001";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "81776c";
-  gv:red "129";
-  gv:blue "108";
-  gv:green "119";
-  gv:score "1.7891256000000002";
-  gv:coverage "0.46666664999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "70.006156"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.327842000000004"
-];
-    w:bagOfWords "A FRANK SCHOONMAKER SELECTION\nA California \"CHABLIS\" from Santa Clara County\nALCOHOL 12% BY VOLUME\nBOTTLED AT THE WINERY BY\nCHARLES LE FRANCE VINEYARDS\nLOS GATO S, CALIFORNIA\nDistributed by F. S. Importing Co., Ltd., New York N. Y\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3614";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

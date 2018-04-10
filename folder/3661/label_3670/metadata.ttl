@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3661/label_3670";
-    dct:type "image";
-    w:bagOfWords "MEDALLA DE ORO\nMEDALLA DE ORO\nOMA DE HON\nN REGI\nPOR\n93 O\nYPATROCINADA\nEXPOSICION INTERNACIONAL\nOBIERNO DE S. M,\n928\nDE\nAYUNTANEKENTO\nLIEU A\nGIJON 1928\nGIJON 1899\nLa mas antigua Fabrica de\nSidra Champagne\nFUNDADA EL ANO 1857\nMARCA REGISTRADA\nSIDRA CHAMPAGNE\nG La CON\nINDUSTRIAL ZARRACINA\n(ASTURIAS-ESPANA)\nTengase la botella en posicion horizontal\nSA: G\n"@spa;
-    gv:color [
-  gv:hex "dbc4a8";
-  gv:red "219";
-  gv:blue "168";
-  gv:green "196";
-  gv:score "27.899343";
-  gv:coverage "18.673334"
-], [
-  gv:hex "8d7546";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "117";
-  gv:score "8.0446884";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "e8b79b";
-  gv:red "232";
-  gv:blue "155";
-  gv:green "183";
-  gv:score "15.830507999999998";
-  gv:coverage "2.6733333000000004"
-], [
-  gv:hex "c7967a";
-  gv:red "199";
-  gv:blue "122";
-  gv:green "150";
-  gv:score "10.449359";
-  gv:coverage "1.68"
-], [
-  gv:hex "b19a7d";
-  gv:red "177";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "9.7190239";
-  gv:coverage "3.3266667"
-], [
-  gv:hex "eddac0";
-  gv:red "237";
-  gv:blue "192";
-  gv:green "218";
-  gv:score "9.626662699999999";
-  gv:coverage "14.280000000000001"
-], [
-  gv:hex "ae9564";
-  gv:red "174";
-  gv:blue "100";
-  gv:green "149";
-  gv:score "4.1015296999999995";
-  gv:coverage "0.6"
-], [
-  gv:hex "8b765a";
-  gv:red "139";
-  gv:blue "90";
-  gv:green "118";
-  gv:score "3.3489699999999996";
-  gv:coverage "1.02"
-], [
-  gv:hex "6e5627";
-  gv:red "110";
-  gv:blue "39";
-  gv:green "86";
-  gv:score "2.4568377";
-  gv:coverage "0.32"
-], [
-  gv:hex "655138";
-  gv:red "101";
-  gv:blue "56";
-  gv:green "81";
-  gv:score "1.7844878000000002";
-  gv:coverage "0.52666669"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.570843"
-];
-    w:bagOfWords "MEDALLA DE ORO\nMEDALLA DE ORO\nOMA DE HON\nN REGI\nPOR\n93 O\nYPATROCINADA\nEXPOSICION INTERNACIONAL\nOBIERNO DE S. M,\n928\nDE\nAYUNTANEKENTO\nLIEU A\nGIJON 1928\nGIJON 1899\nLa mas antigua Fabrica de\nSidra Champagne\nFUNDADA EL ANO 1857\nMARCA REGISTRADA\nSIDRA CHAMPAGNE\nG La CON\nINDUSTRIAL ZARRACINA\n(ASTURIAS-ESPANA)\nTengase la botella en posicion horizontal\nSA: G\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3670";
+    <schema.keywords> "Spain Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

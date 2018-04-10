@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3946/label_3959";
-    dct:type "image";
-    w:bagOfWords "Jos Blum de rolker\nOppenheim aRh\nM &Vo\nC H\nS O N D\nRHEINHESSEN\nGO\nWeingutsbefitzer\nWein kelierei eno\n7998\n"@deu;
-    gv:color [
-  gv:hex "e0c6a5";
-  gv:red "224";
-  gv:blue "165";
-  gv:green "198";
-  gv:score "31.344453";
-  gv:coverage "28.513333000000003"
-], [
-  gv:hex "a36a38";
-  gv:red "163";
-  gv:blue "56";
-  gv:green "106";
-  gv:score "10.434992999999999";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "642200";
-  gv:red "100";
-  gv:blue "undefined";
-  gv:green "34";
-  gv:score "1.4951149000000001";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "f2d9b8";
-  gv:red "242";
-  gv:blue "184";
-  gv:green "217";
-  gv:score "10.278188";
-  gv:coverage "21.113333"
-], [
-  gv:hex "b49a78";
-  gv:red "180";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "9.150514";
-  gv:coverage "3.8933333"
-], [
-  gv:hex "c28e5f";
-  gv:red "194";
-  gv:blue "95";
-  gv:green "142";
-  gv:score "7.303111299999999";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "8d7351";
-  gv:red "141";
-  gv:blue "81";
-  gv:green "115";
-  gv:score "5.06951";
-  gv:coverage "1.8666665999999998"
-], [
-  gv:hex "7f4516";
-  gv:red "127";
-  gv:blue "22";
-  gv:green "69";
-  gv:score "4.84839";
-  gv:coverage "0.41333335"
-], [
-  gv:hex "efba8a";
-  gv:red "239";
-  gv:blue "138";
-  gv:green "186";
-  gv:score "3.5094135";
-  gv:coverage "0.62"
-], [
-  gv:hex "e3c393";
-  gv:red "227";
-  gv:blue "147";
-  gv:green "195";
-  gv:score "2.2811484";
-  gv:coverage "0.83333338"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.397464"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.546083"
-];
-    w:bagOfWords "Jos Blum de rolker\nOppenheim aRh\nM &Vo\nC H\nS O N D\nRHEINHESSEN\nGO\nWeingutsbefitzer\nWein kelierei eno\n7998\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3959";
+    <schema.keywords> "Germany Rheinhessen Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

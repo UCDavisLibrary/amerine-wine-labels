@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0789/label_0838";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "LAROCHE AUXMoINES\nTROTIAV. Graveur. PARIS.\n"@fra;
-    gv:color [
-  gv:hex "522511";
-  gv:red "82";
-  gv:blue "17";
-  gv:green "37";
-  gv:score "70.81902";
-  gv:coverage "24.72"
-], [
-  gv:hex "744832";
-  gv:red "116";
-  gv:blue "50";
-  gv:green "72";
-  gv:score "10.015787";
-  gv:coverage "3.5333332000000004"
-], [
-  gv:hex "996c56";
-  gv:red "153";
-  gv:blue "86";
-  gv:green "108";
-  gv:score "7.692009199999999";
-  gv:coverage "2.5333334"
-], [
-  gv:hex "3e1201";
-  gv:red "62";
-  gv:blue "1";
-  gv:green "18";
-  gv:score "5.6717642";
-  gv:coverage "1.76"
-], [
-  gv:hex "bc9079";
-  gv:red "188";
-  gv:blue "121";
-  gv:green "144";
-  gv:score "2.8987588";
-  gv:coverage "1.0066667"
-], [
-  gv:hex "e4b9a2";
-  gv:red "228";
-  gv:blue "162";
-  gv:green "185";
-  gv:score "1.5602206";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "fed4be";
-  gv:red "254";
-  gv:blue "190";
-  gv:green "212";
-  gv:score "0.53559109";
-  gv:coverage "0.22666666"
-], [
-  gv:hex "f9e0ce";
-  gv:red "249";
-  gv:blue "206";
-  gv:green "224";
-  gv:score "0.36660207";
-  gv:coverage "1.58"
-], [
-  gv:hex "eaded2";
-  gv:red "234";
-  gv:blue "210";
-  gv:green "222";
-  gv:score "0.22068901";
-  gv:coverage "62.373334"
-], [
-  gv:hex "dbc3b6";
-  gv:red "219";
-  gv:blue "182";
-  gv:green "195";
-  gv:score "0.094714219";
-  gv:coverage "0.37333333999999996"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.499193"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "60.307646000000005"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.808074"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "53.05711600000001"
-];
-    w:bagOfWords "LAROCHE AUXMoINES\nTROTIAV. Graveur. PARIS.\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0838";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

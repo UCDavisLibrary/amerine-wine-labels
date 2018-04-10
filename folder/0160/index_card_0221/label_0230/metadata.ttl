@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0221/label_0230";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "SANTA CRUZ MOUNTAINS\nCABERNET SAUVIGNON\nBOTTLED AT THE VINEYARDS\nBY PAUL MASSON SARATOGA\nSANTA CRUZ M OUN TAIN s\nCALIFORNIA\nCONTENTS y's QUART\nALCOHOL 13% BY VOLUME\nREG.U. S.PAT OFF.\n"@eng;
-    gv:color [
-  gv:hex "d7bd99";
-  gv:red "215";
-  gv:blue "153";
-  gv:green "189";
-  gv:score "41.412875";
-  gv:coverage "65.25999999999999"
-], [
-  gv:hex "8f6f43";
-  gv:red "143";
-  gv:blue "67";
-  gv:green "111";
-  gv:score "16.863913999999998";
-  gv:coverage "2.6466666"
-], [
-  gv:hex "b49973";
-  gv:red "180";
-  gv:blue "115";
-  gv:green "153";
-  gv:score "11.131151000000001";
-  gv:coverage "3.8733333"
-], [
-  gv:hex "79592e";
-  gv:red "121";
-  gv:blue "46";
-  gv:green "89";
-  gv:score "7.4623987000000005";
-  gv:coverage "1"
-], [
-  gv:hex "b4966a";
-  gv:red "180";
-  gv:blue "106";
-  gv:green "150";
-  gv:score "6.334774899999999";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "735125";
-  gv:red "115";
-  gv:blue "37";
-  gv:green "81";
-  gv:score "5.8442105";
-  gv:coverage "0.76666665"
-], [
-  gv:hex "927957";
-  gv:red "146";
-  gv:blue "87";
-  gv:green "121";
-  gv:score "4.7680344";
-  gv:coverage "1.1933333000000002"
-], [
-  gv:hex "dabc8f";
-  gv:red "218";
-  gv:blue "143";
-  gv:green "188";
-  gv:score "4.718864";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "705938";
-  gv:red "112";
-  gv:blue "56";
-  gv:green "89";
-  gv:score "0.64525423";
-  gv:coverage "0.18666666999999998"
-], [
-  gv:hex "8c6739";
-  gv:red "140";
-  gv:blue "57";
-  gv:green "103";
-  gv:score "0.5856545200000001";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.520627"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "54.970777000000005"
-];
-    w:bagOfWords "SANTA CRUZ MOUNTAINS\nCABERNET SAUVIGNON\nBOTTLED AT THE VINEYARDS\nBY PAUL MASSON SARATOGA\nSANTA CRUZ M OUN TAIN s\nCALIFORNIA\nCONTENTS y's QUART\nALCOHOL 13% BY VOLUME\nREG.U. S.PAT OFF.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0230";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

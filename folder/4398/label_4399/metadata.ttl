@@ -1,112 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4398/label_4399";
-    dct:type "image";
-    w:bagOfWords "ALBARINO FEFINANEer\nCAMB ADOS\n(PONTEVEDRA\nPrecio en origen: 10 pesetas\nR. O. E. n.0 65\n"@spa;
-    gv:color [
-  gv:hex "837666";
-  gv:red "131";
-  gv:blue "102";
-  gv:green "118";
-  gv:score "21.28917";
-  gv:coverage "5.7933334"
-], [
-  gv:hex "a79989";
-  gv:red "167";
-  gv:blue "137";
-  gv:green "153";
-  gv:score "18.13034";
-  gv:coverage "7.0333331999999995"
-], [
-  gv:hex "5f5244";
-  gv:red "95";
-  gv:blue "68";
-  gv:green "82";
-  gv:score "15.989342";
-  gv:coverage "2.9466666"
-], [
-  gv:hex "d0c3b2";
-  gv:red "208";
-  gv:blue "178";
-  gv:green "195";
-  gv:score "15.942613999999999";
-  gv:coverage "20.446666999999998"
-], [
-  gv:hex "3f3325";
-  gv:red "63";
-  gv:blue "37";
-  gv:green "51";
-  gv:score "10.722650999999999";
-  gv:coverage "1.52"
-], [
-  gv:hex "42372e";
-  gv:red "66";
-  gv:blue "46";
-  gv:green "55";
-  gv:score "6.7835644";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "e8dbca";
-  gv:red "232";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "3.1608935";
-  gv:coverage "6.8266667000000005"
-], [
-  gv:hex "594e44";
-  gv:red "89";
-  gv:blue "68";
-  gv:green "78";
-  gv:score "2.9560046";
-  gv:coverage "0.44"
-], [
-  gv:hex "291e12";
-  gv:red "41";
-  gv:blue "18";
-  gv:green "30";
-  gv:score "1.462585";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "7b7064";
-  gv:red "123";
-  gv:blue "100";
-  gv:green "112";
-  gv:score "1.4190074000000001";
-  gv:coverage "0.30666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "78.978264"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "67.183554"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "60.66414100000001"
-], [
-  gv:mid <https://g.co/kg/m/07glzq>;
-  gv:desc "sketch";
-  gv:score "59.158176"
-], [
-  gv:mid <https://g.co/kg/m/016nqd>;
-  gv:desc "shape";
-  gv:score "58.090383"
-];
-    w:bagOfWords "ALBARINO FEFINANEer\nCAMB ADOS\n(PONTEVEDRA\nPrecio en origen: 10 pesetas\nR. O. E. n.0 65\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4399";
+    <schema.keywords> "Spain Pontevedra Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

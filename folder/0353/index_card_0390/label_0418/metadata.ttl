@@ -1,112 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0353/index_card_0390/label_0418";
-    dct:type "image";
-    dc:subject "Apperitives and Liqueurs@en";
-    w:bagOfWords "CIAL\nAGUARD\n"@undefined;
-    gv:color [
-  gv:hex "9e6b37";
-  gv:red "158";
-  gv:blue "55";
-  gv:green "107";
-  gv:score "17.566589";
-  gv:coverage "1.68"
-], [
-  gv:hex "7a4b1e";
-  gv:red "122";
-  gv:blue "30";
-  gv:green "75";
-  gv:score "16.865410999999998";
-  gv:coverage "2.08"
-], [
-  gv:hex "c38c4f";
-  gv:red "195";
-  gv:blue "79";
-  gv:green "140";
-  gv:score "8.913964";
-  gv:coverage "0.81333332"
-], [
-  gv:hex "896c37";
-  gv:red "137";
-  gv:blue "55";
-  gv:green "108";
-  gv:score "8.1137843";
-  gv:coverage "1.0333333"
-], [
-  gv:hex "6f5422";
-  gv:red "111";
-  gv:blue "34";
-  gv:green "84";
-  gv:score "7.451046999999999";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "ca8944";
-  gv:red "202";
-  gv:blue "68";
-  gv:green "137";
-  gv:score "6.994947";
-  gv:coverage "0.79333335"
-], [
-  gv:hex "5c3009";
-  gv:red "92";
-  gv:blue "9";
-  gv:green "48";
-  gv:score "5.0163493";
-  gv:coverage "0.62"
-], [
-  gv:hex "a96f2d";
-  gv:red "169";
-  gv:blue "45";
-  gv:green "111";
-  gv:score "4.5256883";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "eeb97a";
-  gv:red "238";
-  gv:blue "122";
-  gv:green "185";
-  gv:score "2.7977033";
-  gv:coverage "0.32"
-], [
-  gv:hex "844d0b";
-  gv:red "132";
-  gv:blue "11";
-  gv:green "77";
-  gv:score "2.1845166";
-  gv:coverage "0.15333333000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0463sg>;
-  gv:desc "fashion accessory";
-  gv:score "69.730574"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02_vjy>;
-  gv:desc "wallet";
-  gv:score "58.084548000000005"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.463884"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.906604"
-];
-    w:bagOfWords "CIAL\nAGUARD\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0418";
+    <schema.keywords> "Apperitives and Liqueurs@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Spirit.
+

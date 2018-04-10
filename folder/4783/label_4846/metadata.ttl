@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4783/label_4846";
-    dct:type "image";
-    w:bagOfWords "HAMILTON\nPORT\nbottled by\nHAMILTON SEWELL VINEYARDS LTD.\nADELAIDE SYDNEY MELBOURNE\nNET CONTENTS 26 FLUID OUNCES\n"@eng;
-    gv:color [
-  gv:hex "ede5de";
-  gv:red "237";
-  gv:blue "222";
-  gv:green "229";
-  gv:score "13.342091";
-  gv:coverage "70.026666"
-], [
-  gv:hex "b76037";
-  gv:red "183";
-  gv:blue "55";
-  gv:green "96";
-  gv:score "4.6314187";
-  gv:coverage "1.9866666000000002"
-], [
-  gv:hex "a12a2b";
-  gv:red "161";
-  gv:blue "43";
-  gv:green "42";
-  gv:score "3.7125304";
-  gv:coverage "0.13999999999999999"
-], [
-  gv:hex "5d523b";
-  gv:red "93";
-  gv:blue "59";
-  gv:green "82";
-  gv:score "2.8837094";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "933c3b";
-  gv:red "147";
-  gv:blue "59";
-  gv:green "60";
-  gv:score "2.8615167";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "fb7979";
-  gv:red "251";
-  gv:blue "121";
-  gv:green "121";
-  gv:score "1.2384229";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "cec5bf";
-  gv:red "206";
-  gv:blue "191";
-  gv:green "197";
-  gv:score "7.69519";
-  gv:coverage "4.5133334"
-], [
-  gv:hex "f3e6d1";
-  gv:red "243";
-  gv:blue "209";
-  gv:green "230";
-  gv:score "4.9974814";
-  gv:coverage "5.7"
-], [
-  gv:hex "d0bfa5";
-  gv:red "208";
-  gv:blue "165";
-  gv:green "191";
-  gv:score "4.5825787";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "a86d3f";
-  gv:red "168";
-  gv:blue "63";
-  gv:green "109";
-  gv:score "4.067084599999999";
-  gv:coverage "2.0133332999999998"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "67.52798"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "HAMILTON\nPORT\nbottled by\nHAMILTON SEWELL VINEYARDS LTD.\nADELAIDE SYDNEY MELBOURNE\nNET CONTENTS 26 FLUID OUNCES\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4846";
+    <schema.keywords> "United States Folder@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US".
+

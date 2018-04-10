@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2522/label_2544";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "PRO DU CE OF F RAN CE\nC.boblis\nBEAU DE\noimte d'Orthez,\nBECAURE\nContents l Pint and 8 Fluid ounces\nAleohol by volume\nIT\n"@fra;
-    gv:color [
-  gv:hex "d6bd9d";
-  gv:red "214";
-  gv:blue "157";
-  gv:green "189";
-  gv:score "27.204874";
-  gv:coverage "49.353334"
-], [
-  gv:hex "932019";
-  gv:red "147";
-  gv:blue "25";
-  gv:green "32";
-  gv:score "1.5670815";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "701c0f";
-  gv:red "112";
-  gv:blue "15";
-  gv:green "28";
-  gv:score "1.5019578";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "b09a7d";
-  gv:red "176";
-  gv:blue "125";
-  gv:green "154";
-  gv:score "18.129069";
-  gv:coverage "3.9266667999999996"
-], [
-  gv:hex "8a7559";
-  gv:red "138";
-  gv:blue "89";
-  gv:green "117";
-  gv:score "17.344096";
-  gv:coverage "2.9133333"
-], [
-  gv:hex "69543a";
-  gv:red "105";
-  gv:blue "58";
-  gv:green "84";
-  gv:score "7.0185781";
-  gv:coverage "1.46"
-], [
-  gv:hex "e0b69a";
-  gv:red "224";
-  gv:blue "154";
-  gv:green "182";
-  gv:score "4.966661";
-  gv:coverage "1.34"
-], [
-  gv:hex "c2947b";
-  gv:red "194";
-  gv:blue "123";
-  gv:green "148";
-  gv:score "4.6722196";
-  gv:coverage "0.74"
-], [
-  gv:hex "9a6b53";
-  gv:red "154";
-  gv:blue "83";
-  gv:green "107";
-  gv:score "4.4569645";
-  gv:coverage "0.52"
-], [
-  gv:hex "784b34";
-  gv:red "120";
-  gv:blue "52";
-  gv:green "75";
-  gv:score "2.6297823";
-  gv:coverage "0.27999999999999997"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.47064400000001"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "58.04354000000001"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.982856000000005"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "57.899367999999996"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "57.01769"
-];
-    w:bagOfWords "PRO DU CE OF F RAN CE\nC.boblis\nBEAU DE\noimte d'Orthez,\nBECAURE\nContents l Pint and 8 Fluid ounces\nAleohol by volume\nIT\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2544";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

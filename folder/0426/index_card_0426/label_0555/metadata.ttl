@@ -1,113 +1,15 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0426/index_card_0426/label_0555";
-    dct:type "image";
-    dc:subject "Rhinegau@en";
-    w:bagOfWords "Estabd in the XVII Century\n1933\nMITTELHEIMER RHEINGARTEN RIESLING SPATLESE\nWACHSTUM PFARRGUT\nRHEINWEIN\nProduce of Germany.\n"@deu;
-    gv:color [
-  gv:hex "a8998c";
-  gv:red "168";
-  gv:blue "140";
-  gv:green "153";
-  gv:score "48.874775";
-  gv:coverage "9.0733334"
-], [
-  gv:hex "cdbdae";
-  gv:red "205";
-  gv:blue "174";
-  gv:green "189";
-  gv:score "17.062755";
-  gv:coverage "12.553333"
-], [
-  gv:hex "887a6d";
-  gv:red "136";
-  gv:blue "109";
-  gv:green "122";
-  gv:score "12.615893999999999";
-  gv:coverage "2.6066666"
-], [
-  gv:hex "605144";
-  gv:red "96";
-  gv:blue "68";
-  gv:green "81";
-  gv:score "8.3778292";
-  gv:coverage "1.5333333"
-], [
-  gv:hex "ab9b91";
-  gv:red "171";
-  gv:blue "145";
-  gv:green "155";
-  gv:score "5.5187788";
-  gv:coverage "1.24"
-], [
-  gv:hex "cbbdb0";
-  gv:red "203";
-  gv:blue "176";
-  gv:green "189";
-  gv:score "5.4298602";
-  gv:coverage "7.0333331999999995"
-], [
-  gv:hex "84736a";
-  gv:red "132";
-  gv:blue "106";
-  gv:green "115";
-  gv:score "1.0975995";
-  gv:coverage "0.29333334"
-], [
-  gv:hex "48392d";
-  gv:red "72";
-  gv:blue "45";
-  gv:green "57";
-  gv:score "0.47304467";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "66564c";
-  gv:red "102";
-  gv:blue "76";
-  gv:green "86";
-  gv:score "0.2354952";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "e7d7c7";
-  gv:red "231";
-  gv:blue "199";
-  gv:green "215";
-  gv:score "0.17831313";
-  gv:coverage "4.306666600000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.443183999999995"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "57.132225999999996"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.66461999999999"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.484376"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "50.35049299999999"
-];
-    w:bagOfWords "Estabd in the XVII Century\n1933\nMITTELHEIMER RHEINGARTEN RIESLING SPATLESE\nWACHSTUM PFARRGUT\nRHEINWEIN\nProduce of Germany.\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0555";
+    <schema.keywords> "Rhinegau@en";
+    schema:inLanguage "de";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2521";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "NET CO\nTS I PT. 8 FL. 02.\nALCOHOLIC STRENGTH BY VOL. 12\nWHITE BURGUNDY WINE\nDE MOUCHERON & CIE\nNEGOCIANTS EN VINS A MEUR SAULT\nC COTE D'OR\nPRODUCT OF FRANCE\nROU\nET\nNE\n"@fra;
-    gv:color [
-  gv:hex "e3c7a1";
-  gv:red "227";
-  gv:blue "161";
-  gv:green "199";
-  gv:score "53.782797";
-  gv:coverage "24.92"
-], [
-  gv:hex "b09777";
-  gv:red "176";
-  gv:blue "119";
-  gv:green "151";
-  gv:score "6.977651999999999";
-  gv:coverage "1.3266666999999999"
-], [
-  gv:hex "ecbd9a";
-  gv:red "236";
-  gv:blue "154";
-  gv:green "189";
-  gv:score "5.7918739";
-  gv:coverage "1.8533334"
-], [
-  gv:hex "8c7659";
-  gv:red "140";
-  gv:blue "89";
-  gv:green "118";
-  gv:score "5.7427496";
-  gv:coverage "0.84"
-], [
-  gv:hex "edb791";
-  gv:red "237";
-  gv:blue "145";
-  gv:green "183";
-  gv:score "5.1011465";
-  gv:coverage "1.2"
-], [
-  gv:hex "c9926e";
-  gv:red "201";
-  gv:blue "110";
-  gv:green "146";
-  gv:score "4.3869879";
-  gv:coverage "0.9199999999999999"
-], [
-  gv:hex "f2d5b1";
-  gv:red "242";
-  gv:blue "177";
-  gv:green "213";
-  gv:score "2.5869761000000002";
-  gv:coverage "5.0200000000000005"
-], [
-  gv:hex "6a5438";
-  gv:red "106";
-  gv:blue "56";
-  gv:green "84";
-  gv:score "2.4532301";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "e1c095";
-  gv:red "225";
-  gv:blue "149";
-  gv:green "192";
-  gv:score "1.9996578";
-  gv:coverage "0.7000000000000001"
-], [
-  gv:hex "c89776";
-  gv:red "200";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "1.9032542";
-  gv:coverage "0.52"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "66.768986"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "51.473062999999996"
-];
-    w:bagOfWords "NET CO\nTS I PT. 8 FL. 02.\nALCOHOLIC STRENGTH BY VOL. 12\nWHITE BURGUNDY WINE\nDE MOUCHERON & CIE\nNEGOCIANTS EN VINS A MEUR SAULT\nC COTE D'OR\nPRODUCT OF FRANCE\nROU\nET\nNE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2521";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

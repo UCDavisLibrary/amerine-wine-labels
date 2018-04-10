@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2786/index_card_2826/label_2833";
-    dct:type "image";
-    dc:subject "Bordeaux White@en";
-    w:bagOfWords "PARIS 1900\nGRAND PRIX\nUNIVERSELLE POSITION CHATEAU GUIRAUD\n1er CRU\nSAUTERNES\n1943\nMISEN BOUTEILLES AU CHATEAU\n"@fra;
-    gv:color [
-  gv:hex "1c150f";
-  gv:red "28";
-  gv:blue "15";
-  gv:green "21";
-  gv:score "31.380406";
-  gv:coverage "9.66"
-], [
-  gv:hex "3c2e1b";
-  gv:red "60";
-  gv:blue "27";
-  gv:green "46";
-  gv:score "17.313391";
-  gv:coverage "3.26"
-], [
-  gv:hex "271b0b";
-  gv:red "39";
-  gv:blue "11";
-  gv:green "27";
-  gv:score "10.243656";
-  gv:coverage "2.1133333"
-], [
-  gv:hex "62513b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "81";
-  gv:score "8.6882159";
-  gv:coverage "1.6133332999999999"
-], [
-  gv:hex "382f28";
-  gv:red "56";
-  gv:blue "40";
-  gv:green "47";
-  gv:score "8.1552409";
-  gv:coverage "2.2266667"
-], [
-  gv:hex "837058";
-  gv:red "131";
-  gv:blue "88";
-  gv:green "112";
-  gv:score "6.0160235";
-  gv:coverage "1.3466666"
-], [
-  gv:hex "ab9477";
-  gv:red "171";
-  gv:blue "119";
-  gv:green "148";
-  gv:score "5.0120756";
-  gv:coverage "1.6733333"
-], [
-  gv:hex "594f46";
-  gv:red "89";
-  gv:blue "70";
-  gv:green "79";
-  gv:score "1.9254035999999999";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "b39366";
-  gv:red "179";
-  gv:blue "102";
-  gv:green "147";
-  gv:score "1.7143471000000001";
-  gv:coverage "0.3"
-], [
-  gv:hex "ceb998";
-  gv:red "206";
-  gv:blue "152";
-  gv:green "185";
-  gv:score "1.5511474";
-  gv:coverage "19.233334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.570112"
-], [
-  gv:mid <https://g.co/kg/m/04shl0>;
-  gv:desc "distilled beverage";
-  gv:score "67.572433"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0271t>;
-  gv:desc "drink";
-  gv:score "51.982516000000004"
-], [
-  gv:mid <https://g.co/kg/m/01l0y0>;
-  gv:desc "material";
-  gv:score "51.833326"
-];
-    w:bagOfWords "PARIS 1900\nGRAND PRIX\nUNIVERSELLE POSITION CHATEAU GUIRAUD\n1er CRU\nSAUTERNES\n1943\nMISEN BOUTEILLES AU CHATEAU\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2833";
+    <schema.keywords> "Bordeaux White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

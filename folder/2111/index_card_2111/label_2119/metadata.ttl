@@ -1,100 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2111/index_card_2111/label_2119";
-    dct:type "image";
-    dc:subject "Misc Fortified@en";
-    w:bagOfWords "EST\nm 1814\nORT\nPORT SHIPPERS\nN SOUTHARD & C\nOPORTO\nLONDON\nPRODUCE OF PORTUGAL\nPRINTED IN PORTUGAL\n"@undefined;
-    gv:color [
-  gv:hex "e0c08f";
-  gv:red "224";
-  gv:blue "143";
-  gv:green "192";
-  gv:score "17.218174";
-  gv:coverage "3.8866665"
-], [
-  gv:hex "0a0403";
-  gv:red "10";
-  gv:blue "3";
-  gv:green "4";
-  gv:score "12.116043";
-  gv:coverage "18.533333"
-], [
-  gv:hex "301302";
-  gv:red "48";
-  gv:blue "2";
-  gv:green "19";
-  gv:score "1.4711607999999998";
-  gv:coverage "0.44666668"
-], [
-  gv:hex "691b08";
-  gv:red "105";
-  gv:blue "8";
-  gv:green "27";
-  gv:score "1.1287862";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "b3583e";
-  gv:red "179";
-  gv:blue "62";
-  gv:green "88";
-  gv:score "1.1117108";
-  gv:coverage "0.1"
-], [
-  gv:hex "d27c6c";
-  gv:red "210";
-  gv:blue "108";
-  gv:green "124";
-  gv:score "0.77212784";
-  gv:coverage "0.086666667"
-], [
-  gv:hex "c25251";
-  gv:red "194";
-  gv:blue "81";
-  gv:green "82";
-  gv:score "0.5072618400000001";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "dec29f";
-  gv:red "222";
-  gv:blue "159";
-  gv:green "194";
-  gv:score "12.599497000000001";
-  gv:coverage "4.74"
-], [
-  gv:hex "b49867";
-  gv:red "180";
-  gv:blue "103";
-  gv:green "152";
-  gv:score "8.530502";
-  gv:coverage "1.46"
-], [
-  gv:hex "8d7446";
-  gv:red "141";
-  gv:blue "70";
-  gv:green "116";
-  gv:score "5.2869249";
-  gv:coverage "0.8999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.619236"
-];
-    w:bagOfWords "EST\nm 1814\nORT\nPORT SHIPPERS\nN SOUTHARD & C\nOPORTO\nLONDON\nPRODUCE OF PORTUGAL\nPRINTED IN PORTUGAL\n"@undefined;
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2119";
+    <schema.keywords> "Misc Fortified@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified.
+

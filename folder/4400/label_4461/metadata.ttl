@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4400/label_4461";
-    dct:type "image";
-    w:bagOfWords "R.E. N° 43\nBodegas Franco-Espanolas\nLOGRONO\n"@spa;
-    gv:color [
-  gv:hex "cec5bc";
-  gv:red "206";
-  gv:blue "188";
-  gv:green "197";
-  gv:score "10.336677";
-  gv:coverage "17.666666"
-], [
-  gv:hex "aa2322";
-  gv:red "170";
-  gv:blue "34";
-  gv:green "35";
-  gv:score "8.905587299999999";
-  gv:coverage "1.7133333"
-], [
-  gv:hex "e9bcb2";
-  gv:red "233";
-  gv:blue "178";
-  gv:green "188";
-  gv:score "4.9226426";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "62543b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "3.5576592999999996";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "be1315";
-  gv:red "190";
-  gv:blue "21";
-  gv:green "19";
-  gv:score "2.4117276";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "cb4542";
-  gv:red "203";
-  gv:blue "66";
-  gv:green "69";
-  gv:score "6.4253986";
-  gv:coverage "1.52"
-], [
-  gv:hex "a29b92";
-  gv:red "162";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "5.9207391";
-  gv:coverage "1.3666667000000001"
-], [
-  gv:hex "7b766e";
-  gv:red "123";
-  gv:blue "110";
-  gv:green "118";
-  gv:score "5.3725924";
-  gv:coverage "0.9866667000000001"
-], [
-  gv:hex "d7c6b6";
-  gv:red "215";
-  gv:blue "182";
-  gv:green "198";
-  gv:score "3.2943938";
-  gv:coverage "9.58"
-], [
-  gv:hex "e5dbd2";
-  gv:red "229";
-  gv:blue "210";
-  gv:green "219";
-  gv:score "3.2589052";
-  gv:coverage "49.593332000000004"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.383094"
-];
-    w:bagOfWords "R.E. N° 43\nBodegas Franco-Espanolas\nLOGRONO\n"@spa;
-    wdt:P219 "spa";
-    wdt:P298 "ESP".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4461";
+    <schema.keywords> "Spain Rioja Rest to Check 1 Folder@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "ES".
+

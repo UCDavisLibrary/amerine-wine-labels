@@ -1,114 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1267/index_card_1270/label_1282";
-    dct:type "image";
-    dc:subject "Misc Table Wines@en";
-    w:bagOfWords "Fine old\noder mit jedem be ebigen Eindrudk\nEindrudkkofte gefondert!\nEtikett Nr. M J. 744 L\nI i e fi r ti:\nario Carini, Luftenau .VIbg./ofterr.\nM.C\n744 L\n"@deu;
-    gv:color [
-  gv:hex "c99965";
-  gv:red "201";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "35.560074";
-  gv:coverage "6.9666669"
-], [
-  gv:hex "624c33";
-  gv:red "98";
-  gv:blue "51";
-  gv:green "76";
-  gv:score "2.6412497999999998";
-  gv:coverage "2.4466667"
-], [
-  gv:hex "482916";
-  gv:red "72";
-  gv:blue "22";
-  gv:green "41";
-  gv:score "2.1675946";
-  gv:coverage "1.9133333"
-], [
-  gv:hex "deac75";
-  gv:red "222";
-  gv:blue "117";
-  gv:green "172";
-  gv:score "11.285415";
-  gv:coverage "2.08"
-], [
-  gv:hex "c19c68";
-  gv:red "193";
-  gv:blue "104";
-  gv:green "156";
-  gv:score "9.0385519";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "a17142";
-  gv:red "161";
-  gv:blue "66";
-  gv:green "113";
-  gv:score "7.0059553";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "d8b07b";
-  gv:red "216";
-  gv:blue "123";
-  gv:green "176";
-  gv:score "4.7994927";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "b49a77";
-  gv:red "180";
-  gv:blue "119";
-  gv:green "154";
-  gv:score "2.1338565";
-  gv:coverage "1.54"
-], [
-  gv:hex "794c23";
-  gv:red "121";
-  gv:blue "35";
-  gv:green "76";
-  gv:score "2.1097606";
-  gv:coverage "0.52666669"
-], [
-  gv:hex "48341f";
-  gv:red "72";
-  gv:blue "31";
-  gv:green "52";
-  gv:score "2.0395398";
-  gv:coverage "1.8599999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.972841"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "57.773942"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.552409000000004"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "57.180786"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "56.633937"
-];
-    w:bagOfWords "Fine old\noder mit jedem be ebigen Eindrudk\nEindrudkkofte gefondert!\nEtikett Nr. M J. 744 L\nI i e fi r ti:\nario Carini, Luftenau .VIbg./ofterr.\nM.C\n744 L\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1282";
+    <schema.keywords> "Misc Table Wines@en";
+    schema:inLanguage "de-AT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "AUT".
+    wdt:P297 "AT".
+

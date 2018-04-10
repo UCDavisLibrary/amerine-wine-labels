@@ -1,102 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1854/index_card_1949/label_1953";
-    dct:type "image";
-    dc:subject "Spanish Sherry@en";
-    w:bagOfWords "PALE DRY\nSHE RRY\nGROWN AND\nADV\nBoB, E BOTTLED BY\nMANUEL FERNANDEZ & C S. L\nJE RE Z SPAIN\nPRODUCE OF, SPAIN\n"@spa;
-    gv:color [
-  gv:hex "1e1812";
-  gv:red "30";
-  gv:blue "18";
-  gv:green "24";
-  gv:score "48.412174";
-  gv:coverage "16.86"
-], [
-  gv:hex "a79a89";
-  gv:red "167";
-  gv:blue "137";
-  gv:green "154";
-  gv:score "2.6512785";
-  gv:coverage "0.9466666699999999"
-], [
-  gv:hex "362e27";
-  gv:red "54";
-  gv:blue "39";
-  gv:green "46";
-  gv:score "16.860819";
-  gv:coverage "7.7266663"
-], [
-  gv:hex "382e20";
-  gv:red "56";
-  gv:blue "32";
-  gv:green "46";
-  gv:score "6.255593900000001";
-  gv:coverage "2.3266668"
-], [
-  gv:hex "261c0f";
-  gv:red "38";
-  gv:blue "15";
-  gv:green "28";
-  gv:score "5.90461";
-  gv:coverage "1.76"
-], [
-  gv:hex "5a5148";
-  gv:red "90";
-  gv:blue "72";
-  gv:green "81";
-  gv:score "4.3436397";
-  gv:coverage "1.8133333"
-], [
-  gv:hex "605241";
-  gv:red "96";
-  gv:blue "65";
-  gv:green "82";
-  gv:score "2.8637236";
-  gv:coverage "0.5933333199999999"
-], [
-  gv:hex "7c7369";
-  gv:red "124";
-  gv:blue "105";
-  gv:green "115";
-  gv:score "2.7010476";
-  gv:coverage "0.9666666399999999"
-], [
-  gv:hex "817462";
-  gv:red "129";
-  gv:blue "98";
-  gv:green "116";
-  gv:score "2.5843979999999998";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "cdc0ad";
-  gv:red "205";
-  gv:blue "173";
-  gv:green "192";
-  gv:score "2.3621473";
-  gv:coverage "3.1933334"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "72.552228"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "50.711107"
-];
-    w:bagOfWords "PALE DRY\nSHE RRY\nGROWN AND\nADV\nBoB, E BOTTLED BY\nMANUEL FERNANDEZ & C S. L\nJE RE Z SPAIN\nPRODUCE OF, SPAIN\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1953";
+    <schema.keywords> "Spanish Sherry@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

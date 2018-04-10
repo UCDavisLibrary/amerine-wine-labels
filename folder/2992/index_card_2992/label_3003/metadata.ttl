@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_2992/label_3003";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "DOMAINE DERHEVALIER\n1920\nGABRIEL BEAUMARTIN, PROPRIETAIRE\nLEOGNAN GIRONDE)\nMise en bouteille du Chateau\n"@fra;
-    gv:color [
-  gv:hex "5a5048";
-  gv:red "90";
-  gv:blue "72";
-  gv:green "80";
-  gv:score "20.286311";
-  gv:coverage "4.54"
-], [
-  gv:hex "d5bea7";
-  gv:red "213";
-  gv:blue "167";
-  gv:green "190";
-  gv:score "10.662252";
-  gv:coverage "11.453333"
-], [
-  gv:hex "e8b182";
-  gv:red "232";
-  gv:blue "130";
-  gv:green "177";
-  gv:score "3.0235311";
-  gv:coverage "0.55333334"
-], [
-  gv:hex "3f352f";
-  gv:red "63";
-  gv:blue "47";
-  gv:green "53";
-  gv:score "17.586416";
-  gv:coverage "4.5733333"
-], [
-  gv:hex "7d726a";
-  gv:red "125";
-  gv:blue "106";
-  gv:green "114";
-  gv:score "8.3089784";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "af9c89";
-  gv:red "175";
-  gv:blue "137";
-  gv:green "156";
-  gv:score "7.2726145";
-  gv:coverage "1.7933333"
-], [
-  gv:hex "a79c92";
-  gv:red "167";
-  gv:blue "146";
-  gv:green "156";
-  gv:score "5.9547916";
-  gv:coverage "1.6466666"
-], [
-  gv:hex "c8bab0";
-  gv:red "200";
-  gv:blue "176";
-  gv:green "186";
-  gv:score "4.4062745";
-  gv:coverage "4.3133333"
-], [
-  gv:hex "ce9562";
-  gv:red "206";
-  gv:blue "98";
-  gv:green "149";
-  gv:score "2.9737497";
-  gv:coverage "0.4"
-], [
-  gv:hex "dfbc8c";
-  gv:red "223";
-  gv:blue "140";
-  gv:green "188";
-  gv:score "2.9613242";
-  gv:coverage "0.74"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/07s6nbt>;
-  gv:desc "text";
-  gv:score "93.376595"
-], [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "78.633207"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.70881"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "57.84384"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "52.550596000000006"
-];
-    w:bagOfWords "DOMAINE DERHEVALIER\n1920\nGABRIEL BEAUMARTIN, PROPRIETAIRE\nLEOGNAN GIRONDE)\nMise en bouteille du Chateau\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3003";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

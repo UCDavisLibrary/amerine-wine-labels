@@ -1,111 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2992/index_card_3100/label_3103";
-    dct:type "image";
-    dc:subject "Bordeaux Misc Red@en";
-    w:bagOfWords "Vieux Chateau Certan\n1er Grand Cru\nPOMEROL\nRECOLTE\n1947\nAppellation Pomerol controlée\nMISS EN BOUTEILLE AU CHATEAU\nLITH WETTRAMWALD BORDEAUX\n"@fra;
-    gv:color [
-  gv:hex "dcbf9e";
-  gv:red "220";
-  gv:blue "158";
-  gv:green "191";
-  gv:score "21.357547";
-  gv:coverage "17.473333999999998"
-], [
-  gv:hex "9b6e46";
-  gv:red "155";
-  gv:blue "70";
-  gv:green "110";
-  gv:score "13.514171999999999";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "c29369";
-  gv:red "194";
-  gv:blue "105";
-  gv:green "147";
-  gv:score "12.566453";
-  gv:coverage "2.26"
-], [
-  gv:hex "784b25";
-  gv:red "120";
-  gv:blue "37";
-  gv:green "75";
-  gv:score "9.6369945";
-  gv:coverage "1.52"
-], [
-  gv:hex "b79a79";
-  gv:red "183";
-  gv:blue "121";
-  gv:green "154";
-  gv:score "8.9085519";
-  gv:coverage "3.2"
-], [
-  gv:hex "e1b287";
-  gv:red "225";
-  gv:blue "135";
-  gv:green "178";
-  gv:score "5.985060300000001";
-  gv:coverage "1.0733333"
-], [
-  gv:hex "be9572";
-  gv:red "190";
-  gv:blue "114";
-  gv:green "149";
-  gv:score "3.7935391";
-  gv:coverage "0.89333337"
-], [
-  gv:hex "997251";
-  gv:red "153";
-  gv:blue "81";
-  gv:green "114";
-  gv:score "3.1878889";
-  gv:coverage "0.65333336"
-], [
-  gv:hex "907556";
-  gv:red "144";
-  gv:blue "86";
-  gv:green "117";
-  gv:score "2.9713273";
-  gv:coverage "0.8999999999999999"
-], [
-  gv:hex "59300d";
-  gv:red "89";
-  gv:blue "13";
-  gv:green "48";
-  gv:score "2.7612273";
-  gv:coverage "0.50666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "62.758917000000004"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "58.818358"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "53.31921"
-], [
-  gv:mid <https://g.co/kg/m/0641k>;
-  gv:desc "paper";
-  gv:score "50.728887"
-];
-    w:bagOfWords "Vieux Chateau Certan\n1er Grand Cru\nPOMEROL\nRECOLTE\n1947\nAppellation Pomerol controlée\nMISS EN BOUTEILLE AU CHATEAU\nLITH WETTRAMWALD BORDEAUX\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3103";
+    <schema.keywords> "Bordeaux Misc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

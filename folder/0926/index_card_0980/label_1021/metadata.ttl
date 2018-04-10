@@ -1,110 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0926/index_card_0980/label_1021";
-    dct:type "image";
-    dc:subject "Swiss@en";
-    w:bagOfWords "aendant\ndv. alais\nGRAND CRU\nOBRIST & CIE S. A. VEVEY\n"@deu;
-    gv:color [
-  gv:hex "d8c6a7";
-  gv:red "216";
-  gv:blue "167";
-  gv:green "198";
-  gv:score "25.621738999999998";
-  gv:coverage "14.193333999999998"
-], [
-  gv:hex "847b58";
-  gv:red "132";
-  gv:blue "88";
-  gv:green "123";
-  gv:score "16.104402";
-  gv:coverage "2.5866667"
-], [
-  gv:hex "f4af84";
-  gv:red "244";
-  gv:blue "132";
-  gv:green "175";
-  gv:score "1.9320081999999998";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "a79976";
-  gv:red "167";
-  gv:blue "118";
-  gv:green "153";
-  gv:score "14.662892999999999";
-  gv:coverage "2.6933333"
-], [
-  gv:hex "ebdbbe";
-  gv:red "235";
-  gv:blue "190";
-  gv:green "219";
-  gv:score "12.682442";
-  gv:coverage "12.02"
-], [
-  gv:hex "ab9965";
-  gv:red "171";
-  gv:blue "101";
-  gv:green "153";
-  gv:score "9.6360482";
-  gv:coverage "0.87333331"
-], [
-  gv:hex "8b7c4b";
-  gv:red "139";
-  gv:blue "75";
-  gv:green "124";
-  gv:score "6.5493999999999994";
-  gv:coverage "0.63333334"
-], [
-  gv:hex "9e683b";
-  gv:red "158";
-  gv:blue "59";
-  gv:green "104";
-  gv:score "1.7036524000000002";
-  gv:coverage "0.12"
-], [
-  gv:hex "cdbc89";
-  gv:red "205";
-  gv:blue "137";
-  gv:green "188";
-  gv:score "1.5205634000000001";
-  gv:coverage "0.15333333000000002"
-], [
-  gv:hex "c58c5e";
-  gv:red "197";
-  gv:blue "94";
-  gv:green "140";
-  gv:score "1.3167107";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.473338"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "55.74429"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "55.49168"
-];
-    w:bagOfWords "aendant\ndv. alais\nGRAND CRU\nOBRIST & CIE S. A. VEVEY\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1021";
+    <schema.keywords> "Swiss@en";
+    schema:inLanguage "de-CH";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "CHE".
+    wdt:P297 "CH".
+

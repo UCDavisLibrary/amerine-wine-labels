@@ -1,110 +1,14 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4684/label_4711";
-    dct:type "image";
-    w:bagOfWords "MARCA REGISTRADA\n"@undefined;
-    gv:color [
-  gv:hex "c94656";
-  gv:red "201";
-  gv:blue "86";
-  gv:green "70";
-  gv:score "12.078296";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "cec5b1";
-  gv:red "206";
-  gv:blue "177";
-  gv:green "197";
-  gv:score "9.0384819";
-  gv:coverage "8.913333"
-], [
-  gv:hex "667e55";
-  gv:red "102";
-  gv:blue "85";
-  gv:green "126";
-  gv:score "3.721517";
-  gv:coverage "0.22"
-], [
-  gv:hex "fad2ce";
-  gv:red "250";
-  gv:blue "206";
-  gv:green "210";
-  gv:score "1.0928808";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "275d23";
-  gv:red "39";
-  gv:blue "35";
-  gv:green "93";
-  gv:score "0.426729";
-  gv:coverage "0.013333333"
-], [
-  gv:hex "a5293a";
-  gv:red "165";
-  gv:blue "58";
-  gv:green "41";
-  gv:score "11.614127";
-  gv:coverage "0.3"
-], [
-  gv:hex "a81c2c";
-  gv:red "168";
-  gv:blue "44";
-  gv:green "28";
-  gv:score "10.005658";
-  gv:coverage "0.20666666999999997"
-], [
-  gv:hex "da3f56";
-  gv:red "218";
-  gv:blue "86";
-  gv:green "63";
-  gv:score "5.2725282";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "ee697b";
-  gv:red "238";
-  gv:blue "123";
-  gv:green "105";
-  gv:score "4.3263378999999995";
-  gv:coverage "0.10666667"
-], [
-  gv:hex "e7dec9";
-  gv:red "231";
-  gv:blue "201";
-  gv:green "222";
-  gv:score "3.4469087000000003";
-  gv:coverage "6.986666499999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.574923"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "57.762299999999996"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "52.037656"
-], [
-  gv:mid <https://g.co/kg/m/0j62f>;
-  gv:desc "rectangle";
-  gv:score "51.921927999999994"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.457012999999996"
-];
-    w:bagOfWords "MARCA REGISTRADA\n"@undefined.
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4711";
+    <schema.keywords> "Aperetifs & Liqueurs Folder@en";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Spirit.
+

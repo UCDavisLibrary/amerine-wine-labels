@@ -1,115 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2491";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "Net Contents Pint 9 Fl. Oz.\nON FONDEE EN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d1c2b0";
-  gv:red "209";
-  gv:blue "176";
-  gv:green "194";
-  gv:score "38.491011";
-  gv:coverage "22.546667"
-], [
-  gv:hex "a99b88";
-  gv:red "169";
-  gv:blue "136";
-  gv:green "155";
-  gv:score "23.756076";
-  gv:coverage "2.2733333"
-], [
-  gv:hex "877865";
-  gv:red "135";
-  gv:blue "101";
-  gv:green "120";
-  gv:score "16.317324";
-  gv:coverage "1.24"
-], [
-  gv:hex "605342";
-  gv:red "96";
-  gv:blue "66";
-  gv:green "83";
-  gv:score "7.8169048000000005";
-  gv:coverage "0.68666665"
-], [
-  gv:hex "e9dbca";
-  gv:red "233";
-  gv:blue "202";
-  gv:green "219";
-  gv:score "3.5854931999999997";
-  gv:coverage "13.34"
-], [
-  gv:hex "413525";
-  gv:red "65";
-  gv:blue "37";
-  gv:green "53";
-  gv:score "1.9572506";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "555450";
-  gv:red "85";
-  gv:blue "80";
-  gv:green "84";
-  gv:score "1.6498193";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "d2c3b9";
-  gv:red "210";
-  gv:blue "185";
-  gv:green "195";
-  gv:score "1.3864615";
-  gv:coverage "3.9266667999999996"
-], [
-  gv:hex "343839";
-  gv:red "52";
-  gv:blue "57";
-  gv:green "56";
-  gv:score "1.2004309";
-  gv:coverage "0.17333333"
-], [
-  gv:hex "787772";
-  gv:red "120";
-  gv:blue "114";
-  gv:green "119";
-  gv:score "1.0154273";
-  gv:coverage "0.16666667000000002"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.558119999999995"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "55.930899999999994"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "54.286104"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "52.34403"
-];
-    w:bagOfWords "Net Contents Pint 9 Fl. Oz.\nON FONDEE EN\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE.\nCOTE D'OR FRANCE\nPRODUCT OF FRANCE\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2491";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

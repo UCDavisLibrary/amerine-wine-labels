@@ -1,110 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3629/label_3655";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "PRODUCE OF AMERICA\nROYAL SELECT\nROYAL MONOPOLE\nS P A R K L IN G\nW N E\nCALIFORNIA CHAMPAGNE\nBULK\nP R OCE S S\nPRODUCED AND BOTTLED BY\nALCOHOL 13% BY VOLUME\nSIMI WINERIES\nCONTENTS 1 PINT, 10 FLUID 02.\nHEALDSBURG, CALIF\nSOLE SALE REPRESENTATIVE JOHN ESQUIN. LTD. SAN FRANCISCO, CALIF.\n"@eng;
-    gv:color [
-  gv:hex "d4c4b2";
-  gv:red "212";
-  gv:blue "178";
-  gv:green "196";
-  gv:score "13.919075";
-  gv:coverage "5.36"
-], [
-  gv:hex "171108";
-  gv:red "23";
-  gv:blue "8";
-  gv:green "17";
-  gv:score "4.5064405";
-  gv:coverage "0.49333335000000006"
-], [
-  gv:hex "893f3b";
-  gv:red "137";
-  gv:blue "59";
-  gv:green "63";
-  gv:score "1.733649";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "b86851";
-  gv:red "184";
-  gv:blue "81";
-  gv:green "104";
-  gv:score "1.3968014000000002";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "ecdcc9";
-  gv:red "236";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "12.904357999999998";
-  gv:coverage "8.3533332"
-], [
-  gv:hex "e6b9aa";
-  gv:red "230";
-  gv:blue "170";
-  gv:green "185";
-  gv:score "12.077282";
-  gv:coverage "1.0266666"
-], [
-  gv:hex "ede1d7";
-  gv:red "237";
-  gv:blue "215";
-  gv:green "225";
-  gv:score "7.2982483";
-  gv:coverage "74.326664"
-], [
-  gv:hex "b0a28e";
-  gv:red "176";
-  gv:blue "142";
-  gv:green "162";
-  gv:score "7.049214800000001";
-  gv:coverage "1.8333333"
-], [
-  gv:hex "cec5ba";
-  gv:red "206";
-  gv:blue "186";
-  gv:green "197";
-  gv:score "4.8656709";
-  gv:coverage "4.9266666"
-], [
-  gv:hex "c08d7e";
-  gv:red "192";
-  gv:blue "126";
-  gv:green "141";
-  gv:score "4.6677761";
-  gv:coverage "0.40666666"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01jwgf>;
-  gv:desc "product";
-  gv:score "74.841577"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.64801"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "54.099637"
-], [
-  gv:mid <https://g.co/kg/m/015bv3>;
-  gv:desc "document";
-  gv:score "53.537285000000004"
-];
-    w:bagOfWords "PRODUCE OF AMERICA\nROYAL SELECT\nROYAL MONOPOLE\nS P A R K L IN G\nW N E\nCALIFORNIA CHAMPAGNE\nBULK\nP R OCE S S\nPRODUCED AND BOTTLED BY\nALCOHOL 13% BY VOLUME\nSIMI WINERIES\nCONTENTS 1 PINT, 10 FLUID 02.\nHEALDSBURG, CALIF\nSOLE SALE REPRESENTATIVE JOHN ESQUIN. LTD. SAN FRANCISCO, CALIF.\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3655";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "US";
     w:WineColor w:White.
+

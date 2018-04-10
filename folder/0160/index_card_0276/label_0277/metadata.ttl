@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0160/index_card_0276/label_0277";
-    dct:type "image";
-    dc:subject "California Red@en";
-    w:bagOfWords "GIANNINIS\nCALIFORNIA\nA LIGHT WINE MADE FROM ALEATIco GRAPES\nTAX PAID\nWINERY\nBY STAMPS\nESTABLISHED\nAFFIXED TO CASE\nIN 1902\nPRODUCED AND BOTTLED BY\nTULARE WINERY COMPANY\nBONDED WINERY NO. 1438- 1ATH DIST. CALIF\nTULARE, CALIFORNIA, U. S. A.\n"@eng;
-    gv:color [
-  gv:hex "130c08";
-  gv:red "19";
-  gv:blue "8";
-  gv:green "12";
-  gv:score "30.277506";
-  gv:coverage "18.426667"
-], [
-  gv:hex "43020b";
-  gv:red "67";
-  gv:blue "11";
-  gv:green "2";
-  gv:score "10.224495000000001";
-  gv:coverage "0.39333333000000004"
-], [
-  gv:hex "a09991";
-  gv:red "160";
-  gv:blue "145";
-  gv:green "153";
-  gv:score "1.0520358";
-  gv:coverage "1.1266666"
-], [
-  gv:hex "280609";
-  gv:red "40";
-  gv:blue "9";
-  gv:green "6";
-  gv:score "18.539737000000002";
-  gv:coverage "1.7999999999999998"
-], [
-  gv:hex "373029";
-  gv:red "55";
-  gv:blue "41";
-  gv:green "48";
-  gv:score "7.3976092";
-  gv:coverage "3.7666667"
-], [
-  gv:hex "601421";
-  gv:red "96";
-  gv:blue "33";
-  gv:green "20";
-  gv:score "6.759229299999999";
-  gv:coverage "0.23333333"
-], [
-  gv:hex "5b1d2c";
-  gv:red "91";
-  gv:blue "44";
-  gv:green "29";
-  gv:score "4.7142904";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "4a2028";
-  gv:red "74";
-  gv:blue "40";
-  gv:green "32";
-  gv:score "3.4542277";
-  gv:coverage "0.27999999999999997"
-], [
-  gv:hex "37090b";
-  gv:red "55";
-  gv:blue "11";
-  gv:green "9";
-  gv:score "2.7270166";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "883236";
-  gv:red "136";
-  gv:blue "54";
-  gv:green "50";
-  gv:score "2.1282131";
-  gv:coverage "0.086666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/02mf1n>;
-  gv:desc "gadget";
-  gv:score "78.03951500000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "59.20462"
-], [
-  gv:mid <https://g.co/kg/m/07c1v>;
-  gv:desc "technology";
-  gv:score "56.202614"
-];
-    w:bagOfWords "GIANNINIS\nCALIFORNIA\nA LIGHT WINE MADE FROM ALEATIco GRAPES\nTAX PAID\nWINERY\nBY STAMPS\nESTABLISHED\nAFFIXED TO CASE\nIN 1902\nPRODUCED AND BOTTLED BY\nTULARE WINERY COMPANY\nBONDED WINERY NO. 1438- 1ATH DIST. CALIF\nTULARE, CALIFORNIA, U. S. A.\n"@eng;
-    wdt:P219 "eng";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0277";
+    <schema.keywords> "California Red@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "USA";
+    wdt:P297 "US";
     w:WineColor w:Red.
+

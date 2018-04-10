@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3972/label_3982";
-    dct:type "image";
-    w:bagOfWords "Rhodter Rosengarten\nRHEINPFALZ\nNEDER FLASCHE BEZOGEN VON\nVEREINIGTE\nWEINGUTSBESITZER\nWEINGROSSHANDLUNG SEKTKELLEREIGM'BH\nKOBLENZ\nA. RHEIN u MOSEL\n"@deu;
-    gv:color [
-  gv:hex "afbdb9";
-  gv:red "175";
-  gv:blue "185";
-  gv:green "189";
-  gv:score "35.454363";
-  gv:coverage "14.08"
-], [
-  gv:hex "7d775d";
-  gv:red "125";
-  gv:blue "93";
-  gv:green "119";
-  gv:score "11.285475";
-  gv:coverage "3.7133331999999997"
-], [
-  gv:hex "9aa59e";
-  gv:red "154";
-  gv:blue "158";
-  gv:green "165";
-  gv:score "21.400882";
-  gv:coverage "7.5933329999999994"
-], [
-  gv:hex "9f9a81";
-  gv:red "159";
-  gv:blue "129";
-  gv:green "154";
-  gv:score "5.876423";
-  gv:coverage "2.3733333"
-], [
-  gv:hex "767d74";
-  gv:red "118";
-  gv:blue "116";
-  gv:green "125";
-  gv:score "5.7435904";
-  gv:coverage "2.1533333000000003"
-], [
-  gv:hex "5c5840";
-  gv:red "92";
-  gv:blue "64";
-  gv:green "88";
-  gv:score "3.8475771";
-  gv:coverage "1.4533333000000002"
-], [
-  gv:hex "a7925f";
-  gv:red "167";
-  gv:blue "95";
-  gv:green "146";
-  gv:score "3.0119024000000003";
-  gv:coverage "0.70666666"
-], [
-  gv:hex "53594d";
-  gv:red "83";
-  gv:blue "77";
-  gv:green "89";
-  gv:score "2.7087813";
-  gv:coverage "0.8"
-], [
-  gv:hex "a4baae";
-  gv:red "164";
-  gv:blue "174";
-  gv:green "186";
-  gv:score "2.2144556";
-  gv:coverage "0.47333334000000005"
-], [
-  gv:hex "c9bda0";
-  gv:red "201";
-  gv:blue "160";
-  gv:green "189";
-  gv:score "2.0580618";
-  gv:coverage "4.7533332999999995"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "71.826822"
-], [
-  gv:mid <https://g.co/kg/m/04t7l>;
-  gv:desc "metal";
-  gv:score "56.27073"
-];
-    w:bagOfWords "Rhodter Rosengarten\nRHEINPFALZ\nNEDER FLASCHE BEZOGEN VON\nVEREINIGTE\nWEINGUTSBESITZER\nWEINGROSSHANDLUNG SEKTKELLEREIGM'BH\nKOBLENZ\nA. RHEIN u MOSEL\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3982";
+    <schema.keywords> "Germany Rheinpfalz Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

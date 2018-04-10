@@ -1,114 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0767/index_card_0841/label_0917";
-    dct:type "image";
-    dc:subject "France Misc White@en";
-    w:bagOfWords "Cotes de Toul\n1947\nETABLT: A BARRER\nNANCY Ref 160\n"@fra;
-    gv:color [
-  gv:hex "d9c3a9";
-  gv:red "217";
-  gv:blue "169";
-  gv:green "195";
-  gv:score "42.778045";
-  gv:coverage "22.106666999999998"
-], [
-  gv:hex "b65d48";
-  gv:red "182";
-  gv:blue "72";
-  gv:green "93";
-  gv:score "1.2023837000000002";
-  gv:coverage "0.22"
-], [
-  gv:hex "a69a7e";
-  gv:red "166";
-  gv:blue "126";
-  gv:green "154";
-  gv:score "18.935128000000002";
-  gv:coverage "6.5266669"
-], [
-  gv:hex "82785b";
-  gv:red "130";
-  gv:blue "91";
-  gv:green "120";
-  gv:score "16.78043";
-  gv:coverage "5.6333333"
-], [
-  gv:hex "62583c";
-  gv:red "98";
-  gv:blue "60";
-  gv:green "88";
-  gv:score "6.8859868";
-  gv:coverage "1.9066667"
-], [
-  gv:hex "996b54";
-  gv:red "153";
-  gv:blue "84";
-  gv:green "107";
-  gv:score "2.7328154000000002";
-  gv:coverage "0.67333332"
-], [
-  gv:hex "edd8c0";
-  gv:red "237";
-  gv:blue "192";
-  gv:green "216";
-  gv:score "2.4544992000000003";
-  gv:coverage "3.8466666"
-], [
-  gv:hex "e3bca6";
-  gv:red "227";
-  gv:blue "166";
-  gv:green "188";
-  gv:score "1.8711383000000001";
-  gv:coverage "0.83333338"
-], [
-  gv:hex "754f38";
-  gv:red "117";
-  gv:blue "56";
-  gv:green "79";
-  gv:score "1.475204";
-  gv:coverage "0.33999999999999997"
-], [
-  gv:hex "b98c74";
-  gv:red "185";
-  gv:blue "116";
-  gv:green "140";
-  gv:score "1.1031506";
-  gv:coverage "0.28666668"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "72.561729"
-], [
-  gv:mid <https://g.co/kg/m/0hwky>;
-  gv:desc "pattern";
-  gv:score "67.29039999999999"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "63.191694"
-], [
-  gv:mid <https://g.co/kg/m/02cwm>;
-  gv:desc "design";
-  gv:score "59.406453000000006"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "59.324789"
-];
-    w:bagOfWords "Cotes de Toul\n1947\nETABLT: A BARRER\nNANCY Ref 160\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0917";
+    <schema.keywords> "France Misc White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Sparkling;
+    wdt:P297 "FR";
     w:WineColor w:White.
+

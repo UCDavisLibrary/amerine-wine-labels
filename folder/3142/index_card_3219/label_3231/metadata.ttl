@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3219/label_3231";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "Produce of France\nDEPOSE\nIMP-PARIS, NUITS\n1929\n?Roue Depo\nAlcoholic Contenj 13 by volume\nNet Contents 1 Pint 8 Fl. 02.\nAPPELLATION\nCONTROLEE\nLEON GRIVELET-CUSSET, s. A.\nNEGOCIANT A NUITS ST GEORGE S (COTE-D OR)\n"@fra;
-    gv:color [
-  gv:hex "e2c5a1";
-  gv:red "226";
-  gv:blue "161";
-  gv:green "197";
-  gv:score "36.102000000000004";
-  gv:coverage "24.279999999999998"
-], [
-  gv:hex "86341c";
-  gv:red "134";
-  gv:blue "28";
-  gv:green "52";
-  gv:score "5.4928992";
-  gv:coverage "0.54666665"
-], [
-  gv:hex "4b0700";
-  gv:red "75";
-  gv:blue "undefined";
-  gv:green "7";
-  gv:score "0.25361308";
-  gv:coverage "0.04"
-], [
-  gv:hex "e4c395";
-  gv:red "228";
-  gv:blue "149";
-  gv:green "195";
-  gv:score "9.604899999999999";
-  gv:coverage "5.08"
-], [
-  gv:hex "ecb98f";
-  gv:red "236";
-  gv:blue "143";
-  gv:green "185";
-  gv:score "6.8430156";
-  gv:coverage "2.9666666"
-], [
-  gv:hex "eabb9b";
-  gv:red "234";
-  gv:blue "155";
-  gv:green "187";
-  gv:score "6.0905762";
-  gv:coverage "2.1066668"
-], [
-  gv:hex "6e210a";
-  gv:red "110";
-  gv:blue "10";
-  gv:green "33";
-  gv:score "4.2829782";
-  gv:coverage "0.44"
-], [
-  gv:hex "c68f67";
-  gv:red "198";
-  gv:blue "103";
-  gv:green "143";
-  gv:score "3.85717";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "c29073";
-  gv:red "194";
-  gv:blue "115";
-  gv:green "144";
-  gv:score "3.7091173";
-  gv:coverage "0.90666665"
-], [
-  gv:hex "b69a78";
-  gv:red "182";
-  gv:blue "120";
-  gv:green "154";
-  gv:score "3.4841821000000004";
-  gv:coverage "1.5533333999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/03gq5hm>;
-  gv:desc "font";
-  gv:score "80.24043400000001"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.28618"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-];
-    w:bagOfWords "Produce of France\nDEPOSE\nIMP-PARIS, NUITS\n1929\n?Roue Depo\nAlcoholic Contenj 13 by volume\nNet Contents 1 Pint 8 Fl. 02.\nAPPELLATION\nCONTROLEE\nLEON GRIVELET-CUSSET, s. A.\nNEGOCIANT A NUITS ST GEORGE S (COTE-D OR)\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3231";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

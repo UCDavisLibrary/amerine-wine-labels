@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1528";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "MARCA\nREGI STRADA\nMANZANILLA\nLA GITANA\nGYPSY GIRL\n& SHIPPERS\nBOTTLERS SUCESORES DE\nDA\nDE E. HIDALGO\nSANLUCAR DE BARRAMEDA\n2o\n(Product of Spain)\n"@spa;
-    gv:color [
-  gv:hex "d7c1ab";
-  gv:red "215";
-  gv:blue "171";
-  gv:green "193";
-  gv:score "45.515412";
-  gv:coverage "24.526666"
-], [
-  gv:hex "8d4334";
-  gv:red "141";
-  gv:blue "52";
-  gv:green "67";
-  gv:score "1.3676977";
-  gv:coverage "0.1"
-], [
-  gv:hex "b29b7f";
-  gv:red "178";
-  gv:blue "127";
-  gv:green "155";
-  gv:score "16.125984";
-  gv:coverage "4.7933333000000005"
-], [
-  gv:hex "e3baaa";
-  gv:red "227";
-  gv:blue "170";
-  gv:green "186";
-  gv:score "6.4742863";
-  gv:coverage "1.94"
-], [
-  gv:hex "917a5c";
-  gv:red "145";
-  gv:blue "92";
-  gv:green "122";
-  gv:score "5.2834686";
-  gv:coverage "1.1533333"
-], [
-  gv:hex "bd937e";
-  gv:red "189";
-  gv:blue "126";
-  gv:green "147";
-  gv:score "4.8232995";
-  gv:coverage "1.06"
-], [
-  gv:hex "a06f59";
-  gv:red "160";
-  gv:blue "89";
-  gv:green "111";
-  gv:score "4.3658718";
-  gv:coverage "0.62"
-], [
-  gv:hex "ecd7c2";
-  gv:red "236";
-  gv:blue "194";
-  gv:green "215";
-  gv:score "3.3412053999999998";
-  gv:coverage "5.800000000000001"
-], [
-  gv:hex "a46f4c";
-  gv:red "164";
-  gv:blue "76";
-  gv:green "111";
-  gv:score "2.7432457";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "824f3b";
-  gv:red "130";
-  gv:blue "59";
-  gv:green "79";
-  gv:score "1.3645512";
-  gv:coverage "0.18"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "68.625218"
-];
-    w:bagOfWords "MARCA\nREGI STRADA\nMANZANILLA\nLA GITANA\nGYPSY GIRL\n& SHIPPERS\nBOTTLERS SUCESORES DE\nDA\nDE E. HIDALGO\nSANLUCAR DE BARRAMEDA\n2o\n(Product of Spain)\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1528";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

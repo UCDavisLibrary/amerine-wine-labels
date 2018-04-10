@@ -1,96 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3905";
-    dct:type "image";
-    w:bagOfWords "M O S E L S A A R\nR U W E R\n1950er\nJosephshofer Auslese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT, TRIER\nWE\nAco, TRIER\n"@deu;
-    gv:color [
-  gv:hex "e7b4a5";
-  gv:red "231";
-  gv:blue "165";
-  gv:green "180";
-  gv:score "18.006901";
-  gv:coverage "3.5999999999999996"
-], [
-  gv:hex "867658";
-  gv:red "134";
-  gv:blue "88";
-  gv:green "118";
-  gv:score "8.372709200000001";
-  gv:coverage "0.33333334000000003"
-], [
-  gv:hex "6a7b46";
-  gv:red "106";
-  gv:blue "70";
-  gv:green "123";
-  gv:score "2.5073629";
-  gv:coverage "0.053333334"
-], [
-  gv:hex "57300d";
-  gv:red "87";
-  gv:blue "13";
-  gv:green "48";
-  gv:score "0.891403";
-  gv:coverage "0.02"
-], [
-  gv:hex "1c1c11";
-  gv:red "28";
-  gv:blue "17";
-  gv:green "28";
-  gv:score "0.31595624";
-  gv:coverage "0.033333333"
-], [
-  gv:hex "cd9586";
-  gv:red "205";
-  gv:blue "134";
-  gv:green "149";
-  gv:score "17.794062";
-  gv:coverage "1.5"
-], [
-  gv:hex "926755";
-  gv:red "146";
-  gv:blue "85";
-  gv:green "103";
-  gv:score "6.3119917999999995";
-  gv:coverage "0.19333333"
-], [
-  gv:hex "62543b";
-  gv:red "98";
-  gv:blue "59";
-  gv:green "84";
-  gv:score "5.4223165";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "d0bea6";
-  gv:red "208";
-  gv:blue "166";
-  gv:green "190";
-  gv:score "5.3927034";
-  gv:coverage "9.02"
-], [
-  gv:hex "734c38";
-  gv:red "115";
-  gv:blue "56";
-  gv:green "76";
-  gv:score "4.2959232";
-  gv:coverage "0.13999999999999999"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "73.184997"
-];
-    w:bagOfWords "M O S E L S A A R\nR U W E R\n1950er\nJosephshofer Auslese\nOriginal-Abfullung\nWACHSTUM: REICHSGRAF VON KESSELSTATT, TRIER\nWE\nAco, TRIER\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3905";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

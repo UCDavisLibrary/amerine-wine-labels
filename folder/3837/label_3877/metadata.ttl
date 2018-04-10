@@ -1,104 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3837/label_3877";
-    dct:type "image";
-    w:bagOfWords "Weingut hrone\nWeingut hrone\nn\n1949 er\nMehringer Huxlay Riesling\nWadstum Kaster\nM 0 SEL SA AR RU WER\nJOS HufnageThronenkellereTASsmannshausen Rhein\n"@deu;
-    gv:color [
-  gv:hex "cbc1b8";
-  gv:red "203";
-  gv:blue "184";
-  gv:green "193";
-  gv:score "15.349333000000001";
-  gv:coverage "9.36"
-], [
-  gv:hex "897447";
-  gv:red "137";
-  gv:blue "71";
-  gv:green "116";
-  gv:score "4.5555178000000005";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "a59b92";
-  gv:red "165";
-  gv:blue "146";
-  gv:green "155";
-  gv:score "13.182922999999999";
-  gv:coverage "4.7866665"
-], [
-  gv:hex "80766d";
-  gv:red "128";
-  gv:blue "109";
-  gv:green "118";
-  gv:score "11.993314";
-  gv:coverage "4.22"
-], [
-  gv:hex "5f554c";
-  gv:red "95";
-  gv:blue "76";
-  gv:green "85";
-  gv:score "8.6396858";
-  gv:coverage "2.8266666"
-], [
-  gv:hex "eadfd6";
-  gv:red "234";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "8.10319";
-  gv:coverage "50.980000000000004"
-], [
-  gv:hex "d4bda5";
-  gv:red "212";
-  gv:blue "165";
-  gv:green "189";
-  gv:score "6.48113";
-  gv:coverage "6.12"
-], [
-  gv:hex "857252";
-  gv:red "133";
-  gv:blue "82";
-  gv:green "114";
-  gv:score "4.5002364";
-  gv:coverage "2.4533333"
-], [
-  gv:hex "b29b81";
-  gv:red "178";
-  gv:blue "129";
-  gv:green "155";
-  gv:score "4.4034194";
-  gv:coverage "2"
-], [
-  gv:hex "675539";
-  gv:red "103";
-  gv:blue "57";
-  gv:green "85";
-  gv:score "4.0011041";
-  gv:coverage "1.8333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "65.187162"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "59.820795000000004"
-], [
-  gv:mid <https://g.co/kg/m/02csf>;
-  gv:desc "drawing";
-  gv:score "50.919139"
-];
-    w:bagOfWords "Weingut hrone\nWeingut hrone\nn\n1949 er\nMehringer Huxlay Riesling\nWadstum Kaster\nM 0 SEL SA AR RU WER\nJOS HufnageThronenkellereTASsmannshausen Rhein\n"@deu;
-    wdt:P219 "deu";
-    wdt:P298 "DEU".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3877";
+    <schema.keywords> "Germany Mosel Saar Ruwer Folder@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "DE".
+

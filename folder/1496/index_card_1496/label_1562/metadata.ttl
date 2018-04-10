@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1496/index_card_1496/label_1562";
-    dct:type "image";
-    dc:subject "Spanish Misc Sweet and Fortified@en";
-    w:bagOfWords "ODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVINA\nTORRE BRE VA\nSAN MANZANILLA PASA DA\n(ESPANA)\nLUCA R\nANDALUCIA Artes Groficar. S. A. Giyon.\n"@spa;
-    gv:color [
-  gv:hex "d8c3ab";
-  gv:red "216";
-  gv:blue "171";
-  gv:green "195";
-  gv:score "6.892063499999999";
-  gv:coverage "15.633332999999999"
-], [
-  gv:hex "a7a513";
-  gv:red "167";
-  gv:blue "19";
-  gv:green "165";
-  gv:score "5.0808866";
-  gv:coverage "0.71333335"
-], [
-  gv:hex "a72220";
-  gv:red "167";
-  gv:blue "32";
-  gv:green "34";
-  gv:score "4.4045039";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "bb080f";
-  gv:red "187";
-  gv:blue "15";
-  gv:green "8";
-  gv:score "3.7603593999999996";
-  gv:coverage "0.44"
-], [
-  gv:hex "d42c36";
-  gv:red "212";
-  gv:blue "54";
-  gv:green "44";
-  gv:score "3.2608919";
-  gv:coverage "0.4"
-], [
-  gv:hex "8e7515";
-  gv:red "142";
-  gv:blue "21";
-  gv:green "117";
-  gv:score "2.4390465";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "152964";
-  gv:red "21";
-  gv:blue "100";
-  gv:green "41";
-  gv:score "1.6807174";
-  gv:coverage "0.25333334"
-], [
-  gv:hex "eac310";
-  gv:red "234";
-  gv:blue "16";
-  gv:green "195";
-  gv:score "1.5456375";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "0e227e";
-  gv:red "14";
-  gv:blue "126";
-  gv:green "34";
-  gv:score "1.4958195";
-  gv:coverage "0.14666667"
-], [
-  gv:hex "655112";
-  gv:red "101";
-  gv:blue "18";
-  gv:green "81";
-  gv:score "1.4924446";
-  gv:coverage "0.24666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/0jjw>;
-  gv:desc "art";
-  gv:score "65.914935"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "62.942219"
-], [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "51.172292"
-];
-    w:bagOfWords "ODEGAS\nDE LOS\nINFANTES\nORLEANS\nBORBON\nVINA\nTORRE BRE VA\nSAN MANZANILLA PASA DA\n(ESPANA)\nLUCA R\nANDALUCIA Artes Groficar. S. A. Giyon.\n"@spa;
-    wdt:P219 "spa";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1562";
+    <schema.keywords> "Spanish Misc Sweet and Fortified@en";
+    schema:inLanguage "es-ES";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Fortified;
-    wdt:P298 "ESP".
+    wdt:P297 "ES".
+

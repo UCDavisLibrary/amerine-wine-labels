@@ -1,106 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/0065/index_card_0065/label_0153";
-    dct:type "image";
-    dc:subject "Italy@en";
-    w:bagOfWords "S. A. VI NI SUPERIOR I\nVALDOBBIADENE\n(TREVISO)\n"@ita;
-    gv:color [
-  gv:hex "122307";
-  gv:red "18";
-  gv:blue "7";
-  gv:green "35";
-  gv:score "40.509713000000005";
-  gv:coverage "11.306667"
-], [
-  gv:hex "a29d79";
-  gv:red "162";
-  gv:blue "121";
-  gv:green "157";
-  gv:score "3.0279195";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "1f3013";
-  gv:red "31";
-  gv:blue "19";
-  gv:green "48";
-  gv:score "28.995707999999997";
-  gv:coverage "7.106667"
-], [
-  gv:hex "1a1c02";
-  gv:red "26";
-  gv:blue "2";
-  gv:green "28";
-  gv:score "3.9267860000000003";
-  gv:coverage "2.2466667"
-], [
-  gv:hex "495635";
-  gv:red "73";
-  gv:blue "53";
-  gv:green "86";
-  gv:score "3.4470648";
-  gv:coverage "0.9133333299999999"
-], [
-  gv:hex "343416";
-  gv:red "52";
-  gv:blue "22";
-  gv:green "52";
-  gv:score "3.1529278";
-  gv:coverage "1.5266667"
-], [
-  gv:hex "7b795b";
-  gv:red "123";
-  gv:blue "91";
-  gv:green "121";
-  gv:score "2.8399859999999997";
-  gv:coverage "1.7266667"
-], [
-  gv:hex "575638";
-  gv:red "87";
-  gv:blue "56";
-  gv:green "86";
-  gv:score "2.5846528";
-  gv:coverage "1.3866667"
-], [
-  gv:hex "6c7958";
-  gv:red "108";
-  gv:blue "88";
-  gv:green "121";
-  gv:score "1.8662051999999998";
-  gv:coverage "0.46666664999999996"
-], [
-  gv:hex "c9c09a";
-  gv:red "201";
-  gv:blue "154";
-  gv:green "192";
-  gv:score "1.6709547000000002";
-  gv:coverage "1.32"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z37_>;
-  gv:desc "picture frame";
-  gv:score "71.151513"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.407541"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "50.51137799999999"
-];
-    w:bagOfWords "S. A. VI NI SUPERIOR I\nVALDOBBIADENE\n(TREVISO)\n"@ita;
-    wdt:P219 "ita";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_0153";
+    <schema.keywords> "Italy@en";
+    schema:inLanguage "it-IT";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "ITA".
+    wdt:P297 "IT".
+

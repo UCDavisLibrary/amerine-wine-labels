@@ -1,100 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/4072/label_4217";
-    dct:type "image";
-    w:bagOfWords "CREME\nof FRANCE\nDE\nMADE BY\nARTIFICIALLY COLORED\nGoA JOURDE 4/5 QUART\n56 PROOF\nBORDEAUX FRANCE\n"@fra;
-    gv:color [
-  gv:hex "d3c07c";
-  gv:red "211";
-  gv:blue "124";
-  gv:green "192";
-  gv:score "10.925671000000001";
-  gv:coverage "4.7466666"
-], [
-  gv:hex "8b3614";
-  gv:red "139";
-  gv:blue "20";
-  gv:green "54";
-  gv:score "5.2075814";
-  gv:coverage "0.5666666699999999"
-], [
-  gv:hex "af9b5a";
-  gv:red "175";
-  gv:blue "90";
-  gv:green "155";
-  gv:score "8.905176099999998";
-  gv:coverage "2.5466667"
-], [
-  gv:hex "897739";
-  gv:red "137";
-  gv:blue "57";
-  gv:green "119";
-  gv:score "5.9642386";
-  gv:coverage "1.5133333"
-], [
-  gv:hex "cc8f5e";
-  gv:red "204";
-  gv:blue "94";
-  gv:green "143";
-  gv:score "5.7577651";
-  gv:coverage "0.84"
-], [
-  gv:hex "dabd67";
-  gv:red "218";
-  gv:blue "103";
-  gv:green "189";
-  gv:score "4.8041686";
-  gv:coverage "1.1199999999999999"
-], [
-  gv:hex "b45a3a";
-  gv:red "180";
-  gv:blue "58";
-  gv:green "90";
-  gv:score "4.3317176";
-  gv:coverage "0.48666666"
-], [
-  gv:hex "efb27f";
-  gv:red "239";
-  gv:blue "127";
-  gv:green "178";
-  gv:score "4.272031";
-  gv:coverage "0.72"
-], [
-  gv:hex "a46b3b";
-  gv:red "164";
-  gv:blue "59";
-  gv:green "107";
-  gv:score "3.8098589";
-  gv:coverage "0.6"
-], [
-  gv:hex "6f1c02";
-  gv:red "111";
-  gv:blue "2";
-  gv:green "28";
-  gv:score "3.3219814";
-  gv:coverage "0.38666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.78878300000001"
-], [
-  gv:mid <https://g.co/kg/m/03bt1gh>;
-  gv:desc "games";
-  gv:score "51.557577"
-];
-    w:bagOfWords "CREME\nof FRANCE\nDE\nMADE BY\nARTIFICIALLY COLORED\nGoA JOURDE 4/5 QUART\n56 PROOF\nBORDEAUX FRANCE\n"@fra;
-    wdt:P219 "fra";
-    wdt:P298 "FRA".
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_4217";
+    <schema.keywords> "France Folder@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "FR".
+

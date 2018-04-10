@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2617/index_card_2756/label_2780";
-    dct:type "image";
-    dc:subject "Rhone Misc & French Red@en";
-    w:bagOfWords "ROUGE\nCaves Seorge\nR C B. 83 7\n"@fra;
-    gv:color [
-  gv:hex "552a1d";
-  gv:red "85";
-  gv:blue "29";
-  gv:green "42";
-  gv:score "51.52010299999999";
-  gv:coverage "12.3"
-], [
-  gv:hex "f5daca";
-  gv:red "245";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "0.66922582";
-  gv:coverage "3.4000000000000004"
-], [
-  gv:hex "734839";
-  gv:red "115";
-  gv:blue "57";
-  gv:green "72";
-  gv:score "24.279511";
-  gv:coverage "7.2333336"
-], [
-  gv:hex "966b5c";
-  gv:red "150";
-  gv:blue "92";
-  gv:green "107";
-  gv:score "13.117729";
-  gv:coverage "3.4666665"
-], [
-  gv:hex "bb907e";
-  gv:red "187";
-  gv:blue "126";
-  gv:green "144";
-  gv:score "6.9255792";
-  gv:coverage "2.1666666"
-], [
-  gv:hex "d8af9b";
-  gv:red "216";
-  gv:blue "155";
-  gv:green "175";
-  gv:score "1.4299436";
-  gv:coverage "0.57333335"
-], [
-  gv:hex "3a1509";
-  gv:red "58";
-  gv:blue "9";
-  gv:green "21";
-  gv:score "1.2388238";
-  gv:coverage "0.32666668"
-], [
-  gv:hex "dec5b5";
-  gv:red "222";
-  gv:blue "181";
-  gv:green "197";
-  gv:score "0.6308255700000001";
-  gv:coverage "5.0933335"
-], [
-  gv:hex "fadcd1";
-  gv:red "250";
-  gv:blue "209";
-  gv:green "220";
-  gv:score "0.060594133999999994";
-  gv:coverage "0.026666667"
-], [
-  gv:hex "6e4124";
-  gv:red "110";
-  gv:blue "36";
-  gv:green "65";
-  gv:score "0.045313707";
-  gv:coverage "0.006666666700000001"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/014sv8>;
-  gv:desc "eye";
-  gv:score "55.449521999999995"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "52.536320999999994"
-];
-    w:bagOfWords "ROUGE\nCaves Seorge\nR C B. 83 7\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2780";
+    <schema.keywords> "Rhone Misc & French Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3142/index_card_3357/label_3386";
-    dct:type "image";
-    dc:subject "Burgundy Red@en";
-    w:bagOfWords "1926\nTHE HIGHEST S\nARD OF QUALITY\nCONTENTS 73 CENTILITERS ALCOHOL BY VOLUME 14\nFON DEE\nEN\n849\nBOURGOGNE GILLY\nSPECIAL\nPROPRIETAIRES DE VI N\nESA CHASSAGNE -MONTRACHET\nNEGOCIANTS EN VINS A BEAU NE (COTE D'OR\n"@fra;
-    gv:color [
-  gv:hex "dcc1a2";
-  gv:red "220";
-  gv:blue "162";
-  gv:green "193";
-  gv:score "60.910487";
-  gv:coverage "23.36"
-], [
-  gv:hex "1a1810";
-  gv:red "26";
-  gv:blue "16";
-  gv:green "24";
-  gv:score "0.39998558000000006";
-  gv:coverage "0.11333333"
-], [
-  gv:hex "b4997b";
-  gv:red "180";
-  gv:blue "123";
-  gv:green "153";
-  gv:score "16.161308";
-  gv:coverage "4.6066668"
-], [
-  gv:hex "d9b788";
-  gv:red "217";
-  gv:blue "136";
-  gv:green "183";
-  gv:score "5.9496753";
-  gv:coverage "2.0266667"
-], [
-  gv:hex "90775a";
-  gv:red "144";
-  gv:blue "90";
-  gv:green "119";
-  gv:score "5.8247976";
-  gv:coverage "1.44"
-], [
-  gv:hex "c2a071";
-  gv:red "194";
-  gv:blue "113";
-  gv:green "160";
-  gv:score "2.4371153";
-  gv:coverage "0.82666669"
-], [
-  gv:hex "675136";
-  gv:red "103";
-  gv:blue "54";
-  gv:green "81";
-  gv:score "1.9436194";
-  gv:coverage "0.45999999999999996"
-], [
-  gv:hex "f0d7bc";
-  gv:red "240";
-  gv:blue "188";
-  gv:green "215";
-  gv:score "1.8144535";
-  gv:coverage "4.3466665"
-], [
-  gv:hex "977648";
-  gv:red "151";
-  gv:blue "72";
-  gv:green "118";
-  gv:score "0.86766072";
-  gv:coverage "0.21333334"
-], [
-  gv:hex "4e381d";
-  gv:red "78";
-  gv:blue "29";
-  gv:green "56";
-  gv:score "0.56742514";
-  gv:coverage "0.13333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "64.454943"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "54.530232999999996"
-];
-    w:bagOfWords "1926\nTHE HIGHEST S\nARD OF QUALITY\nCONTENTS 73 CENTILITERS ALCOHOL BY VOLUME 14\nFON DEE\nEN\n849\nBOURGOGNE GILLY\nSPECIAL\nPROPRIETAIRES DE VI N\nESA CHASSAGNE -MONTRACHET\nNEGOCIANTS EN VINS A BEAU NE (COTE D'OR\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3386";
+    <schema.keywords> "Burgundy Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+

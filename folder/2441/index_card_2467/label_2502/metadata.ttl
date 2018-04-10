@@ -1,107 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2441/index_card_2467/label_2502";
-    dct:type "image";
-    dc:subject "Burgundy White@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nON FONDEE E\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE\nCOTE D'OR FRANCE\nshipped and Bottled bwaeoUCHARD AINE LTD a cURZON STREET LONDON W\n"@fra;
-    gv:color [
-  gv:hex "d4c3af";
-  gv:red "212";
-  gv:blue "175";
-  gv:green "195";
-  gv:score "36.385506";
-  gv:coverage "18.8"
-], [
-  gv:hex "874b2a";
-  gv:red "135";
-  gv:blue "42";
-  gv:green "75";
-  gv:score "1.6090320000000002";
-  gv:coverage "0.066666666"
-], [
-  gv:hex "eddcc9";
-  gv:red "237";
-  gv:blue "201";
-  gv:green "220";
-  gv:score "18.882976000000003";
-  gv:coverage "19.513333"
-], [
-  gv:hex "ac9c88";
-  gv:red "172";
-  gv:blue "136";
-  gv:green "156";
-  gv:score "16.447072";
-  gv:coverage "2.3800000000000003"
-], [
-  gv:hex "857461";
-  gv:red "133";
-  gv:blue "97";
-  gv:green "116";
-  gv:score "10.544584";
-  gv:coverage "1.4466667"
-], [
-  gv:hex "675643";
-  gv:red "103";
-  gv:blue "67";
-  gv:green "86";
-  gv:score "3.8708922";
-  gv:coverage "0.62666666"
-], [
-  gv:hex "996d55";
-  gv:red "153";
-  gv:blue "85";
-  gv:green "109";
-  gv:score "1.9512862";
-  gv:coverage "0.13333333"
-], [
-  gv:hex "767470";
-  gv:red "118";
-  gv:blue "112";
-  gv:green "116";
-  gv:score "1.2094498";
-  gv:coverage "0.42666667"
-], [
-  gv:hex "565756";
-  gv:red "86";
-  gv:blue "86";
-  gv:green "87";
-  gv:score "1.2066102";
-  gv:coverage "0.36"
-], [
-  gv:hex "d4c8bd";
-  gv:red "212";
-  gv:blue "189";
-  gv:green "200";
-  gv:score "1.0022992";
-  gv:coverage "4.34"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "61.638045"
-], [
-  gv:mid <https://g.co/kg/m/01cd9>;
-  gv:desc "brand";
-  gv:score "59.691668"
-], [
-  gv:mid <https://g.co/kg/m/0f1tz>;
-  gv:desc "calligraphy";
-  gv:score "53.833299999999994"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nON FONDEE E\nBOUCHARD AINE & FILS\nNEGOCIANTS A BEAUNE\nCOTE D'OR FRANCE\nshipped and Bottled bwaeoUCHARD AINE LTD a cURZON STREET LONDON W\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2502";
+    <schema.keywords> "Burgundy White@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:White.
+

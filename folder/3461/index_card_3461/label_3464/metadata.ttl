@@ -1,106 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/3461/index_card_3461/label_3464";
-    dct:type "image";
-    dc:subject "California White@en";
-    w:bagOfWords "ALCOHOL 12%\nNET CONTENTS\n4/5 QUART\nBY VOLUME\nCALIFORNIA\nCHABLIS XXX\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD, RUTHERFORD\nNAPA COUNTY, CALIFORNIA\nBOTTLED AT THE WINERY\nO\n"@eng;
-    gv:color [
-  gv:hex "d7c2a7";
-  gv:red "215";
-  gv:blue "167";
-  gv:green "194";
-  gv:score "40.080947";
-  gv:coverage "14.833333000000001"
-], [
-  gv:hex "b29c7e";
-  gv:red "178";
-  gv:blue "126";
-  gv:green "156";
-  gv:score "19.836947";
-  gv:coverage "3.7533332"
-], [
-  gv:hex "efdac0";
-  gv:red "239";
-  gv:blue "192";
-  gv:green "218";
-  gv:score "11.327276999999999";
-  gv:coverage "8.5"
-], [
-  gv:hex "c59286";
-  gv:red "197";
-  gv:blue "134";
-  gv:green "146";
-  gv:score "6.0461";
-  gv:coverage "0.44"
-], [
-  gv:hex "e8bcae";
-  gv:red "232";
-  gv:blue "174";
-  gv:green "188";
-  gv:score "5.8481708";
-  gv:coverage "0.38666667"
-], [
-  gv:hex "b39a6b";
-  gv:red "179";
-  gv:blue "107";
-  gv:green "154";
-  gv:score "3.2931637";
-  gv:coverage "0.26666666"
-], [
-  gv:hex "917b5a";
-  gv:red "145";
-  gv:blue "90";
-  gv:green "123";
-  gv:score "2.8468838";
-  gv:coverage "0.34666667"
-], [
-  gv:hex "a37066";
-  gv:red "163";
-  gv:blue "102";
-  gv:green "112";
-  gv:score "2.3387268";
-  gv:coverage "0.16666667000000002"
-], [
-  gv:hex "d4bc8c";
-  gv:red "212";
-  gv:blue "140";
-  gv:green "188";
-  gv:score "1.6524022";
-  gv:coverage "0.12666667"
-], [
-  gv:hex "f9d3c6";
-  gv:red "249";
-  gv:blue "198";
-  gv:green "211";
-  gv:score "1.6185254";
-  gv:coverage "0.12666667"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/06z04>;
-  gv:desc "skin";
-  gv:score "72.964674"
-], [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "63.526428"
-], [
-  gv:mid <https://g.co/kg/m/014trl>;
-  gv:desc "cosmetics";
-  gv:score "55.258089"
-];
-    w:bagOfWords "ALCOHOL 12%\nNET CONTENTS\n4/5 QUART\nBY VOLUME\nCALIFORNIA\nCHABLIS XXX\nPRODUCED & BOTTLED BY\nBEAULIEU VINEYARD, RUTHERFORD\nNAPA COUNTY, CALIFORNIA\nBOTTLED AT THE WINERY\nO\n"@eng;
-    wdt:P219 "eng";
-    wdt:P298 "USA";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_3464";
+    <schema.keywords> "California White@en";
+    schema:inLanguage "en-US";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
+    w:WineType w:Still;
+    wdt:P297 "US";
     w:WineColor w:White.
+

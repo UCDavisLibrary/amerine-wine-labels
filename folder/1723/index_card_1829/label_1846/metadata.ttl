@@ -1,98 +1,16 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/1723/index_card_1829/label_1846";
-    dct:type "image";
-    dc:subject "Moselle Misc German@en";
-    w:bagOfWords "achstum ferb. fenbel\n"@deu;
-    gv:color [
-  gv:hex "dcccb9";
-  gv:red "220";
-  gv:blue "185";
-  gv:green "204";
-  gv:score "29.140781999999998";
-  gv:coverage "23.413333"
-], [
-  gv:hex "986f35";
-  gv:red "152";
-  gv:blue "53";
-  gv:green "111";
-  gv:score "4.5604676";
-  gv:coverage "6.2133335"
-], [
-  gv:hex "eadaca";
-  gv:red "234";
-  gv:blue "202";
-  gv:green "218";
-  gv:score "25.586081";
-  gv:coverage "23.773333"
-], [
-  gv:hex "e8dfd6";
-  gv:red "232";
-  gv:blue "214";
-  gv:green "223";
-  gv:score "20.447782";
-  gv:coverage "14.206667000000001"
-], [
-  gv:hex "dacfc6";
-  gv:red "218";
-  gv:blue "198";
-  gv:green "207";
-  gv:score "7.2518133";
-  gv:coverage "5.7266667"
-], [
-  gv:hex "94723a";
-  gv:red "148";
-  gv:blue "58";
-  gv:green "114";
-  gv:score "3.4112956";
-  gv:coverage "2.3866666000000003"
-], [
-  gv:hex "754e20";
-  gv:red "117";
-  gv:blue "32";
-  gv:green "78";
-  gv:score "1.5780035000000001";
-  gv:coverage "1.96"
-], [
-  gv:hex "b7955b";
-  gv:red "183";
-  gv:blue "91";
-  gv:green "149";
-  gv:score "1.4564454";
-  gv:coverage "3.2933332"
-], [
-  gv:hex "a0732b";
-  gv:red "160";
-  gv:blue "43";
-  gv:green "115";
-  gv:score "1.0458854";
-  gv:coverage "0.37333333999999996"
-], [
-  gv:hex "a17a30";
-  gv:red "161";
-  gv:blue "48";
-  gv:green "122";
-  gv:score "0.867898";
-  gv:coverage "0.22"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "56.745243"
-];
-    w:bagOfWords "achstum ferb. fenbel\n"@deu;
-    wdt:P219 "deu";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_1846";
+    <schema.keywords> "Moselle Misc German@en";
+    schema:inLanguage "de-DE";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "DEU".
+    wdt:P297 "DE".
+

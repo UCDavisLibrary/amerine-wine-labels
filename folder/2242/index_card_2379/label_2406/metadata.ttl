@@ -1,99 +1,17 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix gv: <http://google.com/google-vision/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix schema: <http://schema.org/>.
 @prefix w: <http://library.ucdavis.edu/wine-ontology#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<> a w:WineLabel;
-    dct:publisher <http://id.loc.gov/authorities/names/no2008108707>;
-    dc:publisher "University of California, Davis. General Library. Dept. of Special Collections";
-    dct:rights <http://rightsstatements.org/vocab/InC-NC/1.0/>;
-    ebucore:hasMimeType "image/jpeg";
-    dc:identifier "folder/2242/index_card_2379/label_2406";
-    dct:type "image";
-    dc:subject "Medoc Red@en";
-    w:bagOfWords "PRODUCE OF FRANCE\nMARQUE COMMERCIALE DEPOSEE\nBORDEAUX\nALCOHOL BY VOLUME IO\nCONTENTS IPT8 FLOZS\n"@fra;
-    gv:color [
-  gv:hex "8f7352";
-  gv:red "143";
-  gv:blue "82";
-  gv:green "115";
-  gv:score "21.038856";
-  gv:coverage "3.1266667"
-], [
-  gv:hex "b39776";
-  gv:red "179";
-  gv:blue "118";
-  gv:green "151";
-  gv:score "18.131045";
-  gv:coverage "4.5"
-], [
-  gv:hex "d5bea3";
-  gv:red "213";
-  gv:blue "163";
-  gv:green "190";
-  gv:score "17.891389";
-  gv:coverage "41.566667"
-], [
-  gv:hex "6c5233";
-  gv:red "108";
-  gv:blue "51";
-  gv:green "82";
-  gv:score "11.521552";
-  gv:coverage "1.3599999999999999"
-], [
-  gv:hex "8c6c45";
-  gv:red "140";
-  gv:blue "69";
-  gv:green "108";
-  gv:score "6.0557812";
-  gv:coverage "0.52"
-], [
-  gv:hex "71542d";
-  gv:red "113";
-  gv:blue "45";
-  gv:green "84";
-  gv:score "4.1204691";
-  gv:coverage "0.36"
-], [
-  gv:hex "8d6a42";
-  gv:red "141";
-  gv:blue "66";
-  gv:green "106";
-  gv:score "3.5264667";
-  gv:coverage "0.28666668"
-], [
-  gv:hex "704e28";
-  gv:red "112";
-  gv:blue "40";
-  gv:green "78";
-  gv:score "3.2514020999999995";
-  gv:coverage "0.26"
-], [
-  gv:hex "4d3516";
-  gv:red "77";
-  gv:blue "22";
-  gv:green "53";
-  gv:score "2.9134305";
-  gv:coverage "0.35333333"
-], [
-  gv:hex "51310c";
-  gv:red "81";
-  gv:blue "12";
-  gv:green "49";
-  gv:score "2.497272";
-  gv:coverage "0.19333333"
-];
-    gv:label [
-  gv:mid <https://g.co/kg/m/05c0n6k>;
-  gv:desc "label";
-  gv:score "69.48669600000001"
-];
-    w:bagOfWords "PRODUCE OF FRANCE\nMARQUE COMMERCIALE DEPOSEE\nBORDEAUX\nALCOHOL BY VOLUME IO\nCONTENTS IPT8 FLOZS\n"@fra;
-    wdt:P219 "fra";
+<> a schema:VisualArtwork, schema:CreativeWork, schema:Menu, w:WineLabel;
+    schema:publisher <http://id.loc.gov/authorities/names/no2008108707>, "University of California, Davis. General Library. Dept. of Special Collections";
+    schema:license <http://rightsstatements.org/vocab/InC-NC/1.0/>;
+    schema:identifier "label_2406";
+    <schema.keywords> "Medoc Red@en";
+    schema:inLanguage "fr-FR";
+    w:describesWine <#wine>.
+<#wine> a w:Wine;
     w:WineType w:Still;
-    wdt:P298 "FRA";
+    wdt:P297 "FR";
     w:WineColor w:Red.
+
